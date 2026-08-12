@@ -21,7 +21,7 @@ export default function PositionsIndex() {
     <>
       <SectionHero
         image="/img/bg/field.jpg"
-        objectPosition="center 40%"
+        objectPosition="center 48%"
         eyebrow="Framework"
         title="Positions"
         lede="How each position is evaluated here, and the one chart that carries the argument."

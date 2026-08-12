@@ -234,35 +234,6 @@
       );
   }
 
-  /* A short band occupies only the dark end of `.scrim`'s curve, so it needs
-     its own gentler ramp or the photograph reads as a black rectangle. */
-  .scrim-compact {
-    background:
-      linear-gradient(
-        to top,
-        color-mix(in oklab, var(--color-vantage-black) 72%, transparent) 0%,
-        color-mix(in oklab, var(--color-vantage-black) 42%, transparent) 55%,
-        color-mix(in oklab, var(--color-vantage-black) 28%, transparent) 100%
-      ),
-      linear-gradient(
-        to right,
-        color-mix(in oklab, var(--color-vantage-black) 55%, transparent) 0%,
-        transparent 70%
-      );
-  }
-
-  /* Film grain.
-     Two of the archival photographs are only 680-884px wide and are asked to
-     fill a 1440px band, so they upscale. Fine-grain noise breaks up the smooth
-     interpolation that makes an upscale read as blur, and it suits the source
-     material — it looks like film stock rather than like a mistake. Generated
-     rather than fetched, so it costs no request. */
-  .grain {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    opacity: 0.14;
-    mix-blend-mode: overlay;
-  }
-
   .scrim-band {
     background: linear-gradient(
       to right,

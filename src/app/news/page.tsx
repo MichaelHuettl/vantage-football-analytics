@@ -57,7 +57,7 @@ export default async function NewsPage({
     <>
       <SectionHero
         image="/img/bg/lambeau.jpg"
-        objectPosition="center 30%"
+        objectPosition="center 38%"
         eyebrow="What happened"
         title="News"
         lede="Headline, source, and timestamp, tagged to the players it affects. Follow the link for the article — no body text is reproduced here."

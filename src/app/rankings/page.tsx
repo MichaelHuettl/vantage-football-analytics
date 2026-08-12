@@ -51,7 +51,6 @@ export default async function RankingsPage({
       <SectionHero
         image="/img/bg/parcells.jpg"
         alt=""
-        size="tall"
         objectPosition="center 30%"
         eyebrow="Draft and in-season"
         title="Rankings"

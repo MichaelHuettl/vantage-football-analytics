@@ -5,6 +5,18 @@ import { SITE_NAV } from "@/lib/nav";
 export function SiteHeader() {
   return (
     <header className="absolute top-0 inset-x-0 z-50">
+      {/* The nav sits over whatever photograph a page opens with, and some of
+          them are bright at the top — the Vegas board especially. A short
+          gradient buys contrast for the links without darkening the image
+          anywhere the eye actually rests. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 h-32 -z-10"
+        style={{
+          background:
+            "linear-gradient(to bottom, color-mix(in oklab, var(--color-vantage-black) 72%, transparent) 0%, color-mix(in oklab, var(--color-vantage-black) 40%, transparent) 45%, transparent 100%)",
+        }}
+      />
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
         {/* Below md the six links need their own row — wrapping them beside
             the logo collides with it. */}

@@ -1,19 +1,18 @@
 import Image from "next/image";
 
 /**
- * The dark band every section opens with.
+ * The dark band every section page opens with.
  *
- * Three sizes:
+ * One height, deliberately. Every category should present its photograph at
+ * the same scale so the sections read as siblings, and a 3:2 frame needs this
+ * much room — a shorter band shows barely a third of the image and decapitates
+ * anyone in it. At 1440px roughly two-thirds of a 3:2 photograph is visible;
+ * on a phone, effectively all of it.
  *
- * - `full`   the home page: a viewport-height photograph carrying the thesis.
- * - `tall`   for bands whose photograph has a human subject. A 3:2 frame in a
- *            320px band at desktop width shows barely a third of the image and
- *            decapitates anyone in it; this height keeps the majority of the
- *            frame visible.
- * - `band`   for wide scenes and textures, where a tight horizontal slice loses
- *            nothing and the data below stays close to the fold.
+ * The home page keeps its own taller hero — it is the landing page, not a
+ * category.
  *
- * Legibility comes from a directional scrim rather than a flat overlay — a flat
+ * Legibility comes from a directional scrim rather than a flat overlay: a flat
  * black wash at the opacity needed for white text kills the photograph, and the
  * photograph is the reason the band exists.
  */
@@ -23,7 +22,6 @@ export function SectionHero({
   eyebrow,
   title,
   lede,
-  size = "band",
   objectPosition = "center",
   children,
 }: {
@@ -32,38 +30,24 @@ export function SectionHero({
   eyebrow?: string;
   title: React.ReactNode;
   lede?: string;
-  size?: "band" | "tall" | "full";
   objectPosition?: string;
   children?: React.ReactNode;
 }) {
-  const full = size === "full";
-  const tall = size === "tall";
-
-  const height = full
-    ? "min-h-[86vh]"
-    : tall
-      ? "min-h-[540px] lg:min-h-[640px]"
-      : "min-h-[320px]";
-
   return (
     <section
-      className={`relative isolate overflow-hidden flex items-end ${height}`}
+      className="relative isolate flex min-h-[540px] items-end overflow-hidden lg:min-h-[640px]"
       style={{ background: "var(--color-vantage-black)" }}
     >
       <Image
         src={image}
         alt={alt}
         fill
-        priority={full}
+        priority
         sizes="100vw"
         style={{ objectFit: "cover", objectPosition }}
         className="-z-20"
       />
-      {/* A tall band has room for the full gradient curve; a short one sits
-          entirely in its dark end and needs the gentler ramp. */}
-      <div
-        className={`absolute inset-0 -z-10 ${full || tall ? "scrim" : "scrim-compact"}`}
-      />
+      <div className="absolute inset-0 -z-10 scrim" />
       {/* Field rhythm, barely there — it reads as texture, not stripes. */}
       <div className="absolute inset-0 -z-10 yardlines-inverse opacity-25" />
       <div className="absolute inset-0 -z-10 grain" />
@@ -81,13 +65,7 @@ export function SectionHero({
         )}
 
         <h1
-          className={`uppercase tracking-wide leading-[0.88] ${
-            full
-              ? "text-6xl sm:text-8xl lg:text-9xl"
-              : tall
-                ? "text-5xl sm:text-7xl lg:text-8xl"
-                : "text-5xl sm:text-6xl lg:text-7xl"
-          }`}
+          className="text-5xl sm:text-7xl lg:text-8xl uppercase tracking-wide leading-[0.88]"
           style={{
             fontFamily: "var(--font-display)",
             color: "var(--color-vantage-white)",
