@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ChartFigure } from "@/components/ChartFigure";
 import { DataFreshness } from "@/components/DataFreshness";
-import { Container, EmptyState, PageHeader } from "@/components/PageHeader";
+import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink } from "@/components/PlayerLink";
+import { SectionHero } from "@/components/SectionHero";
 import { TierBand } from "@/components/TierBand";
 import { getRankingList, rankedEntries, validateContent } from "@/lib/content";
 import { POSITIONS, SCORING_FORMATS } from "@/lib/types";
@@ -44,16 +45,28 @@ export default async function RankingsPage({
 
   return (
     <>
-      <PageHeader
+      <SectionHero
+        image="/img/bg/lambeau.jpg"
+        objectPosition="center 55%"
         eyebrow="Draft and in-season"
         title="Rankings"
         lede="Ordered by tier, not by decimal places. Expand any player to see the chart the ranking rests on."
+      />
+
+      <div
+        className="border-b"
+        style={{
+          background: "var(--surface-sunken)",
+          borderColor: "var(--border-subtle)",
+        }}
       >
-        <div className="flex flex-col gap-4">
-          <PositionTabs current={position} format={format} />
-          <FormatToggle current={format} position={position} />
-        </div>
-      </PageHeader>
+        <Container className="py-6">
+          <div className="flex flex-col gap-4">
+            <PositionTabs current={position} format={format} />
+            <FormatToggle current={format} position={position} />
+          </div>
+        </Container>
+      </div>
 
       <Container className="py-8">
         <div className="mb-6">

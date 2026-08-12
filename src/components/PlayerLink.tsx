@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { TeamChip } from "./TeamChip";
 import type { Player, Position } from "@/lib/types";
@@ -19,19 +20,44 @@ function initials(name: string): string {
 }
 
 /**
- * Initials in a position-coloured shape. §2 rules out player photography
- * without a licensed source, so this is designed as the avatar rather than
- * as a placeholder waiting for one.
+ * A player's photo where one exists, initials in a position-coloured shape
+ * where it doesn't. The initials treatment is a designed fallback rather than
+ * a broken-image state, so a roster with partial photography still looks
+ * deliberate.
  */
 export function PlayerAvatar({
   name,
   position,
+  photo,
   size = 32,
 }: {
   name: string;
   position: Position;
+  photo?: string;
   size?: number;
 }) {
+  if (photo) {
+    return (
+      <span
+        aria-hidden="true"
+        className="relative inline-block shrink-0 overflow-hidden rounded"
+        style={{
+          width: size,
+          height: size,
+          background: POSITION_TOKEN[position],
+        }}
+      >
+        <Image
+          src={photo}
+          alt=""
+          fill
+          sizes={`${size}px`}
+          style={{ objectFit: "cover", objectPosition: "center 18%" }}
+        />
+      </span>
+    );
+  }
+
   return (
     <span
       aria-hidden="true"
@@ -82,7 +108,12 @@ export function PlayerLink({
       className="group inline-flex items-center gap-2 min-w-0"
     >
       {showAvatar && (
-        <PlayerAvatar name={player.name} position={player.position} />
+        <PlayerAvatar
+          name={player.name}
+          position={player.position}
+          photo={player.photo}
+          size={36}
+        />
       )}
       <span className="min-w-0">
         <span className="block truncate font-semibold group-hover:underline">

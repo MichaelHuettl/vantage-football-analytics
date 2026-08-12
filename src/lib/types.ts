@@ -46,6 +46,8 @@ export interface Player {
   /** Draft capital, e.g. "2023 R1P4". Free text — it's read, not computed. */
   draft?: string;
   status?: "active" | "ir" | "pup" | "suspended" | "fa";
+  /** Path under /public/img/players. Omit to fall back to the initials avatar. */
+  photo?: string;
 }
 
 export interface RankingEntry {
@@ -77,14 +79,20 @@ export interface RankingList {
 export type PracticeStatus = "DNP" | "LP" | "FP" | "—";
 export type GameStatus = "Out" | "Doubtful" | "Questionable" | "Active" | "IR";
 
+/**
+ * One row per player per week. Weeks accumulate rather than overwrite — the
+ * backlog view and the per-player timeline are both derived from the full
+ * history, so old rows are the data, not clutter.
+ */
 export interface InjuryEntry {
+  week: number;
   player_id: string;
+  team: string;
   injury: string;
   practice: { wed: PracticeStatus; thu: PracticeStatus; fri: PracticeStatus };
   status: GameStatus;
-  /** Prior weeks' game status, oldest first. The trend is the signal. §5.3 */
-  history?: { week: number; status: GameStatus }[];
-  updated: string;
+  /** One sentence on what changed this week. §8: a fact, not a vibe. */
+  note?: string;
 }
 
 export interface Game {

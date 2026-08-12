@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "updated": "2026-08-11",
+  "note": "PLACEHOLDER SAMPLE. Headline, source, timestamp, link, and tags only — never article body text (§2). Headlines here are written as neutral descriptions of an event rather than copied from any publication. `team_abbrs` drives the by-team navigation; `player_ids` must resolve against players.json.",
+  "data": [
+    { "id": "n1", "headline": "Colts list Taylor as out for the opener after a third missed practice", "source": "Team injury report", "url": "https://www.colts.com/", "timestamp": "2026-08-11T14:20:00Z", "category": "injury", "player_ids": ["jonathan-taylor"], "team_abbrs": ["IND"] },
+    { "id": "n2", "headline": "McCaffrey returns to full participation in Thursday session", "source": "Team injury report", "url": "https://www.49ers.com/", "timestamp": "2026-08-11T11:05:00Z", "category": "practice", "player_ids": ["christian-mccaffrey"], "team_abbrs": ["SF"] },
+    { "id": "n3", "headline": "Bengals move Chase to a limited session for a third straight day", "source": "Team injury report", "url": "https://www.bengals.com/", "timestamp": "2026-08-10T19:40:00Z", "category": "injury", "player_ids": ["jamarr-chase"], "team_abbrs": ["CIN"] },
+    { "id": "n4", "headline": "Raiders name Bowers a full-time slot participant in camp install", "source": "Team press release", "url": "https://www.raiders.com/", "timestamp": "2026-08-10T16:15:00Z", "category": "camp", "player_ids": ["brock-bowers"], "team_abbrs": ["LV"] },
+    { "id": "n5", "headline": "Lions expand Gibbs role in two-minute packages through camp", "source": "Team press release", "url": "https://www.detroitlions.com/", "timestamp": "2026-08-09T20:00:00Z", "category": "camp", "player_ids": ["jahmyr-gibbs"], "team_abbrs": ["DET"] },
+    { "id": "n6", "headline": "Vikings hold Jefferson out of Wednesday as a precaution", "source": "Team injury report", "url": "https://www.vikings.com/", "timestamp": "2026-08-09T15:30:00Z", "category": "practice", "player_ids": ["justin-jefferson"], "team_abbrs": ["MIN"] },
+    { "id": "n7", "headline": "Steelers finalise Rodgers as Week 1 starter", "source": "Team press release", "url": "https://www.steelers.com/", "timestamp": "2026-08-08T18:00:00Z", "category": "breaking", "player_ids": ["aaron-rodgers"], "team_abbrs": ["PIT"] },
+    { "id": "n8", "headline": "Falcons sign veteran depth back, Robinson workload unchanged", "source": "Transaction wire", "url": "https://www.atlantafalcons.com/", "timestamp": "2026-08-08T13:45:00Z", "category": "transaction", "player_ids": ["bijan-robinson"], "team_abbrs": ["ATL"] }
+  ]
+}

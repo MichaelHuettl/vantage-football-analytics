@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import positionsFile from "@/data/positions.json";
-import { Container, PageHeader } from "@/components/PageHeader";
+import { Container } from "@/components/PageHeader";
+import { SectionHero } from "@/components/SectionHero";
 import { PositionBadge } from "@/components/PlayerLink";
 import type { Envelope, Position } from "@/lib/types";
 
@@ -18,9 +19,11 @@ export default function PositionsIndex() {
 
   return (
     <>
-      <PageHeader
+      <SectionHero
+        image="/img/bg/field.jpg"
+        objectPosition="center 40%"
         eyebrow="Framework"
-        title="Position analysis"
+        title="Positions"
         lede="How each position is evaluated here, and the one chart that carries the argument."
       />
       <Container className="py-10">

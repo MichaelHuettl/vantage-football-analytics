@@ -1,49 +1,104 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/PageHeader";
-import { Goalpost } from "@/components/Goalpost";
-import { SITE_NAV } from "@/lib/nav";
+import { Wordmark } from "@/components/Wordmark";
+import { getRankingList } from "@/lib/content";
 
-const SECTION_BLURBS: Record<string, string> = {
-  "/rankings": "Tiered by position and format. Every row opens the chart underneath it.",
-  "/positions": "The framework used to evaluate each position, applied to the current player pool.",
-  "/injuries": "Practice participation across the week, because the trend is the signal.",
-  "/film": "Route concepts and play diagrams, drawn here rather than borrowed.",
-  "/games": "Implied team totals, weather, and the designations that move a lineup.",
-  "/news": "Headlines tagged to players. Source and timestamp, then a link out.",
-};
+const SECTION_CARDS: {
+  href: string;
+  label: string;
+  blurb: string;
+  image: string;
+  position?: string;
+}[] = [
+  {
+    href: "/rankings",
+    label: "Rankings",
+    blurb: "Tiered by position and format. Every row opens the chart underneath it.",
+    image: "/img/players/bijan-robinson.jpg",
+    position: "center 22%",
+  },
+  {
+    href: "/positions",
+    label: "Positions",
+    blurb: "The framework used to evaluate each position, applied to the current pool.",
+    image: "/img/players/justin-jefferson.jpg",
+    position: "center 18%",
+  },
+  {
+    href: "/injuries",
+    label: "Injuries",
+    blurb: "Practice participation across the week, because the trend is the signal.",
+    image: "/img/players/christian-mccaffrey.jpg",
+    position: "center 20%",
+  },
+  {
+    href: "/film",
+    label: "Film",
+    blurb: "Route concepts and play diagrams, drawn here rather than borrowed.",
+    image: "/img/players/jamarr-chase.jpg",
+    position: "center 18%",
+  },
+  {
+    href: "/games",
+    label: "Games",
+    blurb: "Implied team totals, weather, and the designations that move a lineup.",
+    image: "/img/bg/vegas.jpg",
+    position: "center",
+  },
+  {
+    href: "/news",
+    label: "News",
+    blurb: "Headlines tagged to players. Source and timestamp, then a link out.",
+    image: "/img/players/lamar-jackson.jpg",
+    position: "center 18%",
+  },
+];
 
 export default function Home() {
+  const rb = getRankingList("RB");
+
   return (
     <>
-      {/* Hero. §7 asks for a thesis rather than a big number and a gradient. */}
+      {/* ---------------------------------------------------------------
+          Hero. Full-bleed field, the lockup, and the thesis.
+          --------------------------------------------------------------- */}
       <section
-        className="border-b"
-        style={{
-          background: "var(--surface-inverse)",
-          borderColor: "var(--border-inverse)",
-        }}
+        className="relative isolate min-h-[92vh] flex items-end overflow-hidden"
+        style={{ background: "var(--color-vantage-black)" }}
       >
-        <Container className="py-20 sm:py-28">
-          <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+        <Image
+          src="/img/bg/lambeau.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center 42%" }}
+          className="-z-20"
+        />
+        <div className="absolute inset-0 -z-10 scrim" />
+        <div className="absolute inset-0 -z-10 yardlines-inverse opacity-20" />
+
+        <Container className="relative pb-16 pt-28 w-full">
+          <div className="grid gap-10 lg:grid-cols-[1.5fr_auto] lg:items-end">
             <div>
-              <p
-                className="eyebrow"
-                style={{ color: "var(--color-vantage-amber)" }}
-              >
-                Fantasy football analytics
-              </p>
+              <div style={{ color: "var(--color-vantage-white)" }}>
+                <Wordmark size="lg" />
+              </div>
+
               <h1
-                className="mt-4 text-5xl sm:text-7xl leading-[0.9] tracking-wide uppercase"
+                className="mt-10 uppercase tracking-wide leading-[0.88] text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
                 style={{
                   fontFamily: "var(--font-display)",
-                  color: "var(--text-on-inverse)",
+                  color: "var(--color-vantage-white)",
                 }}
               >
                 Rankings are
                 <br />a conclusion.
               </h1>
+
               <p
-                className="mt-6 max-w-xl text-lg"
+                className="mt-7 max-w-xl text-lg leading-relaxed"
                 style={{ color: "var(--color-ink-300)" }}
               >
                 Most sites publish the conclusion and ask you to take it on
@@ -52,10 +107,11 @@ export default function Home() {
                 Every ranked player links to the chart that justifies his
                 position.
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
+
+              <div className="mt-9 flex flex-wrap gap-3">
                 <Link
                   href="/rankings"
-                  className="rounded px-5 py-3 text-sm font-bold uppercase tracking-wider"
+                  className="rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-transform hover:-translate-y-0.5"
                   style={{
                     fontFamily: "var(--font-condensed)",
                     background: "var(--color-vantage-amber)",
@@ -66,11 +122,11 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/glossary"
-                  className="rounded px-5 py-3 text-sm font-bold uppercase tracking-wider"
+                  className="rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-colors hover:bg-white/10"
                   style={{
                     fontFamily: "var(--font-condensed)",
-                    color: "var(--text-on-inverse)",
-                    boxShadow: "inset 0 0 0 1px var(--color-ink-700)",
+                    color: "var(--color-vantage-white)",
+                    boxShadow: "inset 0 0 0 1px var(--color-ink-600)",
                   }}
                 >
                   How the metrics work
@@ -78,51 +134,171 @@ export default function Home() {
               </div>
             </div>
 
-            {/* The mark at scale, carrying the same structure the charts use.
-                Colour is set explicitly here: the uprights are currentColor,
-                and this sits on the inverse surface. */}
-            <div
-              className="hidden lg:flex justify-center"
-              style={{ color: "var(--text-on-inverse)" }}
+            {/* Latest card. The one thing on the page that changes weekly, so
+                it earns a fixed position the reader can learn. */}
+            <Link
+              href="/rankings?pos=RB&format=ppr"
+              className="group hidden lg:block w-[320px] rounded-lg overflow-hidden backdrop-blur-md transition-transform hover:-translate-y-1"
+              style={{
+                background: "color-mix(in oklab, var(--color-vantage-panel) 82%, transparent)",
+                boxShadow: "inset 0 0 0 1px var(--color-ink-700)",
+              }}
             >
-              <Goalpost className="w-full max-w-[280px]" />
-            </div>
+              <div className="relative h-40">
+                <Image
+                  src="/img/players/jahmyr-gibbs.jpg"
+                  alt=""
+                  fill
+                  sizes="320px"
+                  style={{ objectFit: "cover", objectPosition: "center 20%" }}
+                />
+              </div>
+              <div className="p-5">
+                <p className="eyebrow" style={{ color: "var(--color-vantage-amber)" }}>
+                  Latest update
+                </p>
+                <p
+                  className="mt-2 text-2xl uppercase tracking-wide leading-none"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    color: "var(--color-vantage-white)",
+                  }}
+                >
+                  RB tiers
+                </p>
+                <p className="mt-2 text-sm" style={{ color: "var(--color-ink-400)" }}>
+                  {rb.entries.length} backs across {rb.tiers.length} tiers ·{" "}
+                  {rb.updated}
+                </p>
+              </div>
+            </Link>
           </div>
         </Container>
       </section>
 
-      <Container className="py-16">
-        <h2
-          className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          Sections
-        </h2>
-        <ul className="mt-8 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
-          {SITE_NAV.map((item) => (
-            <li key={item.href}>
+      <div className="yard-rule" />
+
+      {/* ---------------------------------------------------------------
+          Sections. Cards carry imagery so the grid reads as a board of
+          entry points rather than six empty rectangles.
+          --------------------------------------------------------------- */}
+      <Container className="py-16 sm:py-24" id="sections">
+        <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
+          <h2
+            className="text-4xl sm:text-5xl uppercase tracking-wide leading-none"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            Where to start
+          </h2>
+          <p className="text-lg" style={{ color: "var(--text-secondary)" }}>
+            Six sections. Each one shows its work.
+          </p>
+        </div>
+
+        <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {SECTION_CARDS.map((card) => (
+            <li key={card.href}>
               <Link
-                href={item.href}
-                className="group flex h-full flex-col gap-2 rounded-lg border p-6 transition-colors hover:border-[var(--accent)]"
-                style={{ borderColor: "var(--border-subtle)" }}
+                href={card.href}
+                className="group relative flex h-64 flex-col justify-end overflow-hidden rounded-lg p-6 isolate"
+                style={{ background: "var(--color-vantage-black)" }}
               >
+                <Image
+                  src={card.image}
+                  alt=""
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: card.position ?? "center",
+                  }}
+                  className="-z-20 transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 -z-10 scrim-band" />
+
                 <span
-                  className="text-2xl uppercase tracking-wide"
-                  style={{ fontFamily: "var(--font-display)" }}
+                  className="text-3xl uppercase tracking-wide leading-none"
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    color: "var(--color-vantage-white)",
+                  }}
                 >
-                  {item.label}
+                  {card.label}
                 </span>
                 <span
-                  className="text-sm"
-                  style={{ color: "var(--text-secondary)" }}
+                  className="mt-2 text-sm"
+                  style={{ color: "var(--color-ink-300)" }}
                 >
-                  {SECTION_BLURBS[item.href]}
+                  {card.blurb}
                 </span>
+                <span
+                  aria-hidden="true"
+                  className="absolute top-5 right-5 h-2.5 w-2.5 opacity-0 transition-opacity group-hover:opacity-100"
+                  style={{ background: "var(--color-vantage-amber)" }}
+                />
               </Link>
             </li>
           ))}
         </ul>
       </Container>
+
+      {/* ---------------------------------------------------------------
+          Closing band. The betting board is the most literal picture of
+          "the number underneath the number" available.
+          --------------------------------------------------------------- */}
+      <section
+        className="relative isolate overflow-hidden"
+        style={{ background: "var(--color-vantage-black)" }}
+      >
+        <Image
+          src="/img/bg/vegas.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover" }}
+          className="-z-20"
+        />
+        <div className="absolute inset-0 -z-10 scrim-band" />
+
+        <Container className="relative py-20 sm:py-28">
+          <p className="eyebrow flex items-center gap-2.5">
+            <span
+              aria-hidden="true"
+              className="inline-block h-2.5 w-2.5"
+              style={{ background: "var(--color-vantage-amber)" }}
+            />
+            <span style={{ color: "var(--color-ink-200)" }}>The method</span>
+          </p>
+          <h2
+            className="mt-5 max-w-3xl text-4xl sm:text-6xl uppercase tracking-wide leading-[0.9]"
+            style={{
+              fontFamily: "var(--font-display)",
+              color: "var(--color-vantage-white)",
+            }}
+          >
+            You should be able to audit the argument.
+          </h2>
+          <p
+            className="mt-6 max-w-xl text-lg"
+            style={{ color: "var(--color-ink-300)" }}
+          >
+            Every metric on this site resolves to a one-sentence definition and
+            a statement of what a good value looks like. If a number appears on
+            a chart and not in the glossary, that is a bug.
+          </p>
+          <Link
+            href="/glossary"
+            className="mt-8 inline-block rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider"
+            style={{
+              fontFamily: "var(--font-condensed)",
+              background: "var(--color-vantage-amber)",
+              color: "var(--color-vantage-black)",
+            }}
+          >
+            Read the glossary
+          </Link>
+        </Container>
+      </section>
     </>
   );
 }

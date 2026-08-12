@@ -160,6 +160,106 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* ----------------------------------------------------------------
+     Yard lines.
+
+     The structural device for the site. Football fields are already
+     ruled at a fixed interval, so section dividers and hero texture
+     borrow that rhythm instead of using a generic hairline. Ticks are
+     neutral — amber stays reserved for data (§7, §11).
+     ---------------------------------------------------------------- */
+  .yardlines {
+    background-image: repeating-linear-gradient(
+      to right,
+      var(--border-subtle) 0 1px,
+      transparent 1px 40px
+    );
+  }
+
+  .yardlines-inverse {
+    background-image: repeating-linear-gradient(
+      to right,
+      color-mix(in oklab, var(--color-vantage-white) 16%, transparent) 0 1px,
+      transparent 1px 40px
+    );
+  }
+
+  /* A ruled band used to separate major sections. Taller ticks every
+     fifth interval, the way a field marks each five yards. */
+  .yard-rule {
+    height: 14px;
+    background-image:
+      repeating-linear-gradient(
+        to right,
+        var(--border-strong) 0 1px,
+        transparent 1px 200px
+      ),
+      repeating-linear-gradient(
+        to right,
+        var(--border-subtle) 0 1px,
+        transparent 1px 40px
+      );
+    background-size:
+      100% 14px,
+      100% 7px;
+    background-repeat: no-repeat, repeat-x;
+    background-position:
+      0 0,
+      0 100%;
+  }
+
+  /* ----------------------------------------------------------------
+     Hero scrims. Photographs carry detail everywhere, so headline
+     legibility is bought with a directional gradient rather than a
+     flat overlay that flattens the image.
+     ---------------------------------------------------------------- */
+  /* The two gradients multiply where they meet, so the bottom-left corner
+     ends up far darker than either value suggests. Values are tuned for
+     that compound: heavy enough under the headline, light enough that the
+     photograph is still the reason the section exists. */
+  .scrim {
+    background:
+      linear-gradient(
+        to top,
+        color-mix(in oklab, var(--color-vantage-black) 82%, transparent) 0%,
+        color-mix(in oklab, var(--color-vantage-black) 55%, transparent) 30%,
+        color-mix(in oklab, var(--color-vantage-black) 18%, transparent) 62%,
+        color-mix(in oklab, var(--color-vantage-black) 38%, transparent) 100%
+      ),
+      linear-gradient(
+        to right,
+        color-mix(in oklab, var(--color-vantage-black) 50%, transparent) 0%,
+        color-mix(in oklab, var(--color-vantage-black) 8%, transparent) 55%,
+        transparent 100%
+      );
+  }
+
+  /* A short band occupies only the dark end of `.scrim`'s curve, so it needs
+     its own gentler ramp or the photograph reads as a black rectangle. */
+  .scrim-compact {
+    background:
+      linear-gradient(
+        to top,
+        color-mix(in oklab, var(--color-vantage-black) 72%, transparent) 0%,
+        color-mix(in oklab, var(--color-vantage-black) 42%, transparent) 55%,
+        color-mix(in oklab, var(--color-vantage-black) 28%, transparent) 100%
+      ),
+      linear-gradient(
+        to right,
+        color-mix(in oklab, var(--color-vantage-black) 55%, transparent) 0%,
+        transparent 70%
+      );
+  }
+
+  .scrim-band {
+    background: linear-gradient(
+      to right,
+      color-mix(in oklab, var(--color-vantage-black) 88%, transparent) 0%,
+      color-mix(in oklab, var(--color-vantage-black) 62%, transparent) 55%,
+      color-mix(in oklab, var(--color-vantage-black) 40%, transparent) 100%
+    );
+  }
+
   .eyebrow {
     font-family: var(--font-condensed);
     font-size: var(--text-eyebrow);

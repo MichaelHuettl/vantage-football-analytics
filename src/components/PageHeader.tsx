@@ -42,12 +42,14 @@ export function PageHeader({
 export function Container({
   children,
   className = "",
+  id,
 }: {
   children: React.ReactNode;
   className?: string;
+  id?: string;
 }) {
   return (
-    <div className={`mx-auto max-w-[1400px] px-4 sm:px-6 ${className}`}>
+    <div id={id} className={`mx-auto max-w-[1400px] px-4 sm:px-6 ${className}`}>
       {children}
     </div>
   );
