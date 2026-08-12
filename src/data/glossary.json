@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-11",
+  "note": "§4.2 requires every metric shown on the site to resolve to a one-sentence definition AND a statement of what a good value looks like. The glossary is a real page, not a tooltip. TPRR and route participation are absent deliberately — both need a routes-run denominator that no open source publishes.",
+  "data": [
+    {
+      "slug": "hvt",
+      "term": "HVT/G",
+      "definition": "High-value touches per game: all targets plus carries inside the opponent 10, divided by games played.",
+      "good": "NEEDS CONFIRMATION — the definition above reads 'inside the opponent 10' as modifying carries only, which is the conventional usage. Confirm before publishing.",
+      "status": "draft"
+    },
+    {
+      "slug": "target-share",
+      "term": "Target share",
+      "definition": "A player's targets as a percentage of his team's total targets while he was active.",
+      "good": "Above 25% is a clear number one option; above 30% is among the league's most concentrated roles.",
+      "status": "ready"
+    },
+    {
+      "slug": "air-yards-share",
+      "term": "Air yards share",
+      "definition": "A player's intended air yards as a percentage of his team's total, measuring how much of the downfield passing game runs through him.",
+      "good": "Above 35% indicates the offence's primary vertical threat.",
+      "status": "ready"
+    },
+    {
+      "slug": "wopr",
+      "term": "WOPR",
+      "definition": "Weighted opportunity rating, combining target share and air yards share into one measure of receiving opportunity.",
+      "good": "Displayed on this site as its two components rather than only the composite, because the same WOPR can describe a possession role and a vertical one.",
+      "status": "ready"
+    },
+    {
+      "slug": "ybc-yac",
+      "term": "YBC / YAC",
+      "definition": "Rushing yards gained before contact versus after it, separating the blocking environment from the runner.",
+      "good": "A high YBC with a low YAC points at the offensive line; the reverse points at the back.",
+      "status": "ready"
+    },
+    {
+      "slug": "implied-total",
+      "term": "Implied team total",
+      "definition": "The points a team is expected to score, derived from the game total and the spread.",
+      "good": "Above 26 is a strong scoring environment; below 18 suppresses every skill position in the game.",
+      "status": "ready"
+    }
+  ]
+}

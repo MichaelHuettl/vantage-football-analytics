@@ -1,26 +1,187 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================
+   Vantage design tokens — §7
+   This block is the single source of truth for colour and type.
+   No component may introduce a hex value. If you need a new
+   colour, add it here first.
+   ============================================================ */
+
+@theme {
+  /* --- Brand. Fixed by the logo, do not alter. --- */
+  --color-vantage-black: #0f1318;
+  --color-vantage-panel: #101318;
+  --color-vantage-amber: #ef9f27;
+  --color-vantage-white: #ffffff;
+
+  /* --- Neutral ramp, derived from the brand black's hue. --- */
+  --color-ink-950: #0f1318;
+  --color-ink-900: #171c22;
+  --color-ink-800: #232a32;
+  --color-ink-700: #333c46;
+  --color-ink-600: #4a555f;
+  --color-ink-500: #66727d;
+  --color-ink-400: #8a959e;
+  --color-ink-300: #b0b9c0;
+  --color-ink-200: #d2d8dc;
+  --color-ink-100: #e8ecef;
+  --color-ink-50: #f5f7f8;
+
+  /* --- Position encoding.
+     Categorical, not decorative. Deliberately excludes anything
+     in amber's hue range so the accent keeps its meaning (§11). --- */
+  --color-pos-qb: #3e6d9c;
+  --color-pos-rb: #2f8a5b;
+  --color-pos-wr: #7a5aa8;
+  --color-pos-te: #1f7a80;
+  --color-pos-k: #6b7280;
+  --color-pos-dst: #8c5a3c;
+
+  /* --- Status. Injury designations and data staleness. --- */
+  --color-status-out: #b4232a;
+  --color-status-doubtful: #c2570f;
+  --color-status-questionable: #8a6d1f;
+  --color-status-full: #2f7a4f;
+
+  /* --- Type. §7: Anton display, Barlow Condensed for dense UI,
+     Barlow for anything read in sentences. --- */
+  --font-display: var(--font-anton), ui-sans-serif, system-ui, sans-serif;
+  --font-condensed: var(--font-barlow-condensed), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+
+  --text-eyebrow: 0.6875rem;
+  --text-eyebrow--line-height: 1rem;
+  --text-eyebrow--letter-spacing: 0.12em;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ============================================================
+   Semantic surface tokens.
+   Components reference these, never the ramp directly, so a
+   dark mode is a matter of redefining ~10 values rather than
+   auditing every component.
+   ============================================================ */
+
+:root {
+  --surface-page: var(--color-vantage-white);
+  --surface-raised: var(--color-vantage-white);
+  --surface-sunken: var(--color-ink-50);
+  --surface-inverse: var(--color-vantage-panel);
+
+  --text-primary: var(--color-vantage-black);
+  --text-secondary: var(--color-ink-600);
+  --text-muted: var(--color-ink-500);
+  --text-on-inverse: var(--color-vantage-white);
+  --text-on-inverse-muted: var(--color-ink-400);
+
+  --border-subtle: var(--color-ink-200);
+  --border-strong: var(--color-ink-300);
+  --border-inverse: var(--color-ink-800);
+
+  --accent: var(--color-vantage-amber);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --surface-page: var(--color-vantage-black);
+    --surface-raised: var(--color-vantage-panel);
+    --surface-sunken: #0a0d11;
+    --surface-inverse: var(--color-ink-900);
+
+    --text-primary: var(--color-ink-50);
+    --text-secondary: var(--color-ink-300);
+    --text-muted: var(--color-ink-400);
+
+    --border-subtle: var(--color-ink-800);
+    --border-strong: var(--color-ink-700);
+    --border-inverse: var(--color-ink-700);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+:root[data-theme="dark"] {
+  --surface-page: var(--color-vantage-black);
+  --surface-raised: var(--color-vantage-panel);
+  --surface-sunken: #0a0d11;
+  --surface-inverse: var(--color-ink-900);
+
+  --text-primary: var(--color-ink-50);
+  --text-secondary: var(--color-ink-300);
+  --text-muted: var(--color-ink-400);
+
+  --border-subtle: var(--color-ink-800);
+  --border-strong: var(--color-ink-700);
+  --border-inverse: var(--color-ink-700);
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--surface-page);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* §7 quality floor: focus must always be visible. */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* §7 quality floor: respect reduced motion. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Every figure in a column of figures. §7 is explicit about this. */
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .eyebrow {
+    font-family: var(--font-condensed);
+    font-size: var(--text-eyebrow);
+    line-height: var(--text-eyebrow--line-height);
+    letter-spacing: var(--text-eyebrow--letter-spacing);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  /* Skip link, revealed on focus only. */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    left: 0.5rem;
+    top: 0.5rem;
+padding: 0.5rem 0.75rem;
+    background: var(--surface-inverse);
+    color: var(--text-on-inverse);
+  }
 }

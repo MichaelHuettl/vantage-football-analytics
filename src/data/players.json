@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-11",
+  "note": "PLACEHOLDER SAMPLE. Enough rows to exercise the components. Replace wholesale with your own roster. `id` is the join key used by rankings, injuries, news, and film — keep it stable once published, because it is also the player page URL.",
+  "data": [
+    { "id": "bijan-robinson", "name": "Bijan Robinson", "position": "RB", "team": "ATL", "age": 24, "draft": "2023 R1P8", "status": "active" },
+    { "id": "jahmyr-gibbs", "name": "Jahmyr Gibbs", "position": "RB", "team": "DET", "age": 24, "draft": "2023 R1P12", "status": "active" },
+    { "id": "saquon-barkley", "name": "Saquon Barkley", "position": "RB", "team": "PHI", "age": 29, "draft": "2018 R1P2", "status": "active" },
+    { "id": "devon-achane", "name": "De'Von Achane", "position": "RB", "team": "MIA", "age": 24, "draft": "2023 R3P84", "status": "active" },
+    { "id": "ashton-jeanty", "name": "Ashton Jeanty", "position": "RB", "team": "LV", "age": 22, "draft": "2025 R1P6", "status": "active" },
+    { "id": "christian-mccaffrey", "name": "Christian McCaffrey", "position": "RB", "team": "SF", "age": 30, "draft": "2017 R1P8", "status": "active" },
+    { "id": "jamarr-chase", "name": "Ja'Marr Chase", "position": "WR", "team": "CIN", "age": 26, "draft": "2021 R1P5", "status": "active" },
+    { "id": "justin-jefferson", "name": "Justin Jefferson", "position": "WR", "team": "MIN", "age": 27, "draft": "2020 R1P22", "status": "active" },
+    { "id": "ceedee-lamb", "name": "CeeDee Lamb", "position": "WR", "team": "DAL", "age": 27, "draft": "2020 R1P17", "status": "active" },
+    { "id": "puka-nacua", "name": "Puka Nacua", "position": "WR", "team": "LAR", "age": 25, "draft": "2023 R5P177", "status": "active" },
+    { "id": "brock-bowers", "name": "Brock Bowers", "position": "TE", "team": "LV", "age": 23, "draft": "2024 R1P13", "status": "active" },
+    { "id": "trey-mcbride", "name": "Trey McBride", "position": "TE", "team": "ARI", "age": 26, "draft": "2022 R2P55", "status": "active" },
+    { "id": "josh-allen", "name": "Josh Allen", "position": "QB", "team": "BUF", "age": 30, "draft": "2018 R1P7", "status": "active" },
+    { "id": "jayden-daniels", "name": "Jayden Daniels", "position": "QB", "team": "WAS", "age": 25, "draft": "2024 R1P2", "status": "active" },
+    { "id": "lamar-jackson", "name": "Lamar Jackson", "position": "QB", "team": "BAL", "age": 29, "draft": "2018 R1P32", "status": "active" }
+  ]
+}

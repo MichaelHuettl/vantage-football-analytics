@@ -1,0 +1,55 @@
+import { getTeam, needsEdge, readableOn } from "@/lib/teams";
+
+/**
+ * A team, rendered as its colour pair plus abbreviation. §2 forbids logos,
+ * wordmarks, and the shield; this is the replacement, and it sidesteps the
+ * licensing question entirely.
+ *
+ * Text colour is computed from the primary's luminance rather than hardcoded,
+ * because the league contains both PIT gold and LV black.
+ */
+export function TeamChip({
+  abbr,
+  size = "md",
+}: {
+  abbr: string;
+  size?: "sm" | "md";
+}) {
+  const team = getTeam(abbr);
+  if (!team) {
+    return (
+      <span
+        className="inline-flex items-center rounded px-1.5 font-semibold uppercase"
+        style={{
+          fontFamily: "var(--font-condensed)",
+          background: "var(--surface-sunken)",
+          color: "var(--text-muted)",
+        }}
+      >
+        {abbr}
+      </span>
+    );
+  }
+
+  const dims =
+    size === "sm"
+      ? "text-[0.625rem] h-4 min-w-[1.75rem] px-1"
+      : "text-xs h-5 min-w-[2.25rem] px-1.5";
+
+  return (
+    <span
+      className={`inline-flex items-center justify-center rounded font-bold uppercase tracking-wide tnum ${dims}`}
+      style={{
+        fontFamily: "var(--font-condensed)",
+        background: team.primary,
+        color: readableOn(team.primary),
+        boxShadow: needsEdge(team.primary)
+          ? `inset 0 0 0 1px var(--border-strong)`
+          : `inset 0 -2px 0 0 ${team.secondary}`,
+      }}
+      title={`${team.city} ${team.nickname}`}
+    >
+      {team.abbr}
+    </span>
+  );
+}
