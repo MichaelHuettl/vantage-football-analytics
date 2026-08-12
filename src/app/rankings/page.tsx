@@ -45,9 +45,13 @@ export default async function RankingsPage({
 
   return (
     <>
+      {/* A coach carried off the field is the picture of a conclusion —
+          which is what a ranking is, and what this page argues you should
+          be able to check rather than accept. */}
       <SectionHero
-        image="/img/bg/lambeau.jpg"
-        objectPosition="center 55%"
+        image="/img/bg/parcells.jpg"
+        alt=""
+        objectPosition="center 22%"
         eyebrow="Draft and in-season"
         title="Rankings"
         lede="Ordered by tier, not by decimal places. Expand any player to see the chart the ranking rests on."

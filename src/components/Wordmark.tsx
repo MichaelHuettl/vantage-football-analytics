@@ -18,7 +18,10 @@ export function Wordmark({
   const lg = size === "lg";
 
   return (
-    <div className={`flex flex-col items-start ${className}`}>
+    /* Centred as a unit — the goalpost sits over the midpoint of the name,
+       as it does in the source lockup. `w-fit` keeps the block hugging its
+       content so it can still be left-aligned on the page. */
+    <div className={`flex w-fit flex-col items-center ${className}`}>
       <Goalpost
         className={lg ? "h-20 w-20" : "h-12 w-12"}
         title="Vantage Football Analytics"
@@ -31,11 +34,15 @@ export function Wordmark({
       >
         Vantage
       </p>
+      {/* Tracked-out type adds trailing space after the final letter, which
+          reads as a leftward shift against a centred block. The negative
+          margin cancels exactly that. */}
       <p
         className={`mt-2 uppercase ${lg ? "text-sm" : "text-[0.625rem]"}`}
         style={{
           fontFamily: "var(--font-condensed)",
           letterSpacing: lg ? "0.42em" : "0.3em",
+          marginRight: lg ? "-0.42em" : "-0.3em",
           fontWeight: 500,
           opacity: 0.75,
         }}
