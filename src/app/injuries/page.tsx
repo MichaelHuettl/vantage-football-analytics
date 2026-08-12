@@ -38,8 +38,8 @@ export default async function InjuriesPage({
   return (
     <>
       <SectionHero
-        image="/img/bg/hex.jpg"
-        objectPosition="center"
+        image="/img/bg/recovery.jpg"
+        objectPosition="center 38%"
         eyebrow="Status and trend"
         title="Injury report"
         lede="Practice participation across the whole week. The Friday designation alone is not the signal — the movement from Wednesday to Friday is."
