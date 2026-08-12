@@ -51,7 +51,8 @@ export default async function RankingsPage({
       <SectionHero
         image="/img/bg/parcells.jpg"
         alt=""
-        objectPosition="center 22%"
+        size="tall"
+        objectPosition="center 30%"
         eyebrow="Draft and in-season"
         title="Rankings"
         lede="Ordered by tier, not by decimal places. Expand any player to see the chart the ranking rests on."

@@ -39,6 +39,7 @@ export default function FilmPage() {
     <>
       <SectionHero
         image="/img/bg/lombardi.jpg"
+        size="tall"
         objectPosition="center 40%"
         eyebrow="Concepts and diagrams"
         title="Film room"
