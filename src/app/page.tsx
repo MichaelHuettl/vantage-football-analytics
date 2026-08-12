@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/PageHeader";
-import { FramedPhoto } from "@/components/FramedPhoto";
 import { Wordmark } from "@/components/Wordmark";
 import { getRankingList } from "@/lib/content";
 
@@ -253,58 +252,56 @@ export default function Home() {
       <section
         id="method"
         className="relative isolate overflow-hidden scroll-mt-20"
-        style={{ background: "var(--color-vantage-panel)" }}
+        style={{ background: "var(--color-vantage-black)" }}
       >
-        <div className="absolute inset-0 -z-10 yardlines-inverse opacity-15" />
+        <Image
+          src="/img/bg/whiteboard.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center 45%" }}
+          className="-z-20"
+        />
+        <div className="absolute inset-0 -z-10 scrim-band" />
+        <div className="absolute inset-0 -z-10 grain" />
 
-        <Container className="relative py-20 sm:py-24">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
-            <div>
-              <p className="eyebrow flex items-center gap-2.5">
-                <span
-                  aria-hidden="true"
-                  className="inline-block h-2.5 w-2.5"
-                  style={{ background: "var(--color-vantage-amber)" }}
-                />
-                <span style={{ color: "var(--color-ink-200)" }}>The method</span>
-              </p>
-              <h2
-                className="mt-5 text-4xl sm:text-6xl uppercase tracking-wide leading-[0.9]"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  color: "var(--color-vantage-white)",
-                }}
-              >
-                You should be able to audit the argument.
-              </h2>
-              <p
-                className="mt-6 max-w-xl text-lg"
-                style={{ color: "var(--color-ink-300)" }}
-              >
-                Every metric on this site resolves to a one-sentence definition
-                and a statement of what a good value looks like. If a number
-                appears on a chart and not in the glossary, that is a bug.
-              </p>
-              <Link
-                href="/glossary"
-                className="mt-8 inline-block rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider"
-                style={{
-                  fontFamily: "var(--font-condensed)",
-                  background: "var(--color-vantage-amber)",
-                  color: "var(--color-vantage-black)",
-                }}
-              >
-                Read the glossary
-              </Link>
-            </div>
-
-            <FramedPhoto
-              src="/img/bg/whiteboard.jpg"
-              alt="Bill Walsh diagramming a play at a whiteboard, routes drawn in red and coverage in blue."
-              caption="Bill Walsh at the board. The argument, before the conclusion."
-              ratio="884 / 468"
+        <Container className="relative py-24 sm:py-32">
+          <p className="eyebrow flex items-center gap-2.5">
+            <span
+              aria-hidden="true"
+              className="inline-block h-2.5 w-2.5"
+              style={{ background: "var(--color-vantage-amber)" }}
             />
-          </div>
+            <span style={{ color: "var(--color-ink-200)" }}>The method</span>
+          </p>
+          <h2
+            className="mt-5 max-w-3xl text-4xl sm:text-6xl uppercase tracking-wide leading-[0.9]"
+            style={{
+              fontFamily: "var(--font-display)",
+              color: "var(--color-vantage-white)",
+            }}
+          >
+            You should be able to audit the argument.
+          </h2>
+          <p
+            className="mt-6 max-w-xl text-lg"
+            style={{ color: "var(--color-ink-300)" }}
+          >
+            Every metric on this site resolves to a one-sentence definition and
+            a statement of what a good value looks like. If a number appears on
+            a chart and not in the glossary, that is a bug.
+          </p>
+          <Link
+            href="/glossary"
+            className="mt-8 inline-block rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider"
+            style={{
+              fontFamily: "var(--font-condensed)",
+              background: "var(--color-vantage-amber)",
+              color: "var(--color-vantage-black)",
+            }}
+          >
+            Read the glossary
+          </Link>
         </Container>
       </section>
     </>

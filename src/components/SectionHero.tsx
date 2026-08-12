@@ -51,6 +51,7 @@ export function SectionHero({
       <div className={`absolute inset-0 -z-10 ${full ? "scrim" : "scrim-compact"}`} />
       {/* Field rhythm, barely there — it reads as texture, not stripes. */}
       <div className="absolute inset-0 -z-10 yardlines-inverse opacity-25" />
+      <div className="absolute inset-0 -z-10 grain" />
 
       <div className="relative mx-auto w-full max-w-[1400px] px-4 sm:px-6 pb-12 pt-24">
         {eyebrow && (

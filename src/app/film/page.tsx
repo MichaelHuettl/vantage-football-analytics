@@ -4,7 +4,7 @@ import conceptsFile from "@/data/concepts.json";
 import { DataFreshness } from "@/components/DataFreshness";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayDiagram } from "@/components/PlayDiagram";
-import { FramedPhoto } from "@/components/FramedPhoto";
+import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
 import { getTeam, readableOn } from "@/lib/teams";
 import type { PlayConcept } from "@/lib/types";
@@ -37,55 +37,13 @@ export default function FilmPage() {
 
   return (
     <>
-      {/* Split rather than full-bleed: the archival frame is 680px wide and
-          would be soft stretched across a band, but it is sharp at this size,
-          and the grain reads as period rather than as compression. */}
-      <header
-        className="relative isolate overflow-hidden"
-        style={{ background: "var(--color-vantage-panel)" }}
-      >
-        <div className="absolute inset-0 -z-10 yardlines-inverse opacity-15" />
-        <Container className="relative pt-28 pb-14">
-          <div className="grid gap-10 lg:grid-cols-[1.15fr_1fr] lg:items-center">
-            <div>
-              <p className="eyebrow flex items-center gap-2.5 mb-4">
-                <span
-                  aria-hidden="true"
-                  className="inline-block h-2.5 w-2.5"
-                  style={{ background: "var(--color-vantage-amber)" }}
-                />
-                <span style={{ color: "var(--color-ink-200)" }}>
-                  Concepts and diagrams
-                </span>
-              </p>
-              <h1
-                className="text-5xl sm:text-7xl uppercase tracking-wide leading-[0.88]"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  color: "var(--color-vantage-white)",
-                }}
-              >
-                Film room
-              </h1>
-              <p
-                className="mt-6 max-w-xl text-lg"
-                style={{ color: "var(--color-ink-300)" }}
-              >
-                Route concepts drawn from coordinates rather than clipped from a
-                broadcast. Every diagram here is original work.
-              </p>
-            </div>
-
-            <FramedPhoto
-              src="/img/bg/lombardi.jpg"
-              alt="Vince Lombardi on the sideline in an overcoat and fedora, speaking with players during a cold-weather game."
-              caption="Vince Lombardi on the sideline. The concepts on this page are older than the data."
-              ratio="680 / 451"
-              priority
-            />
-          </div>
-        </Container>
-      </header>
+      <SectionHero
+        image="/img/bg/lombardi.jpg"
+        objectPosition="center 40%"
+        eyebrow="Concepts and diagrams"
+        title="Film room"
+        lede="Route concepts drawn from coordinates rather than clipped from a broadcast. Every diagram here is original work."
+      />
 
       <Container className="py-10">
         <DataFreshness updated={file.updated} label="Diagrams updated" />
