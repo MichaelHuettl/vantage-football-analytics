@@ -13,6 +13,17 @@ const POSITION_TOKEN: Record<Position, string> = {
   DST: "var(--color-pos-dst)",
 };
 
+/** Foreground for each position tile. Paired in CSS rather than computed,
+ *  because the ESPN tints are light enough that white text fails on them. */
+const POSITION_INK: Record<Position, string> = {
+  QB: "var(--color-pos-qb-ink)",
+  RB: "var(--color-pos-rb-ink)",
+  WR: "var(--color-pos-wr-ink)",
+  TE: "var(--color-pos-te-ink)",
+  K: "var(--color-pos-k-ink)",
+  DST: "var(--color-pos-dst-ink)",
+};
+
 /**
  * A defence has no headshot, and a shared position colour tells the reader
  * nothing — twenty identical brown tiles. Its own colour and abbreviation do
@@ -92,7 +103,7 @@ export function PlayerAvatar({
         fontSize: size * (label && label.length > 2 ? 0.32 : 0.4),
         fontFamily: "var(--font-condensed)",
         background,
-        color: tint ? readableOn(tint) : "#FFFFFF",
+        color: tint ? readableOn(tint) : POSITION_INK[position],
       }}
     >
       {label ?? initials(name)}
@@ -103,10 +114,11 @@ export function PlayerAvatar({
 export function PositionBadge({ position }: { position: Position }) {
   return (
     <span
-      className="inline-flex h-5 items-center rounded px-1.5 text-xs font-bold uppercase text-white"
+      className="inline-flex h-5 items-center rounded px-1.5 text-xs font-bold uppercase"
       style={{
         fontFamily: "var(--font-condensed)",
         background: POSITION_TOKEN[position],
+        color: POSITION_INK[position],
       }}
     >
       {position}

@@ -61,6 +61,12 @@ export interface RankingList {
    * different order would be a different ranking.
    */
   format: string;
+  /**
+   * What point in the season the order is for. Draft ranks and in-season ranks
+   * answer different questions, and a list that does not say which it is will
+   * be read as whichever the reader assumes.
+   */
+  scope: string;
   /** Shown in DataFreshness. Hand-set, because nothing computes it. */
   updated: string;
   /** Where the order came from, e.g. the workbook block it was taken from. */

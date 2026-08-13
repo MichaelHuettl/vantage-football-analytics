@@ -17,7 +17,7 @@ import type { Position } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Rankings",
   description:
-    "PPR rankings, 1-20 by position, with team and 2026 bye week.",
+    "2026 draft rankings, PPR, 1-20 by position, with team and bye week.",
 };
 
 const POSITION_LABEL: Record<Position, string> = {
@@ -54,9 +54,9 @@ export default async function RankingsPage({
         image="/img/bg/parcells.jpg"
         alt=""
         objectPosition="center 30%"
-        eyebrow="Draft and in-season"
+        eyebrow="Draft board"
         title="Rankings"
-        lede="PPR scoring, twenty deep at every position. Team and 2026 bye week alongside each name."
+        lede="Draft rankings for 2026, PPR scoring, twenty deep at every position. Team and bye week alongside each name."
       />
 
       <div
@@ -80,8 +80,20 @@ export default async function RankingsPage({
             >
               {POSITION_LABEL[position]}
             </h2>
-            {/* Neutral, not amber: the format is a caveat on how to read the
-                list, not the focal value on the page (§7). */}
+            {/* Two qualifiers, both neutral rather than amber: they say how to
+                read the list, they are not the focal value on it (§7). Scope
+                is filled because mistaking draft ranks for in-season ranks is
+                the costlier error. */}
+            <span
+              className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
+              style={{
+                fontFamily: "var(--font-condensed)",
+                background: "var(--text-primary)",
+                color: "var(--surface-page)",
+              }}
+            >
+              {list.scope} rankings
+            </span>
             <span
               className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
               style={{
@@ -95,12 +107,6 @@ export default async function RankingsPage({
           </div>
           <DataFreshness updated={list.updated} label="Rankings updated" staleAfterDays={21} />
         </div>
-
-        {list.source && (
-          <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
-            {list.source}
-          </p>
-        )}
 
         {problems.length > 0 && <ContentProblems problems={problems} />}
 
@@ -174,7 +180,9 @@ export default async function RankingsPage({
         )}
 
         <p className="mt-4 text-xs" style={{ color: "var(--text-muted)" }}>
-          {list.format} scoring. Bye weeks are for the {BYE_SEASON} season.
+          {list.scope} rankings, {list.format} scoring. These are pre-season
+          draft ranks and are not updated week to week — in-season order will
+          diverge from this. Bye weeks are for the {BYE_SEASON} season.
         </p>
       </Container>
     </>

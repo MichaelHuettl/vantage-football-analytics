@@ -27,15 +27,25 @@
   --color-ink-100: #e8ecef;
   --color-ink-50: #f5f7f8;
 
-  /* --- Position encoding.
-     Categorical, not decorative. Deliberately excludes anything
-     in amber's hue range so the accent keeps its meaning (§11). --- */
-  --color-pos-qb: #3e6d9c;
-  --color-pos-rb: #2f8a5b;
-  --color-pos-wr: #7a5aa8;
-  --color-pos-te: #1f7a80;
-  --color-pos-k: #6b7280;
-  --color-pos-dst: #8c5a3c;
+  /* --- Position encoding, following the ESPN Fantasy scheme.
+     Each colour is paired with its own ink token rather than assuming
+     white: these are light tints, and white text on them would fail
+     contrast. Defining both here keeps this block the single source of
+     truth (§7) instead of duplicating hex values into TypeScript to
+     compute a readable foreground. --- */
+  --color-pos-qb: #ef7b85; /* light pink-red */
+  --color-pos-rb: #f5853c; /* orange */
+  --color-pos-wr: #5bb3e4; /* light blue */
+  --color-pos-te: #3fb8ae; /* teal */
+  --color-pos-k: #6b7280; /* unchanged */
+  --color-pos-dst: #8c5a3c; /* unchanged */
+
+  --color-pos-qb-ink: #2a0f13;
+  --color-pos-rb-ink: #2b1405;
+  --color-pos-wr-ink: #06222f;
+  --color-pos-te-ink: #04231f;
+  --color-pos-k-ink: #ffffff;
+  --color-pos-dst-ink: #ffffff;
 
   /* --- Status. Injury designations and data staleness. --- */
   --color-status-out: #b4232a;
