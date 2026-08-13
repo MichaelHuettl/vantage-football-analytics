@@ -54,6 +54,13 @@ export interface RankingEntry {
 export interface RankingList {
   schema_version: number;
   position: Position;
+  /**
+   * Scoring format the order assumes. There is one list per position rather
+   * than one per format, so this is a statement of what the ranking means,
+   * not a switch — and it has to be on screen, because the same names in a
+   * different order would be a different ranking.
+   */
+  format: string;
   /** Shown in DataFreshness. Hand-set, because nothing computes it. */
   updated: string;
   /** Where the order came from, e.g. the workbook block it was taken from. */

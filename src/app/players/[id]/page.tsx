@@ -83,7 +83,7 @@ export default async function PlayerPage({
 
             {rank !== undefined && (
               <div className="ml-auto text-right">
-                <p className="eyebrow">Rank</p>
+                <p className="eyebrow">{list.format} rank</p>
                 <p
                   className="text-5xl tnum leading-none"
                   style={{

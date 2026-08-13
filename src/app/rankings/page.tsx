@@ -17,7 +17,7 @@ import type { Position } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Rankings",
   description:
-    "Positional rankings 1-20 with team and 2026 bye week.",
+    "PPR rankings, 1-20 by position, with team and 2026 bye week.",
 };
 
 const POSITION_LABEL: Record<Position, string> = {
@@ -56,7 +56,7 @@ export default async function RankingsPage({
         objectPosition="center 30%"
         eyebrow="Draft and in-season"
         title="Rankings"
-        lede="Ordered top to bottom by position. Team and bye week alongside each name."
+        lede="PPR scoring, twenty deep at every position. Team and 2026 bye week alongside each name."
       />
 
       <div
@@ -73,12 +73,26 @@ export default async function RankingsPage({
 
       <Container className="py-10">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-          <h2
-            className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            {POSITION_LABEL[position]}
-          </h2>
+          <div className="flex flex-wrap items-center gap-3">
+            <h2
+              className="text-3xl uppercase tracking-wide"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              {POSITION_LABEL[position]}
+            </h2>
+            {/* Neutral, not amber: the format is a caveat on how to read the
+                list, not the focal value on the page (§7). */}
+            <span
+              className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
+              style={{
+                fontFamily: "var(--font-condensed)",
+                color: "var(--text-secondary)",
+                boxShadow: "inset 0 0 0 1px var(--border-strong)",
+              }}
+            >
+              {list.format} scoring
+            </span>
+          </div>
           <DataFreshness updated={list.updated} label="Rankings updated" staleAfterDays={21} />
         </div>
 
@@ -160,7 +174,7 @@ export default async function RankingsPage({
         )}
 
         <p className="mt-4 text-xs" style={{ color: "var(--text-muted)" }}>
-          Bye weeks are for the {BYE_SEASON} season.
+          {list.format} scoring. Bye weeks are for the {BYE_SEASON} season.
         </p>
       </Container>
     </>

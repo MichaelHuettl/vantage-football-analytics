@@ -1,7 +1,7 @@
 {
  "schema_version": 3,
  "generated_at": "2026-08-12",
- "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams come from the workbook's target-share data where it carries them, and from verified lookups otherwise. Two kickers have no team confirmed and carry none rather than a guess.",
+ "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams come from the workbook's target-share data where it carries them, and from verified lookups otherwise.",
  "data": [
   {
    "id": "josh-allen",
@@ -674,7 +674,8 @@
   {
    "id": "spencer-shrader",
    "name": "Spencer Shrader",
-   "position": "K"
+   "position": "K",
+   "team": "IND"
   },
   {
    "id": "cairo-santos",
@@ -703,7 +704,8 @@
   {
    "id": "joey-slye",
    "name": "Joey Slye",
-   "position": "K"
+   "position": "K",
+   "team": "TEN"
   },
   {
    "id": "daniel-carlson",
