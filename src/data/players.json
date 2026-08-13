@@ -1,5 +1,5 @@
 {
- "schema_version": 3,
+ "schema_version": 4,
  "generated_at": "2026-08-12",
  "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams come from the workbook's target-share data where it carries them, and from verified lookups otherwise.",
  "data": [
@@ -8,612 +8,678 @@
    "name": "Josh Allen",
    "position": "QB",
    "team": "BUF",
-   "photo": "/img/players/josh-allen.jpg"
+   "photo": "/img/headshots/josh-allen.png"
   },
   {
    "id": "lamar-jackson",
    "name": "Lamar Jackson",
    "position": "QB",
    "team": "BAL",
-   "photo": "/img/players/lamar-jackson.jpg"
+   "photo": "/img/headshots/lamar-jackson.png"
   },
   {
    "id": "drake-maye",
    "name": "Drake Maye",
    "position": "QB",
-   "team": "NE"
+   "team": "NE",
+   "photo": "/img/headshots/drake-maye.png"
   },
   {
    "id": "jayden-daniels",
    "name": "Jayden Daniels",
    "position": "QB",
-   "team": "WAS"
+   "team": "WAS",
+   "photo": "/img/headshots/jayden-daniels.png"
   },
   {
    "id": "jalen-hurts",
    "name": "Jalen Hurts",
    "position": "QB",
-   "team": "PHI"
+   "team": "PHI",
+   "photo": "/img/headshots/jalen-hurts.png"
   },
   {
    "id": "joe-burrow",
    "name": "Joe Burrow",
    "position": "QB",
-   "team": "CIN"
+   "team": "CIN",
+   "photo": "/img/headshots/joe-burrow.png"
   },
   {
    "id": "caleb-williams",
    "name": "Caleb Williams",
    "position": "QB",
-   "team": "CHI"
+   "team": "CHI",
+   "photo": "/img/headshots/caleb-williams.png"
   },
   {
    "id": "trevor-lawrence",
    "name": "Trevor Lawrence",
    "position": "QB",
    "team": "JAX",
-   "photo": "/img/players/trevor-lawrence.jpg"
+   "photo": "/img/headshots/trevor-lawrence.png"
   },
   {
    "id": "justin-herbert",
    "name": "Justin Herbert",
    "position": "QB",
-   "team": "LAC"
+   "team": "LAC",
+   "photo": "/img/headshots/justin-herbert.png"
   },
   {
    "id": "dak-prescott",
    "name": "Dak Prescott",
    "position": "QB",
-   "team": "DAL"
+   "team": "DAL",
+   "photo": "/img/headshots/dak-prescott.png"
   },
   {
    "id": "jaxson-dart",
    "name": "Jaxson Dart",
    "position": "QB",
-   "team": "NYG"
+   "team": "NYG",
+   "photo": "/img/headshots/jaxson-dart.png"
   },
   {
    "id": "bo-nix",
    "name": "Bo Nix",
    "position": "QB",
-   "team": "DEN"
+   "team": "DEN",
+   "photo": "/img/headshots/bo-nix.png"
   },
   {
    "id": "patrick-mahomes",
    "name": "Patrick Mahomes",
    "position": "QB",
-   "team": "KC"
+   "team": "KC",
+   "photo": "/img/headshots/patrick-mahomes.png"
   },
   {
    "id": "matthew-stafford",
    "name": "Matthew Stafford",
    "position": "QB",
-   "team": "LAR"
+   "team": "LAR",
+   "photo": "/img/headshots/matthew-stafford.png"
   },
   {
    "id": "sam-darnold",
    "name": "Sam Darnold",
    "position": "QB",
-   "team": "SEA"
+   "team": "SEA",
+   "photo": "/img/headshots/sam-darnold.png"
   },
   {
    "id": "tyler-shough",
    "name": "Tyler Shough",
    "position": "QB",
-   "team": "NO"
+   "team": "NO",
+   "photo": "/img/headshots/tyler-shough.png"
   },
   {
    "id": "baker-mayfield",
    "name": "Baker Mayfield",
    "position": "QB",
-   "team": "TB"
+   "team": "TB",
+   "photo": "/img/headshots/baker-mayfield.png"
   },
   {
    "id": "kyler-murray",
    "name": "Kyler Murray",
    "position": "QB",
-   "team": "ARI"
+   "team": "ARI",
+   "photo": "/img/headshots/kyler-murray.png"
   },
   {
    "id": "jared-goff",
    "name": "Jared Goff",
    "position": "QB",
-   "team": "DET"
+   "team": "DET",
+   "photo": "/img/headshots/jared-goff.png"
   },
   {
    "id": "brock-purdy",
    "name": "Brock Purdy",
    "position": "QB",
-   "team": "SF"
+   "team": "SF",
+   "photo": "/img/headshots/brock-purdy.png"
   },
   {
    "id": "jahmyr-gibbs",
    "name": "Jahmyr Gibbs",
    "position": "RB",
    "team": "DET",
-   "photo": "/img/players/jahmyr-gibbs.jpg"
+   "photo": "/img/headshots/jahmyr-gibbs.png"
   },
   {
    "id": "bijan-robinson",
    "name": "Bijan Robinson",
    "position": "RB",
    "team": "ATL",
-   "photo": "/img/players/bijan-robinson.jpg"
+   "photo": "/img/headshots/bijan-robinson.png"
   },
   {
    "id": "christian-mccaffrey",
    "name": "Christian McCaffrey",
    "position": "RB",
    "team": "SF",
-   "photo": "/img/players/christian-mccaffrey.jpg"
+   "photo": "/img/headshots/christian-mccaffrey.png"
   },
   {
    "id": "jonathan-taylor",
    "name": "Jonathan Taylor",
    "position": "RB",
    "team": "IND",
-   "photo": "/img/players/jonathan-taylor.jpg"
+   "photo": "/img/headshots/jonathan-taylor.png"
   },
   {
    "id": "ashton-jeanty",
    "name": "Ashton Jeanty",
    "position": "RB",
-   "team": "LV"
+   "team": "LV",
+   "photo": "/img/headshots/ashton-jeanty.png"
   },
   {
    "id": "saquon-barkley",
    "name": "Saquon Barkley",
    "position": "RB",
-   "team": "PHI"
+   "team": "PHI",
+   "photo": "/img/headshots/saquon-barkley.png"
   },
   {
    "id": "james-cook",
    "name": "James Cook",
    "position": "RB",
-   "team": "BUF"
+   "team": "BUF",
+   "photo": "/img/headshots/james-cook.png"
   },
   {
    "id": "chase-brown",
    "name": "Chase Brown",
    "position": "RB",
-   "team": "CIN"
+   "team": "CIN",
+   "photo": "/img/headshots/chase-brown.png"
   },
   {
    "id": "omarion-hampton",
    "name": "Omarion Hampton",
    "position": "RB",
-   "team": "LAC"
+   "team": "LAC",
+   "photo": "/img/headshots/omarion-hampton.png"
   },
   {
    "id": "devon-achane",
    "name": "De'Von Achane",
    "position": "RB",
-   "team": "MIA"
+   "team": "MIA",
+   "photo": "/img/headshots/devon-achane.png"
   },
   {
    "id": "kenneth-walker",
    "name": "Kenneth Walker",
    "position": "RB",
-   "team": "SEA"
+   "team": "SEA",
+   "photo": "/img/headshots/kenneth-walker.png"
   },
   {
    "id": "jeremiyah-love",
    "name": "Jeremiyah Love",
    "position": "RB",
-   "team": "ARI"
+   "team": "ARI",
+   "photo": "/img/headshots/jeremiyah-love.png"
   },
   {
    "id": "derrick-henry",
    "name": "Derrick Henry",
    "position": "RB",
-   "team": "BAL"
+   "team": "BAL",
+   "photo": "/img/headshots/derrick-henry.png"
   },
   {
    "id": "cam-skattebo",
    "name": "Cam Skattebo",
    "position": "RB",
-   "team": "NYG"
+   "team": "NYG",
+   "photo": "/img/headshots/cam-skattebo.png"
   },
   {
    "id": "javonte-williams",
    "name": "Javonte Williams",
    "position": "RB",
-   "team": "DAL"
+   "team": "DAL",
+   "photo": "/img/headshots/javonte-williams.png"
   },
   {
    "id": "kyren-williams",
    "name": "Kyren Williams",
    "position": "RB",
-   "team": "LAR"
+   "team": "LAR",
+   "photo": "/img/headshots/kyren-williams.png"
   },
   {
    "id": "breece-hall",
    "name": "Breece Hall",
    "position": "RB",
-   "team": "NYJ"
+   "team": "NYJ",
+   "photo": "/img/headshots/breece-hall.png"
   },
   {
    "id": "josh-jacobs",
    "name": "Josh Jacobs",
    "position": "RB",
-   "team": "GB"
+   "team": "GB",
+   "photo": "/img/headshots/josh-jacobs.png"
   },
   {
    "id": "travis-etienne",
    "name": "Travis Etienne",
    "position": "RB",
-   "team": "JAX"
+   "team": "JAX",
+   "photo": "/img/headshots/travis-etienne.png"
   },
   {
    "id": "dandre-swift",
    "name": "D'Andre Swift",
    "position": "RB",
-   "team": "CHI"
+   "team": "CHI",
+   "photo": "/img/headshots/dandre-swift.png"
   },
   {
    "id": "jamarr-chase",
    "name": "Ja'Marr Chase",
    "position": "WR",
    "team": "CIN",
-   "photo": "/img/players/jamarr-chase.jpg"
+   "photo": "/img/headshots/jamarr-chase.png"
   },
   {
    "id": "puka-nacua",
    "name": "Puka Nacua",
    "position": "WR",
    "team": "LAR",
-   "photo": "/img/players/puka-nacua.jpg"
+   "photo": "/img/headshots/puka-nacua.png"
   },
   {
    "id": "amon-ra-st-brown",
    "name": "Amon-Ra St. Brown",
    "position": "WR",
-   "team": "DET"
+   "team": "DET",
+   "photo": "/img/headshots/amon-ra-st-brown.png"
   },
   {
    "id": "jaxon-smith-njigba",
    "name": "Jaxon Smith-Njigba",
    "position": "WR",
    "team": "SEA",
-   "photo": "/img/players/jaxon-smith-njigba.jpg"
+   "photo": "/img/headshots/jaxon-smith-njigba.png"
   },
   {
    "id": "justin-jefferson",
    "name": "Justin Jefferson",
    "position": "WR",
    "team": "MIN",
-   "photo": "/img/players/justin-jefferson.jpg"
+   "photo": "/img/headshots/justin-jefferson.png"
   },
   {
    "id": "ceedee-lamb",
    "name": "CeeDee Lamb",
    "position": "WR",
-   "team": "DAL"
+   "team": "DAL",
+   "photo": "/img/headshots/ceedee-lamb.png"
   },
   {
    "id": "drake-london",
    "name": "Drake London",
    "position": "WR",
-   "team": "ATL"
+   "team": "ATL",
+   "photo": "/img/headshots/drake-london.png"
   },
   {
    "id": "nico-collins",
    "name": "Nico Collins",
    "position": "WR",
-   "team": "HOU"
+   "team": "HOU",
+   "photo": "/img/headshots/nico-collins.png"
   },
   {
    "id": "chris-olave",
    "name": "Chris Olave",
    "position": "WR",
-   "team": "NO"
+   "team": "NO",
+   "photo": "/img/headshots/chris-olave.png"
   },
   {
    "id": "rashee-rice",
    "name": "Rashee Rice",
    "position": "WR",
-   "team": "KC"
+   "team": "KC",
+   "photo": "/img/headshots/rashee-rice.png"
   },
   {
    "id": "devonta-smith",
    "name": "DeVonta Smith",
    "position": "WR",
-   "team": "PHI"
+   "team": "PHI",
+   "photo": "/img/headshots/devonta-smith.png"
   },
   {
    "id": "george-pickens",
    "name": "George Pickens",
    "position": "WR",
-   "team": "DAL"
+   "team": "DAL",
+   "photo": "/img/headshots/george-pickens.png"
   },
   {
    "id": "aj-brown",
    "name": "AJ Brown",
    "position": "WR",
-   "team": "PHI"
+   "team": "PHI",
+   "photo": "/img/headshots/aj-brown.png"
   },
   {
    "id": "zay-flowers",
    "name": "Zay Flowers",
    "position": "WR",
-   "team": "BAL"
+   "team": "BAL",
+   "photo": "/img/headshots/zay-flowers.png"
   },
   {
    "id": "emeka-egbuka",
    "name": "Emeka Egbuka",
    "position": "WR",
-   "team": "TB"
+   "team": "TB",
+   "photo": "/img/headshots/emeka-egbuka.png"
   },
   {
    "id": "tetairoa-mcmillan",
    "name": "Tetairoa McMillan",
    "position": "WR",
-   "team": "CAR"
+   "team": "CAR",
+   "photo": "/img/headshots/tetairoa-mcmillan.png"
   },
   {
    "id": "jaylen-waddle",
    "name": "Jaylen Waddle",
    "position": "WR",
-   "team": "MIA"
+   "team": "MIA",
+   "photo": "/img/headshots/jaylen-waddle.png"
   },
   {
    "id": "davante-adams",
    "name": "Davante Adams",
    "position": "WR",
-   "team": "LAR"
+   "team": "LAR",
+   "photo": "/img/headshots/davante-adams.png"
   },
   {
    "id": "ladd-mcconkey",
    "name": "Ladd McConkey",
    "position": "WR",
-   "team": "LAC"
+   "team": "LAC",
+   "photo": "/img/headshots/ladd-mcconkey.png"
   },
   {
    "id": "terry-mclaurin",
    "name": "Terry McLaurin",
    "position": "WR",
-   "team": "WAS"
+   "team": "WAS",
+   "photo": "/img/headshots/terry-mclaurin.png"
   },
   {
    "id": "trey-mcbride",
    "name": "Trey McBride",
    "position": "TE",
    "team": "ARI",
-   "photo": "/img/players/trey-mcbride.jpg"
+   "photo": "/img/headshots/trey-mcbride.png"
   },
   {
    "id": "brock-bowers",
    "name": "Brock Bowers",
    "position": "TE",
    "team": "LV",
-   "photo": "/img/players/brock-bowers.jpg"
+   "photo": "/img/headshots/brock-bowers.png"
   },
   {
    "id": "tyler-warren",
    "name": "Tyler Warren",
    "position": "TE",
-   "team": "IND"
+   "team": "IND",
+   "photo": "/img/headshots/tyler-warren.png"
   },
   {
    "id": "colston-loveland",
    "name": "Colston Loveland",
    "position": "TE",
-   "team": "CHI"
+   "team": "CHI",
+   "photo": "/img/headshots/colston-loveland.png"
   },
   {
    "id": "kyle-pitts",
    "name": "Kyle Pitts",
    "position": "TE",
-   "team": "ATL"
+   "team": "ATL",
+   "photo": "/img/headshots/kyle-pitts.png"
   },
   {
    "id": "harold-fannin-jr",
    "name": "Harold Fannin Jr",
    "position": "TE",
-   "team": "CLE"
+   "team": "CLE",
+   "photo": "/img/headshots/harold-fannin-jr.png"
   },
   {
    "id": "tucker-kraft",
    "name": "Tucker Kraft",
    "position": "TE",
-   "team": "GB"
+   "team": "GB",
+   "photo": "/img/headshots/tucker-kraft.png"
   },
   {
    "id": "dallas-goedert",
    "name": "Dallas Goedert",
    "position": "TE",
-   "team": "PHI"
+   "team": "PHI",
+   "photo": "/img/headshots/dallas-goedert.png"
   },
   {
    "id": "sam-laporta",
    "name": "Sam LaPorta",
    "position": "TE",
-   "team": "DET"
+   "team": "DET",
+   "photo": "/img/headshots/sam-laporta.png"
   },
   {
    "id": "travis-kelce",
    "name": "Travis Kelce",
    "position": "TE",
-   "team": "KC"
+   "team": "KC",
+   "photo": "/img/headshots/travis-kelce.png"
   },
   {
    "id": "george-kittle",
    "name": "George Kittle",
    "position": "TE",
    "team": "SF",
-   "photo": "/img/players/george-kittle.jpg"
+   "photo": "/img/headshots/george-kittle.png"
   },
   {
    "id": "isaiah-likely",
    "name": "Isaiah Likely",
    "position": "TE",
-   "team": "BAL"
+   "team": "BAL",
+   "photo": "/img/headshots/isaiah-likely.png"
   },
   {
    "id": "jake-ferguson",
    "name": "Jake Ferguson",
    "position": "TE",
-   "team": "DAL"
+   "team": "DAL",
+   "photo": "/img/headshots/jake-ferguson.png"
   },
   {
    "id": "dalton-kincaid",
    "name": "Dalton Kincaid",
    "position": "TE",
-   "team": "BUF"
+   "team": "BUF",
+   "photo": "/img/headshots/dalton-kincaid.png"
   },
   {
    "id": "mark-andrews",
    "name": "Mark Andrews",
    "position": "TE",
-   "team": "BAL"
+   "team": "BAL",
+   "photo": "/img/headshots/mark-andrews.png"
   },
   {
    "id": "tj-hockenson",
    "name": "TJ Hockenson",
    "position": "TE",
-   "team": "MIN"
+   "team": "MIN",
+   "photo": "/img/headshots/tj-hockenson.png"
   },
   {
    "id": "evan-engram",
    "name": "Evan Engram",
    "position": "TE",
-   "team": "DEN"
+   "team": "DEN",
+   "photo": "/img/headshots/evan-engram.png"
   },
   {
    "id": "brenton-strange",
    "name": "Brenton Strange",
    "position": "TE",
-   "team": "JAX"
+   "team": "JAX",
+   "photo": "/img/headshots/brenton-strange.png"
   },
   {
    "id": "chig-okonkwo",
    "name": "Chig Okonkwo",
    "position": "TE",
-   "team": "TEN"
+   "team": "TEN",
+   "photo": "/img/headshots/chig-okonkwo.png"
   },
   {
    "id": "juwan-johnson",
    "name": "Juwan Johnson",
    "position": "TE",
-   "team": "NO"
+   "team": "NO",
+   "photo": "/img/headshots/juwan-johnson.png"
   },
   {
    "id": "def-den",
-   "name": "Broncos",
+   "name": "Denver Broncos",
    "position": "DST",
    "team": "DEN"
   },
   {
    "id": "def-hou",
-   "name": "Texans",
+   "name": "Houston Texans",
    "position": "DST",
    "team": "HOU"
   },
   {
    "id": "def-sea",
-   "name": "Seahawks",
+   "name": "Seattle Seahawks",
    "position": "DST",
    "team": "SEA"
   },
   {
    "id": "def-lar",
-   "name": "Rams",
+   "name": "Los Angeles Rams",
    "position": "DST",
    "team": "LAR"
   },
   {
    "id": "def-phi",
-   "name": "Eagles",
+   "name": "Philadelphia Eagles",
    "position": "DST",
    "team": "PHI"
   },
   {
    "id": "def-ne",
-   "name": "Patriots",
+   "name": "New England Patriots",
    "position": "DST",
    "team": "NE"
   },
   {
    "id": "def-min",
-   "name": "Vikings",
+   "name": "Minnesota Vikings",
    "position": "DST",
    "team": "MIN"
   },
   {
    "id": "def-jax",
-   "name": "Jaguars",
+   "name": "Jacksonville Jaguars",
    "position": "DST",
    "team": "JAX"
   },
   {
    "id": "def-pit",
-   "name": "Steelers",
+   "name": "Pittsburgh Steelers",
    "position": "DST",
    "team": "PIT"
   },
   {
    "id": "def-bal",
-   "name": "Ravens",
+   "name": "Baltimore Ravens",
    "position": "DST",
    "team": "BAL"
   },
   {
    "id": "def-sf",
-   "name": "49ers",
+   "name": "San Francisco 49ers",
    "position": "DST",
    "team": "SF"
   },
   {
    "id": "def-lac",
-   "name": "Chargers",
+   "name": "Los Angeles Chargers",
    "position": "DST",
    "team": "LAC"
   },
   {
    "id": "def-buf",
-   "name": "Bills",
+   "name": "Buffalo Bills",
    "position": "DST",
    "team": "BUF"
   },
   {
    "id": "def-kc",
-   "name": "Chiefs",
+   "name": "Kansas City Chiefs",
    "position": "DST",
    "team": "KC"
   },
   {
    "id": "def-chi",
-   "name": "Bears",
+   "name": "Chicago Bears",
    "position": "DST",
    "team": "CHI"
   },
   {
    "id": "def-gb",
-   "name": "Packers",
+   "name": "Green Bay Packers",
    "position": "DST",
    "team": "GB"
   },
   {
    "id": "def-no",
-   "name": "Saints",
+   "name": "New Orleans Saints",
    "position": "DST",
    "team": "NO"
   },
   {
    "id": "def-atl",
-   "name": "Falcons",
+   "name": "Atlanta Falcons",
    "position": "DST",
    "team": "ATL"
   },
   {
    "id": "def-nyg",
-   "name": "Giants",
+   "name": "New York Giants",
    "position": "DST",
    "team": "NYG"
   },
   {
    "id": "def-cle",
-   "name": "Browns",
+   "name": "Cleveland Browns",
    "position": "DST",
    "team": "CLE"
   },
@@ -621,121 +687,141 @@
    "id": "brandon-aubrey",
    "name": "Brandon Aubrey",
    "position": "K",
-   "team": "DAL"
+   "team": "DAL",
+   "photo": "/img/headshots/brandon-aubrey.png"
   },
   {
    "id": "jason-myers",
    "name": "Jason Myers",
    "position": "K",
-   "team": "SEA"
+   "team": "SEA",
+   "photo": "/img/headshots/jason-myers.png"
   },
   {
    "id": "kaimi-fairbairn",
    "name": "Ka'imi Fairbairn",
    "position": "K",
-   "team": "HOU"
+   "team": "HOU",
+   "photo": "/img/headshots/kaimi-fairbairn.png"
   },
   {
    "id": "cameron-dicker",
    "name": "Cameron Dicker",
    "position": "K",
-   "team": "LAC"
+   "team": "LAC",
+   "photo": "/img/headshots/cameron-dicker.png"
   },
   {
    "id": "cam-little",
    "name": "Cam Little",
    "position": "K",
-   "team": "JAX"
+   "team": "JAX",
+   "photo": "/img/headshots/cam-little.png"
   },
   {
    "id": "eddy-pineiro",
    "name": "Eddy Pineiro",
    "position": "K",
-   "team": "SF"
+   "team": "SF",
+   "photo": "/img/headshots/eddy-pineiro.png"
   },
   {
    "id": "harrison-mevis",
    "name": "Harrison Mevis",
    "position": "K",
-   "team": "LAR"
+   "team": "LAR",
+   "photo": "/img/headshots/harrison-mevis.png"
   },
   {
    "id": "charlie-smyth",
    "name": "Charlie Smyth",
    "position": "K",
-   "team": "NO"
+   "team": "NO",
+   "photo": "/img/headshots/charlie-smyth.png"
   },
   {
    "id": "chris-boswell",
    "name": "Chris Boswell",
    "position": "K",
-   "team": "PIT"
+   "team": "PIT",
+   "photo": "/img/headshots/chris-boswell.png"
   },
   {
    "id": "spencer-shrader",
    "name": "Spencer Shrader",
    "position": "K",
-   "team": "IND"
+   "team": "IND",
+   "photo": "/img/headshots/spencer-shrader.png"
   },
   {
    "id": "cairo-santos",
    "name": "Cairo Santos",
    "position": "K",
-   "team": "CHI"
+   "team": "CHI",
+   "photo": "/img/headshots/cairo-santos.png"
   },
   {
    "id": "jake-bates",
    "name": "Jake Bates",
    "position": "K",
-   "team": "DET"
+   "team": "DET",
+   "photo": "/img/headshots/jake-bates.png"
   },
   {
    "id": "harrison-butker",
    "name": "Harrison Butker",
    "position": "K",
-   "team": "KC"
+   "team": "KC",
+   "photo": "/img/headshots/harrison-butker.png"
   },
   {
    "id": "will-reichard",
    "name": "Will Reichard",
    "position": "K",
-   "team": "MIN"
+   "team": "MIN",
+   "photo": "/img/headshots/will-reichard.png"
   },
   {
    "id": "joey-slye",
    "name": "Joey Slye",
    "position": "K",
-   "team": "TEN"
+   "team": "TEN",
+   "photo": "/img/headshots/joey-slye.png"
   },
   {
    "id": "daniel-carlson",
    "name": "Daniel Carlson",
    "position": "K",
-   "team": "LV"
+   "team": "LV",
+   "photo": "/img/headshots/daniel-carlson.png"
   },
   {
    "id": "tyler-loop",
    "name": "Tyler Loop",
    "position": "K",
-   "team": "BAL"
+   "team": "BAL",
+   "photo": "/img/headshots/tyler-loop.png"
   },
   {
    "id": "evan-mcpherson",
    "name": "Evan McPherson",
    "position": "K",
-   "team": "CIN"
+   "team": "CIN",
+   "photo": "/img/headshots/evan-mcpherson.png"
   },
   {
    "id": "wil-lutz",
    "name": "Wil Lutz",
    "position": "K",
-   "team": "DEN"
+   "team": "DEN",
+   "photo": "/img/headshots/wil-lutz.png"
   },
   {
    "id": "andy-borregales",
    "name": "Andy Borregales",
    "position": "K",
-   "team": "NE"
+   "team": "NE",
+   "photo": "/img/headshots/andy-borregales.png"
   }
  ]
 }

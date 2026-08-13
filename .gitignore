@@ -41,3 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 # Source imagery is processed into public/img by hand; originals stay outside the repo.
+
+# macOS/sync duplication artifacts ("file 2.png"), never intentional
+*[0-9].png:Zone.Identifier
+**/* [0-9].*

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TeamChip } from "./TeamChip";
+import { getTeam, readableOn } from "@/lib/teams";
 import type { Player, Position } from "@/lib/types";
 
 const POSITION_TOKEN: Record<Position, string> = {
@@ -11,6 +12,18 @@ const POSITION_TOKEN: Record<Position, string> = {
   K: "var(--color-pos-k)",
   DST: "var(--color-pos-dst)",
 };
+
+/**
+ * A defence has no headshot, and a shared position colour tells the reader
+ * nothing — twenty identical brown tiles. Its own colour and abbreviation do
+ * the identifying work a logo would, which is the same substitution TeamChip
+ * makes (§2).
+ */
+function defenceTile(player: Player): { tint?: string; label?: string } {
+  if (player.position !== "DST" || !player.team) return {};
+  const team = getTeam(player.team);
+  return team ? { tint: team.primary, label: team.abbr } : {};
+}
 
 function initials(name: string): string {
   const parts = name.split(" ").filter(Boolean);
@@ -30,29 +43,40 @@ export function PlayerAvatar({
   position,
   photo,
   size = 32,
+  tint,
+  label,
 }: {
   name: string;
   position: Position;
   photo?: string;
   size?: number;
+  /** Overrides the position colour. Used for defences, where the team's own
+   *  colour identifies the entry better than a shared position colour. */
+  tint?: string;
+  /** Overrides the initials. A defence reads better as its abbreviation than
+   *  as the initials of its city and nickname. */
+  label?: string;
 }) {
+  const background = tint ?? POSITION_TOKEN[position];
+
   if (photo) {
     return (
       <span
         aria-hidden="true"
         className="relative inline-block shrink-0 overflow-hidden rounded"
-        style={{
-          width: size,
-          height: size,
-          background: POSITION_TOKEN[position],
-        }}
+        style={{ width: size, height: size, background }}
       >
+        {/* Headshots are transparent cutouts, so the tile colour shows through
+            behind the subject. These sources are landscape, so `cover` in a
+            square crops only the empty sides and keeps the head at full
+            height — `contain` would fit to width and leave the tile mostly
+            empty. */}
         <Image
           src={photo}
           alt=""
           fill
-          sizes={`${size}px`}
-          style={{ objectFit: "cover", objectPosition: "center 18%" }}
+          sizes={`${size * 3}px`}
+          style={{ objectFit: "cover", objectPosition: "center top" }}
         />
       </span>
     );
@@ -61,16 +85,17 @@ export function PlayerAvatar({
   return (
     <span
       aria-hidden="true"
-      className="inline-flex shrink-0 items-center justify-center rounded font-bold text-white select-none"
+      className="inline-flex shrink-0 items-center justify-center rounded font-bold select-none"
       style={{
         width: size,
         height: size,
-        fontSize: size * 0.4,
+        fontSize: size * (label && label.length > 2 ? 0.32 : 0.4),
         fontFamily: "var(--font-condensed)",
-        background: POSITION_TOKEN[position],
+        background,
+        color: tint ? readableOn(tint) : "#FFFFFF",
       }}
     >
-      {initials(name)}
+      {label ?? initials(name)}
     </span>
   );
 }
@@ -113,6 +138,7 @@ export function PlayerLink({
           position={player.position}
           photo={player.photo}
           size={36}
+          {...defenceTile(player)}
         />
       )}
       <span className="min-w-0">
