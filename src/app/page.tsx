@@ -167,8 +167,7 @@ export default function Home() {
                   RB tiers
                 </p>
                 <p className="mt-2 text-sm" style={{ color: "var(--color-ink-400)" }}>
-                  {rb.entries.length} backs across {rb.tiers.length} tiers ·{" "}
-                  {rb.updated}
+                  Top {rb.entries.length} backs · {rb.updated}
                 </p>
               </div>
             </Link>

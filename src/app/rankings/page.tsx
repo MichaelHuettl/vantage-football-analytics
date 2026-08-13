@@ -1,60 +1,62 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChartFigure } from "@/components/ChartFigure";
 import { DataFreshness } from "@/components/DataFreshness";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
-import { TierBand } from "@/components/TierBand";
-import { getRankingList, rankedEntries, validateContent } from "@/lib/content";
-import { POSITIONS, SCORING_FORMATS } from "@/lib/types";
-import type { Position, ScoringFormat } from "@/lib/types";
+import { TeamChip } from "@/components/TeamChip";
+import {
+  BYE_SEASON,
+  getRankingList,
+  rankedEntries,
+  validateContent,
+} from "@/lib/content";
+import { POSITIONS } from "@/lib/types";
+import type { Position } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Rankings",
   description:
-    "Tiered positional rankings, with the opportunity metric behind each one.",
+    "Positional rankings 1-20 with team and 2026 bye week.",
+};
+
+const POSITION_LABEL: Record<Position, string> = {
+  QB: "Quarterbacks",
+  RB: "Running backs",
+  WR: "Wide receivers",
+  TE: "Tight ends",
+  K: "Kickers",
+  DST: "Defenses",
 };
 
 function parsePosition(v: string | undefined): Position {
-  const up = (v ?? "RB").toUpperCase() as Position;
-  return POSITIONS.includes(up) ? up : "RB";
-}
-
-function parseFormat(v: string | undefined): ScoringFormat {
-  const ids = SCORING_FORMATS.map((f) => f.id);
-  return ids.includes(v as ScoringFormat) ? (v as ScoringFormat) : "ppr";
+  const up = (v ?? "QB").toUpperCase() as Position;
+  return POSITIONS.includes(up) ? up : "QB";
 }
 
 export default async function RankingsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ pos?: string; format?: string }>;
+  searchParams: Promise<{ pos?: string }>;
 }) {
   const params = await searchParams;
   const position = parsePosition(params.pos);
-  const format = parseFormat(params.format);
 
   const list = getRankingList(position);
-  const rows = rankedEntries(position, format);
+  const rows = rankedEntries(position);
   const problems = validateContent();
-
-  const byTier = list.tiers
-    .map((t) => ({ ...t, rows: rows.filter((r) => r.entry.tier === t.tier) }))
-    .filter((t) => t.rows.length > 0);
 
   return (
     <>
       {/* A coach carried off the field is the picture of a conclusion —
-          which is what a ranking is, and what this page argues you should
-          be able to check rather than accept. */}
+          which is what a ranking is. */}
       <SectionHero
         image="/img/bg/parcells.jpg"
         alt=""
         objectPosition="center 30%"
         eyebrow="Draft and in-season"
         title="Rankings"
-        lede="Ordered by tier, not by decimal places. Expand any player to see the chart the ranking rests on."
+        lede="Ordered top to bottom by position. Team and bye week alongside each name."
       />
 
       <div
@@ -65,121 +67,108 @@ export default async function RankingsPage({
         }}
       >
         <Container className="py-6">
-          <div className="flex flex-col gap-4">
-            <PositionTabs current={position} format={format} />
-            <FormatToggle current={format} position={position} />
-          </div>
+          <PositionTabs current={position} />
         </Container>
       </div>
 
-      <Container className="py-8">
-        <div className="mb-6">
-          <DataFreshness updated={list.updated} label="Rankings updated" />
+      <Container className="py-10">
+        <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+          <h2
+            className="text-3xl uppercase tracking-wide"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            {POSITION_LABEL[position]}
+          </h2>
+          <DataFreshness updated={list.updated} label="Rankings updated" staleAfterDays={21} />
         </div>
+
+        {list.source && (
+          <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
+            {list.source}
+          </p>
+        )}
 
         {problems.length > 0 && <ContentProblems problems={problems} />}
 
-        {byTier.length === 0 ? (
-          <EmptyState
-            title={`No ${position} rankings published yet.`}
-            direction={`Add entries to src/data/rankings/${position.toLowerCase()}.json.`}
-          />
+        {rows.length === 0 ? (
+          <div className="mt-8">
+            <EmptyState
+              title={`No ${position} rankings published yet.`}
+              direction={`Add entries to src/data/rankings/${position.toLowerCase()}.json.`}
+            />
+          </div>
         ) : (
-          <div className="flex flex-col gap-6">
-            {byTier.map((tier) => (
-              <TierBand
-                key={tier.tier}
-                tier={tier.tier}
-                label={tier.label}
-                count={tier.rows.length}
-              >
-                <ul>
-                  {tier.rows.map(({ entry, player, rank }) => (
-                    <li
-                      key={entry.player_id}
-                      className="border-b last:border-b-0"
-                      style={{ borderColor: "var(--border-subtle)" }}
+          <div
+            className="mt-6 overflow-hidden rounded-lg border"
+            style={{ borderColor: "var(--border-subtle)" }}
+          >
+            <table className="w-full">
+              <thead>
+                <tr style={{ background: "var(--surface-sunken)" }}>
+                  <Th className="w-16 text-right">Rank</Th>
+                  <Th>{position === "DST" ? "Defense" : "Player"}</Th>
+                  <Th className="w-24">Team</Th>
+                  <Th className="w-28 text-right">Bye</Th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map(({ entry, player, bye }) => (
+                  <tr
+                    key={entry.player_id}
+                    className="border-t"
+                    style={{ borderColor: "var(--border-subtle)" }}
+                  >
+                    <td
+                      className="px-4 py-3 text-right text-lg font-bold tnum"
+                      style={{ fontFamily: "var(--font-condensed)" }}
                     >
-                      <details className="group">
-                        {/* `display` stays at the summary default — Chrome
-                            drops the disclosure activation behaviour when a
-                            summary is flexed directly, so the layout goes on
-                            an inner wrapper instead. */}
-                        <summary className="cursor-pointer list-none px-4 py-3 hover:bg-[color-mix(in_oklab,var(--text-primary)_4%,transparent)] [&::-webkit-details-marker]:hidden">
-                          <div className="flex items-center gap-3">
-                            <span
-                              className="w-7 shrink-0 text-right text-lg tnum font-bold"
-                              style={{ fontFamily: "var(--font-condensed)" }}
-                            >
-                              {rank}
-                            </span>
-                            <span className="min-w-0 flex-1">
-                              <PlayerLink player={player} />
-                            </span>
-                            <span
-                              className="hidden flex-1 text-sm sm:block"
-                              style={{ color: "var(--text-secondary)" }}
-                            >
-                              {entry.note}
-                            </span>
-                            <span
-                              aria-hidden="true"
-                              className="shrink-0 text-xs uppercase tracking-wider transition-transform group-open:rotate-90"
-                              style={{
-                                fontFamily: "var(--font-condensed)",
-                                color: "var(--text-muted)",
-                              }}
-                            >
-                              ▸
-                            </span>
-                          </div>
-                        </summary>
-
-                        <div
-                          className="px-4 pb-5 pt-1"
-                          style={{ background: "var(--surface-sunken)" }}
+                      {entry.rank}
+                    </td>
+                    <td className="px-4 py-3">
+                      <PlayerLink player={player} showTeam={false} />
+                    </td>
+                    <td className="px-4 py-3">
+                      {player.team ? (
+                        <TeamChip abbr={player.team} />
+                      ) : (
+                        <span
+                          className="text-xs"
+                          style={{ color: "var(--text-muted)" }}
                         >
-                          <p
-                            className="text-sm sm:hidden"
-                            style={{ color: "var(--text-secondary)" }}
-                          >
-                            {entry.note}
-                          </p>
-                          <div className="max-w-3xl">
-                            <ChartFigure
-                              src={entry.chart || undefined}
-                              caption={`The opportunity profile behind ${player.name}'s ${position}${rank} ranking.`}
-                              ratio="16 / 9"
-                            />
-                          </div>
-                          <Link
-                            href={`/players/${player.id}`}
-                            className="text-sm font-semibold hover:underline"
-                          >
-                            Full player page →
-                          </Link>
-                        </div>
-                      </details>
-                    </li>
-                  ))}
-                </ul>
-              </TierBand>
-            ))}
+                          —
+                        </span>
+                      )}
+                    </td>
+                    <td
+                      className="px-4 py-3 text-right tnum"
+                      style={{ color: "var(--text-secondary)" }}
+                    >
+                      {bye ? (
+                        <>
+                          <span className="sr-only">Bye week </span>
+                          {bye}
+                        </>
+                      ) : (
+                        <span style={{ color: "var(--text-muted)" }}>—</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         )}
+
+        <p className="mt-4 text-xs" style={{ color: "var(--text-muted)" }}>
+          Bye weeks are for the {BYE_SEASON} season.
+        </p>
       </Container>
     </>
   );
 }
 
-/** Tabs are links, so position lives in the URL and a ranking is shareable. */
-function PositionTabs({
-  current,
-  format,
-}: {
-  current: Position;
-  format: ScoringFormat;
-}) {
+/** Tabs are links, so the position lives in the URL and a list is shareable. */
+function PositionTabs({ current }: { current: Position }) {
   return (
     <nav aria-label="Position">
       <ul className="flex flex-wrap gap-1.5">
@@ -188,15 +177,13 @@ function PositionTabs({
           return (
             <li key={pos}>
               <Link
-                href={`/rankings?pos=${pos}&format=${format}`}
+                href={`/rankings?pos=${pos}`}
                 aria-current={active ? "page" : undefined}
                 className="block rounded px-4 py-2 text-sm font-bold uppercase tracking-wider transition-colors"
                 style={{
                   fontFamily: "var(--font-condensed)",
                   background: active ? "var(--text-primary)" : "transparent",
-                  color: active
-                    ? "var(--surface-page)"
-                    : "var(--text-secondary)",
+                  color: active ? "var(--surface-page)" : "var(--text-secondary)",
                   boxShadow: active
                     ? undefined
                     : "inset 0 0 0 1px var(--border-strong)",
@@ -212,38 +199,24 @@ function PositionTabs({
   );
 }
 
-function FormatToggle({
-  current,
-  position,
+function Th({
+  children,
+  className = "",
 }: {
-  current: ScoringFormat;
-  position: Position;
+  children: React.ReactNode;
+  className?: string;
 }) {
   return (
-    <nav aria-label="Scoring format">
-      <ul className="flex flex-wrap items-center gap-x-4 gap-y-1">
-        <li className="eyebrow">Format</li>
-        {SCORING_FORMATS.map((f) => {
-          const active = f.id === current;
-          return (
-            <li key={f.id}>
-              <Link
-                href={`/rankings?pos=${position}&format=${f.id}`}
-                aria-current={active ? "page" : undefined}
-                className="text-sm font-semibold"
-                style={{
-                  color: active ? "var(--accent)" : "var(--text-secondary)",
-                  textDecoration: active ? "underline" : "none",
-                  textUnderlineOffset: "4px",
-                }}
-              >
-                {f.label}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
+    <th
+      scope="col"
+      className={`px-4 py-2.5 text-left text-xs font-bold uppercase tracking-wider ${className}`}
+      style={{
+        fontFamily: "var(--font-condensed)",
+        color: "var(--text-muted)",
+      }}
+    >
+      {children}
+    </th>
   );
 }
 
@@ -255,7 +228,7 @@ function ContentProblems({
 }) {
   return (
     <div
-      className="mb-6 rounded-lg border px-4 py-3"
+      className="mt-6 rounded-lg border px-4 py-3"
       style={{
         borderColor: "var(--color-status-doubtful)",
         background:

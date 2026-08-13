@@ -1,57 +1,89 @@
 {
-  "schema_version": 1,
-  "position": "RB",
-  "updated": "2026-08-11",
-  "note": "PLACEHOLDER SAMPLE. `rank` is the PPR ordering. Other formats only need an entry in `format_ranks` where they differ from it — so a standard-scoring tweak is a two-line edit, not a second list to maintain. Notes are one sentence and contain a fact, per §8.",
-  "tiers": [
-    { "tier": 1, "label": "Every-down backs with receiving work" },
-    { "tier": 2, "label": "Volume with a touchdown-dependent floor" },
-    { "tier": 3, "label": "Committee backs with a path to more" }
-  ],
-  "entries": [
-    {
-      "rank": 1,
-      "tier": 1,
-      "player_id": "bijan-robinson",
-      "note": "Led all backs in high-value touches per game last season and the coordinator who limited him is gone.",
-      "chart": ""
-    },
-    {
-      "rank": 2,
-      "tier": 1,
-      "player_id": "jahmyr-gibbs",
-      "note": "Drew a 13.8% target share, the highest of any back in the tier, and played 68% of snaps.",
-      "chart": ""
-    },
-    {
-      "rank": 3,
-      "tier": 1,
-      "player_id": "saquon-barkley",
-      "note": "Carried 22.1 times per game behind the league's most efficient run-blocking line.",
-      "format_ranks": { "standard": 2 },
-      "chart": ""
-    },
-    {
-      "rank": 4,
-      "tier": 2,
-      "player_id": "devon-achane",
-      "note": "Target share of 14.2% is the second highest among backs, and it carried across two quarterbacks.",
-      "chart": ""
-    },
-    {
-      "rank": 5,
-      "tier": 2,
-      "player_id": "ashton-jeanty",
-      "note": "Handled 71% of team carries after the bye in his rookie season.",
-      "chart": ""
-    },
-    {
-      "rank": 6,
-      "tier": 3,
-      "player_id": "christian-mccaffrey",
-      "note": "Turns 30 in June and has missed 21 games across the last three seasons.",
-      "format_ranks": { "standard": 7 },
-      "chart": ""
-    }
-  ]
+ "schema_version": 2,
+ "position": "RB",
+ "updated": "2026-08-06",
+ "source": "My Rankings (WIP)",
+ "note": "Order is taken verbatim from the workbook. Ranks 1-20.",
+ "entries": [
+  {
+   "rank": 1,
+   "player_id": "jahmyr-gibbs"
+  },
+  {
+   "rank": 2,
+   "player_id": "bijan-robinson"
+  },
+  {
+   "rank": 3,
+   "player_id": "christian-mccaffrey"
+  },
+  {
+   "rank": 4,
+   "player_id": "jonathan-taylor"
+  },
+  {
+   "rank": 5,
+   "player_id": "ashton-jeanty"
+  },
+  {
+   "rank": 6,
+   "player_id": "saquon-barkley"
+  },
+  {
+   "rank": 7,
+   "player_id": "james-cook"
+  },
+  {
+   "rank": 8,
+   "player_id": "chase-brown"
+  },
+  {
+   "rank": 9,
+   "player_id": "omarion-hampton"
+  },
+  {
+   "rank": 10,
+   "player_id": "devon-achane"
+  },
+  {
+   "rank": 11,
+   "player_id": "kenneth-walker"
+  },
+  {
+   "rank": 12,
+   "player_id": "jeremiyah-love"
+  },
+  {
+   "rank": 13,
+   "player_id": "derrick-henry"
+  },
+  {
+   "rank": 14,
+   "player_id": "cam-skattebo"
+  },
+  {
+   "rank": 15,
+   "player_id": "javonte-williams"
+  },
+  {
+   "rank": 16,
+   "player_id": "kyren-williams"
+  },
+  {
+   "rank": 17,
+   "player_id": "breece-hall"
+  },
+  {
+   "rank": 18,
+   "player_id": "josh-jacobs"
+  },
+  {
+   "rank": 19,
+   "player_id": "travis-etienne"
+  },
+  {
+   "rank": 20,
+   "player_id": "dandre-swift"
+  }
+ ]
 }

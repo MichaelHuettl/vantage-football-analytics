@@ -4,7 +4,7 @@ import { ChartFigure } from "@/components/ChartFigure";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerAvatar, PositionBadge } from "@/components/PlayerLink";
 import { TeamChip } from "@/components/TeamChip";
-import { PLAYERS, getPlayer, getRankingList, rankFor } from "@/lib/content";
+import { PLAYERS, getBye, getPlayer, getRankingList } from "@/lib/content";
 import { getTeam } from "@/lib/teams";
 
 export function generateStaticParams() {
@@ -35,11 +35,11 @@ export default async function PlayerPage({
   const player = getPlayer(id);
   if (!player) notFound();
 
-  const team = getTeam(player.team);
+  const team = player.team ? getTeam(player.team) : undefined;
   const list = getRankingList(player.position);
   const entry = list.entries.find((e) => e.player_id === player.id);
-  const rank = entry ? rankFor(entry, "ppr") : undefined;
-  const tier = entry ? list.tiers.find((t) => t.tier === entry.tier) : undefined;
+  const rank = entry?.rank;
+  const bye = getBye(player.team);
 
   return (
     <>
@@ -68,7 +68,7 @@ export default async function PlayerPage({
                 {player.name}
               </h1>
               <div className="mt-3 flex flex-wrap items-center gap-3">
-                <TeamChip abbr={player.team} />
+                {player.team && <TeamChip abbr={player.team} />}
                 <PositionBadge position={player.position} />
                 <span
                   className="text-sm"
@@ -83,7 +83,7 @@ export default async function PlayerPage({
 
             {rank !== undefined && (
               <div className="ml-auto text-right">
-                <p className="eyebrow">PPR rank</p>
+                <p className="eyebrow">Rank</p>
                 <p
                   className="text-5xl tnum leading-none"
                   style={{
@@ -94,12 +94,12 @@ export default async function PlayerPage({
                   {player.position}
                   {rank}
                 </p>
-                {tier && (
+                {bye && (
                   <p
                     className="mt-1 text-xs"
                     style={{ color: "var(--color-ink-400)" }}
                   >
-                    Tier {tier.tier} — {tier.label}
+                    Bye week {bye}
                   </p>
                 )}
               </div>
@@ -111,7 +111,7 @@ export default async function PlayerPage({
       <Container className="py-10">
         <div className="grid gap-12 lg:grid-cols-[2fr_1fr]">
           <div>
-            {entry && (
+            {entry?.note && (
               <section className="mb-10">
                 <h2 className="eyebrow mb-2">The note</h2>
                 <p className="text-xl leading-relaxed">{entry.note}</p>

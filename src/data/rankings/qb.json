@@ -1,17 +1,89 @@
 {
-  "schema_version": 1,
-  "position": "QB",
-  "updated": "2026-08-11",
-  "note": "PLACEHOLDER. No QB entries authored yet \u2014 the page renders its empty state. Same shape as rb.json.",
-  "tiers": [
-    {
-      "tier": 1,
-      "label": "Rushing floor"
-    },
-    {
-      "tier": 2,
-      "label": "Pocket passers with volume"
-    }
-  ],
-  "entries": []
+ "schema_version": 2,
+ "position": "QB",
+ "updated": "2026-08-06",
+ "source": "My Rankings (WIP)",
+ "note": "Order is taken verbatim from the workbook. Ranks 1-20.",
+ "entries": [
+  {
+   "rank": 1,
+   "player_id": "josh-allen"
+  },
+  {
+   "rank": 2,
+   "player_id": "lamar-jackson"
+  },
+  {
+   "rank": 3,
+   "player_id": "drake-maye"
+  },
+  {
+   "rank": 4,
+   "player_id": "jayden-daniels"
+  },
+  {
+   "rank": 5,
+   "player_id": "jalen-hurts"
+  },
+  {
+   "rank": 6,
+   "player_id": "joe-burrow"
+  },
+  {
+   "rank": 7,
+   "player_id": "caleb-williams"
+  },
+  {
+   "rank": 8,
+   "player_id": "trevor-lawrence"
+  },
+  {
+   "rank": 9,
+   "player_id": "justin-herbert"
+  },
+  {
+   "rank": 10,
+   "player_id": "dak-prescott"
+  },
+  {
+   "rank": 11,
+   "player_id": "jaxson-dart"
+  },
+  {
+   "rank": 12,
+   "player_id": "bo-nix"
+  },
+  {
+   "rank": 13,
+   "player_id": "patrick-mahomes"
+  },
+  {
+   "rank": 14,
+   "player_id": "matthew-stafford"
+  },
+  {
+   "rank": 15,
+   "player_id": "sam-darnold"
+  },
+  {
+   "rank": 16,
+   "player_id": "tyler-shough"
+  },
+  {
+   "rank": 17,
+   "player_id": "baker-mayfield"
+  },
+  {
+   "rank": 18,
+   "player_id": "kyler-murray"
+  },
+  {
+   "rank": 19,
+   "player_id": "jared-goff"
+  },
+  {
+   "rank": 20,
+   "player_id": "brock-purdy"
+  }
+ ]
 }

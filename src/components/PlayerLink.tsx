@@ -121,7 +121,7 @@ export function PlayerLink({
         </span>
         {showTeam && (
           <span className="flex items-center gap-1.5 mt-0.5">
-            <TeamChip abbr={player.team} size="sm" />
+            {player.team && <TeamChip abbr={player.team} size="sm" />}
             <span
               className="text-xs font-semibold uppercase"
               style={{

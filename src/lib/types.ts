@@ -11,15 +11,6 @@ export type Position = "QB" | "RB" | "WR" | "TE" | "K" | "DST";
 
 export const POSITIONS: Position[] = ["QB", "RB", "WR", "TE", "K", "DST"];
 
-export type ScoringFormat = "ppr" | "half" | "standard" | "superflex";
-
-export const SCORING_FORMATS: { id: ScoringFormat; label: string }[] = [
-  { id: "ppr", label: "PPR" },
-  { id: "half", label: "Half PPR" },
-  { id: "standard", label: "Standard" },
-  { id: "superflex", label: "Superflex" },
-];
-
 export interface Envelope<T> {
   schema_version: number;
   generated_at: string;
@@ -41,7 +32,8 @@ export interface Player {
   id: string;
   name: string;
   position: Position;
-  team: string;
+  /** Omitted when the team is not confirmed. Rendered without a chip. */
+  team?: string;
   age?: number;
   /** Draft capital, e.g. "2023 R1P4". Free text — it's read, not computed. */
   draft?: string;
@@ -51,18 +43,11 @@ export interface Player {
 }
 
 export interface RankingEntry {
-  /** The PPR ordering, and the default for every format. */
   rank: number;
-  tier: number;
   player_id: string;
-  /** One sentence, containing a fact rather than a vibe. §8. */
-  note: string;
-  /**
-   * Only the formats that differ from `rank`. Keeps one list per position
-   * instead of four, which matters when the list is edited by hand.
-   */
-  format_ranks?: Partial<Record<ScoringFormat, number>>;
-  /** Chart filename in /public/charts, if this player's ranking has one. */
+  /** One sentence containing a fact. §8. Absent until authored. */
+  note?: string;
+  /** Chart path under /public/charts, once one exists for this player. */
   chart?: string;
 }
 
@@ -71,8 +56,9 @@ export interface RankingList {
   position: Position;
   /** Shown in DataFreshness. Hand-set, because nothing computes it. */
   updated: string;
+  /** Where the order came from, e.g. the workbook block it was taken from. */
+  source?: string;
   note?: string;
-  tiers: { tier: number; label: string }[];
   entries: RankingEntry[];
 }
 

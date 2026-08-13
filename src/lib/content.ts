@@ -1,18 +1,12 @@
 import playersFile from "@/data/players.json";
+import byesFile from "@/data/byes.json";
 import qb from "@/data/rankings/qb.json";
 import rb from "@/data/rankings/rb.json";
 import wr from "@/data/rankings/wr.json";
 import te from "@/data/rankings/te.json";
 import k from "@/data/rankings/k.json";
 import dst from "@/data/rankings/dst.json";
-import type {
-  Envelope,
-  Player,
-  Position,
-  RankingEntry,
-  RankingList,
-  ScoringFormat,
-} from "./types";
+import type { Envelope, Player, Position, RankingEntry, RankingList } from "./types";
 
 /* ------------------------------------------------------------------
    Players
@@ -29,6 +23,28 @@ export function getPlayer(id: string): Player | undefined {
 }
 
 /* ------------------------------------------------------------------
+   Bye weeks
+
+   Season-scoped, so they live apart from teams.json — team identity never
+   changes, byes change every year. Keeping them separate means the yearly
+   edit is one small file rather than a pass over all 32 team records.
+   ------------------------------------------------------------------ */
+
+interface ByesFile {
+  schema_version: number;
+  season: number;
+  data: Record<string, number>;
+}
+
+const byes = byesFile as ByesFile;
+
+export const BYE_SEASON = byes.season;
+
+export function getBye(teamAbbr: string | undefined): number | undefined {
+  return teamAbbr ? byes.data[teamAbbr.toUpperCase()] : undefined;
+}
+
+/* ------------------------------------------------------------------
    Rankings
    ------------------------------------------------------------------ */
 
@@ -38,40 +54,34 @@ export function getRankingList(position: Position): RankingList {
   return RANKING_FILES[position] as unknown as RankingList;
 }
 
-/** The rank actually used for a given format, falling back to the PPR rank. */
-export function rankFor(entry: RankingEntry, format: ScoringFormat): number {
-  return entry.format_ranks?.[format] ?? entry.rank;
+export interface RankedRow {
+  entry: RankingEntry;
+  player: Player;
+  bye?: number;
 }
 
 /**
- * Entries ordered for a format, with their player joined and any orphaned
- * player_id dropped rather than rendered as a blank row.
+ * Entries in rank order with their player and bye joined. A ranking whose
+ * player_id no longer resolves is dropped rather than rendered as a blank row —
+ * `validateContent` reports it separately so the gap is visible, not silent.
  */
-export function rankedEntries(position: Position, format: ScoringFormat) {
-  const list = getRankingList(position);
-  return list.entries
-    .map((entry) => ({
-      entry,
-      player: getPlayer(entry.player_id),
-      rank: rankFor(entry, format),
-    }))
-    .filter(
-      (row): row is { entry: RankingEntry; player: Player; rank: number } =>
-        row.player !== undefined,
-    )
-    .sort((a, b) => a.rank - b.rank);
+export function rankedEntries(position: Position): RankedRow[] {
+  return getRankingList(position)
+    .entries.slice()
+    .sort((a, b) => a.rank - b.rank)
+    .flatMap((entry) => {
+      const player = getPlayer(entry.player_id);
+      return player ? [{ entry, player, bye: getBye(player.team) }] : [];
+    });
 }
 
 /* ------------------------------------------------------------------
    Validation
 
-   You edit these files by hand, so the failure mode worth designing for is a
-   typo — a duplicated rank, a player_id that no longer exists, a tier with no
-   label. JSON syntax errors are already caught by the bundler with a line
-   number; these are the errors it cannot see.
-
-   Called from the rankings page so a bad edit surfaces in `next build` and in
-   dev, rather than silently rendering a wrong list.
+   These files are edited by hand, so the failure worth designing for is a
+   typo — a duplicated rank, a player_id that no longer exists. JSON syntax
+   errors are already caught by the bundler with a line number; these are the
+   errors it cannot see.
    ------------------------------------------------------------------ */
 
 export interface ContentProblem {
@@ -88,13 +98,18 @@ export function validateContent(): ContentProblem[] {
       problems.push({ file: "players.json", message: `Duplicate id "${p.id}"` });
     }
     ids.add(p.id);
+    if (p.team && !byes.data[p.team]) {
+      problems.push({
+        file: "players.json",
+        message: `${p.name} has team "${p.team}", which has no bye week on record`,
+      });
+    }
   }
 
   for (const [position, raw] of Object.entries(RANKING_FILES)) {
     const list = raw as unknown as RankingList;
     const file = `rankings/${position.toLowerCase()}.json`;
-    const tiers = new Set(list.tiers.map((t) => t.tier));
-    const seenRanks = new Set<number>();
+    const seen = new Set<number>();
 
     for (const entry of list.entries) {
       if (!playerById.has(entry.player_id)) {
@@ -103,23 +118,10 @@ export function validateContent(): ContentProblem[] {
           message: `player_id "${entry.player_id}" is not in players.json`,
         });
       }
-      if (seenRanks.has(entry.rank)) {
+      if (seen.has(entry.rank)) {
         problems.push({ file, message: `Duplicate rank ${entry.rank}` });
       }
-      seenRanks.add(entry.rank);
-
-      if (!tiers.has(entry.tier)) {
-        problems.push({
-          file,
-          message: `Rank ${entry.rank} is in tier ${entry.tier}, which has no label`,
-        });
-      }
-      if (!entry.note?.trim()) {
-        problems.push({
-          file,
-          message: `Rank ${entry.rank} has no note — §8 requires one sentence containing a fact`,
-        });
-      }
+      seen.add(entry.rank);
     }
   }
 
