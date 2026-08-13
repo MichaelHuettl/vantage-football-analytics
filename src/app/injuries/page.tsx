@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import {
+  CAMP_INJURIES,
+  CAMP_SEVERITY,
+  CAMP_UPDATED,
+  CampStatusPill,
+} from "@/components/CampInjury";
+import type { CampInjury } from "@/components/CampInjury";
 import { DataFreshness } from "@/components/DataFreshness";
 import { InjuryTimeline, PracticeStrip, StatusPill } from "@/components/Injury";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink } from "@/components/PlayerLink";
+import { PositionBadge } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
 import {
@@ -14,12 +22,14 @@ import {
   rowsByTeam,
   teamsWithInjuries,
 } from "@/lib/injuries";
-import { readableOn } from "@/lib/teams";
+import { getPlayer } from "@/lib/content";
+import { getTeam, readableOn } from "@/lib/teams";
+import type { Team } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Injury report",
   description:
-    "Practice participation across the week, by team. The trend is the signal.",
+    "Training camp and weekly injury status by team. The trend is the signal.",
 };
 
 export default async function InjuriesPage({
@@ -35,6 +45,26 @@ export default async function InjuriesPage({
   const carried = backlog();
   const teams = teamsWithInjuries();
 
+  // Camp entries grouped by team, each group worst-first, groups ordered by
+  // their most serious case so the teams in trouble surface first.
+  const campByTeam = new Map<string, CampInjury[]>();
+  for (const c of CAMP_INJURIES) {
+    campByTeam.set(c.team, [...(campByTeam.get(c.team) ?? []), c]);
+  }
+  const campGroups = [...campByTeam.entries()]
+    .map(([abbr, list]) => ({
+      team: getTeam(abbr),
+      abbr,
+      list: list.sort(
+        (a, b) => CAMP_SEVERITY[b.status] - CAMP_SEVERITY[a.status],
+      ),
+    }))
+    .sort(
+      (a, b) =>
+        CAMP_SEVERITY[b.list[0].status] - CAMP_SEVERITY[a.list[0].status] ||
+        a.abbr.localeCompare(b.abbr),
+    );
+
   return (
     <>
       <SectionHero
@@ -42,12 +72,118 @@ export default async function InjuriesPage({
         objectPosition="center 38%"
         eyebrow="Status and trend"
         title="Injury report"
-        lede="Practice participation across the whole week. The Friday designation alone is not the signal — the movement from Wednesday to Friday is."
+        lede="Training camp status now, practice participation once the season starts. The Friday designation alone is not the signal — the movement across the week is."
       />
 
       <Container className="py-10">
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <nav aria-label="Week">
+        {/* ================= Training camp and preseason ================= */}
+        <section>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+            <div className="flex flex-wrap items-center gap-3">
+              <h2
+                className="text-3xl uppercase tracking-wide"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                Training camp
+              </h2>
+              <span
+                className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
+                style={{
+                  fontFamily: "var(--font-condensed)",
+                  background: "var(--text-primary)",
+                  color: "var(--surface-page)",
+                }}
+              >
+                Preseason
+              </span>
+            </div>
+            <DataFreshness updated={CAMP_UPDATED} label="Camp report" staleAfterDays={4} />
+          </div>
+
+          <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+            Skill positions only, worst first. Camp has no practice report to
+            read, so this is status and what has actually been said — not a
+            projection of who will be available.
+          </p>
+
+          <div className="mt-6 flex flex-col gap-4">
+            {campGroups.map(({ team, abbr, list }) => (
+              <TeamBlock key={abbr} team={team} abbr={abbr}>
+                <table className="w-full table-fixed text-sm">
+                  <colgroup>
+                    <col className="w-[210px]" />
+                    <col className="w-[170px]" />
+                    <col className="w-[130px]" />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr style={{ background: "var(--surface-sunken)" }}>
+                      <Th>Player</Th>
+                      <Th>Injury</Th>
+                      <Th>Status</Th>
+                      <Th>Detail</Th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {list.map((c) => {
+                      const player = c.player_id ? getPlayer(c.player_id) : undefined;
+                      return (
+                        <tr
+                          key={c.name}
+                          className="border-t align-top"
+                          style={{ borderColor: "var(--border-subtle)" }}
+                        >
+                          <td className="px-4 py-3">
+                            {player ? (
+                              <PlayerLink player={player} showTeam={false} />
+                            ) : (
+                              <span className="flex items-center gap-2">
+                                <PositionBadge position={c.position} />
+                                <span className="font-semibold">{c.name}</span>
+                              </span>
+                            )}
+                          </td>
+                          <td className="px-4 py-3">{c.injury}</td>
+                          <td className="px-4 py-3">
+                            <CampStatusPill status={c.status} />
+                          </td>
+                          <td
+                            className="px-4 py-3"
+                            style={{ color: "var(--text-secondary)" }}
+                          >
+                            {c.detail}
+                            {c.history && (
+                              <span
+                                className="mt-1.5 block text-xs"
+                                style={{ color: "var(--text-muted)" }}
+                              >
+                                History: {c.history}
+                              </span>
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </TeamBlock>
+            ))}
+          </div>
+        </section>
+
+        {/* ===================== Week-by-week report ===================== */}
+        <section className="mt-20">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <h2
+              className="text-3xl uppercase tracking-wide"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Week {week} report
+            </h2>
+            <DataFreshness updated={INJURY_UPDATED} label="Report pulled" />
+          </div>
+
+          <nav aria-label="Week" className="mt-4">
             <ul className="flex flex-wrap items-center gap-x-3 gap-y-1">
               <li className="eyebrow">Week</li>
               {WEEKS.map((w) => (
@@ -58,16 +194,11 @@ export default async function InjuriesPage({
                     className="inline-flex h-8 min-w-8 items-center justify-center rounded px-2 text-sm font-bold tnum"
                     style={{
                       fontFamily: "var(--font-condensed)",
-                      background:
-                        w === week ? "var(--text-primary)" : "transparent",
+                      background: w === week ? "var(--text-primary)" : "transparent",
                       color:
-                        w === week
-                          ? "var(--surface-page)"
-                          : "var(--text-secondary)",
+                        w === week ? "var(--surface-page)" : "var(--text-secondary)",
                       boxShadow:
-                        w === week
-                          ? undefined
-                          : "inset 0 0 0 1px var(--border-strong)",
+                        w === week ? undefined : "inset 0 0 0 1px var(--border-strong)",
                     }}
                   >
                     {w}
@@ -76,17 +207,6 @@ export default async function InjuriesPage({
               ))}
             </ul>
           </nav>
-          <DataFreshness updated={INJURY_UPDATED} label="Report pulled" />
-        </div>
-
-        {/* ---------- Week report, grouped by team ---------- */}
-        <section className="mt-10">
-          <h2
-            className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Week {week} report
-          </h2>
 
           {groups.length === 0 ? (
             <div className="mt-6">
@@ -98,94 +218,70 @@ export default async function InjuriesPage({
           ) : (
             <div className="mt-6 flex flex-col gap-4">
               {groups.map(({ team, rows }) => (
-                <section
-                  key={team.abbr}
-                  className="overflow-hidden rounded-lg border"
-                  style={{ borderColor: "var(--border-subtle)" }}
-                >
-                  {/* The team's own colour carries the group header — this is
-                      the colour-coordination the brief asks for, and it does
-                      the work a logo would have done. */}
-                  <header
-                    className="flex items-center gap-3 px-4 py-2.5"
-                    style={{
-                      background: team.primary,
-                      color: readableOn(team.primary),
-                      boxShadow: `inset 0 -3px 0 0 ${team.secondary}`,
-                    }}
-                  >
-                    <span
-                      className="text-lg uppercase tracking-wide"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {team.city} {team.nickname}
-                    </span>
-                    <Link
-                      href={`/injuries/${team.abbr.toLowerCase()}`}
-                      className="ml-auto text-xs font-bold uppercase tracking-wider hover:underline"
-                      style={{ fontFamily: "var(--font-condensed)" }}
-                    >
-                      Team history →
-                    </Link>
-                  </header>
-
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
+                <TeamBlock key={team.abbr} team={team} abbr={team.abbr} history>
+                  {/* table-fixed with a shared colgroup: every team block uses
+                      identical column widths, so Injury, W/T/F, Status and
+                      Note line up down the whole page instead of each table
+                      sizing itself to its own content. */}
+                  <table className="w-full table-fixed text-sm">
+                    <colgroup>
+                      <col className="w-[210px]" />
+                      <col className="w-[170px]" />
+                      <col className="w-[130px]" />
+                      <col className="w-[130px]" />
+                      <col />
+                    </colgroup>
+                    <thead>
+                      <tr style={{ background: "var(--surface-sunken)" }}>
+                        <Th>Player</Th>
+                        <Th>Injury</Th>
+                        <Th>W / T / F</Th>
+                        <Th>Status</Th>
+                        <Th>Note</Th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {rows.map(({ entry, player }) => (
                         <tr
-                          className="text-left"
-                          style={{ background: "var(--surface-sunken)" }}
+                          key={entry.player_id}
+                          className="border-t align-top"
+                          style={{ borderColor: "var(--border-subtle)" }}
                         >
-                          <Th>Player</Th>
-                          <Th>Injury</Th>
-                          <Th>W / T / F</Th>
-                          <Th>Status</Th>
-                          <Th className="hidden md:table-cell">Note</Th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {rows.map(({ entry, player }) => (
-                          <tr
-                            key={entry.player_id}
-                            className="border-t"
-                            style={{ borderColor: "var(--border-subtle)" }}
+                          <td className="px-4 py-3">
+                            <PlayerLink player={player} showTeam={false} />
+                          </td>
+                          <td className="px-4 py-3">{entry.injury}</td>
+                          <td className="px-4 py-3">
+                            <PracticeStrip practice={entry.practice} />
+                          </td>
+                          <td className="px-4 py-3">
+                            <StatusPill status={entry.status} />
+                          </td>
+                          <td
+                            className="px-4 py-3"
+                            style={{ color: "var(--text-secondary)" }}
                           >
-                            <td className="px-4 py-3">
-                              <PlayerLink player={player} showTeam={false} />
-                            </td>
-                            <td className="px-4 py-3">{entry.injury}</td>
-                            <td className="px-4 py-3">
-                              <PracticeStrip practice={entry.practice} />
-                            </td>
-                            <td className="px-4 py-3">
-                              <StatusPill status={entry.status} />
-                            </td>
-                            <td
-                              className="px-4 py-3 hidden md:table-cell"
-                              style={{ color: "var(--text-secondary)" }}
-                            >
-                              {entry.note}
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </section>
+                            {entry.note}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </TeamBlock>
               ))}
             </div>
           )}
         </section>
 
-        {/* ---------- Backlog ---------- */}
-        <section className="mt-16">
+        {/* =========================== Backlog =========================== */}
+        <section className="mt-20">
           <h2
             className="text-3xl uppercase tracking-wide"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Backlog
           </h2>
-          <p className="mt-2 max-w-2xl" style={{ color: "var(--text-secondary)" }}>
+          <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
             Players who have carried a designation for more than one week. A
             one-week knock and a managed condition look identical on a Friday
             report and nothing alike here.
@@ -225,8 +321,8 @@ export default async function InjuriesPage({
           )}
         </section>
 
-        {/* ---------- Team index ---------- */}
-        <section className="mt-16">
+        {/* ========================== Team index ========================== */}
+        <section className="mt-20">
           <h2
             className="text-3xl uppercase tracking-wide"
             style={{ fontFamily: "var(--font-display)" }}
@@ -238,10 +334,8 @@ export default async function InjuriesPage({
               <li key={team.abbr}>
                 <Link
                   href={`/injuries/${team.abbr.toLowerCase()}`}
-                  className="flex items-center gap-2 rounded px-3 py-2 text-sm font-semibold transition-colors"
-                  style={{
-                    boxShadow: "inset 0 0 0 1px var(--border-strong)",
-                  }}
+                  className="flex items-center gap-2 rounded px-3 py-2 text-sm font-semibold"
+                  style={{ boxShadow: "inset 0 0 0 1px var(--border-strong)" }}
                 >
                   <TeamChip abbr={team.abbr} size="sm" />
                   {team.nickname}
@@ -251,34 +345,69 @@ export default async function InjuriesPage({
           </ul>
         </section>
 
-        <p
-          className="mt-16 max-w-2xl text-sm"
-          style={{ color: "var(--text-muted)" }}
-        >
-          This page reports what was filed. It does not predict return dates or
-          assign a probability of playing — that is a medical claim, and not one
-          this site is qualified to make.
+        <p className="mt-16 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+          This page reports what was filed or said. It does not predict return
+          dates or assign a probability of playing — that is a medical claim,
+          and not one this site is qualified to make.
         </p>
       </Container>
     </>
   );
 }
 
-function Th({
+/** A team's rows under its own colour bar. Shared by both report sections so
+ *  the two read as the same object at different points in the season. */
+function TeamBlock({
+  team,
+  abbr,
+  history = false,
   children,
-  className = "",
 }: {
+  team: Team | undefined;
+  abbr: string;
+  history?: boolean;
   children: React.ReactNode;
-  className?: string;
 }) {
+  return (
+    <section
+      className="overflow-hidden rounded-lg border"
+      style={{ borderColor: "var(--border-subtle)" }}
+    >
+      <header
+        className="flex items-center gap-3 px-4 py-2.5"
+        style={{
+          background: team?.primary ?? "var(--surface-inverse)",
+          color: team ? readableOn(team.primary) : "var(--text-on-inverse)",
+          boxShadow: team ? `inset 0 -3px 0 0 ${team.secondary}` : undefined,
+        }}
+      >
+        <span
+          className="text-lg uppercase tracking-wide"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          {team ? `${team.city} ${team.nickname}` : abbr}
+        </span>
+        {history && (
+          <Link
+            href={`/injuries/${abbr.toLowerCase()}`}
+            className="ml-auto text-xs font-bold uppercase tracking-wider hover:underline"
+            style={{ fontFamily: "var(--font-condensed)" }}
+          >
+            Team history →
+          </Link>
+        )}
+      </header>
+      <div className="overflow-x-auto">{children}</div>
+    </section>
+  );
+}
+
+function Th({ children }: { children: React.ReactNode }) {
   return (
     <th
       scope="col"
-      className={`px-4 py-2 text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{
-        fontFamily: "var(--font-condensed)",
-        color: "var(--text-muted)",
-      }}
+      className="px-4 py-2 text-left text-xs font-bold uppercase tracking-wider"
+      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>
