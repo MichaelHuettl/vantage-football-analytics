@@ -10,6 +10,7 @@
     "news": "node scripts/fetch-news.mjs",
     "news:dry": "node scripts/fetch-news.mjs --dry",
     "draft-injury": "node scripts/draft-injury.mjs",
+    "audit-teams": "node scripts/audit-teams.mjs",
     "beat": "node scripts/fetch-beat.mjs",
     "beat:dry": "node scripts/fetch-beat.mjs --dry"
   },

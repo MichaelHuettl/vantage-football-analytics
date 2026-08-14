@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { TeamChip } from "./TeamChip";
+import { FreeAgentChip, TeamChip } from "./TeamChip";
 import { getTeam, readableOn } from "@/lib/teams";
 import type { Player, Position } from "@/lib/types";
 
@@ -164,7 +164,11 @@ export function PlayerLink({
         </span>
         {showTeam && (
           <span className="flex items-center gap-1.5 mt-0.5">
-            {player.team && <TeamChip abbr={player.team} size="sm" />}
+            {player.team ? (
+              <TeamChip abbr={player.team} size="sm" />
+            ) : player.status === "fa" ? (
+              <FreeAgentChip size="sm" />
+            ) : null}
             <span
               className="text-xs font-semibold uppercase"
               style={{

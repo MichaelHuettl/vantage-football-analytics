@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ChartFigure } from "@/components/ChartFigure";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerAvatar, PositionBadge } from "@/components/PlayerLink";
-import { TeamChip } from "@/components/TeamChip";
+import { FreeAgentChip, TeamChip } from "@/components/TeamChip";
 import { PLAYERS, getBye, getPlayer, getRankingList } from "@/lib/content";
 import { getTeam } from "@/lib/teams";
 
@@ -68,13 +68,19 @@ export default async function PlayerPage({
                 {player.name}
               </h1>
               <div className="mt-3 flex flex-wrap items-center gap-3">
-                {player.team && <TeamChip abbr={player.team} />}
+                {player.team ? (
+                  <TeamChip abbr={player.team} />
+                ) : player.status === "fa" ? (
+                  <FreeAgentChip />
+                ) : null}
                 <PositionBadge position={player.position} />
                 <span
                   className="text-sm"
                   style={{ color: "var(--color-ink-400)" }}
                 >
-                  {team ? `${team.city} ${team.nickname}` : player.team}
+                  {team
+                    ? `${team.city} ${team.nickname}`
+                    : player.team ?? (player.status === "fa" ? "Free agent" : "")}
                   {player.age ? ` · Age ${player.age}` : ""}
                   {player.draft ? ` · ${player.draft}` : ""}
                 </span>

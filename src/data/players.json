@@ -1,7 +1,7 @@
 {
  "schema_version": 4,
- "generated_at": "2026-08-12",
- "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams come from the workbook's target-share data where it carries them, and from verified lookups otherwise. Two teams corrected from confirmed 2026 trades: AJ Brown to New England, Jaylen Waddle to Denver. Remaining teams derive from the workbook's 2025 target-share sheet and have not been audited against 2026 moves.",
+ "generated_at": "2026-08-14",
+ "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams audited 2026-08-14 against Sleeper's public roster endpoint: all 100 non-DST players matched on name plus position with no ambiguous or unmatched names, and the six disagreements were each confirmed against a second source before being changed. Corrections: Kyler Murray to Minnesota, Kenneth Walker to Kansas City, Travis Etienne to New Orleans, Isaiah Likely to the Giants, Chig Okonkwo to Washington, and Daniel Carlson unsigned. The 20 defences carry their own team by construction and need no audit.",
  "data": [
   {
    "id": "josh-allen",
@@ -126,7 +126,7 @@
    "id": "kyler-murray",
    "name": "Kyler Murray",
    "position": "QB",
-   "team": "ARI",
+   "team": "MIN",
    "photo": "/img/headshots/kyler-murray.png"
   },
   {
@@ -217,7 +217,7 @@
    "id": "kenneth-walker",
    "name": "Kenneth Walker",
    "position": "RB",
-   "team": "SEA",
+   "team": "KC",
    "photo": "/img/headshots/kenneth-walker.png"
   },
   {
@@ -273,7 +273,7 @@
    "id": "travis-etienne",
    "name": "Travis Etienne",
    "position": "RB",
-   "team": "JAX",
+   "team": "NO",
    "photo": "/img/headshots/travis-etienne.png"
   },
   {
@@ -504,7 +504,7 @@
    "id": "isaiah-likely",
    "name": "Isaiah Likely",
    "position": "TE",
-   "team": "BAL",
+   "team": "NYG",
    "photo": "/img/headshots/isaiah-likely.png"
   },
   {
@@ -553,7 +553,7 @@
    "id": "chig-okonkwo",
    "name": "Chig Okonkwo",
    "position": "TE",
-   "team": "TEN",
+   "team": "WAS",
    "photo": "/img/headshots/chig-okonkwo.png"
   },
   {
@@ -792,7 +792,7 @@
    "id": "daniel-carlson",
    "name": "Daniel Carlson",
    "position": "K",
-   "team": "LV",
+   "status": "fa",
    "photo": "/img/headshots/daniel-carlson.png"
   },
   {

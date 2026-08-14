@@ -24,7 +24,7 @@ build` with a line number instead of shipping a broken page.
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
 | Positions | Six pages, typographic heroes, methodology text. **Charts are empty slots** |
-| Injuries | Training camp section live (47 entries). Weekly report empty until Week 1 |
+| Injuries | Training camp section live (49 entries). Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **Shell only** — no schedule data authored |
 | News | **Live** — RSS headlines + 118-post beat archive, both auto-refreshing |
@@ -56,24 +56,40 @@ build` with a line number instead of shipping a broken page.
 
 ## Open items
 
-1. **Team data is only partly audited.** Teams for the 80 skill players were
-   derived from the workbook's *2025* target-share sheet, so anyone who moved
-   in 2026 free agency is wrong — and a wrong team also means a wrong bye week
-   on the rankings page. Two are confirmed and fixed (AJ Brown → NE, Jaylen
-   Waddle → DEN). **The other 78 are unverified.** FantasyPros is JS-rendered
-   and could not be bulk-parsed. This is the highest-value outstanding fix.
-2. **Two injury records are contradicted by the live feed.** Puka Nacua is
-   reported as *psoas* soreness, not groin. Jeremiyah Love picked up an ankle
-   injury on Aug 13 per HC Mike LaFleur and is not in `camp-injuries.json` at
-   all.
-3. **Charts.** Every `ChartFigure` is an empty slot. Drop PNGs into
+1. **Charts.** Every `ChartFigure` is an empty slot. Drop PNGs into
    `public/charts/` and set `chart` in the relevant data file.
-4. **Games section** has no `schedule.json`.
+2. **Games section** has no `schedule.json`.
+3. **Daniel Carlson is ranked K16 and unsigned.** The data now says so —
+   `status: "fa"`, no team, an FA chip where the team chip goes — but whether
+   an unsigned kicker belongs on a draft board at all is an editorial call, not
+   a data one. Left as ranked.
+4. **Re-run `npm run audit-teams` after the cutdown to 53.** Rosters move
+   through the preseason; the audit below is true as of 2026-08-14 and nothing
+   keeps it true.
 5. **Nitter is fragile.** The beat feed goes through it because X has no free
    read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
    an outage makes the section stale rather than empty. If it stops updating,
    that is the first thing to check.
+
+## Closed items
+
+- **Team data is audited (2026-08-14).** All 100 non-DST players were checked
+  against Sleeper's public roster endpoint by `scripts/audit-teams.mjs`; the 20
+  defences carry their own team by construction. Every name matched on name
+  plus position with no ambiguous or unmatched records, and each of the six
+  disagreements was confirmed against a second source before it was changed:
+  Kyler Murray ARI → MIN, Kenneth Walker SEA → KC, Travis Etienne JAX → NO,
+  Isaiah Likely BAL → NYG, Chig Okonkwo TEN → WAS, and Daniel Carlson LV →
+  unsigned. The previously confirmed pair (AJ Brown → NE, Jaylen Waddle → DEN)
+  came back as agreements, which is what made the source credible. Bye weeks
+  follow from team, so all six rankings rows changed bye as well — five to a
+  different week, Carlson's to none.
+- **Both contradicted injury records are corrected (2026-08-14).** Puka Nacua
+  now reads psoas soreness in the hip flexor, with McVay's "back at practice
+  next week" attributed to him. Jeremiyah Love has a record: ankle, hurt in the
+  August 13 preseason opener, with LaFleur's hope for practice this week
+  attributed to him. Neither carries a timeline this site invented (§5.3).
 
 ## Source materials (outside the repo)
 
@@ -98,6 +114,10 @@ site was scaffolded into `vantage/` specifically so those stay outside it.
   `.next`, delete them and rebuild.
 - **`sips -Z` upscales.** It once turned a 680px/32KB image into 2400px/427KB
   of interpolation. Always cap at the source width.
+- **Player names collide.** The league has two Kenneth Walkers and two Josh
+  Allens. Any match against an outside roster has to agree on position as well
+  as name, and report what is still ambiguous rather than pick — a plausible
+  wrong match is worse than a gap. `scripts/audit-teams.mjs` does this.
 - **Smart punctuation breaks naive regex.** A filter written with `'` missed
   `'`. `scripts/lib/signal.mjs` normalises before matching; do the same
   anywhere else text is pattern-matched.
@@ -112,6 +132,7 @@ npm run build          # also typechecks; a bad data edit fails here
 npm run news           # pull RSS headlines
 npm run beat           # pull X posts via Nitter
 npm run draft-injury <url>   # draft injury records for review, writes nothing
+npm run audit-teams          # check every team against the live roster, writes nothing
 ```
 
 `scripts/curated/` re-runs the workbook screenshot → OCR → JSON pipeline; see

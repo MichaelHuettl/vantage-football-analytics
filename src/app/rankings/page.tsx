@@ -4,7 +4,7 @@ import { DataFreshness } from "@/components/DataFreshness";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
-import { TeamChip } from "@/components/TeamChip";
+import { FreeAgentChip, TeamChip } from "@/components/TeamChip";
 import {
   BYE_SEASON,
   getRankingList,
@@ -150,6 +150,8 @@ export default async function RankingsPage({
                     <td className="px-4 py-3">
                       {player.team ? (
                         <TeamChip abbr={player.team} />
+                      ) : player.status === "fa" ? (
+                        <FreeAgentChip />
                       ) : (
                         <span
                           className="text-xs"

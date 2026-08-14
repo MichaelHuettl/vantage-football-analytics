@@ -53,3 +53,30 @@ export function TeamChip({
     </span>
   );
 }
+
+/**
+ * Where a TeamChip would go for a player who has no team. An unsigned player
+ * is a fact worth stating, and it is not the same fact as a missing value: an
+ * em dash reads as "we did not fill this in". Outlined rather than filled, so
+ * it does not compete with the colour chips in the same column.
+ */
+export function FreeAgentChip({ size = "md" }: { size?: "sm" | "md" }) {
+  const dims =
+    size === "sm"
+      ? "text-[0.625rem] h-4 px-1"
+      : "text-xs h-5 px-1.5";
+
+  return (
+    <span
+      className={`inline-flex items-center justify-center rounded font-bold uppercase tracking-wide ${dims}`}
+      style={{
+        fontFamily: "var(--font-condensed)",
+        color: "var(--text-muted)",
+        boxShadow: "inset 0 0 0 1px var(--border-strong)",
+      }}
+      title="Unsigned free agent"
+    >
+      FA
+    </span>
+  );
+}
