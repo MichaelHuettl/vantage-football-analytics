@@ -8,7 +8,7 @@ import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
 import { getPlayer } from "@/lib/content";
 import { getTeam } from "@/lib/teams";
-import { BEAT_POSTS, BEAT_TOPICS, BEAT_UPDATED, TOPIC_BLURB } from "@/lib/beat";
+import { BEAT_POSTS, BEAT_TOPICS, BEAT_UPDATED, CURATED_COUNT, TOPIC_BLURB } from "@/lib/beat";
 import { BeatItem } from "@/components/BeatFeed";
 import type { BeatTopic } from "@/lib/beat";
 import type { NewsEntry } from "@/lib/types";
@@ -37,7 +37,7 @@ const CATEGORIES = [
 export default async function NewsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ team?: string; category?: string; topic?: string }>;
+  searchParams: Promise<{ team?: string; category?: string; topic?: string; beatTeam?: string }>;
 }) {
   const params = await searchParams;
   const team = params.team?.toUpperCase();
@@ -46,11 +46,24 @@ export default async function NewsPage({
     ? (params.topic as BeatTopic)
     : undefined;
 
+  // Its own team param: the two sections cover different periods, so filtering
+  // one to a team should not silently filter the other.
+  const beatTeam = params.beatTeam?.toUpperCase();
   const beat = BEAT_POSTS.filter(
     (p) =>
       (!topic || p.topic === topic) &&
-      (!team || (p.team_abbrs ?? []).includes(team)),
+      (!beatTeam || (p.team_abbrs ?? []).includes(beatTeam)),
   );
+  const beatTeams = [
+    ...new Set(BEAT_POSTS.flatMap((p) => p.team_abbrs ?? [])),
+  ].sort();
+  const beatQ = (over: Record<string, string | undefined>) => {
+    const q = new URLSearchParams();
+    const merged = { topic, beatTeam, ...over };
+    for (const [k, v] of Object.entries(merged)) if (v) q.set(k, v);
+    const str = q.toString();
+    return str ? `/news?${str}` : "/news";
+  };
 
   const all = [...file.data].sort((a, b) =>
     b.timestamp.localeCompare(a.timestamp),
@@ -77,7 +90,7 @@ export default async function NewsPage({
 
       <Container className="py-10">
         {/* ==================== Beat reports ==================== */}
-        <section className="mb-20">
+        <section>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
             <div className="flex flex-wrap items-center gap-3">
               <h2
@@ -86,6 +99,16 @@ export default async function NewsPage({
               >
                 Beat reports
               </h2>
+              <span
+                className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
+                style={{
+                  fontFamily: "var(--font-condensed)",
+                  background: "var(--text-primary)",
+                  color: "var(--surface-page)",
+                }}
+              >
+                Preseason
+              </span>
               <span
                 className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
                 style={{
@@ -101,29 +124,55 @@ export default async function NewsPage({
           </div>
 
           <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-            Filtered to what changes a decision — role, scheme, availability and
-            roster moves — rather than every rep of every practice.
+            Camp and preseason reporting from team beat writers, covering OTAs
+            in June through to the preseason games. Live posts are filtered to
+            what changes a decision — role, scheme, availability and roster
+            moves — rather than every rep of every practice. The {CURATED_COUNT}{" "}
+            June and July entries were collected by hand and are shown as
+            gathered. This section winds down once the season starts.
           </p>
 
           <nav aria-label="Topic" className="mt-5">
             <ul className="flex flex-wrap items-center gap-2">
               <li className="eyebrow mr-1">Topic</li>
               <li>
-                <FilterLink
-                  href={team ? `/news?team=${team}` : "/news"}
-                  active={!topic}
-                >
+                <FilterLink href={beatQ({ topic: undefined })} active={!topic}>
                   All
                 </FilterLink>
               </li>
               {BEAT_TOPICS.map((t) => (
                 <li key={t} title={TOPIC_BLURB[t]}>
-                  <FilterLink
-                    href={`/news?topic=${t}${team ? `&team=${team}` : ""}`}
-                    active={t === topic}
-                  >
+                  <FilterLink href={beatQ({ topic: t })} active={t === topic}>
                     {t}
                   </FilterLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="Beat team" className="mt-3">
+            <ul className="flex flex-wrap items-center gap-2">
+              <li className="eyebrow mr-1">Team</li>
+              <li>
+                <FilterLink href={beatQ({ beatTeam: undefined })} active={!beatTeam}>
+                  All
+                </FilterLink>
+              </li>
+              {beatTeams.map((abbr) => (
+                <li key={abbr}>
+                  <Link
+                    href={beatQ({ beatTeam: abbr })}
+                    aria-current={abbr === beatTeam ? "page" : undefined}
+                    className="inline-flex items-center rounded p-0.5"
+                    style={{
+                      boxShadow:
+                        abbr === beatTeam
+                          ? "inset 0 0 0 2px var(--color-vantage-amber)"
+                          : "none",
+                    }}
+                  >
+                    <TeamChip abbr={abbr} />
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -147,13 +196,38 @@ export default async function NewsPage({
           )}
         </section>
 
+      </Container>
+
+      {/* A ruled break, the same device that separates sections on the home
+          page. The two feeds cover different periods and should not read as
+          one continuous list. */}
+      <div className="yard-rule" />
+
+      <Container className="py-14">
         {/* ==================== Headline feed ==================== */}
-        <h2
-          className="text-3xl uppercase tracking-wide mb-6"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          Headlines
-        </h2>
+        <div className="flex flex-wrap items-center gap-3 mb-2">
+          <h2
+            className="text-3xl uppercase tracking-wide"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            Headlines
+          </h2>
+          <span
+            className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
+            style={{
+              fontFamily: "var(--font-condensed)",
+              background: "var(--text-primary)",
+              color: "var(--surface-page)",
+            }}
+          >
+            Season long
+          </span>
+        </div>
+        <p className="mb-6 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+          Published reporting from national outlets, running now and through the
+          season. Headline, source and timestamp only — follow the link to read
+          the piece.
+        </p>
 
         <div className="flex flex-wrap items-start justify-between gap-6">
           <div className="flex flex-col gap-4">

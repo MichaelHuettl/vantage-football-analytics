@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PositionBadge } from "@/components/PlayerLink";
 import { TeamChip } from "@/components/TeamChip";
 import { getPlayer } from "@/lib/content";
-import { TOPIC_BLURB } from "@/lib/beat";
+import { TOPIC_BLURB, splitOnTakeaway } from "@/lib/beat";
 import type { BeatPost, BeatTopic } from "@/lib/beat";
 
 const TOPIC_TOKEN: Record<BeatTopic, string> = {
@@ -41,14 +41,20 @@ export function BeatItem({ post }: { post: BeatPost }) {
 
   return (
     <article className="flex flex-wrap items-start gap-x-5 gap-y-3 py-5">
+      {/* An approximate post carried a relative stamp ("23h") on a screenshot
+          taken at an unrecorded moment, so the day is genuinely unknown. It
+          says so rather than showing a date it cannot support. */}
       <time
-        dateTime={post.timestamp}
+        dateTime={post.approx_date ? post.timestamp.slice(0, 7) : post.timestamp}
         className="eyebrow w-20 shrink-0 pt-1"
+        title={post.approx_date ? "Exact date unknown" : undefined}
       >
-        {new Date(post.timestamp).toLocaleDateString("en-US", {
-          month: "short",
-          day: "numeric",
-        })}
+        {post.approx_date
+          ? "Jun–Jul"
+          : new Date(post.timestamp).toLocaleDateString("en-US", {
+              month: "short",
+              day: "numeric",
+            })}
       </time>
 
       <div className="min-w-0 flex-1">
@@ -62,20 +68,51 @@ export function BeatItem({ post }: { post: BeatPost }) {
           >
             {post.author}
           </a>
-          {post.via !== post.author && (
+          {post.curated ? (
             <span className="text-xs" style={{ color: "var(--text-muted)" }}>
-              via {post.via}
+              collected
             </span>
+          ) : (
+            post.via !== post.author && (
+              <span className="text-xs" style={{ color: "var(--text-muted)" }}>
+                via {post.via}
+              </span>
+            )
           )}
         </div>
 
+        {/* The takeaway is marked rather than the post being trimmed: the
+            reader's eye lands on the meaning, and the surrounding text stays
+            there as context. Amber is correct here — §7 reserves it for the
+            highlighted thing on screen, and once per post is exactly that. */}
         <a
           href={post.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 block leading-relaxed hover:underline"
+          className="mt-2 block leading-relaxed"
         >
-          {post.text}
+          {(() => {
+            const { before, mark, after } = splitOnTakeaway(post);
+            if (!mark) return <span>{post.text}</span>;
+            return (
+              <>
+                <span style={{ color: "var(--text-muted)" }}>{before}</span>
+                <mark
+                  className="rounded px-1 py-0.5 font-medium"
+                  style={{
+                    background:
+                      "color-mix(in oklab, var(--color-vantage-amber) 26%, transparent)",
+                    color: "var(--text-primary)",
+                    boxShadow:
+                      "inset 0 -2px 0 0 color-mix(in oklab, var(--color-vantage-amber) 70%, transparent)",
+                  }}
+                >
+                  {mark}
+                </mark>
+                <span style={{ color: "var(--text-muted)" }}>{after}</span>
+              </>
+            );
+          })()}
         </a>
 
         {(players.length > 0 || (post.team_abbrs ?? []).length > 0) && (

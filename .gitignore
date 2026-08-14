@@ -45,3 +45,9 @@ next-env.d.ts
 # macOS/sync duplication artifacts ("file 2.png"), never intentional
 *[0-9].png:Zone.Identifier
 **/* [0-9].*
+
+# Local OCR build artifact and working files
+scripts/curated/ocr
+scripts/curated/images/
+scripts/curated/ocr_out.tsv
+scripts/curated/curated_raw.json
