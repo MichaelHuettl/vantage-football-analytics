@@ -134,10 +134,15 @@ export function PlayerLink({
   player,
   showTeam = true,
   showAvatar = true,
+  showPhoto = true,
 }: {
   player: Player;
   showTeam?: boolean;
   showAvatar?: boolean;
+  /** Falls back to initials even where a headshot exists. Dense tables read
+   *  better with a flat colour tile than with 40 small faces competing with
+   *  the text. */
+  showPhoto?: boolean;
 }) {
   return (
     <Link
@@ -148,7 +153,7 @@ export function PlayerLink({
         <PlayerAvatar
           name={player.name}
           position={player.position}
-          photo={player.photo}
+          photo={showPhoto ? player.photo : undefined}
           size={36}
           {...defenceTile(player)}
         />

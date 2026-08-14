@@ -10,16 +10,36 @@ export type CampStatus =
   | "Practicing"
   | "Cleared";
 
+/**
+ * A camp injury record, modelled on how clinical injury reporting is written:
+ * the specific diagnosis rather than a body part alone, the expected absence,
+ * and the player's current functional state.
+ *
+ * `timeline` is never present without `attribution`. Reporting that a coach
+ * said Week 1 is journalism; asserting a return date would be the medical
+ * claim §5.3 rules out, and this site is not qualified to make it.
+ */
 export interface CampInjury {
   player_id?: string;
   name: string;
   team: string;
   position: Position;
-  injury: string;
+  /** Anatomy, for grouping and scanning. */
+  body_part: string;
+  /** The specific diagnosis as published, including grade where given. */
+  diagnosis: string;
   status: CampStatus;
-  detail: string;
+  /** Expected absence, exactly as stated by the attributed source. */
+  timeline?: string;
+  /** Who said it. Required whenever `timeline` is present. */
+  attribution?: string;
+  /** Most recent observable state — practised, carted off, still on crutches. */
+  latest?: string;
   history?: string;
+  reported: string;
   source: "workbook" | "reported";
+  source_name?: string;
+  source_url?: string;
 }
 
 interface CampFile {
@@ -69,6 +89,33 @@ export function CampStatusPill({ status }: { status: CampStatus }) {
       }}
     >
       {status}
+    </span>
+  );
+}
+
+/**
+ * The expected absence, always shown with who said it. An unattributed
+ * timeline would read as this site's own prognosis.
+ */
+export function Timeline({ injury }: { injury: CampInjury }) {
+  if (!injury.timeline) {
+    return (
+      <span className="text-xs" style={{ color: "var(--text-muted)" }}>
+        None given
+      </span>
+    );
+  }
+  return (
+    <span className="block">
+      <span className="block text-sm">{injury.timeline}</span>
+      {injury.attribution && (
+        <span
+          className="mt-0.5 block text-xs"
+          style={{ color: "var(--text-muted)" }}
+        >
+          — {injury.attribution}
+        </span>
+      )}
     </span>
   );
 }

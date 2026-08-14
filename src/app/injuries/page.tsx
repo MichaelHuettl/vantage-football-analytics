@@ -5,6 +5,7 @@ import {
   CAMP_SEVERITY,
   CAMP_UPDATED,
   CampStatusPill,
+  Timeline,
 } from "@/components/CampInjury";
 import type { CampInjury } from "@/components/CampInjury";
 import { DataFreshness } from "@/components/DataFreshness";
@@ -100,28 +101,24 @@ export default async function InjuriesPage({
             <DataFreshness updated={CAMP_UPDATED} label="Camp report" staleAfterDays={4} />
           </div>
 
-          <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-            Skill positions only, worst first. Camp has no practice report to
-            read, so this is status and what has actually been said — not a
-            projection of who will be available.
-          </p>
-
           <div className="mt-6 flex flex-col gap-4">
             {campGroups.map(({ team, abbr, list }) => (
               <TeamBlock key={abbr} team={team} abbr={abbr}>
                 <table className="w-full table-fixed text-sm">
                   <colgroup>
-                    <col className="w-[210px]" />
-                    <col className="w-[170px]" />
-                    <col className="w-[130px]" />
+                    <col className="w-[190px]" />
+                    <col className="w-[260px]" />
+                    <col className="w-[125px]" />
+                    <col className="w-[175px]" />
                     <col />
                   </colgroup>
                   <thead>
                     <tr style={{ background: "var(--surface-sunken)" }}>
                       <Th>Player</Th>
-                      <Th>Injury</Th>
+                      <Th>Diagnosis</Th>
                       <Th>Status</Th>
-                      <Th>Detail</Th>
+                      <Th>Expected absence</Th>
+                      <Th>Latest</Th>
                     </tr>
                   </thead>
                   <tbody>
@@ -135,7 +132,7 @@ export default async function InjuriesPage({
                         >
                           <td className="px-4 py-3">
                             {player ? (
-                              <PlayerLink player={player} showTeam={false} />
+                              <PlayerLink player={player} showTeam={false} showPhoto={false} />
                             ) : (
                               <span className="flex items-center gap-2">
                                 <PositionBadge position={c.position} />
@@ -143,15 +140,29 @@ export default async function InjuriesPage({
                               </span>
                             )}
                           </td>
-                          <td className="px-4 py-3">{c.injury}</td>
+                          <td className="px-4 py-3">
+                            <span className="block font-semibold">{c.diagnosis}</span>
+                            <span
+                              className="mt-0.5 block text-xs uppercase tracking-wider"
+                              style={{
+                                fontFamily: "var(--font-condensed)",
+                                color: "var(--text-muted)",
+                              }}
+                            >
+                              {c.body_part}
+                            </span>
+                          </td>
                           <td className="px-4 py-3">
                             <CampStatusPill status={c.status} />
+                          </td>
+                          <td className="px-4 py-3">
+                            <Timeline injury={c} />
                           </td>
                           <td
                             className="px-4 py-3"
                             style={{ color: "var(--text-secondary)" }}
                           >
-                            {c.detail}
+                            {c.latest}
                             {c.history && (
                               <span
                                 className="mt-1.5 block text-xs"
@@ -160,6 +171,21 @@ export default async function InjuriesPage({
                                 History: {c.history}
                               </span>
                             )}
+                            <span className="mt-2 flex flex-wrap items-center gap-x-2 text-xs">
+                              <span style={{ color: "var(--text-muted)" }}>
+                                Reported {c.reported}
+                              </span>
+                              {c.source_url && (
+                                <a
+                                  href={c.source_url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="font-semibold hover:underline"
+                                >
+                                  {c.source_name ?? "Source"} ↗
+                                </a>
+                              )}
+                            </span>
                           </td>
                         </tr>
                       );
@@ -248,7 +274,7 @@ export default async function InjuriesPage({
                           style={{ borderColor: "var(--border-subtle)" }}
                         >
                           <td className="px-4 py-3">
-                            <PlayerLink player={player} showTeam={false} />
+                            <PlayerLink player={player} showTeam={false} showPhoto={false} />
                           </td>
                           <td className="px-4 py-3">{entry.injury}</td>
                           <td className="px-4 py-3">
@@ -346,9 +372,12 @@ export default async function InjuriesPage({
         </section>
 
         <p className="mt-16 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
-          This page reports what was filed or said. It does not predict return
-          dates or assign a probability of playing — that is a medical claim,
-          and not one this site is qualified to make.
+          Every expected absence on this page is quoted from the team, a coach
+          or a published report, and is attributed to whoever said it. This site
+          does not estimate return dates or assign a probability of playing —
+          that is a medical claim, and not one it is qualified to make. An
+          absence shown as &ldquo;none given&rdquo; means nobody has stated one,
+          not that the injury is minor.
         </p>
       </Container>
     </>
