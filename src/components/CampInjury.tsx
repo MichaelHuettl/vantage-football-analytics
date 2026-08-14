@@ -101,7 +101,7 @@ export function Timeline({ injury }: { injury: CampInjury }) {
   if (!injury.timeline) {
     return (
       <span className="text-xs" style={{ color: "var(--text-muted)" }}>
-        None given
+        Not stated
       </span>
     );
   }

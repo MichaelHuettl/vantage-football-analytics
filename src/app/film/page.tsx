@@ -12,7 +12,7 @@ import type { PlayConcept } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Film room",
   description:
-    "Route concepts drawn from scratch, organised by concept and by team.",
+    "Route concepts drawn from scratch, organized by concept and by team.",
 };
 
 interface ConceptsFile {

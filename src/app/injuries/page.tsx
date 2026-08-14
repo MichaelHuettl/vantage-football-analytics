@@ -397,7 +397,7 @@ export default async function InjuriesPage({
           or a published report, and is attributed to whoever said it. This site
           does not estimate return dates or assign a probability of playing —
           that is a medical claim, and not one it is qualified to make. An
-          absence shown as &ldquo;none given&rdquo; means nobody has stated one,
+          absence shown as &ldquo;not stated&rdquo; means nobody has stated one,
           not that the injury is minor.
         </p>
       </Container>
