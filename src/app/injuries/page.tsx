@@ -24,6 +24,7 @@ import {
   teamsWithInjuries,
 } from "@/lib/injuries";
 import { getPlayer } from "@/lib/content";
+import { isNewerThan, latestNewsFor } from "@/lib/freshness";
 import { getTeam, readableOn } from "@/lib/teams";
 import type { Team } from "@/lib/types";
 
@@ -186,6 +187,35 @@ export default async function InjuriesPage({
                                 </a>
                               )}
                             </span>
+                            {(() => {
+                              // The feed cannot write a diagnosis, but it can
+                              // say that something has been reported since this
+                              // row was written — which is what a static page
+                              // otherwise gets wrong.
+                              const fresh = latestNewsFor(c.player_id);
+                              if (!isNewerThan(fresh, c.reported)) return null;
+                              return (
+                                <a
+                                  href={fresh!.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="mt-2 flex items-start gap-1.5 rounded px-2 py-1.5 text-xs hover:underline"
+                                  style={{
+                                    background:
+                                      "color-mix(in oklab, var(--color-vantage-amber) 16%, transparent)",
+                                    color: "var(--text-primary)",
+                                  }}
+                                >
+                                  <span
+                                    className="shrink-0 font-bold uppercase tracking-wider"
+                                    style={{ fontFamily: "var(--font-condensed)" }}
+                                  >
+                                    Newer
+                                  </span>
+                                  <span>{fresh!.headline}</span>
+                                </a>
+                              );
+                            })()}
                           </td>
                         </tr>
                       );

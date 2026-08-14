@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "news": "node scripts/fetch-news.mjs",
+    "news:dry": "node scripts/fetch-news.mjs --dry",
+    "draft-injury": "node scripts/draft-injury.mjs"
   },
   "dependencies": {
     "next": "16.3.0",
