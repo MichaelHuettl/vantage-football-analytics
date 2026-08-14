@@ -11,8 +11,7 @@ import type { CampInjury } from "@/components/CampInjury";
 import { DataFreshness } from "@/components/DataFreshness";
 import { InjuryTimeline, PracticeStrip, StatusPill } from "@/components/Injury";
 import { Container, EmptyState } from "@/components/PageHeader";
-import { PlayerLink } from "@/components/PlayerLink";
-import { PositionBadge } from "@/components/PlayerLink";
+import { PlayerLink, PositionBadge } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
 import {
@@ -26,7 +25,7 @@ import {
 import { getPlayer } from "@/lib/content";
 import { isNewerThan, latestNewsFor } from "@/lib/freshness";
 import { getTeam, readableOn } from "@/lib/teams";
-import type { Team } from "@/lib/types";
+import type { Player, Position, Team } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Injury report",
@@ -132,14 +131,11 @@ export default async function InjuriesPage({
                           style={{ borderColor: "var(--border-subtle)" }}
                         >
                           <td className="px-4 py-3">
-                            {player ? (
-                              <PlayerLink player={player} showTeam={false} showPhoto={false} />
-                            ) : (
-                              <span className="flex items-center gap-2">
-                                <PositionBadge position={c.position} />
-                                <span className="font-semibold">{c.name}</span>
-                              </span>
-                            )}
+                            <PlayerCell
+                              player={player}
+                              name={c.name}
+                              position={c.position}
+                            />
                           </td>
                           <td className="px-4 py-3">
                             <span className="block font-semibold">{c.diagnosis}</span>
@@ -172,21 +168,6 @@ export default async function InjuriesPage({
                                 History: {c.history}
                               </span>
                             )}
-                            <span className="mt-2 flex flex-wrap items-center gap-x-2 text-xs">
-                              <span style={{ color: "var(--text-muted)" }}>
-                                Reported {c.reported}
-                              </span>
-                              {c.source_url && (
-                                <a
-                                  href={c.source_url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="font-semibold hover:underline"
-                                >
-                                  {c.source_name ?? "Source"} ↗
-                                </a>
-                              )}
-                            </span>
                             {(() => {
                               // The feed cannot write a diagnosis, but it can
                               // say that something has been reported since this
@@ -195,11 +176,8 @@ export default async function InjuriesPage({
                               const fresh = latestNewsFor(c.player_id);
                               if (!isNewerThan(fresh, c.reported)) return null;
                               return (
-                                <a
-                                  href={fresh!.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="mt-2 flex items-start gap-1.5 rounded px-2 py-1.5 text-xs hover:underline"
+                                <span
+                                  className="mt-2 flex items-start gap-1.5 rounded px-2 py-1.5 text-xs"
                                   style={{
                                     background:
                                       "color-mix(in oklab, var(--color-vantage-amber) 16%, transparent)",
@@ -213,7 +191,7 @@ export default async function InjuriesPage({
                                     Newer
                                   </span>
                                   <span>{fresh!.headline}</span>
-                                </a>
+                                </span>
                               );
                             })()}
                           </td>
@@ -304,7 +282,11 @@ export default async function InjuriesPage({
                           style={{ borderColor: "var(--border-subtle)" }}
                         >
                           <td className="px-4 py-3">
-                            <PlayerLink player={player} showTeam={false} showPhoto={false} />
+                            <PlayerCell
+                              player={player}
+                              name={player.name}
+                              position={player.position}
+                            />
                           </td>
                           <td className="px-4 py-3">{entry.injury}</td>
                           <td className="px-4 py-3">
@@ -385,6 +367,14 @@ export default async function InjuriesPage({
           >
             By team
           </h2>
+          {teams.length === 0 ? (
+            <div className="mt-6">
+              <EmptyState
+                title="No team reports yet."
+                direction="A team appears here once it has filed a weekly injury report."
+              />
+            </div>
+          ) : (
           <ul className="mt-6 flex flex-wrap gap-2">
             {teams.map((team) => (
               <li key={team.abbr}>
@@ -399,6 +389,7 @@ export default async function InjuriesPage({
               </li>
             ))}
           </ul>
+          )}
         </section>
 
         <p className="mt-16 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
@@ -458,6 +449,41 @@ function TeamBlock({
       </header>
       <div className="overflow-x-auto">{children}</div>
     </section>
+  );
+}
+
+/**
+ * One player cell for both report tables.
+ *
+ * Previously a rostered player rendered a 36px avatar tile while anyone
+ * without a player page rendered a small position pill, so the first column
+ * had two different shapes down the same list. Both now use the pill: with
+ * headshots off it carried no information the pill does not, and it was three
+ * times the height.
+ */
+function PlayerCell({
+  player,
+  name,
+  position,
+}: {
+  player: Player | undefined;
+  name: string;
+  position: Position;
+}) {
+  return (
+    <span className="flex items-center gap-2">
+      <PositionBadge position={position} />
+      {player ? (
+        <Link
+          href={`/players/${player.id}`}
+          className="font-semibold hover:underline"
+        >
+          {name}
+        </Link>
+      ) : (
+        <span className="font-semibold">{name}</span>
+      )}
+    </span>
   );
 }
 

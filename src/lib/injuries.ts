@@ -7,6 +7,8 @@ interface InjuriesFile {
   schema_version: number;
   updated: string;
   current_week: number;
+  /** Declared so the week selector survives an empty report. */
+  weeks?: number[];
   note?: string;
   data: InjuryEntry[];
 }
@@ -17,9 +19,8 @@ export const INJURIES: InjuryEntry[] = file.data;
 export const INJURY_UPDATED = file.updated;
 export const CURRENT_WEEK = file.current_week;
 
-export const WEEKS: number[] = [...new Set(INJURIES.map((i) => i.week))].sort(
-  (a, b) => a - b,
-);
+export const WEEKS: number[] =
+  file.weeks ?? [...new Set(INJURIES.map((i) => i.week))].sort((a, b) => a - b);
 
 export interface InjuryRow {
   entry: InjuryEntry;

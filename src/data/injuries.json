@@ -1,21 +1,27 @@
 {
-  "schema_version": 1,
-  "updated": "2026-08-11",
-  "current_week": 1,
-  "note": "PLACEHOLDER SAMPLE. One entry per player per week. `practice` is Wed/Thu/Fri participation — DNP, LP (limited), FP (full), or — where no practice was held. `status` is the game designation. Keeping every week's entry rather than overwriting is what makes the backlog and the per-player history work, so add rows, never edit old ones.",
-  "data": [
-    { "week": 1, "player_id": "christian-mccaffrey", "team": "SF", "injury": "Achilles", "practice": { "wed": "DNP", "thu": "LP", "fri": "LP" }, "status": "Questionable", "note": "Upgraded to limited on Thursday after missing Wednesday." },
-    { "week": 1, "player_id": "puka-nacua", "team": "LAR", "injury": "Knee", "practice": { "wed": "LP", "thu": "FP", "fri": "FP" }, "status": "Active", "note": "Full participant by Thursday." },
-    { "week": 1, "player_id": "brock-bowers", "team": "LV", "injury": "Ankle", "practice": { "wed": "DNP", "thu": "DNP", "fri": "LP" }, "status": "Doubtful", "note": "Did not practice until Friday." },
-    { "week": 1, "player_id": "jonathan-taylor", "team": "IND", "injury": "Hamstring", "practice": { "wed": "DNP", "thu": "DNP", "fri": "DNP" }, "status": "Out", "note": "No practice participation all week." },
-    { "week": 1, "player_id": "trey-mcbride", "team": "ARI", "injury": "Concussion", "practice": { "wed": "DNP", "thu": "LP", "fri": "FP" }, "status": "Active", "note": "Cleared protocol Friday." },
-    { "week": 1, "player_id": "jamarr-chase", "team": "CIN", "injury": "Hip", "practice": { "wed": "LP", "thu": "LP", "fri": "LP" }, "status": "Questionable", "note": "Limited every day without progressing." },
-
-    { "week": 2, "player_id": "christian-mccaffrey", "team": "SF", "injury": "Achilles", "practice": { "wed": "LP", "thu": "FP", "fri": "FP" }, "status": "Active", "note": "Two full practices to close the week." },
-    { "week": 2, "player_id": "brock-bowers", "team": "LV", "injury": "Ankle", "practice": { "wed": "LP", "thu": "LP", "fri": "FP" }, "status": "Questionable", "note": "Trending up from last week's doubtful." },
-    { "week": 2, "player_id": "jonathan-taylor", "team": "IND", "injury": "Hamstring", "practice": { "wed": "DNP", "thu": "LP", "fri": "LP" }, "status": "Doubtful", "note": "First practice participation since the injury." },
-    { "week": 2, "player_id": "jamarr-chase", "team": "CIN", "injury": "Hip", "practice": { "wed": "DNP", "thu": "DNP", "fri": "LP" }, "status": "Questionable", "note": "Regressed from last week before a Friday limited session." },
-    { "week": 2, "player_id": "george-kittle", "team": "SF", "injury": "Groin", "practice": { "wed": "DNP", "thu": "LP", "fri": "LP" }, "status": "Questionable", "note": "New designation this week." },
-    { "week": 2, "player_id": "justin-jefferson", "team": "MIN", "injury": "Quad", "practice": { "wed": "LP", "thu": "FP", "fri": "FP" }, "status": "Active", "note": "Precautionary Wednesday rest." }
-  ]
+ "schema_version": 2,
+ "updated": "2026-08-14",
+ "current_week": 1,
+ "weeks": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18
+ ],
+ "note": "In-season weekly injury reports. Empty until Week 1 is played. One row per player per week \u2014 add rows, never edit old ones, because the backlog and the per-player timeline are both derived from the full history.",
+ "data": []
 }
