@@ -24,8 +24,16 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Pull feeds
+      - name: Pull headline feeds
         run: node scripts/fetch-news.mjs
+
+      # Beat posts come through Nitter, which X blocks periodically. A failure
+      # here must not fail the whole job or block the headline commit — the
+      # script leaves the existing file alone, so the section simply goes
+      # stale rather than empty.
+      - name: Pull beat posts
+        continue-on-error: true
+        run: node scripts/fetch-beat.mjs
 
       # The build has to pass before anything is committed. A malformed feed
       # that breaks the site should fail the job, not deploy.
@@ -36,12 +44,12 @@ jobs:
 
       - name: Commit if the feed changed
         run: |
-          if git diff --quiet -- src/data/news.json; then
-            echo "No new headlines."
+          if git diff --quiet -- src/data/news.json src/data/beat-posts.json; then
+            echo "Nothing new."
             exit 0
           fi
           git config user.name "vantage-bot"
           git config user.email "noreply@users.noreply.github.com"
-          git add src/data/news.json
-          git commit -m "News feed: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git add src/data/news.json src/data/beat-posts.json
+          git commit -m "Feeds: $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
