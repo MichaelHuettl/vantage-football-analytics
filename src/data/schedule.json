@@ -3,8 +3,8 @@
  "season": 2026,
  "week": 1,
  "updated": "2026-08-14",
- "source": "Matchups, kickoff times, venues and roofs from the published 2026 schedule, taken from ESPN and cross-checked row by row against nflverse. Both agree on all 16 matchups and every kickoff time.",
- "note": "Lines, weather, scores and leaders are intentionally absent, not lost. A field that has not been authored is omitted rather than zeroed, so the page can tell \"nothing posted yet\" from \"posted as zero\". Implied team totals are authored here alongside the lines they come from — a component must not compute them (§11). Roofs follow nflverse (§4.3); Lucas Oil and NRG are recorded as retractable, which nflverse leaves blank because whether it opens is a game-day decision.",
+ "source": "Matchups, kickoffs, venues and roofs for all 18 weeks from nflverse (§4.3). Week 1 was cross-checked game by game against ESPN: both agree on every matchup and every kickoff time. Bye weeks implied by this schedule match byes.json for all 32 teams.",
+ "note": "Lines, weather, scores and leaders are intentionally absent, not lost — an unauthored field is omitted rather than zeroed, so the page can tell \"nothing posted yet\" from \"posted as zero\". Implied team totals are authored alongside the lines they come from; a component must not compute them (§11). Roofs follow nflverse except where it is plainly wrong: it defaults open-air international grounds to dome, so Melbourne, the Maracanã, Stade de France, Munich and Estadio Banorte are corrected to outdoor and the Bernabéu to retractable. Weather short-circuits on roof, so calling an open cricket ground a dome would suppress a forecast that matters. Blank nflverse roofs are retractables, where opening is a game-day decision.",
  "data": [
   {
    "id": "2026-w1-ne-sea",
@@ -13,7 +13,6 @@
    "away": "NE",
    "home": "SEA",
    "venue": "Lumen Field",
-   "city": "Seattle",
    "roof": "outdoor"
   },
   {
@@ -23,7 +22,16 @@
    "away": "SF",
    "home": "LAR",
    "venue": "Melbourne Cricket Ground",
-   "city": "Melbourne",
+   "roof": "outdoor",
+   "neutral": true
+  },
+  {
+   "id": "2026-w1-chi-car",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "CHI",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
    "roof": "outdoor"
   },
   {
@@ -33,7 +41,6 @@
    "away": "TB",
    "home": "CIN",
    "venue": "Paycor Stadium",
-   "city": "Cincinnati",
    "roof": "outdoor"
   },
   {
@@ -43,18 +50,16 @@
    "away": "NO",
    "home": "DET",
    "venue": "Ford Field",
-   "city": "Detroit",
    "roof": "dome"
   },
   {
-   "id": "2026-w1-nyj-ten",
+   "id": "2026-w1-buf-hou",
    "week": 1,
    "kickoff": "2026-09-13T17:00:00Z",
-   "away": "NYJ",
-   "home": "TEN",
-   "venue": "Nissan Stadium",
-   "city": "Nashville",
-   "roof": "outdoor"
+   "away": "BUF",
+   "home": "HOU",
+   "venue": "Reliant Stadium",
+   "roof": "retractable"
   },
   {
    "id": "2026-w1-bal-ind",
@@ -63,28 +68,7 @@
    "away": "BAL",
    "home": "IND",
    "venue": "Lucas Oil Stadium",
-   "city": "Indianapolis",
    "roof": "retractable"
-  },
-  {
-   "id": "2026-w1-atl-pit",
-   "week": 1,
-   "kickoff": "2026-09-13T17:00:00Z",
-   "away": "ATL",
-   "home": "PIT",
-   "venue": "Acrisure Stadium",
-   "city": "Pittsburgh",
-   "roof": "outdoor"
-  },
-  {
-   "id": "2026-w1-chi-car",
-   "week": 1,
-   "kickoff": "2026-09-13T17:00:00Z",
-   "away": "CHI",
-   "home": "CAR",
-   "venue": "Bank of America Stadium",
-   "city": "Charlotte",
-   "roof": "outdoor"
   },
   {
    "id": "2026-w1-cle-jax",
@@ -93,47 +77,24 @@
    "away": "CLE",
    "home": "JAX",
    "venue": "EverBank Stadium",
-   "city": "Jacksonville",
    "roof": "outdoor"
   },
   {
-   "id": "2026-w1-buf-hou",
+   "id": "2026-w1-atl-pit",
    "week": 1,
    "kickoff": "2026-09-13T17:00:00Z",
-   "away": "BUF",
-   "home": "HOU",
-   "venue": "NRG Stadium",
-   "city": "Houston",
-   "roof": "retractable"
+   "away": "ATL",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "roof": "outdoor"
   },
   {
-   "id": "2026-w1-mia-lv",
+   "id": "2026-w1-nyj-ten",
    "week": 1,
-   "kickoff": "2026-09-13T20:25:00Z",
-   "away": "MIA",
-   "home": "LV",
-   "venue": "Allegiant Stadium",
-   "city": "Las Vegas",
-   "roof": "dome"
-  },
-  {
-   "id": "2026-w1-gb-min",
-   "week": 1,
-   "kickoff": "2026-09-13T20:25:00Z",
-   "away": "GB",
-   "home": "MIN",
-   "venue": "U.S. Bank Stadium",
-   "city": "Minneapolis",
-   "roof": "dome"
-  },
-  {
-   "id": "2026-w1-was-phi",
-   "week": 1,
-   "kickoff": "2026-09-13T20:25:00Z",
-   "away": "WAS",
-   "home": "PHI",
-   "venue": "Lincoln Financial Field",
-   "city": "Philadelphia",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "NYJ",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
    "roof": "outdoor"
   },
   {
@@ -143,8 +104,34 @@
    "away": "ARI",
    "home": "LAC",
    "venue": "SoFi Stadium",
-   "city": "Inglewood",
    "roof": "dome"
+  },
+  {
+   "id": "2026-w1-mia-lv",
+   "week": 1,
+   "kickoff": "2026-09-13T20:25:00Z",
+   "away": "MIA",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w1-gb-min",
+   "week": 1,
+   "kickoff": "2026-09-13T20:25:00Z",
+   "away": "GB",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w1-was-phi",
+   "week": 1,
+   "kickoff": "2026-09-13T20:25:00Z",
+   "away": "WAS",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
   },
   {
    "id": "2026-w1-dal-nyg",
@@ -153,7 +140,6 @@
    "away": "DAL",
    "home": "NYG",
    "venue": "MetLife Stadium",
-   "city": "East Rutherford",
    "roof": "outdoor"
   },
   {
@@ -163,7 +149,2317 @@
    "away": "DEN",
    "home": "KC",
    "venue": "GEHA Field at Arrowhead Stadium",
-   "city": "Kansas City",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-det-buf",
+   "week": 2,
+   "kickoff": "2026-09-18T00:15:00Z",
+   "away": "DET",
+   "home": "BUF",
+   "venue": "Highmark Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-car-atl",
+   "week": 2,
+   "kickoff": "2026-09-20T17:00:00Z",
+   "away": "CAR",
+   "home": "ATL",
+   "venue": "Mercedes-Benz Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w2-no-bal",
+   "week": 2,
+   "kickoff": "2026-09-20T17:00:00Z",
+   "away": "NO",
+   "home": "BAL",
+   "venue": "M&T Bank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-min-chi",
+   "week": 2,
+   "kickoff": "2026-09-20T17:00:00Z",
+   "away": "MIN",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-cin-hou",
+   "week": 2,
+   "kickoff": "2026-09-20T17:00:00Z",
+   "away": "CIN",
+   "home": "HOU",
+   "venue": "Reliant Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w2-pit-ne",
+   "week": 2,
+   "kickoff": "2026-09-20T17:00:00Z",
+   "away": "PIT",
+   "home": "NE",
+   "venue": "Gillette Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-gb-nyj",
+   "week": 2,
+   "kickoff": "2026-09-20T17:00:00Z",
+   "away": "GB",
+   "home": "NYJ",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-cle-tb",
+   "week": 2,
+   "kickoff": "2026-09-20T17:00:00Z",
+   "away": "CLE",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-phi-ten",
+   "week": 2,
+   "kickoff": "2026-09-20T17:00:00Z",
+   "away": "PHI",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-jax-den",
+   "week": 2,
+   "kickoff": "2026-09-20T20:05:00Z",
+   "away": "JAX",
+   "home": "DEN",
+   "venue": "Empower Field at Mile High",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-lv-lac",
+   "week": 2,
+   "kickoff": "2026-09-20T20:05:00Z",
+   "away": "LV",
+   "home": "LAC",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w2-sea-ari",
+   "week": 2,
+   "kickoff": "2026-09-20T20:25:00Z",
+   "away": "SEA",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w2-was-dal",
+   "week": 2,
+   "kickoff": "2026-09-20T20:25:00Z",
+   "away": "WAS",
+   "home": "DAL",
+   "venue": "AT&T Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w2-mia-sf",
+   "week": 2,
+   "kickoff": "2026-09-20T20:25:00Z",
+   "away": "MIA",
+   "home": "SF",
+   "venue": "Levi's Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-ind-kc",
+   "week": 2,
+   "kickoff": "2026-09-21T00:20:00Z",
+   "away": "IND",
+   "home": "KC",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w2-nyg-lar",
+   "week": 2,
+   "kickoff": "2026-09-22T00:15:00Z",
+   "away": "NYG",
+   "home": "LAR",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w3-atl-gb",
+   "week": 3,
+   "kickoff": "2026-09-25T00:15:00Z",
+   "away": "ATL",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-lac-buf",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "LAC",
+   "home": "BUF",
+   "venue": "Highmark Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-car-cle",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "CAR",
+   "home": "CLE",
+   "venue": "Huntington Bank Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-nyj-det",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "NYJ",
+   "home": "DET",
+   "venue": "Ford Field",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w3-hou-ind",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "HOU",
+   "home": "IND",
+   "venue": "Lucas Oil Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w3-ne-jax",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "NE",
+   "home": "JAX",
+   "venue": "EverBank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-kc-mia",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "KC",
+   "home": "MIA",
+   "venue": "Hard Rock Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-ten-nyg",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "TEN",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-cin-pit",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "CIN",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-sea-was",
+   "week": 3,
+   "kickoff": "2026-09-27T17:00:00Z",
+   "away": "SEA",
+   "home": "WAS",
+   "venue": "Northwest Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-ari-sf",
+   "week": 3,
+   "kickoff": "2026-09-27T20:05:00Z",
+   "away": "ARI",
+   "home": "SF",
+   "venue": "Levi's Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-min-tb",
+   "week": 3,
+   "kickoff": "2026-09-27T20:05:00Z",
+   "away": "MIN",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-bal-dal",
+   "week": 3,
+   "kickoff": "2026-09-27T20:25:00Z",
+   "away": "BAL",
+   "home": "DAL",
+   "venue": "Maracana Stadium",
+   "roof": "outdoor",
+   "neutral": true
+  },
+  {
+   "id": "2026-w3-lv-no",
+   "week": 3,
+   "kickoff": "2026-09-27T20:25:00Z",
+   "away": "LV",
+   "home": "NO",
+   "venue": "Caesars Superdome",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w3-lar-den",
+   "week": 3,
+   "kickoff": "2026-09-28T00:20:00Z",
+   "away": "LAR",
+   "home": "DEN",
+   "venue": "Empower Field at Mile High",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w3-phi-chi",
+   "week": 3,
+   "kickoff": "2026-09-29T00:15:00Z",
+   "away": "PHI",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-pit-cle",
+   "week": 4,
+   "kickoff": "2026-10-02T00:15:00Z",
+   "away": "PIT",
+   "home": "CLE",
+   "venue": "Huntington Bank Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-ind-was",
+   "week": 4,
+   "kickoff": "2026-10-04T13:30:00Z",
+   "away": "IND",
+   "home": "WAS",
+   "venue": "Tottenham Hotspur Stadium",
+   "roof": "outdoor",
+   "neutral": true
+  },
+  {
+   "id": "2026-w4-ten-bal",
+   "week": 4,
+   "kickoff": "2026-10-04T17:00:00Z",
+   "away": "TEN",
+   "home": "BAL",
+   "venue": "M&T Bank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-ne-buf",
+   "week": 4,
+   "kickoff": "2026-10-04T17:00:00Z",
+   "away": "NE",
+   "home": "BUF",
+   "venue": "Highmark Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-nyj-chi",
+   "week": 4,
+   "kickoff": "2026-10-04T17:00:00Z",
+   "away": "NYJ",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-jax-cin",
+   "week": 4,
+   "kickoff": "2026-10-04T17:00:00Z",
+   "away": "JAX",
+   "home": "CIN",
+   "venue": "Paycor Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-dal-hou",
+   "week": 4,
+   "kickoff": "2026-10-04T17:00:00Z",
+   "away": "DAL",
+   "home": "HOU",
+   "venue": "Reliant Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w4-ari-nyg",
+   "week": 4,
+   "kickoff": "2026-10-04T17:00:00Z",
+   "away": "ARI",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-lar-phi",
+   "week": 4,
+   "kickoff": "2026-10-04T17:00:00Z",
+   "away": "LAR",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-gb-tb",
+   "week": 4,
+   "kickoff": "2026-10-04T17:00:00Z",
+   "away": "GB",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-mia-min",
+   "week": 4,
+   "kickoff": "2026-10-04T20:05:00Z",
+   "away": "MIA",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w4-kc-lv",
+   "week": 4,
+   "kickoff": "2026-10-04T20:25:00Z",
+   "away": "KC",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w4-lac-sea",
+   "week": 4,
+   "kickoff": "2026-10-04T20:25:00Z",
+   "away": "LAC",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-den-sf",
+   "week": 4,
+   "kickoff": "2026-10-04T20:25:00Z",
+   "away": "DEN",
+   "home": "SF",
+   "venue": "Levi's Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-det-car",
+   "week": 4,
+   "kickoff": "2026-10-05T00:20:00Z",
+   "away": "DET",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w4-atl-no",
+   "week": 4,
+   "kickoff": "2026-10-06T00:15:00Z",
+   "away": "ATL",
+   "home": "NO",
+   "venue": "Caesars Superdome",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w5-tb-dal",
+   "week": 5,
+   "kickoff": "2026-10-09T00:15:00Z",
+   "away": "TB",
+   "home": "DAL",
+   "venue": "AT&T Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w5-phi-jax",
+   "week": 5,
+   "kickoff": "2026-10-11T13:30:00Z",
+   "away": "PHI",
+   "home": "JAX",
+   "venue": "Tottenham Hotspur Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-cin-mia",
+   "week": 5,
+   "kickoff": "2026-10-11T17:00:00Z",
+   "away": "CIN",
+   "home": "MIA",
+   "venue": "Hard Rock Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-lv-ne",
+   "week": 5,
+   "kickoff": "2026-10-11T17:00:00Z",
+   "away": "LV",
+   "home": "NE",
+   "venue": "Gillette Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-min-no",
+   "week": 5,
+   "kickoff": "2026-10-11T17:00:00Z",
+   "away": "MIN",
+   "home": "NO",
+   "venue": "Caesars Superdome",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w5-cle-nyj",
+   "week": 5,
+   "kickoff": "2026-10-11T17:00:00Z",
+   "away": "CLE",
+   "home": "NYJ",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-ind-pit",
+   "week": 5,
+   "kickoff": "2026-10-11T17:00:00Z",
+   "away": "IND",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-hou-ten",
+   "week": 5,
+   "kickoff": "2026-10-11T17:00:00Z",
+   "away": "HOU",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-nyg-was",
+   "week": 5,
+   "kickoff": "2026-10-11T17:00:00Z",
+   "away": "NYG",
+   "home": "WAS",
+   "venue": "Northwest Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-den-lac",
+   "week": 5,
+   "kickoff": "2026-10-11T20:05:00Z",
+   "away": "DEN",
+   "home": "LAC",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w5-det-ari",
+   "week": 5,
+   "kickoff": "2026-10-11T20:25:00Z",
+   "away": "DET",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w5-chi-gb",
+   "week": 5,
+   "kickoff": "2026-10-11T20:25:00Z",
+   "away": "CHI",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-sf-sea",
+   "week": 5,
+   "kickoff": "2026-10-11T20:25:00Z",
+   "away": "SF",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w5-bal-atl",
+   "week": 5,
+   "kickoff": "2026-10-12T00:20:00Z",
+   "away": "BAL",
+   "home": "ATL",
+   "venue": "Mercedes-Benz Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w5-buf-lar",
+   "week": 5,
+   "kickoff": "2026-10-13T00:15:00Z",
+   "away": "BUF",
+   "home": "LAR",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w6-sea-den",
+   "week": 6,
+   "kickoff": "2026-10-16T00:15:00Z",
+   "away": "SEA",
+   "home": "DEN",
+   "venue": "Empower Field at Mile High",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w6-hou-jax",
+   "week": 6,
+   "kickoff": "2026-10-18T13:30:00Z",
+   "away": "HOU",
+   "home": "JAX",
+   "venue": "Wembley Stadium",
+   "roof": "outdoor",
+   "neutral": true
+  },
+  {
+   "id": "2026-w6-chi-atl",
+   "week": 6,
+   "kickoff": "2026-10-18T17:00:00Z",
+   "away": "CHI",
+   "home": "ATL",
+   "venue": "Mercedes-Benz Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w6-bal-cle",
+   "week": 6,
+   "kickoff": "2026-10-18T17:00:00Z",
+   "away": "BAL",
+   "home": "CLE",
+   "venue": "Huntington Bank Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w6-ten-ind",
+   "week": 6,
+   "kickoff": "2026-10-18T17:00:00Z",
+   "away": "TEN",
+   "home": "IND",
+   "venue": "Lucas Oil Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w6-nyj-ne",
+   "week": 6,
+   "kickoff": "2026-10-18T17:00:00Z",
+   "away": "NYJ",
+   "home": "NE",
+   "venue": "Gillette Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w6-no-nyg",
+   "week": 6,
+   "kickoff": "2026-10-18T17:00:00Z",
+   "away": "NO",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w6-car-phi",
+   "week": 6,
+   "kickoff": "2026-10-18T17:00:00Z",
+   "away": "CAR",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w6-pit-tb",
+   "week": 6,
+   "kickoff": "2026-10-18T17:00:00Z",
+   "away": "PIT",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w6-ari-lar",
+   "week": 6,
+   "kickoff": "2026-10-18T20:05:00Z",
+   "away": "ARI",
+   "home": "LAR",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w6-lac-kc",
+   "week": 6,
+   "kickoff": "2026-10-18T20:25:00Z",
+   "away": "LAC",
+   "home": "KC",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w6-buf-lv",
+   "week": 6,
+   "kickoff": "2026-10-18T20:25:00Z",
+   "away": "BUF",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w6-dal-gb",
+   "week": 6,
+   "kickoff": "2026-10-19T00:20:00Z",
+   "away": "DAL",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w6-was-sf",
+   "week": 6,
+   "kickoff": "2026-10-20T00:15:00Z",
+   "away": "WAS",
+   "home": "SF",
+   "venue": "Levi's Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w7-ne-chi",
+   "week": 7,
+   "kickoff": "2026-10-23T00:15:00Z",
+   "away": "NE",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w7-pit-no",
+   "week": 7,
+   "kickoff": "2026-10-25T13:30:00Z",
+   "away": "PIT",
+   "home": "NO",
+   "venue": "Stade de France",
+   "roof": "outdoor",
+   "neutral": true
+  },
+  {
+   "id": "2026-w7-sf-atl",
+   "week": 7,
+   "kickoff": "2026-10-25T17:00:00Z",
+   "away": "SF",
+   "home": "ATL",
+   "venue": "Mercedes-Benz Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w7-cin-bal",
+   "week": 7,
+   "kickoff": "2026-10-25T17:00:00Z",
+   "away": "CIN",
+   "home": "BAL",
+   "venue": "M&T Bank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w7-tb-car",
+   "week": 7,
+   "kickoff": "2026-10-25T17:00:00Z",
+   "away": "TB",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w7-nyg-hou",
+   "week": 7,
+   "kickoff": "2026-10-25T17:00:00Z",
+   "away": "NYG",
+   "home": "HOU",
+   "venue": "Reliant Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w7-ind-min",
+   "week": 7,
+   "kickoff": "2026-10-25T17:00:00Z",
+   "away": "IND",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w7-mia-nyj",
+   "week": 7,
+   "kickoff": "2026-10-25T17:00:00Z",
+   "away": "MIA",
+   "home": "NYJ",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w7-cle-ten",
+   "week": 7,
+   "kickoff": "2026-10-25T17:00:00Z",
+   "away": "CLE",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w7-den-ari",
+   "week": 7,
+   "kickoff": "2026-10-25T20:05:00Z",
+   "away": "DEN",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w7-gb-det",
+   "week": 7,
+   "kickoff": "2026-10-25T20:25:00Z",
+   "away": "GB",
+   "home": "DET",
+   "venue": "Ford Field",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w7-lar-lv",
+   "week": 7,
+   "kickoff": "2026-10-25T20:25:00Z",
+   "away": "LAR",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w7-kc-sea",
+   "week": 7,
+   "kickoff": "2026-10-26T00:20:00Z",
+   "away": "KC",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w7-dal-phi",
+   "week": 7,
+   "kickoff": "2026-10-27T00:15:00Z",
+   "away": "DAL",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-car-gb",
+   "week": 8,
+   "kickoff": "2026-10-30T00:15:00Z",
+   "away": "CAR",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-bal-buf",
+   "week": 8,
+   "kickoff": "2026-11-01T18:00:00Z",
+   "away": "BAL",
+   "home": "BUF",
+   "venue": "Highmark Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-ten-cin",
+   "week": 8,
+   "kickoff": "2026-11-01T18:00:00Z",
+   "away": "TEN",
+   "home": "CIN",
+   "venue": "Paycor Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-ari-dal",
+   "week": 8,
+   "kickoff": "2026-11-01T18:00:00Z",
+   "away": "ARI",
+   "home": "DAL",
+   "venue": "AT&T Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w8-min-det",
+   "week": 8,
+   "kickoff": "2026-11-01T18:00:00Z",
+   "away": "MIN",
+   "home": "DET",
+   "venue": "Ford Field",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w8-ind-jax",
+   "week": 8,
+   "kickoff": "2026-11-01T18:00:00Z",
+   "away": "IND",
+   "home": "JAX",
+   "venue": "EverBank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-lv-nyj",
+   "week": 8,
+   "kickoff": "2026-11-01T18:00:00Z",
+   "away": "LV",
+   "home": "NYJ",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-cle-pit",
+   "week": 8,
+   "kickoff": "2026-11-01T18:00:00Z",
+   "away": "CLE",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-atl-tb",
+   "week": 8,
+   "kickoff": "2026-11-01T18:00:00Z",
+   "away": "ATL",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-lac-lar",
+   "week": 8,
+   "kickoff": "2026-11-01T21:05:00Z",
+   "away": "LAC",
+   "home": "LAR",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w8-kc-den",
+   "week": 8,
+   "kickoff": "2026-11-01T21:25:00Z",
+   "away": "KC",
+   "home": "DEN",
+   "venue": "Empower Field at Mile High",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-ne-mia",
+   "week": 8,
+   "kickoff": "2026-11-01T21:25:00Z",
+   "away": "NE",
+   "home": "MIA",
+   "venue": "Hard Rock Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-phi-was",
+   "week": 8,
+   "kickoff": "2026-11-02T01:20:00Z",
+   "away": "PHI",
+   "home": "WAS",
+   "venue": "Northwest Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w8-chi-sea",
+   "week": 8,
+   "kickoff": "2026-11-03T01:15:00Z",
+   "away": "CHI",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-jax-bal",
+   "week": 9,
+   "kickoff": "2026-11-06T01:15:00Z",
+   "away": "JAX",
+   "home": "BAL",
+   "venue": "M&T Bank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-cin-atl",
+   "week": 9,
+   "kickoff": "2026-11-08T14:30:00Z",
+   "away": "CIN",
+   "home": "ATL",
+   "venue": "Bernabeu",
+   "roof": "retractable",
+   "neutral": true
+  },
+  {
+   "id": "2026-w9-den-car",
+   "week": 9,
+   "kickoff": "2026-11-08T18:00:00Z",
+   "away": "DEN",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-dal-ind",
+   "week": 9,
+   "kickoff": "2026-11-08T18:00:00Z",
+   "away": "DAL",
+   "home": "IND",
+   "venue": "Lucas Oil Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w9-nyj-kc",
+   "week": 9,
+   "kickoff": "2026-11-08T18:00:00Z",
+   "away": "NYJ",
+   "home": "KC",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-det-mia",
+   "week": 9,
+   "kickoff": "2026-11-08T18:00:00Z",
+   "away": "DET",
+   "home": "MIA",
+   "venue": "Hard Rock Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-cle-no",
+   "week": 9,
+   "kickoff": "2026-11-08T18:00:00Z",
+   "away": "CLE",
+   "home": "NO",
+   "venue": "Caesars Superdome",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w9-nyg-phi",
+   "week": 9,
+   "kickoff": "2026-11-08T18:00:00Z",
+   "away": "NYG",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-lar-was",
+   "week": 9,
+   "kickoff": "2026-11-08T18:00:00Z",
+   "away": "LAR",
+   "home": "WAS",
+   "venue": "Northwest Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-hou-lac",
+   "week": 9,
+   "kickoff": "2026-11-08T21:05:00Z",
+   "away": "HOU",
+   "home": "LAC",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w9-lv-sf",
+   "week": 9,
+   "kickoff": "2026-11-08T21:05:00Z",
+   "away": "LV",
+   "home": "SF",
+   "venue": "Levi's Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-gb-ne",
+   "week": 9,
+   "kickoff": "2026-11-08T21:25:00Z",
+   "away": "GB",
+   "home": "NE",
+   "venue": "Gillette Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-ari-sea",
+   "week": 9,
+   "kickoff": "2026-11-08T21:25:00Z",
+   "away": "ARI",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-tb-chi",
+   "week": 9,
+   "kickoff": "2026-11-09T01:20:00Z",
+   "away": "TB",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w9-buf-min",
+   "week": 9,
+   "kickoff": "2026-11-10T01:15:00Z",
+   "away": "BUF",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w10-was-nyg",
+   "week": 10,
+   "kickoff": "2026-11-13T01:15:00Z",
+   "away": "WAS",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w10-ne-det",
+   "week": 10,
+   "kickoff": "2026-11-15T14:30:00Z",
+   "away": "NE",
+   "home": "DET",
+   "venue": "FC Bayern Munich Stadium",
+   "roof": "outdoor",
+   "neutral": true
+  },
+  {
+   "id": "2026-w10-kc-atl",
+   "week": 10,
+   "kickoff": "2026-11-15T18:00:00Z",
+   "away": "KC",
+   "home": "ATL",
+   "venue": "Mercedes-Benz Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w10-hou-cle",
+   "week": 10,
+   "kickoff": "2026-11-15T18:00:00Z",
+   "away": "HOU",
+   "home": "CLE",
+   "venue": "Huntington Bank Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w10-min-gb",
+   "week": 10,
+   "kickoff": "2026-11-15T18:00:00Z",
+   "away": "MIN",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w10-mia-ind",
+   "week": 10,
+   "kickoff": "2026-11-15T18:00:00Z",
+   "away": "MIA",
+   "home": "IND",
+   "venue": "Lucas Oil Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w10-car-no",
+   "week": 10,
+   "kickoff": "2026-11-15T18:00:00Z",
+   "away": "CAR",
+   "home": "NO",
+   "venue": "Caesars Superdome",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w10-buf-nyj",
+   "week": 10,
+   "kickoff": "2026-11-15T18:00:00Z",
+   "away": "BUF",
+   "home": "NYJ",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w10-jax-ten",
+   "week": 10,
+   "kickoff": "2026-11-15T18:00:00Z",
+   "away": "JAX",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w10-lar-ari",
+   "week": 10,
+   "kickoff": "2026-11-15T21:05:00Z",
+   "away": "LAR",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w10-sea-lv",
+   "week": 10,
+   "kickoff": "2026-11-15T21:05:00Z",
+   "away": "SEA",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w10-sf-dal",
+   "week": 10,
+   "kickoff": "2026-11-15T21:25:00Z",
+   "away": "SF",
+   "home": "DAL",
+   "venue": "AT&T Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w10-pit-cin",
+   "week": 10,
+   "kickoff": "2026-11-16T01:20:00Z",
+   "away": "PIT",
+   "home": "CIN",
+   "venue": "Paycor Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w10-lac-bal",
+   "week": 10,
+   "kickoff": "2026-11-17T01:15:00Z",
+   "away": "LAC",
+   "home": "BAL",
+   "venue": "M&T Bank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w11-ind-hou",
+   "week": 11,
+   "kickoff": "2026-11-20T01:15:00Z",
+   "away": "IND",
+   "home": "HOU",
+   "venue": "Reliant Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w11-mia-buf",
+   "week": 11,
+   "kickoff": "2026-11-22T18:00:00Z",
+   "away": "MIA",
+   "home": "BUF",
+   "venue": "Highmark Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w11-bal-car",
+   "week": 11,
+   "kickoff": "2026-11-22T18:00:00Z",
+   "away": "BAL",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w11-no-chi",
+   "week": 11,
+   "kickoff": "2026-11-22T18:00:00Z",
+   "away": "NO",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w11-ten-dal",
+   "week": 11,
+   "kickoff": "2026-11-22T18:00:00Z",
+   "away": "TEN",
+   "home": "DAL",
+   "venue": "AT&T Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w11-tb-det",
+   "week": 11,
+   "kickoff": "2026-11-22T18:00:00Z",
+   "away": "TB",
+   "home": "DET",
+   "venue": "Ford Field",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w11-ari-kc",
+   "week": 11,
+   "kickoff": "2026-11-22T18:00:00Z",
+   "away": "ARI",
+   "home": "KC",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w11-jax-nyg",
+   "week": 11,
+   "kickoff": "2026-11-22T18:00:00Z",
+   "away": "JAX",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w11-nyj-lac",
+   "week": 11,
+   "kickoff": "2026-11-22T21:05:00Z",
+   "away": "NYJ",
+   "home": "LAC",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w11-lv-den",
+   "week": 11,
+   "kickoff": "2026-11-22T21:25:00Z",
+   "away": "LV",
+   "home": "DEN",
+   "venue": "Empower Field at Mile High",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w11-pit-phi",
+   "week": 11,
+   "kickoff": "2026-11-22T21:25:00Z",
+   "away": "PIT",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w11-min-sf",
+   "week": 11,
+   "kickoff": "2026-11-23T01:20:00Z",
+   "away": "MIN",
+   "home": "SF",
+   "venue": "Estadio Banorte",
+   "roof": "outdoor",
+   "neutral": true
+  },
+  {
+   "id": "2026-w11-cin-was",
+   "week": 11,
+   "kickoff": "2026-11-24T01:15:00Z",
+   "away": "CIN",
+   "home": "WAS",
+   "venue": "Northwest Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w12-gb-lar",
+   "week": 12,
+   "kickoff": "2026-11-26T01:00:00Z",
+   "away": "GB",
+   "home": "LAR",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w12-chi-det",
+   "week": 12,
+   "kickoff": "2026-11-26T18:00:00Z",
+   "away": "CHI",
+   "home": "DET",
+   "venue": "Ford Field",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w12-phi-dal",
+   "week": 12,
+   "kickoff": "2026-11-26T21:30:00Z",
+   "away": "PHI",
+   "home": "DAL",
+   "venue": "AT&T Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w12-kc-buf",
+   "week": 12,
+   "kickoff": "2026-11-27T01:20:00Z",
+   "away": "KC",
+   "home": "BUF",
+   "venue": "Highmark Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w12-den-pit",
+   "week": 12,
+   "kickoff": "2026-11-27T20:00:00Z",
+   "away": "DEN",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w12-no-cin",
+   "week": 12,
+   "kickoff": "2026-11-29T18:00:00Z",
+   "away": "NO",
+   "home": "CIN",
+   "venue": "Paycor Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w12-lv-cle",
+   "week": 12,
+   "kickoff": "2026-11-29T18:00:00Z",
+   "away": "LV",
+   "home": "CLE",
+   "venue": "Huntington Bank Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w12-bal-hou",
+   "week": 12,
+   "kickoff": "2026-11-29T18:00:00Z",
+   "away": "BAL",
+   "home": "HOU",
+   "venue": "Reliant Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w12-nyg-ind",
+   "week": 12,
+   "kickoff": "2026-11-29T18:00:00Z",
+   "away": "NYG",
+   "home": "IND",
+   "venue": "Lucas Oil Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w12-nyj-mia",
+   "week": 12,
+   "kickoff": "2026-11-29T18:00:00Z",
+   "away": "NYJ",
+   "home": "MIA",
+   "venue": "Hard Rock Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w12-atl-min",
+   "week": 12,
+   "kickoff": "2026-11-29T18:00:00Z",
+   "away": "ATL",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w12-ten-jax",
+   "week": 12,
+   "kickoff": "2026-11-29T21:05:00Z",
+   "away": "TEN",
+   "home": "JAX",
+   "venue": "EverBank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w12-was-ari",
+   "week": 12,
+   "kickoff": "2026-11-29T21:25:00Z",
+   "away": "WAS",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w12-sea-sf",
+   "week": 12,
+   "kickoff": "2026-11-29T21:25:00Z",
+   "away": "SEA",
+   "home": "SF",
+   "venue": "Levi's Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w12-ne-lac",
+   "week": 12,
+   "kickoff": "2026-11-30T01:20:00Z",
+   "away": "NE",
+   "home": "LAC",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w12-car-tb",
+   "week": 12,
+   "kickoff": "2026-12-01T01:15:00Z",
+   "away": "CAR",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-kc-lar",
+   "week": 13,
+   "kickoff": "2026-12-04T01:15:00Z",
+   "away": "KC",
+   "home": "LAR",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w13-det-atl",
+   "week": 13,
+   "kickoff": "2026-12-06T18:00:00Z",
+   "away": "DET",
+   "home": "ATL",
+   "venue": "Mercedes-Benz Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w13-jax-chi",
+   "week": 13,
+   "kickoff": "2026-12-06T18:00:00Z",
+   "away": "JAX",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-cin-cle",
+   "week": 13,
+   "kickoff": "2026-12-06T18:00:00Z",
+   "away": "CIN",
+   "home": "CLE",
+   "venue": "Huntington Bank Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-gb-no",
+   "week": 13,
+   "kickoff": "2026-12-06T18:00:00Z",
+   "away": "GB",
+   "home": "NO",
+   "venue": "Caesars Superdome",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w13-sf-nyg",
+   "week": 13,
+   "kickoff": "2026-12-06T18:00:00Z",
+   "away": "SF",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-lac-tb",
+   "week": 13,
+   "kickoff": "2026-12-06T18:00:00Z",
+   "away": "LAC",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-was-ten",
+   "week": 13,
+   "kickoff": "2026-12-06T18:00:00Z",
+   "away": "WAS",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-phi-ari",
+   "week": 13,
+   "kickoff": "2026-12-06T21:05:00Z",
+   "away": "PHI",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w13-mia-den",
+   "week": 13,
+   "kickoff": "2026-12-06T21:05:00Z",
+   "away": "MIA",
+   "home": "DEN",
+   "venue": "Empower Field at Mile High",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-car-min",
+   "week": 13,
+   "kickoff": "2026-12-06T21:25:00Z",
+   "away": "CAR",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w13-buf-ne",
+   "week": 13,
+   "kickoff": "2026-12-06T21:25:00Z",
+   "away": "BUF",
+   "home": "NE",
+   "venue": "Gillette Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-hou-pit",
+   "week": 13,
+   "kickoff": "2026-12-07T01:20:00Z",
+   "away": "HOU",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w13-dal-sea",
+   "week": 13,
+   "kickoff": "2026-12-08T01:15:00Z",
+   "away": "DAL",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-min-ne",
+   "week": 14,
+   "kickoff": "2026-12-11T01:15:00Z",
+   "away": "MIN",
+   "home": "NE",
+   "venue": "Gillette Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-tb-bal",
+   "week": 14,
+   "kickoff": "2026-12-13T18:00:00Z",
+   "away": "TB",
+   "home": "BAL",
+   "venue": "M&T Bank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-no-car",
+   "week": 14,
+   "kickoff": "2026-12-13T18:00:00Z",
+   "away": "NO",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-atl-cle",
+   "week": 14,
+   "kickoff": "2026-12-13T18:00:00Z",
+   "away": "ATL",
+   "home": "CLE",
+   "venue": "Huntington Bank Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-ten-det",
+   "week": 14,
+   "kickoff": "2026-12-13T18:00:00Z",
+   "away": "TEN",
+   "home": "DET",
+   "venue": "Ford Field",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w14-chi-mia",
+   "week": 14,
+   "kickoff": "2026-12-13T18:00:00Z",
+   "away": "CHI",
+   "home": "MIA",
+   "venue": "Hard Rock Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-den-nyj",
+   "week": 14,
+   "kickoff": "2026-12-13T18:00:00Z",
+   "away": "DEN",
+   "home": "NYJ",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-ind-phi",
+   "week": 14,
+   "kickoff": "2026-12-13T18:00:00Z",
+   "away": "IND",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-hou-was",
+   "week": 14,
+   "kickoff": "2026-12-13T18:00:00Z",
+   "away": "HOU",
+   "home": "WAS",
+   "venue": "Northwest Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-lac-lv",
+   "week": 14,
+   "kickoff": "2026-12-13T21:05:00Z",
+   "away": "LAC",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w14-kc-cin",
+   "week": 14,
+   "kickoff": "2026-12-13T21:25:00Z",
+   "away": "KC",
+   "home": "CIN",
+   "venue": "Paycor Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-nyg-sea",
+   "week": 14,
+   "kickoff": "2026-12-13T21:25:00Z",
+   "away": "NYG",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-lar-sf",
+   "week": 14,
+   "kickoff": "2026-12-13T21:25:00Z",
+   "away": "LAR",
+   "home": "SF",
+   "venue": "Levi's Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-buf-gb",
+   "week": 14,
+   "kickoff": "2026-12-14T01:20:00Z",
+   "away": "BUF",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w14-pit-jax",
+   "week": 14,
+   "kickoff": "2026-12-15T01:15:00Z",
+   "away": "PIT",
+   "home": "JAX",
+   "venue": "EverBank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-sf-lac",
+   "week": 15,
+   "kickoff": "2026-12-18T01:15:00Z",
+   "away": "SF",
+   "home": "LAC",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w15-sea-phi",
+   "week": 15,
+   "kickoff": "2026-12-19T22:00:00Z",
+   "away": "SEA",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-chi-buf",
+   "week": 15,
+   "kickoff": "2026-12-20T01:20:00Z",
+   "away": "CHI",
+   "home": "BUF",
+   "venue": "Highmark Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-cin-car",
+   "week": 15,
+   "kickoff": "2026-12-20T18:00:00Z",
+   "away": "CIN",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-mia-gb",
+   "week": 15,
+   "kickoff": "2026-12-20T18:00:00Z",
+   "away": "MIA",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-jax-hou",
+   "week": 15,
+   "kickoff": "2026-12-20T18:00:00Z",
+   "away": "JAX",
+   "home": "HOU",
+   "venue": "Reliant Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w15-cle-nyg",
+   "week": 15,
+   "kickoff": "2026-12-20T18:00:00Z",
+   "away": "CLE",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-bal-pit",
+   "week": 15,
+   "kickoff": "2026-12-20T18:00:00Z",
+   "away": "BAL",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-no-tb",
+   "week": 15,
+   "kickoff": "2026-12-20T18:00:00Z",
+   "away": "NO",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-ind-ten",
+   "week": 15,
+   "kickoff": "2026-12-20T18:00:00Z",
+   "away": "IND",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-atl-was",
+   "week": 15,
+   "kickoff": "2026-12-20T18:00:00Z",
+   "away": "ATL",
+   "home": "WAS",
+   "venue": "Northwest Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w15-nyj-ari",
+   "week": 15,
+   "kickoff": "2026-12-20T21:05:00Z",
+   "away": "NYJ",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w15-dal-lar",
+   "week": 15,
+   "kickoff": "2026-12-20T21:25:00Z",
+   "away": "DAL",
+   "home": "LAR",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w15-den-lv",
+   "week": 15,
+   "kickoff": "2026-12-20T21:25:00Z",
+   "away": "DEN",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w15-det-min",
+   "week": 15,
+   "kickoff": "2026-12-21T01:20:00Z",
+   "away": "DET",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w15-ne-kc",
+   "week": 15,
+   "kickoff": "2026-12-22T01:15:00Z",
+   "away": "NE",
+   "home": "KC",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-hou-phi",
+   "week": 16,
+   "kickoff": "2026-12-25T01:15:00Z",
+   "away": "HOU",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-gb-chi",
+   "week": 16,
+   "kickoff": "2026-12-25T18:00:00Z",
+   "away": "GB",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-buf-den",
+   "week": 16,
+   "kickoff": "2026-12-25T21:30:00Z",
+   "away": "BUF",
+   "home": "DEN",
+   "venue": "Empower Field at Mile High",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-lar-sea",
+   "week": 16,
+   "kickoff": "2026-12-26T01:15:00Z",
+   "away": "LAR",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-tb-atl",
+   "week": 16,
+   "kickoff": "2026-12-27T18:00:00Z",
+   "away": "TB",
+   "home": "ATL",
+   "venue": "Mercedes-Benz Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w16-cle-bal",
+   "week": 16,
+   "kickoff": "2026-12-27T18:00:00Z",
+   "away": "CLE",
+   "home": "BAL",
+   "venue": "M&T Bank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-cin-ind",
+   "week": 16,
+   "kickoff": "2026-12-27T18:00:00Z",
+   "away": "CIN",
+   "home": "IND",
+   "venue": "Lucas Oil Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w16-lac-mia",
+   "week": 16,
+   "kickoff": "2026-12-27T18:00:00Z",
+   "away": "LAC",
+   "home": "MIA",
+   "venue": "Hard Rock Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-was-min",
+   "week": 16,
+   "kickoff": "2026-12-27T18:00:00Z",
+   "away": "WAS",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w16-ari-no",
+   "week": 16,
+   "kickoff": "2026-12-27T18:00:00Z",
+   "away": "ARI",
+   "home": "NO",
+   "venue": "Caesars Superdome",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w16-ne-nyj",
+   "week": 16,
+   "kickoff": "2026-12-27T18:00:00Z",
+   "away": "NE",
+   "home": "NYJ",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-car-pit",
+   "week": 16,
+   "kickoff": "2026-12-27T18:00:00Z",
+   "away": "CAR",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-ten-lv",
+   "week": 16,
+   "kickoff": "2026-12-27T21:05:00Z",
+   "away": "TEN",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w16-sf-kc",
+   "week": 16,
+   "kickoff": "2026-12-27T21:25:00Z",
+   "away": "SF",
+   "home": "KC",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w16-jax-dal",
+   "week": 16,
+   "kickoff": "2026-12-28T01:20:00Z",
+   "away": "JAX",
+   "home": "DAL",
+   "venue": "AT&T Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w16-nyg-det",
+   "week": 16,
+   "kickoff": "2026-12-29T01:15:00Z",
+   "away": "NYG",
+   "home": "DET",
+   "venue": "Ford Field",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w17-bal-cin",
+   "week": 17,
+   "kickoff": "2027-01-01T01:15:00Z",
+   "away": "BAL",
+   "home": "CIN",
+   "venue": "Paycor Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-no-atl",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "NO",
+   "home": "ATL",
+   "venue": "Mercedes-Benz Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w17-sea-car",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "SEA",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-ind-cle",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "IND",
+   "home": "CLE",
+   "venue": "Huntington Bank Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-nyg-dal",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "NYG",
+   "home": "DAL",
+   "venue": "AT&T Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w17-was-jax",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "WAS",
+   "home": "JAX",
+   "venue": "EverBank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-kc-lac",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "KC",
+   "home": "LAC",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w17-buf-mia",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "BUF",
+   "home": "MIA",
+   "venue": "Hard Rock Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-den-ne",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "DEN",
+   "home": "NE",
+   "venue": "Gillette Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-min-nyj",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "MIN",
+   "home": "NYJ",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-lar-tb",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "LAR",
+   "home": "TB",
+   "venue": "Raymond James Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-pit-ten",
+   "week": 17,
+   "kickoff": "2027-01-03T18:00:00Z",
+   "away": "PIT",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-lv-ari",
+   "week": 17,
+   "kickoff": "2027-01-03T21:05:00Z",
+   "away": "LV",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w17-det-chi",
+   "week": 17,
+   "kickoff": "2027-01-03T21:25:00Z",
+   "away": "DET",
+   "home": "CHI",
+   "venue": "Soldier Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-phi-sf",
+   "week": 17,
+   "kickoff": "2027-01-04T01:20:00Z",
+   "away": "PHI",
+   "home": "SF",
+   "venue": "Levi's Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w17-hou-gb",
+   "week": 17,
+   "kickoff": "2027-01-05T01:15:00Z",
+   "away": "HOU",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-sf-ari",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "SF",
+   "home": "ARI",
+   "venue": "State Farm Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w18-pit-bal",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "PIT",
+   "home": "BAL",
+   "venue": "M&T Bank Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-nyj-buf",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "NYJ",
+   "home": "BUF",
+   "venue": "Highmark Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-atl-car",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "ATL",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-cle-cin",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "CLE",
+   "home": "CIN",
+   "venue": "Paycor Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-lac-den",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "LAC",
+   "home": "DEN",
+   "venue": "Empower Field at Mile High",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-det-gb",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "DET",
+   "home": "GB",
+   "venue": "Lambeau Field",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-ten-hou",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "TEN",
+   "home": "HOU",
+   "venue": "Reliant Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w18-jax-ind",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "JAX",
+   "home": "IND",
+   "venue": "Lucas Oil Stadium",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w18-lv-kc",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "LV",
+   "home": "KC",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-sea-lar",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "SEA",
+   "home": "LAR",
+   "venue": "SoFi Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w18-chi-min",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "CHI",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w18-mia-ne",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "MIA",
+   "home": "NE",
+   "venue": "Gillette Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-tb-no",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "TB",
+   "home": "NO",
+   "venue": "Caesars Superdome",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w18-phi-nyg",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "PHI",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w18-dal-was",
+   "week": 18,
+   "kickoff": "2027-01-10T18:00:00Z",
+   "away": "DAL",
+   "home": "WAS",
+   "venue": "Northwest Stadium",
    "roof": "outdoor"
   }
  ]

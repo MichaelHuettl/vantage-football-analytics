@@ -130,6 +130,12 @@ export interface Game {
   venue: string;
   city?: string;
   roof: "outdoor" | "dome" | "retractable" | "closed";
+  /**
+   * A designated home team playing somewhere else — the international games.
+   * Marked because the card labels a side HOME, and at the Maracanã that label
+   * is true administratively and false in every way a reader cares about.
+   */
+  neutral?: boolean;
   /** Negative favours the home side, matching how a spread is published. */
   spread_line?: number;
   total_line?: number;

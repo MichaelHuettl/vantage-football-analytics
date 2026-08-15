@@ -45,10 +45,11 @@ export function GameCard({ game }: { game: Game }) {
           </span>
         </span>
         <span
-          className="text-xs font-bold uppercase tracking-wider"
+          className="flex items-baseline gap-3 text-xs font-bold uppercase tracking-wider"
           style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
         >
-          {ROOF_LABEL[game.roof]}
+          {game.neutral && <span>Neutral site</span>}
+          <span>{ROOF_LABEL[game.roof]}</span>
         </span>
       </header>
 

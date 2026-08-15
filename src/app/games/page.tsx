@@ -39,6 +39,21 @@ export default async function GamesPage({
         lede="Every matchup with its kickoff, roof and venue, the market's number, the forecast where there is one, and — once it is played — the four players who decided it."
       />
 
+      {/* The same band the rankings tabs sit in, directly under the hero: the
+          week is the one choice this page exists to make, so it comes before
+          the slate rather than after a screen of it. */}
+      <div
+        className="border-b"
+        style={{
+          background: "var(--surface-sunken)",
+          borderColor: "var(--border-subtle)",
+        }}
+      >
+        <Container className="py-6">
+          <WeekTabs current={week} />
+        </Container>
+      </div>
+
       <Container className="py-10">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
           <div className="flex flex-wrap items-center gap-3">
@@ -61,33 +76,6 @@ export default async function GamesPage({
           </div>
           <DataFreshness updated={SCHEDULE_UPDATED} label="Schedule" staleAfterDays={30} />
         </div>
-
-        {WEEKS.length > 1 && (
-          <nav aria-label="Week" className="mt-4">
-            <ul className="flex flex-wrap items-center gap-x-3 gap-y-1">
-              <li className="eyebrow">Week</li>
-              {WEEKS.map((w) => (
-                <li key={w}>
-                  <Link
-                    href={`/games?week=${w}`}
-                    aria-current={w === week ? "page" : undefined}
-                    className="inline-flex h-8 min-w-8 items-center justify-center rounded px-2 text-sm font-bold tnum"
-                    style={{
-                      fontFamily: "var(--font-condensed)",
-                      background: w === week ? "var(--text-primary)" : "transparent",
-                      color:
-                        w === week ? "var(--surface-page)" : "var(--text-secondary)",
-                      boxShadow:
-                        w === week ? undefined : "inset 0 0 0 1px var(--border-strong)",
-                    }}
-                  >
-                    {w}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
 
         <p className="mt-4 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           {count} games. Matchups, kickoff times, venues and roofs are the
@@ -130,5 +118,40 @@ export default async function GamesPage({
         </p>
       </Container>
     </>
+  );
+}
+
+/** Tabs are links, so the week lives in the URL and a slate is shareable —
+ *  the same reason the rankings position tabs are links. */
+function WeekTabs({ current }: { current: number }) {
+  return (
+    <nav aria-label="Week">
+      <ul className="flex flex-wrap items-center gap-1.5">
+        <li className="eyebrow mr-1">Week</li>
+        {WEEKS.map((w) => {
+          const active = w === current;
+          return (
+            <li key={w}>
+              <Link
+                href={`/games?week=${w}`}
+                aria-current={active ? "page" : undefined}
+                aria-label={`Week ${w}`}
+                className="block min-w-9 rounded px-3 py-2 text-center text-sm font-bold tnum transition-colors"
+                style={{
+                  fontFamily: "var(--font-condensed)",
+                  background: active ? "var(--text-primary)" : "transparent",
+                  color: active ? "var(--surface-page)" : "var(--text-secondary)",
+                  boxShadow: active
+                    ? undefined
+                    : "inset 0 0 0 1px var(--border-strong)",
+                }}
+              >
+                {w}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }
