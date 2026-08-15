@@ -13,7 +13,13 @@
    "away": "NE",
    "home": "SEA",
    "venue": "Lumen Field",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": -3.5,
+   "total_line": 44.5,
+   "implied": {
+    "away": 20.5,
+    "home": 24
+   }
   },
   {
    "id": "2026-w1-sf-lar",
@@ -23,7 +29,13 @@
    "home": "LAR",
    "venue": "Melbourne Cricket Ground",
    "roof": "outdoor",
-   "neutral": true
+   "neutral": true,
+   "spread_line": -3.5,
+   "total_line": 48.5,
+   "implied": {
+    "away": 22.5,
+    "home": 26
+   }
   },
   {
    "id": "2026-w1-chi-car",
@@ -32,7 +44,13 @@
    "away": "CHI",
    "home": "CAR",
    "venue": "Bank of America Stadium",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": 2.5,
+   "total_line": 46.5,
+   "implied": {
+    "away": 24.5,
+    "home": 22
+   }
   },
   {
    "id": "2026-w1-tb-cin",
@@ -41,7 +59,13 @@
    "away": "TB",
    "home": "CIN",
    "venue": "Paycor Stadium",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": -3.5,
+   "total_line": 51.5,
+   "implied": {
+    "away": 24,
+    "home": 27.5
+   }
   },
   {
    "id": "2026-w1-no-det",
@@ -50,7 +74,13 @@
    "away": "NO",
    "home": "DET",
    "venue": "Ford Field",
-   "roof": "dome"
+   "roof": "dome",
+   "spread_line": -7,
+   "total_line": 49.5,
+   "implied": {
+    "away": 21.25,
+    "home": 28.25
+   }
   },
   {
    "id": "2026-w1-buf-hou",
@@ -59,7 +89,13 @@
    "away": "BUF",
    "home": "HOU",
    "venue": "NRG Stadium",
-   "roof": "retractable"
+   "roof": "retractable",
+   "spread_line": 1.5,
+   "total_line": 44.5,
+   "implied": {
+    "away": 23,
+    "home": 21.5
+   }
   },
   {
    "id": "2026-w1-bal-ind",
@@ -68,7 +104,13 @@
    "away": "BAL",
    "home": "IND",
    "venue": "Lucas Oil Stadium",
-   "roof": "retractable"
+   "roof": "retractable",
+   "spread_line": 3.5,
+   "total_line": 48.5,
+   "implied": {
+    "away": 26,
+    "home": 22.5
+   }
   },
   {
    "id": "2026-w1-cle-jax",
@@ -77,7 +119,13 @@
    "away": "CLE",
    "home": "JAX",
    "venue": "EverBank Stadium",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": -7.5,
+   "total_line": 40.5,
+   "implied": {
+    "away": 16.5,
+    "home": 24
+   }
   },
   {
    "id": "2026-w1-atl-pit",
@@ -86,7 +134,13 @@
    "away": "ATL",
    "home": "PIT",
    "venue": "Acrisure Stadium",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": -3,
+   "total_line": 41.5,
+   "implied": {
+    "away": 19.25,
+    "home": 22.25
+   }
   },
   {
    "id": "2026-w1-nyj-ten",
@@ -95,7 +149,13 @@
    "away": "NYJ",
    "home": "TEN",
    "venue": "Nissan Stadium",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": -3,
+   "total_line": 38.5,
+   "implied": {
+    "away": 17.75,
+    "home": 20.75
+   }
   },
   {
    "id": "2026-w1-ari-lac",
@@ -104,7 +164,13 @@
    "away": "ARI",
    "home": "LAC",
    "venue": "SoFi Stadium",
-   "roof": "dome"
+   "roof": "dome",
+   "spread_line": -10.5,
+   "total_line": 46.5,
+   "implied": {
+    "away": 18,
+    "home": 28.5
+   }
   },
   {
    "id": "2026-w1-mia-lv",
@@ -113,7 +179,13 @@
    "away": "MIA",
    "home": "LV",
    "venue": "Allegiant Stadium",
-   "roof": "dome"
+   "roof": "dome",
+   "spread_line": -3.5,
+   "total_line": 40.5,
+   "implied": {
+    "away": 18.5,
+    "home": 22
+   }
   },
   {
    "id": "2026-w1-gb-min",
@@ -122,7 +194,13 @@
    "away": "GB",
    "home": "MIN",
    "venue": "U.S. Bank Stadium",
-   "roof": "dome"
+   "roof": "dome",
+   "spread_line": -1.5,
+   "total_line": 45.5,
+   "implied": {
+    "away": 22,
+    "home": 23.5
+   }
   },
   {
    "id": "2026-w1-was-phi",
@@ -131,7 +209,13 @@
    "away": "WAS",
    "home": "PHI",
    "venue": "Lincoln Financial Field",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": -4.5,
+   "total_line": 47.5,
+   "implied": {
+    "away": 21.5,
+    "home": 26
+   }
   },
   {
    "id": "2026-w1-dal-nyg",
@@ -140,7 +224,13 @@
    "away": "DAL",
    "home": "NYG",
    "venue": "MetLife Stadium",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": 2.5,
+   "total_line": 48.5,
+   "implied": {
+    "away": 25.5,
+    "home": 23
+   }
   },
   {
    "id": "2026-w1-den-kc",
@@ -149,7 +239,13 @@
    "away": "DEN",
    "home": "KC",
    "venue": "GEHA Field at Arrowhead Stadium",
-   "roof": "outdoor"
+   "roof": "outdoor",
+   "spread_line": -3,
+   "total_line": 42.5,
+   "implied": {
+    "away": 19.75,
+    "home": 22.75
+   }
   },
   {
    "id": "2026-w2-det-buf",

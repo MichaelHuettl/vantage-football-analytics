@@ -12,7 +12,9 @@
     "draft-injury": "node scripts/draft-injury.mjs",
     "audit-teams": "node scripts/audit-teams.mjs",
     "beat": "node scripts/fetch-beat.mjs",
-    "beat:dry": "node scripts/fetch-beat.mjs --dry"
+    "beat:dry": "node scripts/fetch-beat.mjs --dry",
+    "games": "node scripts/fetch-games.mjs",
+    "games:dry": "node scripts/fetch-games.mjs --dry"
   },
   "dependencies": {
     "next": "16.3.0",

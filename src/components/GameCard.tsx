@@ -101,7 +101,7 @@ export function GameCard({ game }: { game: Game }) {
             label="Implied"
             value={
               game.implied
-                ? `${game.implied.away.toFixed(1)} / ${game.implied.home.toFixed(1)}`
+                ? `${points(game.implied.away)} / ${points(game.implied.home)}`
                 : undefined
             }
           />
@@ -261,6 +261,16 @@ function Figure({ label, value }: { label: string; value?: string }) {
       </span>
     </span>
   );
+}
+
+/**
+ * A points figure at its true precision: a tenth normally, a hundredth when
+ * the number really is a quarter. Implied totals land on quarters whenever the
+ * spread is an odd half, and printing 21.25 as 21.3 makes the pair stop adding
+ * up to the game total shown beside them.
+ */
+function points(n: number): string {
+  return Number.isInteger(n * 10) ? n.toFixed(1) : n.toFixed(2);
 }
 
 /** A spread is published against one side; showing it without saying which

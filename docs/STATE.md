@@ -26,7 +26,7 @@ build` with a line number instead of shipping a broken page.
 | Positions | Six pages, typographic heroes, methodology text. **Charts are empty slots** |
 | Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
-| Games | **All 18 weeks navigable** — 272 real matchups with kickoff, venue, roof. Lines, weather, scores and leaders are empty slots |
+| Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Live, but refreshed by hand** — RSS headlines + 118-post beat archive. The cron cannot run yet; see open item 1 |
 | Player pages | 120 generated. Chart slots empty |
 | Glossary | Built |
@@ -67,18 +67,14 @@ build` with a line number instead of shipping a broken page.
    A local `launchd` timer is the alternative if the repo stays private.
 2. **Charts.** Every `ChartFigure` is an empty slot. Drop PNGs into
    `public/charts/` and set `chart` in the relevant data file.
-3. **Games has a format and a full schedule, but no content.** `schedule.json`
-   holds all 272 regular-season matchups across 18 weeks with kickoff, venue,
-   roof and a `neutral` flag; everything a reader would act on is an empty
-   slot. To fill one game, add to its record: `spread_line` (negative favours
-   home), `total_line`, `moneyline`, `implied` — **authored, not computed,
-   because a component may not compute a metric (§11)** — `weather` for
-   open-air games, `score` once played, and `leaders` with `qb` / `rusher` /
-   `receiver` / `defense` per side. A `leaders` entry takes a free-text `name`
-   plus an optional `player_id`; the id is what makes the name a link, and it
-   is optional precisely because a game's leader is often outside the ranked
-   120. **This is 272 games of authoring by hand** — worth deciding whether
-   scores and leaders should come from a fetch script before starting.
+3. **Games is fetched, not authored, and nothing schedules the fetch.**
+   `npm run games` fills lines, implied totals, scores, per-team leaders and
+   weather; by default it does the weeks with a game between 7 days ago and 14
+   days ahead, so in season it is a weekly command. Like the news feeds, it
+   only runs when someone runs it — see item 1. Week 1 lines are loaded;
+   everything else waits on the season. The defensive leader is ESPN's sack
+   leader, falling back to tackles: neither is "who decided it", so it is worth
+   overriding by hand on a game that turned on one play.
 4. **Daniel Carlson is ranked K16 and unsigned.** The data now says so —
    `status: "fa"`, no team, an FA chip where the team chip goes — but whether
    an unsigned kicker belongs on a draft board at all is an editorial call, not
@@ -151,6 +147,16 @@ site was scaffolded into `vantage/` specifically so those stay outside it.
 - **Smart punctuation breaks naive regex.** A filter written with `'` missed
   `'`. `scripts/lib/signal.mjs` normalises before matching; do the same
   anywhere else text is pattern-matched.
+- **Implied totals are quarters, so they carry two decimals.** Totals and
+  spreads move in halves and the implied totals are halves of those: a 49.5
+  total on a 7-point spread is exactly 21.25 and 28.25. Rounded to a tenth they
+  print as 21.3 and 28.3, which sum to 49.6 — a reader adding the two numbers
+  catches the site out on the total shown next to them. `points()` in
+  `GameCard` shows a tenth normally and a hundredth when the value is a quarter.
+- **Geocoding a stadium by city name is not safe.** "Saint-Denis" resolves to
+  Réunion, in the Indian Ocean, not the Paris suburb — it would have put
+  tropical weather on Stade de France. Coordinates are stored in
+  `stadiums.json`, resolved once and checked, rather than looked up per run.
 - **nflverse marks open-air international grounds as domes.** Melbourne, the
   Maracanã, Stade de France, Munich and Estadio Banorte all come through as
   `dome`, and the Bernabéu comes through blank. `schedule.json` corrects them
@@ -180,6 +186,10 @@ npm run news           # pull RSS headlines
 npm run beat           # pull X posts via Nitter
 npm run draft-injury <url>   # draft injury records for review, writes nothing
 npm run audit-teams          # check every team against the live roster, writes nothing
+npm run games                # lines, scores, leaders, weather for the current window
+npm run games -- --week=5    # one week
+npm run games -- --all       # the whole season
+npm run games:dry            # read and report, write nothing
 ```
 
 `scripts/curated/` re-runs the workbook screenshot → OCR → JSON pipeline; see
