@@ -16,6 +16,7 @@ import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { stampDate } from "./lib/today.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DRY = process.argv.includes("--dry");
@@ -153,7 +154,7 @@ const merged = [...byId.values()]
 
 const out = {
   schema_version: existing.schema_version ?? 1,
-  updated: new Date().toISOString().slice(0, 10),
+  updated: stampDate(),
   note: "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece.",
   data: merged,
 };

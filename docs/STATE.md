@@ -27,7 +27,7 @@ build` with a line number instead of shipping a broken page.
 | Injuries | Training camp section live (49 entries). Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **Shell only** — no schedule data authored |
-| News | **Live** — RSS headlines + 118-post beat archive, both auto-refreshing |
+| News | **Live, but refreshed by hand** — RSS headlines + 118-post beat archive. The cron cannot run yet; see open item 1 |
 | Player pages | 120 generated. Chart slots empty |
 | Glossary | Built |
 
@@ -56,17 +56,32 @@ build` with a line number instead of shipping a broken page.
 
 ## Open items
 
-1. **Charts.** Every `ChartFigure` is an empty slot. Drop PNGs into
+1. **The news cron has never run, because the repo has no git remote.**
+   `.github/workflows/news.yml` is correct and committed, but GitHub Actions
+   only runs on GitHub, and `git remote -v` is empty — the repo is local-only.
+   So the feeds refresh exactly when someone types `npm run news` and
+   `npm run beat`, and not otherwise. Both scripts were verified working on
+   2026-08-14 (four of four RSS feeds, 34 of 34 beat accounts), so this is a
+   plumbing gap, not a code fault. Fixing it means pushing to GitHub and
+   enabling Actions; until then the section is as fresh as the last manual run.
+   A local `launchd` timer is the alternative if the repo stays private.
+2. **Charts.** Every `ChartFigure` is an empty slot. Drop PNGs into
    `public/charts/` and set `chart` in the relevant data file.
-2. **Games section** has no `schedule.json`.
-3. **Daniel Carlson is ranked K16 and unsigned.** The data now says so —
+3. **Games section** has no `schedule.json`.
+4. **Daniel Carlson is ranked K16 and unsigned.** The data now says so —
    `status: "fa"`, no team, an FA chip where the team chip goes — but whether
    an unsigned kicker belongs on a draft board at all is an editorial call, not
    a data one. Left as ranked.
-4. **Re-run `npm run audit-teams` after the cutdown to 53.** Rosters move
+5. **Re-run `npm run audit-teams` after the cutdown to 53.** Rosters move
    through the preseason; the audit below is true as of 2026-08-14 and nothing
    keeps it true.
-5. **Nitter is fragile.** The beat feed goes through it because X has no free
+6. **News tags only players in `players.json`.** The file holds the 120 ranked
+   players, so a headline about anyone else is stored and displayed but tagged
+   to nobody, and will not surface on a player or injury page. Jordyn Tyson
+   (Saints WR, hamstring, 2026-08-14) is the live example: three headlines, zero
+   tags. This is correct behaviour for a ranked-player site, but it means the
+   news section is not a complete injury wire.
+7. **Nitter is fragile.** The beat feed goes through it because X has no free
    read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
    an outage makes the section stale rather than empty. If it stops updating,
@@ -121,6 +136,11 @@ site was scaffolded into `vantage/` specifically so those stay outside it.
 - **Smart punctuation breaks naive regex.** A filter written with `'` missed
   `'`. `scripts/lib/signal.mjs` normalises before matching; do the same
   anywhere else text is pattern-matched.
+- **Date the data in Eastern, not UTC.** `new Date().toISOString()` gives the
+  UTC date, so an evening run stamped tomorrow — the news page read "updated
+  Aug 15" at 9pm on Aug 14. A freshness stamp in the future is the exact
+  failure §6 exists to prevent, and CI runners being UTC would have made it
+  every evening. Use `stampDate()` from `scripts/lib/today.mjs`.
 - The operator is American — **use American spellings in user-facing copy.**
   Several British spellings had to be removed.
 

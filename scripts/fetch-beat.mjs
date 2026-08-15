@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { classify } from "./lib/signal.mjs";
+import { stampDate } from "./lib/today.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DRY = process.argv.includes("--dry");
@@ -239,7 +240,7 @@ if (DRY) {
 } else {
   writeFileSync(path, JSON.stringify({
     schema_version: 1,
-    updated: new Date().toISOString().slice(0, 10),
+    updated: stampDate(),
     note: "Beat-writer posts from X, via Nitter. Author handle, text, timestamp and a link to the original post. Nitter is a third-party frontend that X blocks periodically; if this file stops updating, that is the first thing to check.",
     data: merged,
   }, null, 1) + "\n");

@@ -17,6 +17,7 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { stampDate } from "./lib/today.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const arg = process.argv[2];
@@ -90,7 +91,7 @@ for (const s of sentences) {
       status: "REVIEW",
       ...(timeline ? { timeline: timeline[0], attribution: "REVIEW" } : {}),
       latest: "REVIEW",
-      reported: new Date().toISOString().slice(0, 10),
+      reported: stampDate(),
       source: "reported",
       source_url: arg === "-" ? "REVIEW" : arg,
       _sentence: s.trim(),
