@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import positionsFile from "@/data/positions.json";
 import { ChartFigure } from "@/components/ChartFigure";
@@ -140,13 +141,41 @@ export default async function PositionPage({
             {/* Positions without their own worked-up analysis still show the
                 slot, so the page reads the same and it is obvious what is
                 missing. RB has real charts and skips it. */}
-            {upper !== "RB" && (
+            {upper !== "RB" ? (
               <ChartFigure
                 src={doc.chart || undefined}
                 featured
                 caption={doc.caption}
                 source={`x: ${doc.chart_x} · y: ${doc.chart_y}`}
               />
+            ) : (
+              /* The methodology paragraph is short and the player list beside
+                 it is long, which left the top of this column empty. A tall
+                 photograph fills it and sets the position rather than
+                 decorating it. */
+              <figure className="mt-8">
+                <div
+                  className="relative w-full overflow-hidden rounded-lg"
+                  style={{ aspectRatio: "2 / 3", background: "var(--surface-sunken)" }}
+                >
+                  <Image
+                    src="/img/players/mccaffrey-tall.jpg"
+                    alt="Christian McCaffrey celebrating after a play"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 520px"
+                    style={{ objectFit: "cover", objectPosition: "center 22%" }}
+                    priority
+                  />
+                </div>
+                <figcaption
+                  className="mt-3 text-sm"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  McCaffrey is the outlier in almost every chart below — the
+                  only back in the sample clearing nine high-value touches a
+                  game.
+                </figcaption>
+              </figure>
             )}
           </div>
 

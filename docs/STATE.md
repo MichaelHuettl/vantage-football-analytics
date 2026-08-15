@@ -72,6 +72,15 @@ build` with a line number instead of shipping a broken page.
    on that sheet. The other positions still show the PNG slot.
    - **The scatters compute nothing.** Medians, extents, which points get a
      name, and the order they are placed in all come out of the Python (§11).
+   - **Every point is named.** `ScatterChart` tries thirty positions per label
+     — six directions at five distances — and draws a leader line for anything
+     past the inner ring. All 170 points across the four charts are named with
+     no overlap; if a future chart is denser than this one, the placement drops
+     the lowest-ranked name rather than overlapping, and its dot stays.
+   - **The ranked tables shade red-to-green** at the operator's request, built
+     from the four status tokens rather than pure red and green so the ramp
+     also varies in lightness. The number is printed in every cell, so §7's
+     "colour is never the sole carrier" still holds.
    - **The workbook's own conclusions are transcribed by hand** into
      `RunningBackAnalysis.tsx` rather than the JSON, because they are writing
      rather than data.

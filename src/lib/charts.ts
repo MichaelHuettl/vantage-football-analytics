@@ -8,6 +8,8 @@ export interface ScatterPoint {
   label?: boolean;
   /** Placement priority among labelled points, most extreme first. */
   rank?: number;
+  /** "C. McCaffrey" — what actually goes on the chart. */
+  short?: string;
 }
 
 export interface ScatterSeries {

@@ -10,12 +10,13 @@ const abbrOf = (team: string) => teamByName(team)?.abbr;
 /**
  * The running back page.
  *
- * Five charts, each followed by what it actually says. §5.2 asks for a
- * takeaway a reader can state after five seconds; the caption does that, and
- * the paragraph under it does the arguing — which is the whole pitch (§1).
+ * Six charts, each followed by what it actually says. §5.2 asks for a takeaway
+ * a reader can state after five seconds; the caption does that, and the
+ * paragraph under it does the arguing — which is the whole pitch (§1).
  *
- * Only the first chart wears the goalpost frame. §7 is explicit that using it
- * on all five would turn the signature into wallpaper.
+ * No goalpost frame on any of them. It is the signature element (§7) and it
+ * belongs on one chart per page at most, so with six here it would read as a
+ * border rather than a mark; the operator asked for it off.
  */
 export function RunningBackAnalysis() {
   const { hvt, contact, routes, historic, opportunity, targets } = RB_CHARTS;
@@ -48,9 +49,10 @@ export function RunningBackAnalysis() {
         n={1}
         title="High-value touches decide the position"
         chart={
-          <ChartFigure featured caption={hvt.caption} source={axis(hvt)}>
+          <ChartFigure caption={hvt.caption} source={axis(hvt)}>
             <ScatterChart
               series={hvt}
+              height={720}
               regions={{
                 tl: "scoring without the volume",
                 tr: "workhorses",
@@ -87,6 +89,7 @@ export function RunningBackAnalysis() {
           <ChartFigure caption={contact.caption} source={axis(contact)}>
             <ScatterChart
               series={contact}
+              height={720}
               regions={{
                 tl: "talent, no blocking",
                 tr: "everything working",
@@ -123,6 +126,7 @@ export function RunningBackAnalysis() {
           <ChartFigure caption={routes.caption} source={axis(routes)}>
             <ScatterChart
               series={routes}
+              height={720}
               regions={{
                 tl: "targeted on limited routes",
                 tr: "genuine receiving backs",
@@ -156,6 +160,7 @@ export function RunningBackAnalysis() {
           <ChartFigure caption={historic.caption} source={axis(historic)}>
             <ScatterChart
               series={historic}
+              height={720}
               band={historic.band}
               bandLabel="middle half of the tier"
               regions={{

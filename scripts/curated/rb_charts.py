@@ -74,15 +74,33 @@ def scatter(cells, name_col, x_col, y_col, lo, hi):
     return pts
 
 
-def mark_labels(points, keep=14):
+def shorten(name):
     """
-    Decide which points carry a name on the chart.
+    "Christian McCaffrey" to "C. McCaffrey".
 
-    §5.2 wants direct labels rather than a legend, but forty-eight names on one
-    scatter is a smear. The ones worth naming are the extremes — which are also
-    "the players who stand out for and against" the same section asks for. Rank
-    by distance from the middle of the field in units of spread, so a point
-    unusual on either axis qualifies, and keep the furthest few.
+    Every point is named on the chart, so the width of a name is the budget.
+    An initial costs a tenth of the space a first name does and loses nothing —
+    the workbook's own RB sheet already writes them this way. Names that are
+    already short, or carry a season suffix, are left alone.
+    """
+    if "'" in name and name.endswith(tuple("0123456789")):
+        return name
+    parts = name.split()
+    if len(parts) < 2 or len(parts[0]) <= 2:
+        return name
+    return f"{parts[0][0]}. {' '.join(parts[1:])}"
+
+
+def mark_labels(points, keep=None):
+    """
+    Order the points for labelling, and give each a short display name.
+
+    Every point is named — a scatter that names only the extremes leaves the
+    reader guessing at the middle, and the middle is where most of the argument
+    about a back actually happens. Ordering still matters: on a crowded patch
+    the renderer places names in this order, so the most unusual seasons get
+    the clean spots and anything it cannot fit is the least interesting point
+    on the chart rather than an arbitrary one.
     """
     xs = sorted(p["x"] for p in points)
     ys = sorted(p["y"] for p in points)
@@ -98,8 +116,9 @@ def mark_labels(points, keep=14):
         points,
         key=lambda p: -max(abs(p["x"] - mx) / sx, abs(p["y"] - my) / sy),
     )
-    for i, p in enumerate(ranked[:keep]):
+    for i, p in enumerate(ranked if keep is None else ranked[:keep]):
         p["label"] = True
+        p["short"] = shorten(p["name"])
         # Placement priority. Names collide on a crowded scatter, and when one
         # has to be dropped it should be the least extreme, not whichever the
         # renderer happened to reach last.

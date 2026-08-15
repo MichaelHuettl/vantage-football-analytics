@@ -4,15 +4,15 @@ import type { LeaderRow } from "@/lib/charts";
 /**
  * A ranked table where the cell carries the value's position in the range.
  *
- * Modelled on the reference sheets the operator works from, with two
- * departures that the brief requires.
+ * Modelled on the reference sheets the operator works from, and shaded
+ * red-to-green at his request.
  *
- * The shading is a single-hue ramp, not the red-to-green those sheets use.
- * Red-green is the one pairing about eight percent of men cannot separate, and
- * §7's floor is that colour is never the sole carrier of meaning — so the
- * number is always printed, and the ramp only sorts it faster. A second accent
- * hue is also explicitly out (§11); this ramp is built from the neutral scale,
- * which keeps amber meaning "the thing being looked at" rather than "high".
+ * The ramp is built from the four status tokens rather than pure red and
+ * green. They already run red, orange, olive, green, and they vary in
+ * lightness as well as hue — which is what keeps the scale readable for the
+ * ~8% of men who cannot separate red from green, since a dark cell still reads
+ * as dark. §7's floor holds regardless: the number is printed in every cell,
+ * so the colour only sorts it faster and never carries the meaning alone.
  *
  * `intensity` arrives already normalised to 0-1 by the caller from values the
  * pipeline computed. Nothing here is a metric.
@@ -77,10 +77,8 @@ export function RankTable({
                 <td
                   className="px-3 py-2 text-right font-bold tnum"
                   style={{
-                    // Single-hue ramp off the ink scale. The number is always
-                    // legible because the text colour flips with the fill.
-                    background: `color-mix(in oklab, var(--color-ink-700) ${Math.round(t * 82)}%, transparent)`,
-                    color: t > 0.55 ? "var(--color-vantage-white)" : "var(--text-primary)",
+                    background: ramp(t),
+                    color: "var(--color-vantage-white)",
                   }}
                 >
                   {format(row)}
@@ -92,6 +90,27 @@ export function RankTable({
       </table>
     </div>
   );
+}
+
+/**
+ * Red at the bottom of the range through to green at the top, in three steps
+ * across the four status tokens. Mixing in oklab keeps the midpoints from
+ * going muddy the way a straight RGB interpolation between red and green does.
+ * Every stop is dark enough to carry white text, so the number stays legible
+ * at any value rather than flipping colour halfway up the table.
+ */
+function ramp(t: number): string {
+  const stops = [
+    "var(--color-status-out)",
+    "var(--color-status-doubtful)",
+    "var(--color-status-questionable)",
+    "var(--color-status-full)",
+  ];
+  const clamped = Math.max(0, Math.min(1, t));
+  const scaled = clamped * (stops.length - 1);
+  const i = Math.min(stops.length - 2, Math.floor(scaled));
+  const pct = Math.round((scaled - i) * 100);
+  return `color-mix(in oklab, ${stops[i + 1]} ${pct}%, ${stops[i]})`;
 }
 
 function Th({

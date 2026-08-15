@@ -1,4 +1,66 @@
+import Image from "next/image";
+import Link from "next/link";
+import { PLAYERS } from "@/lib/content";
 import type { Tier } from "@/lib/charts";
+
+/**
+ * Resolve a workbook name to a ranked player. The sheet writes "Brown" where
+ * the site knows "Chase Brown", so a surname is matched too — scoped to backs,
+ * which is what keeps that from picking up a different Brown.
+ */
+function findBack(name: string) {
+  const s = name.trim().toLowerCase();
+  const backs = PLAYERS.filter((p) => p.position === "RB");
+  return (
+    backs.find((p) => p.name.toLowerCase() === s) ??
+    backs.find((p) => p.name.toLowerCase().split(" ").slice(1).join(" ") === s)
+  );
+}
+
+/** A candidate as a headshot over his name, linking to his page. */
+function Candidate({ name }: { name: string }) {
+  const player = findBack(name);
+  const body = (
+    <>
+      <span
+        className="relative block h-14 w-14 overflow-hidden rounded-full"
+        style={{ background: "var(--surface-sunken)" }}
+      >
+        {player ? (
+          <Image
+            src={`/img/headshots/${player.id}.png`}
+            alt=""
+            fill
+            sizes="56px"
+            style={{ objectFit: "cover", objectPosition: "top center" }}
+          />
+        ) : (
+          <span
+            className="absolute inset-0 flex items-center justify-center text-sm font-bold"
+            style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+          >
+            {name.slice(0, 2).toUpperCase()}
+          </span>
+        )}
+      </span>
+      <span className="mt-1.5 block text-xs font-semibold leading-tight">
+        {player ? player.name : name}
+      </span>
+    </>
+  );
+
+  return (
+    <li className="w-[72px] text-center">
+      {player ? (
+        <Link href={`/players/${player.id}`} className="block hover:underline">
+          {body}
+        </Link>
+      ) : (
+        body
+      )}
+    </li>
+  );
+}
 
 /**
  * What a season in each tier has actually looked like.
@@ -67,12 +129,18 @@ export function TierBenchmarks({ tiers }: { tiers: Tier[] }) {
               Clearing it now
             </td>
             {tiers.map((t) => (
-              <td
-                key={t.label}
-                className="px-3 py-2 text-right text-sm"
-                style={{ color: "var(--text-secondary)" }}
-              >
-                {t.candidates.join(", ") || "—"}
+              <td key={t.label} className="px-3 py-3">
+                {t.candidates.length ? (
+                  <ul className="flex flex-wrap justify-end gap-x-3 gap-y-3">
+                    {t.candidates.map((c) => (
+                      <Candidate key={c} name={c} />
+                    ))}
+                  </ul>
+                ) : (
+                  <span className="block text-right" style={{ color: "var(--text-muted)" }}>
+                    —
+                  </span>
+                )}
               </td>
             ))}
           </tr>
