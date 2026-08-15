@@ -1,0 +1,643 @@
+{
+ "schema_version": 1,
+ "updated": "2026-08-14",
+ "source": "The operator's own list of each team's key players. Every name was resolved against the live Sleeper roster: all 32 teams and all 128 players confirmed on the team claimed, and spellings normalised to the roster's form.",
+ "note": "Who to watch, not who led a game. The card shows these before kickoff and replaces them with the actual leaders once a game is played, because the two answer different questions and sharing one slot without saying which is which would be a quiet lie. player_id is present only for the ranked 120 and is what makes a name a link.",
+ "data": {
+  "ARI": {
+   "qb": {
+    "name": "Jacoby Brissett",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Jeremiyah Love",
+    "position": "RB",
+    "player_id": "jeremiyah-love"
+   },
+   "wr": {
+    "name": "Trey McBride",
+    "position": "TE",
+    "player_id": "trey-mcbride"
+   },
+   "def": {
+    "name": "Budda Baker",
+    "position": "DB"
+   }
+  },
+  "ATL": {
+   "qb": {
+    "name": "Tua Tagovailoa",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Bijan Robinson",
+    "position": "RB",
+    "player_id": "bijan-robinson"
+   },
+   "wr": {
+    "name": "Drake London",
+    "position": "WR",
+    "player_id": "drake-london"
+   },
+   "def": {
+    "name": "A.J. Terrell",
+    "position": "CB"
+   }
+  },
+  "BAL": {
+   "qb": {
+    "name": "Lamar Jackson",
+    "position": "QB",
+    "player_id": "lamar-jackson"
+   },
+   "rb": {
+    "name": "Derrick Henry",
+    "position": "RB",
+    "player_id": "derrick-henry"
+   },
+   "wr": {
+    "name": "Zay Flowers",
+    "position": "WR",
+    "player_id": "zay-flowers"
+   },
+   "def": {
+    "name": "Kyle Hamilton",
+    "position": "DB"
+   }
+  },
+  "BUF": {
+   "qb": {
+    "name": "Josh Allen",
+    "position": "QB",
+    "player_id": "josh-allen"
+   },
+   "rb": {
+    "name": "James Cook",
+    "position": "RB",
+    "player_id": "james-cook"
+   },
+   "wr": {
+    "name": "DJ Moore",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Christian Benford",
+    "position": "DB"
+   }
+  },
+  "CAR": {
+   "qb": {
+    "name": "Bryce Young",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Chuba Hubbard",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Tetairoa McMillan",
+    "position": "WR",
+    "player_id": "tetairoa-mcmillan"
+   },
+   "def": {
+    "name": "Devin Lloyd",
+    "position": "LB"
+   }
+  },
+  "CHI": {
+   "qb": {
+    "name": "Caleb Williams",
+    "position": "QB",
+    "player_id": "caleb-williams"
+   },
+   "rb": {
+    "name": "D'Andre Swift",
+    "position": "RB",
+    "player_id": "dandre-swift"
+   },
+   "wr": {
+    "name": "Rome Odunze",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Montez Sweat",
+    "position": "DE"
+   }
+  },
+  "CIN": {
+   "qb": {
+    "name": "Joe Burrow",
+    "position": "QB",
+    "player_id": "joe-burrow"
+   },
+   "rb": {
+    "name": "Chase Brown",
+    "position": "RB",
+    "player_id": "chase-brown"
+   },
+   "wr": {
+    "name": "Ja'Marr Chase",
+    "position": "WR",
+    "player_id": "jamarr-chase"
+   },
+   "def": {
+    "name": "Dexter Lawrence",
+    "position": "DT"
+   }
+  },
+  "CLE": {
+   "qb": {
+    "name": "Deshaun Watson",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Quinshon Judkins",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Jerry Jeudy",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Denzel Ward",
+    "position": "CB"
+   }
+  },
+  "DAL": {
+   "qb": {
+    "name": "Dak Prescott",
+    "position": "QB",
+    "player_id": "dak-prescott"
+   },
+   "rb": {
+    "name": "Javonte Williams",
+    "position": "RB",
+    "player_id": "javonte-williams"
+   },
+   "wr": {
+    "name": "CeeDee Lamb",
+    "position": "WR",
+    "player_id": "ceedee-lamb"
+   },
+   "def": {
+    "name": "Quinnen Williams",
+    "position": "DT"
+   }
+  },
+  "DEN": {
+   "qb": {
+    "name": "Bo Nix",
+    "position": "QB",
+    "player_id": "bo-nix"
+   },
+   "rb": {
+    "name": "J.K. Dobbins",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Jaylen Waddle",
+    "position": "WR",
+    "player_id": "jaylen-waddle"
+   },
+   "def": {
+    "name": "Pat Surtain",
+    "position": "CB"
+   }
+  },
+  "DET": {
+   "qb": {
+    "name": "Jared Goff",
+    "position": "QB",
+    "player_id": "jared-goff"
+   },
+   "rb": {
+    "name": "Jahmyr Gibbs",
+    "position": "RB",
+    "player_id": "jahmyr-gibbs"
+   },
+   "wr": {
+    "name": "Amon-Ra St. Brown",
+    "position": "WR",
+    "player_id": "amon-ra-st-brown"
+   },
+   "def": {
+    "name": "Aidan Hutchinson",
+    "position": "DL"
+   }
+  },
+  "GB": {
+   "qb": {
+    "name": "Jordan Love",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Josh Jacobs",
+    "position": "RB",
+    "player_id": "josh-jacobs"
+   },
+   "wr": {
+    "name": "Christian Watson",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Xavier McKinney",
+    "position": "DB"
+   }
+  },
+  "HOU": {
+   "qb": {
+    "name": "C.J. Stroud",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "David Montgomery",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Nico Collins",
+    "position": "WR",
+    "player_id": "nico-collins"
+   },
+   "def": {
+    "name": "Will Anderson",
+    "position": "DL"
+   }
+  },
+  "IND": {
+   "qb": {
+    "name": "Daniel Jones",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Jonathan Taylor",
+    "position": "RB",
+    "player_id": "jonathan-taylor"
+   },
+   "wr": {
+    "name": "Alec Pierce",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Sauce Gardner",
+    "position": "DB"
+   }
+  },
+  "JAX": {
+   "qb": {
+    "name": "Trevor Lawrence",
+    "position": "QB",
+    "player_id": "trevor-lawrence"
+   },
+   "rb": {
+    "name": "Bhayshul Tuten",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Parker Washington",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Josh Hines-Allen",
+    "position": "DE"
+   }
+  },
+  "KC": {
+   "qb": {
+    "name": "Patrick Mahomes",
+    "position": "QB",
+    "player_id": "patrick-mahomes"
+   },
+   "rb": {
+    "name": "Kenneth Walker",
+    "position": "RB",
+    "player_id": "kenneth-walker"
+   },
+   "wr": {
+    "name": "Rashee Rice",
+    "position": "WR",
+    "player_id": "rashee-rice"
+   },
+   "def": {
+    "name": "Chris Jones",
+    "position": "DT"
+   }
+  },
+  "LV": {
+   "qb": {
+    "name": "Kirk Cousins",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Ashton Jeanty",
+    "position": "RB",
+    "player_id": "ashton-jeanty"
+   },
+   "wr": {
+    "name": "Tre Tucker",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Maxx Crosby",
+    "position": "DE"
+   }
+  },
+  "LAC": {
+   "qb": {
+    "name": "Justin Herbert",
+    "position": "QB",
+    "player_id": "justin-herbert"
+   },
+   "rb": {
+    "name": "Omarion Hampton",
+    "position": "RB",
+    "player_id": "omarion-hampton"
+   },
+   "wr": {
+    "name": "Ladd McConkey",
+    "position": "WR",
+    "player_id": "ladd-mcconkey"
+   },
+   "def": {
+    "name": "Derwin James",
+    "position": "DB"
+   }
+  },
+  "LAR": {
+   "qb": {
+    "name": "Matthew Stafford",
+    "position": "QB",
+    "player_id": "matthew-stafford"
+   },
+   "rb": {
+    "name": "Kyren Williams",
+    "position": "RB",
+    "player_id": "kyren-williams"
+   },
+   "wr": {
+    "name": "Puka Nacua",
+    "position": "WR",
+    "player_id": "puka-nacua"
+   },
+   "def": {
+    "name": "Myles Garrett",
+    "position": "DE"
+   }
+  },
+  "MIA": {
+   "qb": {
+    "name": "Malik Willis",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "De'Von Achane",
+    "position": "RB",
+    "player_id": "devon-achane"
+   },
+   "wr": {
+    "name": "Malik Washington",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Jordyn Brooks",
+    "position": "LB"
+   }
+  },
+  "MIN": {
+   "qb": {
+    "name": "Kyler Murray",
+    "position": "QB",
+    "player_id": "kyler-murray"
+   },
+   "rb": {
+    "name": "Jordan Mason",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Justin Jefferson",
+    "position": "WR",
+    "player_id": "justin-jefferson"
+   },
+   "def": {
+    "name": "Andrew Van Ginkel",
+    "position": "LB"
+   }
+  },
+  "NE": {
+   "qb": {
+    "name": "Drake Maye",
+    "position": "QB",
+    "player_id": "drake-maye"
+   },
+   "rb": {
+    "name": "TreVeyon Henderson",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "A.J. Brown",
+    "position": "WR",
+    "player_id": "aj-brown"
+   },
+   "def": {
+    "name": "Christian Gonzalez",
+    "position": "DB"
+   }
+  },
+  "NO": {
+   "qb": {
+    "name": "Tyler Shough",
+    "position": "QB",
+    "player_id": "tyler-shough"
+   },
+   "rb": {
+    "name": "Travis Etienne",
+    "position": "RB",
+    "player_id": "travis-etienne"
+   },
+   "wr": {
+    "name": "Chris Olave",
+    "position": "WR",
+    "player_id": "chris-olave"
+   },
+   "def": {
+    "name": "Jordan Howden",
+    "position": "DB"
+   }
+  },
+  "NYG": {
+   "qb": {
+    "name": "Jaxson Dart",
+    "position": "QB",
+    "player_id": "jaxson-dart"
+   },
+   "rb": {
+    "name": "Cam Skattebo",
+    "position": "RB",
+    "player_id": "cam-skattebo"
+   },
+   "wr": {
+    "name": "Malik Nabers",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Brian Burns",
+    "position": "DE"
+   }
+  },
+  "NYJ": {
+   "qb": {
+    "name": "Geno Smith",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Breece Hall",
+    "position": "RB",
+    "player_id": "breece-hall"
+   },
+   "wr": {
+    "name": "Garrett Wilson",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Minkah Fitzpatrick",
+    "position": "DB"
+   }
+  },
+  "PHI": {
+   "qb": {
+    "name": "Jalen Hurts",
+    "position": "QB",
+    "player_id": "jalen-hurts"
+   },
+   "rb": {
+    "name": "Saquon Barkley",
+    "position": "RB",
+    "player_id": "saquon-barkley"
+   },
+   "wr": {
+    "name": "DeVonta Smith",
+    "position": "WR",
+    "player_id": "devonta-smith"
+   },
+   "def": {
+    "name": "Jalen Carter",
+    "position": "DL"
+   }
+  },
+  "PIT": {
+   "qb": {
+    "name": "Aaron Rodgers",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Jaylen Warren",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "DK Metcalf",
+    "position": "WR"
+   },
+   "def": {
+    "name": "T.J. Watt",
+    "position": "LB"
+   }
+  },
+  "SF": {
+   "qb": {
+    "name": "Brock Purdy",
+    "position": "QB",
+    "player_id": "brock-purdy"
+   },
+   "rb": {
+    "name": "Christian McCaffrey",
+    "position": "RB",
+    "player_id": "christian-mccaffrey"
+   },
+   "wr": {
+    "name": "Mike Evans",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Fred Warner",
+    "position": "LB"
+   }
+  },
+  "SEA": {
+   "qb": {
+    "name": "Sam Darnold",
+    "position": "QB",
+    "player_id": "sam-darnold"
+   },
+   "rb": {
+    "name": "Jadarian Price",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Jaxon Smith-Njigba",
+    "position": "WR",
+    "player_id": "jaxon-smith-njigba"
+   },
+   "def": {
+    "name": "Devon Witherspoon",
+    "position": "DB"
+   }
+  },
+  "TB": {
+   "qb": {
+    "name": "Baker Mayfield",
+    "position": "QB",
+    "player_id": "baker-mayfield"
+   },
+   "rb": {
+    "name": "Bucky Irving",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Emeka Egbuka",
+    "position": "WR",
+    "player_id": "emeka-egbuka"
+   },
+   "def": {
+    "name": "Antoine Winfield",
+    "position": "DB"
+   }
+  },
+  "TEN": {
+   "qb": {
+    "name": "Cam Ward",
+    "position": "QB"
+   },
+   "rb": {
+    "name": "Tony Pollard",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Wan'Dale Robinson",
+    "position": "WR"
+   },
+   "def": {
+    "name": "Jeffery Simmons",
+    "position": "DT"
+   }
+  },
+  "WAS": {
+   "qb": {
+    "name": "Jayden Daniels",
+    "position": "QB",
+    "player_id": "jayden-daniels"
+   },
+   "rb": {
+    "name": "Jacory Croskey-Merritt",
+    "position": "RB"
+   },
+   "wr": {
+    "name": "Terry McLaurin",
+    "position": "WR",
+    "player_id": "terry-mclaurin"
+   },
+   "def": {
+    "name": "Mike Sainristil",
+    "position": "DB"
+   }
+  }
+ }
+}

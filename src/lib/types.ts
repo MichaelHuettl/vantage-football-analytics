@@ -120,6 +120,27 @@ export interface GameLeaders {
   defense?: GameLeader;
 }
 
+/**
+ * A team's key players — who to watch, which is not the same question as who
+ * led a given game. Held per team rather than per game because the answer does
+ * not change week to week, and duplicating it into 272 records would guarantee
+ * the copies disagreed.
+ */
+export interface KeyPlayer {
+  name: string;
+  /** Roster position, which can differ from the slot: a team's most dangerous
+   *  receiver is often a TE, and the slot still reads "Rec". */
+  position: string;
+  player_id?: string;
+}
+
+export interface TeamKeyPlayers {
+  qb?: KeyPlayer;
+  rb?: KeyPlayer;
+  wr?: KeyPlayer;
+  def?: KeyPlayer;
+}
+
 export interface Game {
   id: string;
   week: number;

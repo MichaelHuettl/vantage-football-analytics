@@ -1,9 +1,14 @@
 import Link from "next/link";
 import { TeamChip } from "@/components/TeamChip";
 import { WeatherBadge } from "@/components/WeatherBadge";
-import { kickoffTime } from "@/lib/games";
+import { keyPlayersFor, kickoffTime } from "@/lib/games";
 import { getTeam } from "@/lib/teams";
-import type { Game, GameLeader, GameLeaders } from "@/lib/types";
+import type {
+  Game,
+  GameLeader,
+  GameLeaders,
+  TeamKeyPlayers,
+} from "@/lib/types";
 
 const ROOF_LABEL: Record<Game["roof"], string> = {
   outdoor: "Outdoor",
@@ -66,6 +71,7 @@ export function GameCard({ game }: { game: Game }) {
           name={away ? away.nickname : game.away}
           score={game.score?.away}
           leaders={game.leaders?.away}
+          key_players={keyPlayersFor(game.away)}
           played={played}
         />
         <TeamSide
@@ -74,6 +80,7 @@ export function GameCard({ game }: { game: Game }) {
           name={home ? home.nickname : game.home}
           score={game.score?.home}
           leaders={game.leaders?.home}
+          key_players={keyPlayersFor(game.home)}
           played={played}
           emphasis
         />
@@ -123,6 +130,7 @@ function TeamSide({
   name,
   score,
   leaders,
+  key_players,
   played,
   emphasis = false,
 }: {
@@ -131,9 +139,30 @@ function TeamSide({
   name: string;
   score?: number;
   leaders?: GameLeaders;
+  key_players?: TeamKeyPlayers;
   played: boolean;
   emphasis?: boolean;
 }) {
+  /*
+   * Before kickoff the four rows are the team's key players; afterwards they
+   * are who actually led the game. They are labelled differently because they
+   * answer different questions — "watch this man" and "this man decided it" —
+   * and showing one under the other's heading would be a quiet lie.
+   */
+  const showLeaders = leaders !== undefined;
+  const rows: [string, GameLeader | undefined][] = showLeaders
+    ? [
+        ["QB", leaders?.qb],
+        ["Rush", leaders?.rusher],
+        ["Rec", leaders?.receiver],
+        ["Def", leaders?.defense],
+      ]
+    : [
+        ["QB", key_players?.qb],
+        ["Rush", key_players?.rb],
+        ["Rec", key_players?.wr],
+        ["Def", key_players?.def],
+      ];
   return (
     <div
       className={`px-4 py-4 ${emphasis ? "border-t sm:border-l sm:border-t-0" : ""}`}
@@ -162,11 +191,11 @@ function TeamSide({
         <span className="font-semibold">{name}</span>
       </div>
 
-      <dl className="mt-4 flex flex-col gap-1.5">
-        <LeaderRow label="QB" leader={leaders?.qb} />
-        <LeaderRow label="Rush" leader={leaders?.rusher} />
-        <LeaderRow label="Rec" leader={leaders?.receiver} />
-        <LeaderRow label="Def" leader={leaders?.defense} />
+      <p className="mt-4 eyebrow">{showLeaders ? "Led the game" : "Watch"}</p>
+      <dl className="mt-2 flex flex-col gap-1.5">
+        {rows.map(([label, entry]) => (
+          <LeaderRow key={label} label={label} leader={entry} />
+        ))}
       </dl>
     </div>
   );

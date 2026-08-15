@@ -1,6 +1,7 @@
 import scheduleFile from "@/data/schedule.json";
+import keyPlayersFile from "@/data/key-players.json";
 import { getPlayer } from "./content";
-import type { Game } from "./types";
+import type { Game, TeamKeyPlayers } from "./types";
 
 interface ScheduleFile {
   schema_version: number;
@@ -84,4 +85,20 @@ export function weatherApplies(game: Game): boolean {
 export function leaderHref(playerId?: string): string | undefined {
   if (!playerId) return undefined;
   return getPlayer(playerId) ? `/players/${playerId}` : undefined;
+}
+
+interface KeyPlayersFile {
+  schema_version: number;
+  updated: string;
+  source?: string;
+  note?: string;
+  data: Record<string, TeamKeyPlayers>;
+}
+
+const keyFile = keyPlayersFile as unknown as KeyPlayersFile;
+
+export const KEY_PLAYERS_UPDATED = keyFile.updated;
+
+export function keyPlayersFor(abbr: string): TeamKeyPlayers | undefined {
+  return keyFile.data[abbr];
 }
