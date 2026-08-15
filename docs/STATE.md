@@ -75,12 +75,16 @@ build` with a line number instead of shipping a broken page.
 5. **Re-run `npm run audit-teams` after the cutdown to 53.** Rosters move
    through the preseason; the audit below is true as of 2026-08-14 and nothing
    keeps it true.
-6. **News tags only players in `players.json`.** The file holds the 120 ranked
-   players, so a headline about anyone else is stored and displayed but tagged
-   to nobody, and will not surface on a player or injury page. Jordyn Tyson
-   (Saints WR, hamstring, 2026-08-14) is the live example: three headlines, zero
-   tags. This is correct behaviour for a ranked-player site, but it means the
-   news section is not a complete injury wire.
+6. **News tags only players in `players.json`, and nothing links news to the
+   injury page.** `players.json` holds the 120 ranked players, so a headline
+   about anyone else is stored and displayed but tagged to nobody and has no
+   player page. Separately, `camp-injuries.json` is hand-authored and keyed by
+   name, so even a player tracked there gets no automatic link from a matching
+   headline. Jordyn Tyson is the live example: three injury headlines and four
+   beat posts on 2026-08-14, zero news tags, while his camp record sat at the
+   2026-08-12 wording until it was updated by hand. The gap is not that the
+   news is missing — it is that a fresher headline never nudges the injury
+   record, so the two can disagree on screen.
 7. **Nitter is fragile.** The beat feed goes through it because X has no free
    read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
