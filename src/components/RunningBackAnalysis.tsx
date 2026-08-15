@@ -1,5 +1,6 @@
 import { ChartFigure } from "@/components/ChartFigure";
 import { RankTable } from "@/components/RankTable";
+import { HistoricTable } from "@/components/HistoricTable";
 import { ScatterChart } from "@/components/ScatterChart";
 import { TierBenchmarks } from "@/components/TierBenchmarks";
 import { RB_CHARTS, RB_SEASON, RB_SOURCE } from "@/lib/charts";
@@ -157,37 +158,31 @@ export function RunningBackAnalysis() {
         n={4}
         title="What a top-three season has looked like"
         chart={
-          <ChartFigure caption={historic.caption} source={axis(historic)}>
-            <ScatterChart
-              series={historic}
-              height={720}
-              band={historic.band}
-              bandLabel="middle half of the tier"
-              regions={{
-                tl: "receiving backs",
-                tr: "both, and almost nobody",
-                bl: "did it on efficiency",
-                br: "pure runners",
-              }}
-            />
-          </ChartFigure>
+          <figure className="my-8">
+            <HistoricTable data={historic} />
+            <figcaption className="mt-4 text-sm" style={{ color: "var(--text-secondary)" }}>
+              {historic.caption}
+            </figcaption>
+          </figure>
         }
       >
         <p>
-          Twenty-seven top-three finishes since 2017, plotted as carries against
-          targets. There is no single profile. Henry&rsquo;s 2020 is{" "}
-          <Stat>378</Stat> carries and <Stat>31</Stat> targets; McCaffrey&rsquo;s
-          2019 is <Stat>287</Stat> and <Stat>142</Stat>. Both finished top three,
-          and nothing about the first tells you how to value the second.
+          Twenty-seven finishes, and no single profile among them.
+          Henry&rsquo;s 2020 is <Stat>378</Stat> carries and <Stat>31</Stat>{" "}
+          targets; McCaffrey&rsquo;s 2019 is <Stat>287</Stat> and{" "}
+          <Stat>142</Stat>. Both finished top three, and nothing about the first
+          tells you how to value the second. Read down a column rather than
+          across a row: the median is the bar, and the spread around it is how
+          much the bar moves.
         </p>
         <p>
-          What the box says is that the middle half of these seasons ran between{" "}
-          <Stat>{historic.band.x0}</Stat> and <Stat>{historic.band.x1}</Stat>{" "}
-          carries with <Stat>{historic.band.y0}</Stat> to{" "}
-          <Stat>{historic.band.y1}</Stat> targets. That is the honest bar: not a
-          number a back has to hit, but a volume of work that has to exist
-          somewhere in his role before the finish is even available to him. Backs
-          get drafted on talent and finish on touches.
+          The two rank columns are the ones people skip. The median top-three
+          back ran behind the <Stat>12th</Stat> offensive line on the{" "}
+          <Stat>12th</Stat> ranked offense — not an elite situation, but not a
+          bad one either, and the 75th percentile at <Stat>20th</Stat> says a
+          genuinely poor line has produced this finish more than once. Age is
+          the tighter constraint: <Stat>22</Stat> to <Stat>26</Stat> covers the
+          middle half, and only two seasons in nine years came from outside it.
         </p>
 
         <div className="mt-2">

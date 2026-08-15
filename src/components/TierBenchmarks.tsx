@@ -22,8 +22,10 @@ function Candidate({ name }: { name: string }) {
   const player = findBack(name);
   const body = (
     <>
+      {/* mx-auto: the circle is narrower than its cell, and without this it
+          sat left while the name under it was centred. */}
       <span
-        className="relative block h-14 w-14 overflow-hidden rounded-full"
+        className="relative mx-auto block h-14 w-14 overflow-hidden rounded-full"
         style={{ background: "var(--surface-sunken)" }}
       >
         {player ? (
@@ -43,7 +45,7 @@ function Candidate({ name }: { name: string }) {
           </span>
         )}
       </span>
-      <span className="mt-1.5 block text-xs font-semibold leading-tight">
+      <span className="mt-1.5 block text-center text-xs font-semibold leading-tight">
         {player ? player.name : name}
       </span>
     </>

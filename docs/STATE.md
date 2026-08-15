@@ -23,7 +23,7 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positions | Six pages. **RB is built** — one column: methodology, then 4 scatters + 3 tables with written analysis. The other five keep the two-column slot-and-pool layout |
+| Positions | Six pages. **RB is built** — one column: methodology, then 3 scatters + 4 tables with written analysis. The other five keep the two-column slot-and-pool layout |
 | Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
@@ -77,6 +77,12 @@ build` with a line number instead of shipping a broken page.
      past the inner ring. All 170 points across the four charts are named with
      no overlap; if a future chart is denser than this one, the placement drops
      the lowest-ranked name rather than overlapping, and its dot stays.
+   - **The historic block is a table, not a chart.** Thirteen measures do not
+     fit on two axes, and the rank and age columns are the ones that change a
+     read. Emphasis is marked in the Python against each column's own
+     quartiles, with the sense flipped for the two rank columns so bold always
+     means good; amber is the single best value in a column, eleven cells in
+     the whole table.
    - **The ranked tables shade red-to-green** at the operator's request, built
      from the four status tokens rather than pure red and green so the ramp
      also varies in lightness. The number is printed in every cell, so §7's

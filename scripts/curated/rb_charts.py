@@ -156,31 +156,72 @@ def historic(cells):
     It lives on the RB sheet at row 260, not on the sheet named 'Historical
     2025 Fantasy Stats' — that one is an empty template.
     """
+    # Column letter, key, header, and which direction counts as good. Ranks are
+    # better low; age is neither, so only its outright extremes are marked.
+    COLUMNS = [
+        ("C", "attempts", "Rush att", "high"),
+        ("D", "rush_yards", "Rush yds", "high"),
+        ("E", "rush_td", "Rush TD", "high"),
+        ("F", "receptions", "Rec", "high"),
+        ("G", "targets", "Tgt", "high"),
+        ("H", "rec_yards", "Rec yds", "high"),
+        ("I", "rec_td", "Rec TD", "high"),
+        ("J", "power_rank", "Off. rank", "low"),
+        ("K", "oline_rank", "O-line", "low"),
+        ("L", "age", "Age", "none"),
+        ("M", "green_zone", "GZ att", "high"),
+        ("N", "hvt", "HVT", "high"),
+    ]
+
     seasons = []
     for r in range(262, 289):
         name = cells.get((r, "B"))
         year = num(cells.get((r, "A")))
         if not name or year is None:
             continue
-        seasons.append(
-            {
-                "name": str(name).strip(),
-                "season": int(year),
-                "attempts": num(cells.get((r, "C"))) or 0,
-                "rush_yards": num(cells.get((r, "D"))) or 0,
-                "rush_td": num(cells.get((r, "E"))) or 0,
-                "receptions": num(cells.get((r, "F"))) or 0,
-                "targets": num(cells.get((r, "G"))) or 0,
-                "rec_yards": num(cells.get((r, "H"))) or 0,
-            }
-        )
+        row = {"name": str(name).strip(), "season": int(year)}
+        for col, key, _, _ in COLUMNS:
+            row[key] = num(cells.get((r, col)))
+        seasons.append(row)
 
     labels = ["median", "p25", "p75", "min", "max"]
-    fields = ["attempts", "rush_yards", "rush_td", "receptions", "targets", "rec_yards"]
     dist = {}
     for i, key in enumerate(labels):
-        row = 290 + i
-        dist[key] = {f: num(cells.get((row, c))) for f, c in zip(fields, "CDEFGH")}
+        r = 290 + i
+        dist[key] = {k: num(cells.get((r, c))) for c, k, _, _ in COLUMNS}
+
+    # Mark the cells worth looking at, here rather than on the page (§11).
+    # "top" always means good, so it is the low end for a rank; `best` is the
+    # single finest value in the column across nine seasons.
+    for col, key, _, direction in COLUMNS:
+        vals = [s[key] for s in seasons if s[key] is not None]
+        if not vals:
+            continue
+        p25, p75 = dist["p25"].get(key), dist["p75"].get(key)
+        best = min(vals) if direction == "low" else max(vals)
+        for s in seasons:
+            v = s[key]
+            if v is None:
+                continue
+            mark = None
+            if direction == "high" and p75 is not None and v >= p75:
+                mark = "top"
+            elif direction == "high" and p25 is not None and v <= p25:
+                mark = "bottom"
+            elif direction == "low" and p25 is not None and v <= p25:
+                mark = "top"
+            elif direction == "low" and p75 is not None and v >= p75:
+                mark = "bottom"
+            if direction != "none" and mark:
+                s[f"{key}_mark"] = mark
+            if direction == "none":
+                # Neither end of an age column is "good". Both ends are still
+                # worth seeing — the 21-year-old and the 29-year-old are the
+                # two seasons that say most about when this happens.
+                if v in (min(vals), max(vals)):
+                    s[f"{key}_extreme"] = True
+            elif v == best:
+                s[f"{key}_best"] = True
 
     def profile(first_row, label):
         """The workbook's benchmark for a tier: the value each stat has to
@@ -205,6 +246,9 @@ def historic(cells):
         return {"label": label, "thresholds": out, "candidates": names}
 
     return {
+        "columns": [
+            {"key": k, "header": h, "direction": d} for _, k, h, d in COLUMNS
+        ],
         "seasons": seasons,
         "distribution": dist,
         "tiers": [
@@ -276,17 +320,6 @@ def main():
     routes = scatter(rb, "B", "C", "D", 145, 192)
 
     hist = historic(rb)
-    # The scatter is one point per top-three finish: carries across, targets up.
-    # Both routes to the tier are visible at once — Henry's 378 carries and 31
-    # targets, Ekeler's 204 and 127 — which is the argument the block makes.
-    hist_points = [
-        {
-            "name": f"{s['name'].split()[-1]} '{str(s['season'])[2:]}",
-            "x": s["attempts"],
-            "y": s["targets"],
-        }
-        for s in hist["seasons"]
-    ]
 
     blocks = team_blocks(opp)
     lead_share = sorted(
@@ -353,19 +386,12 @@ def main():
                 ),
             ),
             "historic": {
-                **summarise(
-                    hist_points,
-                    "Rushing attempts",
-                    "Targets",
-                    "Every top-three fantasy back since 2017. There are two ways "
-                    "into this tier and the shaded box is where most of them sit.",
+                "caption": (
+                    "Every top-three fantasy back since 2017, with the "
+                    "distribution underneath. Bold is the top quarter of the "
+                    "column; amber is the best any of these seasons managed."
                 ),
-                "band": {
-                    "x0": hist["distribution"]["p25"]["attempts"],
-                    "x1": hist["distribution"]["p75"]["attempts"],
-                    "y0": hist["distribution"]["p25"]["targets"],
-                    "y1": hist["distribution"]["p75"]["targets"],
-                },
+                "columns": hist["columns"],
                 "seasons": hist["seasons"],
                 "distribution": hist["distribution"],
                 "tiers": hist["tiers"],

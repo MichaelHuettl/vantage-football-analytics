@@ -29,12 +29,6 @@ export interface ScatterSeries {
 export interface HistoricSeason {
   name: string;
   season: number;
-  attempts: number;
-  rush_yards: number;
-  rush_td: number;
-  receptions: number;
-  targets: number;
-  rec_yards: number;
 }
 
 export interface Tier {
@@ -44,10 +38,25 @@ export interface Tier {
   candidates: string[];
 }
 
-export interface HistoricSeries extends ScatterSeries {
-  /** The interquartile box — where the middle half of the tier sits. */
-  band: { x0: number; x1: number; y0: number; y1: number };
-  seasons: HistoricSeason[];
+export interface HistoricColumn {
+  key: string;
+  header: string;
+  /** Which end of the column counts as good. Ranks are better low; age is
+   *  neither, so only its extremes are marked. */
+  direction: "high" | "low" | "none";
+}
+
+/**
+ * A season row. The named fields are always present; the `_mark`, `_best` and
+ * `_extreme` companions are set per column by the pipeline, so the row is
+ * indexable rather than a fixed shape.
+ */
+export type HistoricRow = HistoricSeason & Record<string, number | string | boolean | undefined>;
+
+export interface HistoricTable {
+  caption: string;
+  columns: HistoricColumn[];
+  seasons: HistoricRow[];
   distribution: Record<string, Record<string, number>>;
   tiers: Tier[];
 }
@@ -77,7 +86,7 @@ interface RbCharts {
     hvt: ScatterSeries;
     contact: ScatterSeries;
     routes: ScatterSeries;
-    historic: HistoricSeries;
+    historic: HistoricTable;
     opportunity: LeaderTable;
     targets: LeaderTable;
   };

@@ -1190,239 +1190,69 @@
    "note": "Route participation and targets per route run come from a licensed source. Published here on the operator's explicit decision for this non-commercial portfolio; see docs/STATE.md."
   },
   "historic": {
-   "x_label": "Rushing attempts",
-   "y_label": "Targets",
-   "caption": "Every top-three fantasy back since 2017. There are two ways into this tier and the shaded box is where most of them sit.",
-   "x_median": 272.0,
-   "y_median": 94.0,
-   "x_min": 120.0,
-   "x_max": 378.0,
-   "y_min": 31.0,
-   "y_max": 142.0,
-   "points": [
+   "caption": "Every top-three fantasy back since 2017, with the distribution underneath. Bold is the top quarter of the column; amber is the best any of these seasons managed.",
+   "columns": [
     {
-     "name": "McCaffrey '25",
-     "x": 311.0,
-     "y": 129.0,
-     "label": true,
-     "short": "McCaffrey '25",
-     "rank": 9
+     "key": "attempts",
+     "header": "Rush att",
+     "direction": "high"
     },
     {
-     "name": "Robinson '25",
-     "x": 287.0,
-     "y": 103.0,
-     "label": true,
-     "short": "Robinson '25",
-     "rank": 25
+     "key": "rush_yards",
+     "header": "Rush yds",
+     "direction": "high"
     },
     {
-     "name": "Gibbs '25",
-     "x": 243.0,
-     "y": 94.0,
-     "label": true,
-     "short": "Gibbs '25",
-     "rank": 21
+     "key": "rush_td",
+     "header": "Rush TD",
+     "direction": "high"
     },
     {
-     "name": "Gibbs '24",
-     "x": 250.0,
-     "y": 63.0,
-     "label": true,
-     "short": "Gibbs '24",
-     "rank": 11
+     "key": "receptions",
+     "header": "Rec",
+     "direction": "high"
     },
     {
-     "name": "Barkley '24",
-     "x": 345.0,
-     "y": 43.0,
-     "label": true,
-     "short": "Barkley '24",
-     "rank": 2
+     "key": "targets",
+     "header": "Tgt",
+     "direction": "high"
     },
     {
-     "name": "Robinson '24",
-     "x": 304.0,
-     "y": 72.0,
-     "label": true,
-     "short": "Robinson '24",
-     "rank": 18
+     "key": "rec_yards",
+     "header": "Rec yds",
+     "direction": "high"
     },
     {
-     "name": "McCaffrey '23",
-     "x": 272.0,
-     "y": 83.0,
-     "label": true,
-     "short": "McCaffrey '23",
-     "rank": 24
+     "key": "rec_td",
+     "header": "Rec TD",
+     "direction": "high"
     },
     {
-     "name": "Hall '23",
-     "x": 223.0,
-     "y": 95.0,
-     "label": true,
-     "short": "Hall '23",
-     "rank": 15
+     "key": "power_rank",
+     "header": "Off. rank",
+     "direction": "low"
     },
     {
-     "name": "Etienne '23",
-     "x": 267.0,
-     "y": 73.0,
-     "label": true,
-     "short": "Etienne '23",
-     "rank": 19
+     "key": "oline_rank",
+     "header": "O-line",
+     "direction": "low"
     },
     {
-     "name": "Ekeler '22",
-     "x": 204.0,
-     "y": 127.0,
-     "label": true,
-     "short": "Ekeler '22",
-     "rank": 7
+     "key": "age",
+     "header": "Age",
+     "direction": "none"
     },
     {
-     "name": "McCaffrey '22",
-     "x": 244.0,
-     "y": 108.0,
-     "label": true,
-     "short": "McCaffrey '22",
-     "rank": 22
+     "key": "green_zone",
+     "header": "GZ att",
+     "direction": "high"
     },
     {
-     "name": "Jacobs '22",
-     "x": 340.0,
-     "y": 64.0,
-     "label": true,
-     "short": "Jacobs '22",
-     "rank": 8
-    },
-    {
-     "name": "Taylor '21",
-     "x": 332.0,
-     "y": 51.0,
-     "label": true,
-     "short": "Taylor '21",
-     "rank": 5
-    },
-    {
-     "name": "Ekeler '21",
-     "x": 206.0,
-     "y": 94.0,
-     "label": true,
-     "short": "Ekeler '21",
-     "rank": 10
-    },
-    {
-     "name": "Harris '21",
-     "x": 307.0,
-     "y": 94.0,
-     "label": true,
-     "short": "Harris '21",
-     "rank": 20
-    },
-    {
-     "name": "Kamara '20",
-     "x": 187.0,
-     "y": 107.0,
-     "label": true,
-     "short": "Kamara '20",
-     "rank": 4
-    },
-    {
-     "name": "Cook '20",
-     "x": 312.0,
-     "y": 54.0,
-     "label": true,
-     "short": "Cook '20",
-     "rank": 6
-    },
-    {
-     "name": "Henry '20",
-     "x": 378.0,
-     "y": 31.0,
-     "label": true,
-     "short": "Henry '20",
-     "rank": 1
-    },
-    {
-     "name": "McCaffrey '19",
-     "x": 287.0,
-     "y": 142.0,
-     "label": true,
-     "short": "McCaffrey '19",
-     "rank": 3
-    },
-    {
-     "name": "Jones '19",
-     "x": 236.0,
-     "y": 68.0,
-     "label": true,
-     "short": "Jones '19",
-     "rank": 14
-    },
-    {
-     "name": "Elliott '19",
-     "x": 301.0,
-     "y": 71.0,
-     "label": true,
-     "short": "Elliott '19",
-     "rank": 17
-    },
-    {
-     "name": "Barkley '18",
-     "x": 261.0,
-     "y": 121.0,
-     "label": true,
-     "short": "Barkley '18",
-     "rank": 13
-    },
-    {
-     "name": "McCaffrey '18",
-     "x": 219.0,
-     "y": 124.0,
-     "label": true,
-     "short": "McCaffrey '18",
-     "rank": 12
-    },
-    {
-     "name": "Gurley '18",
-     "x": 256.0,
-     "y": 81.0,
-     "label": true,
-     "short": "Gurley '18",
-     "rank": 23
-    },
-    {
-     "name": "Gurley '17",
-     "x": 279.0,
-     "y": 87.0,
-     "label": true,
-     "short": "Gurley '17",
-     "rank": 26
-    },
-    {
-     "name": "Bell '17",
-     "x": 321.0,
-     "y": 107.0,
-     "label": true,
-     "short": "Bell '17",
-     "rank": 16
-    },
-    {
-     "name": "Kamara '17",
-     "x": 120.0,
-     "y": 100.0,
-     "label": true,
-     "short": "Kamara '17",
-     "rank": 0
+     "key": "hvt",
+     "header": "HVT",
+     "direction": "high"
     }
    ],
-   "band": {
-    "x0": 239.5,
-    "x1": 309.0,
-    "y0": 69.5,
-    "y1": 107.0
-   },
    "seasons": [
     {
      "name": "Christian McCaffrey",
@@ -1432,7 +1262,23 @@
      "rush_td": 10.0,
      "receptions": 102.0,
      "targets": 129.0,
-     "rec_yards": 924.0
+     "rec_yards": 924.0,
+     "rec_td": 7.0,
+     "power_rank": 4.0,
+     "oline_rank": 5.0,
+     "age": 29.0,
+     "green_zone": 37.0,
+     "hvt": 166.0,
+     "attempts_mark": "top",
+     "receptions_mark": "top",
+     "targets_mark": "top",
+     "rec_yards_mark": "top",
+     "rec_td_mark": "top",
+     "power_rank_mark": "top",
+     "oline_rank_mark": "top",
+     "age_extreme": true,
+     "green_zone_mark": "top",
+     "hvt_mark": "top"
     },
     {
      "name": "Bijan Robinson",
@@ -1442,7 +1288,19 @@
      "rush_td": 7.0,
      "receptions": 79.0,
      "targets": 103.0,
-     "rec_yards": 820.0
+     "rec_yards": 820.0,
+     "rec_td": 4.0,
+     "power_rank": 21.0,
+     "oline_rank": 26.0,
+     "age": 23.0,
+     "green_zone": 17.0,
+     "hvt": 120.0,
+     "rush_yards_mark": "top",
+     "rush_td_mark": "bottom",
+     "rec_yards_mark": "top",
+     "power_rank_mark": "bottom",
+     "oline_rank_mark": "bottom",
+     "green_zone_mark": "bottom"
     },
     {
      "name": "Jahmyr Gibbs",
@@ -1452,7 +1310,15 @@
      "rush_td": 13.0,
      "receptions": 77.0,
      "targets": 94.0,
-     "rec_yards": 616.0
+     "rec_yards": 616.0,
+     "rec_td": 5.0,
+     "power_rank": 15.0,
+     "oline_rank": 6.0,
+     "age": 23.0,
+     "green_zone": 22.0,
+     "hvt": 116.0,
+     "rec_td_mark": "top",
+     "oline_rank_mark": "top"
     },
     {
      "name": "Jahmyr Gibbs",
@@ -1462,7 +1328,18 @@
      "rush_td": 16.0,
      "receptions": 52.0,
      "targets": 63.0,
-     "rec_yards": 517.0
+     "rec_yards": 517.0,
+     "rec_td": 4.0,
+     "power_rank": 2.0,
+     "oline_rank": 9.0,
+     "age": 22.0,
+     "green_zone": 26.0,
+     "hvt": 89.0,
+     "rush_td_mark": "top",
+     "receptions_mark": "bottom",
+     "targets_mark": "bottom",
+     "power_rank_mark": "top",
+     "hvt_mark": "bottom"
     },
     {
      "name": "Saquon Barkley",
@@ -1472,7 +1349,22 @@
      "rush_td": 13.0,
      "receptions": 33.0,
      "targets": 43.0,
-     "rec_yards": 278.0
+     "rec_yards": 278.0,
+     "rec_td": 2.0,
+     "power_rank": 5.0,
+     "oline_rank": 3.0,
+     "age": 27.0,
+     "green_zone": 28.0,
+     "hvt": 71.0,
+     "attempts_mark": "top",
+     "rush_yards_mark": "top",
+     "receptions_mark": "bottom",
+     "targets_mark": "bottom",
+     "rec_yards_mark": "bottom",
+     "rec_td_mark": "bottom",
+     "oline_rank_mark": "top",
+     "oline_rank_best": true,
+     "hvt_mark": "bottom"
     },
     {
      "name": "Bijan Robinson",
@@ -1482,7 +1374,16 @@
      "rush_td": 14.0,
      "receptions": 61.0,
      "targets": 72.0,
-     "rec_yards": 431.0
+     "rec_yards": 431.0,
+     "rec_td": 1.0,
+     "power_rank": 17.0,
+     "oline_rank": 18.0,
+     "age": 22.0,
+     "green_zone": 34.0,
+     "hvt": 106.0,
+     "rec_yards_mark": "bottom",
+     "rec_td_mark": "bottom",
+     "green_zone_mark": "top"
     },
     {
      "name": "Christian McCaffrey",
@@ -1492,7 +1393,18 @@
      "rush_td": 14.0,
      "receptions": 67.0,
      "targets": 83.0,
-     "rec_yards": 564.0
+     "rec_yards": 564.0,
+     "rec_td": 7.0,
+     "power_rank": 2.0,
+     "oline_rank": 5.0,
+     "age": 27.0,
+     "green_zone": 34.0,
+     "hvt": 117.0,
+     "rush_yards_mark": "top",
+     "rec_td_mark": "top",
+     "power_rank_mark": "top",
+     "oline_rank_mark": "top",
+     "green_zone_mark": "top"
     },
     {
      "name": "Breece Hall",
@@ -1502,7 +1414,19 @@
      "rush_td": 5.0,
      "receptions": 76.0,
      "targets": 95.0,
-     "rec_yards": 591.0
+     "rec_yards": 591.0,
+     "rec_td": 4.0,
+     "power_rank": 25.0,
+     "oline_rank": 32.0,
+     "age": 22.0,
+     "green_zone": 10.0,
+     "hvt": 105.0,
+     "attempts_mark": "bottom",
+     "rush_yards_mark": "bottom",
+     "rush_td_mark": "bottom",
+     "power_rank_mark": "bottom",
+     "oline_rank_mark": "bottom",
+     "green_zone_mark": "bottom"
     },
     {
      "name": "Travis Etienne",
@@ -1512,7 +1436,18 @@
      "rush_td": 11.0,
      "receptions": 58.0,
      "targets": 73.0,
-     "rec_yards": 476.0
+     "rec_yards": 476.0,
+     "rec_td": 1.0,
+     "power_rank": 13.0,
+     "oline_rank": 24.0,
+     "age": 24.0,
+     "green_zone": 16.0,
+     "hvt": 89.0,
+     "rush_yards_mark": "bottom",
+     "rec_td_mark": "bottom",
+     "oline_rank_mark": "bottom",
+     "green_zone_mark": "bottom",
+     "hvt_mark": "bottom"
     },
     {
      "name": "Austin Ekeler",
@@ -1522,7 +1457,19 @@
      "rush_td": 13.0,
      "receptions": 107.0,
      "targets": 127.0,
-     "rec_yards": 722.0
+     "rec_yards": 722.0,
+     "rec_td": 5.0,
+     "power_rank": 7.0,
+     "oline_rank": 19.0,
+     "age": 27.0,
+     "green_zone": 24.0,
+     "hvt": 151.0,
+     "attempts_mark": "bottom",
+     "rush_yards_mark": "bottom",
+     "receptions_mark": "top",
+     "targets_mark": "top",
+     "rec_td_mark": "top",
+     "hvt_mark": "top"
     },
     {
      "name": "Christian McCaffrey",
@@ -1532,7 +1479,20 @@
      "rush_td": 8.0,
      "receptions": 85.0,
      "targets": 108.0,
-     "rec_yards": 464.0
+     "rec_yards": 464.0,
+     "rec_td": 5.0,
+     "power_rank": 3.0,
+     "oline_rank": 24.0,
+     "age": 26.0,
+     "green_zone": 21.0,
+     "hvt": 129.0,
+     "rush_td_mark": "bottom",
+     "receptions_mark": "top",
+     "targets_mark": "top",
+     "rec_td_mark": "top",
+     "power_rank_mark": "top",
+     "oline_rank_mark": "bottom",
+     "green_zone_mark": "bottom"
     },
     {
      "name": "Josh Jacobs",
@@ -1542,7 +1502,21 @@
      "rush_td": 12.0,
      "receptions": 53.0,
      "targets": 64.0,
-     "rec_yards": 400.0
+     "rec_yards": 400.0,
+     "rec_td": 0.0,
+     "power_rank": 25.0,
+     "oline_rank": 10.0,
+     "age": 24.0,
+     "green_zone": 23.0,
+     "hvt": 87.0,
+     "attempts_mark": "top",
+     "rush_yards_mark": "top",
+     "receptions_mark": "bottom",
+     "targets_mark": "bottom",
+     "rec_yards_mark": "bottom",
+     "rec_td_mark": "bottom",
+     "power_rank_mark": "bottom",
+     "hvt_mark": "bottom"
     },
     {
      "name": "Jonathan Taylor",
@@ -1552,7 +1526,23 @@
      "rush_td": 18.0,
      "receptions": 40.0,
      "targets": 51.0,
-     "rec_yards": 360.0
+     "rec_yards": 360.0,
+     "rec_td": 2.0,
+     "power_rank": 10.0,
+     "oline_rank": 12.0,
+     "age": 22.0,
+     "green_zone": 41.0,
+     "hvt": 92.0,
+     "attempts_mark": "top",
+     "rush_yards_mark": "top",
+     "rush_td_mark": "top",
+     "rush_td_best": true,
+     "receptions_mark": "bottom",
+     "targets_mark": "bottom",
+     "rec_yards_mark": "bottom",
+     "rec_td_mark": "bottom",
+     "green_zone_mark": "top",
+     "green_zone_best": true
     },
     {
      "name": "Austin Ekeler",
@@ -1562,7 +1552,18 @@
      "rush_td": 12.0,
      "receptions": 70.0,
      "targets": 94.0,
-     "rec_yards": 647.0
+     "rec_yards": 647.0,
+     "rec_td": 8.0,
+     "power_rank": 19.0,
+     "oline_rank": 10.0,
+     "age": 26.0,
+     "green_zone": 25.0,
+     "hvt": 119.0,
+     "attempts_mark": "bottom",
+     "rush_yards_mark": "bottom",
+     "rec_td_mark": "top",
+     "rec_td_best": true,
+     "power_rank_mark": "bottom"
     },
     {
      "name": "Najee Harris",
@@ -1572,7 +1573,16 @@
      "rush_td": 7.0,
      "receptions": 74.0,
      "targets": 94.0,
-     "rec_yards": 467.0
+     "rec_yards": 467.0,
+     "rec_td": 3.0,
+     "power_rank": 18.0,
+     "oline_rank": 26.0,
+     "age": 23.0,
+     "green_zone": 17.0,
+     "hvt": 111.0,
+     "rush_td_mark": "bottom",
+     "oline_rank_mark": "bottom",
+     "green_zone_mark": "bottom"
     },
     {
      "name": "Alvin Kamara",
@@ -1582,7 +1592,21 @@
      "rush_td": 16.0,
      "receptions": 83.0,
      "targets": 107.0,
-     "rec_yards": 756.0
+     "rec_yards": 756.0,
+     "rec_td": 5.0,
+     "power_rank": 2.0,
+     "oline_rank": 8.0,
+     "age": 25.0,
+     "green_zone": 28.0,
+     "hvt": 135.0,
+     "attempts_mark": "bottom",
+     "rush_yards_mark": "bottom",
+     "rush_td_mark": "top",
+     "targets_mark": "top",
+     "rec_yards_mark": "top",
+     "rec_td_mark": "top",
+     "power_rank_mark": "top",
+     "hvt_mark": "top"
     },
     {
      "name": "Dalvin Cook",
@@ -1592,7 +1616,24 @@
      "rush_td": 16.0,
      "receptions": 44.0,
      "targets": 54.0,
-     "rec_yards": 361.0
+     "rec_yards": 361.0,
+     "rec_td": 1.0,
+     "power_rank": 22.0,
+     "oline_rank": 26.0,
+     "age": 25.0,
+     "green_zone": 35.0,
+     "hvt": 89.0,
+     "attempts_mark": "top",
+     "rush_yards_mark": "top",
+     "rush_td_mark": "top",
+     "receptions_mark": "bottom",
+     "targets_mark": "bottom",
+     "rec_yards_mark": "bottom",
+     "rec_td_mark": "bottom",
+     "power_rank_mark": "bottom",
+     "oline_rank_mark": "bottom",
+     "green_zone_mark": "top",
+     "hvt_mark": "bottom"
     },
     {
      "name": "Derrick Henry",
@@ -1602,7 +1643,24 @@
      "rush_td": 17.0,
      "receptions": 19.0,
      "targets": 31.0,
-     "rec_yards": 114.0
+     "rec_yards": 114.0,
+     "rec_td": 0.0,
+     "power_rank": 11.0,
+     "oline_rank": 15.0,
+     "age": 26.0,
+     "green_zone": 35.0,
+     "hvt": 66.0,
+     "attempts_mark": "top",
+     "attempts_best": true,
+     "rush_yards_mark": "top",
+     "rush_yards_best": true,
+     "rush_td_mark": "top",
+     "receptions_mark": "bottom",
+     "targets_mark": "bottom",
+     "rec_yards_mark": "bottom",
+     "rec_td_mark": "bottom",
+     "green_zone_mark": "top",
+     "hvt_mark": "bottom"
     },
     {
      "name": "Christian McCaffrey",
@@ -1612,7 +1670,22 @@
      "rush_td": 15.0,
      "receptions": 116.0,
      "targets": 142.0,
-     "rec_yards": 1005.0
+     "rec_yards": 1005.0,
+     "rec_td": 4.0,
+     "power_rank": 28.0,
+     "oline_rank": 18.0,
+     "age": 23.0,
+     "green_zone": 32.0,
+     "hvt": 174.0,
+     "receptions_mark": "top",
+     "receptions_best": true,
+     "targets_mark": "top",
+     "targets_best": true,
+     "rec_yards_mark": "top",
+     "rec_yards_best": true,
+     "power_rank_mark": "bottom",
+     "hvt_mark": "top",
+     "hvt_best": true
     },
     {
      "name": "Aaron Jones",
@@ -1622,7 +1695,21 @@
      "rush_td": 16.0,
      "receptions": 49.0,
      "targets": 68.0,
-     "rec_yards": 474.0
+     "rec_yards": 474.0,
+     "rec_td": 3.0,
+     "power_rank": 5.0,
+     "oline_rank": 6.0,
+     "age": 24.0,
+     "green_zone": 19.0,
+     "hvt": 87.0,
+     "attempts_mark": "bottom",
+     "rush_yards_mark": "bottom",
+     "rush_td_mark": "top",
+     "receptions_mark": "bottom",
+     "targets_mark": "bottom",
+     "oline_rank_mark": "top",
+     "green_zone_mark": "bottom",
+     "hvt_mark": "bottom"
     },
     {
      "name": "Ezekiel Elliott",
@@ -1632,7 +1719,16 @@
      "rush_td": 12.0,
      "receptions": 54.0,
      "targets": 71.0,
-     "rec_yards": 420.0
+     "rec_yards": 420.0,
+     "rec_td": 2.0,
+     "power_rank": 14.0,
+     "oline_rank": 4.0,
+     "age": 24.0,
+     "green_zone": 31.0,
+     "hvt": 102.0,
+     "rec_yards_mark": "bottom",
+     "rec_td_mark": "bottom",
+     "oline_rank_mark": "top"
     },
     {
      "name": "Saquon Barkley",
@@ -1642,7 +1738,19 @@
      "rush_td": 11.0,
      "receptions": 91.0,
      "targets": 121.0,
-     "rec_yards": 721.0
+     "rec_yards": 721.0,
+     "rec_td": 4.0,
+     "power_rank": 26.0,
+     "oline_rank": 21.0,
+     "age": 21.0,
+     "green_zone": 30.0,
+     "hvt": 151.0,
+     "receptions_mark": "top",
+     "targets_mark": "top",
+     "power_rank_mark": "bottom",
+     "oline_rank_mark": "bottom",
+     "age_extreme": true,
+     "hvt_mark": "top"
     },
     {
      "name": "Christian McCaffrey",
@@ -1652,7 +1760,20 @@
      "rush_td": 7.0,
      "receptions": 107.0,
      "targets": 124.0,
-     "rec_yards": 867.0
+     "rec_yards": 867.0,
+     "rec_td": 6.0,
+     "power_rank": 14.0,
+     "oline_rank": 17.0,
+     "age": 22.0,
+     "green_zone": 29.0,
+     "hvt": 153.0,
+     "attempts_mark": "bottom",
+     "rush_td_mark": "bottom",
+     "receptions_mark": "top",
+     "targets_mark": "top",
+     "rec_yards_mark": "top",
+     "rec_td_mark": "top",
+     "hvt_mark": "top"
     },
     {
      "name": "Todd Gurley",
@@ -1662,7 +1783,18 @@
      "rush_td": 17.0,
      "receptions": 59.0,
      "targets": 81.0,
-     "rec_yards": 580.0
+     "rec_yards": 580.0,
+     "rec_td": 4.0,
+     "power_rank": 1.0,
+     "oline_rank": 6.0,
+     "age": 24.0,
+     "green_zone": 36.0,
+     "hvt": 117.0,
+     "rush_td_mark": "top",
+     "power_rank_mark": "top",
+     "power_rank_best": true,
+     "oline_rank_mark": "top",
+     "green_zone_mark": "top"
     },
     {
      "name": "Todd Gurley",
@@ -1672,7 +1804,16 @@
      "rush_td": 13.0,
      "receptions": 64.0,
      "targets": 87.0,
-     "rec_yards": 788.0
+     "rec_yards": 788.0,
+     "rec_td": 6.0,
+     "power_rank": 5.0,
+     "oline_rank": 6.0,
+     "age": 23.0,
+     "green_zone": 32.0,
+     "hvt": 119.0,
+     "rec_yards_mark": "top",
+     "rec_td_mark": "top",
+     "oline_rank_mark": "top"
     },
     {
      "name": "Le'Veon Bell",
@@ -1682,7 +1823,20 @@
      "rush_td": 9.0,
      "receptions": 85.0,
      "targets": 107.0,
-     "rec_yards": 655.0
+     "rec_yards": 655.0,
+     "rec_td": 2.0,
+     "power_rank": 2.0,
+     "oline_rank": 12.0,
+     "age": 25.0,
+     "green_zone": 27.0,
+     "hvt": 134.0,
+     "attempts_mark": "top",
+     "rush_td_mark": "bottom",
+     "receptions_mark": "top",
+     "targets_mark": "top",
+     "rec_td_mark": "bottom",
+     "power_rank_mark": "top",
+     "hvt_mark": "top"
     },
     {
      "name": "Alvin Kamara",
@@ -1692,7 +1846,20 @@
      "rush_td": 8.0,
      "receptions": 81.0,
      "targets": 100.0,
-     "rec_yards": 826.0
+     "rec_yards": 826.0,
+     "rec_td": 5.0,
+     "power_rank": 4.0,
+     "oline_rank": 9.0,
+     "age": 22.0,
+     "green_zone": 13.0,
+     "hvt": 113.0,
+     "attempts_mark": "bottom",
+     "rush_yards_mark": "bottom",
+     "rush_td_mark": "bottom",
+     "rec_yards_mark": "top",
+     "rec_td_mark": "top",
+     "power_rank_mark": "top",
+     "green_zone_mark": "bottom"
     }
    ],
    "distribution": {
@@ -1702,7 +1869,13 @@
      "rush_td": 13.0,
      "receptions": 70.0,
      "targets": 94.0,
-     "rec_yards": 580.0
+     "rec_yards": 580.0,
+     "rec_td": 4.0,
+     "power_rank": 12.0,
+     "oline_rank": 12.0,
+     "age": 24.0,
+     "green_zone": 28.0,
+     "hvt": 116.0
     },
     "p25": {
      "attempts": 239.5,
@@ -1710,7 +1883,13 @@
      "rush_td": 9.5,
      "receptions": 53.5,
      "targets": 69.5,
-     "rec_yards": 447.5
+     "rec_yards": 447.5,
+     "rec_td": 2.0,
+     "power_rank": 4.0,
+     "oline_rank": 6.0,
+     "age": 22.5,
+     "green_zone": 21.5,
+     "hvt": 90.5
     },
     "p75": {
      "attempts": 309.0,
@@ -1718,7 +1897,13 @@
      "rush_td": 15.5,
      "receptions": 84.0,
      "targets": 107.0,
-     "rec_yards": 739.0
+     "rec_yards": 739.0,
+     "rec_td": 5.0,
+     "power_rank": 18.5,
+     "oline_rank": 20.0,
+     "age": 25.5,
+     "green_zone": 33.0,
+     "hvt": 131.5
     },
     "min": {
      "attempts": 120.0,
@@ -1726,7 +1911,13 @@
      "rush_td": 5.0,
      "receptions": 19.0,
      "targets": 31.0,
-     "rec_yards": 114.0
+     "rec_yards": 114.0,
+     "rec_td": 0.0,
+     "power_rank": 1.0,
+     "oline_rank": 3.0,
+     "age": 21.0,
+     "green_zone": 10.0,
+     "hvt": 66.0
     },
     "max": {
      "attempts": 378.0,
@@ -1734,7 +1925,13 @@
      "rush_td": 18.0,
      "receptions": 116.0,
      "targets": 142.0,
-     "rec_yards": 1005.0
+     "rec_yards": 1005.0,
+     "rec_td": 8.0,
+     "power_rank": 28.0,
+     "oline_rank": 32.0,
+     "age": 29.0,
+     "green_zone": 41.0,
+     "hvt": 174.0
     }
    },
    "tiers": [
