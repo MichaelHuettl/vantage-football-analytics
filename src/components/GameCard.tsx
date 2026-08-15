@@ -98,13 +98,6 @@ export function GameCard({ game }: { game: Game }) {
             }
           />
         </div>
-        {!game.spread_line && !game.total_line && (
-          <p className="mt-1.5 text-sm" style={{ color: "var(--text-muted)" }}>
-            Lines go in <code>spread_line</code>, <code>total_line</code> and{" "}
-            <code>moneyline</code> in <code>schedule.json</code>, with{" "}
-            <code>implied</code> alongside them.
-          </p>
-        )}
       </div>
 
       {/* =========================== Weather =========================== */}
