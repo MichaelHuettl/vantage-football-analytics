@@ -94,22 +94,63 @@ export interface InjuryEntry {
   note?: string;
 }
 
+/**
+ * One side of a game once it has been played. Free-text names rather than
+ * player ids: the leader in a game is frequently someone outside the ranked
+ * 120, and a slot that can only hold a ranked player would quietly drop him.
+ * `player_id` is set as well when the name does resolve, which is what makes
+ * the name a link.
+ */
+export interface GameLeader {
+  name: string;
+  player_id?: string;
+  /** The line that earned the mention, e.g. "18/24, 246 yds, 2 TD". */
+  stat?: string;
+}
+
+/**
+ * The four players worth naming per side. Defence is one highlighted player
+ * rather than a stat leader, because the box score does not identify who
+ * decided a game on that side of the ball.
+ */
+export interface GameLeaders {
+  qb?: GameLeader;
+  rusher?: GameLeader;
+  receiver?: GameLeader;
+  defense?: GameLeader;
+}
+
 export interface Game {
   id: string;
   week: number;
+  /** ISO 8601, UTC. Rendered in Eastern — the league's operating clock. */
   kickoff: string;
   away: string;
   home: string;
   venue: string;
+  city?: string;
   roof: "outdoor" | "dome" | "retractable" | "closed";
+  /** Negative favours the home side, matching how a spread is published. */
   spread_line?: number;
   total_line?: number;
+  /** American odds. The market's answer to who wins, which the spread is not. */
+  moneyline?: { away: number; home: number };
+  /**
+   * Implied team totals. Authored here rather than derived on the page: this
+   * is a metric, and §11 does not let a component compute one. It is the most
+   * actionable number in the section (§5.5), so it has to be consistent
+   * wherever it appears.
+   */
+  implied?: { away: number; home: number };
   weather?: {
     temp_f: number;
     wind_mph: number;
     precip_pct: number;
     summary: string;
   };
+  /** Absent until the game is played. Absent is not zero. */
+  score?: { away: number; home: number };
+  leaders?: { away?: GameLeaders; home?: GameLeaders };
 }
 
 export interface NewsEntry {

@@ -26,7 +26,7 @@ build` with a line number instead of shipping a broken page.
 | Positions | Six pages, typographic heroes, methodology text. **Charts are empty slots** |
 | Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
-| Games | **Shell only** — no schedule data authored |
+| Games | **Week 1 format drafted** — 16 real matchups, kickoff, venue, roof. Lines, weather, scores and leaders are empty slots |
 | News | **Live, but refreshed by hand** — RSS headlines + 118-post beat archive. The cron cannot run yet; see open item 1 |
 | Player pages | 120 generated. Chart slots empty |
 | Glossary | Built |
@@ -67,7 +67,17 @@ build` with a line number instead of shipping a broken page.
    A local `launchd` timer is the alternative if the repo stays private.
 2. **Charts.** Every `ChartFigure` is an empty slot. Drop PNGs into
    `public/charts/` and set `chart` in the relevant data file.
-3. **Games section** has no `schedule.json`.
+3. **Games has a format but almost no content.** `schedule.json` holds the 16
+   real Week 1 matchups with kickoff, venue and roof; everything a reader would
+   act on is an empty slot. To fill one game, add to its record: `spread_line`
+   (negative favours home), `total_line`, `moneyline`, `implied` — **authored,
+   not computed, because a component may not compute a metric (§11)** —
+   `weather` for the 12 open-air games, `score` once played, and `leaders` with
+   `qb` / `rusher` / `receiver` / `defense` per side. A `leaders` entry takes a
+   free-text `name` plus an optional `player_id`; the id is what makes the name
+   a link, and it is optional precisely because a game's leader is often
+   outside the ranked 120. Weeks 2–18 are not authored — the week nav only
+   appears once a second week exists.
 4. **Daniel Carlson is ranked K16 and unsigned.** The data now says so —
    `status: "fa"`, no team, an FA chip where the team chip goes — but whether
    an unsigned kicker belongs on a draft board at all is an editorial call, not
@@ -140,6 +150,11 @@ site was scaffolded into `vantage/` specifically so those stay outside it.
 - **Smart punctuation breaks naive regex.** A filter written with `'` missed
   `'`. `scripts/lib/signal.mjs` normalises before matching; do the same
   anywhere else text is pattern-matched.
+- **Week 1 2026 really does open on a Wednesday.** NE at SEA is 8:20pm ET on
+  Wednesday Sep 9, and SF plays LAR at the Melbourne Cricket Ground on the
+  Thursday. Both looked like data errors and both were confirmed against ESPN
+  and nflverse independently, which agree on all 16 matchups and every kickoff
+  time. Do not "fix" them.
 - **Date the data in Eastern, not UTC.** `new Date().toISOString()` gives the
   UTC date, so an evening run stamped tomorrow — the news page read "updated
   Aug 15" at 9pm on Aug 14. A freshness stamp in the future is the exact

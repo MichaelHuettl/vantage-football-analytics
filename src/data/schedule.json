@@ -1,0 +1,170 @@
+{
+ "schema_version": 1,
+ "season": 2026,
+ "week": 1,
+ "updated": "2026-08-14",
+ "source": "Matchups, kickoff times, venues and roofs from the published 2026 schedule, taken from ESPN and cross-checked row by row against nflverse. Both agree on all 16 matchups and every kickoff time.",
+ "note": "Lines, weather, scores and leaders are intentionally absent, not lost. A field that has not been authored is omitted rather than zeroed, so the page can tell \"nothing posted yet\" from \"posted as zero\". Implied team totals are authored here alongside the lines they come from — a component must not compute them (§11). Roofs follow nflverse (§4.3); Lucas Oil and NRG are recorded as retractable, which nflverse leaves blank because whether it opens is a game-day decision.",
+ "data": [
+  {
+   "id": "2026-w1-ne-sea",
+   "week": 1,
+   "kickoff": "2026-09-10T00:20:00Z",
+   "away": "NE",
+   "home": "SEA",
+   "venue": "Lumen Field",
+   "city": "Seattle",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-sf-lar",
+   "week": 1,
+   "kickoff": "2026-09-11T00:35:00Z",
+   "away": "SF",
+   "home": "LAR",
+   "venue": "Melbourne Cricket Ground",
+   "city": "Melbourne",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-tb-cin",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "TB",
+   "home": "CIN",
+   "venue": "Paycor Stadium",
+   "city": "Cincinnati",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-no-det",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "NO",
+   "home": "DET",
+   "venue": "Ford Field",
+   "city": "Detroit",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w1-nyj-ten",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "NYJ",
+   "home": "TEN",
+   "venue": "Nissan Stadium",
+   "city": "Nashville",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-bal-ind",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "BAL",
+   "home": "IND",
+   "venue": "Lucas Oil Stadium",
+   "city": "Indianapolis",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w1-atl-pit",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "ATL",
+   "home": "PIT",
+   "venue": "Acrisure Stadium",
+   "city": "Pittsburgh",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-chi-car",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "CHI",
+   "home": "CAR",
+   "venue": "Bank of America Stadium",
+   "city": "Charlotte",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-cle-jax",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "CLE",
+   "home": "JAX",
+   "venue": "EverBank Stadium",
+   "city": "Jacksonville",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-buf-hou",
+   "week": 1,
+   "kickoff": "2026-09-13T17:00:00Z",
+   "away": "BUF",
+   "home": "HOU",
+   "venue": "NRG Stadium",
+   "city": "Houston",
+   "roof": "retractable"
+  },
+  {
+   "id": "2026-w1-mia-lv",
+   "week": 1,
+   "kickoff": "2026-09-13T20:25:00Z",
+   "away": "MIA",
+   "home": "LV",
+   "venue": "Allegiant Stadium",
+   "city": "Las Vegas",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w1-gb-min",
+   "week": 1,
+   "kickoff": "2026-09-13T20:25:00Z",
+   "away": "GB",
+   "home": "MIN",
+   "venue": "U.S. Bank Stadium",
+   "city": "Minneapolis",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w1-was-phi",
+   "week": 1,
+   "kickoff": "2026-09-13T20:25:00Z",
+   "away": "WAS",
+   "home": "PHI",
+   "venue": "Lincoln Financial Field",
+   "city": "Philadelphia",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-ari-lac",
+   "week": 1,
+   "kickoff": "2026-09-13T20:25:00Z",
+   "away": "ARI",
+   "home": "LAC",
+   "venue": "SoFi Stadium",
+   "city": "Inglewood",
+   "roof": "dome"
+  },
+  {
+   "id": "2026-w1-dal-nyg",
+   "week": 1,
+   "kickoff": "2026-09-14T00:20:00Z",
+   "away": "DAL",
+   "home": "NYG",
+   "venue": "MetLife Stadium",
+   "city": "East Rutherford",
+   "roof": "outdoor"
+  },
+  {
+   "id": "2026-w1-den-kc",
+   "week": 1,
+   "kickoff": "2026-09-15T00:15:00Z",
+   "away": "DEN",
+   "home": "KC",
+   "venue": "GEHA Field at Arrowhead Stadium",
+   "city": "Kansas City",
+   "roof": "outdoor"
+  }
+ ]
+}
