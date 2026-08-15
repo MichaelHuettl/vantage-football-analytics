@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import positionsFile from "@/data/positions.json";
 import { ChartFigure } from "@/components/ChartFigure";
@@ -129,85 +128,68 @@ export default async function PositionPage({
       </header>
 
       <Container className="py-12">
-        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">
-          <div>
+        {/*
+          A position with its own charts runs as one column: methodology, then
+          straight into the evidence. The two-column layout below exists to
+          give a page with nothing in it something to show — a ranked list
+          beside an empty chart slot — and once the charts are real it is
+          furniture between the reader and the argument.
+        */}
+        {upper === "RB" ? (
+          <>
             <DataFreshness updated={list.updated} />
-
-            <section className="mt-8">
+            <section className="mt-8 max-w-3xl">
               <h2 className="eyebrow mb-3">Methodology</h2>
               <p className="text-lg leading-relaxed">{doc.methodology}</p>
             </section>
+            <RunningBackAnalysis />
+          </>
+        ) : (
+          <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">
+            <div>
+              <DataFreshness updated={list.updated} />
 
-            {/* Positions without their own worked-up analysis still show the
-                slot, so the page reads the same and it is obvious what is
-                missing. RB has real charts and skips it. */}
-            {upper !== "RB" ? (
+              <section className="mt-8">
+                <h2 className="eyebrow mb-3">Methodology</h2>
+                <p className="text-lg leading-relaxed">{doc.methodology}</p>
+              </section>
+
               <ChartFigure
                 src={doc.chart || undefined}
                 featured
                 caption={doc.caption}
                 source={`x: ${doc.chart_x} · y: ${doc.chart_y}`}
               />
-            ) : (
-              /* The methodology paragraph is short and the player list beside
-                 it is long, which left the top of this column empty. A tall
-                 photograph fills it and sets the position rather than
-                 decorating it. */
-              <figure className="mt-8">
-                <div
-                  className="relative w-full overflow-hidden rounded-lg"
-                  style={{ aspectRatio: "2 / 3", background: "var(--surface-sunken)" }}
-                >
-                  <Image
-                    src="/img/players/mccaffrey-tall.jpg"
-                    alt="Christian McCaffrey celebrating after a play"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 520px"
-                    style={{ objectFit: "cover", objectPosition: "center 22%" }}
-                    priority
-                  />
-                </div>
-                <figcaption
-                  className="mt-3 text-sm"
-                  style={{ color: "var(--text-muted)" }}
-                >
-                  McCaffrey is the outlier in almost every chart below — the
-                  only back in the sample clearing nine high-value touches a
-                  game.
-                </figcaption>
-              </figure>
-            )}
+            </div>
+
+            <aside>
+              <h2
+                className="text-2xl uppercase tracking-wide"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
+                The pool
+              </h2>
+              <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+                Every {upper} currently carried. Advanced splits land here as you
+                add them.
+              </p>
+              <ul
+                className="mt-5 border-t"
+                style={{ borderColor: "var(--border-subtle)" }}
+              >
+                {pool.map((player) => (
+                  <li
+                    key={player.id}
+                    className="border-b py-3"
+                    style={{ borderColor: "var(--border-subtle)" }}
+                  >
+                    <PlayerLink player={player} />
+                  </li>
+                ))}
+              </ul>
+            </aside>
           </div>
-
-          <aside>
-            <h2
-              className="text-2xl uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              The pool
-            </h2>
-            <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-              Every {upper} currently carried. Advanced splits land here as you
-              add them.
-            </p>
-            <ul
-              className="mt-5 border-t"
-              style={{ borderColor: "var(--border-subtle)" }}
-            >
-              {pool.map((player) => (
-                <li
-                  key={player.id}
-                  className="border-b py-3"
-                  style={{ borderColor: "var(--border-subtle)" }}
-                >
-                  <PlayerLink player={player} />
-                </li>
-              ))}
-            </ul>
-          </aside>
-        </div>
-
-        {upper === "RB" && <RunningBackAnalysis />}
+        )}
       </Container>
     </>
   );

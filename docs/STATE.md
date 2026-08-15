@@ -23,7 +23,7 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positions | Six pages. **RB is built** — 4 scatters + 3 tables from the workbook, with written analysis. WR/TE/QB/K/DST still empty slots |
+| Positions | Six pages. **RB is built** — one column: methodology, then 4 scatters + 3 tables with written analysis. The other five keep the two-column slot-and-pool layout |
 | Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
