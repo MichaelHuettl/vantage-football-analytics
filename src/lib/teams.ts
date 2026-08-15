@@ -39,3 +39,20 @@ export function needsEdge(hex: string): boolean {
 }
 
 export const DIVISIONS = ["East", "North", "South", "West"] as const;
+
+/**
+ * Resolve a full team name to its abbreviation.
+ *
+ * The workbook writes "Arizona Cardinals" where the site keys on ARI. Matching
+ * on the nickname alone is enough and is the safe half: nicknames are unique
+ * across the league, cities are not — "New York" and "Los Angeles" each name
+ * two teams.
+ */
+export function teamByName(full: string): Team | undefined {
+  const s = full.trim().toLowerCase();
+  return TEAMS.find(
+    (t) =>
+      s === `${t.city} ${t.nickname}`.toLowerCase() ||
+      s.endsWith(t.nickname.toLowerCase()),
+  );
+}

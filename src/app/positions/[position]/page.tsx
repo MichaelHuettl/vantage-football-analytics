@@ -6,6 +6,7 @@ import { ChartFigure } from "@/components/ChartFigure";
 import { DataFreshness } from "@/components/DataFreshness";
 import { Container } from "@/components/PageHeader";
 import { PlayerLink } from "@/components/PlayerLink";
+import { RunningBackAnalysis } from "@/components/RunningBackAnalysis";
 import { PLAYERS, getRankingList } from "@/lib/content";
 import { POSITIONS } from "@/lib/types";
 import type { Envelope, Position } from "@/lib/types";
@@ -136,14 +137,17 @@ export default async function PositionPage({
               <p className="text-lg leading-relaxed">{doc.methodology}</p>
             </section>
 
-            {/* The featured chart for the page — the one place the goalpost
-                frame is used here, per §7's warning against wallpapering it. */}
-            <ChartFigure
-              src={doc.chart || undefined}
-              featured
-              caption={doc.caption}
-              source={`x: ${doc.chart_x} · y: ${doc.chart_y}`}
-            />
+            {/* Positions without their own worked-up analysis still show the
+                slot, so the page reads the same and it is obvious what is
+                missing. RB has real charts and skips it. */}
+            {upper !== "RB" && (
+              <ChartFigure
+                src={doc.chart || undefined}
+                featured
+                caption={doc.caption}
+                source={`x: ${doc.chart_x} · y: ${doc.chart_y}`}
+              />
+            )}
           </div>
 
           <aside>
@@ -173,6 +177,8 @@ export default async function PositionPage({
             </ul>
           </aside>
         </div>
+
+        {upper === "RB" && <RunningBackAnalysis />}
       </Container>
     </>
   );

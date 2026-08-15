@@ -1,0 +1,1309 @@
+{
+ "schema_version": 1,
+ "season": 2025,
+ "updated": "2026-08-15",
+ "source": "2026-2027 Fantasy Football Analytics workbook \u2014 'RB Statistics & Graphs' and 'Rushing Opportunity Share'. Rebuilt by scripts/curated/rb_charts.py.",
+ "note": "2025 production, which is the evidence for a 2026 draft rather than a projection of it. Medians and sort order are computed here, not on the page (\u00a711). Rows missing a name or a coordinate are dropped rather than plotted as zero.",
+ "data": {
+  "hvt": {
+   "x_label": "High-value touches per game",
+   "y_label": "PPR points per game",
+   "caption": "Backs who touch the ball near the goal line and in the passing game score more. The interesting names are the ones off the line.",
+   "x_median": 3.6667,
+   "y_median": 11.0,
+   "x_min": 0.7647,
+   "x_max": 9.7647,
+   "y_min": 3.0,
+   "y_max": 21.5,
+   "points": [
+    {
+     "name": "J. Taylor",
+     "x": 5.5882,
+     "y": 20.0,
+     "label": true,
+     "rank": 2
+    },
+    {
+     "name": "D. Henry",
+     "x": 3.5882,
+     "y": 16.0
+    },
+    {
+     "name": "C. McCaffrey",
+     "x": 9.7647,
+     "y": 21.5,
+     "label": true,
+     "rank": 0
+    },
+    {
+     "name": "Z. Charbonnet",
+     "x": 3.4375,
+     "y": 10.7
+    },
+    {
+     "name": "K. Williams",
+     "x": 4.7059,
+     "y": 14.4
+    },
+    {
+     "name": "J. Jacobs",
+     "x": 4.9333,
+     "y": 14.6
+    },
+    {
+     "name": "J. Williams",
+     "x": 4.9375,
+     "y": 14.1
+    },
+    {
+     "name": "J. Cook",
+     "x": 3.8824,
+     "y": 16.8,
+     "label": true,
+     "rank": 11
+    },
+    {
+     "name": "T. Etienne",
+     "x": 4.5882,
+     "y": 13.9
+    },
+    {
+     "name": "S. Barkley",
+     "x": 4.625,
+     "y": 13.4
+    },
+    {
+     "name": "D. Swift",
+     "x": 4.5,
+     "y": 13.2
+    },
+    {
+     "name": "D. Montgomery",
+     "x": 3.1176,
+     "y": 8.9
+    },
+    {
+     "name": "J. Gibbs",
+     "x": 6.8235,
+     "y": 19.3,
+     "label": true,
+     "rank": 3
+    },
+    {
+     "name": "J. Warren",
+     "x": 4.1875,
+     "y": 12.3
+    },
+    {
+     "name": "C. Rodriguez",
+     "x": 2.0,
+     "y": 7.0
+    },
+    {
+     "name": "K. Hunt",
+     "x": 2.7059,
+     "y": 8.0
+    },
+    {
+     "name": "T. Henderson",
+     "x": 3.7059,
+     "y": 11.1
+    },
+    {
+     "name": "J. Croskey-Merritt",
+     "x": 1.9412,
+     "y": 8.0
+    },
+    {
+     "name": "C. Brown",
+     "x": 6.2941,
+     "y": 14.6,
+     "label": true,
+     "rank": 6
+    },
+    {
+     "name": "T. Allgeier",
+     "x": 2.0588,
+     "y": 6.8
+    },
+    {
+     "name": "K. Monangai",
+     "x": 2.8235,
+     "y": 8.1
+    },
+    {
+     "name": "Q. Judkins",
+     "x": 3.8571,
+     "y": 11.2
+    },
+    {
+     "name": "B. Robinson",
+     "x": 7.0588,
+     "y": 19.5,
+     "label": true,
+     "rank": 1
+    },
+    {
+     "name": "D. Singletary",
+     "x": 2.1176,
+     "y": 5.9
+    },
+    {
+     "name": "A. Jeanty",
+     "x": 5.2353,
+     "y": 12.8
+    },
+    {
+     "name": "B. Corum",
+     "x": 1.7647,
+     "y": 7.0
+    },
+    {
+     "name": "R. Stevenson",
+     "x": 3.7857,
+     "y": 11.6
+    },
+    {
+     "name": "K. Gainwell",
+     "x": 5.9412,
+     "y": 10.9,
+     "label": true,
+     "rank": 8
+    },
+    {
+     "name": "W. Marks",
+     "x": 3.1875,
+     "y": 8.7
+    },
+    {
+     "name": "O. Hampton",
+     "x": 5.5556,
+     "y": 13.3
+    },
+    {
+     "name": "R. Harvey",
+     "x": 4.2353,
+     "y": 10.8
+    },
+    {
+     "name": "S. Tucker",
+     "x": 1.4706,
+     "y": 5.1,
+     "label": true,
+     "rank": 10
+    },
+    {
+     "name": "R. Dowdle",
+     "x": 3.7059,
+     "y": 11.6
+    },
+    {
+     "name": "B. Knight",
+     "x": 3.6667,
+     "y": 6.8
+    },
+    {
+     "name": "C. Skattebo",
+     "x": 5.5,
+     "y": 14.5
+    },
+    {
+     "name": "T. Pollard",
+     "x": 3.1176,
+     "y": 10.0
+    },
+    {
+     "name": "O. Gordon",
+     "x": 1.2353,
+     "y": 3.0,
+     "label": true,
+     "rank": 4
+    },
+    {
+     "name": "D. Achane",
+     "x": 6.0,
+     "y": 18.1,
+     "label": true,
+     "rank": 7
+    },
+    {
+     "name": "K.Vidal",
+     "x": 2.5385,
+     "y": 8.5
+    },
+    {
+     "name": "J. Dobbins",
+     "x": 2.5,
+     "y": 11.0
+    },
+    {
+     "name": "T. Johnson",
+     "x": 2.5882,
+     "y": 5.2,
+     "label": true,
+     "rank": 12
+    },
+    {
+     "name": "K. Walker",
+     "x": 2.7059,
+     "y": 10.4
+    },
+    {
+     "name": "B. Hall",
+     "x": 3.625,
+     "y": 11.6
+    },
+    {
+     "name": "J. Mason",
+     "x": 1.5625,
+     "y": 7.6,
+     "label": true,
+     "rank": 13
+    },
+    {
+     "name": "R.White",
+     "x": 3.1765,
+     "y": 7.2
+    },
+    {
+     "name": "T. Bigsby",
+     "x": 0.7647,
+     "y": 3.1,
+     "label": true,
+     "rank": 5
+    },
+    {
+     "name": "B. Tuten",
+     "x": 1.4667,
+     "y": 5.6,
+     "label": true,
+     "rank": 9
+    }
+   ]
+  },
+  "contact": {
+   "x_label": "Yards before contact per attempt",
+   "y_label": "Yards after contact per attempt",
+   "caption": "Horizontal is what the line gave him. Vertical is what he did with it.",
+   "x_median": 2.3,
+   "y_median": 2.0,
+   "x_min": 1.4,
+   "x_max": 3.5,
+   "y_min": 1.4,
+   "y_max": 3.0,
+   "points": [
+    {
+     "name": "De'Von Achane",
+     "x": 2.7,
+     "y": 3.0,
+     "label": true,
+     "rank": 0
+    },
+    {
+     "name": "Chris Rodriguez",
+     "x": 1.5,
+     "y": 3.0,
+     "label": true,
+     "rank": 1
+    },
+    {
+     "name": "Rhamondre Stevenson",
+     "x": 1.9,
+     "y": 2.8,
+     "label": true,
+     "rank": 2
+    },
+    {
+     "name": "Javonte Williams",
+     "x": 2.3,
+     "y": 2.5,
+     "label": true,
+     "rank": 7
+    },
+    {
+     "name": "JK Dobbins",
+     "x": 2.6,
+     "y": 2.4,
+     "label": true,
+     "rank": 13
+    },
+    {
+     "name": "Jonathan Taylor",
+     "x": 2.5,
+     "y": 2.4
+    },
+    {
+     "name": "Jordan Mason",
+     "x": 2.3,
+     "y": 2.4
+    },
+    {
+     "name": "Derrick Henry",
+     "x": 2.8,
+     "y": 2.4
+    },
+    {
+     "name": "Kimani Vidal",
+     "x": 1.8,
+     "y": 2.4
+    },
+    {
+     "name": "Jaylen Warren",
+     "x": 2.2,
+     "y": 2.4
+    },
+    {
+     "name": "Bijan Robinson",
+     "x": 2.8,
+     "y": 2.3
+    },
+    {
+     "name": "Emanuel Wilson",
+     "x": 1.7,
+     "y": 2.2
+    },
+    {
+     "name": "James Cook",
+     "x": 3.1,
+     "y": 2.2,
+     "label": true,
+     "rank": 10
+    },
+    {
+     "name": "Quinshon Judkins",
+     "x": 1.4,
+     "y": 2.2,
+     "label": true,
+     "rank": 6
+    },
+    {
+     "name": "David Montgomery",
+     "x": 2.3,
+     "y": 2.2
+    },
+    {
+     "name": "Chase Brown",
+     "x": 2.3,
+     "y": 2.1
+    },
+    {
+     "name": "Travis Etienne",
+     "x": 2.2,
+     "y": 2.1
+    },
+    {
+     "name": "Ashton Jeanty",
+     "x": 1.6,
+     "y": 2.1
+    },
+    {
+     "name": "Nick Chubb",
+     "x": 2.1,
+     "y": 2.1
+    },
+    {
+     "name": "Kenny Gainwell",
+     "x": 2.6,
+     "y": 2.1
+    },
+    {
+     "name": "Jacory Croskey-Merritt",
+     "x": 2.5,
+     "y": 2.1
+    },
+    {
+     "name": "Rico Dowdle",
+     "x": 2.5,
+     "y": 2.0
+    },
+    {
+     "name": "TreVeyon Henderson",
+     "x": 3.1,
+     "y": 2.0,
+     "label": true,
+     "rank": 11
+    },
+    {
+     "name": "Josh Jacobs",
+     "x": 2.0,
+     "y": 2.0
+    },
+    {
+     "name": "Kyren Williams",
+     "x": 2.8,
+     "y": 2.0
+    },
+    {
+     "name": "Kareem Hunt",
+     "x": 1.8,
+     "y": 2.0
+    },
+    {
+     "name": "Kyle Monangai",
+     "x": 2.7,
+     "y": 1.9
+    },
+    {
+     "name": "D'Andre Swift",
+     "x": 3.0,
+     "y": 1.9,
+     "label": true,
+     "rank": 12
+    },
+    {
+     "name": "Breece Hall",
+     "x": 2.5,
+     "y": 1.8
+    },
+    {
+     "name": "Ken Walker",
+     "x": 2.8,
+     "y": 1.8
+    },
+    {
+     "name": "Devin Singletary",
+     "x": 1.8,
+     "y": 1.8
+    },
+    {
+     "name": "Zach Charbonnet",
+     "x": 2.1,
+     "y": 1.8
+    },
+    {
+     "name": "Tony Pollard",
+     "x": 2.6,
+     "y": 1.8
+    },
+    {
+     "name": "Chuba Hubbard",
+     "x": 2.0,
+     "y": 1.8
+    },
+    {
+     "name": "RJ Harvey",
+     "x": 1.9,
+     "y": 1.8
+    },
+    {
+     "name": "Aaron Jones",
+     "x": 2.4,
+     "y": 1.8
+    },
+    {
+     "name": "Woody Marks",
+     "x": 1.8,
+     "y": 1.8
+    },
+    {
+     "name": "Isiah Pacheco",
+     "x": 2.2,
+     "y": 1.8
+    },
+    {
+     "name": "Tyrone Tracy Jr",
+     "x": 2.5,
+     "y": 1.7
+    },
+    {
+     "name": "Omarion Hampton",
+     "x": 2.7,
+     "y": 1.7
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "x": 3.4,
+     "y": 1.7,
+     "label": true,
+     "rank": 4
+    },
+    {
+     "name": "Bucky Irving",
+     "x": 1.8,
+     "y": 1.6
+    },
+    {
+     "name": "Blake Corum",
+     "x": 3.5,
+     "y": 1.6,
+     "label": true,
+     "rank": 3
+    },
+    {
+     "name": "Saquon Barkley",
+     "x": 2.5,
+     "y": 1.6
+    },
+    {
+     "name": "Tyler Allgeier",
+     "x": 2.0,
+     "y": 1.6
+    },
+    {
+     "name": "Christian McCaffrey",
+     "x": 2.3,
+     "y": 1.5,
+     "label": true,
+     "rank": 8
+    },
+    {
+     "name": "Rachaad White",
+     "x": 2.8,
+     "y": 1.5,
+     "label": true,
+     "rank": 9
+    },
+    {
+     "name": "Alvin Kamara",
+     "x": 2.2,
+     "y": 1.4,
+     "label": true,
+     "rank": 5
+    }
+   ]
+  },
+  "routes": {
+   "x_label": "Route participation",
+   "y_label": "Targets per route run",
+   "caption": "Being on the field for passing downs is not the same as being thrown to. High and left is a decoy.",
+   "x_median": 0.4195,
+   "y_median": 0.1879,
+   "x_min": 0.095,
+   "x_max": 0.785,
+   "y_min": 0.0992,
+   "y_max": 0.2796,
+   "points": [
+    {
+     "name": "Jahmyr Gibbs",
+     "x": 0.57,
+     "y": 0.2655,
+     "label": true,
+     "rank": 11
+    },
+    {
+     "name": "Bijan Robinson",
+     "x": 0.772,
+     "y": 0.2336,
+     "label": true,
+     "rank": 1
+    },
+    {
+     "name": "Christian McCaffrey",
+     "x": 0.785,
+     "y": 0.2733,
+     "label": true,
+     "rank": 0
+    },
+    {
+     "name": "Jonathan Taylor",
+     "x": 0.744,
+     "y": 0.1285,
+     "label": true,
+     "rank": 2
+    },
+    {
+     "name": "James Cook",
+     "x": 0.415,
+     "y": 0.1802
+    },
+    {
+     "name": "Kenneth Walker",
+     "x": 0.366,
+     "y": 0.1935
+    },
+    {
+     "name": "De'Von Achane",
+     "x": 0.65,
+     "y": 0.2681,
+     "label": true,
+     "rank": 8
+    },
+    {
+     "name": "Ashton Jeanty",
+     "x": 0.632,
+     "y": 0.1995
+    },
+    {
+     "name": "Omarion Hampton",
+     "x": 0.52,
+     "y": 0.2035
+    },
+    {
+     "name": "Saquon Barkley",
+     "x": 0.551,
+     "y": 0.1852
+    },
+    {
+     "name": "Chase Brown",
+     "x": 0.555,
+     "y": 0.2347
+    },
+    {
+     "name": "Josh Jacobs",
+     "x": 0.375,
+     "y": 0.2444
+    },
+    {
+     "name": "Bucky Irving",
+     "x": 0.481,
+     "y": 0.2108
+    },
+    {
+     "name": "Derrick Henry",
+     "x": 0.266,
+     "y": 0.1694
+    },
+    {
+     "name": "Kyren Williams",
+     "x": 0.469,
+     "y": 0.1718
+    },
+    {
+     "name": "Breece Hall",
+     "x": 0.572,
+     "y": 0.1584
+    },
+    {
+     "name": "Travis Etienne",
+     "x": 0.424,
+     "y": 0.2031
+    },
+    {
+     "name": "Javonte Williams",
+     "x": 0.453,
+     "y": 0.1783
+    },
+    {
+     "name": "TreVeyon Henderson",
+     "x": 0.393,
+     "y": 0.1944
+    },
+    {
+     "name": "RJ Harvey",
+     "x": 0.347,
+     "y": 0.2624,
+     "label": true,
+     "rank": 13
+    },
+    {
+     "name": "Cam Skattebo",
+     "x": 0.462,
+     "y": 0.2481
+    },
+    {
+     "name": "Bhayshul Tuten",
+     "x": 0.141,
+     "y": 0.1892,
+     "label": true,
+     "rank": 4
+    },
+    {
+     "name": "Quinshon Judkins",
+     "x": 0.266,
+     "y": 0.2667,
+     "label": true,
+     "rank": 10
+    },
+    {
+     "name": "D'Andre Swift",
+     "x": 0.478,
+     "y": 0.1798
+    },
+    {
+     "name": "David Montgomery",
+     "x": 0.246,
+     "y": 0.1895
+    },
+    {
+     "name": "Jaylen Warren",
+     "x": 0.33,
+     "y": 0.2446
+    },
+    {
+     "name": "Rhamondre Stevenson",
+     "x": 0.532,
+     "y": 0.1555
+    },
+    {
+     "name": "Kyle Monangai",
+     "x": 0.323,
+     "y": 0.1554
+    },
+    {
+     "name": "Tony Pollard",
+     "x": 0.382,
+     "y": 0.1715
+    },
+    {
+     "name": "Rico Dowdle",
+     "x": 0.408,
+     "y": 0.2222
+    },
+    {
+     "name": "Chuba Hubbard",
+     "x": 0.431,
+     "y": 0.184
+    },
+    {
+     "name": "Blake Corum",
+     "x": 0.144,
+     "y": 0.1573,
+     "label": true,
+     "rank": 5
+    },
+    {
+     "name": "JK Dobbins",
+     "x": 0.216,
+     "y": 0.1795
+    },
+    {
+     "name": "Brian Robinson Jr",
+     "x": 0.095,
+     "y": 0.2105,
+     "label": true,
+     "rank": 3
+    },
+    {
+     "name": "Aaron Jones",
+     "x": 0.497,
+     "y": 0.2356
+    },
+    {
+     "name": "Kenny Gainwell",
+     "x": 0.527,
+     "y": 0.2796,
+     "label": true,
+     "rank": 6
+    },
+    {
+     "name": "Tyler Allgeier",
+     "x": 0.184,
+     "y": 0.1524,
+     "label": true,
+     "rank": 9
+    },
+    {
+     "name": "James Conner",
+     "x": 0.396,
+     "y": 0.2368
+    },
+    {
+     "name": "Jacory Croskey-Merritt",
+     "x": 0.259,
+     "y": 0.0992,
+     "label": true,
+     "rank": 7
+    },
+    {
+     "name": "Zach Charbonnet",
+     "x": 0.316,
+     "y": 0.1558
+    },
+    {
+     "name": "Woody Marks",
+     "x": 0.37,
+     "y": 0.1682
+    },
+    {
+     "name": "Tyrone Tracy Jr",
+     "x": 0.52,
+     "y": 0.1787
+    },
+    {
+     "name": "Jordan Mason",
+     "x": 0.253,
+     "y": 0.1212
+    },
+    {
+     "name": "Trey Benson",
+     "x": 0.49,
+     "y": 0.2286
+    },
+    {
+     "name": "Alvin Kamara",
+     "x": 0.502,
+     "y": 0.1866
+    },
+    {
+     "name": "Devin Singletary",
+     "x": 0.197,
+     "y": 0.1681,
+     "label": true,
+     "rank": 12
+    },
+    {
+     "name": "Isiah Pacheco",
+     "x": 0.398,
+     "y": 0.1429
+    },
+    {
+     "name": "Rachaad White",
+     "x": 0.458,
+     "y": 0.1648
+    }
+   ],
+   "note": "Route participation and targets per route run come from a licensed source. Published here on the operator's explicit decision for this non-commercial portfolio; see docs/STATE.md."
+  },
+  "opportunity": {
+   "label": "Opportunity share",
+   "caption": "Each team's most-used back, by share of the team's carries plus targets. The gap between a bell-cow backfield and a committee is the whole draft decision.",
+   "rows": [
+    {
+     "team": "Las Vegas Raiders",
+     "name": "Ashton Jeanty",
+     "attempts": 266.0,
+     "targets": 73.0,
+     "share": 0.8432835821
+    },
+    {
+     "team": "Indianapolis Colts",
+     "name": "Jonathan Taylor",
+     "attempts": 323.0,
+     "targets": 55.0,
+     "share": 0.84
+    },
+    {
+     "team": "San Francisco 49ers",
+     "name": "Christian McCaffrey",
+     "attempts": 311.0,
+     "targets": 129.0,
+     "share": 0.7665505226
+    },
+    {
+     "team": "Philadelphia Eagles",
+     "name": "Saquon Barkley",
+     "attempts": 280.0,
+     "targets": 50.0,
+     "share": 0.7621247113
+    },
+    {
+     "team": "Cincinnati Bengals",
+     "name": "Chase Brown",
+     "attempts": 232.0,
+     "targets": 88.0,
+     "share": 0.7191011236
+    },
+    {
+     "team": "Baltimore Ravens",
+     "name": "Derrick Henry",
+     "attempts": 307.0,
+     "targets": 21.0,
+     "share": 0.7053763441
+    },
+    {
+     "team": "Jacksonville Jaguars",
+     "name": "Travis Etienne Jr",
+     "attempts": 260.0,
+     "targets": 52.0,
+     "share": 0.6995515695
+    },
+    {
+     "team": "Atlanta Falcons",
+     "name": "Bijan Robinson",
+     "attempts": 287.0,
+     "targets": 103.0,
+     "share": 0.6989247312
+    },
+    {
+     "team": "Buffalo Bills",
+     "name": "James Cook",
+     "attempts": 309.0,
+     "targets": 40.0,
+     "share": 0.6883629191
+    },
+    {
+     "team": "New York Jets",
+     "name": "Breece Hall",
+     "attempts": 243.0,
+     "targets": 48.0,
+     "share": 0.681498829
+    },
+    {
+     "team": "Tennessee Titans",
+     "name": "Tony Pollard",
+     "attempts": 242.0,
+     "targets": 41.0,
+     "share": 0.6722090261
+    },
+    {
+     "team": "Miami Dolphins",
+     "name": "De'Von Achane",
+     "attempts": 238.0,
+     "targets": 85.0,
+     "share": 0.6525252525
+    },
+    {
+     "team": "Dallas Cowboys",
+     "name": "Javonte Williams",
+     "attempts": 252.0,
+     "targets": 51.0,
+     "share": 0.6516129032
+    },
+    {
+     "team": "Los Angeles Rams",
+     "name": "Kyren Williams",
+     "attempts": 259.0,
+     "targets": 50.0,
+     "share": 0.6477987421
+    },
+    {
+     "team": "Detroit Lions",
+     "name": "Jahmyr Gibbs",
+     "attempts": 243.0,
+     "targets": 94.0,
+     "share": 0.6358490566
+    },
+    {
+     "team": "Green Bay Packers",
+     "name": "Josh Jacobs",
+     "attempts": 234.0,
+     "targets": 44.0,
+     "share": 0.599137931
+    },
+    {
+     "team": "Carolina Panthers",
+     "name": "Rico Dowdle",
+     "attempts": 236.0,
+     "targets": 50.0,
+     "share": 0.5921325052
+    },
+    {
+     "team": "Chicago Bears",
+     "name": "D'Andre Swift",
+     "attempts": 223.0,
+     "targets": 48.0,
+     "share": 0.5657620042
+    },
+    {
+     "team": "Cleveland Browns",
+     "name": "Quinshon Judkins",
+     "attempts": 230.0,
+     "targets": 36.0,
+     "share": 0.5623678647
+    },
+    {
+     "team": "Pittsburgh Steelers",
+     "name": "Jaylen Warren",
+     "attempts": 211.0,
+     "targets": 45.0,
+     "share": 0.5278350515
+    },
+    {
+     "team": "Seattle Seahawks",
+     "name": "Ken Walker",
+     "attempts": 221.0,
+     "targets": 36.0,
+     "share": 0.5129740519
+    },
+    {
+     "team": "New England Patriots",
+     "name": "TreVeyon Henderson",
+     "attempts": 180.0,
+     "targets": 42.0,
+     "share": 0.4889867841
+    },
+    {
+     "team": "Houston Texans",
+     "name": "Woody Marks",
+     "attempts": 196.0,
+     "targets": 36.0,
+     "share": 0.487394958
+    },
+    {
+     "team": "Washington Commanders",
+     "name": "Jacory Croskey-Merritt",
+     "attempts": 175.0,
+     "targets": 13.0,
+     "share": 0.47
+    },
+    {
+     "team": "New Orleans Saints",
+     "name": "Alvin Kamara",
+     "attempts": 131.0,
+     "targets": 39.0,
+     "share": 0.450928382
+    },
+    {
+     "team": "New York Giants",
+     "name": "Tyrone Tracy Jr",
+     "attempts": 176.0,
+     "targets": 47.0,
+     "share": 0.4486921529
+    },
+    {
+     "team": "Kansas City Chiefs",
+     "name": "Kareem Hunt",
+     "attempts": 163.0,
+     "targets": 25.0,
+     "share": 0.4423529412
+    },
+    {
+     "team": "Denver Broncos",
+     "name": "RJ Harvey",
+     "attempts": 146.0,
+     "targets": 58.0,
+     "share": 0.4331210191
+    },
+    {
+     "team": "Tampa Bay Buccaneers",
+     "name": "Bucky Irving",
+     "attempts": 173.0,
+     "targets": 35.0,
+     "share": 0.4253578732
+    },
+    {
+     "team": "Los Angeles Chargers",
+     "name": "Kimani Vidal",
+     "attempts": 155.0,
+     "targets": 22.0,
+     "share": 0.4125874126
+    },
+    {
+     "team": "Minnesota Vikings",
+     "name": "Jordan Mason",
+     "attempts": 159.0,
+     "targets": 16.0,
+     "share": 0.4088785047
+    },
+    {
+     "team": "Arizona Cardinals",
+     "name": "Michael Carter",
+     "attempts": 92.0,
+     "targets": 45.0,
+     "share": 0.3293269231
+    }
+   ]
+  },
+  "targets": {
+   "label": "Targets",
+   "caption": "Each team's most-targeted back. Receiving work is the part of a back's usage that survives a bad game script.",
+   "note": "Raw targets, not target share: the sheet carries backfield targets but not team passing volume, so a share cannot be derived from it without inventing the denominator.",
+   "rows": [
+    {
+     "team": "San Francisco 49ers",
+     "name": "Christian McCaffrey",
+     "attempts": 311.0,
+     "targets": 129.0,
+     "share": 0.7665505226
+    },
+    {
+     "team": "Atlanta Falcons",
+     "name": "Bijan Robinson",
+     "attempts": 287.0,
+     "targets": 103.0,
+     "share": 0.6989247312
+    },
+    {
+     "team": "Detroit Lions",
+     "name": "Jahmyr Gibbs",
+     "attempts": 243.0,
+     "targets": 94.0,
+     "share": 0.6358490566
+    },
+    {
+     "team": "Cincinnati Bengals",
+     "name": "Chase Brown",
+     "attempts": 232.0,
+     "targets": 88.0,
+     "share": 0.7191011236
+    },
+    {
+     "team": "Miami Dolphins",
+     "name": "De'Von Achane",
+     "attempts": 238.0,
+     "targets": 85.0,
+     "share": 0.6525252525
+    },
+    {
+     "team": "Pittsburgh Steelers",
+     "name": "Kenny Gainwell",
+     "attempts": 114.0,
+     "targets": 85.0,
+     "share": 0.4103092784
+    },
+    {
+     "team": "Las Vegas Raiders",
+     "name": "Ashton Jeanty",
+     "attempts": 266.0,
+     "targets": 73.0,
+     "share": 0.8432835821
+    },
+    {
+     "team": "Denver Broncos",
+     "name": "RJ Harvey",
+     "attempts": 146.0,
+     "targets": 58.0,
+     "share": 0.4331210191
+    },
+    {
+     "team": "Indianapolis Colts",
+     "name": "Jonathan Taylor",
+     "attempts": 323.0,
+     "targets": 55.0,
+     "share": 0.84
+    },
+    {
+     "team": "Jacksonville Jaguars",
+     "name": "Travis Etienne Jr",
+     "attempts": 260.0,
+     "targets": 52.0,
+     "share": 0.6995515695
+    },
+    {
+     "team": "Dallas Cowboys",
+     "name": "Javonte Williams",
+     "attempts": 252.0,
+     "targets": 51.0,
+     "share": 0.6516129032
+    },
+    {
+     "team": "Carolina Panthers",
+     "name": "Rico Dowdle",
+     "attempts": 236.0,
+     "targets": 50.0,
+     "share": 0.5921325052
+    },
+    {
+     "team": "Los Angeles Rams",
+     "name": "Kyren Williams",
+     "attempts": 259.0,
+     "targets": 50.0,
+     "share": 0.6477987421
+    },
+    {
+     "team": "Philadelphia Eagles",
+     "name": "Saquon Barkley",
+     "attempts": 280.0,
+     "targets": 50.0,
+     "share": 0.7621247113
+    },
+    {
+     "team": "Tennessee Titans",
+     "name": "Tyjae Spears",
+     "attempts": 72.0,
+     "targets": 50.0,
+     "share": 0.2897862233
+    },
+    {
+     "team": "Chicago Bears",
+     "name": "D'Andre Swift",
+     "attempts": 223.0,
+     "targets": 48.0,
+     "share": 0.5657620042
+    },
+    {
+     "team": "New York Jets",
+     "name": "Breece Hall",
+     "attempts": 243.0,
+     "targets": 48.0,
+     "share": 0.681498829
+    },
+    {
+     "team": "New York Giants",
+     "name": "Tyrone Tracy Jr",
+     "attempts": 176.0,
+     "targets": 47.0,
+     "share": 0.4486921529
+    },
+    {
+     "team": "Arizona Cardinals",
+     "name": "Michael Carter",
+     "attempts": 92.0,
+     "targets": 45.0,
+     "share": 0.3293269231
+    },
+    {
+     "team": "Tampa Bay Buccaneers",
+     "name": "Rachaad White",
+     "attempts": 132.0,
+     "targets": 45.0,
+     "share": 0.3619631902
+    },
+    {
+     "team": "Green Bay Packers",
+     "name": "Josh Jacobs",
+     "attempts": 234.0,
+     "targets": 44.0,
+     "share": 0.599137931
+    },
+    {
+     "team": "New England Patriots",
+     "name": "TreVeyon Henderson",
+     "attempts": 180.0,
+     "targets": 42.0,
+     "share": 0.4889867841
+    },
+    {
+     "team": "Minnesota Vikings",
+     "name": "Aaron Jones",
+     "attempts": 132.0,
+     "targets": 41.0,
+     "share": 0.4042056075
+    },
+    {
+     "team": "Buffalo Bills",
+     "name": "James Cook",
+     "attempts": 309.0,
+     "targets": 40.0,
+     "share": 0.6883629191
+    },
+    {
+     "team": "Cleveland Browns",
+     "name": "Dylan Sampson",
+     "attempts": 65.0,
+     "targets": 40.0,
+     "share": 0.221987315
+    },
+    {
+     "team": "New Orleans Saints",
+     "name": "Alvin Kamara",
+     "attempts": 131.0,
+     "targets": 39.0,
+     "share": 0.450928382
+    },
+    {
+     "team": "Houston Texans",
+     "name": "Woody Marks",
+     "attempts": 196.0,
+     "targets": 36.0,
+     "share": 0.487394958
+    },
+    {
+     "team": "Seattle Seahawks",
+     "name": "Ken Walker",
+     "attempts": 221.0,
+     "targets": 36.0,
+     "share": 0.5129740519
+    },
+    {
+     "team": "Kansas City Chiefs",
+     "name": "Brashard Smith",
+     "attempts": 44.0,
+     "targets": 35.0,
+     "share": 0.1858823529
+    },
+    {
+     "team": "Los Angeles Chargers",
+     "name": "Omarion Hampton",
+     "attempts": 124.0,
+     "targets": 35.0,
+     "share": 0.3706293706
+    },
+    {
+     "team": "Washington Commanders",
+     "name": "Jeremy McNichols",
+     "attempts": 44.0,
+     "targets": 31.0,
+     "share": 0.1875
+    },
+    {
+     "team": "Baltimore Ravens",
+     "name": "Justice Hill",
+     "attempts": 18.0,
+     "targets": 27.0,
+     "share": 0.09677419355
+    }
+   ]
+  }
+ }
+}

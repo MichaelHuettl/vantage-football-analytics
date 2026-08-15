@@ -23,6 +23,7 @@ export function ChartFigure({
   featured = false,
   ratio = "16 / 10",
   source,
+  children,
 }: {
   /** Path under /public/charts, e.g. "/charts/wr-target-share.png" */
   src?: string;
@@ -33,6 +34,13 @@ export function ChartFigure({
   featured?: boolean;
   ratio?: string;
   source?: string;
+  /**
+   * A chart drawn in the page rather than exported as a PNG. It gets the same
+   * frame — the goalpost is the signature element (§7) and must not be
+   * reimplemented per chart — but not the white plate, because an SVG built
+   * from tokens already follows the theme.
+   */
+  children?: React.ReactNode;
 }) {
   return (
     <figure className="my-8">
@@ -53,22 +61,28 @@ export function ChartFigure({
                 }
           }
         >
-          <div
-            className="relative w-full"
-            style={{ aspectRatio: ratio, background: "#FFFFFF" }}
-          >
-            {src ? (
-              <Image
-                src={src}
-                alt={alt ?? caption}
-                fill
-                sizes="(max-width: 900px) 100vw, 900px"
-                style={{ objectFit: "contain" }}
-              />
-            ) : (
-              <ChartSlot />
-            )}
-          </div>
+          {children ? (
+            <div className="relative w-full" style={{ background: "var(--surface-page)" }}>
+              {children}
+            </div>
+          ) : (
+            <div
+              className="relative w-full"
+              style={{ aspectRatio: ratio, background: "#FFFFFF" }}
+            >
+              {src ? (
+                <Image
+                  src={src}
+                  alt={alt ?? caption}
+                  fill
+                  sizes="(max-width: 900px) 100vw, 900px"
+                  style={{ objectFit: "contain" }}
+                />
+              ) : (
+                <ChartSlot />
+              )}
+            </div>
+          )}
         </div>
 
         {/* The stem. Completes the goalpost below the crossbar. */}

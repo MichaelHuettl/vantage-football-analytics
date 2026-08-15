@@ -4,7 +4,7 @@ Read `docs/BRIEF.md` first — it defines the `§` references in code comments.
 This file records where the build actually is, what was decided against the
 brief, and what is still open.
 
-Last updated: 2026-08-14.
+Last updated: 2026-08-15.
 
 ---
 
@@ -23,7 +23,7 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positions | Six pages, typographic heroes, methodology text. **Charts are empty slots** |
+| Positions | Six pages. **RB is built** — 3 scatters + 2 ranked tables from the workbook, with written analysis. WR/TE/QB/K/DST still empty slots |
 | Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
@@ -65,8 +65,17 @@ build` with a line number instead of shipping a broken page.
    plumbing gap, not a code fault. Fixing it means pushing to GitHub and
    enabling Actions; until then the section is as fresh as the last manual run.
    A local `launchd` timer is the alternative if the repo stays private.
-2. **Charts.** Every `ChartFigure` is an empty slot. Drop PNGs into
-   `public/charts/` and set `chart` in the relevant data file.
+2. **Charts.** RB is done and is the pattern to copy: `scripts/curated/
+   rb_charts.py` reads the workbook and writes `src/data/rb-charts.json`,
+   `ScatterChart` and `RankTable` render it, `RunningBackAnalysis` assembles
+   it. WR/TE is the obvious next one — six of the workbook's eleven charts are
+   on that sheet. The other positions still show the PNG slot.
+   - **The scatters compute nothing.** Medians, extents, which points get a
+     name, and the order they are placed in all come out of the Python (§11).
+   - **Two RB items are still open.** The historical RB1-3 chart has no data
+     (see item 8), and the workbook's own conclusions are transcribed into
+     prose by hand — they are in `RunningBackAnalysis.tsx`, not in the JSON,
+     because they are writing rather than data.
 3. **Games is fetched, not authored, and nothing schedules the fetch.**
    `npm run games` fills lines, implied totals, scores, per-team leaders and
    weather; by default it does the weeks with a game between 7 days ago and 14
@@ -92,7 +101,13 @@ build` with a line number instead of shipping a broken page.
    2026-08-12 wording until it was updated by hand. The gap is not that the
    news is missing — it is that a fresher headline never nudges the injury
    record, so the two can disagree on screen.
-7. **Nitter is fragile.** The beat feed goes through it because X has no free
+7. **The historical RB1-3 chart has no source data.** The workbook's
+   "Historical 2025 Fantasy Stats" sheet is an empty template — 17 blank player
+   blocks, each with headers and weeks 1-17 and nothing in them. The chart was
+   requested and cannot be built from the workbook. Either the sheet gets
+   filled, or the numbers come from nflverse weekly stats, which is the same
+   route `fetch-games.mjs` already uses.
+8. **Nitter is fragile.** The beat feed goes through it because X has no free
    read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
    an outage makes the section stale rather than empty. If it stops updating,
@@ -147,6 +162,12 @@ site was scaffolded into `vantage/` specifically so those stay outside it.
 - **Smart punctuation breaks naive regex.** A filter written with `'` missed
   `'`. `scripts/lib/signal.mjs` normalises before matching; do the same
   anywhere else text is pattern-matched.
+- **Licensed route-run data is published on the RB page, deliberately.**
+  Route participation and targets per route run come from 4for4 and §2 forbids
+  republishing them; they were cut for that reason and the cut is recorded
+  above. The operator reinstated the third RB chart knowingly after the
+  conflict was raised. The decision is his and it is scoped to that chart —
+  it is not a general licence to publish licensed columns.
 - **Implied totals are quarters, so they carry two decimals.** Totals and
   spreads move in halves and the implied totals are halves of those: a 49.5
   total on a 7-point spread is exactly 21.25 and 28.25. Rounded to a tenth they
