@@ -24,7 +24,10 @@ export function HistoricTable({ data }: { data: Data }) {
   ];
 
   return (
-    <div className="overflow-x-auto">
+    <>
+      {/* Only the table scrolls. The key sits outside that container so it is
+          readable on a phone without dragging it into view. */}
+      <div className="overflow-x-auto">
       <table className="w-full text-sm tnum" style={{ minWidth: 940 }}>
         <thead>
           <tr style={{ background: "var(--surface-sunken)" }}>
@@ -134,6 +137,72 @@ export function HistoricTable({ data }: { data: Data }) {
           ))}
         </tfoot>
       </table>
+      </div>
+
+      <Key />
+    </>
+  );
+}
+
+/**
+ * What the emphasis means.
+ *
+ * Each swatch is rendered in the style it describes rather than named, so the
+ * key cannot drift out of step with the table — if the styling changes and
+ * this is not updated, the swatch changes with it and the mismatch is visible
+ * rather than silent.
+ *
+ * Note that bold and the grey ground are one state, not two: a top-quarter
+ * value gets both. Listing them separately would imply a distinction the table
+ * does not make.
+ */
+function Key() {
+  return (
+    <dl className="mt-4 flex flex-wrap gap-x-7 gap-y-2 text-xs">
+      <Item
+        sample="129"
+        style={{ color: "var(--color-vantage-amber)", fontWeight: 700 }}
+      >
+        best in that column, all 27 seasons
+      </Item>
+      <Item
+        sample="102"
+        style={{
+          fontWeight: 700,
+          background: "color-mix(in oklab, var(--color-ink-500) 12%, transparent)",
+        }}
+      >
+        top quarter of that column — the good end, so a <em>low</em> number
+        under Off. rank and O-line
+      </Item>
+      <Item sample="31" style={{ color: "var(--text-muted)" }}>
+        bottom quarter of that column
+      </Item>
+      <Item
+        sample="29"
+        style={{ textDecoration: "underline", textUnderlineOffset: "3px" }}
+      >
+        youngest and oldest season in the sample
+      </Item>
+    </dl>
+  );
+}
+
+function Item({
+  sample,
+  style,
+  children,
+}: {
+  sample: string;
+  style: React.CSSProperties;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex items-baseline gap-2">
+      <dt className="rounded px-1.5 py-0.5 tnum" style={style}>
+        {sample}
+      </dt>
+      <dd style={{ color: "var(--text-secondary)" }}>{children}</dd>
     </div>
   );
 }
