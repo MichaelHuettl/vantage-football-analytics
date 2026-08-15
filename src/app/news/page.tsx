@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import newsFile from "@/data/news.json";
 import { DataFreshness } from "@/components/DataFreshness";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
+import { FilterLink, TeamFilterLink } from "@/components/FilterLink";
 import { getPlayer } from "@/lib/content";
 import { getTeam } from "@/lib/teams";
 import { BEAT_POSTS, BEAT_TOPICS, BEAT_UPDATED, CURATED_COUNT, TOPIC_BLURB } from "@/lib/beat";
@@ -160,19 +160,12 @@ export default async function NewsPage({
               </li>
               {beatTeams.map((abbr) => (
                 <li key={abbr}>
-                  <Link
+                  <TeamFilterLink
                     href={beatQ({ beatTeam: abbr })}
-                    aria-current={abbr === beatTeam ? "page" : undefined}
-                    className="inline-flex items-center rounded p-0.5"
-                    style={{
-                      boxShadow:
-                        abbr === beatTeam
-                          ? "inset 0 0 0 2px var(--color-vantage-amber)"
-                          : "none",
-                    }}
+                    active={abbr === beatTeam}
                   >
                     <TeamChip abbr={abbr} />
-                  </Link>
+                  </TeamFilterLink>
                 </li>
               ))}
             </ul>
@@ -244,19 +237,12 @@ export default async function NewsPage({
                 </li>
                 {teams.map((abbr) => (
                   <li key={abbr}>
-                    <Link
+                    <TeamFilterLink
                       href={`/news?team=${abbr}${category ? `&category=${category}` : ""}`}
-                      aria-current={abbr === team ? "page" : undefined}
-                      className="inline-flex items-center rounded p-0.5"
-                      style={{
-                        boxShadow:
-                          abbr === team
-                            ? "inset 0 0 0 2px var(--color-vantage-amber)"
-                            : "none",
-                      }}
+                      active={abbr === team}
                     >
                       <TeamChip abbr={abbr} />
-                    </Link>
+                    </TeamFilterLink>
                   </li>
                 ))}
               </ul>
@@ -365,28 +351,3 @@ export default async function NewsPage({
   );
 }
 
-function FilterLink({
-  href,
-  active,
-  children,
-}: {
-  href: string;
-  active: boolean;
-  children: React.ReactNode;
-}) {
-  return (
-    <Link
-      href={href}
-      aria-current={active ? "page" : undefined}
-      className="inline-block rounded px-3 py-1.5 text-xs font-bold uppercase tracking-wider"
-      style={{
-        fontFamily: "var(--font-condensed)",
-        background: active ? "var(--text-primary)" : "transparent",
-        color: active ? "var(--surface-page)" : "var(--text-secondary)",
-        boxShadow: active ? undefined : "inset 0 0 0 1px var(--border-strong)",
-      }}
-    >
-      {children}
-    </Link>
-  );
-}

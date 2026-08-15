@@ -24,7 +24,7 @@ build` with a line number instead of shipping a broken page.
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
 | Positions | Six pages, typographic heroes, methodology text. **Charts are empty slots** |
-| Injuries | Training camp section live (49 entries). Weekly report empty until Week 1 |
+| Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **Shell only** — no schedule data authored |
 | News | **Live, but refreshed by hand** — RSS headlines + 118-post beat archive. The cron cannot run yet; see open item 1 |

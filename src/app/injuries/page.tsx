@@ -14,6 +14,7 @@ import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink, PositionBadge } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
+import { FilterLink, TeamFilterLink } from "@/components/FilterLink";
 import {
   CURRENT_WEEK,
   INJURY_UPDATED,
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
 export default async function InjuriesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ week?: string }>;
+  searchParams: Promise<{ week?: string; team?: string }>;
 }) {
   const params = await searchParams;
   const parsed = Number(params.week);
@@ -45,6 +46,29 @@ export default async function InjuriesPage({
   const groups = rowsByTeam(week);
   const carried = backlog();
   const teams = teamsWithInjuries();
+
+  // One team filter across the whole page rather than one per section. News
+  // keeps its two feeds on separate params because they cover different
+  // periods, but camp and the weekly report are the same question asked at two
+  // points in a season — a reader filtering to a team wants that team
+  // everywhere, not in one table and not the other.
+  const filterTeams = [
+    ...new Set([...CAMP_INJURIES.map((c) => c.team), ...teams.map((t) => t.abbr)]),
+  ].sort();
+  const team = filterTeams.includes(params.team?.toUpperCase() ?? "")
+    ? params.team!.toUpperCase()
+    : undefined;
+  const activeTeam = team ? getTeam(team) : undefined;
+
+  /** Links that change one filter keep the other. */
+  const q = (over: { week?: number; team?: string }) => {
+    const next = { week, team, ...over };
+    const p = new URLSearchParams();
+    if (next.week !== undefined) p.set("week", String(next.week));
+    if (next.team) p.set("team", next.team);
+    const s = p.toString();
+    return s ? `/injuries?${s}` : "/injuries";
+  };
 
   // Camp entries grouped by team, each group worst-first, groups ordered by
   // their most serious case so the teams in trouble surface first.
@@ -64,7 +88,11 @@ export default async function InjuriesPage({
       (a, b) =>
         CAMP_SEVERITY[b.list[0].status] - CAMP_SEVERITY[a.list[0].status] ||
         a.abbr.localeCompare(b.abbr),
-    );
+    )
+    .filter((g) => !team || g.abbr === team);
+
+  const weekGroups = groups.filter((g) => !team || g.team.abbr === team);
+  const carriedRows = carried.filter((c) => !team || c.team.abbr === team);
 
   return (
     <>
@@ -77,6 +105,35 @@ export default async function InjuriesPage({
       />
 
       <Container className="py-10">
+        {/* A page-level control, not a section one: it governs camp, the weekly
+            report and the backlog together, so it sits above all three rather
+            than inside whichever table it appears to belong to. */}
+        <nav aria-label="Team" className="pb-8">
+          <ul className="flex flex-wrap items-center gap-2">
+            <li className="eyebrow mr-1">Team</li>
+            <li>
+              <FilterLink href={q({ team: undefined })} active={!team}>
+                All
+              </FilterLink>
+            </li>
+            {filterTeams.map((abbr) => (
+              <li key={abbr}>
+                <TeamFilterLink href={q({ team: abbr })} active={abbr === team}>
+                  <TeamChip abbr={abbr} />
+                </TeamFilterLink>
+              </li>
+            ))}
+          </ul>
+          {activeTeam && (
+            <p className="mt-3 text-sm" style={{ color: "var(--text-secondary)" }}>
+              Showing {activeTeam.city} {activeTeam.nickname} only.{" "}
+              <Link href={q({ team: undefined })} className="font-semibold underline">
+                Show every team
+              </Link>
+            </p>
+          )}
+        </nav>
+
         {/* ================= Training camp and preseason ================= */}
         <section>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
@@ -100,6 +157,15 @@ export default async function InjuriesPage({
             </div>
             <DataFreshness updated={CAMP_UPDATED} label="Camp report" staleAfterDays={4} />
           </div>
+
+          {campGroups.length === 0 && (
+            <div className="mt-6">
+              <EmptyState
+                title={`No camp injuries recorded for ${activeTeam ? `the ${activeTeam.nickname}` : "any team"}.`}
+                direction="Pick another team, or choose All to see every camp report."
+              />
+            </div>
+          )}
 
           <div className="mt-6 flex flex-col gap-4">
             {campGroups.map(({ team, abbr, list }) => (
@@ -223,7 +289,7 @@ export default async function InjuriesPage({
               {WEEKS.map((w) => (
                 <li key={w}>
                   <Link
-                    href={`/injuries?week=${w}`}
+                    href={q({ week: w })}
                     aria-current={w === week ? "page" : undefined}
                     className="inline-flex h-8 min-w-8 items-center justify-center rounded px-2 text-sm font-bold tnum"
                     style={{
@@ -242,16 +308,24 @@ export default async function InjuriesPage({
             </ul>
           </nav>
 
-          {groups.length === 0 ? (
+          {weekGroups.length === 0 ? (
             <div className="mt-6">
               <EmptyState
-                title={`No designations filed for week ${week}.`}
-                direction="Add rows to src/data/injuries.json."
+                title={
+                  activeTeam
+                    ? `No week ${week} designations for the ${activeTeam.nickname}.`
+                    : `No designations filed for week ${week}.`
+                }
+                direction={
+                  activeTeam
+                    ? "Choose another team, or All to see the full report."
+                    : "Add rows to src/data/injuries.json."
+                }
               />
             </div>
           ) : (
             <div className="mt-6 flex flex-col gap-4">
-              {groups.map(({ team, rows }) => (
+              {weekGroups.map(({ team, rows }) => (
                 <TeamBlock key={team.abbr} team={team} abbr={team.abbr} history>
                   {/* table-fixed with a shared colgroup: every team block uses
                       identical column widths, so Injury, W/T/F, Status and
@@ -325,16 +399,24 @@ export default async function InjuriesPage({
             report and nothing alike here.
           </p>
 
-          {carried.length === 0 ? (
+          {carriedRows.length === 0 ? (
             <div className="mt-6">
               <EmptyState
-                title="Nothing carried over."
-                direction="Players appearing in more than one week will collect here."
+                title={
+                  activeTeam
+                    ? `Nothing carried over for the ${activeTeam.nickname}.`
+                    : "Nothing carried over."
+                }
+                direction={
+                  activeTeam
+                    ? "Choose another team, or All to see every carried designation."
+                    : "Players appearing in more than one week will collect here."
+                }
               />
             </div>
           ) : (
             <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {carried.map((item) => (
+              {carriedRows.map((item) => (
                 <li
                   key={item.player.id}
                   className="rounded-lg border p-5"
