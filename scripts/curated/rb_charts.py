@@ -128,6 +128,73 @@ def summarise(points, x_label, y_label, caption, note=None):
     return body
 
 
+def historic(cells):
+    """
+    The 'Historic RB 1-3' block: the top three fantasy backs of each season
+    since 2017, one row per finish, with the workbook's own distribution
+    underneath it.
+
+    It lives on the RB sheet at row 260, not on the sheet named 'Historical
+    2025 Fantasy Stats' — that one is an empty template.
+    """
+    seasons = []
+    for r in range(262, 289):
+        name = cells.get((r, "B"))
+        year = num(cells.get((r, "A")))
+        if not name or year is None:
+            continue
+        seasons.append(
+            {
+                "name": str(name).strip(),
+                "season": int(year),
+                "attempts": num(cells.get((r, "C"))) or 0,
+                "rush_yards": num(cells.get((r, "D"))) or 0,
+                "rush_td": num(cells.get((r, "E"))) or 0,
+                "receptions": num(cells.get((r, "F"))) or 0,
+                "targets": num(cells.get((r, "G"))) or 0,
+                "rec_yards": num(cells.get((r, "H"))) or 0,
+            }
+        )
+
+    labels = ["median", "p25", "p75", "min", "max"]
+    fields = ["attempts", "rush_yards", "rush_td", "receptions", "targets", "rec_yards"]
+    dist = {}
+    for i, key in enumerate(labels):
+        row = 290 + i
+        dist[key] = {f: num(cells.get((row, c))) for f, c in zip(fields, "CDEFGH")}
+
+    def profile(first_row, label):
+        """The workbook's benchmark for a tier: the value each stat has to
+        clear. Read by row label rather than by offset, because the two blocks
+        do not line up."""
+        out = {}
+        for r in range(first_row, first_row + 8):
+            k = cells.get((r, "B"))
+            v = num(cells.get((r, "C")))
+            if not k or v is None:
+                continue
+            # 46315 is an Excel date serial sitting in a rank cell — the value
+            # was lost to a cell format, so it is dropped rather than printed.
+            if v > 1000:
+                continue
+            out[str(k).strip()] = v
+        names = [
+            str(cells.get((r, "D"))).strip()
+            for r in range(first_row, first_row + 8)
+            if cells.get((r, "D"))
+        ]
+        return {"label": label, "thresholds": out, "candidates": names}
+
+    return {
+        "seasons": seasons,
+        "distribution": dist,
+        "tiers": [
+            profile(297, "RB 1-3"),
+            profile(313, "Value RB (4-10)"),
+        ],
+    }
+
+
 def col_name(i):
     s = ""
     i += 1
@@ -188,6 +255,19 @@ def main():
     hvt = scatter(rb, "B", "D", "E", 6, 52)
     contact = scatter(rb, "B", "C", "D", 72, 119)
     routes = scatter(rb, "B", "C", "D", 145, 192)
+
+    hist = historic(rb)
+    # The scatter is one point per top-three finish: carries across, targets up.
+    # Both routes to the tier are visible at once — Henry's 378 carries and 31
+    # targets, Ekeler's 204 and 127 — which is the argument the block makes.
+    hist_points = [
+        {
+            "name": f"{s['name'].split()[-1]} '{str(s['season'])[2:]}",
+            "x": s["attempts"],
+            "y": s["targets"],
+        }
+        for s in hist["seasons"]
+    ]
 
     blocks = team_blocks(opp)
     lead_share = sorted(
@@ -253,6 +333,24 @@ def main():
                     "decision for this non-commercial portfolio; see docs/STATE.md."
                 ),
             ),
+            "historic": {
+                **summarise(
+                    hist_points,
+                    "Rushing attempts",
+                    "Targets",
+                    "Every top-three fantasy back since 2017. There are two ways "
+                    "into this tier and the shaded box is where most of them sit.",
+                ),
+                "band": {
+                    "x0": hist["distribution"]["p25"]["attempts"],
+                    "x1": hist["distribution"]["p75"]["attempts"],
+                    "y0": hist["distribution"]["p25"]["targets"],
+                    "y1": hist["distribution"]["p75"]["targets"],
+                },
+                "seasons": hist["seasons"],
+                "distribution": hist["distribution"],
+                "tiers": hist["tiers"],
+            },
             "opportunity": {
                 "label": "Opportunity share",
                 "caption": (
@@ -285,6 +383,9 @@ def main():
     print(f"contact  {len(contact):>3} points  median x={out['data']['contact']['x_median']}")
     print(f"routes   {len(routes):>3} points  median x={out['data']['routes']['x_median']}")
     print(f"teams    {len(blocks):>3} blocks -> {len(lead_share)} share rows, {len(lead_targets)} target rows")
+    yrs = sorted({s["season"] for s in hist["seasons"]})
+    print(f"historic {len(hist['seasons']):>3} finishes, {yrs[0]}-{yrs[-1]}, tiers: "
+          + ", ".join(f"{t['label']} ({len(t['thresholds'])} thresholds)" for t in hist["tiers"]))
     print(f"wrote {dest.relative_to(ROOT)}")
 
 

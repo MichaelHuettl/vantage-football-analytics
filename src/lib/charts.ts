@@ -24,6 +24,32 @@ export interface ScatterSeries {
   points: ScatterPoint[];
 }
 
+export interface HistoricSeason {
+  name: string;
+  season: number;
+  attempts: number;
+  rush_yards: number;
+  rush_td: number;
+  receptions: number;
+  targets: number;
+  rec_yards: number;
+}
+
+export interface Tier {
+  label: string;
+  /** Stat name to the value a season in this tier has cleared. */
+  thresholds: Record<string, number>;
+  candidates: string[];
+}
+
+export interface HistoricSeries extends ScatterSeries {
+  /** The interquartile box — where the middle half of the tier sits. */
+  band: { x0: number; x1: number; y0: number; y1: number };
+  seasons: HistoricSeason[];
+  distribution: Record<string, Record<string, number>>;
+  tiers: Tier[];
+}
+
 export interface LeaderRow {
   team: string;
   name: string;
@@ -49,6 +75,7 @@ interface RbCharts {
     hvt: ScatterSeries;
     contact: ScatterSeries;
     routes: ScatterSeries;
+    historic: HistoricSeries;
     opportunity: LeaderTable;
     targets: LeaderTable;
   };

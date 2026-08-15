@@ -1,6 +1,7 @@
 import { ChartFigure } from "@/components/ChartFigure";
 import { RankTable } from "@/components/RankTable";
 import { ScatterChart } from "@/components/ScatterChart";
+import { TierBenchmarks } from "@/components/TierBenchmarks";
 import { RB_CHARTS, RB_SEASON, RB_SOURCE } from "@/lib/charts";
 import { teamByName } from "@/lib/teams";
 
@@ -17,7 +18,7 @@ const abbrOf = (team: string) => teamByName(team)?.abbr;
  * on all five would turn the signature into wallpaper.
  */
 export function RunningBackAnalysis() {
-  const { hvt, contact, routes, opportunity, targets } = RB_CHARTS;
+  const { hvt, contact, routes, historic, opportunity, targets } = RB_CHARTS;
 
   const shareMax = Math.max(...opportunity.rows.map((r) => r.share));
   const shareMin = Math.min(...opportunity.rows.map((r) => r.share));
@@ -147,9 +148,57 @@ export function RunningBackAnalysis() {
         </p>
       </Block>
 
-      {/* ======================= 5. Opportunity ========================= */}
+      {/* ======================== 4. Historic =========================== */}
       <Block
         n={4}
+        title="What a top-three season has looked like"
+        chart={
+          <ChartFigure caption={historic.caption} source={axis(historic)}>
+            <ScatterChart
+              series={historic}
+              band={historic.band}
+              bandLabel="middle half of the tier"
+              regions={{
+                tl: "receiving backs",
+                tr: "both, and almost nobody",
+                bl: "did it on efficiency",
+                br: "pure runners",
+              }}
+            />
+          </ChartFigure>
+        }
+      >
+        <p>
+          Twenty-seven top-three finishes since 2017, plotted as carries against
+          targets. There is no single profile. Henry&rsquo;s 2020 is{" "}
+          <Stat>378</Stat> carries and <Stat>31</Stat> targets; McCaffrey&rsquo;s
+          2019 is <Stat>287</Stat> and <Stat>142</Stat>. Both finished top three,
+          and nothing about the first tells you how to value the second.
+        </p>
+        <p>
+          What the box says is that the middle half of these seasons ran between{" "}
+          <Stat>{historic.band.x0}</Stat> and <Stat>{historic.band.x1}</Stat>{" "}
+          carries with <Stat>{historic.band.y0}</Stat> to{" "}
+          <Stat>{historic.band.y1}</Stat> targets. That is the honest bar: not a
+          number a back has to hit, but a volume of work that has to exist
+          somewhere in his role before the finish is even available to him. Backs
+          get drafted on talent and finish on touches.
+        </p>
+
+        <div className="mt-2">
+          <TierBenchmarks tiers={historic.tiers} />
+          <p className="mt-3 text-sm" style={{ color: "var(--text-secondary)" }}>
+            The two tiers are closer than the draft price suggests — roughly
+            thirty carries and twenty-five targets separate a top-three season
+            from a fourth-to-tenth one. That gap is one injury, or one change of
+            coordinator, wide.
+          </p>
+        </div>
+      </Block>
+
+      {/* ======================= 5. Opportunity ========================= */}
+      <Block
+        n={5}
         title="Who actually owns a backfield"
         chart={
           <figure className="my-8">
@@ -185,7 +234,7 @@ export function RunningBackAnalysis() {
 
       {/* ========================= 6. Targets =========================== */}
       <Block
-        n={5}
+        n={6}
         title="The usage that survives a bad script"
         chart={
           <figure className="my-8">

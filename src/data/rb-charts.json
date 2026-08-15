@@ -844,6 +844,540 @@
    ],
    "note": "Route participation and targets per route run come from a licensed source. Published here on the operator's explicit decision for this non-commercial portfolio; see docs/STATE.md."
   },
+  "historic": {
+   "x_label": "Rushing attempts",
+   "y_label": "Targets",
+   "caption": "Every top-three fantasy back since 2017. There are two ways into this tier and the shaded box is where most of them sit.",
+   "x_median": 272.0,
+   "y_median": 94.0,
+   "x_min": 120.0,
+   "x_max": 378.0,
+   "y_min": 31.0,
+   "y_max": 142.0,
+   "points": [
+    {
+     "name": "McCaffrey '25",
+     "x": 311.0,
+     "y": 129.0,
+     "label": true,
+     "rank": 9
+    },
+    {
+     "name": "Robinson '25",
+     "x": 287.0,
+     "y": 103.0
+    },
+    {
+     "name": "Gibbs '25",
+     "x": 243.0,
+     "y": 94.0
+    },
+    {
+     "name": "Gibbs '24",
+     "x": 250.0,
+     "y": 63.0,
+     "label": true,
+     "rank": 11
+    },
+    {
+     "name": "Barkley '24",
+     "x": 345.0,
+     "y": 43.0,
+     "label": true,
+     "rank": 2
+    },
+    {
+     "name": "Robinson '24",
+     "x": 304.0,
+     "y": 72.0
+    },
+    {
+     "name": "McCaffrey '23",
+     "x": 272.0,
+     "y": 83.0
+    },
+    {
+     "name": "Hall '23",
+     "x": 223.0,
+     "y": 95.0
+    },
+    {
+     "name": "Etienne '23",
+     "x": 267.0,
+     "y": 73.0
+    },
+    {
+     "name": "Ekeler '22",
+     "x": 204.0,
+     "y": 127.0,
+     "label": true,
+     "rank": 7
+    },
+    {
+     "name": "McCaffrey '22",
+     "x": 244.0,
+     "y": 108.0
+    },
+    {
+     "name": "Jacobs '22",
+     "x": 340.0,
+     "y": 64.0,
+     "label": true,
+     "rank": 8
+    },
+    {
+     "name": "Taylor '21",
+     "x": 332.0,
+     "y": 51.0,
+     "label": true,
+     "rank": 5
+    },
+    {
+     "name": "Ekeler '21",
+     "x": 206.0,
+     "y": 94.0,
+     "label": true,
+     "rank": 10
+    },
+    {
+     "name": "Harris '21",
+     "x": 307.0,
+     "y": 94.0
+    },
+    {
+     "name": "Kamara '20",
+     "x": 187.0,
+     "y": 107.0,
+     "label": true,
+     "rank": 4
+    },
+    {
+     "name": "Cook '20",
+     "x": 312.0,
+     "y": 54.0,
+     "label": true,
+     "rank": 6
+    },
+    {
+     "name": "Henry '20",
+     "x": 378.0,
+     "y": 31.0,
+     "label": true,
+     "rank": 1
+    },
+    {
+     "name": "McCaffrey '19",
+     "x": 287.0,
+     "y": 142.0,
+     "label": true,
+     "rank": 3
+    },
+    {
+     "name": "Jones '19",
+     "x": 236.0,
+     "y": 68.0
+    },
+    {
+     "name": "Elliott '19",
+     "x": 301.0,
+     "y": 71.0
+    },
+    {
+     "name": "Barkley '18",
+     "x": 261.0,
+     "y": 121.0,
+     "label": true,
+     "rank": 13
+    },
+    {
+     "name": "McCaffrey '18",
+     "x": 219.0,
+     "y": 124.0,
+     "label": true,
+     "rank": 12
+    },
+    {
+     "name": "Gurley '18",
+     "x": 256.0,
+     "y": 81.0
+    },
+    {
+     "name": "Gurley '17",
+     "x": 279.0,
+     "y": 87.0
+    },
+    {
+     "name": "Bell '17",
+     "x": 321.0,
+     "y": 107.0
+    },
+    {
+     "name": "Kamara '17",
+     "x": 120.0,
+     "y": 100.0,
+     "label": true,
+     "rank": 0
+    }
+   ],
+   "band": {
+    "x0": 239.5,
+    "x1": 309.0,
+    "y0": 69.5,
+    "y1": 107.0
+   },
+   "seasons": [
+    {
+     "name": "Christian McCaffrey",
+     "season": 2025,
+     "attempts": 311.0,
+     "rush_yards": 1202.0,
+     "rush_td": 10.0,
+     "receptions": 102.0,
+     "targets": 129.0,
+     "rec_yards": 924.0
+    },
+    {
+     "name": "Bijan Robinson",
+     "season": 2025,
+     "attempts": 287.0,
+     "rush_yards": 1478.0,
+     "rush_td": 7.0,
+     "receptions": 79.0,
+     "targets": 103.0,
+     "rec_yards": 820.0
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "season": 2025,
+     "attempts": 243.0,
+     "rush_yards": 1223.0,
+     "rush_td": 13.0,
+     "receptions": 77.0,
+     "targets": 94.0,
+     "rec_yards": 616.0
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "season": 2024,
+     "attempts": 250.0,
+     "rush_yards": 1412.0,
+     "rush_td": 16.0,
+     "receptions": 52.0,
+     "targets": 63.0,
+     "rec_yards": 517.0
+    },
+    {
+     "name": "Saquon Barkley",
+     "season": 2024,
+     "attempts": 345.0,
+     "rush_yards": 2005.0,
+     "rush_td": 13.0,
+     "receptions": 33.0,
+     "targets": 43.0,
+     "rec_yards": 278.0
+    },
+    {
+     "name": "Bijan Robinson",
+     "season": 2024,
+     "attempts": 304.0,
+     "rush_yards": 1456.0,
+     "rush_td": 14.0,
+     "receptions": 61.0,
+     "targets": 72.0,
+     "rec_yards": 431.0
+    },
+    {
+     "name": "Christian McCaffrey",
+     "season": 2023,
+     "attempts": 272.0,
+     "rush_yards": 1459.0,
+     "rush_td": 14.0,
+     "receptions": 67.0,
+     "targets": 83.0,
+     "rec_yards": 564.0
+    },
+    {
+     "name": "Breece Hall",
+     "season": 2023,
+     "attempts": 223.0,
+     "rush_yards": 994.0,
+     "rush_td": 5.0,
+     "receptions": 76.0,
+     "targets": 95.0,
+     "rec_yards": 591.0
+    },
+    {
+     "name": "Travis Etienne",
+     "season": 2023,
+     "attempts": 267.0,
+     "rush_yards": 1008.0,
+     "rush_td": 11.0,
+     "receptions": 58.0,
+     "targets": 73.0,
+     "rec_yards": 476.0
+    },
+    {
+     "name": "Austin Ekeler",
+     "season": 2022,
+     "attempts": 204.0,
+     "rush_yards": 915.0,
+     "rush_td": 13.0,
+     "receptions": 107.0,
+     "targets": 127.0,
+     "rec_yards": 722.0
+    },
+    {
+     "name": "Christian McCaffrey",
+     "season": 2022,
+     "attempts": 244.0,
+     "rush_yards": 1139.0,
+     "rush_td": 8.0,
+     "receptions": 85.0,
+     "targets": 108.0,
+     "rec_yards": 464.0
+    },
+    {
+     "name": "Josh Jacobs",
+     "season": 2022,
+     "attempts": 340.0,
+     "rush_yards": 1653.0,
+     "rush_td": 12.0,
+     "receptions": 53.0,
+     "targets": 64.0,
+     "rec_yards": 400.0
+    },
+    {
+     "name": "Jonathan Taylor",
+     "season": 2021,
+     "attempts": 332.0,
+     "rush_yards": 1811.0,
+     "rush_td": 18.0,
+     "receptions": 40.0,
+     "targets": 51.0,
+     "rec_yards": 360.0
+    },
+    {
+     "name": "Austin Ekeler",
+     "season": 2021,
+     "attempts": 206.0,
+     "rush_yards": 911.0,
+     "rush_td": 12.0,
+     "receptions": 70.0,
+     "targets": 94.0,
+     "rec_yards": 647.0
+    },
+    {
+     "name": "Najee Harris",
+     "season": 2021,
+     "attempts": 307.0,
+     "rush_yards": 1200.0,
+     "rush_td": 7.0,
+     "receptions": 74.0,
+     "targets": 94.0,
+     "rec_yards": 467.0
+    },
+    {
+     "name": "Alvin Kamara",
+     "season": 2020,
+     "attempts": 187.0,
+     "rush_yards": 932.0,
+     "rush_td": 16.0,
+     "receptions": 83.0,
+     "targets": 107.0,
+     "rec_yards": 756.0
+    },
+    {
+     "name": "Dalvin Cook",
+     "season": 2020,
+     "attempts": 312.0,
+     "rush_yards": 1557.0,
+     "rush_td": 16.0,
+     "receptions": 44.0,
+     "targets": 54.0,
+     "rec_yards": 361.0
+    },
+    {
+     "name": "Derrick Henry",
+     "season": 2020,
+     "attempts": 378.0,
+     "rush_yards": 2027.0,
+     "rush_td": 17.0,
+     "receptions": 19.0,
+     "targets": 31.0,
+     "rec_yards": 114.0
+    },
+    {
+     "name": "Christian McCaffrey",
+     "season": 2019,
+     "attempts": 287.0,
+     "rush_yards": 1387.0,
+     "rush_td": 15.0,
+     "receptions": 116.0,
+     "targets": 142.0,
+     "rec_yards": 1005.0
+    },
+    {
+     "name": "Aaron Jones",
+     "season": 2019,
+     "attempts": 236.0,
+     "rush_yards": 1084.0,
+     "rush_td": 16.0,
+     "receptions": 49.0,
+     "targets": 68.0,
+     "rec_yards": 474.0
+    },
+    {
+     "name": "Ezekiel Elliott",
+     "season": 2019,
+     "attempts": 301.0,
+     "rush_yards": 1357.0,
+     "rush_td": 12.0,
+     "receptions": 54.0,
+     "targets": 71.0,
+     "rec_yards": 420.0
+    },
+    {
+     "name": "Saquon Barkley",
+     "season": 2018,
+     "attempts": 261.0,
+     "rush_yards": 1307.0,
+     "rush_td": 11.0,
+     "receptions": 91.0,
+     "targets": 121.0,
+     "rec_yards": 721.0
+    },
+    {
+     "name": "Christian McCaffrey",
+     "season": 2018,
+     "attempts": 219.0,
+     "rush_yards": 1098.0,
+     "rush_td": 7.0,
+     "receptions": 107.0,
+     "targets": 124.0,
+     "rec_yards": 867.0
+    },
+    {
+     "name": "Todd Gurley",
+     "season": 2018,
+     "attempts": 256.0,
+     "rush_yards": 1251.0,
+     "rush_td": 17.0,
+     "receptions": 59.0,
+     "targets": 81.0,
+     "rec_yards": 580.0
+    },
+    {
+     "name": "Todd Gurley",
+     "season": 2017,
+     "attempts": 279.0,
+     "rush_yards": 1305.0,
+     "rush_td": 13.0,
+     "receptions": 64.0,
+     "targets": 87.0,
+     "rec_yards": 788.0
+    },
+    {
+     "name": "Le'Veon Bell",
+     "season": 2017,
+     "attempts": 321.0,
+     "rush_yards": 1291.0,
+     "rush_td": 9.0,
+     "receptions": 85.0,
+     "targets": 107.0,
+     "rec_yards": 655.0
+    },
+    {
+     "name": "Alvin Kamara",
+     "season": 2017,
+     "attempts": 120.0,
+     "rush_yards": 728.0,
+     "rush_td": 8.0,
+     "receptions": 81.0,
+     "targets": 100.0,
+     "rec_yards": 826.0
+    }
+   ],
+   "distribution": {
+    "median": {
+     "attempts": 272.0,
+     "rush_yards": 1291.0,
+     "rush_td": 13.0,
+     "receptions": 70.0,
+     "targets": 94.0,
+     "rec_yards": 580.0
+    },
+    "p25": {
+     "attempts": 239.5,
+     "rush_yards": 1091.0,
+     "rush_td": 9.5,
+     "receptions": 53.5,
+     "targets": 69.5,
+     "rec_yards": 447.5
+    },
+    "p75": {
+     "attempts": 309.0,
+     "rush_yards": 1457.5,
+     "rush_td": 15.5,
+     "receptions": 84.0,
+     "targets": 107.0,
+     "rec_yards": 739.0
+    },
+    "min": {
+     "attempts": 120.0,
+     "rush_yards": 728.0,
+     "rush_td": 5.0,
+     "receptions": 19.0,
+     "targets": 31.0,
+     "rec_yards": 114.0
+    },
+    "max": {
+     "attempts": 378.0,
+     "rush_yards": 2027.0,
+     "rush_td": 18.0,
+     "receptions": 116.0,
+     "targets": 142.0,
+     "rec_yards": 1005.0
+    }
+   },
+   "tiers": [
+    {
+     "label": "RB 1-3",
+     "thresholds": {
+      "Carries": 272.0,
+      "Targets": 94.0,
+      "Receptions": 70.0,
+      "Age": 24.0,
+      "Team Rank": 12.0,
+      "Green Zone Rushes": 28.0,
+      "High Value Touches": 116.0
+     },
+     "candidates": [
+      "Bijan Robinson",
+      "Jahmyr Gibbs",
+      "Brown"
+     ]
+    },
+    {
+     "label": "Value RB (4-10)",
+     "thresholds": {
+      "Carries": 239.5,
+      "Targets": 69.5,
+      "Receptions": 53.5,
+      "Age": 25.5,
+      "Green Zone Rushes": 21.5,
+      "High Value Touches": 90.5
+     },
+     "candidates": [
+      "Jonathan Taylor",
+      "Ashton Jeanty",
+      "De'Von Achane",
+      "Kyren Williams",
+      "Breece Hall",
+      "Travis Etienne"
+     ]
+    }
+   ]
+  },
   "opportunity": {
    "label": "Opportunity share",
    "caption": "Each team's most-used back, by share of the team's carries plus targets. The gap between a bell-cow backfield and a committee is the whole draft decision.",

@@ -23,7 +23,7 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positions | Six pages. **RB is built** — 3 scatters + 2 ranked tables from the workbook, with written analysis. WR/TE/QB/K/DST still empty slots |
+| Positions | Six pages. **RB is built** — 4 scatters + 3 tables from the workbook, with written analysis. WR/TE/QB/K/DST still empty slots |
 | Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
@@ -72,10 +72,9 @@ build` with a line number instead of shipping a broken page.
    on that sheet. The other positions still show the PNG slot.
    - **The scatters compute nothing.** Medians, extents, which points get a
      name, and the order they are placed in all come out of the Python (§11).
-   - **Two RB items are still open.** The historical RB1-3 chart has no data
-     (see item 8), and the workbook's own conclusions are transcribed into
-     prose by hand — they are in `RunningBackAnalysis.tsx`, not in the JSON,
-     because they are writing rather than data.
+   - **The workbook's own conclusions are transcribed by hand** into
+     `RunningBackAnalysis.tsx` rather than the JSON, because they are writing
+     rather than data.
 3. **Games is fetched, not authored, and nothing schedules the fetch.**
    `npm run games` fills lines, implied totals, scores, per-team leaders and
    weather; by default it does the weeks with a game between 7 days ago and 14
@@ -101,13 +100,7 @@ build` with a line number instead of shipping a broken page.
    2026-08-12 wording until it was updated by hand. The gap is not that the
    news is missing — it is that a fresher headline never nudges the injury
    record, so the two can disagree on screen.
-7. **The historical RB1-3 chart has no source data.** The workbook's
-   "Historical 2025 Fantasy Stats" sheet is an empty template — 17 blank player
-   blocks, each with headers and weeks 1-17 and nothing in them. The chart was
-   requested and cannot be built from the workbook. Either the sheet gets
-   filled, or the numbers come from nflverse weekly stats, which is the same
-   route `fetch-games.mjs` already uses.
-8. **Nitter is fragile.** The beat feed goes through it because X has no free
+7. **Nitter is fragile.** The beat feed goes through it because X has no free
    read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
    an outage makes the section stale rather than empty. If it stops updating,
@@ -148,6 +141,20 @@ directory holds ESPN/Yahoo/Sleeper/Underdog marks and 46 player thumbnails; the
 site was scaffolded into `vantage/` specifically so those stay outside it.
 
 ## Gotchas
+
+- **Do not trust a sheet's name for where its data is.** The "Historic RB 1-3"
+  table — 27 top-three finishes back to 2017, with the quartiles and both tier
+  benchmarks under it — sits at **row 260 of "RB Statistics & Graphs"**, not on
+  "Historical 2025 Fantasy Stats", which is an empty template of 17 blank week
+  grids. Searching the named sheet and stopping there produced a confident and
+  wrong "the data does not exist". Search `sharedStrings.xml` for the heading
+  and then find the cell that references it.
+- **`el.clear()` on every element breaks `iterparse` searches.** A scan written
+  that way silently found nothing in a sheet that did contain the string. Clear
+  rows, not every node, or grep the raw XML to confirm a negative.
+- **A number over about a thousand in a rate or rank cell is a date serial.**
+  The Value-RB "Team Rank" reads 46315, which is 2026-10-05 as an Excel date.
+  `rb_charts.py` drops values that large rather than printing them.
 
 - **This machine creates macOS `"file 2.ext"` duplicates.** They have appeared
   as orphaned headshots and as `.next/types/* 2.ts` files that broke `tsc`.

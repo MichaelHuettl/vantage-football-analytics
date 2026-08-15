@@ -20,6 +20,8 @@ export function ScatterChart({
   series,
   regions,
   highlight,
+  band,
+  bandLabel,
   height = 460,
 }: {
   series: ScatterSeries;
@@ -27,6 +29,14 @@ export function ScatterChart({
   regions?: { tl?: string; tr?: string; br?: string; bl?: string };
   /** One player to mark in amber — §7 reserves it for the focal point. */
   highlight?: string;
+  /**
+   * An interquartile box in data units. Drawn behind the points as the shape
+   * the middle half of the distribution occupies — on the historic chart it is
+   * the answer to the question, so it is the one thing that should be visible
+   * before any individual name is read.
+   */
+  band?: { x0: number; x1: number; y0: number; y1: number };
+  bandLabel?: string;
   height?: number;
 }) {
   const W = 900;
@@ -119,6 +129,33 @@ export function ScatterChart({
       role="img"
       aria-label={`${series.y_label} against ${series.x_label}. ${series.caption}`}
     >
+      {/* The interquartile box, behind everything else. */}
+      {band && (
+        <>
+          <rect
+            x={px(band.x0)}
+            y={py(band.y1)}
+            width={px(band.x1) - px(band.x0)}
+            height={py(band.y0) - py(band.y1)}
+            fill="var(--color-vantage-amber)"
+            fillOpacity="0.1"
+            stroke="var(--color-vantage-amber)"
+            strokeOpacity="0.45"
+            strokeWidth="1"
+          />
+          {bandLabel && (
+            <text
+              x={px(band.x0) + 6}
+              y={py(band.y1) - 6}
+              style={{ fontFamily: "var(--font-condensed)", fontSize: 11, letterSpacing: ".08em" }}
+              fill="var(--text-secondary)"
+            >
+              {bandLabel.toUpperCase()}
+            </text>
+          )}
+        </>
+      )}
+
       {/* Median crosshairs. Dashed so they read as reference, not data. */}
       <line
         x1={mx} y1={M.top} x2={mx} y2={M.top + ih}
