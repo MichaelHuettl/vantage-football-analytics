@@ -6,6 +6,7 @@ import { ChartFigure } from "@/components/ChartFigure";
 import { DataFreshness } from "@/components/DataFreshness";
 import { Container } from "@/components/PageHeader";
 import { PlayerLink } from "@/components/PlayerLink";
+import { KickerAnalysis } from "@/components/KickerAnalysis";
 import { RunningBackAnalysis } from "@/components/RunningBackAnalysis";
 import { PLAYERS, getRankingList } from "@/lib/content";
 import { POSITIONS } from "@/lib/types";
@@ -22,6 +23,14 @@ interface PositionDoc {
 }
 
 const docs = (positionsFile as Envelope<PositionDoc[]>).data;
+
+/**
+ * Positions with their own worked-up analysis. These run as a single column —
+ * methodology, then straight into the evidence. The rest keep the two-column
+ * layout, where the ranked list beside an empty chart slot is the only real
+ * content the page has.
+ */
+const BUILT = new Set<Position>(["RB", "K"]);
 
 const FULL_NAME: Record<Position, string> = {
   QB: "Quarterback",
@@ -135,14 +144,15 @@ export default async function PositionPage({
           beside an empty chart slot — and once the charts are real it is
           furniture between the reader and the argument.
         */}
-        {upper === "RB" ? (
+        {BUILT.has(upper) ? (
           <>
             <DataFreshness updated={list.updated} />
             <section className="mt-8 max-w-3xl">
               <h2 className="eyebrow mb-3">Methodology</h2>
               <p className="text-lg leading-relaxed">{doc.methodology}</p>
             </section>
-            <RunningBackAnalysis />
+            {upper === "RB" && <RunningBackAnalysis />}
+            {upper === "K" && <KickerAnalysis />}
           </>
         ) : (
           <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">

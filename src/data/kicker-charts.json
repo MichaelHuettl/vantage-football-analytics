@@ -1,0 +1,910 @@
+{
+ "schema_version": 1,
+ "updated": "2026-08-15",
+ "source": "2026-2027 Fantasy Football Analytics workbook \u2014 'Defense and Kicker Stats'. Rebuilt by scripts/curated/kicker_charts.py.",
+ "note": "Team field goal attempts run 2021-2025; kicker scoring 2023-2025. Retention and spread are computed here, not on the page (\u00a711).",
+ "data": {
+  "fg_attempts": {
+   "years": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "top": {
+    "2021": [
+     "Patriots",
+     "Raiders",
+     "Rams",
+     "Cardinals",
+     "Ravens",
+     "Steelers",
+     "Vikings",
+     "Bills",
+     "Eagles",
+     "Buccaneers",
+     "Chargers",
+     "Bengals",
+     "Jets",
+     "Packers",
+     "Chiefs",
+     "Titans"
+    ],
+    "2022": [
+     "Seahawks",
+     "Ravens",
+     "Cowboys",
+     "Raiders",
+     "49ers",
+     "Falcons",
+     "Panthers",
+     "Bills",
+     "Patriots",
+     "Jaguars",
+     "Giants",
+     "Dolphins",
+     "Jets",
+     "Vikings",
+     "Buccaneers",
+     "Colts"
+    ],
+    "2023": [
+     "Cowboys",
+     "Ravens",
+     "Seahawks",
+     "Chiefs",
+     "Bears",
+     "Eagles",
+     "Colts",
+     "Dolphins",
+     "Saints",
+     "Chargers",
+     "Commanders",
+     "Browns",
+     "Falcons",
+     "49ers",
+     "Bills",
+     "Jets"
+    ],
+    "2024": [
+     "Steelers",
+     "Chargers",
+     "Cowboys",
+     "Buccaneers",
+     "Texans",
+     "Lions",
+     "Broncos",
+     "Dolphins",
+     "Eagles",
+     "Bills",
+     "Ravens",
+     "Colts",
+     "Raiders",
+     "Rams",
+     "Seahawks",
+     "Saints"
+    ],
+    "2025": [
+     "Texans",
+     "Seahawks",
+     "Cowboys",
+     "Saints",
+     "Chargers",
+     "Bears",
+     "Falcons",
+     "Chiefs",
+     "Buccaneers",
+     "49ers",
+     "Colts",
+     "Titans",
+     "Vikings",
+     "Packers",
+     "Lions",
+     "Jaguars"
+    ]
+   },
+   "bottom": {
+    "2021": [
+     "Jaguars",
+     "Texans",
+     "Chargers",
+     "Seahawks",
+     "Browns"
+    ],
+    "2022": [
+     "Bengals",
+     "Packers",
+     "Bears",
+     "Eagles",
+     "Titans"
+    ],
+    "2023": [
+     "Broncos",
+     "Bills",
+     "Bengals",
+     "Bears",
+     "49ers"
+    ],
+    "2024": [
+     "Giants",
+     "Browns",
+     "Titans",
+     "Panthers",
+     "Bears"
+    ],
+    "2025": [
+     "Eagles",
+     "Raiders",
+     "Browns",
+     "Giants",
+     "Bills"
+    ]
+   },
+   "appearances": {
+    "Patriots": 2,
+    "Raiders": 3,
+    "Rams": 2,
+    "Cardinals": 1,
+    "Ravens": 4,
+    "Steelers": 2,
+    "Vikings": 3,
+    "Bills": 4,
+    "Eagles": 3,
+    "Buccaneers": 4,
+    "Chargers": 4,
+    "Bengals": 1,
+    "Jets": 3,
+    "Packers": 2,
+    "Chiefs": 3,
+    "Titans": 2,
+    "Seahawks": 4,
+    "Cowboys": 4,
+    "49ers": 3,
+    "Falcons": 3,
+    "Panthers": 1,
+    "Jaguars": 2,
+    "Giants": 1,
+    "Dolphins": 3,
+    "Colts": 4,
+    "Bears": 2,
+    "Saints": 3,
+    "Commanders": 1,
+    "Browns": 1,
+    "Texans": 2,
+    "Lions": 2,
+    "Broncos": 1
+   },
+   "retention": [
+    {
+     "from": "2021",
+     "to": "2022",
+     "kept": 7,
+     "of": 16
+    },
+    {
+     "from": "2022",
+     "to": "2023",
+     "kept": 9,
+     "of": 16
+    },
+    {
+     "from": "2023",
+     "to": "2024",
+     "kept": 9,
+     "of": 16
+    },
+    {
+     "from": "2024",
+     "to": "2025",
+     "kept": 8,
+     "of": 16
+    }
+   ],
+   "swings": [
+    {
+     "team": "Jaguars",
+     "from": "2021",
+     "to": "2022",
+     "direction": "up"
+    },
+    {
+     "team": "Seahawks",
+     "from": "2021",
+     "to": "2022",
+     "direction": "up"
+    },
+    {
+     "team": "Bengals",
+     "from": "2021",
+     "to": "2022",
+     "direction": "down"
+    },
+    {
+     "team": "Eagles",
+     "from": "2021",
+     "to": "2022",
+     "direction": "down"
+    },
+    {
+     "team": "Packers",
+     "from": "2021",
+     "to": "2022",
+     "direction": "down"
+    },
+    {
+     "team": "Titans",
+     "from": "2021",
+     "to": "2022",
+     "direction": "down"
+    },
+    {
+     "team": "Bears",
+     "from": "2022",
+     "to": "2023",
+     "direction": "up"
+    },
+    {
+     "team": "Eagles",
+     "from": "2022",
+     "to": "2023",
+     "direction": "up"
+    },
+    {
+     "team": "49ers",
+     "from": "2022",
+     "to": "2023",
+     "direction": "down"
+    },
+    {
+     "team": "Bills",
+     "from": "2022",
+     "to": "2023",
+     "direction": "down"
+    },
+    {
+     "team": "Bills",
+     "from": "2023",
+     "to": "2024",
+     "direction": "up"
+    },
+    {
+     "team": "Broncos",
+     "from": "2023",
+     "to": "2024",
+     "direction": "up"
+    },
+    {
+     "team": "Bears",
+     "from": "2023",
+     "to": "2024",
+     "direction": "down"
+    },
+    {
+     "team": "Browns",
+     "from": "2023",
+     "to": "2024",
+     "direction": "down"
+    },
+    {
+     "team": "Bears",
+     "from": "2024",
+     "to": "2025",
+     "direction": "up"
+    },
+    {
+     "team": "Titans",
+     "from": "2024",
+     "to": "2025",
+     "direction": "up"
+    },
+    {
+     "team": "Bills",
+     "from": "2024",
+     "to": "2025",
+     "direction": "down"
+    },
+    {
+     "team": "Eagles",
+     "from": "2024",
+     "to": "2025",
+     "direction": "down"
+    },
+    {
+     "team": "Raiders",
+     "from": "2024",
+     "to": "2025",
+     "direction": "down"
+    }
+   ],
+   "null": 8
+  },
+  "scoring": {
+   "years": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "rows": {
+    "2023": [
+     {
+      "rank": 1,
+      "name": "Aubrey",
+      "fpts": 177.0,
+      "ppg": 10.4
+     },
+     {
+      "rank": 2,
+      "name": "Santos",
+      "fpts": 150.0,
+      "ppg": 8.8
+     },
+     {
+      "rank": 3,
+      "name": "Gay",
+      "fpts": 150.0,
+      "ppg": 8.8
+     },
+     {
+      "rank": 4,
+      "name": "Tucker",
+      "fpts": 149.0,
+      "ppg": 8.8
+     },
+     {
+      "rank": 5,
+      "name": "Elliot",
+      "fpts": 149.0,
+      "ppg": 8.8
+     },
+     {
+      "rank": 6,
+      "name": "Butker",
+      "fpts": 147.0,
+      "ppg": 8.6
+     },
+     {
+      "rank": 7,
+      "name": "Myers",
+      "fpts": 146.0,
+      "ppg": 8.6
+     },
+     {
+      "rank": 8,
+      "name": "Dicker",
+      "fpts": 142.0,
+      "ppg": 8.4
+     },
+     {
+      "rank": 9,
+      "name": "Grupe",
+      "fpts": 142.0,
+      "ppg": 8.4
+     },
+     {
+      "rank": 10,
+      "name": "Sanders",
+      "fpts": 140.0,
+      "ppg": 8.2
+     },
+     {
+      "rank": 11,
+      "name": "Hopkins",
+      "fpts": 139.0,
+      "ppg": 9.3
+     },
+     {
+      "rank": 12,
+      "name": "McManus",
+      "fpts": 135.0,
+      "ppg": 7.9
+     },
+     {
+      "rank": 13,
+      "name": "McLaughlin",
+      "fpts": 134.0,
+      "ppg": 7.9
+     },
+     {
+      "rank": 14,
+      "name": "McPherson",
+      "fpts": 132.0,
+      "ppg": 7.8
+     },
+     {
+      "rank": 15,
+      "name": "Zuerlein",
+      "fpts": 130.0,
+      "ppg": 8.1
+     },
+     {
+      "rank": 16,
+      "name": "Koo",
+      "fpts": 129.0,
+      "ppg": 7.6
+     }
+    ],
+    "2024": [
+     {
+      "rank": 1,
+      "name": "Boswell",
+      "fpts": 184.0,
+      "ppg": 10.8
+     },
+     {
+      "rank": 2,
+      "name": "Aubrey",
+      "fpts": 178.0,
+      "ppg": 10.5
+     },
+     {
+      "rank": 3,
+      "name": "Dicker",
+      "fpts": 168.0,
+      "ppg": 9.9
+     },
+     {
+      "rank": 4,
+      "name": "Fairbairn",
+      "fpts": 168.0,
+      "ppg": 9.9
+     },
+     {
+      "rank": 5,
+      "name": "Sanders",
+      "fpts": 161.0,
+      "ppg": 9.5
+     },
+     {
+      "rank": 6,
+      "name": "McLaughlin",
+      "fpts": 160.0,
+      "ppg": 9.4
+     },
+     {
+      "rank": 7,
+      "name": "Bates",
+      "fpts": 154.0,
+      "ppg": 9.1
+     },
+     {
+      "rank": 8,
+      "name": "Lutz",
+      "fpts": 149.0,
+      "ppg": 8.8
+     },
+     {
+      "rank": 9,
+      "name": "Bass",
+      "fpts": 139.0,
+      "ppg": 8.2
+     },
+     {
+      "rank": 10,
+      "name": "Carlson",
+      "fpts": 139.0,
+      "ppg": 8.2
+     },
+     {
+      "rank": 11,
+      "name": "Tucker",
+      "fpts": 138.0,
+      "ppg": 8.1
+     },
+     {
+      "rank": 12,
+      "name": "Myers",
+      "fpts": 133.0,
+      "ppg": 7.8
+     },
+     {
+      "rank": 13,
+      "name": "Elliot",
+      "fpts": 133.0,
+      "ppg": 7.8
+     },
+     {
+      "rank": 14,
+      "name": "Gay",
+      "fpts": 132.0,
+      "ppg": 8.3
+     },
+     {
+      "rank": 15,
+      "name": "Karty",
+      "fpts": 131.0,
+      "ppg": 7.7
+     },
+     {
+      "rank": 16,
+      "name": "Reichard",
+      "fpts": 126.0,
+      "ppg": 9.7
+     }
+    ],
+    "2025": [
+     {
+      "rank": 1,
+      "name": "Myers",
+      "fpts": 189.0,
+      "ppg": 11.1
+     },
+     {
+      "rank": 2,
+      "name": "Fairbairn",
+      "fpts": 178.0,
+      "ppg": 11.9
+     },
+     {
+      "rank": 3,
+      "name": "Aubrey",
+      "fpts": 177.0,
+      "ppg": 10.4
+     },
+     {
+      "rank": 4,
+      "name": "Dicker",
+      "fpts": 158.0,
+      "ppg": 9.3
+     },
+     {
+      "rank": 5,
+      "name": "Little",
+      "fpts": 156.0,
+      "ppg": 9.2
+     },
+     {
+      "rank": 6,
+      "name": "Reichard",
+      "fpts": 152.0,
+      "ppg": 8.9
+     },
+     {
+      "rank": 7,
+      "name": "McLaughlin",
+      "fpts": 150.0,
+      "ppg": 9.8
+     },
+     {
+      "rank": 8,
+      "name": "Bates",
+      "fpts": 143.0,
+      "ppg": 8.4
+     },
+     {
+      "rank": 9,
+      "name": "Borregales",
+      "fpts": 142.0,
+      "ppg": 8.4
+     },
+     {
+      "rank": 10,
+      "name": "Boswell",
+      "fpts": 141.0,
+      "ppg": 8.3
+     },
+     {
+      "rank": 11,
+      "name": "Butker",
+      "fpts": 140.0,
+      "ppg": 8.2
+     },
+     {
+      "rank": 12,
+      "name": "Loop",
+      "fpts": 136.0,
+      "ppg": 8.0
+     },
+     {
+      "rank": 13,
+      "name": "Lutz",
+      "fpts": 131.0,
+      "ppg": 7.7
+     },
+     {
+      "rank": 14,
+      "name": "Pineiro",
+      "fpts": 130.0,
+      "ppg": 9.3
+     },
+     {
+      "rank": 15,
+      "name": "Slye",
+      "fpts": 128.0,
+      "ppg": 8.0
+     },
+     {
+      "rank": 16,
+      "name": "McPherson",
+      "fpts": 126.0,
+      "ppg": 7.4
+     }
+    ]
+   },
+   "retention": [
+    {
+     "from": "2023",
+     "to": "2024",
+     "kept": 8,
+     "of": 16
+    },
+    {
+     "from": "2024",
+     "to": "2025",
+     "kept": 9,
+     "of": 16
+    }
+   ],
+   "persistent": [
+    {
+     "name": "Aubrey",
+     "seasons": [
+      {
+       "year": "2023",
+       "rank": 1,
+       "ppg": 10.4
+      },
+      {
+       "year": "2024",
+       "rank": 2,
+       "ppg": 10.5
+      },
+      {
+       "year": "2025",
+       "rank": 3,
+       "ppg": 10.4
+      }
+     ]
+    },
+    {
+     "name": "Dicker",
+     "seasons": [
+      {
+       "year": "2023",
+       "rank": 8,
+       "ppg": 8.4
+      },
+      {
+       "year": "2024",
+       "rank": 3,
+       "ppg": 9.9
+      },
+      {
+       "year": "2025",
+       "rank": 4,
+       "ppg": 9.3
+      }
+     ]
+    },
+    {
+     "name": "McLaughlin",
+     "seasons": [
+      {
+       "year": "2023",
+       "rank": 13,
+       "ppg": 7.9
+      },
+      {
+       "year": "2024",
+       "rank": 6,
+       "ppg": 9.4
+      },
+      {
+       "year": "2025",
+       "rank": 7,
+       "ppg": 9.8
+      }
+     ]
+    },
+    {
+     "name": "Myers",
+     "seasons": [
+      {
+       "year": "2023",
+       "rank": 7,
+       "ppg": 8.6
+      },
+      {
+       "year": "2024",
+       "rank": 12,
+       "ppg": 7.8
+      },
+      {
+       "year": "2025",
+       "rank": 1,
+       "ppg": 11.1
+      }
+     ]
+    }
+   ],
+   "spread": [
+    {
+     "year": "2023",
+     "k1": {
+      "rank": 1,
+      "name": "Aubrey",
+      "fpts": 177.0,
+      "ppg": 10.4
+     },
+     "k16": {
+      "rank": 16,
+      "name": "Koo",
+      "fpts": 129.0,
+      "ppg": 7.6
+     },
+     "points": 48.0,
+     "per_game": 2.82
+    },
+    {
+     "year": "2024",
+     "k1": {
+      "rank": 1,
+      "name": "Boswell",
+      "fpts": 184.0,
+      "ppg": 10.8
+     },
+     "k16": {
+      "rank": 16,
+      "name": "Reichard",
+      "fpts": 126.0,
+      "ppg": 9.7
+     },
+     "points": 58.0,
+     "per_game": 3.41
+    },
+    {
+     "year": "2025",
+     "k1": {
+      "rank": 1,
+      "name": "Myers",
+      "fpts": 189.0,
+      "ppg": 11.1
+     },
+     "k16": {
+      "rank": 16,
+      "name": "McPherson",
+      "fpts": 126.0,
+      "ppg": 7.4
+     },
+     "points": 63.0,
+     "per_game": 3.71
+    }
+   ]
+  },
+  "advantages": [
+   {
+    "label": "Home field dome",
+    "kind": "kicker",
+    "entries": [
+     "Smyth",
+     "Bates",
+     "Reichard",
+     "Carlson",
+     "Folk",
+     "Shrader",
+     "Ryland",
+     "Mevis",
+     "Dicker",
+     "Fairbairn",
+     "Aubrey"
+    ]
+   },
+   {
+    "label": "Lowest 4th-down go rate",
+    "kind": "team",
+    "entries": [
+     "Seahawks",
+     "Texans",
+     "Bengals",
+     "Broncos",
+     "Chargers",
+     "Eagles",
+     "49ers",
+     "Dolphins",
+     "Steelers",
+     "Vikings",
+     "Ravens",
+     "Packers"
+    ]
+   },
+   {
+    "label": "2024 red zone TD % (low)",
+    "kind": "team",
+    "entries": [
+     "Giants",
+     "Cowboys",
+     "Patriots",
+     "Steelers",
+     "Texans",
+     "Browns",
+     "Raiders",
+     "Rams",
+     "Titans",
+     "Colts",
+     "Jets",
+     "Chiefs"
+    ]
+   },
+   {
+    "label": "2025 red zone TD % (low)",
+    "kind": "team",
+    "entries": [
+     "Saints",
+     "Jets",
+     "Chargers",
+     "Texans",
+     "Giants",
+     "Ravens",
+     "Raiders",
+     "Browns",
+     "Buccaneers",
+     "Cardinals",
+     "Seahawks",
+     "Broncos"
+    ]
+   },
+   {
+    "label": "60+ yard range",
+    "kind": "kicker",
+    "entries": [
+     "Little",
+     "McLaughlin",
+     "Aubrey",
+     "McPherson",
+     "Reichard",
+     "Carlson",
+     "Boswell",
+     "Dicker",
+     "Borregales",
+     "Pineiro",
+     "Butker",
+     "Bates"
+    ]
+   },
+   {
+    "label": "Weather and altitude",
+    "kind": "mixed",
+    "groups": [
+     {
+      "label": "Warm Weather",
+      "entries": [
+       "Gonzalez",
+       "McLaughlin",
+       "Little",
+       "Pineiro"
+      ]
+     },
+     {
+      "label": "High Altitude",
+      "entries": [
+       "Broncos"
+      ]
+     }
+    ],
+    "entries": []
+   }
+  ],
+  "favorites": [
+   {
+    "name": "Fairbairn",
+    "reason": "Dome, Lowest 4th down go rate 2025, bottom 5 Red Zone TD % in 2024 and 2025, career 92% Field Goal Accuracy, 100% XP %, 28+ FGA in past 3 years, 100+ Points Scored in Past 3 Years (11 FPTS/G)"
+   },
+   {
+    "name": "Aubrey",
+    "reason": "Dome, 60+ Range, top 3 finish at kicker for past 3 years (10.43 FPTS/Game), top 3 team field goal attempts past 4 years"
+   },
+   {
+    "name": "Dicker",
+    "reason": "Dome, 60+ Range, bottom 3 2025 redzone TD % (offense will improve 2026), bottom 5 4th down rate, top 5 in team field goal attempts past 2 years"
+   }
+  ],
+  "value_picks": [
+   "Boswell",
+   "McLaughlin",
+   "Reichard",
+   "Pineiro",
+   "Smyth"
+  ],
+  "divisions_note": "NFC North: 2 Domes"
+ }
+}

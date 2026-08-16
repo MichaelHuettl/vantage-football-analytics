@@ -23,7 +23,7 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positions | Six pages. **RB is built** — one column: methodology, then 3 scatters + 4 tables with written analysis. The other five keep the two-column slot-and-pool layout |
+| Positions | Six pages. **RB and K are built** — one column: methodology, then the evidence. WR/TE/QB/DST keep the two-column slot-and-pool layout |
 | Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
@@ -83,6 +83,21 @@ build` with a line number instead of shipping a broken page.
      quartiles, with the sense flipped for the two rank columns so bold always
      means good; amber is the single best value in a column, eleven cells in
      the whole table.
+   - **Kicker is built from the (3) workbook's new "Defense and Kicker Stats"
+     sheet** via `scripts/curated/kicker_charts.py`: team FG attempts 2021-25
+     (top 16 and bottom 5), kicker scoring 2023-25, the five situational
+     advantage columns, and the operator's shortlist in his own words. Defense
+     is on the same sheet and **not built yet** — see item 7.
+   - **The kicker persistence analysis is computed and deliberately not
+     shown.** Neither of the workbook's ranked lists survives the year: a
+     top-16 drawn from 32 teams repeats 8/16 by chance, and team FG attempts
+     retained 7, 9, 9, 8 while kicker top-16 retained 8 and 9. Only Aubrey,
+     Dicker, McLaughlin and Myers made the kicker top 16 in all three years,
+     and Aubrey did it at 10.4, 10.5, 10.4 points per game. It was raised, and
+     the operator's decision was to leave it off and keep his own reasoning
+     verbatim. The numbers stay in `kicker-charts.json` under
+     `scoring.retention`, `fg_attempts.retention` and `scoring.persistent`, so
+     rendering them later is a component away rather than a rediscovery.
    - **The ranked tables shade red-to-green** at the operator's request, built
      from the four status tokens rather than pure red and green so the ramp
      also varies in lightness. The number is printed in every cell, so §7's
@@ -115,7 +130,15 @@ build` with a line number instead of shipping a broken page.
    2026-08-12 wording until it was updated by hand. The gap is not that the
    news is missing — it is that a fresher headline never nudges the injury
    record, so the two can disagree on screen.
-7. **Nitter is fragile.** The beat feed goes through it because X has no free
+7. **Defense is not built.** The (3) workbook's "Defense and Kicker Stats"
+   sheet carries far more than the kicker half that is live: 2025 defensive
+   scoring, seven ranked leader columns (sacks, interceptions, forced fumbles,
+   pressure rate, EPA/pass allowed, pass success rate, defensive EPA/play),
+   simulated-pressure and box-rate tables, a per-team offseason departures and
+   additions block for ten defenses, and three separate strength-of-schedule
+   rankings that disagree with each other. `kicker_charts.py` reads the same
+   sheet and is the place to extend.
+8. **Nitter is fragile.** The beat feed goes through it because X has no free
    read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
    an outage makes the section stale rather than empty. If it stops updating,
