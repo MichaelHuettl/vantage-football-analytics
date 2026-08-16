@@ -316,6 +316,91 @@ def main():
             "coverage_ranks": cov_rank,
         }
 
+    # ---- historical scoring, 2021-2024, with components ----
+    #
+    # This block does not come from the workbook — it was transcribed from
+    # screenshots of a scoring table and lives in scripts/curated/data. It is
+    # what makes the difference between asking "which measures describe a good
+    # season" and "which of them carry into the next one".
+    hist_path = Path(__file__).parent / "data" / "dst-history.json"
+    history, hist_analysis = None, None
+    if hist_path.exists():
+        history = json.loads(hist_path.read_text())
+        seasons = history["seasons"]
+        rows = [r for yr in seasons.values() for r in yr]
+
+        def corr(xs, ys):
+            n = len(xs)
+            mx, my = sum(xs) / n, sum(ys) / n
+            num = sum((a - mx) * (b - my) for a, b in zip(xs, ys))
+            dx = sum((a - mx) ** 2 for a in xs) ** 0.5
+            dy = sum((b - my) ** 2 for b in ys) ** 0.5
+            return round(num / (dx * dy), 3) if dx and dy else 0.0
+
+        # What produces points in the season it happens. Per game throughout, so
+        # the one 16-game season does not distort it.
+        ppg = [r["ppg"] for r in rows]
+        drivers = []
+        for key, label in [
+            ("int", "Interceptions"), ("def_td", "Defensive TDs"),
+            ("sck", "Sacks"), ("qb_hits", "QB hits"), ("fr", "Fumble recoveries"),
+            ("loss", "Tackles for loss"), ("ret_td", "Return TDs"),
+            ("sfty", "Safeties"), ("opp_pts", "Opponent points allowed"),
+        ]:
+            r = corr([x[key] / x["gp"] for x in rows], ppg)
+            drivers.append({"label": label, "r": r, "r2": round(r * r, 3)})
+        drivers.sort(key=lambda d: -abs(d["r"]))
+
+        # Whether any of it carries. Same club in consecutive top tens.
+        surname = lambda n: n.split()[-1]  # noqa: E731
+        by_year = {y: {surname(r["team"]): r for r in yr} for y, yr in seasons.items()}
+        by_year["2025"] = {f["team"]: {"ppg": f["ppg"]} for f in fantasy}
+        order = sorted(by_year)
+        repeats = []
+        for a, b in zip(order, order[1:]):
+            kept = sorted(set(by_year[a]) & set(by_year[b]))
+            repeats.append({"from": a, "to": b, "kept": len(kept), "teams": kept})
+
+        pairs = []
+        stat_years = sorted(seasons)
+        for a, b in zip(stat_years, stat_years[1:]):
+            for t in set(by_year[a]) & set(by_year[b]):
+                if "sck" in by_year[a][t] and "sck" in by_year[b][t]:
+                    pairs.append((by_year[a][t], by_year[b][t]))
+        persistence = []
+        if len(pairs) >= 4:
+            for key, label in [
+                ("int", "Interceptions"), ("sck", "Sacks"), ("qb_hits", "QB hits"),
+                ("fr", "Fumble recoveries"), ("loss", "Tackles for loss"),
+            ]:
+                persistence.append({
+                    "label": label,
+                    "r": corr([a[key] / a["gp"] for a, _ in pairs],
+                              [b[key] / b["gp"] for _, b in pairs]),
+                })
+            persistence.append({
+                "label": "Fantasy points per game",
+                "r": corr([a["ppg"] for a, _ in pairs], [b["ppg"] for _, b in pairs]),
+            })
+            persistence.sort(key=lambda d: -d["r"])
+
+        appearances = {}
+        for y in by_year:
+            for t in by_year[y]:
+                appearances[t] = appearances.get(t, 0) + 1
+
+        hist_analysis = {
+            "seasons": sorted(seasons),
+            "n": len(rows),
+            "drivers": drivers,
+            "repeats": repeats,
+            "repeat_mean": round(sum(r["kept"] for r in repeats) / len(repeats), 2),
+            "repeat_null": round(10 * 10 / LEAGUE, 1),
+            "persistence": persistence,
+            "persistence_n": len(pairs),
+            "appearances": dict(sorted(appearances.items(), key=lambda kv: -kv[1])),
+        }
+
     out = {
         "schema_version": 1,
         "updated": "2026-08-15",
@@ -341,6 +426,9 @@ def main():
             "verdict": verdict,
             "strong_schedules": strong,
             "schedules": schedules,
+            "history": history["seasons"] if history else None,
+            "history_note": history["note"] if history else None,
+            "history_analysis": hist_analysis,
             "analysis": {
                 "scorers": len(scorers),
                 "league": LEAGUE,
@@ -384,6 +472,14 @@ def main():
     if spotlight:
         print(f"  best play outside the top ten: {spotlight['team']} "
               f"({len(spotlight['appears'])}/{spotlight['of']} leaderboards)")
+    if hist_analysis:
+        h = hist_analysis
+        print(f"history      {h['n']} team-seasons, {h['seasons'][0]}-{h['seasons'][-1]}")
+        print("  drives ppg  " + ", ".join(
+            f"{d['label']} {d['r']:+.2f}" for d in h["drivers"][:4]))
+        print("  persists    " + ", ".join(
+            f"{d['label']} {d['r']:+.2f}" for d in h["persistence"]))
+        print(f"  top-10 repeat {h['repeat_mean']}/10 against a null of {h['repeat_null']}")
     print(f"wrote {dest.relative_to(ROOT)}")
 
 

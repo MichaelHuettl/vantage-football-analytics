@@ -141,6 +141,16 @@ build` with a line number instead of shipping a broken page.
      0 of 7) and the spotlight is whoever appears in most while missing the top
      ten (currently the Chargers, 6 of 7). If next year's sheet moves, the page
      moves with it.
+   - **Four years of defense scoring with components live in
+     `scripts/curated/data/dst-history.json`.** This is the only data in the
+     project that came from screenshots rather than the workbook, so it was
+     verified before use: every row range-checks and orders correctly, and
+     reconstructing season points from the components leaves a residual that
+     tracks opponent points per game at r = -0.88, which is exactly what a
+     points-allowed tier does. A misread digit would break that relationship.
+     It is **not yet rendered** — the pipeline computes drivers, persistence and
+     repeat rates from it into `history_analysis`, and what to publish is an
+     open question.
    - **`COVERAGE_DIRECTION` in `defense_charts.py` is load-bearing.** Three of
      the five coverage columns run worst-first and nothing in the sheet says so.
      Read the wrong way round, "Down Conversion Rate Allowed" flips from the
