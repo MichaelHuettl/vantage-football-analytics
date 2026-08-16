@@ -61,6 +61,31 @@ def num(v):
         return None
 
 
+# Surname to full name. The sheet keys on surnames; the site prints people's
+# names. Resolved against the live roster, with two decided by hand: the
+# workbook's "Carlson" is Daniel — he is on the dome and 60-plus lists and
+# finished K10 in 2024, none of which fits Anders — and "Elliot" is Jake
+# Elliott, spelled with one t in the sheet.
+FULL_NAME = {
+    "Aubrey": "Brandon Aubrey", "Bass": "Tyler Bass", "Bates": "Jake Bates",
+    "Borregales": "Andy Borregales", "Boswell": "Chris Boswell",
+    "Butker": "Harrison Butker", "Carlson": "Daniel Carlson",
+    "Dicker": "Cameron Dicker", "Elliot": "Jake Elliott",
+    "Fairbairn": "Ka'imi Fairbairn", "Folk": "Nick Folk", "Gay": "Matt Gay",
+    "Gonzalez": "Zane Gonzalez", "Grupe": "Blake Grupe",
+    "Hopkins": "Dustin Hopkins", "Karty": "Joshua Karty", "Koo": "Younghoe Koo",
+    "Little": "Cam Little", "Loop": "Tyler Loop", "Lutz": "Wil Lutz",
+    "McLaughlin": "Chase McLaughlin", "McManus": "Brandon McManus",
+    "McPherson": "Evan McPherson", "Mevis": "Harrison Mevis",
+    "Myers": "Jason Myers", "Pineiro": "Eddy Pineiro",
+    "Reichard": "Will Reichard", "Ryland": "Chad Ryland",
+    "Sanders": "Jason Sanders", "Santos": "Cairo Santos",
+    "Shrader": "Spencer Shrader", "Slye": "Joey Slye",
+    "Smyth": "Charlie Smyth", "Tucker": "Justin Tucker",
+    "Zuerlein": "Greg Zuerlein",
+}
+
+
 def main():
     wb = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_WB
     if not wb.exists():
@@ -96,6 +121,22 @@ def main():
         for t in sorted(set(top[a]) & set(bottom[b])):
             swings.append({"team": t, "from": a, "to": b, "direction": "down"})
 
+    # The sheet contains contradictions worth surfacing rather than silently
+    # rendering: a handful of teams are typed into both the top 16 and the
+    # bottom 5 of the same season. Recorded, not corrected — which of the two
+    # ranks is right is the operator's call.
+    contradictions = [
+        {
+            "year": y,
+            "team": t,
+            "top_rank": top[y].index(t) + 1,
+            "bottom_rank": 28 + bottom[y].index(t),
+        }
+        for y in years
+        for t in top[y]
+        if t in bottom[y]
+    ]
+
     # ---- kicker scoring, top 16, 2023-2025 ----
     kyears = ["2023", "2024", "2025"]
     kcol = {"2023": ("B", "C", "D"), "2024": ("E", "F", "G"), "2025": ("H", "I", "J")}
@@ -106,6 +147,7 @@ def main():
             {
                 "rank": i + 1,
                 "name": at(r, n),
+                "full": FULL_NAME.get(at(r, n), at(r, n)),
                 "fpts": num(g.get((r, f))),
                 "ppg": num(g.get((r, p))),
             }
@@ -171,8 +213,11 @@ def main():
                 out.append(v)
         return out
 
+    def named(entries, kind):
+        return [FULL_NAME.get(e, e) if kind != "team" else e for e in entries]
+
     advantages = [
-        {"label": label, "kind": kind, "entries": column(col)}
+        {"label": label, "kind": kind, "entries": named(column(col), kind)}
         for col, label, kind in ADV
     ]
     # Column C mixes two headed sub-lists rather than one column of names.
@@ -186,7 +231,7 @@ def main():
             current = {"label": v, "entries": []}
             weather.append(current)
         elif current:
-            current["entries"].append(v)
+            current["entries"].append(FULL_NAME.get(v, v))
     advantages.append(
         {
             "label": "Weather and altitude",
@@ -292,6 +337,7 @@ def main():
                 "appearances": appearances,
                 "retention": retention,
                 "swings": swings,
+                "contradictions": contradictions,
                 "null": 8,
             },
             "scoring": {
@@ -325,6 +371,10 @@ def main():
     )
     print(f"  every year  {', '.join(every_year)}")
     print(f"advantages   {len(advantages)} columns")
+    if contradictions:
+        print(f"WARNING      {len(contradictions)} team(s) listed in both top 16 and bottom 5:")
+        for c in contradictions:
+            print(f"             {c['year']} {c['team']}: rank {c['top_rank']} and rank {c['bottom_rank']}")
     print(f"favorites    {len(favorites)}   value picks {len(value_picks)}")
     for tier in ("top3", "value"):
         for k in board[tier]:

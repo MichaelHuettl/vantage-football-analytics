@@ -26,11 +26,17 @@ const docs = (positionsFile as Envelope<PositionDoc[]>).data;
 
 /**
  * Positions with their own worked-up analysis. These run as a single column —
- * methodology, then straight into the evidence. The rest keep the two-column
- * layout, where the ranked list beside an empty chart slot is the only real
- * content the page has.
+ * straight into the evidence. The rest keep the two-column layout, where the
+ * ranked list beside an empty chart slot is the only real content the page has.
  */
 const BUILT = new Set<Position>(["RB", "K"]);
+
+/**
+ * Positions still carrying the placeholder methodology paragraph and the
+ * strapline under the title. Both describe a chart that was never built, so a
+ * page whose analysis is real drops them rather than contradicting itself.
+ */
+const PLACEHOLDER_COPY = new Set<Position>(["QB", "WR", "TE", "DST", "RB"]);
 
 const FULL_NAME: Record<Position, string> = {
   QB: "Quarterback",
@@ -127,12 +133,14 @@ export default async function PositionPage({
           >
             {FULL_NAME[upper]}
           </h1>
-          <p
-            className="mt-4 max-w-xl text-lg"
-            style={{ color: "var(--color-ink-300)" }}
-          >
-            {doc.chart_title}
-          </p>
+          {PLACEHOLDER_COPY.has(upper) && (
+            <p
+              className="mt-4 max-w-xl text-lg"
+              style={{ color: "var(--color-ink-300)" }}
+            >
+              {doc.chart_title}
+            </p>
+          )}
         </Container>
       </header>
 
@@ -147,10 +155,12 @@ export default async function PositionPage({
         {BUILT.has(upper) ? (
           <>
             <DataFreshness updated={list.updated} />
-            <section className="mt-8 max-w-3xl">
-              <h2 className="eyebrow mb-3">Methodology</h2>
-              <p className="text-lg leading-relaxed">{doc.methodology}</p>
-            </section>
+            {PLACEHOLDER_COPY.has(upper) && (
+              <section className="mt-8 max-w-3xl">
+                <h2 className="eyebrow mb-3">Methodology</h2>
+                <p className="text-lg leading-relaxed">{doc.methodology}</p>
+              </section>
+            )}
             {upper === "RB" && <RunningBackAnalysis />}
             {upper === "K" && <KickerAnalysis />}
           </>

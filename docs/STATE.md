@@ -202,6 +202,13 @@ site was scaffolded into `vantage/` specifically so those stay outside it.
   (`fg_attempts.retention`, `.swings`, `.null`) so the work is not lost and the
   section can be built in an afternoon if he changes his mind. What *is*
   published is the top-half/bottom-half split, which is the finding he wanted.
+- **The workbook lists four teams in both the top 16 and the bottom 5 of the
+  same season** for field goal attempts: Chargers in 2021 (ranks 11 and 30), and
+  Bears (5 and 31), 49ers (14 and 32) and Bills (15 and 29) in 2023. A team
+  cannot be both. `kicker_charts.py` records them under
+  `fg_attempts.contradictions` and prints a warning on every run, but does not
+  correct them — which of the two ranks is right is not knowable from the sheet.
+  The page renders the columns as written.
 - **Chase McLaughlin is on the kicker board but not in `players.json`.** He has
   no player page and no headshot, so his card falls back to initials. Adding
   him means adding a 21st kicker to the K rankings, which is a ranking decision

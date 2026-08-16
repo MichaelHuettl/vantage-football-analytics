@@ -77,7 +77,7 @@ export function KickerAnalysis() {
               <tr key={s.year} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
                 <td className="px-3 py-2 font-semibold">{s.year}</td>
                 <td className="px-3 py-2">
-                  {s.k1.name} <Muted>{s.k1.fpts}</Muted>
+                  {s.k1.full} <Muted>{s.k1.fpts}</Muted>
                 </td>
                 <td className="px-3 py-2 text-right font-bold">{s.points}</td>
                 <td className="px-3 py-2 text-right">{s.per_game}</td>
@@ -177,6 +177,18 @@ export function KickerAnalysis() {
       </section>
 
       {/* ============ 3-5. the workbook's own reference tables ============ */}
+      {/* The page changes register here: everything above argues, everything
+          below is the record it argues from. A ruled break and a label say so,
+          because a reader who scrolls into a 16-row rank grid without warning
+          reads it as a continuation of the argument. */}
+      <div className="mt-20 border-t-4 pt-6" style={{ borderColor: "var(--text-primary)" }}>
+        <p className="eyebrow">The workbook</p>
+        <p className="mt-2 max-w-3xl text-lg" style={{ color: "var(--text-secondary)" }}>
+          Everything above is the argument. Everything below is the record it
+          comes from, kept as it is kept in the sheet.
+        </p>
+      </div>
+
       <FieldGoalAttempts />
       <KickerScoring />
       <KickerAdvantages />
@@ -352,14 +364,15 @@ function PickCard({
  */
 const CASE: Record<string, string> = {
   McLaughlin:
-    "The only other kicker to make the top 16 all three years, and the only one improving every season.",
+    "Improved in each of the last three years — 7.9, then 9.4, then 9.8 a game — which no other kicker in the sample did. The K7 finish is a games-played artifact: he scored at the fourth-best rate in football across 15 of them. Tampa Bay has made the top 16 in attempts in four of five years and finished bottom-five in red zone touchdown rate in 2025, and he has 60-plus range on a warm-weather field.",
   Pineiro:
-    "K14 on points, but the sixth-best rate in the league. The ranking is measuring his availability, not his kicking.",
+    "Scored 9.3 a game — tied with Dicker for the fifth-best rate in football — and finished K14 only because he played 14 games. San Francisco is on the lowest fourth-down go-rate list, which is the coaching profile that sends the unit out rather than going for it. A top-eight rate at a last-round price.",
   Boswell:
-    "Was the top kicker in football two years ago. Rank does not carry, but having been that good once is on the record.",
-  Lutz: "Denver thins the air, which is the one environmental edge with real physics behind it rather than a correlation.",
+    "Kicked a full 17 games in each of the last two seasons and was the highest-scoring kicker in football in 2024 at 10.8 a game. The drop to 8.3 in 2025 is the regression this position always produces; the availability is what does not move. Pittsburgh is on both the low fourth-down go-rate and the 2024 low red zone lists.",
+  Lutz:
+    "Two full seasons, 8.8 then 7.7 a game, K8 then K13 — a floor rather than a ceiling. What he has that nobody else does is Denver: thinner air carries the ball, so the 55-and-in range extends, and the Broncos sit on both the low fourth-down go-rate and the 2025 low red zone lists.",
   Smyth:
-    "A dome and a starting job. There is no production here yet — this is a situation bet and should be priced as one.",
+    "The situation is the strongest on this list even though the record is empty. A dome, a starting job, a Saints offense on the 2025 low red zone touchdown list, and a team that has made the top 16 in field goal attempts three years running. Drives that reach the 25 and stop are exactly what pays a kicker — he just has to convert them.",
 };
 
 const initials = (name: string) =>

@@ -2,7 +2,10 @@ import kickerFile from "@/data/kicker-charts.json";
 
 export interface ScoringRow {
   rank: number;
+  /** The surname the workbook keys on. */
   name: string;
+  /** What a reader should see. Resolved from the roster in the Python. */
+  full: string;
   fpts: number;
   ppg: number;
 }

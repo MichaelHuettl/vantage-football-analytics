@@ -162,7 +162,7 @@ export function KickerScoring() {
                         {k.rank}
                       </td>
                       <td className="px-2 py-1.5 font-semibold whitespace-nowrap">
-                        {k.name}
+                        {k.full}
                       </td>
                       <td className="px-2 py-1.5 text-right">{k.fpts}</td>
                       <td
