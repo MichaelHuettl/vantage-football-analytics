@@ -23,7 +23,7 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positions | Six pages. **RB and K are built** — one column: methodology, then the evidence. WR/TE/QB/DST keep the two-column slot-and-pool layout |
+| Positions | Six pages. **RB, K and DST are built** — one column: methodology, then the evidence. WR/TE/QB keep the two-column slot-and-pool layout |
 | Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
@@ -86,8 +86,7 @@ build` with a line number instead of shipping a broken page.
    - **Kicker is built from the (3) workbook's new "Defense and Kicker Stats"
      sheet** via `scripts/curated/kicker_charts.py`: team FG attempts 2021-25
      (top 16 and bottom 5), kicker scoring 2023-25, the five situational
-     advantage columns, and the operator's shortlist in his own words. Defense
-     is on the same sheet and **not built yet** — see item 7.
+     advantage columns, and the operator's shortlist in his own words.
    - **The kicker persistence analysis is computed and deliberately not
      shown.** Neither of the workbook's ranked lists survives the year: a
      top-16 drawn from 32 teams repeats 8/16 by chance, and team FG attempts
@@ -120,6 +119,18 @@ build` with a line number instead of shipping a broken page.
      mapping, taken from nflverse season rosters; it is historical and fixed, so
      it is embedded rather than fetched. A kicker with no club gets an FA marker
      rather than a stale chip.
+   - **Defense is built** from the same sheet via
+     `scripts/curated/defense_charts.py`. Nine blocks of different shapes:
+     the scored top ten, seven leaderboards ten deep, simulated pressure with
+     real frequency and efficiency values, three box-rate columns, five
+     coverage measures ranked all thirty-two, ten teams of offseason movement
+     with the role each player held, the improved/regressed verdict, four
+     favourable schedule stretches, and three strength-of-schedule lists from
+     different sources. Offseason blocks are **found rather than hard-coded** —
+     a club name alone in column B followed by a Departures header — so adding
+     an eleventh team to the sheet needs no code change. A leaderboard cell can
+     name two clubs where the sheet records a tie ("Saints/Chargers"); those
+     are split and both get a chip.
    - **The ranked tables shade red-to-green** at the operator's request, built
      from the four status tokens rather than pure red and green so the ramp
      also varies in lightness. The number is printed in every cell, so §7's

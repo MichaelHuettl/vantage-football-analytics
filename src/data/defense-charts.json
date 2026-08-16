@@ -1,0 +1,3125 @@
+{
+ "schema_version": 1,
+ "updated": "2026-08-15",
+ "source": "2026-2027 Fantasy Football Analytics workbook \u2014 'Defense and Kicker Stats', defense section. Advanced columns credited to sumersports.com in the sheet. Rebuilt by scripts/curated/defense_charts.py.",
+ "note": "2025 production and 2026 offseason movement. A leaderboard cell can name two clubs where the sheet records a tie; those are kept as written and split for display.",
+ "data": {
+  "fantasy": [
+   {
+    "rank": 1,
+    "team": "Seahawks",
+    "abbr": "SEA",
+    "fpts": 179.0,
+    "ppg": 10.5
+   },
+   {
+    "rank": 2,
+    "team": "Texans",
+    "abbr": "HOU",
+    "fpts": 164.0,
+    "ppg": 9.6
+   },
+   {
+    "rank": 3,
+    "team": "Jaguars",
+    "abbr": "JAX",
+    "fpts": 144.0,
+    "ppg": 8.5
+   },
+   {
+    "rank": 4,
+    "team": "Broncos",
+    "abbr": "DEN",
+    "fpts": 143.0,
+    "ppg": 8.4
+   },
+   {
+    "rank": 5,
+    "team": "Vikings",
+    "abbr": "MIN",
+    "fpts": 136.0,
+    "ppg": 8.0
+   },
+   {
+    "rank": 6,
+    "team": "Rams",
+    "abbr": "LAR",
+    "fpts": 136.0,
+    "ppg": 8.0
+   },
+   {
+    "rank": 7,
+    "team": "Eagles",
+    "abbr": "PHI",
+    "fpts": 135.0,
+    "ppg": 7.9
+   },
+   {
+    "rank": 8,
+    "team": "Browns",
+    "abbr": "CLE",
+    "fpts": 133.0,
+    "ppg": 7.8
+   },
+   {
+    "rank": 9,
+    "team": "Steelers",
+    "abbr": "PIT",
+    "fpts": 130.0,
+    "ppg": 7.6
+   },
+   {
+    "rank": 10,
+    "team": "Patriots",
+    "abbr": "NE",
+    "fpts": 127.0,
+    "ppg": 7.5
+   }
+  ],
+  "spread": {
+   "top": {
+    "rank": 1,
+    "team": "Seahawks",
+    "abbr": "SEA",
+    "fpts": 179.0,
+    "ppg": 10.5
+   },
+   "tenth": {
+    "rank": 10,
+    "team": "Patriots",
+    "abbr": "NE",
+    "fpts": 127.0,
+    "ppg": 7.5
+   },
+   "points": 52.0,
+   "per_game": 3.06
+  },
+  "leaders": [
+   {
+    "label": "Sacks",
+    "entries": [
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "Steelers",
+      "teams": [
+       {
+        "name": "Steelers",
+        "abbr": "PIT"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     },
+     {
+      "label": "Saints/Chargers",
+      "teams": [
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       },
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Interceptions",
+    "entries": [
+     {
+      "label": "Bears",
+      "teams": [
+       {
+        "name": "Bears",
+        "abbr": "CHI"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     },
+     {
+      "label": "Steelers",
+      "teams": [
+       {
+        "name": "Steelers",
+        "abbr": "PIT"
+       }
+      ]
+     },
+     {
+      "label": "Panthers",
+      "teams": [
+       {
+        "name": "Panthers",
+        "abbr": "CAR"
+       }
+      ]
+     },
+     {
+      "label": "Colts",
+      "teams": [
+       {
+        "name": "Colts",
+        "abbr": "IND"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Forced Fumbles",
+    "entries": [
+     {
+      "label": "Steelers",
+      "teams": [
+       {
+        "name": "Steelers",
+        "abbr": "PIT"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     },
+     {
+      "label": "Buccaneers",
+      "teams": [
+       {
+        "name": "Buccaneers",
+        "abbr": "TB"
+       }
+      ]
+     },
+     {
+      "label": "Bills",
+      "teams": [
+       {
+        "name": "Bills",
+        "abbr": "BUF"
+       }
+      ]
+     },
+     {
+      "label": "Eagles/Saints",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       },
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Pressure Rate",
+    "entries": [
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Saints",
+      "teams": [
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     },
+     {
+      "label": "Titans",
+      "teams": [
+       {
+        "name": "Titans",
+        "abbr": "TEN"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "EPA/Pass Allowed",
+    "entries": [
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Eagles",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       }
+      ]
+     },
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Bills",
+      "teams": [
+       {
+        "name": "Bills",
+        "abbr": "BUF"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Pass Success Rate Allowed",
+    "entries": [
+     {
+      "label": "Eagles",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       }
+      ]
+     },
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Bills",
+      "teams": [
+       {
+        "name": "Bills",
+        "abbr": "BUF"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Defensive EPA/Play",
+    "entries": [
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Eagles",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       }
+      ]
+     },
+     {
+      "label": "Saints",
+      "teams": [
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "leaders_source": "https://sumersports.com/teams/defensive/",
+  "pass_rush": {
+   "simulated": [
+    {
+     "team": "Buccaneers",
+     "abbr": "TB",
+     "frequency": 0.124,
+     "efficiency": 0.413
+    },
+    {
+     "team": "Ravens",
+     "abbr": "BAL",
+     "frequency": 0.124,
+     "efficiency": 0.448
+    },
+    {
+     "team": "Dolphins",
+     "abbr": "MIA",
+     "frequency": 0.124,
+     "efficiency": 0.324
+    },
+    {
+     "team": "Vikings",
+     "abbr": "MIN",
+     "frequency": 0.121,
+     "efficiency": 0.391
+    },
+    {
+     "team": "Jaguars",
+     "abbr": "JAX",
+     "frequency": 0.111,
+     "efficiency": 0.316
+    },
+    {
+     "team": "Rams",
+     "abbr": "LAR",
+     "frequency": 0.108,
+     "efficiency": 0.333
+    },
+    {
+     "team": "Bills",
+     "abbr": "BUF",
+     "frequency": 0.107,
+     "efficiency": 0.579
+    },
+    {
+     "team": "Steelers",
+     "abbr": "PIT",
+     "frequency": 0.098,
+     "efficiency": 0.405
+    },
+    {
+     "team": "Seahawks",
+     "abbr": "SEA",
+     "frequency": 0.093,
+     "efficiency": 0.515
+    },
+    {
+     "team": "Chiefs",
+     "abbr": "KC",
+     "frequency": 0.093,
+     "efficiency": 0.345
+    }
+   ],
+   "box": [
+    {
+     "label": "Heavy Box Rate",
+     "entries": [
+      {
+       "label": "Vikings",
+       "teams": [
+        {
+         "name": "Vikings",
+         "abbr": "MIN"
+        }
+       ]
+      },
+      {
+       "label": "Raiders",
+       "teams": [
+        {
+         "name": "Raiders",
+         "abbr": "LV"
+        }
+       ]
+      },
+      {
+       "label": "Browns",
+       "teams": [
+        {
+         "name": "Browns",
+         "abbr": "CLE"
+        }
+       ]
+      },
+      {
+       "label": "Jets",
+       "teams": [
+        {
+         "name": "Jets",
+         "abbr": "NYJ"
+        }
+       ]
+      },
+      {
+       "label": "Lions",
+       "teams": [
+        {
+         "name": "Lions",
+         "abbr": "DET"
+        }
+       ]
+      },
+      {
+       "label": "Buccaneers",
+       "teams": [
+        {
+         "name": "Buccaneers",
+         "abbr": "TB"
+        }
+       ]
+      },
+      {
+       "label": "Dolphins",
+       "teams": [
+        {
+         "name": "Dolphins",
+         "abbr": "MIA"
+        }
+       ]
+      },
+      {
+       "label": "Cardinals",
+       "teams": [
+        {
+         "name": "Cardinals",
+         "abbr": "ARI"
+        }
+       ]
+      },
+      {
+       "label": "Saints",
+       "teams": [
+        {
+         "name": "Saints",
+         "abbr": "NO"
+        }
+       ]
+      },
+      {
+       "label": "Falcons",
+       "teams": [
+        {
+         "name": "Falcons",
+         "abbr": "ATL"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Light Box Rate",
+     "entries": [
+      {
+       "label": "Eagles",
+       "teams": [
+        {
+         "name": "Eagles",
+         "abbr": "PHI"
+        }
+       ]
+      },
+      {
+       "label": "Rams",
+       "teams": [
+        {
+         "name": "Rams",
+         "abbr": "LAR"
+        }
+       ]
+      },
+      {
+       "label": "Chargers",
+       "teams": [
+        {
+         "name": "Chargers",
+         "abbr": "LAC"
+        }
+       ]
+      },
+      {
+       "label": "Seahawks",
+       "teams": [
+        {
+         "name": "Seahawks",
+         "abbr": "SEA"
+        }
+       ]
+      },
+      {
+       "label": "49ers",
+       "teams": [
+        {
+         "name": "49ers",
+         "abbr": "SF"
+        }
+       ]
+      },
+      {
+       "label": "Jaguars",
+       "teams": [
+        {
+         "name": "Jaguars",
+         "abbr": "JAX"
+        }
+       ]
+      },
+      {
+       "label": "Panthers",
+       "teams": [
+        {
+         "name": "Panthers",
+         "abbr": "CAR"
+        }
+       ]
+      },
+      {
+       "label": "Giants",
+       "teams": [
+        {
+         "name": "Giants",
+         "abbr": "NYG"
+        }
+       ]
+      },
+      {
+       "label": "Patriots",
+       "teams": [
+        {
+         "name": "Patriots",
+         "abbr": "NE"
+        }
+       ]
+      },
+      {
+       "label": "Texans",
+       "teams": [
+        {
+         "name": "Texans",
+         "abbr": "HOU"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Light Box Efficiency (4 rushers)",
+     "entries": [
+      {
+       "label": "Rams",
+       "teams": [
+        {
+         "name": "Rams",
+         "abbr": "LAR"
+        }
+       ]
+      },
+      {
+       "label": "Browns",
+       "teams": [
+        {
+         "name": "Browns",
+         "abbr": "CLE"
+        }
+       ]
+      },
+      {
+       "label": "Eagles",
+       "teams": [
+        {
+         "name": "Eagles",
+         "abbr": "PHI"
+        }
+       ]
+      },
+      {
+       "label": "Packers",
+       "teams": [
+        {
+         "name": "Packers",
+         "abbr": "GB"
+        }
+       ]
+      },
+      {
+       "label": "Chargers",
+       "teams": [
+        {
+         "name": "Chargers",
+         "abbr": "LAC"
+        }
+       ]
+      },
+      {
+       "label": "Bills",
+       "teams": [
+        {
+         "name": "Bills",
+         "abbr": "BUF"
+        }
+       ]
+      },
+      {
+       "label": "Texans",
+       "teams": [
+        {
+         "name": "Texans",
+         "abbr": "HOU"
+        }
+       ]
+      },
+      {
+       "label": "Saints",
+       "teams": [
+        {
+         "name": "Saints",
+         "abbr": "NO"
+        }
+       ]
+      },
+      {
+       "label": "Cowboys",
+       "teams": [
+        {
+         "name": "Cowboys",
+         "abbr": "DAL"
+        }
+       ]
+      },
+      {
+       "label": "Titans",
+       "teams": [
+        {
+         "name": "Titans",
+         "abbr": "TEN"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "coverage": [
+   {
+    "label": "Down Conversion Rate Allowed",
+    "entries": [
+     {
+      "label": "Commanders",
+      "teams": [
+       {
+        "name": "Commanders",
+        "abbr": "WAS"
+       }
+      ]
+     },
+     {
+      "label": "Cowboys",
+      "teams": [
+       {
+        "name": "Cowboys",
+        "abbr": "DAL"
+       }
+      ]
+     },
+     {
+      "label": "Cardinals",
+      "teams": [
+       {
+        "name": "Cardinals",
+        "abbr": "ARI"
+       }
+      ]
+     },
+     {
+      "label": "Bengals",
+      "teams": [
+       {
+        "name": "Bengals",
+        "abbr": "CIN"
+       }
+      ]
+     },
+     {
+      "label": "Jets",
+      "teams": [
+       {
+        "name": "Jets",
+        "abbr": "NYJ"
+       }
+      ]
+     },
+     {
+      "label": "Giants",
+      "teams": [
+       {
+        "name": "Giants",
+        "abbr": "NYG"
+       }
+      ]
+     },
+     {
+      "label": "Panthers",
+      "teams": [
+       {
+        "name": "Panthers",
+        "abbr": "CAR"
+       }
+      ]
+     },
+     {
+      "label": "49ers",
+      "teams": [
+       {
+        "name": "49ers",
+        "abbr": "SF"
+       }
+      ]
+     },
+     {
+      "label": "Colts",
+      "teams": [
+       {
+        "name": "Colts",
+        "abbr": "IND"
+       }
+      ]
+     },
+     {
+      "label": "Dolphins",
+      "teams": [
+       {
+        "name": "Dolphins",
+        "abbr": "MIA"
+       }
+      ]
+     },
+     {
+      "label": "Packers",
+      "teams": [
+       {
+        "name": "Packers",
+        "abbr": "GB"
+       }
+      ]
+     },
+     {
+      "label": "Bears",
+      "teams": [
+       {
+        "name": "Bears",
+        "abbr": "CHI"
+       }
+      ]
+     },
+     {
+      "label": "Titans",
+      "teams": [
+       {
+        "name": "Titans",
+        "abbr": "TEN"
+       }
+      ]
+     },
+     {
+      "label": "Steelers",
+      "teams": [
+       {
+        "name": "Steelers",
+        "abbr": "PIT"
+       }
+      ]
+     },
+     {
+      "label": "Raiders",
+      "teams": [
+       {
+        "name": "Raiders",
+        "abbr": "LV"
+       }
+      ]
+     },
+     {
+      "label": "Ravens",
+      "teams": [
+       {
+        "name": "Ravens",
+        "abbr": "BAL"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Buccaneers",
+      "teams": [
+       {
+        "name": "Buccaneers",
+        "abbr": "TB"
+       }
+      ]
+     },
+     {
+      "label": "Bills",
+      "teams": [
+       {
+        "name": "Bills",
+        "abbr": "BUF"
+       }
+      ]
+     },
+     {
+      "label": "Saints",
+      "teams": [
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       }
+      ]
+     },
+     {
+      "label": "Eagles",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     },
+     {
+      "label": "Patriots",
+      "teams": [
+       {
+        "name": "Patriots",
+        "abbr": "NE"
+       }
+      ]
+     },
+     {
+      "label": "Chiefs",
+      "teams": [
+       {
+        "name": "Chiefs",
+        "abbr": "KC"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Middle Closed Rate",
+    "entries": [
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Saints",
+      "teams": [
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Ravens",
+      "teams": [
+       {
+        "name": "Ravens",
+        "abbr": "BAL"
+       }
+      ]
+     },
+     {
+      "label": "Giants",
+      "teams": [
+       {
+        "name": "Giants",
+        "abbr": "NYG"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "49ers",
+      "teams": [
+       {
+        "name": "49ers",
+        "abbr": "SF"
+       }
+      ]
+     },
+     {
+      "label": "Steelers",
+      "teams": [
+       {
+        "name": "Steelers",
+        "abbr": "PIT"
+       }
+      ]
+     },
+     {
+      "label": "Bengals",
+      "teams": [
+       {
+        "name": "Bengals",
+        "abbr": "CIN"
+       }
+      ]
+     },
+     {
+      "label": "Raiders",
+      "teams": [
+       {
+        "name": "Raiders",
+        "abbr": "LV"
+       }
+      ]
+     },
+     {
+      "label": "Panthers",
+      "teams": [
+       {
+        "name": "Panthers",
+        "abbr": "CAR"
+       }
+      ]
+     },
+     {
+      "label": "Cowboys",
+      "teams": [
+       {
+        "name": "Cowboys",
+        "abbr": "DAL"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Eagles",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       }
+      ]
+     },
+     {
+      "label": "Patriots",
+      "teams": [
+       {
+        "name": "Patriots",
+        "abbr": "NE"
+       }
+      ]
+     },
+     {
+      "label": "Buccaneers",
+      "teams": [
+       {
+        "name": "Buccaneers",
+        "abbr": "TB"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     },
+     {
+      "label": "Bears",
+      "teams": [
+       {
+        "name": "Bears",
+        "abbr": "CHI"
+       }
+      ]
+     },
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Colts",
+      "teams": [
+       {
+        "name": "Colts",
+        "abbr": "IND"
+       }
+      ]
+     },
+     {
+      "label": "Jets",
+      "teams": [
+       {
+        "name": "Jets",
+        "abbr": "NYJ"
+       }
+      ]
+     },
+     {
+      "label": "Packers",
+      "teams": [
+       {
+        "name": "Packers",
+        "abbr": "GB"
+       }
+      ]
+     },
+     {
+      "label": "Titans",
+      "teams": [
+       {
+        "name": "Titans",
+        "abbr": "TEN"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Commanders",
+      "teams": [
+       {
+        "name": "Commanders",
+        "abbr": "WAS"
+       }
+      ]
+     },
+     {
+      "label": "Dolphins",
+      "teams": [
+       {
+        "name": "Dolphins",
+        "abbr": "MIA"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Bills",
+      "teams": [
+       {
+        "name": "Bills",
+        "abbr": "BUF"
+       }
+      ]
+     },
+     {
+      "label": "Chiefs",
+      "teams": [
+       {
+        "name": "Chiefs",
+        "abbr": "KC"
+       }
+      ]
+     },
+     {
+      "label": "Cardinals",
+      "teams": [
+       {
+        "name": "Cardinals",
+        "abbr": "ARI"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Middle Open Rate",
+    "entries": [
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Chiefs",
+      "teams": [
+       {
+        "name": "Chiefs",
+        "abbr": "KC"
+       }
+      ]
+     },
+     {
+      "label": "Bills",
+      "teams": [
+       {
+        "name": "Bills",
+        "abbr": "BUF"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Dolphins",
+      "teams": [
+       {
+        "name": "Dolphins",
+        "abbr": "MIA"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Cardinals",
+      "teams": [
+       {
+        "name": "Cardinals",
+        "abbr": "ARI"
+       }
+      ]
+     },
+     {
+      "label": "Commanders",
+      "teams": [
+       {
+        "name": "Commanders",
+        "abbr": "WAS"
+       }
+      ]
+     },
+     {
+      "label": "Packers",
+      "teams": [
+       {
+        "name": "Packers",
+        "abbr": "GB"
+       }
+      ]
+     },
+     {
+      "label": "Jets",
+      "teams": [
+       {
+        "name": "Jets",
+        "abbr": "NYJ"
+       }
+      ]
+     },
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Titans",
+      "teams": [
+       {
+        "name": "Titans",
+        "abbr": "TEN"
+       }
+      ]
+     },
+     {
+      "label": "Buccaneers",
+      "teams": [
+       {
+        "name": "Buccaneers",
+        "abbr": "TB"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     },
+     {
+      "label": "Bears",
+      "teams": [
+       {
+        "name": "Bears",
+        "abbr": "CHI"
+       }
+      ]
+     },
+     {
+      "label": "Colts",
+      "teams": [
+       {
+        "name": "Colts",
+        "abbr": "IND"
+       }
+      ]
+     },
+     {
+      "label": "Patriots",
+      "teams": [
+       {
+        "name": "Patriots",
+        "abbr": "NE"
+       }
+      ]
+     },
+     {
+      "label": "Eagles",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       }
+      ]
+     },
+     {
+      "label": "Cowboys",
+      "teams": [
+       {
+        "name": "Cowboys",
+        "abbr": "DAL"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Raiders",
+      "teams": [
+       {
+        "name": "Raiders",
+        "abbr": "LV"
+       }
+      ]
+     },
+     {
+      "label": "Panthers",
+      "teams": [
+       {
+        "name": "Panthers",
+        "abbr": "CAR"
+       }
+      ]
+     },
+     {
+      "label": "Steelers",
+      "teams": [
+       {
+        "name": "Steelers",
+        "abbr": "PIT"
+       }
+      ]
+     },
+     {
+      "label": "Bengals",
+      "teams": [
+       {
+        "name": "Bengals",
+        "abbr": "CIN"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "49ers",
+      "teams": [
+       {
+        "name": "49ers",
+        "abbr": "SF"
+       }
+      ]
+     },
+     {
+      "label": "Giants",
+      "teams": [
+       {
+        "name": "Giants",
+        "abbr": "NYG"
+       }
+      ]
+     },
+     {
+      "label": "Ravens",
+      "teams": [
+       {
+        "name": "Ravens",
+        "abbr": "BAL"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Saints",
+      "teams": [
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Pressure Rate",
+    "entries": [
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     },
+     {
+      "label": "Eagles",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Cowboys",
+      "teams": [
+       {
+        "name": "Cowboys",
+        "abbr": "DAL"
+       }
+      ]
+     },
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Packers",
+      "teams": [
+       {
+        "name": "Packers",
+        "abbr": "GB"
+       }
+      ]
+     },
+     {
+      "label": "Chiefs",
+      "teams": [
+       {
+        "name": "Chiefs",
+        "abbr": "KC"
+       }
+      ]
+     },
+     {
+      "label": "Buccaneers",
+      "teams": [
+       {
+        "name": "Buccaneers",
+        "abbr": "TB"
+       }
+      ]
+     },
+     {
+      "label": "Patriots",
+      "teams": [
+       {
+        "name": "Patriots",
+        "abbr": "NE"
+       }
+      ]
+     },
+     {
+      "label": "Steelers",
+      "teams": [
+       {
+        "name": "Steelers",
+        "abbr": "PIT"
+       }
+      ]
+     },
+     {
+      "label": "Bills",
+      "teams": [
+       {
+        "name": "Bills",
+        "abbr": "BUF"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "Titans",
+      "teams": [
+       {
+        "name": "Titans",
+        "abbr": "TEN"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Commanders",
+      "teams": [
+       {
+        "name": "Commanders",
+        "abbr": "WAS"
+       }
+      ]
+     },
+     {
+      "label": "Giants",
+      "teams": [
+       {
+        "name": "Giants",
+        "abbr": "NYG"
+       }
+      ]
+     },
+     {
+      "label": "Saints",
+      "teams": [
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       }
+      ]
+     },
+     {
+      "label": "Colts",
+      "teams": [
+       {
+        "name": "Colts",
+        "abbr": "IND"
+       }
+      ]
+     },
+     {
+      "label": "Bengals",
+      "teams": [
+       {
+        "name": "Bengals",
+        "abbr": "CIN"
+       }
+      ]
+     },
+     {
+      "label": "Raiders",
+      "teams": [
+       {
+        "name": "Raiders",
+        "abbr": "LV"
+       }
+      ]
+     },
+     {
+      "label": "Dolphins",
+      "teams": [
+       {
+        "name": "Dolphins",
+        "abbr": "MIA"
+       }
+      ]
+     },
+     {
+      "label": "Cardinals",
+      "teams": [
+       {
+        "name": "Cardinals",
+        "abbr": "ARI"
+       }
+      ]
+     },
+     {
+      "label": "Ravens",
+      "teams": [
+       {
+        "name": "Ravens",
+        "abbr": "BAL"
+       }
+      ]
+     },
+     {
+      "label": "Bears",
+      "teams": [
+       {
+        "name": "Bears",
+        "abbr": "CHI"
+       }
+      ]
+     },
+     {
+      "label": "49ers",
+      "teams": [
+       {
+        "name": "49ers",
+        "abbr": "SF"
+       }
+      ]
+     },
+     {
+      "label": "Panthers",
+      "teams": [
+       {
+        "name": "Panthers",
+        "abbr": "CAR"
+       }
+      ]
+     },
+     {
+      "label": "Jets",
+      "teams": [
+       {
+        "name": "Jets",
+        "abbr": "NYJ"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "Rush Stuff Rate",
+    "entries": [
+     {
+      "label": "Browns",
+      "teams": [
+       {
+        "name": "Browns",
+        "abbr": "CLE"
+       }
+      ]
+     },
+     {
+      "label": "Raiders",
+      "teams": [
+       {
+        "name": "Raiders",
+        "abbr": "LV"
+       }
+      ]
+     },
+     {
+      "label": "Jets",
+      "teams": [
+       {
+        "name": "Jets",
+        "abbr": "NYJ"
+       }
+      ]
+     },
+     {
+      "label": "Buccaneers",
+      "teams": [
+       {
+        "name": "Buccaneers",
+        "abbr": "TB"
+       }
+      ]
+     },
+     {
+      "label": "Cardinals",
+      "teams": [
+       {
+        "name": "Cardinals",
+        "abbr": "ARI"
+       }
+      ]
+     },
+     {
+      "label": "Titans",
+      "teams": [
+       {
+        "name": "Titans",
+        "abbr": "TEN"
+       }
+      ]
+     },
+     {
+      "label": "Chargers",
+      "teams": [
+       {
+        "name": "Chargers",
+        "abbr": "LAC"
+       }
+      ]
+     },
+     {
+      "label": "Giants",
+      "teams": [
+       {
+        "name": "Giants",
+        "abbr": "NYG"
+       }
+      ]
+     },
+     {
+      "label": "Colts",
+      "teams": [
+       {
+        "name": "Colts",
+        "abbr": "IND"
+       }
+      ]
+     },
+     {
+      "label": "Cowboys",
+      "teams": [
+       {
+        "name": "Cowboys",
+        "abbr": "DAL"
+       }
+      ]
+     },
+     {
+      "label": "Saints",
+      "teams": [
+       {
+        "name": "Saints",
+        "abbr": "NO"
+       }
+      ]
+     },
+     {
+      "label": "Vikings",
+      "teams": [
+       {
+        "name": "Vikings",
+        "abbr": "MIN"
+       }
+      ]
+     },
+     {
+      "label": "Dolphins",
+      "teams": [
+       {
+        "name": "Dolphins",
+        "abbr": "MIA"
+       }
+      ]
+     },
+     {
+      "label": "Seahawks",
+      "teams": [
+       {
+        "name": "Seahawks",
+        "abbr": "SEA"
+       }
+      ]
+     },
+     {
+      "label": "Ravens",
+      "teams": [
+       {
+        "name": "Ravens",
+        "abbr": "BAL"
+       }
+      ]
+     },
+     {
+      "label": "Chiefs",
+      "teams": [
+       {
+        "name": "Chiefs",
+        "abbr": "KC"
+       }
+      ]
+     },
+     {
+      "label": "Broncos",
+      "teams": [
+       {
+        "name": "Broncos",
+        "abbr": "DEN"
+       }
+      ]
+     },
+     {
+      "label": "Bills",
+      "teams": [
+       {
+        "name": "Bills",
+        "abbr": "BUF"
+       }
+      ]
+     },
+     {
+      "label": "Texans",
+      "teams": [
+       {
+        "name": "Texans",
+        "abbr": "HOU"
+       }
+      ]
+     },
+     {
+      "label": "Jaguars",
+      "teams": [
+       {
+        "name": "Jaguars",
+        "abbr": "JAX"
+       }
+      ]
+     },
+     {
+      "label": "Patriots",
+      "teams": [
+       {
+        "name": "Patriots",
+        "abbr": "NE"
+       }
+      ]
+     },
+     {
+      "label": "49ers",
+      "teams": [
+       {
+        "name": "49ers",
+        "abbr": "SF"
+       }
+      ]
+     },
+     {
+      "label": "Commanders",
+      "teams": [
+       {
+        "name": "Commanders",
+        "abbr": "WAS"
+       }
+      ]
+     },
+     {
+      "label": "Lions",
+      "teams": [
+       {
+        "name": "Lions",
+        "abbr": "DET"
+       }
+      ]
+     },
+     {
+      "label": "Steelers",
+      "teams": [
+       {
+        "name": "Steelers",
+        "abbr": "PIT"
+       }
+      ]
+     },
+     {
+      "label": "Panthers",
+      "teams": [
+       {
+        "name": "Panthers",
+        "abbr": "CAR"
+       }
+      ]
+     },
+     {
+      "label": "Packers",
+      "teams": [
+       {
+        "name": "Packers",
+        "abbr": "GB"
+       }
+      ]
+     },
+     {
+      "label": "Falcons",
+      "teams": [
+       {
+        "name": "Falcons",
+        "abbr": "ATL"
+       }
+      ]
+     },
+     {
+      "label": "Eagles",
+      "teams": [
+       {
+        "name": "Eagles",
+        "abbr": "PHI"
+       }
+      ]
+     },
+     {
+      "label": "Bears",
+      "teams": [
+       {
+        "name": "Bears",
+        "abbr": "CHI"
+       }
+      ]
+     },
+     {
+      "label": "Bengals",
+      "teams": [
+       {
+        "name": "Bengals",
+        "abbr": "CIN"
+       }
+      ]
+     },
+     {
+      "label": "Rams",
+      "teams": [
+       {
+        "name": "Rams",
+        "abbr": "LAR"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "offseason": [
+   {
+    "team": "Seahawks",
+    "abbr": "SEA",
+    "departures": [
+     "Coby Bryant (starting Safety)",
+     "Boye Mafe (rotational pass rusher)",
+     "Riq Woolen (CB3)"
+    ],
+    "additions": [
+     "Dante Fowler Jr (rotational DL)",
+     "Bud Clark (2nd Round Safety)",
+     "Noah Igbinoghene (CB Depth)",
+     "Julian Neal (3rd round CB)"
+    ]
+   },
+   {
+    "team": "Texans",
+    "abbr": "HOU",
+    "departures": [
+     "Derek Barnett (DL rotation)",
+     "Sheldon Rankins (DT Rotation)",
+     "Jimmie Ward (rotational safety)"
+    ],
+    "additions": [
+     "Reed Blankenship (starting Safety)",
+     "Jadeveon Clowney (rotational DL)",
+     "Kamari Ramsey (3rd round S/DB)",
+     "Kayden McDonald (2nd round rotational DL)",
+     "Sione Takitaki (LB Depth)"
+    ]
+   },
+   {
+    "team": "Jaguars",
+    "abbr": "JAX",
+    "departures": [
+     "Devin Lloyd (starting LB)",
+     "Andrew Wingard (starting Safety)",
+     "Greg Newsome II (Starting CB)"
+    ],
+    "additions": [
+     "Ruke Orhorhoro (rotational DT)",
+     "Dennis Gardeck (LB Depth)",
+     "Jahlani Tavai (LB Depth)",
+     "Albert Regis (3rd round DT)",
+     "Jalen Huskey (3rd round Safety)"
+    ]
+   },
+   {
+    "team": "Broncos",
+    "abbr": "DEN",
+    "departures": [
+     "John Franklin-Myers (rotational DL)",
+     "Dre Greenlaw (Starting LB)",
+     "Alex Singleton (Starting LB)"
+    ],
+    "additions": [
+     "Tyler Onyedim (3rd round DT)"
+    ]
+   },
+   {
+    "team": "Vikings",
+    "abbr": "MIN",
+    "departures": [
+     "Jonathan Allen (Starting DL)",
+     "Javon Hargrave (Starting DL)",
+     "Harrison Smith (Starting Safety)"
+    ],
+    "additions": [
+     "James Pierre (Veteran starting CB)",
+     "Jakobe Thomas (3rd round Safety)",
+     "Caleb Banks (1st round DL)",
+     "Jake Golday (2nd round LB)"
+    ]
+   },
+   {
+    "team": "Rams",
+    "abbr": "LAR",
+    "departures": [
+     "Jared Verse (Starting DL)",
+     "Ahkello Witherspoon (rotational CB)",
+     "Cobie Durant (Starting CB)"
+    ],
+    "additions": [
+     "Myles Garrett (Starting DL)",
+     "Trent McDuffie (Starting CB)",
+     "Jaylen Watson (Starting CB)"
+    ]
+   },
+   {
+    "team": "Eagles",
+    "abbr": "PHI",
+    "departures": [
+     "Jaelan Phillips (Starting DL)",
+     "Reed Blankenship (Starting Safety)",
+     "Nakobe Dean (Starting LB)",
+     "Azeez Ojulari (Rotational DL)",
+     "Adoree' Jackson (Rotational CB)"
+    ],
+    "additions": [
+     "Jonathan Greenard (Starting DL)",
+     "Riq Woolen (Starting CB)",
+     "Arnold Ebiketie (Rotational DL)",
+     "Jonathan Jones (Veteran CB)",
+     "Joe Tryon-Shoyinka (Rotational DL)"
+    ]
+   },
+   {
+    "team": "Browns",
+    "abbr": "CLE",
+    "departures": [
+     "Myles Garrett (Starting DL)",
+     "Devin Bush (Starting LB)",
+     "Jerome Baker (Rotational LB)",
+     "Shelby Harris (Rotational DL)"
+    ],
+    "additions": [
+     "Jared Verse (starting DL)",
+     "Quincy Williams (Starting LB)",
+     "Myles Bryant (Rotational CB)"
+    ]
+   },
+   {
+    "team": "Steelers",
+    "abbr": "PIT",
+    "departures": [
+     "Donte Jackson (Starting CB)",
+     "Damontae Kazee (Rotational Safety)"
+    ],
+    "additions": [
+     "Jamel Dean (Starting CB)",
+     "Asante Samuel Jr. (Starting CB)",
+     "Jaquan Brisker (Starting Safety)",
+     "Sebastian Joseph-Day (Starting DL)"
+    ]
+   },
+   {
+    "team": "Patriots",
+    "abbr": "NE",
+    "departures": [
+     "K'Lavon Chaisson (Starting DL)",
+     "Jaylinn Hawkins (Starting Safety)",
+     "Khyiris Tonga (Rotational DL)",
+     "Anfernee Jennings (Rotational LB)"
+    ],
+    "additions": [
+     "Dre'Mont Jones (Starting DL)",
+     "Kevin Byard III (Starting Safety)",
+     "Gabe Jacas (2nd Round DL)"
+    ]
+   }
+  ],
+  "verdict": {
+   "improved": [
+    {
+     "name": "Rams",
+     "abbr": "LAR"
+    },
+    {
+     "name": "Steelers",
+     "abbr": "PIT"
+    },
+    {
+     "name": "Patriots",
+     "abbr": "NE"
+    },
+    {
+     "name": "Texans",
+     "abbr": "HOU"
+    }
+   ],
+   "regressed": [
+    {
+     "name": "Seahawks",
+     "abbr": "SEA"
+    },
+    {
+     "name": "Broncos",
+     "abbr": "DEN"
+    },
+    {
+     "name": "Eagles",
+     "abbr": "PHI"
+    },
+    {
+     "name": "Jaguars",
+     "abbr": "JAX"
+    },
+    {
+     "name": "Browns",
+     "abbr": "CLE"
+    }
+   ]
+  },
+  "strong_schedules": [
+   {
+    "team": "Texans",
+    "abbr": "HOU",
+    "weeks": [
+     {
+      "week": 3,
+      "opponent": "Colts",
+      "abbr": "IND"
+     },
+     {
+      "week": 5,
+      "opponent": "Titans",
+      "abbr": "TEN"
+     },
+     {
+      "week": 7,
+      "opponent": "Giants",
+      "abbr": "NYG"
+     }
+    ]
+   },
+   {
+    "team": "Broncos",
+    "abbr": "DEN",
+    "weeks": [
+     {
+      "week": 7,
+      "opponent": "Cardinals",
+      "abbr": "ARI"
+     },
+     {
+      "week": 9,
+      "opponent": "Panthers",
+      "abbr": "CAR"
+     },
+     {
+      "week": 11,
+      "opponent": "Raiders",
+      "abbr": "LV"
+     },
+     {
+      "week": 12,
+      "opponent": "Steelers",
+      "abbr": "PIT"
+     },
+     {
+      "week": 13,
+      "opponent": "Dolphins",
+      "abbr": "MIA"
+     },
+     {
+      "week": 14,
+      "opponent": "Jets",
+      "abbr": "NYJ"
+     },
+     {
+      "week": 15,
+      "opponent": "Raiders",
+      "abbr": "LV"
+     }
+    ]
+   },
+   {
+    "team": "Seahawks",
+    "abbr": "SEA",
+    "weeks": [
+     {
+      "week": 2,
+      "opponent": "Cardinals",
+      "abbr": "ARI"
+     },
+     {
+      "week": 3,
+      "opponent": "Commanders",
+      "abbr": "WAS"
+     },
+     {
+      "week": 9,
+      "opponent": "Cardinals",
+      "abbr": "ARI"
+     },
+     {
+      "week": 10,
+      "opponent": "Raiders",
+      "abbr": "LV"
+     }
+    ]
+   },
+   {
+    "team": "Rams",
+    "abbr": "LAR",
+    "weeks": [
+     {
+      "week": 6,
+      "opponent": "Cardinals",
+      "abbr": "ARI"
+     },
+     {
+      "week": 7,
+      "opponent": "Raiders",
+      "abbr": "LV"
+     },
+     {
+      "week": 9,
+      "opponent": "Commanders",
+      "abbr": "WAS"
+     },
+     {
+      "week": 10,
+      "opponent": "Cardinals",
+      "abbr": "ARI"
+     }
+    ]
+   }
+  ],
+  "schedules": [
+   {
+    "source": "DEFENSE STRENGTH OF SCHEDULE",
+    "easiest": [
+     {
+      "name": "Jets",
+      "abbr": "NYJ"
+     },
+     {
+      "name": "Broncos",
+      "abbr": "DEN"
+     },
+     {
+      "name": "Bills",
+      "abbr": "BUF"
+     },
+     {
+      "name": "Chargers",
+      "abbr": "LAC"
+     },
+     {
+      "name": "Ravens",
+      "abbr": "BAL"
+     },
+     {
+      "name": "Dolphins",
+      "abbr": "MIA"
+     },
+     {
+      "name": "Chiefs",
+      "abbr": "KC"
+     },
+     {
+      "name": "Raiders",
+      "abbr": "LV"
+     },
+     {
+      "name": "Colts",
+      "abbr": "IND"
+     },
+     {
+      "name": "Steelers",
+      "abbr": "PIT"
+     }
+    ],
+    "hardest": [
+     {
+      "name": "Cowboys",
+      "abbr": "DAL"
+     },
+     {
+      "name": "Eagles",
+      "abbr": "PHI"
+     },
+     {
+      "name": "Vikings",
+      "abbr": "MIN"
+     },
+     {
+      "name": "Bears",
+      "abbr": "CHI"
+     },
+     {
+      "name": "Giants",
+      "abbr": "NYG"
+     },
+     {
+      "name": "Panthers",
+      "abbr": "CAR"
+     },
+     {
+      "name": "Texans",
+      "abbr": "HOU"
+     },
+     {
+      "name": "Cardinals",
+      "abbr": "ARI"
+     },
+     {
+      "name": "Commanders",
+      "abbr": "WAS"
+     },
+     {
+      "name": "Jaguars",
+      "abbr": "JAX"
+     }
+    ]
+   },
+   {
+    "source": "Yahoo Strength of Schedule",
+    "easiest": [
+     {
+      "name": "Broncos",
+      "abbr": "DEN"
+     },
+     {
+      "name": "Browns",
+      "abbr": "CLE"
+     },
+     {
+      "name": "Chiefs",
+      "abbr": "KC"
+     },
+     {
+      "name": "Steelers",
+      "abbr": "PIT"
+     },
+     {
+      "name": "Raiders",
+      "abbr": "LV"
+     }
+    ],
+    "hardest": [
+     {
+      "name": "Vikings",
+      "abbr": "MIN"
+     },
+     {
+      "name": "Giants",
+      "abbr": "NYG"
+     },
+     {
+      "name": "Eagles",
+      "abbr": "PHI"
+     },
+     {
+      "name": "Cowboys",
+      "abbr": "DAL"
+     },
+     {
+      "name": "Panthers",
+      "abbr": "CAR"
+     }
+    ]
+   },
+   {
+    "source": "Draft Sharks Strength of Schedule",
+    "easiest": [
+     {
+      "name": "Saints",
+      "abbr": "NO"
+     },
+     {
+      "name": "Ravens",
+      "abbr": "BAL"
+     },
+     {
+      "name": "Steelers",
+      "abbr": "PIT"
+     },
+     {
+      "name": "Jets",
+      "abbr": "NYJ"
+     },
+     {
+      "name": "Lions",
+      "abbr": "DET"
+     },
+     {
+      "name": "Colts",
+      "abbr": "IND"
+     },
+     {
+      "name": "Browns",
+      "abbr": "CLE"
+     },
+     {
+      "name": "Raiders",
+      "abbr": "LV"
+     },
+     {
+      "name": "Falcons",
+      "abbr": "ATL"
+     },
+     {
+      "name": "Broncos",
+      "abbr": "DEN"
+     }
+    ],
+    "hardest": [
+     {
+      "name": "Eagles",
+      "abbr": "PHI"
+     },
+     {
+      "name": "Cowboys",
+      "abbr": "DAL"
+     },
+     {
+      "name": "Vikings",
+      "abbr": "MIN"
+     },
+     {
+      "name": "Giants",
+      "abbr": "NYG"
+     },
+     {
+      "name": "Cardinals",
+      "abbr": "ARI"
+     },
+     {
+      "name": "Rams",
+      "abbr": "LAR"
+     },
+     {
+      "name": "Bears",
+      "abbr": "CHI"
+     },
+     {
+      "name": "Seahawks",
+      "abbr": "SEA"
+     },
+     {
+      "name": "Texans",
+      "abbr": "HOU"
+     },
+     {
+      "name": "Commanders",
+      "abbr": "WAS"
+     }
+    ]
+   }
+  ]
+ }
+}

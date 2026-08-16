@@ -6,6 +6,7 @@ import { ChartFigure } from "@/components/ChartFigure";
 import { DataFreshness } from "@/components/DataFreshness";
 import { Container } from "@/components/PageHeader";
 import { PlayerLink } from "@/components/PlayerLink";
+import { DefenseAnalysis } from "@/components/DefenseAnalysis";
 import { KickerAnalysis } from "@/components/KickerAnalysis";
 import { RunningBackAnalysis } from "@/components/RunningBackAnalysis";
 import { PLAYERS, getRankingList } from "@/lib/content";
@@ -29,14 +30,14 @@ const docs = (positionsFile as Envelope<PositionDoc[]>).data;
  * straight into the evidence. The rest keep the two-column layout, where the
  * ranked list beside an empty chart slot is the only real content the page has.
  */
-const BUILT = new Set<Position>(["RB", "K"]);
+const BUILT = new Set<Position>(["RB", "K", "DST"]);
 
 /**
  * Positions still carrying the placeholder methodology paragraph and the
  * strapline under the title. Both describe a chart that was never built, so a
  * page whose analysis is real drops them rather than contradicting itself.
  */
-const PLACEHOLDER_COPY = new Set<Position>(["QB", "WR", "TE", "DST", "RB"]);
+const PLACEHOLDER_COPY = new Set<Position>(["QB", "WR", "TE", "RB"]);
 
 const FULL_NAME: Record<Position, string> = {
   QB: "Quarterback",
@@ -163,6 +164,7 @@ export default async function PositionPage({
             )}
             {upper === "RB" && <RunningBackAnalysis />}
             {upper === "K" && <KickerAnalysis />}
+            {upper === "DST" && <DefenseAnalysis />}
           </>
         ) : (
           <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">
