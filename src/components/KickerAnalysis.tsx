@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TeamChip } from "@/components/TeamChip";
+import {
+  FieldGoalAttempts,
+  KickerAdvantages,
+  KickerScoring,
+} from "@/components/KickerData";
 import { KICKERS, KICKER_SOURCE } from "@/lib/kickers";
 import type { BoardPick } from "@/lib/kickers";
 
@@ -171,7 +176,12 @@ export function KickerAnalysis() {
         </div>
       </section>
 
-      {/* ==================== 3. the board ==================== */}
+      {/* ============ 3-5. the workbook's own reference tables ============ */}
+      <FieldGoalAttempts />
+      <KickerScoring />
+      <KickerAdvantages />
+
+      {/* ==================== 6-7. the board ==================== */}
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
@@ -180,8 +190,8 @@ export function KickerAnalysis() {
           Top three
         </h2>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          All three cleared the top eight last season, which is the only filter
-          that has predicted anything.
+          The operator&rsquo;s three, with his reasoning as written in the
+          workbook and the scoring record beside it.
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {board.top3.map((k, i) => (
@@ -309,8 +319,11 @@ function PickCard({
         )}
       </dl>
 
+      {/* His write-up where there is one — the favourites carry it verbatim.
+          The value picks have none in the sheet, so the one-line case stands
+          in for them. */}
       <p className="mt-3 text-sm" style={{ color: "var(--text-secondary)" }}>
-        {CASE[pick.surname]}
+        {pick.reason ?? CASE[pick.surname]}
       </p>
     </>
   );
@@ -334,16 +347,10 @@ function PickCard({
 }
 
 /**
- * The one-line case for each pick. Prose, so it lives with the component
- * rather than in the data file — the numbers above it are the data.
+ * The one-line case for the value picks. The three favourites do not appear
+ * here: their write-up is the operator's own and comes from the workbook.
  */
 const CASE: Record<string, string> = {
-  Aubrey:
-    "Three seasons inside a tenth of a point of each other. Nothing else at the position repeats like that.",
-  Dicker:
-    "Top eight all three years, never missed a game, and his floor rose after 2023 and stayed up.",
-  Fairbairn:
-    "The best per-game rate in the sample. He finished second on total points only because he played fifteen games.",
   McLaughlin:
     "The only other kicker to make the top 16 all three years, and the only one improving every season.",
   Pineiro:

@@ -33,6 +33,8 @@ export interface BoardPick {
   team: string;
   /** Null when the kicker is outside the ranked 20 — no page, no headshot. */
   player_id: string | null;
+  /** The operator's own write-up, verbatim from the workbook. Favourites only. */
+  reason: string | null;
   seasons: BoardSeason[];
   appearances: number;
   swing: number | null;

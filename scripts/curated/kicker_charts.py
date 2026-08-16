@@ -245,6 +245,11 @@ def main():
             )
         return out
 
+    # The operator's own write-up for each favourite, matched by the surname the
+    # sheet keys on. His words go on the page verbatim; the season line beside
+    # them is the workbook's own scoring rows.
+    reasons = {f["name"]: f["reason"] for f in favorites}
+
     board = {
         tier: [
             {
@@ -252,6 +257,7 @@ def main():
                 "name": full,
                 "team": team,
                 "player_id": pid,
+                "reason": reasons.get(s),
                 "seasons": line(s),
                 "appearances": len(line(s)),
                 "swing": (

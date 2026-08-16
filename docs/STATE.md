@@ -99,11 +99,18 @@ build` with a line number instead of shipping a broken page.
      `scoring.retention`, `fg_attempts.retention` and `scoring.persistent`, so
      rendering them later is a component away rather than a rediscovery.
    - **Kicker page** is driven by `scripts/curated/kicker_charts.py` from the
-     workbook's "Defense and Kicker Stats" sheet. The board's names are an
-     editorial call written in the Python; every number beside them is joined
-     from the scoring rows, so no figure on the page is retyped. Games played
-     are derived as points ÷ points-per-game, which is the only route to them
-     in that sheet and lands within a tenth of an integer on every row.
+     workbook's "Defense and Kicker Stats" sheet. Seven sections in a fixed
+     order: the value case, the top-half/bottom-half split, then the workbook's
+     three reference blocks in full — five years of team FG attempt ranks, three
+     years of kicker scoring, and all six situational advantage columns — then
+     the board. **The workbook blocks are the point of the page, not supporting
+     material.** A first pass rendered only the analysis and the board and left
+     all three tables in the JSON unrendered; from the operator's side that read
+     as his data having been deleted. `KickerData.tsx` holds them.
+     The top three carry his own write-up verbatim, joined from the sheet by
+     surname; the value picks have no write-up there, so a one-line case stands
+     in. Games played are derived as points ÷ points-per-game, the only route to
+     them in that sheet, landing within a tenth of an integer on every row.
    - **The ranked tables shade red-to-green** at the operator's request, built
      from the four status tokens rather than pure red and green so the ramp
      also varies in lightness. The number is printed in every cell, so §7's
