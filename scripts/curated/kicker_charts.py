@@ -28,6 +28,36 @@ DEFAULT_WB = (
 )
 SHEET = "sheet8"
 
+# Corrections the operator has made to the sheet's own columns.
+#
+# The workbook lists some teams in both the top 16 and the bottom 5 of the same
+# season, which cannot both be true. Where he has given the corrected column it
+# is recorded here rather than edited into the JSON, so it survives the next
+# re-extraction. `bottom` runs 28 to 32, matching the sheet's own row order —
+# he gave 2021 worst-first, so it is reversed here.
+#
+# Delete an entry once the workbook itself is fixed; the script says so when a
+# correction has become redundant.
+CORRECTIONS = {
+    "2021": {
+        "top": [
+            "Raiders", "Steelers", "Patriots", "Vikings", "Ravens", "Cardinals",
+            "Cowboys", "Colts", "Rams", "Bengals", "Packers", "Eagles",
+            "Giants", "Commanders", "Bills", "Chiefs",
+        ],
+        "bottom": ["Texans", "Jaguars", "Jets", "Seahawks", "Browns"],
+    },
+    "2023": {
+        "top": [
+            "Rams", "Seahawks", "Colts", "Jets", "Cowboys", "Bears", "Texans",
+            "Browns", "Falcons", "Ravens", "Jaguars", "Saints", "Chiefs",
+            "Broncos", "Chargers", "Cardinals",
+        ],
+        # Given with explicit ranks 28 to 32, so stored in that order as-is.
+        "bottom": ["Dolphins", "49ers", "Patriots", "Commanders", "Lions"],
+    },
+}
+
 
 def cells(path, sheet):
     z = zipfile.ZipFile(path)
@@ -98,6 +128,37 @@ def main():
     ycol = dict(zip(years, "BCDEF"))
     top = {y: [at(r, ycol[y]) for r in range(7, 23) if at(r, ycol[y])] for y in years}
     bottom = {y: [at(r, ycol[y]) for r in range(25, 30) if at(r, ycol[y])] for y in years}
+
+    # A correction that does not reconcile is worse than the contradiction it
+    # replaces, so it has to survive three checks before it is trusted: the
+    # right number of teams, no team in both halves, and no name the site
+    # cannot resolve to a real club.
+    nicknames = {
+        t["nickname"]
+        for t in json.loads((ROOT / "src/data/teams.json").read_text())["data"]
+    }
+    for y, fix in CORRECTIONS.items():
+        both = set(fix["top"]) & set(fix["bottom"])
+        unknown = [t for t in fix["top"] + fix["bottom"] if t not in nicknames]
+        if len(fix["top"]) != 16 or len(fix["bottom"]) != 5:
+            sys.exit(f"{y} correction: expected 16 and 5, got "
+                     f"{len(fix['top'])} and {len(fix['bottom'])}")
+        if both:
+            sys.exit(f"{y} correction still lists {', '.join(sorted(both))} in both halves")
+        if unknown:
+            sys.exit(f"{y} correction has unknown team(s): {', '.join(unknown)}")
+        if len(set(fix["top"] + fix["bottom"])) != 21:
+            sys.exit(f"{y} correction has duplicate teams")
+        if y not in top:
+            continue
+        if top[y] == fix["top"] and bottom[y] == fix["bottom"]:
+            print(f"NOTE         {y} correction now matches the workbook — remove it")
+            continue
+        print(f"CORRECTED    {y}: top16 {len(set(fix['top']) - set(top[y]))} in, "
+              f"{len(set(top[y]) - set(fix['top']))} out; "
+              f"bottom5 {len(set(fix['bottom']) - set(bottom[y]))} in, "
+              f"{len(set(bottom[y]) - set(fix['bottom']))} out")
+        top[y], bottom[y] = fix["top"], fix["bottom"]
 
     # How often a team makes the top 16, and how much a top-16 finish carries
     # into the next year. Eight of sixteen is what chance alone would repeat.

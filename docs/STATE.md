@@ -202,13 +202,17 @@ site was scaffolded into `vantage/` specifically so those stay outside it.
   (`fg_attempts.retention`, `.swings`, `.null`) so the work is not lost and the
   section can be built in an afternoon if he changes his mind. What *is*
   published is the top-half/bottom-half split, which is the finding he wanted.
-- **The workbook lists four teams in both the top 16 and the bottom 5 of the
-  same season** for field goal attempts: Chargers in 2021 (ranks 11 and 30), and
-  Bears (5 and 31), 49ers (14 and 32) and Bills (15 and 29) in 2023. A team
-  cannot be both. `kicker_charts.py` records them under
-  `fg_attempts.contradictions` and prints a warning on every run, but does not
-  correct them — which of the two ranks is right is not knowable from the sheet.
-  The page renders the columns as written.
+- **The 2021 and 2023 field goal attempt columns are corrected in the script,
+  not in the workbook.** The sheet listed four teams in both the top 16 and the
+  bottom 5 of the same season — Chargers in 2021, and Bears, 49ers and Bills in
+  2023 — which cannot both be true. The operator supplied replacement columns
+  for both years; they live in `CORRECTIONS` at the top of
+  `kicker_charts.py` so they survive a re-extraction, and the script validates
+  each one (16 and 5 entries, 21 distinct teams, no overlap, every name a real
+  club) and exits rather than storing a correction that does not reconcile.
+  All five years now reconcile and `fg_attempts.contradictions` is empty.
+  **When the workbook itself is fixed, delete the entry** — the script prints
+  "correction now matches the workbook" once it has become redundant.
 - **Chase McLaughlin is on the kicker board but not in `players.json`.** He has
   no player page and no headshot, so his card falls back to initials. Adding
   him means adding a 21st kicker to the K rankings, which is a ranking decision

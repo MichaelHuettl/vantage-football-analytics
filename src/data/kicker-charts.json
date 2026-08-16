@@ -14,22 +14,22 @@
    ],
    "top": {
     "2021": [
-     "Patriots",
      "Raiders",
-     "Rams",
-     "Cardinals",
-     "Ravens",
      "Steelers",
+     "Patriots",
      "Vikings",
-     "Bills",
-     "Eagles",
-     "Buccaneers",
-     "Chargers",
+     "Ravens",
+     "Cardinals",
+     "Cowboys",
+     "Colts",
+     "Rams",
      "Bengals",
-     "Jets",
      "Packers",
-     "Chiefs",
-     "Titans"
+     "Eagles",
+     "Giants",
+     "Commanders",
+     "Bills",
+     "Chiefs"
     ],
     "2022": [
      "Seahawks",
@@ -50,22 +50,22 @@
      "Colts"
     ],
     "2023": [
-     "Cowboys",
-     "Ravens",
+     "Rams",
      "Seahawks",
-     "Chiefs",
-     "Bears",
-     "Eagles",
      "Colts",
-     "Dolphins",
-     "Saints",
-     "Chargers",
-     "Commanders",
+     "Jets",
+     "Cowboys",
+     "Bears",
+     "Texans",
      "Browns",
      "Falcons",
-     "49ers",
-     "Bills",
-     "Jets"
+     "Ravens",
+     "Jaguars",
+     "Saints",
+     "Chiefs",
+     "Broncos",
+     "Chargers",
+     "Cardinals"
     ],
     "2024": [
      "Steelers",
@@ -106,9 +106,9 @@
    },
    "bottom": {
     "2021": [
-     "Jaguars",
      "Texans",
-     "Chargers",
+     "Jaguars",
+     "Jets",
      "Seahawks",
      "Browns"
     ],
@@ -120,11 +120,11 @@
      "Titans"
     ],
     "2023": [
-     "Broncos",
-     "Bills",
-     "Bengals",
-     "Bears",
-     "49ers"
+     "Dolphins",
+     "49ers",
+     "Patriots",
+     "Commanders",
+     "Lions"
     ],
     "2024": [
      "Giants",
@@ -142,50 +142,50 @@
     ]
    },
    "appearances": {
-    "Patriots": 2,
     "Raiders": 3,
-    "Rams": 2,
-    "Cardinals": 1,
-    "Ravens": 4,
     "Steelers": 2,
+    "Patriots": 2,
     "Vikings": 3,
-    "Bills": 4,
-    "Eagles": 3,
-    "Buccaneers": 4,
-    "Chargers": 4,
+    "Ravens": 4,
+    "Cardinals": 2,
+    "Cowboys": 5,
+    "Colts": 5,
+    "Rams": 3,
     "Bengals": 1,
-    "Jets": 3,
     "Packers": 2,
+    "Eagles": 2,
+    "Giants": 2,
+    "Commanders": 1,
+    "Bills": 3,
     "Chiefs": 3,
-    "Titans": 2,
     "Seahawks": 4,
-    "Cowboys": 4,
-    "49ers": 3,
+    "49ers": 2,
     "Falcons": 3,
     "Panthers": 1,
-    "Jaguars": 2,
-    "Giants": 1,
-    "Dolphins": 3,
-    "Colts": 4,
+    "Jaguars": 3,
+    "Dolphins": 2,
+    "Jets": 2,
+    "Buccaneers": 3,
     "Bears": 2,
-    "Saints": 3,
-    "Commanders": 1,
+    "Texans": 3,
     "Browns": 1,
-    "Texans": 2,
+    "Saints": 3,
+    "Broncos": 2,
+    "Chargers": 3,
     "Lions": 2,
-    "Broncos": 1
+    "Titans": 1
    },
    "retention": [
     {
      "from": "2021",
      "to": "2022",
-     "kept": 7,
+     "kept": 8,
      "of": 16
     },
     {
      "from": "2022",
      "to": "2023",
-     "kept": 9,
+     "kept": 7,
      "of": 16
     },
     {
@@ -204,6 +204,12 @@
    "swings": [
     {
      "team": "Jaguars",
+     "from": "2021",
+     "to": "2022",
+     "direction": "up"
+    },
+    {
+     "team": "Jets",
      "from": "2021",
      "to": "2022",
      "direction": "up"
@@ -233,19 +239,7 @@
      "direction": "down"
     },
     {
-     "team": "Titans",
-     "from": "2021",
-     "to": "2022",
-     "direction": "down"
-    },
-    {
      "team": "Bears",
-     "from": "2022",
-     "to": "2023",
-     "direction": "up"
-    },
-    {
-     "team": "Eagles",
      "from": "2022",
      "to": "2023",
      "direction": "up"
@@ -257,19 +251,25 @@
      "direction": "down"
     },
     {
-     "team": "Bills",
+     "team": "Dolphins",
      "from": "2022",
      "to": "2023",
      "direction": "down"
     },
     {
-     "team": "Bills",
+     "team": "Patriots",
+     "from": "2022",
+     "to": "2023",
+     "direction": "down"
+    },
+    {
+     "team": "Dolphins",
      "from": "2023",
      "to": "2024",
      "direction": "up"
     },
     {
-     "team": "Broncos",
+     "team": "Lions",
      "from": "2023",
      "to": "2024",
      "direction": "up"
@@ -317,32 +317,7 @@
      "direction": "down"
     }
    ],
-   "contradictions": [
-    {
-     "year": "2021",
-     "team": "Chargers",
-     "top_rank": 11,
-     "bottom_rank": 30
-    },
-    {
-     "year": "2023",
-     "team": "Bears",
-     "top_rank": 5,
-     "bottom_rank": 31
-    },
-    {
-     "year": "2023",
-     "team": "49ers",
-     "top_rank": 14,
-     "bottom_rank": 32
-    },
-    {
-     "year": "2023",
-     "team": "Bills",
-     "top_rank": 15,
-     "bottom_rank": 29
-    }
-   ],
+   "contradictions": [],
    "null": 8
   },
   "scoring": {
