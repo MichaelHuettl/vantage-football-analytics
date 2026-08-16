@@ -203,6 +203,70 @@ def main():
     ]
     value_picks = [at(r, "B") for r in range(77, 86) if at(r, "B")]
 
+    # ---- the published board ----
+    #
+    # Who is on it is an editorial call and is written here by hand. What each
+    # of them did is not: the season line is joined from the scoring rows above,
+    # so no number on the page is ever retyped. `surname` is the key the
+    # workbook uses; `full` is what a reader should see.
+    BOARD = {
+        "top3": [
+            ("Aubrey", "Brandon Aubrey", "DAL", "brandon-aubrey"),
+            ("Dicker", "Cameron Dicker", "LAC", "cameron-dicker"),
+            ("Fairbairn", "Ka'imi Fairbairn", "HOU", "kaimi-fairbairn"),
+        ],
+        "value": [
+            ("McLaughlin", "Chase McLaughlin", "TB", None),
+            ("Pineiro", "Eddy Pineiro", "SF", "eddy-pineiro"),
+            ("Boswell", "Chris Boswell", "PIT", "chris-boswell"),
+            ("Lutz", "Wil Lutz", "DEN", "wil-lutz"),
+            ("Smyth", "Charlie Smyth", "NO", "charlie-smyth"),
+        ],
+    }
+
+    def line(surname):
+        """Every top-16 season this kicker had, with games derived from the two
+        columns the sheet does carry. Points divided by points per game is the
+        only route to games played here, and it lands within a tenth of an
+        integer on every row, which is what makes it trustworthy."""
+        out = []
+        for y in kyears:
+            k = next((k for k in scoring[y] if k["name"] == surname), None)
+            if not k:
+                continue
+            out.append(
+                {
+                    "year": y,
+                    "rank": k["rank"],
+                    "fpts": k["fpts"],
+                    "ppg": k["ppg"],
+                    "games": round(k["fpts"] / k["ppg"], 1) if k["ppg"] else None,
+                }
+            )
+        return out
+
+    board = {
+        tier: [
+            {
+                "surname": s,
+                "name": full,
+                "team": team,
+                "player_id": pid,
+                "seasons": line(s),
+                "appearances": len(line(s)),
+                "swing": (
+                    round(
+                        max(x["ppg"] for x in line(s)) - min(x["ppg"] for x in line(s)), 1
+                    )
+                    if line(s)
+                    else None
+                ),
+            }
+            for s, full, team, pid in picks
+        ]
+        for tier, picks in BOARD.items()
+    }
+
     out = {
         "schema_version": 1,
         "updated": "2026-08-15",
@@ -234,6 +298,7 @@ def main():
             "advantages": advantages,
             "favorites": favorites,
             "value_picks": value_picks,
+            "board": board,
             "divisions_note": at(67, "B"),
         },
     }
@@ -255,6 +320,10 @@ def main():
     print(f"  every year  {', '.join(every_year)}")
     print(f"advantages   {len(advantages)} columns")
     print(f"favorites    {len(favorites)}   value picks {len(value_picks)}")
+    for tier in ("top3", "value"):
+        for k in board[tier]:
+            yrs = " ".join(f"{x['year']}:K{x['rank']}@{x['ppg']}({x['games']}g)" for x in k["seasons"])
+            print(f"  {tier:<6} {k['name']:<18} {k['team']:<4} {k['appearances']}/3  {yrs or 'no top-16 season'}")
     print(f"wrote {dest.relative_to(ROOT)}")
 
 

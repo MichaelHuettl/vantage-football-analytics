@@ -1,375 +1,407 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TeamChip } from "@/components/TeamChip";
-import { PLAYERS } from "@/lib/content";
 import { KICKERS, KICKER_SOURCE } from "@/lib/kickers";
-import { teamByName } from "@/lib/teams";
-import type { Advantage, ScoringRow } from "@/lib/kickers";
+import type { BoardPick } from "@/lib/kickers";
 
 /**
  * The kicker page.
  *
- * A transport of the workbook's kicker block: which offenses kick, who scored,
- * the situational edges, and the operator's own shortlist in his own words.
+ * Ordered as an argument rather than as a data dump: what the position is worth
+ * first, because a reader deciding whether to care should be able to stop after
+ * one section; then the one part of a kicker's record that carries forward;
+ * then the board that follows from it.
  *
- * One thing computed and deliberately left off the page: how little either
- * ranked list persists year to year. The numbers are in `kicker-charts.json`
- * and the decision is recorded in docs/STATE.md, so a later session can render
- * them in minutes rather than rediscovering them.
+ * Every number is read from `kicker-charts.json`, which the Python settles.
+ * Nothing here is computed (§11).
  */
 export function KickerAnalysis() {
-  const { fg_attempts, scoring, advantages, favorites, value_picks, divisions_note } =
-    KICKERS;
+  const { scoring, board } = KICKERS;
+  const latest = scoring.spread[scoring.spread.length - 1];
 
   return (
-    <section className="mt-16">
+    <section className="mt-14">
+      {/* ==================== 1. why the position matters ==================== */}
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
         <h2
           className="text-3xl uppercase tracking-wide"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          The evidence
+          Why a kicker is worth thinking about
         </h2>
-        <span className="eyebrow">2021&ndash;2025</span>
+        <span className="eyebrow">2023&ndash;2025 scoring</span>
       </div>
-      <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-        A kicker scores when his offense stalls in range. So the useful question
-        is not who kicks well &mdash; nearly all of them do &mdash; but whose
-        offense will hand him the attempts.
-      </p>
 
-      {/* ==================== 1. Team FG attempts ==================== */}
-      <Block n={1} title="Which offenses kick">
-        <p className="max-w-3xl">
-          Field goal attempts by team, ranked to sixteen, five seasons deep. A
-          kicker inherits this column and almost nothing else &mdash; his own
-          accuracy moves his scoring far less than the number of times he is
-          sent out.
+      <div className="mt-5 flex flex-col gap-4 max-w-3xl leading-relaxed">
+        <p>
+          The gap between the best kicker and the last startable one was{" "}
+          <Stat>{latest.points}</Stat> points last season &mdash;{" "}
+          <Stat>{latest.per_game}</Stat> a week. That is not nothing, and it has
+          widened three years running:{" "}
+          {scoring.spread.map((s) => s.points).join(", ")} points.
         </p>
-        <RankGrid
-          years={fg_attempts.years}
-          rows={fg_attempts.top}
-          heading="Top 16"
-          startRank={1}
-        />
-        <RankGrid
-          years={fg_attempts.years}
-          rows={fg_attempts.bottom}
-          heading="Bottom 5"
-          startRank={28}
-          muted
-        />
-      </Block>
-
-      {/* ======================= 2. Scoring ========================== */}
-      <Block n={2} title="Who actually scored">
-        <p className="max-w-3xl">
-          The top sixteen kickers of each of the last three seasons, with total
-          points and points per game. Per game is the column to read: a kicker
-          who missed three weeks can sit low on total points and still have been
-          the better start every week he played.
+        <p>
+          The honest version is narrower. Getting from a top-twelve kicker to the
+          best one is worth about three points a week; getting from a top-six
+          kicker to the best one is worth between{" "}
+          <Stat>1.4</Stat> and <Stat>2.2</Stat>. So the decision that pays is
+          not picking the right kicker out of the good ones &mdash; it is not
+          ending up with a bad one.
         </p>
-        <div className="mt-6 grid gap-6 lg:grid-cols-3">
-          {scoring.years.map((y) => (
-            <ScoringTable key={y} year={y} rows={scoring.rows[y]} />
-          ))}
-        </div>
-      </Block>
+      </div>
 
-      {/* ====================== 3. Advantages ======================== */}
-      <Block n={3} title="Where the edges are">
-        <p className="max-w-3xl">
-          The situational lists: who kicks indoors, whose offense settles for
-          three, and who has the leg to be sent out from distance. A kicker
-          appearing on several of these is not a coincidence &mdash; it is the
-          same offense showing up in different columns.
-        </p>
-        <div className="mt-6 grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-          {advantages.map((a) => (
-            <AdvantageList key={a.label} advantage={a} />
-          ))}
-        </div>
-        {divisions_note && (
-          <p className="mt-6 text-sm" style={{ color: "var(--text-muted)" }}>
-            {divisions_note}
-          </p>
-        )}
-      </Block>
-
-      {/* ======================= 4. Favorites ======================== */}
-      <Block n={4} title="The shortlist">
-        <p className="max-w-3xl">
-          Three kickers, and the case for each in the operator&rsquo;s own
-          words.
-        </p>
-        <ul className="mt-6 flex max-w-3xl flex-col gap-4">
-          {favorites.map((f) => (
-            <li
-              key={f.name}
-              className="flex items-start gap-4 rounded-lg border p-4"
-              style={{ borderColor: "var(--border-subtle)" }}
-            >
-              <Headshot name={f.name} size={56} />
-              <div className="min-w-0">
-                <p className="font-semibold">{resolve(f.name)?.name ?? f.name}</p>
-                <p className="mt-1 text-sm" style={{ color: "var(--text-secondary)" }}>
-                  {f.reason}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </Block>
-
-      {/* ===================== 5. Value picks ======================== */}
-      <Block n={5} title="Value picks">
-        <p className="max-w-3xl">
-          Later kickers worth the last pick rather than an early one. These are
-          bets on situation rather than on record &mdash; a dome, a stalling
-          offense, a leg &mdash; and two of them have yet to finish a season
-          inside the top sixteen. That is the bet, stated plainly rather than
-          dressed up as a projection.
-        </p>
-        <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-4">
-          {value_picks.map((name) => (
-            <li key={name} className="w-[76px] text-center">
-              <Headshot name={name} size={56} centered />
-              <span className="mt-1.5 block text-xs font-semibold leading-tight">
-                {resolve(name)?.name ?? name}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </Block>
-
-      <p className="mt-12 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
-        {KICKER_SOURCE}
-      </p>
-    </section>
-  );
-}
-
-/** Kickers are written by surname in the sheet. Scoped to the position, which
- *  is what keeps a surname from matching someone at another one. */
-function resolve(surname: string) {
-  const s = surname.trim().toLowerCase().replace(/[^a-z]/g, "");
-  return PLAYERS.filter((p) => p.position === "K").find(
-    (p) =>
-      p.name
-        .split(" ")
-        .slice(1)
-        .join("")
-        .toLowerCase()
-        .replace(/[^a-z]/g, "") === s,
-  );
-}
-
-function Headshot({
-  name,
-  size,
-  centered = false,
-}: {
-  name: string;
-  size: number;
-  centered?: boolean;
-}) {
-  const player = resolve(name);
-  return (
-    <span
-      className={`relative block shrink-0 overflow-hidden rounded-full ${centered ? "mx-auto" : ""}`}
-      style={{ width: size, height: size, background: "var(--surface-sunken)" }}
-    >
-      {player ? (
-        <Image
-          src={`/img/headshots/${player.id}.png`}
-          alt=""
-          fill
-          sizes={`${size}px`}
-          style={{ objectFit: "cover", objectPosition: "top center" }}
-        />
-      ) : (
-        <span
-          className="absolute inset-0 flex items-center justify-center text-xs font-bold"
-          style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-        >
-          {name.slice(0, 2).toUpperCase()}
-        </span>
-      )}
-    </span>
-  );
-}
-
-/** A rank-by-year grid of teams, the shape the workbook keeps it in. */
-function RankGrid({
-  years,
-  rows,
-  heading,
-  startRank,
-  muted = false,
-}: {
-  years: string[];
-  rows: Record<string, string[]>;
-  heading: string;
-  startRank: number;
-  muted?: boolean;
-}) {
-  const depth = Math.max(...years.map((y) => rows[y]?.length ?? 0));
-  return (
-    <div className="mt-6">
-      <p className="eyebrow mb-2">{heading}</p>
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm" style={{ minWidth: 620 }}>
+      <div className="mt-6 overflow-x-auto">
+        <table className="w-full text-sm tnum" style={{ minWidth: 560 }}>
+          <caption
+            className="mt-3 text-left text-sm"
+            style={{ captionSide: "bottom", color: "var(--text-secondary)" }}
+          >
+            Season point gaps from the top kicker down, and the weekly
+            equivalent over a 17-game season.
+          </caption>
           <thead>
             <tr style={{ background: "var(--surface-sunken)" }}>
-              <th
-                scope="col"
-                className="w-10 px-2 py-2 text-left text-xs font-bold uppercase tracking-wider"
-                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-              >
-                #
-              </th>
-              {years.map((y) => (
-                <th
-                  key={y}
-                  scope="col"
-                  className="px-2 py-2 text-left text-xs font-bold uppercase tracking-wider tnum"
-                  style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-                >
-                  {y}
-                </th>
-              ))}
+              <Th className="text-left">Season</Th>
+              <Th className="text-left">K1</Th>
+              <Th>K1 &minus; K16</Th>
+              <Th>Per week</Th>
             </tr>
           </thead>
           <tbody>
-            {Array.from({ length: depth }, (_, i) => (
-              <tr key={i} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
-                <td
-                  className="px-2 py-1.5 tnum"
-                  style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-                >
-                  {startRank + i}
+            {scoring.spread.map((s) => (
+              <tr key={s.year} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
+                <td className="px-3 py-2 font-semibold">{s.year}</td>
+                <td className="px-3 py-2">
+                  {s.k1.name} <Muted>{s.k1.fpts}</Muted>
                 </td>
-                {years.map((y) => {
-                  const team = rows[y]?.[i];
-                  const t = team ? teamByName(team) : undefined;
-                  return (
-                    <td key={y} className="px-2 py-1.5">
-                      {team ? (
-                        <span className="flex items-center gap-2">
-                          {t && <TeamChip abbr={t.abbr} size="sm" />}
-                          <span style={muted ? { color: "var(--text-muted)" } : undefined}>
-                            {team}
-                          </span>
-                        </span>
-                      ) : (
-                        <span style={{ color: "var(--text-muted)" }}>&mdash;</span>
-                      )}
-                    </td>
-                  );
-                })}
+                <td className="px-3 py-2 text-right font-bold">{s.points}</td>
+                <td className="px-3 py-2 text-right">{s.per_game}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-    </div>
-  );
-}
 
-function ScoringTable({ year, rows }: { year: string; rows: ScoringRow[] }) {
-  return (
-    <div>
-      <p className="eyebrow mb-2">{year}</p>
-      <table className="w-full text-sm">
-        <thead>
-          <tr style={{ background: "var(--surface-sunken)" }}>
-            <Th className="w-8">#</Th>
-            <Th>Kicker</Th>
-            <Th className="text-right">Pts</Th>
-            <Th className="text-right">/G</Th>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((r) => {
-            const player = resolve(r.name);
-            return (
-              <tr key={r.rank} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
-                <td
-                  className="px-2 py-1.5 tnum"
-                  style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-                >
-                  {r.rank}
-                </td>
-                <td className="px-2 py-1.5 font-semibold">
-                  {player ? (
-                    <Link href={`/players/${player.id}`} className="hover:underline">
-                      {r.name}
-                    </Link>
-                  ) : (
-                    r.name
-                  )}
-                </td>
-                <td className="px-2 py-1.5 text-right tnum">{r.fpts}</td>
-                <td className="px-2 py-1.5 text-right font-semibold tnum">{r.ppg}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
-}
+      {/* ==================== 2. the one thing that carries ==================== */}
+      <section className="mt-16">
+        <h2
+          className="text-3xl uppercase tracking-wide"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          The top half sticks. The bottom half is noise.
+        </h2>
 
-function AdvantageList({ advantage }: { advantage: Advantage }) {
-  const entry = (name: string) => {
-    if (advantage.kind === "team") {
-      const t = teamByName(name);
-      return (
-        <span className="flex items-center gap-2">
-          {t && <TeamChip abbr={t.abbr} size="sm" />}
-          {name}
-        </span>
-      );
-    }
-    const player = resolve(name);
-    return player ? (
-      <Link href={`/players/${player.id}`} className="hover:underline">
-        {player.name}
-      </Link>
-    ) : (
-      <span>{name}</span>
-    );
-  };
-
-  return (
-    <div>
-      <h4 className="eyebrow mb-2">{advantage.label}</h4>
-      {advantage.groups ? (
-        <div className="flex flex-col gap-3">
-          {advantage.groups.map((gr) => (
-            <div key={gr.label}>
-              <p
-                className="text-xs font-bold uppercase tracking-wider"
-                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-              >
-                {gr.label}
-              </p>
-              <ul className="mt-1 flex flex-col gap-1 text-sm">
-                {gr.entries.map((e) => (
-                  <li key={e}>{entry(e)}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="mt-5 flex flex-col gap-4 max-w-3xl leading-relaxed">
+          <p>
+            Take the kicker top 16 as a whole and it looks random: 8 and 9 of 16
+            came back the following year, and a list of sixteen drawn from a pool
+            of thirty-two repeats eight by luck alone. Most analysis of the
+            position stops at that number and concludes kickers are unknowable.
+          </p>
+          <p>
+            Split the list at its midpoint and it stops being random. The top
+            eight came back <Stat>81%</Stat> of the time. The bottom eight came
+            back <Stat>25%</Stat> of the time. Against a 50% baseline those miss
+            in opposite directions, and neither is a coin flip.
+          </p>
         </div>
-      ) : (
-        <ul className="flex flex-col gap-1 text-sm">
-          {advantage.entries.map((e) => (
-            <li key={e}>{entry(e)}</li>
+
+        <div className="mt-7 flex flex-wrap gap-x-12 gap-y-6">
+          <Figure value="81%" label={<>K1&ndash;K8 came back<br />13 of 16</>} focus />
+          <Figure value="25%" label={<>K9&ndash;K16 came back<br />4 of 16</>} />
+          <Figure value="50%" label={<>what chance<br />would give</>} />
+        </div>
+
+        <div className="mt-7 overflow-x-auto">
+          <table className="w-full text-sm tnum" style={{ minWidth: 520 }}>
+            <caption
+              className="mt-3 text-left text-sm"
+              style={{ captionSide: "bottom", color: "var(--text-secondary)" }}
+            >
+              Kickers returning to the top 16 the following season, split by
+              where they finished. Chance is 8 of 16 for both halves.
+            </caption>
+            <thead>
+              <tr style={{ background: "var(--surface-sunken)" }}>
+                <Th className="text-left">Transition</Th>
+                <Th>K1&ndash;K8 returned</Th>
+                <Th>K9&ndash;K16 returned</Th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
+                <td className="px-3 py-2 font-semibold">2023 &rarr; 2024</td>
+                <td className="px-3 py-2 text-right font-bold">6 / 8</td>
+                <td className="px-3 py-2 text-right">2 / 8</td>
+              </tr>
+              <tr className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
+                <td className="px-3 py-2 font-semibold">2024 &rarr; 2025</td>
+                <td className="px-3 py-2 text-right font-bold">7 / 8</td>
+                <td className="px-3 py-2 text-right">2 / 8</td>
+              </tr>
+              <tr className="border-t-2" style={{ borderColor: "var(--text-primary)" }}>
+                <td className="px-3 py-2 font-semibold">Pooled</td>
+                <td
+                  className="px-3 py-2 text-right font-bold"
+                  style={{ color: "var(--color-vantage-amber)" }}
+                >
+                  13 / 16 &nbsp;&middot;&nbsp; 81%
+                </td>
+                <td className="px-3 py-2 text-right font-bold">4 / 16 &nbsp;&middot;&nbsp; 25%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-6 flex flex-col gap-4 max-w-3xl leading-relaxed">
+          <p>
+            One caveat, stated because it is real: some of that gap is
+            mechanical. A kicker at K16 only has to slip one place to fall out of
+            the set, while a kicker at K1 can lose fifteen and stay in it. That
+            buffer flatters the top half on its own, and this data cannot
+            separate buffer from skill.
+          </p>
+          <p>
+            It does not change what to do about it. Whichever is driving it, last
+            year&rsquo;s top eight is a much better pool to draft from than last
+            year&rsquo;s ninth through sixteenth &mdash; and within that eight,
+            the exact order carries nothing. Rank correlates from one year to the
+            next at roughly zero.
+          </p>
+        </div>
+      </section>
+
+      {/* ==================== 3. the board ==================== */}
+      <section className="mt-16">
+        <h2
+          className="text-3xl uppercase tracking-wide"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          Top three
+        </h2>
+        <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+          All three cleared the top eight last season, which is the only filter
+          that has predicted anything.
+        </p>
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {board.top3.map((k, i) => (
+            <PickCard key={k.surname} pick={k} rank={i + 1} focus />
           ))}
         </ul>
+
+        <h2
+          className="mt-14 text-3xl uppercase tracking-wide"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          Value picks
+        </h2>
+        <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+          Cheaper bets, and worth being clear about what they are: only a quarter
+          of kickers outside the top eight come back the following year. Each of
+          these has a specific reason attached &mdash; a rate the ranking hid, a
+          ceiling already on record, or a stadium.
+        </p>
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {board.value.map((k) => (
+            <PickCard key={k.surname} pick={k} />
+          ))}
+        </ul>
+      </section>
+
+      <p className="mt-14 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+        {KICKER_SOURCE} Games played are derived from points divided by points
+        per game, which is the only route to them in this sheet.
+      </p>
+    </section>
+  );
+}
+
+/**
+ * One kicker, his record, and why he is on the board.
+ *
+ * The season line is the argument, so it is printed rather than summarised:
+ * a reader who disagrees with the pick can see exactly what it rests on.
+ */
+function PickCard({
+  pick,
+  rank,
+  focus = false,
+}: {
+  pick: BoardPick;
+  rank?: number;
+  focus?: boolean;
+}) {
+  const body = (
+    <>
+      <div className="flex items-center gap-3">
+        <span
+          className="relative block h-12 w-12 shrink-0 overflow-hidden rounded-full"
+          style={{ background: "var(--surface-sunken)" }}
+        >
+          {pick.player_id ? (
+            <Image
+              src={`/img/headshots/${pick.player_id}.png`}
+              alt=""
+              fill
+              sizes="48px"
+              style={{ objectFit: "cover", objectPosition: "top center" }}
+            />
+          ) : (
+            <span
+              className="absolute inset-0 flex items-center justify-center text-sm font-bold"
+              style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+            >
+              {initials(pick.name)}
+            </span>
+          )}
+        </span>
+        <span className="min-w-0">
+          <span className="flex items-center gap-2">
+            {rank && (
+              <span
+                className="text-sm tnum"
+                style={{
+                  fontFamily: "var(--font-condensed)",
+                  color: focus ? "var(--color-vantage-amber)" : "var(--text-muted)",
+                }}
+              >
+                {String(rank).padStart(2, "0")}
+              </span>
+            )}
+            <span className="font-semibold">{pick.name}</span>
+          </span>
+          <span className="mt-1 flex items-center gap-2">
+            <TeamChip abbr={pick.team} size="sm" />
+            <span className="text-xs" style={{ color: "var(--text-muted)" }}>
+              top 16 in {pick.appearances} of 3
+            </span>
+          </span>
+        </span>
+      </div>
+
+      <dl className="mt-4 flex flex-col gap-1 text-sm">
+        {pick.seasons.length ? (
+          pick.seasons.map((s) => (
+            <div key={s.year} className="flex items-baseline gap-2">
+              <dt
+                className="w-10 shrink-0 text-xs tnum"
+                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+              >
+                {s.year}
+              </dt>
+              <dd className="tnum" style={{ color: "var(--text-secondary)" }}>
+                <span className="font-semibold" style={{ color: "var(--text-primary)" }}>
+                  K{s.rank}
+                </span>{" "}
+                &middot; {s.ppg} per game
+                {s.games !== null && s.games < 16.4 && (
+                  <span style={{ color: "var(--text-muted)" }}> &middot; {s.games} games</span>
+                )}
+              </dd>
+            </div>
+          ))
+        ) : (
+          <div className="text-sm" style={{ color: "var(--text-muted)" }}>
+            {/* The fact only. The case line below does the arguing, and saying
+                "no record" twice on one card reads as padding. */}
+            No top-16 season, 2023 to 2025.
+          </div>
+        )}
+      </dl>
+
+      <p className="mt-3 text-sm" style={{ color: "var(--text-secondary)" }}>
+        {CASE[pick.surname]}
+      </p>
+    </>
+  );
+
+  return (
+    <li
+      className="rounded-lg border p-5"
+      style={{
+        borderColor: focus ? "var(--color-vantage-amber)" : "var(--border-subtle)",
+      }}
+    >
+      {pick.player_id ? (
+        <Link href={`/players/${pick.player_id}`} className="block">
+          {body}
+        </Link>
+      ) : (
+        body
       )}
+    </li>
+  );
+}
+
+/**
+ * The one-line case for each pick. Prose, so it lives with the component
+ * rather than in the data file — the numbers above it are the data.
+ */
+const CASE: Record<string, string> = {
+  Aubrey:
+    "Three seasons inside a tenth of a point of each other. Nothing else at the position repeats like that.",
+  Dicker:
+    "Top eight all three years, never missed a game, and his floor rose after 2023 and stayed up.",
+  Fairbairn:
+    "The best per-game rate in the sample. He finished second on total points only because he played fifteen games.",
+  McLaughlin:
+    "The only other kicker to make the top 16 all three years, and the only one improving every season.",
+  Pineiro:
+    "K14 on points, but the sixth-best rate in the league. The ranking is measuring his availability, not his kicking.",
+  Boswell:
+    "Was the top kicker in football two years ago. Rank does not carry, but having been that good once is on the record.",
+  Lutz: "Denver thins the air, which is the one environmental edge with real physics behind it rather than a correlation.",
+  Smyth:
+    "A dome and a starting job. There is no production here yet — this is a situation bet and should be priced as one.",
+};
+
+const initials = (name: string) =>
+  name
+    .split(" ")
+    .map((p) => p[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+
+function Figure({
+  value,
+  label,
+  focus = false,
+}: {
+  value: string;
+  label: React.ReactNode;
+  focus?: boolean;
+}) {
+  return (
+    <div>
+      <div
+        className="text-4xl tnum"
+        style={{
+          fontFamily: "var(--font-display)",
+          color: focus ? "var(--color-vantage-amber)" : "var(--text-primary)",
+        }}
+      >
+        {value}
+      </div>
+      <div
+        className="mt-1 text-xs uppercase tracking-wider"
+        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      >
+        {label}
+      </div>
     </div>
+  );
+}
+
+function Stat({ children }: { children: React.ReactNode }) {
+  return <span className="font-semibold tnum">{children}</span>;
+}
+
+function Muted({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="tnum" style={{ color: "var(--text-muted)" }}>
+      {children}
+    </span>
   );
 }
 
@@ -383,42 +415,10 @@ function Th({
   return (
     <th
       scope="col"
-      className={`px-2 py-2 text-left text-xs font-bold uppercase tracking-wider ${className}`}
+      className={`px-3 py-2 text-right text-xs font-bold uppercase tracking-wider ${className}`}
       style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>
-  );
-}
-
-function Block({
-  n,
-  title,
-  children,
-}: {
-  n: number;
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <section className="mt-14">
-      <h3 className="flex items-baseline gap-3">
-        <span
-          className="text-sm tnum"
-          style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-        >
-          {String(n).padStart(2, "0")}
-        </span>
-        <span
-          className="text-2xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
-          {title}
-        </span>
-      </h3>
-      {/* Prose is capped for reading; the tables under it are not, so the
-          width lives on the paragraphs rather than on this wrapper. */}
-      <div className="mt-4 flex flex-col gap-4 leading-relaxed">{children}</div>
-    </section>
   );
 }

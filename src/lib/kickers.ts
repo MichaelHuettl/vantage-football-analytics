@@ -19,6 +19,25 @@ export interface Favorite {
   reason: string;
 }
 
+export interface BoardSeason {
+  year: string;
+  rank: number;
+  fpts: number;
+  ppg: number;
+  games: number | null;
+}
+
+export interface BoardPick {
+  surname: string;
+  name: string;
+  team: string;
+  /** Null when the kicker is outside the ranked 20 — no page, no headshot. */
+  player_id: string | null;
+  seasons: BoardSeason[];
+  appearances: number;
+  swing: number | null;
+}
+
 interface KickerFile {
   schema_version: number;
   updated: string;
@@ -54,6 +73,7 @@ interface KickerFile {
     advantages: Advantage[];
     favorites: Favorite[];
     value_picks: string[];
+    board: { top3: BoardPick[]; value: BoardPick[] };
     divisions_note: string;
   };
 }

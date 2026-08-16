@@ -98,6 +98,12 @@ build` with a line number instead of shipping a broken page.
      verbatim. The numbers stay in `kicker-charts.json` under
      `scoring.retention`, `fg_attempts.retention` and `scoring.persistent`, so
      rendering them later is a component away rather than a rediscovery.
+   - **Kicker page** is driven by `scripts/curated/kicker_charts.py` from the
+     workbook's "Defense and Kicker Stats" sheet. The board's names are an
+     editorial call written in the Python; every number beside them is joined
+     from the scoring rows, so no figure on the page is retyped. Games played
+     are derived as points ÷ points-per-game, which is the only route to them
+     in that sheet and lands within a tenth of an integer on every row.
    - **The ranked tables shade red-to-green** at the operator's request, built
      from the four status tokens rather than pure red and green so the ramp
      also varies in lightness. The number is printed in every cell, so §7's
@@ -177,6 +183,22 @@ build` with a line number instead of shipping a broken page.
 **Keep player photos and competitor logos out of the repo.** The working
 directory holds ESPN/Yahoo/Sleeper/Underdog marks and 46 player thumbnails; the
 site was scaffolded into `vantage/` specifically so those stay outside it.
+
+## Decisions worth not relitigating
+
+- **The kicker persistence analysis is published only in part, on purpose.**
+  Testing the workbook's kicker lists against a chance baseline found that team
+  field goal volume has no year-over-year signal (mean 8.25 of 16 retained
+  against a null of 8), and that the low-red-zone-TD and low-4th-down lists do
+  not predict field goal attempts. The operator read those findings and chose
+  to keep them off the site. They remain computed in `kicker-charts.json`
+  (`fg_attempts.retention`, `.swings`, `.null`) so the work is not lost and the
+  section can be built in an afternoon if he changes his mind. What *is*
+  published is the top-half/bottom-half split, which is the finding he wanted.
+- **Chase McLaughlin is on the kicker board but not in `players.json`.** He has
+  no player page and no headshot, so his card falls back to initials. Adding
+  him means adding a 21st kicker to the K rankings, which is a ranking decision
+  rather than a data fix.
 
 ## Gotchas
 
