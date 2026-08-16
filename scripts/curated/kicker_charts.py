@@ -116,6 +116,59 @@ FULL_NAME = {
 }
 
 
+# Where each listed kicker plays in 2026, so a kicker column can carry the same
+# team chip a team column does. Resolved against the live roster. A kicker
+# without a job gets no chip rather than a stale one.
+KICKER_TEAM = {
+    "Andy Borregales": "NE", "Brandon Aubrey": "DAL", "Cam Little": "JAX",
+    "Cameron Dicker": "LAC", "Chad Ryland": "ARI", "Charlie Smyth": "NO",
+    "Chase McLaughlin": "TB", "Chris Boswell": "PIT", "Daniel Carlson": None,
+    "Eddy Pineiro": "SF", "Evan McPherson": "CIN", "Harrison Butker": "KC",
+    "Harrison Mevis": "LAR", "Jake Bates": "DET", "Ka'imi Fairbairn": "HOU",
+    "Nick Folk": "ATL", "Spencer Shrader": "IND", "Will Reichard": "MIN",
+    "Zane Gonzalez": "MIA",
+}
+
+
+# The team each kicker played for in the season shown, so a chip on a 2023
+# row names the club he actually kicked for. Current teams would be wrong for
+# eight of these: Jason Sanders was in Miami, Matt Gay in Indianapolis, Blake
+# Grupe in New Orleans, and Carlson, Koo, Zuerlein, Hopkins and McManus have all
+# since moved or left. Verified against nflverse season rosters; historical and
+# therefore fixed.
+SEASON_TEAM = {
+    "Andy Borregales": {"2025": "NE"},
+    "Blake Grupe": {"2023": "NO"},
+    "Brandon Aubrey": {"2023": "DAL", "2024": "DAL", "2025": "DAL"},
+    "Brandon McManus": {"2023": "JAX"},
+    "Cairo Santos": {"2023": "CHI"},
+    "Cam Little": {"2025": "JAX"},
+    "Cameron Dicker": {"2023": "LAC", "2024": "LAC", "2025": "LAC"},
+    "Chase McLaughlin": {"2023": "TB", "2024": "TB", "2025": "TB"},
+    "Chris Boswell": {"2024": "PIT", "2025": "PIT"},
+    "Daniel Carlson": {"2024": "LV"},
+    "Dustin Hopkins": {"2023": "CLE"},
+    "Eddy Pineiro": {"2025": "SF"},
+    "Evan McPherson": {"2023": "CIN", "2025": "CIN"},
+    "Greg Zuerlein": {"2023": "NYJ"},
+    "Harrison Butker": {"2023": "KC", "2025": "KC"},
+    "Jake Bates": {"2024": "DET", "2025": "DET"},
+    "Jake Elliott": {"2023": "PHI", "2024": "PHI"},
+    "Jason Myers": {"2023": "SEA", "2024": "SEA", "2025": "SEA"},
+    "Jason Sanders": {"2023": "MIA", "2024": "MIA"},
+    "Joey Slye": {"2025": "TEN"},
+    "Joshua Karty": {"2024": "LAR"},
+    "Justin Tucker": {"2023": "BAL", "2024": "BAL"},
+    "Ka'imi Fairbairn": {"2024": "HOU", "2025": "HOU"},
+    "Matt Gay": {"2023": "IND", "2024": "IND"},
+    "Tyler Bass": {"2024": "BUF"},
+    "Tyler Loop": {"2025": "BAL"},
+    "Wil Lutz": {"2024": "DEN", "2025": "DEN"},
+    "Will Reichard": {"2024": "MIN", "2025": "MIN"},
+    "Younghoe Koo": {"2023": "ATL"},
+}
+
+
 def main():
     wb = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_WB
     if not wb.exists():
@@ -209,6 +262,7 @@ def main():
                 "rank": i + 1,
                 "name": at(r, n),
                 "full": FULL_NAME.get(at(r, n), at(r, n)),
+                "team": SEASON_TEAM.get(FULL_NAME.get(at(r, n), at(r, n)), {}).get(y),
                 "fpts": num(g.get((r, f))),
                 "ppg": num(g.get((r, p))),
             }
@@ -274,11 +328,23 @@ def main():
                 out.append(v)
         return out
 
-    def named(entries, kind):
-        return [FULL_NAME.get(e, e) if kind != "team" else e for e in entries]
+    nicks = {
+        t["nickname"]: t["abbr"]
+        for t in json.loads((ROOT / "src/data/teams.json").read_text())["data"]
+    }
+
+    def entry(raw, kind):
+        """One list item as {name, team}. A team column names a club; a kicker
+        column names a person and carries the club he kicks for, so both render
+        the same chip and the column reads as one thing rather than two."""
+        if kind == "team" or raw in nicks:
+            return {"name": raw, "team": nicks.get(raw)}
+        full = FULL_NAME.get(raw, raw)
+        return {"name": full, "team": KICKER_TEAM.get(full)}
 
     advantages = [
-        {"label": label, "kind": kind, "entries": named(column(col), kind)}
+        {"label": label, "kind": kind,
+         "entries": [entry(e, kind) for e in column(col)]}
         for col, label, kind in ADV
     ]
     # Column C mixes two headed sub-lists rather than one column of names.
@@ -292,7 +358,7 @@ def main():
             current = {"label": v, "entries": []}
             weather.append(current)
         elif current:
-            current["entries"].append(FULL_NAME.get(v, v))
+            current["entries"].append(entry(v, "mixed"))
     advantages.append(
         {
             "label": "Weather and altitude",

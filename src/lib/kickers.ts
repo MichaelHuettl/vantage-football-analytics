@@ -6,15 +6,23 @@ export interface ScoringRow {
   name: string;
   /** What a reader should see. Resolved from the roster in the Python. */
   full: string;
+  /** The team he kicked for *that season*, not his current one. */
+  team: string | null;
   fpts: number;
   ppg: number;
+}
+
+/** A list item: a club, or a kicker with the club he kicks for. */
+export interface AdvantageEntry {
+  name: string;
+  team: string | null;
 }
 
 export interface Advantage {
   label: string;
   kind: "kicker" | "team" | "mixed";
-  entries: string[];
-  groups?: { label: string; entries: string[] }[];
+  entries: AdvantageEntry[];
+  groups?: { label: string; entries: AdvantageEntry[] }[];
 }
 
 export interface Favorite {

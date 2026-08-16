@@ -1,5 +1,6 @@
 import { TeamChip } from "@/components/TeamChip";
 import { KICKERS } from "@/lib/kickers";
+import type { AdvantageEntry } from "@/lib/kickers";
 import { teamByName } from "@/lib/teams";
 
 const abbr = (team: string) => teamByName(team)?.abbr;
@@ -161,8 +162,11 @@ export function KickerScoring() {
                       >
                         {k.rank}
                       </td>
-                      <td className="px-2 py-1.5 font-semibold whitespace-nowrap">
-                        {k.full}
+                      <td className="px-2 py-1.5 whitespace-nowrap">
+                        <span className="flex items-center gap-2">
+                          {k.team && <TeamChip abbr={k.team} size="sm" />}
+                          <span className="font-semibold">{k.full}</span>
+                        </span>
                       </td>
                       <td className="px-2 py-1.5 text-right">{k.fpts}</td>
                       <td
@@ -221,12 +225,12 @@ export function KickerAdvantages() {
                 {a.groups.map((g) => (
                   <div key={g.label}>
                     <p className="text-xs font-semibold">{g.label}</p>
-                    <List entries={g.entries} kind="mixed" />
+                    <List entries={g.entries} />
                   </div>
                 ))}
               </div>
             ) : (
-              <List entries={a.entries} kind={a.kind} />
+              <List entries={a.entries} />
             )}
           </div>
         ))}
@@ -242,11 +246,12 @@ export function KickerAdvantages() {
 }
 
 /**
- * A column's entries. Team columns get a chip so a reader scanning for their
- * team finds it by colour; kicker columns are names and would only be made
- * noisier by one.
+ * A column's entries. Every one carries its club chip — a kicker's as much as a
+ * team's — so the six columns read as one device and a reader scanning for
+ * their own team finds it by colour whichever list it is in. A kicker without a
+ * job this year gets no chip rather than a stale one.
  */
-function List({ entries, kind }: { entries: string[]; kind: string }) {
+function List({ entries }: { entries: AdvantageEntry[] }) {
   if (!entries.length) {
     return (
       <p className="mt-2 text-sm" style={{ color: "var(--text-muted)" }}>
@@ -255,16 +260,26 @@ function List({ entries, kind }: { entries: string[]; kind: string }) {
     );
   }
   return (
-    <ul className="mt-2 flex flex-col gap-1 text-sm">
-      {entries.map((e) => {
-        const a = kind === "team" ? abbr(e) : undefined;
-        return (
-          <li key={e} className="flex items-center gap-2">
-            {a && <TeamChip abbr={a} size="sm" />}
-            <span>{e}</span>
-          </li>
-        );
-      })}
+    <ul className="mt-2 flex flex-col gap-1.5 text-sm">
+      {entries.map((e) => (
+        <li key={e.name} className="flex items-center gap-2">
+          {e.team ? (
+            <TeamChip abbr={e.team} size="sm" />
+          ) : (
+            <span
+              className="inline-flex h-5 items-center rounded px-1.5 text-[10px] font-bold uppercase tracking-wider"
+              style={{
+                fontFamily: "var(--font-condensed)",
+                color: "var(--text-muted)",
+                boxShadow: "inset 0 0 0 1px var(--border-strong)",
+              }}
+            >
+              FA
+            </span>
+          )}
+          <span>{e.name}</span>
+        </li>
+      ))}
     </ul>
   );
 }

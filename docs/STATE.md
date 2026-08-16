@@ -111,6 +111,15 @@ build` with a line number instead of shipping a broken page.
      surname; the value picks have no write-up there, so a one-line case stands
      in. Games played are derived as points ÷ points-per-game, the only route to
      them in that sheet, landing within a tenth of an integer on every row.
+   - **Every kicker on the kicker page carries a team chip, and the scoring
+     tables use the team he kicked for *that season*.** Current teams would
+     misattribute eight of the 29: Jason Sanders was in Miami rather than the
+     Jets, Matt Gay in Indianapolis rather than Las Vegas, Blake Grupe in New
+     Orleans, and Carlson, Koo, Zuerlein, Hopkins and McManus have since moved
+     or left the league. `SEASON_TEAM` in `kicker_charts.py` holds the verified
+     mapping, taken from nflverse season rosters; it is historical and fixed, so
+     it is embedded rather than fetched. A kicker with no club gets an FA marker
+     rather than a stale chip.
    - **The ranked tables shade red-to-green** at the operator's request, built
      from the four status tokens rather than pure red and green so the ramp
      also varies in lightness. The number is printed in every cell, so §7's
