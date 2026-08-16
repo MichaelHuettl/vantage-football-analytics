@@ -3120,6 +3120,432 @@
      }
     ]
    }
-  ]
+  ],
+  "analysis": {
+   "scorers": 10,
+   "league": 32,
+   "measures": [
+    {
+     "label": "Defensive EPA/Play",
+     "block": "leaderboard",
+     "hits": 8,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.8,
+     "tier": "strong",
+     "teams": [
+      "Broncos",
+      "Browns",
+      "Eagles",
+      "Jaguars",
+      "Rams",
+      "Seahawks",
+      "Texans",
+      "Vikings"
+     ]
+    },
+    {
+     "label": "Down Conversion Rate Allowed",
+     "block": "coverage",
+     "hits": 8,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.8,
+     "tier": "strong",
+     "teams": [
+      "Broncos",
+      "Browns",
+      "Jaguars",
+      "Patriots",
+      "Rams",
+      "Seahawks",
+      "Texans",
+      "Vikings"
+     ],
+     "direction": "worst-first"
+    },
+    {
+     "label": "EPA/Pass Allowed",
+     "block": "leaderboard",
+     "hits": 8,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.8,
+     "tier": "strong",
+     "teams": [
+      "Broncos",
+      "Browns",
+      "Eagles",
+      "Jaguars",
+      "Rams",
+      "Seahawks",
+      "Texans",
+      "Vikings"
+     ]
+    },
+    {
+     "label": "Pressure Rate",
+     "block": "coverage",
+     "hits": 7,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.7,
+     "tier": "strong",
+     "teams": [
+      "Broncos",
+      "Browns",
+      "Eagles",
+      "Rams",
+      "Seahawks",
+      "Texans",
+      "Vikings"
+     ],
+     "direction": "best-first"
+    },
+    {
+     "label": "Sacks",
+     "block": "leaderboard",
+     "hits": 7,
+     "size": 11,
+     "expected": 3.4,
+     "rate": 0.636,
+     "tier": "moderate",
+     "teams": [
+      "Broncos",
+      "Browns",
+      "Rams",
+      "Seahawks",
+      "Steelers",
+      "Texans",
+      "Vikings"
+     ]
+    },
+    {
+     "label": "Light Box Rate",
+     "block": "box",
+     "hits": 6,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.6,
+     "tier": "moderate",
+     "teams": [
+      "Eagles",
+      "Jaguars",
+      "Patriots",
+      "Rams",
+      "Seahawks",
+      "Texans"
+     ]
+    },
+    {
+     "label": "Pass Success Rate Allowed",
+     "block": "leaderboard",
+     "hits": 6,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.6,
+     "tier": "moderate",
+     "teams": [
+      "Broncos",
+      "Eagles",
+      "Jaguars",
+      "Seahawks",
+      "Texans",
+      "Vikings"
+     ]
+    },
+    {
+     "label": "Forced Fumbles",
+     "block": "leaderboard",
+     "hits": 6,
+     "size": 11,
+     "expected": 3.4,
+     "rate": 0.545,
+     "tier": "weak",
+     "teams": [
+      "Browns",
+      "Eagles",
+      "Rams",
+      "Steelers",
+      "Texans",
+      "Vikings"
+     ]
+    },
+    {
+     "label": "Interceptions",
+     "block": "leaderboard",
+     "hits": 5,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.5,
+     "tier": "weak",
+     "teams": [
+      "Jaguars",
+      "Rams",
+      "Seahawks",
+      "Steelers",
+      "Texans"
+     ]
+    },
+    {
+     "label": "Pressure Rate",
+     "block": "leaderboard",
+     "hits": 5,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.5,
+     "tier": "weak",
+     "teams": [
+      "Broncos",
+      "Browns",
+      "Rams",
+      "Texans",
+      "Vikings"
+     ]
+    },
+    {
+     "label": "Light Box Efficiency (4 rushers)",
+     "block": "box",
+     "hits": 4,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.4,
+     "tier": "weak",
+     "teams": [
+      "Browns",
+      "Eagles",
+      "Rams",
+      "Texans"
+     ]
+    },
+    {
+     "label": "Middle Closed Rate",
+     "block": "coverage",
+     "hits": 3,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.3,
+     "tier": "none",
+     "teams": [
+      "Jaguars",
+      "Seahawks",
+      "Vikings"
+     ],
+     "direction": "worst-first"
+    },
+    {
+     "label": "Middle Open Rate",
+     "block": "coverage",
+     "hits": 3,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.3,
+     "tier": "none",
+     "teams": [
+      "Jaguars",
+      "Seahawks",
+      "Vikings"
+     ],
+     "direction": "best-first"
+    },
+    {
+     "label": "Rush Stuff Rate",
+     "block": "coverage",
+     "hits": 3,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.3,
+     "tier": "none",
+     "teams": [
+      "Eagles",
+      "Rams",
+      "Steelers"
+     ],
+     "direction": "worst-first"
+    },
+    {
+     "label": "Heavy Box Rate",
+     "block": "box",
+     "hits": 2,
+     "size": 10,
+     "expected": 3.1,
+     "rate": 0.2,
+     "tier": "none",
+     "teams": [
+      "Browns",
+      "Vikings"
+     ]
+    }
+   ],
+   "support": [
+    {
+     "rank": 1,
+     "team": "Seahawks",
+     "abbr": "SEA",
+     "fpts": 179.0,
+     "ppg": 10.5,
+     "appears": [
+      "Sacks",
+      "Interceptions",
+      "EPA/Pass Allowed",
+      "Pass Success Rate Allowed",
+      "Defensive EPA/Play"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 2,
+     "team": "Texans",
+     "abbr": "HOU",
+     "fpts": 164.0,
+     "ppg": 9.6,
+     "appears": [
+      "Sacks",
+      "Interceptions",
+      "Forced Fumbles",
+      "Pressure Rate",
+      "EPA/Pass Allowed",
+      "Pass Success Rate Allowed",
+      "Defensive EPA/Play"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 3,
+     "team": "Jaguars",
+     "abbr": "JAX",
+     "fpts": 144.0,
+     "ppg": 8.5,
+     "appears": [
+      "Interceptions",
+      "EPA/Pass Allowed",
+      "Pass Success Rate Allowed",
+      "Defensive EPA/Play"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 4,
+     "team": "Broncos",
+     "abbr": "DEN",
+     "fpts": 143.0,
+     "ppg": 8.4,
+     "appears": [
+      "Sacks",
+      "Pressure Rate",
+      "EPA/Pass Allowed",
+      "Pass Success Rate Allowed",
+      "Defensive EPA/Play"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 5,
+     "team": "Vikings",
+     "abbr": "MIN",
+     "fpts": 136.0,
+     "ppg": 8.0,
+     "appears": [
+      "Sacks",
+      "Forced Fumbles",
+      "Pressure Rate",
+      "EPA/Pass Allowed",
+      "Pass Success Rate Allowed",
+      "Defensive EPA/Play"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 6,
+     "team": "Rams",
+     "abbr": "LAR",
+     "fpts": 136.0,
+     "ppg": 8.0,
+     "appears": [
+      "Sacks",
+      "Interceptions",
+      "Forced Fumbles",
+      "Pressure Rate",
+      "EPA/Pass Allowed",
+      "Defensive EPA/Play"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 7,
+     "team": "Eagles",
+     "abbr": "PHI",
+     "fpts": 135.0,
+     "ppg": 7.9,
+     "appears": [
+      "Forced Fumbles",
+      "EPA/Pass Allowed",
+      "Pass Success Rate Allowed",
+      "Defensive EPA/Play"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 8,
+     "team": "Browns",
+     "abbr": "CLE",
+     "fpts": 133.0,
+     "ppg": 7.8,
+     "appears": [
+      "Sacks",
+      "Forced Fumbles",
+      "Pressure Rate",
+      "EPA/Pass Allowed",
+      "Defensive EPA/Play"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 9,
+     "team": "Steelers",
+     "abbr": "PIT",
+     "fpts": 130.0,
+     "ppg": 7.6,
+     "appears": [
+      "Sacks",
+      "Interceptions",
+      "Forced Fumbles"
+     ],
+     "of": 7
+    },
+    {
+     "rank": 10,
+     "team": "Patriots",
+     "abbr": "NE",
+     "fpts": 127.0,
+     "ppg": 7.5,
+     "appears": [],
+     "of": 7
+    }
+   ],
+   "spotlight": {
+    "team": "Chargers",
+    "abbr": "LAC",
+    "appears": [
+     "Defensive EPA/Play",
+     "EPA/Pass Allowed",
+     "Interceptions",
+     "Pass Success Rate Allowed",
+     "Pressure Rate",
+     "Sacks"
+    ],
+    "missing": [
+     "Forced Fumbles"
+    ],
+    "of": 7,
+    "coverage_ranks": {
+     "Down Conversion Rate Allowed": 5,
+     "Middle Closed Rate": 2,
+     "Middle Open Rate": 2,
+     "Pressure Rate": 16,
+     "Rush Stuff Rate": 26
+    }
+   }
+  }
  }
 }

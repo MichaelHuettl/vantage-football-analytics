@@ -131,6 +131,21 @@ build` with a line number instead of shipping a broken page.
      an eleventh team to the sheet needs no code change. A leaderboard cell can
      name two clubs where the sheet records a tie ("Saints/Chargers"); those
      are split and both get a chip.
+   - **Three defense findings are published, and they are computed rather than
+     written.** `DefenseFindings.tsx` renders `analysis` from
+     `defense-charts.json`: which of the fifteen measures track scoring against
+     an explicit chance baseline, how much leaderboard support each top-ten
+     finish has, and the best underlying play outside the top ten. **The two
+     names are found by the Python, not hard-coded** — the exception row is
+     whichever top-ten defense appears in no leaderboard (currently New England,
+     0 of 7) and the spotlight is whoever appears in most while missing the top
+     ten (currently the Chargers, 6 of 7). If next year's sheet moves, the page
+     moves with it.
+   - **`COVERAGE_DIRECTION` in `defense_charts.py` is load-bearing.** Three of
+     the five coverage columns run worst-first and nothing in the sheet says so.
+     Read the wrong way round, "Down Conversion Rate Allowed" flips from the
+     third-best predictor in the data to the worst. Any new coverage column
+     needs an entry there.
    - **The ranked tables shade red-to-green** at the operator's request, built
      from the four status tokens rather than pure red and green so the ramp
      also varies in lightness. The number is printed in every cell, so §7's

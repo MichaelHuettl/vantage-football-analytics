@@ -50,6 +50,33 @@ export interface SosList {
   hardest: TeamRef[];
 }
 
+export interface Measure {
+  label: string;
+  block: "leaderboard" | "box" | "coverage";
+  hits: number;
+  size: number;
+  expected: number;
+  rate: number;
+  tier: "strong" | "moderate" | "weak" | "none";
+  teams: string[];
+  /** Coverage columns only: which end of the list is the good end. */
+  direction?: "best-first" | "worst-first";
+}
+
+export interface SupportRow extends FantasyRow {
+  appears: string[];
+  of: number;
+}
+
+export interface Spotlight {
+  team: string;
+  abbr: string | null;
+  appears: string[];
+  missing: string[];
+  of: number;
+  coverage_ranks: Record<string, number>;
+}
+
 interface DefenseFile {
   schema_version: number;
   updated: string;
@@ -71,6 +98,13 @@ interface DefenseFile {
     verdict: { improved: TeamRef[]; regressed: TeamRef[] };
     strong_schedules: StrongSchedule[];
     schedules: SosList[];
+    analysis: {
+      scorers: number;
+      league: number;
+      measures: Measure[];
+      support: SupportRow[];
+      spotlight: Spotlight | null;
+    };
   };
 }
 

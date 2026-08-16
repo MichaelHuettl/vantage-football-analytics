@@ -29,6 +29,24 @@ DEFAULT_WB = (
 )
 SHEET = "sheet8"
 
+# Which end of each coverage column is the good end.
+#
+# Nothing in the sheet marks this and it is not consistent: three of the five
+# run worst-first. It was established by inspecting which end the known top-ten
+# scoring defenses cluster at — reading "Down conversion rate allowed" the wrong
+# way round turns the third-best predictor in the data into the worst.
+COVERAGE_DIRECTION = {
+    "Down Conversion Rate Allowed": "worst-first",
+    "Middle Closed Rate": "worst-first",
+    "Middle Open Rate": "best-first",
+    "Pressure Rate": "best-first",
+    "Rush Stuff Rate": "worst-first",
+}
+
+# A ten-team list drawn from a 32-team league shares this many names with
+# another ten-team list by luck alone. Every hit rate below is judged against it.
+LEAGUE = 32
+
 
 def cells(path, sheet):
     z = zipfile.ZipFile(path)
@@ -212,6 +230,92 @@ def main():
 
     schedules = [sos(259, 261, 270), sos(272, 274, 278), sos(280, 282, 291)]
 
+    # ---- does a measure actually track scoring? ----
+    #
+    # Only the top ten scorers are recorded, so this can ask whether a measure's
+    # leaders overlap the scoring leaders, never how the two correlate across
+    # the league. The null is explicit: a ten-team list shares 3.1 names with
+    # another ten-team list by chance.
+    scorers = {f["team"] for f in fantasy}
+
+    def hit_rate(label, teams, block):
+        hits = sorted(t for t in teams if t in scorers)
+        size = len(teams)
+        expected = round(size * len(scorers) / LEAGUE, 1)
+        rate = len(hits) / size if size else 0
+        tier = (
+            "strong" if rate >= 0.70
+            else "moderate" if rate >= 0.55
+            else "weak" if rate >= 0.40
+            else "none"
+        )
+        return {
+            "label": label,
+            "block": block,
+            "hits": len(hits),
+            "size": size,
+            "expected": expected,
+            "rate": round(rate, 3),
+            "tier": tier,
+            "teams": hits,
+        }
+
+    measures = []
+    for col in leaders:
+        names = {t["name"] for e in col["entries"] for t in e["teams"]}
+        measures.append(hit_rate(col["label"], names, "leaderboard"))
+    for col in box:
+        names = {t["name"] for e in col["entries"] for t in e["teams"]}
+        measures.append(hit_rate(col["label"], names, "box"))
+    for col in coverage:
+        order = [e["teams"][0]["name"] for e in col["entries"]]
+        direction = COVERAGE_DIRECTION.get(col["label"], "best-first")
+        good = order[-10:] if direction == "worst-first" else order[:10]
+        m = hit_rate(col["label"], set(good), "coverage")
+        m["direction"] = direction
+        measures.append(m)
+    measures.sort(key=lambda m: (-m["rate"], m["label"]))
+
+    # ---- how much of each top-ten finish the advanced columns support ----
+    support = []
+    for f in fantasy:
+        appears = [
+            c["label"]
+            for c in leaders
+            if any(t["name"] == f["team"] for e in c["entries"] for t in e["teams"])
+        ]
+        support.append({**f, "appears": appears, "of": len(leaders)})
+
+    # ---- the best underlying play outside the scoring top ten ----
+    #
+    # Found rather than named: score every club on leaderboard appearances, then
+    # take the best one that did not finish top ten. That is the positive
+    # regression case, and it stays correct if next year's sheet moves.
+    outside = {}
+    for c in leaders:
+        for e in c["entries"]:
+            for t in e["teams"]:
+                if t["name"] not in scorers:
+                    outside.setdefault(t["name"], []).append(c["label"])
+    spotlight = None
+    if outside:
+        name, appears = max(outside.items(), key=lambda kv: len(kv[1]))
+        cov_rank = {}
+        for col in coverage:
+            order = [e["teams"][0]["name"] for e in col["entries"]]
+            if name in order:
+                i = order.index(name)
+                direction = COVERAGE_DIRECTION.get(col["label"], "best-first")
+                cov_rank[col["label"]] = len(order) - i if direction == "worst-first" else i + 1
+        spotlight = {
+            "team": name,
+            "abbr": nicks.get(name),
+            "appears": sorted(appears),
+            "missing": sorted(c["label"] for c in leaders if c["label"] not in appears),
+            "of": len(leaders),
+            "coverage_ranks": cov_rank,
+        }
+
     out = {
         "schema_version": 1,
         "updated": "2026-08-15",
@@ -237,6 +341,13 @@ def main():
             "verdict": verdict,
             "strong_schedules": strong,
             "schedules": schedules,
+            "analysis": {
+                "scorers": len(scorers),
+                "league": LEAGUE,
+                "measures": measures,
+                "support": support,
+                "spotlight": spotlight,
+            },
         },
     }
 
@@ -263,6 +374,16 @@ def main():
     )
     if unknown:
         print(f"WARNING      names that are not a club: {', '.join(unknown)}")
+    print("measures     " + ", ".join(
+        f"{m['label'][:22]} {m['hits']}/{m['size']}" for m in measures[:4]) + " ...")
+    weakest = [m for m in measures if m["tier"] == "none"]
+    print(f"  {len(weakest)} of {len(measures)} at or below chance: "
+          + ", ".join(m["label"] for m in weakest))
+    no_support = [s2["team"] for s2 in support if not s2["appears"]]
+    print(f"  top-ten finishes with no leaderboard support: {', '.join(no_support) or 'none'}")
+    if spotlight:
+        print(f"  best play outside the top ten: {spotlight['team']} "
+              f"({len(spotlight['appears'])}/{spotlight['of']} leaderboards)")
     print(f"wrote {dest.relative_to(ROOT)}")
 
 

@@ -1,5 +1,6 @@
 import { TeamChip } from "@/components/TeamChip";
 import { RankedColumns, RankedTable, Team } from "@/components/DefenseData";
+import { DefenseFindings } from "@/components/DefenseFindings";
 import { DEFENSE, DEFENSE_SOURCE } from "@/lib/defense";
 import type { TeamRef } from "@/lib/defense";
 
@@ -89,6 +90,11 @@ export function DefenseAnalysis() {
           </tbody>
         </table>
       </div>
+
+      {/* The three findings sit here, between the scoring table and the
+          workbook divider: they argue from the record below rather than being
+          part of it. */}
+      <DefenseFindings />
 
       {/* ==================== the record ==================== */}
       <div className="mt-20 border-t-4 pt-6" style={{ borderColor: "var(--text-primary)" }}>
