@@ -1,6 +1,8 @@
 import { TeamChip } from "@/components/TeamChip";
-import { RankedColumns, RankedTable, Team } from "@/components/DefenseData";
+import { RankedColumns, Team } from "@/components/DefenseData";
+import { DefenseCoordinators } from "@/components/DefenseCoordinators";
 import { DefenseFindings } from "@/components/DefenseFindings";
+import { HistoricFinishes, MeasureVsFinish } from "@/components/DefenseHistory";
 import { DEFENSE, DEFENSE_SOURCE } from "@/lib/defense";
 import type { TeamRef } from "@/lib/defense";
 
@@ -19,11 +21,36 @@ export function DefenseAnalysis() {
     leaders_source,
     pass_rush,
     coverage,
+    success,
+    dvoa,
     offseason,
     verdict,
     strong_schedules,
     schedules,
   } = DEFENSE;
+
+  // The sheet keeps its columns in two blocks that split by where they came
+  // from. These regroup them by what they measure, which is how a reader thinks
+  // about a defense: who gets to the quarterback, and who covers.
+  const pick = (label: string) =>
+    [...leaders, ...coverage].find((c) => c.label === label);
+  const rush = [
+    "Sacks",
+    "Pressure Rate",
+    "Down Conversion Rate Allowed",
+    "Rush Stuff Rate",
+  ]
+    .map(pick)
+    .filter((c): c is NonNullable<typeof c> => Boolean(c));
+  const secondary = [
+    "Interceptions",
+    "EPA/Pass Allowed",
+    "Pass Success Rate Allowed",
+    "Middle Open Rate",
+    "Middle Closed Rate",
+  ]
+    .map(pick)
+    .filter((c): c is NonNullable<typeof c> => Boolean(c));
 
   return (
     <section className="mt-14">
@@ -91,11 +118,6 @@ export function DefenseAnalysis() {
         </table>
       </div>
 
-      {/* The three findings sit here, between the scoring table and the
-          workbook divider: they argue from the record below rather than being
-          part of it. */}
-      <DefenseFindings />
-
       {/* ==================== the record ==================== */}
       <div className="mt-20 border-t-4 pt-6" style={{ borderColor: "var(--text-primary)" }}>
         <p className="eyebrow">The workbook</p>
@@ -105,21 +127,35 @@ export function DefenseAnalysis() {
         </p>
       </div>
 
-      <section className="mt-14">
+      <HistoricFinishes />
+
+      <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          Where each defense ranked
+          The measures against the finish
         </h2>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          The seven measures behind the scoring, ten deep. A defense that
-          appears in several of these earned its finish; one that appears in
-          none of them was scoring on something that does not repeat.
+          Three ways of grading a defense, each kept beside the fantasy finish it
+          actually produced. That pairing is the only place in the sheet where a
+          measure can be seen getting a season wrong.
         </p>
-        <RankedColumns
-          columns={leaders}
-          caption={leaders_source ? `Advanced columns from ${leaders_source}` : undefined}
+
+        <MeasureVsFinish
+          title="Success rate allowed"
+          intro="The share of opponent plays that gained what the down and distance asked for. Lower is better."
+          blocks={success}
+          valueKey="success_rate"
+          format={(n) => `${(n * 100).toFixed(1)}%`}
+        />
+
+        <MeasureVsFinish
+          title="DVOA"
+          intro="Defensive value over average, adjusted for opponent. More negative is better."
+          blocks={dvoa}
+          valueKey="dvoa"
+          format={(n) => n.toFixed(3)}
         />
       </section>
 
@@ -131,10 +167,9 @@ export function DefenseAnalysis() {
           Pass rush
         </h2>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          Simulated pressure is the one block here with real values rather than
-          an order: how often a defense fakes pressure, and how often it works.
-          Frequency and efficiency are not the same thing and the top of one is
-          not the top of the other.
+          Getting to the quarterback and getting off the field. Simulated
+          pressure is the only block here with values rather than an order &mdash;
+          how often a defense fakes pressure, and how often it works.
         </p>
 
         <div className="mt-6 overflow-x-auto">
@@ -167,7 +202,10 @@ export function DefenseAnalysis() {
           </table>
         </div>
 
-        <RankedColumns columns={pass_rush.box} />
+        <RankedColumns
+          columns={rush}
+          caption={leaders_source ? `2025 columns from ${leaders_source}` : undefined}
+        />
       </section>
 
       <section className="mt-16">
@@ -175,14 +213,29 @@ export function DefenseAnalysis() {
           className="text-3xl uppercase tracking-wide"
           style={{ fontFamily: "var(--font-display)" }}
         >
-          Coverage and run defense
+          Secondary
         </h2>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          All thirty-two ranked on five measures. Read across a rank rather than
-          down a column &mdash; a defense near the top of several of these is
-          the one whose scoring has a floor under it.
+          Taking the ball away, and what the offense was allowed to do through
+          the air. The two middle-of-the-field rates describe coverage shell
+          rather than quality &mdash; they say how a defense plays, not how well.
         </p>
-        <RankedTable columns={coverage} />
+        <RankedColumns columns={secondary} />
+      </section>
+
+      <section className="mt-16">
+        <h2
+          className="text-3xl uppercase tracking-wide"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          Box rates
+        </h2>
+        <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+          How many defenders a unit keeps near the line, and how well it does
+          rushing four. Descriptive rather than predictive &mdash; see the
+          findings at the foot of the page.
+        </p>
+        <RankedColumns columns={pass_rush.box} />
       </section>
 
       {/* ==================== the offseason ==================== */}
@@ -226,6 +279,8 @@ export function DefenseAnalysis() {
           <Verdict label="Regressed units" teams={verdict.regressed} />
         </div>
       </section>
+
+      <DefenseCoordinators />
 
       {/* ==================== schedule ==================== */}
       <section className="mt-16">
@@ -293,6 +348,10 @@ export function DefenseAnalysis() {
           ))}
         </div>
       </section>
+
+      {/* The findings close the page rather than opening it: they argue from
+          every table above, so they read better after them than before. */}
+      <DefenseFindings />
 
       <p className="mt-14 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
         {DEFENSE_SOURCE}

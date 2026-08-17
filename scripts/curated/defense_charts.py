@@ -25,7 +25,7 @@ from xml.etree import ElementTree as ET
 N = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_WB = (
-    Path.home() / "Downloads" / "2026-2027 Fantasy Football Analytics (Original) (3).xlsx"
+    Path.home() / "Downloads" / "2026-2027 Fantasy Football Analytics (Original) (4).xlsx"
 )
 SHEET = "sheet8"
 
@@ -103,18 +103,32 @@ def main():
         entries = [team_entry(at(r, col)) for r in range(first, last + 1)]
         return {"label": label, "entries": [e for e in entries if e]}
 
-    # ---- 1. fantasy scoring, top 10 ----
-    fantasy = [
-        {
-            "rank": int(num(at(r, "A"))),
-            "team": at(r, "B"),
-            "abbr": nicks.get(at(r, "B")),
-            "fpts": num(at(r, "C")),
-            "ppg": num(at(r, "D")),
-        }
-        for r in range(91, 101)
-        if at(r, "B")
-    ]
+    # ---- 1. fantasy scoring, four seasons side by side ----
+    #
+    # The (4) sheet carries 2022-2025 in parallel blocks four columns apart,
+    # each with EPA per play beside the points. 2025 stays the primary table;
+    # the rest become the historical grid.
+    SEASON_COLS = {"2025": "BCDE", "2024": "GHIJ", "2023": "LMNO", "2022": "QRST"}
+    seasons_scoring = {}
+    for year, (tc, fc, pc, ec) in SEASON_COLS.items():
+        rows_y = []
+        for i, r in enumerate(range(91, 101)):
+            team = at(r, tc)
+            if not team:
+                continue
+            rows_y.append(
+                {
+                    "rank": i + 1,
+                    "team": team,
+                    "abbr": nicks.get(team),
+                    "fpts": num(at(r, fc)),
+                    "ppg": num(at(r, pc)),
+                    # "-0.12 (#2)" — the value and its league rank in one cell.
+                    "epa": at(r, ec),
+                }
+            )
+        seasons_scoring[year] = rows_y
+    fantasy = seasons_scoring["2025"]
 
     # What the top of the position is worth. Only the top ten are recorded, so
     # this is the spread inside the startable tier rather than against a
@@ -130,6 +144,34 @@ def main():
         else None
     )
 
+    def paired(first_row, last_row, blocks, value_key):
+        """A block of "team / value / fantasy finish" columns, one per season.
+        The finish is typed as "#4", which is the join back to the scoring
+        table and the whole point of the block."""
+        out = {}
+        for year, (tc, vc, fc) in blocks.items():
+            rows_y = []
+            for r in range(first_row, last_row + 1):
+                team = at(r, tc)
+                if not team:
+                    continue
+                finish = at(r, fc)
+                rows_y.append(
+                    {
+                        "team": team.strip(),
+                        "abbr": nicks.get(team.strip()),
+                        value_key: num(at(r, vc)),
+                        "finish": finish.strip() if finish else None,
+                        "finish_rank": num((finish or "").replace("#", "").strip()),
+                    }
+                )
+            out[year] = rows_y
+        return out
+
+    TRIPLE = {"2025": "BCD", "2024": "FGH", "2023": "JKL"}
+    success = paired(120, 129, TRIPLE, "success_rate")
+    dvoa = paired(136, 145, TRIPLE, "dvoa")
+
     # ---- 2. the seven leaderboards, ten deep ----
     leaders = [column(103, c, 104, 113) for c in "BCDEFGH"]
 
@@ -141,13 +183,14 @@ def main():
             "frequency": num(at(r, "C")),
             "efficiency": num(at(r, "D")),
         }
-        for r in range(119, 129)
+        for r in range(149, 159)
         if at(r, "B")
     ]
-    box = [column(118, c, 119, 128) for c in "FGH"]
+    box = [column(148, c, 149, 158) for c in "FGH"]
 
     # ---- 4. coverage and run defense, all 32 ranked ----
-    coverage = [column(131, c, 132, 163) for c in "CDEFG"]
+    # Column F is now blank and pressure rate has moved to G.
+    coverage = [column(161, c, 162, 193) for c in "CDEGH"]
 
     # ---- 5. offseason movement, one block per team ----
     #
@@ -155,12 +198,12 @@ def main():
     # followed by a Departures/Additions header. Each list runs until the column
     # goes quiet, and the two sides are different lengths more often than not.
     offseason = []
-    r = 167
-    while r < 240:
+    r = 197
+    while r < 270:
         name = at(r, "B")
         if name in nicks and at(r + 1, "B") == "Departures":
             dep, add, k = [], [], r + 2
-            while k < 240 and (at(k, "B") or at(k, "C")):
+            while k < 270 and (at(k, "B") or at(k, "C")):
                 if at(k, "B"):
                     dep.append(at(k, "B"))
                 if at(k, "C"):
@@ -181,24 +224,24 @@ def main():
     verdict = {
         "improved": [
             {"name": at(r, "B"), "abbr": nicks.get(at(r, "B"))}
-            for r in range(241, 247)
+            for r in range(271, 277)
             if at(r, "B") in nicks
         ],
         "regressed": [
             {"name": at(r, "C"), "abbr": nicks.get(at(r, "C"))}
-            for r in range(241, 247)
+            for r in range(271, 277)
             if at(r, "C") in nicks
         ],
     }
 
     # ---- 7. favourable stretches, one column per team ----
     strong = []
-    for c in "BCDE":
-        name = at(249, c)
+    for c in "BCDEF":
+        name = at(306, c)
         if not name:
             continue
         weeks = []
-        for r in range(250, 258):
+        for r in range(307, 316):
             v = at(r, c)
             if not v:
                 continue
@@ -228,7 +271,55 @@ def main():
             ],
         }
 
-    schedules = [sos(259, 261, 270), sos(272, 274, 278), sos(280, 282, 291)]
+    schedules = [sos(316, 318, 327), sos(329, 331, 335), sos(337, 339, 348)]
+
+    # ---- 9. coordinator changes ----
+    #
+    # Column B lists the hire and his new club, column D his record. Column C is
+    # a different thing sharing the same rows: two ranked lists of the jobs
+    # inherited, best from row 281 and worst from a second heading part-way
+    # down. Parsed as its own structure rather than a fourth field.
+    coordinators = []
+    for r in range(281, 296):
+        raw = at(r, "B")
+        if not raw:
+            continue
+        m = re.match(r"(.+?)\s*\((.+?)\)\s*$", raw)
+        name = m.group(1).strip() if m else raw
+        team = m.group(2).strip() if m else None
+        coordinators.append(
+            {
+                "name": name,
+                "team": team,
+                "abbr": nicks.get(team) if team else None,
+                "record": at(r, "D"),
+            }
+        )
+
+    inherited, bucket = [], None
+    for r in range(280, 296):
+        v = at(r, "C")
+        if not v:
+            continue
+        if v.lower().endswith("inherited jobs"):
+            bucket = {"label": v, "entries": []}
+            inherited.append(bucket)
+        elif bucket is not None:
+            # "Bills: Leonard" — the club that made the hire, and who they got.
+            club, _, who = v.partition(":")
+            bucket["entries"].append(
+                {
+                    "team": club.strip(),
+                    "abbr": nicks.get(club.strip()),
+                    "coordinator": who.strip() or None,
+                }
+            )
+
+    dc_note = at(296, "B")
+    dc_outlook = {
+        "improve": [at(r, "B") for r in range(299, 305) if at(r, "B")],
+        "regress": [at(r, "C") for r in range(299, 305) if at(r, "C")],
+    }
 
     # ---- does a measure actually track scoring? ----
     #
@@ -417,6 +508,13 @@ def main():
         ),
         "data": {
             "fantasy": fantasy,
+            "seasons_scoring": seasons_scoring,
+            "success": success,
+            "dvoa": dvoa,
+            "coordinators": coordinators,
+            "inherited": inherited,
+            "dc_note": dc_note,
+            "dc_outlook": dc_outlook,
             "spread": spread,
             "leaders": leaders,
             "leaders_source": at(102, "C"),
@@ -442,6 +540,12 @@ def main():
     dest = ROOT / "src" / "data" / "defense-charts.json"
     dest.write_text(json.dumps(out, indent=1) + "\n")
 
+    print("seasons      " + ", ".join(
+        f"{y} x{len(v)}" for y, v in sorted(seasons_scoring.items(), reverse=True)))
+    print(f"success rate {len(success)} seasons | DVOA {len(dvoa)} seasons")
+    print(f"coordinators {len(coordinators)} hires, "
+          + ", ".join(f"{b['label']} {len(b['entries'])}" for b in inherited)
+          + f" | outlook {len(dc_outlook['improve'])} up / {len(dc_outlook['regress'])} down")
     print(f"fantasy      {len(fantasy)} teams | DST1-DST10 spread "
           f"{spread['points']} pts ({spread['per_game']}/wk)")
     print(f"leaders      {len(leaders)} columns: {', '.join(c['label'] for c in leaders)}")

@@ -10,86 +10,1027 @@
     "team": "Seahawks",
     "abbr": "SEA",
     "fpts": 179.0,
-    "ppg": 10.5
+    "ppg": 10.5,
+    "epa": "-0.12 (#2)"
    },
    {
     "rank": 2,
     "team": "Texans",
     "abbr": "HOU",
     "fpts": 164.0,
-    "ppg": 9.6
+    "ppg": 9.6,
+    "epa": "-0.13 (#1)"
    },
    {
     "rank": 3,
     "team": "Jaguars",
     "abbr": "JAX",
     "fpts": 144.0,
-    "ppg": 8.5
+    "ppg": 8.5,
+    "epa": "-0.11 (#3)"
    },
    {
     "rank": 4,
     "team": "Broncos",
     "abbr": "DEN",
     "fpts": 143.0,
-    "ppg": 8.4
+    "ppg": 8.4,
+    "epa": "-0.09 (#7)"
    },
    {
     "rank": 5,
     "team": "Vikings",
     "abbr": "MIN",
     "fpts": 136.0,
-    "ppg": 8.0
+    "ppg": 8.0,
+    "epa": "-0.11 (#4)"
    },
    {
     "rank": 6,
     "team": "Rams",
     "abbr": "LAR",
     "fpts": 136.0,
-    "ppg": 8.0
+    "ppg": 8.0,
+    "epa": "-0.06 (#10)"
    },
    {
     "rank": 7,
     "team": "Eagles",
     "abbr": "PHI",
     "fpts": 135.0,
-    "ppg": 7.9
+    "ppg": 7.9,
+    "epa": "-0.08 (#8)"
    },
    {
     "rank": 8,
     "team": "Browns",
     "abbr": "CLE",
     "fpts": 133.0,
-    "ppg": 7.8
+    "ppg": 7.8,
+    "epa": "-0.10 (#5)"
    },
    {
     "rank": 9,
     "team": "Steelers",
     "abbr": "PIT",
     "fpts": 130.0,
-    "ppg": 7.6
+    "ppg": 7.6,
+    "epa": "0.01 (#19)"
    },
    {
     "rank": 10,
     "team": "Patriots",
     "abbr": "NE",
     "fpts": 127.0,
-    "ppg": 7.5
+    "ppg": 7.5,
+    "epa": "-0.05 (#11)"
    }
   ],
+  "seasons_scoring": {
+   "2025": [
+    {
+     "rank": 1,
+     "team": "Seahawks",
+     "abbr": "SEA",
+     "fpts": 179.0,
+     "ppg": 10.5,
+     "epa": "-0.12 (#2)"
+    },
+    {
+     "rank": 2,
+     "team": "Texans",
+     "abbr": "HOU",
+     "fpts": 164.0,
+     "ppg": 9.6,
+     "epa": "-0.13 (#1)"
+    },
+    {
+     "rank": 3,
+     "team": "Jaguars",
+     "abbr": "JAX",
+     "fpts": 144.0,
+     "ppg": 8.5,
+     "epa": "-0.11 (#3)"
+    },
+    {
+     "rank": 4,
+     "team": "Broncos",
+     "abbr": "DEN",
+     "fpts": 143.0,
+     "ppg": 8.4,
+     "epa": "-0.09 (#7)"
+    },
+    {
+     "rank": 5,
+     "team": "Vikings",
+     "abbr": "MIN",
+     "fpts": 136.0,
+     "ppg": 8.0,
+     "epa": "-0.11 (#4)"
+    },
+    {
+     "rank": 6,
+     "team": "Rams",
+     "abbr": "LAR",
+     "fpts": 136.0,
+     "ppg": 8.0,
+     "epa": "-0.06 (#10)"
+    },
+    {
+     "rank": 7,
+     "team": "Eagles",
+     "abbr": "PHI",
+     "fpts": 135.0,
+     "ppg": 7.9,
+     "epa": "-0.08 (#8)"
+    },
+    {
+     "rank": 8,
+     "team": "Browns",
+     "abbr": "CLE",
+     "fpts": 133.0,
+     "ppg": 7.8,
+     "epa": "-0.10 (#5)"
+    },
+    {
+     "rank": 9,
+     "team": "Steelers",
+     "abbr": "PIT",
+     "fpts": 130.0,
+     "ppg": 7.6,
+     "epa": "0.01 (#19)"
+    },
+    {
+     "rank": 10,
+     "team": "Patriots",
+     "abbr": "NE",
+     "fpts": 127.0,
+     "ppg": 7.5,
+     "epa": "-0.05 (#11)"
+    }
+   ],
+   "2024": [
+    {
+     "rank": 1,
+     "team": "Broncos",
+     "abbr": "DEN",
+     "fpts": 179.0,
+     "ppg": 10.5,
+     "epa": "-0.12 (#1)"
+    },
+    {
+     "rank": 2,
+     "team": "Vikings",
+     "abbr": "MIN",
+     "fpts": 158.0,
+     "ppg": 9.3,
+     "epa": "-0.09 (#3)"
+    },
+    {
+     "rank": 3,
+     "team": "Packers",
+     "abbr": "GB",
+     "fpts": 144.0,
+     "ppg": 8.5,
+     "epa": "-0.07 (#5)"
+    },
+    {
+     "rank": 4,
+     "team": "Steelers",
+     "abbr": "PIT",
+     "fpts": 140.0,
+     "ppg": 8.2,
+     "epa": "-0.02 (#10)"
+    },
+    {
+     "rank": 5,
+     "team": "Texans",
+     "abbr": "HOU",
+     "fpts": 139.0,
+     "ppg": 8.2,
+     "epa": "-0.07 (#4)"
+    },
+    {
+     "rank": 6,
+     "team": "Bills",
+     "abbr": "BUF",
+     "fpts": 133.0,
+     "ppg": 7.8,
+     "epa": "-0.01 (#12)"
+    },
+    {
+     "rank": 7,
+     "team": "Seahawks",
+     "abbr": "SEA",
+     "fpts": 132.0,
+     "ppg": 7.8,
+     "epa": "-0.02 (#11)"
+    },
+    {
+     "rank": 8,
+     "team": "Eagles",
+     "abbr": "PHI",
+     "fpts": 132.0,
+     "ppg": 7.8,
+     "epa": "-0.10 (#2)"
+    },
+    {
+     "rank": 9,
+     "team": "Chargers",
+     "abbr": "LAC",
+     "fpts": 126.0,
+     "ppg": 7.4,
+     "epa": "-0.07 (#6)"
+    },
+    {
+     "rank": 10,
+     "team": "Lions",
+     "abbr": "DET",
+     "fpts": 123.0,
+     "ppg": 7.2,
+     "epa": "-0.06 (#7)"
+    }
+   ],
+   "2023": [
+    {
+     "rank": 1,
+     "team": "Ravens",
+     "abbr": "BAL",
+     "fpts": 174.0,
+     "ppg": 10.2,
+     "epa": "-0.15 (#2)"
+    },
+    {
+     "rank": 2,
+     "team": "Cowboys",
+     "abbr": "DAL",
+     "fpts": 172.0,
+     "ppg": 10.1,
+     "epa": "-0.12 (#4)"
+    },
+    {
+     "rank": 3,
+     "team": "Bills",
+     "abbr": "BUF",
+     "fpts": 157.0,
+     "ppg": 9.2,
+     "epa": "-0.08 (#9)"
+    },
+    {
+     "rank": 4,
+     "team": "Jets",
+     "abbr": "NYJ",
+     "fpts": 155.0,
+     "ppg": 9.1,
+     "epa": "-0.13 (#3)"
+    },
+    {
+     "rank": 5,
+     "team": "Dolphins",
+     "abbr": "MIA",
+     "fpts": 152.0,
+     "ppg": 8.9,
+     "epa": "-0.05 (#16)"
+    },
+    {
+     "rank": 6,
+     "team": "Browns",
+     "abbr": "CLE",
+     "fpts": 151.0,
+     "ppg": 8.9,
+     "epa": "-0.19 (#1)"
+    },
+    {
+     "rank": 7,
+     "team": "Raiders",
+     "abbr": "LV",
+     "fpts": 146.0,
+     "ppg": 8.6,
+     "epa": "-0.07 (#11)"
+    },
+    {
+     "rank": 8,
+     "team": "Saints",
+     "abbr": "NO",
+     "fpts": 143.0,
+     "ppg": 8.4,
+     "epa": "-0.10 (#5)"
+    },
+    {
+     "rank": 9,
+     "team": "49ers",
+     "abbr": "SF",
+     "fpts": 141.0,
+     "ppg": 8.3,
+     "epa": "-0.08 (#8)"
+    },
+    {
+     "rank": 10,
+     "team": "Colts",
+     "abbr": "IND",
+     "fpts": 138.0,
+     "ppg": 8.1,
+     "epa": "-0.02 (#22)"
+    }
+   ],
+   "2022": [
+    {
+     "rank": 1,
+     "team": "Patriots",
+     "abbr": "NE",
+     "fpts": 186.0,
+     "ppg": 10.9,
+     "epa": "-0.10 (#3)"
+    },
+    {
+     "rank": 2,
+     "team": "Cowboys",
+     "abbr": "DAL",
+     "fpts": 168.0,
+     "ppg": 9.9,
+     "epa": "-0.10 (#2)"
+    },
+    {
+     "rank": 3,
+     "team": "49ers",
+     "abbr": "SF",
+     "fpts": 161.0,
+     "ppg": 9.5,
+     "epa": "-0.13 (#1)"
+    },
+    {
+     "rank": 4,
+     "team": "Eagles",
+     "abbr": "PHI",
+     "fpts": 154.0,
+     "ppg": 9.1,
+     "epa": "-0.07 (#5)"
+    },
+    {
+     "rank": 5,
+     "team": "Bills",
+     "abbr": "BUF",
+     "fpts": 150.0,
+     "ppg": 8.8,
+     "epa": "-0.05 (#9)"
+    },
+    {
+     "rank": 6,
+     "team": "Jaguars",
+     "abbr": "JAX",
+     "fpts": 139.0,
+     "ppg": 8.2,
+     "epa": "-0.03 (#13)"
+    },
+    {
+     "rank": 7,
+     "team": "Ravens",
+     "abbr": "BAL",
+     "fpts": 130.0,
+     "ppg": 7.6,
+     "epa": "-0.03 (#14)"
+    },
+    {
+     "rank": 8,
+     "team": "Chiefs",
+     "abbr": "KC",
+     "fpts": 121.0,
+     "ppg": 7.1,
+     "epa": "-0.02 (#15)"
+    },
+    {
+     "rank": 9,
+     "team": "Commanders",
+     "abbr": "WAS",
+     "fpts": 118.0,
+     "ppg": 6.9,
+     "epa": "-0.08 (#4)"
+    },
+    {
+     "rank": 10,
+     "team": "Colts",
+     "abbr": "IND",
+     "fpts": 116.0,
+     "ppg": 6.8,
+     "epa": "-0.03 (#12)"
+    }
+   ]
+  },
+  "success": {
+   "2025": [
+    {
+     "team": "Broncos",
+     "abbr": "DEN",
+     "success_rate": 0.3648,
+     "finish": "#4",
+     "finish_rank": 4.0
+    },
+    {
+     "team": "Texans",
+     "abbr": "HOU",
+     "success_rate": 0.3797,
+     "finish": "#2",
+     "finish_rank": 2.0
+    },
+    {
+     "team": "Seahawks",
+     "abbr": "SEA",
+     "success_rate": 0.3925,
+     "finish": "#1",
+     "finish_rank": 1.0
+    },
+    {
+     "team": "Browns",
+     "abbr": "CLE",
+     "success_rate": 0.3951,
+     "finish": "#8",
+     "finish_rank": 8.0
+    },
+    {
+     "team": "Vikings",
+     "abbr": "MIN",
+     "success_rate": 0.4059,
+     "finish": "#5",
+     "finish_rank": 5.0
+    },
+    {
+     "team": "Jaguars",
+     "abbr": "JAX",
+     "success_rate": 0.4083,
+     "finish": "#3",
+     "finish_rank": 3.0
+    },
+    {
+     "team": "Saints",
+     "abbr": "NO",
+     "success_rate": 0.4084,
+     "finish": "#12",
+     "finish_rank": 12.0
+    },
+    {
+     "team": "Chargers",
+     "abbr": "LAC",
+     "success_rate": 0.4089,
+     "finish": "#14",
+     "finish_rank": 14.0
+    },
+    {
+     "team": "Lions",
+     "abbr": "DET",
+     "success_rate": 0.4105,
+     "finish": "#19",
+     "finish_rank": 19.0
+    },
+    {
+     "team": "Eagles",
+     "abbr": "PHI",
+     "success_rate": 0.413,
+     "finish": "#7",
+     "finish_rank": 7.0
+    }
+   ],
+   "2024": [
+    {
+     "team": "Broncos",
+     "abbr": "DEN",
+     "success_rate": 0.3898,
+     "finish": "#1",
+     "finish_rank": 1.0
+    },
+    {
+     "team": "Eagles",
+     "abbr": "PHI",
+     "success_rate": 0.3904,
+     "finish": "#8",
+     "finish_rank": 8.0
+    },
+    {
+     "team": "Ravens",
+     "abbr": "BAL",
+     "success_rate": 0.3908,
+     "finish": "#11",
+     "finish_rank": 11.0
+    },
+    {
+     "team": "Texans",
+     "abbr": "HOU",
+     "success_rate": 0.3952,
+     "finish": "#5",
+     "finish_rank": 5.0
+    },
+    {
+     "team": "Browns",
+     "abbr": "CLE",
+     "success_rate": 0.49,
+     "finish": "#27",
+     "finish_rank": 27.0
+    },
+    {
+     "team": "Chargers",
+     "abbr": "LAC",
+     "success_rate": 0.4127,
+     "finish": "#9",
+     "finish_rank": 9.0
+    },
+    {
+     "team": "Vikings",
+     "abbr": "MIN",
+     "success_rate": 0.4137,
+     "finish": "#2",
+     "finish_rank": 2.0
+    },
+    {
+     "team": "Lions",
+     "abbr": "DET",
+     "success_rate": 0.4144,
+     "finish": "#10",
+     "finish_rank": 10.0
+    },
+    {
+     "team": "Colts",
+     "abbr": "IND",
+     "success_rate": 0.4254,
+     "finish": "#21",
+     "finish_rank": 21.0
+    },
+    {
+     "team": "Jets",
+     "abbr": "NYJ",
+     "success_rate": 0.426,
+     "finish": "#19",
+     "finish_rank": 19.0
+    }
+   ],
+   "2023": [
+    {
+     "team": "Browns",
+     "abbr": "CLE",
+     "success_rate": 0.3486,
+     "finish": "#6",
+     "finish_rank": 6.0
+    },
+    {
+     "team": "Jets",
+     "abbr": "NYJ",
+     "success_rate": 0.368,
+     "finish": "#4",
+     "finish_rank": 4.0
+    },
+    {
+     "team": "Saints",
+     "abbr": "NO",
+     "success_rate": 0.3843,
+     "finish": "#8",
+     "finish_rank": 8.0
+    },
+    {
+     "team": "Falcons",
+     "abbr": "ATL",
+     "success_rate": 0.3844,
+     "finish": "#26",
+     "finish_rank": 26.0
+    },
+    {
+     "team": "Chiefs",
+     "abbr": "KC",
+     "success_rate": 0.3885,
+     "finish": "#13",
+     "finish_rank": 13.0
+    },
+    {
+     "team": "Patriots",
+     "abbr": "NE",
+     "success_rate": 0.3969,
+     "finish": "#25",
+     "finish_rank": 25.0
+    },
+    {
+     "team": "Ravens",
+     "abbr": "BAL",
+     "success_rate": 0.4004,
+     "finish": "#1",
+     "finish_rank": 1.0
+    },
+    {
+     "team": "Texans",
+     "abbr": "HOU",
+     "success_rate": 0.4022,
+     "finish": "#15",
+     "finish_rank": 15.0
+    },
+    {
+     "team": "Steelers",
+     "abbr": "PIT",
+     "success_rate": 0.4041,
+     "finish": "#11",
+     "finish_rank": 11.0
+    },
+    {
+     "team": "Bears",
+     "abbr": "CHI",
+     "success_rate": 0.4097,
+     "finish": "#19",
+     "finish_rank": 19.0
+    }
+   ]
+  },
+  "dvoa": {
+   "2025": [
+    {
+     "team": "Seahawks",
+     "abbr": "SEA",
+     "dvoa": -0.242,
+     "finish": "#1",
+     "finish_rank": 1.0
+    },
+    {
+     "team": "Texans",
+     "abbr": "HOU",
+     "dvoa": -0.193,
+     "finish": "#2",
+     "finish_rank": 2.0
+    },
+    {
+     "team": "Vikings",
+     "abbr": "MIN",
+     "dvoa": -0.15,
+     "finish": "#5",
+     "finish_rank": 5.0
+    },
+    {
+     "team": "Rams",
+     "abbr": "LAR",
+     "dvoa": -0.124,
+     "finish": "#6",
+     "finish_rank": 6.0
+    },
+    {
+     "team": "Broncos",
+     "abbr": "DEN",
+     "dvoa": -0.104,
+     "finish": "#4",
+     "finish_rank": 4.0
+    },
+    {
+     "team": "Jaguars",
+     "abbr": "JAX",
+     "dvoa": -0.101,
+     "finish": "#3",
+     "finish_rank": 3.0
+    },
+    {
+     "team": "Eagles",
+     "abbr": "PHI",
+     "dvoa": -0.099,
+     "finish": "#9",
+     "finish_rank": 9.0
+    },
+    {
+     "team": "Lions",
+     "abbr": "DET",
+     "dvoa": -0.074,
+     "finish": "#19",
+     "finish_rank": 19.0
+    },
+    {
+     "team": "Chargers",
+     "abbr": "LAC",
+     "dvoa": -0.065,
+     "finish": "#14",
+     "finish_rank": 14.0
+    },
+    {
+     "team": "Steelers",
+     "abbr": "PIT",
+     "dvoa": -0.055,
+     "finish": "#7",
+     "finish_rank": 7.0
+    }
+   ],
+   "2024": [
+    {
+     "team": "Eagles",
+     "abbr": "PHI",
+     "dvoa": -0.162,
+     "finish": "#8",
+     "finish_rank": 8.0
+    },
+    {
+     "team": "Vikings",
+     "abbr": "MIN",
+     "dvoa": -0.155,
+     "finish": "#2",
+     "finish_rank": 2.0
+    },
+    {
+     "team": "Texans",
+     "abbr": "HOU",
+     "dvoa": -0.153,
+     "finish": "#5",
+     "finish_rank": 5.0
+    },
+    {
+     "team": "Broncos",
+     "abbr": "DEN",
+     "dvoa": -0.124,
+     "finish": "#1",
+     "finish_rank": 1.0
+    },
+    {
+     "team": "Lions",
+     "abbr": "DET",
+     "dvoa": -0.095,
+     "finish": "#10",
+     "finish_rank": 10.0
+    },
+    {
+     "team": "Ravens",
+     "abbr": "BAL",
+     "dvoa": -0.081,
+     "finish": "#11",
+     "finish_rank": 11.0
+    },
+    {
+     "team": "Packers",
+     "abbr": "GB",
+     "dvoa": -0.071,
+     "finish": "#3",
+     "finish_rank": 3.0
+    },
+    {
+     "team": "Steelers",
+     "abbr": "PIT",
+     "dvoa": -0.06,
+     "finish": "#4",
+     "finish_rank": 4.0
+    },
+    {
+     "team": "Chargers",
+     "abbr": "LAC",
+     "dvoa": -0.05,
+     "finish": "#9",
+     "finish_rank": 9.0
+    },
+    {
+     "team": "Seahawks",
+     "abbr": "SEA",
+     "dvoa": -0.049,
+     "finish": "#7",
+     "finish_rank": 7.0
+    }
+   ],
+   "2023": [
+    {
+     "team": "Ravens",
+     "abbr": "BAL",
+     "dvoa": -0.233,
+     "finish": "#1",
+     "finish_rank": 1.0
+    },
+    {
+     "team": "Browns",
+     "abbr": "CLE",
+     "dvoa": -0.207,
+     "finish": "#6",
+     "finish_rank": 6.0
+    },
+    {
+     "team": "Jets",
+     "abbr": "NYJ",
+     "dvoa": -0.142,
+     "finish": "#4",
+     "finish_rank": 4.0
+    },
+    {
+     "team": "49ers",
+     "abbr": "SF",
+     "dvoa": -0.096,
+     "finish": "#9",
+     "finish_rank": 9.0
+    },
+    {
+     "team": "Cowboys",
+     "abbr": "DAL",
+     "dvoa": -0.087,
+     "finish": "#2",
+     "finish_rank": 2.0
+    },
+    {
+     "team": "Steelers",
+     "abbr": "PIT",
+     "dvoa": -0.08,
+     "finish": "#11",
+     "finish_rank": 11.0
+    },
+    {
+     "team": "Chiefs",
+     "abbr": "KC",
+     "dvoa": -0.05,
+     "finish": "#13",
+     "finish_rank": 13.0
+    },
+    {
+     "team": "Raiders",
+     "abbr": "LV",
+     "dvoa": -0.046,
+     "finish": "#7",
+     "finish_rank": 7.0
+    },
+    {
+     "team": "Patriots",
+     "abbr": "NE",
+     "dvoa": -0.045,
+     "finish": "#25",
+     "finish_rank": 25.0
+    },
+    {
+     "team": "Jaguars",
+     "abbr": "JAX",
+     "dvoa": -0.042,
+     "finish": "#17",
+     "finish_rank": 17.0
+    }
+   ]
+  },
+  "coordinators": [
+   {
+    "name": "Chirs O'Leary",
+    "team": "Chargers",
+    "abbr": "LAC",
+    "record": "2021-2023 Notre Dame DBs Coach, 2024 Chargers Safeties Coach, 2025 Western Michigan DC, 2025 9th in FBS scoring defense, 2nd in MAC , 19th nationally ranked total defense, won conference title"
+   },
+   {
+    "name": "Jim Leonhard",
+    "team": "Bills",
+    "abbr": "BUF",
+    "record": "2024 Broncos DB Coach/Pass Game Coordinator, 2025 Broncos Pass Game Coordinator and Assistant HC, 2017-2022 Wisconsin DC: 5/6 Seasons led a Top 10 Nationally Ranked Defense, 1st, 8th, 5th, 41st and 1st in team defense, in 6 total years at Wisconsin: 1st in first downs allowed per game, 3rd down %, and yards per game, 3rd in takeaways and interceptions, and 5th in scoring defense"
+   },
+   {
+    "name": "Christian Parker",
+    "team": "Cowboys",
+    "abbr": "DAL",
+    "record": "Ex Packers Quality Control Coach 2019, 2021-2023 Broncos DBs Coach, 2024-2025 Eagles Pass Game Coordinator, Expertise in secondary development 2024-2025 Eagles 1st in passing defense with 182 yards/game and 79 opponent passer rating, 2nd lowest completion % allowed, and 9th in EPA/Play"
+   },
+   {
+    "name": "Jonathan Gannon",
+    "team": "Packers",
+    "abbr": "GB",
+    "record": "2021-2022 Eagles DC, 2021 10th rated total Defense, 2022 2nd rated total Defense, 2022 Franchise Record for Sacks, 2024 HC For Cardinals allowed 22.3 points per game, improving to 15th in the NFL (highlighted by a mid-season stretch where they ranked top-10 over an 11-game window)"
+   },
+   {
+    "name": "Raheem Morris",
+    "team": "49ers",
+    "abbr": "SF",
+    "record": "4 years of Head Coaching Experience, 2 superbowl rings as an assistant, 2021-2022 Superbowl Champion as Rams DC, Inheriting Saleh's Unit (Bosa, Warner, Greenlaw)"
+   },
+   {
+    "name": "Anthony Weaver",
+    "team": "Ravens",
+    "abbr": "BAL",
+    "record": "Ex Texans DL Coach, Texans DC, Ravens Run Game Coordinator/assistant HC, and Dolphins DC 2024-2025, Dolphins 2024 4th in total defense at 314.4 yards/game (9th in pass and rush, 10th in scoring), 2025 top 15 in takeaways, sacks, and forced fumbles, 2023 Ravens DL Coach 3rd fewest rushing yards allowed per game, 1st in third down defense, and 1st in redzone touchdown %"
+   },
+   {
+    "name": "Mike Rutenberg",
+    "team": "Browns",
+    "abbr": "CLE",
+    "record": "2013-2019 Jaguars Assistant LB/DB Coach, 2020 49ers Pass Game Specialist, 2021-2024 Jets LB Coach, 2025 Falcons Pass Game Coordinator, 2022-2024 Jets ranked top 5 in total defense each year, also 1st in total defense and passing defense, 8th in sacks, and 9th in scoring"
+   },
+   {
+    "name": "Rob Leonard",
+    "team": "Raiders",
+    "abbr": "LV",
+    "record": "2019-2021 DL/LB Coach, 2022 Ravens OLB Coach, 2023-2024 Raiders DL Coach, 2025 Raiders DL Coach/Run Game Coordinator, 2023 most single season sacks by the Raiders since 2010 (46), 2024 2nd most passes defensed by D-Line, 2025 2nd in fewest rushing yards allowed per attempt and 3rd in TFLs, Overall strong coaching for run defense, team defense leaves a lot to be desired at 25th in points during his time with the Raiders"
+   },
+   {
+    "name": "Sean Duggan",
+    "team": "Dolphins",
+    "abbr": "MIA",
+    "record": "2020-2023 LB Coach and Co-DC, 2024 Packers Defensive Assistant, 2025 Packers LB Coach, 2nd youngest NFL Coordinator, 2024-2025 Packers ranked 9th in total defense and run defense, strong LB development (Walker, Cooper, McDuffie, Hopper),"
+   },
+   {
+    "name": "Dennard Wilson",
+    "team": "Giants",
+    "abbr": "NYG",
+    "record": "Ex Rams, Jets, Eagles, and Ravens DBs Coach, 2024-2025 Titans DC, 2024 Titans 2nd in team defense, 4th in pass defense, 5th fewest first downs allowed, Overshadowed unit due to poor offensive performance, 2025 regression but still top 10 in sacks per pass attempt"
+   },
+   {
+    "name": "Brian Duker",
+    "team": "Jets",
+    "abbr": "NYJ",
+    "record": "2022 Lions Safeties Coach, 2023 Lions DBs Coach, 2024-2025 Dolphins Pass Game Coordinator, 2024 Dolphins defense top 10 team defense, not much playcalling experience behind Aaron Glenn in Detroit"
+   },
+   {
+    "name": "Patrick Graham",
+    "team": "Steelers",
+    "abbr": "PIT",
+    "record": "Ex Giants and Packers LB Coach, 2019 Dolphins DC, 2020-2021 Giants DC, 2022-2025 Raiders DC, Poor history of points allowed: 32nd, 9th, 23rd, 26th, 9th, 25th, and 25th (9th finishes in year 2 of rebuilds for 2020 Giants and 2023 Raiders), 2024 respectable unit with 15th in total defense, 13th rushing, 15th passing"
+   },
+   {
+    "name": "Gus Bradley",
+    "team": "Titans",
+    "abbr": "TEN",
+    "record": "2009-2012 Seahawks DC, 2013-2016 Jaguars HC, 2017-2020 Chargers DC, 2021 Raiders DC, 2022-2024 Colts DC, 2024-2025 49ers Assistant HC, major expertise in leading the Seahawks legion of boom, strong 2017-2029 record with Chargers (3rd, 8th, and 14th in points allowed), 2017 chargers 3rd in passing yards allowed, 2021 league leading pressure rate with the Raiders,"
+   },
+   {
+    "name": "Daronte Jones",
+    "team": "Commanders",
+    "abbr": "WAS",
+    "record": "2016-2017 Dolphins DBs Coach, 2018-2019 Bengals DBs Coach, 2020 Vikings DBs Coach, 2021 LSU DC, 2022-2025 Vikings DBs Coach/Defensive Pass Game Coordinator, 2022-2025 Flores Defense: top 10 in points allowed twice, top 10 in takeaways three times, top 5 in third down defense twice"
+   }
+  ],
+  "inherited": [
+   {
+    "label": "Best Inherited Jobs",
+    "entries": [
+     {
+      "team": "Bills",
+      "abbr": "BUF",
+      "coordinator": "Leonard"
+     },
+     {
+      "team": "Chargers",
+      "abbr": "LAC",
+      "coordinator": "O'Leary"
+     },
+     {
+      "team": "Steelers",
+      "abbr": "PIT",
+      "coordinator": "Graham"
+     },
+     {
+      "team": "Packers",
+      "abbr": "GB",
+      "coordinator": "Gannon"
+     },
+     {
+      "team": "49ers",
+      "abbr": "SF",
+      "coordinator": "Morris"
+     }
+    ]
+   },
+   {
+    "label": "Worst Inherited Jobs",
+    "entries": [
+     {
+      "team": "Jets",
+      "abbr": "NYJ",
+      "coordinator": "Duker"
+     },
+     {
+      "team": "Cowboys",
+      "abbr": "DAL",
+      "coordinator": "Parker"
+     },
+     {
+      "team": "Commanders",
+      "abbr": "WAS",
+      "coordinator": "Jones"
+     },
+     {
+      "team": "Raiders",
+      "abbr": "LV",
+      "coordinator": "Leonard"
+     },
+     {
+      "team": "Dolphins",
+      "abbr": "MIA",
+      "coordinator": "Duggan"
+     }
+    ]
+   }
+  ],
+  "dc_note": "The Follow DC hired have a HC that will be the expected playcaller: Anthony Weaver (Ravens/Minter), Gus Bradley (Titans/Saleh), Brian Duker (Jets/Glenn), and Sean Duggan (Dolphins/Hafley)",
+  "dc_outlook": {
+   "improve": [
+    "Packers (Gannon): Added: Zaire Franklin, Javon Hargrave, Brandon Cisse",
+    "Cowboys (Parker): Added: Quinnen Williams, Rashaan Gary, Cobie Durant, Caleb Downs, Jalen Thompson",
+    "Bills (Leonhard): strong scheme + Needs fit, Leonhard run game specialist + Talented Buffalo Roster",
+    "Morris (49ers): Shanahan Scheme, Strong Roster of Bosa, Warner, Greenlaw, departure from 4-3 to 5-man front",
+    "Weaver (Ravens): Minter HC, Added:Trey Hendrickson, Zion Young + Nnamdi Madubike Return"
+   ],
+   "regress": [
+    "Browns (Rutenberg): Loss of Miles Garrett, lack of experience from Rutenberg, Departure of Schwartz in Staff, unknown offensive production",
+    "Chargers (O'Leary): Departure of a top defensive coordinator in Minter (5th ranked defense in 2025), aging core in Mack, James, Jackson, and Perryman",
+    "Dolphins (Duggan): Brand new GM + HC and future uncertainty, Major player selloff of Fitzpatrick, lack of major free agency signings, uncertain offensive production"
+   ]
+  },
   "spread": {
    "top": {
     "rank": 1,
     "team": "Seahawks",
     "abbr": "SEA",
     "fpts": 179.0,
-    "ppg": 10.5
+    "ppg": 10.5,
+    "epa": "-0.12 (#2)"
    },
    "tenth": {
     "rank": 10,
     "team": "Patriots",
     "abbr": "NE",
     "fpts": 127.0,
-    "ppg": 7.5
+    "ppg": 7.5,
+    "epa": "-0.05 (#11)"
    },
    "points": 52.0,
    "per_game": 3.06
@@ -2896,11 +3837,52 @@
       "abbr": "ARI"
      }
     ]
+   },
+   {
+    "team": "Eagles",
+    "abbr": "PHI",
+    "weeks": [
+     {
+      "week": 1,
+      "opponent": "Commanders",
+      "abbr": "WAS"
+     },
+     {
+      "week": 2,
+      "opponent": "Titans",
+      "abbr": "TEN"
+     },
+     {
+      "week": 6,
+      "opponent": "Panthers",
+      "abbr": "CAR"
+     },
+     {
+      "week": 8,
+      "opponent": "Commanders",
+      "abbr": "WAS"
+     },
+     {
+      "week": 9,
+      "opponent": "Giants",
+      "abbr": "NYG"
+     },
+     {
+      "week": 11,
+      "opponent": "Steelers",
+      "abbr": "PIT"
+     },
+     {
+      "week": 13,
+      "opponent": "Cardinals",
+      "abbr": "ARI"
+     }
+    ]
    }
   ],
   "schedules": [
    {
-    "source": "DEFENSE STRENGTH OF SCHEDULE",
+    "source": "Full Time Fantasy Strength of Schedule",
     "easiest": [
      {
       "name": "Jets",
@@ -4115,6 +5097,7 @@
      "abbr": "SEA",
      "fpts": 179.0,
      "ppg": 10.5,
+     "epa": "-0.12 (#2)",
      "appears": [
       "Sacks",
       "Interceptions",
@@ -4130,6 +5113,7 @@
      "abbr": "HOU",
      "fpts": 164.0,
      "ppg": 9.6,
+     "epa": "-0.13 (#1)",
      "appears": [
       "Sacks",
       "Interceptions",
@@ -4147,6 +5131,7 @@
      "abbr": "JAX",
      "fpts": 144.0,
      "ppg": 8.5,
+     "epa": "-0.11 (#3)",
      "appears": [
       "Interceptions",
       "EPA/Pass Allowed",
@@ -4161,6 +5146,7 @@
      "abbr": "DEN",
      "fpts": 143.0,
      "ppg": 8.4,
+     "epa": "-0.09 (#7)",
      "appears": [
       "Sacks",
       "Pressure Rate",
@@ -4176,6 +5162,7 @@
      "abbr": "MIN",
      "fpts": 136.0,
      "ppg": 8.0,
+     "epa": "-0.11 (#4)",
      "appears": [
       "Sacks",
       "Forced Fumbles",
@@ -4192,6 +5179,7 @@
      "abbr": "LAR",
      "fpts": 136.0,
      "ppg": 8.0,
+     "epa": "-0.06 (#10)",
      "appears": [
       "Sacks",
       "Interceptions",
@@ -4208,6 +5196,7 @@
      "abbr": "PHI",
      "fpts": 135.0,
      "ppg": 7.9,
+     "epa": "-0.08 (#8)",
      "appears": [
       "Forced Fumbles",
       "EPA/Pass Allowed",
@@ -4222,6 +5211,7 @@
      "abbr": "CLE",
      "fpts": 133.0,
      "ppg": 7.8,
+     "epa": "-0.10 (#5)",
      "appears": [
       "Sacks",
       "Forced Fumbles",
@@ -4237,6 +5227,7 @@
      "abbr": "PIT",
      "fpts": 130.0,
      "ppg": 7.6,
+     "epa": "0.01 (#19)",
      "appears": [
       "Sacks",
       "Interceptions",
@@ -4250,6 +5241,7 @@
      "abbr": "NE",
      "fpts": 127.0,
      "ppg": 7.5,
+     "epa": "-0.05 (#11)",
      "appears": [],
      "of": 7
     }

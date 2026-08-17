@@ -141,6 +141,19 @@ build` with a line number instead of shipping a broken page.
      0 of 7) and the spotlight is whoever appears in most while missing the top
      ten (currently the Chargers, 6 of 7). If next year's sheet moves, the page
      moves with it.
+   - **The defense page follows the operator's own section order**, set in
+     conversation: what it is worth, historic finishes, the measures against the
+     finish, pass rush, secondary, box rates, offseason, coordinators, schedule.
+     The three findings sit at the **foot** of the page rather than the top —
+     they argue from every table above them. Say so if that should move.
+     `defense_charts.py` targets the **(4)** workbook; the row map moved when
+     the success-rate and DVOA blocks were inserted at 115-146, and the
+     coverage block's pressure rate shifted from column F to G.
+   - **The sheet's own 2022 Buffalo row is internally inconsistent.** It lists
+     150 points at 8.8 per game, which implies 17 games; Buffalo played 16 in
+     2022 after the Hamlin game was cancelled, and 16 x 8.8 is 141. The
+     screenshot transcription has GP 16. Everything else in the two sources
+     agrees exactly across 30 compared rows.
    - **Four years of defense scoring with components live in
      `scripts/curated/data/dst-history.json`.** This is the only data in the
      project that came from screenshots rather than the workbook, so it was

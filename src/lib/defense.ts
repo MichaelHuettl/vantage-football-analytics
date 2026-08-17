@@ -50,6 +50,52 @@ export interface SosList {
   hardest: TeamRef[];
 }
 
+export interface HistoryRow {
+  team: string;
+  gp: number;
+  loss: number;
+  sck: number;
+  qb_hits: number;
+  int: number;
+  fr: number;
+  sfty: number;
+  def_td: number;
+  ret_td: number;
+  opp_pts: number;
+  ppg: number;
+}
+
+export interface SeasonRow {
+  rank: number;
+  team: string;
+  abbr: string | null;
+  fpts: number;
+  ppg: number;
+  /** "-0.12 (#2)" — value and league rank as the sheet keeps them. */
+  epa: string | null;
+}
+
+export interface PairedRow {
+  team: string;
+  abbr: string | null;
+  success_rate?: number;
+  dvoa?: number;
+  finish: string | null;
+  finish_rank: number | null;
+}
+
+export interface Coordinator {
+  name: string;
+  team: string | null;
+  abbr: string | null;
+  record: string | null;
+}
+
+export interface InheritedBlock {
+  label: string;
+  entries: { team: string; abbr: string | null; coordinator: string | null }[];
+}
+
 export interface Measure {
   label: string;
   block: "leaderboard" | "box" | "coverage";
@@ -84,6 +130,13 @@ interface DefenseFile {
   note: string;
   data: {
     fantasy: FantasyRow[];
+    seasons_scoring: Record<string, SeasonRow[]>;
+    success: Record<string, PairedRow[]>;
+    dvoa: Record<string, PairedRow[]>;
+    coordinators: Coordinator[];
+    inherited: InheritedBlock[];
+    dc_note: string | null;
+    dc_outlook: { improve: string[]; regress: string[] };
     spread: {
       top: FantasyRow;
       tenth: FantasyRow;
@@ -98,6 +151,8 @@ interface DefenseFile {
     verdict: { improved: TeamRef[]; regressed: TeamRef[] };
     strong_schedules: StrongSchedule[];
     schedules: SosList[];
+    history: Record<string, HistoryRow[]> | null;
+    history_note: string | null;
     analysis: {
       scorers: number;
       league: number;
