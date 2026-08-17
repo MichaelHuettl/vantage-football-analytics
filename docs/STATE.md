@@ -4,9 +4,44 @@ Read `docs/BRIEF.md` first — it defines the `§` references in code comments.
 This file records where the build actually is, what was decided against the
 brief, and what is still open.
 
-Last updated: 2026-08-15.
+Last updated: 2026-08-17.
 
 ---
+
+## Start here
+
+If you are picking this up cold, in this order:
+
+1. **`docs/BRIEF.md`** — the brief. Every `§` in the codebase points at it.
+2. **This file** — what is built, what was decided, what is still open.
+3. **`git log`** — every change carries its reasoning in the commit message.
+   `git log --oneline -30` is a faster history than any summary of it.
+
+**The workbook is the source and it is versioned.** The current one is
+`~/Downloads/2026-2027 Fantasy Football Analytics (Original) (4).xlsx`.
+Each new version the operator sends is a new file, and **sheet numbers and row
+numbers both shift between them** — the (4) sheet inserted success-rate and
+DVOA blocks at rows 115-146 and pushed everything below down, and moved a
+coverage column from F to G. Every extractor names the version it targets in
+`DEFAULT_WB`; when a new one arrives, re-run each script and read the row map
+before trusting the output.
+
+**Three extractors read the workbook** and write JSON into `src/data/`. They are
+the only things that touch it:
+
+| Script | Writes | Covers |
+| --- | --- | --- |
+| `scripts/curated/rb_charts.py` | `rb-charts.json` | RB scatters, historic RB 1-3, opportunity share |
+| `scripts/curated/kicker_charts.py` | `kicker-charts.json` | FG attempts, kicker scoring, advantages, board |
+| `scripts/curated/defense_charts.py` | `defense-charts.json` | 9 defense blocks + coordinators |
+
+**Nothing is scheduled.** There is no git remote, so no GitHub Action has ever
+run. Every feed and fetch happens when someone types the command (see open
+item 1 and the Commands section).
+
+**Published analysis** (private artifacts, shareable from their own pages):
+- Kicker: what predicts a kicker — https://claude.ai/code/artifact/659c7318-1074-4920-85ab-5fac3b13cc90
+- Defense: which defensive stats carry — https://claude.ai/code/artifact/37da6d18-985e-4faf-872d-9f3056051693
 
 ## What the site is
 
@@ -65,117 +100,33 @@ build` with a line number instead of shipping a broken page.
    plumbing gap, not a code fault. Fixing it means pushing to GitHub and
    enabling Actions; until then the section is as fresh as the last manual run.
    A local `launchd` timer is the alternative if the repo stays private.
-2. **Charts.** RB is done and is the pattern to copy: `scripts/curated/
-   rb_charts.py` reads the workbook and writes `src/data/rb-charts.json`,
-   `ScatterChart` and `RankTable` render it, `RunningBackAnalysis` assembles
-   it. WR/TE is the obvious next one — six of the workbook's eleven charts are
-   on that sheet. The other positions still show the PNG slot.
-   - **The scatters compute nothing.** Medians, extents, which points get a
-     name, and the order they are placed in all come out of the Python (§11).
-   - **Every point is named.** `ScatterChart` tries thirty positions per label
-     — six directions at five distances — and draws a leader line for anything
-     past the inner ring. All 170 points across the four charts are named with
-     no overlap; if a future chart is denser than this one, the placement drops
-     the lowest-ranked name rather than overlapping, and its dot stays.
-   - **The historic block is a table, not a chart.** Thirteen measures do not
-     fit on two axes, and the rank and age columns are the ones that change a
-     read. Emphasis is marked in the Python against each column's own
-     quartiles, with the sense flipped for the two rank columns so bold always
-     means good; amber is the single best value in a column, eleven cells in
-     the whole table.
-   - **Kicker is built from the (3) workbook's new "Defense and Kicker Stats"
-     sheet** via `scripts/curated/kicker_charts.py`: team FG attempts 2021-25
-     (top 16 and bottom 5), kicker scoring 2023-25, the five situational
-     advantage columns, and the operator's shortlist in his own words.
-   - **The kicker persistence analysis is computed and deliberately not
-     shown.** Neither of the workbook's ranked lists survives the year: a
-     top-16 drawn from 32 teams repeats 8/16 by chance, and team FG attempts
-     retained 7, 9, 9, 8 while kicker top-16 retained 8 and 9. Only Aubrey,
-     Dicker, McLaughlin and Myers made the kicker top 16 in all three years,
-     and Aubrey did it at 10.4, 10.5, 10.4 points per game. It was raised, and
-     the operator's decision was to leave it off and keep his own reasoning
-     verbatim. The numbers stay in `kicker-charts.json` under
-     `scoring.retention`, `fg_attempts.retention` and `scoring.persistent`, so
-     rendering them later is a component away rather than a rediscovery.
-   - **Kicker page** is driven by `scripts/curated/kicker_charts.py` from the
-     workbook's "Defense and Kicker Stats" sheet. Seven sections in a fixed
-     order: the value case, the top-half/bottom-half split, then the workbook's
-     three reference blocks in full — five years of team FG attempt ranks, three
-     years of kicker scoring, and all six situational advantage columns — then
-     the board. **The workbook blocks are the point of the page, not supporting
-     material.** A first pass rendered only the analysis and the board and left
-     all three tables in the JSON unrendered; from the operator's side that read
-     as his data having been deleted. `KickerData.tsx` holds them.
-     The top three carry his own write-up verbatim, joined from the sheet by
-     surname; the value picks have no write-up there, so a one-line case stands
-     in. Games played are derived as points ÷ points-per-game, the only route to
-     them in that sheet, landing within a tenth of an integer on every row.
-   - **Every kicker on the kicker page carries a team chip, and the scoring
-     tables use the team he kicked for *that season*.** Current teams would
-     misattribute eight of the 29: Jason Sanders was in Miami rather than the
-     Jets, Matt Gay in Indianapolis rather than Las Vegas, Blake Grupe in New
-     Orleans, and Carlson, Koo, Zuerlein, Hopkins and McManus have since moved
-     or left the league. `SEASON_TEAM` in `kicker_charts.py` holds the verified
-     mapping, taken from nflverse season rosters; it is historical and fixed, so
-     it is embedded rather than fetched. A kicker with no club gets an FA marker
-     rather than a stale chip.
-   - **Defense is built** from the same sheet via
-     `scripts/curated/defense_charts.py`. Nine blocks of different shapes:
-     the scored top ten, seven leaderboards ten deep, simulated pressure with
-     real frequency and efficiency values, three box-rate columns, five
-     coverage measures ranked all thirty-two, ten teams of offseason movement
-     with the role each player held, the improved/regressed verdict, four
-     favourable schedule stretches, and three strength-of-schedule lists from
-     different sources. Offseason blocks are **found rather than hard-coded** —
-     a club name alone in column B followed by a Departures header — so adding
-     an eleventh team to the sheet needs no code change. A leaderboard cell can
-     name two clubs where the sheet records a tie ("Saints/Chargers"); those
-     are split and both get a chip.
-   - **Three defense findings are published, and they are computed rather than
-     written.** `DefenseFindings.tsx` renders `analysis` from
-     `defense-charts.json`: which of the fifteen measures track scoring against
-     an explicit chance baseline, how much leaderboard support each top-ten
-     finish has, and the best underlying play outside the top ten. **The two
-     names are found by the Python, not hard-coded** — the exception row is
-     whichever top-ten defense appears in no leaderboard (currently New England,
-     0 of 7) and the spotlight is whoever appears in most while missing the top
-     ten (currently the Chargers, 6 of 7). If next year's sheet moves, the page
-     moves with it.
-   - **The defense page follows the operator's own section order**, set in
-     conversation: what it is worth, historic finishes, the measures against the
-     finish, pass rush, secondary, box rates, offseason, coordinators, schedule.
-     The three findings sit at the **foot** of the page rather than the top —
-     they argue from every table above them. Say so if that should move.
-     `defense_charts.py` targets the **(4)** workbook; the row map moved when
-     the success-rate and DVOA blocks were inserted at 115-146, and the
-     coverage block's pressure rate shifted from column F to G.
-   - **The sheet's own 2022 Buffalo row is internally inconsistent.** It lists
-     150 points at 8.8 per game, which implies 17 games; Buffalo played 16 in
-     2022 after the Hamlin game was cancelled, and 16 x 8.8 is 141. The
-     screenshot transcription has GP 16. Everything else in the two sources
-     agrees exactly across 30 compared rows.
-   - **Four years of defense scoring with components live in
-     `scripts/curated/data/dst-history.json`.** This is the only data in the
-     project that came from screenshots rather than the workbook, so it was
-     verified before use: every row range-checks and orders correctly, and
-     reconstructing season points from the components leaves a residual that
-     tracks opponent points per game at r = -0.88, which is exactly what a
-     points-allowed tier does. A misread digit would break that relationship.
-     It is **not yet rendered** — the pipeline computes drivers, persistence and
-     repeat rates from it into `history_analysis`, and what to publish is an
-     open question.
-   - **`COVERAGE_DIRECTION` in `defense_charts.py` is load-bearing.** Three of
-     the five coverage columns run worst-first and nothing in the sheet says so.
-     Read the wrong way round, "Down Conversion Rate Allowed" flips from the
-     third-best predictor in the data to the worst. Any new coverage column
-     needs an entry there.
-   - **The ranked tables shade red-to-green** at the operator's request, built
-     from the four status tokens rather than pure red and green so the ramp
-     also varies in lightness. The number is printed in every cell, so §7's
-     "colour is never the sole carrier" still holds.
-   - **The workbook's own conclusions are transcribed by hand** into
-     `RunningBackAnalysis.tsx` rather than the JSON, because they are writing
-     rather than data.
+2. **Position pages: RB, K and DST are built. WR/TE and QB are not.**
+   Each built page follows the same shape — a script reads the workbook, the
+   JSON holds every computed value, and the components only draw (§11). WR/TE
+   is the obvious next one: six of the workbook's eleven charts are on that
+   sheet, and `rb_charts.py` is the closest template.
+   - **RB** — three scatters, the historic RB 1-3 table, and two ranked tables.
+     `ScatterChart` names every point: thirty candidate positions per label,
+     six directions at five distances, with a leader line past the inner ring.
+     All 170 points are named with no overlap. Emphasis in the historic table
+     is marked against each column's own quartiles, with the sense flipped for
+     the two rank columns so bold always means good.
+   - **K** — seven sections. The value case, the top-half/bottom-half split,
+     then the workbook's three reference blocks *in full*, then the board.
+     **The workbook blocks are the point of that page.** A first pass rendered
+     only the analysis and left all three tables unrendered in the JSON, which
+     from the operator's side was indistinguishable from deleting his data.
+     The top three carry his write-up verbatim; every kicker carries a team
+     chip, and the scoring tables use the team he kicked for *that season* —
+     current teams would misattribute eight of twenty-nine.
+   - **DST** — nine blocks in the operator's own section order: what it is
+     worth, historic finishes, the measures against the finish, pass rush,
+     secondary, box rates, offseason, coordinators, schedule. The 2025 columns
+     are **regrouped by what they measure** rather than which sheet block they
+     came from. The three findings sit at the **foot** of the page.
+   - **The scatters and tables compute nothing.** Medians, extents, quartiles,
+     which points get a name and the order they are placed in all come out of
+     the Python.
 3. **Games is fetched, not authored, and nothing schedules the fetch.**
    `npm run games` fills lines, implied totals, scores, per-team leaders and
    weather; by default it does the weeks with a game between 7 days ago and 14
@@ -201,14 +152,11 @@ build` with a line number instead of shipping a broken page.
    2026-08-12 wording until it was updated by hand. The gap is not that the
    news is missing — it is that a fresher headline never nudges the injury
    record, so the two can disagree on screen.
-7. **Defense is not built.** The (3) workbook's "Defense and Kicker Stats"
-   sheet carries far more than the kicker half that is live: 2025 defensive
-   scoring, seven ranked leader columns (sacks, interceptions, forced fumbles,
-   pressure rate, EPA/pass allowed, pass success rate, defensive EPA/play),
-   simulated-pressure and box-rate tables, a per-team offseason departures and
-   additions block for ten defenses, and three separate strength-of-schedule
-   rankings that disagree with each other. `kicker_charts.py` reads the same
-   sheet and is the place to extend.
+7. **The 2025 leaderboards have no numbers.** Sacks, interceptions, pressure
+   rate and the rest are team order only in the (4) sheet — the operator asked
+   for "sack leaders with numbers" and the counts are not there. The only 2025
+   block with values is simulated pressure. Sack counts *do* exist for 2021-24
+   in `scripts/curated/data/dst-history.json`.
 8. **Nitter is fragile.** The beat feed goes through it because X has no free
    read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
@@ -238,7 +186,8 @@ build` with a line number instead of shipping a broken page.
 
 | What | Where |
 | --- | --- |
-| Analytics workbook | `~/Downloads/2026-2027 Fantasy Football Analytics (Original) (1).xlsx` |
+| Analytics workbook | `~/Downloads/2026-2027 Fantasy Football Analytics (Original) (4).xlsx` — **versioned; each new one is a new file and shifts rows** |
+| Defense scoring history | `scripts/curated/data/dst-history.json` — 2021-24 with components, transcribed from screenshots, not in the workbook |
 | Rankings source | Sheet 2 "Mock Drafts & Rankings", rows 80–99, cols B–G, labelled **"My Rankings (WIP)"** |
 | Injury source | Sheet 11 "Key Injuries" — rehab block rows 3–72, camp block rows 74–91 |
 | X screenshots | Sheet 10 "Offseason News" — 117 images in 32 team columns |
@@ -356,5 +305,19 @@ npm run games -- --all       # the whole season
 npm run games:dry            # read and report, write nothing
 ```
 
-`scripts/curated/` re-runs the workbook screenshot → OCR → JSON pipeline; see
-its README.
+The three workbook extractors are Python and are run directly, not through npm:
+
+```
+python3 scripts/curated/rb_charts.py        # -> src/data/rb-charts.json
+python3 scripts/curated/kicker_charts.py    # -> src/data/kicker-charts.json
+python3 scripts/curated/defense_charts.py   # -> src/data/defense-charts.json
+```
+
+Each takes an optional path argument if the workbook is not the version named in
+its `DEFAULT_WB`. They print a summary and warn on anything that does not
+reconcile — a correction that no longer matches the sheet, a team listed in two
+places at once, a name that is not a real club. **Read that output.** It is the
+only thing standing between a bad cell and a published page.
+
+`scripts/curated/` also holds the older workbook screenshot → OCR → JSON
+pipeline; see its README.
