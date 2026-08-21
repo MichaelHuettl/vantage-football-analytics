@@ -8,12 +8,18 @@
   "field_image": "/img/film/field.png",
   "view": { "width": 100, "height": 48.11 },
   "situation": [
-   { "label": "Score", "value": "24 (GB) – 14 (LV)" },
-   { "label": "Time", "value": "Q2 10:45" },
-   { "label": "Down/Distance", "value": "3rd and Goal (11)" },
-   { "label": "Outcome", "value": "3 YD Comp to RB" },
-   { "label": "Pre-play DEF", "value": "2 High Shell" },
-   { "label": "DEF", "value": "Cover 2 Man" }
+   [
+    { "label": "Score", "value": "24 (GB) – 14 (LV)" },
+    { "label": "Time", "value": "Q2 10:45" }
+   ],
+   [
+    { "label": "Down/Distance", "value": "3rd and Goal (11)" },
+    { "label": "Outcome", "value": "3 YD Comp to RB" }
+   ],
+   [
+    { "label": "Pre-play DEF", "value": "2 High Shell" },
+    { "label": "DEF", "value": "Cover 2 Man" }
+   ]
   ],
   "offense": [
    { "id": "wr-x", "shape": "circle", "x": 21.11, "y": 38.89, "role": "Receiver, left" },

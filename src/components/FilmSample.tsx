@@ -52,7 +52,12 @@ interface SampleFile {
     title: string;
     field_image: string;
     view: { width: number; height: number };
-    situation: { label: string; value: string }[];
+    /** Three columns of two, matching the template's three footer text boxes:
+     *  score and clock, then the call and what it produced, then the coverage
+     *  before and after the snap. Grouped in the data rather than flowed as one
+     *  list, because a six-item grid reflows into whatever the breakpoint
+     *  allows and splits pairs that only make sense side by side. */
+    situation: { label: string; value: string }[][];
     offense: Marker[];
     defense: Defender[];
     routes: Route[];
@@ -83,7 +88,7 @@ export function FilmSample() {
           className="block w-full h-auto"
           role="img"
           aria-label={`${play.title}. Offense in shotgun with five linemen; defense in ${
-            play.situation.find((s) => s.label === "DEF")?.value ?? "coverage"
+            play.situation.flat().find((s) => s.label === "DEF")?.value ?? "coverage"
           }. Routes: ${play.routes.map((r) => r.label).join("; ")}.`}
         >
           {/* The template's own field. `preserveAspectRatio="none"` because the
@@ -164,13 +169,17 @@ export function FilmSample() {
           selectable, wrappable and legible at any width. */}
       <figcaption className="mt-0">
         <dl
-          className="grid grid-cols-2 gap-x-6 gap-y-3 rounded-b-lg px-4 py-4 sm:grid-cols-3"
+          className="grid grid-cols-1 gap-x-8 gap-y-4 rounded-b-lg px-4 py-4 sm:grid-cols-3"
           style={{ background: "var(--surface-sunken)" }}
         >
-          {play.situation.map((s) => (
-            <div key={s.label}>
-              <dt className="eyebrow">{s.label}</dt>
-              <dd className="mt-0.5 text-sm tnum">{s.value}</dd>
+          {play.situation.map((column, i) => (
+            <div key={i} className="flex flex-col gap-2">
+              {column.map((s) => (
+                <div key={s.label}>
+                  <dt className="eyebrow">{s.label}</dt>
+                  <dd className="mt-0.5 text-sm tnum">{s.value}</dd>
+                </div>
+              ))}
             </div>
           ))}
         </dl>
