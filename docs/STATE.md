@@ -63,7 +63,7 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, seven section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positional Data | Index cards head on `evaluated_on` — the family of statistics a position is judged on — with WR marked unbuilt. Six pages. **RB, K, DST, TE and QB are built** — one column: methodology, then the evidence. WR keeps the two-column slot-and-pool layout |
+| Positional Data | Index cards carry a photo per position in a shared 2:1 frame, and head on `evaluated_on` — the family of statistics a position is judged on — with WR marked unbuilt. Six pages. **RB, K, DST, TE and QB are built** — one column: methodology, then the evidence. WR keeps the two-column slot-and-pool layout |
 | Injury Database | Training camp section (58 entries) plus a **live wire** reconciled against it, team filter in the URL. Weekly report empty until Week 1 |
 | Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Game Tracker | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |

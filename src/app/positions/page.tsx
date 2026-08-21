@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import positionsFile from "@/data/positions.json";
 import { Container } from "@/components/PageHeader";
@@ -15,6 +16,9 @@ interface PositionDoc {
   evaluated_on: string;
   /** Written for this card, at card length. */
   summary: string;
+  photo: string;
+  /** Where the subject sits, for `object-position` in the 2:1 frame. */
+  photo_position: string;
   chart_title: string;
   methodology: string;
 }
@@ -59,9 +63,31 @@ export default function PositionsIndex() {
               <li key={doc.position}>
                 <Link
                   href={`/positions/${doc.position.toLowerCase()}`}
-                  className="flex h-full flex-col gap-3 rounded-lg border p-6 transition-colors hover:border-[var(--accent)]"
+                  className="group flex h-full flex-col overflow-hidden rounded-lg border transition-colors hover:border-[var(--accent)]"
                   style={{ borderColor: "var(--border-subtle)" }}
                 >
+                  {/* One frame for all six. The photographs arrive at six
+                      different shapes — the running back is a portrait, the
+                      rest are landscape at three different ratios — so the
+                      frame is fixed at 2:1 and each photo is positioned to it
+                      rather than cropped to it. `object-position` comes from
+                      the data, per photo, because "center" puts the subject's
+                      chest in frame on one and the turf on another. */}
+                  <div
+                    className="relative aspect-[2/1] w-full overflow-hidden"
+                    style={{ background: "var(--color-vantage-panel)" }}
+                  >
+                    <Image
+                      src={doc.photo}
+                      alt=""
+                      fill
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                      className="transition-transform duration-300 group-hover:scale-[1.03]"
+                      style={{ objectFit: "cover", objectPosition: doc.photo_position }}
+                    />
+                  </div>
+
+                  <div className="flex flex-1 flex-col gap-3 p-6">
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
                     <PositionBadge position={doc.position} />
                     <span className="eyebrow">{POSITION_NAME[doc.position]}</span>
@@ -89,6 +115,7 @@ export default function PositionsIndex() {
                   <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
                     {doc.summary}
                   </span>
+                  </div>
                 </Link>
               </li>
             );
