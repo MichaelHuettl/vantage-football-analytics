@@ -103,8 +103,8 @@ export default async function InjuriesPage({
   return (
     <>
       <SectionHero
-        image="/img/bg/recovery.jpg"
-        objectPosition="center 38%"
+        image="/img/bg/injury-database.jpg"
+        objectPosition="center 50%"
         eyebrow="Status and trend"
         title="Injury Database"
         lede="Training camp status now, practice participation once the season starts. The Friday designation alone is not the signal — the movement across the week is."
