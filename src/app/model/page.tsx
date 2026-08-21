@@ -12,7 +12,7 @@ import { PredictionOverview } from "@/components/prediction/PredictionOverview";
 import { PRED_META, PRED_WEEKS, TIER_LABEL, gamesForWeek, kickoffLabel } from "@/lib/predictions";
 
 export const metadata: Metadata = {
-  title: "The Model",
+  title: "Game Prediction Model",
   description:
     "How the prediction model works, what its record is, and a win probability for every game on the slate.",
 };
@@ -45,7 +45,7 @@ export default async function GamePredictionIndex({
       <SectionHero
         image="/img/bg/vegas.jpg"
         eyebrow="Win probability"
-        title="The Model"
+        title="Game Prediction Model"
         lede="How the model works, how well it has done, and what it expects this week."
       />
 

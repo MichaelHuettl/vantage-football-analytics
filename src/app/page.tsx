@@ -48,7 +48,7 @@ const SECTION_CARDS: {
   },
   {
     href: "/model",
-    label: "The Model",
+    label: "Game Prediction Model",
     blurb: "A win probability for every game, its record, and every call it got wrong.",
     image: "/img/bg/vegas.jpg",
     position: "center",

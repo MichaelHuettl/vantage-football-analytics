@@ -18,7 +18,7 @@ export async function generateMetadata({
   params: Promise<{ gameId: string }>;
 }): Promise<Metadata> {
   const g = getGame((await params).gameId);
-  if (!g) return { title: "The Model" };
+  if (!g) return { title: "Game Prediction Model" };
   return {
     title: `${g.away.team} at ${g.home.team} — prediction`,
     description: `Model win probability, metric comparison and situational context for ${g.away.team} at ${g.home.team}.`,

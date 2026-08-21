@@ -29,6 +29,6 @@ export const SITE_NAV: NavItem[] = [
   { href: "/injuries", label: "Injuries" },
   { href: "/film", label: "Film" },
   { href: "/games", label: "Games" },
-  { href: "/model", label: "The Model" },
+  { href: "/model", label: "Game Prediction Model" },
   { href: "/news", label: "News" },
 ];
