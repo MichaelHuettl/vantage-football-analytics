@@ -1,7 +1,7 @@
 /**
  * The live wire, reconciled against the hand-authored camp report.
  *
- * STATE.md open item 6: nothing linked fresh reporting to `camp-injuries.json`,
+ * STATE.md open item 7: nothing linked fresh reporting to `camp-injuries.json`,
  * so a record could sit at last week's wording while the wire said something
  * else, and the two would disagree on screen with no one told. This closes that
  * by doing the comparison out loud.

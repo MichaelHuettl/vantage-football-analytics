@@ -1,50 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-08-11",
-  "note": "PLACEHOLDER SAMPLE. Route concepts drawn from scratch — generic schematics, not traced from any broadcast or All-22 frame, which is what makes them yours (§2). Coordinates: x is 0–53.3 yards across the field, y is yards downfield from the line of scrimmage, negative behind it. `teams` tags which teams run the concept, and drives the by-team navigation.",
-  "data": [
-    {
-      "slug": "mesh",
-      "name": "Mesh",
-      "family": "Horizontal crossers",
-      "summary": "Two shallow crossers run past each other a yard apart, forcing man defenders to navigate traffic and giving zone defenders two targets on the same plane.",
-      "beneficiaries": "Quick separators and option-route slot receivers. Depresses aDOT, raises catch rate.",
-      "teams": ["CIN", "MIA", "LAR"],
-      "paths": [
-        { "label": "X shallow", "kind": "route", "emphasis": true, "points": [[6, 0], [10, 4], [30, 5]] },
-        { "label": "Z shallow", "kind": "route", "emphasis": true, "points": [[47, 0], [43, 5], [23, 6]] },
-        { "label": "Slot corner", "kind": "route", "points": [[38, 0], [38, 10], [48, 20]] },
-        { "label": "Back swing", "kind": "route", "points": [[27, -5], [18, -4], [10, -2]] },
-        { "label": "Tight end sit", "kind": "route", "points": [[18, 0], [18, 9]] }
-      ]
-    },
-    {
-      "slug": "dagger",
-      "name": "Dagger",
-      "family": "Vertical clear-out",
-      "summary": "A seam route runs off the safety while a dig breaks underneath into the space it just vacated. The concept manufactures a throwing window rather than winning one.",
-      "beneficiaries": "Big-slot receivers on the dig and vertical threats on the clear-out. Raises air yards share for the seam runner even without targets.",
-      "teams": ["MIN", "SF", "DET"],
-      "paths": [
-        { "label": "Seam clear-out", "kind": "route", "points": [[38, 0], [38, 24]] },
-        { "label": "Dig", "kind": "route", "emphasis": true, "points": [[47, 0], [47, 14], [24, 15]] },
-        { "label": "Checkdown", "kind": "route", "points": [[24, -5], [16, 1], [14, 4]] },
-        { "label": "Backside comeback", "kind": "route", "points": [[6, 0], [6, 16], [3, 13]] }
-      ]
-    },
-    {
-      "slug": "sail",
-      "name": "Sail",
-      "family": "Flood",
-      "summary": "Three routes attack one sideline at deep, intermediate, and flat depths, putting the flat defender in a bind he cannot solve without help.",
-      "beneficiaries": "Tight ends and backs on the flat route, who see targets against soft coverage regardless of separation skill.",
-      "teams": ["KC", "BAL", "PHI"],
-      "paths": [
-        { "label": "Go", "kind": "route", "points": [[47, 0], [48, 26]] },
-        { "label": "Out", "kind": "route", "emphasis": true, "points": [[38, 0], [38, 13], [50, 15]] },
-        { "label": "Flat", "kind": "route", "points": [[24, -5], [40, 2], [50, 3]] },
-        { "label": "Backside post", "kind": "route", "points": [[6, 0], [6, 12], [22, 24]] }
-      ]
-    }
-  ]
+  "updated": "2026-08-21",
+  "note": "Deliberately empty. The three concepts that were here (mesh, dagger, sail) were written by an agent rather than by the operator — including which teams were said to run them — and were removed on 2026-08-21 for that reason, not because the shape was wrong. A concept needs: slug, name, family, summary, beneficiaries, a teams array driving the by-team index, and paths. Coordinates: x is 0-53.3 yards across the field, y is yards downfield from the line of scrimmage, negative behind it. Diagrams must be drawn from scratch, never traced from a broadcast or All-22 frame (§2).",
+  "data": []
 }

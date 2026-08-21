@@ -65,7 +65,7 @@ build` with a line number instead of shipping a broken page.
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
 | Positions | Six pages. **RB, K, DST, TE and QB are built** — one column: methodology, then the evidence. WR keeps the two-column slot-and-pool layout |
 | Injuries | Training camp section (58 entries) plus a **live wire** reconciled against it, team filter in the URL. Weekly report empty until Week 1 |
-| Film | Three concepts with SVG diagrams, by-team index |
+| Film | **Scaffold only.** By-team index over all 32 clubs, every card empty — the three sample concepts were agent-written and were deleted on 2026-08-21. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
 | Game prediction | **Built** — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Payload comes from the separate prediction pipeline |
@@ -162,7 +162,7 @@ build` with a line number instead of shipping a broken page.
 
    **Nothing overwrites a hand-authored record.** `camp-injuries.json` is
    reporting, with an attributed timeline or none (§5.3); the wire sits beside
-   it. This is the standing fix for open item 6.
+   it. This is the standing fix for open item 7.
 
 2. **Position pages: RB, K, DST, TE and QB are built. WR is not.**
    Each built page follows the same shape — a script reads the workbook, the
@@ -248,10 +248,19 @@ build` with a line number instead of shipping a broken page.
    board, so Carlson is off the K board entirely and Chase McLaughlin is in at
    7. He still appears on the kicker page's scoring tables, with an FA marker,
    because those record what he did rather than who to take.
-5. **Re-run `npm run audit-teams` after the cutdown to 53.** Rosters move
+5. **The film room has no content, by decision.** `src/data/concepts.json` is
+   an empty array. Mesh, Dagger and Sail were written by an agent — the routes,
+   the prose and the claims about which teams run them — and the operator had
+   them removed on 2026-08-21 rather than publish football analysis he did not
+   write. The by-team grid now comes from `TEAMS` rather than from the concepts,
+   so all 32 clubs show and each says "No concepts yet"; adding a real concept
+   with a `teams` array makes it appear with no code change. The concept library
+   grid was removed at the same time and may come back — nothing it depended on
+   was deleted.
+6. **Re-run `npm run audit-teams` after the cutdown to 53.** Rosters move
    through the preseason; the audit below is true as of 2026-08-14 and nothing
    keeps it true.
-6. **News tags only players in `players.json`. The injury link is now partly
+7. **News tags only players in `players.json`. The injury link is now partly
    closed** — the live wire (item 1b) reconciles the camp report against a feed
    on every render, so the two can no longer disagree silently. What remains is
    the tagging itself. `players.json` holds the 120 ranked players, so a headline
@@ -263,12 +272,12 @@ build` with a line number instead of shipping a broken page.
    2026-08-12 wording until it was updated by hand. The gap is not that the
    news is missing — it is that a fresher headline never nudges the injury
    record, so the two can disagree on screen.
-7. **The 2025 leaderboards have no numbers.** Sacks, interceptions, pressure
+8. **The 2025 leaderboards have no numbers.** Sacks, interceptions, pressure
    rate and the rest are team order only in the (4) sheet — the operator asked
    for "sack leaders with numbers" and the counts are not there. The only 2025
    block with values is simulated pressure. Sack counts *do* exist for 2021-24
    in `scripts/curated/data/dst-history.json`.
-8. **Nitter is fragile, and was blocked on 2026-08-17.** Five national insiders
+9. **Nitter is fragile, and was blocked on 2026-08-17.** Five national insiders
    (`RapSheet`, `AdamSchefter`, `TomPelissero`, `MikeGarafolo`, `FieldYates`)
    were added to `fetch-beat.mjs` that day for injury news, but **could not be
    verified** — Nitter returned nothing even for `SleeperNFL`, which had
@@ -278,13 +287,13 @@ build` with a line number instead of shipping a broken page.
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
    an outage makes the section stale rather than empty. If it stops updating,
    that is the first thing to check.
-9. **`rb_charts.py` still targets the `(2)` workbook.** Its `DEFAULT_WB` names
+10. **`rb_charts.py` still targets the `(2)` workbook.** Its `DEFAULT_WB` names
    `... (Original) (2).xlsx` while kicker, defense and TE all name `(4)`. Sheet
    and row numbers shift between versions, so re-running it as it stands reads
    a two-versions-old sheet. Nothing is wrong on the page today — `rb-charts.json`
    was generated from the version the script named at the time — but the next
    run needs either the path argument or a remap against `(4)` first.
-10. **The prediction head-to-head cannot show the model's heaviest inputs.**
+11. **The prediction head-to-head cannot show the model's heaviest inputs.**
    `model-features.json` publishes the full 55-feature list and
    `feature_importance` ranks twelve, but eight of those twelve have no
    per-team values anywhere in the payload — point differential (the single
@@ -294,7 +303,7 @@ build` with a line number instead of shipping a broken page.
    without inventing numbers. Fixing it means asking the prediction pipeline
    for those per-team fields; it owns its own Python and changes go through
    Michael (see the peer-session note below).
-11. **`reference_games` is used only in the methodology panel.** Three finished
+12. **`reference_games` is used only in the methodology panel.** Three finished
    games ride along in the payload to show what an injury gap looks like. A
    fuller worked example — one real game walked through the model's inputs to
    its probability — is available from what is already there.

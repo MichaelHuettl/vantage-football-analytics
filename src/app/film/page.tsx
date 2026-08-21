@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import conceptsFile from "@/data/concepts.json";
-import { DataFreshness } from "@/components/DataFreshness";
-import { Container, EmptyState } from "@/components/PageHeader";
-import { PlayDiagram } from "@/components/PlayDiagram";
+import { Container } from "@/components/PageHeader";
 import { SectionHero } from "@/components/SectionHero";
-import { TeamChip } from "@/components/TeamChip";
-import { getTeam, readableOn } from "@/lib/teams";
+import { TEAMS, readableOn } from "@/lib/teams";
 import type { PlayConcept } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "Film room",
-  description:
-    "Route concepts drawn from scratch, organized by concept and by team.",
+  description: "Route concepts by team, drawn from scratch rather than clipped from a broadcast.",
 };
 
 interface ConceptsFile {
@@ -23,17 +19,42 @@ interface ConceptsFile {
 
 const file = conceptsFile as unknown as ConceptsFile;
 
+/**
+ * The film room, currently a scaffold waiting on the operator's own concepts.
+ *
+ * **The index is built from the team list, not from the concepts.** It used to
+ * be the other way round — a team appeared only because some concept named it —
+ * which meant the page silently answered "which teams have I written about"
+ * while looking like it answered "what does my team run". Nine cards showed and
+ * twenty-three teams did not exist as far as a reader could tell. Driving it
+ * from `TEAMS` makes the empty cards the honest part: every club is here, and
+ * the ones with nothing in them are visibly waiting rather than missing.
+ *
+ * It also means adding a concept needs no change here. Tag it with a team in
+ * `concepts.json` and the chip appears in that club's card.
+ *
+ * The concept library grid that sat below this was removed at the operator's
+ * request — the machinery for it is untouched (`PlayDiagram`, the
+ * `/film/[concept]` route and the `PlayConcept` shape all remain), so putting
+ * it back is a layout job, not a rebuild.
+ */
 export default function FilmPage() {
   const concepts = file.data;
 
-  // Team → concepts, so a reader can arrive looking for their own team.
+  // Team → concepts. Every club gets an entry whether or not anything is
+  // tagged to it, which is what keeps the grid complete while it is empty.
   const byTeam = new Map<string, PlayConcept[]>();
+  for (const team of TEAMS) byTeam.set(team.abbr, []);
   for (const concept of concepts) {
     for (const abbr of concept.teams ?? []) {
       byTeam.set(abbr, [...(byTeam.get(abbr) ?? []), concept]);
     }
   }
-  const teams = [...byTeam.keys()].sort();
+
+  // By city rather than abbreviation: a reader scanning thirty-two cards for
+  // their own club is looking for "Green Bay", not "GB".
+  const teams = [...TEAMS].sort((a, b) => a.city.localeCompare(b.city));
+  const tagged = concepts.length;
 
   return (
     <>
@@ -42,14 +63,11 @@ export default function FilmPage() {
         objectPosition="center 40%"
         eyebrow="Concepts and diagrams"
         title="Film room"
-        lede="Route concepts drawn from coordinates rather than clipped from a broadcast. Every diagram here is original work."
+        lede="Which concepts each offense runs, and therefore which player profiles its passing game rewards."
       />
 
       <Container className="py-10">
-        <DataFreshness updated={file.updated} label="Diagrams updated" />
-
-        {/* ---------- By team ---------- */}
-        <section className="mt-10">
+        <section>
           <h2
             className="text-3xl uppercase tracking-wide"
             style={{ fontFamily: "var(--font-display)" }}
@@ -57,106 +75,69 @@ export default function FilmPage() {
             By team
           </h2>
           <p className="mt-2 max-w-2xl" style={{ color: "var(--text-secondary)" }}>
-            Which concepts each offence runs, and therefore which player
-            profiles its passing game rewards.
+            {tagged === 0 ? (
+              <>
+                Nothing is written up yet. Every concept on this page will be drawn
+                from scratch and tagged to the teams that actually run it, so the
+                cards below stay empty until there is something real to put in
+                them.
+              </>
+            ) : (
+              <>
+                Which concepts each offense runs, and therefore which player
+                profiles its passing game rewards.
+              </>
+            )}
           </p>
 
-          {teams.length === 0 ? (
-            <div className="mt-6">
-              <EmptyState
-                title="No concepts tagged to a team yet."
-                direction="Add a teams array to a concept in src/data/concepts.json."
-              />
-            </div>
-          ) : (
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {teams.map((abbr) => {
-                const team = getTeam(abbr);
-                const list = byTeam.get(abbr) ?? [];
-                return (
-                  <li
-                    key={abbr}
-                    className="rounded-lg border overflow-hidden"
-                    style={{ borderColor: "var(--border-subtle)" }}
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {teams.map((team) => {
+              const list = byTeam.get(team.abbr) ?? [];
+              return (
+                <li
+                  key={team.abbr}
+                  className="rounded-lg border overflow-hidden"
+                  style={{ borderColor: "var(--border-subtle)" }}
+                >
+                  <div
+                    className="px-4 py-2.5"
+                    style={{
+                      background: team.primary,
+                      boxShadow: `inset 0 -3px 0 0 ${team.secondary}`,
+                    }}
                   >
-                    <div
-                      className="px-4 py-2.5"
+                    <span
+                      className="text-base uppercase tracking-wide"
                       style={{
-                        background: team?.primary,
-                        boxShadow: team
-                          ? `inset 0 -3px 0 0 ${team.secondary}`
-                          : undefined,
+                        fontFamily: "var(--font-display)",
+                        color: readableOn(team.primary),
                       }}
                     >
-                      <span
-                        className="text-base uppercase tracking-wide"
-                        style={{
-                          fontFamily: "var(--font-display)",
-                          color: team ? readableOn(team.primary) : undefined,
-                        }}
-                      >
-                        {team ? `${team.city} ${team.nickname}` : abbr}
-                      </span>
-                    </div>
+                      {team.city} {team.nickname}
+                    </span>
+                  </div>
+                  {list.length === 0 ? (
+                    <p className="px-4 py-4 text-sm" style={{ color: "var(--text-muted)" }}>
+                      No concepts yet.
+                    </p>
+                  ) : (
                     <ul className="p-4 flex flex-wrap gap-2">
                       {list.map((c) => (
                         <li key={c.slug}>
                           <Link
                             href={`/film/${c.slug}`}
                             className="inline-block rounded px-2.5 py-1 text-sm font-semibold hover:underline"
-                            style={{
-                              boxShadow: "inset 0 0 0 1px var(--border-strong)",
-                            }}
+                            style={{ boxShadow: "inset 0 0 0 1px var(--border-strong)" }}
                           >
                             {c.name}
                           </Link>
                         </li>
                       ))}
                     </ul>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-        </section>
-
-        {/* ---------- Concept library ---------- */}
-        <section className="mt-16">
-          <h2
-            className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Concept library
-          </h2>
-
-          <ul className="mt-6 grid gap-8 lg:grid-cols-3">
-            {concepts.map((concept) => (
-              <li key={concept.slug}>
-                <Link href={`/film/${concept.slug}`} className="group block">
-                  <PlayDiagram paths={concept.paths} title={concept.name} />
-                  <div className="mt-4">
-                    <p className="eyebrow">{concept.family}</p>
-                    <h3
-                      className="mt-1 text-2xl uppercase tracking-wide group-hover:underline"
-                      style={{ fontFamily: "var(--font-display)" }}
-                    >
-                      {concept.name}
-                    </h3>
-                    <p
-                      className="mt-2 text-sm"
-                      style={{ color: "var(--text-secondary)" }}
-                    >
-                      {concept.summary}
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-1.5">
-                      {(concept.teams ?? []).map((t) => (
-                        <TeamChip key={t} abbr={t} size="sm" />
-                      ))}
-                    </div>
-                  </div>
-                </Link>
-              </li>
-            ))}
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </section>
       </Container>
