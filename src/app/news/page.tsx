@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import newsFile from "@/data/news.json";
+import { AutoRefresh } from "@/components/AutoRefresh";
 import { DataFreshness } from "@/components/DataFreshness";
 import { Container, EmptyState } from "@/components/PageHeader";
+import { ShowMore } from "@/components/ShowMore";
 import { PlayerLink } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
@@ -12,19 +13,13 @@ import { BEAT_POSTS, BEAT_TOPICS, BEAT_UPDATED, CURATED_COUNT, TOPIC_BLURB } fro
 import { BeatItem } from "@/components/BeatFeed";
 import type { BeatTopic } from "@/lib/beat";
 import type { NewsEntry } from "@/lib/types";
+import { getLiveNews } from "@/lib/live-news";
 
 export const metadata: Metadata = {
   title: "News",
   description:
     "Headlines tagged to players and teams. Source, timestamp, and a link out.",
 };
-
-interface NewsFile {
-  updated: string;
-  data: NewsEntry[];
-}
-
-const file = newsFile as unknown as NewsFile;
 
 const CATEGORIES = [
   "injury",
@@ -65,7 +60,11 @@ export default async function NewsPage({
     return str ? `/news?${str}` : "/news";
   };
 
-  const all = [...file.data].sort((a, b) =>
+  // Pulled at request time, merged over the committed archive. `live` says
+  // which of the two the reader is looking at (§6).
+  const live = await getLiveNews();
+
+  const all = [...live.items].sort((a, b) =>
     b.timestamp.localeCompare(a.timestamp),
   );
 
@@ -89,6 +88,174 @@ export default async function NewsPage({
       />
 
       <Container className="py-10">
+        {/* ==================== Headline feed ==================== */}
+        <div className="flex flex-wrap items-center gap-3 mb-2">
+          <h2
+            className="text-3xl uppercase tracking-wide"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            Headlines
+          </h2>
+          <span
+            className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
+            style={{
+              fontFamily: "var(--font-condensed)",
+              background: "var(--text-primary)",
+              color: "var(--surface-page)",
+            }}
+          >
+            Season long
+          </span>
+        </div>
+        <p className="mb-6 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+          Published reporting from national outlets, running now and through the
+          season. Headline, source and timestamp only — follow the link to read
+          the piece.
+        </p>
+
+        <div className="flex flex-wrap items-start justify-between gap-6">
+          <div className="flex flex-col gap-4">
+            <nav aria-label="Team">
+              <ul className="flex flex-wrap items-center gap-2">
+                <li className="eyebrow mr-1">Team</li>
+                <li>
+                  <FilterLink
+                    href={category ? `/news?category=${category}` : "/news"}
+                    active={!team}
+                  >
+                    All
+                  </FilterLink>
+                </li>
+                {teams.map((abbr) => (
+                  <li key={abbr}>
+                    <TeamFilterLink
+                      href={`/news?team=${abbr}${category ? `&category=${category}` : ""}`}
+                      active={abbr === team}
+                    >
+                      <TeamChip abbr={abbr} />
+                    </TeamFilterLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            <nav aria-label="Category">
+              <ul className="flex flex-wrap items-center gap-2">
+                <li className="eyebrow mr-1">Type</li>
+                <li>
+                  <FilterLink
+                    href={team ? `/news?team=${team}` : "/news"}
+                    active={!category}
+                  >
+                    All
+                  </FilterLink>
+                </li>
+                {CATEGORIES.map((c) => (
+                  <li key={c}>
+                    <FilterLink
+                      href={`/news?category=${c}${team ? `&team=${team}` : ""}`}
+                      active={c === category}
+                    >
+                      {c}
+                    </FilterLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <DataFreshness updated={live.updated} label="Feed updated" staleAfterDays={2} />
+            <AutoRefresh />
+            {!live.live && (
+              <span className="text-xs" style={{ color: "var(--text-muted)" }}>
+                Showing the last saved feed — no publisher answered.
+              </span>
+            )}
+          </div>
+        </div>
+
+        <p className="mt-8 eyebrow">
+          {activeTeam ? `${activeTeam.city} ${activeTeam.nickname}` : "Latest"}
+          {category ? ` · ${category}` : ""}
+        </p>
+
+        {items.length === 0 ? (
+          <div className="mt-6">
+            <EmptyState
+              title="Nothing matches that filter."
+              direction="Clear the team or type filter to see the full feed."
+            />
+          </div>
+        ) : (
+          <ShowMore
+            initial={20}
+            step={40}
+            noun="headline"
+            listClassName="mt-6 border-t"
+            listStyle={{ borderColor: "var(--border-subtle)" }}
+          >
+            {items.map((item) => (
+              <li
+                key={item.id}
+                className="border-b"
+                style={{ borderColor: "var(--border-subtle)" }}
+              >
+                <article className="flex flex-wrap items-start gap-x-6 gap-y-3 py-5">
+                  <time
+                    dateTime={item.timestamp}
+                    className="eyebrow w-24 shrink-0 pt-1"
+                  >
+                    {new Date(item.timestamp).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </time>
+
+                  <div className="min-w-0 flex-1">
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-semibold hover:underline"
+                    >
+                      {item.headline}
+                    </a>
+                    <p
+                      className="mt-1.5 text-sm"
+                      style={{ color: "var(--text-muted)" }}
+                    >
+                      {item.source} ·{" "}
+                      <span className="uppercase">{item.category}</span>
+                    </p>
+
+                    <div className="mt-3 flex flex-wrap items-center gap-4">
+                      {(item.team_abbrs ?? []).map((abbr) => (
+                        <TeamChip key={abbr} abbr={abbr} size="sm" />
+                      ))}
+                      {(item.player_ids ?? []).flatMap((id) => {
+                        const p = getPlayer(id);
+                        return p ? (
+                          <PlayerLink key={id} player={p} showTeam={false} />
+                        ) : (
+                          []
+                        );
+                      })}
+                    </div>
+                  </div>
+                </article>
+              </li>
+            ))}
+          </ShowMore>
+        )}
+      </Container>
+
+      {/* A ruled break, the same device that separates sections on the home
+          page. The two feeds cover different periods and should not read as
+          one continuous list. */}
+      <div className="yard-rule" />
+
+      <Container className="py-14">
         {/* ==================== Beat reports ==================== */}
         <section>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
@@ -179,173 +346,22 @@ export default async function NewsPage({
               />
             </div>
           ) : (
-            <ul className="mt-4 border-t" style={{ borderColor: "var(--border-subtle)" }}>
+            <ShowMore
+              initial={15}
+              step={40}
+              noun="post"
+              listClassName="mt-4 border-t"
+              listStyle={{ borderColor: "var(--border-subtle)" }}
+            >
               {beat.map((post) => (
                 <li key={post.id} className="border-b" style={{ borderColor: "var(--border-subtle)" }}>
                   <BeatItem post={post} />
                 </li>
               ))}
-            </ul>
+            </ShowMore>
           )}
         </section>
 
-      </Container>
-
-      {/* A ruled break, the same device that separates sections on the home
-          page. The two feeds cover different periods and should not read as
-          one continuous list. */}
-      <div className="yard-rule" />
-
-      <Container className="py-14">
-        {/* ==================== Headline feed ==================== */}
-        <div className="flex flex-wrap items-center gap-3 mb-2">
-          <h2
-            className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Headlines
-          </h2>
-          <span
-            className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
-            style={{
-              fontFamily: "var(--font-condensed)",
-              background: "var(--text-primary)",
-              color: "var(--surface-page)",
-            }}
-          >
-            Season long
-          </span>
-        </div>
-        <p className="mb-6 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          Published reporting from national outlets, running now and through the
-          season. Headline, source and timestamp only — follow the link to read
-          the piece.
-        </p>
-
-        <div className="flex flex-wrap items-start justify-between gap-6">
-          <div className="flex flex-col gap-4">
-            <nav aria-label="Team">
-              <ul className="flex flex-wrap items-center gap-2">
-                <li className="eyebrow mr-1">Team</li>
-                <li>
-                  <FilterLink
-                    href={category ? `/news?category=${category}` : "/news"}
-                    active={!team}
-                  >
-                    All
-                  </FilterLink>
-                </li>
-                {teams.map((abbr) => (
-                  <li key={abbr}>
-                    <TeamFilterLink
-                      href={`/news?team=${abbr}${category ? `&category=${category}` : ""}`}
-                      active={abbr === team}
-                    >
-                      <TeamChip abbr={abbr} />
-                    </TeamFilterLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            <nav aria-label="Category">
-              <ul className="flex flex-wrap items-center gap-2">
-                <li className="eyebrow mr-1">Type</li>
-                <li>
-                  <FilterLink
-                    href={team ? `/news?team=${team}` : "/news"}
-                    active={!category}
-                  >
-                    All
-                  </FilterLink>
-                </li>
-                {CATEGORIES.map((c) => (
-                  <li key={c}>
-                    <FilterLink
-                      href={`/news?category=${c}${team ? `&team=${team}` : ""}`}
-                      active={c === category}
-                    >
-                      {c}
-                    </FilterLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-
-          <DataFreshness updated={file.updated} label="Feed updated" staleAfterDays={2} />
-        </div>
-
-        <p className="mt-8 eyebrow">
-          {activeTeam ? `${activeTeam.city} ${activeTeam.nickname}` : "Latest"}
-          {category ? ` · ${category}` : ""}
-        </p>
-
-        {items.length === 0 ? (
-          <div className="mt-6">
-            <EmptyState
-              title="Nothing matches that filter."
-              direction="Clear the team or type filter to see the full feed."
-            />
-          </div>
-        ) : (
-          <ul
-            className="mt-6 border-t"
-            style={{ borderColor: "var(--border-subtle)" }}
-          >
-            {items.map((item) => (
-              <li
-                key={item.id}
-                className="border-b"
-                style={{ borderColor: "var(--border-subtle)" }}
-              >
-                <article className="flex flex-wrap items-start gap-x-6 gap-y-3 py-5">
-                  <time
-                    dateTime={item.timestamp}
-                    className="eyebrow w-24 shrink-0 pt-1"
-                  >
-                    {new Date(item.timestamp).toLocaleDateString("en-US", {
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </time>
-
-                  <div className="min-w-0 flex-1">
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-lg font-semibold hover:underline"
-                    >
-                      {item.headline}
-                    </a>
-                    <p
-                      className="mt-1.5 text-sm"
-                      style={{ color: "var(--text-muted)" }}
-                    >
-                      {item.source} ·{" "}
-                      <span className="uppercase">{item.category}</span>
-                    </p>
-
-                    <div className="mt-3 flex flex-wrap items-center gap-4">
-                      {(item.team_abbrs ?? []).map((abbr) => (
-                        <TeamChip key={abbr} abbr={abbr} size="sm" />
-                      ))}
-                      {(item.player_ids ?? []).flatMap((id) => {
-                        const p = getPlayer(id);
-                        return p ? (
-                          <PlayerLink key={id} player={p} showTeam={false} />
-                        ) : (
-                          []
-                        );
-                      })}
-                    </div>
-                  </div>
-                </article>
-              </li>
-            ))}
-          </ul>
-        )}
       </Container>
     </>
   );

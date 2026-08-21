@@ -1,8 +1,961 @@
 {
  "schema_version": 1,
- "updated": "2026-08-14",
+ "updated": "2026-08-17",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece.",
  "data": [
+  {
+   "id": "iVXGRm5QZ9mK5v2U",
+   "headline": "Saints rookie WR Jordyn Tyson facing lengthy layoff with hamstring injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-rookie-wr-jordyn-tyson-230045647.html",
+   "timestamp": "2026-08-17T23:00:45.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "4QsshyaYTDtU8B4z",
+   "headline": "Jadarian Price injury update: Seahawks rookie returns to practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jadarian-price-injury-seahawks-rookie-224914644.html",
+   "timestamp": "2026-08-17T22:49:14.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "AB_9dyyHjGAyZ0jL",
+   "headline": "Patriots To Sign G Greg Van Roten",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/patriots-to-sign-g-greg-van-roten",
+   "timestamp": "2026-08-17T22:40:11.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "Ii5FXBHP00pgORlE",
+   "headline": "Browns have mixed bag of reps on offense across positions in first preseason game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-mixed-bag-reps-offense-223554449.html",
+   "timestamp": "2026-08-17T22:35:54.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "QnsBa32WQSk41nt9",
+   "headline": "NFL preseason injuries tracker: Breece Hall's status, Jeremiyah Love update",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-training-camp-injury-tracker/",
+   "timestamp": "2026-08-17T22:34:45.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jeremiyah-love",
+    "breece-hall"
+   ]
+  },
+  {
+   "id": "IPvNAcBIx2UGHdNm",
+   "headline": "Bears RB Kyle Monangai out several weeks with hyperextended right knee",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/bears-rb-kyle-monangai-out-several-weeks-with-hyperextended-right-knee-223303452.html",
+   "timestamp": "2026-08-17T22:33:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "OXUKruWood7pMeL-",
+   "headline": "O.J. Brigance, Ravens Super Bowl champion, dies after battle with ALS",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/o-j-brigance-ravens-super-223243465.html",
+   "timestamp": "2026-08-17T22:32:43.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "hyGu5ub78kERleA0",
+   "headline": "Saints rookie WR Jordyn Tyson reportedly expected to miss about 2 months due to training camp hamstring injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/saints-rookie-wr-jordyn-tyson-reportedly-expected-to-miss-about-2-months-due-to-training-camp-hamstring-injury-223230593.html",
+   "timestamp": "2026-08-17T22:32:30.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "eA5wvQUxf7vkgc7d",
+   "headline": "Saints’ Jordyn Tyson Expected To Miss Regular-Season Time",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/saints-jordyn-tyson-expected-to-miss-regular-season-time",
+   "timestamp": "2026-08-17T22:32:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "ZafpzAOCAn5nt82C",
+   "headline": "Report: Bears RB Kyle Monangai will miss weeks with a hyperextended knee",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-bears-rb-kyle-monangai-223209906.html",
+   "timestamp": "2026-08-17T22:32:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "HjGDRj7r3wmyQiF0",
+   "headline": "Report: Saints first-round pick Jordyn Tyson to miss two months with hamstring injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-saints-first-round-pick-223104026.html",
+   "timestamp": "2026-08-17T22:31:04.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "Iiq9c-AUD3LO-BXe",
+   "headline": "Ravens legend O.J. Brigance passes after long battle with ALS",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-legend-o-j-brigance-222707121.html",
+   "timestamp": "2026-08-17T22:27:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "3Z3Z0iBA6NOB3hvv",
+   "headline": "Are Bills home games really the most expensive to attend in the NFL?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-home-games-really-most-222216849.html",
+   "timestamp": "2026-08-17T22:22:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "nY1sybYyZBzJ91k1",
+   "headline": "Breece Hall: Groin strain is considered 'minor'",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/breece-hall-15810",
+   "timestamp": "2026-08-17T22:21:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "breece-hall"
+   ]
+  },
+  {
+   "id": "L2RNuwDqBXzV7RGG",
+   "headline": "Eagles rookie report card: Ravens preseason game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-rookie-report-card-ravens-222046095.html",
+   "timestamp": "2026-08-17T22:20:46.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "BAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "PybwvDgqQRu4Ha9W",
+   "headline": "Lions injury updates: Good news for Jameson Williams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-injury-updates-good-news-221701414.html",
+   "timestamp": "2026-08-17T22:17:01.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "E5oUcDmgpQBX2hMw",
+   "headline": "Report: Follow-up confirms Breece Hall's groin injury is minor",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-confirms-breece-halls-groin-220938189.html",
+   "timestamp": "2026-08-17T22:09:38.000Z",
+   "category": "injury",
+   "player_ids": [
+    "breece-hall"
+   ]
+  },
+  {
+   "id": "w_DZ1RuRghXFD8hR",
+   "headline": "Testing confirms Breece Hall's groin injury is minor, Jets to be cautious with RB",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-breece-hall-undergo-further-143144406.html",
+   "timestamp": "2026-08-17T22:05:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "breece-hall"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "i3yvJorOBmWNGBmG",
+   "headline": "Former Ravens player/executive O.J. Brigance dies at 56 after long ALS battle",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-ravens-player-executive-o-215621937.html",
+   "timestamp": "2026-08-17T21:56:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "TcUpc_oujEg-T81i",
+   "headline": "Cleveland Browns Training Camp Recap: Day 14 – The big week ahead",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-training-camp-recap-215112409.html",
+   "timestamp": "2026-08-17T21:51:12.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "3dfjEy5r-ucfl7q2",
+   "headline": "Falcons Host Za’Darius Smith",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/falcons-host-zadarius-smith",
+   "timestamp": "2026-08-17T21:50:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "9nuWfO-_d_QVIrPX",
+   "headline": "Patriots announce date for Rob Gronkowski Hall of Fame induction",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-announce-date-rob-gronkowski-214801847.html",
+   "timestamp": "2026-08-17T21:48:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "RVM2jW3WBxQW9cPN",
+   "headline": "The candidates who’ll lead the Raiders in takeaways this season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/candidates-ll-lead-raiders-takeaways-214500787.html",
+   "timestamp": "2026-08-17T21:45:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "LXOhgIVu7limUCXY",
+   "headline": "Za'Darius Smith works out for Falcons after he was expected to sign with Browns",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/zadarius-smith-works-falcons-expected-214338064.html",
+   "timestamp": "2026-08-17T21:43:38.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ATL",
+    "CLE"
+   ]
+  },
+  {
+   "id": "K3eI9Bn_VO551oCS",
+   "headline": "Cowboys 2026 training camp practice #11 live thread: Updates and open discussion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-2026-training-camp-practice-213000322.html",
+   "timestamp": "2026-08-17T21:30:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "QZj4mrVHP4-YEM92",
+   "headline": "49ers sign DL Victor Dimukeje, OL Nick Zakelj",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-sign-dl-victor-dimukeje-212659849.html",
+   "timestamp": "2026-08-17T21:26:59.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "QWL5xS1C03MlDdn9",
+   "headline": "Giants' Malik Nabers says his soul has 'come back to life' after return to team drills",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/giants-malik-nabers-return-to-team-drills/",
+   "timestamp": "2026-08-17T21:22:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "n9MY674ceY1ZctGl",
+   "headline": "Troy Aikman: Cowboys' championship drought is hard to fathom",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/troy-aikman-cowboys-championship-drought-210620060.html",
+   "timestamp": "2026-08-17T21:06:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "w8sNyMUI7wHGQjCJ",
+   "headline": "Participation in Bills vs. Panthers gave us hints at Buffalo’s actual depth chart",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/participation-bills-vs-panthers-gave-210435766.html",
+   "timestamp": "2026-08-17T21:04:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "CAR"
+   ]
+  },
+  {
+   "id": "1tfPSFvaakhi7z9U",
+   "headline": "Renner's 2027 NFL Draft scouting series: Ranking the top 10 offensive tackles",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-rankings-top-10-offensive-tackles/",
+   "timestamp": "2026-08-17T21:03:41.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "ADjz2Ee7bKvItwtS",
+   "headline": "Giants Sign LB Chandler Martin",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/giants-sign-lb-chandler-martin",
+   "timestamp": "2026-08-17T21:01:16.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "BUTOf_08W9XbLMJ4",
+   "headline": "Who impressed the most in Broncos’ win over the Falcons?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/impressed-most-broncos-win-over-210005113.html",
+   "timestamp": "2026-08-17T21:00:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "DEN"
+   ]
+  },
+  {
+   "id": "sRZGUCF5sGrHdGTR",
+   "headline": "Cowboys countdown to kickoff: Top 100 iconic games – Day 27",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-countdown-kickoff-top-100-210000660.html",
+   "timestamp": "2026-08-17T21:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "1AKvlb3stdV6bIN3",
+   "headline": "‘Turbo time’ has come to an end as Giants waive running back Dante Miller",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/turbo-time-come-end-giants-205744787.html",
+   "timestamp": "2026-08-17T20:57:44.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "rqvKGQ1pL3earhbU",
+   "headline": "The Cardinals gave Jeremiyah Love a preseason workload we typically don't see from top backs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/the-cardinals-gave-jeremiyah-love-a-preseason-workload-we-typically-dont-see-from-top-backs-204626760.html",
+   "timestamp": "2026-08-17T20:46:26.000Z",
+   "category": "camp",
+   "player_ids": [
+    "jeremiyah-love"
+   ],
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "plqET8tL_iukgSpW",
+   "headline": "Giants’ Malik Nabers takes 'big step,' participates in full team drills for first time",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-malik-nabers-takes-big-204355419.html",
+   "timestamp": "2026-08-17T20:43:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "OINgQhze48RxRoTC",
+   "headline": "49ers bring back Nick Zakelj; add an EDGE rusher",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-bring-back-nick-zakelj-204329229.html",
+   "timestamp": "2026-08-17T20:43:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "fRGIsSdDBtLAqLPU",
+   "headline": "Falcons sign WR Beaux Collins, cut OL Layden Robinson and P Matthew Hayball",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-sign-wr-beaux-collins-204240171.html",
+   "timestamp": "2026-08-17T20:42:40.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "O_EnT_57dRPPAe_-",
+   "headline": "Jaylen Waddle returns to practice Monday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaylen-waddle-returns-practice-monday-203831313.html",
+   "timestamp": "2026-08-17T20:38:31.000Z",
+   "category": "practice",
+   "player_ids": [
+    "jaylen-waddle"
+   ]
+  },
+  {
+   "id": "6YUCdCt6gVfsKjyf",
+   "headline": "Former Saints QB Jake Haener signs with New York Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-saints-qb-jake-haener-203749610.html",
+   "timestamp": "2026-08-17T20:37:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO",
+    "NYG"
+   ]
+  },
+  {
+   "id": "mVxiYOCIM7rW6xWG",
+   "headline": "Dolphins sign DL Cam Rice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-sign-dl-cam-rice-203717942.html",
+   "timestamp": "2026-08-17T20:37:17.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "RwNQ92GEZIg45CAg",
+   "headline": "Raiders OL Jackson Powers-Johnson exited Monday's practice with apparent injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-ol-jackson-powers-johnson-202345265.html",
+   "timestamp": "2026-08-17T20:23:45.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "Yot5uYFDRf7D6Cxg",
+   "headline": "Vikings’ Jamal Adams Suffers Season-Ending Knee Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/vikings-jamal-adams-suffers-potentially-serious-knee-injury",
+   "timestamp": "2026-08-17T20:10:48.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "XjXoT9rb4cjf_4v5",
+   "headline": "Todd Monken: We won't play most starters against Bills if joint practice goes well",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/todd-monken-wont-play-most-200554734.html",
+   "timestamp": "2026-08-17T20:05:54.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "HU51R4wZAljmEVT0",
+   "headline": "49ers stock report: A good showing for the rookies; not so much for the ‘25 class",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-stock-report-good-showing-200100899.html",
+   "timestamp": "2026-08-17T20:01:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "yxWaVCFYJgFu7ecj",
+   "headline": "Browns vs Bears went worse than expected for Cleveland",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-vs-bears-went-worse-194520004.html",
+   "timestamp": "2026-08-17T19:45:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "CLE"
+   ]
+  },
+  {
+   "id": "d8bceUOWPkZt9A3Y",
+   "headline": "Myles Garrett, Puka Nacua absences will be prolonged",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/myles-garrett-puka-nacua-absences-194128032.html",
+   "timestamp": "2026-08-17T19:41:28.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "6aVvD9BwPHaSIvIQ",
+   "headline": "Cowboys have history of UDFA receivers succeeding in camp",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-history-udfa-receivers-succeeding-193000840.html",
+   "timestamp": "2026-08-17T19:30:00.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "3PbpY7BD9hcwFzpX",
+   "headline": "Cowboys Reached Out To Von Miller Prior To Training Camp; Latest On Contract",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/cowboys-reached-out-to-von-miller-prior-to-training-camp-latest-on-contract",
+   "timestamp": "2026-08-17T19:29:44.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "zAMDNBq8oKWWb5J7",
+   "headline": "Report: Bears to sign Marcus Davenport",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-bears-sign-marcus-davenport-192431052.html",
+   "timestamp": "2026-08-17T19:24:31.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "WUk3oNsa5wwwytmg",
+   "headline": "Chiefs training camp notebook Day 15: Offense is honing in on details",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-training-camp-notebook-day-191500552.html",
+   "timestamp": "2026-08-17T19:15:00.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "qpZxeguzvkMZL7sW",
+   "headline": "Vikings sign LB Kenny Dyson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-sign-lb-kenny-dyson-191109562.html",
+   "timestamp": "2026-08-17T19:11:09.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "4smiHPmgEaKpqtEW",
+   "headline": "Bears set to sign former first round pick to help bolster defense: Chicago might also be eyeing a big trade",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/bears-set-to-sign-former-first-round-pick-to-help-bolster-defense/",
+   "timestamp": "2026-08-17T19:01:14.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "x87wM2lfNOxERHnS",
+   "headline": "Tarheeb Still returns to practice, Chargers veterans receive rest day",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tarheeb-still-returns-practice-chargers-185956944.html",
+   "timestamp": "2026-08-17T18:59:56.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "pJEcKlHxXUE3FsVn",
+   "headline": "Can NFL preseason Week 1 losers turn it around? Outlooks for Shedeur Sanders, Tua Tagovailoa, Quinn Ewers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-preseason-week-1-losers-shedeur-sanders-tua-tagovailoa-quinn-ewers/",
+   "timestamp": "2026-08-17T18:49:18.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "S1uQ3908VE67HWOO",
+   "headline": "Giants To Host RB Najee Harris",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/giants-to-host-rb-najee-harris",
+   "timestamp": "2026-08-17T18:42:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "4mzkIxrBngiziNzk",
+   "headline": "Bears Sign DE Marcus Davenport",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/bears-expected-to-sign-de-marcus-davenport",
+   "timestamp": "2026-08-17T17:50:15.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "sqqN0niwa6tFLtQX",
+   "headline": "Commanders To Waive K Jake Moody",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/commanders-to-waive-k-jake-moody",
+   "timestamp": "2026-08-17T17:20:05.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "-AxrUMzJFAoztRFz",
+   "headline": "Ranking every rookie QB from Week 1 of the preseason, plus winners and losers and NFL team valuations",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/ranking-every-rookie-qb-from-week-1-of-the-preseason-plus-winners-and-losers-and-nfl-team-valuations/",
+   "timestamp": "2026-08-17T16:55:31.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "ohENx5xmS6ptoI8h",
+   "headline": "Giants To Sign QB Jake Haener",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/giants-to-sign-qb-jake-haener",
+   "timestamp": "2026-08-17T16:37:35.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "MXNYz0iS8GpsmKRj",
+   "headline": "Von Miller eyes storybook ending to Hall of Fame career by helping hometown Cowboys replace Micah Parsons",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/von-miller-cowboys-micah-parsons-hall-of-fame/",
+   "timestamp": "2026-08-17T16:23:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "vvSA6pni8VR9HI4M",
+   "headline": "2026 NFL free agency tracker: Von Miller to join Cowboys; four of top 100 free agents still unsigned",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-best-unsigned-free-agents-2026/",
+   "timestamp": "2026-08-17T16:05:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "wjP20ZAem7pqfE1T",
+   "headline": "Von Miller to sign with Cowboys: Dallas continues EDGE overhaul with addition of eight-time Pro Bowler",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/von-miller-to-sign-with-cowboys/",
+   "timestamp": "2026-08-17T16:04:02.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "26VU0zcLHVERUHgL",
+   "headline": "CB Adoree’ Jackson Drawing Interest; No Cowboys Deal Imminent",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/cb-adoree-jackson-drawing-interest-no-cowboys-deal-imminent",
+   "timestamp": "2026-08-17T15:49:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "mB7FPCgqH-Xf6DjA",
+   "headline": "Commanders To Sign RB Craig Reynolds",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/commanders-to-sign-rb-craig-reynolds",
+   "timestamp": "2026-08-17T14:58:13.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "wKa1S2UAfbnaU8Hh",
+   "headline": "Colts Comfortable With Retaining QB Anthony Richardson",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/colts-comfortable-with-retaining-qb-anthony-richardson",
+   "timestamp": "2026-08-17T13:59:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "oN8xkjTthJOiJp7q",
+   "headline": "NFL survivor pool picks, advice, strategy for Week 1, 2026: Avoid the Dallas Cowboys",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/nfl-survivor-pool-picks-advice-strategy-for-week-1-2026-avoid-the-cowboys/",
+   "timestamp": "2026-08-17T13:56:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "PEaMwwjQx05tuxtG",
+   "headline": "Ranking rookie QB performances from Week 1 of preseason: Fernando Mendoza, Ty Simpson, Drew Allar among best",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/ranking-rookie-qb-performances-week-1-nfl-preseason/",
+   "timestamp": "2026-08-17T13:03:05.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "KloBPr-zBJIJHPLU",
+   "headline": "NFL preseason Week 1 winners & losers; Islam Makhachev holds UFC win streak record",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-preseason-week-1-winners-losers-islam-makhachev-holds-ufc-win-streak-record/",
+   "timestamp": "2026-08-17T12:49:24.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "VJs591eDywplcX28",
+   "headline": "NFL team valuations for 2026: Cowboys remain league standard as Jets crack top five, Seahawks sell",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-team-valuations-for-2026-cowboys/",
+   "timestamp": "2026-08-17T12:06:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NYJ",
+    "SEA"
+   ]
+  },
+  {
+   "id": "d5NoSD8IHaTEiBOK",
+   "headline": "NFL preseason Week 1 overreactions: Do Titans have Cam Ward problem? Niners have OROY candidate at WR",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-preseason-week-1-overreactions-titans-cam-ward-problem-niners-oroy-candidate/",
+   "timestamp": "2026-08-17T10:00:54.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "EOKNPCqAspmy94r8",
+   "headline": "Cowboys, OLB Von Miller Agree To Deal",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/von-miller-expected-to-join-cowboys",
+   "timestamp": "2026-08-17T03:59:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "27dvjJ7dneFC3Cmy",
+   "headline": "Offseason In Review: Philadelphia Eagles",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/offseason-in-review-philadelphia-eagles-7",
+   "timestamp": "2026-08-17T03:58:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "lM4slXbwllKk8Mhy",
+   "headline": "Jeremiyah Love injury update: Cardinals rookie has high ankle sprain, team hoping for Week 1 return",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jeremiyah-love-injury-update-cardinals-rookie-has-high-ankle-sprain/",
+   "timestamp": "2026-08-17T01:35:06.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jeremiyah-love"
+   ],
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "m0diYMwjlUWnMKz-",
+   "headline": "Vikings LB Jamal Adams out for season with torn quad after being carted off in preseason opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/vikings-lb-jamal-adams-out-for-season-with-torn-quad-after-being-carted-off-in-preseason-opener-232245548.html",
+   "timestamp": "2026-08-16T23:22:45.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "6Qq2HK58xKcXUDGF",
+   "headline": "Is Aaron Donald signing imminent? DT works out with Rams for second time, Sean McVay mum on timeline",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/is-aaron-donald-signing-imminent-dt-works-out-with-rams-second-time/",
+   "timestamp": "2026-08-16T22:21:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "B-yyrhi7HmV06Yg8",
+   "headline": "NFL preseason Week 1 winners and losers: Steelers rookie QB shines, Rams' future bright",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-preseason-week-1-winners-and-losers/",
+   "timestamp": "2026-08-16T19:55:10.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "LAR",
+    "PIT"
+   ]
+  },
+  {
+   "id": "gb6wNNCD8YROXzYr",
+   "headline": "Highest-paid players at every NFL position: Devon Witherspoon resets cornerback market with $132-million deal",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/highest-paid-players-at-every-nfl-position-2026/",
+   "timestamp": "2026-08-16T17:57:38.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "DmOcE-ddEpHF8Qdr",
+   "headline": "Antwaan Randle El takes over play calling duties and Bears offense comes to life in preseason win over Browns",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/antwaan-randle-el-takes-over-play-calling-duties-and-bears-offense-comes-to-life-in-preseason-win-over-browns/",
+   "timestamp": "2026-08-16T02:07:26.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "CHI",
+    "CLE"
+   ]
+  },
+  {
+   "id": "eHBhYKE6NSK51BS0",
+   "headline": "NFL rookie leaves team during preseason to pursue lead role in movie",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/bengals-ceyair-wright-leaves-team-movie-role/",
+   "timestamp": "2026-08-15T23:40:12.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "1tyC8ANw7fuGDRF1",
+   "headline": "Giants' Jaxson Dart irritated over latest trip to NFL's blue medical tent",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/giants-jaxson-dart-irritated-latest-trip-to-nfls-blue-medical-tent/",
+   "timestamp": "2026-08-15T22:52:47.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "DRhnBjOyXlGVKxxq",
+   "headline": "Deshaun Watson outplays Shedeur Sanders in preseason opener, but Browns QB battle leaves plenty to be desired",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/shedeur-sanders-deshaun-watson-browns-qb-battle-preseason-bears/",
+   "timestamp": "2026-08-15T20:59:09.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "WmlZD77Q5bl1y-m2",
+   "headline": "Devon Witherspoon contract: Seahawks star becomes NFL's highest-paid CB, raises bar for Christian Gonzalez",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/devon-witherspoon-contract-seahawks-highest-paid-cornerback/",
+   "timestamp": "2026-08-15T16:51:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "ZG738WZbVwn3Q39q",
+   "headline": "NFL hands down four suspensions before preseason action, with Falcons' James Pearce Jr. hit hardest",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-suspensions-falcons-james-pearce-jr/",
+   "timestamp": "2026-08-15T15:53:28.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "Ty6F88vE8pNd4lXe",
+   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for NFL preseason Week 1, MLB, UFC 330 on Saturday",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nfl-preseason-week-1-mlb-ufc-330-saturday/",
+   "timestamp": "2026-08-15T15:41:10.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "ZsH-3_1vgwuf4sgl",
+   "headline": "Titans' Nazeeh Johnson says fertility medication led to six-game NFL suspension for PED violation",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/titans-nazeeh-johnson-suspension-fertility-medication/",
+   "timestamp": "2026-08-15T15:40:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "T3cAwg1GmExyf526",
+   "headline": "What's next for J.J. McCarthy after lost QB battle? NFL teams skeptical he can improve and mature",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/j-j-mccarthy-what-next-for-vikings-qb/",
+   "timestamp": "2026-08-15T12:50:51.000Z",
+   "category": "breaking"
+  },
   {
    "id": "MCfA2qzefXuycjOc",
    "headline": "Jets vs. Buccaneers instant takeaways: Cade Klubnik poised, David Bailey a factor",
@@ -47,17 +1000,6 @@
    "category": "breaking",
    "team_abbrs": [
     "MIA"
-   ]
-  },
-  {
-   "id": "ZG738WZbVwn3Q39q",
-   "headline": "NFL hands down four suspensions before preseason action, with Falcons' James Pearce Jr. hit hardest",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-suspensions-falcons-james-pearce-jr/",
-   "timestamp": "2026-08-15T00:34:17.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "ATL"
    ]
   },
   {
@@ -702,18 +1644,6 @@
    ]
   },
   {
-   "id": "B-yyrhi7HmV06Yg8",
-   "headline": "NFL preseason Week 1 winners and losers: Steelers rookie QB shines, Cam Ward struggles for Titans",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-preseason-week-1-winners-and-losers/",
-   "timestamp": "2026-08-14T16:23:53.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "PIT",
-    "TEN"
-   ]
-  },
-  {
    "id": "eqHEn5ipEe9sk53R",
    "headline": "Cowboys' Dak Prescott on George Pickens' future contract: 'He should get every dollar that he deserves'",
    "source": "CBS Sports",
@@ -751,949 +1681,6 @@
    ],
    "team_abbrs": [
     "LAR"
-   ]
-  },
-  {
-   "id": "BXZSFkJLAy2Fw_yK",
-   "headline": "Texans Fear ACL Tear For QB Graham Mertz",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/texans-fear-acl-tear-for-qb-graham-mertz",
-   "timestamp": "2026-08-14T14:51:05.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "06xmoWqKbJbQ0Cnw",
-   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for NFL preseason Week 1, Yankees-Blue Jays on Friday",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nfl-preseason-week-1-yankees-blue-jays-friday/",
-   "timestamp": "2026-08-14T13:33:08.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "yoC_bT52PlU_6Mc9",
-   "headline": "One takeaway from each NFL team's first depth chart: Browns show rookies love; starting over for Deebo Samuel",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/one-takeaway-from-each-nfl-teams-first-depth-chart/",
-   "timestamp": "2026-08-14T13:04:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "-cqAzULjOFfnrmzW",
-   "headline": "Fernando Mendoza, Drew Allar impress in NFL preseason; College football's top 150 players",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/fernando-mendoza-drew-allar-impress-in-preseason-debuts-college-footballs-top-150-players/",
-   "timestamp": "2026-08-14T12:52:47.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "eM0EelUkcjaAxt-K",
-   "headline": "Seahawks To Sign CB Terrion Arnold",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/seahawks-to-sign-cb-terrion-arnold",
-   "timestamp": "2026-08-14T04:22:27.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "n-_moQuaMD02WwTn",
-   "headline": "Offseason In Review: Chicago Bears",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/offseason-in-review-chicago-bears-8",
-   "timestamp": "2026-08-14T04:20:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "h4rDv-r6le4JZIV1",
-   "headline": "Fallout From Vikings’ QB Decision",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/fallout-from-vikings-qb-decision",
-   "timestamp": "2026-08-14T04:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "DGP8Aq_Cn9_aHwGH",
-   "headline": "NFL preseason Week 1 schedule: One reason to watch each game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-preseason-week-1-schedule-one-reason-to-watch-each-game/",
-   "timestamp": "2026-08-14T03:59:10.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "iGK13QW4qhij48Ta",
-   "headline": "Steelers rookie QB Drew Allar exceeds expectations in NFL debut vs. Packers",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/steelers-rookie-qb-drew-allar-impressive-nfl-debut-packers/",
-   "timestamp": "2026-08-14T03:49:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "PIT"
-   ]
-  },
-  {
-   "id": "LfmhEmCUoQ5_bt-F",
-   "headline": "Fernando Mendoza looked the part in his NFL preseason debut, will he force the Raiders' hand?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/fernando-mendoza-nfl-debut-will-he-force-the-raiders-hand/",
-   "timestamp": "2026-08-14T03:16:18.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "O5dt9ly3nGTWdOMH",
-   "headline": "Terrion Arnold will sign with Seattle Seahawks, sparing Giants a decision",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/terrion-arnold-sign-seattle-seahawks-004739061.html",
-   "timestamp": "2026-08-14T00:47:39.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG",
-    "SEA"
-   ]
-  },
-  {
-   "id": "0FAYVYtHn4XwvgaI",
-   "headline": "49ers-Titans preseason game thread: It’s Kurtis Rourke time",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-titans-preseason-game-thread-004500639.html",
-   "timestamp": "2026-08-14T00:45:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "SF",
-    "TEN"
-   ]
-  },
-  {
-   "id": "eqa7AxPj-IUNCsw-",
-   "headline": "NFL Workouts: Saints, Ravens, Texans, Titans",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/nfl-workouts-saints-ravens-texans-titans",
-   "timestamp": "2026-08-14T00:36:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "HOU",
-    "NO",
-    "TEN"
-   ]
-  },
-  {
-   "id": "-9k9TfkfQ1smGpLc",
-   "headline": "Former Lions first-round pick Terrion Arnold plans to sign with Seahawks, still subject to suspension",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/terrion-arnold-plans-to-sign-with-seahawks/",
-   "timestamp": "2026-08-14T00:30:45.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET",
-    "SEA"
-   ]
-  },
-  {
-   "id": "kuoSDOLCL-8lpjTG",
-   "headline": "Instant recap of the Bengals starters vs. Lions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/instant-recap-bengals-starters-vs-001601091.html",
-   "timestamp": "2026-08-14T00:16:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "DET"
-   ]
-  },
-  {
-   "id": "gPuzxSl6Uv7Nn3nW",
-   "headline": "Joe Burrow plays two series in Bengals' preseason opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/joe-burrow-plays-two-series-000257111.html",
-   "timestamp": "2026-08-14T00:02:57.000Z",
-   "category": "camp",
-   "player_ids": [
-    "joe-burrow"
-   ],
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "kzgpoRY3tGCta7e1",
-   "headline": "What You Are Looking For: Dolphins Vs. Commanders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/looking-dolphins-vs-commanders-000000142.html",
-   "timestamp": "2026-08-14T00:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "WAS"
-   ]
-  },
-  {
-   "id": "ITlgmSN6iC0ci_Yt",
-   "headline": "Dallas Cowboys named most valuable professional sports franchise again",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dallas-cowboys-named-most-valuable-000000014.html",
-   "timestamp": "2026-08-14T00:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "zJafGvDKpKCfXPP5",
-   "headline": "Titans vs. 49ers preseason game one open thread",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-vs-49ers-preseason-game-000000572.html",
-   "timestamp": "2026-08-14T00:00:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "SF",
-    "TEN"
-   ]
-  },
-  {
-   "id": "l8NcK9EkAGe7sSNL",
-   "headline": "Jordan Love plays one series, leads Packers to a field goal",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jordan-love-plays-one-series-235722435.html",
-   "timestamp": "2026-08-13T23:57:22.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "OIuQNiVTvFE5mzwZ",
-   "headline": "Rams’ rivals sign CB facing 8 felony charges",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-rivals-sign-cb-facing-235144138.html",
-   "timestamp": "2026-08-13T23:51:44.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "RL-lEUrhbXHSQv6x",
-   "headline": "Terrion Arnold set to sign with Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/terrion-arnold-set-sign-seahawks-234427521.html",
-   "timestamp": "2026-08-13T23:44:27.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "r_ghRFScoXTYZL0n",
-   "headline": "Super Bowl champion Seahawks signing CB charged with kidnapping",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/super-bowl-champion-seahawks-signing-233651743.html",
-   "timestamp": "2026-08-13T23:36:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "u0Bat9uKk44Gmfyl",
-   "headline": "Colts vs. Patriots discussion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-vs-patriots-discussion-233050583.html",
-   "timestamp": "2026-08-13T23:30:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "NE"
-   ]
-  },
-  {
-   "id": "bm6SHmTpyrB0niEJ",
-   "headline": "NFL Moneyline Picks for Every Week 1 Preseason Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-moneyline-picks-every-week-000100624.html",
-   "timestamp": "2026-08-13T23:29:00.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "jSrt2jaZ94bGOm72",
-   "headline": "CB Terrion Arnold agrees to terms with Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cb-terrion-arnold-agrees-terms-232645993.html",
-   "timestamp": "2026-08-13T23:26:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "VZhGLBcn7aHJjwUW",
-   "headline": "Patriots vs. Colts live updates: Kyle Williams touchdown extends Patriots lead 10-0",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-colts-live-updates-232128695.html",
-   "timestamp": "2026-08-13T23:21:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "NE"
-   ]
-  },
-  {
-   "id": "K2SvToMfkkPCP3Lb",
-   "headline": "Kansas City Chiefs roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kansas-city-chiefs-roster-003019778.html",
-   "timestamp": "2026-08-13T23:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "6p78HzKW742phc7p",
-   "headline": "Tucker Kraft: Trending toward active status Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tucker-kraft-16649",
-   "timestamp": "2026-08-13T22:49:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tucker-kraft"
-   ]
-  },
-  {
-   "id": "a-lewQGnH18xWF2Q",
-   "headline": "Jayden Daniels' camp picked a fight with LSU and may have overplayed his hand in Baton Rouge",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/college-football/news/jayden-daniels-camp-picked-a-fight-with-lsu-and-may-have-overplayed-his-hand-in-baton-rouge/",
-   "timestamp": "2026-08-13T22:44:42.000Z",
-   "category": "camp",
-   "player_ids": [
-    "jayden-daniels"
-   ]
-  },
-  {
-   "id": "VC2Hp1_dulK_snSC",
-   "headline": "Aaron Rodgers will not play tonight against the Packers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-rodgers-not-play-tonight-224350079.html",
-   "timestamp": "2026-08-13T22:43:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "SSj0LcAOsDRSnY4O",
-   "headline": "Michael Pittman: Not slated to play preseason opener",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/michael-pittman-14378",
-   "timestamp": "2026-08-13T22:34:00.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "HQEw_41BYLqCTnni",
-   "headline": "DK Metcalf: Not in uniform for preseason opener",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/dk-metcalf-13424",
-   "timestamp": "2026-08-13T22:32:00.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "Uk9Ln2y7_wCo9U3D",
-   "headline": "Packers vs. Steelers Preseason Week 1 Game Discussion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-vs-steelers-preseason-week-223000423.html",
-   "timestamp": "2026-08-13T22:30:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "GB",
-    "PIT"
-   ]
-  },
-  {
-   "id": "bbcm7DtTiGKfsjkY",
-   "headline": "Cowboys countdown to kickoff: Top 100 iconic games – Day 31",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-countdown-kickoff-top-100-223000032.html",
-   "timestamp": "2026-08-13T22:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "4kgC1qa1rIo7uIGv",
-   "headline": "Steelers vs. Packers: Preseason Week 1 open thread",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-vs-packers-preseason-week-223000793.html",
-   "timestamp": "2026-08-13T22:30:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "GB",
-    "PIT"
-   ]
-  },
-  {
-   "id": "K7jXz1Du110S-Eu5",
-   "headline": "Dolphins vs Commanders Predictions, Picks & Odds for Friday's NFL Preseason Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-vs-commanders-predictions-picks-192100236.html",
-   "timestamp": "2026-08-13T22:22:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "MIA",
-    "WAS"
-   ]
-  },
-  {
-   "id": "h0W34aOZ7CD-RV0F",
-   "headline": "Patriots Place RB Terrell Jennings On IR, Sign RB JaMycal Hasty",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/patriots-place-rb-terrell-jennings-on-ir-sign-rb-jamycal-hasty",
-   "timestamp": "2026-08-13T22:14:33.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "JVs_zSGePwB2-mJ3",
-   "headline": "Tyson Bagent ends practice with a long TD; will start for Bears on Saturday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tyson-bagent-ends-practice-long-220000165.html",
-   "timestamp": "2026-08-13T22:00:00.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "ydcMrw3CTmC9QEqs",
-   "headline": "Scouting New York Jets UDFA defensive tackle Ben Barten",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/scouting-york-jets-udfa-defensive-220000265.html",
-   "timestamp": "2026-08-13T22:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "JZP4rvXh3k7d7o_E",
-   "headline": "Cleveland Browns searching for DE help, work out another familiar face",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-searching-help-another-215908355.html",
-   "timestamp": "2026-08-13T21:59:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "ygwnVoASf-dPpHAz",
-   "headline": "Titans vs 49ers Predictions, Picks & Odds for Tonight's NFL Preseason Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-vs-49ers-predictions-picks--odds-for-tonights-nfl-preseason-game-114000782.html",
-   "timestamp": "2026-08-13T21:58:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "SF",
-    "TEN"
-   ]
-  },
-  {
-   "id": "lxZmCsgwvuMudaTF",
-   "headline": "What to Watch For: Colts at Patriots for Preseason Opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/watch-colts-patriots-preseason-opener-215420483.html",
-   "timestamp": "2026-08-13T21:54:20.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "IND",
-    "NE"
-   ]
-  },
-  {
-   "id": "zu1PbgSo1UGZwp0u",
-   "headline": "Steelers place DE Logan Lee on IR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-place-logan-lee-ir-213944381.html",
-   "timestamp": "2026-08-13T21:39:44.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "WMIbF_dacG4yle74",
-   "headline": "Malachi Fields Making Strides Toward Giants Starting Role; Latest On Malik Nabers",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/malachi-fields-making-strides-toward-giants-starting-role-latest-on-malik-nabers",
-   "timestamp": "2026-08-13T21:31:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "KqxYM6JEZM0MrMCl",
-   "headline": "What placing Terrell Jennings on IR means for the Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/placing-terrell-jennings-ir-means-212454241.html",
-   "timestamp": "2026-08-13T21:24:54.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "FVj6xtrZbg0LI_1W",
-   "headline": "Will Nick Bosa be healthy enough for week one against the Rams?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nick-bosa-healthy-enough-week-212354443.html",
-   "timestamp": "2026-08-13T21:23:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "prgie3W2fuTFKLZN",
-   "headline": "Will starters play Week 1 of NFL preseason? Here's what every team is doing",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/starters-play-week-1-nfl-212254598.html",
-   "timestamp": "2026-08-13T21:22:54.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "WYjfMF3JuzVjAVJC",
-   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for NFL preseason, MLB Field of Dreams Game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nfl-preseason-mlb-field-of-dreams-game-thursday/",
-   "timestamp": "2026-08-13T21:22:13.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "XJm_aSuEsccDniSF",
-   "headline": "Cardinals vs Raiders Predictions, Picks & Odds for Tonight's NFL Preseason Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cardinals-vs-raiders-predictions-picks-191100616.html",
-   "timestamp": "2026-08-13T21:21:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "ARI",
-    "LV"
-   ]
-  },
-  {
-   "id": "Tfs9ykFus2NXcX1x",
-   "headline": "Steelers 2026 NFL futures odds: Will Aaron Rodgers' last hurrah work in reunion with coach Mike McCarthy?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/steelers-2026-nfl-futures-odds-will-aaron-rodgers-last-hurrah-work-in-reunion-with-coach-mike-mccarthy/",
-   "timestamp": "2026-08-13T21:20:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "OQmEIPA4AGvSvCD7",
-   "headline": "Chargers vs Texans Predictions, Picks & Odds for Tonight's NFL Preseason Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-vs-texans-predictions-picks-183100552.html",
-   "timestamp": "2026-08-13T21:18:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "HOU",
-    "LAC"
-   ]
-  },
-  {
-   "id": "LMiwLJAuE00HBY5U",
-   "headline": "Giants WRs coach Chad Hall left bloodied after collision with Malik Nabers' helmet",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-wrs-coach-chad-hall-211044533.html",
-   "timestamp": "2026-08-13T21:10:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "LuyXvIlqznAU_LMD",
-   "headline": "Broncos signed center Lecitus Smith and placed center Michael Deiter on the season-ending IR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-signed-center-lecitus-smith-211018459.html",
-   "timestamp": "2026-08-13T21:10:18.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "NrFmVn1EvGL7o_tU",
-   "headline": "Cowboys LB Jaishawn Barham is close to returning from groin injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-lb-jaishawn-barham-close-210000225.html",
-   "timestamp": "2026-08-13T21:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "t6fozw_oPkIlhdMR",
-   "headline": "Houston Texans 2026 schedule and scores",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/houston-texans-2026-schedule-scores-210000589.html",
-   "timestamp": "2026-08-13T21:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "KwJhxBZNvELuYhQJ",
-   "headline": "Chiefs officially sign Emmanuel Ogbah",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-officially-sign-emmanuel-ogbah-205939873.html",
-   "timestamp": "2026-08-13T20:59:39.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "CfsZbvs6J8vvUy45",
-   "headline": "Patriots up-to-date depth chart: Who is on the roster right now?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-date-depth-chart-roster-202222083.html",
-   "timestamp": "2026-08-13T20:59:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "vGKezKquCGRc3giP",
-   "headline": "Za'Darius Smith worked out for Browns on Thursday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/zadarius-smith-worked-browns-thursday-205636979.html",
-   "timestamp": "2026-08-13T20:56:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "N3gYL7w18OPiHRLS",
-   "headline": "Patriots place Terrell Jennings on injured reserve after adding two running backs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-place-terrell-jennings-injured-205629477.html",
-   "timestamp": "2026-08-13T20:56:29.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "l8iWYxqccUNbcyzp",
-   "headline": "Browns Work Out DE Za’Darius Smith",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/browns-work-out-de-zadarius-smith",
-   "timestamp": "2026-08-13T20:49:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "y8PcGnpCNWDHv22T",
-   "headline": "Rams share injury update after Puka Nacua’s concerning practice exit",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-share-injury-puka-nacua-204147997.html",
-   "timestamp": "2026-08-13T20:41:47.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Z4FUBxSW296MhBbg",
-   "headline": "Colts vs Patriots Predictions, Picks & Odds for Tonight's NFL Preseason Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-vs-patriots-predictions-picks-211300991.html",
-   "timestamp": "2026-08-13T20:38:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "IND",
-    "NE"
-   ]
-  },
-  {
-   "id": "kUVy82R7vWuCAUhi",
-   "headline": "Broncos place C Mike Deiter on IR, sign C Lecitus Smith",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-place-c-mike-deiter-203738042.html",
-   "timestamp": "2026-08-13T20:37:38.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "KHNHqWfLNbP_mhTi",
-   "headline": "7 under-the-radar Patriots that could boost their stock vs. the Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/7-under-radar-patriots-could-203438313.html",
-   "timestamp": "2026-08-13T20:34:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "NE"
-   ]
-  },
-  {
-   "id": "gpj5CLpdr7gLgntk",
-   "headline": "Can Kaelon Black take over RB2 role in the preseason?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kaelon-black-over-rb2-role-203007370.html",
-   "timestamp": "2026-08-13T20:30:07.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "BWe-GmHb3dArV975",
-   "headline": "NFL training camp injuries tracker: Latest updates on Chuba Hubbard, Christian McCaffrey, Alec Pierce and more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-training-camp-injuries-tracker/",
-   "timestamp": "2026-08-13T20:29:44.000Z",
-   "category": "injury",
-   "player_ids": [
-    "christian-mccaffrey"
-   ]
-  },
-  {
-   "id": "E7D3pYE0jm6iUdA5",
-   "headline": "Packers vs Steelers Predictions, Picks & Odds for Tonight's NFL Preseason Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-vs-steelers-predictions-picks-183000891.html",
-   "timestamp": "2026-08-13T20:25:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "GB",
-    "PIT"
-   ]
-  },
-  {
-   "id": "ZOBOTy77ws1qCeFi",
-   "headline": "Lions vs Bengals Predictions, Picks & Odds for Tonight's NFL Preseason Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-vs-bengals-predictions-picks-161100955.html",
-   "timestamp": "2026-08-13T20:24:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "CIN",
-    "DET"
-   ]
-  },
-  {
-   "id": "3H14Cx6Ra6BYFTKZ",
-   "headline": "Jeremy Reaves Pushing For Commanders Starting Job",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/s-jeremy-reaves-pushing-for-commanders-starting-job",
-   "timestamp": "2026-08-13T20:03:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "njht5wWQ0gKFHGU8",
-   "headline": "Bears owner responds to speculation of a possible name change if the team moves to Indiana",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bears-owner-responds-to-speculation-of-a-possible-name-change-if-the-team-moves-to-indiana/",
-   "timestamp": "2026-08-13T19:57:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "J4HCyx2I1QqXb2Lh",
-   "headline": "Today's top games to watch, best bets, odds: 49ers vs. Titans, Brewers vs. Dodgers and more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-49ers-vs-titans-brewers-vs-dodgers-and-more/",
-   "timestamp": "2026-08-13T19:30:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF",
-    "TEN"
-   ]
-  },
-  {
-   "id": "ETJOe3Qoz-3ilVDk",
-   "headline": "49ers’ George Kittle Trending Toward Week 1 Return",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/49ers-george-kittle-trending-toward-week-1-return",
-   "timestamp": "2026-08-13T19:23:18.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ],
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "SIBr8j6tFyJdZAmb",
-   "headline": "Carson Beck rib injury: Cardinals rookie quarterback to sit out game vs. Raiders in Fernando Mendoza's debut",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/carson-beck-rib-injury-cardinals-quarterback-vs-raiders-preseason/",
-   "timestamp": "2026-08-13T19:21:48.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ARI",
-    "LV"
-   ]
-  },
-  {
-   "id": "1Y47gDfnnS7pgwYN",
-   "headline": "Caleb Williams 2026 NFL futures odds, props: Will a Bears quarterback finally have a 4,000-yard passer?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/caleb-williams-2026-nfl-futures-odds-props-will-a-bears-quarterback-finally-have-a-4000-yard-passer/",
-   "timestamp": "2026-08-13T18:49:18.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "K3vVatsrz3I8PRno",
-   "headline": "Bengals 2026 NFL futures odds: Bettors backing Joe Burrow for MVP, but will Cincy's new defense step up?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/bengals-2026-nfl-futures-odds-bettors-backing-joe-burrow-for-mvp-but-will-cincys-new-defense-step-up/",
-   "timestamp": "2026-08-13T18:37:07.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "joe-burrow"
-   ],
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "s0gcTbKgFzmrcAly",
-   "headline": "Commanders Sign WR Stefon Diggs",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/commanders-to-sign-stefon-diggs",
-   "timestamp": "2026-08-13T18:35:05.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "eg0RxNR2HlAwseYk",
-   "headline": "Giants 2026 NFL futures odds: With Jaxson Dart and John Harbaugh, New York aims for Patriots-type formula",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/giants-2026-nfl-futures-odds-with-jaxson-dart-and-john-harbaugh-new-york-aims-for-patriots-type-formula/",
-   "timestamp": "2026-08-13T18:32:50.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "NE",
-    "NYG"
-   ]
-  },
-  {
-   "id": "5YXHMdMtER7_loBO",
-   "headline": "NFL futures betting: Aaron Donald expert's pick for NFL Comeback Player of the Year, plus a deep CPOY sleeper",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-futures-betting-aaron-donald-experts-pick-for-nfl-comeback-player-of-the-year-plus-a-deep-cpoy-sleeper/",
-   "timestamp": "2026-08-13T18:23:29.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "AZBt1tD8hIf-n3Ur",
-   "headline": "Panthers Notes: Hubbard, LBs, Scourton",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/panthers-notes-hubbard-lbs-scourton",
-   "timestamp": "2026-08-13T17:37:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "SjLXK9Lk5Yl0jkEK",
-   "headline": "Winning a Super Bowl isn't enough for Ben Johnson: Here's what Bears coach wants to accomplish in 2026",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bears-coach-ben-johnson-winning-super-bowl-2026-goals/",
-   "timestamp": "2026-08-13T17:10:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "j3_-QXFHggAz9esY",
-   "headline": "Predicting MVP for each AFC team, plus eight teams that need the preseason the most and rookies to watch",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/predicting-mvp-for-each-afc-team-plus-eight-teams-that-need-the-preseason-the-most-and-rookies-to-watch/",
-   "timestamp": "2026-08-13T17:03:01.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "7vAOBy-QIaK4ETWA",
-   "headline": "Aaron Rodgers sounds off on the problems with the NFL preseason: 'It's not real football'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-steelers-packers-preseason-football/",
-   "timestamp": "2026-08-13T17:01:36.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "UXBMz3eAUiDkrVOS",
-   "headline": "Patriots Extend TE Hunter Henry",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/patriots-extend-te-hunter-henry",
-   "timestamp": "2026-08-13T16:58:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "yAQClsmLCjbiz760",
-   "headline": "49ers’ Robert Jones Leading LG Battle; Ricky Pearsall Facing 9-Month Recovery",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/49ers-robert-jones-leading-lg-battle-ricky-pearsall-facing-9-month-recovery",
-   "timestamp": "2026-08-13T16:00:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
    ]
   }
  ]
