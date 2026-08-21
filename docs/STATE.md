@@ -88,8 +88,17 @@ build` with a line number instead of shipping a broken page.
   decision: this is a non-commercial, educational portfolio. Player headshots,
   stadium and coach photography are in use, with a disclaimer in the footer
   covering NFL non-affiliation, non-commercial purpose, and photo takedown on
-  request. **The no-logo rule still holds** — teams are still colour-plus-
-  abbreviation, and `TeamChip` computes its text colour from luminance.
+  request. **The no-logo rule still holds in the interface** — teams are still
+  colour-plus-abbreviation, and `TeamChip` computes its text colour from
+  luminance.
+  - **One exception, in hero photography only.** The game tracker hero
+    (`/img/bg/game-tracker.jpg`, chosen by the operator on 2026-08-21) is a
+    promotional composite with the NFL shield at its centre and team marks on
+    the jerseys. Nothing in the interface changed — no chip, badge or list gained
+    a logo — but CLAUDE.md states the no-logo rule flatly, and this is the one
+    place the site now contradicts it. Flagged to the operator when it went in.
+    If the rule is meant to cover photography as well, this is the single file to
+    swap; `whiteboard.jpg` is free again and is what that page used before.
 - **Return timelines are reported, never estimated** (§5.3). Injury records
   carry a `timeline` only alongside an `attribution`. Reporting that a coach
   said Week 1 is journalism; asserting a return date is the medical claim the

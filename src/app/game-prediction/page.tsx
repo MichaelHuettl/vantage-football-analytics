@@ -43,7 +43,7 @@ export default async function GamePredictionIndex({
   return (
     <>
       <SectionHero
-        image="/img/bg/whiteboard.jpg"
+        image="/img/bg/vegas.jpg"
         eyebrow="Model output"
         title="Game prediction"
         lede="How the model works, how well it has done, and what it expects this week."

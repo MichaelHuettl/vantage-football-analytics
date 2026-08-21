@@ -32,8 +32,8 @@ export default async function GamesPage({
   return (
     <>
       <SectionHero
-        image="/img/bg/vegas.jpg"
-        objectPosition="center"
+        image="/img/bg/game-tracker.jpg"
+        objectPosition="center 35%"
         eyebrow="Week by week"
         title="Game tracker"
         lede="Every matchup with its kickoff, roof and venue, the market's number, the forecast where there is one, and — once it is played — the four players who decided it."
