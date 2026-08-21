@@ -43,6 +43,13 @@ const SECTION_CARDS: {
     href: "/games",
     label: "Games",
     blurb: "Implied team totals, weather, and the designations that move a lineup.",
+    image: "/img/bg/game-tracker.jpg",
+    position: "center 35%",
+  },
+  {
+    href: "/model",
+    label: "The Model",
+    blurb: "A win probability for every game, its record, and every call it got wrong.",
     image: "/img/bg/vegas.jpg",
     position: "center",
   },
@@ -54,6 +61,22 @@ const SECTION_CARDS: {
     position: "center 18%",
   },
 ];
+
+/**
+ * The card count, spelled out, taken from the list rather than typed beside it.
+ *
+ * It read "Six sections" while there were seven, because adding a card and
+ * updating a sentence two hundred lines away are separate acts and the second
+ * one gets forgotten. Counting the array is not the kind of derivation §11
+ * rules out — there is no data file and no metric here, only this file's own
+ * literal.
+ */
+const NUMBER_WORD = [
+  "No", "One", "Two", "Three", "Four", "Five", "Six",
+  "Seven", "Eight", "Nine", "Ten",
+];
+const SECTION_COUNT =
+  NUMBER_WORD[SECTION_CARDS.length] ?? String(SECTION_CARDS.length);
 
 export default function Home() {
   const rb = getRankingList("RB");
@@ -190,7 +213,7 @@ export default function Home() {
             Where to start
           </h2>
           <p className="text-lg" style={{ color: "var(--text-secondary)" }}>
-            Six sections. Each one shows its work.
+            {SECTION_COUNT} sections. Each one shows its work.
           </p>
         </div>
 

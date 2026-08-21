@@ -12,7 +12,7 @@ import { PredictionOverview } from "@/components/prediction/PredictionOverview";
 import { PRED_META, PRED_WEEKS, TIER_LABEL, gamesForWeek, kickoffLabel } from "@/lib/predictions";
 
 export const metadata: Metadata = {
-  title: "Game prediction",
+  title: "The Model",
   description:
     "How the prediction model works, what its record is, and a win probability for every game on the slate.",
 };
@@ -44,8 +44,8 @@ export default async function GamePredictionIndex({
     <>
       <SectionHero
         image="/img/bg/vegas.jpg"
-        eyebrow="Model output"
-        title="Game prediction"
+        eyebrow="Win probability"
+        title="The Model"
         lede="How the model works, how well it has done, and what it expects this week."
       />
 
@@ -60,13 +60,13 @@ export default async function GamePredictionIndex({
         <nav aria-label="Prediction sections" className="mt-12">
           <ul className="flex flex-wrap items-center gap-2 border-b pb-4" style={{ borderColor: "var(--border-subtle)" }}>
             <li>
-              <FilterLink href="/game-prediction" active={active === "methodology"}>
+              <FilterLink href="/model" active={active === "methodology"}>
                 Methodology
               </FilterLink>
             </li>
             <li>
               <FilterLink
-                href="/game-prediction?tab=confidence"
+                href="/model?tab=confidence"
                 active={active === "confidence"}
               >
                 Confidence
@@ -74,7 +74,7 @@ export default async function GamePredictionIndex({
             </li>
             <li>
               <FilterLink
-                href="/game-prediction?tab=case-study"
+                href="/model?tab=case-study"
                 active={active === "case-study"}
               >
                 Case study
@@ -83,7 +83,7 @@ export default async function GamePredictionIndex({
             {PRED_WEEKS.map((w) => (
               <li key={w}>
                 <FilterLink
-                  href={`/game-prediction?tab=${weekTab(w)}`}
+                  href={`/model?tab=${weekTab(w)}`}
                   active={active === weekTab(w)}
                 >
                   Week {w}
@@ -145,7 +145,7 @@ function WeekSlate({ week }: { week: number }) {
           return (
             <li key={g.game_id} className="border-b" style={{ borderColor: "var(--border-subtle)" }}>
               <Link
-                href={`/game-prediction/${g.game_id}`}
+                href={`/model/${g.game_id}`}
                 className="group flex flex-wrap items-center gap-x-6 gap-y-2 py-4"
               >
                 <span className="flex w-40 shrink-0 items-center gap-2">

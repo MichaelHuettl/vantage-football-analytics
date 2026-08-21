@@ -61,14 +61,14 @@ build` with a line number instead of shipping a broken page.
 
 | Section | State |
 | --- | --- |
-| Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
+| Home | Built. Lambeau hero, seven section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
 | Positions | Six pages. **RB, K, DST, TE and QB are built** — one column: methodology, then the evidence. WR keeps the two-column slot-and-pool layout |
 | Injuries | Training camp section (58 entries) plus a **live wire** reconciled against it, team filter in the URL. Weekly report empty until Week 1 |
 | Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
-| Game prediction | **Built** — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Payload comes from the separate prediction pipeline |
+| The Model | **Built**, at `/model` — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Renamed from "Game prediction" on 2026-08-21: it sat next to "Games" in the nav reading as a near-duplicate, and "prediction" oversold a model whose own headline is that it loses to the market. The payload file keeps its `game-predictions.json` name — that is the prediction pipeline's export filename and this repo only copies it |
 | Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
 | Glossary | Built |
 

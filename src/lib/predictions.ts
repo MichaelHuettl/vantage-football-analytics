@@ -3,7 +3,12 @@ import marginsFile from "@/data/game-margins.json";
 import featuresFile from "@/data/model-features.json";
 
 /**
- * The game-prediction model's output, typed and tidied.
+ * The Model's output, typed and tidied.
+ *
+ * The section is "The Model" and lives at `/model`; the payload file keeps its
+ * `game-predictions.json` name because that is the filename the prediction
+ * pipeline exports and this repo copies (docs/STATE.md). Renaming it here would
+ * put a translation step into a hand-off that currently has none.
  *
  * Produced by a separate modelling pipeline (`export_dashboard_payload.py`,
  * outside this repo) and copied to `src/data/` like every other data file, so a

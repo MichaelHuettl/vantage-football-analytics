@@ -18,7 +18,7 @@ export async function generateMetadata({
   params: Promise<{ gameId: string }>;
 }): Promise<Metadata> {
   const g = getGame((await params).gameId);
-  if (!g) return { title: "Game prediction" };
+  if (!g) return { title: "The Model" };
   return {
     title: `${g.away.team} at ${g.home.team} — prediction`,
     description: `Model win probability, metric comparison and situational context for ${g.away.team} at ${g.home.team}.`,
@@ -44,7 +44,7 @@ export default async function GamePredictionPage({
   return (
     <Container className="py-10">
       <p className="mb-6">
-        <Link href="/game-prediction" className="eyebrow hover:underline">
+        <Link href="/model" className="eyebrow hover:underline">
           ← All games
         </Link>
       </p>
@@ -70,7 +70,7 @@ export default async function GamePredictionPage({
           Every figure here comes from {PRED_META.model_name}, validated{" "}
           {PRED_META.validation}. For how the model is built, what the metrics mean and
           how it has actually performed —{" "}
-          <Link href="/game-prediction" className="underline underline-offset-4">
+          <Link href="/model" className="underline underline-offset-4">
             read the methodology
           </Link>
           .
