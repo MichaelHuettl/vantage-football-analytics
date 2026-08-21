@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import conceptsFile from "@/data/concepts.json";
 import { Container } from "@/components/PageHeader";
+import { FilmSample } from "@/components/FilmSample";
 import { SectionHero } from "@/components/SectionHero";
 import { TEAMS, readableOn } from "@/lib/teams";
 import type { PlayConcept } from "@/lib/types";
@@ -67,7 +68,40 @@ export default function FilmPage() {
       />
 
       <Container className="py-10">
+        {/* ---------- Sample breakdown ---------- */}
         <section>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+            <h2
+              className="text-3xl uppercase tracking-wide"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              What a breakdown looks like
+            </h2>
+            <span
+              className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
+              style={{
+                fontFamily: "var(--font-condensed)",
+                color: "var(--text-secondary)",
+                boxShadow: "inset 0 0 0 1px var(--border-strong)",
+              }}
+            >
+              Sample
+            </span>
+          </div>
+          <p className="mt-2 max-w-2xl" style={{ color: "var(--text-secondary)" }}>
+            One play, in the format every breakdown will use once the season
+            starts: the alignment, the routes, and the situation the call has to
+            be read against. This is a worked example of the layout rather than
+            published analysis — the team cards below fill in with real ones
+            week by week.
+          </p>
+          <div className="mt-6">
+            <FilmSample />
+          </div>
+        </section>
+
+        {/* ---------- By team ---------- */}
+        <section className="mt-16">
           <h2
             className="text-3xl uppercase tracking-wide"
             style={{ fontFamily: "var(--font-display)" }}

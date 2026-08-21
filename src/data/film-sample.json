@@ -1,0 +1,72 @@
+{
+ "schema_version": 1,
+ "updated": "2026-08-21",
+ "source": "Film Template.pptx — the operator's own play-design template",
+ "note": "A sample play, published to show the format the film room will use in season. Coordinates are lifted from the template rather than redrawn: x is 0-100 across the field, y is 0-48.11 down it, which is the template's own 10in x 5.62in slide with the play area normalized so one x unit and one y unit are the same size on screen. The field art is the template's. Nothing here is analysis this site is publishing as a finding — it is a worked example of the layout, and the page says so.",
+ "data": {
+  "title": "Cover 2 Man against empty, 3rd and goal",
+  "field_image": "/img/film/field.png",
+  "view": { "width": 100, "height": 48.11 },
+  "situation": [
+   { "label": "Score", "value": "24 (GB) – 14 (LV)" },
+   { "label": "Time", "value": "Q2 10:45" },
+   { "label": "Down/Distance", "value": "3rd and Goal (11)" },
+   { "label": "Outcome", "value": "3 YD Comp to RB" },
+   { "label": "Pre-play DEF", "value": "2 High Shell" },
+   { "label": "DEF", "value": "Cover 2 Man" }
+  ],
+  "offense": [
+   { "id": "wr-x", "shape": "circle", "x": 21.11, "y": 38.89, "role": "Receiver, left" },
+   { "id": "lt", "shape": "circle", "x": 43.34, "y": 38.89, "role": "Left tackle" },
+   { "id": "lg", "shape": "circle", "x": 46.67, "y": 38.89, "role": "Left guard" },
+   { "id": "c", "shape": "square", "x": 50.0, "y": 38.89, "role": "Center" },
+   { "id": "rg", "shape": "circle", "x": 53.34, "y": 38.89, "role": "Right guard" },
+   { "id": "rt", "shape": "circle", "x": 56.67, "y": 38.89, "role": "Right tackle" },
+   { "id": "wr-z", "shape": "circle", "x": 67.23, "y": 38.89, "role": "Receiver, right" },
+   { "id": "slot", "shape": "circle", "x": 69.55, "y": 40.74, "role": "Slot" },
+   { "id": "wide", "shape": "circle", "x": 74.03, "y": 40.74, "role": "Widest receiver, right" },
+   { "id": "rb", "shape": "circle", "x": 46.21, "y": 44.08, "role": "Running back" },
+   { "id": "qb", "shape": "circle", "x": 50.0, "y": 44.08, "role": "Quarterback" }
+  ],
+  "defense": [
+   { "label": "E", "x": 35.92, "y": 36.08, "role": "End" },
+   { "label": "T", "x": 42.97, "y": 36.08, "role": "Tackle" },
+   { "label": "N", "x": 53.34, "y": 36.08, "role": "Nose" },
+   { "label": "E", "x": 60.01, "y": 36.08, "role": "End" },
+   { "label": "W", "x": 40.09, "y": 30.17, "role": "Will linebacker" },
+   { "label": "M", "x": 49.45, "y": 21.52, "role": "Mike linebacker" },
+   { "label": "C", "x": 20.91, "y": 35.21, "role": "Corner" },
+   { "label": "C", "x": 68.16, "y": 29.29, "role": "Corner" },
+   { "label": "C", "x": 74.03, "y": 25.11, "role": "Corner" },
+   { "label": "FS", "x": 29.02, "y": 16.62, "role": "Free safety" },
+   { "label": "SS", "x": 59.28, "y": 16.62, "role": "Strong safety" }
+  ],
+  "routes": [
+   {
+    "label": "Receiver, left — vertical",
+    "points": [[19.95, 38.89], [16.89, 36.53], [17.18, 14.14]]
+   },
+   {
+    "label": "Receiver, right — vertical",
+    "points": [[67.1, 37.73], [67.03, 15.4]]
+   },
+   {
+    "label": "Widest receiver — in-breaking dig",
+    "points": [[74.06, 39.29], [74.03, 22.58], [59.06, 22.65]]
+   },
+   {
+    "label": "Slot — vertical stem",
+    "points": [[69.54, 39.35], [69.66, 24.09]]
+   },
+   {
+    "label": "Slot — break",
+    "points": [[69.63, 24.05], [70.52, 25.84]]
+   },
+   {
+    "label": "Running back — swing left, the completion",
+    "emphasis": true,
+    "path": "M 44.94 44.29 C 42.42 44.29 39.87 44.71 37.37 44.29 C 34.48 43.81 32.10 41.54 30.03 39.47"
+   }
+  ]
+ }
+}

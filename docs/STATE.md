@@ -65,7 +65,7 @@ build` with a line number instead of shipping a broken page.
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
 | Positions | Six pages. **RB, K, DST, TE and QB are built** — one column: methodology, then the evidence. WR keeps the two-column slot-and-pool layout |
 | Injuries | Training camp section (58 entries) plus a **live wire** reconciled against it, team filter in the URL. Weekly report empty until Week 1 |
-| Film | **Scaffold only.** By-team index over all 32 clubs, every card empty — the three sample concepts were agent-written and were deleted on 2026-08-21. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
+| Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
 | Game prediction | **Built** — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Payload comes from the separate prediction pipeline |
@@ -248,7 +248,7 @@ build` with a line number instead of shipping a broken page.
    board, so Carlson is off the K board entirely and Chase McLaughlin is in at
    7. He still appears on the kicker page's scoring tables, with an FA marker,
    because those record what he did rather than who to take.
-5. **The film room has no content, by decision.** `src/data/concepts.json` is
+5. **The film room holds one sample play and no analysis.** `concepts.json` is
    an empty array. Mesh, Dagger and Sail were written by an agent — the routes,
    the prose and the claims about which teams run them — and the operator had
    them removed on 2026-08-21 rather than publish football analysis he did not
@@ -257,6 +257,17 @@ build` with a line number instead of shipping a broken page.
    with a `teams` array makes it appear with no code change. The concept library
    grid was removed at the same time and may come back — nothing it depended on
    was deleted.
+
+   Above that grid sits **one worked play**, from `src/data/film-sample.json`,
+   because the site is going out as a portfolio and an entirely blank section
+   does not show what the page is for. It is the operator's own
+   `Film Template.pptx` rebuilt as SVG — every coordinate lifted from the slide,
+   the slide's own field art under it at `public/img/film/field.png`. **It is
+   labeled "Sample" and the copy says it is a worked example of the layout
+   rather than published analysis, and that labelling is load-bearing**: it is
+   the only thing separating it from the concepts that were just deleted for
+   being presented as findings. If real breakdowns land, this either goes or
+   keeps its badge.
 6. **Re-run `npm run audit-teams` after the cutdown to 53.** Rosters move
    through the preseason; the audit below is true as of 2026-08-14 and nothing
    keeps it true.
