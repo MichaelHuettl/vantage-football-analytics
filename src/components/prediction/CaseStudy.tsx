@@ -296,8 +296,8 @@ function Seasons() {
           season{MISS_SUMMARY.worst === MISS_SUMMARY.market_worst ? "" : ` (the market's own worst was ${MISS_SUMMARY.market_worst})`}.
           That is the honest reading of the chart above: a good year is mostly a
           season that was predictable, and a bad one is a season that was not.
-          The model did not get better between {MISS_SUMMARY.worst} and{" "}
-          {MISS_SUMMARY.best_vs_market}; the football did.
+          The same model, fit the same way, produced {MISS_SUMMARY.best} and{" "}
+          {MISS_SUMMARY.worst}. What changed was the football.
         </p>
         <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
           Measured against the market instead of against itself, the picture
