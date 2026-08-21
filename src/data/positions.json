@@ -1,61 +1,61 @@
 {
-  "schema_version": 1,
-  "generated_at": "2026-08-11",
-  "note": "Signature chart per position, per §5.2. WR and TE differ from the brief: both originally keyed on route participation, which needs a routes-run denominator no open source publishes. The replacements below use target share, air yards share, and snap share — all computable from play-by-play and public snap counts, and all already part of §4.2's WOPR decomposition.",
-  "data": [
-    {
-      "position": "QB",
-      "chart_title": "Rushing volume against passing volume",
-      "chart_x": "Pass attempts per game",
-      "chart_y": "Rush attempts per game",
-      "caption": "Bubble size is fantasy points per game. The rushing axis is what separates the top tier from the rest.",
-      "methodology": "Quarterback scoring is decided by rushing volume more than by passing efficiency. Two quarterbacks with identical passing lines finish a full tier apart if one carries six times a game and the other twice.",
-      "chart": ""
-    },
-    {
-      "position": "RB",
-      "chart_title": "High-value touches against expected points",
-      "chart_x": "Expected points per game",
-      "chart_y": "HVT per game",
-      "caption": "Backs above the line are earning more high-value work than their overall usage implies.",
-      "methodology": "Running back scoring follows opportunity, and not all opportunity is equal. A target is worth roughly twice a carry in PPR, and a carry inside the 10 is worth several. HVT/G weights the touches that actually decide the position, and it survives the week-to-week noise that raw carry counts do not.",
-      "chart": ""
-    },
-    {
-      "position": "WR",
-      "chart_title": "Target share against air yards share",
-      "chart_x": "Target share",
-      "chart_y": "Air yards share",
-      "caption": "The two components of WOPR, plotted separately. The same composite score describes very different roles.",
-      "methodology": "WOPR is usually quoted as a single number, which hides the thing worth knowing. A possession receiver and a vertical threat can share a WOPR and cannot share a projection. Splitting it into target share and air yards share shows which one you are buying. This replaces the brief's TPRR-based trapezoid, which needs a routes-run denominator no open source publishes.",
-      "chart": ""
-    },
-    {
-      "position": "TE",
-      "chart_title": "Snap share against target share",
-      "chart_x": "Snap share",
-      "chart_y": "Target share",
-      "caption": "The position's ceiling is gated by playing time before it is gated by anything else.",
-      "methodology": "Tight end is the position where being on the field is most of the battle. The tail is driven by snap share, so a target share earned on 90% of snaps means something different from the same share on 55%.",
-      "chart": ""
-    },
-    {
-      "position": "DST",
-      "chart_title": "Pressure rate against turnovers generated",
-      "chart_x": "Pressure rate",
-      "chart_y": "Turnovers per game",
-      "caption": "Pressure repeats week to week. Turnovers largely do not.",
-      "methodology": "Defensive scoring is dominated by turnovers and touchdowns, both of which are close to random year over year. Pressure rate is the stable input, so it is the one worth streaming on.",
-      "chart": ""
-    },
-    {
-      "position": "K",
-      "chart_title": "Attempts by distance band against scoring environment",
-      "chart_x": "Team implied total",
-      "chart_y": "Attempts per game",
-      "caption": "Kickers on good offences that stall inside the 35 are the ones worth having.",
-      "methodology": "Kicker scoring needs an offence good enough to reach field goal range and inefficient enough to stop there. Distance bands matter more than raw attempts once the long-range rules are accounted for.",
-      "chart": ""
-    }
-  ]
+ "schema_version": 1,
+ "generated_at": "2026-08-11",
+ "note": "Signature chart per position, per §5.2. WR and TE differ from the brief: both originally keyed on route participation, which needs a routes-run denominator no open source publishes. The replacements below use target share, air yards share, and snap share — all computable from play-by-play and public snap counts, and all already part of §4.2's WOPR decomposition.",
+ "data": [
+  {
+   "position": "QB",
+   "chart_title": "Rushing volume against passing volume",
+   "chart_x": "Pass attempts per game",
+   "chart_y": "Rush attempts per game",
+   "caption": "Bubble size is fantasy points per game. The rushing axis is what separates the top tier from the rest.",
+   "methodology": "Quarterback scoring is decided by rushing volume more than by passing efficiency. Two quarterbacks with identical passing lines finish a full tier apart if one carries six times a game and the other twice.",
+   "chart": ""
+  },
+  {
+   "position": "RB",
+   "chart_title": "High-value touches against expected points",
+   "chart_x": "Expected points per game",
+   "chart_y": "HVT per game",
+   "caption": "Backs above the line are earning more high-value work than their overall usage implies.",
+   "methodology": "Running back scoring follows opportunity, and not all opportunity is equal. A target is worth roughly twice a carry in PPR, and a carry inside the 10 is worth several. HVT/G weights the touches that actually decide the position, and it survives the week-to-week noise that raw carry counts do not.",
+   "chart": ""
+  },
+  {
+   "position": "WR",
+   "chart_title": "Target share against air yards share",
+   "chart_x": "Target share",
+   "chart_y": "Air yards share",
+   "caption": "The two components of WOPR, plotted separately. The same composite score describes very different roles.",
+   "methodology": "WOPR is usually quoted as a single number, which hides the thing worth knowing. A possession receiver and a vertical threat can share a WOPR and cannot share a projection. Splitting it into target share and air yards share shows which one you are buying. This replaces the brief's TPRR-based trapezoid, which needs a routes-run denominator no open source publishes.",
+   "chart": ""
+  },
+  {
+   "position": "TE",
+   "chart_title": "Route participation against target share",
+   "chart_x": "Route participation",
+   "chart_y": "Target share",
+   "caption": "Running the routes buys the chance; target share is whether it converts.",
+   "methodology": "Tight end is the position where volume and role come apart. A tight end can run almost every route his offense runs and still finish outside the top twelve, because running the route and being thrown the ball are two different jobs. What follows holds role against production one pair at a time — participation against target share, then against target rate, then yardage against touchdowns, then downfield role, and finally the efficiency pair the history turns on. Every number is last season's, because a projection is an opinion and these are what an opinion has to survive.",
+   "chart": ""
+  },
+  {
+   "position": "DST",
+   "chart_title": "Pressure rate against turnovers generated",
+   "chart_x": "Pressure rate",
+   "chart_y": "Turnovers per game",
+   "caption": "Pressure repeats week to week. Turnovers largely do not.",
+   "methodology": "Defensive scoring is dominated by turnovers and touchdowns, both of which are close to random year over year. Pressure rate is the stable input, so it is the one worth streaming on.",
+   "chart": ""
+  },
+  {
+   "position": "K",
+   "chart_title": "Attempts by distance band against scoring environment",
+   "chart_x": "Team implied total",
+   "chart_y": "Attempts per game",
+   "caption": "Kickers on good offences that stall inside the 35 are the ones worth having.",
+   "methodology": "Kicker scoring needs an offence good enough to reach field goal range and inefficient enough to stop there. Distance bands matter more than raw attempts once the long-range rules are accounted for.",
+   "chart": ""
+  }
+ ]
 }

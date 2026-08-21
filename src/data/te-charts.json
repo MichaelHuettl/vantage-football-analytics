@@ -1,0 +1,1355 @@
+{
+ "schema_version": 1,
+ "season": 2025,
+ "updated": "2026-08-17",
+ "source": "2026-2027 Fantasy Football Analytics (Original) (4).xlsx, sheet 'WRTE Statistics & Graphs'",
+ "note": "Tight end charts from the workbook's WRTE sheet. Route participation, targets per route run and yards per route run are 4for4 columns; \u00a72 rules them out and the operator lifted that for this page (docs/STATE.md). Every median, extent and label order is computed here, not in a component (\u00a711).",
+ "data": {
+  "charts": {
+   "routes_targets": {
+    "title": "Route participation against target share",
+    "caption": "Running the routes buys the chance. Target share is whether the offense actually looks his way once he gets there.",
+    "x_label": "Route participation %",
+    "y_label": "Target share %",
+    "x_pct": true,
+    "y_pct": true,
+    "x_median": 78.3,
+    "y_median": 18.1,
+    "x_min": 42.1,
+    "x_max": 96.6,
+    "y_min": 10.7,
+    "y_max": 27.4,
+    "points": [
+     {
+      "name": "Trey McBride",
+      "x": 96.6,
+      "y": 27.4,
+      "label": true,
+      "short": "T. McBride",
+      "rank": 1
+     },
+     {
+      "name": "Brock Bowers",
+      "x": 89.8,
+      "y": 23.6,
+      "label": true,
+      "short": "B. Bowers",
+      "rank": 5
+     },
+     {
+      "name": "Colston Loveland",
+      "x": 65.0,
+      "y": 16.4,
+      "label": true,
+      "short": "C. Loveland",
+      "rank": 10
+     },
+     {
+      "name": "Tyler Warren",
+      "x": 87.0,
+      "y": 22.4,
+      "label": true,
+      "short": "T. Warren",
+      "rank": 9
+     },
+     {
+      "name": "Harold Fannin Jr",
+      "x": 72.2,
+      "y": 21.6,
+      "label": true,
+      "short": "H. Fannin Jr",
+      "rank": 13
+     },
+     {
+      "name": "Tucker Kraft",
+      "x": 73.2,
+      "y": 18.8,
+      "label": true,
+      "short": "T. Kraft",
+      "rank": 20
+     },
+     {
+      "name": "Kyle Pitts",
+      "x": 90.4,
+      "y": 22.7,
+      "label": true,
+      "short": "K. Pitts",
+      "rank": 8
+     },
+     {
+      "name": "Sam LaPorta",
+      "x": 83.0,
+      "y": 18.6,
+      "label": true,
+      "short": "S. LaPorta",
+      "rank": 21
+     },
+     {
+      "name": "Dalton Kincaid",
+      "x": 51.1,
+      "y": 14.7,
+      "label": true,
+      "short": "D. Kincaid",
+      "rank": 2
+     },
+     {
+      "name": "Oronde Gadsden",
+      "x": 65.9,
+      "y": 14.4,
+      "label": true,
+      "short": "O. Gadsden",
+      "rank": 12
+     },
+     {
+      "name": "Hunter Henry",
+      "x": 80.7,
+      "y": 18.1,
+      "label": true,
+      "short": "H. Henry",
+      "rank": 23
+     },
+     {
+      "name": "Dallas Goedert",
+      "x": 91.6,
+      "y": 20.0,
+      "label": true,
+      "short": "D. Goedert",
+      "rank": 11
+     },
+     {
+      "name": "Mark Andrews",
+      "x": 69.4,
+      "y": 17.2,
+      "label": true,
+      "short": "M. Andrews",
+      "rank": 15
+     },
+     {
+      "name": "Jake Ferguson",
+      "x": 72.2,
+      "y": 16.8,
+      "label": true,
+      "short": "J. Ferguson",
+      "rank": 18
+     },
+     {
+      "name": "Dalton Schultz",
+      "x": 81.1,
+      "y": 19.2,
+      "label": true,
+      "short": "D. Schultz",
+      "rank": 22
+     },
+     {
+      "name": "George Kittle",
+      "x": 80.2,
+      "y": 22.8,
+      "label": true,
+      "short": "G. Kittle",
+      "rank": 7
+     },
+     {
+      "name": "Juwan Johnson",
+      "x": 78.9,
+      "y": 18.1,
+      "label": true,
+      "short": "J. Johnson",
+      "rank": 24
+     },
+     {
+      "name": "Brenton Strange",
+      "x": 71.8,
+      "y": 15.8,
+      "label": true,
+      "short": "B. Strange",
+      "rank": 17
+     },
+     {
+      "name": "Travis Kelce",
+      "x": 83.2,
+      "y": 19.7,
+      "label": true,
+      "short": "T. Kelce",
+      "rank": 19
+     },
+     {
+      "name": "Isaiah Likely",
+      "x": 57.8,
+      "y": 11.2,
+      "label": true,
+      "short": "I. Likely",
+      "rank": 3
+     },
+     {
+      "name": "AJ Barner",
+      "x": 78.3,
+      "y": 15.0,
+      "label": true,
+      "short": "AJ Barner",
+      "rank": 14
+     },
+     {
+      "name": "TJ Hockenson",
+      "x": 78.3,
+      "y": 15.6,
+      "label": true,
+      "short": "TJ Hockenson",
+      "rank": 16
+     },
+     {
+      "name": "David Njoku",
+      "x": 56.2,
+      "y": 12.0,
+      "label": true,
+      "short": "D. Njoku",
+      "rank": 4
+     },
+     {
+      "name": "Colby Parkinson",
+      "x": 42.1,
+      "y": 10.7,
+      "label": true,
+      "short": "C. Parkinson",
+      "rank": 0
+     },
+     {
+      "name": "Chigoziem Okonkwo",
+      "x": 60.9,
+      "y": 14.9,
+      "label": true,
+      "short": "C. Okonkwo",
+      "rank": 6
+     }
+    ],
+    "groups": [
+     {
+      "label": "Routes + Targets (Best)",
+      "names": [
+       "Trey McBride",
+       "George Kittle",
+       "Brock Bowers",
+       "Tyler Warren",
+       "Kyle Pitts"
+      ]
+     },
+     {
+      "label": "Decoys (routes but no targets)",
+      "names": [
+       "Dallas Goedert",
+       "Hunter Henry",
+       "Sam LaPorta",
+       "TJ Hockenson",
+       "AJ Barner"
+      ]
+     },
+     {
+      "label": "Fades",
+      "names": [
+       "Colby Parkinson",
+       "Dalton Kincaid",
+       "Colston Loveland",
+       "Oronde Gadsden"
+      ]
+     }
+    ]
+   },
+   "routes_tprr": {
+    "title": "Route participation against targets per route run",
+    "caption": "The same route counts, divided by how often the ball comes. A tight end can lead his team in routes and still be the last read.",
+    "x_label": "Route participation %",
+    "y_label": "Targets per route run",
+    "x_pct": true,
+    "y_pct": false,
+    "x_median": 78.3,
+    "y_median": 0.213,
+    "x_min": 42.1,
+    "x_max": 96.6,
+    "y_min": 0.169,
+    "y_max": 0.259,
+    "points": [
+     {
+      "name": "Trey McBride",
+      "x": 96.6,
+      "y": 0.247,
+      "label": true,
+      "short": "T. McBride",
+      "rank": 7
+     },
+     {
+      "name": "Brock Bowers",
+      "x": 89.8,
+      "y": 0.222,
+      "label": true,
+      "short": "B. Bowers",
+      "rank": 14
+     },
+     {
+      "name": "Colston Loveland",
+      "x": 65.0,
+      "y": 0.223,
+      "label": true,
+      "short": "C. Loveland",
+      "rank": 11
+     },
+     {
+      "name": "Tyler Warren",
+      "x": 87.0,
+      "y": 0.224,
+      "label": true,
+      "short": "T. Warren",
+      "rank": 18
+     },
+     {
+      "name": "Harold Fannin Jr",
+      "x": 72.2,
+      "y": 0.255,
+      "label": true,
+      "short": "H. Fannin Jr",
+      "rank": 4
+     },
+     {
+      "name": "Tucker Kraft",
+      "x": 73.2,
+      "y": 0.23,
+      "label": true,
+      "short": "T. Kraft",
+      "rank": 16
+     },
+     {
+      "name": "Kyle Pitts",
+      "x": 90.4,
+      "y": 0.229,
+      "label": true,
+      "short": "K. Pitts",
+      "rank": 13
+     },
+     {
+      "name": "Sam LaPorta",
+      "x": 83.0,
+      "y": 0.201,
+      "label": true,
+      "short": "S. LaPorta",
+      "rank": 20
+     },
+     {
+      "name": "Dalton Kincaid",
+      "x": 51.1,
+      "y": 0.259,
+      "label": true,
+      "short": "D. Kincaid",
+      "rank": 1
+     },
+     {
+      "name": "Oronde Gadsden",
+      "x": 65.9,
+      "y": 0.186,
+      "label": true,
+      "short": "O. Gadsden",
+      "rank": 10
+     },
+     {
+      "name": "Hunter Henry",
+      "x": 80.7,
+      "y": 0.196,
+      "label": true,
+      "short": "H. Henry",
+      "rank": 17
+     },
+     {
+      "name": "Dallas Goedert",
+      "x": 91.6,
+      "y": 0.192,
+      "label": true,
+      "short": "D. Goedert",
+      "rank": 12
+     },
+     {
+      "name": "Mark Andrews",
+      "x": 69.4,
+      "y": 0.216,
+      "label": true,
+      "short": "M. Andrews",
+      "rank": 15
+     },
+     {
+      "name": "Jake Ferguson",
+      "x": 72.2,
+      "y": 0.216,
+      "label": true,
+      "short": "J. Ferguson",
+      "rank": 21
+     },
+     {
+      "name": "Dalton Schultz",
+      "x": 81.1,
+      "y": 0.213,
+      "label": true,
+      "short": "D. Schultz",
+      "rank": 24
+     },
+     {
+      "name": "George Kittle",
+      "x": 80.2,
+      "y": 0.246,
+      "label": true,
+      "short": "G. Kittle",
+      "rank": 9
+     },
+     {
+      "name": "Juwan Johnson",
+      "x": 78.9,
+      "y": 0.202,
+      "label": true,
+      "short": "J. Johnson",
+      "rank": 22
+     },
+     {
+      "name": "Brenton Strange",
+      "x": 71.8,
+      "y": 0.201,
+      "label": true,
+      "short": "B. Strange",
+      "rank": 19
+     },
+     {
+      "name": "Travis Kelce",
+      "x": 83.2,
+      "y": 0.206,
+      "label": true,
+      "short": "T. Kelce",
+      "rank": 23
+     },
+     {
+      "name": "Isaiah Likely",
+      "x": 57.8,
+      "y": 0.169,
+      "label": true,
+      "short": "I. Likely",
+      "rank": 2
+     },
+     {
+      "name": "AJ Barner",
+      "x": 78.3,
+      "y": 0.171,
+      "label": true,
+      "short": "AJ Barner",
+      "rank": 5
+     },
+     {
+      "name": "TJ Hockenson",
+      "x": 78.3,
+      "y": 0.173,
+      "label": true,
+      "short": "TJ Hockenson",
+      "rank": 6
+     },
+     {
+      "name": "David Njoku",
+      "x": 56.2,
+      "y": 0.185,
+      "label": true,
+      "short": "D. Njoku",
+      "rank": 3
+     },
+     {
+      "name": "Colby Parkinson",
+      "x": 42.1,
+      "y": 0.238,
+      "label": true,
+      "short": "C. Parkinson",
+      "rank": 0
+     },
+     {
+      "name": "Chigoziem Okonkwo",
+      "x": 60.9,
+      "y": 0.207,
+      "label": true,
+      "short": "C. Okonkwo",
+      "rank": 8
+     }
+    ],
+    "groups": [
+     {
+      "label": "Routes + Targets",
+      "names": [
+       "Trey McBride",
+       "Kyle Pitts",
+       "Brock Bowers",
+       "Tyler Warren",
+       "George Kittle"
+      ]
+     },
+     {
+      "label": "Routes + No Targets",
+      "names": [
+       "TJ Hockenson",
+       "AJ Barner",
+       "Dallas Goedert",
+       "Hunter Henry",
+       "Oronde Gadsden"
+      ]
+     },
+     {
+      "label": "High Target Rate",
+      "names": [
+       "Dalton Kincaid",
+       "Harold Fannin Jr",
+       "George Kittle",
+       "Trey McBride",
+       "Colby Parkinson"
+      ]
+     }
+    ]
+   },
+   "yards_tds": {
+    "title": "Yards per game against touchdowns",
+    "caption": "Touchdowns swing year to year and yardage does not. Where a season sits on the vertical is the part least likely to repeat.",
+    "x_label": "Yards per game",
+    "y_label": "Touchdowns",
+    "x_pct": false,
+    "y_pct": false,
+    "x_median": 45.2,
+    "y_median": 5.0,
+    "x_min": 21.9,
+    "x_max": 72.9,
+    "y_min": 1.0,
+    "y_max": 11.0,
+    "points": [
+     {
+      "name": "Trey McBride",
+      "x": 72.9,
+      "y": 11.0,
+      "label": true,
+      "short": "T. McBride",
+      "rank": 0
+     },
+     {
+      "name": "Brock Bowers",
+      "x": 56.7,
+      "y": 7.0,
+      "label": true,
+      "short": "B. Bowers",
+      "rank": 12
+     },
+     {
+      "name": "Colston Loveland",
+      "x": 44.6,
+      "y": 6.0,
+      "label": true,
+      "short": "C. Loveland",
+      "rank": 22
+     },
+     {
+      "name": "Tyler Warren",
+      "x": 48.1,
+      "y": 5.0,
+      "label": true,
+      "short": "T. Warren",
+      "rank": 23
+     },
+     {
+      "name": "Harold Fannin Jr",
+      "x": 45.7,
+      "y": 7.0,
+      "label": true,
+      "short": "H. Fannin Jr",
+      "rank": 13
+     },
+     {
+      "name": "Tucker Kraft",
+      "x": 61.1,
+      "y": 6.0,
+      "label": true,
+      "short": "T. Kraft",
+      "rank": 7
+     },
+     {
+      "name": "Kyle Pitts",
+      "x": 54.6,
+      "y": 5.0,
+      "label": true,
+      "short": "K. Pitts",
+      "rank": 20
+     },
+     {
+      "name": "Sam LaPorta",
+      "x": 54.3,
+      "y": 3.0,
+      "label": true,
+      "short": "S. LaPorta",
+      "rank": 14
+     },
+     {
+      "name": "Dalton Kincaid",
+      "x": 47.6,
+      "y": 5.0,
+      "label": true,
+      "short": "D. Kincaid",
+      "rank": 24
+     },
+     {
+      "name": "Oronde Gadsden",
+      "x": 44.3,
+      "y": 3.0,
+      "label": true,
+      "short": "O. Gadsden",
+      "rank": 15
+     },
+     {
+      "name": "Hunter Henry",
+      "x": 45.2,
+      "y": 7.0,
+      "label": true,
+      "short": "H. Henry",
+      "rank": 16
+     },
+     {
+      "name": "Dallas Goedert",
+      "x": 39.4,
+      "y": 11.0,
+      "label": true,
+      "short": "D. Goedert",
+      "rank": 1
+     },
+     {
+      "name": "Mark Andrews",
+      "x": 24.8,
+      "y": 6.0,
+      "label": true,
+      "short": "M. Andrews",
+      "rank": 4
+     },
+     {
+      "name": "Jake Ferguson",
+      "x": 35.3,
+      "y": 8.0,
+      "label": true,
+      "short": "J. Ferguson",
+      "rank": 9
+     },
+     {
+      "name": "Dalton Schultz",
+      "x": 45.7,
+      "y": 3.0,
+      "label": true,
+      "short": "D. Schultz",
+      "rank": 17
+     },
+     {
+      "name": "George Kittle",
+      "x": 57.1,
+      "y": 7.0,
+      "label": true,
+      "short": "G. Kittle",
+      "rank": 11
+     },
+     {
+      "name": "Juwan Johnson",
+      "x": 52.3,
+      "y": 3.0,
+      "label": true,
+      "short": "J. Johnson",
+      "rank": 18
+     },
+     {
+      "name": "Brenton Strange",
+      "x": 45.0,
+      "y": 3.0,
+      "label": true,
+      "short": "B. Strange",
+      "rank": 19
+     },
+     {
+      "name": "Travis Kelce",
+      "x": 50.1,
+      "y": 5.0,
+      "label": true,
+      "short": "T. Kelce",
+      "rank": 21
+     },
+     {
+      "name": "Isaiah Likely",
+      "x": 21.9,
+      "y": 1.0,
+      "label": true,
+      "short": "I. Likely",
+      "rank": 2
+     },
+     {
+      "name": "AJ Barner",
+      "x": 30.5,
+      "y": 7.0,
+      "label": true,
+      "short": "AJ Barner",
+      "rank": 8
+     },
+     {
+      "name": "TJ Hockenson",
+      "x": 29.2,
+      "y": 3.0,
+      "label": true,
+      "short": "TJ Hockenson",
+      "rank": 6
+     },
+     {
+      "name": "David Njoku",
+      "x": 24.4,
+      "y": 4.0,
+      "label": true,
+      "short": "D. Njoku",
+      "rank": 3
+     },
+     {
+      "name": "Colby Parkinson",
+      "x": 27.2,
+      "y": 8.0,
+      "label": true,
+      "short": "C. Parkinson",
+      "rank": 5
+     },
+     {
+      "name": "Chigoziem Okonkwo",
+      "x": 32.9,
+      "y": 2.0,
+      "label": true,
+      "short": "C. Okonkwo",
+      "rank": 10
+     }
+    ],
+    "groups": [
+     {
+      "label": "Yards + TDs",
+      "names": [
+       "Trey McBride",
+       "Tucker Kraft",
+       "George Kittle",
+       "Brock Bowers",
+       "Kyle Pitts"
+      ]
+     },
+     {
+      "label": "TD Inflation",
+      "names": [
+       "Dallas Goedert",
+       "Colby Parkinson",
+       "Mark Andrews",
+       "AJ Barner",
+       "Jake Ferguson"
+      ]
+     },
+     {
+      "label": "Yards + TD Improvement?",
+      "names": [
+       "Juwan Johnson",
+       "Kyle Pitts",
+       "Tucker Kraft",
+       "Dalton Schultz",
+       "Brenton Strange",
+       "Oronde Gadsden"
+      ]
+     }
+    ]
+   },
+   "airyards_tprr": {
+    "title": "Air yards share against targets per route run",
+    "caption": "Downfield role against how often a route earns the ball \u2014 the difference between a seam threat and a safety valve.",
+    "x_label": "Air yards share %",
+    "y_label": "Targets per route run",
+    "x_pct": true,
+    "y_pct": false,
+    "x_median": 15.4,
+    "y_median": 0.213,
+    "x_min": 5.0,
+    "x_max": 24.6,
+    "y_min": 0.169,
+    "y_max": 0.259,
+    "points": [
+     {
+      "name": "Trey McBride",
+      "x": 24.6,
+      "y": 0.247,
+      "label": true,
+      "short": "T. McBride",
+      "rank": 1
+     },
+     {
+      "name": "Brock Bowers",
+      "x": 22.8,
+      "y": 0.222,
+      "label": true,
+      "short": "B. Bowers",
+      "rank": 6
+     },
+     {
+      "name": "Colston Loveland",
+      "x": 15.7,
+      "y": 0.223,
+      "label": true,
+      "short": "C. Loveland",
+      "rank": 21
+     },
+     {
+      "name": "Tyler Warren",
+      "x": 16.5,
+      "y": 0.224,
+      "label": true,
+      "short": "T. Warren",
+      "rank": 19
+     },
+     {
+      "name": "Harold Fannin Jr",
+      "x": 18.1,
+      "y": 0.255,
+      "label": true,
+      "short": "H. Fannin Jr",
+      "rank": 4
+     },
+     {
+      "name": "Tucker Kraft",
+      "x": 10.5,
+      "y": 0.23,
+      "label": true,
+      "short": "T. Kraft",
+      "rank": 14
+     },
+     {
+      "name": "Kyle Pitts",
+      "x": 20.8,
+      "y": 0.229,
+      "label": true,
+      "short": "K. Pitts",
+      "rank": 12
+     },
+     {
+      "name": "Sam LaPorta",
+      "x": 15.8,
+      "y": 0.201,
+      "label": true,
+      "short": "S. LaPorta",
+      "rank": 18
+     },
+     {
+      "name": "Dalton Kincaid",
+      "x": 18.4,
+      "y": 0.259,
+      "label": true,
+      "short": "D. Kincaid",
+      "rank": 2
+     },
+     {
+      "name": "Oronde Gadsden",
+      "x": 15.8,
+      "y": 0.186,
+      "label": true,
+      "short": "O. Gadsden",
+      "rank": 13
+     },
+     {
+      "name": "Hunter Henry",
+      "x": 15.4,
+      "y": 0.196,
+      "label": true,
+      "short": "H. Henry",
+      "rank": 17
+     },
+     {
+      "name": "Dallas Goedert",
+      "x": 14.8,
+      "y": 0.192,
+      "label": true,
+      "short": "D. Goedert",
+      "rank": 15
+     },
+     {
+      "name": "Mark Andrews",
+      "x": 14.8,
+      "y": 0.216,
+      "label": true,
+      "short": "M. Andrews",
+      "rank": 24
+     },
+     {
+      "name": "Jake Ferguson",
+      "x": 9.3,
+      "y": 0.216,
+      "label": true,
+      "short": "J. Ferguson",
+      "rank": 10
+     },
+     {
+      "name": "Dalton Schultz",
+      "x": 13.9,
+      "y": 0.213,
+      "label": true,
+      "short": "D. Schultz",
+      "rank": 22
+     },
+     {
+      "name": "George Kittle",
+      "x": 18.4,
+      "y": 0.246,
+      "label": true,
+      "short": "G. Kittle",
+      "rank": 11
+     },
+     {
+      "name": "Juwan Johnson",
+      "x": 16.1,
+      "y": 0.202,
+      "label": true,
+      "short": "J. Johnson",
+      "rank": 20
+     },
+     {
+      "name": "Brenton Strange",
+      "x": 12.1,
+      "y": 0.201,
+      "label": true,
+      "short": "B. Strange",
+      "rank": 16
+     },
+     {
+      "name": "Travis Kelce",
+      "x": 16.3,
+      "y": 0.206,
+      "label": true,
+      "short": "T. Kelce",
+      "rank": 23
+     },
+     {
+      "name": "Isaiah Likely",
+      "x": 10.8,
+      "y": 0.169,
+      "label": true,
+      "short": "I. Likely",
+      "rank": 3
+     },
+     {
+      "name": "AJ Barner",
+      "x": 7.9,
+      "y": 0.171,
+      "label": true,
+      "short": "AJ Barner",
+      "rank": 5
+     },
+     {
+      "name": "TJ Hockenson",
+      "x": 9.7,
+      "y": 0.173,
+      "label": true,
+      "short": "TJ Hockenson",
+      "rank": 7
+     },
+     {
+      "name": "David Njoku",
+      "x": 8.6,
+      "y": 0.185,
+      "label": true,
+      "short": "D. Njoku",
+      "rank": 8
+     },
+     {
+      "name": "Colby Parkinson",
+      "x": 5.0,
+      "y": 0.238,
+      "label": true,
+      "short": "C. Parkinson",
+      "rank": 0
+     },
+     {
+      "name": "Chigoziem Okonkwo",
+      "x": 9.1,
+      "y": 0.207,
+      "label": true,
+      "short": "C. Okonkwo",
+      "rank": 9
+     }
+    ],
+    "groups": [
+     {
+      "label": "Deep Routes + Targets",
+      "names": [
+       "Trey McBride",
+       "Brock Bowers",
+       "Kyle Pitts"
+      ]
+     },
+     {
+      "label": "Strong Safety",
+      "names": [
+       "Colby Parkinson",
+       "Tucker Kraft",
+       "Jake Ferguson"
+      ]
+     },
+     {
+      "label": "Fades",
+      "names": [
+       "David Njoku",
+       "AJ Barner",
+       "TJ Hockenson"
+      ]
+     }
+    ]
+   },
+   "routes_yprr": {
+    "title": "Route participation against yards per route run",
+    "caption": "Efficiency that survives a full route load. The top right is a starter's workload at a starter's rate; the left is a small sample flattering itself.",
+    "x_label": "Route participation %",
+    "y_label": "Yards per route run",
+    "x_pct": true,
+    "y_pct": false,
+    "x_median": 78.3,
+    "y_median": 1.74,
+    "x_min": 42.1,
+    "x_max": 96.6,
+    "y_min": 1.13,
+    "y_max": 3.02,
+    "points": [
+     {
+      "name": "Trey McBride",
+      "x": 96.6,
+      "y": 1.81,
+      "label": true,
+      "short": "T. McBride",
+      "rank": 10
+     },
+     {
+      "name": "Brock Bowers",
+      "x": 89.8,
+      "y": 1.75,
+      "label": true,
+      "short": "B. Bowers",
+      "rank": 16
+     },
+     {
+      "name": "Colston Loveland",
+      "x": 65.0,
+      "y": 1.96,
+      "label": true,
+      "short": "C. Loveland",
+      "rank": 13
+     },
+     {
+      "name": "Tyler Warren",
+      "x": 87.0,
+      "y": 1.63,
+      "label": true,
+      "short": "T. Warren",
+      "rank": 18
+     },
+     {
+      "name": "Harold Fannin Jr",
+      "x": 72.2,
+      "y": 1.74,
+      "label": true,
+      "short": "H. Fannin Jr",
+      "rank": 21
+     },
+     {
+      "name": "Tucker Kraft",
+      "x": 73.2,
+      "y": 2.56,
+      "label": true,
+      "short": "T. Kraft",
+      "rank": 2
+     },
+     {
+      "name": "Kyle Pitts",
+      "x": 90.4,
+      "y": 1.8,
+      "label": true,
+      "short": "K. Pitts",
+      "rank": 15
+     },
+     {
+      "name": "Sam LaPorta",
+      "x": 83.0,
+      "y": 2.0,
+      "label": true,
+      "short": "S. LaPorta",
+      "rank": 17
+     },
+     {
+      "name": "Dalton Kincaid",
+      "x": 51.1,
+      "y": 3.02,
+      "label": true,
+      "short": "D. Kincaid",
+      "rank": 0
+     },
+     {
+      "name": "Oronde Gadsden",
+      "x": 65.9,
+      "y": 1.79,
+      "label": true,
+      "short": "O. Gadsden",
+      "rank": 14
+     },
+     {
+      "name": "Hunter Henry",
+      "x": 80.7,
+      "y": 1.73,
+      "label": true,
+      "short": "H. Henry",
+      "rank": 23
+     },
+     {
+      "name": "Dallas Goedert",
+      "x": 91.6,
+      "y": 1.38,
+      "label": true,
+      "short": "D. Goedert",
+      "rank": 12
+     },
+     {
+      "name": "Mark Andrews",
+      "x": 69.4,
+      "y": 1.3,
+      "label": true,
+      "short": "M. Andrews",
+      "rank": 8
+     },
+     {
+      "name": "Jake Ferguson",
+      "x": 72.2,
+      "y": 1.27,
+      "label": true,
+      "short": "J. Ferguson",
+      "rank": 7
+     },
+     {
+      "name": "Dalton Schultz",
+      "x": 81.1,
+      "y": 1.56,
+      "label": true,
+      "short": "D. Schultz",
+      "rank": 19
+     },
+     {
+      "name": "George Kittle",
+      "x": 80.2,
+      "y": 2.24,
+      "label": true,
+      "short": "G. Kittle",
+      "rank": 5
+     },
+     {
+      "name": "Juwan Johnson",
+      "x": 78.9,
+      "y": 1.76,
+      "label": true,
+      "short": "J. Johnson",
+      "rank": 24
+     },
+     {
+      "name": "Brenton Strange",
+      "x": 71.8,
+      "y": 1.81,
+      "label": true,
+      "short": "B. Strange",
+      "rank": 20
+     },
+     {
+      "name": "Travis Kelce",
+      "x": 83.2,
+      "y": 1.62,
+      "label": true,
+      "short": "T. Kelce",
+      "rank": 22
+     },
+     {
+      "name": "Isaiah Likely",
+      "x": 57.8,
+      "y": 1.4,
+      "label": true,
+      "short": "I. Likely",
+      "rank": 6
+     },
+     {
+      "name": "AJ Barner",
+      "x": 78.3,
+      "y": 1.3,
+      "label": true,
+      "short": "AJ Barner",
+      "rank": 9
+     },
+     {
+      "name": "TJ Hockenson",
+      "x": 78.3,
+      "y": 1.15,
+      "label": true,
+      "short": "TJ Hockenson",
+      "rank": 4
+     },
+     {
+      "name": "David Njoku",
+      "x": 56.2,
+      "y": 1.13,
+      "label": true,
+      "short": "D. Njoku",
+      "rank": 3
+     },
+     {
+      "name": "Colby Parkinson",
+      "x": 42.1,
+      "y": 1.74,
+      "label": true,
+      "short": "C. Parkinson",
+      "rank": 1
+     },
+     {
+      "name": "Chigoziem Okonkwo",
+      "x": 60.9,
+      "y": 1.47,
+      "label": true,
+      "short": "C. Okonkwo",
+      "rank": 11
+     }
+    ]
+   }
+  },
+  "history": {
+   "era": "2011-2025",
+   "findings": [
+    "Since 2016, 10 TEs have hit 50+ YPG with a YPRR of 1.70 or lower. Only 2 of those 10 repeated the following season. That\u2019s your flashing warning light.",
+    "Among 22 TEs with 40\u201360% route participation and a 1.50+ YPRR (top-12 threshold), 11 of 13 (85%) who played at least eight games the next season saw increased route share."
+   ],
+   "rules": [
+    {
+     "rule": "1. 50+ YPG & sub 1.7 YPRR",
+     "verdict": "Travis Kelce"
+    },
+    {
+     "rule": "2. 40-60% Route Participation & 1.5+ YPRR",
+     "verdict": "Colby Parkinson & Dalton Kincaid"
+    }
+   ]
+  },
+  "box": {
+   "era": "2011-2025",
+   "te1_3": [
+    {
+     "label": "Route %",
+     "names": [
+      "Trey McBride (96.60)",
+      "Dallas Goedert (91.60)",
+      "Kyle Pitts (90.40)",
+      "Brock Bowers (89.80)",
+      "Tyler Warren (87.00)",
+      "Travis Kelce (83.20)",
+      "Sam LaPorta (83.00)",
+      "Dalton Schultz (81.10)",
+      "George Kittle (80.20)"
+     ]
+    },
+    {
+     "label": "YPG",
+     "names": [
+      "Trey McBride (72.90)"
+     ]
+    },
+    {
+     "label": "Target Share %",
+     "names": [
+      "Trey McBride (27.40)",
+      "Brock Bowers (23.60)",
+      "George Kittle (22.80)",
+      "Kyle Pitts (22.70)",
+      "Tyler Warren (22.40)",
+      "Harold Fannin Jr (21.60)"
+     ]
+    },
+    {
+     "label": "Air Yards %",
+     "names": [
+      "Trey McBride (24.60)",
+      "Brock Bowers (22.80)"
+     ]
+    },
+    {
+     "label": "YPRR",
+     "names": [
+      "Dalton Kincaid (3.02)",
+      "Tucker Kraft (2.56)",
+      "George Kittle (2.24)"
+     ]
+    },
+    {
+     "label": "BEST CANDIDATES",
+     "names": [
+      "Trey McBride",
+      "Brock Bowers",
+      "George Kittle (Injury)"
+     ]
+    }
+   ],
+   "te4_6": [
+    {
+     "label": "Route %",
+     "names": [
+      "Juwan Johnson (78.90)",
+      "AJ Barner (78.30)",
+      "TJ Hockenson (78.30)"
+     ]
+    },
+    {
+     "label": "YPG",
+     "names": [
+      "Tucker Kraft (61.10)",
+      "George Kittle (57.10)",
+      "Brock Bowers (56.70)",
+      "Kyle Pitts (54.60)",
+      "Sam LaPorta (54.30)"
+     ]
+    },
+    {
+     "label": "Target Share %",
+     "names": [
+      "Dallas Goedert (20.00)",
+      "Travis Kelce (19.70)",
+      "Dalton Schultz (19.20)"
+     ]
+    },
+    {
+     "label": "Air Yards %",
+     "names": [
+      "Kyle Pitts (20.80)"
+     ]
+    },
+    {
+     "label": "YPRR",
+     "names": [
+      "Sam LaPorta (2.00)",
+      "Colston Loveland (1.96)",
+      "Trey McBride (1.81)",
+      "Brenton Strange (1.81)",
+      "Kyle Pitts (1.80)",
+      "Oronde Gadsden (1.79)",
+      "Juwan Johnson (1.76)",
+      "Brock Bowers (1.75)",
+      "Harold Fannin Jr (1.74)",
+      "Colby Parkinson (1.74)",
+      "Hunter Henry (1.73)"
+     ]
+    },
+    {
+     "label": "BEST CANDIDATES",
+     "names": [
+      "Kyle Pitts",
+      "Sam LaPorta",
+      "Juwan Johnson",
+      "Dallas Goedert",
+      "Dalton Schultz",
+      "Travis Kelce"
+     ]
+    }
+   ]
+  },
+  "benchmark_image": "/img/charts/te-fantasy-finish-averages.png",
+  "benchmark_image_size": {
+   "width": 1110,
+   "height": 484
+  }
+ }
+}
