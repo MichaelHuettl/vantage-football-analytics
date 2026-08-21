@@ -80,8 +80,8 @@ export default async function NewsPage({
   return (
     <>
       <SectionHero
-        image="/img/bg/lambeau.jpg"
-        objectPosition="center 38%"
+        image="/img/bg/news.jpg"
+        objectPosition="center 20%"
         eyebrow="What happened"
         title="News"
         lede="Headline, source, and timestamp, tagged to the players it affects. Follow the link for the article — no body text is reproduced here."
