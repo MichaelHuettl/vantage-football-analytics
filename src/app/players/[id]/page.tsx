@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ChartFigure } from "@/components/ChartFigure";
+import { PlayerProfileBody } from "@/components/PlayerProfile";
+import { PROFILE_SOURCE, getProfile } from "@/lib/profiles";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerAvatar, PositionBadge } from "@/components/PlayerLink";
 import { FreeAgentChip, TeamChip } from "@/components/TeamChip";
@@ -40,6 +42,8 @@ export default async function PlayerPage({
   const entry = list.entries.find((e) => e.player_id === player.id);
   const rank = entry?.rank;
   const bye = getBye(player.team);
+
+  const profile = getProfile(player.id);
 
   return (
     <>
@@ -124,19 +128,31 @@ export default async function PlayerPage({
               </section>
             )}
 
-            <section>
-              <h2
-                className="text-2xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                Opportunity
-              </h2>
-              <ChartFigure
-                src={entry?.chart || undefined}
-                featured
-                caption={`${player.name}'s opportunity profile. Replace this caption with the single takeaway once the chart is in.`}
-              />
-            </section>
+            {profile ? (
+              <>
+                <PlayerProfileBody profile={profile} />
+                <p className="mt-8 text-xs" style={{ color: "var(--text-muted)" }}>
+                  {PROFILE_SOURCE}. Recorded production, never a projection.
+                </p>
+              </>
+            ) : (
+              <section>
+                <h2
+                  className="text-2xl uppercase tracking-wide"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  The record
+                </h2>
+                {/* Not a failure state: a rookie has no NFL season to show, and
+                    saying so is more honest than an empty chart frame. */}
+                <div className="mt-4">
+                  <EmptyState
+                    title={`No NFL production on file for ${player.name}.`}
+                    direction="He has not played a regular-season snap yet, so there is nothing recorded to show. His page will fill in once he does."
+                  />
+                </div>
+              </section>
+            )}
 
             <section className="mt-10">
               <h2
