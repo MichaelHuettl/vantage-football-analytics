@@ -1,0 +1,546 @@
+{
+ "schema_version": 1,
+ "window": {
+  "from": 2023,
+  "to": 2025
+ },
+ "updated": "2026-08-20",
+ "source": "model-misses-2023-2025.html (prediction pipeline), reconciled against artifacts/oos_predictions.csv, model_dataset.csv and report_per_fold.csv",
+ "note": "Every figure here is either printed in the miss report or recomputed from the artifacts it was built from, and the two are checked against each other before this file is written. The per-season table is not in the report \u2014 it comes from the walk-forward folds. Nothing is computed in a component (\u00a711).",
+ "data": {
+  "headline": {
+   "games": 854,
+   "misses": 292,
+   "accuracy": 0.658,
+   "median_losing_margin": 5,
+   "model_specific": 39
+  },
+  "shared_with_market": 253,
+  "shared_share": 0.8664,
+  "model_specific_share_of_slate": 0.0457,
+  "bands": [
+   {
+    "band": "coin flip",
+    "games": 145,
+    "wrong": 62,
+    "accuracy": 0.572
+   },
+   {
+    "band": "low",
+    "games": 164,
+    "wrong": 61,
+    "accuracy": 0.628
+   },
+   {
+    "band": "medium",
+    "games": 163,
+    "wrong": 59,
+    "accuracy": 0.638
+   },
+   {
+    "band": "high",
+    "games": 382,
+    "wrong": 110,
+    "accuracy": 0.712
+   }
+  ],
+  "margins": [
+   {
+    "bucket": "3 points or fewer",
+    "misses": 107,
+    "share": 0.366
+   },
+   {
+    "bucket": "4\u20137",
+    "misses": 82,
+    "share": 0.281
+   },
+   {
+    "bucket": "8\u201314",
+    "misses": 42,
+    "share": 0.144
+   },
+   {
+    "bucket": "15 or more",
+    "misses": 61,
+    "share": 0.209
+   }
+  ],
+  "worst": [
+   {
+    "game_id": "2023_05_NO_NE",
+    "picked": "NE",
+    "confidence": 0.6,
+    "final": "NO 34\u20130 NE",
+    "turnover_margin": -3,
+    "performer": "Alvin Kamara (NO) \u2014 80 rush yds, 17 rec yds"
+   },
+   {
+    "game_id": "2024_04_WAS_ARI",
+    "picked": "ARI",
+    "confidence": 0.69,
+    "final": "WAS 42\u201314 ARI",
+    "turnover_margin": 0,
+    "performer": "Jayden Daniels (WAS) \u2014 233 pass yds, 1 TD, 47 rush yds"
+   },
+   {
+    "game_id": "2025_11_LAC_JAX",
+    "picked": "LAC",
+    "confidence": 0.65,
+    "final": "LAC 6\u201335 JAX",
+    "turnover_margin": 0,
+    "performer": "Travis Etienne (JAX) \u2014 73 rush yds"
+   },
+   {
+    "game_id": "2024_02_NO_DAL",
+    "picked": "DAL",
+    "confidence": 0.76,
+    "final": "NO 44\u201319 DAL",
+    "turnover_margin": -1,
+    "performer": "Alvin Kamara (NO) \u2014 115 rush yds, 65 rec yds"
+   },
+   {
+    "game_id": "2025_03_ATL_CAR",
+    "picked": "ATL",
+    "confidence": 0.61,
+    "final": "ATL 0\u201330 CAR",
+    "turnover_margin": -3,
+    "performer": "Bijan Robinson (ATL) \u2014 72 rush yds, 39 rec yds"
+   },
+   {
+    "game_id": "2025_08_MIA_ATL",
+    "picked": "ATL",
+    "confidence": 0.73,
+    "final": "MIA 34\u201310 ATL",
+    "turnover_margin": -1,
+    "performer": "Tua Tagovailoa (MIA) \u2014 205 pass yds, 4 TD"
+   },
+   {
+    "game_id": "2023_19_CLE_HOU",
+    "picked": "CLE",
+    "confidence": 0.54,
+    "final": "CLE 14\u201345 HOU",
+    "turnover_margin": -2,
+    "performer": "C.J. Stroud (HOU) \u2014 274 pass yds, 3 TD, 1 rush yds"
+   },
+   {
+    "game_id": "2025_14_WAS_MIN",
+    "picked": "WAS",
+    "confidence": 0.53,
+    "final": "WAS 0\u201331 MIN",
+    "turnover_margin": -3,
+    "performer": "J.J. McCarthy (MIN) \u2014 163 pass yds, 3 TD, 19 rush yds"
+   },
+   {
+    "game_id": "2023_19_PHI_TB",
+    "picked": "PHI",
+    "confidence": 0.66,
+    "final": "PHI 9\u201332 TB",
+    "turnover_margin": 0,
+    "performer": "Baker Mayfield (TB) \u2014 337 pass yds, 3 TD, 16 rush yds"
+   },
+   {
+    "game_id": "2023_14_HOU_NYJ",
+    "picked": "HOU",
+    "confidence": 0.63,
+    "final": "HOU 6\u201330 NYJ",
+    "turnover_margin": 1,
+    "performer": "Breece Hall (NYJ) \u2014 40 rush yds, 86 rec yds"
+   },
+   {
+    "game_id": "2024_15_TB_LAC",
+    "picked": "LAC",
+    "confidence": 0.63,
+    "final": "TB 40\u201317 LAC",
+    "turnover_margin": 0,
+    "performer": "Mike Evans (TB) \u2014 159 rec yds"
+   },
+   {
+    "game_id": "2023_16_CIN_PIT",
+    "picked": "CIN",
+    "confidence": 0.62,
+    "final": "CIN 11\u201334 PIT",
+    "turnover_margin": -3,
+    "performer": "George Pickens (PIT) \u2014 195 rec yds"
+   },
+   {
+    "game_id": "2023_04_CIN_TEN",
+    "picked": "CIN",
+    "confidence": 0.59,
+    "final": "CIN 3\u201327 TEN",
+    "turnover_margin": 0,
+    "performer": "Derrick Henry (TEN) \u2014 2 pass yds, 1 TD, 122 rush yds, 11 rec yds"
+   },
+   {
+    "game_id": "2023_05_CHI_WAS",
+    "picked": "WAS",
+    "confidence": 0.7,
+    "final": "CHI 40\u201320 WAS",
+    "turnover_margin": -2,
+    "performer": "DJ Moore (CHI) \u2014 230 rec yds"
+   },
+   {
+    "game_id": "2023_17_CAR_JAX",
+    "picked": "CAR",
+    "confidence": 0.53,
+    "final": "CAR 0\u201326 JAX",
+    "turnover_margin": -1,
+    "performer": "Travis Etienne (JAX) \u2014 102 rush yds, 16 rec yds"
+   },
+   {
+    "game_id": "2024_03_DEN_TB",
+    "picked": "TB",
+    "confidence": 0.72,
+    "final": "DEN 26\u20137 TB",
+    "turnover_margin": -1,
+    "performer": "Bo Nix (DEN) \u2014 216 pass yds, 0 TD, 47 rush yds"
+   },
+   {
+    "game_id": "2023_03_HOU_JAX",
+    "picked": "JAX",
+    "confidence": 0.68,
+    "final": "HOU 37\u201317 JAX",
+    "turnover_margin": -2,
+    "performer": "Tank Dell (HOU) \u2014 145 rec yds"
+   },
+   {
+    "game_id": "2024_22_KC_PHI",
+    "picked": "KC",
+    "confidence": 0.75,
+    "final": "KC 22\u201340 PHI",
+    "turnover_margin": -2,
+    "performer": "Xavier Worthy (KC) \u2014 157 rec yds"
+   },
+   {
+    "game_id": "2024_06_JAX_CHI",
+    "picked": "JAX",
+    "confidence": 0.71,
+    "final": "JAX 16\u201335 CHI",
+    "turnover_margin": -1,
+    "performer": "Caleb Williams (CHI) \u2014 226 pass yds, 4 TD, 56 rush yds"
+   },
+   {
+    "game_id": "2024_07_SEA_ATL",
+    "picked": "ATL",
+    "confidence": 0.66,
+    "final": "SEA 34\u201314 ATL",
+    "turnover_margin": -3,
+    "performer": "Kenneth Walker III (SEA) \u2014 69 rush yds, 24 rec yds"
+   }
+  ],
+  "weather": [
+   {
+    "condition": "All games",
+    "games": 854,
+    "accuracy": 0.658
+   },
+   {
+    "condition": "Outdoors",
+    "games": 568,
+    "accuracy": 0.658
+   },
+   {
+    "condition": "Wind 15 mph or more",
+    "games": 52,
+    "accuracy": 0.75
+   },
+   {
+    "condition": "Freezing (32\u00b0F or below)",
+    "games": 55,
+    "accuracy": 0.673
+   }
+  ],
+  "turnovers": {
+   "when_right": 0.82,
+   "when_wrong": -0.97,
+   "swing": 1.79,
+   "misses_losing_to": 180
+  },
+  "qb_out": {
+   "games": 96,
+   "accuracy": 0.74
+  },
+  "divisional": {
+   "div_accuracy": 0.631,
+   "div_games": 293,
+   "non_div_accuracy": 0.672,
+   "non_div_games": 561
+  },
+  "seasons": [
+   {
+    "season": 2010,
+    "games": 243,
+    "accuracy": 0.604938,
+    "market_accuracy": 0.662551,
+    "gap": -0.057613,
+    "misses": 96,
+    "shared_with_market": 65,
+    "model_specific": 31,
+    "one_score_misses": 28,
+    "blowout_misses": 21,
+    "close_game_share": 0.255144,
+    "mean_confidence": 0.609244,
+    "log_loss": 0.6573,
+    "calibration_error": 0.0427
+   },
+   {
+    "season": 2011,
+    "games": 243,
+    "accuracy": 0.674897,
+    "market_accuracy": 0.670782,
+    "gap": 0.004115,
+    "misses": 79,
+    "shared_with_market": 56,
+    "model_specific": 23,
+    "one_score_misses": 15,
+    "blowout_misses": 21,
+    "close_game_share": 0.197531,
+    "mean_confidence": 0.610817,
+    "log_loss": 0.6139,
+    "calibration_error": 0.0785
+   },
+   {
+    "season": 2012,
+    "games": 242,
+    "accuracy": 0.623967,
+    "market_accuracy": 0.665289,
+    "gap": -0.041322,
+    "misses": 91,
+    "shared_with_market": 56,
+    "model_specific": 35,
+    "one_score_misses": 22,
+    "blowout_misses": 28,
+    "close_game_share": 0.214876,
+    "mean_confidence": 0.610645,
+    "log_loss": 0.6392,
+    "calibration_error": 0.0644
+   },
+   {
+    "season": 2013,
+    "games": 242,
+    "accuracy": 0.640496,
+    "market_accuracy": 0.702479,
+    "gap": -0.061983,
+    "misses": 87,
+    "shared_with_market": 58,
+    "model_specific": 29,
+    "one_score_misses": 26,
+    "blowout_misses": 21,
+    "close_game_share": 0.260331,
+    "mean_confidence": 0.63215,
+    "log_loss": 0.6288,
+    "calibration_error": 0.0437
+   },
+   {
+    "season": 2014,
+    "games": 242,
+    "accuracy": 0.68595,
+    "market_accuracy": 0.681818,
+    "gap": 0.004132,
+    "misses": 76,
+    "shared_with_market": 61,
+    "model_specific": 15,
+    "one_score_misses": 20,
+    "blowout_misses": 28,
+    "close_game_share": 0.190083,
+    "mean_confidence": 0.653539,
+    "log_loss": 0.605,
+    "calibration_error": 0.0418
+   },
+   {
+    "season": 2015,
+    "games": 243,
+    "accuracy": 0.613169,
+    "market_accuracy": 0.633745,
+    "gap": -0.020576,
+    "misses": 94,
+    "shared_with_market": 79,
+    "model_specific": 15,
+    "one_score_misses": 25,
+    "blowout_misses": 14,
+    "close_game_share": 0.238683,
+    "mean_confidence": 0.643511,
+    "log_loss": 0.6659,
+    "calibration_error": 0.0747
+   },
+   {
+    "season": 2016,
+    "games": 249,
+    "accuracy": 0.626506,
+    "market_accuracy": 0.646586,
+    "gap": -0.02008,
+    "misses": 93,
+    "shared_with_market": 79,
+    "model_specific": 14,
+    "one_score_misses": 35,
+    "blowout_misses": 22,
+    "close_game_share": 0.232932,
+    "mean_confidence": 0.636102,
+    "log_loss": 0.6325,
+    "calibration_error": 0.0668
+   },
+   {
+    "season": 2017,
+    "games": 259,
+    "accuracy": 0.698842,
+    "market_accuracy": 0.694981,
+    "gap": 0.003861,
+    "misses": 78,
+    "shared_with_market": 66,
+    "model_specific": 12,
+    "one_score_misses": 18,
+    "blowout_misses": 16,
+    "close_game_share": 0.204633,
+    "mean_confidence": 0.650363,
+    "log_loss": 0.6214,
+    "calibration_error": 0.0662
+   },
+   {
+    "season": 2018,
+    "games": 257,
+    "accuracy": 0.645914,
+    "market_accuracy": 0.653696,
+    "gap": -0.007782,
+    "misses": 91,
+    "shared_with_market": 78,
+    "model_specific": 13,
+    "one_score_misses": 33,
+    "blowout_misses": 16,
+    "close_game_share": 0.280156,
+    "mean_confidence": 0.645129,
+    "log_loss": 0.6186,
+    "calibration_error": 0.0761
+   },
+   {
+    "season": 2019,
+    "games": 258,
+    "accuracy": 0.686047,
+    "market_accuracy": 0.647287,
+    "gap": 0.03876,
+    "misses": 81,
+    "shared_with_market": 75,
+    "model_specific": 6,
+    "one_score_misses": 19,
+    "blowout_misses": 15,
+    "close_game_share": 0.189922,
+    "mean_confidence": 0.658372,
+    "log_loss": 0.6214,
+    "calibration_error": 0.0657
+   },
+   {
+    "season": 2020,
+    "games": 268,
+    "accuracy": 0.660448,
+    "market_accuracy": 0.671642,
+    "gap": -0.011194,
+    "misses": 91,
+    "shared_with_market": 77,
+    "model_specific": 14,
+    "one_score_misses": 14,
+    "blowout_misses": 21,
+    "close_game_share": 0.220149,
+    "mean_confidence": 0.650311,
+    "log_loss": 0.6059,
+    "calibration_error": 0.1034
+   },
+   {
+    "season": 2021,
+    "games": 284,
+    "accuracy": 0.580986,
+    "market_accuracy": 0.623239,
+    "gap": -0.042254,
+    "misses": 119,
+    "shared_with_market": 103,
+    "model_specific": 16,
+    "one_score_misses": 39,
+    "blowout_misses": 23,
+    "close_game_share": 0.239437,
+    "mean_confidence": 0.662904,
+    "log_loss": 0.6485,
+    "calibration_error": 0.1171
+   },
+   {
+    "season": 2022,
+    "games": 282,
+    "accuracy": 0.641844,
+    "market_accuracy": 0.663121,
+    "gap": -0.021277,
+    "misses": 101,
+    "shared_with_market": 82,
+    "model_specific": 19,
+    "one_score_misses": 29,
+    "blowout_misses": 20,
+    "close_game_share": 0.265957,
+    "mean_confidence": 0.636691,
+    "log_loss": 0.6188,
+    "calibration_error": 0.0364
+   },
+   {
+    "season": 2023,
+    "games": 285,
+    "accuracy": 0.659649,
+    "market_accuracy": 0.673684,
+    "gap": -0.014035,
+    "misses": 97,
+    "shared_with_market": 84,
+    "model_specific": 13,
+    "one_score_misses": 35,
+    "blowout_misses": 23,
+    "close_game_share": 0.25614,
+    "mean_confidence": 0.642153,
+    "log_loss": 0.6396,
+    "calibration_error": 0.076
+   },
+   {
+    "season": 2024,
+    "games": 285,
+    "accuracy": 0.673684,
+    "market_accuracy": 0.705263,
+    "gap": -0.031579,
+    "misses": 93,
+    "shared_with_market": 78,
+    "model_specific": 15,
+    "one_score_misses": 30,
+    "blowout_misses": 21,
+    "close_game_share": 0.238596,
+    "mean_confidence": 0.641357,
+    "log_loss": 0.6158,
+    "calibration_error": 0.0424
+   },
+   {
+    "season": 2025,
+    "games": 284,
+    "accuracy": 0.640845,
+    "market_accuracy": 0.658451,
+    "gap": -0.017606,
+    "misses": 102,
+    "shared_with_market": 91,
+    "model_specific": 11,
+    "one_score_misses": 42,
+    "blowout_misses": 17,
+    "close_game_share": 0.271127,
+    "mean_confidence": 0.659661,
+    "log_loss": 0.6186,
+    "calibration_error": 0.0515
+   }
+  ],
+  "season_summary": {
+   "best": 2017,
+   "worst": 2021,
+   "best_vs_market": 2019,
+   "worst_vs_market": 2013,
+   "market_correlation": 0.63,
+   "market_best": 2024,
+   "market_worst": 2021,
+   "span": [
+    2010,
+    2025
+   ],
+   "total_games": 4166,
+   "scale": {
+    "min": 0.580986,
+    "max": 0.705263
+   }
+  }
+ }
+}

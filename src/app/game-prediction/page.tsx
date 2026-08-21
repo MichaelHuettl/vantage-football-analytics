@@ -4,6 +4,7 @@ import { Container, EmptyState } from "@/components/PageHeader";
 import { FilterLink } from "@/components/FilterLink";
 import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
+import { CaseStudy } from "@/components/prediction/CaseStudy";
 import { ConfidenceTiers } from "@/components/prediction/ConfidenceTiers";
 import { Methodology } from "@/components/prediction/Methodology";
 import { ModelHonesty } from "@/components/prediction/ModelHonesty";
@@ -35,7 +36,7 @@ export default async function GamePredictionIndex({
 }) {
   const raw = (await searchParams).tab;
   const weekTab = (w: number) => `week-${w}`;
-  const known = ["methodology", "confidence", ...PRED_WEEKS.map(weekTab)];
+  const known = ["methodology", "confidence", "case-study", ...PRED_WEEKS.map(weekTab)];
   const active = raw && known.includes(raw) ? raw : "methodology";
   const activeWeek = PRED_WEEKS.find((w) => weekTab(w) === active) ?? null;
 
@@ -71,6 +72,14 @@ export default async function GamePredictionIndex({
                 Confidence
               </FilterLink>
             </li>
+            <li>
+              <FilterLink
+                href="/game-prediction?tab=case-study"
+                active={active === "case-study"}
+              >
+                Case study
+              </FilterLink>
+            </li>
             {PRED_WEEKS.map((w) => (
               <li key={w}>
                 <FilterLink
@@ -87,6 +96,8 @@ export default async function GamePredictionIndex({
         <div className="mt-8">
           {active === "confidence" ? (
             <ConfidenceTiers />
+          ) : active === "case-study" ? (
+            <CaseStudy />
           ) : activeWeek === null ? (
             <Methodology />
           ) : (

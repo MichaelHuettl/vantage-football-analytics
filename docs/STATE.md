@@ -26,9 +26,9 @@ coverage column from F to G. Every extractor names the version it targets in
 `DEFAULT_WB`; when a new one arrives, re-run each script and read the row map
 before trusting the output.
 
-**Six extractors feed the site** and write JSON into `src/data/`. The first
-four are the only things that touch the workbook; the last two read a PDF and
-the nflverse export instead:
+**Seven extractors feed the site** and write JSON into `src/data/`. The first
+four are the only things that touch the workbook; the last three read a PDF, the
+nflverse export and the prediction pipeline's artifacts instead:
 
 | Script | Writes | Covers |
 | --- | --- | --- |
@@ -38,6 +38,7 @@ the nflverse export instead:
 | `scripts/curated/te_charts.py` | `te-charts.json` | 5 TE scatters, history, TE1-3/4-6 grids |
 | `scripts/curated/qb_charts.py` | `qb-charts.json` | 4 QB scatters + correlations (**reads a PDF**) |
 | `scripts/curated/player_profiles.py` | `player-profiles.json` | 79 player profiles (**reads the nflverse export**) |
+| `scripts/curated/model_misses.py` | `model-misses.json` | Case study: 292 misses, 16 season folds (**reads the pipeline's report + artifacts**) |
 
 **Nothing is scheduled.** There is no git remote, so no GitHub Action has ever
 run. Every feed and fetch happens when someone types the command (see open
@@ -67,7 +68,7 @@ build` with a line number instead of shipping a broken page.
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
-| Game prediction | **Built** — methodology, confidence tiers, and a page per game for 16 week-one matchups. Payload comes from the separate prediction pipeline |
+| Game prediction | **Built** — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Payload comes from the separate prediction pipeline |
 | Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
 | Glossary | Built |
 
@@ -416,6 +417,18 @@ copy claiming O-line injuries move the line.**
   the operator then extended it to the entire tight end page on 2026-08-17,
   which is where route participation, TPRR and YPRR all appear. Both decisions
   are his and were taken after the conflict was put to him.
+- **The market has two "favourites" and they disagree.** The miss report's
+  headline — the market lost 253 of the model's 292 misses — only reproduces if
+  the market's side is taken from `spread_line`. Read from the moneyline it is
+  251, because on two near-pick'em games in the window the price and the number
+  lean opposite ways. Neither is wrong; they are different questions, and a
+  figure quoted without saying which produces a two-game discrepancy nobody can
+  trace. `model_misses.py` uses the spread and reconciles against the report.
+- **Pre-rounding a number changes what the page prints.** The case study stores
+  season accuracy to six decimals for a reason. At four, 2016's 0.6265060 became
+  0.6265, which as a double is *below* 62.65 and rendered 62.6% where the source
+  says 62.7%; at five, 2013 flipped the other way. Anything a component formats
+  with `toFixed` needs headroom past the last digit a reader sees.
 - **Implied totals are quarters, so they carry two decimals.** Totals and
   spreads move in halves and the implied totals are halves of those: a 49.5
   total on a 7-point spread is exactly 21.25 and 28.25. Rounded to a tenth they
