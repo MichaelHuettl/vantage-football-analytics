@@ -70,7 +70,7 @@ build` with a line number instead of shipping a broken page.
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
 | Game Prediction Model | **Built**, at `/model` — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Named by the operator on 2026-08-21; the route is the short `/model` rather than the full name. The payload file keeps its `game-predictions.json` name — that is the prediction pipeline's export filename and this repo only copies it |
 | Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
-| Glossary | Built |
+| Glossary | **Rebuilt 2026-08-21** — 67 terms in 9 groups, each with a definition, what a good value looks like, its source (nflverse, Next Gen, 4for4, workbook, market, model) and the pages it appears on. It had 6 entries while the home page promised full coverage |
 
 ## Departures from the brief, and why
 
@@ -446,6 +446,14 @@ copy claiming O-line injuries move the line.**
   the operator then extended it to the entire tight end page on 2026-08-17,
   which is where route participation, TPRR and YPRR all appear. Both decisions
   are his and were taken after the conflict was put to him.
+- **Thresholds in the glossary are checked against the data, not remembered.**
+  Five of the "what good looks like" lines were wrong on the first pass and were
+  caught by computing the distribution: opportunity share said 55% was a
+  workhorse when the maximum in four seasons of 150-carry backs is 51.6% and the
+  median is 34%; high-value touches said 100 was a lead-back season when only
+  eleven of sixty-eight clear it; TPRR called 0.20 strong when it is below the
+  charted median. A plausible-sounding threshold is the easiest thing on this
+  site to get wrong and the hardest for a reader to catch.
 - **The market has two "favourites" and they disagree.** The miss report's
   headline — the market lost 253 of the model's 292 misses — only reproduces if
   the market's side is taken from `spread_line`. Read from the moneyline it is

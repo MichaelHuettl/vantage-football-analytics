@@ -17,7 +17,13 @@ export function PageHeader({
         background: "var(--surface-sunken)",
       }}
     >
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 py-10">
+      {/* `pt-28`, not `py-10`. The site header is absolutely positioned over
+          the top of the page — 80px at desktop, 84px with the wrapped nav row
+          on a phone — so 40px of top padding put the eyebrow and the first
+          line of the title underneath it. Every other header on the site
+          clears it with `pt-28`; this one did not, because it is the only page
+          that uses this component and nothing else exercised the bug. */}
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 pt-28 pb-10">
         {eyebrow && <p className="eyebrow mb-2">{eyebrow}</p>}
         <h1
           className="text-4xl sm:text-5xl leading-[0.95] tracking-wide uppercase"

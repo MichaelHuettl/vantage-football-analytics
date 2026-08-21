@@ -241,8 +241,25 @@ export interface PlayConcept {
 export interface GlossaryTerm {
   slug: string;
   term: string;
+  /** Which section of the glossary it belongs to. */
+  group: string;
   /** One sentence. §4.2 requires this to exist for every metric on screen. */
   definition: string;
   /** What a good value looks like. Also required by §4.2. */
   good: string;
+  /**
+   * Where the number comes from — nflverse, Next Gen Stats, 4for4, the
+   * workbook, the market or the model. The site publishes figures from six
+   * sources and they do not all mean the same thing or carry the same
+   * licence; a reader auditing a number needs to know which one produced it.
+   */
+  source: string;
+  /** The pages it appears on, so the glossary can be read backwards. */
+  where: string;
+}
+
+export interface GlossaryGroup {
+  id: string;
+  name: string;
+  blurb: string;
 }
