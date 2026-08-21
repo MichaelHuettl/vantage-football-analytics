@@ -1,0 +1,184 @@
+{
+ "schema_version": 1,
+ "note": "2025 quarterback rushing, used by the QB page's rushing table. Not in the workbook: pulled from StatMuse (robots.txt allows it; no AI-agent block) and checked row by row against Sleeper's 2025 season stats, which agree. Kept as a file rather than fetched at build time so the page does not depend on a third party being up, and so the numbers can be diffed.",
+ "source": "https://www.statmuse.com/nfl/ask/nfl-qb-rushing-touchdown-leaders-2025-to-2026",
+ "verified_against": "https://api.sleeper.app/v1/stats/nfl/regular/2025",
+ "pulled": "2026-08-18",
+ "data": [
+  {
+   "name": "Josh Allen",
+   "att": 112,
+   "yards": 579,
+   "tds": 14,
+   "games": 17
+  },
+  {
+   "name": "Justin Herbert",
+   "att": 83,
+   "yards": 498,
+   "tds": 2,
+   "games": 16
+  },
+  {
+   "name": "Jaxson Dart",
+   "att": 86,
+   "yards": 487,
+   "tds": 9,
+   "games": 14
+  },
+  {
+   "name": "Drake Maye",
+   "att": 103,
+   "yards": 450,
+   "tds": 4,
+   "games": 17
+  },
+  {
+   "name": "Patrick Mahomes",
+   "att": 64,
+   "yards": 422,
+   "tds": 5,
+   "games": 14
+  },
+  {
+   "name": "Jalen Hurts",
+   "att": 105,
+   "yards": 421,
+   "tds": 8,
+   "games": 16
+  },
+  {
+   "name": "Caleb Williams",
+   "att": 77,
+   "yards": 388,
+   "tds": 3,
+   "games": 17
+  },
+  {
+   "name": "Justin Fields",
+   "att": 71,
+   "yards": 383,
+   "tds": 4,
+   "games": 9
+  },
+  {
+   "name": "Trevor Lawrence",
+   "att": 82,
+   "yards": 359,
+   "tds": 9,
+   "games": 17
+  },
+  {
+   "name": "Bo Nix",
+   "att": 83,
+   "yards": 356,
+   "tds": 5,
+   "games": 17
+  },
+  {
+   "name": "Lamar Jackson",
+   "att": 67,
+   "yards": 349,
+   "tds": 2,
+   "games": 13
+  },
+  {
+   "name": "Jayden Daniels",
+   "att": 58,
+   "yards": 278,
+   "tds": 2,
+   "games": 7
+  },
+  {
+   "name": "Bryce Young",
+   "att": 54,
+   "yards": 216,
+   "tds": 2,
+   "games": 16
+  },
+  {
+   "name": "Tyler Shough",
+   "att": 45,
+   "yards": 186,
+   "tds": 3,
+   "games": 11
+  },
+  {
+   "name": "J.J. McCarthy",
+   "att": 37,
+   "yards": 181,
+   "tds": 4,
+   "games": 10
+  },
+  {
+   "name": "Dak Prescott",
+   "att": 53,
+   "yards": 177,
+   "tds": 2,
+   "games": 17
+  },
+  {
+   "name": "Daniel Jones",
+   "att": 45,
+   "yards": 164,
+   "tds": 5,
+   "games": 13
+  },
+  {
+   "name": "Cam Ward",
+   "att": 39,
+   "yards": 159,
+   "tds": 2,
+   "games": 17
+  },
+  {
+   "name": "Brock Purdy",
+   "att": 33,
+   "yards": 147,
+   "tds": 3,
+   "games": 9
+  },
+  {
+   "name": "Malik Willis",
+   "att": 22,
+   "yards": 123,
+   "tds": 2,
+   "games": 4
+  },
+  {
+   "name": "Aaron Rodgers",
+   "att": 21,
+   "yards": 61,
+   "tds": 1,
+   "games": 16
+  },
+  {
+   "name": "Josh Johnson",
+   "att": 12,
+   "yards": 55,
+   "tds": 1,
+   "games": 5
+  },
+  {
+   "name": "Joe Flacco",
+   "att": 21,
+   "yards": 35,
+   "tds": 1,
+   "games": 13
+  },
+  {
+   "name": "Riley Leonard",
+   "att": 6,
+   "yards": 27,
+   "tds": 2,
+   "games": 5
+  },
+  {
+   "name": "Kirk Cousins",
+   "att": 14,
+   "yards": 7,
+   "tds": 1,
+   "games": 10
+  }
+ ]
+}

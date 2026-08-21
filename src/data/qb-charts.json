@@ -1,0 +1,1280 @@
+{
+ "schema_version": 1,
+ "season": 2025,
+ "updated": "2026-08-18",
+ "source": "2026-2027 Fantasy Football Analytics (Original) - QB Statistics.pdf",
+ "note": "Quarterback charts from the operator's QB Statistics export. Rushing attempts for six quarterbacks were rushing yards in the source and are corrected here against Sleeper's 2025 season stats; see CORRECTIONS in scripts/curated/qb_charts.py. One season, so every correlation below is a description of 2025 rather than a law. Nothing is computed in a component (\u00a711).",
+ "data": {
+  "charts": {
+   "rushing": {
+    "x_label": "Rush attempts",
+    "y_label": "Fantasy points per game",
+    "caption": "Carries, not completions, are what separate the top of the position.",
+    "x_median": 48.0,
+    "y_median": 16.3,
+    "x_min": 14.0,
+    "x_max": 112.0,
+    "y_min": 11.0,
+    "y_max": 21.4,
+    "r": 0.564,
+    "points": [
+     {
+      "name": "Bo Nix",
+      "x": 86.0,
+      "y": 17.9,
+      "label": true,
+      "short": "Bo Nix",
+      "rank": 4
+     },
+     {
+      "name": "Dak Prescott",
+      "x": 53.0,
+      "y": 18.5,
+      "label": true,
+      "short": "D. Prescott",
+      "rank": 25
+     },
+     {
+      "name": "Matthew Stafford",
+      "x": 29.0,
+      "y": 20.6,
+      "label": true,
+      "short": "M. Stafford",
+      "rank": 14
+     },
+     {
+      "name": "Jared Goff",
+      "x": 19.0,
+      "y": 17.5,
+      "label": true,
+      "short": "J. Goff",
+      "rank": 16
+     },
+     {
+      "name": "Caleb Williams",
+      "x": 77.0,
+      "y": 18.7,
+      "label": true,
+      "short": "C. Williams",
+      "rank": 17
+     },
+     {
+      "name": "Trevor Lawrence",
+      "x": 82.0,
+      "y": 19.9,
+      "label": true,
+      "short": "T. Lawrence",
+      "rank": 11
+     },
+     {
+      "name": "Baker Mayfield",
+      "x": 55.0,
+      "y": 16.0,
+      "label": true,
+      "short": "B. Mayfield",
+      "rank": 31
+     },
+     {
+      "name": "Cam Ward",
+      "x": 39.0,
+      "y": 11.0,
+      "label": true,
+      "short": "C. Ward",
+      "rank": 3
+     },
+     {
+      "name": "Justin Herbert",
+      "x": 86.0,
+      "y": 17.9,
+      "label": true,
+      "short": "J. Herbert",
+      "rank": 5
+     },
+     {
+      "name": "Patrick Mahomes",
+      "x": 64.0,
+      "y": 20.4,
+      "label": true,
+      "short": "P. Mahomes",
+      "rank": 15
+     },
+     {
+      "name": "Aaron Rodgers",
+      "x": 21.0,
+      "y": 14.2,
+      "label": true,
+      "short": "A. Rodgers",
+      "rank": 19
+     },
+     {
+      "name": "Drake Maye",
+      "x": 103.0,
+      "y": 20.7,
+      "label": true,
+      "short": "D. Maye",
+      "rank": 2
+     },
+     {
+      "name": "Jacoby Brissett",
+      "x": 38.0,
+      "y": 16.2,
+      "label": true,
+      "short": "J. Brissett",
+      "rank": 28
+     },
+     {
+      "name": "Bryce Young",
+      "x": 54.0,
+      "y": 13.6,
+      "label": true,
+      "short": "B. Young",
+      "rank": 22
+     },
+     {
+      "name": "Sam Darnold",
+      "x": 35.0,
+      "y": 13.8,
+      "label": true,
+      "short": "S. Darnold",
+      "rank": 24
+     },
+     {
+      "name": "Josh Allen",
+      "x": 112.0,
+      "y": 21.4,
+      "label": true,
+      "short": "J. Allen",
+      "rank": 0
+     },
+     {
+      "name": "Jalen Hurts",
+      "x": 105.0,
+      "y": 18.7,
+      "label": true,
+      "short": "J. Hurts",
+      "rank": 1
+     },
+     {
+      "name": "Geno Smith",
+      "x": 41.0,
+      "y": 11.6,
+      "label": true,
+      "short": "G. Smith",
+      "rank": 10
+     },
+     {
+      "name": "Jordan Love",
+      "x": 47.0,
+      "y": 15.7,
+      "label": true,
+      "short": "J. Love",
+      "rank": 32
+     },
+     {
+      "name": "CJ Stroud",
+      "x": 48.0,
+      "y": 14.9,
+      "label": true,
+      "short": "CJ Stroud",
+      "rank": 27
+     },
+     {
+      "name": "Joe Flacco",
+      "x": 21.0,
+      "y": 11.3,
+      "label": true,
+      "short": "J. Flacco",
+      "rank": 7
+     },
+     {
+      "name": "Daniel Jones",
+      "x": 45.0,
+      "y": 17.4,
+      "label": true,
+      "short": "D. Jones",
+      "rank": 30
+     },
+     {
+      "name": "Tua Tagovailoa",
+      "x": 20.0,
+      "y": 11.5,
+      "label": true,
+      "short": "T. Tagovailoa",
+      "rank": 9
+     },
+     {
+      "name": "Jaxson Dart",
+      "x": 86.0,
+      "y": 17.3,
+      "label": true,
+      "short": "J. Dart",
+      "rank": 6
+     },
+     {
+      "name": "Tyler Shough",
+      "x": 45.0,
+      "y": 14.4,
+      "label": true,
+      "short": "T. Shough",
+      "rank": 26
+     },
+     {
+      "name": "Lamar Jackson",
+      "x": 67.0,
+      "y": 16.5,
+      "label": true,
+      "short": "L. Jackson",
+      "rank": 23
+     },
+     {
+      "name": "Justin Fields",
+      "x": 71.0,
+      "y": 15.9,
+      "label": true,
+      "short": "J. Fields",
+      "rank": 21
+     },
+     {
+      "name": "Jayden Daniels",
+      "x": 58.0,
+      "y": 16.3,
+      "label": true,
+      "short": "J. Daniels",
+      "rank": 29
+     },
+     {
+      "name": "Marcus Mariota",
+      "x": 50.0,
+      "y": 11.4,
+      "label": true,
+      "short": "M. Mariota",
+      "rank": 8
+     },
+     {
+      "name": "JJ McCarthy",
+      "x": 37.0,
+      "y": 12.5,
+      "label": true,
+      "short": "JJ McCarthy",
+      "rank": 18
+     },
+     {
+      "name": "Mac Jones",
+      "x": 36.0,
+      "y": 11.8,
+      "label": true,
+      "short": "M. Jones",
+      "rank": 13
+     },
+     {
+      "name": "Brock Purdy",
+      "x": 33.0,
+      "y": 19.7,
+      "label": true,
+      "short": "B. Purdy",
+      "rank": 20
+     },
+     {
+      "name": "Joe Burrow",
+      "x": 14.0,
+      "y": 16.8,
+      "label": true,
+      "short": "J. Burrow",
+      "rank": 12
+     }
+    ]
+   },
+   "scrambles": {
+    "x_label": "Scrambles",
+    "y_label": "Fantasy points per game",
+    "caption": "The scrambles a quarterback actually runs, not the rate he runs them at.",
+    "x_median": 22.535,
+    "y_median": 16.65,
+    "x_min": 3.79,
+    "x_max": 51.51,
+    "y_min": 11.0,
+    "y_max": 21.4,
+    "r": 0.557,
+    "points": [
+     {
+      "name": "Bo Nix",
+      "x": 32.86,
+      "y": 17.9,
+      "label": true,
+      "short": "Bo Nix",
+      "rank": 20
+     },
+     {
+      "name": "Dak Prescott",
+      "x": 23.76,
+      "y": 18.5,
+      "label": true,
+      "short": "D. Prescott",
+      "rank": 23
+     },
+     {
+      "name": "Matthew Stafford",
+      "x": 6.69,
+      "y": 20.6,
+      "label": true,
+      "short": "M. Stafford",
+      "rank": 10
+     },
+     {
+      "name": "Jared Goff",
+      "x": 4.68,
+      "y": 17.5,
+      "label": true,
+      "short": "J. Goff",
+      "rank": 8
+     },
+     {
+      "name": "Caleb Williams",
+      "x": 37.6,
+      "y": 18.7,
+      "label": true,
+      "short": "C. Williams",
+      "rank": 12
+     },
+     {
+      "name": "Trevor Lawrence",
+      "x": 37.41,
+      "y": 19.9,
+      "label": true,
+      "short": "T. Lawrence",
+      "rank": 14
+     },
+     {
+      "name": "Baker Mayfield",
+      "x": 37.52,
+      "y": 16.0,
+      "label": true,
+      "short": "B. Mayfield",
+      "rank": 13
+     },
+     {
+      "name": "Cam Ward",
+      "x": 20.09,
+      "y": 11.0,
+      "label": true,
+      "short": "C. Ward",
+      "rank": 1
+     },
+     {
+      "name": "Justin Herbert",
+      "x": 40.81,
+      "y": 17.9,
+      "label": true,
+      "short": "J. Herbert",
+      "rank": 7
+     },
+     {
+      "name": "Patrick Mahomes",
+      "x": 44.38,
+      "y": 20.4,
+      "label": true,
+      "short": "P. Mahomes",
+      "rank": 4
+     },
+     {
+      "name": "Aaron Rodgers",
+      "x": 11.11,
+      "y": 14.2,
+      "label": true,
+      "short": "A. Rodgers",
+      "rank": 19
+     },
+     {
+      "name": "Drake Maye",
+      "x": 51.51,
+      "y": 20.7,
+      "label": true,
+      "short": "D. Maye",
+      "rank": 0
+     },
+     {
+      "name": "Jacoby Brissett",
+      "x": 19.4,
+      "y": 16.2,
+      "label": true,
+      "short": "J. Brissett",
+      "rank": 28
+     },
+     {
+      "name": "Bryce Young",
+      "x": 29.3,
+      "y": 13.6,
+      "label": true,
+      "short": "B. Young",
+      "rank": 16
+     },
+     {
+      "name": "Sam Darnold",
+      "x": 12.88,
+      "y": 13.8,
+      "label": true,
+      "short": "S. Darnold",
+      "rank": 17
+     },
+     {
+      "name": "Josh Allen",
+      "x": 42.6,
+      "y": 21.4,
+      "label": true,
+      "short": "J. Allen",
+      "rank": 6
+     },
+     {
+      "name": "Jalen Hurts",
+      "x": 34.5,
+      "y": 18.7,
+      "label": true,
+      "short": "J. Hurts",
+      "rank": 18
+     },
+     {
+      "name": "Geno Smith",
+      "x": 15.46,
+      "y": 11.6,
+      "label": true,
+      "short": "G. Smith",
+      "rank": 5
+     },
+     {
+      "name": "Jordan Love",
+      "x": 22.61,
+      "y": 15.7,
+      "label": true,
+      "short": "J. Love",
+      "rank": 26
+     },
+     {
+      "name": "CJ Stroud",
+      "x": 22.46,
+      "y": 14.9,
+      "label": true,
+      "short": "CJ Stroud",
+      "rank": 24
+     },
+     {
+      "name": "Joe Flacco",
+      "x": 3.79,
+      "y": 11.3,
+      "label": true,
+      "short": "J. Flacco",
+      "rank": 2
+     },
+     {
+      "name": "Daniel Jones",
+      "x": 20.58,
+      "y": 17.4,
+      "label": true,
+      "short": "D. Jones",
+      "rank": 27
+     },
+     {
+      "name": "Tua Tagovailoa",
+      "x": 10.83,
+      "y": 11.5,
+      "label": true,
+      "short": "T. Tagovailoa",
+      "rank": 3
+     },
+     {
+      "name": "Jaxson Dart",
+      "x": 32.0,
+      "y": 17.3,
+      "label": true,
+      "short": "J. Dart",
+      "rank": 22
+     },
+     {
+      "name": "Tyler Shough",
+      "x": 17.3,
+      "y": 14.4,
+      "label": true,
+      "short": "T. Shough",
+      "rank": 21
+     },
+     {
+      "name": "Lamar Jackson",
+      "x": 24.61,
+      "y": 16.5,
+      "label": true,
+      "short": "L. Jackson",
+      "rank": 29
+     },
+     {
+      "name": "Jayden Daniels",
+      "x": 29.27,
+      "y": 16.3,
+      "label": true,
+      "short": "J. Daniels",
+      "rank": 25
+     },
+     {
+      "name": "JJ McCarthy",
+      "x": 15.19,
+      "y": 12.5,
+      "label": true,
+      "short": "JJ McCarthy",
+      "rank": 9
+     },
+     {
+      "name": "Brock Purdy",
+      "x": 16.33,
+      "y": 19.7,
+      "label": true,
+      "short": "B. Purdy",
+      "rank": 15
+     },
+     {
+      "name": "Joe Burrow",
+      "x": 7.3,
+      "y": 16.8,
+      "label": true,
+      "short": "J. Burrow",
+      "rank": 11
+     }
+    ]
+   },
+   "efficiency": {
+    "x_label": "EPA per dropback",
+    "y_label": "Fantasy points per game",
+    "caption": "Playing well and scoring fantasy points are related, not the same.",
+    "x_median": 0.115,
+    "y_median": 16.65,
+    "x_min": -0.13,
+    "x_max": 0.31,
+    "y_min": 11.0,
+    "y_max": 21.4,
+    "r": 0.665,
+    "points": [
+     {
+      "name": "Bo Nix",
+      "x": 0.09,
+      "y": 17.9,
+      "label": true,
+      "short": "Bo Nix",
+      "rank": 22
+     },
+     {
+      "name": "Dak Prescott",
+      "x": 0.19,
+      "y": 18.5,
+      "label": true,
+      "short": "D. Prescott",
+      "rank": 16
+     },
+     {
+      "name": "Matthew Stafford",
+      "x": 0.23,
+      "y": 20.6,
+      "label": true,
+      "short": "M. Stafford",
+      "rank": 7
+     },
+     {
+      "name": "Jared Goff",
+      "x": 0.18,
+      "y": 17.5,
+      "label": true,
+      "short": "J. Goff",
+      "rank": 20
+     },
+     {
+      "name": "Caleb Williams",
+      "x": 0.11,
+      "y": 18.7,
+      "label": true,
+      "short": "C. Williams",
+      "rank": 18
+     },
+     {
+      "name": "Trevor Lawrence",
+      "x": 0.12,
+      "y": 19.9,
+      "label": true,
+      "short": "T. Lawrence",
+      "rank": 10
+     },
+     {
+      "name": "Baker Mayfield",
+      "x": 0.09,
+      "y": 16.0,
+      "label": true,
+      "short": "B. Mayfield",
+      "rank": 24
+     },
+     {
+      "name": "Cam Ward",
+      "x": -0.13,
+      "y": 11.0,
+      "label": true,
+      "short": "C. Ward",
+      "rank": 0
+     },
+     {
+      "name": "Justin Herbert",
+      "x": 0.08,
+      "y": 17.9,
+      "label": true,
+      "short": "J. Herbert",
+      "rank": 23
+     },
+     {
+      "name": "Patrick Mahomes",
+      "x": 0.18,
+      "y": 20.4,
+      "label": true,
+      "short": "P. Mahomes",
+      "rank": 9
+     },
+     {
+      "name": "Aaron Rodgers",
+      "x": 0.04,
+      "y": 14.2,
+      "label": true,
+      "short": "A. Rodgers",
+      "rank": 15
+     },
+     {
+      "name": "Drake Maye",
+      "x": 0.31,
+      "y": 20.7,
+      "label": true,
+      "short": "D. Maye",
+      "rank": 2
+     },
+     {
+      "name": "Jacoby Brissett",
+      "x": 0.01,
+      "y": 16.2,
+      "label": true,
+      "short": "J. Brissett",
+      "rank": 12
+     },
+     {
+      "name": "Bryce Young",
+      "x": 0.02,
+      "y": 13.6,
+      "label": true,
+      "short": "B. Young",
+      "rank": 11
+     },
+     {
+      "name": "Sam Darnold",
+      "x": 0.15,
+      "y": 13.8,
+      "label": true,
+      "short": "S. Darnold",
+      "rank": 14
+     },
+     {
+      "name": "Josh Allen",
+      "x": 0.23,
+      "y": 21.4,
+      "label": true,
+      "short": "J. Allen",
+      "rank": 6
+     },
+     {
+      "name": "Jalen Hurts",
+      "x": 0.11,
+      "y": 18.7,
+      "label": true,
+      "short": "J. Hurts",
+      "rank": 19
+     },
+     {
+      "name": "Geno Smith",
+      "x": -0.1,
+      "y": 11.6,
+      "label": true,
+      "short": "G. Smith",
+      "rank": 1
+     },
+     {
+      "name": "Jordan Love",
+      "x": 0.29,
+      "y": 15.7,
+      "label": true,
+      "short": "J. Love",
+      "rank": 4
+     },
+     {
+      "name": "CJ Stroud",
+      "x": 0.15,
+      "y": 14.9,
+      "label": true,
+      "short": "CJ Stroud",
+      "rank": 21
+     },
+     {
+      "name": "Tua Tagovailoa",
+      "x": 0.01,
+      "y": 11.5,
+      "label": true,
+      "short": "T. Tagovailoa",
+      "rank": 3
+     },
+     {
+      "name": "Jaxson Dart",
+      "x": 0.12,
+      "y": 17.3,
+      "label": true,
+      "short": "J. Dart",
+      "rank": 25
+     },
+     {
+      "name": "Tyler Shough",
+      "x": 0.01,
+      "y": 14.4,
+      "label": true,
+      "short": "T. Shough",
+      "rank": 13
+     },
+     {
+      "name": "Lamar Jackson",
+      "x": 0.1,
+      "y": 16.5,
+      "label": true,
+      "short": "L. Jackson",
+      "rank": 27
+     },
+     {
+      "name": "Jayden Daniels",
+      "x": 0.04,
+      "y": 16.3,
+      "label": true,
+      "short": "J. Daniels",
+      "rank": 17
+     },
+     {
+      "name": "Mac Jones",
+      "x": 0.19,
+      "y": 11.8,
+      "label": true,
+      "short": "M. Jones",
+      "rank": 5
+     },
+     {
+      "name": "Brock Purdy",
+      "x": 0.25,
+      "y": 19.7,
+      "label": true,
+      "short": "B. Purdy",
+      "rank": 8
+     },
+     {
+      "name": "Joe Burrow",
+      "x": 0.13,
+      "y": 16.8,
+      "label": true,
+      "short": "J. Burrow",
+      "rank": 26
+     }
+    ]
+   },
+   "environment": {
+    "x_label": "Neutral pass rate over expected",
+    "y_label": "QB fantasy points per game",
+    "caption": "A pass-happy offense is a weaker signal than it sounds.",
+    "x_median": -2.1,
+    "y_median": 16.4,
+    "x_min": -10.5,
+    "x_max": 6.3,
+    "y_min": 5.0,
+    "y_max": 21.4,
+    "r": 0.414,
+    "points": [
+     {
+      "name": "Chiefs",
+      "x": 6.3,
+      "y": 20.4,
+      "label": true,
+      "short": "Chiefs",
+      "rank": 1
+     },
+     {
+      "name": "Rams",
+      "x": 5.7,
+      "y": 20.6,
+      "label": true,
+      "short": "Rams",
+      "rank": 4
+     },
+     {
+      "name": "Cardinals",
+      "x": 4.8,
+      "y": 16.2,
+      "label": true,
+      "short": "Cardinals",
+      "rank": 7
+     },
+     {
+      "name": "Bengals",
+      "x": 4.2,
+      "y": 16.8,
+      "label": true,
+      "short": "Bengals",
+      "rank": 10
+     },
+     {
+      "name": "Patriots",
+      "x": 3.8,
+      "y": 20.7,
+      "label": true,
+      "short": "Patriots",
+      "rank": 11
+     },
+     {
+      "name": "Chargers",
+      "x": 1.8,
+      "y": 17.9,
+      "label": true,
+      "short": "Chargers",
+      "rank": 16
+     },
+     {
+      "name": "Broncos",
+      "x": 1.7,
+      "y": 17.9,
+      "label": true,
+      "short": "Broncos",
+      "rank": 17
+     },
+     {
+      "name": "Colts",
+      "x": 1.6,
+      "y": 17.4,
+      "label": true,
+      "short": "Colts",
+      "rank": 18
+     },
+     {
+      "name": "Jaguars",
+      "x": 0.9,
+      "y": 19.9,
+      "label": true,
+      "short": "Jaguars",
+      "rank": 13
+     },
+     {
+      "name": "Raiders",
+      "x": 0.8,
+      "y": 11.6,
+      "label": true,
+      "short": "Raiders",
+      "rank": 8
+     },
+     {
+      "name": "Cowboys",
+      "x": 0.4,
+      "y": 18.5,
+      "label": true,
+      "short": "Cowboys",
+      "rank": 24
+     },
+     {
+      "name": "Commanders",
+      "x": -0.4,
+      "y": 16.3,
+      "label": true,
+      "short": "Commanders",
+      "rank": 27
+     },
+     {
+      "name": "Steelers",
+      "x": -0.5,
+      "y": 14.2,
+      "label": true,
+      "short": "Steelers",
+      "rank": 22
+     },
+     {
+      "name": "Texans",
+      "x": -1.0,
+      "y": 14.9,
+      "label": true,
+      "short": "Texans",
+      "rank": 26
+     },
+     {
+      "name": "Vikings",
+      "x": -1.8,
+      "y": 12.5,
+      "label": true,
+      "short": "Vikings",
+      "rank": 12
+     },
+     {
+      "name": "Buccaneers",
+      "x": -2.4,
+      "y": 16.0,
+      "label": true,
+      "short": "Buccaneers",
+      "rank": 29
+     },
+     {
+      "name": "Saints",
+      "x": -2.8,
+      "y": 14.4,
+      "label": true,
+      "short": "Saints",
+      "rank": 25
+     },
+     {
+      "name": "Packers",
+      "x": -2.8,
+      "y": 15.7,
+      "label": true,
+      "short": "Packers",
+      "rank": 28
+     },
+     {
+      "name": "Eagles",
+      "x": -3.2,
+      "y": 18.7,
+      "label": true,
+      "short": "Eagles",
+      "rank": 20
+     },
+     {
+      "name": "Bills",
+      "x": -3.2,
+      "y": 21.4,
+      "label": true,
+      "short": "Bills",
+      "rank": 6
+     },
+     {
+      "name": "Titans",
+      "x": -3.6,
+      "y": 11.0,
+      "label": true,
+      "short": "Titans",
+      "rank": 5
+     },
+     {
+      "name": "Bears",
+      "x": -3.8,
+      "y": 18.7,
+      "label": true,
+      "short": "Bears",
+      "rank": 21
+     },
+     {
+      "name": "Panthers",
+      "x": -4.5,
+      "y": 13.6,
+      "label": true,
+      "short": "Panthers",
+      "rank": 15
+     },
+     {
+      "name": "Seahawks",
+      "x": -4.9,
+      "y": 13.8,
+      "label": true,
+      "short": "Seahawks",
+      "rank": 19
+     },
+     {
+      "name": "Browns",
+      "x": -5.0,
+      "y": 10.6,
+      "label": true,
+      "short": "Browns",
+      "rank": 3
+     },
+     {
+      "name": "Giants",
+      "x": -5.2,
+      "y": 17.3,
+      "label": true,
+      "short": "Giants",
+      "rank": 23
+     },
+     {
+      "name": "Dolphins",
+      "x": -5.9,
+      "y": 5.0,
+      "label": true,
+      "short": "Dolphins",
+      "rank": 0
+     },
+     {
+      "name": "Lions",
+      "x": -6.6,
+      "y": 17.5,
+      "label": true,
+      "short": "Lions",
+      "rank": 14
+     },
+     {
+      "name": "Ravens",
+      "x": -8.6,
+      "y": 16.5,
+      "label": true,
+      "short": "Ravens",
+      "rank": 9
+     },
+     {
+      "name": "Jets",
+      "x": -10.5,
+      "y": 15.9,
+      "label": true,
+      "short": "Jets",
+      "rank": 2
+     }
+    ]
+   }
+  },
+  "correlations": {
+   "rush": 0.564,
+   "att": 0.349,
+   "epa": 0.665,
+   "ypa": 0.503,
+   "cpoe": 0.229,
+   "scramble_pct": 0.236,
+   "scrambles": 0.557,
+   "designed": 0.517,
+   "ttt": 0.136,
+   "fpts_per_db": 0.771
+  },
+  "counts": {
+   "rush": 33,
+   "att": 26,
+   "epa": 28,
+   "ypa": 36,
+   "cpoe": 28,
+   "scramble_pct": 22,
+   "scrambles": 30,
+   "designed": 30,
+   "ttt": 26,
+   "fpts_per_db": 28
+  },
+  "per_attempt": {
+   "pass": 0.0119,
+   "rush": 0.0722,
+   "ratio": 6.1,
+   "n": 26
+  },
+  "rushing_table": [
+   {
+    "name": "Josh Allen",
+    "att": 112,
+    "yards": 579,
+    "tds": 14,
+    "games": 17
+   },
+   {
+    "name": "Justin Herbert",
+    "att": 83,
+    "yards": 498,
+    "tds": 2,
+    "games": 16
+   },
+   {
+    "name": "Jaxson Dart",
+    "att": 86,
+    "yards": 487,
+    "tds": 9,
+    "games": 14
+   },
+   {
+    "name": "Drake Maye",
+    "att": 103,
+    "yards": 450,
+    "tds": 4,
+    "games": 17
+   },
+   {
+    "name": "Patrick Mahomes",
+    "att": 64,
+    "yards": 422,
+    "tds": 5,
+    "games": 14
+   },
+   {
+    "name": "Jalen Hurts",
+    "att": 105,
+    "yards": 421,
+    "tds": 8,
+    "games": 16
+   },
+   {
+    "name": "Caleb Williams",
+    "att": 77,
+    "yards": 388,
+    "tds": 3,
+    "games": 17
+   },
+   {
+    "name": "Justin Fields",
+    "att": 71,
+    "yards": 383,
+    "tds": 4,
+    "games": 9
+   },
+   {
+    "name": "Trevor Lawrence",
+    "att": 82,
+    "yards": 359,
+    "tds": 9,
+    "games": 17
+   },
+   {
+    "name": "Bo Nix",
+    "att": 83,
+    "yards": 356,
+    "tds": 5,
+    "games": 17
+   },
+   {
+    "name": "Lamar Jackson",
+    "att": 67,
+    "yards": 349,
+    "tds": 2,
+    "games": 13
+   },
+   {
+    "name": "Jayden Daniels",
+    "att": 58,
+    "yards": 278,
+    "tds": 2,
+    "games": 7
+   },
+   {
+    "name": "Bryce Young",
+    "att": 54,
+    "yards": 216,
+    "tds": 2,
+    "games": 16
+   },
+   {
+    "name": "Tyler Shough",
+    "att": 45,
+    "yards": 186,
+    "tds": 3,
+    "games": 11
+   },
+   {
+    "name": "J.J. McCarthy",
+    "att": 37,
+    "yards": 181,
+    "tds": 4,
+    "games": 10
+   },
+   {
+    "name": "Dak Prescott",
+    "att": 53,
+    "yards": 177,
+    "tds": 2,
+    "games": 17
+   },
+   {
+    "name": "Daniel Jones",
+    "att": 45,
+    "yards": 164,
+    "tds": 5,
+    "games": 13
+   },
+   {
+    "name": "Cam Ward",
+    "att": 39,
+    "yards": 159,
+    "tds": 2,
+    "games": 17
+   },
+   {
+    "name": "Brock Purdy",
+    "att": 33,
+    "yards": 147,
+    "tds": 3,
+    "games": 9
+   },
+   {
+    "name": "Malik Willis",
+    "att": 22,
+    "yards": 123,
+    "tds": 2,
+    "games": 4
+   },
+   {
+    "name": "Aaron Rodgers",
+    "att": 21,
+    "yards": 61,
+    "tds": 1,
+    "games": 16
+   },
+   {
+    "name": "Josh Johnson",
+    "att": 12,
+    "yards": 55,
+    "tds": 1,
+    "games": 5
+   },
+   {
+    "name": "Joe Flacco",
+    "att": 21,
+    "yards": 35,
+    "tds": 1,
+    "games": 13
+   },
+   {
+    "name": "Riley Leonard",
+    "att": 6,
+    "yards": 27,
+    "tds": 2,
+    "games": 5
+   },
+   {
+    "name": "Kirk Cousins",
+    "att": 14,
+    "yards": 7,
+    "tds": 1,
+    "games": 10
+   }
+  ],
+  "corrections": [
+   {
+    "name": "Aaron Rodgers",
+    "printed": 61,
+    "actual": 21,
+    "why": "61 is his rushing yards"
+   },
+   {
+    "name": "Jared Goff",
+    "printed": 45,
+    "actual": 19,
+    "why": "45 is his rushing yards"
+   },
+   {
+    "name": "Joe Burrow",
+    "printed": 41,
+    "actual": 14,
+    "why": "41 is his rushing yards"
+   },
+   {
+    "name": "Joe Flacco",
+    "printed": 35,
+    "actual": 21,
+    "why": "35 is his rushing yards"
+   },
+   {
+    "name": "Matthew Stafford",
+    "printed": 1,
+    "actual": 29,
+    "why": "1 is his rushing yards"
+   },
+   {
+    "name": "Tua Tagovailoa",
+    "printed": 43,
+    "actual": 20,
+    "why": "43 is his rushing yards"
+   }
+  ]
+ }
+}

@@ -5,11 +5,11 @@
  "data": [
   {
    "position": "QB",
-   "chart_title": "Rushing volume against passing volume",
-   "chart_x": "Pass attempts per game",
-   "chart_y": "Rush attempts per game",
-   "caption": "Bubble size is fantasy points per game. The rushing axis is what separates the top tier from the rest.",
-   "methodology": "Quarterback scoring is decided by rushing volume more than by passing efficiency. Two quarterbacks with identical passing lines finish a full tier apart if one carries six times a game and the other twice.",
+   "chart_title": "Rush attempts against fantasy points per game",
+   "chart_x": "Rush attempts",
+   "chart_y": "Fantasy points per game",
+   "caption": "Carries, not completions, are what separate the top of the position.",
+   "methodology": "Quarterback is the position where the fantasy answer and the football answer come apart hardest. The passing numbers that describe a good quarterback — accuracy over expected, time to throw — barely move fantasy scoring, while a carry is worth several times a pass attempt. What follows takes that in four steps: what rushing is actually worth, why the count of runs matters and the rate does not, where efficiency and scoring part company, and how little a pass-happy offense tells you. It is one season, so it is evidence rather than a law, and the page says where the source needed correcting.",
    "chart": ""
   },
   {

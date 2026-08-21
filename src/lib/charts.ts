@@ -1,5 +1,6 @@
 import rbFile from "@/data/rb-charts.json";
 import teFile from "@/data/te-charts.json";
+import qbFile from "@/data/qb-charts.json";
 
 export interface ScatterPoint {
   name: string;
@@ -159,3 +160,44 @@ export const TE_BENCHMARK_SIZE = teFile_.data.benchmark_image_size;
 export const TE_SEASON = teFile_.season;
 export const TE_UPDATED = teFile_.updated;
 export const TE_SOURCE = teFile_.source;
+
+// ============================== Quarterback ==============================
+// Built from the operator's QB Statistics PDF by scripts/curated/qb_charts.py.
+// One season, so these are descriptions of 2025 rather than laws.
+
+export interface QbScatter extends ScatterSeries {
+  /** Pearson r for this pair, computed in the extractor (§11). */
+  r: number | null;
+}
+
+export interface QbCharts {
+  season: number;
+  updated: string;
+  source: string;
+  note: string;
+  data: {
+    charts: {
+      rushing: QbScatter;
+      scrambles: QbScatter;
+      efficiency: QbScatter;
+      environment: QbScatter;
+    };
+    correlations: Record<string, number | null>;
+    counts: Record<string, number>;
+    per_attempt: { pass: number; rush: number; ratio: number | null; n: number } | null;
+    /** 2025 rushing lines, from scripts/curated/data/qb-rushing-2025.json. */
+    rushing_table: { name: string; att: number; yards: number; tds: number; games: number }[];
+    corrections: { name: string; printed: number; actual: number; why: string }[];
+  };
+}
+
+const qbFile_ = qbFile as unknown as QbCharts;
+
+export const QB_CHARTS = qbFile_.data.charts;
+export const QB_CORR = qbFile_.data.correlations;
+export const QB_COUNTS = qbFile_.data.counts;
+export const QB_PER_ATTEMPT = qbFile_.data.per_attempt;
+export const QB_CORRECTIONS = qbFile_.data.corrections;
+export const QB_RUSHING_TABLE = qbFile_.data.rushing_table;
+export const QB_SEASON = qbFile_.season;
+export const QB_SOURCE = qbFile_.source;
