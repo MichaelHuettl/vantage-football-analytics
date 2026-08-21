@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Refresh the committed feed archive on a timer.
+
+  Template, not an installed agent. Copy it to ~/Library/LaunchAgents/ and load
+  it to activate; nothing happens while it sits here. Installing is a change to
+  the machine rather than the repo, so it is a deliberate step:
+
+    cp scripts/com.vantage.feeds.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.vantage.feeds.plist
+
+  To stop:
+    launchctl unload ~/Library/LaunchAgents/com.vantage.feeds.plist
+
+  The news *page* no longer needs this — it pulls live. This keeps the archive
+  it falls back to from going stale, and it is the only thing that refreshes the
+  beat feed, which still goes through Nitter by hand.
+
+  StartInterval rather than a calendar entry: launchd fires a missed interval
+  once on wake, which suits a laptop that is not always on.
+
+  ProgramArguments must be an absolute path — launchd starts with almost no
+  environment. If this repo moves, this path moves with it.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.vantage.feeds</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/michaelhuettl/Desktop/Claude Code/vantage/scripts/refresh-feeds.sh</string>
+    </array>
+
+    <key>StartInterval</key>
+    <integer>1800</integer>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- The script writes its own timestamped log; these catch anything that
+         escapes it, such as the shell failing before logging starts. -->
+    <key>StandardOutPath</key>
+    <string>/Users/michaelhuettl/Library/Logs/vantage-feeds.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/michaelhuettl/Library/Logs/vantage-feeds.err.log</string>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/michaelhuettl/Desktop/Claude Code/vantage</string>
+</dict>
+</plist>

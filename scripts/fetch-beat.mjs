@@ -43,6 +43,24 @@ const CUTOFF = "2026-05-01";
 const ACCOUNTS = [
   { handle: "32BeatWriters", team: null },
   { handle: "SleeperNFL", team: null },
+
+  // National insiders, for injury news that breaks before the team accounts
+  // carry it. These are the reporters the camp records already cite by name —
+  // Rapoport is the attribution on Jordyn Tyson's two months, Schefter on
+  // Jeremiyah Love's high ankle sprain — so the site was already quoting them
+  // second-hand through other feeds.
+  //
+  // NOTE: added 2026-08-17 but NOT verified end to end. Nitter was blocked at
+  // the time (even SleeperNFL, which had returned 139 posts an hour earlier,
+  // came back empty), so no handle could be confirmed to resolve. They are
+  // real accounts; whether this pipeline can reach them is unproven. A dead
+  // handle is tolerated — it lands in `dead` and is reported, not fatal — so
+  // the cost of being wrong here is a line of output, not a broken feed.
+  { handle: "RapSheet", team: null },
+  { handle: "AdamSchefter", team: null },
+  { handle: "TomPelissero", team: null },
+  { handle: "MikeGarafolo", team: null },
+  { handle: "FieldYates", team: null },
   { handle: "SleeperAZCards", team: "ARI" },
   { handle: "SleeperFalcons", team: "ATL" },
   { handle: "SleeperRavens", team: "BAL" },
