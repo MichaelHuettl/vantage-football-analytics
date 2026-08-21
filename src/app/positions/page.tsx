@@ -49,8 +49,8 @@ export default function PositionsIndex() {
   return (
     <>
       <SectionHero
-        image="/img/bg/field.jpg"
-        objectPosition="center 48%"
+        image="/img/bg/positional-data.jpg"
+        objectPosition="center 50%"
         eyebrow="Framework"
         title="Positional Data"
         lede="What each position is actually measured on, and the evidence behind every ranking it produces."
