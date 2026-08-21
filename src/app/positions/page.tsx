@@ -49,7 +49,7 @@ export default function PositionsIndex() {
   return (
     <>
       <SectionHero
-        image="/img/bg/positional-data.jpg"
+        image="/img/bg/positional-data-hd.jpg"
         objectPosition="center 50%"
         eyebrow="Framework"
         title="Positional Data"
