@@ -8,7 +8,10 @@ import {
   Timeline,
 } from "@/components/CampInjury";
 import type { CampInjury } from "@/components/CampInjury";
+import { AutoRefresh } from "@/components/AutoRefresh";
 import { DataFreshness } from "@/components/DataFreshness";
+import { LiveWire } from "@/components/LiveWire";
+import { getLiveInjuries } from "@/lib/live-injuries";
 import { InjuryTimeline, PracticeStrip, StatusPill } from "@/components/Injury";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink, PositionBadge } from "@/components/PlayerLink";
@@ -46,6 +49,9 @@ export default async function InjuriesPage({
   const groups = rowsByTeam(week);
   const carried = backlog();
   const teams = teamsWithInjuries();
+
+  // Pulled at request time; AutoRefresh re-runs this render on a timer.
+  const liveWire = await getLiveInjuries();
 
   // One team filter across the whole page rather than one per section. News
   // keeps its two feeds on separate params because they cover different
@@ -269,6 +275,25 @@ export default async function InjuriesPage({
               </TeamBlock>
             ))}
           </div>
+        </section>
+
+        {/* ===================== Live wire ===================== */}
+        <section className="mt-20">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+            <h2
+              className="text-3xl uppercase tracking-wide"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Live wire
+            </h2>
+            <AutoRefresh />
+          </div>
+          <p className="mt-2 max-w-2xl text-sm" style={{ color: "var(--text-muted)" }}>
+            Pulled while you are reading it, and checked against the camp report
+            above. The records above are reporting; these are feed statuses, and
+            where the two disagree the disagreement is the story.
+          </p>
+          <LiveWire live={liveWire} />
         </section>
 
         {/* ===================== Week-by-week report ===================== */}
