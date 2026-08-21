@@ -1,0 +1,284 @@
+{
+ "schema_version": 1,
+ "note": "Every feature the shipped model fits on, grouped. The head-to-head chart on a game page shows a readable subset; this is the whole input list. Wider feature sets were tested and scored worse \u2014 202 features reached 61.2% and 455 reached 62.8%, against 63.2% for this one.",
+ "source": "artifacts/feature_sets.json, core_market_aware",
+ "generated": "2026-08-20",
+ "total": 55,
+ "groups": [
+  {
+   "name": "Recent results",
+   "features": [
+    {
+     "feature": "diff_point_diff_ewma",
+     "label": "Point differential"
+    },
+    {
+     "feature": "diff_team_win_ewma",
+     "label": "Team win rate"
+    }
+   ]
+  },
+  {
+   "name": "Offensive efficiency",
+   "features": [
+    {
+     "feature": "diff_off_cpoe_ewma",
+     "label": "Offensive CPOE"
+    },
+    {
+     "feature": "diff_off_epa_per_dropback_ewma",
+     "label": "Offensive EPA per dropback"
+    },
+    {
+     "feature": "diff_off_epa_per_play_ewma",
+     "label": "Offensive EPA per play"
+    },
+    {
+     "feature": "diff_off_epa_per_rush_ewma",
+     "label": "Offensive EPA per rush"
+    },
+    {
+     "feature": "diff_off_explosive_pass_rate_ewma",
+     "label": "Offensive explosive pass rate"
+    },
+    {
+     "feature": "diff_off_penalty_yds_per_play_ewma",
+     "label": "Offensive penalty yards per play"
+    },
+    {
+     "feature": "diff_off_pressure_rate_allowed_ewma",
+     "label": "Offensive pressure rate allowed"
+    },
+    {
+     "feature": "diff_off_sack_rate_ewma",
+     "label": "Offensive sack rate"
+    },
+    {
+     "feature": "diff_off_success_proxy_ewma",
+     "label": "Offensive success rate"
+    },
+    {
+     "feature": "diff_off_turnover_rate_ewma",
+     "label": "Offensive turnover rate"
+    }
+   ]
+  },
+  {
+   "name": "Defensive efficiency",
+   "features": [
+    {
+     "feature": "diff_def_cpoe_allowed_ewma",
+     "label": "Defensive CPOE allowed"
+    },
+    {
+     "feature": "diff_def_epa_per_dropback_allowed_ewma",
+     "label": "Defensive EPA per dropback allowed"
+    },
+    {
+     "feature": "diff_def_epa_per_play_allowed_ewma",
+     "label": "Defensive EPA per play allowed"
+    },
+    {
+     "feature": "diff_def_epa_per_rush_allowed_ewma",
+     "label": "Defensive EPA per rush allowed"
+    },
+    {
+     "feature": "diff_def_pressure_proxy_rate_ewma",
+     "label": "Defensive pressure proxy rate"
+    },
+    {
+     "feature": "diff_def_pressure_rate_ewma",
+     "label": "Defensive pressure rate"
+    },
+    {
+     "feature": "diff_def_sack_rate_ewma",
+     "label": "Defensive sack rate"
+    },
+    {
+     "feature": "diff_def_success_proxy_allowed_ewma",
+     "label": "Defensive success rate allowed"
+    },
+    {
+     "feature": "diff_def_takeaway_rate_ewma",
+     "label": "Defensive takeaway rate"
+    }
+   ]
+  },
+  {
+   "name": "Matchup interactions",
+   "features": [
+    {
+     "feature": "diff_cpoe_matchup",
+     "label": "CPOE matchup"
+    },
+    {
+     "feature": "diff_overall_matchup",
+     "label": "Overall matchup"
+    },
+    {
+     "feature": "diff_pass_matchup",
+     "label": "Pass matchup"
+    },
+    {
+     "feature": "diff_rush_matchup",
+     "label": "Rush matchup"
+    }
+   ]
+  },
+  {
+   "name": "Quarterback",
+   "features": [
+    {
+     "feature": "diff_team_qbr_ewma",
+     "label": "Team QBR"
+    }
+   ]
+  },
+  {
+   "name": "Availability",
+   "features": [
+    {
+     "feature": "away_inj_qb_out",
+     "label": "Away injury qb out"
+    },
+    {
+     "feature": "diff_inj_impact",
+     "label": "Injury impact"
+    },
+    {
+     "feature": "home_inj_qb_out",
+     "label": "Home injury qb out"
+    }
+   ]
+  },
+  {
+   "name": "Defensive front",
+   "features": [
+    {
+     "feature": "away_front_3_4",
+     "label": "Away front 3 4"
+    },
+    {
+     "feature": "away_front_4_3",
+     "label": "Away front 4 3"
+    },
+    {
+     "feature": "diff_front_score",
+     "label": "Front score"
+    },
+    {
+     "feature": "home_front_3_4",
+     "label": "Home front 3 4"
+    },
+    {
+     "feature": "home_front_4_3",
+     "label": "Home front 4 3"
+    }
+   ]
+  },
+  {
+   "name": "Rest and schedule",
+   "features": [
+    {
+     "feature": "away_off_bye",
+     "label": "Away offensive bye"
+    },
+    {
+     "feature": "away_short_week",
+     "label": "Away short week"
+    },
+    {
+     "feature": "home_off_bye",
+     "label": "Home offensive bye"
+    },
+    {
+     "feature": "home_short_week",
+     "label": "Home short week"
+    },
+    {
+     "feature": "rest_diff",
+     "label": "Rest advantage"
+    }
+   ]
+  },
+  {
+   "name": "Conditions",
+   "features": [
+    {
+     "feature": "roof_closed",
+     "label": "Roof closed"
+    },
+    {
+     "feature": "roof_dome",
+     "label": "Roof dome"
+    },
+    {
+     "feature": "roof_open",
+     "label": "Roof open"
+    },
+    {
+     "feature": "roof_outdoors",
+     "label": "Roof outdoors"
+    },
+    {
+     "feature": "surface_grass",
+     "label": "Surface grass"
+    },
+    {
+     "feature": "surface_turf",
+     "label": "Surface turf"
+    },
+    {
+     "feature": "temp_f",
+     "label": "Temp f"
+    },
+    {
+     "feature": "wind_mph",
+     "label": "Wind mph"
+    }
+   ]
+  },
+  {
+   "name": "Market lines",
+   "features": [
+    {
+     "feature": "market_home_implied_prob",
+     "label": "Market home implied prob"
+    },
+    {
+     "feature": "spread_line",
+     "label": "Spread line"
+    },
+    {
+     "feature": "total_line",
+     "label": "Total line"
+    }
+   ]
+  },
+  {
+   "name": "Game context",
+   "features": [
+    {
+     "feature": "home_field",
+     "label": "Home field"
+    },
+    {
+     "feature": "is_divisional",
+     "label": "Divisional game"
+    },
+    {
+     "feature": "is_neutral_site",
+     "label": "Is neutral site"
+    },
+    {
+     "feature": "is_postseason",
+     "label": "Is postseason"
+    },
+    {
+     "feature": "week_num",
+     "label": "Week num"
+    }
+   ]
+  }
+ ]
+}

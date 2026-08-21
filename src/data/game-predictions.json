@@ -1,0 +1,5291 @@
+{
+  "generated_at": "2026-08-20T23:02:04.121025+00:00",
+  "meta": {
+    "model_name": "Calibrated Logistic Regression (core + market features)",
+    "model_family": "logistic_regression",
+    "note": "XGBoost is implemented and reported alongside, but the calibrated logistic model measured better out-of-sample on this dataset.",
+    "training_seasons": [
+      2006,
+      2025
+    ],
+    "training_games": 5133,
+    "validation": "walk-forward by season (train on all prior seasons, test on the next)",
+    "rolling_window": "10-game exponentially weighted, shifted 1 game",
+    "data_source": "nflverse team-week aggregates, PFR advanced stats, ESPN QBR, injury reports"
+  },
+  "performance": {
+    "out_of_sample_games": 4166,
+    "log_loss": 0.628916,
+    "accuracy": 0.644503,
+    "brier_score": 0.219486,
+    "auc": 0.692784,
+    "calibration_error": 0.017271,
+    "baselines": {
+      "always_pick_home": {
+        "accuracy": 0.56001,
+        "log_loss": 0.685927
+      },
+      "vegas_moneyline": {
+        "accuracy": 0.667227,
+        "log_loss": 0.60782
+      }
+    },
+    "honest_caveat": "The model does not beat the betting market, and its disagreements with the market have historically been wrong more often than right. Presented as analysis, not as betting advice."
+  },
+  "methodology": {
+    "glossary": {
+      "epa_per_play": {
+        "label": "EPA / Play",
+        "short": "Expected Points Added per play",
+        "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+        "higher_is_better": true
+      },
+      "epa_per_dropback": {
+        "label": "Pass EPA / Dropback",
+        "short": "Passing efficiency",
+        "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+        "higher_is_better": true
+      },
+      "epa_per_rush": {
+        "label": "Rush EPA / Carry",
+        "short": "Rushing efficiency",
+        "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+        "higher_is_better": true
+      },
+      "cpoe": {
+        "label": "CPOE",
+        "short": "Completion % Over Expected",
+        "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+        "higher_is_better": true
+      },
+      "success_proxy": {
+        "label": "First Downs / Play",
+        "short": "Drive-sustaining rate",
+        "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+        "higher_is_better": true
+      },
+      "sack_rate": {
+        "label": "Sack Rate",
+        "short": "Sacks taken per dropback",
+        "definition": "How often the offence's dropbacks end in a sack.",
+        "higher_is_better": false
+      },
+      "turnover_rate": {
+        "label": "Turnover Rate",
+        "short": "Giveaways per play",
+        "definition": "Interceptions plus lost fumbles per offensive play.",
+        "higher_is_better": false
+      },
+      "injury_impact": {
+        "label": "Injury Impact",
+        "short": "Position-weighted availability score",
+        "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+        "higher_is_better": false
+      },
+      "explosive_pass_rate": {
+        "label": "Explosive Pass Rate",
+        "short": "20+ yard completions per attempt",
+        "definition": "How often the passing game produces a 20-yard-plus gain.",
+        "higher_is_better": true
+      }
+    },
+    "steps": [
+      {
+        "title": "Team-game panel",
+        "body": "Every team-game since 1999 is assembled with its own offence and, mirrored from the opponent, its defence."
+      },
+      {
+        "title": "Rolling form",
+        "body": "Each metric is smoothed with a 10-game exponentially weighted average so recent games matter more than old ones."
+      },
+      {
+        "title": "Leakage guard",
+        "body": "Every rolling feature is shifted one game before smoothing, so a prediction for a game can only ever use games played before it."
+      },
+      {
+        "title": "Matchup interactions",
+        "body": "A team's offensive EPA is paired against the specific defence it faces, rather than compared to league average."
+      },
+      {
+        "title": "Situational context",
+        "body": "Rest days, bye weeks, injuries, venue, weather and the opponent's base defensive front are encoded as categorical inputs."
+      },
+      {
+        "title": "Walk-forward validation",
+        "body": "The model is only ever tested on seasons later than the ones it trained on \u2014 never a random split."
+      }
+    ]
+  },
+  "feature_importance": [
+    {
+      "feature": "diff_point_diff_ewma",
+      "importance": 32.258518,
+      "label": "point"
+    },
+    {
+      "feature": "diff_overall_matchup",
+      "importance": 21.131992,
+      "label": "overall matchup"
+    },
+    {
+      "feature": "diff_team_win_ewma",
+      "importance": 14.736217,
+      "label": "team win"
+    },
+    {
+      "feature": "diff_off_epa_per_play_ewma",
+      "importance": 12.189698,
+      "label": "off epa per play"
+    },
+    {
+      "feature": "diff_pass_matchup",
+      "importance": 10.694197,
+      "label": "pass matchup"
+    },
+    {
+      "feature": "diff_off_epa_per_dropback_ewma",
+      "importance": 8.952761,
+      "label": "off epa per dropback"
+    },
+    {
+      "feature": "home_inj_qb_out",
+      "importance": 6.8338,
+      "label": "home inj qb out"
+    },
+    {
+      "feature": "diff_team_qbr_ewma",
+      "importance": 6.686285,
+      "label": "team qbr"
+    },
+    {
+      "feature": "diff_off_success_proxy_ewma",
+      "importance": 6.477096,
+      "label": "off success proxy"
+    },
+    {
+      "feature": "surface_turf",
+      "importance": 6.428514,
+      "label": "surface turf"
+    },
+    {
+      "feature": "away_front_3_4",
+      "importance": 6.377529,
+      "label": "away front 3 4"
+    },
+    {
+      "feature": "diff_inj_impact",
+      "importance": 6.252572,
+      "label": "inj impact"
+    }
+  ],
+  "games": [
+    {
+      "game_id": "2026_01_NE_SEA",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-09 20:20:00",
+      "home": {
+        "team": "SEA",
+        "win_probability": 0.696
+      },
+      "away": {
+        "team": "NE",
+        "win_probability": 0.304
+      },
+      "predicted_winner": "SEA",
+      "predicted_margin": 5.51,
+      "predicted_spread_display": "SEA -5.5",
+      "market_spread_line": 3.5,
+      "model_minus_market": 2.01,
+      "margin_implied_probability": 0.6619,
+      "models_disagree": false,
+      "confidence": "high",
+      "confidence_historical_accuracy": 0.7454,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": 0.058406,
+            "defense": -0.172857,
+            "offense_percentile": 75.5,
+            "defense_percentile": 2.1,
+            "offense_rating": 75.5,
+            "defense_rating": 97.9
+          },
+          "away": {
+            "team": "NE",
+            "offense": -0.026598,
+            "defense": -0.168555,
+            "offense_percentile": 42.9,
+            "defense_percentile": 2.4,
+            "offense_rating": 42.9,
+            "defense_rating": 97.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": 0.143625,
+            "defense": -0.203139,
+            "offense_percentile": 75.2,
+            "defense_percentile": 2.1,
+            "offense_rating": 75.2,
+            "defense_rating": 97.9
+          },
+          "away": {
+            "team": "NE",
+            "offense": -0.009957,
+            "defense": -0.201862,
+            "offense_percentile": 35.3,
+            "defense_percentile": 2.1,
+            "offense_rating": 35.3,
+            "defense_rating": 97.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": -0.042332,
+            "defense": -0.099909,
+            "offense_percentile": 64.0,
+            "defense_percentile": 36.2,
+            "offense_rating": 64.0,
+            "defense_rating": 63.8
+          },
+          "away": {
+            "team": "NE",
+            "offense": -0.009876,
+            "defense": -0.099235,
+            "offense_percentile": 77.4,
+            "defense_percentile": 36.5,
+            "offense_rating": 77.4,
+            "defense_rating": 63.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": 2.778756,
+            "defense": -0.972534,
+            "offense_percentile": 73.0,
+            "defense_percentile": 34.5,
+            "offense_rating": 73.0,
+            "defense_rating": 65.5
+          },
+          "away": {
+            "team": "NE",
+            "offense": 3.22229,
+            "defense": -4.010521,
+            "offense_percentile": 76.4,
+            "defense_percentile": 10.6,
+            "offense_rating": 76.4,
+            "defense_rating": 89.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": 0.305625,
+            "defense": 0.258439,
+            "offense_percentile": 79.1,
+            "defense_percentile": 18.2,
+            "offense_rating": 79.1,
+            "defense_rating": 81.8
+          },
+          "away": {
+            "team": "NE",
+            "offense": 0.275402,
+            "defense": 0.243891,
+            "offense_percentile": 43.1,
+            "defense_percentile": 6.6,
+            "offense_rating": 43.1,
+            "defense_rating": 93.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": 0.066916,
+            "defense": 0.070533,
+            "offense_percentile": 58.0,
+            "defense_percentile": 66.8,
+            "offense_rating": 42.0,
+            "defense_rating": 66.8
+          },
+          "away": {
+            "team": "NE",
+            "offense": 0.112822,
+            "defense": 0.070342,
+            "offense_percentile": 97.7,
+            "defense_percentile": 66.4,
+            "offense_rating": 2.3,
+            "defense_rating": 66.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": 0.012215,
+            "defense": 0.031695,
+            "offense_percentile": 5.3,
+            "defense_percentile": 86.9,
+            "offense_rating": 94.7,
+            "defense_rating": 86.9
+          },
+          "away": {
+            "team": "NE",
+            "offense": 0.021928,
+            "defense": 0.024803,
+            "offense_percentile": 46.1,
+            "defense_percentile": 60.9,
+            "offense_rating": 53.9,
+            "defense_rating": 60.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": 0.077134,
+            "defense": 0.091376,
+            "offense_percentile": 26.0,
+            "defense_percentile": 53.3,
+            "offense_rating": 26.0,
+            "defense_rating": 46.7
+          },
+          "away": {
+            "team": "NE",
+            "offense": 0.132755,
+            "defense": 0.046587,
+            "offense_percentile": 96.7,
+            "defense_percentile": 0.4,
+            "offense_rating": 96.7,
+            "defense_rating": 99.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "SEA",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "NE",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "form",
+          "team": "SEA",
+          "headline": "SEA +13.9 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), SEA has been outscoring opponents by 13.9 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "form",
+          "team": "NE",
+          "headline": "NE +6.6 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), NE has been outscoring opponents by 6.6 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "venue",
+          "team": "SEA",
+          "headline": "SEA at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_SF_LA",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-10 20:35:00",
+      "home": {
+        "team": "LA",
+        "win_probability": 0.5287
+      },
+      "away": {
+        "team": "SF",
+        "win_probability": 0.4713
+      },
+      "predicted_winner": "LA",
+      "predicted_margin": 3.14,
+      "predicted_spread_display": "LA -3.1",
+      "market_spread_line": 3.5,
+      "model_minus_market": -0.36,
+      "margin_implied_probability": 0.594,
+      "models_disagree": false,
+      "confidence": "coin_flip",
+      "confidence_historical_accuracy": 0.4975,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": 0.151923,
+            "defense": 0.033367,
+            "offense_percentile": 95.6,
+            "defense_percentile": 70.1,
+            "offense_rating": 95.6,
+            "defense_rating": 29.9
+          },
+          "away": {
+            "team": "SF",
+            "offense": -0.004559,
+            "defense": 0.091231,
+            "offense_percentile": 52.0,
+            "defense_percentile": 90.9,
+            "offense_rating": 52.0,
+            "defense_rating": 9.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": 0.232376,
+            "defense": 0.09389,
+            "offense_percentile": 90.2,
+            "defense_percentile": 66.9,
+            "offense_rating": 90.2,
+            "defense_rating": 33.1
+          },
+          "away": {
+            "team": "SF",
+            "offense": 0.070701,
+            "defense": 0.125362,
+            "offense_percentile": 57.1,
+            "defense_percentile": 75.8,
+            "offense_rating": 57.1,
+            "defense_rating": 24.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": 0.033994,
+            "defense": -0.031602,
+            "offense_percentile": 90.3,
+            "defense_percentile": 69.7,
+            "offense_rating": 90.3,
+            "defense_rating": 30.3
+          },
+          "away": {
+            "team": "SF",
+            "offense": -0.071362,
+            "defense": 0.060047,
+            "offense_percentile": 50.2,
+            "defense_percentile": 95.9,
+            "offense_rating": 50.2,
+            "defense_rating": 4.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": -1.147716,
+            "defense": 0.625203,
+            "offense_percentile": 34.6,
+            "defense_percentile": 52.5,
+            "offense_rating": 34.6,
+            "defense_rating": 47.5
+          },
+          "away": {
+            "team": "SF",
+            "offense": 4.024228,
+            "defense": 2.142323,
+            "offense_percentile": 82.4,
+            "defense_percentile": 69.7,
+            "offense_rating": 82.4,
+            "defense_rating": 30.3
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": 0.32918,
+            "defense": 0.295599,
+            "offense_percentile": 94.9,
+            "defense_percentile": 72.0,
+            "offense_rating": 94.9,
+            "defense_rating": 28.0
+          },
+          "away": {
+            "team": "SF",
+            "offense": 0.318153,
+            "defense": 0.308307,
+            "offense_percentile": 89.2,
+            "defense_percentile": 86.1,
+            "offense_rating": 89.2,
+            "defense_rating": 13.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": 0.039807,
+            "defense": 0.061002,
+            "offense_percentile": 12.1,
+            "defense_percentile": 44.4,
+            "offense_rating": 87.9,
+            "defense_rating": 44.4
+          },
+          "away": {
+            "team": "SF",
+            "offense": 0.048189,
+            "defense": 0.049111,
+            "offense_percentile": 23.3,
+            "defense_percentile": 18.2,
+            "offense_rating": 76.7,
+            "defense_rating": 18.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": 0.013319,
+            "defense": 0.021871,
+            "offense_percentile": 7.9,
+            "defense_percentile": 45.4,
+            "offense_rating": 92.1,
+            "defense_rating": 45.4
+          },
+          "away": {
+            "team": "SF",
+            "offense": 0.026738,
+            "defense": 0.009574,
+            "offense_percentile": 69.3,
+            "defense_percentile": 1.7,
+            "offense_rating": 30.7,
+            "defense_rating": 1.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": 0.129255,
+            "defense": 0.092005,
+            "offense_percentile": 95.6,
+            "defense_percentile": 54.6,
+            "offense_rating": 95.6,
+            "defense_rating": 45.4
+          },
+          "away": {
+            "team": "SF",
+            "offense": 0.084668,
+            "defense": 0.066988,
+            "offense_percentile": 40.7,
+            "defense_percentile": 9.2,
+            "offense_rating": 40.7,
+            "defense_rating": 90.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LA",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "SF",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "LA",
+          "headline": "LA faces a 4-3 front",
+          "detail": "SF's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "LA",
+          "headline": "LA +5.2 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), LA has been outscoring opponents by 5.2 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "form",
+          "team": "SF",
+          "headline": "SF -2.4 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), SF has been being outscored by opponents by 2.4 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "context",
+          "team": null,
+          "headline": "Divisional matchup",
+          "detail": "Familiar opponents; historically tighter margins.",
+          "impact": "neutral"
+        },
+        {
+          "type": "context",
+          "team": null,
+          "headline": "Neutral site",
+          "detail": "No home-field advantage applied.",
+          "impact": "neutral"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_CLE_JAX",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "team": "JAX",
+        "win_probability": 0.7512
+      },
+      "away": {
+        "team": "CLE",
+        "win_probability": 0.2488
+      },
+      "predicted_winner": "JAX",
+      "predicted_margin": 8.82,
+      "predicted_spread_display": "JAX -8.8",
+      "market_spread_line": 7.5,
+      "model_minus_market": 1.32,
+      "margin_implied_probability": 0.7479,
+      "models_disagree": false,
+      "confidence": "high",
+      "confidence_historical_accuracy": 0.7454,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": 0.072889,
+            "defense": -0.102179,
+            "offense_percentile": 80.0,
+            "defense_percentile": 12.5,
+            "offense_rating": 80.0,
+            "defense_rating": 87.5
+          },
+          "away": {
+            "team": "CLE",
+            "offense": -0.187603,
+            "defense": -0.073417,
+            "offense_percentile": 2.9,
+            "defense_percentile": 20.5,
+            "offense_rating": 2.9,
+            "defense_rating": 79.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": 0.179583,
+            "defense": -0.150227,
+            "offense_percentile": 82.0,
+            "defense_percentile": 5.2,
+            "offense_rating": 82.0,
+            "defense_rating": 94.8
+          },
+          "away": {
+            "team": "CLE",
+            "offense": -0.282172,
+            "defense": -0.179149,
+            "offense_percentile": 1.1,
+            "defense_percentile": 3.2,
+            "offense_rating": 1.1,
+            "defense_rating": 96.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": -0.05873,
+            "defense": -0.005311,
+            "offense_percentile": 56.4,
+            "defense_percentile": 80.3,
+            "offense_rating": 56.4,
+            "defense_rating": 19.7
+          },
+          "away": {
+            "team": "CLE",
+            "offense": -0.054312,
+            "defense": 0.02936,
+            "offense_percentile": 58.7,
+            "defense_percentile": 90.8,
+            "offense_rating": 58.7,
+            "defense_rating": 9.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": 1.560727,
+            "defense": -0.928871,
+            "offense_percentile": 62.2,
+            "defense_percentile": 34.9,
+            "offense_rating": 62.2,
+            "defense_rating": 65.1
+          },
+          "away": {
+            "team": "CLE",
+            "offense": -4.320075,
+            "defense": -0.416714,
+            "offense_percentile": 11.3,
+            "defense_percentile": 40.3,
+            "offense_rating": 11.3,
+            "defense_rating": 59.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": 0.319207,
+            "defense": 0.264085,
+            "offense_percentile": 89.9,
+            "defense_percentile": 24.5,
+            "offense_rating": 89.9,
+            "defense_rating": 75.5
+          },
+          "away": {
+            "team": "CLE",
+            "offense": 0.221227,
+            "defense": 0.278731,
+            "offense_percentile": 1.3,
+            "defense_percentile": 46.2,
+            "offense_rating": 1.3,
+            "defense_rating": 53.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": 0.056822,
+            "defense": 0.046002,
+            "offense_percentile": 38.5,
+            "defense_percentile": 13.2,
+            "offense_rating": 61.5,
+            "defense_rating": 13.2
+          },
+          "away": {
+            "team": "CLE",
+            "offense": 0.109033,
+            "defense": 0.083372,
+            "offense_percentile": 96.9,
+            "defense_percentile": 88.2,
+            "offense_rating": 3.1,
+            "defense_rating": 88.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": 0.019175,
+            "defense": 0.026233,
+            "offense_percentile": 31.9,
+            "defense_percentile": 67.6,
+            "offense_rating": 68.1,
+            "defense_rating": 67.6
+          },
+          "away": {
+            "team": "CLE",
+            "offense": 0.030183,
+            "defense": 0.014432,
+            "offense_percentile": 82.2,
+            "defense_percentile": 11.1,
+            "offense_rating": 17.8,
+            "defense_rating": 11.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": 0.112211,
+            "defense": 0.064396,
+            "offense_percentile": 84.7,
+            "defense_percentile": 6.8,
+            "offense_rating": 84.7,
+            "defense_rating": 93.2
+          },
+          "away": {
+            "team": "CLE",
+            "offense": 0.071063,
+            "defense": 0.077465,
+            "offense_percentile": 16.4,
+            "defense_percentile": 24.1,
+            "offense_rating": 16.4,
+            "defense_rating": 75.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "JAX",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "CLE",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "JAX",
+          "headline": "JAX faces a 4-3 front",
+          "detail": "CLE's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "scheme",
+          "team": "CLE",
+          "headline": "CLE faces a 4-3 front",
+          "detail": "JAX's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "JAX",
+          "headline": "JAX +11.7 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), JAX has been outscoring opponents by 11.7 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "form",
+          "team": "CLE",
+          "headline": "CLE -4.2 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), CLE has been being outscored by opponents by 4.2 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "JAX",
+          "headline": "JAX at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_BUF_HOU",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "team": "HOU",
+        "win_probability": 0.5045
+      },
+      "away": {
+        "team": "BUF",
+        "win_probability": 0.4955
+      },
+      "predicted_winner": "HOU",
+      "predicted_margin": -2.05,
+      "predicted_spread_display": "BUF -2.0",
+      "market_spread_line": -1.5,
+      "model_minus_market": -0.55,
+      "margin_implied_probability": 0.4384,
+      "models_disagree": true,
+      "confidence": "coin_flip",
+      "confidence_historical_accuracy": 0.4975,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": -0.08957,
+            "defense": -0.200773,
+            "offense_percentile": 18.8,
+            "defense_percentile": 1.0,
+            "offense_rating": 18.8,
+            "defense_rating": 99.0
+          },
+          "away": {
+            "team": "BUF",
+            "offense": 0.1243,
+            "defense": -0.037902,
+            "offense_percentile": 92.3,
+            "defense_percentile": 34.5,
+            "offense_rating": 92.3,
+            "defense_rating": 65.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": -0.056578,
+            "defense": -0.214896,
+            "offense_percentile": 24.1,
+            "defense_percentile": 1.6,
+            "offense_rating": 24.1,
+            "defense_rating": 98.4
+          },
+          "away": {
+            "team": "BUF",
+            "offense": 0.192907,
+            "defense": -0.097803,
+            "offense_percentile": 84.2,
+            "defense_percentile": 11.6,
+            "offense_rating": 84.2,
+            "defense_rating": 88.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": -0.116303,
+            "defense": -0.157261,
+            "offense_percentile": 28.9,
+            "defense_percentile": 13.5,
+            "offense_rating": 28.9,
+            "defense_rating": 86.5
+          },
+          "away": {
+            "team": "BUF",
+            "offense": 0.064235,
+            "defense": 0.006619,
+            "offense_percentile": 95.0,
+            "defense_percentile": 84.6,
+            "offense_rating": 95.0,
+            "defense_rating": 15.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": -5.845132,
+            "defense": -3.333271,
+            "offense_percentile": 5.6,
+            "defense_percentile": 14.6,
+            "offense_rating": 5.6,
+            "defense_rating": 85.4
+          },
+          "away": {
+            "team": "BUF",
+            "offense": 5.090626,
+            "defense": -5.218474,
+            "offense_percentile": 89.2,
+            "defense_percentile": 5.8,
+            "offense_rating": 89.2,
+            "defense_rating": 94.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": 0.252689,
+            "defense": 0.231837,
+            "offense_percentile": 16.2,
+            "defense_percentile": 2.2,
+            "offense_rating": 16.2,
+            "defense_rating": 97.8
+          },
+          "away": {
+            "team": "BUF",
+            "offense": 0.323242,
+            "defense": 0.281837,
+            "offense_percentile": 92.2,
+            "defense_percentile": 51.2,
+            "offense_rating": 92.2,
+            "defense_rating": 48.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": 0.044574,
+            "defense": 0.098396,
+            "offense_percentile": 18.1,
+            "defense_percentile": 97.3,
+            "offense_rating": 81.9,
+            "defense_rating": 97.3
+          },
+          "away": {
+            "team": "BUF",
+            "offense": 0.063824,
+            "defense": 0.044063,
+            "offense_percentile": 52.3,
+            "defense_percentile": 10.7,
+            "offense_rating": 47.7,
+            "defense_rating": 10.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": 0.025324,
+            "defense": 0.034139,
+            "offense_percentile": 63.1,
+            "defense_percentile": 91.6,
+            "offense_rating": 36.9,
+            "defense_rating": 91.6
+          },
+          "away": {
+            "team": "BUF",
+            "offense": 0.023279,
+            "defense": 0.020353,
+            "offense_percentile": 53.1,
+            "defense_percentile": 37.0,
+            "offense_rating": 46.9,
+            "defense_rating": 37.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": 0.076986,
+            "defense": 0.090891,
+            "offense_percentile": 25.7,
+            "defense_percentile": 52.2,
+            "offense_rating": 25.7,
+            "defense_rating": 47.8
+          },
+          "away": {
+            "team": "BUF",
+            "offense": 0.105566,
+            "defense": 0.06862,
+            "offense_percentile": 76.9,
+            "defense_percentile": 11.2,
+            "offense_rating": 76.9,
+            "defense_rating": 88.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "HOU",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "BUF",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "HOU",
+          "headline": "HOU faces a 4-3 front",
+          "detail": "BUF's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "scheme",
+          "team": "BUF",
+          "headline": "BUF faces a 4-3 front",
+          "detail": "HOU's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "HOU",
+          "headline": "HOU +5.9 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), HOU has been outscoring opponents by 5.9 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "form",
+          "team": "BUF",
+          "headline": "BUF +5.5 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), BUF has been outscoring opponents by 5.5 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "venue",
+          "team": "HOU",
+          "headline": "HOU at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_BAL_IND",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "team": "IND",
+        "win_probability": 0.4356
+      },
+      "away": {
+        "team": "BAL",
+        "win_probability": 0.5644
+      },
+      "predicted_winner": "BAL",
+      "predicted_margin": -3.55,
+      "predicted_spread_display": "BAL -3.5",
+      "market_spread_line": -3.5,
+      "model_minus_market": -0.05,
+      "margin_implied_probability": 0.3939,
+      "models_disagree": false,
+      "confidence": "low",
+      "confidence_historical_accuracy": 0.5983,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": -0.024208,
+            "defense": 0.047397,
+            "offense_percentile": 43.9,
+            "defense_percentile": 76.3,
+            "offense_rating": 43.9,
+            "defense_rating": 23.7
+          },
+          "away": {
+            "team": "BAL",
+            "offense": 0.106621,
+            "defense": 0.004984,
+            "offense_percentile": 88.8,
+            "defense_percentile": 56.3,
+            "offense_rating": 88.8,
+            "defense_rating": 43.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": -0.019857,
+            "defense": 0.139195,
+            "offense_percentile": 33.1,
+            "defense_percentile": 79.0,
+            "offense_rating": 33.1,
+            "defense_rating": 21.0
+          },
+          "away": {
+            "team": "BAL",
+            "offense": 0.131181,
+            "defense": 0.111061,
+            "offense_percentile": 72.4,
+            "defense_percentile": 71.9,
+            "offense_rating": 72.4,
+            "defense_rating": 28.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": -0.020169,
+            "defense": -0.063237,
+            "offense_percentile": 73.5,
+            "defense_percentile": 54.1,
+            "offense_rating": 73.5,
+            "defense_rating": 45.9
+          },
+          "away": {
+            "team": "BAL",
+            "offense": 0.105093,
+            "defense": -0.175173,
+            "offense_percentile": 98.7,
+            "defense_percentile": 8.8,
+            "offense_rating": 98.7,
+            "defense_rating": 91.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": -1.884658,
+            "defense": -1.295211,
+            "offense_percentile": 27.7,
+            "defense_percentile": 31.3,
+            "offense_rating": 27.7,
+            "defense_rating": 68.7
+          },
+          "away": {
+            "team": "BAL",
+            "offense": 4.333554,
+            "defense": 3.076361,
+            "offense_percentile": 84.6,
+            "defense_percentile": 79.1,
+            "offense_rating": 84.6,
+            "defense_rating": 20.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": 0.282942,
+            "defense": 0.308778,
+            "offense_percentile": 53.1,
+            "defense_percentile": 86.5,
+            "offense_rating": 53.1,
+            "defense_rating": 13.5
+          },
+          "away": {
+            "team": "BAL",
+            "offense": 0.298905,
+            "defense": 0.282102,
+            "offense_percentile": 71.8,
+            "defense_percentile": 51.8,
+            "offense_rating": 71.8,
+            "defense_rating": 48.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": 0.048515,
+            "defense": 0.03989,
+            "offense_percentile": 23.9,
+            "defense_percentile": 6.0,
+            "offense_rating": 76.1,
+            "defense_rating": 6.0
+          },
+          "away": {
+            "team": "BAL",
+            "offense": 0.098687,
+            "defense": 0.055906,
+            "offense_percentile": 93.3,
+            "defense_percentile": 31.6,
+            "offense_rating": 6.7,
+            "defense_rating": 31.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": 0.02983,
+            "defense": 0.014605,
+            "offense_percentile": 81.0,
+            "defense_percentile": 11.7,
+            "offense_rating": 19.0,
+            "defense_rating": 11.7
+          },
+          "away": {
+            "team": "BAL",
+            "offense": 0.023315,
+            "defense": 0.021282,
+            "offense_percentile": 53.2,
+            "defense_percentile": 42.1,
+            "offense_rating": 46.8,
+            "defense_rating": 42.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": 0.069355,
+            "defense": 0.101242,
+            "offense_percentile": 14.2,
+            "defense_percentile": 72.5,
+            "offense_rating": 14.2,
+            "defense_rating": 27.5
+          },
+          "away": {
+            "team": "BAL",
+            "offense": 0.1172,
+            "defense": 0.119822,
+            "offense_percentile": 89.2,
+            "defense_percentile": 93.1,
+            "offense_rating": 89.2,
+            "defense_rating": 6.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "IND",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "BAL",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "BAL",
+          "headline": "BAL faces a 4-3 front",
+          "detail": "IND's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "IND",
+          "headline": "IND -5.0 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), IND has been being outscored by opponents by 5.0 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "form",
+          "team": "BAL",
+          "headline": "BAL +4.2 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), BAL has been outscoring opponents by 4.2 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "venue",
+          "team": "IND",
+          "headline": "IND at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_ATL_PIT",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "team": "PIT",
+        "win_probability": 0.6036
+      },
+      "away": {
+        "team": "ATL",
+        "win_probability": 0.3964
+      },
+      "predicted_winner": "PIT",
+      "predicted_margin": 3.61,
+      "predicted_spread_display": "PIT -3.6",
+      "market_spread_line": 3.0,
+      "model_minus_market": 0.61,
+      "margin_implied_probability": 0.6077,
+      "models_disagree": false,
+      "confidence": "medium",
+      "confidence_historical_accuracy": 0.6175,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": -0.073795,
+            "defense": 0.023664,
+            "offense_percentile": 24.0,
+            "defense_percentile": 65.8,
+            "offense_rating": 24.0,
+            "defense_rating": 34.2
+          },
+          "away": {
+            "team": "ATL",
+            "offense": -0.019504,
+            "defense": -0.00403,
+            "offense_percentile": 45.8,
+            "defense_percentile": 51.3,
+            "offense_rating": 45.8,
+            "defense_rating": 48.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": -0.084466,
+            "defense": 0.0694,
+            "offense_percentile": 18.7,
+            "defense_percentile": 59.0,
+            "offense_rating": 18.7,
+            "defense_rating": 41.0
+          },
+          "away": {
+            "team": "ATL",
+            "offense": 0.038013,
+            "defense": -0.002585,
+            "offense_percentile": 48.1,
+            "defense_percentile": 34.6,
+            "offense_rating": 48.1,
+            "defense_rating": 65.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": -0.042707,
+            "defense": -0.041172,
+            "offense_percentile": 63.9,
+            "defense_percentile": 65.2,
+            "offense_rating": 63.9,
+            "defense_rating": 34.8
+          },
+          "away": {
+            "team": "ATL",
+            "offense": -0.08836,
+            "defense": -0.013624,
+            "offense_percentile": 42.0,
+            "defense_percentile": 76.8,
+            "offense_rating": 42.0,
+            "defense_rating": 23.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": -1.94065,
+            "defense": 0.554371,
+            "offense_percentile": 27.3,
+            "defense_percentile": 51.7,
+            "offense_rating": 27.3,
+            "defense_rating": 48.3
+          },
+          "away": {
+            "team": "ATL",
+            "offense": -2.927362,
+            "defense": -2.582953,
+            "offense_percentile": 19.3,
+            "defense_percentile": 19.4,
+            "offense_rating": 19.3,
+            "defense_rating": 80.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": 0.25942,
+            "defense": 0.277299,
+            "offense_percentile": 23.0,
+            "defense_percentile": 43.8,
+            "offense_rating": 23.0,
+            "defense_rating": 56.2
+          },
+          "away": {
+            "team": "ATL",
+            "offense": 0.275458,
+            "defense": 0.274103,
+            "offense_percentile": 43.2,
+            "defense_percentile": 38.9,
+            "offense_rating": 43.2,
+            "defense_rating": 61.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": 0.060857,
+            "defense": 0.080469,
+            "offense_percentile": 46.4,
+            "defense_percentile": 84.6,
+            "offense_rating": 53.6,
+            "defense_rating": 84.6
+          },
+          "away": {
+            "team": "ATL",
+            "offense": 0.04908,
+            "defense": 0.090941,
+            "offense_percentile": 24.7,
+            "defense_percentile": 94.4,
+            "offense_rating": 75.3,
+            "defense_rating": 94.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": 0.015778,
+            "defense": 0.026745,
+            "offense_percentile": 16.0,
+            "defense_percentile": 69.8,
+            "offense_rating": 84.0,
+            "defense_rating": 69.8
+          },
+          "away": {
+            "team": "ATL",
+            "offense": 0.017509,
+            "defense": 0.024123,
+            "offense_percentile": 23.9,
+            "defense_percentile": 57.5,
+            "offense_rating": 76.1,
+            "defense_rating": 57.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": 0.068707,
+            "defense": 0.10805,
+            "offense_percentile": 13.4,
+            "defense_percentile": 82.9,
+            "offense_rating": 13.4,
+            "defense_rating": 17.1
+          },
+          "away": {
+            "team": "ATL",
+            "offense": 0.082382,
+            "defense": 0.102453,
+            "offense_percentile": 36.0,
+            "defense_percentile": 74.8,
+            "offense_rating": 36.0,
+            "defense_rating": 25.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PIT",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "ATL",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "ATL",
+          "headline": "ATL faces a 4-3 front",
+          "detail": "PIT's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "PIT",
+          "headline": "PIT -3.9 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), PIT has been being outscored by opponents by 3.9 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "form",
+          "team": "ATL",
+          "headline": "ATL -1.1 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), ATL has been being outscored by opponents by 1.1 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "PIT",
+          "headline": "PIT at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_NO_DET",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "team": "DET",
+        "win_probability": 0.7096
+      },
+      "away": {
+        "team": "NO",
+        "win_probability": 0.2904
+      },
+      "predicted_winner": "DET",
+      "predicted_margin": 7.01,
+      "predicted_spread_display": "DET -7.0",
+      "market_spread_line": 7.0,
+      "model_minus_market": 0.01,
+      "margin_implied_probability": 0.7023,
+      "models_disagree": false,
+      "confidence": "high",
+      "confidence_historical_accuracy": 0.7454,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": 0.033749,
+            "defense": 0.01919,
+            "offense_percentile": 66.6,
+            "defense_percentile": 63.5,
+            "offense_rating": 66.6,
+            "defense_rating": 36.5
+          },
+          "away": {
+            "team": "NO",
+            "offense": 0.000421,
+            "defense": -0.143301,
+            "offense_percentile": 53.9,
+            "defense_percentile": 4.6,
+            "offense_rating": 53.9,
+            "defense_rating": 95.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": 0.136151,
+            "defense": -0.017035,
+            "offense_percentile": 73.5,
+            "defense_percentile": 30.0,
+            "offense_rating": 73.5,
+            "defense_rating": 70.0
+          },
+          "away": {
+            "team": "NO",
+            "offense": 0.085943,
+            "defense": -0.123382,
+            "offense_percentile": 60.9,
+            "defense_percentile": 8.3,
+            "offense_rating": 60.9,
+            "defense_rating": 91.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": -0.125292,
+            "defense": 0.058866,
+            "offense_percentile": 25.1,
+            "defense_percentile": 95.9,
+            "offense_rating": 25.1,
+            "defense_rating": 4.1
+          },
+          "away": {
+            "team": "NO",
+            "offense": -0.117098,
+            "defense": -0.146263,
+            "offense_percentile": 28.6,
+            "defense_percentile": 16.8,
+            "offense_rating": 28.6,
+            "defense_rating": 83.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": -0.526268,
+            "defense": -1.711149,
+            "offense_percentile": 41.0,
+            "defense_percentile": 27.2,
+            "offense_rating": 41.0,
+            "defense_rating": 72.8
+          },
+          "away": {
+            "team": "NO",
+            "offense": 3.405268,
+            "defense": -2.423108,
+            "offense_percentile": 78.0,
+            "defense_percentile": 20.7,
+            "offense_rating": 78.0,
+            "defense_rating": 79.3
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": 0.307876,
+            "defense": 0.273883,
+            "offense_percentile": 81.0,
+            "defense_percentile": 38.6,
+            "offense_rating": 81.0,
+            "defense_rating": 61.4
+          },
+          "away": {
+            "team": "NO",
+            "offense": 0.272537,
+            "defense": 0.239718,
+            "offense_percentile": 39.2,
+            "defense_percentile": 4.6,
+            "offense_rating": 39.2,
+            "defense_rating": 95.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": 0.069564,
+            "defense": 0.083552,
+            "offense_percentile": 62.5,
+            "defense_percentile": 88.4,
+            "offense_rating": 37.5,
+            "defense_rating": 88.4
+          },
+          "away": {
+            "team": "NO",
+            "offense": 0.087289,
+            "defense": 0.092077,
+            "offense_percentile": 85.5,
+            "defense_percentile": 95.1,
+            "offense_rating": 14.5,
+            "defense_rating": 95.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": 0.020702,
+            "defense": 0.014284,
+            "offense_percentile": 40.0,
+            "defense_percentile": 10.5,
+            "offense_rating": 60.0,
+            "defense_rating": 10.5
+          },
+          "away": {
+            "team": "NO",
+            "offense": 0.022345,
+            "defense": 0.018711,
+            "offense_percentile": 48.4,
+            "defense_percentile": 28.6,
+            "offense_rating": 51.6,
+            "defense_rating": 28.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": 0.117864,
+            "defense": 0.091016,
+            "offense_percentile": 89.7,
+            "defense_percentile": 52.5,
+            "offense_rating": 89.7,
+            "defense_rating": 47.5
+          },
+          "away": {
+            "team": "NO",
+            "offense": 0.0794,
+            "defense": 0.087909,
+            "offense_percentile": 30.1,
+            "defense_percentile": 45.6,
+            "offense_rating": 30.1,
+            "defense_rating": 54.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "DET",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "NO",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "DET",
+          "headline": "DET faces a 3-4 front",
+          "detail": "NO's roster profiles as a 3-4 base defence (nose tackle present, OLB-heavy edge group).",
+          "impact": "neutral"
+        },
+        {
+          "type": "scheme",
+          "team": "NO",
+          "headline": "NO faces a 4-3 front",
+          "detail": "DET's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "DET",
+          "headline": "DET -0.1 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), DET has been being outscored by opponents by 0.1 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "form",
+          "team": "NO",
+          "headline": "NO +1.1 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), NO has been outscoring opponents by 1.1 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "venue",
+          "team": "DET",
+          "headline": "DET at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_NYJ_TEN",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "team": "TEN",
+        "win_probability": 0.5949
+      },
+      "away": {
+        "team": "NYJ",
+        "win_probability": 0.4051
+      },
+      "predicted_winner": "TEN",
+      "predicted_margin": 1.81,
+      "predicted_spread_display": "TEN -1.8",
+      "market_spread_line": 3.0,
+      "model_minus_market": -1.19,
+      "margin_implied_probability": 0.5545,
+      "models_disagree": false,
+      "confidence": "low",
+      "confidence_historical_accuracy": 0.5983,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": -0.136696,
+            "defense": 0.114706,
+            "offense_percentile": 8.0,
+            "defense_percentile": 95.3,
+            "offense_rating": 8.0,
+            "defense_rating": 4.7
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": -0.2027,
+            "defense": 0.199648,
+            "offense_percentile": 2.1,
+            "defense_percentile": 99.9,
+            "offense_rating": 2.1,
+            "defense_rating": 0.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": -0.196112,
+            "defense": 0.251548,
+            "offense_percentile": 4.7,
+            "defense_percentile": 96.2,
+            "offense_rating": 4.7,
+            "defense_rating": 3.8
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": -0.278052,
+            "defense": 0.448024,
+            "offense_percentile": 1.2,
+            "defense_percentile": 100.0,
+            "offense_rating": 1.2,
+            "defense_rating": 0.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": -0.015488,
+            "defense": -0.044736,
+            "offense_percentile": 75.5,
+            "defense_percentile": 63.5,
+            "offense_rating": 75.5,
+            "defense_rating": 36.5
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": -0.094939,
+            "defense": -0.029869,
+            "offense_percentile": 38.8,
+            "defense_percentile": 70.5,
+            "offense_rating": 38.8,
+            "defense_rating": 29.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": -2.550169,
+            "defense": 7.352308,
+            "offense_percentile": 22.2,
+            "defense_percentile": 98.4,
+            "offense_rating": 22.2,
+            "defense_rating": 1.6
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": -8.592804,
+            "defense": 6.395496,
+            "offense_percentile": 1.4,
+            "defense_percentile": 96.8,
+            "offense_rating": 1.4,
+            "defense_rating": 3.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": 0.239804,
+            "defense": 0.304873,
+            "offense_percentile": 6.8,
+            "defense_percentile": 83.0,
+            "offense_rating": 6.8,
+            "defense_rating": 17.0
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": 0.218123,
+            "defense": 0.342721,
+            "offense_percentile": 0.8,
+            "defense_percentile": 99.4,
+            "offense_rating": 0.8,
+            "defense_rating": 0.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": 0.065212,
+            "defense": 0.079619,
+            "offense_percentile": 55.0,
+            "defense_percentile": 83.5,
+            "offense_rating": 45.0,
+            "defense_rating": 83.5
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": 0.09338,
+            "defense": 0.036046,
+            "offense_percentile": 90.4,
+            "defense_percentile": 3.3,
+            "offense_rating": 9.6,
+            "defense_rating": 3.3
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": 0.014814,
+            "defense": 0.009432,
+            "offense_percentile": 12.1,
+            "defense_percentile": 1.6,
+            "offense_rating": 87.9,
+            "defense_rating": 1.6
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": 0.021497,
+            "defense": 0.005304,
+            "offense_percentile": 44.0,
+            "defense_percentile": 0.1,
+            "offense_rating": 56.0,
+            "defense_rating": 0.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": 0.076867,
+            "defense": 0.131232,
+            "offense_percentile": 25.5,
+            "defense_percentile": 97.5,
+            "offense_rating": 25.5,
+            "defense_rating": 2.5
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": 0.04245,
+            "defense": 0.129923,
+            "offense_percentile": 0.3,
+            "defense_percentile": 97.3,
+            "offense_rating": 0.3,
+            "defense_rating": 2.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "TEN",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "NYJ",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "NYJ",
+          "headline": "NYJ faces a 4-3 front",
+          "detail": "TEN's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "TEN",
+          "headline": "TEN -11.0 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), TEN has been being outscored by opponents by 11.0 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "form",
+          "team": "NYJ",
+          "headline": "NYJ -18.9 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), NYJ has been being outscored by opponents by 18.9 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "TEN",
+          "headline": "TEN at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_TB_CIN",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "team": "CIN",
+        "win_probability": 0.6631
+      },
+      "away": {
+        "team": "TB",
+        "win_probability": 0.3369
+      },
+      "predicted_winner": "CIN",
+      "predicted_margin": 5.35,
+      "predicted_spread_display": "CIN -5.3",
+      "market_spread_line": 3.5,
+      "model_minus_market": 1.85,
+      "margin_implied_probability": 0.6573,
+      "models_disagree": false,
+      "confidence": "high",
+      "confidence_historical_accuracy": 0.7454,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": 0.076763,
+            "defense": 0.049376,
+            "offense_percentile": 81.1,
+            "defense_percentile": 77.0,
+            "offense_rating": 81.1,
+            "defense_rating": 23.0
+          },
+          "away": {
+            "team": "TB",
+            "offense": -0.005866,
+            "defense": 0.055289,
+            "offense_percentile": 51.5,
+            "defense_percentile": 79.6,
+            "offense_rating": 51.5,
+            "defense_rating": 20.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": 0.10295,
+            "defense": 0.064466,
+            "offense_percentile": 65.3,
+            "defense_percentile": 57.5,
+            "offense_rating": 65.3,
+            "defense_rating": 42.5
+          },
+          "away": {
+            "team": "TB",
+            "offense": 0.024449,
+            "defense": 0.159693,
+            "offense_percentile": 44.5,
+            "defense_percentile": 84.0,
+            "offense_rating": 44.5,
+            "defense_rating": 16.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": 0.046468,
+            "defense": 0.031755,
+            "offense_percentile": 92.4,
+            "defense_percentile": 91.3,
+            "offense_rating": 92.4,
+            "defense_rating": 8.7
+          },
+          "away": {
+            "team": "TB",
+            "offense": -0.010435,
+            "defense": -0.136376,
+            "offense_percentile": 77.2,
+            "defense_percentile": 20.2,
+            "offense_rating": 77.2,
+            "defense_rating": 79.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": 4.885807,
+            "defense": -0.925882,
+            "offense_percentile": 88.1,
+            "defense_percentile": 34.9,
+            "offense_rating": 88.1,
+            "defense_rating": 65.1
+          },
+          "away": {
+            "team": "TB",
+            "offense": -0.365674,
+            "defense": 4.50091,
+            "offense_percentile": 42.6,
+            "defense_percentile": 89.6,
+            "offense_rating": 42.6,
+            "defense_rating": 10.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": 0.323877,
+            "defense": 0.287907,
+            "offense_percentile": 92.5,
+            "defense_percentile": 60.9,
+            "offense_rating": 92.5,
+            "defense_rating": 39.1
+          },
+          "away": {
+            "team": "TB",
+            "offense": 0.279473,
+            "defense": 0.296524,
+            "offense_percentile": 48.2,
+            "defense_percentile": 73.4,
+            "offense_rating": 48.2,
+            "defense_rating": 26.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": 0.052577,
+            "defense": 0.102085,
+            "offense_percentile": 30.4,
+            "defense_percentile": 98.2,
+            "offense_rating": 69.6,
+            "defense_rating": 98.2
+          },
+          "away": {
+            "team": "TB",
+            "offense": 0.069916,
+            "defense": 0.051947,
+            "offense_percentile": 63.1,
+            "defense_percentile": 23.2,
+            "offense_rating": 36.9,
+            "defense_rating": 23.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": 0.019147,
+            "defense": 0.022225,
+            "offense_percentile": 31.8,
+            "defense_percentile": 47.1,
+            "offense_rating": 68.2,
+            "defense_rating": 47.1
+          },
+          "away": {
+            "team": "TB",
+            "offense": 0.019941,
+            "defense": 0.023783,
+            "offense_percentile": 36.0,
+            "defense_percentile": 55.6,
+            "offense_rating": 64.0,
+            "defense_rating": 55.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": 0.085936,
+            "defense": 0.118863,
+            "offense_percentile": 43.2,
+            "defense_percentile": 92.5,
+            "offense_rating": 43.2,
+            "defense_rating": 7.5
+          },
+          "away": {
+            "team": "TB",
+            "offense": 0.099364,
+            "defense": 0.094371,
+            "offense_percentile": 67.8,
+            "defense_percentile": 59.4,
+            "offense_rating": 67.8,
+            "defense_rating": 40.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CIN",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "TB",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "TB",
+          "headline": "TB faces a 3-4 front",
+          "detail": "CIN's roster profiles as a 3-4 base defence (nose tackle present, OLB-heavy edge group).",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "CIN",
+          "headline": "CIN +2.0 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), CIN has been outscoring opponents by 2.0 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "form",
+          "team": "TB",
+          "headline": "TB -2.1 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), TB has been being outscored by opponents by 2.1 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "CIN",
+          "headline": "CIN at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_CHI_CAR",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "team": "CAR",
+        "win_probability": 0.4624
+      },
+      "away": {
+        "team": "CHI",
+        "win_probability": 0.5376
+      },
+      "predicted_winner": "CHI",
+      "predicted_margin": -2.65,
+      "predicted_spread_display": "CHI -2.6",
+      "market_spread_line": -2.5,
+      "model_minus_market": -0.15,
+      "margin_implied_probability": 0.4205,
+      "models_disagree": false,
+      "confidence": "coin_flip",
+      "confidence_historical_accuracy": 0.4975,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": -0.074696,
+            "defense": 0.054686,
+            "offense_percentile": 23.7,
+            "defense_percentile": 79.3,
+            "offense_rating": 23.7,
+            "defense_rating": 20.7
+          },
+          "away": {
+            "team": "CHI",
+            "offense": 0.070125,
+            "defense": 0.068701,
+            "offense_percentile": 79.2,
+            "defense_percentile": 84.4,
+            "offense_rating": 79.2,
+            "defense_rating": 15.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": -0.064799,
+            "defense": 0.104096,
+            "offense_percentile": 22.3,
+            "defense_percentile": 69.7,
+            "offense_rating": 22.3,
+            "defense_rating": 30.3
+          },
+          "away": {
+            "team": "CHI",
+            "offense": 0.104608,
+            "defense": 0.122671,
+            "offense_percentile": 65.8,
+            "defense_percentile": 75.1,
+            "offense_rating": 65.8,
+            "defense_rating": 24.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": -0.097682,
+            "defense": 0.014512,
+            "offense_percentile": 37.6,
+            "defense_percentile": 86.9,
+            "offense_rating": 37.6,
+            "defense_rating": 13.1
+          },
+          "away": {
+            "team": "CHI",
+            "offense": 0.012546,
+            "defense": -0.004446,
+            "offense_percentile": 85.0,
+            "defense_percentile": 80.6,
+            "offense_rating": 85.0,
+            "defense_rating": 19.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": 1.697571,
+            "defense": 1.310295,
+            "offense_percentile": 63.4,
+            "defense_percentile": 60.9,
+            "offense_rating": 63.4,
+            "defense_rating": 39.1
+          },
+          "away": {
+            "team": "CHI",
+            "offense": -3.664981,
+            "defense": 1.100418,
+            "offense_percentile": 14.6,
+            "defense_percentile": 58.0,
+            "offense_rating": 14.6,
+            "defense_rating": 42.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": 0.264398,
+            "defense": 0.298016,
+            "offense_percentile": 28.6,
+            "defense_percentile": 75.5,
+            "offense_rating": 28.6,
+            "defense_rating": 24.5
+          },
+          "away": {
+            "team": "CHI",
+            "offense": 0.295899,
+            "defense": 0.301044,
+            "offense_percentile": 68.3,
+            "defense_percentile": 79.0,
+            "offense_rating": 68.3,
+            "defense_rating": 21.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": 0.055343,
+            "defense": 0.062847,
+            "offense_percentile": 35.7,
+            "defense_percentile": 48.7,
+            "offense_rating": 64.3,
+            "defense_rating": 48.7
+          },
+          "away": {
+            "team": "CHI",
+            "offense": 0.026147,
+            "defense": 0.059135,
+            "offense_percentile": 1.9,
+            "defense_percentile": 39.5,
+            "offense_rating": 98.1,
+            "defense_rating": 39.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": 0.028485,
+            "defense": 0.020304,
+            "offense_percentile": 76.3,
+            "defense_percentile": 36.8,
+            "offense_rating": 23.7,
+            "defense_rating": 36.8
+          },
+          "away": {
+            "team": "CHI",
+            "offense": 0.016752,
+            "defense": 0.017355,
+            "offense_percentile": 20.4,
+            "defense_percentile": 22.3,
+            "offense_rating": 79.6,
+            "defense_rating": 22.3
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": 0.079996,
+            "defense": 0.07168,
+            "offense_percentile": 31.3,
+            "defense_percentile": 14.7,
+            "offense_rating": 31.3,
+            "defense_rating": 85.3
+          },
+          "away": {
+            "team": "CHI",
+            "offense": 0.109392,
+            "defense": 0.113112,
+            "offense_percentile": 81.6,
+            "defense_percentile": 88.3,
+            "offense_rating": 81.6,
+            "defense_rating": 11.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "CAR",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "CHI",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "CAR",
+          "headline": "CAR faces a 4-3 front",
+          "detail": "CHI's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "scheme",
+          "team": "CHI",
+          "headline": "CHI faces a 3-4 front",
+          "detail": "CAR's roster profiles as a 3-4 base defence (nose tackle present, OLB-heavy edge group).",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "CAR",
+          "headline": "CAR -4.3 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), CAR has been being outscored by opponents by 4.3 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "form",
+          "team": "CHI",
+          "headline": "CHI +1.8 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), CHI has been outscoring opponents by 1.8 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "venue",
+          "team": "CAR",
+          "headline": "CAR at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        },
+        {
+          "type": "weather",
+          "team": null,
+          "headline": "High wind expected",
+          "detail": "16 mph winds suppress deep passing and kicking.",
+          "impact": "neutral"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_WAS_PHI",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 16:25:00",
+      "home": {
+        "team": "PHI",
+        "win_probability": 0.6009
+      },
+      "away": {
+        "team": "WAS",
+        "win_probability": 0.3991
+      },
+      "predicted_winner": "PHI",
+      "predicted_margin": 4.19,
+      "predicted_spread_display": "PHI -4.2",
+      "market_spread_line": 4.5,
+      "model_minus_market": -0.31,
+      "margin_implied_probability": 0.6245,
+      "models_disagree": false,
+      "confidence": "medium",
+      "confidence_historical_accuracy": 0.6175,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": -0.001651,
+            "defense": -0.088782,
+            "offense_percentile": 53.1,
+            "defense_percentile": 15.6,
+            "offense_rating": 53.1,
+            "defense_rating": 84.4
+          },
+          "away": {
+            "team": "WAS",
+            "offense": -0.019379,
+            "defense": 0.130312,
+            "offense_percentile": 45.8,
+            "defense_percentile": 97.0,
+            "offense_rating": 45.8,
+            "defense_rating": 3.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": 0.048397,
+            "defense": -0.087727,
+            "offense_percentile": 50.9,
+            "defense_percentile": 13.2,
+            "offense_rating": 50.9,
+            "defense_rating": 86.8
+          },
+          "away": {
+            "team": "WAS",
+            "offense": -0.000458,
+            "defense": 0.187132,
+            "offense_percentile": 37.9,
+            "defense_percentile": 89.1,
+            "offense_rating": 37.9,
+            "defense_rating": 10.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": -0.017458,
+            "defense": -0.068635,
+            "offense_percentile": 74.7,
+            "defense_percentile": 51.3,
+            "offense_rating": 74.7,
+            "defense_rating": 48.7
+          },
+          "away": {
+            "team": "WAS",
+            "offense": 0.000211,
+            "defense": 0.087018,
+            "offense_percentile": 81.0,
+            "defense_percentile": 98.2,
+            "offense_rating": 81.0,
+            "defense_rating": 1.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": 0.556878,
+            "defense": -4.098142,
+            "offense_percentile": 51.9,
+            "defense_percentile": 10.2,
+            "offense_rating": 51.9,
+            "defense_rating": 89.8
+          },
+          "away": {
+            "team": "WAS",
+            "offense": 1.058843,
+            "defense": 0.332497,
+            "offense_percentile": 57.1,
+            "defense_percentile": 48.9,
+            "offense_rating": 57.1,
+            "defense_rating": 51.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": 0.273295,
+            "defense": 0.267853,
+            "offense_percentile": 40.1,
+            "defense_percentile": 29.3,
+            "offense_rating": 40.1,
+            "defense_rating": 70.7
+          },
+          "away": {
+            "team": "WAS",
+            "offense": 0.29242,
+            "defense": 0.319431,
+            "offense_percentile": 64.3,
+            "defense_percentile": 93.9,
+            "offense_rating": 64.3,
+            "defense_rating": 6.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": 0.049256,
+            "defense": 0.072626,
+            "offense_percentile": 24.9,
+            "defense_percentile": 71.3,
+            "offense_rating": 75.1,
+            "defense_rating": 71.3
+          },
+          "away": {
+            "team": "WAS",
+            "offense": 0.063469,
+            "defense": 0.076721,
+            "offense_percentile": 51.6,
+            "defense_percentile": 78.8,
+            "offense_rating": 48.4,
+            "defense_rating": 78.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": 0.014047,
+            "defense": 0.025328,
+            "offense_percentile": 10.0,
+            "defense_percentile": 63.5,
+            "offense_rating": 90.0,
+            "defense_rating": 63.5
+          },
+          "away": {
+            "team": "WAS",
+            "offense": 0.024639,
+            "defense": 0.010355,
+            "offense_percentile": 59.7,
+            "defense_percentile": 2.5,
+            "offense_rating": 40.3,
+            "defense_rating": 2.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": 0.067278,
+            "defense": 0.086975,
+            "offense_percentile": 11.7,
+            "defense_percentile": 43.7,
+            "offense_rating": 11.7,
+            "defense_rating": 56.3
+          },
+          "away": {
+            "team": "WAS",
+            "offense": 0.089662,
+            "defense": 0.085336,
+            "offense_percentile": 50.3,
+            "defense_percentile": 40.0,
+            "offense_rating": 50.3,
+            "defense_rating": 60.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "PHI",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "WAS",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "form",
+          "team": "PHI",
+          "headline": "PHI +2.3 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), PHI has been outscoring opponents by 2.3 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "form",
+          "team": "WAS",
+          "headline": "WAS -5.7 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), WAS has been being outscored by opponents by 5.7 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "PHI",
+          "headline": "PHI at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        },
+        {
+          "type": "context",
+          "team": null,
+          "headline": "Divisional matchup",
+          "detail": "Familiar opponents; historically tighter margins.",
+          "impact": "neutral"
+        },
+        {
+          "type": "weather",
+          "team": null,
+          "headline": "High wind expected",
+          "detail": "22 mph winds suppress deep passing and kicking.",
+          "impact": "neutral"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_ARI_LAC",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 16:25:00",
+      "home": {
+        "team": "LAC",
+        "win_probability": 0.7872
+      },
+      "away": {
+        "team": "ARI",
+        "win_probability": 0.2128
+      },
+      "predicted_winner": "LAC",
+      "predicted_margin": 11.17,
+      "predicted_spread_display": "LAC -11.2",
+      "market_spread_line": 10.5,
+      "model_minus_market": 0.67,
+      "margin_implied_probability": 0.8014,
+      "models_disagree": false,
+      "confidence": "high",
+      "confidence_historical_accuracy": 0.7454,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": -0.128536,
+            "defense": -0.11378,
+            "offense_percentile": 9.4,
+            "defense_percentile": 9.6,
+            "offense_rating": 9.4,
+            "defense_rating": 90.4
+          },
+          "away": {
+            "team": "ARI",
+            "offense": -0.011119,
+            "defense": 0.154803,
+            "offense_percentile": 49.3,
+            "defense_percentile": 98.8,
+            "offense_rating": 49.3,
+            "defense_rating": 1.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": -0.144588,
+            "defense": -0.078432,
+            "offense_percentile": 9.1,
+            "defense_percentile": 14.8,
+            "offense_rating": 9.1,
+            "defense_rating": 85.2
+          },
+          "away": {
+            "team": "ARI",
+            "offense": -0.002725,
+            "defense": 0.285459,
+            "offense_percentile": 37.3,
+            "defense_percentile": 98.1,
+            "offense_rating": 37.3,
+            "defense_rating": 1.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": -0.023569,
+            "defense": -0.160637,
+            "offense_percentile": 72.1,
+            "defense_percentile": 12.5,
+            "offense_rating": 72.1,
+            "defense_rating": 87.5
+          },
+          "away": {
+            "team": "ARI",
+            "offense": -0.036513,
+            "defense": 0.021161,
+            "offense_percentile": 66.7,
+            "defense_percentile": 88.5,
+            "offense_rating": 66.7,
+            "defense_rating": 11.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": -0.497598,
+            "defense": -4.795951,
+            "offense_percentile": 41.3,
+            "defense_percentile": 7.0,
+            "offense_rating": 41.3,
+            "defense_rating": 93.0
+          },
+          "away": {
+            "team": "ARI",
+            "offense": 1.080424,
+            "defense": 3.009335,
+            "offense_percentile": 57.3,
+            "defense_percentile": 78.4,
+            "offense_rating": 57.3,
+            "defense_rating": 21.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": 0.251592,
+            "defense": 0.261689,
+            "offense_percentile": 15.3,
+            "defense_percentile": 21.8,
+            "offense_rating": 15.3,
+            "defense_rating": 78.2
+          },
+          "away": {
+            "team": "ARI",
+            "offense": 0.289967,
+            "defense": 0.333977,
+            "offense_percentile": 61.3,
+            "defense_percentile": 98.6,
+            "offense_rating": 61.3,
+            "defense_rating": 1.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": 0.113039,
+            "defense": 0.092204,
+            "offense_percentile": 97.8,
+            "defense_percentile": 95.1,
+            "offense_rating": 2.2,
+            "defense_rating": 95.1
+          },
+          "away": {
+            "team": "ARI",
+            "offense": 0.088099,
+            "defense": 0.046371,
+            "offense_percentile": 86.2,
+            "defense_percentile": 13.7,
+            "offense_rating": 13.8,
+            "defense_rating": 13.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": 0.018741,
+            "defense": 0.025792,
+            "offense_percentile": 29.6,
+            "defense_percentile": 65.5,
+            "offense_rating": 70.4,
+            "defense_rating": 65.5
+          },
+          "away": {
+            "team": "ARI",
+            "offense": 0.021183,
+            "defense": 0.012122,
+            "offense_percentile": 42.3,
+            "defense_percentile": 5.3,
+            "offense_rating": 57.7,
+            "defense_rating": 5.3
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": 0.065339,
+            "defense": 0.086582,
+            "offense_percentile": 9.5,
+            "defense_percentile": 42.9,
+            "offense_rating": 9.5,
+            "defense_rating": 57.1
+          },
+          "away": {
+            "team": "ARI",
+            "offense": 0.091249,
+            "defense": 0.101899,
+            "offense_percentile": 53.4,
+            "defense_percentile": 73.8,
+            "offense_rating": 53.4,
+            "defense_rating": 26.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LAC",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "ARI",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "ARI",
+          "headline": "ARI faces a 3-4 front",
+          "detail": "LAC's roster profiles as a 3-4 base defence (nose tackle present, OLB-heavy edge group).",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "LAC",
+          "headline": "LAC -2.3 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), LAC has been being outscored by opponents by 2.3 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "form",
+          "team": "ARI",
+          "headline": "ARI -13.4 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), ARI has been being outscored by opponents by 13.4 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "LAC",
+          "headline": "LAC at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_MIA_LV",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 16:25:00",
+      "home": {
+        "team": "LV",
+        "win_probability": 0.6487
+      },
+      "away": {
+        "team": "MIA",
+        "win_probability": 0.3513
+      },
+      "predicted_winner": "LV",
+      "predicted_margin": 3.06,
+      "predicted_spread_display": "LV -3.1",
+      "market_spread_line": 3.5,
+      "model_minus_market": -0.44,
+      "margin_implied_probability": 0.5915,
+      "models_disagree": false,
+      "confidence": "medium",
+      "confidence_historical_accuracy": 0.6175,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": -0.265546,
+            "defense": -0.041449,
+            "offense_percentile": 0.3,
+            "defense_percentile": 32.7,
+            "offense_rating": 0.3,
+            "defense_rating": 67.3
+          },
+          "away": {
+            "team": "MIA",
+            "offense": -0.042338,
+            "defense": 0.083943,
+            "offense_percentile": 36.2,
+            "defense_percentile": 89.1,
+            "offense_rating": 36.2,
+            "defense_rating": 10.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": -0.255745,
+            "defense": 0.063156,
+            "offense_percentile": 1.9,
+            "defense_percentile": 56.9,
+            "offense_rating": 1.9,
+            "defense_rating": 43.1
+          },
+          "away": {
+            "team": "MIA",
+            "offense": 0.0069,
+            "defense": 0.158543,
+            "offense_percentile": 39.7,
+            "defense_percentile": 83.8,
+            "offense_rating": 39.7,
+            "defense_rating": 16.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": -0.268588,
+            "defense": -0.097914,
+            "offense_percentile": 0.8,
+            "defense_percentile": 37.2,
+            "offense_rating": 0.8,
+            "defense_rating": 62.8
+          },
+          "away": {
+            "team": "MIA",
+            "offense": -0.1125,
+            "defense": 0.020727,
+            "offense_percentile": 30.5,
+            "defense_percentile": 88.4,
+            "offense_rating": 30.5,
+            "defense_rating": 11.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": -3.084798,
+            "defense": 1.77331,
+            "offense_percentile": 18.3,
+            "defense_percentile": 65.8,
+            "offense_rating": 18.3,
+            "defense_rating": 34.2
+          },
+          "away": {
+            "team": "MIA",
+            "offense": 1.729497,
+            "defense": 9.006211,
+            "offense_percentile": 63.8,
+            "defense_percentile": 99.6,
+            "offense_rating": 63.8,
+            "defense_rating": 0.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": 0.216414,
+            "defense": 0.267564,
+            "offense_percentile": 0.8,
+            "defense_percentile": 28.9,
+            "offense_rating": 0.8,
+            "defense_rating": 71.1
+          },
+          "away": {
+            "team": "MIA",
+            "offense": 0.286306,
+            "defense": 0.301919,
+            "offense_percentile": 57.0,
+            "defense_percentile": 80.0,
+            "offense_rating": 57.0,
+            "defense_rating": 20.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": 0.116402,
+            "defense": 0.080583,
+            "offense_percentile": 98.4,
+            "defense_percentile": 84.7,
+            "offense_rating": 1.6,
+            "defense_rating": 84.7
+          },
+          "away": {
+            "team": "MIA",
+            "offense": 0.082724,
+            "defense": 0.063119,
+            "offense_percentile": 80.8,
+            "defense_percentile": 49.5,
+            "offense_rating": 19.2,
+            "defense_rating": 49.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": 0.024116,
+            "defense": 0.013782,
+            "offense_percentile": 57.2,
+            "defense_percentile": 8.9,
+            "offense_rating": 42.8,
+            "defense_rating": 8.9
+          },
+          "away": {
+            "team": "MIA",
+            "offense": 0.024075,
+            "defense": 0.019755,
+            "offense_percentile": 56.9,
+            "defense_percentile": 33.8,
+            "offense_rating": 43.1,
+            "defense_rating": 33.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": 0.059333,
+            "defense": 0.069226,
+            "offense_percentile": 4.6,
+            "defense_percentile": 11.7,
+            "offense_rating": 4.6,
+            "defense_rating": 88.3
+          },
+          "away": {
+            "team": "MIA",
+            "offense": 0.108187,
+            "defense": 0.111342,
+            "offense_percentile": 80.1,
+            "defense_percentile": 86.6,
+            "offense_rating": 80.1,
+            "defense_rating": 13.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "LV",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "MIA",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "LV",
+          "headline": "LV faces a 4-3 front",
+          "detail": "MIA's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "LV",
+          "headline": "LV -11.4 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), LV has been being outscored by opponents by 11.4 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "form",
+          "team": "MIA",
+          "headline": "MIA -6.7 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), MIA has been being outscored by opponents by 6.7 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "LV",
+          "headline": "LV at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_GB_MIN",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 16:25:00",
+      "home": {
+        "team": "MIN",
+        "win_probability": 0.5547
+      },
+      "away": {
+        "team": "GB",
+        "win_probability": 0.4453
+      },
+      "predicted_winner": "MIN",
+      "predicted_margin": 1.7,
+      "predicted_spread_display": "MIN -1.7",
+      "market_spread_line": 1.5,
+      "model_minus_market": 0.2,
+      "margin_implied_probability": 0.5511,
+      "models_disagree": false,
+      "confidence": "low",
+      "confidence_historical_accuracy": 0.5983,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": -0.120711,
+            "defense": -0.208899,
+            "offense_percentile": 10.9,
+            "defense_percentile": 0.7,
+            "offense_rating": 10.9,
+            "defense_rating": 99.3
+          },
+          "away": {
+            "team": "GB",
+            "offense": 0.065765,
+            "defense": 0.069718,
+            "offense_percentile": 77.7,
+            "defense_percentile": 84.7,
+            "offense_rating": 77.7,
+            "defense_rating": 15.3
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": -0.205135,
+            "defense": -0.348215,
+            "offense_percentile": 4.1,
+            "defense_percentile": 0.1,
+            "offense_rating": 4.1,
+            "defense_rating": 99.9
+          },
+          "away": {
+            "team": "GB",
+            "offense": 0.125187,
+            "defense": 0.159112,
+            "offense_percentile": 71.1,
+            "defense_percentile": 83.9,
+            "offense_rating": 71.1,
+            "defense_rating": 16.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": -0.026847,
+            "defense": -0.150582,
+            "offense_percentile": 70.6,
+            "defense_percentile": 15.6,
+            "offense_rating": 70.6,
+            "defense_rating": 84.4
+          },
+          "away": {
+            "team": "GB",
+            "offense": -0.080559,
+            "defense": -0.047104,
+            "offense_percentile": 45.6,
+            "defense_percentile": 62.3,
+            "offense_rating": 45.6,
+            "defense_rating": 37.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": -2.518934,
+            "defense": -9.553687,
+            "offense_percentile": 22.4,
+            "defense_percentile": 0.4,
+            "offense_rating": 22.4,
+            "defense_rating": 99.6
+          },
+          "away": {
+            "team": "GB",
+            "offense": 2.627907,
+            "defense": 1.448834,
+            "offense_percentile": 71.7,
+            "defense_percentile": 62.4,
+            "offense_rating": 71.7,
+            "defense_rating": 37.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": 0.271344,
+            "defense": 0.252077,
+            "offense_percentile": 37.7,
+            "defense_percentile": 12.2,
+            "offense_rating": 37.7,
+            "defense_rating": 87.8
+          },
+          "away": {
+            "team": "GB",
+            "offense": 0.296517,
+            "defense": 0.304549,
+            "offense_percentile": 69.1,
+            "defense_percentile": 82.6,
+            "offense_rating": 69.1,
+            "defense_rating": 17.4
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": 0.125729,
+            "defense": 0.145319,
+            "offense_percentile": 99.4,
+            "defense_percentile": 100.0,
+            "offense_rating": 0.6,
+            "defense_rating": 100.0
+          },
+          "away": {
+            "team": "GB",
+            "offense": 0.080586,
+            "defense": 0.046664,
+            "offense_percentile": 78.3,
+            "defense_percentile": 14.1,
+            "offense_rating": 21.7,
+            "defense_rating": 14.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": 0.026747,
+            "defense": 0.026516,
+            "offense_percentile": 69.4,
+            "defense_percentile": 68.7,
+            "offense_rating": 30.6,
+            "defense_rating": 68.7
+          },
+          "away": {
+            "team": "GB",
+            "offense": 0.013727,
+            "defense": 0.015771,
+            "offense_percentile": 9.1,
+            "defense_percentile": 15.7,
+            "offense_rating": 90.9,
+            "defense_rating": 15.7
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": 0.068028,
+            "defense": 0.053017,
+            "offense_percentile": 12.6,
+            "defense_percentile": 1.2,
+            "offense_rating": 12.6,
+            "defense_rating": 98.8
+          },
+          "away": {
+            "team": "GB",
+            "offense": 0.122861,
+            "defense": 0.102894,
+            "offense_percentile": 92.9,
+            "defense_percentile": 75.5,
+            "offense_rating": 92.9,
+            "defense_rating": 24.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "MIN",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "GB",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "MIN",
+          "headline": "MIN faces a 4-3 front",
+          "detail": "GB's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "MIN",
+          "headline": "MIN +4.5 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), MIN has been outscoring opponents by 4.5 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "form",
+          "team": "GB",
+          "headline": "GB -3.7 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), GB has been being outscored by opponents by 3.7 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "MIN",
+          "headline": "MIN at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        },
+        {
+          "type": "context",
+          "team": null,
+          "headline": "Divisional matchup",
+          "detail": "Familiar opponents; historically tighter margins.",
+          "impact": "neutral"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_DAL_NYG",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-13 20:20:00",
+      "home": {
+        "team": "NYG",
+        "win_probability": 0.4894
+      },
+      "away": {
+        "team": "DAL",
+        "win_probability": 0.5106
+      },
+      "predicted_winner": "DAL",
+      "predicted_margin": -3.13,
+      "predicted_spread_display": "DAL -3.1",
+      "market_spread_line": -2.5,
+      "model_minus_market": -0.63,
+      "margin_implied_probability": 0.4063,
+      "models_disagree": false,
+      "confidence": "coin_flip",
+      "confidence_historical_accuracy": 0.4975,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": 0.040923,
+            "defense": 0.00356,
+            "offense_percentile": 69.4,
+            "defense_percentile": 55.4,
+            "offense_rating": 69.4,
+            "defense_rating": 44.6
+          },
+          "away": {
+            "team": "DAL",
+            "offense": 0.05238,
+            "defense": 0.197437,
+            "offense_percentile": 73.4,
+            "defense_percentile": 99.9,
+            "offense_rating": 73.4,
+            "defense_rating": 0.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": -0.010762,
+            "defense": -0.0338,
+            "offense_percentile": 35.2,
+            "defense_percentile": 24.9,
+            "offense_rating": 35.2,
+            "defense_rating": 75.1
+          },
+          "away": {
+            "team": "DAL",
+            "offense": 0.119684,
+            "defense": 0.321582,
+            "offense_percentile": 69.7,
+            "defense_percentile": 99.1,
+            "offense_rating": 69.7,
+            "defense_rating": 0.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": 0.066966,
+            "defense": 0.067327,
+            "offense_percentile": 95.3,
+            "defense_percentile": 96.8,
+            "offense_rating": 95.3,
+            "defense_rating": 3.2
+          },
+          "away": {
+            "team": "DAL",
+            "offense": -0.050509,
+            "defense": 0.082572,
+            "offense_percentile": 60.4,
+            "defense_percentile": 98.0,
+            "offense_rating": 60.4,
+            "defense_rating": 2.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": -0.926709,
+            "defense": 2.533214,
+            "offense_percentile": 37.0,
+            "defense_percentile": 74.0,
+            "offense_rating": 37.0,
+            "defense_rating": 26.0
+          },
+          "away": {
+            "team": "DAL",
+            "offense": -1.292454,
+            "defense": 6.659387,
+            "offense_percentile": 33.4,
+            "defense_percentile": 97.4,
+            "offense_rating": 33.4,
+            "defense_rating": 2.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": 0.276017,
+            "defense": 0.301963,
+            "offense_percentile": 43.9,
+            "defense_percentile": 80.1,
+            "offense_rating": 43.9,
+            "defense_rating": 19.9
+          },
+          "away": {
+            "team": "DAL",
+            "offense": 0.306709,
+            "defense": 0.333086,
+            "offense_percentile": 80.1,
+            "defense_percentile": 98.4,
+            "offense_rating": 80.1,
+            "defense_rating": 1.6
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": 0.099579,
+            "defense": 0.074788,
+            "offense_percentile": 93.6,
+            "defense_percentile": 75.6,
+            "offense_rating": 6.4,
+            "defense_rating": 75.6
+          },
+          "away": {
+            "team": "DAL",
+            "offense": 0.049984,
+            "defense": 0.058849,
+            "offense_percentile": 26.2,
+            "defense_percentile": 38.9,
+            "offense_rating": 73.8,
+            "defense_rating": 38.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": 0.014001,
+            "defense": 0.023275,
+            "offense_percentile": 9.9,
+            "defense_percentile": 53.1,
+            "offense_rating": 90.1,
+            "defense_rating": 53.1
+          },
+          "away": {
+            "team": "DAL",
+            "offense": 0.019669,
+            "defense": 0.010148,
+            "offense_percentile": 34.4,
+            "defense_percentile": 2.3,
+            "offense_rating": 65.6,
+            "defense_rating": 2.3
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": 0.084144,
+            "defense": 0.0954,
+            "offense_percentile": 39.6,
+            "defense_percentile": 61.6,
+            "offense_rating": 39.6,
+            "defense_rating": 38.4
+          },
+          "away": {
+            "team": "DAL",
+            "offense": 0.094565,
+            "defense": 0.113699,
+            "offense_percentile": 59.5,
+            "defense_percentile": 89.0,
+            "offense_rating": 59.5,
+            "defense_rating": 11.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "NYG",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "DAL",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "DAL",
+          "headline": "DAL faces a 3-4 front",
+          "detail": "NYG's roster profiles as a 3-4 base defence (nose tackle present, OLB-heavy edge group).",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "NYG",
+          "headline": "NYG +1.7 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), NYG has been outscoring opponents by 1.7 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "form",
+          "team": "DAL",
+          "headline": "DAL -5.6 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), DAL has been being outscored by opponents by 5.6 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "venue",
+          "team": "NYG",
+          "headline": "NYG at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        },
+        {
+          "type": "context",
+          "team": null,
+          "headline": "Divisional matchup",
+          "detail": "Familiar opponents; historically tighter margins.",
+          "impact": "neutral"
+        }
+      ]
+    },
+    {
+      "game_id": "2026_01_DEN_KC",
+      "season": 2026,
+      "week": 1,
+      "kickoff": "2026-09-14 20:15:00",
+      "home": {
+        "team": "KC",
+        "win_probability": 0.5783
+      },
+      "away": {
+        "team": "DEN",
+        "win_probability": 0.4217
+      },
+      "predicted_winner": "KC",
+      "predicted_margin": 2.85,
+      "predicted_spread_display": "KC -2.9",
+      "market_spread_line": 3.0,
+      "model_minus_market": -0.15,
+      "margin_implied_probability": 0.5855,
+      "models_disagree": false,
+      "confidence": "low",
+      "confidence_historical_accuracy": 0.5983,
+      "feature_comparison": [
+        {
+          "metric": "epa_per_play",
+          "label": "EPA / Play",
+          "short": "Expected Points Added per play",
+          "definition": "How many points a team adds, on average, versus what a league-average team would be expected to score from the same down, distance and field position. +0.10 is strong; 0.00 is average; negative means the offence is losing ground.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": -0.141939,
+            "defense": -0.079855,
+            "offense_percentile": 7.2,
+            "defense_percentile": 18.1,
+            "offense_rating": 7.2,
+            "defense_rating": 81.9
+          },
+          "away": {
+            "team": "DEN",
+            "offense": -0.043733,
+            "defense": -0.096785,
+            "offense_percentile": 35.6,
+            "defense_percentile": 13.7,
+            "offense_rating": 35.6,
+            "defense_rating": 86.3
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_dropback",
+          "label": "Pass EPA / Dropback",
+          "short": "Passing efficiency",
+          "definition": "EPA on pass attempts and sacks. Passing efficiency predicts future wins far more reliably than rushing, which is why it carries more weight.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": -0.196054,
+            "defense": -0.035472,
+            "offense_percentile": 4.7,
+            "defense_percentile": 24.4,
+            "offense_rating": 4.7,
+            "defense_rating": 75.6
+          },
+          "away": {
+            "team": "DEN",
+            "offense": -0.021071,
+            "defense": -0.184233,
+            "offense_percentile": 32.7,
+            "defense_percentile": 3.0,
+            "offense_rating": 32.7,
+            "defense_rating": 97.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "epa_per_rush",
+          "label": "Rush EPA / Carry",
+          "short": "Rushing efficiency",
+          "definition": "EPA on designed runs. Noisier and less predictive than passing EPA.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": -0.05257,
+            "defense": -0.129142,
+            "offense_percentile": 59.5,
+            "defense_percentile": 23.2,
+            "offense_rating": 59.5,
+            "defense_rating": 76.8
+          },
+          "away": {
+            "team": "DEN",
+            "offense": -0.07852,
+            "defense": 0.013969,
+            "offense_percentile": 46.6,
+            "defense_percentile": 86.8,
+            "offense_rating": 46.6,
+            "defense_rating": 13.2
+          },
+          "data_available": true
+        },
+        {
+          "metric": "cpoe",
+          "label": "CPOE",
+          "short": "Completion % Over Expected",
+          "definition": "Actual completion rate minus the rate expected given throw depth, pressure and receiver separation. Isolates quarterback accuracy from scheme and difficulty. +3% is very good.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": -4.755734,
+            "defense": -1.681259,
+            "offense_percentile": 9.5,
+            "defense_percentile": 27.4,
+            "offense_rating": 9.5,
+            "defense_rating": 72.6
+          },
+          "away": {
+            "team": "DEN",
+            "offense": -2.574112,
+            "defense": -3.263717,
+            "offense_percentile": 22.1,
+            "defense_percentile": 14.9,
+            "offense_rating": 22.1,
+            "defense_rating": 85.1
+          },
+          "data_available": true
+        },
+        {
+          "metric": "success_proxy",
+          "label": "First Downs / Play",
+          "short": "Drive-sustaining rate",
+          "definition": "Share of plays producing a first down \u2014 a proxy for play success rate.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": 0.241415,
+            "defense": 0.243694,
+            "offense_percentile": 7.6,
+            "defense_percentile": 6.5,
+            "offense_rating": 7.6,
+            "defense_rating": 93.5
+          },
+          "away": {
+            "team": "DEN",
+            "offense": 0.26366,
+            "defense": 0.246519,
+            "offense_percentile": 27.7,
+            "defense_percentile": 8.0,
+            "offense_rating": 27.7,
+            "defense_rating": 92.0
+          },
+          "data_available": true
+        },
+        {
+          "metric": "sack_rate",
+          "label": "Sack Rate",
+          "short": "Sacks taken per dropback",
+          "definition": "How often the offence's dropbacks end in a sack.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": 0.104338,
+            "defense": 0.066762,
+            "offense_percentile": 95.5,
+            "defense_percentile": 58.3,
+            "offense_rating": 4.5,
+            "defense_rating": 58.3
+          },
+          "away": {
+            "team": "DEN",
+            "offense": 0.05097,
+            "defense": 0.106291,
+            "offense_percentile": 27.7,
+            "defense_percentile": 98.8,
+            "offense_rating": 72.3,
+            "defense_rating": 98.8
+          },
+          "data_available": true
+        },
+        {
+          "metric": "turnover_rate",
+          "label": "Turnover Rate",
+          "short": "Giveaways per play",
+          "definition": "Interceptions plus lost fumbles per offensive play.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": 0.017465,
+            "defense": 0.014621,
+            "offense_percentile": 23.5,
+            "defense_percentile": 11.7,
+            "offense_rating": 76.5,
+            "defense_rating": 11.7
+          },
+          "away": {
+            "team": "DEN",
+            "offense": 0.017231,
+            "defense": 0.018338,
+            "offense_percentile": 22.6,
+            "defense_percentile": 26.9,
+            "offense_rating": 77.4,
+            "defense_rating": 26.9
+          },
+          "data_available": true
+        },
+        {
+          "metric": "explosive_pass_rate",
+          "label": "Explosive Pass Rate",
+          "short": "20+ yard completions per attempt",
+          "definition": "How often the passing game produces a 20-yard-plus gain.",
+          "higher_is_better": true,
+          "defense_metric_label": "EPA allowed",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": 0.072136,
+            "defense": 0.08296,
+            "offense_percentile": 18.0,
+            "defense_percentile": 35.0,
+            "offense_rating": 18.0,
+            "defense_rating": 65.0
+          },
+          "away": {
+            "team": "DEN",
+            "offense": 0.069846,
+            "defense": 0.072227,
+            "offense_percentile": 14.7,
+            "defense_percentile": 15.5,
+            "offense_rating": 14.7,
+            "defense_rating": 84.5
+          },
+          "data_available": true
+        },
+        {
+          "metric": "injury_impact",
+          "label": "Injury Impact",
+          "short": "Position-weighted availability score",
+          "definition": "A single score for who a team is missing, weighting each absence by position and by how likely the player is to sit. The weights are fitted from 2,173 games, not assumed: quarterback absences cost about 2.6 points of margin and skill-position absences about 0.7, while offensive line, defensive line, linebacker and secondary absences are statistically indistinguishable from zero. League average is about 2.0; above 4.0 is a heavily depleted roster.",
+          "higher_is_better": false,
+          "defense_metric_label": "defensive rate",
+          "ratings_are_pre_oriented": true,
+          "home": {
+            "team": "KC",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "away": {
+            "team": "DEN",
+            "offense": null,
+            "defense": null,
+            "offense_percentile": null,
+            "defense_percentile": null,
+            "offense_rating": null,
+            "defense_rating": null
+          },
+          "data_available": false
+        }
+      ],
+      "situational_context": [
+        {
+          "type": "scheme",
+          "team": "KC",
+          "headline": "KC faces a 4-3 front",
+          "detail": "DEN's roster profiles as a 4-3 base defence.",
+          "impact": "neutral"
+        },
+        {
+          "type": "form",
+          "team": "KC",
+          "headline": "KC -3.2 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), KC has been being outscored by opponents by 3.2 points per game.",
+          "impact": "negative"
+        },
+        {
+          "type": "form",
+          "team": "DEN",
+          "headline": "DEN +3.4 pts/game trend",
+          "detail": "Over the last 10 games (exponentially weighted), DEN has been outscoring opponents by 3.4 points per game.",
+          "impact": "positive"
+        },
+        {
+          "type": "venue",
+          "team": "KC",
+          "headline": "KC at home",
+          "detail": "Home teams have won 54.7% of games in the training window; the model prices this in rather than applying a fixed bonus.",
+          "impact": "positive"
+        },
+        {
+          "type": "context",
+          "team": null,
+          "headline": "Divisional matchup",
+          "detail": "Familiar opponents; historically tighter margins.",
+          "impact": "neutral"
+        }
+      ]
+    }
+  ],
+  "reference_games": [
+    {
+      "game_id": "2024_08_CAR_DEN",
+      "season": 2024,
+      "week": 8,
+      "home_team": "DEN",
+      "away_team": "CAR",
+      "actual_margin": 14.0,
+      "actual_home_win": true,
+      "home_inj_impact": 0.499,
+      "away_inj_impact": 10.042,
+      "home_inj_qb_out": false,
+      "away_inj_qb_out": false,
+      "note": "completed game, included so injury UI can be built against real values"
+    },
+    {
+      "game_id": "2025_15_NYJ_JAX",
+      "season": 2025,
+      "week": 15,
+      "home_team": "JAX",
+      "away_team": "NYJ",
+      "actual_margin": 28.0,
+      "actual_home_win": true,
+      "home_inj_impact": 0.497,
+      "away_inj_impact": 10.0025,
+      "home_inj_qb_out": false,
+      "away_inj_qb_out": true,
+      "note": "completed game, included so injury UI can be built against real values"
+    },
+    {
+      "game_id": "2024_18_KC_DEN",
+      "season": 2024,
+      "week": 18,
+      "home_team": "DEN",
+      "away_team": "KC",
+      "actual_margin": 38.0,
+      "actual_home_win": true,
+      "home_inj_impact": 0.705,
+      "away_inj_impact": 10.186,
+      "home_inj_qb_out": false,
+      "away_inj_qb_out": false,
+      "note": "completed game, included so injury UI can be built against real values"
+    }
+  ],
+  "confidence_tiers": {
+    "bands": [
+      {
+        "tier": "high",
+        "prob_range": [
+          0.65,
+          1.0
+        ],
+        "games": 1744,
+        "share_of_slate": 0.4186,
+        "historical_accuracy": 0.7454
+      },
+      {
+        "tier": "medium",
+        "prob_range": [
+          0.6,
+          0.65
+        ],
+        "games": 813,
+        "share_of_slate": 0.1952,
+        "historical_accuracy": 0.6175
+      },
+      {
+        "tier": "low",
+        "prob_range": [
+          0.55,
+          0.6
+        ],
+        "games": 819,
+        "share_of_slate": 0.1966,
+        "historical_accuracy": 0.5983
+      },
+      {
+        "tier": "coin_flip",
+        "prob_range": [
+          0.5,
+          0.55
+        ],
+        "games": 790,
+        "share_of_slate": 0.1896,
+        "historical_accuracy": 0.4975
+      }
+    ],
+    "cumulative": [
+      {
+        "threshold": 0.5,
+        "n": 4166,
+        "coverage": 1.0,
+        "accuracy": 0.6445
+      },
+      {
+        "threshold": 0.55,
+        "n": 3376,
+        "coverage": 0.8104,
+        "accuracy": 0.6789
+      },
+      {
+        "threshold": 0.6,
+        "n": 2557,
+        "coverage": 0.6138,
+        "accuracy": 0.7047
+      },
+      {
+        "threshold": 0.65,
+        "n": 1744,
+        "coverage": 0.4186,
+        "accuracy": 0.7454
+      },
+      {
+        "threshold": 0.7,
+        "n": 1087,
+        "coverage": 0.2609,
+        "accuracy": 0.7737
+      },
+      {
+        "threshold": 0.75,
+        "n": 563,
+        "coverage": 0.1351,
+        "accuracy": 0.8011
+      },
+      {
+        "threshold": 0.8,
+        "n": 239,
+        "coverage": 0.0574,
+        "accuracy": 0.8619
+      }
+    ],
+    "note": "Accuracy above roughly 65% is bought by declining to call the close games, not by better modelling. Never quote an accuracy figure without the coverage it applies to."
+  }
+}

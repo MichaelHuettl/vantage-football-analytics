@@ -1,0 +1,26 @@
+{
+ "schema_version": 2,
+ "note": "How close NFL games actually are, computed from the same games the prediction model trains on. It is the context the accuracy figures need, and it is why no forecaster \u2014 the betting market included \u2014 gets far past two thirds.",
+ "source": "artifacts/model_dataset.csv (nflverse team-week aggregates)",
+ "computed": "2026-08-20",
+ "games": 5133,
+ "seasons": [
+  2006,
+  2025
+ ],
+ "median_margin": 8.0,
+ "within_3": 0.2320280537697253,
+ "within_7": 0.47496590687706997,
+ "within_10": 0.581531268264173,
+ "perfect_above_7_ceiling": 0.762517046561465,
+ "margin_frequency": {
+  "2": 0.04324956165984804,
+  "3": 0.14630820183128776,
+  "4": 0.05143191116306254,
+  "6": 0.06545879602571596,
+  "7": 0.08805766608221313,
+  "8": 0.03798947983635301,
+  "9": 0.01655951685174362,
+  "10": 0.05201636469900643
+ }
+}
