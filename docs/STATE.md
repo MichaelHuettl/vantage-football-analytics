@@ -26,14 +26,18 @@ coverage column from F to G. Every extractor names the version it targets in
 `DEFAULT_WB`; when a new one arrives, re-run each script and read the row map
 before trusting the output.
 
-**Three extractors read the workbook** and write JSON into `src/data/`. They are
-the only things that touch it:
+**Six extractors feed the site** and write JSON into `src/data/`. The first
+four are the only things that touch the workbook; the last two read a PDF and
+the nflverse export instead:
 
 | Script | Writes | Covers |
 | --- | --- | --- |
 | `scripts/curated/rb_charts.py` | `rb-charts.json` | RB scatters, historic RB 1-3, opportunity share |
 | `scripts/curated/kicker_charts.py` | `kicker-charts.json` | FG attempts, kicker scoring, advantages, board |
 | `scripts/curated/defense_charts.py` | `defense-charts.json` | 9 defense blocks + coordinators |
+| `scripts/curated/te_charts.py` | `te-charts.json` | 5 TE scatters, history, TE1-3/4-6 grids |
+| `scripts/curated/qb_charts.py` | `qb-charts.json` | 4 QB scatters + correlations (**reads a PDF**) |
+| `scripts/curated/player_profiles.py` | `player-profiles.json` | 79 player profiles (**reads the nflverse export**) |
 
 **Nothing is scheduled.** There is no git remote, so no GitHub Action has ever
 run. Every feed and fetch happens when someone types the command (see open
@@ -58,12 +62,13 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, section cards, Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positions | Six pages. **RB, K and DST are built** — one column: methodology, then the evidence. WR/TE/QB keep the two-column slot-and-pool layout |
-| Injuries | Training camp section live (49 entries), team filter in the URL. Weekly report empty until Week 1 |
+| Positions | Six pages. **RB, K, DST, TE and QB are built** — one column: methodology, then the evidence. WR keeps the two-column slot-and-pool layout |
+| Injuries | Training camp section (58 entries) plus a **live wire** reconciled against it, team filter in the URL. Weekly report empty until Week 1 |
 | Film | Three concepts with SVG diagrams, by-team index |
 | Games | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
-| News | **Live, but refreshed by hand** — RSS headlines + 118-post beat archive. The cron cannot run yet; see open item 1 |
-| Player pages | 120 generated. Chart slots empty |
+| News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
+| Game prediction | **Built** — methodology, confidence tiers, and a page per game for 16 week-one matchups. Payload comes from the separate prediction pipeline |
+| Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
 | Glossary | Built |
 
 ## Departures from the brief, and why
@@ -91,20 +96,78 @@ build` with a line number instead of shipping a broken page.
 
 ## Open items
 
-1. **The news cron has never run, because the repo has no git remote.**
-   `.github/workflows/news.yml` is correct and committed, but GitHub Actions
-   only runs on GitHub, and `git remote -v` is empty — the repo is local-only.
-   So the feeds refresh exactly when someone types `npm run news` and
-   `npm run beat`, and not otherwise. Both scripts were verified working on
-   2026-08-14 (four of four RSS feeds, 34 of 34 beat accounts), so this is a
-   plumbing gap, not a code fault. Fixing it means pushing to GitHub and
-   enabling Actions; until then the section is as fresh as the last manual run.
-   A local `launchd` timer is the alternative if the repo stays private.
-2. **Position pages: RB, K and DST are built. WR/TE and QB are not.**
+1. **The news headlines are live; the beat feed still is not.**
+   Resolved for headlines on 2026-08-17. `/news` now pulls the four publisher
+   RSS feeds at request time (`src/lib/live-news.ts`) and an `AutoRefresh`
+   component re-runs the server render every 60s, so an open page keeps up
+   without anyone typing a command. **This required lifting §11's "no
+   third-party API before the site is finished" — the operator's explicit
+   decision**, on the grounds that having to ask for a refresh by hand was the
+   worse failure and there was no other fix while the repo has no remote.
+   The trade is bounded on purpose:
+   - `src/data/news.json` is still the floor. Live items merge *over* it, so a
+     feed outage makes the page stale rather than empty (§8), and the archive
+     keeps history no single pull returns. `npm run news` still writes it.
+   - Publishers are polled at most once per 5 minutes per process, by a TTL
+     cache in `live-news.ts` that also shares the in-flight promise. Verified:
+     five page loads produced one pull.
+   - **The fetches are `cache: "no-store"`, and that is load-bearing.** They
+     first used `next: { revalidate: 300 }`, which reads like the polite choice
+     and is the wrong one: Next serves a revalidated fetch
+     stale-while-revalidate, so the render gets the *previous* response while
+     the refresh happens behind it. On a page nobody loads for hours that means
+     always being one pull behind — on 2026-08-18 the news page showed Aug 17
+     headlines under an Aug 18 date, and the injury wire was a day stale, while
+     the same code path called from the script returned 74 items from that day.
+     Politeness is the TTL cache's job; freshness is the fetch's. Do not put
+     `revalidate` back on these.
+   - `live` on the returned object says whether the reader is seeing a live
+     pull or the last good archive, and the page prints the difference (§6).
+   **The beat feed is unchanged** — still `npm run beat` by hand, still going
+   through Nitter. `.github/workflows/news.yml` remains committed and still has
+   never run; `scripts/refresh-feeds.sh` is a launchd runner for both scripts,
+   written but **not installed** (see the Commands section).
+1b. **The injury page has a live wire, from two sources — not the three asked for.**
+   Built 2026-08-17. `/injuries` pulls at request time and re-renders on the
+   same 60s `AutoRefresh` as the news page. What it shows:
+   - **Where the wire disagrees with the camp report.** Currently nothing, and
+     that is printed as a result rather than hidden.
+   - **Serious absences with no camp record** — Brandon Aiyuk, Isaac Guerendo
+     and four others on the last run.
+   - **Injury headlines** from Draft Sharks.
+
+   **ESPN and Yahoo were requested and are deliberately not used.** Both name
+   `anthropic-ai` in robots.txt with `Disallow: /`; Yahoo also names
+   `Claude-Web`. Their `User-agent: *` rules would permit the injury pages, so
+   **this is available to the operator** — it is specifically an agent writing
+   this code that is disallowed, and reaching them from here would have meant
+   choosing a user-agent to get around a rule aimed at the author. Left as the
+   operator's call. Sources used instead:
+   - **Sleeper's player endpoint** — public, robots.txt fully permissive,
+     already what `audit-teams.mjs` audits against. Carries `injury_status`,
+     `injury_body_part`, `injury_notes` and `search_rank`.
+   - **Draft Sharks' news sitemap** (`/news.xml`) — a Google News sitemap the
+     publisher advertises in a robots.txt that allows everything. Title, link
+     and date only (§2).
+
+   **Two findings worth keeping.** First, Sleeper's "Questionable" is a camp
+   catch-all — 93 of 129 injured skill players carry it in August — so a naive
+   band comparison produced *thirteen* false conflicts, every one of them a page
+   status against "Questionable". A disagreement is now only reported when the
+   claims cannot both be true. Second, 24 of the 35 players carrying a serious
+   status are deep roster, so the league-wide list is filtered by Sleeper's
+   `search_rank` (`RELEVANCE_RANK`, 400) — without it the section buried
+   Aiyuk under third-string tight ends.
+
+   **Nothing overwrites a hand-authored record.** `camp-injuries.json` is
+   reporting, with an attributed timeline or none (§5.3); the wire sits beside
+   it. This is the standing fix for open item 6.
+
+2. **Position pages: RB, K, DST, TE and QB are built. WR is not.**
    Each built page follows the same shape — a script reads the workbook, the
-   JSON holds every computed value, and the components only draw (§11). WR/TE
-   is the obvious next one: six of the workbook's eleven charts are on that
-   sheet, and `rb_charts.py` is the closest template.
+   JSON holds every computed value, and the components only draw (§11). WR is
+   the last one: six of the workbook's eleven charts are on that sheet, and
+   `te_charts.py` already reads it, which makes it the closest template.
    - **RB** — three scatters, the historic RB 1-3 table, and two ranked tables.
      `ScatterChart` names every point: thirty candidate positions per label,
      six directions at five distances, with a leader line past the inner ring.
@@ -124,6 +187,50 @@ build` with a line number instead of shipping a broken page.
      secondary, box rates, offseason, coordinators, schedule. The 2025 columns
      are **regrouped by what they measure** rather than which sheet block they
      came from. The three findings sit at the **foot** of the page.
+   - **TE** — built 2026-08-17, in the operator's own section order: route
+     participation against target share, then against targets per route run,
+     yards per game against touchdowns, air yards share against targets per
+     route run, participation against yards per route run, then the 2011-2025
+     history and check-the-box grids. Five scatters of 25 tight
+     ends each, with the workbook's own groupings ("Decoys (routes but no
+     targets)", "TD Inflation") beside each chart.
+     - **This page publishes 4for4's licensed columns** — route participation,
+       TPRR and YPRR. §2 rules them out and the note below records them as cut;
+       the operator extended the RB-chart decision to this whole page on
+       2026-08-17. His call, recorded rather than assumed.
+     - **The sheet holds the TE1-3 grid twice and the two disagree.** One copy
+       sits at row 386 under "2011-2025", the other at 417 under "PRESENT
+       CONTEXT / 2023-2025", and the newer promotes Kyle Pitts into the air
+       yards column and into best candidates where the older has "George Kittle
+       (Injury)". The operator ruled that the fifteen-year table is the one
+       that classifies a TE1, so **386 is the page's grid and the three-year
+       copy is not published** — which makes the disagreement moot rather than
+       something the reader is handed to arbitrate.
+     - TE's placeholder copy in `positions.json` described "snap share against
+       target share" — the fallback from when route data was cut. It was
+       rewritten, because a page whose charts say one thing and whose
+       methodology says another is worse than either.
+   - **QB** — built 2026-08-18, four sections: what a carry is worth, scramble
+     count against scramble rate, efficiency against scoring, and team pass
+     rate. **Its source is a PDF, not the workbook** — there is no QB tab in the
+     (4) workbook, so `qb_charts.py` reads the operator's "QB Statistics" export
+     directly, inflating the Flate streams and undoing a CID offset of 29. No
+     poppler or PIL on this machine, so both are done in ~60 lines rather than
+     by adding a dependency.
+     - **Six rows had rushing YARDS in the rushing ATTEMPTS column** — Rodgers,
+       Goff, Burrow, Flacco, Stafford and Tagovailoa. Each printed figure equals
+       that player's rushing yards exactly, checked against Sleeper's 2025 stats.
+       Stafford is what exposed it: 1 "attempt" against 597 dropbacks produced
+       −5.69 designed carries, which is impossible. The other five were wrong
+       without being absurd. They live in `CORRECTIONS`, the script refuses to
+       apply one whose "was" value no longer matches, and it prints "correction
+       now matches the source" once one becomes redundant. **Herbert is
+       deliberately not corrected** — 86 against Sleeper's 83 is a source
+       disagreement, not a column swap.
+     - The correlations are all computed in the extractor and quoted into the
+       prose from the JSON, so no paragraph hard-codes a number (§11).
+     - **One season, 37 passers.** The page says so at the top. Unlike TE there
+       is no multi-year history to lean on.
    - **The scatters and tables compute nothing.** Medians, extents, quartiles,
      which points get a name and the order they are placed in all come out of
      the Python.
@@ -135,15 +242,18 @@ build` with a line number instead of shipping a broken page.
    everything else waits on the season. The defensive leader is ESPN's sack
    leader, falling back to tackles: neither is "who decided it", so it is worth
    overriding by hand on a game that turned on one play.
-4. **Daniel Carlson is ranked K16 and unsigned.** The data now says so —
-   `status: "fa"`, no team, an FA chip where the team chip goes — but whether
-   an unsigned kicker belongs on a draft board at all is an editorial call, not
-   a data one. Left as ranked.
+4. ~~**Daniel Carlson is ranked K16 and unsigned.**~~ **Closed.** The operator
+   made the editorial call: an unsigned kicker does not belong on a draft
+   board, so Carlson is off the K board entirely and Chase McLaughlin is in at
+   7. He still appears on the kicker page's scoring tables, with an FA marker,
+   because those record what he did rather than who to take.
 5. **Re-run `npm run audit-teams` after the cutdown to 53.** Rosters move
    through the preseason; the audit below is true as of 2026-08-14 and nothing
    keeps it true.
-6. **News tags only players in `players.json`, and nothing links news to the
-   injury page.** `players.json` holds the 120 ranked players, so a headline
+6. **News tags only players in `players.json`. The injury link is now partly
+   closed** — the live wire (item 1b) reconciles the camp report against a feed
+   on every render, so the two can no longer disagree silently. What remains is
+   the tagging itself. `players.json` holds the 120 ranked players, so a headline
    about anyone else is stored and displayed but tagged to nobody and has no
    player page. Separately, `camp-injuries.json` is hand-authored and keyed by
    name, so even a player tracked there gets no automatic link from a matching
@@ -157,11 +267,36 @@ build` with a line number instead of shipping a broken page.
    for "sack leaders with numbers" and the counts are not there. The only 2025
    block with values is simulated pressure. Sack counts *do* exist for 2021-24
    in `scripts/curated/data/dst-history.json`.
-8. **Nitter is fragile.** The beat feed goes through it because X has no free
-   read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
+8. **Nitter is fragile, and was blocked on 2026-08-17.** Five national insiders
+   (`RapSheet`, `AdamSchefter`, `TomPelissero`, `MikeGarafolo`, `FieldYates`)
+   were added to `fetch-beat.mjs` that day for injury news, but **could not be
+   verified** — Nitter returned nothing even for `SleeperNFL`, which had
+   returned 139 posts an hour earlier. They are real accounts; whether this
+   pipeline reaches them is unproven. Re-run `npm run beat` when X unblocks.
+   The beat feed goes through Nitter because X has no free read API. X blocks it periodically. `fetch-beat.mjs` tries multiple
    instances, never wipes data on failure, and is `continue-on-error` in CI, so
    an outage makes the section stale rather than empty. If it stops updating,
    that is the first thing to check.
+9. **`rb_charts.py` still targets the `(2)` workbook.** Its `DEFAULT_WB` names
+   `... (Original) (2).xlsx` while kicker, defense and TE all name `(4)`. Sheet
+   and row numbers shift between versions, so re-running it as it stands reads
+   a two-versions-old sheet. Nothing is wrong on the page today — `rb-charts.json`
+   was generated from the version the script named at the time — but the next
+   run needs either the path argument or a remap against `(4)` first.
+10. **The prediction head-to-head cannot show the model's heaviest inputs.**
+   `model-features.json` publishes the full 55-feature list and
+   `feature_importance` ranks twelve, but eight of those twelve have no
+   per-team values anywhere in the payload — point differential (the single
+   heaviest at 32.3), overall matchup, team win rate and QBR among them. So the
+   comparison a reader sees is the subset that happens to carry values, not the
+   subset that decides the prediction, and the page cannot say otherwise
+   without inventing numbers. Fixing it means asking the prediction pipeline
+   for those per-team fields; it owns its own Python and changes go through
+   Michael (see the peer-session note below).
+11. **`reference_games` is used only in the methodology panel.** Three finished
+   games ride along in the payload to show what an injury gap looks like. A
+   fuller worked example — one real game walked through the model's inputs to
+   its probability — is available from what is already there.
 
 ## Closed items
 
@@ -193,10 +328,28 @@ build` with a line number instead of shipping a broken page.
 | X screenshots | Sheet 10 "Offseason News" — 117 images in 32 team columns |
 | Headshots | `~/Desktop/Player Photos/` — 100 transparent cutouts by position |
 | Photography | `~/Desktop/Claude Code/` and `Thumbnails copy/` |
+| QB statistics PDF | `2026-2027 Fantasy Football Analytics (Original) - QB Statistics.pdf` — there is no QB tab in the workbook |
+| nflverse export | `~/Desktop/Claude Code/NFL Verse Data /` (**the trailing space is real**) — what `player_profiles.py` reads |
+| Prediction pipeline | `~/Desktop/nflverse-data/nfl_predictor/` — **owned by a peer session, not this one** |
 
 **Keep player photos and competitor logos out of the repo.** The working
 directory holds ESPN/Yahoo/Sleeper/Underdog marks and 46 player thumbnails; the
 site was scaffolded into `vantage/` specifically so those stay outside it.
+
+**The prediction pipeline belongs to another session.** The model, its Python
+and its artifacts live in `~/Desktop/nflverse-data/nfl_predictor/` and are
+maintained by a separate session that has asked twice not to have its Python
+edited from here, and for payload changes to be raised through Michael rather
+than made directly. Two sessions editing one pipeline is how conflicts happen.
+The contract between them is a file: that pipeline's
+`export_dashboard_payload.py` produces the payload, and it is **copied** to
+`src/data/game-predictions.json`. Re-copy it after any regeneration — the site
+reads the copy and nothing here watches the source.
+
+That session has since fitted the injury weights rather than assuming them, and
+found offensive-line absences statistically indistinguishable from zero; only
+quarterback (~2.6 points) and skill positions (~0.7) survived. **Do not write
+copy claiming O-line injuries move the line.**
 
 ## Decisions worth not relitigating
 
@@ -254,12 +407,15 @@ site was scaffolded into `vantage/` specifically so those stay outside it.
 - **Smart punctuation breaks naive regex.** A filter written with `'` missed
   `'`. `scripts/lib/signal.mjs` normalises before matching; do the same
   anywhere else text is pattern-matched.
-- **Licensed route-run data is published on the RB page, deliberately.**
+- **Licensed route-run data is published on the RB page and the whole TE page,
+  deliberately.**
   Route participation and targets per route run come from 4for4 and §2 forbids
   republishing them; they were cut for that reason and the cut is recorded
   above. The operator reinstated the third RB chart knowingly after the
   conflict was raised. The decision is his and it is scoped to that chart —
-  it is not a general licence to publish licensed columns.
+  the operator then extended it to the entire tight end page on 2026-08-17,
+  which is where route participation, TPRR and YPRR all appear. Both decisions
+  are his and were taken after the conflict was put to him.
 - **Implied totals are quarters, so they carry two decimals.** Totals and
   spreads move in halves and the implied totals are halves of those: a 49.5
   total on a 7-point spread is exactly 21.25 and 28.25. Rounded to a tenth they
@@ -311,6 +467,15 @@ The three workbook extractors are Python and are run directly, not through npm:
 python3 scripts/curated/rb_charts.py        # -> src/data/rb-charts.json
 python3 scripts/curated/kicker_charts.py    # -> src/data/kicker-charts.json
 python3 scripts/curated/defense_charts.py   # -> src/data/defense-charts.json
+```
+
+`scripts/refresh-feeds.sh` runs both feed scripts on a timer, for the archive
+and the beat feed. It is written but **not installed** — installing it means
+loading a launchd agent, which is a persistent change to the machine rather than
+the repo:
+
+```
+cp scripts/com.vantage.feeds.plist ~/Library/LaunchAgents/ && launchctl load ~/Library/LaunchAgents/com.vantage.feeds.plist
 ```
 
 Each takes an optional path argument if the workbook is not the version named in
