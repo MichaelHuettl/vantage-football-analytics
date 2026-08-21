@@ -12,7 +12,7 @@ import { RunningBackAnalysis } from "@/components/RunningBackAnalysis";
 import { TightEndAnalysis } from "@/components/TightEndAnalysis";
 import { QuarterbackAnalysis } from "@/components/QuarterbackAnalysis";
 import { PLAYERS, getRankingList } from "@/lib/content";
-import { POSITIONS } from "@/lib/types";
+import { POSITIONS, POSITION_BUILT, POSITION_NAME } from "@/lib/types";
 import type { Envelope, Position } from "@/lib/types";
 
 interface PositionDoc {
@@ -28,11 +28,12 @@ interface PositionDoc {
 const docs = (positionsFile as Envelope<PositionDoc[]>).data;
 
 /**
- * Positions with their own worked-up analysis. These run as a single column —
- * straight into the evidence. The rest keep the two-column layout, where the
- * ranked list beside an empty chart slot is the only real content the page has.
+ * Built positions run as a single column — straight into the evidence. The rest
+ * keep the two-column layout, where the ranked list beside an empty chart slot
+ * is the only real content the page has. The set is shared with the index so the
+ * two cannot disagree about what a click leads to.
  */
-const BUILT = new Set<Position>(["RB", "K", "DST", "TE", "QB"]);
+const BUILT = POSITION_BUILT;
 
 /**
  * Positions still carrying the placeholder methodology paragraph and the
@@ -41,14 +42,7 @@ const BUILT = new Set<Position>(["RB", "K", "DST", "TE", "QB"]);
  */
 const PLACEHOLDER_COPY = new Set<Position>(["QB", "WR", "TE", "RB"]);
 
-const FULL_NAME: Record<Position, string> = {
-  QB: "Quarterback",
-  RB: "Running back",
-  WR: "Wide receiver",
-  TE: "Tight end",
-  K: "Kicker",
-  DST: "Defense / special teams",
-};
+const FULL_NAME = POSITION_NAME;
 
 export function generateStaticParams() {
   return POSITIONS.map((p) => ({ position: p.toLowerCase() }));

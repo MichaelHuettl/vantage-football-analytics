@@ -11,6 +11,33 @@ export type Position = "QB" | "RB" | "WR" | "TE" | "K" | "DST";
 
 export const POSITIONS: Position[] = ["QB", "RB", "WR", "TE", "K", "DST"];
 
+/**
+ * Position names in full, for headings and index cards.
+ *
+ * Here rather than in each page because there were two copies and they had
+ * already drifted — the detail page said "Defense / special teams" and the nav
+ * said "Defense / ST". The nav keeps its own shorter map on purpose: it is
+ * labelling a dropdown row, where the long form wraps. Everything writing a
+ * heading uses this one.
+ */
+export const POSITION_NAME: Record<Position, string> = {
+  QB: "Quarterback",
+  RB: "Running back",
+  WR: "Wide receiver",
+  TE: "Tight end",
+  K: "Kicker",
+  DST: "Defense / special teams",
+};
+
+/**
+ * Positions with their own worked-up analysis, as opposed to the two-column
+ * placeholder. Shared so the index and the page itself cannot disagree about
+ * what a reader is going to find when they click through.
+ */
+export const POSITION_BUILT: ReadonlySet<Position> = new Set<Position>([
+  "RB", "K", "DST", "TE", "QB",
+]);
+
 export interface Envelope<T> {
   schema_version: number;
   generated_at: string;
