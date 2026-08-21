@@ -388,7 +388,7 @@ def main():
             ("Fairbairn", "Ka'imi Fairbairn", "HOU", "kaimi-fairbairn"),
         ],
         "value": [
-            ("McLaughlin", "Chase McLaughlin", "TB", None),
+            ("McLaughlin", "Chase McLaughlin", "TB", "chase-mclaughlin"),
             ("Pineiro", "Eddy Pineiro", "SF", "eddy-pineiro"),
             ("Boswell", "Chris Boswell", "PIT", "chris-boswell"),
             ("Lutz", "Wil Lutz", "DEN", "wil-lutz"),

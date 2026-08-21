@@ -564,16 +564,16 @@
    "photo": "/img/headshots/juwan-johnson.png"
   },
   {
-   "id": "def-den",
-   "name": "Denver Broncos",
-   "position": "DST",
-   "team": "DEN"
-  },
-  {
    "id": "def-hou",
    "name": "Houston Texans",
    "position": "DST",
    "team": "HOU"
+  },
+  {
+   "id": "def-den",
+   "name": "Denver Broncos",
+   "position": "DST",
+   "team": "DEN"
   },
   {
    "id": "def-sea",
@@ -594,28 +594,10 @@
    "team": "PHI"
   },
   {
-   "id": "def-ne",
-   "name": "New England Patriots",
-   "position": "DST",
-   "team": "NE"
-  },
-  {
    "id": "def-min",
    "name": "Minnesota Vikings",
    "position": "DST",
    "team": "MIN"
-  },
-  {
-   "id": "def-jax",
-   "name": "Jacksonville Jaguars",
-   "position": "DST",
-   "team": "JAX"
-  },
-  {
-   "id": "def-pit",
-   "name": "Pittsburgh Steelers",
-   "position": "DST",
-   "team": "PIT"
   },
   {
    "id": "def-bal",
@@ -624,40 +606,16 @@
    "team": "BAL"
   },
   {
-   "id": "def-sf",
-   "name": "San Francisco 49ers",
+   "id": "def-ne",
+   "name": "New England Patriots",
    "position": "DST",
-   "team": "SF"
+   "team": "NE"
   },
   {
-   "id": "def-lac",
-   "name": "Los Angeles Chargers",
+   "id": "def-pit",
+   "name": "Pittsburgh Steelers",
    "position": "DST",
-   "team": "LAC"
-  },
-  {
-   "id": "def-buf",
-   "name": "Buffalo Bills",
-   "position": "DST",
-   "team": "BUF"
-  },
-  {
-   "id": "def-kc",
-   "name": "Kansas City Chiefs",
-   "position": "DST",
-   "team": "KC"
-  },
-  {
-   "id": "def-chi",
-   "name": "Chicago Bears",
-   "position": "DST",
-   "team": "CHI"
-  },
-  {
-   "id": "def-gb",
-   "name": "Green Bay Packers",
-   "position": "DST",
-   "team": "GB"
+   "team": "PIT"
   },
   {
    "id": "def-no",
@@ -666,22 +624,64 @@
    "team": "NO"
   },
   {
-   "id": "def-atl",
-   "name": "Atlanta Falcons",
+   "id": "def-buf",
+   "name": "Buffalo Bills",
    "position": "DST",
-   "team": "ATL"
+   "team": "BUF"
   },
   {
-   "id": "def-nyg",
-   "name": "New York Giants",
+   "id": "def-lac",
+   "name": "Los Angeles Chargers",
    "position": "DST",
-   "team": "NYG"
+   "team": "LAC"
+  },
+  {
+   "id": "def-jax",
+   "name": "Jacksonville Jaguars",
+   "position": "DST",
+   "team": "JAX"
+  },
+  {
+   "id": "def-det",
+   "name": "Detroit Lions",
+   "position": "DST",
+   "team": "DET"
+  },
+  {
+   "id": "def-gb",
+   "name": "Green Bay Packers",
+   "position": "DST",
+   "team": "GB"
+  },
+  {
+   "id": "def-kc",
+   "name": "Kansas City Chiefs",
+   "position": "DST",
+   "team": "KC"
+  },
+  {
+   "id": "def-dal",
+   "name": "Dallas Cowboys",
+   "position": "DST",
+   "team": "DAL"
   },
   {
    "id": "def-cle",
    "name": "Cleveland Browns",
    "position": "DST",
    "team": "CLE"
+  },
+  {
+   "id": "def-sf",
+   "name": "San Francisco 49ers",
+   "position": "DST",
+   "team": "SF"
+  },
+  {
+   "id": "def-ind",
+   "name": "Indianapolis Colts",
+   "position": "DST",
+   "team": "IND"
   },
   {
    "id": "brandon-aubrey",
@@ -724,6 +724,13 @@
    "position": "K",
    "team": "SF",
    "photo": "/img/headshots/eddy-pineiro.png"
+  },
+  {
+   "id": "chase-mclaughlin",
+   "name": "Chase McLaughlin",
+   "position": "K",
+   "team": "TB",
+   "photo": "/img/headshots/chase-mclaughlin.png"
   },
   {
    "id": "harrison-mevis",
@@ -787,13 +794,6 @@
    "position": "K",
    "team": "TEN",
    "photo": "/img/headshots/joey-slye.png"
-  },
-  {
-   "id": "daniel-carlson",
-   "name": "Daniel Carlson",
-   "position": "K",
-   "status": "fa",
-   "photo": "/img/headshots/daniel-carlson.png"
   },
   {
    "id": "tyler-loop",

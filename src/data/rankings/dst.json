@@ -3,17 +3,17 @@
  "position": "DST",
  "scope": "Draft",
  "format": "PPR",
- "updated": "2026-08-06",
+ "updated": "2026-08-17",
  "source": "My Rankings (WIP)",
- "note": "Order is taken verbatim from the workbook. Draft rankings, PPR scoring. In-season ranks will diverge from these.",
+ "note": "Draft rankings, PPR scoring. In-season ranks will diverge from these. This order is the operator's own, not the workbook's. Detroit, Dallas and Indianapolis are on the board; Atlanta, Chicago and the New York Giants are off it.",
  "entries": [
   {
    "rank": 1,
-   "player_id": "def-den"
+   "player_id": "def-hou"
   },
   {
    "rank": 2,
-   "player_id": "def-hou"
+   "player_id": "def-den"
   },
   {
    "rank": 3,
@@ -29,15 +29,15 @@
   },
   {
    "rank": 6,
-   "player_id": "def-ne"
-  },
-  {
-   "rank": 7,
    "player_id": "def-min"
   },
   {
+   "rank": 7,
+   "player_id": "def-bal"
+  },
+  {
    "rank": 8,
-   "player_id": "def-jax"
+   "player_id": "def-ne"
   },
   {
    "rank": 9,
@@ -45,11 +45,11 @@
   },
   {
    "rank": 10,
-   "player_id": "def-bal"
+   "player_id": "def-no"
   },
   {
    "rank": 11,
-   "player_id": "def-sf"
+   "player_id": "def-buf"
   },
   {
    "rank": 12,
@@ -57,35 +57,35 @@
   },
   {
    "rank": 13,
-   "player_id": "def-buf"
+   "player_id": "def-jax"
   },
   {
    "rank": 14,
-   "player_id": "def-kc"
+   "player_id": "def-det"
   },
   {
    "rank": 15,
-   "player_id": "def-chi"
-  },
-  {
-   "rank": 16,
    "player_id": "def-gb"
   },
   {
+   "rank": 16,
+   "player_id": "def-kc"
+  },
+  {
    "rank": 17,
-   "player_id": "def-no"
+   "player_id": "def-dal"
   },
   {
    "rank": 18,
-   "player_id": "def-atl"
+   "player_id": "def-cle"
   },
   {
    "rank": 19,
-   "player_id": "def-nyg"
+   "player_id": "def-sf"
   },
   {
    "rank": 20,
-   "player_id": "def-cle"
+   "player_id": "def-ind"
   }
  ]
 }
