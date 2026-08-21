@@ -6,7 +6,7 @@ import { SectionHero } from "@/components/SectionHero";
 import { PositionBadge } from "@/components/PlayerLink";
 import type { Envelope, Position } from "@/lib/types";
 
-export const metadata: Metadata = { title: "Position analysis" };
+export const metadata: Metadata = { title: "Positional Data" };
 
 interface PositionDoc {
   position: Position;
@@ -23,7 +23,7 @@ export default function PositionsIndex() {
         image="/img/bg/field.jpg"
         objectPosition="center 48%"
         eyebrow="Framework"
-        title="Positions"
+        title="Positional Data"
         lede="How each position is evaluated here, and the one chart that carries the argument."
       />
       <Container className="py-10">

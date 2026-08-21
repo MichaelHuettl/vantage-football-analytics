@@ -20,14 +20,14 @@ const SECTION_CARDS: {
   },
   {
     href: "/positions",
-    label: "Positions",
+    label: "Positional Data",
     blurb: "The framework used to evaluate each position, applied to the current pool.",
     image: "/img/players/justin-jefferson.jpg",
     position: "center 18%",
   },
   {
     href: "/injuries",
-    label: "Injuries",
+    label: "Injury Database",
     blurb: "Practice participation across the week, because the trend is the signal.",
     image: "/img/players/christian-mccaffrey.jpg",
     position: "center 20%",
@@ -41,7 +41,7 @@ const SECTION_CARDS: {
   },
   {
     href: "/games",
-    label: "Games",
+    label: "Game Tracker",
     blurb: "Implied team totals, weather, and the designations that move a lineup.",
     image: "/img/bg/game-tracker.jpg",
     position: "center 35%",

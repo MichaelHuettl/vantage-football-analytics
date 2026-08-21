@@ -20,15 +20,15 @@ export const SITE_NAV: NavItem[] = [
   { href: "/rankings", label: "Rankings" },
   {
     href: "/positions",
-    label: "Positions",
+    label: "Positional Data",
     children: POSITIONS.map((p) => ({
       href: `/positions/${p.toLowerCase()}`,
       label: POSITION_LABELS[p],
     })),
   },
-  { href: "/injuries", label: "Injuries" },
+  { href: "/injuries", label: "Injury Database" },
   { href: "/film", label: "Film" },
-  { href: "/games", label: "Games" },
+  { href: "/games", label: "Game Tracker" },
   { href: "/model", label: "Game Prediction Model" },
   { href: "/news", label: "News" },
 ];

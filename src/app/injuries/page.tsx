@@ -32,7 +32,7 @@ import { getTeam, readableOn } from "@/lib/teams";
 import type { Player, Position, Team } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: "Injury report",
+  title: "Injury Database",
   description:
     "Training camp and weekly injury status by team. The trend is the signal.",
 };
@@ -106,7 +106,7 @@ export default async function InjuriesPage({
         image="/img/bg/recovery.jpg"
         objectPosition="center 38%"
         eyebrow="Status and trend"
-        title="Injury report"
+        title="Injury Database"
         lede="Training camp status now, practice participation once the season starts. The Friday designation alone is not the signal — the movement across the week is."
       />
 

@@ -35,7 +35,7 @@ export function SiteHeader() {
             </span>
           </Link>
 
-          <nav aria-label="Primary" className="ml-auto hidden md:block">
+          <nav aria-label="Primary" className="ml-auto hidden lg:block">
             <ul className="flex items-center gap-1">
               {SITE_NAV.map((item) =>
                 item.children ? (
@@ -87,8 +87,16 @@ export function SiteHeader() {
           </nav>
 
           {/* Narrow screens get the same links on their own row rather than a
-              menu behind a tap. Six short labels fit across. */}
-          <nav aria-label="Primary" className="md:hidden -mx-4 px-4 overflow-x-auto">
+              menu behind a tap, and the row scrolls sideways rather than
+              wrapping or truncating.
+
+              This takes over below `lg`, not below `md`. The section names grew
+              on 2026-08-21 — "Positions" became "Positional Data", "Injuries"
+              became "Injury Database", and "Game Prediction Model" arrived — and
+              the inline bar stopped fitting somewhere between 900px and 1000px,
+              pushing the last item past the viewport and giving the whole page a
+              horizontal scrollbar. The breakpoint follows the labels. */}
+          <nav aria-label="Primary" className="lg:hidden -mx-4 px-4 overflow-x-auto">
             <ul className="flex gap-x-4">
               {SITE_NAV.map((item) => (
                 <li key={item.href}>
