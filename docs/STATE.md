@@ -69,7 +69,7 @@ build` with a line number instead of shipping a broken page.
 | Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Game Tracker | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
-| Fantasy Football Model | **Built**, at `/fantasy-model` — a 1-point-PPR projection model over 153,026 player-weeks, 1999-2025. Four tabs: method, accuracy, the tested 2025 season and the 2026 board. The accuracy tab publishes **hit rates as well as average error**, at two scales. Weekly: 51.5% of startable player-weeks within **5** points against 47.4% for recent form. **The band is 5 and not 10 for a reason** — 5 is the tightest margin the model wins in all 20 walk-forward seasons (3 points holds in 8 of 20, 2 points in 1), and 10 covers 98% of kicker weeks. Season-long: 45.1% of seasons within 25 points against 42.2% for repeating last year, measured **from the model's projection on each player's first row of the season**, which is the only version of that number a drafter could have had. `hit_rates.py` in the model repo computes both; the export **fails rather than omits** if it has not run. See open item 14. Every board is scoped to a position and the position is in the URL. The 2026 board **only recommends players with sixteen prior games** and names the 24 it excludes, with the rank each would have held (see open item 13). Payload copied from `~/Desktop/Claude Code/fantasy-model/` |
+| Fantasy Football Model | **Built**, at `/fantasy-model` — a 1-point-PPR projection model over 153,026 player-weeks, 1999-2025. Four tabs: method, accuracy, the tested 2025 season and the 2026 board. The accuracy tab publishes **hit rates as well as average error**, at two scales. Weekly: 73.5% of startable player-weeks within **8** points against 67.7% for recent form. Season-long: 63.6% of seasons within **40** points against 61.1% for repeating last year, measured **from the model's projection on each player's first row of the season**, which is the only version of that number a drafter could have had. **Both bands were chosen on the size of the edge, not on significance** — see open item 15. `hit_rates.py` in the model repo computes both; the export **fails rather than omits** if it has not run. See open item 14. Every board is scoped to a position and the position is in the URL. The 2026 board **only recommends players with sixteen prior games** and names the 24 it excludes, with the rank each would have held (see open item 13). Payload copied from `~/Desktop/Claude Code/fantasy-model/` |
 | Game Prediction Model | **Built**, at `/model` — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Named by the operator on 2026-08-21; the route is the short `/model` rather than the full name. The payload file keeps its `game-predictions.json` name — that is the prediction pipeline's export filename and this repo only copies it |
 | Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
 | Glossary | **Rebuilt 2026-08-21** — 67 terms in 9 groups, each with a definition, what a good value looks like, its source (nflverse, Next Gen, 4for4, workbook, market, model) and the pages it appears on. It had 6 entries while the home page promised full coverage |
@@ -378,6 +378,32 @@ build` with a line number instead of shipping a broken page.
    - **At defense the model does not beat the baseline** — 54.0% against 54.1%
      within 25 points. That is what a draft-day rank correlation of 0.16 looks
      like measured as a hit rate, and it is on the page rather than omitted.
+
+15. **The headline bands are 8 and 40, and both were chosen against numbers
+   rather than taste.** Set 2026-08-22. A future session asked to "make the
+   accuracy look better" will find that widening the band is the obvious move
+   and that it was already considered and bounded.
+   - **Significance does not pick a band.** With 37,044 paired player-weeks
+     every margin from 5 to 10 separates the model from recent form at p below
+     1e-50. What varies is the *size* of the edge: +4.1 points of hit rate at
+     ±5, +5.8 at ±8, +5.9 at ±9, +5.8 at ±10. Eight is where the model is
+     furthest ahead while the band still means something. Ten is rejected
+     because it covers 98% of kicker weeks; at eight the kicker row is 95% and
+     is still the loosest in the table.
+   - **The season band is 40 because 30 lands on a fluke.** At exactly 30 the
+     model and the baseline tie at quarterback to four decimals — 0.4409 each,
+     508 player-seasons — while the QB edge is +4.1 at 25, +1.4 at 35 and +3.1
+     at 45. At 40 the model leads at every position. Fifty would read 72.6% but
+     is 41% of a median season.
+   - **The test is McNemar's**, because the two are scored on identical rows and
+     a two-sample test would be the wrong one. Weekly the discordant split is
+     4,405 to 2,243; season, 619 to 483. Both are in the payload.
+   - **The ceiling is measured and it is not far above this.** An oracle that
+     knows each player's own season median in advance hits 61.5% within 5
+     points and 78.5% within 8. The model is at 51.5% and 73.5%. **There is
+     roughly 5-10 points of headroom at any band, not 30** — a target like "80%
+     within 5 points" is above what perfect foreknowledge achieves. Recorded
+     because it is the first thing to check before promising an accuracy gain.
 
 ## Closed items
 

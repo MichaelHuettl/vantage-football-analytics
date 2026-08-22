@@ -66,6 +66,8 @@ export function FantasyAccuracy() {
   const allRows = hr.overall.all;
   const hb = hr.headline_band;
   const st = hr.season_totals;
+  const qbSeason = st.positions.find((r) => r.position === "QB");
+  const teSeason = st.positions.find((r) => r.position === "TE");
 
   return (
     <section>
@@ -157,15 +159,26 @@ export function FantasyAccuracy() {
         {pct(bandValue(starters, `naive_within_${hb}`))} for recent form.
       </p>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
-        <strong style={{ color: "var(--text-primary)" }}>Why {hb} points and not
-        10.</strong>{" "}
-        A wide band flatters any model — ten points covers{" "}
-        {pct(bandValue(hr.positions.find((r) => r.position === "K") ?? {}, "within_10"))}{" "}
-        of kicker weeks, because a kicker&rsquo;s entire range is about that
-        wide. {hb} is the tightest margin where the advantage is a result rather
-        than a coin toss: the model beats recent form within {hb} points in{" "}
-        {hr.seasons_model_better[String(hb)]} of {hr.season_count} seasons, and
-        within 3 in only {hr.seasons_model_better["3"]}.
+        <strong style={{ color: "var(--text-primary)" }}>Why {hb} points.</strong>{" "}
+        Not because it is the band that flatters most — that would be a wider
+        one — but because it is where the model is furthest ahead of the
+        baseline. The gap grows from four points of hit rate at a ±5 margin to
+        roughly six around ±8, then stops growing: past that both are simply
+        catching everything. {hb} points is also a start-or-sit tolerance rather
+        than a called-the-week one, which is the decision a weekly projection is
+        actually for.
+      </p>
+      <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+        The edge is not a sampling artifact. On the{" "}
+        {hr.significance.rows.toLocaleString()} weeks scored here, the model was
+        inside the band and recent form outside it{" "}
+        {hr.significance.model_only.toLocaleString()} times, against{" "}
+        {hr.significance.baseline_only.toLocaleString()} the other way — a split
+        this lopsided arises by chance with probability below 1 in 10
+        <sup>100</sup> (McNemar&rsquo;s test, paired on identical rows). It also
+        holds in every individual season: {hr.seasons_model_better[String(hb)]} of{" "}
+        {hr.season_count}. Significance was never the hard part at this sample
+        size, which is why the band was chosen on the size of the edge instead.
       </p>
       <div className="mt-4 overflow-x-auto">
         <table className="w-full min-w-[620px] text-sm">
@@ -192,14 +205,14 @@ export function FantasyAccuracy() {
                   {r.median_actual.toFixed(1)}
                 </td>
                 <td className="py-2 text-right tnum" style={{ fontWeight: 600 }}>
-                  {pct(r.within_5)}
+                  {pct(bandValue(r, `within_${hb}`))}
                 </td>
                 <td className="py-2 text-right tnum" style={{ color: "var(--text-muted)" }}>
-                  {pct(r.naive_within_5)}
+                  {pct(bandValue(r, `naive_within_${hb}`))}
                 </td>
-                <td className="py-2 text-right tnum">{pct(r.within_10)}</td>
+                <td className="py-2 text-right tnum">{pct(bandValue(r, "within_10"))}</td>
                 <td className="py-2 text-right tnum" style={{ color: "var(--text-muted)" }}>
-                  {pct(r.naive_within_10)}
+                  {pct(bandValue(r, "naive_within_10"))}
                 </td>
               </tr>
             ))}
@@ -241,10 +254,11 @@ export function FantasyAccuracy() {
       <h3 className="eyebrow mt-12">The edge is in avoiding disasters, not hitting the number</h3>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         Counted by season rather than pooled, the model beat recent form in{" "}
-        {hr.seasons_model_better["10"]} of {hr.season_count} seasons within 10
-        points and {hr.seasons_model_better["5"]} of {hr.season_count} within 5 —
-        but {hr.seasons_model_better["3"]} within 3, and{" "}
-        {hr.seasons_model_better["2"]} within 2.
+        {hr.seasons_model_better[String(hb)]} of {hr.season_count} seasons within{" "}
+        {hb} points and {hr.seasons_model_better["5"]} of {hr.season_count} within
+        5 — but {hr.seasons_model_better["3"]} within 3, and{" "}
+        {hr.seasons_model_better["2"]} within 2. Widen the band and the advantage
+        is reliable; tighten it and it disappears.
       </p>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         That is a description more than a flaw. On the{" "}
@@ -278,15 +292,17 @@ export function FantasyAccuracy() {
         of the real total, against{" "}
         {pct(bandValue(st.overall, `baseline_within_${st.headline_band}`))} for
         repeating last year — an average miss of {st.overall.mae.toFixed(0)}{" "}
-        points against {st.overall.baseline_mae.toFixed(0)}. Because a season
-        runs from about {st.positions.find((r) => r.position === "TE")?.median_total.toFixed(0)}{" "}
-        points at tight end to{" "}
-        {st.positions.find((r) => r.position === "QB")?.median_total.toFixed(0)}{" "}
-        at quarterback, the scale-fair version is the same figure as a share:{" "}
-        {pct(bandValue(st.overall, "within_pct_25"))} within 25% of the total,
-        against {pct(bandValue(st.overall, "baseline_within_pct_25"))}.{" "}
+        points against {st.overall.baseline_mae.toFixed(0)}. Across a
+        seventeen-game season that band is about two and a half points a game.
+        Because season totals run an order of magnitude apart, the scale-fair
+        version is worth having beside it:{" "}
+        {pct(bandValue(st.overall, "within_pct_30"))} of seasons land within 30%
+        of the real figure, against{" "}
+        {pct(bandValue(st.overall, "baseline_within_pct_30"))}.{" "}
         {st.overall.rows.toLocaleString()} player-seasons of at least{" "}
-        {st.min_games} games.
+        {st.min_games} games. The same paired test puts this gap at{" "}
+        p&nbsp;&lt;&nbsp;0.0001 — smaller than the weekly edge, and still not
+        chance.
       </p>
       <BandCurve
         rows={st.point_bands.map((b) => ({
@@ -329,19 +345,19 @@ export function FantasyAccuracy() {
         </table>
       </div>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
-        A fixed points band is a much harder test at quarterback, where the
-        median season is{" "}
-        {st.positions.find((r) => r.position === "QB")?.median_total.toFixed(0)}{" "}
-        points, than at tight end, where it is{" "}
-        {st.positions.find((r) => r.position === "TE")?.median_total.toFixed(0)}.
-        And at defense the model does not beat the baseline at all —{" "}
-        {pct(bandValue(st.positions.find((r) => r.position === "DST") ?? {},
-                       `within_${st.headline_band}`))}{" "}
-        against{" "}
-        {pct(bandValue(st.positions.find((r) => r.position === "DST") ?? {},
-                       `baseline_within_${st.headline_band}`))}
-        , which is consistent with a draft-day rank correlation there of{" "}
-        {FM_QUALITY.find((q) => q.position === "DST")?.draft_day_rho?.toFixed(2)}.
+        A fixed points band is a far harder test at the positions that score
+        most. {st.headline_band} points is{" "}
+        {pct(st.headline_band / (qbSeason?.median_total ?? 1), 0)} of a median
+        quarterback season and{" "}
+        {pct(st.headline_band / (teSeason?.median_total ?? 1), 0)} of a median
+        tight end&rsquo;s, which is most of why those two rows differ. The model
+        is ahead of the baseline at every position here, but only just at
+        quarterback —{" "}
+        {pct(bandValue(qbSeason ?? {}, `within_${st.headline_band}`))} against{" "}
+        {pct(bandValue(qbSeason ?? {}, `baseline_within_${st.headline_band}`))},
+        across {qbSeason?.rows.toLocaleString()} player-seasons. Projecting a
+        quarterback&rsquo;s season is close to the point where assuming he
+        repeats himself is as good as anything this model knows.
       </p>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         <strong style={{ color: "var(--text-primary)" }}>

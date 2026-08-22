@@ -116,10 +116,12 @@ export interface HitRatePosition {
   rows: number;
   /** The median score actually posted — the band means nothing without it. */
   median_actual: number;
-  within_5: number;
-  naive_within_5: number;
-  within_10: number;
-  naive_within_10: number;
+  /**
+   * Band figures (`within_7`, `naive_within_10`, …) are keyed by band and read
+   * through `bandValue`, the same way the season records are. The headline band
+   * is a constant in the model repo; typing each one here made moving it a
+   * change on both sides of the copy.
+   */
 }
 
 export interface HitRateOverall {
@@ -142,8 +144,23 @@ export interface SeasonTotalPosition {
   baseline_mae: number;
 }
 
+/**
+ * McNemar's test on the headline band: of the cases where exactly one of the
+ * model and the baseline was inside it, how lopsided was the split? The two
+ * are scored on identical rows, so a two-sample test would be the wrong one.
+ */
+export interface Significance {
+  band: number;
+  rows: number;
+  /** Times the model was inside the band and the baseline was not. */
+  model_only: number;
+  baseline_only: number;
+  p_value: number;
+}
+
 export interface SeasonTotals {
   min_games: number;
+  significance: Significance;
   point_bands: number[];
   pct_bands: number[];
   headline_band: number;
@@ -182,8 +199,9 @@ export interface HitRates {
   };
   overall: { all: HitRateOverall; starters: HitRateOverall };
   positions: HitRatePosition[];
-  /** The band the page leads with. Five, and the model repo records why. */
+  /** The band the page leads with. The model repo records how it was chosen. */
   headline_band: number;
+  significance: Significance;
   season_totals: SeasonTotals;
 }
 
