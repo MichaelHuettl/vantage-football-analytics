@@ -69,7 +69,7 @@ build` with a line number instead of shipping a broken page.
 | Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Game Tracker | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
-| Fantasy Football Model | **Built**, at `/fantasy-model` — a 1-point-PPR projection model over 153,026 player-weeks, 1999-2025. Four tabs: method, accuracy, the tested 2025 season and the 2026 board. The accuracy tab publishes **hit rates as well as average error** — 83.6% of startable player-weeks within 10 points against 77.8% for recent form, over 20 walk-forward seasons — and states where the model does *not* lead: it wins 20 of 20 seasons at the 5- and 10-point bands but 1 of 20 at 2 points, because its edge is in avoiding large misses rather than landing on the number. `hit_rates.py` in the model repo computes it; the export **fails rather than omits** if that has not run. Every board is scoped to a position and the position is in the URL. The 2026 board **only recommends players with sixteen prior games** and names the 24 it excludes, with the rank each would have held (see open item 13). Payload copied from `~/Desktop/Claude Code/fantasy-model/` |
+| Fantasy Football Model | **Built**, at `/fantasy-model` — a 1-point-PPR projection model over 153,026 player-weeks, 1999-2025. Four tabs: method, accuracy, the tested 2025 season and the 2026 board. The accuracy tab publishes **hit rates as well as average error**, at two scales. Weekly: 51.5% of startable player-weeks within **5** points against 47.4% for recent form. **The band is 5 and not 10 for a reason** — 5 is the tightest margin the model wins in all 20 walk-forward seasons (3 points holds in 8 of 20, 2 points in 1), and 10 covers 98% of kicker weeks. Season-long: 45.1% of seasons within 25 points against 42.2% for repeating last year, measured **from the model's projection on each player's first row of the season**, which is the only version of that number a drafter could have had. `hit_rates.py` in the model repo computes both; the export **fails rather than omits** if it has not run. See open item 14. Every board is scoped to a position and the position is in the URL. The 2026 board **only recommends players with sixteen prior games** and names the 24 it excludes, with the rank each would have held (see open item 13). Payload copied from `~/Desktop/Claude Code/fantasy-model/` |
 | Game Prediction Model | **Built**, at `/model` — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Named by the operator on 2026-08-21; the route is the short `/model` rather than the full name. The payload file keeps its `game-predictions.json` name — that is the prediction pipeline's export filename and this repo only copies it |
 | Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
 | Glossary | **Rebuilt 2026-08-21** — 67 terms in 9 groups, each with a definition, what a good value looks like, its source (nflverse, Next Gen, 4for4, workbook, market, model) and the pages it appears on. It had 6 entries while the home page promised full coverage |
@@ -356,6 +356,28 @@ build` with a line number instead of shipping a broken page.
      exactly the threshold the marker fires below. The branch is kept because
      it is conditional on the data and starts working again if the floor moves
      down.
+
+14. **Two season-total numbers exist and only one of them is a forecast.**
+   Recorded 2026-08-22 because the flattering one is easier to reach and reads
+   better. Summing a player's seventeen weekly forecasts gives an average miss
+   of **22 points**; the model's August projection for the same season misses by
+   **38**. The gap is not that the model sharpens — measured weekly accuracy is
+   flat across the year — it is that the in-season sum is allowed to follow a
+   role that changed in October. `rankings()` in the model repo already said
+   this in a comment; the site now says it on the page. **Do not quote 22 as
+   season accuracy.**
+   - **The weekly baseline cannot be reused at season scale.** Summed over a
+     year, a trailing three-game average is a lagged copy of the player's own
+     scores: r=0.986 against the actual season total, mean error 9.9 points on a
+     median season of 120. Scored that way it "beats" the model 88% to 57%,
+     which measures nothing but the baseline reading the answer. The season
+     comparator is the player's own prior-season rate instead.
+   - **Both sides are multiplied by games actually played**, which gives each
+     the same hindsight and isolates whether the rate was right from whether the
+     player stayed healthy. Neither predicts the second.
+   - **At defense the model does not beat the baseline** — 54.0% against 54.1%
+     within 25 points. That is what a draft-day rank correlation of 0.16 looks
+     like measured as a hit rate, and it is on the page rather than omitted.
 
 ## Closed items
 
