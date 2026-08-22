@@ -4,7 +4,7 @@ Read `docs/BRIEF.md` first — it defines the `§` references in code comments.
 This file records where the build actually is, what was decided against the
 brief, and what is still open.
 
-Last updated: 2026-08-17.
+Last updated: 2026-08-22.
 
 ---
 
@@ -27,7 +27,7 @@ coverage column from F to G. Every extractor names the version it targets in
 before trusting the output.
 
 **Eight extractors feed the site** and write JSON into `src/data/`. The first
-four are the only things that touch the workbook; the last three read a PDF, the
+four are the only things that touch the workbook; the last four read a PDF, the
 nflverse export and the prediction pipeline's artifacts instead:
 
 | Script | Writes | Covers |
@@ -62,14 +62,14 @@ build` with a line number instead of shipping a broken page.
 
 | Section | State |
 | --- | --- |
-| Home | Built. Lambeau hero, seven section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
+| Home | Built. Lambeau hero, eight section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
 | Positional Data | Index cards carry a photo per position in a shared 2:1 frame, and head on `evaluated_on` — the family of statistics a position is judged on — with WR marked unbuilt. Six pages. **RB, K, DST, TE and QB are built** — one column: methodology, then the evidence. WR keeps the two-column slot-and-pool layout |
 | Injury Database | Training camp section (58 entries) plus a **live wire** reconciled against it, team filter in the URL. Weekly report empty until Week 1 |
 | Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Game Tracker | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
-| Fantasy Football Model | **Built**, at `/fantasy-model` — a 1-point-PPR projection model over 153,026 player-weeks, 1999-2025. Four tabs: method, accuracy, the tested 2025 season and the 2026 board. Every board is scoped to a position and the position is in the URL. Payload copied from `~/Desktop/Claude Code/fantasy-model/` |
+| Fantasy Football Model | **Built**, at `/fantasy-model` — a 1-point-PPR projection model over 153,026 player-weeks, 1999-2025. Four tabs: method, accuracy, the tested 2025 season and the 2026 board. Every board is scoped to a position and the position is in the URL. The 2026 board **only recommends players with sixteen prior games** and names the 24 it excludes, with the rank each would have held (see open item 13). Payload copied from `~/Desktop/Claude Code/fantasy-model/` |
 | Game Prediction Model | **Built**, at `/model` — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Named by the operator on 2026-08-21; the route is the short `/model` rather than the full name. The payload file keeps its `game-predictions.json` name — that is the prediction pipeline's export filename and this repo only copies it |
 | Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
 | Glossary | **Rebuilt 2026-08-21** — 67 terms in 9 groups, each with a definition, what a good value looks like, its source (nflverse, Next Gen, 4for4, workbook, market, model) and the pages it appears on. It had 6 entries while the home page promised full coverage |
@@ -329,6 +329,33 @@ build` with a line number instead of shipping a broken page.
    games ride along in the payload to show what an injury gap looks like. A
    fuller worked example — one real game walked through the model's inputs to
    its probability — is available from what is already there.
+13. **The 2026 fantasy board's sixteen-game floor is one number, and it is not
+   tuned.** Added 2026-08-22 at the operator's instruction, applied to every
+   position: a player needs a full season of prior games before the board will
+   recommend him. It removes 24 players, all published in `board_rule.excluded`
+   with the rank each would have held.
+   - **What it was for.** Ben Sauls was K1 on two career games while Brandon
+     Aubrey — the position's actual 2024 leader, three straight seasons at
+     10.7-11.3 ppg — sat tenth. The kicker model is candid about why:
+     `draft_day_rho` is 0.133 at K and 0.160 at DST against 0.55-0.79 at the
+     skill positions, and its 2026 kicker projections span 1.6 points where the
+     2025 season actually spanned 6.9. An order that compressed is decided by
+     noise. Aubrey moved to eighth on the rule alone — **he was not promoted by
+     hand, and the data would not support it**: prior-season kicker scoring
+     predicts the next season at a Spearman of 0.11, 0.14 and 0.35 over the
+     last three years. A future session asked to "fix" his ranking should read
+     that number first.
+   - **It costs real players.** Colston Loveland off TE3, Harold Fannin Jr. off
+     TE6, Omarion Hampton off RB10, six quarterbacks including Jaxson Dart and
+     Michael Penix Jr. At the skill positions the model *does* discriminate, so
+     the floor is buying consistency at a genuine price. The operator was shown
+     that list before it went in. Sixteen was chosen because it is one season
+     and because it is already the `thin` threshold — not because it was tested
+     against anything.
+   - **The `Thin` marker is now unreachable** on the 2026 board: the floor is
+     exactly the threshold the marker fires below. The branch is kept because
+     it is conditional on the data and starts working again if the floor moves
+     down.
 
 ## Closed items
 
@@ -423,6 +450,21 @@ copy claiming O-line injuries move the line.**
 
 ## Gotchas
 
+- **nflverse does not agree with itself on two team codes, and the mismatch
+  deletes players silently.** Its roster files say `AZ`; its schedules, its
+  player-week stats and every processed parquet say `ARI`. The fantasy model's
+  forecast skeleton inner-joins roster to schedule on `team`, so for one build
+  **every Arizona player was missing from the 2026 board** — McBride, Murray,
+  Harrison Jr., Conner — while the ARI defense stood alone, because it arrives
+  by the team-week path. Nothing errored; a board is expected to be shorter than
+  a roster, and 632 players is a plausible total with or without a club in it.
+  The join now asserts that every rostered team has fixture rows. Separately,
+  **both files call the Rams `LA` where this site keys on `LAR`**, and an
+  unresolved code is not an error either — `TeamChip` falls back to a grey chip
+  printing the raw string, so the Rams simply lost their colours. `getTeam`
+  aliases both pairs and `canonTeams` normalises each payload at its boundary.
+  **Check a join's output against a name you expect to find**; a count that
+  looks plausible is not evidence.
 - **Do not trust a sheet's name for where its data is.** The "Historic RB 1-3"
   table — 27 top-three finishes back to 2017, with the quartiles and both tier
   benchmarks under it — sits at **row 260 of "RB Statistics & Graphs"**, not on
