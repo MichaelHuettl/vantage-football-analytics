@@ -2,11 +2,11 @@ import { ChartFigure } from "@/components/ChartFigure";
 import { ScatterChart } from "@/components/ScatterChart";
 import { TeamChip } from "@/components/TeamChip";
 import {
-  WR_CHARTS, WR_CONSISTENCY, WR_GRID, WR_GROUPS, WR_NOTABLE, WR_SEASON,
+  WR_CHARTS, WR_CONSISTENCY, WR_GRID, WR_GRID_COMPUTED, WR_GROUPS, WR_SEASON,
   WR_STICKINESS,
 } from "@/lib/charts";
 import type {
-  BoxColumn, ConsistencyGroup, StickyMetric, WrChart,
+  Agreement, BoxColumn, ConsistencyGroup, StickyMetric, TdColumn, WrChart,
 } from "@/lib/charts";
 import { teamByName } from "@/lib/teams";
 
@@ -219,27 +219,6 @@ export function WideReceiverAnalysis() {
         </div>
       )}
 
-      {/* ---- tracked, but outside the charted pool ---- */}
-      <div className="mt-16">
-        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
-          {WR_NOTABLE.label}
-        </h3>
-        <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          Receivers tracked but outside the charted pool, so they carry no point
-          on the scatters above. Several are written as the operator writes them
-          — a surname where the sheet never spells the name out in full anywhere
-          else. Filling those in would mean guessing which player was meant.
-        </p>
-        <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-          {WR_NOTABLE.names.map((n) => (
-            <li key={n} className="rounded border px-2 py-1"
-                style={{ borderColor: "var(--border-subtle)" }}>
-              {n}
-            </li>
-          ))}
-        </ul>
-      </div>
-
       {/* ---- the check-the-box grid ---- */}
       <div className="mt-16">
         <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
@@ -252,8 +231,222 @@ export function WideReceiverAnalysis() {
         </p>
         <BoxGrid title="Players" cols={WR_GRID.players} />
         <BoxGrid title="Offenses" cols={WR_GRID.teams} teams />
+
+        {/* ---- what the seven columns are each worth ---- */}
+        <div className="mt-8 rounded border-l-4 p-5 sm:p-6"
+             style={{ borderColor: "var(--border-strong)",
+                      background: "var(--surface-sunken)" }}>
+          <p className="eyebrow">Reading the grid</p>
+          <h4 className="mt-2 text-2xl uppercase tracking-wide"
+              style={{ fontFamily: "var(--font-display)" }}>
+            Seven columns, three different kinds of claim
+          </h4>
+          <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+            They are laid out as one grid and they are not one kind of thing.
+            Two are forecasts, two describe what already happened, and three
+            describe a team rather than a player. That matters because the
+            stickiness bars further up the page say those three kinds keep very
+            different amounts of their value.
+          </p>
+          <div className="mt-5 grid gap-4 md:grid-cols-3">
+            <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
+              <p className="eyebrow">Forecasts</p>
+              <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
+                TD Improvement · TD Regression
+              </p>
+              <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+                The only two columns that make a claim about next season, and the
+                only two anything here can check. The section below fits the same
+                question to the play-by-play and names where the two part.
+              </p>
+            </div>
+            <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
+              <p className="eyebrow">Descriptions</p>
+              <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
+                High YPRR · High TPRR
+              </p>
+              <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+                Who produced most per chance in {WR_SEASON}. Both are efficiency,
+                which is the least durable thing measured on this page — yards
+                per target comes back next year at{" "}
+                {WR_STICKINESS?.metrics.find((m) => m.label === "Yards per target")
+                  ?.rho.toFixed(2)}
+                . Read them as a record, not a projection.
+              </p>
+            </div>
+            <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
+              <p className="eyebrow">Environment</p>
+              <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
+                Motion · Play action · Best schemes
+              </p>
+              <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
+                Properties of an offense rather than of a receiver. They are the
+                most durable entries in the grid, because a scheme survives a
+                roster change — but they belong to whoever runs that route next
+                season, not to the name that ran it last.
+              </p>
+            </div>
+          </div>
+          <p className="mt-5 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+            The columns are independent, so a receiver in two of them is not
+            twice as interesting; and a name in an efficiency column and an
+            environment column at once is the closest the grid comes to an
+            argument, because one of the two will still be true in September.
+          </p>
+        </div>
+
+        {WR_GRID_COMPUTED && (
+          <>
+            <h4 className="mt-10 text-2xl uppercase tracking-wide"
+                style={{ fontFamily: "var(--font-display)" }}>
+              Three more columns, fitted rather than judged
+            </h4>
+            <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+              The grid above is the operator&rsquo;s reading of {WR_SEASON}. These
+              three are the same question asked of the play-by-play, and they
+              exist because of the stickiness bars further up the page:
+              touchdowns per target come back year over year at 0.17, but the{" "}
+              <em>looks</em> that produce them are opportunity, which comes back
+              at about a half. So the forecastable version of &ldquo;who
+              scored&rdquo; is &ldquo;who was thrown to inside the ten&rdquo;.
+            </p>
+            <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+              Expected touchdowns are fitted across all{" "}
+              {WR_GRID_COMPUTED.pool} qualifying receivers by field zone rather
+              than assumed: an end-zone target is worth{" "}
+              {WR_GRID_COMPUTED.fit.endzone.toFixed(2)} touchdowns, a red-zone
+              target outside the end zone{" "}
+              {WR_GRID_COMPUTED.fit.red_zone.toFixed(2)}, and everything else{" "}
+              {WR_GRID_COMPUTED.fit.elsewhere.toFixed(3)} — which is most of why
+              a long touchdown is the least repeatable kind. The fit explains{" "}
+              {(WR_GRID_COMPUTED.fit.r2 * 100).toFixed(0)}% of the variance in
+              scoring. The residual is the rest: the part a receiver&rsquo;s
+              field position does not account for.{" "}
+              {WR_GRID_COMPUTED.matched} of the {WR_GRID_COMPUTED.pool} appear
+              on a chart on this page and are the only ones ranked here.
+            </p>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {WR_GRID_COMPUTED.columns.map((c) => (
+                <TdCard key={c.label} column={c} />
+              ))}
+            </div>
+
+            {WR_GRID_COMPUTED.agreement && (
+              <div className="mt-8 rounded border-l-4 p-5 sm:p-6"
+                   style={{ borderColor: "var(--border-strong)",
+                            background: "var(--surface-sunken)" }}>
+                <p className="eyebrow">Where the two agree</p>
+                <h4 className="mt-2 text-2xl uppercase tracking-wide"
+                    style={{ fontFamily: "var(--font-display)" }}>
+                  A judgement and a measurement, side by side
+                </h4>
+                <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+                  The operator&rsquo;s two touchdown columns are a judgement
+                  about next season. The fitted ones measure one specific thing
+                  about the last. Publishing both and naming the difference is
+                  more useful than publishing either alone — and it is the only
+                  honest way to set a computed column beside a hand-written one
+                  on the same grid.
+                </p>
+                <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                  {WR_GRID_COMPUTED.agreement.map((a) => (
+                    <AgreementCard key={a.key} agreement={a} />
+                  ))}
+                </div>
+                <p className="mt-5 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+                  <strong style={{ color: "var(--text-primary)" }}>
+                    The clearest case they both make.
+                  </strong>{" "}
+                  Justin Jefferson drew sixteen end-zone targets and scored
+                  twice. That is the largest shortfall in the pool by some
+                  distance, and it is a shortfall in the half of scoring that
+                  does not persist — the looks were there and the finishes were
+                  not.
+                </p>
+                <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+                  <strong style={{ color: "var(--text-primary)" }}>
+                    And the clearest place they part.
+                  </strong>{" "}
+                  George Pickens is on the regression list, and the fit does not
+                  put him there: nine touchdowns against eighteen end-zone
+                  targets is almost exactly what that many looks are worth. His
+                  scoring came with the volume behind it, which is the kind that
+                  survives. Davante Adams sits on both computed lists at once
+                  for the same reason in reverse — he led every receiver in
+                  end-zone looks by ten, so even scoring above expectation he is
+                  a milder regression case than a raw touchdown count suggests.
+                </p>
+              </div>
+            )}
+          </>
+        )}
       </div>
     </section>
+  );
+}
+
+/** A computed touchdown column: names, and the arithmetic that ranked them. */
+function TdCard({ column }: { column: TdColumn }) {
+  const showResidual = column.kind !== "opportunity";
+  return (
+    <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
+      <p className="eyebrow">{column.label}</p>
+      <p className="mt-1 text-sm" style={{ color: "var(--text-secondary)" }}>
+        {column.blurb}
+      </p>
+      <ul className="mt-3 flex flex-col gap-1 text-sm">
+        {column.members.map((m) => (
+          <li key={m.name} className="flex items-baseline justify-between gap-3">
+            <span>{m.name}</span>
+            <span className="shrink-0 text-xs tnum" style={{ color: "var(--text-muted)" }}>
+              {showResidual
+                ? `${m.td} vs ${m.expected_td.toFixed(1)}`
+                : `${m.endzone_targets} looks`}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>
+        {showResidual ? "touchdowns against expected" : "end-zone targets"}
+      </p>
+    </div>
+  );
+}
+
+/**
+ * One column's overlap with its computed twin.
+ *
+ * Three lists, not two. A name the operator has that the fit ranked and placed
+ * elsewhere is a disagreement worth reading; a name the fit never saw — a
+ * receiver below the volume floor, or not charted on this page — is a gap in
+ * coverage, and calling that a disagreement would manufacture a dispute.
+ */
+function AgreementCard({ agreement }: { agreement: Agreement }) {
+  const rows: [string, string[]][] = [
+    ["Both", agreement.both],
+    ["His list, ranked elsewhere here", agreement.workbook_disagrees],
+    ["His list, outside the fit", agreement.workbook_uncovered],
+    ["Fitted only", agreement.computed_only],
+  ];
+  return (
+    <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
+      <p className="eyebrow">{agreement.label}</p>
+      <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
+        against &ldquo;{agreement.computed_label}&rdquo;
+      </p>
+      <dl className="mt-3 flex flex-col gap-2 text-sm">
+        {rows.map(([label, names]) => (
+          <div key={label}>
+            <dt className="text-xs" style={{ color: "var(--text-muted)" }}>
+              {label} ({names.length})
+            </dt>
+            <dd style={{ color: "var(--text-secondary)" }}>
+              {names.length ? names.join(", ") : "—"}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </div>
   );
 }
 
