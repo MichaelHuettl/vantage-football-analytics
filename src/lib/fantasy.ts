@@ -127,6 +127,43 @@ export interface HitRateOverall {
   [band: string]: number;
 }
 
+/**
+ * Draft-day accuracy for a whole season's points, per position.
+ *
+ * Band figures (`within_25`, `baseline_within_pct_20`, …) are keyed by band and
+ * read through `bandValue` rather than typed one by one — the bands are set in
+ * the model repo and adding one there should not need a type change here.
+ */
+export interface SeasonTotalPosition {
+  position: string;
+  median_total: number;
+  rows: number;
+  mae: number;
+  baseline_mae: number;
+}
+
+export interface SeasonTotals {
+  min_games: number;
+  point_bands: number[];
+  pct_bands: number[];
+  headline_band: number;
+  overall: SeasonTotalPosition;
+  positions: SeasonTotalPosition[];
+  /**
+   * The comparison this deliberately does not make. A trailing three-game
+   * average summed over a season is a lagged copy of the player's own scores,
+   * so it tracks the season total at r=0.99 — a description of the year, not a
+   * forecast of it. Published so the page can say why the season baseline is
+   * last year's rate instead.
+   */
+  not_a_baseline: {
+    correlation: number;
+    mae: number;
+    in_season_sum_mae: number;
+    in_season_rows: number;
+  };
+}
+
 export interface HitRates {
   bands: number[];
   seasons: [number, number];
@@ -145,7 +182,18 @@ export interface HitRates {
   };
   overall: { all: HitRateOverall; starters: HitRateOverall };
   positions: HitRatePosition[];
+  /** The band the page leads with. Five, and the model repo records why. */
+  headline_band: number;
+  season_totals: SeasonTotals;
 }
+
+/**
+ * Read a band-keyed figure (`within_5`, `baseline_within_pct_25`) off one of
+ * the hit-rate records. The band set lives in the model repo; this keeps
+ * adding one from being a type change on this side too.
+ */
+export const bandValue = (row: object, key: string): number =>
+  (row as Record<string, number>)[key] ?? 0;
 
 export interface BoardRule {
   min_prior_games: number;
