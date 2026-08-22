@@ -117,6 +117,13 @@ CAPTIONS = {
 EXPORT = Path.home() / "Desktop" / "Claude Code" / "NFL Verse Data "
 YOY_FILE = EXPORT / "1999-2025 RB:WR:TE YOY Data.csv"
 SEASON_FILE = EXPORT / "1999-2025 RB:WR:TE.csv"
+
+# The three computed grid columns, and the pool they are drawn from. Eight
+# names each, matching the width of the operator's own columns.
+GRID_SEASON = 2025
+GRID_POOL_MIN_TARGETS = 40
+GRID_POOL_MIN_GAMES = 8
+GRID_COLUMN_DEPTH = 8
 WEEKLY_FILE = EXPORT / "2025 Weekly Stats.csv"
 
 # Paired seasons from 2015 on. The file reaches back to 1999, but a receiver's
@@ -131,20 +138,16 @@ STICKY_MIN_TARGETS = 40
 BOOM, BUST = 20.0, 5.0
 CONSISTENCY_MIN_GAMES = 8
 
-NOTABLE = {"header_row": 9, "col": "B", "lo": 10, "hi": 32}
 GRID = {"label_row": 175, "lo": 176, "hi": 183,
         "player_cols": ["B", "C", "D", "E"], "team_cols": ["F", "G", "H"]}
 
 # Short forms the sheet uses that no surname or first-name match can reach.
-# Kept explicit and small: every one is checked against the charted rosters at
-# run time, and a mapping whose target is not on this sheet is reported rather
-# than published.
+# Kept explicit and small, and checked for *use* at run time — an alias nothing
+# hits means a row moved, or that the block it served has gone.
 ALIASES = {
     "jsn": "Jaxon Smith-Njigba",
     "jaxon-smith njigba": "Jaxon Smith-Njigba",   # the sheet hyphenates the wrong pair
     "adj/drake london": "Drake London",
-    "deebo": "Deebo Samuel",
-    "mvs": "Marquez Valdes-Scantling",
 }
 
 SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "v"}
@@ -560,6 +563,184 @@ def build_consistency(charted, warn):
     }
 
 
+def _ols(X, y):
+    """Least squares by normal equations, with a small Gaussian solve."""
+    n = len(X[0])
+    A = [[sum(row[i] * row[j] for row in X) for j in range(n)] for i in range(n)]
+    b = [sum(row[i] * t for row, t in zip(X, y)) for i in range(n)]
+    M = [A[i][:] + [b[i]] for i in range(n)]
+    for i in range(n):
+        piv = max(range(i, n), key=lambda r: abs(M[r][i]))
+        M[i], M[piv] = M[piv], M[i]
+        if not M[i][i]:
+            return None
+        for r in range(n):
+            if r != i:
+                fac = M[r][i] / M[i][i]
+                for c in range(i, n + 1):
+                    M[r][c] -= fac * M[i][c]
+    return [M[i][n] / M[i][i] for i in range(n)]
+
+
+def build_grid_computed(charted, warn):
+    """Three columns the workbook does not have, computed from the export.
+
+    The grid already carries the operator's touchdown calls. This adds the
+    evidence behind that kind of call, and it exists because of the stickiness
+    chart above: touchdowns per target come back year over year at 0.17, but
+    the *looks* that produce them are opportunity, which comes back at about a
+    half. So the forecastable version of "who scored" is "who was thrown to
+    inside the ten".
+
+    Expected touchdowns are fitted across the whole qualifying pool, by field
+    zone — an end-zone target, a red-zone target outside the end zone, and
+    everything else are worth very different amounts, and the fit says how
+    much rather than assuming it. The residual is then the part of a
+    receiver's scoring his looks do not account for, which is the part least
+    likely to happen again.
+    """
+    if not SEASON_FILE.exists():
+        warn(f"{SEASON_FILE.name} not found — the computed grid columns are missing")
+        return None
+
+    # The sheet writes full names, the export writes "P.Nacua". Match on the
+    # initial and the surname, and only inside the charted pool, so nothing on
+    # the page is a receiver the reader cannot find on a scatter above it.
+    lookup = {}
+    for full_name in charted:
+        parts = full_name.split()
+        if len(parts) >= 2:
+            lookup[(parts[0][0].lower(), surname(full_name))] = full_name
+
+    with SEASON_FILE.open(newline="") as fh:
+        pool = []
+        for r in csv.DictReader(fh):
+            if r.get("position") != "WR" or num(r.get("season")) != GRID_SEASON:
+                continue
+            if (num(r.get("targets")) or 0) < GRID_POOL_MIN_TARGETS:
+                continue
+            if (num(r.get("games")) or 0) < GRID_POOL_MIN_GAMES:
+                continue
+            pool.append(r)
+    if len(pool) < 30:
+        warn(f"computed grid: only {len(pool)} qualifying receivers, skipped")
+        return None
+
+    def zones(r):
+        ez = num(r.get("endzone_targets")) or 0.0
+        rz = num(r.get("rz_targets")) or 0.0
+        tg = num(r.get("targets")) or 0.0
+        return [ez, max(rz - ez, 0.0), max(tg - rz, 0.0)]
+
+    X = [zones(r) for r in pool]
+    y = [num(r.get("rec_td")) or 0.0 for r in pool]
+    coef = _ols(X, y)
+    if not coef:
+        warn("computed grid: the touchdown fit is singular, skipped")
+        return None
+    mean_y = sum(y) / len(y)
+    ss_res = sum((t - sum(c * v for c, v in zip(coef, row))) ** 2 for row, t in zip(X, y))
+    ss_tot = sum((t - mean_y) ** 2 for t in y)
+    r2 = 1 - ss_res / ss_tot if ss_tot else 0.0
+
+    rows, unmatched = [], []
+    for r, row, td in zip(pool, X, y):
+        nm = (r.get("player") or "").strip()
+        # The export writes "P.Nacua" with no space, so the initial has to be
+        # split off before the surname is taken — passing the raw string to
+        # surname() makes the whole thing one token and matches nothing.
+        spaced = " ".join(nm.replace(".", ". ").split())
+        parts = spaced.split()
+        key = (parts[0][0].lower(), surname(spaced)) if len(parts) >= 2 else None
+        full_name = lookup.get(key)
+        if not full_name:
+            unmatched.append(nm)
+            continue
+        exp = sum(c * v for c, v in zip(coef, row))
+        rows.append({
+            "name": full_name, "td": int(td), "expected_td": round(exp, 1),
+            "residual": round(td - exp, 1), "endzone_targets": int(row[0]),
+            "rz_targets": int(row[0] + row[1]),
+        })
+    if len(rows) < GRID_COLUMN_DEPTH * 2:
+        warn(f"computed grid: only {len(rows)} charted receivers matched the export")
+        return None
+    if unmatched:
+        print(f"  note computed grid ignores {len(unmatched)} qualifying receivers "
+              f"who are not on a chart here")
+
+    by_ez = sorted(rows, key=lambda m: -m["endzone_targets"])[:GRID_COLUMN_DEPTH]
+    by_res = sorted(rows, key=lambda m: -m["residual"])
+    return {
+        "season": GRID_SEASON,
+        "pool": len(pool),
+        "matched": len(rows),
+        "fit": {
+            "endzone": round(coef[0], 3),
+            "red_zone": round(coef[1], 3),
+            "elsewhere": round(coef[2], 3),
+            "r2": round(r2, 3),
+        },
+        # Every receiver the fit could rank, so a name of the operator's that is
+        # missing can be told apart from one it ranked and placed elsewhere.
+        "ranked": sorted(m["name"] for m in rows),
+        "columns": [
+            {"label": "Most end-zone looks", "kind": "opportunity",
+             "blurb": "The repeatable half of scoring: who the offense throws to inside the goal line.",
+             "members": by_ez},
+            {"label": "Scored above their looks", "kind": "regression",
+             "blurb": "Touchdowns beyond what their field position accounts for.",
+             "members": by_res[:GRID_COLUMN_DEPTH]},
+            {"label": "Scored below their looks", "kind": "improvement",
+             "blurb": "The looks arrived and the touchdowns did not.",
+             "members": list(reversed(by_res[-GRID_COLUMN_DEPTH:]))},
+        ],
+    }
+
+
+def _agreement(grid, computed):
+    """Where the fitted touchdown call and the operator's own call line up.
+
+    This is the comparison the page exists to make. His two columns are a
+    judgement; the residual is a measurement of one specific thing. Publishing
+    both and naming the difference is more useful than publishing either alone,
+    and it is the only honest way to put a computed column next to a
+    hand-written one on the same grid.
+    """
+    pairs = [
+        ("TD Regression", "Scored above their looks", "regression"),
+        ("TD Improvement", "Scored below their looks", "improvement"),
+    ]
+    by_label = {c["label"]: c for c in computed["columns"]}
+    out = []
+    for wb_label, comp_label, key in pairs:
+        wb = next((c["names"] for c in grid["players"] if c["label"] == wb_label), None)
+        comp = by_label.get(comp_label)
+        if wb is None or comp is None:
+            continue
+        wb_set = set(wb)
+        comp_names = [m["name"] for m in comp["members"]]
+        comp_set = set(comp_names)
+        # A name of his that the fit never saw is not a disagreement, it is a
+        # gap in coverage, and conflating the two would manufacture a dispute.
+        # Anything outside the charted pool or under the volume floor is absent
+        # from `ranked` entirely.
+        ranked = {m["name"] for c in computed["columns"] for m in c["members"]} | set(computed["ranked"])
+        only = [n for n in wb if n not in comp_set]
+        out.append({
+            "key": key,
+            "label": wb_label,
+            "computed_label": comp_label,
+            "both": sorted(wb_set & comp_set),
+            # Named rather than counted: which side a receiver falls on is the
+            # whole content of a disagreement.
+            "workbook_disagrees": [n for n in only if n in ranked],
+            "workbook_uncovered": [n for n in only if n not in ranked],
+            "computed_only": [n for n in comp_names if n not in wb_set],
+        })
+    return out
+
+
 def build_groups(consistency, wopr_chart, warn):
     """Sort the boom/bust field into groups, and cross it with usage.
 
@@ -702,12 +883,6 @@ def main():
             if notes:
                 b["notes"] = notes
 
-    notable = {
-        "label": str(cells.get((NOTABLE["header_row"], NOTABLE["col"]), "")).strip(),
-        "names": [full(n) for n in read_column(cells, NOTABLE["col"],
-                                               NOTABLE["lo"], NOTABLE["hi"])],
-    }
-
     # The grid mixes two kinds of column — four of players, three of teams — and
     # they render differently, so they are separated here rather than in a
     # component guessing from the string.
@@ -758,17 +933,28 @@ def main():
                   + ", ".join(f"{g['key']} {len(g['members'])}" for g in u["groups"])
                   + f" (of {u['matched']}/{u['total']} with a WOPR point)")
 
+    # ---- the computed grid columns, and how they square with his ----
+    charted_all = {pt["name"] for c in charts.values() for pt in c["points"]}
+    computed = build_grid_computed(charted_all, warn)
+    if computed:
+        f = computed["fit"]
+        print(f"  grid computed      {computed['matched']} of {computed['pool']} "
+              f"receivers; TD per look {f['endzone']:.2f} end zone / "
+              f"{f['red_zone']:.2f} red zone / {f['elsewhere']:.3f} elsewhere, "
+              f"R2 {f['r2']:.2f}")
+        computed["agreement"] = _agreement(grid, computed)
+        for a in computed["agreement"]:
+            print(f"  agreement          {a['label']}: {len(a['both'])} shared, "
+                  f"{len(a['workbook_disagrees'])} ranked elsewhere, "
+                  f"{len(a['workbook_uncovered'])} not covered, "
+                  f"{len(a['computed_only'])} computed only")
+
     unresolved = sorted({n for g in grid["players"] for n in g["names"] if " " not in n})
     if unresolved:
         warn(f"grid names left short (no full name on this sheet): {unresolved}")
     stale = full.unused()
     if stale:
         warn(f"alias(es) never matched anything — a row may have moved: {stale}")
-    short_notable = [n for n in notable["names"] if " " not in n]
-    if short_notable:
-        print(f"  note {len(short_notable)} notable names stay short — they are "
-              f"outside the charted pool, so the sheet holds no full name for them: "
-              f"{', '.join(short_notable)}")
 
     out = {
         "schema_version": 1,
@@ -790,15 +976,15 @@ def main():
             "stickiness": stickiness,
             "consistency": consistency,
             "groups": groups,
-            "notable": notable,
             "grid": grid,
+            "grid_computed": computed,
         },
     }
 
     dest = ROOT / "src/data/wr-charts.json"
     dest.write_text(json.dumps(out, indent=1) + "\n")
-    print(f"\n{len(charts)} charts, {len(notable['names'])} notable names, "
-          f"{len(grid['players'])} player columns, {len(grid['teams'])} team columns")
+    print(f"\n{len(charts)} charts, {len(grid['players'])} player columns, "
+          f"{len(grid['teams'])} team columns")
     print(f"wrote {dest.relative_to(ROOT)}")
     if warnings:
         print(f"\n{len(warnings)} warning(s) above — read them before trusting the page.")

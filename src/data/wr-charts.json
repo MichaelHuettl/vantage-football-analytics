@@ -2145,34 +2145,6 @@
     ]
    }
   },
-  "notable": {
-   "label": "Notable Names out of top 50",
-   "names": [
-    "Terry McLaurin",
-    "Jayden Higgins",
-    "Mike Evans",
-    "Boutte",
-    "Pearsall",
-    "Coleman",
-    "Downs",
-    "Legette",
-    "Nabers",
-    "Golden",
-    "Deebo Samuel",
-    "Kupp",
-    "Flournoy",
-    "Zaccheaus",
-    "Luther Burden",
-    "Ridley",
-    "Coker",
-    "Tolbert",
-    "Kirk",
-    "Marquez Valdes-Scantling",
-    "TeSlaa",
-    "Shakir",
-    "Chris Godwin"
-   ]
-  },
   "grid": {
    "players": [
     {
@@ -2266,6 +2238,334 @@
       "Packers",
       "Cowboys",
       "Buccaneers"
+     ]
+    }
+   ]
+  },
+  "grid_computed": {
+   "season": 2025,
+   "pool": 88,
+   "matched": 49,
+   "fit": {
+    "endzone": 0.354,
+    "red_zone": 0.226,
+    "elsewhere": 0.012,
+    "r2": 0.643
+   },
+   "ranked": [
+    "Adonai Mitchell",
+    "Alec Pierce",
+    "Amon-Ra St. Brown",
+    "Amon-Ra St. Brown",
+    "Brian Thomas Jr",
+    "CeeDee Lamb",
+    "Chris Olave",
+    "Christian Watson",
+    "Courtland Sutton",
+    "DJ Moore",
+    "DK Metcalf",
+    "Darius Slayton",
+    "Darnell Mooney",
+    "Davante Adams",
+    "DeVonta Smith",
+    "Drake London",
+    "Elic Ayomanor",
+    "Emeka Egbuka",
+    "George Pickens",
+    "Ja'Marr Chase",
+    "Jakobi Meyers",
+    "Jameson Williams",
+    "Jauan Jennings",
+    "Jaxon Smith-Njigba",
+    "Jaylen Waddle",
+    "Jerry Jeudy",
+    "Jordan Addison",
+    "Justin Jefferson",
+    "Keenan Allen",
+    "Ladd McConkey",
+    "Mack Hollins",
+    "Marvin Harrison Jr",
+    "Michael Pittman",
+    "Michael Wilson",
+    "Nico Collins",
+    "Parker Washington",
+    "Puka Nacua",
+    "Quentin Johnston",
+    "Rashid Shaheed",
+    "Rome Odunze",
+    "Romeo Doubs",
+    "Stefon Diggs",
+    "Tee Higgins",
+    "Tetairoa McMillan",
+    "Tre Tucker",
+    "Troy Franklin",
+    "Wan'Dale Robinson",
+    "Xavier Worthy",
+    "Zay Flowers"
+   ],
+   "columns": [
+    {
+     "label": "Most end-zone looks",
+     "kind": "opportunity",
+     "blurb": "The repeatable half of scoring: who the offense throws to inside the goal line.",
+     "members": [
+      {
+       "name": "Davante Adams",
+       "td": 14,
+       "expected_td": 11.8,
+       "residual": 2.2,
+       "endzone_targets": 28,
+       "rz_targets": 32
+      },
+      {
+       "name": "George Pickens",
+       "td": 9,
+       "expected_td": 9.1,
+       "residual": -0.1,
+       "endzone_targets": 18,
+       "rz_targets": 24
+      },
+      {
+       "name": "Justin Jefferson",
+       "td": 2,
+       "expected_td": 7.8,
+       "residual": -5.8,
+       "endzone_targets": 16,
+       "rz_targets": 19
+      },
+      {
+       "name": "Chris Olave",
+       "td": 9,
+       "expected_td": 6.8,
+       "residual": 2.2,
+       "endzone_targets": 14,
+       "rz_targets": 15
+      },
+      {
+       "name": "Nico Collins",
+       "td": 6,
+       "expected_td": 7.3,
+       "residual": -1.3,
+       "endzone_targets": 14,
+       "rz_targets": 19
+      },
+      {
+       "name": "Courtland Sutton",
+       "td": 7,
+       "expected_td": 7.5,
+       "residual": -0.5,
+       "endzone_targets": 14,
+       "rz_targets": 20
+      },
+      {
+       "name": "DJ Moore",
+       "td": 6,
+       "expected_td": 5.5,
+       "residual": 0.5,
+       "endzone_targets": 13,
+       "rz_targets": 13
+      },
+      {
+       "name": "Marvin Harrison Jr",
+       "td": 4,
+       "expected_td": 5.3,
+       "residual": -1.3,
+       "endzone_targets": 13,
+       "rz_targets": 13
+      }
+     ]
+    },
+    {
+     "label": "Scored above their looks",
+     "kind": "regression",
+     "blurb": "Touchdowns beyond what their field position accounts for.",
+     "members": [
+      {
+       "name": "Tee Higgins",
+       "td": 11,
+       "expected_td": 6.0,
+       "residual": 5.0,
+       "endzone_targets": 11,
+       "rz_targets": 16
+      },
+      {
+       "name": "Puka Nacua",
+       "td": 10,
+       "expected_td": 6.4,
+       "residual": 3.6,
+       "endzone_targets": 6,
+       "rz_targets": 17
+      },
+      {
+       "name": "Jameson Williams",
+       "td": 7,
+       "expected_td": 3.6,
+       "residual": 3.4,
+       "endzone_targets": 4,
+       "rz_targets": 9
+      },
+      {
+       "name": "Christian Watson",
+       "td": 6,
+       "expected_td": 2.6,
+       "residual": 3.4,
+       "endzone_targets": 5,
+       "rz_targets": 6
+      },
+      {
+       "name": "Jaxon Smith-Njigba",
+       "td": 10,
+       "expected_td": 6.8,
+       "residual": 3.2,
+       "endzone_targets": 10,
+       "rz_targets": 17
+      },
+      {
+       "name": "Quentin Johnston",
+       "td": 8,
+       "expected_td": 5.2,
+       "residual": 2.8,
+       "endzone_targets": 8,
+       "rz_targets": 15
+      },
+      {
+       "name": "Chris Olave",
+       "td": 9,
+       "expected_td": 6.8,
+       "residual": 2.2,
+       "endzone_targets": 14,
+       "rz_targets": 15
+      },
+      {
+       "name": "Davante Adams",
+       "td": 14,
+       "expected_td": 11.8,
+       "residual": 2.2,
+       "endzone_targets": 28,
+       "rz_targets": 32
+      }
+     ]
+    },
+    {
+     "label": "Scored below their looks",
+     "kind": "improvement",
+     "blurb": "The looks arrived and the touchdowns did not.",
+     "members": [
+      {
+       "name": "Justin Jefferson",
+       "td": 2,
+       "expected_td": 7.8,
+       "residual": -5.8,
+       "endzone_targets": 16,
+       "rz_targets": 19
+      },
+      {
+       "name": "CeeDee Lamb",
+       "td": 3,
+       "expected_td": 6.6,
+       "residual": -3.6,
+       "endzone_targets": 12,
+       "rz_targets": 17
+      },
+      {
+       "name": "Darius Slayton",
+       "td": 1,
+       "expected_td": 3.4,
+       "residual": -2.4,
+       "endzone_targets": 7,
+       "rz_targets": 8
+      },
+      {
+       "name": "Keenan Allen",
+       "td": 4,
+       "expected_td": 6.3,
+       "residual": -2.3,
+       "endzone_targets": 11,
+       "rz_targets": 16
+      },
+      {
+       "name": "Darnell Mooney",
+       "td": 1,
+       "expected_td": 3.2,
+       "residual": -2.2,
+       "endzone_targets": 5,
+       "rz_targets": 8
+      },
+      {
+       "name": "Jordan Addison",
+       "td": 3,
+       "expected_td": 5.0,
+       "residual": -2.0,
+       "endzone_targets": 10,
+       "rz_targets": 13
+      },
+      {
+       "name": "Jerry Jeudy",
+       "td": 2,
+       "expected_td": 3.9,
+       "residual": -1.9,
+       "endzone_targets": 6,
+       "rz_targets": 9
+      },
+      {
+       "name": "Wan'Dale Robinson",
+       "td": 4,
+       "expected_td": 5.9,
+       "residual": -1.9,
+       "endzone_targets": 10,
+       "rz_targets": 14
+      }
+     ]
+    }
+   ],
+   "agreement": [
+    {
+     "key": "regression",
+     "label": "TD Regression",
+     "computed_label": "Scored above their looks",
+     "both": [
+      "Davante Adams",
+      "Jaxon Smith-Njigba",
+      "Puka Nacua",
+      "Quentin Johnston",
+      "Tee Higgins"
+     ],
+     "workbook_disagrees": [
+      "Amon-Ra St. Brown",
+      "George Pickens",
+      "Drake London"
+     ],
+     "workbook_uncovered": [],
+     "computed_only": [
+      "Jameson Williams",
+      "Christian Watson",
+      "Chris Olave"
+     ]
+    },
+    {
+     "key": "improvement",
+     "label": "TD Improvement",
+     "computed_label": "Scored below their looks",
+     "both": [
+      "CeeDee Lamb",
+      "Justin Jefferson",
+      "Wan'Dale Robinson"
+     ],
+     "workbook_disagrees": [
+      "DeVonta Smith",
+      "Parker Washington"
+     ],
+     "workbook_uncovered": [
+      "Terry McLaurin",
+      "Luther Burden",
+      "Chris Godwin"
+     ],
+     "computed_only": [
+      "Darius Slayton",
+      "Keenan Allen",
+      "Darnell Mooney",
+      "Jordan Addison",
+      "Jerry Jeudy"
      ]
     }
    ]
