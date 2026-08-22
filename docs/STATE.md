@@ -197,10 +197,20 @@ build` with a line number instead of shipping a broken page.
        categorisation — names under a heading — not the licensed figures, which
        is a smaller step than the TE page took. **Flagged to him rather than
        assumed**, same as the other two.
-     - **Sixteen notable names print as bare surnames** — Boutte, Kupp, Shakir.
-       They appear nowhere in full on the sheet, and the page says so rather
-       than guessing a first name onto a surname. The three teams columns render
-       as chips; all fourteen resolve, trailing spaces and all.
+     - **The notable-names block was deleted 2026-08-22**, the operator's call.
+       Sixteen of its twenty-three entries were bare surnames the sheet never
+       spelled out anywhere. The three team columns render as chips; all
+       fourteen resolve, trailing spaces and all.
+     - **The grid carries three fitted columns beside the operator's seven.**
+       Expected touchdowns are least-squares by field zone across 88 qualifying
+       receivers — an end-zone target is worth 0.354, a red-zone target outside
+       it 0.226, a target beyond 0.012, R² 0.64 — and the residual ranks who
+       scored above and below their looks. **Its agreement with his two
+       touchdown columns is published in three lists, not two**: shared, ranked
+       elsewhere by the fit, and never seen by it. A receiver below the volume
+       floor is a coverage gap and reporting it as a disagreement would
+       manufacture a dispute. Five of eight shared on regression, three on
+       improvement.
      - **Two charts come from the nflverse export, not the workbook**, added
        2026-08-22 — the only extractor on the site reading two sources. Neither
        touches a licensed column. *Stickiness*: year-over-year rank correlation
