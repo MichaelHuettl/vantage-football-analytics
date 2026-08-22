@@ -1692,6 +1692,459 @@
     }
    ]
   },
+  "groups": {
+   "medians": {
+    "bust": 16.67,
+    "boom": 17.65
+   },
+   "corners": [
+    {
+     "key": "reliable",
+     "label": "Reliable",
+     "blurb": "Rarely wasted a week, often won one.",
+     "members": [
+      {
+       "name": "Puka Nacua",
+       "ppg": 23.44,
+       "median": 22.95,
+       "games": 16,
+       "bust": 6.25,
+       "boom": 62.5
+      },
+      {
+       "name": "Jaxon Smith-Njigba",
+       "ppg": 21.17,
+       "median": 20.6,
+       "games": 17,
+       "bust": 5.88,
+       "boom": 58.82
+      },
+      {
+       "name": "Ja'Marr Chase",
+       "ppg": 19.6,
+       "median": 20.5,
+       "games": 16,
+       "bust": 6.25,
+       "boom": 50.0
+      },
+      {
+       "name": "Amon-Ra St. Brown",
+       "ppg": 19.06,
+       "median": 18.0,
+       "games": 17,
+       "bust": 5.88,
+       "boom": 41.18
+      },
+      {
+       "name": "George Pickens",
+       "ppg": 17.17,
+       "median": 14.8,
+       "games": 17,
+       "bust": 5.88,
+       "boom": 29.41
+      },
+      {
+       "name": "Drake London",
+       "ppg": 16.82,
+       "median": 15.65,
+       "games": 12,
+       "bust": 8.33,
+       "boom": 33.33
+      },
+      {
+       "name": "Chris Olave",
+       "ppg": 16.75,
+       "median": 15.2,
+       "games": 16,
+       "bust": 0.0,
+       "boom": 31.25
+      },
+      {
+       "name": "Davante Adams",
+       "ppg": 15.92,
+       "median": 15.1,
+       "games": 14,
+       "bust": 0.0,
+       "boom": 35.71
+      },
+      {
+       "name": "CeeDee Lamb",
+       "ppg": 15.45,
+       "median": 17.1,
+       "games": 13,
+       "bust": 7.69,
+       "boom": 23.08
+      },
+      {
+       "name": "Nico Collins",
+       "ppg": 15.08,
+       "median": 14.5,
+       "games": 15,
+       "bust": 0.0,
+       "boom": 33.33
+      },
+      {
+       "name": "Zay Flowers",
+       "ppg": 14.31,
+       "median": 13.0,
+       "games": 17,
+       "bust": 11.76,
+       "boom": 23.53
+      },
+      {
+       "name": "Tee Higgins",
+       "ppg": 14.11,
+       "median": 11.4,
+       "games": 15,
+       "bust": 6.67,
+       "boom": 20.0
+      },
+      {
+       "name": "Wan'Dale Robinson",
+       "ppg": 13.62,
+       "median": 11.85,
+       "games": 16,
+       "bust": 12.5,
+       "boom": 25.0
+      },
+      {
+       "name": "Christian Watson",
+       "ppg": 13.24,
+       "median": 11.2,
+       "games": 10,
+       "bust": 10.0,
+       "boom": 30.0
+      },
+      {
+       "name": "Quentin Johnston",
+       "ppg": 13.17,
+       "median": 14.8,
+       "games": 13,
+       "bust": 15.38,
+       "boom": 23.08
+      }
+     ]
+    },
+    {
+     "key": "floor",
+     "label": "Floor without a ceiling",
+     "blurb": "Hard to lose with, hard to win with.",
+     "members": [
+      {
+       "name": "Tetairoa McMillan",
+       "ppg": 12.55,
+       "median": 11.5,
+       "games": 17,
+       "bust": 11.76,
+       "boom": 5.88
+      },
+      {
+       "name": "DK Metcalf",
+       "ppg": 12.48,
+       "median": 12.2,
+       "games": 15,
+       "bust": 6.67,
+       "boom": 13.33
+      },
+      {
+       "name": "Rome Odunze",
+       "ppg": 12.17,
+       "median": 11.75,
+       "games": 12,
+       "bust": 16.67,
+       "boom": 16.67
+      },
+      {
+       "name": "Jauan Jennings",
+       "ppg": 11.55,
+       "median": 12.2,
+       "games": 15,
+       "bust": 13.33,
+       "boom": 0.0
+      },
+      {
+       "name": "Keenan Allen",
+       "ppg": 10.75,
+       "median": 8.7,
+       "games": 17,
+       "bust": 11.76,
+       "boom": 5.88
+      }
+     ]
+    },
+    {
+     "key": "volatile",
+     "label": "Boom or bust",
+     "blurb": "Real upside, and a real chance of nothing.",
+     "members": [
+      {
+       "name": "Michael Wilson",
+       "ppg": 12.98,
+       "median": 8.4,
+       "games": 17,
+       "bust": 23.53,
+       "boom": 23.53
+      },
+      {
+       "name": "Jameson Williams",
+       "ppg": 12.94,
+       "median": 13.4,
+       "games": 17,
+       "bust": 17.65,
+       "boom": 17.65
+      },
+      {
+       "name": "Courtland Sutton",
+       "ppg": 12.92,
+       "median": 12.2,
+       "games": 17,
+       "bust": 17.65,
+       "boom": 17.65
+      },
+      {
+       "name": "Emeka Egbuka",
+       "ppg": 11.51,
+       "median": 9.0,
+       "games": 17,
+       "bust": 29.41,
+       "boom": 23.53
+      },
+      {
+       "name": "Ladd McConkey",
+       "ppg": 11.31,
+       "median": 11.6,
+       "games": 16,
+       "bust": 31.25,
+       "boom": 18.75
+      },
+      {
+       "name": "Troy Franklin",
+       "ppg": 10.42,
+       "median": 8.5,
+       "games": 17,
+       "bust": 29.41,
+       "boom": 17.65
+      }
+     ]
+    },
+    {
+     "key": "neither",
+     "label": "Neither",
+     "blurb": "Below the field on both counts.",
+     "members": [
+      {
+       "name": "Alec Pierce",
+       "ppg": 12.22,
+       "median": 10.8,
+       "games": 15,
+       "bust": 26.67,
+       "boom": 13.33
+      },
+      {
+       "name": "Jaylen Waddle",
+       "ppg": 12.13,
+       "median": 13.2,
+       "games": 16,
+       "bust": 18.75,
+       "boom": 12.5
+      },
+      {
+       "name": "DeVonta Smith",
+       "ppg": 11.87,
+       "median": 9.3,
+       "games": 17,
+       "bust": 23.53,
+       "boom": 11.76
+      },
+      {
+       "name": "Justin Jefferson",
+       "ppg": 11.85,
+       "median": 12.5,
+       "games": 17,
+       "bust": 17.65,
+       "boom": 5.88
+      },
+      {
+       "name": "Romeo Doubs",
+       "ppg": 10.34,
+       "median": 9.35,
+       "games": 16,
+       "bust": 25.0,
+       "boom": 6.25
+      },
+      {
+       "name": "Jordan Addison",
+       "ppg": 9.65,
+       "median": 9.3,
+       "games": 14,
+       "bust": 21.43,
+       "boom": 7.14
+      },
+      {
+       "name": "Tre Tucker",
+       "ppg": 9.51,
+       "median": 6.8,
+       "games": 17,
+       "bust": 29.41,
+       "boom": 5.88
+      },
+      {
+       "name": "Rashid Shaheed",
+       "ppg": 8.7,
+       "median": 8.65,
+       "games": 18,
+       "bust": 33.33,
+       "boom": 5.56
+      },
+      {
+       "name": "Elic Ayomanor",
+       "ppg": 7.28,
+       "median": 7.0,
+       "games": 16,
+       "bust": 37.5,
+       "boom": 0.0
+      },
+      {
+       "name": "Jerry Jeudy",
+       "ppg": 7.1,
+       "median": 5.1,
+       "games": 17,
+       "bust": 47.06,
+       "boom": 0.0
+      },
+      {
+       "name": "Tyquan Thornton",
+       "ppg": 6.73,
+       "median": 6.4,
+       "games": 12,
+       "bust": 41.67,
+       "boom": 0.0
+      },
+      {
+       "name": "Adonai Mitchell",
+       "ppg": 5.49,
+       "median": 3.7,
+       "games": 16,
+       "bust": 62.5,
+       "boom": 6.25
+      },
+      {
+       "name": "Darnell Mooney",
+       "ppg": 5.49,
+       "median": 4.5,
+       "games": 15,
+       "bust": 60.0,
+       "boom": 0.0
+      }
+     ]
+    }
+   ],
+   "usage": {
+    "wopr_median": 0.54,
+    "matched": 33,
+    "total": 39,
+    "groups": [
+     {
+      "key": "role_intact",
+      "label": "The role says more should be coming",
+      "blurb": "Top-half usage, bottom-half boom rate. What was missing is the part that repeats least.",
+      "members": [
+       {
+        "name": "Justin Jefferson",
+        "wopr": 0.753,
+        "ppg": 11.85,
+        "bust": 17.65,
+        "boom": 5.88
+       },
+       {
+        "name": "Tetairoa McMillan",
+        "wopr": 0.684,
+        "ppg": 12.55,
+        "bust": 11.76,
+        "boom": 5.88
+       },
+       {
+        "name": "Jaylen Waddle",
+        "wopr": 0.634,
+        "ppg": 12.13,
+        "bust": 18.75,
+        "boom": 12.5
+       },
+       {
+        "name": "DeVonta Smith",
+        "wopr": 0.594,
+        "ppg": 11.87,
+        "bust": 23.53,
+        "boom": 11.76
+       },
+       {
+        "name": "Jerry Jeudy",
+        "wopr": 0.553,
+        "ppg": 7.1,
+        "bust": 47.06,
+        "boom": 0.0
+       }
+      ]
+     },
+     {
+      "key": "outscored_role",
+      "label": "Outscored the role",
+      "blurb": "Bottom-half usage, top-half boom rate. The scoring arrived without the workload behind it.",
+      "members": [
+       {
+        "name": "Tee Higgins",
+        "wopr": 0.444,
+        "ppg": 14.11,
+        "bust": 6.67,
+        "boom": 20.0
+       },
+       {
+        "name": "Troy Franklin",
+        "wopr": 0.453,
+        "ppg": 10.42,
+        "bust": 29.41,
+        "boom": 17.65
+       },
+       {
+        "name": "Ladd McConkey",
+        "wopr": 0.462,
+        "ppg": 11.31,
+        "bust": 31.25,
+        "boom": 18.75
+       },
+       {
+        "name": "Davante Adams",
+        "wopr": 0.478,
+        "ppg": 15.92,
+        "bust": 0.0,
+        "boom": 35.71
+       },
+       {
+        "name": "CeeDee Lamb",
+        "wopr": 0.496,
+        "ppg": 15.45,
+        "bust": 7.69,
+        "boom": 23.08
+       },
+       {
+        "name": "Jameson Williams",
+        "wopr": 0.524,
+        "ppg": 12.94,
+        "bust": 17.65,
+        "boom": 17.65
+       },
+       {
+        "name": "Michael Wilson",
+        "wopr": 0.539,
+        "ppg": 12.98,
+        "bust": 23.53,
+        "boom": 23.53
+       }
+      ]
+     }
+    ]
+   }
+  },
   "notable": {
    "label": "Notable Names out of top 50",
    "names": [

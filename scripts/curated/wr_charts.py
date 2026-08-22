@@ -560,6 +560,92 @@ def build_consistency(charted, warn):
     }
 
 
+def build_groups(consistency, wopr_chart, warn):
+    """Sort the boom/bust field into groups, and cross it with usage.
+
+    Two passes, and they are not equally useful.
+
+    The **four corners** split the field on its own medians: reliable, floor
+    without ceiling, boom or bust, neither. Honest but partly circular — better
+    receivers boom more, so the corners largely re-describe points per game.
+    That is stated on the page rather than dressed up.
+
+    The **usage cross** is where the new information is. Holding each receiver's
+    WOPR against his boom rate separates two groups the boom/bust chart cannot
+    see on its own: a big role that did not produce, and production that came
+    from a small role. The stickiness chart above is what makes that worth
+    reading — efficiency comes back at 0.17 to 0.25, so the receiver whose role
+    is intact has the better case of the two, and the one who outscored his
+    role is the one being asked to do it twice.
+    """
+    if not consistency:
+        return None
+    pts = consistency["points"]
+    bx, by = consistency["x_median"], consistency["y_median"]
+
+    corners = {
+        "reliable": ("Reliable", "Rarely wasted a week, often won one."),
+        "floor": ("Floor without a ceiling", "Hard to lose with, hard to win with."),
+        "volatile": ("Boom or bust", "Real upside, and a real chance of nothing."),
+        "neither": ("Neither", "Below the field on both counts."),
+    }
+    buckets = {k: [] for k in corners}
+    for pt in pts:
+        low_bust, high_boom = pt["x"] <= bx, pt["y"] >= by
+        key = ("reliable" if (low_bust and high_boom)
+               else "floor" if low_bust
+               else "volatile" if high_boom
+               else "neither")
+        buckets[key].append({k: pt[k] for k in ("name", "ppg", "median", "games")}
+                            | {"bust": pt["x"], "boom": pt["y"]})
+    for v in buckets.values():
+        v.sort(key=lambda m: -m["ppg"])
+
+    out = {
+        "medians": {"bust": bx, "boom": by},
+        "corners": [
+            {"key": k, "label": corners[k][0], "blurb": corners[k][1],
+             "members": buckets[k]}
+            for k in ("reliable", "floor", "volatile", "neither")
+        ],
+    }
+
+    if not wopr_chart:
+        warn("groups: no WOPR chart, the usage cross is missing")
+        return out
+    wopr = {pt["name"]: pt["x"] for pt in wopr_chart["points"]}
+    wm = wopr_chart["x_median"]
+    under, over = [], []
+    for pt in pts:
+        u = wopr.get(pt["name"])
+        if u is None:
+            continue
+        row = {"name": pt["name"], "wopr": u, "ppg": pt["ppg"],
+               "bust": pt["x"], "boom": pt["y"]}
+        if u >= wm and pt["y"] < by:
+            under.append(row)
+        elif u < wm and pt["y"] >= by:
+            over.append(row)
+    under.sort(key=lambda m: -m["wopr"])
+    over.sort(key=lambda m: m["wopr"])
+    out["usage"] = {
+        "wopr_median": wm,
+        "matched": sum(1 for pt in pts if pt["name"] in wopr),
+        "total": len(pts),
+        "groups": [
+            {"key": "role_intact", "label": "The role says more should be coming",
+             "blurb": ("Top-half usage, bottom-half boom rate. What was missing "
+                       "is the part that repeats least."),
+             "members": under},
+            {"key": "outscored_role", "label": "Outscored the role",
+             "blurb": ("Bottom-half usage, top-half boom rate. The scoring "
+                       "arrived without the workload behind it."),
+             "members": over},
+        ],
+    }
+    return out
+
+
 def read_column(cells, col, lo, hi):
     return [str(cells[(r, col)]).strip() for r in range(lo, hi + 1) if (r, col) in cells]
 
@@ -661,6 +747,16 @@ def main():
     consistency = build_consistency(charted, warn)
     if consistency:
         print(f"  consistency        {len(consistency['points'])} receivers")
+    groups = build_groups(consistency, charts.get("wopr_ppg"), warn)
+    if groups:
+        sizes = ", ".join(f"{g['label'].split()[0].lower()} {len(g['members'])}"
+                          for g in groups["corners"])
+        print(f"  groups             {sizes}")
+        if "usage" in groups:
+            u = groups["usage"]
+            print(f"  usage cross        "
+                  + ", ".join(f"{g['key']} {len(g['members'])}" for g in u["groups"])
+                  + f" (of {u['matched']}/{u['total']} with a WOPR point)")
 
     unresolved = sorted({n for g in grid["players"] for n in g["names"] if " " not in n})
     if unresolved:
@@ -693,6 +789,7 @@ def main():
             "charts": charts,
             "stickiness": stickiness,
             "consistency": consistency,
+            "groups": groups,
             "notable": notable,
             "grid": grid,
         },
