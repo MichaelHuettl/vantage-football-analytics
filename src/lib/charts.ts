@@ -179,6 +179,40 @@ export interface WrChart extends ScatterSeries {
   notes_label?: string | null;
 }
 
+/** One metric's year-over-year rank correlation, and which side of the argument it sits on. */
+export interface StickyMetric {
+  label: string;
+  kind: "opportunity" | "efficiency" | "output";
+  pairs: number;
+  rho: number;
+  /** The same figure from a pairing the extractor does itself, as a check. */
+  rho_repaired?: number;
+}
+
+export interface Stickiness {
+  title: string;
+  caption: string;
+  seasons: [number, number];
+  pairs: number;
+  metrics: StickyMetric[];
+}
+
+/** A receiver's weekly shape: the scatter point carries his season line too. */
+export interface ConsistencyPoint extends ScatterPoint {
+  games: number;
+  ppg: number;
+  median: number;
+}
+
+export interface Consistency extends ScatterSeries {
+  title: string;
+  x_pct: boolean;
+  y_pct: boolean;
+  boom: number;
+  bust: number;
+  points: ConsistencyPoint[];
+}
+
 export interface WrCharts {
   season: number;
   updated: string;
@@ -190,6 +224,12 @@ export interface WrCharts {
       airyards_share: WrChart;
       wopr_ppg: WrChart;
     };
+    /**
+     * The two supplementary charts, from the nflverse export rather than the
+     * workbook — the only place this page reads a second source.
+     */
+    stickiness: Stickiness | null;
+    consistency: Consistency | null;
     /** Receivers the operator tracked who fell outside the charted top 50. */
     notable: { label: string; names: string[] };
     /**
@@ -205,6 +245,8 @@ export interface WrCharts {
 const wrFile_ = wrFile as unknown as WrCharts;
 
 export const WR_CHARTS = wrFile_.data.charts;
+export const WR_STICKINESS = wrFile_.data.stickiness;
+export const WR_CONSISTENCY = wrFile_.data.consistency;
 export const WR_NOTABLE = wrFile_.data.notable;
 export const WR_GRID = wrFile_.data.grid;
 export const WR_SEASON = wrFile_.season;
