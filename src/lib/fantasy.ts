@@ -90,6 +90,29 @@ export interface FuturePick {
   thin: boolean;
 }
 
+/**
+ * A player the eligibility rule keeps off the 2026 board.
+ *
+ * Published rather than dropped quietly. A board that removes someone a reader
+ * expected to find owes them the name, the reason and the rank he would have
+ * held — this site's whole argument is that a ranking should be auditable, and
+ * an invisible exclusion is the one edit a reader cannot check (§8).
+ */
+export interface ExcludedPick {
+  position: string;
+  player: string;
+  team: string | null;
+  prior_games: number;
+  /** Where he would have sat had the rule not applied. */
+  would_have_ranked: number;
+}
+
+export interface BoardRule {
+  min_prior_games: number;
+  reason: string;
+  excluded: ExcludedPick[];
+}
+
 interface FantasyFile {
   updated: string;
   source: string;
@@ -109,6 +132,7 @@ interface FantasyFile {
     };
     board_limit: number;
     board_totals: Record<string, Record<string, number>>;
+    board_rule: BoardRule;
     ranking_quality: QualityRow[];
     data_span: { from: number; to: number; player_weeks: number };
   };
@@ -130,6 +154,7 @@ export const FM_DRIVERS = d.drivers;
 export const FM_BOARDS = d.boards;
 export const FM_BOARD_LIMIT = d.board_limit;
 export const FM_BOARD_TOTALS = d.board_totals;
+export const FM_BOARD_RULE = d.board_rule;
 export const FM_QUALITY = d.ranking_quality;
 export const FM_SPAN = d.data_span;
 
@@ -160,3 +185,12 @@ export const FM_BACKTEST_EXTENT = {
 
 export const qualityFor = (pos: string): QualityRow | undefined =>
   FM_QUALITY.find((q) => q.position === pos);
+
+/**
+ * Players the eligibility rule removed from one position's 2026 board, best
+ * projection first — the order a reader would have met them on the board.
+ */
+export const excludedFor = (pos: string): ExcludedPick[] =>
+  FM_BOARD_RULE.excluded
+    .filter((e) => e.position === pos)
+    .sort((a, b) => a.would_have_ranked - b.would_have_ranked);

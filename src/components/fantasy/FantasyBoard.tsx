@@ -3,8 +3,8 @@ import { PositionBadge } from "@/components/PlayerLink";
 import { TeamChip } from "@/components/TeamChip";
 import { EmptyState } from "@/components/PageHeader";
 import {
-  FM_BOARDS, FM_BOARD_LIMIT, FM_BOARD_TOTALS, FM_POSITION_NAME, FM_POSITIONS,
-  qualityFor,
+  FM_BOARDS, FM_BOARD_LIMIT, FM_BOARD_RULE, FM_BOARD_TOTALS, FM_POSITION_NAME,
+  FM_POSITIONS, excludedFor, qualityFor,
 } from "@/lib/fantasy";
 import type { FantasyPosition, FuturePick, PastPick } from "@/lib/fantasy";
 import type { Position } from "@/lib/types";
@@ -59,7 +59,11 @@ export function FantasyBoard({
           {FM_POSITION_NAME[position]}
         </h3>
         <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-          Top {Math.min(FM_BOARD_LIMIT, rows.length)} of {total} projected
+          {/* "Eligible" rather than "projected" on the 2026 board: the total
+              there counts the players the minimum-games rule admits, and the
+              model projects more than it recommends. */}
+          Top {Math.min(FM_BOARD_LIMIT, rows.length)} of {total}{" "}
+          {past ? "projected" : "eligible"}
         </p>
       </div>
 
@@ -73,7 +77,7 @@ export function FantasyBoard({
       ) : past ? (
         <PastTable rows={rows as PastPick[]} position={position} />
       ) : (
-        <FutureTable rows={rows as FuturePick[]} />
+        <FutureTable rows={rows as FuturePick[]} position={position} />
       )}
     </div>
   );
@@ -135,8 +139,15 @@ function PastTable({ rows, position }: { rows: PastPick[]; position: FantasyPosi
   );
 }
 
-function FutureTable({ rows }: { rows: FuturePick[] }) {
+function FutureTable({
+  rows,
+  position,
+}: {
+  rows: FuturePick[];
+  position: FantasyPosition;
+}) {
   const thin = rows.filter((r) => r.thin).length;
+  const excluded = excludedFor(position);
   return (
     <>
       <div className="mt-4 overflow-x-auto">
@@ -197,6 +208,21 @@ function FutureTable({ rows }: { rows: FuturePick[] }) {
           with that in mind.</>
         )}
       </p>
+      {excluded.length > 0 && (
+        <p className="mt-3 max-w-3xl text-xs" style={{ color: "var(--text-muted)" }}>
+          Every player on this board has at least {FM_BOARD_RULE.min_prior_games}{" "}
+          prior games — a full season. Held off it for a shorter record:{" "}
+          {excluded.map((e, i) => (
+            <span key={`${e.player}-${e.would_have_ranked}`}>
+              {i > 0 && "; "}
+              {e.player} ({e.prior_games} games, would have ranked{" "}
+              {e.would_have_ranked})
+            </span>
+          ))}
+          . The projections themselves are unchanged — the model still carries
+          every one of them, and the full board is in the model&rsquo;s own CSV.
+        </p>
+      )}
     </>
   );
 }
