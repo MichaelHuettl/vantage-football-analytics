@@ -1,7 +1,7 @@
 import { PositionBadge } from "@/components/PlayerLink";
 import {
-  FM_BACKTEST_EXTENT, FM_CALIBRATION, FM_CONFIG, FM_COVERAGE, FM_METRICS,
-  FM_POSITIONS, FM_QUALITY, FM_SPAN, FM_WINDOW, backtestFor,
+  FM_BACKTEST_EXTENT, FM_CALIBRATION, FM_CONFIG, FM_COVERAGE, FM_HIT_RATES,
+  FM_METRICS, FM_POSITIONS, FM_QUALITY, FM_SPAN, FM_WINDOW, backtestFor,
 } from "@/lib/fantasy";
 import type { Position } from "@/lib/types";
 
@@ -19,6 +19,9 @@ const pct = (n: number, dp = 1) => `${(Math.round(n * 100 * 10 ** dp) / 10 ** dp
 export function FantasyAccuracy() {
   const seasons = [...new Set(backtestFor("WR").map((r) => r.season))];
   const span = FM_BACKTEST_EXTENT;
+  const hr = FM_HIT_RATES;
+  const starters = hr.overall.starters;
+  const allRows = hr.overall.all;
 
   return (
     <section>
@@ -94,6 +97,106 @@ export function FantasyAccuracy() {
         independent and cancel across seventeen games. Kicker and defense gain
         most because their signal is not in their own past — it is in the betting
         line for the game they are about to play.
+      </p>
+
+      {/* ---- hit rates ---- */}
+      <h3 className="eyebrow mt-12">How often is it close?</h3>
+      <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+        Average error says how far off the model is. It does not say how often it
+        is <em>about right</em>, which is the question you ask before setting a
+        lineup. Across the same {hr.season_count} back-tested seasons,{" "}
+        <strong style={{ color: "var(--text-primary)" }}>
+          {pct(starters.within_10)} of startable player-weeks landed within 10
+          points
+        </strong>{" "}
+        of the real score, against {pct(starters.naive_within_10)} for recent
+        form. Within 5 points it is {pct(starters.within_5)} against{" "}
+        {pct(starters.naive_within_5)}.
+      </p>
+      <div className="mt-4 overflow-x-auto">
+        <table className="w-full min-w-[620px] text-sm">
+          <thead>
+            <tr className="eyebrow border-b" style={{ borderColor: "var(--border-subtle)" }}>
+              <th className="py-2 text-left">Position</th>
+              <th className="py-2 text-right">Median week</th>
+              <th className="py-2 text-right">Within 5</th>
+              <th className="py-2 text-right">Recent form</th>
+              <th className="py-2 text-right">Within 10</th>
+              <th className="py-2 text-right">Recent form</th>
+            </tr>
+          </thead>
+          <tbody>
+            {hr.positions.map((r) => (
+              <tr key={r.position} className="border-b"
+                  style={{ borderColor: "var(--border-subtle)" }}>
+                <td className="py-2">
+                  <span className="flex items-center gap-2">
+                    <PositionBadge position={r.position as Position} />
+                  </span>
+                </td>
+                <td className="py-2 text-right tnum" style={{ color: "var(--text-muted)" }}>
+                  {r.median_actual.toFixed(1)}
+                </td>
+                <td className="py-2 text-right tnum">{pct(r.within_5)}</td>
+                <td className="py-2 text-right tnum" style={{ color: "var(--text-muted)" }}>
+                  {pct(r.naive_within_5)}
+                </td>
+                <td className="py-2 text-right tnum" style={{ fontWeight: 600 }}>
+                  {pct(r.within_10)}
+                </td>
+                <td className="py-2 text-right tnum" style={{ color: "var(--text-muted)" }}>
+                  {pct(r.naive_within_10)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+        &ldquo;Startable&rdquo; is the top {hr.starters_per_week.QB} quarterbacks,{" "}
+        {hr.starters_per_week.RB} backs, {hr.starters_per_week.WR} receivers and{" "}
+        {hr.starters_per_week.TE} tight ends <em>by projection</em> that week —
+        ranked on what the model said beforehand, never on what happened, which
+        would make this a measure of hindsight. {starters.rows.toLocaleString()}{" "}
+        player-weeks. Every row is out of sample: each season is predicted by a
+        model trained only on the years before it.
+      </p>
+      <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+        Over <em>all</em> {allRows.rows.toLocaleString()} player-weeks the figure
+        is {pct(allRows.within_10)} rather than {pct(starters.within_10)}, and
+        that is the easier question, not the better answer.{" "}
+        {pct(hr.zeroes.share_of_rows)} of those rows are players who scored
+        nothing and were projected near nothing — correct calls that cost nobody
+        a decision. The number above excludes them on purpose.
+      </p>
+      <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+        A band is also not the same test at every position. Ten points covers{" "}
+        {pct(hr.positions.find((r) => r.position === "K")?.within_10 ?? 0)} of
+        kicker weeks because a kicker&rsquo;s entire range is about that wide,
+        which is why the median week sits next to each rate.
+      </p>
+
+      {/* ---- where the advantage actually is ---- */}
+      <h3 className="eyebrow mt-12">The edge is in avoiding disasters, not hitting the number</h3>
+      <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+        Widen the band and the model wins every year; tighten it and the
+        advantage disappears. It beat recent form in{" "}
+        {hr.seasons_model_better["10"]} of {hr.season_count} seasons within 10
+        points and {hr.seasons_model_better["5"]} of {hr.season_count} within 5 —
+        but only {hr.seasons_model_better["3"]} within 3, and{" "}
+        {hr.seasons_model_better["2"]} within 2.
+      </p>
+      <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+        That is not a flaw so much as a description. On the{" "}
+        {hr.zeroes.rows.toLocaleString()} weeks a player scored nothing, a
+        trailing average that has already collapsed toward zero lands within 2
+        points {pct(hr.zeroes.naive_within_2)} of the time against the
+        model&rsquo;s {pct(hr.zeroes.model_within_2)}, because the model regresses
+        that player back up to a positive number. On the weeks a player did
+        score, the two are level — {pct(hr.zeroes.scored_model_within_2)} against{" "}
+        {pct(hr.zeroes.scored_naive_within_2)}. The model earns its lift by not
+        being badly wrong, which is worth more to a lineup than precision it
+        does not have.
       </p>
 
       {/* ---- season by season ---- */}

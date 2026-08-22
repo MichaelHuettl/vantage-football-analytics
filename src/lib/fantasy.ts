@@ -107,6 +107,46 @@ export interface ExcludedPick {
   would_have_ranked: number;
 }
 
+/**
+ * How often the projection landed within a band of the real score, per
+ * position, on the weeks a manager would actually have been choosing between.
+ */
+export interface HitRatePosition {
+  position: string;
+  rows: number;
+  /** The median score actually posted — the band means nothing without it. */
+  median_actual: number;
+  within_5: number;
+  naive_within_5: number;
+  within_10: number;
+  naive_within_10: number;
+}
+
+export interface HitRateOverall {
+  rows: number;
+  [band: string]: number;
+}
+
+export interface HitRates {
+  bands: number[];
+  seasons: [number, number];
+  season_count: number;
+  /** Seasons out of `season_count` where the model beat the baseline, by band. */
+  seasons_model_better: Record<string, number>;
+  starters_per_week: Record<string, number>;
+  /** Why the all-rows figure is the easier question, in numbers. */
+  zeroes: {
+    share_of_rows: number;
+    rows: number;
+    model_within_2: number;
+    naive_within_2: number;
+    scored_model_within_2: number;
+    scored_naive_within_2: number;
+  };
+  overall: { all: HitRateOverall; starters: HitRateOverall };
+  positions: HitRatePosition[];
+}
+
 export interface BoardRule {
   min_prior_games: number;
   reason: string;
@@ -133,6 +173,7 @@ interface FantasyFile {
     board_limit: number;
     board_totals: Record<string, Record<string, number>>;
     board_rule: BoardRule;
+    hit_rates: HitRates;
     ranking_quality: QualityRow[];
     data_span: { from: number; to: number; player_weeks: number };
   };
@@ -155,6 +196,7 @@ export const FM_BOARDS = d.boards;
 export const FM_BOARD_LIMIT = d.board_limit;
 export const FM_BOARD_TOTALS = d.board_totals;
 export const FM_BOARD_RULE = d.board_rule;
+export const FM_HIT_RATES = d.hit_rates;
 export const FM_QUALITY = d.ranking_quality;
 export const FM_SPAN = d.data_span;
 
