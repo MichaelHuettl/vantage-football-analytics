@@ -1,5 +1,6 @@
 import rbFile from "@/data/rb-charts.json";
 import teFile from "@/data/te-charts.json";
+import wrFile from "@/data/wr-charts.json";
 import qbFile from "@/data/qb-charts.json";
 
 export interface ScatterPoint {
@@ -160,6 +161,55 @@ export const TE_BENCHMARK_SIZE = teFile_.data.benchmark_image_size;
 export const TE_SEASON = teFile_.season;
 export const TE_UPDATED = teFile_.updated;
 export const TE_SOURCE = teFile_.source;
+
+// ============================= Wide receiver =============================
+// Built from the workbook's WRTE sheet by scripts/curated/wr_charts.py — the
+// receivers occupy rows 2-183 of the same sheet the tight ends do. The grid's
+// YPRR and TPRR columns are 4for4-derived categorisations published by the
+// operator's decision; see docs/STATE.md.
+
+/** A scatter, the operator's groupings beside it, and any prose he wrote under it. */
+export interface WrChart extends ScatterSeries {
+  title: string;
+  x_pct: boolean;
+  y_pct: boolean;
+  groups?: { label: string; names: string[] }[];
+  /** Free-written observations from the sheet, e.g. "Olave: Improved Offense". */
+  notes?: string[];
+  notes_label?: string | null;
+}
+
+export interface WrCharts {
+  season: number;
+  updated: string;
+  source: string;
+  note: string;
+  data: {
+    charts: {
+      targets_airyards: WrChart;
+      airyards_share: WrChart;
+      wopr_ppg: WrChart;
+    };
+    /** Receivers the operator tracked who fell outside the charted top 50. */
+    notable: { label: string; names: string[] };
+    /**
+     * The check-the-box grid, split at the source. Four columns name players
+     * and three name teams, and they render differently — a team gets a chip —
+     * so the extractor separates them rather than a component guessing from
+     * the string.
+     */
+    grid: { players: BoxColumn[]; teams: BoxColumn[] };
+  };
+}
+
+const wrFile_ = wrFile as unknown as WrCharts;
+
+export const WR_CHARTS = wrFile_.data.charts;
+export const WR_NOTABLE = wrFile_.data.notable;
+export const WR_GRID = wrFile_.data.grid;
+export const WR_SEASON = wrFile_.season;
+export const WR_UPDATED = wrFile_.updated;
+export const WR_SOURCE = wrFile_.source;
 
 // ============================== Quarterback ==============================
 // Built from the operator's QB Statistics PDF by scripts/curated/qb_charts.py.

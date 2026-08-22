@@ -10,6 +10,7 @@ import { DefenseAnalysis } from "@/components/DefenseAnalysis";
 import { KickerAnalysis } from "@/components/KickerAnalysis";
 import { RunningBackAnalysis } from "@/components/RunningBackAnalysis";
 import { TightEndAnalysis } from "@/components/TightEndAnalysis";
+import { WideReceiverAnalysis } from "@/components/WideReceiverAnalysis";
 import { QuarterbackAnalysis } from "@/components/QuarterbackAnalysis";
 import { PLAYERS, getRankingList } from "@/lib/content";
 import { POSITIONS, POSITION_BUILT, POSITION_NAME } from "@/lib/types";
@@ -163,6 +164,7 @@ export default async function PositionPage({
             {upper === "DST" && <DefenseAnalysis />}
             {upper === "TE" && <TightEndAnalysis />}
             {upper === "QB" && <QuarterbackAnalysis />}
+            {upper === "WR" && <WideReceiverAnalysis />}
           </>
         ) : (
           <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">

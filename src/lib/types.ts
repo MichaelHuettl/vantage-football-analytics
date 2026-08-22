@@ -35,7 +35,7 @@ export const POSITION_NAME: Record<Position, string> = {
  * what a reader is going to find when they click through.
  */
 export const POSITION_BUILT: ReadonlySet<Position> = new Set<Position>([
-  "RB", "K", "DST", "TE", "QB",
+  "RB", "K", "DST", "TE", "QB", "WR",
 ]);
 
 export interface Envelope<T> {
