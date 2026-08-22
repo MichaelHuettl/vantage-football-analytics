@@ -215,6 +215,14 @@ build` with a line number instead of shipping a broken page.
        *efficiency* does not repeat — yards per target 0.25, touchdowns per
        target 0.17. The page states the failed half under its own "what this
        does not show" heading. **Do not reinstate the stronger claim.**
+     - **A conclusion panel sits under the boom/bust chart**, sorting the field
+       into the scatter's four corners and then crossing boom rate with WOPR.
+       The corners are flagged on the page as partly circular — better receivers
+       boom more, so they re-describe scoring. **The usage cross is the half
+       that adds information**: five receivers with top-half usage and a
+       bottom-half boom rate, seven the reverse. It reads as an argument only
+       because the stickiness bars sit above it; without that, it is two lists.
+       Six of 39 carry no WOPR point and are left unplaced rather than guessed.
    - **RB** — three scatters, the historic RB 1-3 table, and two ranked tables.
      `ScatterChart` names every point: thirty candidate positions per label,
      six directions at five distances, with a leader line past the inner ring.
