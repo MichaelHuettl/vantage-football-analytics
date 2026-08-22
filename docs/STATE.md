@@ -26,8 +26,8 @@ coverage column from F to G. Every extractor names the version it targets in
 `DEFAULT_WB`; when a new one arrives, re-run each script and read the row map
 before trusting the output.
 
-**Eight extractors feed the site** and write JSON into `src/data/`. The first
-four are the only things that touch the workbook; the last four read a PDF, the
+**Nine extractors feed the site** and write JSON into `src/data/`. The first
+five are the only things that touch the workbook; the last four read a PDF, the
 nflverse export and the prediction pipeline's artifacts instead:
 
 | Script | Writes | Covers |
@@ -36,6 +36,7 @@ nflverse export and the prediction pipeline's artifacts instead:
 | `scripts/curated/kicker_charts.py` | `kicker-charts.json` | FG attempts, kicker scoring, advantages, board |
 | `scripts/curated/defense_charts.py` | `defense-charts.json` | 9 defense blocks + coordinators |
 | `scripts/curated/te_charts.py` | `te-charts.json` | 5 TE scatters, history, TE1-3/4-6 grids |
+| `scripts/curated/wr_charts.py` | `wr-charts.json` | 3 WR scatters, notable names, check-the-box grid |
 | `scripts/curated/qb_charts.py` | `qb-charts.json` | 4 QB scatters + correlations (**reads a PDF**) |
 | `scripts/curated/player_profiles.py` | `player-profiles.json` | 79 player profiles (**reads the nflverse export**) |
 | `scripts/curated/model_misses.py` | `model-misses.json` | Case study: 292 misses, 16 season folds (**reads the pipeline's report + artifacts**) |
@@ -64,7 +65,7 @@ build` with a line number instead of shipping a broken page.
 | --- | --- |
 | Home | Built. Lambeau hero, eight section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
-| Positional Data | Index cards carry a photo per position in a shared 2:1 frame, and head on `evaluated_on` — the family of statistics a position is judged on — with WR marked unbuilt. Six pages. **RB, K, DST, TE and QB are built** — one column: methodology, then the evidence. WR keeps the two-column slot-and-pool layout |
+| Positional Data | Index cards carry a photo per position in a shared 2:1 frame, and head on `evaluated_on` — the family of statistics a position is judged on — Six pages, and **all six are built** — one column each: methodology, then the evidence. The two-column slot-and-pool placeholder is no longer used by any position |
 | Injury Database | Training camp section (58 entries) plus a **live wire** reconciled against it, team filter in the URL. Weekly report empty until Week 1 |
 | Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Game Tracker | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
@@ -175,11 +176,31 @@ build` with a line number instead of shipping a broken page.
    reporting, with an attributed timeline or none (§5.3); the wire sits beside
    it. This is the standing fix for open item 7.
 
-2. **Position pages: RB, K, DST, TE and QB are built. WR is not.**
+2. ~~**Position pages: RB, K, DST, TE and QB are built. WR is not.**~~ **Closed 2026-08-22 — WR is built; see the WR entry below.**
    Each built page follows the same shape — a script reads the workbook, the
-   JSON holds every computed value, and the components only draw (§11). WR is
-   the last one: six of the workbook's eleven charts are on that sheet, and
-   `te_charts.py` already reads it, which makes it the closest template.
+   JSON holds every computed value, and the components only draw (§11).
+   - **WR** — built 2026-08-22, and the last position to get a page. Three
+     scatters in the operator's order — target share against air yards, then
+     both as a share of one offense, then WOPR against PPR points per game —
+     followed by the receivers he tracks outside the charted fifty and the
+     check-the-box grid. 50, 41 and 36 players, 127 points.
+     - **Its rows are 2-183 of the same WRTE sheet the tight ends use**, which
+       starts at 189. `te_charts.py` was the template and two of its rules had
+       to change. The **date-serial guard is per-axis now**: it drops anything
+       over a thousand, and the first WR chart's x-axis is air yards, which runs
+       to 1,841 — left as it was it would have silently deleted most of the
+       chart. And the **name column is per-block**, because the first block
+       keeps names in D rather than B.
+     - **The grid's "High YPRR" and "High TPRR" columns are 4for4-derived.**
+       This is the third place that vendor's work reaches the site, after the RB
+       chart and the whole TE page. What is published is the operator's own
+       categorisation — names under a heading — not the licensed figures, which
+       is a smaller step than the TE page took. **Flagged to him rather than
+       assumed**, same as the other two.
+     - **Sixteen notable names print as bare surnames** — Boutte, Kupp, Shakir.
+       They appear nowhere in full on the sheet, and the page says so rather
+       than guessing a first name onto a surname. The three teams columns render
+       as chips; all fourteen resolve, trailing spaces and all.
    - **RB** — three scatters, the historic RB 1-3 table, and two ranked tables.
      `ScatterChart` names every point: thirty candidate positions per label,
      six directions at five distances, with a leader line past the inner ring.
