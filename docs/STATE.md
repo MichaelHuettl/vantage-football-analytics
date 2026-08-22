@@ -201,6 +201,20 @@ build` with a line number instead of shipping a broken page.
        They appear nowhere in full on the sheet, and the page says so rather
        than guessing a first name onto a surname. The three teams columns render
        as chips; all fourteen resolve, trailing spaces and all.
+     - **Two charts come from the nflverse export, not the workbook**, added
+       2026-08-22 — the only extractor on the site reading two sources. Neither
+       touches a licensed column. *Stickiness*: year-over-year rank correlation
+       for eight measures across 571 paired WR seasons since 2015, reconciled
+       against a pairing the script does itself from the season-level export
+       (worst gap 0.068; over 0.12 it says not to publish). *Consistency*: boom
+       weeks against bust weeks for each charted receiver in 2025.
+     - **The stickiness result contradicted the page and the page changed.**
+       The WOPR chart's paragraph claimed opportunity forecasts better than
+       scoring does. It does not: points per game repeats at 0.59 against 0.49
+       for target share and 0.49 for WOPR. What the data does support is that
+       *efficiency* does not repeat — yards per target 0.25, touchdowns per
+       target 0.17. The page states the failed half under its own "what this
+       does not show" heading. **Do not reinstate the stronger claim.**
    - **RB** — three scatters, the historic RB 1-3 table, and two ranked tables.
      `ScatterChart` names every point: thirty candidate positions per label,
      six directions at five distances, with a leader line past the inner ring.
