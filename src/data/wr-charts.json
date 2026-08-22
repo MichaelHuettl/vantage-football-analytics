@@ -1,0 +1,1307 @@
+{
+ "schema_version": 1,
+ "season": 2025,
+ "updated": "2026-08-22",
+ "source": "2026-2027 Fantasy Football Analytics (Original) (4).xlsx, sheet 'WRTE Statistics & Graphs'",
+ "note": "Wide receiver charts from the workbook's WRTE sheet, rows 2-183. The grid's 'High YPRR' and 'High TPRR' columns are 4for4-derived categorisations; \u00a72 rules that vendor's columns out and the operator lifted it for the RB chart and the TE page (docs/STATE.md). Names only here, not the licensed figures. Every median, extent and label order is computed here, not in a component (\u00a711).",
+ "data": {
+  "charts": {
+   "targets_airyards": {
+    "title": "Target share against air yards",
+    "caption": "Volume and depth are different jobs. Up and to the right is a receiver who is both thrown to often and thrown to deep; far right with a low target share is one running deep routes the quarterback rarely looks at.",
+    "x_label": "Air yards",
+    "y_label": "Target share %",
+    "x_pct": false,
+    "y_pct": true,
+    "x_median": 1195.5,
+    "y_median": 18.85,
+    "x_min": 843.0,
+    "x_max": 1841.0,
+    "y_min": 5.1,
+    "y_max": 35.82,
+    "points": [
+     {
+      "name": "Chris Olave",
+      "x": 1841.0,
+      "y": 27.71,
+      "label": true,
+      "short": "C. Olave",
+      "rank": 5
+     },
+     {
+      "name": "Jaxon Smith-Njigba",
+      "x": 1833.0,
+      "y": 35.82,
+      "label": true,
+      "short": "J. Smith-Njigba",
+      "rank": 0
+     },
+     {
+      "name": "Ja'Marr Chase",
+      "x": 1570.0,
+      "y": 30.48,
+      "label": true,
+      "short": "J. Chase",
+      "rank": 3
+     },
+     {
+      "name": "George Pickens",
+      "x": 1547.0,
+      "y": 22.57,
+      "label": true,
+      "short": "G. Pickens",
+      "rank": 18
+     },
+     {
+      "name": "Alec Pierce",
+      "x": 1532.0,
+      "y": 9.99,
+      "label": true,
+      "short": "A. Pierce",
+      "rank": 9
+     },
+     {
+      "name": "Nico Collins",
+      "x": 1529.0,
+      "y": 21.7,
+      "label": true,
+      "short": "N. Collins",
+      "rank": 21
+     },
+     {
+      "name": "Michael Wilson",
+      "x": 1502.0,
+      "y": 20.42,
+      "label": true,
+      "short": "M. Wilson",
+      "rank": 24
+     },
+     {
+      "name": "Emeka Egbuka",
+      "x": 1485.0,
+      "y": 23.56,
+      "label": true,
+      "short": "E. Egbuka",
+      "rank": 26
+     },
+     {
+      "name": "Courtland Sutton",
+      "x": 1477.0,
+      "y": 21.31,
+      "label": true,
+      "short": "C. Sutton",
+      "rank": 28
+     },
+     {
+      "name": "Puka Nacua",
+      "x": 1473.0,
+      "y": 28.57,
+      "label": true,
+      "short": "P. Nacua",
+      "rank": 7
+     },
+     {
+      "name": "Justin Jefferson",
+      "x": 1438.0,
+      "y": 30.13,
+      "label": true,
+      "short": "J. Jefferson",
+      "rank": 4
+     },
+     {
+      "name": "AJ Brown",
+      "x": 1425.0,
+      "y": 26.02,
+      "label": true,
+      "short": "AJ Brown",
+      "rank": 12
+     },
+     {
+      "name": "Tetairoa McMillan",
+      "x": 1410.0,
+      "y": 25.36,
+      "label": true,
+      "short": "T. McMillan",
+      "rank": 16
+     },
+     {
+      "name": "CeeDee Lamb",
+      "x": 1403.0,
+      "y": 19.28,
+      "label": true,
+      "short": "C. Lamb",
+      "rank": 31
+     },
+     {
+      "name": "Amon-Ra St. Brown",
+      "x": 1390.0,
+      "y": 31.33,
+      "label": true,
+      "short": "A. St. Brown",
+      "rank": 2
+     },
+     {
+      "name": "DeVonta Smith",
+      "x": 1355.0,
+      "y": 24.3,
+      "label": true,
+      "short": "D. Smith",
+      "rank": 23
+     },
+     {
+      "name": "Davante Adams",
+      "x": 1349.0,
+      "y": 19.62,
+      "label": true,
+      "short": "D. Adams",
+      "rank": 38
+     },
+     {
+      "name": "Brian Thomas Jr",
+      "x": 1315.0,
+      "y": 16.61,
+      "label": true,
+      "short": "B. Thomas Jr",
+      "rank": 41
+     },
+     {
+      "name": "Tee Higgins",
+      "x": 1314.0,
+      "y": 16.14,
+      "label": true,
+      "short": "T. Higgins",
+      "rank": 36
+     },
+     {
+      "name": "Jameson Williams",
+      "x": 1289.0,
+      "y": 18.4,
+      "label": true,
+      "short": "J. Williams",
+      "rank": 46
+     },
+     {
+      "name": "Jerry Jeudy",
+      "x": 1288.0,
+      "y": 20.35,
+      "label": true,
+      "short": "J. Jeudy",
+      "rank": 47
+     },
+     {
+      "name": "Jaylen Waddle",
+      "x": 1285.0,
+      "y": 21.65,
+      "label": true,
+      "short": "J. Waddle",
+      "rank": 35
+     },
+     {
+      "name": "Rome Odunze",
+      "x": 1252.0,
+      "y": 17.01,
+      "label": true,
+      "short": "R. Odunze",
+      "rank": 45
+     },
+     {
+      "name": "Drake London",
+      "x": 1221.0,
+      "y": 21.54,
+      "label": true,
+      "short": "D. London",
+      "rank": 37
+     },
+     {
+      "name": "Zay Flowers",
+      "x": 1204.0,
+      "y": 28.92,
+      "label": true,
+      "short": "Z. Flowers",
+      "rank": 6
+     },
+     {
+      "name": "Wan'Dale Robinson",
+      "x": 1187.0,
+      "y": 27.78,
+      "label": true,
+      "short": "W. Robinson",
+      "rank": 8
+     },
+     {
+      "name": "Parker Washington",
+      "x": 1187.0,
+      "y": 17.34,
+      "label": true,
+      "short": "P. Washington",
+      "rank": 48
+     },
+     {
+      "name": "Troy Franklin",
+      "x": 1128.0,
+      "y": 17.87,
+      "label": true,
+      "short": "T. Franklin",
+      "rank": 49
+     },
+     {
+      "name": "Elic Ayomanor",
+      "x": 1126.0,
+      "y": 16.82,
+      "label": true,
+      "short": "E. Ayomanor",
+      "rank": 42
+     },
+     {
+      "name": "Romeo Doubs",
+      "x": 1085.0,
+      "y": 18.48,
+      "label": true,
+      "short": "R. Doubs",
+      "rank": 44
+     },
+     {
+      "name": "Jordan Addison",
+      "x": 1083.0,
+      "y": 16.88,
+      "label": true,
+      "short": "J. Addison",
+      "rank": 43
+     },
+     {
+      "name": "Adonai Mitchell",
+      "x": 1081.0,
+      "y": 12.34,
+      "label": true,
+      "short": "A. Mitchell",
+      "rank": 15
+     },
+     {
+      "name": "Rashid Shaheed",
+      "x": 1053.0,
+      "y": 15.62,
+      "label": true,
+      "short": "R. Shaheed",
+      "rank": 34
+     },
+     {
+      "name": "Ladd McConkey",
+      "x": 1046.0,
+      "y": 19.78,
+      "label": true,
+      "short": "L. McConkey",
+      "rank": 40
+     },
+     {
+      "name": "DK Metcalf",
+      "x": 1044.0,
+      "y": 19.08,
+      "label": true,
+      "short": "DK Metcalf",
+      "rank": 39
+     },
+     {
+      "name": "Keenan Allen",
+      "x": 1027.0,
+      "y": 22.55,
+      "label": true,
+      "short": "K. Allen",
+      "rank": 30
+     },
+     {
+      "name": "Darnell Mooney",
+      "x": 1019.0,
+      "y": 13.85,
+      "label": true,
+      "short": "D. Mooney",
+      "rank": 27
+     },
+     {
+      "name": "Jakobi Meyers",
+      "x": 1008.0,
+      "y": 11.13,
+      "label": true,
+      "short": "J. Meyers",
+      "rank": 11
+     },
+     {
+      "name": "Quentin Johnston",
+      "x": 989.0,
+      "y": 15.53,
+      "label": true,
+      "short": "Q. Johnston",
+      "rank": 33
+     },
+     {
+      "name": "DJ Moore",
+      "x": 988.0,
+      "y": 16.07,
+      "label": true,
+      "short": "DJ Moore",
+      "rank": 32
+     },
+     {
+      "name": "Christian Watson",
+      "x": 977.0,
+      "y": 11.96,
+      "label": true,
+      "short": "C. Watson",
+      "rank": 14
+     },
+     {
+      "name": "Marvin Harrison Jr",
+      "x": 946.0,
+      "y": 11.83,
+      "label": true,
+      "short": "M. Harrison Jr",
+      "rank": 13
+     },
+     {
+      "name": "Tre Tucker",
+      "x": 935.0,
+      "y": 18.62,
+      "label": true,
+      "short": "T. Tucker",
+      "rank": 29
+     },
+     {
+      "name": "Tyquan Thornton",
+      "x": 909.0,
+      "y": 5.1,
+      "label": true,
+      "short": "T. Thornton",
+      "rank": 1
+     },
+     {
+      "name": "Jauan Jennings",
+      "x": 905.0,
+      "y": 16.36,
+      "label": true,
+      "short": "J. Jennings",
+      "rank": 25
+     },
+     {
+      "name": "Xavier Worthy",
+      "x": 876.0,
+      "y": 10.06,
+      "label": true,
+      "short": "X. Worthy",
+      "rank": 10
+     },
+     {
+      "name": "Stefon Diggs",
+      "x": 871.0,
+      "y": 21.21,
+      "label": true,
+      "short": "S. Diggs",
+      "rank": 22
+     },
+     {
+      "name": "Michael Pittman",
+      "x": 853.0,
+      "y": 13.2,
+      "label": true,
+      "short": "M. Pittman",
+      "rank": 20
+     },
+     {
+      "name": "Mack Hollins",
+      "x": 851.0,
+      "y": 13.51,
+      "label": true,
+      "short": "M. Hollins",
+      "rank": 19
+     },
+     {
+      "name": "Darius Slayton",
+      "x": 843.0,
+      "y": 12.5,
+      "label": true,
+      "short": "D. Slayton",
+      "rank": 17
+     }
+    ],
+    "groups": [
+     {
+      "label": "Tier 1 WRs",
+      "names": [
+       "Jaxon Smith-Njigba",
+       "Ja'Marr Chase",
+       "Amon-Ra St. Brown",
+       "Justin Jefferson"
+      ]
+     },
+     {
+      "label": "Short Yardage Dogs",
+      "names": [
+       "Zay Flowers",
+       "Wan'Dale Robinson",
+       "Keenan Allen",
+       "Stefon Diggs"
+      ]
+     },
+     {
+      "label": "Deep Threat Only",
+      "names": [
+       "Alec Pierce",
+       "Nico Collins",
+       "George Pickens"
+      ]
+     }
+    ],
+    "notes_label": "Interesting Notes",
+    "notes": [
+     "Olave: Improved Offense, Elite Yards, Elite Role",
+     "Egbuka: Strong Rookie Profile, Evans Departure, Injuries impact in 2025",
+     "Smith: WR2 Profile/Performance, Departure of AJB, New OC",
+     "McConkey: Departure of Keenan Allen, Healthy O-Line, moving to slot?"
+    ]
+   },
+   "airyards_share": {
+    "title": "Air yards share against target share",
+    "caption": "Both axes are a share of the same offense, so this asks how much of his team's passing game a receiver owns \u2014 the downfield share against the total share. Below the diagonal is a possession role, above it a field-stretching one.",
+    "x_label": "Air yards share %",
+    "y_label": "Target share %",
+    "x_pct": true,
+    "y_pct": true,
+    "x_median": 30.71,
+    "y_median": 19.78,
+    "x_min": 22.46,
+    "x_max": 49.72,
+    "y_min": 5.1,
+    "y_max": 35.82,
+    "points": [
+     {
+      "name": "Chris Olave",
+      "x": 49.72,
+      "y": 27.71,
+      "label": true,
+      "short": "C. Olave",
+      "rank": 0
+     },
+     {
+      "name": "Tetairoa McMillan",
+      "x": 43.26,
+      "y": 25.36,
+      "label": true,
+      "short": "T. McMillan",
+      "rank": 4
+     },
+     {
+      "name": "Jaylen Waddle",
+      "x": 42.33,
+      "y": 21.65,
+      "label": true,
+      "short": "J. Waddle",
+      "rank": 6
+     },
+     {
+      "name": "Jaxon Smith-Njigba",
+      "x": 41.57,
+      "y": 35.82,
+      "label": true,
+      "short": "J. Smith-Njigba",
+      "rank": 1
+     },
+     {
+      "name": "Justin Jefferson",
+      "x": 40.18,
+      "y": 30.13,
+      "label": true,
+      "short": "J. Jefferson",
+      "rank": 7
+     },
+     {
+      "name": "Alec Pierce",
+      "x": 39.9,
+      "y": 9.99,
+      "label": true,
+      "short": "A. Pierce",
+      "rank": 8
+     },
+     {
+      "name": "Amon-Ra St. Brown",
+      "x": 37.84,
+      "y": 31.33,
+      "label": true,
+      "short": "A. St. Brown",
+      "rank": 3
+     },
+     {
+      "name": "Emeka Egbuka",
+      "x": 35.86,
+      "y": 23.56,
+      "label": true,
+      "short": "E. Egbuka",
+      "rank": 22
+     },
+     {
+      "name": "Zay Flowers",
+      "x": 35.77,
+      "y": 28.92,
+      "label": true,
+      "short": "Z. Flowers",
+      "rank": 9
+     },
+     {
+      "name": "Jerry Jeudy",
+      "x": 35.66,
+      "y": 20.35,
+      "label": true,
+      "short": "J. Jeudy",
+      "rank": 24
+     },
+     {
+      "name": "Courtland Sutton",
+      "x": 35.43,
+      "y": 21.31,
+      "label": true,
+      "short": "C. Sutton",
+      "rank": 25
+     },
+     {
+      "name": "Jameson Williams",
+      "x": 35.09,
+      "y": 18.4,
+      "label": true,
+      "short": "J. Williams",
+      "rank": 26
+     },
+     {
+      "name": "Ja'Marr Chase",
+      "x": 34.42,
+      "y": 30.48,
+      "label": true,
+      "short": "J. Chase",
+      "rank": 5
+     },
+     {
+      "name": "AJ Brown",
+      "x": 33.88,
+      "y": 26.02,
+      "label": true,
+      "short": "AJ Brown",
+      "rank": 17
+     },
+     {
+      "name": "Michael Wilson",
+      "x": 33.46,
+      "y": 20.42,
+      "label": true,
+      "short": "M. Wilson",
+      "rank": 34
+     },
+     {
+      "name": "Nico Collins",
+      "x": 33.41,
+      "y": 21.7,
+      "label": true,
+      "short": "N. Collins",
+      "rank": 35
+     },
+     {
+      "name": "DeVonta Smith",
+      "x": 32.22,
+      "y": 24.3,
+      "label": true,
+      "short": "D. Smith",
+      "rank": 23
+     },
+     {
+      "name": "Tre Tucker",
+      "x": 32.01,
+      "y": 18.62,
+      "label": true,
+      "short": "T. Tucker",
+      "rank": 39
+     },
+     {
+      "name": "Adonai Mitchell",
+      "x": 31.61,
+      "y": 12.34,
+      "label": true,
+      "short": "A. Mitchell",
+      "rank": 13
+     },
+     {
+      "name": "George Pickens",
+      "x": 31.39,
+      "y": 22.57,
+      "label": true,
+      "short": "G. Pickens",
+      "rank": 32
+     },
+     {
+      "name": "DK Metcalf",
+      "x": 30.71,
+      "y": 19.08,
+      "label": true,
+      "short": "DK Metcalf",
+      "rank": 40
+     },
+     {
+      "name": "Jordan Addison",
+      "x": 30.26,
+      "y": 16.88,
+      "label": true,
+      "short": "J. Addison",
+      "rank": 31
+     },
+     {
+      "name": "Elic Ayomanor",
+      "x": 29.93,
+      "y": 16.82,
+      "label": true,
+      "short": "E. Ayomanor",
+      "rank": 30
+     },
+     {
+      "name": "Drake London",
+      "x": 29.75,
+      "y": 21.54,
+      "label": true,
+      "short": "D. London",
+      "rank": 38
+     },
+     {
+      "name": "Puka Nacua",
+      "x": 29.19,
+      "y": 28.57,
+      "label": true,
+      "short": "P. Nacua",
+      "rank": 10
+     },
+     {
+      "name": "Tee Higgins",
+      "x": 28.81,
+      "y": 16.14,
+      "label": true,
+      "short": "T. Higgins",
+      "rank": 27
+     },
+     {
+      "name": "CeeDee Lamb",
+      "x": 28.47,
+      "y": 19.28,
+      "label": true,
+      "short": "C. Lamb",
+      "rank": 37
+     },
+     {
+      "name": "Romeo Doubs",
+      "x": 28.07,
+      "y": 18.48,
+      "label": true,
+      "short": "R. Doubs",
+      "rank": 36
+     },
+     {
+      "name": "Wan'Dale Robinson",
+      "x": 27.96,
+      "y": 27.78,
+      "label": true,
+      "short": "W. Robinson",
+      "rank": 11
+     },
+     {
+      "name": "Rome Odunze",
+      "x": 27.6,
+      "y": 17.01,
+      "label": true,
+      "short": "R. Odunze",
+      "rank": 33
+     },
+     {
+      "name": "Troy Franklin",
+      "x": 27.06,
+      "y": 17.87,
+      "label": true,
+      "short": "T. Franklin",
+      "rank": 29
+     },
+     {
+      "name": "Davante Adams",
+      "x": 26.73,
+      "y": 19.62,
+      "label": true,
+      "short": "D. Adams",
+      "rank": 28
+     },
+     {
+      "name": "Christian Watson",
+      "x": 25.27,
+      "y": 11.96,
+      "label": true,
+      "short": "C. Watson",
+      "rank": 12
+     },
+     {
+      "name": "Darnell Mooney",
+      "x": 24.83,
+      "y": 13.85,
+      "label": true,
+      "short": "D. Mooney",
+      "rank": 20
+     },
+     {
+      "name": "Brian Thomas Jr",
+      "x": 24.74,
+      "y": 16.61,
+      "label": true,
+      "short": "B. Thomas Jr",
+      "rank": 21
+     },
+     {
+      "name": "Rashid Shaheed",
+      "x": 23.88,
+      "y": 15.62,
+      "label": true,
+      "short": "R. Shaheed",
+      "rank": 19
+     },
+     {
+      "name": "Ladd McConkey",
+      "x": 23.76,
+      "y": 19.78,
+      "label": true,
+      "short": "L. McConkey",
+      "rank": 18
+     },
+     {
+      "name": "Keenan Allen",
+      "x": 23.33,
+      "y": 22.55,
+      "label": true,
+      "short": "K. Allen",
+      "rank": 16
+     },
+     {
+      "name": "Jauan Jennings",
+      "x": 23.04,
+      "y": 16.36,
+      "label": true,
+      "short": "J. Jennings",
+      "rank": 15
+     },
+     {
+      "name": "Tyquan Thornton",
+      "x": 22.84,
+      "y": 5.1,
+      "label": true,
+      "short": "T. Thornton",
+      "rank": 2
+     },
+     {
+      "name": "Quentin Johnston",
+      "x": 22.46,
+      "y": 15.53,
+      "label": true,
+      "short": "Q. Johnston",
+      "rank": 14
+     }
+    ],
+    "groups": [
+     {
+      "label": "Volume GOATS",
+      "names": [
+       "Jaxon Smith-Njigba",
+       "Justin Jefferson",
+       "Amon-Ra St. Brown",
+       "Ja'Marr Chase"
+      ]
+     },
+     {
+      "label": "Dominant Downfield claim with Target Share",
+      "names": [
+       "Chris Olave",
+       "Tetairoa McMillan",
+       "Jaylen Waddle"
+      ]
+     },
+     {
+      "label": "Air Yards without Targets (Decoys?)",
+      "names": [
+       "Alec Pierce",
+       "Jameson Williams",
+       "Adonai Mitchell"
+      ]
+     },
+     {
+      "label": "Short Yardage Targets",
+      "names": [
+       "Puka Nacua",
+       "Wan'Dale Robinson",
+       "Ladd McConkey",
+       "DeVonta Smith",
+       "Davante Adams"
+      ]
+     },
+     {
+      "label": "Poor Usage",
+      "names": [
+       "Darnell Mooney",
+       "Christian Watson",
+       "Tyquan Thornton"
+      ]
+     }
+    ]
+   },
+   "wopr_ppg": {
+    "title": "WOPR against PPR points per game",
+    "caption": "Opportunity against what it produced. WOPR weights target share and air yards share into one usage number; the vertical spread at any given WOPR is how much of a receiver's scoring his usage does not explain.",
+    "x_label": "WOPR",
+    "y_label": "PPR points per game",
+    "x_pct": false,
+    "y_pct": false,
+    "x_median": 0.54,
+    "y_median": 12.55,
+    "x_min": 0.444,
+    "x_max": 0.84,
+    "y_min": 6.0,
+    "y_max": 23.3,
+    "points": [
+     {
+      "name": "Chris Olave",
+      "x": 0.84,
+      "y": 16.9,
+      "label": true,
+      "short": "C. Olave",
+      "rank": 2
+     },
+     {
+      "name": "Jaxon Smith-Njigba",
+      "x": 0.761,
+      "y": 21.6,
+      "label": true,
+      "short": "J. Smith-Njigba",
+      "rank": 1
+     },
+     {
+      "name": "Justin Jefferson",
+      "x": 0.753,
+      "y": 11.4,
+      "label": true,
+      "short": "J. Jefferson",
+      "rank": 7
+     },
+     {
+      "name": "Amon-Ra St. Brown",
+      "x": 0.734,
+      "y": 18.7,
+      "label": true,
+      "short": "A. St. Brown",
+      "rank": 5
+     },
+     {
+      "name": "Ja'Marr Chase",
+      "x": 0.698,
+      "y": 19.3,
+      "label": true,
+      "short": "J. Chase",
+      "rank": 3
+     },
+     {
+      "name": "Zay Flowers",
+      "x": 0.69,
+      "y": 13.3,
+      "label": true,
+      "short": "Z. Flowers",
+      "rank": 11
+     },
+     {
+      "name": "Tetairoa McMillan",
+      "x": 0.684,
+      "y": 12.6,
+      "label": true,
+      "short": "T. McMillan",
+      "rank": 12
+     },
+     {
+      "name": "Jaylen Waddle",
+      "x": 0.634,
+      "y": 12.1,
+      "label": true,
+      "short": "J. Waddle",
+      "rank": 18
+     },
+     {
+      "name": "AJ Brown",
+      "x": 0.632,
+      "y": 14.7,
+      "label": true,
+      "short": "AJ Brown",
+      "rank": 20
+     },
+     {
+      "name": "Puka Nacua",
+      "x": 0.629,
+      "y": 23.3,
+      "label": true,
+      "short": "P. Nacua",
+      "rank": 0
+     },
+     {
+      "name": "Wan'Dale Robinson",
+      "x": 0.61,
+      "y": 13.6,
+      "label": true,
+      "short": "W. Robinson",
+      "rank": 26
+     },
+     {
+      "name": "Emeka Egbuka",
+      "x": 0.602,
+      "y": 12.1,
+      "label": true,
+      "short": "E. Egbuka",
+      "rank": 29
+     },
+     {
+      "name": "DeVonta Smith",
+      "x": 0.594,
+      "y": 12.1,
+      "label": true,
+      "short": "D. Smith",
+      "rank": 32
+     },
+     {
+      "name": "George Pickens",
+      "x": 0.567,
+      "y": 18.1,
+      "label": true,
+      "short": "G. Pickens",
+      "rank": 6
+     },
+     {
+      "name": "Courtland Sutton",
+      "x": 0.566,
+      "y": 13.6,
+      "label": true,
+      "short": "C. Sutton",
+      "rank": 33
+     },
+     {
+      "name": "Nico Collins",
+      "x": 0.561,
+      "y": 15.1,
+      "label": true,
+      "short": "N. Collins",
+      "rank": 16
+     },
+     {
+      "name": "Jerry Jeudy",
+      "x": 0.553,
+      "y": 7.3,
+      "label": true,
+      "short": "J. Jeudy",
+      "rank": 9
+     },
+     {
+      "name": "Drake London",
+      "x": 0.542,
+      "y": 16.7,
+      "label": true,
+      "short": "D. London",
+      "rank": 10
+     },
+     {
+      "name": "Michael Wilson",
+      "x": 0.539,
+      "y": 12.5,
+      "label": true,
+      "short": "M. Wilson",
+      "rank": 35
+     },
+     {
+      "name": "Alec Pierce",
+      "x": 0.529,
+      "y": 11.0,
+      "label": true,
+      "short": "A. Pierce",
+      "rank": 30
+     },
+     {
+      "name": "Jameson Williams",
+      "x": 0.524,
+      "y": 12.9,
+      "label": true,
+      "short": "J. Williams",
+      "rank": 34
+     },
+     {
+      "name": "Tre Tucker",
+      "x": 0.521,
+      "y": 9.8,
+      "label": true,
+      "short": "T. Tucker",
+      "rank": 14
+     },
+     {
+      "name": "Keenan Allen",
+      "x": 0.503,
+      "y": 10.8,
+      "label": true,
+      "short": "K. Allen",
+      "rank": 28
+     },
+     {
+      "name": "CeeDee Lamb",
+      "x": 0.496,
+      "y": 15.3,
+      "label": true,
+      "short": "C. Lamb",
+      "rank": 15
+     },
+     {
+      "name": "DK Metcalf",
+      "x": 0.486,
+      "y": 12.5,
+      "label": true,
+      "short": "DK Metcalf",
+      "rank": 31
+     },
+     {
+      "name": "Romeo Doubs",
+      "x": 0.482,
+      "y": 10.3,
+      "label": true,
+      "short": "R. Doubs",
+      "rank": 22
+     },
+     {
+      "name": "Davante Adams",
+      "x": 0.478,
+      "y": 15.9,
+      "label": true,
+      "short": "D. Adams",
+      "rank": 13
+     },
+     {
+      "name": "Jordan Addison",
+      "x": 0.476,
+      "y": 10.3,
+      "label": true,
+      "short": "J. Addison",
+      "rank": 23
+     },
+     {
+      "name": "Michael Pittman",
+      "x": 0.473,
+      "y": 12.5,
+      "label": true,
+      "short": "M. Pittman",
+      "rank": 27
+     },
+     {
+      "name": "Elic Ayomanor",
+      "x": 0.472,
+      "y": 7.2,
+      "label": true,
+      "short": "E. Ayomanor",
+      "rank": 8
+     },
+     {
+      "name": "Ladd McConkey",
+      "x": 0.462,
+      "y": 11.3,
+      "label": true,
+      "short": "L. McConkey",
+      "rank": 25
+     },
+     {
+      "name": "Stefon Diggs",
+      "x": 0.455,
+      "y": 12.7,
+      "label": true,
+      "short": "S. Diggs",
+      "rank": 24
+     },
+     {
+      "name": "Troy Franklin",
+      "x": 0.453,
+      "y": 11.1,
+      "label": true,
+      "short": "T. Franklin",
+      "rank": 21
+     },
+     {
+      "name": "Rome Odunze",
+      "x": 0.447,
+      "y": 12.2,
+      "label": true,
+      "short": "R. Odunze",
+      "rank": 19
+     },
+     {
+      "name": "Adonai Mitchell",
+      "x": 0.446,
+      "y": 6.0,
+      "label": true,
+      "short": "A. Mitchell",
+      "rank": 4
+     },
+     {
+      "name": "Tee Higgins",
+      "x": 0.444,
+      "y": 13.8,
+      "label": true,
+      "short": "T. Higgins",
+      "rank": 17
+     }
+    ],
+    "groups": [
+     {
+      "label": "Best Buys",
+      "names": [
+       "Chris Olave",
+       "Justin Jefferson",
+       "Tetairoa McMillan",
+       "DeVonta Smith",
+       "Emeka Egbuka"
+      ]
+     },
+     {
+      "label": "Potential Fades",
+      "names": [
+       "George Pickens",
+       "Drake London",
+       "Nico Collins",
+       "Davante Adams",
+       "CeeDee Lamb"
+      ]
+     }
+    ],
+    "notes": [
+     "Line of Best Fit: Fair Value PPG Given their role on offense",
+     "Below Line of Best Fit: WOPR Usage but no output seen (Room for improvement)",
+     "Above Line of Best Fit: Potential Regression/Overplayed role"
+    ]
+   }
+  },
+  "notable": {
+   "label": "Notable Names out of top 50",
+   "names": [
+    "Terry McLaurin",
+    "Jayden Higgins",
+    "Mike Evans",
+    "Boutte",
+    "Pearsall",
+    "Coleman",
+    "Downs",
+    "Legette",
+    "Nabers",
+    "Golden",
+    "Deebo Samuel",
+    "Kupp",
+    "Flournoy",
+    "Zaccheaus",
+    "Luther Burden",
+    "Ridley",
+    "Coker",
+    "Tolbert",
+    "Kirk",
+    "Marquez Valdes-Scantling",
+    "TeSlaa",
+    "Shakir",
+    "Chris Godwin"
+   ]
+  },
+  "grid": {
+   "players": [
+    {
+     "label": "TD Improvement",
+     "names": [
+      "CeeDee Lamb",
+      "Justin Jefferson",
+      "DeVonta Smith",
+      "Terry McLaurin",
+      "Luther Burden",
+      "Chris Godwin",
+      "Parker Washington",
+      "Wan'Dale Robinson"
+     ]
+    },
+    {
+     "label": "TD Regression",
+     "names": [
+      "Davante Adams",
+      "Tee Higgins",
+      "Amon-Ra St. Brown",
+      "Puka Nacua",
+      "Jaxon Smith-Njigba",
+      "George Pickens",
+      "Quentin Johnston",
+      "Drake London"
+     ]
+    },
+    {
+     "label": "High YPRR",
+     "names": [
+      "Luther Burden",
+      "Zay Flowers",
+      "Christian Watson",
+      "George Pickens",
+      "Drake London",
+      "Terry McLaurin",
+      "Jaylen Waddle",
+      "Parker Washington"
+     ]
+    },
+    {
+     "label": "High TPRR",
+     "names": [
+      "Rashee Rice",
+      "Drake London",
+      "Chris Olave",
+      "Wan'Dale Robinson",
+      "AJ Brown",
+      "Luther Burden",
+      "Zay Flowers",
+      "Jaylen Waddle"
+     ]
+    }
+   ],
+   "teams": [
+    {
+     "label": "Motion Offense",
+     "names": [
+      "49ers",
+      "Seahawks",
+      "Buccaneers",
+      "Saints",
+      "Bills",
+      "Chargers",
+      "Bears",
+      "Ravens"
+     ]
+    },
+    {
+     "label": "Play Action Offense",
+     "names": [
+      "Rams",
+      "Cardinals",
+      "Bears",
+      "Ravens",
+      "Colts",
+      "Chargers",
+      "Bills",
+      "Commanders"
+     ]
+    },
+    {
+     "label": "Best Schemes",
+     "names": [
+      "Bears",
+      "49ers",
+      "Rams",
+      "Colts",
+      "Chargers",
+      "Packers",
+      "Cowboys",
+      "Buccaneers"
+     ]
+    }
+   ]
+  }
+ }
+}
