@@ -26,7 +26,7 @@ coverage column from F to G. Every extractor names the version it targets in
 `DEFAULT_WB`; when a new one arrives, re-run each script and read the row map
 before trusting the output.
 
-**Seven extractors feed the site** and write JSON into `src/data/`. The first
+**Eight extractors feed the site** and write JSON into `src/data/`. The first
 four are the only things that touch the workbook; the last three read a PDF, the
 nflverse export and the prediction pipeline's artifacts instead:
 
@@ -39,6 +39,7 @@ nflverse export and the prediction pipeline's artifacts instead:
 | `scripts/curated/qb_charts.py` | `qb-charts.json` | 4 QB scatters + correlations (**reads a PDF**) |
 | `scripts/curated/player_profiles.py` | `player-profiles.json` | 79 player profiles (**reads the nflverse export**) |
 | `scripts/curated/model_misses.py` | `model-misses.json` | Case study: 292 misses, 16 season folds (**reads the pipeline's report + artifacts**) |
+| `scripts/curated/fantasy_model.py` | `fantasy-model.json` | Fantasy projections, accuracy, boards (**copies a payload, computes nothing**) |
 
 **Nothing is scheduled.** There is no git remote, so no GitHub Action has ever
 run. Every feed and fetch happens when someone types the command (see open
@@ -68,6 +69,7 @@ build` with a line number instead of shipping a broken page.
 | Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Game Tracker | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
+| Fantasy Football Model | **Built**, at `/fantasy-model` — a 1-point-PPR projection model over 153,026 player-weeks, 1999-2025. Four tabs: method, accuracy, the tested 2025 season and the 2026 board. Every board is scoped to a position and the position is in the URL. Payload copied from `~/Desktop/Claude Code/fantasy-model/` |
 | Game Prediction Model | **Built**, at `/model` — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Named by the operator on 2026-08-21; the route is the short `/model` rather than the full name. The payload file keeps its `game-predictions.json` name — that is the prediction pipeline's export filename and this repo only copies it |
 | Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
 | Glossary | **Rebuilt 2026-08-21** — 67 terms in 9 groups, each with a definition, what a good value looks like, its source (nflverse, Next Gen, 4for4, workbook, market, model) and the pages it appears on. It had 6 entries while the home page promised full coverage |
@@ -366,6 +368,17 @@ build` with a line number instead of shipping a broken page.
 directory holds ESPN/Yahoo/Sleeper/Underdog marks and 46 player thumbnails; the
 site was scaffolded into `vantage/` specifically so those stay outside it.
 
+**The fantasy projection model is a third repo**, at
+`~/Desktop/Claude Code/fantasy-model/`, with its own virtual environment —
+pandas, scikit-learn, twenty-seven seasons of nflverse player-week data. It is
+this session's work rather than the peer session's, so it can be edited freely,
+but the same copying contract applies: `export_site_payload.py` writes
+`artifacts/site_payload.json` and `scripts/curated/fantasy_model.py` copies it
+into `src/data/`. Re-run both after any retrain; the site reads the copy and
+nothing watches the source. The model also builds its own technical report
+(`build_report.py` -> a 10-page PDF) which is where its limitations are
+documented at length.
+
 **The prediction pipeline belongs to another session.** The model, its Python
 and its artifacts live in `~/Desktop/nflverse-data/nfl_predictor/` and are
 maintained by a separate session that has asked twice not to have its Python
@@ -454,6 +467,14 @@ copy claiming O-line injuries move the line.**
   eleven of sixty-eight clear it; TPRR called 0.20 strong when it is below the
   charted median. A plausible-sounding threshold is the easiest thing on this
   site to get wrong and the hardest for a reader to catch.
+- **The inline nav bar has now outgrown two breakpoints.** It started at `md`,
+  moved to `lg` when the sections were renamed in August 2026, and moved again
+  to `xl` when the fantasy model made an eighth item. Each time the failure was
+  the same and silent on a wide monitor: the last item runs past the viewport
+  and every page gets a horizontal scrollbar. Measure at 1024 and 1280 after
+  adding or lengthening any nav label. The nav also shortens where a heading
+  does not — "Fantasy Model" in the bar, "Fantasy Football Model" on the page,
+  the same way the positions dropdown says "Defense / ST".
 - **The market has two "favourites" and they disagree.** The miss report's
   headline — the market lost 253 of the model's 292 misses — only reproduces if
   the market's side is taken from `spread_line`. Read from the moneyline it is

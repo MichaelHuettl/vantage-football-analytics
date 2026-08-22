@@ -35,7 +35,7 @@ export function SiteHeader() {
             </span>
           </Link>
 
-          <nav aria-label="Primary" className="ml-auto hidden lg:block">
+          <nav aria-label="Primary" className="ml-auto hidden xl:block">
             <ul className="flex items-center gap-1">
               {SITE_NAV.map((item) =>
                 item.children ? (
@@ -90,13 +90,16 @@ export function SiteHeader() {
               menu behind a tap, and the row scrolls sideways rather than
               wrapping or truncating.
 
-              This takes over below `lg`, not below `md`. The section names grew
-              on 2026-08-21 — "Positions" became "Positional Data", "Injuries"
-              became "Injury Database", and "Game Prediction Model" arrived — and
-              the inline bar stopped fitting somewhere between 900px and 1000px,
-              pushing the last item past the viewport and giving the whole page a
-              horizontal scrollbar. The breakpoint follows the labels. */}
-          <nav aria-label="Primary" className="lg:hidden -mx-4 px-4 overflow-x-auto">
+              This takes over below `xl`, and it has moved twice for the same
+              reason. First below `md`, until the section renames of 2026-08-21
+              ("Positions" to "Positional Data", "Injuries" to "Injury
+              Database", plus "Game Prediction Model") pushed the bar past the
+              viewport between 900px and 1000px. Then below `lg`, until the
+              fantasy model added an eighth item and the bar ran flush to the
+              edge at 1024 with no margin left. The breakpoint follows the
+              labels; an eighth long name is where an inline bar stops being the
+              right device below a wide desktop. */}
+          <nav aria-label="Primary" className="xl:hidden -mx-4 px-4 overflow-x-auto">
             <ul className="flex gap-x-4">
               {SITE_NAV.map((item) => (
                 <li key={item.href}>

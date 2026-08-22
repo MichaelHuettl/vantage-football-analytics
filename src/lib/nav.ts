@@ -30,5 +30,11 @@ export const SITE_NAV: NavItem[] = [
   { href: "/film", label: "Film" },
   { href: "/games", label: "Game Tracker" },
   { href: "/model", label: "Game Prediction Model" },
+  // "Fantasy Model" here, "Fantasy Football Model" on the page itself. The nav
+  // already shortens where the full name does not fit — the positions dropdown
+  // says "Defense / ST" for a section headed "Defense / special teams". At full
+  // length this item pushed the bar 59px past the viewport at 1024, which is
+  // the exact width the inline bar starts appearing at.
+  { href: "/fantasy-model", label: "Fantasy Model" },
   { href: "/news", label: "News" },
 ];
