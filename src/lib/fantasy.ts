@@ -202,6 +202,12 @@ export interface HitRates {
   /** The band the page leads with. The model repo records how it was chosen. */
   headline_band: number;
   significance: Significance;
+  /**
+   * What an oracle knowing each player's own season median in advance would
+   * hit. The bound on any model of a central tendency, and the thing that turns
+   * a hit rate into a judgement — `captured_8` is the share of it reached.
+   */
+  ceiling: { rows: number; basis: string };
   season_totals: SeasonTotals;
 }
 

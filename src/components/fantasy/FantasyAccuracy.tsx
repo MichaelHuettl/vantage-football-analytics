@@ -71,6 +71,138 @@ export function FantasyAccuracy() {
 
   return (
     <section>
+      {/* ---- the conclusion, before the evidence ---- */}
+      <div className="rounded border-l-4 p-5 sm:p-6"
+           style={{ borderColor: "var(--color-vantage-amber)", background: "var(--surface-sunken)" }}>
+        <p className="eyebrow" style={{ color: "var(--color-vantage-amber)" }}>
+          What this model is for
+        </p>
+        <h2 className="mt-2 text-2xl uppercase tracking-wide"
+            style={{ fontFamily: "var(--font-display)" }}>
+          It avoids bad calls. It does not call scores.
+        </h2>
+        <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+          Everything below is one claim, measured {hr.season_count} different
+          ways: this model beats &ldquo;assume the player keeps doing what he has
+          been doing&rdquo; by a modest amount, reliably. It is a second opinion
+          that is right slightly more often than the obvious assumption. The
+          value is in how consistent that edge is, not how large — and a
+          projection system that claimed more than this on weekly fantasy
+          scoring would be describing a leak rather than a skill.
+        </p>
+
+        <div className="mt-5 grid gap-6 md:grid-cols-2">
+          <div>
+            <p className="eyebrow">What holds up</p>
+            <ul className="mt-2 list-disc space-y-2 pl-5 text-sm"
+                style={{ color: "var(--text-secondary)" }}>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  Start-or-sit calls.
+                </strong>{" "}
+                {pct(bandValue(starters, `within_${hb}`))} of startable
+                player-weeks land within {hb} points of the real score, against{" "}
+                {pct(bandValue(starters, `naive_within_${hb}`))} for recent form
+                — in {hr.seasons_model_better[String(hb)]} of {hr.season_count}
+                {" "}back-tested seasons, never fewer.
+              </li>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  Not being badly wrong.
+                </strong>{" "}
+                The whole edge sits in the tails. The model rarely projects a
+                player at fifteen who scores two, and that is worth more to a
+                lineup than precision it does not have.
+              </li>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  Kicker and defense, week to week.
+                </strong>{" "}
+                The largest lift of any position, because their signal is in the
+                betting line for the game rather than in their own history —
+                which is exactly what a player&rsquo;s recent form cannot see.
+              </li>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  Ordering a position in-season.
+                </strong>{" "}
+                Relative ranking is far more reliable than the point estimate it
+                is built from.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="eyebrow">What does not</p>
+            <ul className="mt-2 list-disc space-y-2 pl-5 text-sm"
+                style={{ color: "var(--text-secondary)" }}>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  Precision.
+                </strong>{" "}
+                At a 2-point margin the model is beaten by recent form in{" "}
+                {hr.season_count - hr.seasons_model_better["2"]} of{" "}
+                {hr.season_count} seasons. It is not calling scores and should
+                not be read as though it were.
+              </li>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  Drafting a kicker or a defense.
+                </strong>{" "}
+                Draft-day rank correlation is{" "}
+                {FM_QUALITY.find((q) => q.position === "K")?.draft_day_rho?.toFixed(2)}{" "}
+                at kicker and{" "}
+                {FM_QUALITY.find((q) => q.position === "DST")?.draft_day_rho?.toFixed(2)}{" "}
+                at defense — close enough to zero that the order of those boards
+                is not information.
+              </li>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  A quarterback&rsquo;s season total.
+                </strong>{" "}
+                {pct(bandValue(qbSeason ?? {}, `within_${st.headline_band}`))}{" "}
+                within {st.headline_band} points against{" "}
+                {pct(bandValue(qbSeason ?? {}, `baseline_within_${st.headline_band}`))}{" "}
+                for assuming he repeats himself. That gap is not worth acting on.
+              </li>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  The floor and ceiling.
+                </strong>{" "}
+                The band is built to hold 80% of outcomes and holds{" "}
+                {pct(Math.min(...Object.values(FM_COVERAGE)), 0)} to{" "}
+                {pct(Math.max(...Object.values(FM_COVERAGE)), 0)}. Read it as
+                indicative, not as a probability.
+              </li>
+              <li>
+                <strong style={{ color: "var(--text-primary)" }}>
+                  Who plays.
+                </strong>{" "}
+                There is no injury input. The model projects a player&rsquo;s
+                rate, never his availability, and it has nothing at all to say
+                about a rookie.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="mt-5 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+          <strong style={{ color: "var(--text-primary)" }}>
+            How much room is left.
+          </strong>{" "}
+          An oracle told each player&rsquo;s own season median in advance — a
+          number no one could have — would hit{" "}
+          {pct(bandValue(hr.ceiling, `within_${hb}`))} at this margin. The model
+          reaches {pct(bandValue(starters, `within_${hb}`))}, or{" "}
+          {pct(bandValue(hr.ceiling, `captured_${hb}`), 0)} of it. Most of what
+          is knowable at this resolution has already been extracted, and the
+          rest is a receiver catching a sixty-yard touchdown he was never going
+          to be projected for. That is the ceiling this page is measured
+          against, and it is the reason the numbers below are quoted against a
+          baseline rather than against zero.
+        </p>
+      </div>
+
       <h2 className="text-3xl uppercase tracking-wide"
           style={{ fontFamily: "var(--font-display)" }}>
         {FM_SPAN.from}&ndash;{FM_SPAN.to}, measured
@@ -85,10 +217,8 @@ export function FantasyAccuracy() {
 
       {/* ---- the benchmark ---- */}
       <div className="mt-8 rounded border-l-4 p-4 sm:p-5"
-           style={{ borderColor: "var(--color-vantage-amber)", background: "var(--surface-sunken)" }}>
-        <p className="eyebrow" style={{ color: "var(--color-vantage-amber)" }}>
-          Read this column before the others
-        </p>
+           style={{ borderColor: "var(--border-strong)", background: "var(--surface-sunken)" }}>
+        <p className="eyebrow">Read this column before the others</p>
         <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
           Weekly fantasy scoring is mostly noise. The benchmark that matters is
           not zero error, it is &ldquo;assume the player keeps doing what he has
