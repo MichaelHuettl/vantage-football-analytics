@@ -57,8 +57,8 @@ const SECTION_CARDS: {
     href: "/fantasy-model",
     label: "Fantasy Football Model",
     blurb: "PPR projections by position, and how far they beat a three-game average.",
-    image: "/img/positions/rb.jpg",
-    position: "center 20%",
+    image: "/img/bg/fantasy-model.jpg",
+    position: "center 30%",
   },
   {
     href: "/news",

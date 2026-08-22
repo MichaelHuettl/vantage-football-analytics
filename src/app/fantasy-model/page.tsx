@@ -64,8 +64,8 @@ export default async function FantasyModelPage({
   return (
     <>
       <SectionHero
-        image="/img/bg/positional-data-hd.jpg"
-        objectPosition="center 50%"
+        image="/img/bg/fantasy-model.jpg"
+        objectPosition="center 30%"
         eyebrow="Projection model"
         title="Fantasy Football Model"
         lede="A 1-point-PPR projection for every position, trained on 27 seasons and measured against the only benchmark that matters."
