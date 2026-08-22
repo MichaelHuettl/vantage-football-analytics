@@ -3,7 +3,7 @@
  "season": 2025,
  "updated": "2026-08-22",
  "source": "2026-2027 Fantasy Football Analytics (Original) (4).xlsx, sheet 'WRTE Statistics & Graphs'",
- "note": "Wide receiver charts from the workbook's WRTE sheet, rows 2-183. The grid's 'High YPRR' and 'High TPRR' columns are 4for4-derived categorisations; \u00a72 rules that vendor's columns out and the operator lifted it for the RB chart and the TE page (docs/STATE.md). Names only here, not the licensed figures. Every median, extent and label order is computed here, not in a component (\u00a711).",
+ "note": "Wide receiver charts from the workbook's WRTE sheet, rows 2-183. The grid's 'High YPRR' and 'High TPRR' columns are 4for4-derived categorisations; \u00a72 rules that vendor's columns out and the operator lifted it for the RB chart and the TE page (docs/STATE.md). Names only here, not the licensed figures. The stickiness and consistency charts come from the operator's nflverse export instead of the workbook, and touch no licensed source at all. Every median, extent, correlation and label order is computed here, not in a component (\u00a711).",
  "data": {
   "charts": {
    "targets_airyards": {
@@ -1177,6 +1177,520 @@
      "Above Line of Best Fit: Potential Regression/Overplayed role"
     ]
    }
+  },
+  "stickiness": {
+   "title": "What carries into next season",
+   "caption": "Rank correlation between a receiver's season and his next one, across every pair since 2015. The chances a receiver gets come back; what he did with them mostly does not.",
+   "seasons": [
+    2015,
+    2025
+   ],
+   "pairs": 571,
+   "metrics": [
+    {
+     "label": "Targets per game",
+     "kind": "opportunity",
+     "pairs": 571,
+     "rho": 0.617,
+     "rho_repaired": 0.67
+    },
+    {
+     "label": "PPR points per game",
+     "kind": "output",
+     "pairs": 571,
+     "rho": 0.591,
+     "rho_repaired": 0.624
+    },
+    {
+     "label": "Air yards share",
+     "kind": "opportunity",
+     "pairs": 571,
+     "rho": 0.533,
+     "rho_repaired": 0.601
+    },
+    {
+     "label": "Target share",
+     "kind": "opportunity",
+     "pairs": 571,
+     "rho": 0.489,
+     "rho_repaired": 0.552
+    },
+    {
+     "label": "WOPR",
+     "kind": "opportunity",
+     "pairs": 571,
+     "rho": 0.487,
+     "rho_repaired": 0.555
+    },
+    {
+     "label": "Catch rate",
+     "kind": "efficiency",
+     "pairs": 571,
+     "rho": 0.429,
+     "rho_repaired": 0.441
+    },
+    {
+     "label": "Yards per target",
+     "kind": "efficiency",
+     "pairs": 571,
+     "rho": 0.249,
+     "rho_repaired": 0.252
+    },
+    {
+     "label": "Touchdowns per target",
+     "kind": "efficiency",
+     "pairs": 571,
+     "rho": 0.168,
+     "rho_repaired": 0.154
+    }
+   ]
+  },
+  "consistency": {
+   "title": "Boom weeks against bust weeks",
+   "caption": "Each receiver's 2025, as the share of his weeks over 20 PPR points against the share at 5 or under. Bottom left is steady, top right is volatile, and top left is the season everyone wants.",
+   "x_label": "Weeks at 5 points or under %",
+   "y_label": "Weeks at 20 points or more %",
+   "x_pct": false,
+   "y_pct": false,
+   "boom": 20.0,
+   "bust": 5.0,
+   "x_median": 16.67,
+   "y_median": 17.65,
+   "x_min": 0.0,
+   "x_max": 62.5,
+   "y_min": 0.0,
+   "y_max": 62.5,
+   "points": [
+    {
+     "name": "Adonai Mitchell",
+     "x": 62.5,
+     "y": 6.25,
+     "games": 16,
+     "ppg": 5.49,
+     "median": 3.7,
+     "label": true,
+     "short": "A. Mitchell",
+     "rank": 0
+    },
+    {
+     "name": "Alec Pierce",
+     "x": 26.67,
+     "y": 13.33,
+     "games": 15,
+     "ppg": 12.22,
+     "median": 10.8,
+     "label": true,
+     "short": "A. Pierce",
+     "rank": 28
+    },
+    {
+     "name": "Amon-Ra St. Brown",
+     "x": 5.88,
+     "y": 41.18,
+     "games": 17,
+     "ppg": 19.06,
+     "median": 18.0,
+     "label": true,
+     "short": "A. St. Brown",
+     "rank": 7
+    },
+    {
+     "name": "CeeDee Lamb",
+     "x": 7.69,
+     "y": 23.08,
+     "games": 13,
+     "ppg": 15.45,
+     "median": 17.1,
+     "label": true,
+     "short": "C. Lamb",
+     "rank": 29
+    },
+    {
+     "name": "Chris Olave",
+     "x": 0.0,
+     "y": 31.25,
+     "games": 16,
+     "ppg": 16.75,
+     "median": 15.2,
+     "label": true,
+     "short": "C. Olave",
+     "rank": 11
+    },
+    {
+     "name": "Christian Watson",
+     "x": 10.0,
+     "y": 30.0,
+     "games": 10,
+     "ppg": 13.24,
+     "median": 11.2,
+     "label": true,
+     "short": "C. Watson",
+     "rank": 19
+    },
+    {
+     "name": "Courtland Sutton",
+     "x": 17.65,
+     "y": 17.65,
+     "games": 17,
+     "ppg": 12.92,
+     "median": 12.2,
+     "label": true,
+     "short": "C. Sutton",
+     "rank": 36
+    },
+    {
+     "name": "DK Metcalf",
+     "x": 6.67,
+     "y": 13.33,
+     "games": 15,
+     "ppg": 12.48,
+     "median": 12.2,
+     "label": true,
+     "short": "DK Metcalf",
+     "rank": 26
+    },
+    {
+     "name": "Darnell Mooney",
+     "x": 60.0,
+     "y": 0.0,
+     "games": 15,
+     "ppg": 5.49,
+     "median": 4.5,
+     "label": true,
+     "short": "D. Mooney",
+     "rank": 2
+    },
+    {
+     "name": "Davante Adams",
+     "x": 0.0,
+     "y": 35.71,
+     "games": 14,
+     "ppg": 15.92,
+     "median": 15.1,
+     "label": true,
+     "short": "D. Adams",
+     "rank": 9
+    },
+    {
+     "name": "DeVonta Smith",
+     "x": 23.53,
+     "y": 11.76,
+     "games": 17,
+     "ppg": 11.87,
+     "median": 9.3,
+     "label": true,
+     "short": "D. Smith",
+     "rank": 31
+    },
+    {
+     "name": "Drake London",
+     "x": 8.33,
+     "y": 33.33,
+     "games": 12,
+     "ppg": 16.82,
+     "median": 15.65,
+     "label": true,
+     "short": "D. London",
+     "rank": 14
+    },
+    {
+     "name": "Elic Ayomanor",
+     "x": 37.5,
+     "y": 0.0,
+     "games": 16,
+     "ppg": 7.28,
+     "median": 7.0,
+     "label": true,
+     "short": "E. Ayomanor",
+     "rank": 8
+    },
+    {
+     "name": "Emeka Egbuka",
+     "x": 29.41,
+     "y": 23.53,
+     "games": 17,
+     "ppg": 11.51,
+     "median": 9.0,
+     "label": true,
+     "short": "E. Egbuka",
+     "rank": 16
+    },
+    {
+     "name": "George Pickens",
+     "x": 5.88,
+     "y": 29.41,
+     "games": 17,
+     "ppg": 17.17,
+     "median": 14.8,
+     "label": true,
+     "short": "G. Pickens",
+     "rank": 23
+    },
+    {
+     "name": "Ja'Marr Chase",
+     "x": 6.25,
+     "y": 50.0,
+     "games": 16,
+     "ppg": 19.6,
+     "median": 20.5,
+     "label": true,
+     "short": "J. Chase",
+     "rank": 4
+    },
+    {
+     "name": "Jameson Williams",
+     "x": 17.65,
+     "y": 17.65,
+     "games": 17,
+     "ppg": 12.94,
+     "median": 13.4,
+     "label": true,
+     "short": "J. Williams",
+     "rank": 37
+    },
+    {
+     "name": "Jauan Jennings",
+     "x": 13.33,
+     "y": 0.0,
+     "games": 15,
+     "ppg": 11.55,
+     "median": 12.2,
+     "label": true,
+     "short": "J. Jennings",
+     "rank": 10
+    },
+    {
+     "name": "Jaxon Smith-Njigba",
+     "x": 5.88,
+     "y": 58.82,
+     "games": 17,
+     "ppg": 21.17,
+     "median": 20.6,
+     "label": true,
+     "short": "J. Smith-Njigba",
+     "rank": 3
+    },
+    {
+     "name": "Jaylen Waddle",
+     "x": 18.75,
+     "y": 12.5,
+     "games": 16,
+     "ppg": 12.13,
+     "median": 13.2,
+     "label": true,
+     "short": "J. Waddle",
+     "rank": 35
+    },
+    {
+     "name": "Jerry Jeudy",
+     "x": 47.06,
+     "y": 0.0,
+     "games": 17,
+     "ppg": 7.1,
+     "median": 5.1,
+     "label": true,
+     "short": "J. Jeudy",
+     "rank": 5
+    },
+    {
+     "name": "Jordan Addison",
+     "x": 21.43,
+     "y": 7.14,
+     "games": 14,
+     "ppg": 9.65,
+     "median": 9.3,
+     "label": true,
+     "short": "J. Addison",
+     "rank": 25
+    },
+    {
+     "name": "Justin Jefferson",
+     "x": 17.65,
+     "y": 5.88,
+     "games": 17,
+     "ppg": 11.85,
+     "median": 12.5,
+     "label": true,
+     "short": "J. Jefferson",
+     "rank": 20
+    },
+    {
+     "name": "Keenan Allen",
+     "x": 11.76,
+     "y": 5.88,
+     "games": 17,
+     "ppg": 10.75,
+     "median": 8.7,
+     "label": true,
+     "short": "K. Allen",
+     "rank": 21
+    },
+    {
+     "name": "Ladd McConkey",
+     "x": 31.25,
+     "y": 18.75,
+     "games": 16,
+     "ppg": 11.31,
+     "median": 11.6,
+     "label": true,
+     "short": "L. McConkey",
+     "rank": 15
+    },
+    {
+     "name": "Michael Wilson",
+     "x": 23.53,
+     "y": 23.53,
+     "games": 17,
+     "ppg": 12.98,
+     "median": 8.4,
+     "label": true,
+     "short": "M. Wilson",
+     "rank": 32
+    },
+    {
+     "name": "Nico Collins",
+     "x": 0.0,
+     "y": 33.33,
+     "games": 15,
+     "ppg": 15.08,
+     "median": 14.5,
+     "label": true,
+     "short": "N. Collins",
+     "rank": 12
+    },
+    {
+     "name": "Puka Nacua",
+     "x": 6.25,
+     "y": 62.5,
+     "games": 16,
+     "ppg": 23.44,
+     "median": 22.95,
+     "label": true,
+     "short": "P. Nacua",
+     "rank": 1
+    },
+    {
+     "name": "Quentin Johnston",
+     "x": 15.38,
+     "y": 23.08,
+     "games": 13,
+     "ppg": 13.17,
+     "median": 14.8,
+     "label": true,
+     "short": "Q. Johnston",
+     "rank": 34
+    },
+    {
+     "name": "Rashid Shaheed",
+     "x": 33.33,
+     "y": 5.56,
+     "games": 18,
+     "ppg": 8.7,
+     "median": 8.65,
+     "label": true,
+     "short": "R. Shaheed",
+     "rank": 13
+    },
+    {
+     "name": "Rome Odunze",
+     "x": 16.67,
+     "y": 16.67,
+     "games": 12,
+     "ppg": 12.17,
+     "median": 11.75,
+     "label": true,
+     "short": "R. Odunze",
+     "rank": 38
+    },
+    {
+     "name": "Romeo Doubs",
+     "x": 25.0,
+     "y": 6.25,
+     "games": 16,
+     "ppg": 10.34,
+     "median": 9.35,
+     "label": true,
+     "short": "R. Doubs",
+     "rank": 24
+    },
+    {
+     "name": "Tee Higgins",
+     "x": 6.67,
+     "y": 20.0,
+     "games": 15,
+     "ppg": 14.11,
+     "median": 11.4,
+     "label": true,
+     "short": "T. Higgins",
+     "rank": 27
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "x": 11.76,
+     "y": 5.88,
+     "games": 17,
+     "ppg": 12.55,
+     "median": 11.5,
+     "label": true,
+     "short": "T. McMillan",
+     "rank": 22
+    },
+    {
+     "name": "Tre Tucker",
+     "x": 29.41,
+     "y": 5.88,
+     "games": 17,
+     "ppg": 9.51,
+     "median": 6.8,
+     "label": true,
+     "short": "T. Tucker",
+     "rank": 17
+    },
+    {
+     "name": "Troy Franklin",
+     "x": 29.41,
+     "y": 17.65,
+     "games": 17,
+     "ppg": 10.42,
+     "median": 8.5,
+     "label": true,
+     "short": "T. Franklin",
+     "rank": 18
+    },
+    {
+     "name": "Tyquan Thornton",
+     "x": 41.67,
+     "y": 0.0,
+     "games": 12,
+     "ppg": 6.73,
+     "median": 6.4,
+     "label": true,
+     "short": "T. Thornton",
+     "rank": 6
+    },
+    {
+     "name": "Wan'Dale Robinson",
+     "x": 12.5,
+     "y": 25.0,
+     "games": 16,
+     "ppg": 13.62,
+     "median": 11.85,
+     "label": true,
+     "short": "W. Robinson",
+     "rank": 30
+    },
+    {
+     "name": "Zay Flowers",
+     "x": 11.76,
+     "y": 23.53,
+     "games": 17,
+     "ppg": 14.31,
+     "median": 13.0,
+     "label": true,
+     "short": "Z. Flowers",
+     "rank": 33
+    }
+   ]
   },
   "notable": {
    "label": "Notable Names out of top 50",

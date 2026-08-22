@@ -26,6 +26,7 @@ page took.
 
 Run: python3 scripts/curated/wr_charts.py [path/to/workbook.xlsx]
 """
+import csv
 import json
 import re
 import statistics
@@ -107,6 +108,28 @@ CAPTIONS = {
         "WOPR is how much of a receiver's scoring his usage does not explain."
     ),
 }
+
+# Two supplementary charts come from the operator's nflverse export rather than
+# the workbook. **This is the only extractor reading two sources**, and it does
+# so because both charts belong to this page: one proves the claim the third
+# workbook chart makes, and the other shows the week-to-week shape all three of
+# them average away. The trailing space in the directory name is real (STATE.md).
+EXPORT = Path.home() / "Desktop" / "Claude Code" / "NFL Verse Data "
+YOY_FILE = EXPORT / "1999-2025 RB:WR:TE YOY Data.csv"
+SEASON_FILE = EXPORT / "1999-2025 RB:WR:TE.csv"
+WEEKLY_FILE = EXPORT / "2025 Weekly Stats.csv"
+
+# Paired seasons from 2015 on. The file reaches back to 1999, but a receiver's
+# job in 2003 is not the job being described on this page, and the era the
+# charts above are drawn from is the era this should be measured over.
+STICKY_FROM = 2015
+STICKY_MIN_GAMES = 8
+STICKY_MIN_TARGETS = 40
+
+# What counts as a big week and a wasted one, in PPR. Twenty is roughly a WR1
+# week; five or under is a start that cost you the matchup.
+BOOM, BUST = 20.0, 5.0
+CONSISTENCY_MIN_GAMES = 8
 
 NOTABLE = {"header_row": 9, "col": "B", "lo": 10, "hi": 32}
 GRID = {"label_row": 175, "lo": 176, "hi": 183,
@@ -287,6 +310,256 @@ def resolver(charts, extra_names, warn):
     return resolve
 
 
+def _ranks(vals):
+    """Average ranks, so ties do not tilt the correlation."""
+    order = sorted(range(len(vals)), key=lambda i: vals[i])
+    out = [0.0] * len(vals)
+    i = 0
+    while i < len(order):
+        j = i
+        while j + 1 < len(order) and vals[order[j + 1]] == vals[order[i]]:
+            j += 1
+        avg = (i + j) / 2.0 + 1.0
+        for k in range(i, j + 1):
+            out[order[k]] = avg
+        i = j + 1
+    return out
+
+
+def spearman(xs, ys):
+    """Rank correlation, in the standard library.
+
+    Spearman rather than Pearson because these are skewed — a handful of
+    target-share seasons sit far above the rest and would drag a Pearson
+    coefficient around by themselves. Rank correlation asks the question the
+    page is actually asking: does the *order* hold up next year.
+    """
+    rx, ry = _ranks(xs), _ranks(ys)
+    n = len(xs)
+    mx, my = sum(rx) / n, sum(ry) / n
+    num = sum((a - mx) * (b - my) for a, b in zip(rx, ry))
+    dx = sum((a - mx) ** 2 for a in rx)
+    dy = sum((b - my) ** 2 for b in ry)
+    return num / ((dx * dy) ** 0.5) if dx and dy else 0.0
+
+
+# Each metric, how to get it from a year's columns, and which side of the
+# argument it sits on. "Opportunity" is what the offense gives a receiver;
+# "efficiency" is what he does with it; "output" is the scoring that results.
+STICKY_METRICS = [
+    ("Target share", "opportunity", lambda r, y: _f(r, f"target_share_{y}")),
+    ("Air yards share", "opportunity", lambda r, y: _f(r, f"air_yards_share_{y}")),
+    ("WOPR", "opportunity", lambda r, y: _f(r, f"wopr_{y}")),
+    ("Targets per game", "opportunity",
+     lambda r, y: _div(_f(r, f"targets_{y}"), _f(r, f"games_{y}"))),
+    ("PPR points per game", "output", lambda r, y: _f(r, f"ppg_ppr_{y}")),
+    ("Catch rate", "efficiency", lambda r, y: _f(r, f"catch_rate_{y}")),
+    ("Yards per target", "efficiency",
+     lambda r, y: _div(_f(r, f"rec_yards_{y}"), _f(r, f"targets_{y}"))),
+    ("Touchdowns per target", "efficiency",
+     lambda r, y: _div(_f(r, f"rec_td_{y}"), _f(r, f"targets_{y}"))),
+]
+
+
+def _f(row, key):
+    return num(row.get(key))
+
+
+def _div(a, b):
+    return a / b if a is not None and b else None
+
+
+def build_stickiness(warn):
+    """How much of each metric survives into the next season.
+
+    This is the evidence for the claim the WOPR chart makes in prose — that
+    opportunity is stickier than the efficiency sitting on top of it. Stated
+    without a number it is a slogan; the whole point of this site is that a
+    reader should be able to check it.
+    """
+    if not YOY_FILE.exists():
+        warn(f"{YOY_FILE.name} not found — the stickiness chart will be missing")
+        return None
+    with YOY_FILE.open(newline="") as fh:
+        rows = [
+            r for r in csv.DictReader(fh)
+            if (r.get("position_y1") == "WR"
+                and num(r.get("season")) is not None
+                and num(r["season"]) >= STICKY_FROM
+                and (num(r.get("games_y1")) or 0) >= STICKY_MIN_GAMES
+                and (num(r.get("games_y2")) or 0) >= STICKY_MIN_GAMES
+                and (num(r.get("targets_y1")) or 0) >= STICKY_MIN_TARGETS
+                and (num(r.get("targets_y2")) or 0) >= STICKY_MIN_TARGETS)
+        ]
+    if len(rows) < 100:
+        warn(f"only {len(rows)} paired WR seasons — check the filters")
+        return None
+
+    out = []
+    for label, kind, get in STICKY_METRICS:
+        pairs = [(get(r, "y1"), get(r, "y2")) for r in rows]
+        pairs = [(a, b) for a, b in pairs if a is not None and b is not None]
+        if len(pairs) < 100:
+            warn(f"stickiness: {label} has only {len(pairs)} usable pairs, skipped")
+            continue
+        out.append({
+            "label": label, "kind": kind, "pairs": len(pairs),
+            "rho": round(spearman([a for a, _ in pairs], [b for _, b in pairs]), 3),
+        })
+    out.sort(key=lambda m: -m["rho"])
+
+    # Reconcile against a pairing this script does itself, from the season-level
+    # export. The YOY file is the operator's own derived artifact and is what
+    # gets published; recomputing the same correlations from the season file and
+    # comparing is the only way to know the pairing behind it is doing what the
+    # page is about to claim it does. A quiet disagreement here would be a
+    # headline correlation nobody could trace.
+    check = _crosscheck(warn)
+    if check:
+        gaps = [(m["label"], abs(m["rho"] - check[m["label"]]))
+                for m in out if m["label"] in check]
+        if gaps:
+            worst = max(gaps, key=lambda g: g[1])
+            print(f"  cross-check        {len(gaps)} metrics re-paired from "
+                  f"{SEASON_FILE.name}, worst gap {worst[1]:.3f} on {worst[0]}")
+            if worst[1] > 0.12:
+                warn(f"stickiness: {worst[0]} differs by {worst[1]:.3f} between the "
+                     f"YOY file and a fresh pairing — do not publish until that is "
+                     f"understood")
+            for m in out:
+                if m["label"] in check:
+                    m["rho_repaired"] = round(check[m["label"]], 3)
+
+    seasons = sorted({int(num(r["season"])) for r in rows})
+    return {
+        "title": "What carries into next season",
+        # Deliberately not "the charts above are the ones that hold". Points per
+        # game repeats about as well as the share metrics do, so that reading is
+        # wrong and the page says so underneath. The split that survives the data
+        # is chances against efficiency, and the caption states only that.
+        "caption": (
+            "Rank correlation between a receiver's season and his next one, "
+            "across every pair since " + str(seasons[0]) + ". The chances a "
+            "receiver gets come back; what he did with them mostly does not."
+        ),
+        "seasons": [seasons[0], seasons[-1] + 1],
+        "pairs": len(rows),
+        "metrics": out,
+    }
+
+
+def _crosscheck(warn):
+    """The same correlations, from the season file, paired here rather than there."""
+    if not SEASON_FILE.exists():
+        warn(f"{SEASON_FILE.name} not found — stickiness goes out unreconciled")
+        return None
+    with SEASON_FILE.open(newline="") as fh:
+        by = {}
+        for r in csv.DictReader(fh):
+            if r.get("position") != "WR":
+                continue
+            sn = num(r.get("season"))
+            if sn is not None:
+                by[(r["player"], int(sn))] = r
+    pairs = []
+    for (player, sn), y1 in by.items():
+        y2 = by.get((player, sn + 1))
+        if not y2 or sn < STICKY_FROM:
+            continue
+        if min(num(y1.get("games")) or 0, num(y2.get("games")) or 0) < STICKY_MIN_GAMES:
+            continue
+        if min(num(y1.get("targets")) or 0, num(y2.get("targets")) or 0) < STICKY_MIN_TARGETS:
+            continue
+        pairs.append((y1, y2))
+    if len(pairs) < 100:
+        return None
+
+    # The season file has no _y1/_y2 suffixes, so the same accessors are reused
+    # against a bare key.
+    plain = {
+        "Target share": lambda r: num(r.get("target_share")),
+        "Air yards share": lambda r: num(r.get("air_yards_share")),
+        "WOPR": lambda r: num(r.get("wopr")),
+        "Targets per game": lambda r: _div(num(r.get("targets")), num(r.get("games"))),
+        "PPR points per game": lambda r: num(r.get("ppg_ppr")),
+        "Catch rate": lambda r: num(r.get("catch_rate")),
+        "Yards per target": lambda r: _div(num(r.get("rec_yards")), num(r.get("targets"))),
+        "Touchdowns per target": lambda r: _div(num(r.get("rec_td")), num(r.get("targets"))),
+    }
+    out = {}
+    for label, get in plain.items():
+        vals = [(get(a), get(b)) for a, b in pairs]
+        vals = [(x, y) for x, y in vals if x is not None and y is not None]
+        if len(vals) >= 100:
+            out[label] = spearman([x for x, _ in vals], [y for _, y in vals])
+    return out
+
+
+def build_consistency(charted, warn):
+    """The week-to-week shape the season averages above hide.
+
+    Every chart on this page until now is a season aggregate, and a season
+    aggregate cannot tell two very different receivers apart: the same points
+    per game can be a steady twelve every Sunday or a run of fours with a
+    thirty in it. Those are not the same asset and should not be drafted, or
+    started, as though they were.
+    """
+    if not WEEKLY_FILE.exists():
+        warn(f"{WEEKLY_FILE.name} not found — the consistency chart will be missing")
+        return None
+    weeks = {}
+    with WEEKLY_FILE.open(newline="") as fh:
+        for r in csv.DictReader(fh):
+            if r.get("position") != "WR" or r.get("season_type") != "REG":
+                continue
+            nm = (r.get("player_display_name") or "").strip()
+            fp = num(r.get("fantasy_points_ppr"))
+            if nm and fp is not None:
+                weeks.setdefault(nm, []).append(fp)
+
+    points, skipped = [], []
+    for nm in sorted(charted):
+        vals = weeks.get(nm)
+        if not vals or len(vals) < CONSISTENCY_MIN_GAMES:
+            skipped.append(nm)
+            continue
+        n = len(vals)
+        points.append({
+            "name": nm,
+            "x": round(100.0 * sum(1 for v in vals if v <= BUST) / n, 2),
+            "y": round(100.0 * sum(1 for v in vals if v >= BOOM) / n, 2),
+            "games": n,
+            "ppg": round(sum(vals) / n, 2),
+            "median": round(statistics.median(vals), 2),
+        })
+    if not points:
+        warn("consistency: no charted receiver had enough weeks")
+        return None
+    if skipped:
+        print(f"  note consistency drops {len(skipped)} charted receivers with "
+              f"under {CONSISTENCY_MIN_GAMES} games: {', '.join(skipped[:6])}"
+              f"{' …' if len(skipped) > 6 else ''}")
+    mark_labels(points)
+    return {
+        "title": "Boom weeks against bust weeks",
+        "caption": (
+            f"Each receiver's 2025, as the share of his weeks over {BOOM:.0f} PPR "
+            f"points against the share at {BUST:.0f} or under. Bottom left is "
+            "steady, top right is volatile, and top left is the season everyone "
+            "wants."
+        ),
+        "x_label": f"Weeks at {BUST:.0f} points or under %",
+        "y_label": f"Weeks at {BOOM:.0f} points or more %",
+        "x_pct": False, "y_pct": False,
+        "boom": BOOM, "bust": BUST,
+        "x_median": round(statistics.median(p["x"] for p in points), 3),
+        "y_median": round(statistics.median(p["y"] for p in points), 3),
+        "x_min": min(p["x"] for p in points), "x_max": max(p["x"] for p in points),
+        "y_min": min(p["y"] for p in points), "y_max": max(p["y"] for p in points),
+        "points": points,
+    }
+
+
 def read_column(cells, col, lo, hi):
     return [str(cells[(r, col)]).strip() for r in range(lo, hi + 1) if (r, col) in cells]
 
@@ -377,6 +650,18 @@ def main():
                       f"{base_key} pool: {', '.join(sorted(missing)[:6])}"
                       f"{' …' if len(missing) > 6 else ''}")
 
+    # ---- the two supplementary charts, from the nflverse export ----
+    stickiness = build_stickiness(warn)
+    if stickiness:
+        top = stickiness["metrics"][0]
+        bot = stickiness["metrics"][-1]
+        print(f"  stickiness         {stickiness['pairs']} paired seasons, "
+              f"{top['label']} {top['rho']:+.2f} down to {bot['label']} {bot['rho']:+.2f}")
+    charted = {p["name"] for p in charts["airyards_share"]["points"]} if "airyards_share" in charts else set()
+    consistency = build_consistency(charted, warn)
+    if consistency:
+        print(f"  consistency        {len(consistency['points'])} receivers")
+
     unresolved = sorted({n for g in grid["players"] for n in g["names"] if " " not in n})
     if unresolved:
         warn(f"grid names left short (no full name on this sheet): {unresolved}")
@@ -399,11 +684,15 @@ def main():
             "The grid's 'High YPRR' and 'High TPRR' columns are 4for4-derived "
             "categorisations; §2 rules that vendor's columns out and the operator "
             "lifted it for the RB chart and the TE page (docs/STATE.md). Names "
-            "only here, not the licensed figures. Every median, extent and label "
-            "order is computed here, not in a component (§11)."
+            "only here, not the licensed figures. The stickiness and consistency "
+            "charts come from the operator's nflverse export instead of the "
+            "workbook, and touch no licensed source at all. Every median, extent, "
+            "correlation and label order is computed here, not in a component (§11)."
         ),
         "data": {
             "charts": charts,
+            "stickiness": stickiness,
+            "consistency": consistency,
             "notable": notable,
             "grid": grid,
         },
