@@ -1,4 +1,5 @@
 import profilesFile from "@/data/player-profiles.json";
+import { canonTeams } from "./teams";
 
 /**
  * Recorded production for the ranked pool, from the nflverse export.
@@ -42,12 +43,12 @@ export interface PlayerProfile {
   snap_share_2025: number | null;
 }
 
-const file = profilesFile as unknown as {
+const file = canonTeams(profilesFile as unknown as {
   season: number;
   source: string;
   note: string;
   data: Record<string, PlayerProfile>;
-};
+});
 
 export const PROFILE_SEASON = file.season;
 export const PROFILE_SOURCE = file.source;

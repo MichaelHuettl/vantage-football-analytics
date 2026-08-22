@@ -1,6 +1,7 @@
 import payload from "@/data/game-predictions.json";
 import marginsFile from "@/data/game-margins.json";
 import featuresFile from "@/data/model-features.json";
+import { canonTeams } from "./teams";
 
 /**
  * The Game Prediction Model's output, typed and tidied.
@@ -146,7 +147,7 @@ interface Payload {
   };
 }
 
-const file = payload as unknown as Payload;
+const file = canonTeams(payload as unknown as Payload);
 
 export const PRED_META = file.meta;
 export const PRED_PERF = file.performance;
