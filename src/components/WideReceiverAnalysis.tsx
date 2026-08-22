@@ -3,10 +3,12 @@ import { ScatterChart } from "@/components/ScatterChart";
 import { TeamChip } from "@/components/TeamChip";
 import {
   WR_CHARTS, WR_CONSISTENCY, WR_GRID, WR_GRID_COMPUTED, WR_GROUPS, WR_SEASON,
+  WR_VERDICTS,
   WR_STICKINESS,
 } from "@/lib/charts";
 import type {
-  Agreement, BoxColumn, ConsistencyGroup, StickyMetric, TdColumn, WrChart,
+  Agreement, BoxColumn, ConsistencyGroup, StickyMetric, TdColumn, VerdictGroup,
+  WrChart,
 } from "@/lib/charts";
 import { teamByName } from "@/lib/teams";
 
@@ -232,68 +234,52 @@ export function WideReceiverAnalysis() {
         <BoxGrid title="Players" cols={WR_GRID.players} />
         <BoxGrid title="Offenses" cols={WR_GRID.teams} teams />
 
-        {/* ---- what the seven columns are each worth ---- */}
-        <div className="mt-8 rounded border-l-4 p-5 sm:p-6"
-             style={{ borderColor: "var(--border-strong)",
-                      background: "var(--surface-sunken)" }}>
-          <p className="eyebrow">Reading the grid</p>
-          <h4 className="mt-2 text-2xl uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}>
-            Seven columns, three different kinds of claim
-          </h4>
-          <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
-            They are laid out as one grid and they are not one kind of thing.
-            Two are forecasts, two describe what already happened, and three
-            describe a team rather than a player. That matters because the
-            stickiness bars further up the page say those three kinds keep very
-            different amounts of their value.
-          </p>
-          <div className="mt-5 grid gap-4 md:grid-cols-3">
-            <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
-              <p className="eyebrow">Forecasts</p>
-              <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
-                TD Improvement · TD Regression
-              </p>
-              <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-                The only two columns that make a claim about next season, and the
-                only two anything here can check. The section below fits the same
-                question to the play-by-play and names where the two part.
-              </p>
+        {/* ---- who the grid is good and bad news for ---- */}
+        {WR_VERDICTS && (
+          <div className="mt-8 rounded border-l-4 p-5 sm:p-6"
+               style={{ borderColor: "var(--border-strong)",
+                        background: "var(--surface-sunken)" }}>
+            <p className="eyebrow">Reading the grid</p>
+            <h4 className="mt-2 text-2xl uppercase tracking-wide"
+                style={{ fontFamily: "var(--font-display)" }}>
+              Who it is good and bad news for
+            </h4>
+            <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+              All seven columns crossed, and every one of the{" "}
+              {WR_VERDICTS.counted} names in the grid sorted by which way its
+              entries point. A receiver inherits his offense&rsquo;s three
+              columns, because that is what they are for: a scheme is a fact
+              about the situation he is walking into, and it is the part of this
+              grid most likely to survive the winter. So a regression call with
+              three scheme columns behind it reads very differently from one
+              with none.
+            </p>
+            <div className="mt-5 flex flex-col gap-4">
+              {WR_VERDICTS.groups.map((g) => (
+                <VerdictCard key={g.key} group={g} />
+              ))}
             </div>
-            <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
-              <p className="eyebrow">Descriptions</p>
-              <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
-                High YPRR · High TPRR
-              </p>
-              <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-                Who produced most per chance in {WR_SEASON}. Both are efficiency,
-                which is the least durable thing measured on this page — yards
-                per target comes back next year at{" "}
-                {WR_STICKINESS?.metrics.find((m) => m.label === "Yards per target")
-                  ?.rho.toFixed(2)}
-                . Read them as a record, not a projection.
-              </p>
-            </div>
-            <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
-              <p className="eyebrow">Environment</p>
-              <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
-                Motion · Play action · Best schemes
-              </p>
-              <p className="mt-2 text-sm" style={{ color: "var(--text-secondary)" }}>
-                Properties of an offense rather than of a receiver. They are the
-                most durable entries in the grid, because a scheme survives a
-                roster change — but they belong to whoever runs that route next
-                season, not to the name that ran it last.
-              </p>
-            </div>
+            <p className="mt-5 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+              <strong style={{ color: "var(--text-primary)" }}>
+                One receiver clears the whole grid.
+              </strong>{" "}
+              Luther Burden is in three of the four player columns and all three
+              offense columns — the only name here with every entry pointing the
+              same way. At the other end, Amon-Ra St. Brown and Tee Higgins carry
+              a regression call and nothing anywhere else arguing back.
+            </p>
+            <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+              This is a reading of the grid, not of the receivers. It inherits
+              every judgement in the columns and adds none — a name is here
+              because the operator put it in a column, and the efficiency
+              columns in particular describe {WR_SEASON} rather than forecast
+              anything, since yards per target comes back the following year at{" "}
+              {WR_STICKINESS?.metrics.find((m) => m.label === "Yards per target")
+                ?.rho.toFixed(2)}
+              .
+            </p>
           </div>
-          <p className="mt-5 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
-            The columns are independent, so a receiver in two of them is not
-            twice as interesting; and a name in an efficiency column and an
-            environment column at once is the closest the grid comes to an
-            argument, because one of the two will still be true in September.
-          </p>
-        </div>
+        )}
 
         {WR_GRID_COMPUTED && (
           <>
@@ -382,6 +368,39 @@ export function WideReceiverAnalysis() {
         )}
       </div>
     </section>
+  );
+}
+
+/**
+ * One verdict group: the receivers whose grid entries all point the same way.
+ *
+ * Laid out as a row of names rather than a column, because these lists run to
+ * seven and the point is the group, not the ranking inside it — the order is
+ * only how many columns each name appears in.
+ */
+function VerdictCard({ group }: { group: VerdictGroup }) {
+  return (
+    <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
+      <div className="flex items-baseline justify-between gap-3">
+        <p className="eyebrow">{group.label}</p>
+        <span className="eyebrow tnum" style={{ color: "var(--text-muted)" }}>
+          {group.members.length}
+        </span>
+      </div>
+      <p className="mt-1 text-sm" style={{ color: "var(--text-secondary)" }}>
+        {group.blurb}
+      </p>
+      <ul className="mt-3 flex flex-col gap-1.5 text-sm sm:flex-row sm:flex-wrap sm:gap-x-5">
+        {group.members.map((m) => (
+          <li key={m.name} className="flex items-baseline gap-2">
+            <span>{m.name}</span>
+            <span className="text-xs" style={{ color: "var(--text-muted)" }}>
+              {m.tags.join(" · ")}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

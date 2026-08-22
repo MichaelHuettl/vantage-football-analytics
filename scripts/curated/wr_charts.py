@@ -698,6 +698,139 @@ def build_grid_computed(charted, warn):
     }
 
 
+# nflverse writes `LA` for the Rams and `AZ` for the Cardinals; teams.json is
+# keyed on the league's codes. Same disagreement the site aliases at lookup.
+POSTEAM_FIXES = {"LA": "LAR", "AZ": "ARI"}
+
+# Which grid columns argue which way about a receiver. The three offense
+# columns are not listed: they attach to a team, and a player inherits them.
+UP_COLUMNS = {"TD Improvement", "High YPRR", "High TPRR"}
+DOWN_COLUMNS = {"TD Regression"}
+
+
+def build_verdicts(grid, warn):
+    """Who the grid is actually good and bad news for.
+
+    The columns are about metrics; a reader wants the receivers. This crosses
+    all seven — the four that name players and the three that name offenses —
+    and sorts every name in the grid by which way its entries point.
+
+    A player inherits his offense's columns because that is what those columns
+    are for: a scheme is a property of the team, so being in a motion offense is
+    a fact about the situation a receiver is walking into. It is also the part
+    of the grid most likely to survive the winter, which is why a regression
+    call with three scheme columns behind it reads differently from one with
+    none.
+    """
+    players = {c["label"]: set(c["names"]) for c in grid["players"]}
+    missing = (UP_COLUMNS | DOWN_COLUMNS) - set(players)
+    if missing:
+        warn(f"verdicts: grid is missing {sorted(missing)} — column labels may have changed")
+        return None
+
+    teams_path = ROOT / "src/data/teams.json"
+    if not (teams_path.exists() and SEASON_FILE.exists()):
+        warn("verdicts: teams.json or the season export is missing, skipped")
+        return None
+    nick = {t["nickname"].lower(): t["abbr"]
+            for t in json.loads(teams_path.read_text())["data"]}
+    offense = {}
+    for col in grid["teams"]:
+        for raw in col["names"]:
+            abbr = nick.get(raw.strip().lower())
+            if abbr is None:
+                warn(f"verdicts: no team called {raw!r} in teams.json")
+                continue
+            offense.setdefault(abbr, []).append(col["label"])
+
+    with SEASON_FILE.open(newline="") as fh:
+        team_of = {}
+        for r in csv.DictReader(fh):
+            if num(r.get("season")) != GRID_SEASON:
+                continue
+            parts = " ".join((r.get("player") or "").replace(".", ". ").split()).split()
+            if len(parts) < 2:
+                continue
+            code = (r.get("posteam") or "").strip().upper()
+            team_of.setdefault((parts[0][0].lower(), surname(" ".join(parts))),
+                               POSTEAM_FIXES.get(code, code))
+
+    # The site's own roster wins where the two disagree. `players.json` was
+    # audited against a live roster endpoint (docs/STATE.md); the export records
+    # where a receiver *played* in 2025. A scheme column is a claim about the
+    # offense he is walking into, so attributing one to the team he has left
+    # would be wrong in the direction that matters.
+    ranked_team = {}
+    players_path = ROOT / "src/data/players.json"
+    if players_path.exists():
+        blob = json.loads(players_path.read_text())
+        blob = blob.get("data", blob)
+        for entry in (blob if isinstance(blob, list) else blob.values()):
+            if isinstance(entry, dict) and entry.get("name") and entry.get("team"):
+                ranked_team[entry["name"]] = entry["team"]
+
+    rows, unplaced, moved = [], [], []
+    for name in sorted({n for v in players.values() for n in v}):
+        parts = name.split()
+        played = team_of.get((parts[0][0].lower(), surname(name))) if len(parts) >= 2 else None
+        team = ranked_team.get(name) or played
+        if team and played and team != played:
+            moved.append(f"{name} {played}->{team}")
+        if team is None:
+            unplaced.append(name)
+        up = sorted(lab for lab in UP_COLUMNS if name in players[lab])
+        down = sorted(lab for lab in DOWN_COLUMNS if name in players[lab])
+        schemes = offense.get(team or "", [])
+        # A short form of the same thing, so the component renders rather than
+        # abbreviates. The long lists stay for anything that wants them.
+        short = {"TD Improvement": "TD up", "TD Regression": "TD down",
+                 "High YPRR": "YPRR", "High TPRR": "TPRR"}
+        tags = [short.get(c, c) for c in down + up]
+        if schemes:
+            tags.append(f"{len(schemes)} scheme" + ("s" if len(schemes) > 1 else ""))
+        rows.append({"name": name, "team": team, "up": up, "down": down,
+                     "schemes": schemes, "tags": tags})
+    if unplaced:
+        print(f"  note verdicts could not place {len(unplaced)} name(s) on a "
+              f"{GRID_SEASON} roster: {', '.join(unplaced)}")
+    if moved:
+        print(f"  note verdicts take the site's audited team over the {GRID_SEASON} "
+              f"one for {len(moved)}: {', '.join(moved)}")
+
+    def bucket(r):
+        if r["down"] and r["up"]:
+            return "both_ways"
+        if r["down"]:
+            return "falling_supported" if r["schemes"] else "falling_alone"
+        return "rising_supported" if r["schemes"] else "rising_alone"
+
+    labels = [
+        ("rising_supported", "Everything points the same way",
+         "A positive column and an offense that backs it. The strongest read on the grid."),
+        ("both_ways", "Flagged in both directions",
+         "Efficient enough to make an efficiency column and expected to score less. Both are true."),
+        ("falling_supported", "Scoring flagged to fall, offense behind them",
+         "The touchdown call is the operator's; the scheme is the part likeliest to survive the winter."),
+        ("rising_alone", "Positive on the player, nothing from the offense",
+         "The case rests on the receiver alone — no scheme column argues for him."),
+        ("falling_alone", "Flagged to fall, with nothing offsetting",
+         "A regression call and no column anywhere else on the grid pointing the other way."),
+    ]
+    grouped = {k: [] for k, _, _ in labels}
+    for r in rows:
+        grouped[bucket(r)].append(r)
+    for v in grouped.values():
+        v.sort(key=lambda r: (-(len(r["up"]) + len(r["schemes"])), r["name"]))
+
+    return {
+        "counted": len(rows),
+        "groups": [
+            {"key": k, "label": lab, "blurb": blurb, "members": grouped[k]}
+            for k, lab, blurb in labels if grouped[k]
+        ],
+    }
+
+
 def _agreement(grid, computed):
     """Where the fitted touchdown call and the operator's own call line up.
 
@@ -949,6 +1082,11 @@ def main():
                   f"{len(a['workbook_uncovered'])} not covered, "
                   f"{len(a['computed_only'])} computed only")
 
+    verdicts = build_verdicts(grid, warn)
+    if verdicts:
+        print("  verdicts           " + ", ".join(
+            f"{g['key']} {len(g['members'])}" for g in verdicts["groups"]))
+
     unresolved = sorted({n for g in grid["players"] for n in g["names"] if " " not in n})
     if unresolved:
         warn(f"grid names left short (no full name on this sheet): {unresolved}")
@@ -978,6 +1116,7 @@ def main():
             "groups": groups,
             "grid": grid,
             "grid_computed": computed,
+            "verdicts": verdicts,
         },
     }
 

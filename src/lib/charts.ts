@@ -285,6 +285,29 @@ export interface GridComputed {
   agreement?: Agreement[];
 }
 
+/** One receiver, and which way the grid's seven columns point for him. */
+export interface Verdict {
+  name: string;
+  team: string | null;
+  up: string[];
+  down: string[];
+  schemes: string[];
+  /** The same, shortened for display, so a component never abbreviates. */
+  tags: string[];
+}
+
+export interface VerdictGroup {
+  key: string;
+  label: string;
+  blurb: string;
+  members: Verdict[];
+}
+
+export interface Verdicts {
+  counted: number;
+  groups: VerdictGroup[];
+}
+
 export interface WrCharts {
   season: number;
   updated: string;
@@ -312,6 +335,8 @@ export interface WrCharts {
     grid: { players: BoxColumn[]; teams: BoxColumn[] };
     /** Three columns the workbook does not have, fitted from the export. */
     grid_computed: GridComputed | null;
+    /** The grid's seven columns crossed, and read as a verdict on each player. */
+    verdicts: Verdicts | null;
   };
 }
 
@@ -323,6 +348,7 @@ export const WR_CONSISTENCY = wrFile_.data.consistency;
 export const WR_GROUPS = wrFile_.data.groups;
 export const WR_GRID = wrFile_.data.grid;
 export const WR_GRID_COMPUTED = wrFile_.data.grid_computed;
+export const WR_VERDICTS = wrFile_.data.verdicts;
 export const WR_SEASON = wrFile_.season;
 export const WR_UPDATED = wrFile_.updated;
 export const WR_SOURCE = wrFile_.source;

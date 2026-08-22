@@ -2569,6 +2569,376 @@
      ]
     }
    ]
+  },
+  "verdicts": {
+   "counted": 22,
+   "groups": [
+    {
+     "key": "rising_supported",
+     "label": "Everything points the same way",
+     "blurb": "A positive column and an offense that backs it. The strongest read on the grid.",
+     "members": [
+      {
+       "name": "Luther Burden",
+       "team": "CHI",
+       "up": [
+        "High TPRR",
+        "High YPRR",
+        "TD Improvement"
+       ],
+       "down": [],
+       "schemes": [
+        "Motion Offense",
+        "Play Action Offense",
+        "Best Schemes"
+       ],
+       "tags": [
+        "TPRR",
+        "YPRR",
+        "TD up",
+        "3 schemes"
+       ]
+      },
+      {
+       "name": "Zay Flowers",
+       "team": "BAL",
+       "up": [
+        "High TPRR",
+        "High YPRR"
+       ],
+       "down": [],
+       "schemes": [
+        "Motion Offense",
+        "Play Action Offense"
+       ],
+       "tags": [
+        "TPRR",
+        "YPRR",
+        "2 schemes"
+       ]
+      },
+      {
+       "name": "Chris Godwin",
+       "team": "TB",
+       "up": [
+        "TD Improvement"
+       ],
+       "down": [],
+       "schemes": [
+        "Motion Offense",
+        "Best Schemes"
+       ],
+       "tags": [
+        "TD up",
+        "2 schemes"
+       ]
+      },
+      {
+       "name": "Terry McLaurin",
+       "team": "WAS",
+       "up": [
+        "High YPRR",
+        "TD Improvement"
+       ],
+       "down": [],
+       "schemes": [
+        "Play Action Offense"
+       ],
+       "tags": [
+        "YPRR",
+        "TD up",
+        "1 scheme"
+       ]
+      },
+      {
+       "name": "CeeDee Lamb",
+       "team": "DAL",
+       "up": [
+        "TD Improvement"
+       ],
+       "down": [],
+       "schemes": [
+        "Best Schemes"
+       ],
+       "tags": [
+        "TD up",
+        "1 scheme"
+       ]
+      },
+      {
+       "name": "Chris Olave",
+       "team": "NO",
+       "up": [
+        "High TPRR"
+       ],
+       "down": [],
+       "schemes": [
+        "Motion Offense"
+       ],
+       "tags": [
+        "TPRR",
+        "1 scheme"
+       ]
+      },
+      {
+       "name": "Christian Watson",
+       "team": "GB",
+       "up": [
+        "High YPRR"
+       ],
+       "down": [],
+       "schemes": [
+        "Best Schemes"
+       ],
+       "tags": [
+        "YPRR",
+        "1 scheme"
+       ]
+      }
+     ]
+    },
+    {
+     "key": "both_ways",
+     "label": "Flagged in both directions",
+     "blurb": "Efficient enough to make an efficiency column and expected to score less. Both are true.",
+     "members": [
+      {
+       "name": "Drake London",
+       "team": "ATL",
+       "up": [
+        "High TPRR",
+        "High YPRR"
+       ],
+       "down": [
+        "TD Regression"
+       ],
+       "schemes": [],
+       "tags": [
+        "TD down",
+        "TPRR",
+        "YPRR"
+       ]
+      },
+      {
+       "name": "George Pickens",
+       "team": "DAL",
+       "up": [
+        "High YPRR"
+       ],
+       "down": [
+        "TD Regression"
+       ],
+       "schemes": [
+        "Best Schemes"
+       ],
+       "tags": [
+        "TD down",
+        "YPRR",
+        "1 scheme"
+       ]
+      }
+     ]
+    },
+    {
+     "key": "falling_supported",
+     "label": "Scoring flagged to fall, offense behind them",
+     "blurb": "The touchdown call is the operator's; the scheme is the part likeliest to survive the winter.",
+     "members": [
+      {
+       "name": "Quentin Johnston",
+       "team": "LAC",
+       "up": [],
+       "down": [
+        "TD Regression"
+       ],
+       "schemes": [
+        "Motion Offense",
+        "Play Action Offense",
+        "Best Schemes"
+       ],
+       "tags": [
+        "TD down",
+        "3 schemes"
+       ]
+      },
+      {
+       "name": "Davante Adams",
+       "team": "LAR",
+       "up": [],
+       "down": [
+        "TD Regression"
+       ],
+       "schemes": [
+        "Play Action Offense",
+        "Best Schemes"
+       ],
+       "tags": [
+        "TD down",
+        "2 schemes"
+       ]
+      },
+      {
+       "name": "Puka Nacua",
+       "team": "LAR",
+       "up": [],
+       "down": [
+        "TD Regression"
+       ],
+       "schemes": [
+        "Play Action Offense",
+        "Best Schemes"
+       ],
+       "tags": [
+        "TD down",
+        "2 schemes"
+       ]
+      },
+      {
+       "name": "Jaxon Smith-Njigba",
+       "team": "SEA",
+       "up": [],
+       "down": [
+        "TD Regression"
+       ],
+       "schemes": [
+        "Motion Offense"
+       ],
+       "tags": [
+        "TD down",
+        "1 scheme"
+       ]
+      }
+     ]
+    },
+    {
+     "key": "rising_alone",
+     "label": "Positive on the player, nothing from the offense",
+     "blurb": "The case rests on the receiver alone \u2014 no scheme column argues for him.",
+     "members": [
+      {
+       "name": "Jaylen Waddle",
+       "team": "DEN",
+       "up": [
+        "High TPRR",
+        "High YPRR"
+       ],
+       "down": [],
+       "schemes": [],
+       "tags": [
+        "TPRR",
+        "YPRR"
+       ]
+      },
+      {
+       "name": "Parker Washington",
+       "team": "JAX",
+       "up": [
+        "High YPRR",
+        "TD Improvement"
+       ],
+       "down": [],
+       "schemes": [],
+       "tags": [
+        "YPRR",
+        "TD up"
+       ]
+      },
+      {
+       "name": "Wan'Dale Robinson",
+       "team": "NYG",
+       "up": [
+        "High TPRR",
+        "TD Improvement"
+       ],
+       "down": [],
+       "schemes": [],
+       "tags": [
+        "TPRR",
+        "TD up"
+       ]
+      },
+      {
+       "name": "AJ Brown",
+       "team": "NE",
+       "up": [
+        "High TPRR"
+       ],
+       "down": [],
+       "schemes": [],
+       "tags": [
+        "TPRR"
+       ]
+      },
+      {
+       "name": "DeVonta Smith",
+       "team": "PHI",
+       "up": [
+        "TD Improvement"
+       ],
+       "down": [],
+       "schemes": [],
+       "tags": [
+        "TD up"
+       ]
+      },
+      {
+       "name": "Justin Jefferson",
+       "team": "MIN",
+       "up": [
+        "TD Improvement"
+       ],
+       "down": [],
+       "schemes": [],
+       "tags": [
+        "TD up"
+       ]
+      },
+      {
+       "name": "Rashee Rice",
+       "team": "KC",
+       "up": [
+        "High TPRR"
+       ],
+       "down": [],
+       "schemes": [],
+       "tags": [
+        "TPRR"
+       ]
+      }
+     ]
+    },
+    {
+     "key": "falling_alone",
+     "label": "Flagged to fall, with nothing offsetting",
+     "blurb": "A regression call and no column anywhere else on the grid pointing the other way.",
+     "members": [
+      {
+       "name": "Amon-Ra St. Brown",
+       "team": "DET",
+       "up": [],
+       "down": [
+        "TD Regression"
+       ],
+       "schemes": [],
+       "tags": [
+        "TD down"
+       ]
+      },
+      {
+       "name": "Tee Higgins",
+       "team": "CIN",
+       "up": [],
+       "down": [
+        "TD Regression"
+       ],
+       "schemes": [],
+       "tags": [
+        "TD down"
+       ]
+      }
+     ]
+    }
+   ]
   }
  }
 }
