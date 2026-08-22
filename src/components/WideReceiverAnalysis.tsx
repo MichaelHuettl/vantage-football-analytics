@@ -2,9 +2,12 @@ import { ChartFigure } from "@/components/ChartFigure";
 import { ScatterChart } from "@/components/ScatterChart";
 import { TeamChip } from "@/components/TeamChip";
 import {
-  WR_CHARTS, WR_CONSISTENCY, WR_GRID, WR_NOTABLE, WR_SEASON, WR_STICKINESS,
+  WR_CHARTS, WR_CONSISTENCY, WR_GRID, WR_GROUPS, WR_NOTABLE, WR_SEASON,
+  WR_STICKINESS,
 } from "@/lib/charts";
-import type { BoxColumn, StickyMetric, WrChart } from "@/lib/charts";
+import type {
+  BoxColumn, ConsistencyGroup, StickyMetric, WrChart,
+} from "@/lib/charts";
 import { teamByName } from "@/lib/teams";
 
 /**
@@ -149,6 +152,70 @@ export function WideReceiverAnalysis() {
             . The average is real; it is just not what most of his Sundays looked
             like.
           </p>
+
+          {WR_GROUPS && (
+            <div className="mt-8 rounded border-l-4 p-5 sm:p-6"
+                 style={{ borderColor: "var(--color-vantage-amber)",
+                          background: "var(--surface-sunken)" }}>
+              <p className="eyebrow" style={{ color: "var(--color-vantage-amber)" }}>
+                Where they land
+              </p>
+              <h4 className="mt-2 text-2xl uppercase tracking-wide"
+                  style={{ fontFamily: "var(--font-display)" }}>
+                Four corners, and the one that is worth acting on
+              </h4>
+              <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+                The field split on its own medians — {WR_GROUPS.medians.bust.toFixed(1)}%
+                bust and {WR_GROUPS.medians.boom.toFixed(1)}% boom. Read these as a
+                description of {WR_SEASON} rather than a forecast: better receivers
+                boom more, so the corners partly re-say who scored the most. The
+                cross below is the part that adds something.
+              </p>
+              <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>
+                Each receiver carries his points per game, then his bust and boom
+                rates as a pair — 6/63 is six percent of weeks under five points
+                and sixty-three percent over twenty.
+              </p>
+
+              <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                {WR_GROUPS.corners.map((g) => (
+                  <GroupCard key={g.key} group={g} />
+                ))}
+              </div>
+
+              {WR_GROUPS.usage && (
+                <>
+                  <h4 className="mt-8 text-2xl uppercase tracking-wide"
+                      style={{ fontFamily: "var(--font-display)" }}>
+                    What the usage says about it
+                  </h4>
+                  <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+                    Each receiver&rsquo;s WOPR from the third chart, held against
+                    his boom rate. This separates two groups the boom-and-bust
+                    chart cannot see on its own, and the stickiness bars are what
+                    make the split worth reading: efficiency comes back at 0.17
+                    to 0.25, so a receiver whose <em>role</em> survived has the
+                    better claim on next season than one whose scoring arrived
+                    without it. {WR_GROUPS.usage.matched} of{" "}
+                    {WR_GROUPS.usage.total} receivers carry a WOPR point; the
+                    rest are not placed.
+                  </p>
+                  <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                    {WR_GROUPS.usage.groups.map((g) => (
+                      <GroupCard key={g.key} group={g} showWopr />
+                    ))}
+                  </div>
+                  <p className="mt-5 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+                    Neither list is a buy or a sell. A receiver can hold a large
+                    role and lose it in March, and a small role can grow. What
+                    the split says is narrower: of the two ways to have finished
+                    a season where you did, one of them rests on the part of the
+                    game that repeats and the other does not.
+                  </p>
+                </>
+              )}
+            </div>
+          )}
         </div>
       )}
 
@@ -187,6 +254,41 @@ export function WideReceiverAnalysis() {
         <BoxGrid title="Offenses" cols={WR_GRID.teams} teams />
       </div>
     </section>
+  );
+}
+
+/**
+ * One group of receivers, with the figures that put them there.
+ *
+ * The numbers travel with every name on purpose. A bare list of names is a
+ * verdict a reader has to take on faith; the same list with each receiver's
+ * points per game and his two rates is an argument they can check against the
+ * scatter directly above it (§8).
+ */
+function GroupCard({ group, showWopr = false }: { group: ConsistencyGroup; showWopr?: boolean }) {
+  return (
+    <div className="rounded border p-4" style={{ borderColor: "var(--border-subtle)" }}>
+      <div className="flex items-baseline justify-between gap-3">
+        <p className="eyebrow">{group.label}</p>
+        <span className="eyebrow tnum" style={{ color: "var(--text-muted)" }}>
+          {group.members.length}
+        </span>
+      </div>
+      <p className="mt-1 text-sm" style={{ color: "var(--text-secondary)" }}>
+        {group.blurb}
+      </p>
+      <ul className="mt-3 flex flex-col gap-1 text-sm">
+        {group.members.map((m) => (
+          <li key={m.name} className="flex items-baseline justify-between gap-3">
+            <span>{m.name}</span>
+            <span className="shrink-0 text-xs tnum" style={{ color: "var(--text-muted)" }}>
+              {showWopr && m.wopr !== undefined ? `${m.wopr.toFixed(2)} WOPR · ` : ""}
+              {m.ppg.toFixed(1)} ppg · {m.bust.toFixed(0)}/{m.boom.toFixed(0)}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

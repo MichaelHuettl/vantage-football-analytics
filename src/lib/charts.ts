@@ -213,6 +213,37 @@ export interface Consistency extends ScatterSeries {
   points: ConsistencyPoint[];
 }
 
+/** One receiver inside a group, carrying the figures the panel quotes. */
+export interface GroupMember {
+  name: string;
+  ppg: number;
+  bust: number;
+  boom: number;
+  median?: number;
+  games?: number;
+  wopr?: number;
+}
+
+export interface ConsistencyGroup {
+  key: string;
+  label: string;
+  blurb: string;
+  members: GroupMember[];
+}
+
+export interface ConsistencyGroups {
+  medians: { bust: number; boom: number };
+  /** The field split on its own medians — partly a re-description of scoring. */
+  corners: ConsistencyGroup[];
+  /** Boom rate held against usage, which is where the new information is. */
+  usage?: {
+    wopr_median: number;
+    matched: number;
+    total: number;
+    groups: ConsistencyGroup[];
+  };
+}
+
 export interface WrCharts {
   season: number;
   updated: string;
@@ -230,6 +261,7 @@ export interface WrCharts {
      */
     stickiness: Stickiness | null;
     consistency: Consistency | null;
+    groups: ConsistencyGroups | null;
     /** Receivers the operator tracked who fell outside the charted top 50. */
     notable: { label: string; names: string[] };
     /**
@@ -247,6 +279,7 @@ const wrFile_ = wrFile as unknown as WrCharts;
 export const WR_CHARTS = wrFile_.data.charts;
 export const WR_STICKINESS = wrFile_.data.stickiness;
 export const WR_CONSISTENCY = wrFile_.data.consistency;
+export const WR_GROUPS = wrFile_.data.groups;
 export const WR_NOTABLE = wrFile_.data.notable;
 export const WR_GRID = wrFile_.data.grid;
 export const WR_SEASON = wrFile_.season;
