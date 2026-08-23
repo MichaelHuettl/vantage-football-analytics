@@ -676,8 +676,23 @@ copy claiming O-line injuries move the line.**
   Aug 15" at 9pm on Aug 14. A freshness stamp in the future is the exact
   failure §6 exists to prevent, and CI runners being UTC would have made it
   every evening. Use `stampDate()` from `scripts/lib/today.mjs`.
+- **No em dashes in user-facing copy.** Removed site-wide on 2026-08-22 at the
+  operator's request. Three sets are deliberately exempt and should stay that
+  way: **quoted material** (`curated-posts.json` holds verbatim X posts and
+  `news.json` publisher headlines — rewriting them is misquoting), the
+  **`PracticeStatus` data contract** (`"—"` means no practice report; it renders
+  as a middle dot and changing the key would break the match silently), and
+  **code comments**, which are not on the website.
+  - **Two ways an em dash hides from a search.** `&mdash;` is invisible to a
+    grep for the character, and sixteen survived the first pass. Python's
+    `json.dumps` escapes it, so generated payloads store it escaped and grep
+    clean — 66 more were hiding that way. **Crawl the rendered pages; do not
+    trust a source grep.**
+  - Copied payloads are normalized at the boundary by `src/lib/prose.ts`,
+    beside `canonTeams`, because their wording is not ours to edit at source.
 - The operator is American — **use American spellings in user-facing copy.**
-  Several British spellings had to be removed.
+  Several British spellings had to be removed, and `prose.ts` also fixes the
+  prediction pipeline's "defence" on the way in.
 
 ## Commands
 
