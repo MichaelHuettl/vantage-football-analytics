@@ -112,9 +112,7 @@ export function Timeline({ injury }: { injury: CampInjury }) {
         <span
           className="mt-0.5 block text-xs"
           style={{ color: "var(--text-muted)" }}
-        >
-          — {injury.attribution}
-        </span>
+        > ({injury.attribution}) </span>
       )}
     </span>
   );

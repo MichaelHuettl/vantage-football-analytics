@@ -91,9 +91,7 @@ export default function FilmPage() {
           <p className="mt-2 max-w-2xl" style={{ color: "var(--text-secondary)" }}>
             One play, in the format every breakdown will use once the season
             starts: the alignment, the routes, and the situation the call has to
-            be read against. This is a worked example of the layout rather than
-            published analysis — the team cards below fill in with real ones
-            week by week.
+            be read against. This is a worked example of the layout rather than published analysis. The team cards below fill in with real ones week by week.
           </p>
           <div className="mt-6">
             <FilmSample />

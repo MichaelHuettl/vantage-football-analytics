@@ -198,8 +198,7 @@ function FutureTable({
         </table>
       </div>
       <p className="mt-3 max-w-3xl text-xs" style={{ color: "var(--text-muted)" }}>
-        Floor and ceiling are per game, not per season — the tenth and ninetieth
-        percentile of a single week. Adding a floor across seventeen weeks would
+        Floor and ceiling are per game, not per season: the tenth and ninetieth percentile of a single week. Adding a floor across seventeen weeks would
         describe a year in which the same player is unlucky every Sunday, which
         is not a floor anybody should plan around.
         {thin > 0 && (
@@ -211,16 +210,15 @@ function FutureTable({
       {excluded.length > 0 && (
         <p className="mt-3 max-w-3xl text-xs" style={{ color: "var(--text-muted)" }}>
           Every player on this board has at least {FM_BOARD_RULE.min_prior_games}{" "}
-          prior games — a full season. Held off it for a shorter record:{" "}
+          prior games, a full season. Held off it for a shorter record:{" "}
           {excluded.map((e, i) => (
             <span key={`${e.player}-${e.would_have_ranked}`}>
               {i > 0 && "; "}
               {e.player} ({e.prior_games} games, would have ranked{" "}
               {e.would_have_ranked})
             </span>
-          ))}
-          . The projections themselves are unchanged — the model still carries
-          every one of them, and the full board is in the model&rsquo;s own CSV.
+          ))}.
+          The projections themselves are unchanged. The model still carries every one of them, and the full board is in the model&rsquo;s own CSV.
         </p>
       )}
     </>

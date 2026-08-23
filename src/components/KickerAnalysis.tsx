@@ -40,7 +40,7 @@ export function KickerAnalysis() {
       <div className="mt-5 flex flex-col gap-4 max-w-3xl leading-relaxed">
         <p>
           The gap between the best kicker and the last startable one was{" "}
-          <Stat>{latest.points}</Stat> points last season &mdash;{" "}
+          <Stat>{latest.points}</Stat> points last season,{" "}
           <Stat>{latest.per_game}</Stat> a week. That is not nothing, and it has
           widened three years running:{" "}
           {scoring.spread.map((s) => s.points).join(", ")} points.
@@ -50,7 +50,7 @@ export function KickerAnalysis() {
           best one is worth about three points a week; getting from a top-six
           kicker to the best one is worth between{" "}
           <Stat>1.4</Stat> and <Stat>2.2</Stat>. So the decision that pays is
-          not picking the right kicker out of the good ones &mdash; it is not
+          not picking the right kicker out of the good ones. It is not
           ending up with a bad one.
         </p>
       </div>
@@ -169,7 +169,7 @@ export function KickerAnalysis() {
           <p>
             It does not change what to do about it. Whichever is driving it, last
             year&rsquo;s top eight is a much better pool to draft from than last
-            year&rsquo;s ninth through sixteenth &mdash; and within that eight,
+            year&rsquo;s ninth through sixteenth, and within that eight,
             the exact order carries nothing. Rank correlates from one year to the
             next at roughly zero.
           </p>
@@ -220,7 +220,7 @@ export function KickerAnalysis() {
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           Cheaper bets, and worth being clear about what they are: only a quarter
           of kickers outside the top eight come back the following year. Each of
-          these has a specific reason attached &mdash; a rate the ranking hid, a
+          these has a specific reason attached: a rate the ranking hid, a
           ceiling already on record, or a stadium.
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -364,15 +364,15 @@ function PickCard({
  */
 const CASE: Record<string, string> = {
   McLaughlin:
-    "Improved in each of the last three years — 7.9, then 9.4, then 9.8 a game — which no other kicker in the sample did. The K7 finish is a games-played artifact: he scored at the fourth-best rate in football across 15 of them. Tampa Bay has made the top 16 in attempts in four of five years and finished bottom-five in red zone touchdown rate in 2025, and he has 60-plus range on a warm-weather field.",
+    "Improved in each of the last three years: 7.9, then 9.4, then 9.8 a game, which no other kicker in the sample did. The K7 finish is a games-played artifact: he scored at the fourth-best rate in football across 15 of them. Tampa Bay has made the top 16 in attempts in four of five years and finished bottom-five in red zone touchdown rate in 2025, and he has 60-plus range on a warm-weather field.",
   Pineiro:
-    "Scored 9.3 a game — tied with Dicker for the fifth-best rate in football — and finished K14 only because he played 14 games. San Francisco is on the lowest fourth-down go-rate list, which is the coaching profile that sends the unit out rather than going for it. A top-eight rate at a last-round price.",
+    "Scored 9.3 a game, tied with Dicker for the fifth-best rate in football, and finished K14 only because he played 14 games. San Francisco is on the lowest fourth-down go-rate list, which is the coaching profile that sends the unit out rather than going for it. A top-eight rate at a last-round price.",
   Boswell:
     "Kicked a full 17 games in each of the last two seasons and was the highest-scoring kicker in football in 2024 at 10.8 a game. The drop to 8.3 in 2025 is the regression this position always produces; the availability is what does not move. Pittsburgh is on both the low fourth-down go-rate and the 2024 low red zone lists.",
   Lutz:
-    "Two full seasons, 8.8 then 7.7 a game, K8 then K13 — a floor rather than a ceiling. What he has that nobody else does is Denver: thinner air carries the ball, so the 55-and-in range extends, and the Broncos sit on both the low fourth-down go-rate and the 2025 low red zone lists.",
+    "Two full seasons, 8.8 then 7.7 a game, K8 then K13, which is a floor rather than a ceiling. What he has that nobody else does is Denver: thinner air carries the ball, so the 55-and-in range extends, and the Broncos sit on both the low fourth-down go-rate and the 2025 low red zone lists.",
   Smyth:
-    "The situation is the strongest on this list even though the record is empty. A dome, a starting job, a Saints offense on the 2025 low red zone touchdown list, and a team that has made the top 16 in field goal attempts three years running. Drives that reach the 25 and stop are exactly what pays a kicker — he just has to convert them.",
+    "The situation is the strongest on this list even though the record is empty. A dome, a starting job, a Saints offense on the 2025 low red zone touchdown list, and a team that has made the top 16 in field goal attempts three years running. Drives that reach the 25 and stop are exactly what pays a kicker; he just has to convert them.",
 };
 
 const initials = (name: string) =>

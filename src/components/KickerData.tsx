@@ -107,7 +107,7 @@ function TeamCell({ team }: { team?: string }) {
           <span className="whitespace-nowrap">{team}</span>
         </span>
       ) : (
-        <span style={{ color: "var(--text-muted)" }}>&mdash;</span>
+        <span style={{ color: "var(--text-muted)" }}>n/a</span>
       )}
     </td>
   );
@@ -203,7 +203,7 @@ export function KickerAdvantages() {
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
         The situational lists: the roofs, the coaches who kick rather than go for
         it, the offenses that stall in the red zone, and the legs that reach from
-        sixty. Some columns name kickers and some name teams — the label says which.
+        sixty. Some columns name kickers and some name teams; the label says which.
       </p>
 
       <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

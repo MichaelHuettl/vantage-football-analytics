@@ -95,7 +95,7 @@ export default async function InjuriesPage({
         objectPosition="center 50%"
         eyebrow="Status and trend"
         title="Injury Database"
-        lede="Training camp status now, practice participation once the season starts. The Friday designation alone is not the signal — the movement across the week is."
+        lede="Training camp status now, practice participation once the season starts. The Friday designation alone is not the signal. The movement across the week is."
       />
 
       <Container className="py-10">
@@ -171,8 +171,7 @@ export default async function InjuriesPage({
           {tracker.live ? (
             <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
               {tracker.pulled} players carried a designation on this pull;{" "}
-              {tracker.rows.length} are shown — everyone the site ranks, plus
-              anyone already written up however deep on a roster.{" "}
+              {tracker.rows.length} are shown: everyone the site ranks, plus anyone already written up however deep on a roster.{" "}
               {tracker.counts.both} of them have a written record as well,{" "}
               {tracker.counts.recordOnly} are records the wire is currently
               silent on, and{" "}
@@ -182,8 +181,7 @@ export default async function InjuriesPage({
             </p>
           ) : (
             <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
-              The wire did not answer on this render, so this is the written
-              record alone — stale rather than empty (§8).{" "}
+              The wire did not answer on this render, so this is the written record alone, stale rather than empty (§8).{" "}
               {tracker.failures.map((f) => `${f.name}: ${f.reason}`).join("; ")}
             </p>
           )}
@@ -372,8 +370,7 @@ export default async function InjuriesPage({
             <AutoRefresh />
           </div>
           <p className="mt-2 max-w-2xl text-sm" style={{ color: "var(--text-muted)" }}>
-            Pulled while you are reading it. Headline, source and link only —
-            never the article (§2) — and no status here is this site&rsquo;s
+            Pulled while you are reading it. Headline, source and link only, never the article (§2), and no status here is this site&rsquo;s
             prognosis (§5.3). The reconciliation that used to sit in this section
             now happens in the tracker itself, on every row.
           </p>
@@ -609,8 +606,7 @@ export default async function InjuriesPage({
         <p className="mt-16 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
           Every expected absence on this page is quoted from the team, a coach
           or a published report, and is attributed to whoever said it. This site
-          does not estimate return dates or assign a probability of playing —
-          that is a medical claim, and not one it is qualified to make. An
+          does not estimate return dates or assign a probability of playing. That is a medical claim, and not one it is qualified to make. An
           absence shown as &ldquo;not stated&rdquo; means nobody has stated one,
           not that the injury is minor.
         </p>

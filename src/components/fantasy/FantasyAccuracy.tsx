@@ -86,7 +86,7 @@ export function FantasyAccuracy() {
           ways: this model beats &ldquo;assume the player keeps doing what he has
           been doing&rdquo; by a modest amount, reliably. It is a second opinion
           that is right slightly more often than the obvious assumption. The
-          value is in how consistent that edge is, not how large — and a
+          value is in how consistent that edge is, not how large, and a
           projection system that claimed more than this on weekly fantasy
           scoring would be describing a leak rather than a skill.
         </p>
@@ -102,8 +102,7 @@ export function FantasyAccuracy() {
                 </strong>{" "}
                 {pct(bandValue(starters, `within_${hb}`))} of startable
                 player-weeks land within {hb} points of the real score, against{" "}
-                {pct(bandValue(starters, `naive_within_${hb}`))} for recent form
-                — in {hr.seasons_model_better[String(hb)]} of {hr.season_count}
+                {pct(bandValue(starters, `naive_within_${hb}`))} for recent form, in {hr.seasons_model_better[String(hb)]} of {hr.season_count}
                 {" "}back-tested seasons, never fewer.
               </li>
               <li>
@@ -119,8 +118,7 @@ export function FantasyAccuracy() {
                   Kicker and defense, week to week.
                 </strong>{" "}
                 The largest lift of any position, because their signal is in the
-                betting line for the game rather than in their own history —
-                which is exactly what a player&rsquo;s recent form cannot see.
+                betting line for the game rather than in their own history, which is exactly what a player&rsquo;s recent form cannot see.
               </li>
               <li>
                 <strong style={{ color: "var(--text-primary)" }}>
@@ -153,8 +151,7 @@ export function FantasyAccuracy() {
                 {FM_QUALITY.find((q) => q.position === "K")?.draft_day_rho?.toFixed(2)}{" "}
                 at kicker and{" "}
                 {FM_QUALITY.find((q) => q.position === "DST")?.draft_day_rho?.toFixed(2)}{" "}
-                at defense — close enough to zero that the order of those boards
-                is not information.
+                at defense, close enough to zero that the order of those boards is not information.
               </li>
               <li>
                 <strong style={{ color: "var(--text-primary)" }}>
@@ -190,8 +187,7 @@ export function FantasyAccuracy() {
           <strong style={{ color: "var(--text-primary)" }}>
             How much room is left.
           </strong>{" "}
-          An oracle told each player&rsquo;s own season median in advance — a
-          number no one could have — would hit{" "}
+          An oracle told each player&rsquo;s own season median in advance, a number no one could have, would hit{" "}
           {pct(bandValue(hr.ceiling, `within_${hb}`))} at this margin. The model
           reaches {pct(bandValue(starters, `within_${hb}`))}, or{" "}
           {pct(bandValue(hr.ceiling, `captured_${hb}`), 0)} of it. Most of what
@@ -210,7 +206,7 @@ export function FantasyAccuracy() {
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
         {FM_SPAN.player_weeks.toLocaleString()} player-weeks across{" "}
         {FM_SPAN.to - FM_SPAN.from + 1} seasons. The headline test is{" "}
-        {FM_CONFIG.test_season}, held out entirely — but one season is an
+        {FM_CONFIG.test_season}, held out entirely, but one season is an
         anecdote, so the model is also re-fitted and re-scored for each of{" "}
         {seasons.length} seasons in turn, training only on what came before it.
       </p>
@@ -221,8 +217,7 @@ export function FantasyAccuracy() {
         <p className="eyebrow">Read this column before the others</p>
         <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
           Weekly fantasy scoring is mostly noise. The benchmark that matters is
-          not zero error, it is &ldquo;assume the player keeps doing what he has
-          been doing&rdquo; — his own three-game average. Beating that by six or
+          not zero error, it is &ldquo;assume the player keeps doing what he has been doing&rdquo;, which is his own three-game average. Beating that by six or
           seven percent at the skill positions is the honest result for this
           problem, and it is roughly what published projection systems manage.
           Anything dramatically better would mean a leak, not skill.
@@ -271,7 +266,7 @@ export function FantasyAccuracy() {
         Errors are points per game. Season totals are far more accurate than the
         weekly figures suggest, because week-to-week errors are largely
         independent and cancel across seventeen games. Kicker and defense gain
-        most because their signal is not in their own past — it is in the betting
+        most because their signal is not in their own past. It is in the betting
         line for the game they are about to play.
       </p>
 
@@ -290,8 +285,7 @@ export function FantasyAccuracy() {
       </p>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         <strong style={{ color: "var(--text-primary)" }}>Why {hb} points.</strong>{" "}
-        Not because it is the band that flatters most — that would be a wider
-        one — but because it is where the model is furthest ahead of the
+        Not because it is the band that flatters most, since that would be a wider one, but because it is where the model is furthest ahead of the
         baseline. The gap grows from four points of hit rate at a ±5 margin to
         roughly six around ±8, then stops growing: past that both are simply
         catching everything. {hb} points is also a start-or-sit tolerance rather
@@ -303,8 +297,7 @@ export function FantasyAccuracy() {
         {hr.significance.rows.toLocaleString()} weeks scored here, the model was
         inside the band and recent form outside it{" "}
         {hr.significance.model_only.toLocaleString()} times, against{" "}
-        {hr.significance.baseline_only.toLocaleString()} the other way — a split
-        this lopsided arises by chance with probability below 1 in 10
+        {hr.significance.baseline_only.toLocaleString()} the other way. A split this lopsided arises by chance with probability below 1 in 10
         <sup>100</sup> (McNemar&rsquo;s test, paired on identical rows). It also
         holds in every individual season: {hr.seasons_model_better[String(hb)]} of{" "}
         {hr.season_count}. Significance was never the hard part at this sample
@@ -352,8 +345,7 @@ export function FantasyAccuracy() {
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         &ldquo;Startable&rdquo; is the top {hr.starters_per_week.QB} quarterbacks,{" "}
         {hr.starters_per_week.RB} backs, {hr.starters_per_week.WR} receivers and{" "}
-        {hr.starters_per_week.TE} tight ends <em>by projection</em> that week —
-        ranked on what the model said beforehand, never on what happened, which
+        {hr.starters_per_week.TE} tight ends <em>by projection</em> that week, ranked on what the model said beforehand, never on what happened, which
         would make this a measure of hindsight. {starters.rows.toLocaleString()}{" "}
         player-weeks, every one of them out of sample. Over <em>all</em>{" "}
         {allRows.rows.toLocaleString()} player-weeks the {hb}-point figure rises
@@ -368,8 +360,7 @@ export function FantasyAccuracy() {
       <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         The same startable weeks, at every margin. The bar is the model, the tick
         is recent form; the gap between them is the whole claim. It widens
-        through the middle of the range and closes at both ends — at 2 points
-        because nobody can call a week that precisely, at 10 because almost
+        through the middle of the range and closes at both ends: at 2 points because nobody can call a week that precisely, at 10 because almost
         everybody can.
       </p>
       <BandCurve
@@ -386,7 +377,7 @@ export function FantasyAccuracy() {
         Counted by season rather than pooled, the model beat recent form in{" "}
         {hr.seasons_model_better[String(hb)]} of {hr.season_count} seasons within{" "}
         {hb} points and {hr.seasons_model_better["5"]} of {hr.season_count} within
-        5 — but {hr.seasons_model_better["3"]} within 3, and{" "}
+        5, but {hr.seasons_model_better["3"]} within 3, and{" "}
         {hr.seasons_model_better["2"]} within 2. Widen the band and the advantage
         is reliable; tighten it and it disappears.
       </p>
@@ -397,7 +388,7 @@ export function FantasyAccuracy() {
         points {pct(hr.zeroes.naive_within_2)} of the time against the
         model&rsquo;s {pct(hr.zeroes.model_within_2)}, because the model regresses
         that player back up to a positive number. On the weeks a player did
-        score, the two are level — {pct(hr.zeroes.scored_model_within_2)} against{" "}
+        score, the two are level, at {pct(hr.zeroes.scored_model_within_2)} against{" "}
         {pct(hr.zeroes.scored_naive_within_2)}. The model earns its lift by not
         being badly wrong, which is worth more to a lineup than precision it does
         not have.
@@ -407,8 +398,7 @@ export function FantasyAccuracy() {
       <h3 className="eyebrow mt-12">A season total is a different question</h3>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         Everything above is one week at a time. A draft is a bet on a whole
-        season, and the honest version of that question is harder than it looks —
-        so this is measured from what the model would have said{" "}
+        season, and the honest version of that question is harder than it looks, so this is measured from what the model would have said{" "}
         <em>in August</em>: its projection on each player&rsquo;s first row of the
         season, when every feature it can see comes from the year before. The
         baseline is what a drafter would otherwise assume, which is that the
@@ -420,8 +410,7 @@ export function FantasyAccuracy() {
           land within {st.headline_band} points
         </strong>{" "}
         of the real total, against{" "}
-        {pct(bandValue(st.overall, `baseline_within_${st.headline_band}`))} for
-        repeating last year — an average miss of {st.overall.mae.toFixed(0)}{" "}
+        {pct(bandValue(st.overall, `baseline_within_${st.headline_band}`))} for repeating last year, with an average miss of {st.overall.mae.toFixed(0)}{" "}
         points against {st.overall.baseline_mae.toFixed(0)}. Across a
         seventeen-game season that band is about two and a half points a game.
         Because season totals run an order of magnitude apart, the scale-fair
@@ -431,8 +420,7 @@ export function FantasyAccuracy() {
         {pct(bandValue(st.overall, "baseline_within_pct_30"))}.{" "}
         {st.overall.rows.toLocaleString()} player-seasons of at least{" "}
         {st.min_games} games. The same paired test puts this gap at{" "}
-        p&nbsp;&lt;&nbsp;0.0001 — smaller than the weekly edge, and still not
-        chance.
+        p&nbsp;&lt;&nbsp;0.0001, smaller than the weekly edge and still not chance.
       </p>
       <BandCurve
         rows={st.point_bands.map((b) => ({
@@ -481,8 +469,7 @@ export function FantasyAccuracy() {
         quarterback season and{" "}
         {pct(st.headline_band / (teSeason?.median_total ?? 1), 0)} of a median
         tight end&rsquo;s, which is most of why those two rows differ. The model
-        is ahead of the baseline at every position here, but only just at
-        quarterback —{" "}
+        is ahead of the baseline at every position here, but only just at quarterback:{" "}
         {pct(bandValue(qbSeason ?? {}, `within_${st.headline_band}`))} against{" "}
         {pct(bandValue(qbSeason ?? {}, `baseline_within_${st.headline_band}`))},
         across {qbSeason?.rows.toLocaleString()} player-seasons. Projecting a
@@ -494,7 +481,7 @@ export function FantasyAccuracy() {
           Two numbers this deliberately does not quote.
         </strong>{" "}
         Summing the seventeen weekly forecasts instead gives an average miss of
-        only {st.not_a_baseline.in_season_sum_mae.toFixed(0)} points — but each
+        only {st.not_a_baseline.in_season_sum_mae.toFixed(0)} points, but each
         of those forecasts knew everything up to its own week, so that number
         describes a manager re-projecting all season, not a drafter in August.
         And recent form cannot be scored at this scale at all: summed over a
@@ -619,7 +606,7 @@ export function FantasyAccuracy() {
                   {q.in_season_rho.toFixed(2)}
                 </td>
                 <td className="py-2 text-right tnum">
-                  {q.draft_day_rho === null ? "—" : q.draft_day_rho.toFixed(2)}
+                  {q.draft_day_rho === null ? "n/a" : q.draft_day_rho.toFixed(2)}
                 </td>
                 <td className="py-2 text-right tnum">{q.top12_hit}/12</td>
               </tr>
@@ -633,7 +620,7 @@ export function FantasyAccuracy() {
         each allowed to use everything known up to that week, so it follows a
         back who takes over a backfield in October. The second projects from a
         player&rsquo;s first week of the season, when the model knows only what
-        August knew. At kicker and defense that figure is near zero — which is
+        August knew. At kicker and defense that figure is near zero, which is
         not a flaw in the model but the reason those positions are streamed
         rather than drafted, stated as a number.
       </p>
@@ -695,8 +682,7 @@ export function FantasyAccuracy() {
       </ul>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         The marker sits at the 80% the range claims. Treat the published floor and
-        ceiling as a tighter band than advertised — outcomes escape them nearer a
-        third of the time than a fifth.
+        ceiling as a tighter band than advertised. Outcomes escape them nearer a third of the time than a fifth.
       </p>
     </section>
   );

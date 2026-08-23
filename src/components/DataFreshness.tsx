@@ -70,7 +70,7 @@ export function DataFreshness({
       />
       <span>
         {label} <time dateTime={updated}>{formatted}</time>
-        {stale && ` — ${days} days ago`}
+        {stale && `, ${days} days ago`}
       </span>
     </p>
   );

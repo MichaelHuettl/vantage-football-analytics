@@ -92,7 +92,7 @@ export function HistoricTable({ data }: { data: Data }) {
                         textUnderlineOffset: extreme ? "3px" : undefined,
                       }}
                     >
-                      {v ?? "—"}
+                      {v ?? "n/a"}
                     </td>
                   );
                 })}
@@ -130,7 +130,7 @@ export function HistoricTable({ data }: { data: Data }) {
                     fontWeight: key === "median" ? 700 : 400,
                   }}
                 >
-                  {distribution[key]?.[c.key] ?? "—"}
+                  {distribution[key]?.[c.key] ?? "n/a"}
                 </td>
               ))}
             </tr>
@@ -172,7 +172,7 @@ function Key() {
           background: "color-mix(in oklab, var(--color-ink-500) 12%, transparent)",
         }}
       >
-        top quarter of that column — the good end, so a <em>low</em> number
+        top quarter of that column, the good end, so a <em>low</em> number
         under Off. rank and O-line
       </Item>
       <Item sample="31" style={{ color: "var(--text-muted)" }}>

@@ -38,7 +38,7 @@ export function Methodology() {
       </p>
 
       <div className="mt-6">
-        <Disclosure summary="The scoreboard — how well it actually does" defaultOpen>
+        <Disclosure summary="The scoreboard, and how well it actually does" defaultOpen>
           <table className="w-full max-w-2xl text-sm">
             <thead>
               <tr className="eyebrow border-b" style={{ borderColor: "var(--border-subtle)" }}>
@@ -60,7 +60,7 @@ export function Methodology() {
             </tbody>
           </table>
           <p className="mt-3 max-w-2xl text-sm" style={{ color: "var(--text-secondary)" }}>
-            Lower log loss is better — it rewards being confident and right, and punishes
+            Lower log loss is better. It rewards being confident and right, and punishes
             being confident and wrong. The market wins on both measures, and the page does
             not pretend otherwise. What the model does have is calibration: its stated
             probabilities land within about{" "}
@@ -109,8 +109,7 @@ export function Methodology() {
 
         <Disclosure summary="What an injury gap has actually looked like">
           <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
-            The injury score has no values for an upcoming slate — reports are not
-            published this far out, which is why that metric shows an empty state on
+            The injury score has no values for an upcoming slate, because reports are not published this far out, which is why that metric shows an empty state on
             each game. These are completed games, kept so the measure means something
             concrete. They are <strong>history, not predictions</strong>, and are not
             part of any forecast on this site.
@@ -166,7 +165,7 @@ export function Methodology() {
           </p>
         </Disclosure>
 
-        <Disclosure summary="Why this is hard — football margins are lumpy">
+        <Disclosure summary="Why this is hard: football margins are lumpy">
           <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
             Margins are not a smooth curve. A field goal and a touchdown are the
             units the game is scored in, so games pile up on those numbers and
@@ -174,8 +173,7 @@ export function Methodology() {
             <strong className="tnum">
               {(GAME_MARGINS.margin_frequency["3"] * 100).toFixed(1)}%
             </strong>{" "}
-            of all games — more than three times either neighbour — while nine
-            points, a margin no combination of scores lands on naturally, happens
+            of all games, more than three times either neighbor, while nine points, a margin no combination of scores lands on naturally, happens
             in {(GAME_MARGINS.margin_frequency["9"] * 100).toFixed(1)}%.
           </p>
           <ul className="mt-4 flex max-w-md flex-col gap-1.5">
@@ -211,7 +209,7 @@ export function Methodology() {
           </p>
         </Disclosure>
 
-        <Disclosure summary={`What the model actually uses — all ${MODEL_FEATURES.total} inputs`}>
+        <Disclosure summary={`What the model actually uses: all ${MODEL_FEATURES.total} inputs`}>
           <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
             The head-to-head chart on a game page shows nine metrics, which can read as
             though nine numbers decide the forecast. They do not. Here is the whole
@@ -291,7 +289,7 @@ export function Methodology() {
         <td className="py-2 text-right tnum">{ll.toFixed(4)}</td>
         <td className="py-2 text-right tnum">
           {ece === undefined ? (
-            <span style={{ color: "var(--text-muted)" }}>—</span>
+            <span style={{ color: "var(--text-muted)" }}>n/a</span>
           ) : (
             `±${(ece * 100).toFixed(1)} pts`
           )}

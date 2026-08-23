@@ -125,7 +125,7 @@ export default async function FantasyModelPage({
               <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
                 The held-out season. The model never saw a single{" "}
                 {FM_CONFIG.test_season} game while it was being fitted, so this is
-                the projection standing next to what actually happened — which is
+                the projection standing next to what actually happened, which is
                 the only version of a projection worth showing.
               </p>
               <div className="mt-8">
@@ -163,7 +163,7 @@ export default async function FantasyModelPage({
                   </strong>{" "}
                   The betting market has posted lines for part of the season. Where
                   it has not, the input that carries kickers and defenses is
-                  missing — so those two boards are the softest here, and the
+                  missing, so those two boards are the softest here, and the
                   accuracy tab shows why.
                 </li>
               </ul>

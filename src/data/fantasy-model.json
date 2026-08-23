@@ -1,11 +1,11 @@
 {
  "schema_version": 1,
- "updated": "2026-08-22",
- "source": "fantasy-model/export_site_payload.py \u2014 a 1-point-PPR projection model over nflverse player-week data, copied rather than recomputed",
+ "updated": "2026-08-23",
+ "source": "fantasy-model/export_site_payload.py: a 1-point-PPR projection model over nflverse player-week data, copied rather than recomputed",
  "note": "Every figure arrives settled from the model repo. The site computes nothing here (\u00a711). Boards are capped at the model's own limit; the full tables live in that repo as CSV.",
  "data": {
   "schema_version": 1,
-  "generated_at": "2026-08-22T22:35:59.989230+00:00",
+  "generated_at": "2026-08-23T02:46:00.530109+00:00",
   "config": {
    "train_seasons": [
     1999,
@@ -6068,7 +6068,7 @@
   ],
   "board_rule": {
    "min_prior_games": 16,
-   "reason": "A player needs a full season of NFL history \u2014 16 games \u2014 to be recommended on this board. A projection built on fewer rests on too little to rank: at kicker, where the model's draft-day rank correlation is near zero and its projections span a fraction of the real range, two career games was enough to top the board on noise alone. The rule costs real second-year players at the skill positions, and every one it removes is listed here. The projections themselves are unchanged and still carry every player.",
+   "reason": "A player needs a full season of NFL history, 16 games, to be recommended on this board. A projection built on fewer rests on too little to rank: at kicker, where the model's draft-day rank correlation is near zero and its projections span a fraction of the real range, two career games was enough to top the board on noise alone. The rule costs real second-year players at the skill positions, and every one it removes is listed here. The projections themselves are unchanged and still carry every player.",
    "excluded": [
     {
      "position": "QB",

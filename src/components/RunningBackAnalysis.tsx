@@ -70,7 +70,7 @@ export function RunningBackAnalysis() {
           touches, so the argument about a back is really an argument about how
           many he will get. McCaffrey sits alone at{" "}
           <Stat>{hvt.points.find((p) => p.name === "C. McCaffrey")?.x.toFixed(1)}</Stat>{" "}
-          per game — nearly three times the league median of{" "}
+          per game, nearly three times the league median of{" "}
           <Stat>{hvt.x_median.toFixed(1)}</Stat>.
         </p>
         <p>
@@ -105,7 +105,7 @@ export function RunningBackAnalysis() {
           Yards before contact is the offensive line&rsquo;s point-of-attack
           blocking.
           Yards after contact is the back. Splitting them stops you crediting a
-          runner for his line, or blaming him for it — and the pairs inside one
+          runner for his line, or blaming him for it, and the pairs inside one
           backfield are where it gets useful.
         </p>
         <p>
@@ -114,7 +114,7 @@ export function RunningBackAnalysis() {
           one taking the heavy boxes and the short yardage. Walker and
           Charbonnet is the same story with the roles reversed. When two backs
           share a line, the difference in yards before contact is a difference
-          in role, not ability — and role is the thing that changes in
+          in role, not ability, and role is the thing that changes in
           September.
         </p>
       </Block>
@@ -141,8 +141,7 @@ export function RunningBackAnalysis() {
         <p>
           Route participation says a back is out there on passing downs. Targets
           per route run says the quarterback is looking at him. The bottom-right
-          corner is the trap: high participation, no targets — a back running
-          routes as a decoy, whose receiving usage looks real in a box score and
+          corner is the trap: high participation, no targets, which is a back running routes as a decoy, whose receiving usage looks real in a box score and
           produces nothing.
         </p>
         <p>
@@ -178,8 +177,7 @@ export function RunningBackAnalysis() {
         <p>
           The two rank columns are the ones people skip. The median top-three
           back ran behind the <Stat>12th</Stat> offensive line on the{" "}
-          <Stat>12th</Stat> ranked offense — not an elite situation, but not a
-          bad one either, and the 75th percentile at <Stat>20th</Stat> says a
+          <Stat>12th</Stat> ranked offense: not an elite situation, but not a bad one either, and the 75th percentile at <Stat>20th</Stat> says a
           genuinely poor line has produced this finish more than once. Age is
           the tighter constraint: <Stat>22</Stat> to <Stat>26</Stat> covers the
           middle half, and only two seasons in nine years came from outside it.
@@ -188,8 +186,7 @@ export function RunningBackAnalysis() {
         <div className="mt-2">
           <TierBenchmarks tiers={historic.tiers} />
           <p className="mt-3 text-sm" style={{ color: "var(--text-secondary)" }}>
-            The two tiers are closer than the draft price suggests — roughly
-            thirty carries and twenty-five targets separate a top-three season
+            The two tiers are closer than the draft price suggests. Roughly thirty carries and twenty-five targets separate a top-three season
             from a fourth-to-tenth one. That gap is one injury, or one change of
             coordinator, wide.
           </p>
@@ -257,8 +254,7 @@ export function RunningBackAnalysis() {
         }
       >
         <p>
-          Carries depend on the scoreboard. Targets mostly do not — a back who
-          catches passes keeps scoring in the games his team is losing, which is
+          Carries depend on the scoreboard. Targets mostly do not. A back who catches passes keeps scoring in the games his team is losing, which is
           exactly when a rushing workload disappears. That is why{" "}
           <Stat>{targets.rows[0].name}</Stat> at{" "}
           <Stat>{Math.round(targets.rows[0].targets)}</Stat> targets has a floor

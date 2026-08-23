@@ -39,8 +39,7 @@ export function DefenseFindings() {
           <p>
             Sorted that way, the split is not subtle. The measures describing{" "}
             <em>how efficiently an offense was allowed to play</em> sit at the
-            top. The measures counting things that happened sit at the bottom —
-            including interceptions, which are among the most directly rewarded
+            top. The measures counting things that happened sit at the bottom, including interceptions, which are among the most directly rewarded
             events in scoring and are still no better than a coin flip at
             picking out the defenses that finished well. Turnovers pay when they
             come and barely repeat, which is what a rate near chance looks like.
@@ -216,8 +215,7 @@ export function DefenseFindings() {
               <p className="eyebrow">The exception</p>
               <p className="mt-2 leading-relaxed">
                 {s.team} scored <Stat>{s.fpts}</Stat> points and appear in{" "}
-                <strong>none of the seven</strong> — not sacks, interceptions,
-                forced fumbles, pressure rate, EPA per pass, pass success rate or
+                <strong>none of the seven</strong>: not sacks, interceptions, forced fumbles, pressure rate, EPA per pass, pass success rate or
                 EPA per play. Every other defense on this list appears in at
                 least three.
               </p>
@@ -270,8 +268,8 @@ export function DefenseFindings() {
             <p className="mt-6 max-w-3xl leading-relaxed">
               The mirror image of the row above. The {spotlight.team} appear in{" "}
               <Stat>{spotlight.appears.length}</Stat> of the {spotlight.of}{" "}
-              advanced leaderboards — everything except{" "}
-              {spotlight.missing.join(" and ").toLowerCase()} — and rank{" "}
+              advanced leaderboards, everything except{" "}
+              {spotlight.missing.join(" and ").toLowerCase()}, and rank{" "}
               <Stat>
                 {ordinal(spotlight.coverage_ranks["Down Conversion Rate Allowed"])}
               </Stat>{" "}

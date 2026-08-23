@@ -3,7 +3,7 @@
  "season": 2025,
  "updated": "2026-08-22",
  "source": "2026-2027 Fantasy Football Analytics (Original) (4).xlsx, sheet 'WRTE Statistics & Graphs'",
- "note": "Wide receiver charts from the workbook's WRTE sheet, rows 2-183. The grid's 'High YPRR' and 'High TPRR' columns are 4for4-derived categorisations; \u00a72 rules that vendor's columns out and the operator lifted it for the RB chart and the TE page (docs/STATE.md). Names only here, not the licensed figures. The stickiness and consistency charts come from the operator's nflverse export instead of the workbook, and touch no licensed source at all. Every median, extent, correlation and label order is computed here, not in a component (\u00a711).",
+ "note": "Wide receiver charts from the workbook's WRTE sheet, rows 2-183. The grid's 'High YPRR' and 'High TPRR' columns are 4for4-derived categorizations; \u00a72 rules that vendor's columns out and the operator lifted it for the RB chart and the TE page (docs/STATE.md). Names only here, not the licensed figures. The stickiness and consistency charts come from the operator's nflverse export instead of the workbook, and touch no licensed source at all. Every median, extent, correlation and label order is computed here, not in a component (\u00a711).",
  "data": {
   "charts": {
    "targets_airyards": {
@@ -459,7 +459,7 @@
    },
    "airyards_share": {
     "title": "Air yards share against target share",
-    "caption": "Both axes are a share of the same offense, so this asks how much of his team's passing game a receiver owns \u2014 the downfield share against the total share. Below the diagonal is a possession role, above it a field-stretching one.",
+    "caption": "Both axes are a share of the same offense, so this asks how much of his team's passing game a receiver owns: the downfield share against the total share. Below the diagonal is a possession role, above it a field-stretching one.",
     "x_label": "Air yards share %",
     "y_label": "Target share %",
     "x_pct": true,
@@ -2813,7 +2813,7 @@
     {
      "key": "rising_alone",
      "label": "Positive on the player, nothing from the offense",
-     "blurb": "The case rests on the receiver alone \u2014 no scheme column argues for him.",
+     "blurb": "The case rests on the receiver alone, and no scheme column argues for him.",
      "members": [
       {
        "name": "Jaylen Waddle",

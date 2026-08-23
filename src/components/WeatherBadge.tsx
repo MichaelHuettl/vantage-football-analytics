@@ -13,8 +13,7 @@ export function WeatherBadge({ game }: { game: Game }) {
   if (!weatherApplies(game)) {
     return (
       <span className="text-sm" style={{ color: "var(--text-muted)" }}>
-        {game.roof === "dome" ? "Fixed roof" : "Roof closed"} — weather is not a
-        factor
+        {game.roof === "dome" ? "Fixed roof" : "Roof closed"}: weather is not a factor
       </span>
     );
   }

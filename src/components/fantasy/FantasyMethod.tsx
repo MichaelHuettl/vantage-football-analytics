@@ -25,8 +25,7 @@ export function FantasyMethod() {
       </h2>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
         Six separate models, one per position, each predicting how many points a
-        player scores in a game that has not been played — using only what was
-        knowable before kickoff. Trained on {trainFrom}&ndash;{trainTo},
+        player scores in a game that has not been played, using only what was knowable before kickoff. Trained on {trainFrom}&ndash;{trainTo},
         tuned on {FM_CONFIG.valid_season}, and scored once on{" "}
         {FM_CONFIG.test_season}, which it never saw during fitting.
       </p>
@@ -36,8 +35,7 @@ export function FantasyMethod() {
       <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         Standard 1-point PPR. These rules are implemented explicitly rather than
         taken from the source data, then checked back against nflverse&rsquo;s own
-        fantasy column on all {FM_SPAN.player_weeks.toLocaleString()} player-weeks
-        &mdash; they now agree on every one.
+        fantasy column on all {FM_SPAN.player_weeks.toLocaleString()} player-weeks, and they now agree on every one.
       </p>
       <dl className="mt-4 grid gap-x-8 gap-y-3 sm:grid-cols-2">
         {Object.entries(FM_SCORING).map(([key, rule]) => (
@@ -57,7 +55,7 @@ export function FantasyMethod() {
       <ul className="mt-4 flex max-w-3xl flex-col gap-3 text-sm">
         {[
           ["Recent form", "Rolling three- and five-game averages of scoring, yardage and volume, plus the player's per-game average across the whole of last season."],
-          ["Usage and role", "Target share, carry share, air yards share, weighted opportunity rating, and snap share — how much of the offense actually runs through him, rather than how efficient he was with it."],
+          ["Usage and role", "Target share, carry share, air yards share, weighted opportunity rating, and snap share: how much of the offense actually runs through him, rather than how efficient he was with it."],
           ["Matchup", "Points that defense has allowed to this position, built from the weeks already played and falling back to last season's figure in September."],
           ["Game environment", "The betting market's spread and total, converted into how many points each team is expected to score. This is the one input from outside the box score, and for kickers and defenses it is most of the signal."],
         ].map(([title, body]) => (
@@ -88,8 +86,7 @@ export function FantasyMethod() {
       <h3 className="eyebrow mt-12">A different model for each position</h3>
       <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
         A kicker and a wide receiver share almost no useful inputs, so they do not
-        share a model. Two families are fitted every time &mdash; a ridge
-        regression and a gradient booster &mdash; and the one that does better on
+        share a model. Two families are fitted every time, a ridge regression and a gradient booster, and the one that does better on
         the tuning season is the one that ships. Which wins is a result, not a
         preference.
       </p>
@@ -141,8 +138,7 @@ export function FantasyMethod() {
       </div>
       <p className="mt-5 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         Read a pair of these together rather than one at a time. The three- and
-        five-game windows of the same statistic are nearly the same column &mdash;
-        at tight end the two weighted-opportunity windows correlate at 0.95 &mdash;
+        five-game windows of the same statistic are nearly the same column: at tight end the two weighted-opportunity windows correlate at 0.95,
         so a ridge fit splits one shared signal into a large positive and a large
         negative that mostly cancel. The pair means something; neither half means
         anything alone.

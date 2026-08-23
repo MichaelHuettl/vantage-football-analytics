@@ -134,7 +134,7 @@ export function RankedTable({ columns }: { columns: LeaderColumn[] }) {
                         ))}
                       </span>
                     ) : (
-                      <span style={{ color: "var(--text-muted)" }}>&mdash;</span>
+                      <span style={{ color: "var(--text-muted)" }}>n/a</span>
                     )}
                   </td>
                 );

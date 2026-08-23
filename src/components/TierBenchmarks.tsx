@@ -118,7 +118,7 @@ export function TierBenchmarks({ tiers }: { tiers: Tier[] }) {
                       : { color: "var(--text-secondary)" }
                   }
                 >
-                  {t.thresholds[k] !== undefined ? trim(t.thresholds[k]) : "—"}
+                  {t.thresholds[k] !== undefined ? trim(t.thresholds[k]) : "n/a"}
                 </td>
               ))}
             </tr>
@@ -139,9 +139,7 @@ export function TierBenchmarks({ tiers }: { tiers: Tier[] }) {
                     ))}
                   </ul>
                 ) : (
-                  <span className="block text-right" style={{ color: "var(--text-muted)" }}>
-                    —
-                  </span>
+                  <span className="block text-right" style={{ color: "var(--text-muted)" }}> n/a </span>
                 )}
               </td>
             ))}

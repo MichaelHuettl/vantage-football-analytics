@@ -46,8 +46,7 @@ export function WideReceiverAnalysis() {
         Target share counts how often the ball comes; air yards count how far it
         travels when it does. They are different jobs and the same receiver
         rarely leads both. A name far to the right with nothing above the median
-        is running the deep routes without being the read — a role that scores
-        in bursts and disappears for a month.
+        is running the deep routes without being the read, a role that scores in bursts and disappears for a month.
       </Block>
 
       <Block n={2} chart={airyards_share}>
@@ -87,12 +86,10 @@ export function WideReceiverAnalysis() {
             <strong style={{ color: "var(--text-primary)" }}>
               The chances repeat. What a receiver did with them does not.
             </strong>{" "}
-            Every measure of opportunity clusters around a half, while
-            touchdowns per target — the thing that most inflates a season line —
-            comes back at{" "}
+            Every measure of opportunity clusters around a half, while touchdowns per target, the thing that most inflates a season line, comes back at{" "}
             {WR_STICKINESS.metrics.find((m) => m.label === "Touchdowns per target")
-              ?.rho.toFixed(2)}
-            , which is close enough to nothing that last year&rsquo;s touchdown
+              ?.rho.toFixed(2)},
+            which is close enough to nothing that last year&rsquo;s touchdown
             total should not be read as a forecast. Yards per target is barely
             better. That is the case for drafting the role rather than the
             production it happened to yield.
@@ -101,7 +98,7 @@ export function WideReceiverAnalysis() {
             <strong style={{ color: "var(--text-primary)" }}>
               What this does <em>not</em> show.
             </strong>{" "}
-            Points per game repeats about as well as the usage underneath it —{" "}
+            Points per game repeats about as well as the usage underneath it,{" "}
             {WR_STICKINESS.metrics.find((m) => m.label === "PPR points per game")
               ?.rho.toFixed(2)}{" "}
             against{" "}
@@ -150,8 +147,8 @@ export function WideReceiverAnalysis() {
             point made a second way. Michael Wilson averaged{" "}
             {WR_CONSISTENCY.points.find((p) => p.name === "Michael Wilson")?.ppg.toFixed(1)}{" "}
             points a game and his median week was{" "}
-            {WR_CONSISTENCY.points.find((p) => p.name === "Michael Wilson")?.median.toFixed(1)}
-            . The average is real; it is just not what most of his Sundays looked
+            {WR_CONSISTENCY.points.find((p) => p.name === "Michael Wilson")?.median.toFixed(1)}.
+            The average is real; it is just not what most of his Sundays looked
             like.
           </p>
 
@@ -167,15 +164,13 @@ export function WideReceiverAnalysis() {
                 Four corners, and the one that is worth acting on
               </h4>
               <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
-                The field split on its own medians — {WR_GROUPS.medians.bust.toFixed(1)}%
-                bust and {WR_GROUPS.medians.boom.toFixed(1)}% boom. Read these as a
+                The field split on its own medians, at {WR_GROUPS.medians.bust.toFixed(1)}% bust and {WR_GROUPS.medians.boom.toFixed(1)}% boom. Read these as a
                 description of {WR_SEASON} rather than a forecast: better receivers
                 boom more, so the corners partly re-say who scored the most. The
                 cross below is the part that adds something.
               </p>
               <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>
-                Each receiver carries his points per game, then his bust and boom
-                rates as a pair — 6/63 is six percent of weeks under five points
+                Each receiver carries his points per game, then his bust and boom rates as a pair. 6/63 is six percent of weeks under five points
                 and sixty-three percent over twenty.
               </p>
 
@@ -227,8 +222,7 @@ export function WideReceiverAnalysis() {
           Check the box
         </h3>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          The operator&rsquo;s own shortlists, one column per factor. The columns
-          are independent — different names, different lengths — so a row across
+          The operator&rsquo;s own shortlists, one column per factor. The columns are independent, with different names and different lengths, so a row across
           the grid means nothing and is not meant to.
         </p>
         <BoxGrid title="Players" cols={WR_GRID.players} />
@@ -263,20 +257,15 @@ export function WideReceiverAnalysis() {
               <strong style={{ color: "var(--text-primary)" }}>
                 One receiver clears the whole grid.
               </strong>{" "}
-              Luther Burden is in three of the four player columns and all three
-              offense columns — the only name here with every entry pointing the
-              same way. At the other end, Amon-Ra St. Brown and Tee Higgins carry
+              Luther Burden is in three of the four player columns and all three offense columns, the only name here with every entry pointing the same way. At the other end, Amon-Ra St. Brown and Tee Higgins carry
               a regression call and nothing anywhere else arguing back.
             </p>
             <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
-              This is a reading of the grid, not of the receivers. It inherits
-              every judgement in the columns and adds none — a name is here
-              because the operator put it in a column, and the efficiency
+              This is a reading of the grid, not of the receivers. It inherits every judgement in the columns and adds none. A name is here because the operator put it in a column, and the efficiency
               columns in particular describe {WR_SEASON} rather than forecast
               anything, since yards per target comes back the following year at{" "}
               {WR_STICKINESS?.metrics.find((m) => m.label === "Yards per target")
-                ?.rho.toFixed(2)}
-              .
+                ?.rho.toFixed(2)}.
             </p>
           </div>
         )}
@@ -303,7 +292,7 @@ export function WideReceiverAnalysis() {
               {WR_GRID_COMPUTED.fit.endzone.toFixed(2)} touchdowns, a red-zone
               target outside the end zone{" "}
               {WR_GRID_COMPUTED.fit.red_zone.toFixed(2)}, and everything else{" "}
-              {WR_GRID_COMPUTED.fit.elsewhere.toFixed(3)} — which is most of why
+              {WR_GRID_COMPUTED.fit.elsewhere.toFixed(3)}, which is most of why
               a long touchdown is the least repeatable kind. The fit explains{" "}
               {(WR_GRID_COMPUTED.fit.r2 * 100).toFixed(0)}% of the variance in
               scoring. The residual is the rest: the part a receiver&rsquo;s
@@ -330,7 +319,7 @@ export function WideReceiverAnalysis() {
                   The operator&rsquo;s two touchdown columns are a judgement
                   about next season. The fitted ones measure one specific thing
                   about the last. Publishing both and naming the difference is
-                  more useful than publishing either alone — and it is the only
+                  more useful than publishing either alone, and it is the only
                   honest way to set a computed column beside a hand-written one
                   on the same grid.
                 </p>
@@ -345,9 +334,7 @@ export function WideReceiverAnalysis() {
                   </strong>{" "}
                   Justin Jefferson drew sixteen end-zone targets and scored
                   twice. That is the largest shortfall in the pool by some
-                  distance, and it is a shortfall in the half of scoring that
-                  does not persist — the looks were there and the finishes were
-                  not.
+                  distance, and it is a shortfall in the half of scoring that does not persist: the looks were there and the finishes were not.
                 </p>
                 <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
                   <strong style={{ color: "var(--text-primary)" }}>
@@ -357,9 +344,7 @@ export function WideReceiverAnalysis() {
                   put him there: nine touchdowns against eighteen end-zone
                   targets is almost exactly what that many looks are worth. His
                   scoring came with the volume behind it, which is the kind that
-                  survives. Davante Adams sits on both computed lists at once
-                  for the same reason in reverse — he led every receiver in
-                  end-zone looks by ten, so even scoring above expectation he is
+                  survives. Davante Adams sits on both computed lists at once for the same reason in reverse. He led every receiver in end-zone looks by ten, so even scoring above expectation he is
                   a milder regression case than a raw touchdown count suggests.
                 </p>
               </div>
@@ -460,7 +445,7 @@ function AgreementCard({ agreement }: { agreement: Agreement }) {
               {label} ({names.length})
             </dt>
             <dd style={{ color: "var(--text-secondary)" }}>
-              {names.length ? names.join(", ") : "—"}
+              {names.length ? names.join(", ") : "n/a"}
             </dd>
           </div>
         ))}
@@ -654,9 +639,7 @@ function BoxGrid({
                       ) : (
                         v
                       )
-                    ) : (
-                      "—"
-                    )}
+                    ) : ( "n/a" )}
                   </td>
                 );
               })}

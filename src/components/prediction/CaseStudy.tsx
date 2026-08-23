@@ -62,8 +62,7 @@ export function CaseStudy() {
         The model predicted {MISS_HEADLINE.games} games over those three seasons
         and got {MISS_HEADLINE.misses} of them wrong, at{" "}
         {pct(MISS_HEADLINE.accuracy)} accuracy. What follows is the
-        {" "}{MISS_HEADLINE.misses} — sorted, explained, and in one section
-        excused.
+        {" "}{MISS_HEADLINE.misses}, sorted, explained, and in one section excused.
       </p>
 
       <Reframing />
@@ -103,9 +102,8 @@ function Reframing() {
         ({pct(MISS_SHARED_SHARE, 0)}). Only{" "}
         <strong className="tnum" style={{ color: "var(--color-vantage-amber)" }}>
           {MISS_HEADLINE.model_specific} games
-        </strong>{" "}
-        — {pct(MISS_SOLO_SLATE_SHARE)} of the slate — are failures unique to this
-        model. The rest are games the sharpest-priced market in sport also called
+        </strong>{" "},
+        or {pct(MISS_SOLO_SLATE_SHARE)} of the slate, are failures unique to this model. The rest are games the sharpest-priced market in sport also called
         wrong. Judging the model by its raw miss count measures the difficulty of
         predicting football, not the quality of the model.
       </p>
@@ -174,7 +172,7 @@ function Concentration() {
       </div>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         The bands behave as they should. The model is not confidently wrong; it is{" "}
-        <em>uncertain and wrong</em>, which is the honest failure mode — and the
+        <em>uncertain and wrong</em>, which is the honest failure mode, and the
         one a reader can act on, by ignoring the coin flips.
       </p>
 
@@ -201,8 +199,7 @@ function Concentration() {
       </ul>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         {MISS_MARGINS[0].misses} of {MISS_HEADLINE.misses} misses were lost by a
-        field goal or less. Those are not misjudgements — a one-score game is near
-        a coin flip whatever was known beforehand. The{" "}
+        field goal or less. Those are not misjudgements. A one-score game is near a coin flip whatever was known beforehand. The{" "}
         {MISS_MARGINS[MISS_MARGINS.length - 1].misses} lost by fifteen or more are
         the ones worth interrogating.
       </p>
@@ -234,7 +231,7 @@ function Seasons() {
       </h3>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
         Every season the model was tested on, {MISS_SUMMARY.span[0]} to{" "}
-        {MISS_SUMMARY.span[1]} — {MISS_SUMMARY.total_games.toLocaleString()} games,
+        {MISS_SUMMARY.span[1]}, covering {MISS_SUMMARY.total_games.toLocaleString()} games,
         each predicted by a model trained only on the seasons before it. The bar
         is the model; the tick is the market on the same games. Bars start at{" "}
         {pct(MISS_SCALE.min, 0)}, not zero, because every season lands in a
@@ -301,8 +298,7 @@ function Seasons() {
         </p>
         <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
           Measured against the market instead of against itself, the picture
-          changes. {MISS_BEST_VS_MARKET?.season} is the model&rsquo;s real high point —
-          {" "}{pts(MISS_BEST_VS_MARKET?.gap ?? 0)} points clear of the market on{" "}
+          changes. {MISS_BEST_VS_MARKET?.season} is the model&rsquo;s real high point, {" "}{pts(MISS_BEST_VS_MARKET?.gap ?? 0)} points clear of the market on{" "}
           {MISS_BEST_VS_MARKET?.games} games, the only season in the record it
           beat the closing line by more than a point. {MISS_WORST_VS_MARKET?.season}{" "}
           is the real low point: {pct(MISS_WORST_VS_MARKET?.accuracy ?? 0)} looks
@@ -349,7 +345,7 @@ function SeasonCard({ season, kind }: { season: SeasonRecord; kind: "best" | "wo
           { k: "Shared with the market", v: `${season.shared_with_market} (${pct(season.shared_with_market / season.misses, 0)})` },
           { k: "Model-specific", v: `${season.model_specific}` },
           { k: "Lost by 3 or fewer", v: `${season.one_score_misses}` },
-          { k: "Calibration error", v: season.calibration_error === null ? "—" : season.calibration_error.toFixed(3) },
+          { k: "Calibration error", v: season.calibration_error === null ? "n/a" : season.calibration_error.toFixed(3) },
         ].map((r) => (
           <div key={r.k} className="flex items-baseline justify-between gap-4">
             <dt style={{ color: "var(--text-muted)" }}>{r.k}</dt>
@@ -370,8 +366,7 @@ function SeasonCard({ season, kind }: { season: SeasonRecord; kind: "best" | "wo
           </>
         ) : (
           <>
-            The market fell to {pct(season.market_accuracy)} the same year — its
-            worst season in the record — so most of this was the season, not the
+            The market fell to {pct(season.market_accuracy)} the same year, its worst season in the record, so most of this was the season, not the
             model. But not all: the model was also at its most confident
             ({pct(season.mean_confidence)} average) and its worst calibrated
             (error {season.calibration_error?.toFixed(3)}, against{" "}
@@ -410,8 +405,7 @@ function WhatItCouldNotSee() {
               When the model was right, its pick won the turnover battle by{" "}
               <strong className="tnum">+{MISS_TURNOVERS.when_right}</strong> per game.
               When it was wrong, that team lost it by{" "}
-              <strong className="tnum">{MISS_TURNOVERS.when_wrong}</strong> — a swing
-              of <strong className="tnum">{MISS_TURNOVERS.swing} turnovers per game</strong>{" "}
+              <strong className="tnum">{MISS_TURNOVERS.when_wrong}</strong>, a swing of <strong className="tnum">{MISS_TURNOVERS.swing} turnovers per game</strong>{" "}
               between a correct prediction and an incorrect one, and{" "}
               {MISS_TURNOVERS.misses_losing_to} of {MISS_HEADLINE.misses} misses
               featured the picked team losing that battle. This is the largest gap
@@ -430,8 +424,7 @@ function WhatItCouldNotSee() {
             <>
               <span className="mb-3 block">
                 The intuition that bad weather breeds upsets is not supported. Ugly
-                conditions appear to <em>suppress</em> variance — fewer possessions
-                and a narrower playbook favor the better team.
+                conditions appear to <em>suppress</em> variance: fewer possessions and a narrower playbook favor the better team.
               </span>
               <span className="block overflow-x-auto">
                 <table className="w-full min-w-[420px] text-sm">
@@ -463,8 +456,7 @@ function WhatItCouldNotSee() {
           body={
             <>
               In the {MISS_QB_OUT.games} games with a quarterback listed out, the
-              model went <strong className="tnum">{pct(MISS_QB_OUT.accuracy)}</strong> —
-              better than its overall rate. A <em>known</em> absence is priced
+              model went <strong className="tnum">{pct(MISS_QB_OUT.accuracy)}</strong>, better than its overall rate. A <em>known</em> absence is priced
               correctly because it is on the injury report and the model reads it.
               The injuries that hurt are the ones at 1:20pm: an in-game exit has no
               pre-game feature.
@@ -532,8 +524,7 @@ function WorstTwenty() {
         The twenty worst
       </h3>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-        Ranked by confidence multiplied by losing margin — the games where the
-        model was both sure and badly beaten. &ldquo;TO&rdquo; is the turnover margin
+        Ranked by confidence multiplied by losing margin, so these are the games where the model was both sure and badly beaten. &ldquo;TO&rdquo; is the turnover margin
         for the team it picked, and it is negative in most of them, which is the
         section above stated one game at a time.
       </p>
@@ -583,21 +574,20 @@ function HonestLimit() {
       </h3>
       <ul className="mt-4 flex max-w-3xl flex-col gap-2 text-sm" style={{ color: "var(--text-secondary)" }}>
         {[
-          `${MISS_SHARED} games the market also lost (${pct(MISS_SHARED_SHARE, 0)}) — shared blind spots, not model defects.`,
-          `${MISS_MARGINS[0].misses} decided by three points or fewer — outcomes no pre-game information could separate.`,
-          `${MISS_TURNOVERS.misses_losing_to} where the picked team lost the turnover battle — the largest single cause, close to irreducible.`,
+          `${MISS_SHARED} games the market also lost (${pct(MISS_SHARED_SHARE, 0)}): shared blind spots, not model defects.`,
+          `${MISS_MARGINS[0].misses} decided by three points or fewer, outcomes no pre-game information could separate.`,
+          `${MISS_TURNOVERS.misses_losing_to} where the picked team lost the turnover battle, the largest single cause and close to irreducible.`,
           `${MISS_HEADLINE.model_specific} genuine model-specific failures, and its confidence in those was modest.`,
         ].map((line) => (
           <li key={line} className="flex gap-3">
-            <span aria-hidden="true" style={{ color: "var(--border-strong)" }}>—</span>
+            <span aria-hidden="true" style={{ color: "var(--border-strong)" }}>n/a</span>
             <span>{line}</span>
           </li>
         ))}
       </ul>
       <p className="mt-4 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         Strip out the shared market misses, the one-score games and the turnover
-        luck, and what remains is a small residue. That residue — not the{" "}
-        {MISS_HEADLINE.misses} headline number — is the model&rsquo;s real error, and it
+        luck, and what remains is a small residue. That residue, not the{" "} {MISS_HEADLINE.misses} headline number, is the model&rsquo;s real error, and it
         is not large enough to close the gap with a market that prices injury news
         and sharp money within minutes. The productive direction is not more
         features: wider sets scored <em>worse</em>. It is better probabilities on

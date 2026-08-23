@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "note": "Every feature the shipped model fits on, grouped. The head-to-head chart on a game page shows a readable subset; this is the whole input list. Wider feature sets were tested and scored worse \u2014 202 features reached 61.2% and 455 reached 62.8%, against 63.2% for this one.",
+ "note": "Every feature the shipped model fits on, grouped. The head-to-head chart on a game page shows a readable subset; this is the whole input list. Wider feature sets were tested and scored worse: 202 features reached 61.2% and 455 reached 62.8%, against 63.2% for this one.",
  "source": "artifacts/feature_sets.json, core_market_aware",
  "generated": "2026-08-20",
  "total": 55,

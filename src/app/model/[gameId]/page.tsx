@@ -20,7 +20,7 @@ export async function generateMetadata({
   const g = getGame((await params).gameId);
   if (!g) return { title: "Game Prediction Model" };
   return {
-    title: `${g.away.team} at ${g.home.team} — prediction`,
+    title: `${g.away.team} at ${g.home.team} prediction`,
     description: `Model win probability, metric comparison and situational context for ${g.away.team} at ${g.home.team}.`,
   };
 }
@@ -68,12 +68,10 @@ export default async function GamePredictionPage({
       <div className="mt-16 border-t pt-6" style={{ borderColor: "var(--border-subtle)" }}>
         <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
           Every figure here comes from {PRED_META.model_name}, validated{" "}
-          {PRED_META.validation}. For how the model is built, what the metrics mean and
-          how it has actually performed —{" "}
+          {PRED_META.validation}. For how the model is built, what the metrics mean and how it has actually performed,{" "}
           <Link href="/model" className="underline underline-offset-4">
             read the methodology
-          </Link>
-          .
+          </Link>.
         </p>
       </div>
     </Container>

@@ -182,7 +182,7 @@ function TeamSide({
             color: played ? "var(--text-primary)" : "var(--text-muted)",
           }}
         >
-          {score ?? "—"}
+          {score ?? "n/a"}
         </span>
       </div>
 
@@ -237,7 +237,7 @@ function LeaderRow({ label, leader }: { label: string; leader?: GameLeader }) {
             )}
           </>
         ) : (
-          <span style={{ color: "var(--text-muted)" }}>—</span>
+          <span style={{ color: "var(--text-muted)" }}>n/a</span>
         )}
       </dd>
     </div>
@@ -257,7 +257,7 @@ function Figure({ label, value }: { label: string; value?: string }) {
         className="font-semibold tnum"
         style={{ color: value ? "var(--text-primary)" : "var(--text-muted)" }}
       >
-        {value ?? "—"}
+        {value ?? "n/a"}
       </span>
     </span>
   );

@@ -68,7 +68,7 @@ def main():
     out = {
         "schema_version": 1,
         "updated": payload.get("generated_at", "")[:10],
-        "source": ("fantasy-model/export_site_payload.py — a 1-point-PPR projection "
+        "source": ("fantasy-model/export_site_payload.py: a 1-point-PPR projection "
                    "model over nflverse player-week data, copied rather than recomputed"),
         "note": ("Every figure arrives settled from the model repo. The site computes "
                  "nothing here (§11). Boards are capped at the model's own limit; the "

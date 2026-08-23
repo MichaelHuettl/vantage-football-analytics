@@ -70,7 +70,7 @@ export function PredictionOverview() {
         {[
           { v: pct(M.within_3), l: "decided by 3 points or fewer" },
           { v: pct(M.within_7), l: "decided by 7 points or fewer" },
-          { v: String(M.median_margin), l: "points — the median margin" },
+          { v: String(M.median_margin), l: "points, the median margin" },
         ].map((x) => (
           <div key={x.l} className="p-5 sm:p-6" style={{ background: "var(--surface-page)" }}>
             <span
@@ -100,11 +100,11 @@ export function PredictionOverview() {
       >
         <p className="p-5 text-sm sm:p-6" style={{ background: "var(--surface-page)" }}>
           <strong className="tnum">{pp(O.over_home_baseline)}</strong> better than always
-          picking the home team ({pct(O.home_baseline)}) — the baseline it was built to beat.
+          picking the home team ({pct(O.home_baseline)}), the baseline it was built to beat.
         </p>
         <p className="p-5 text-sm sm:p-6" style={{ background: "var(--surface-page)" }}>
           <strong className="tnum">{pp(O.vs_market)}</strong> against the betting market
-          ({pct(O.market_baseline)}) — the market is the better forecaster, and this page
+          ({pct(O.market_baseline)}). The market is the better forecaster, and this page
           does not pretend otherwise.
         </p>
       </div>

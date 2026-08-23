@@ -36,7 +36,7 @@ export default async function GamesPage({
         objectPosition="center 35%"
         eyebrow="Week by week"
         title="Game Tracker"
-        lede="Every matchup with its kickoff, roof and venue, the market's number, the forecast where there is one, and — once it is played — the four players who decided it."
+        lede="Every matchup with its kickoff, roof and venue, the market's number, the forecast where there is one, and, once it is played, the four players who decided it."
       />
 
       {/* The same band the rankings tabs sit in, directly under the hero: the
@@ -80,7 +80,7 @@ export default async function GamesPage({
         <p className="mt-4 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           {count} games. Matchups, kickoff times, venues and roofs are the
           published schedule. Lines, forecasts, scores and the four named
-          players per side are slots waiting on data — they are drawn empty so
+          players per side are slots waiting on data. They are drawn empty so
           the shape of the page does not change once a game is played.
         </p>
 

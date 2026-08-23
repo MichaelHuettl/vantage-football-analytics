@@ -156,9 +156,7 @@ export default async function RankingsPage({
                         <span
                           className="text-xs"
                           style={{ color: "var(--text-muted)" }}
-                        >
-                          —
-                        </span>
+                        > n/a </span>
                       )}
                     </td>
                     <td
@@ -171,7 +169,7 @@ export default async function RankingsPage({
                           {bye}
                         </>
                       ) : (
-                        <span style={{ color: "var(--text-muted)" }}>—</span>
+                        <span style={{ color: "var(--text-muted)" }}>n/a</span>
                       )}
                     </td>
                   </tr>
@@ -183,8 +181,7 @@ export default async function RankingsPage({
 
         <p className="mt-4 text-xs" style={{ color: "var(--text-muted)" }}>
           {list.scope} rankings, {list.format} scoring. These are pre-season
-          draft ranks and are not updated week to week — in-season order will
-          diverge from this. Bye weeks are for the {BYE_SEASON} season.
+          draft ranks and are not updated week to week, so in-season order will diverge from this. Bye weeks are for the {BYE_SEASON} season.
         </p>
       </Container>
     </>
@@ -266,7 +263,7 @@ function ContentProblems({
       <ul className="mt-1.5 space-y-0.5 text-sm">
         {problems.map((p, i) => (
           <li key={i}>
-            <code>{p.file}</code> — {p.message}
+            <code>{p.file}</code>: {p.message}
           </li>
         ))}
       </ul>

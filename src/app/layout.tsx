@@ -27,7 +27,7 @@ const barlow = Barlow({
 export const metadata: Metadata = {
   title: {
     default: "Vantage Football Analytics",
-    template: "%s — Vantage",
+    template: "%s | Vantage",
   },
   description:
     "Opportunity metrics underneath the rankings. Every ranked player links to the chart that justifies his position.",

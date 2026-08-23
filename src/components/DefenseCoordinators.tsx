@@ -24,9 +24,7 @@ export function DefenseCoordinators() {
         Coordinator changes
       </h2>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-        {coordinators.length} defenses hired a new coordinator. Scheme carries
-        further than personnel at this position — a unit keeps most of its
-        players and changes how it plays — so this is the part of the offseason
+        {coordinators.length} defenses hired a new coordinator. Scheme carries further than personnel at this position. A unit keeps most of its players and changes how it plays, so this is the part of the offseason
         most likely to move a defense a tier in either direction.
       </p>
 
@@ -51,7 +49,7 @@ export function DefenseCoordinators() {
                   className="px-3 py-2.5 align-top"
                   style={{ color: "var(--text-secondary)" }}
                 >
-                  {c.record ?? "—"}
+                  {c.record ?? "n/a"}
                 </td>
               </tr>
             ))}

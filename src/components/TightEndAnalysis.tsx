@@ -58,8 +58,7 @@ export function TightEndAnalysis() {
       <Block n={4} chart={airyards_tprr}>
         Air yards share says how far downfield the offense is willing to look
         for him; targets per route run says how often it looks at all. Together
-        they separate the seam threat from the safety valve — two tight ends can
-        catch the same number of balls and be doing completely different jobs.
+        they separate the seam threat from the safety valve. Two tight ends can catch the same number of balls and be doing completely different jobs.
       </Block>
 
       <Block n={5} chart={routes_yprr}>
@@ -114,7 +113,7 @@ export function TightEndAnalysis() {
         </div>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           One column per factor, each name carrying his own figure for it. The
-          argument is not that any single column picks a TE1 — it is that the
+          argument is not that any single column picks a TE1. It is that the
           same few names keep appearing column after column, measured against
           the fifteen-year averages above, and a player who clears five of six
           is not doing it by accident.
@@ -132,8 +131,7 @@ export function TightEndAnalysis() {
           />
           <figcaption className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>
             What each finish has actually averaged since 2011. These are the
-            thresholds the columns below are measured against — a name clearing
-            a box is clearing the fifteen-year average for that finish. From the
+            thresholds the columns below are measured against, so a name clearing a box is clearing the fifteen-year average for that finish. From the
             operator&rsquo;s workbook.
           </figcaption>
         </figure>
@@ -199,7 +197,7 @@ function BoxGrid({ title, cols }: { title: string; cols: BoxColumn[] }) {
             <tr key={i} className="border-b" style={{ borderColor: "var(--border-subtle)" }}>
               {cols.map((c) => (
                 <td key={c.label} className="py-2 pr-4" style={c.names[i] ? undefined : { color: "var(--text-muted)" }}>
-                  {c.names[i] ?? "—"}
+                  {c.names[i] ?? "n/a"}
                 </td>
               ))}
             </tr>

@@ -70,7 +70,7 @@ export function DefenseAnalysis() {
           <p>
             {spread.top.team} scored <Stat>{spread.top.fpts}</Stat> points last
             season and the tenth-best defense scored{" "}
-            <Stat>{spread.tenth.fpts}</Stat> &mdash; a spread of{" "}
+            <Stat>{spread.tenth.fpts}</Stat>, a spread of{" "}
             <Stat>{spread.points}</Stat> across the startable tier, or{" "}
             <Stat>{spread.per_game}</Stat> a week. That is the gap inside the
             top ten, not the gap to a waiver-wire defense, which the sheet does
@@ -79,7 +79,7 @@ export function DefenseAnalysis() {
           <p>
             Two ways to read it. Three points a week is roughly what separates a
             good kicker from a replaceable one, so the position deserves the same
-            answer &mdash; do not pay much, and do not stream blindly either. The
+            answer: do not pay much, and do not stream blindly either. The
             more useful read is underneath: the columns below say which of these
             finishes were built on something repeatable.
           </p>
@@ -168,7 +168,7 @@ export function DefenseAnalysis() {
         </h2>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           Getting to the quarterback and getting off the field. Simulated
-          pressure is the only block here with values rather than an order &mdash;
+          pressure is the only block here with values rather than an order:
           how often a defense fakes pressure, and how often it works.
         </p>
 
@@ -218,7 +218,7 @@ export function DefenseAnalysis() {
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           Taking the ball away, and what the offense was allowed to do through
           the air. The two middle-of-the-field rates describe coverage shell
-          rather than quality &mdash; they say how a defense plays, not how well.
+          rather than quality. They say how a defense plays, not how well.
         </p>
         <RankedColumns columns={secondary} />
       </section>
@@ -232,7 +232,7 @@ export function DefenseAnalysis() {
         </h2>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           How many defenders a unit keeps near the line, and how well it does
-          rushing four. Descriptive rather than predictive &mdash; see the
+          rushing four. Descriptive rather than predictive. See the
           findings at the foot of the page.
         </p>
         <RankedColumns columns={pass_rush.box} />

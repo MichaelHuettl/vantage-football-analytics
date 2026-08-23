@@ -56,8 +56,7 @@ export function FeatureComparison({ rows }: { rows: FC[] }) {
                  values yet. Injury reports for a September slate are not
                  published in August, so saying so beats an empty chart. */
               <p className="mt-2 text-sm" style={{ color: "var(--text-muted)" }}>
-                No data yet for this metric — nothing has been published for these
-                teams at this point in the week. It will fill in once it exists.
+                No data yet for this metric. Nothing has been published for these teams at this point in the week. It will fill in once it exists.
               </p>
             ) : (
             <div className="mt-3 grid gap-x-8 gap-y-3 sm:grid-cols-2">
@@ -71,7 +70,7 @@ export function FeatureComparison({ rows }: { rows: FC[] }) {
                 />
               ) : (
                 <p className="self-center text-xs" style={{ color: "var(--text-muted)" }}>
-                  Offense only — the model does not compute a defensive figure for this
+                  Offense only. The model does not compute a defensive figure for this
                   metric, so there is nothing to compare rather than nothing to show.
                 </p>
               )}
@@ -85,7 +84,7 @@ export function FeatureComparison({ rows }: { rows: FC[] }) {
         <p className="mt-8 max-w-3xl text-xs" style={{ color: "var(--text-muted)" }}>
           <strong>This chart is not the model.</strong> It shows the inputs that read
           well as a side-by-side. {UNCHARTED_TOP_FEATURES.length} of the model&rsquo;s
-          heaviest-weighted inputs have no head-to-head form and are not drawn here —{" "}
+          heaviest-weighted inputs have no head-to-head form and are not drawn here:{" "}
           {UNCHARTED_TOP_FEATURES.slice(0, 4).map((f) => f.label.toLowerCase()).join(", ")}{" "}
           among them. The full list of all 55 is on the methodology tab.
         </p>
@@ -158,7 +157,7 @@ function Pair({
               className="w-10 shrink-0 text-right text-xs tnum"
               style={{ color: "var(--text-secondary)" }}
             >
-              {t[rk] === null ? "—" : Math.round(t[rk])}
+              {t[rk] === null ? "n/a" : Math.round(t[rk])}
             </span>
           </div>
         ))}

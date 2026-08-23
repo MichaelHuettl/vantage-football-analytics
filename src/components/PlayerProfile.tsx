@@ -78,8 +78,7 @@ export function PlayerProfileBody({ profile }: { profile: Profile }) {
             What the tracking data says
           </h2>
           <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
-            Next Gen Stats measures the things a box score cannot — how much room he
-            was given, how far the ball actually travelled, what he did with the yards
+            Next Gen Stats measures the things a box score cannot: how much room he was given, how far the ball actually traveled, what he did with the yards
             nobody blocked for him.
           </p>
           <div className="mt-5 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -140,12 +139,12 @@ function SeasonTrend({ profile }: { profile: Profile }) {
               <tr key={s.season} className="border-b" style={{ borderColor: "var(--border-subtle)" }}>
                 <td className="py-2 tnum">{s.season}</td>
                 <td className="py-2">{s.team && <TeamChip abbr={s.team} size="sm" />}</td>
-                <td className="py-2 text-right tnum">{s.games?.toFixed(0) ?? "—"}</td>
+                <td className="py-2 text-right tnum">{s.games?.toFixed(0) ?? "n/a"}</td>
                 {keys.map((k) => (
                   <td key={k} className="py-2 text-right tnum">
                     {k in s.stats
                       ? formatStat(k, s.stats[k], profile.decimals[k] ?? 1)
-                      : <span style={{ color: "var(--text-muted)" }}>—</span>}
+                      : <span style={{ color: "var(--text-muted)" }}>n/a</span>}
                   </td>
                 ))}
               </tr>

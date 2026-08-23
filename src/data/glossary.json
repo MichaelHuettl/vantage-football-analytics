@@ -1,7 +1,7 @@
 {
  "schema_version": 2,
  "updated": "2026-08-21",
- "note": "§4.2 requires every metric shown on the site to resolve to a one-sentence definition AND a statement of what a good value looks like. This is the whole inventory, grouped, with the source of each number and the pages it appears on — the site publishes figures from six different places (nflverse play-by-play, Next Gen Stats tracking, licensed 4for4 columns, the operator's workbook, the betting market and the prediction model) and a reader cannot audit a number without knowing which. Definitions for the nine model inputs are the pipeline's own, copied rather than rewritten, so the page cannot drift from what was computed. Route participation, TPRR and YPRR are 4for4 columns published by the operator's decision (docs/STATE.md); earlier notes here recorded them as cut.",
+ "note": "§4.2 requires every metric shown on the site to resolve to a one-sentence definition AND a statement of what a good value looks like. This is the whole inventory, grouped, with the source of each number and the pages it appears on. The site publishes figures from six different places (nflverse play-by-play, Next Gen Stats tracking, licensed 4for4 columns, the operator's workbook, the betting market and the prediction model) and a reader cannot audit a number without knowing which. Definitions for the nine model inputs are the pipeline's own, copied rather than rewritten, so the page cannot drift from what was computed. Route participation, TPRR and YPRR are 4for4 columns published by the operator's decision (docs/STATE.md); earlier notes here recorded them as cut.",
  "groups": [
   {
    "id": "opportunity",
@@ -81,7 +81,7 @@
    "slug": "hvt",
    "term": "High-value touches",
    "group": "opportunity",
-   "definition": "Targets plus carries inside the opponent 10 — the touches worth materially more than a carry in open field.",
+   "definition": "Targets plus carries inside the opponent 10, the touches worth materially more than a carry in open field.",
    "good": "Among backs with 150 or more carries, the median season is 76 and the top quarter start at 93; only eleven of sixty-eight reach 100. A target is worth roughly twice a carry in PPR and a goal-line carry several times one, so this survives week-to-week noise raw carry counts do not.",
    "source": "nflverse play-by-play",
    "where": "Player pages, running back charts"
@@ -108,7 +108,7 @@
    "slug": "touches",
    "term": "Touches",
    "group": "opportunity",
-   "definition": "Carries plus receptions — everything a player actually did with the ball in his hands.",
+   "definition": "Carries plus receptions: everything a player actually did with the ball in his hands.",
    "good": "Volume, not value. High-value touches is the version that accounts for where those touches happened.",
    "source": "nflverse play-by-play",
    "where": "Player pages"
@@ -145,7 +145,7 @@
    "term": "Snap share",
    "group": "opportunity",
    "definition": "The percentage of his team's offensive snaps a player was on the field for.",
-   "good": "The floor under everything else — a player cannot be targeted from the sideline. Above 80% is a full-time role.",
+   "good": "The floor under everything else, because a player cannot be targeted from the sideline. Above 80% is a full-time role.",
    "source": "nflverse snap counts",
    "where": "Player pages"
   },
@@ -154,7 +154,7 @@
    "term": "Route participation",
    "group": "opportunity",
    "definition": "The share of his team's pass plays on which a player ran a route, rather than blocking or sitting.",
-   "good": "Above 80% is a full-time receiving role; the median of the twenty-five tight ends charted is 78%. A licensed 4for4 column, published here by the operator's decision — see the tight end page.",
+   "good": "Above 80% is a full-time receiving role; the median of the twenty-five tight ends charted is 78%. A licensed 4for4 column, published here by the operator's decision. See the tight end page.",
    "source": "4for4, via the workbook",
    "where": "Tight end and running back charts"
   },
@@ -162,7 +162,7 @@
    "slug": "tprr",
    "term": "Targets per route run",
    "group": "opportunity",
-   "definition": "Targets divided by routes run — how often a player is thrown to when he is actually out in a pattern.",
+   "definition": "Targets divided by routes run: how often a player is thrown to when he is actually out in a pattern.",
    "good": "Above 0.23 is top-quartile among the twenty-five tight ends charted, whose median is 0.21. It separates a player who is ignored from one who is simply not on the field.",
    "source": "4for4, via the workbook",
    "where": "Tight end and running back charts"
@@ -172,7 +172,7 @@
    "term": "Yards per route run",
    "group": "opportunity",
    "definition": "Receiving yards divided by routes run, the efficiency counterpart to targets per route run.",
-   "good": "Above 2.0 is elite for a tight end — the charted median is 1.74 and only a handful clear two. Rewards a player who does more with fewer looks.",
+   "good": "Above 2.0 is elite for a tight end. The charted median is 1.74 and only a handful clear two. Rewards a player who does more with fewer looks.",
    "source": "4for4, via the workbook",
    "where": "Tight end charts"
   },
@@ -181,7 +181,7 @@
    "term": "Average depth of target",
    "group": "receiving",
    "definition": "The average distance beyond the line of scrimmage at which a player is targeted.",
-   "good": "Not good or bad on its own — it describes a role. Under 7 is a possession receiver; over 13 is a field-stretcher whose weeks will be volatile.",
+   "good": "Not good or bad on its own; it describes a role. Under 7 is a possession receiver; over 13 is a field-stretcher whose weeks will be volatile.",
    "source": "nflverse play-by-play",
    "where": "Player pages"
   },
@@ -199,7 +199,7 @@
    "term": "Catch rate",
    "group": "receiving",
    "definition": "Receptions divided by targets.",
-   "good": "Read against depth of target — 75% on shallow crossers and 55% on a vertical role can describe equally good players.",
+   "good": "Read against depth of target. 75% on shallow crossers and 55% on a vertical role can describe equally good players.",
    "source": "nflverse play-by-play",
    "where": "Player pages"
   },
@@ -243,7 +243,7 @@
    "slug": "intended-air-yards-share",
    "term": "Share of intended air yards",
    "group": "receiving",
-   "definition": "The tracking-data version of air yards share — a player's intended air yards as a percentage of his team's.",
+   "definition": "The tracking-data version of air yards share: a player's intended air yards as a percentage of his team's.",
    "good": "Reported alongside the play-by-play figure; the two rarely disagree by much, and when they do the tracking source is the narrower definition.",
    "source": "Next Gen Stats",
    "where": "Player pages"
@@ -288,7 +288,7 @@
    "slug": "rushing-efficiency",
    "term": "Rushing efficiency",
    "group": "rushing",
-   "definition": "Distance actually travelled divided by distance gained downfield — how much lateral running a back does to get where he gets.",
+   "definition": "Distance actually traveled divided by distance gained downfield, or how much lateral running a back does to get where he gets.",
    "good": "Lower is more direct. High efficiency numbers describe a back who bounces runs, which produces both the long touchdown and the two-yard loss.",
    "source": "Next Gen Stats",
    "where": "Player pages"
@@ -315,7 +315,7 @@
    "slug": "dropbacks",
    "term": "Dropbacks",
    "group": "quarterback",
-   "definition": "Pass attempts plus sacks plus scrambles — every play that began as a pass.",
+   "definition": "Pass attempts plus sacks plus scrambles: every play that began as a pass.",
    "good": "The right denominator for quarterback rate stats, because attempts alone quietly exclude the plays that went wrong.",
    "source": "nflverse play-by-play",
    "where": "Player pages"
@@ -325,7 +325,7 @@
    "term": "EPA per dropback",
    "group": "quarterback",
    "definition": "Expected points added per dropback, the single strongest per-play measure of quarterback play.",
-   "good": "Above 0.15 is high-end. It correlates with quarterback fantasy scoring at 0.67 — the strongest football input on the quarterback page, behind only fantasy points per dropback, which is partly scoring measured against itself.",
+   "good": "Above 0.15 is high-end. It correlates with quarterback fantasy scoring at 0.67, the strongest football input on the quarterback page, behind only fantasy points per dropback, which is partly scoring measured against itself.",
    "source": "nflverse play-by-play",
    "where": "Quarterback charts, player pages"
   },
@@ -334,7 +334,7 @@
    "term": "CPOE",
    "group": "quarterback",
    "definition": "Completion percentage over expected: actual completion rate minus the rate expected given throw depth, pressure and receiver separation.",
-   "good": "Isolates accuracy from scheme. Positive is good — but it correlates with fantasy scoring at only 0.23, which is the quarterback page's point.",
+   "good": "Isolates accuracy from scheme. Positive is good, but it correlates with fantasy scoring at only 0.23, which is the quarterback page's point.",
    "source": "nflverse play-by-play",
    "where": "Quarterback charts, player pages"
   },
@@ -379,7 +379,7 @@
    "term": "Time to throw",
    "group": "quarterback",
    "definition": "Average seconds from snap to release.",
-   "good": "Neither end is better. It describes an offense, and it correlates with fantasy scoring at 0.14 — the weakest input on the quarterback page.",
+   "good": "Neither end is better. It describes an offense, and it correlates with fantasy scoring at 0.14, the weakest input on the quarterback page.",
    "source": "Next Gen Stats",
    "where": "Player pages"
   },
@@ -397,7 +397,7 @@
    "term": "Air yards to the sticks",
    "group": "quarterback",
    "definition": "Average air yards relative to the first-down marker.",
-   "good": "Negative means throwing short of the sticks by habit — fine on early downs, a problem on third.",
+   "good": "Negative means throwing short of the sticks by habit: fine on early downs, a problem on third.",
    "source": "Next Gen Stats",
    "where": "Player pages"
   },
@@ -414,7 +414,7 @@
    "slug": "fpts-per-dropback",
    "term": "Fantasy points per dropback",
    "group": "quarterback",
-   "definition": "Fantasy scoring divided by dropbacks — efficiency in the units the game is actually scored in.",
+   "definition": "Fantasy scoring divided by dropbacks, or efficiency in the units the game is actually scored in.",
    "good": "The highest correlation on the quarterback page at 0.77, though it is fantasy scoring divided by volume correlated against fantasy scoring per game, so it describes efficiency rather than discovering it.",
    "source": "Derived from nflverse",
    "where": "Quarterback charts"
@@ -468,7 +468,7 @@
    "slug": "pressure-rate",
    "term": "Pressure rate",
    "group": "defense",
-   "definition": "How often a defense disrupts the quarterback — sacks, hits and hurries as a share of dropbacks.",
+   "definition": "How often a defense disrupts the quarterback: sacks, hits and hurries as a share of dropbacks.",
    "good": "The stable half of defensive scoring. Pressure repeats year to year where turnovers largely do not, so it is what is worth streaming on.",
    "source": "The workbook",
    "where": "Defense page"
@@ -478,7 +478,7 @@
    "term": "Simulated pressure",
    "group": "defense",
    "definition": "A pressure look created by threatening more rushers than actually come, dropping one or more into coverage.",
-   "good": "The only 2025 defensive block in the workbook carrying real values rather than a ranking — noted as such on the defense page.",
+   "good": "The only 2025 defensive block in the workbook carrying real values rather than a ranking, and it is noted as such on the defense page.",
    "source": "The workbook",
    "where": "Defense page"
   },
@@ -487,7 +487,7 @@
    "term": "DVOA",
    "group": "defense",
    "definition": "Defense-adjusted value over average: per-play performance against a league baseline, adjusted for opponent and situation.",
-   "good": "Negative is good for a defense, which is the opposite of most numbers on this site — the defense page states the direction wherever it appears.",
+   "good": "Negative is good for a defense, which is the opposite of most numbers on this site, so the defense page states the direction wherever it appears.",
    "source": "The workbook",
    "where": "Defense page"
   },
@@ -523,7 +523,7 @@
    "term": "Distance bands",
    "group": "kicking",
    "definition": "Field goal attempts grouped by range rather than counted together.",
-   "good": "Bands matter more than raw attempts once the long-range rules are accounted for — a 50-yard attempt is worth more and is made less often.",
+   "good": "Bands matter more than raw attempts once the long-range rules are accounted for: a 50-yard attempt is worth more and is made less often.",
    "source": "The workbook",
    "where": "Kicker page"
   },
@@ -585,7 +585,7 @@
    "slug": "confidence-band",
    "term": "Confidence band",
    "group": "model",
-   "definition": "The bucket a prediction falls into — coin flip, low, medium or high — with the accuracy that band has actually achieved.",
+   "definition": "The bucket a prediction falls into (coin flip, low, medium or high), with the accuracy that band has actually achieved.",
    "good": "High confidence has been right 74.5% of the time; the coin-flip band hits 49.8%, which is chance, and the page says so rather than dressing it up.",
    "source": "The prediction model",
    "where": "Game Prediction Model"
@@ -612,7 +612,7 @@
    "slug": "brier-score",
    "term": "Brier score",
    "group": "model",
-   "definition": "The mean squared error of the probabilities — the average of how far each forecast sat from what happened.",
+   "definition": "The mean squared error of the probabilities, or the average of how far each forecast sat from what happened.",
    "good": "Lower is better. Read next to log loss: Brier treats a confident miss more gently, so the two together describe how the errors are distributed.",
    "source": "The prediction model",
    "where": "Game Prediction Model"
@@ -640,7 +640,7 @@
    "term": "Feature importance",
    "group": "model",
    "definition": "How much each input contributes to the fitted model, relative to the rest.",
-   "good": "Published in full rather than as a top few — and the page names the heaviest inputs it cannot yet show per team rather than implying the chart is the model.",
+   "good": "Published in full rather than as a top few, and the page names the heaviest inputs it cannot yet show per team rather than implying the chart is the model.",
    "source": "The prediction model",
    "where": "Game Prediction Model"
   },

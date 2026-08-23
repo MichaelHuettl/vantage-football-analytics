@@ -34,7 +34,7 @@ const IMPACT_TOKEN: Record<SituationalCard["impact"], string> = {
 const SCHEME_CAVEAT =
   "Base front is inferred from roster composition (agrees with snap data at " +
   "Spearman 0.50). Most teams play nickel by default, so this is a weak " +
-  "descriptor — measured defensive efficiency carries far more weight in the model.";
+  "descriptor: measured defensive efficiency carries far more weight in the model.";
 
 export function SituationalCards({ cards }: { cards: SituationalCard[] }) {
   if (cards.length === 0) return null;

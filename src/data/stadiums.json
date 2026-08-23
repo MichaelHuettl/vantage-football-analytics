@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "updated": "2026-08-14",
- "note": "Coordinates are city-level, resolved once through Open-Meteo geocoding and stored rather than looked up at fetch time. City granularity is deliberate: a forecast does not vary meaningfully across a metro area, and a stored coordinate cannot silently drift. Saint-Denis is hand-set — geocoding it by name returns Saint-Denis on Réunion, in the Indian Ocean, which would have produced tropical weather for a Paris game.",
+ "note": "Coordinates are city-level, resolved once through Open-Meteo geocoding and stored rather than looked up at fetch time. City granularity is deliberate: a forecast does not vary meaningfully across a metro area, and a stored coordinate cannot silently drift. Saint-Denis is hand-set, because geocoding it by name returns Saint-Denis on Réunion, in the Indian Ocean, which would have produced tropical weather for a Paris game.",
  "data": {
   "Lumen Field": {
    "city": "Seattle",

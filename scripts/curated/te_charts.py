@@ -103,7 +103,7 @@ CAPTIONS = {
         "Touchdowns swing year to year and yardage does not. Where a season sits "
         "on the vertical is the part least likely to repeat.",
     "airyards_tprr":
-        "Downfield role against how often a route earns the ball — the difference "
+        "Downfield role against how often a route earns the ball: the difference "
         "between a seam threat and a safety valve.",
     "routes_yprr":
         "Efficiency that survives a full route load. The top right is a starter's "

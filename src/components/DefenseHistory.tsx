@@ -146,7 +146,7 @@ function SeasonCells({
         className="px-3 py-1.5 text-right whitespace-nowrap"
         style={{ color: "var(--text-secondary)" }}
       >
-        {epa ?? "—"}
+        {epa ?? "n/a"}
       </td>
     </>
   );
@@ -211,7 +211,7 @@ export function MeasureVsFinish({
                         <td className="px-2 py-1.5 text-right">
                           {r[valueKey] !== undefined && r[valueKey] !== null
                             ? format(r[valueKey] as number)
-                            : "—"}
+                            : "n/a"}
                         </td>
                         <td
                           className="px-2 py-1.5 text-right font-bold"
@@ -221,7 +221,7 @@ export function MeasureVsFinish({
                               : "var(--color-vantage-amber)",
                           }}
                         >
-                          {r.finish ?? "—"}
+                          {r.finish ?? "n/a"}
                         </td>
                       </tr>
                     );

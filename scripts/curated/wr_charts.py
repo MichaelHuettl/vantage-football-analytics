@@ -98,7 +98,7 @@ CAPTIONS = {
     ),
     "airyards_share": (
         "Both axes are a share of the same offense, so this asks how much of his "
-        "team's passing game a receiver owns — the downfield share against the "
+        "team's passing game a receiver owns: the downfield share against the "
         "total share. Below the diagonal is a possession role, above it a "
         "field-stretching one."
     ),
@@ -812,7 +812,7 @@ def build_verdicts(grid, warn):
         ("falling_supported", "Scoring flagged to fall, offense behind them",
          "The touchdown call is the operator's; the scheme is the part likeliest to survive the winter."),
         ("rising_alone", "Positive on the player, nothing from the offense",
-         "The case rests on the receiver alone — no scheme column argues for him."),
+         "The case rests on the receiver alone, and no scheme column argues for him."),
         ("falling_alone", "Flagged to fall, with nothing offsetting",
          "A regression call and no column anywhere else on the grid pointing the other way."),
     ]
@@ -1102,7 +1102,7 @@ def main():
         "note": (
             "Wide receiver charts from the workbook's WRTE sheet, rows 2-183. "
             "The grid's 'High YPRR' and 'High TPRR' columns are 4for4-derived "
-            "categorisations; §2 rules that vendor's columns out and the operator "
+            "categorizations; §2 rules that vendor's columns out and the operator "
             "lifted it for the RB chart and the TE page (docs/STATE.md). Names "
             "only here, not the licensed figures. The stickiness and consistency "
             "charts come from the operator's nflverse export instead of the "

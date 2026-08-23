@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "generated_at": "2026-08-11",
- "note": "Signature chart per position, per §5.2, plus the two fields the index cards read. `evaluated_on` names the family of statistics a position is judged on rather than one chart's axes — the built pages carry four to nine blocks each, so a single chart title misdescribed them. `summary` is written for the card at card length, rather than the index clamping `methodology` mid-sentence. `photo` and `photo_position` are the index card's image and its focal point: every photo is normalized to 1200px wide and rendered in the same 2:1 frame, so the focal point is what keeps each subject in view rather than a crop baked into the file. WR and TE differ from the brief: both originally keyed on route participation, which needs a routes-run denominator no open source publishes; TE now publishes it by the operator's decision (docs/STATE.md) and WR uses target share against air yards share.",
+ "note": "Signature chart per position, per §5.2, plus the two fields the index cards read. `evaluated_on` names the family of statistics a position is judged on rather than one chart's axes. The built pages carry four to nine blocks each, so a single chart title misdescribed them. `summary` is written for the card at card length, rather than the index clamping `methodology` mid-sentence. `photo` and `photo_position` are the index card's image and its focal point: every photo is normalized to 1200px wide and rendered in the same 2:1 frame, so the focal point is what keeps each subject in view rather than a crop baked into the file. WR and TE differ from the brief: both originally keyed on route participation, which needs a routes-run denominator no open source publishes; TE now publishes it by the operator's decision (docs/STATE.md) and WR uses target share against air yards share.",
  "data": [
   {
    "position": "QB",
@@ -13,7 +13,7 @@
    "chart_x": "Rush attempts",
    "chart_y": "Fantasy points per game",
    "caption": "Carries, not completions, are what separate the top of the position.",
-   "methodology": "Quarterback is the position where the fantasy answer and the football answer come apart hardest. The passing numbers that describe a good quarterback — accuracy over expected, time to throw — barely move fantasy scoring, while a carry is worth several times a pass attempt. What follows takes that in four steps: what rushing is actually worth, why the count of runs matters and the rate does not, where efficiency and scoring part company, and how little a pass-happy offense tells you. It is one season, so it is evidence rather than a law, and the page says where the source needed correcting.",
+   "methodology": "Quarterback is the position where the fantasy answer and the football answer come apart hardest. The passing numbers that describe a good quarterback, such as accuracy over expected and time to throw, barely move fantasy scoring, while a carry is worth several times a pass attempt. What follows takes that in four steps: what rushing is actually worth, why the count of runs matters and the rate does not, where efficiency and scoring part company, and how little a pass-happy offense tells you. It is one season, so it is evidence rather than a law, and the page says where the source needed correcting.",
    "chart": ""
   },
   {
@@ -52,7 +52,7 @@
    "chart_x": "Route participation",
    "chart_y": "Target share",
    "caption": "Running the routes buys the chance; target share is whether it converts.",
-   "methodology": "Tight end is the position where volume and role come apart. A tight end can run almost every route his offense runs and still finish outside the top twelve, because running the route and being thrown the ball are two different jobs. What follows holds role against production one pair at a time — participation against target share, then against target rate, then yardage against touchdowns, then downfield role, and finally the efficiency pair the history turns on. Every number is last season's, because a projection is an opinion and these are what an opinion has to survive.",
+   "methodology": "Tight end is the position where volume and role come apart. A tight end can run almost every route his offense runs and still finish outside the top twelve, because running the route and being thrown the ball are two different jobs. What follows holds role against production one pair at a time: participation against target share, then against target rate, then yardage against touchdowns, then downfield role, and finally the efficiency pair the history turns on. Every number is last season's, because a projection is an opinion and these are what an opinion has to survive.",
    "chart": ""
   },
   {

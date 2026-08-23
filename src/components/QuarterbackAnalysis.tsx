@@ -64,8 +64,7 @@ export function QuarterbackAnalysis() {
       >
         The workbook charts scramble <em>rate</em>, and it is close to useless at{" "}
         {r("scramble_pct")}. The count of scrambles is a different matter at{" "}
-        {r("scrambles")} — a rate says how often a quarterback takes off when he
-        drops back, and says nothing about how often he drops back. Designed
+        {r("scrambles")}. A rate says how often a quarterback takes off when he drops back, and says nothing about how often he drops back. Designed
         carries land in between at {r("designed")}. The lesson is not that one
         kind of run is better; it is that a percentage discards the volume that
         makes the runs worth having.
@@ -143,7 +142,7 @@ function RushingTable() {
 }
 
 function fmt(v: number | null | undefined) {
-  return v === null || v === undefined ? "—" : (v > 0 ? `+${v.toFixed(2)}` : v.toFixed(2));
+  return v === null || v === undefined ? "n/a" : (v > 0 ? `+${v.toFixed(2)}` : v.toFixed(2));
 }
 
 function Block({

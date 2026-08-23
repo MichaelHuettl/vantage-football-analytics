@@ -84,7 +84,7 @@ export default async function NewsPage({
         objectPosition="center 55%"
         eyebrow="What happened"
         title="News"
-        lede="Headline, source, and timestamp, tagged to the players it affects. Follow the link for the article — no body text is reproduced here."
+        lede="Headline, source, and timestamp, tagged to the players it affects. Follow the link for the article. No body text is reproduced here."
       />
 
       <Container className="py-10">
@@ -109,8 +109,7 @@ export default async function NewsPage({
         </div>
         <p className="mb-6 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           Published reporting from national outlets, running now and through the
-          season. Headline, source and timestamp only — follow the link to read
-          the piece.
+          season. Headline, source and timestamp only. Follow the link to read the piece.
         </p>
 
         <div className="flex flex-wrap items-start justify-between gap-6">
@@ -169,7 +168,7 @@ export default async function NewsPage({
             <AutoRefresh />
             {!live.live && (
               <span className="text-xs" style={{ color: "var(--text-muted)" }}>
-                Showing the last saved feed — no publisher answered.
+                Showing the last saved feed. No publisher answered.
               </span>
             )}
           </div>
@@ -292,9 +291,7 @@ export default async function NewsPage({
 
           <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
             Camp and preseason reporting from team beat writers, covering OTAs
-            in June through to the preseason games. Live posts are filtered to
-            what changes a decision — role, scheme, availability and roster
-            moves — rather than every rep of every practice. The {CURATED_COUNT}{" "}
+            in June through to the preseason games. Live posts are filtered to what changes a decision (role, scheme, availability and roster moves) rather than every rep of every practice. The {CURATED_COUNT}{" "}
             June and July entries were collected by hand and are shown as
             gathered. This section winds down once the season starts.
           </p>

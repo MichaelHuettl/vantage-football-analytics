@@ -116,14 +116,14 @@ export function MatchupHeader({ game }: { game: PredictedGame }) {
           value={game.predicted_winner}
           note={
             game.confidence === "coin_flip"
-              ? "this band is 49.8% accurate — treat it as no call"
+              ? "this band is 49.8% accurate, so treat it as no call"
               : undefined
           }
         />
         <Figure label="Model spread" value={game.predicted_spread_display} />
         <Figure
           label="Market spread"
-          value={game.market_spread_line === null ? "—" : String(game.market_spread_line)}
+          value={game.market_spread_line === null ? "n/a" : String(game.market_spread_line)}
           note={
             MARKET.market_is_better
               ? "the market forecasts these games better than this model"
