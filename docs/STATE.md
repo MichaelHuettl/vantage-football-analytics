@@ -66,7 +66,7 @@ build` with a line number instead of shipping a broken page.
 | Home | Built. Lambeau hero, eight section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
 | Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
 | Positional Data | Index cards carry a photo per position in a shared 2:1 frame, and head on `evaluated_on` — the family of statistics a position is judged on — Six pages, and **all six are built** — one column each: methodology, then the evidence. The two-column slot-and-pool placeholder is no longer used by any position |
-| Injury Database | Training camp section (58 entries) plus a **live wire** reconciled against it, team filter in the URL. Weekly report empty until Week 1 |
+| Injury Database | **Season tracker pulls live** — the camp section is now a league-wide table on the news page's pattern, pulled at request time and re-rendered on `AutoRefresh`. The 58 hand-authored records are the floor and merge *under* the wire, never overwritten; a wire status and a written record sit in adjacent columns and the row says so where they disagree. Team filter in the URL. Weekly report empty until Week 1 |
 | Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
 | Game Tracker | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
@@ -140,14 +140,27 @@ build` with a line number instead of shipping a broken page.
    through Nitter. `.github/workflows/news.yml` remains committed and still has
    never run; `scripts/refresh-feeds.sh` is a launchd runner for both scripts,
    written but **not installed** (see the Commands section).
-1b. **The injury page has a live wire, from two sources — not the three asked for.**
-   Built 2026-08-17. `/injuries` pulls at request time and re-renders on the
-   same 60s `AutoRefresh` as the news page. What it shows:
-   - **Where the wire disagrees with the camp report.** Currently nothing, and
-     that is printed as a result rather than hidden.
-   - **Serious absences with no camp record** — Brandon Aiyuk, Isaac Guerendo
-     and four others on the last run.
-   - **Injury headlines** from Draft Sharks.
+1b. **The injury table itself is now the live wire.** Rebuilt 2026-08-22 on the
+   news page's pattern, at the operator's request. `src/lib/injury-tracker.ts`
+   pulls Sleeper at request time and `/injuries` re-renders on the same 60s
+   `AutoRefresh`. The camp section is gone as a separate thing: it is the
+   league-wide season tracker, and the 58 hand-authored records are its floor.
+   - **Records merge *under* the wire and are never overwritten.** A wire status
+     is a coarse designation; a record is reporting with a diagnosis and, only
+     ever with an attribution, a timeline (§5.3). Both sit in adjacent columns
+     and the row prints the disagreement where they cannot both be true.
+     `WireStatusPill` is outlined where `CampStatusPill` is filled so the two
+     never read as the same kind of claim.
+   - **A record the wire has stopped carrying still shows** — 21 of them on the
+     first run. The archive is the floor, so an outage makes the table stale
+     rather than empty (§8), and `live` says which the reader is looking at.
+   - **One Sleeper pull per window.** The first version ran the old
+     reconciliation beside the new tracker and fetched the fourteen-megabyte
+     player file twice per render. `live-injuries.ts` and `LiveWire.tsx` were
+     deleted rather than left dead — the tracker reconciles inline on every row,
+     so that section's conflict and "not in the report" lists were duplicating
+     the table above them. Headlines kept their own light puller.
+   - **Injury headlines** from Draft Sharks, headline and link only (§2).
 
    **ESPN and Yahoo were requested and are deliberately not used.** Both name
    `anthropic-ai` in robots.txt with `Disallow: /`; Yahoo also names
@@ -175,6 +188,12 @@ build` with a line number instead of shipping a broken page.
    **Nothing overwrites a hand-authored record.** `camp-injuries.json` is
    reporting, with an attributed timeline or none (§5.3); the wire sits beside
    it. This is the standing fix for open item 7.
+
+   **Sleeper's notes were checked before any were published.** They can carry
+   free text, and a note reading "expected back Week 3" would breach §5.3 the
+   moment it rendered. On the pull this was built against, 26 of 156 carried a
+   note and *none* contained return or timeline language — they are single words
+   like "Surgery". **Re-check that if the table ever starts printing sentences.**
 
 2. ~~**Position pages: RB, K, DST, TE and QB are built. WR is not.**~~ **Closed 2026-08-22 — WR is built; see the WR entry below.**
    Each built page follows the same shape — a script reads the workbook, the
