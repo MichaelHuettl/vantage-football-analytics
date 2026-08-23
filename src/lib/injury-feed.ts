@@ -64,7 +64,7 @@ interface SleeperPlayer {
 }
 
 /** `no-store` for the same reason as the news feeds — see src/lib/feed.ts.
- *  How often this runs is bounded by the TTL cache in live-injuries.ts. */
+ *  How often this runs is bounded by the TTL cache in injury-tracker.ts. */
 export async function pullWire(): Promise<WireInjury[]> {
   const res = await fetch(SLEEPER, {
     headers: { "user-agent": UA },

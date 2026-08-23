@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  CAMP_INJURIES,
-  CAMP_SEVERITY,
-  CAMP_UPDATED,
-  CampStatusPill,
-  Timeline,
-} from "@/components/CampInjury";
-import type { CampInjury } from "@/components/CampInjury";
+import { CampStatusPill, Timeline } from "@/components/CampInjury";
 import { AutoRefresh } from "@/components/AutoRefresh";
 import { DataFreshness } from "@/components/DataFreshness";
-import { LiveWire } from "@/components/LiveWire";
-import { getLiveInjuries } from "@/lib/live-injuries";
+import {
+  getInjuryHeadlines, getInjuryTracker, trackerByTeam,
+} from "@/lib/injury-tracker";
+import { WireStatusPill } from "@/components/WireStatus";
 import { InjuryTimeline, PracticeStrip, StatusPill } from "@/components/Injury";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink, PositionBadge } from "@/components/PlayerLink";
@@ -50,8 +45,13 @@ export default async function InjuriesPage({
   const carried = backlog();
   const teams = teamsWithInjuries();
 
-  // Pulled at request time; AutoRefresh re-runs this render on a timer.
-  const liveWire = await getLiveInjuries();
+  // Both pulled at request time; AutoRefresh re-runs this render on a timer.
+  // One round trip each per window — the TTL caches inside them share an
+  // in-flight promise, so a burst of readers does not become a burst of calls.
+  const [tracker, headlines] = await Promise.all([
+    getInjuryTracker(),
+    getInjuryHeadlines(),
+  ]);
 
   // One team filter across the whole page rather than one per section. News
   // keeps its two feeds on separate params because they cover different
@@ -59,7 +59,9 @@ export default async function InjuriesPage({
   // points in a season — a reader filtering to a team wants that team
   // everywhere, not in one table and not the other.
   const filterTeams = [
-    ...new Set([...CAMP_INJURIES.map((c) => c.team), ...teams.map((t) => t.abbr)]),
+    // Built from the tracker as well as the schedule, so a club that only
+    // appears on the wire this week is still filterable.
+    ...new Set([...tracker.rows.map((r) => r.team), ...teams.map((t) => t.abbr)]),
   ].sort();
   const team = filterTeams.includes(params.team?.toUpperCase() ?? "")
     ? params.team!.toUpperCase()
@@ -76,25 +78,11 @@ export default async function InjuriesPage({
     return s ? `/injuries?${s}` : "/injuries";
   };
 
-  // Camp entries grouped by team, each group worst-first, groups ordered by
-  // their most serious case so the teams in trouble surface first.
-  const campByTeam = new Map<string, CampInjury[]>();
-  for (const c of CAMP_INJURIES) {
-    campByTeam.set(c.team, [...(campByTeam.get(c.team) ?? []), c]);
-  }
-  const campGroups = [...campByTeam.entries()]
-    .map(([abbr, list]) => ({
-      team: getTeam(abbr),
-      abbr,
-      list: list.sort(
-        (a, b) => CAMP_SEVERITY[b.status] - CAMP_SEVERITY[a.status],
-      ),
-    }))
-    .sort(
-      (a, b) =>
-        CAMP_SEVERITY[b.list[0].status] - CAMP_SEVERITY[a.list[0].status] ||
-        a.abbr.localeCompare(b.abbr),
-    )
+  // Tracker rows grouped by team, each group worst-first, groups ordered by
+  // their most serious case so the teams in trouble surface first. The grouping
+  // and the ordering both live in the library, so the page only filters (§11).
+  const trackerGroups = trackerByTeam(tracker.rows)
+    .map((g) => ({ ...g, team: getTeam(g.abbr) }))
     .filter((g) => !team || g.abbr === team);
 
   const weekGroups = groups.filter((g) => !team || g.team.abbr === team);
@@ -141,6 +129,7 @@ export default async function InjuriesPage({
         </nav>
 
         {/* ================= Training camp and preseason ================= */}
+        {/* ===================== Season tracker ===================== */}
         <section>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
             <div className="flex flex-wrap items-center gap-3">
@@ -148,124 +137,218 @@ export default async function InjuriesPage({
                 className="text-3xl uppercase tracking-wide"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                Training camp
+                Season tracker
               </h2>
               <span
                 className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
                 style={{
                   fontFamily: "var(--font-condensed)",
-                  background: "var(--text-primary)",
-                  color: "var(--surface-page)",
+                  background: tracker.live ? "var(--text-primary)" : "var(--surface-sunken)",
+                  color: tracker.live ? "var(--surface-page)" : "var(--text-muted)",
+                  boxShadow: tracker.live ? undefined : "inset 0 0 0 1px var(--border-strong)",
                 }}
               >
-                Preseason
+                {tracker.live ? "Live" : "Archive"}
               </span>
+              <AutoRefresh />
             </div>
-            <DataFreshness updated={CAMP_UPDATED} label="Camp report" staleAfterDays={4} />
+            <DataFreshness
+              updated={tracker.updated}
+              label={tracker.live ? "Wire pulled" : "Last written record"}
+              staleAfterDays={tracker.live ? 1 : 4}
+            />
           </div>
 
-          {campGroups.length === 0 && (
+          <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+            Every fantasy-relevant player carrying a designation, pulled when the
+            page is requested and re-rendered on a timer. The written records
+            below merge <em>under</em> the wire and are never overwritten by it:
+            a feed status is a coarse claim, a record is reporting with a
+            diagnosis behind it, and where the two cannot both be true the row
+            says so rather than picking one.
+          </p>
+
+          {tracker.live ? (
+            <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+              {tracker.pulled} players carried a designation on this pull;{" "}
+              {tracker.rows.length} are shown — everyone the site ranks, plus
+              anyone already written up however deep on a roster.{" "}
+              {tracker.counts.both} of them have a written record as well,{" "}
+              {tracker.counts.recordOnly} are records the wire is currently
+              silent on, and{" "}
+              {tracker.counts.conflicts === 0
+                ? "none contradict what is written here."
+                : `${tracker.counts.conflicts} contradict what is written here.`}
+            </p>
+          ) : (
+            <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+              The wire did not answer on this render, so this is the written
+              record alone — stale rather than empty (§8).{" "}
+              {tracker.failures.map((f) => `${f.name}: ${f.reason}`).join("; ")}
+            </p>
+          )}
+
+          {trackerGroups.length === 0 && (
             <div className="mt-6">
               <EmptyState
-                title={`No camp injuries recorded for ${activeTeam ? `the ${activeTeam.nickname}` : "any team"}.`}
-                direction="Pick another team, or choose All to see every camp report."
+                title={`Nothing on the wire for ${activeTeam ? `the ${activeTeam.nickname}` : "any team"}.`}
+                direction="Pick another team, or choose All to see the whole league."
               />
             </div>
           )}
 
           <div className="mt-6 flex flex-col gap-4">
-            {campGroups.map(({ team, abbr, list }) => (
-              <TeamBlock key={abbr} team={team} abbr={abbr}>
+            {trackerGroups.map(({ team, abbr, rows }) => (
+              <TeamBlock key={abbr} team={team} abbr={abbr} history>
                 <table className="w-full table-fixed text-sm">
                   <colgroup>
                     <col className="w-[190px]" />
-                    <col className="w-[260px]" />
-                    <col className="w-[125px]" />
-                    <col className="w-[175px]" />
+                    <col className="w-[240px]" />
+                    <col className="w-[110px]" />
+                    <col className="w-[170px]" />
                     <col />
                   </colgroup>
                   <thead>
                     <tr style={{ background: "var(--surface-sunken)" }}>
                       <Th>Player</Th>
-                      <Th>Diagnosis</Th>
-                      <Th>Status</Th>
-                      <Th>Expected absence</Th>
+                      <Th>Injury</Th>
+                      <Th>Wire</Th>
+                      <Th>Written record</Th>
                       <Th>Latest</Th>
                     </tr>
                   </thead>
                   <tbody>
-                    {list.map((c) => {
-                      const player = c.player_id ? getPlayer(c.player_id) : undefined;
+                    {rows.map((r) => {
+                      const player = r.record?.player_id
+                        ? getPlayer(r.record.player_id)
+                        : undefined;
+                      const fresh = latestNewsFor(r.record?.player_id);
                       return (
                         <tr
-                          key={c.name}
+                          key={`${r.name}-${r.position}`}
                           className="border-t align-top"
                           style={{ borderColor: "var(--border-subtle)" }}
                         >
                           <td className="px-4 py-3">
                             <PlayerCell
                               player={player}
-                              name={c.name}
-                              position={c.position}
+                              name={r.name}
+                              position={r.position}
                             />
                           </td>
                           <td className="px-4 py-3">
-                            <span className="block font-semibold">{c.diagnosis}</span>
-                            <span
-                              className="mt-0.5 block text-xs uppercase tracking-wider"
-                              style={{
-                                fontFamily: "var(--font-condensed)",
-                                color: "var(--text-muted)",
-                              }}
-                            >
-                              {c.body_part}
-                            </span>
+                            {r.record ? (
+                              <span className="block font-semibold">
+                                {r.record.diagnosis}
+                              </span>
+                            ) : (
+                              <span
+                                className="block"
+                                style={{ color: "var(--text-muted)" }}
+                              >
+                                No diagnosis reported
+                              </span>
+                            )}
+                            {r.body_part && (
+                              <span
+                                className="mt-0.5 block text-xs uppercase tracking-wider"
+                                style={{
+                                  fontFamily: "var(--font-condensed)",
+                                  color: "var(--text-muted)",
+                                }}
+                              >
+                                {r.body_part}
+                                {r.notes ? ` · ${r.notes}` : ""}
+                              </span>
+                            )}
                           </td>
                           <td className="px-4 py-3">
-                            <CampStatusPill status={c.status} />
+                            {r.wire ? (
+                              <WireStatusPill status={r.wire} />
+                            ) : (
+                              <span
+                                className="text-xs uppercase tracking-wider"
+                                style={{
+                                  fontFamily: "var(--font-condensed)",
+                                  color: "var(--text-muted)",
+                                }}
+                              >
+                                Not listed
+                              </span>
+                            )}
                           </td>
                           <td className="px-4 py-3">
-                            <Timeline injury={c} />
+                            {r.record ? (
+                              <>
+                                <CampStatusPill status={r.record.status} />
+                                <span className="mt-1.5 block">
+                                  <Timeline injury={r.record} />
+                                </span>
+                              </>
+                            ) : (
+                              <span
+                                className="text-xs"
+                                style={{ color: "var(--text-muted)" }}
+                              >
+                                Wire only
+                              </span>
+                            )}
                           </td>
                           <td
                             className="px-4 py-3"
                             style={{ color: "var(--text-secondary)" }}
                           >
-                            {c.latest}
-                            {c.history && (
+                            {r.conflict && (
+                              <span
+                                className="mb-1.5 flex items-start gap-1.5 rounded px-2 py-1.5 text-xs"
+                                style={{
+                                  background:
+                                    "color-mix(in oklab, var(--color-status-out) 16%, transparent)",
+                                  color: "var(--text-primary)",
+                                }}
+                              >
+                                <span
+                                  className="shrink-0 font-bold uppercase tracking-wider"
+                                  style={{ fontFamily: "var(--font-condensed)" }}
+                                >
+                                  Disagrees
+                                </span>
+                                <span>
+                                  the record says {r.record?.status}, the wire has
+                                  him {r.wire}
+                                </span>
+                              </span>
+                            )}
+                            {r.record?.latest}
+                            {r.record?.history && (
                               <span
                                 className="mt-1.5 block text-xs"
                                 style={{ color: "var(--text-muted)" }}
                               >
-                                History: {c.history}
+                                History: {r.record.history}
                               </span>
                             )}
-                            {(() => {
-                              // The feed cannot write a diagnosis, but it can
-                              // say that something has been reported since this
-                              // row was written — which is what a static page
-                              // otherwise gets wrong.
-                              const fresh = latestNewsFor(c.player_id);
-                              if (!isNewerThan(fresh, c.reported)) return null;
-                              return (
+                            {/* The feed cannot write a diagnosis, but it can say
+                                something has been reported since this row was
+                                written — which is what a static page gets wrong. */}
+                            {r.record && isNewerThan(fresh, r.record.reported) && (
+                              <span
+                                className="mt-2 flex items-start gap-1.5 rounded px-2 py-1.5 text-xs"
+                                style={{
+                                  background:
+                                    "color-mix(in oklab, var(--color-vantage-amber) 16%, transparent)",
+                                  color: "var(--text-primary)",
+                                }}
+                              >
                                 <span
-                                  className="mt-2 flex items-start gap-1.5 rounded px-2 py-1.5 text-xs"
-                                  style={{
-                                    background:
-                                      "color-mix(in oklab, var(--color-vantage-amber) 16%, transparent)",
-                                    color: "var(--text-primary)",
-                                  }}
+                                  className="shrink-0 font-bold uppercase tracking-wider"
+                                  style={{ fontFamily: "var(--font-condensed)" }}
                                 >
-                                  <span
-                                    className="shrink-0 font-bold uppercase tracking-wider"
-                                    style={{ fontFamily: "var(--font-condensed)" }}
-                                  >
-                                    Newer
-                                  </span>
-                                  <span>{fresh!.headline}</span>
+                                  Newer
                                 </span>
-                              );
-                            })()}
+                                <span>{fresh!.headline}</span>
+                              </span>
+                            )}
                           </td>
                         </tr>
                       );
@@ -284,16 +367,40 @@ export default async function InjuriesPage({
               className="text-3xl uppercase tracking-wide"
               style={{ fontFamily: "var(--font-display)" }}
             >
-              Live wire
+              Injury headlines
             </h2>
             <AutoRefresh />
           </div>
           <p className="mt-2 max-w-2xl text-sm" style={{ color: "var(--text-muted)" }}>
-            Pulled while you are reading it, and checked against the camp report
-            above. The records above are reporting; these are feed statuses, and
-            where the two disagree the disagreement is the story.
+            Pulled while you are reading it. Headline, source and link only —
+            never the article (§2) — and no status here is this site&rsquo;s
+            prognosis (§5.3). The reconciliation that used to sit in this section
+            now happens in the tracker itself, on every row.
           </p>
-          <LiveWire live={liveWire} />
+          {headlines.length === 0 ? (
+            <p className="mt-4 text-sm" style={{ color: "var(--text-muted)" }}>
+              Draft Sharks&rsquo; sitemap did not answer on this render. The
+              tracker above is unaffected.
+            </p>
+          ) : (
+            <ul className="mt-4 flex flex-col gap-2">
+              {headlines.map((h) => (
+                <li key={h.id} className="text-sm">
+                  <a
+                    href={h.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline-offset-2 hover:underline"
+                  >
+                    {h.headline}
+                  </a>
+                  <span className="ml-2 text-xs" style={{ color: "var(--text-muted)" }}>
+                    {h.source}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
 
         {/* ===================== Week-by-week report ===================== */}
