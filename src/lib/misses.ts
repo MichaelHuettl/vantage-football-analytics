@@ -1,5 +1,6 @@
 import missesFile from "@/data/model-misses.json";
 import type { ConfidenceTier } from "./predictions";
+import { normalizeProse } from "./prose";
 
 /**
  * The case study's data: every game the model got wrong, and how each season went.
@@ -118,7 +119,10 @@ interface MissesFile {
   };
 }
 
-const file = missesFile as unknown as MissesFile;
+// The performer lines and several notes come verbatim from the prediction
+// pipeline's report, which this repo copies rather than authors, so the
+// house punctuation is applied here (§8).
+const file = normalizeProse(missesFile as unknown as MissesFile);
 
 export const MISS_WINDOW = file.window;
 export const MISS_SOURCE = file.source;

@@ -2,6 +2,7 @@ import payload from "@/data/game-predictions.json";
 import marginsFile from "@/data/game-margins.json";
 import featuresFile from "@/data/model-features.json";
 import { canonTeams } from "./teams";
+import { normalizeProse } from "./prose";
 
 /**
  * The Game Prediction Model's output, typed and tidied.
@@ -147,7 +148,9 @@ interface Payload {
   };
 }
 
-const file = canonTeams(payload as unknown as Payload);
+// Team codes and house punctuation, both fixed where the payload enters:
+// this repo copies these files and cannot edit them at source.
+const file = normalizeProse(canonTeams(payload as unknown as Payload));
 
 export const PRED_META = file.meta;
 export const PRED_PERF = file.performance;
@@ -173,7 +176,7 @@ export const TIER_LABEL: Record<ConfidenceTier, string> = {
   high: "High confidence",
   medium: "Medium confidence",
   low: "Low confidence",
-  coin_flip: "Coin flip — no call",
+  coin_flip: "Coin flip, no call",
 };
 
 /**
@@ -291,7 +294,7 @@ export const PRED_OVERVIEW = {
  * you notice that predicting *every* non-close game perfectly would still only
  * reach the ceiling below. Computed from the same games the model trains on.
  */
-export const GAME_MARGINS = marginsFile as unknown as {
+export const GAME_MARGINS = normalizeProse(marginsFile) as unknown as {
   note: string;
   source: string;
   games: number;
@@ -316,7 +319,7 @@ export const GAME_MARGINS = marginsFile as unknown as {
  * sense side by side. This list exists so the page can say that plainly instead
  * of leaving the impression uncorrected.
  */
-export const MODEL_FEATURES = featuresFile as unknown as {
+export const MODEL_FEATURES = normalizeProse(featuresFile) as unknown as {
   note: string;
   source: string;
   total: number;
