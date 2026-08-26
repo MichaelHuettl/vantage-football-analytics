@@ -631,6 +631,16 @@ copy claiming O-line injuries move the line.**
   and the section prose states the distinction. **It is not a return date and
   must never become one** (§5.3). Where the wire is silent the written record's
   own `reported` date stands in, which is why a row can read "record".
+- **The narrow-screen nav is a vaul drawer, and that reversed a written
+  decision.** Below `xl` the links used to sit in a sideways-scrolling row,
+  placed there explicitly "rather than a menu behind a tap", with a breakpoint
+  that had already moved twice as section names grew. The operator asked for the
+  drawer on 2026-08-26 knowing that. **vaul brought Radix in**: it depends on
+  `@radix-ui/react-dialog` and about ten Radix packages, which is the same Radix
+  kept out a few hours earlier when shadcn was declined. `package.json` is now
+  four dependencies rather than three. That does not reopen shadcn — `shadcn
+  init` still must not run here, for the CSS-variable reason below — but "this
+  repo has no UI dependencies" is no longer true and should stop being said.
 - **Five component libraries were evaluated on 2026-08-26; one was adopted, by
   hand.** The operator asked for React Bits, Manus.im, Animmaster Lib, Skiper UI
   and Vengeance AI. What they turned out to be:
