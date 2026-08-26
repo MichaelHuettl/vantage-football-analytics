@@ -1,12 +1,16 @@
-import { Goalpost } from "./Goalpost";
+import { Emblem } from "./Emblem";
 
 /**
- * The full stacked lockup — goalpost above the name — as it appears in
- * brand/Name + Logo.png, composed rather than placed.
+ * The full stacked lockup: emblem above the name, composed rather than placed.
  *
- * The source PNG has a baked-in dark plate, which would show as a seam over a
- * photograph. Composing it means the mark inherits currentColor, stays sharp at
- * any size, and costs no image request.
+ * Composed, the mark inherits currentColor, stays sharp at any size, and costs
+ * no image request — a placed PNG would carry a baked-in dark plate that shows
+ * as a seam over a photograph.
+ *
+ * This is the one place the detailed emblem is used. It renders at 96px here,
+ * where the plot grid and the ticks resolve; the header and footer take the
+ * plain Goalpost instead, because at 32px that detail is mud. Both marks crop
+ * to the same window, so swapping between them shifts nothing.
  */
 export function Wordmark({
   size = "md",
@@ -22,8 +26,10 @@ export function Wordmark({
        as it does in the source lockup. `w-fit` keeps the block hugging its
        content so it can still be left-aligned on the page. */
     <div className={`flex w-fit flex-col items-center ${className}`}>
-      <Goalpost
-        className={lg ? "h-20 w-20" : "h-12 w-12"}
+      {/* Sized by height, with the width following: the mark is taller than
+          it is wide, so a square box would letterbox it and pad the sides. */}
+      <Emblem
+        className={lg ? "h-24 w-auto" : "h-14 w-auto"}
         title="Vantage Football Analytics"
       />
       <p

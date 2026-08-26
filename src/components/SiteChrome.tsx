@@ -26,7 +26,7 @@ export function SiteHeader() {
             className="flex items-center gap-2.5 shrink-0"
             style={{ color: "var(--color-vantage-white)" }}
           >
-            <Goalpost className="h-7 w-7" title="Vantage" />
+            <Goalpost className="h-8 w-auto" title="Vantage" />
             <span
               className="text-2xl leading-none tracking-wide uppercase"
               style={{ fontFamily: "var(--font-display)" }}
@@ -147,7 +147,7 @@ export function SiteFooter() {
               className="flex items-center gap-2.5"
               style={{ color: "var(--color-vantage-white)" }}
             >
-              <Goalpost className="h-7 w-7" />
+              <Goalpost className="h-8 w-auto" />
               <span
                 className="text-2xl leading-none tracking-wide uppercase"
                 style={{ fontFamily: "var(--font-display)" }}
