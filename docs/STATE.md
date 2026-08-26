@@ -597,14 +597,29 @@ copy claiming O-line injuries move the line.**
   throws out `jamarrchase` at eleven characters, which silently dropped 33 of 67
   players. Token comparison needs no floor. **Do not go back to substring
   matching.**
-- **Nothing on the injury page composes a diagnosis out of a feed.** A wire-only
-  row says "Not written up" and points at the matched reporting beside it. A
-  record carries a diagnosis and, only ever with an attribution, a timeline
-  (§5.3); generating one from a headline would be auto-generated analysis
-  published under the operator's name, which §11 forbids. Matched headlines are
-  published as their publishers wrote them, credited and linked, headline and
-  date only (§2). If the "Written record" column should be populated for a
-  player, that is a paragraph for a human to write into `camp-injuries.json`.
+- **The injury page composes a written record where none exists, and that was a
+  deliberate spend of §11.** The operator asked for it on 2026-08-26 after the
+  rule was raised with him: the tracker runs unattended and an injury
+  description has one sensible phrasing. Three conditions came with it and all
+  three are load-bearing.
+  **It is labelled "Composed"** wherever it renders, because a page whose pitch
+  is that you can audit the argument cannot quietly mix generated sentences in
+  with hand-written ones.
+  **It never states a return date.** §5.3 was *not* part of what was set aside.
+  `src/lib/injury-summary.ts` extracts the injury phrase from a headline and
+  discards the timeline around it, and `TIMELINE` there is a hard stop that
+  throws away a whole sentence rather than publish one. Timelines still reach
+  the reader in the Latest column with a publisher's name on them. **Do not
+  relax this to make the sentences read better.**
+  **It composes from a controlled vocabulary and fixed patterns**, never free
+  generation, and falls back to the wire's structured fields when no headline
+  plainly contains an injury. Where a headline names a different body part from
+  the wire's, the wire wins: that is nearly always a headline about a second,
+  older injury. Where the wire says "Undisclosed" and nothing matches, the
+  column stays "Not written up", because a sentence reporting that nothing was
+  reported is worse than a blank.
+  A hand-written record always wins over a composed one. If a row should say
+  something better, write it into `camp-injuries.json`.
 - **The tracker's "Updated" column is Sleeper's `news_updated`, and it does not
   mean what its position implies.** It is the last time *any* news about that
   player moved, not a timestamp on the injury. Measured before it was published:
