@@ -192,10 +192,20 @@ export default async function InjuriesPage({
             committed news file, published as its publisher wrote it and
             credited to them. That is where the detail lives that a wire field
             cannot hold. Sleeper can say <em>Knee</em>; only a headline can say
-            he hyperextended it and expects to be fine. Nothing here composes a
-            diagnosis out of a feed, because a record is written by hand or not
-            at all (§11), and a headline only ever matches a player when his
+            he hyperextended it. A headline only ever matches a player when his
             full name appears in it.
+          </p>
+
+          <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+            <strong>Written record</strong> is hand-authored reporting. Where
+            none exists, the column carries a sentence composed from the wire
+            and the matched headline instead, marked{" "}
+            <strong>Composed</strong> so it is never mistaken for the written
+            ones. Those sentences are built from a fixed vocabulary rather than
+            written freely, they credit the publisher whose headline supplied
+            the detail, and they never state a return date: that is a separate
+            rule (§5.3), and where a headline gives a timeline it stays in the
+            headline with its publisher&rsquo;s name on it.
           </p>
 
           {tracker.live ? (
@@ -343,21 +353,38 @@ export default async function InjuriesPage({
                                   <Timeline injury={r.record} />
                                 </span>
                               </>
+                            ) : r.summary ? (
+                              /* Composed, not written. The operator asked for
+                                 this after weighing it against §11, so it is
+                                 labelled rather than quietly mixed in with the
+                                 hand-written records above it: a page whose
+                                 pitch is that you can audit the argument has to
+                                 say which sentences it wrote itself. It never
+                                 carries a timeline (§5.3) — see
+                                 lib/injury-summary.ts. */
+                              <>
+                                <span
+                                  className="inline-flex h-5 items-center rounded px-1.5 text-[0.625rem] font-bold uppercase tracking-wider"
+                                  style={{
+                                    fontFamily: "var(--font-condensed)",
+                                    background: "var(--surface-sunken)",
+                                    color: "var(--text-muted)",
+                                    boxShadow: "inset 0 0 0 1px var(--border-subtle)",
+                                  }}
+                                  title="Composed from the wire and matched reporting, not written by hand"
+                                >
+                                  Composed
+                                </span>
+                                <span className="mt-1.5 block text-xs">
+                                  {r.summary.text}
+                                </span>
+                              </>
                             ) : (
-                              /* Nothing is written here automatically. A record
-                                 carries a diagnosis and, only ever with an
-                                 attribution, a timeline (§5.3); composing one
-                                 from a feed would be auto-generated analysis
-                                 published under the operator's name, which §11
-                                 forbids. The reporting that does exist is
-                                 beside it, in someone else's words. */
                               <span
                                 className="text-xs"
                                 style={{ color: "var(--text-muted)" }}
                               >
-                                {r.headlines.length > 0
-                                  ? "Not written up. Reporting is at right."
-                                  : "Not written up."}
+                                Not written up.
                               </span>
                             )}
                           </td>

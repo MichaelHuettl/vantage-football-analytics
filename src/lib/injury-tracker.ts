@@ -32,6 +32,8 @@ import {
 } from "./injury-feed";
 import type { WireInjury, WireStatus } from "./injury-feed";
 import { headlinesFor } from "./headline-match";
+import { summarise } from "./injury-summary";
+import type { AutoSummary } from "./injury-summary";
 import type { NewsEntry } from "./types";
 import type { CampInjury } from "@/components/CampInjury";
 
@@ -73,6 +75,13 @@ export interface TrackerRow {
    * headline feed is on its own cache and its own timer.
    */
   headlines: NewsEntry[];
+  /**
+   * A composed one-line description, for rows nobody has written up. Null
+   * whenever a record exists (the record is the authority) and whenever there
+   * is nothing worth saying. Always labelled where it renders: see
+   * `injury-summary.ts` for why this exists at all.
+   */
+  summary: AutoSummary | null;
   /** The wire and the record making claims that cannot both be true. */
   conflict: boolean;
   /** When this row last moved, and which source moved it. Null when neither
@@ -178,7 +187,7 @@ function archiveOnly(failures: { name: string; reason: string }[]): InjuryTracke
   const rows = camp.data.map((record) => ({
     name: record.name, team: record.team, position: record.position,
     wire: null, body_part: record.body_part ?? null, notes: null,
-    record, conflict: false, headlines: [],
+    record, conflict: false, headlines: [], summary: null,
     lastUpdate: lastUpdateOf(null, record),
     severity: 10, // written records outrank a silent wire; see sort below
   }));
@@ -235,7 +244,7 @@ async function pullOnce(): Promise<InjuryTracker> {
       notes: w.notes ?? null,
       record,
       conflict: record ? disagrees(record.status, w.status) : false,
-      headlines: [],
+      headlines: [], summary: null,
       lastUpdate: lastUpdateOf(w.updated, record),
       severity: WIRE_SEVERITY[w.status] ?? 2,
     });
@@ -252,7 +261,7 @@ async function pullOnce(): Promise<InjuryTracker> {
     rows.push({
       name: record.name, team: record.team, position: record.position,
       wire: null, body_part: record.body_part ?? null, notes: null,
-      record, conflict: false, headlines: [],
+      record, conflict: false, headlines: [], summary: null,
       lastUpdate: lastUpdateOf(null, record),
       // Below anything the wire flags, above a bare "Questionable": the record
       // is real reporting, but the wire is the fresher claim.
@@ -295,7 +304,16 @@ export function attachHeadlines(
   rows: TrackerRow[],
   live: NewsEntry[],
 ): TrackerRow[] {
-  return rows.map((r) => ({ ...r, headlines: headlinesFor(r.name, live) }));
+  return rows.map((r) => {
+    const headlines = headlinesFor(r.name, live);
+    return {
+      ...r,
+      headlines,
+      // A hand-written record is the authority on its row and is never
+      // supplemented by a composed sentence.
+      summary: r.record ? null : summarise(r.body_part, r.notes, headlines),
+    };
+  });
 }
 
 /** Grouped for the page, worst team first. */
