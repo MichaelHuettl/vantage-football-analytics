@@ -31,6 +31,7 @@ import {
   pullWire,
 } from "./injury-feed";
 import type { WireInjury, WireStatus } from "./injury-feed";
+import { headlinesFor } from "./headline-match";
 import type { NewsEntry } from "./types";
 import type { CampInjury } from "@/components/CampInjury";
 
@@ -66,6 +67,12 @@ export interface TrackerRow {
   notes: string | null;
   /** The hand-authored record, when one exists. Never overwritten. */
   record: CampInjury | null;
+  /**
+   * Headlines naming this player, newest first, as their publishers wrote
+   * them. Attached by `attachHeadlines` rather than by the pull, because the
+   * headline feed is on its own cache and its own timer.
+   */
+  headlines: NewsEntry[];
   /** The wire and the record making claims that cannot both be true. */
   conflict: boolean;
   /** When this row last moved, and which source moved it. Null when neither
@@ -91,10 +98,11 @@ export interface LastUpdate {
  * is "how old is the newest thing on this row", and naming the source keeps it
  * auditable rather than asking them to trust a bare date.
  *
- * The headline feed is deliberately not folded in. `latestNewsFor` already
- * surfaces a newer story on the row as a badge carrying the headline itself,
- * which says more than a date would, and counting it here as well would state
- * the same fact twice in one row.
+ * The headline feed is deliberately not folded in, even though `headlines` now
+ * sits on the same row. Those are other publishers' reporting and each one
+ * prints its own date beside it; this column is about the row's own status
+ * facts, so that "12 days ago" reads as "the designation has not moved in 12
+ * days" rather than as a claim that nothing has been said.
  */
 function lastUpdateOf(
   wireAt: string | null | undefined,
@@ -170,7 +178,7 @@ function archiveOnly(failures: { name: string; reason: string }[]): InjuryTracke
   const rows = camp.data.map((record) => ({
     name: record.name, team: record.team, position: record.position,
     wire: null, body_part: record.body_part ?? null, notes: null,
-    record, conflict: false,
+    record, conflict: false, headlines: [],
     lastUpdate: lastUpdateOf(null, record),
     severity: 10, // written records outrank a silent wire; see sort below
   }));
@@ -227,6 +235,7 @@ async function pullOnce(): Promise<InjuryTracker> {
       notes: w.notes ?? null,
       record,
       conflict: record ? disagrees(record.status, w.status) : false,
+      headlines: [],
       lastUpdate: lastUpdateOf(w.updated, record),
       severity: WIRE_SEVERITY[w.status] ?? 2,
     });
@@ -243,7 +252,7 @@ async function pullOnce(): Promise<InjuryTracker> {
     rows.push({
       name: record.name, team: record.team, position: record.position,
       wire: null, body_part: record.body_part ?? null, notes: null,
-      record, conflict: false,
+      record, conflict: false, headlines: [],
       lastUpdate: lastUpdateOf(null, record),
       // Below anything the wire flags, above a bare "Questionable": the record
       // is real reporting, but the wire is the fresher claim.
@@ -267,6 +276,26 @@ async function pullOnce(): Promise<InjuryTracker> {
   };
   cached = { at: Date.now(), value };
   return value;
+}
+
+/**
+ * Attach each row's headlines.
+ *
+ * Separate from `pullOnce` because the two feeds are on independent caches and
+ * timers: folding the join into the pull would freeze a five-minute-old
+ * headline set into a tracker that outlives it, and force both to refresh
+ * together. Returns new row objects rather than mutating, since the rows it is
+ * given are the cached ones and are shared by every reader in the window.
+ *
+ * A player carrying a written record keeps his headlines too. The record is
+ * still the authority on the row, but "something was said an hour ago" is a
+ * fact the record cannot know about itself.
+ */
+export function attachHeadlines(
+  rows: TrackerRow[],
+  live: NewsEntry[],
+): TrackerRow[] {
+  return rows.map((r) => ({ ...r, headlines: headlinesFor(r.name, live) }));
 }
 
 /** Grouped for the page, worst team first. */

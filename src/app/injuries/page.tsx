@@ -4,7 +4,7 @@ import { CampStatusPill, Timeline } from "@/components/CampInjury";
 import { AutoRefresh } from "@/components/AutoRefresh";
 import { DataFreshness } from "@/components/DataFreshness";
 import {
-  getInjuryHeadlines, getInjuryTracker, trackerByTeam,
+  attachHeadlines, getInjuryHeadlines, getInjuryTracker, trackerByTeam,
 } from "@/lib/injury-tracker";
 import { WireStatusPill } from "@/components/WireStatus";
 import { InjuryTimeline, LastUpdateCell, PracticeStrip, StatusPill } from "@/components/Injury";
@@ -22,7 +22,8 @@ import {
   teamsWithInjuries,
 } from "@/lib/injuries";
 import { getPlayer } from "@/lib/content";
-import { isNewerThan, latestNewsFor } from "@/lib/freshness";
+import { shortDate } from "@/lib/dates";
+import { isNewerThan } from "@/lib/freshness";
 import { getTeam, readableOn } from "@/lib/teams";
 import type { Player, Position, Team } from "@/lib/types";
 
@@ -81,7 +82,10 @@ export default async function InjuriesPage({
   // Tracker rows grouped by team, each group worst-first, groups ordered by
   // their most serious case so the teams in trouble surface first. The grouping
   // and the ordering both live in the library, so the page only filters (§11).
-  const trackerGroups = trackerByTeam(tracker.rows)
+  // The headline feed is joined on here rather than inside the pull: the two
+  // are on separate caches, and a row's headlines should be as fresh as the
+  // headline call, not as fresh as the wire call.
+  const trackerGroups = trackerByTeam(attachHeadlines(tracker.rows, headlines))
     .map((g) => ({ ...g, team: getTeam(g.abbr) }))
     .filter((g) => !team || g.abbr === team);
 
@@ -177,6 +181,21 @@ export default async function InjuriesPage({
             as when anyone expects him back (§5.3). Anything older than a
             fortnight is marked, because a designation the wire has stopped
             touching is the one most likely to have moved on without it.
+            Headlines carry their own dates, so a row can show reporting newer
+            than the designation beside it.
+          </p>
+
+          <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+            <strong>Latest</strong> is the written record wherever one exists.
+            Where none does, it carries other people&rsquo;s reporting instead:
+            every headline naming that player, from the live sitemap and the
+            committed news file, published as its publisher wrote it and
+            credited to them. That is where the detail lives that a wire field
+            cannot hold. Sleeper can say <em>Knee</em>; only a headline can say
+            he hyperextended it and expects to be fine. Nothing here composes a
+            diagnosis out of a feed, because a record is written by hand or not
+            at all (§11), and a headline only ever matches a player when his
+            full name appears in it.
           </p>
 
           {tracker.live ? (
@@ -233,7 +252,11 @@ export default async function InjuriesPage({
                       const player = r.record?.player_id
                         ? getPlayer(r.record.player_id)
                         : undefined;
-                      const fresh = latestNewsFor(r.record?.player_id);
+                      // Was `latestNewsFor(record.player_id)`, which could
+                      // only ever fire for a player who both had a written
+                      // record and an id on it. Name matching covers every row,
+                      // and merges the live pull with the committed feed.
+                      const fresh = r.headlines[0];
                       return (
                         <tr
                           key={`${r.name}-${r.position}`}
@@ -248,28 +271,52 @@ export default async function InjuriesPage({
                             />
                           </td>
                           <td className="px-4 py-3">
+                            {/* With a record, its diagnosis leads. Without
+                                one, the wire's own description leads rather
+                                than "No diagnosis reported": Sleeper publishes
+                                real detail here, "Knee - ACL + MCL" and
+                                "Surgery", and burying it under a sentence
+                                saying nothing was reported was throwing away
+                                the one thing the row did know. */}
                             {r.record ? (
-                              <span className="block font-semibold">
-                                {r.record.diagnosis}
-                              </span>
+                              <>
+                                <span className="block font-semibold">
+                                  {r.record.diagnosis}
+                                </span>
+                                {r.body_part && (
+                                  <span
+                                    className="mt-0.5 block text-xs uppercase tracking-wider"
+                                    style={{
+                                      fontFamily: "var(--font-condensed)",
+                                      color: "var(--text-muted)",
+                                    }}
+                                  >
+                                    {r.body_part}
+                                    {r.notes ? ` · ${r.notes}` : ""}
+                                  </span>
+                                )}
+                              </>
+                            ) : r.body_part || r.notes ? (
+                              <>
+                                <span className="block font-semibold">
+                                  {[r.body_part, r.notes].filter(Boolean).join(", ")}
+                                </span>
+                                <span
+                                  className="mt-0.5 block text-xs uppercase tracking-wider"
+                                  style={{
+                                    fontFamily: "var(--font-condensed)",
+                                    color: "var(--text-muted)",
+                                  }}
+                                >
+                                  As the wire lists it
+                                </span>
+                              </>
                             ) : (
                               <span
                                 className="block"
                                 style={{ color: "var(--text-muted)" }}
                               >
                                 No diagnosis reported
-                              </span>
-                            )}
-                            {r.body_part && (
-                              <span
-                                className="mt-0.5 block text-xs uppercase tracking-wider"
-                                style={{
-                                  fontFamily: "var(--font-condensed)",
-                                  color: "var(--text-muted)",
-                                }}
-                              >
-                                {r.body_part}
-                                {r.notes ? ` · ${r.notes}` : ""}
                               </span>
                             )}
                           </td>
@@ -297,11 +344,20 @@ export default async function InjuriesPage({
                                 </span>
                               </>
                             ) : (
+                              /* Nothing is written here automatically. A record
+                                 carries a diagnosis and, only ever with an
+                                 attribution, a timeline (§5.3); composing one
+                                 from a feed would be auto-generated analysis
+                                 published under the operator's name, which §11
+                                 forbids. The reporting that does exist is
+                                 beside it, in someone else's words. */
                               <span
                                 className="text-xs"
                                 style={{ color: "var(--text-muted)" }}
                               >
-                                Wire only
+                                {r.headlines.length > 0
+                                  ? "Not written up. Reporting is at right."
+                                  : "Not written up."}
                               </span>
                             )}
                           </td>
@@ -334,6 +390,42 @@ export default async function InjuriesPage({
                               </span>
                             )}
                             {r.record?.latest}
+                            {/* No record means nobody here has written this
+                                player up. What exists is other people's
+                                reporting, published as they wrote it and
+                                credited to them (§2: headline, source and link,
+                                never body text). */}
+                            {!r.record &&
+                              (r.headlines.length > 0 ? (
+                                <ul className="flex flex-col gap-2">
+                                  {r.headlines.map((h) => (
+                                    <li key={h.id}>
+                                      <a
+                                        href={h.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="underline-offset-2 hover:underline"
+                                      >
+                                        {h.headline}
+                                      </a>
+                                      <span
+                                        className="ml-1.5 whitespace-nowrap text-xs"
+                                        style={{ color: "var(--text-muted)" }}
+                                      >
+                                        {h.source}, {shortDate(h.timestamp)}
+                                      </span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              ) : (
+                                <span
+                                  className="text-xs"
+                                  style={{ color: "var(--text-muted)" }}
+                                >
+                                  Nothing published under this name yet. The
+                                  wire designation is the whole of it.
+                                </span>
+                              ))}
                             {r.record?.history && (
                               <span
                                 className="mt-1.5 block text-xs"
