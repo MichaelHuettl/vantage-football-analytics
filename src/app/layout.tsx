@@ -31,7 +31,18 @@ export const metadata: Metadata = {
   },
   description:
     "Opportunity metrics underneath the rankings. Every ranked player links to the chart that justifies his position.",
-  icons: { icon: "/brand/vantage-app-icon-512.png" },
+  // SVG first so the tab gets the vector; the PNGs are the fallback for
+  // anything that will not take one, and the 180 is what iOS puts on a home
+  // screen. All three are the same artwork — the PNGs are rendered from
+  // vantage-icon.svg, so changing the icon means changing that one file and
+  // re-rendering.
+  icons: {
+    icon: [
+      { url: "/brand/vantage-icon.svg", type: "image/svg+xml" },
+      { url: "/brand/vantage-app-icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: { url: "/brand/vantage-app-icon-180.png", sizes: "180x180", type: "image/png" },
+  },
 };
 
 export default function RootLayout({

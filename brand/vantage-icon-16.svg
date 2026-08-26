@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Source art, not served. This is public/brand/vantage-icon.svg hinted for the
+  16px tile of src/app/favicon.ico, and it is used for nothing else.
+
+  At 16px the shipped icon's strokes land at 1.0-1.2px, which is between pixels:
+  the goalpost greys out, the amber line breaks up, and the 3-unit plate outline
+  becomes haze. Weights go up about 27% here and the plate outline is dropped, so
+  the same drawing survives the size. The geometry is untouched.
+
+  Edit the served icon and this together, then re-render.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="40" fill="#131C2E"/>
+  <path d="M62 100L88 74L112 88L136 48" fill="none" stroke="#EF9F27"
+        stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 33V129H160V33" fill="none" stroke="#F5F7FA" stroke-width="19"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100 129V167" stroke="#F5F7FA" stroke-width="19" stroke-linecap="round"/>
+</svg>
