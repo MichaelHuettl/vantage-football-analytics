@@ -578,6 +578,27 @@ copy claiming O-line injuries move the line.**
   All five years now reconcile and `fg_attempts.contradictions` is empty.
   **When the workbook itself is fixed, delete the entry** — the script prints
   "correction now matches the workbook" once it has become redundant.
+- **Five component libraries were evaluated on 2026-08-26; one was adopted, by
+  hand.** The operator asked for React Bits, Manus.im, Animmaster Lib, Skiper UI
+  and Vengeance AI. What they turned out to be:
+  **Manus.im is not a design library at all** — it is an AI agent SaaS, a
+  ChatGPT competitor, with nothing to install into a codebase.
+  **Animmaster Lib** (animmasterlib.dev) is real but paid, $3-$8, delivered as a
+  Google Drive download with no npm package, no CLI and no stated license;
+  60% of it is plain HTML/CSS/JS that would need porting to React. Skipped, and
+  its catalogue overlaps React Bits, which is free.
+  **Skiper UI** (skiper-ui.com, one `p`) and **Vengeance UI** (vengenceui.com)
+  are both real, both install through shadcn/Radix + Framer Motion.
+  **React Bits** (reactbits.dev, MIT + Commons Clause — fine here, the footer
+  states the site is not commercial and not for sale) is the one used.
+  Four decisions framed the work and all four were the operator's:
+  motion is **CSS and entrance only** — the GSAP/Lenis/smooth-scroll rejection
+  stands; it lands on the **home page only**, nowhere a reader is comparing
+  numbers; components are **copied and retokened by hand, not installed**, so
+  `package.json` still reads next, react, react-dom and §7 keeps one colour
+  source; and Animmaster waits. **Do not run `shadcn init` here** — it writes
+  its own CSS-variable layer into `globals.css` alongside the `@theme` block,
+  which is exactly the second colour system §7 exists to prevent.
 - **The mark ships in three cuts, and which one goes where is deliberate.**
   The operator supplied all three on 2026-08-26. `Emblem` carries the plot
   furniture — a two-weight grid, ticks on three edges, the area fill, the ring
@@ -621,6 +642,31 @@ copy claiming O-line injuries move the line.**
   aliases both pairs and `canonTeams` normalises each payload at its boundary.
   **Check a join's output against a name you expect to find**; a count that
   looks plausible is not evidence.
+- **A scroll-driven animation needs `animation-duration: auto`, and the
+  shorthand silently takes it away.** `animation: name 1ms linear both` on a
+  `view()` timeline looks correct and does nothing: progress comes from scroll
+  position, so a stated time duration finishes the animation in the first sliver
+  of the range and holds the end state across the rest of it. The page renders
+  exactly as it should throughout, which is the problem — the failure is
+  invisible without measuring. Write the longhands and leave duration `auto`.
+- **The global reduced-motion reset does not cover view-timeline animations.**
+  It collapses `animation-duration`, which lands a time-driven animation on its
+  final frame, but a view timeline ignores duration entirely — anything
+  off-screen would stay at opacity 0 with no way to reach 1. Motion classes are
+  therefore defined *inside* `prefers-reduced-motion: no-preference` rather than
+  being undone afterwards, so under `reduce` they contribute no rule and the
+  base style stands. Same reason every reveal sits inside `@supports`: visible
+  is the default state, and nothing is ever hidden waiting for an animation that
+  might not run.
+- **The preview pane runs hidden, which freezes both animation clocks.**
+  `document.visibilityState` reads `hidden`, so CSS animation `currentTime`
+  stays at 0 and a `ViewTimeline`'s `currentTime` stops updating on scroll even
+  though `getBoundingClientRect` keeps moving. Reading opacity through
+  `javascript_tool` therefore reports motion that is working as broken. Two
+  things do work: driving the animation manually through the Web Animations API
+  (`animation.currentTime = t`, then read the computed style), and
+  **screenshots, which force a real paint** — a scroll-driven reveal is visible
+  in one as a faded card that moves down the grid between shots.
 - **`src/app/favicon.ico` outranks `metadata.icons`, and it was the Next.js
   starter's from the first commit until 2026-08-26.** Next's file-based
   convention emits that file as the *first* `<link rel="icon">` in the head,
