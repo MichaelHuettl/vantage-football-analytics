@@ -4,7 +4,7 @@ Read `docs/BRIEF.md` first — it defines the `§` references in code comments.
 This file records where the build actually is, what was decided against the
 brief, and what is still open.
 
-Last updated: 2026-08-22.
+Last updated: 2026-08-26.
 
 ---
 
@@ -480,6 +480,17 @@ build` with a line number instead of shipping a broken page.
      within 5 points" is above what perfect foreknowledge achieves. Recorded
      because it is the first thing to check before promising an accuracy gain.
 
+16. **The stacked lockup PNGs still carry the old mark.**
+    `brand/` and `public/brand/` hold `vantage-logo-stacked-on-black.png`,
+    `vantage-logo-stacked-dark-on-light.png` and `wordmark.jpg`, all drawn
+    against the pre-2026-08-26 goalpost. **Nothing in the site references any
+    of them** — the lockup on the home page is composed from `Wordmark`, so the
+    site itself is consistent — but they are the files anyone would reach for
+    to make an OG image or an avatar, and they would ship the retired mark.
+    Replacing them means rendering the new emblem over Anton type, which is a
+    piece of brand art rather than a code change, so it is left for the
+    operator to decide rather than assumed.
+
 ## Closed items
 
 - **Team data is audited (2026-08-14).** All 100 non-DST players were checked
@@ -566,6 +577,27 @@ copy claiming O-line injuries move the line.**
   All five years now reconcile and `fg_attempts.contradictions` is empty.
   **When the workbook itself is fixed, delete the entry** — the script prints
   "correction now matches the workbook" once it has become redundant.
+- **The mark ships in three cuts, and which one goes where is deliberate.**
+  The operator supplied all three on 2026-08-26. `Emblem` carries the plot
+  furniture — a two-weight grid, ticks on three edges, the area fill, the ring
+  around the endpoint — and is used once, in the home-page lockup at 96px,
+  where that detail resolves. `Goalpost` drops all of it and is what the header
+  and footer use at 32px, where it would be mud. `public/brand/vantage-icon.svg`
+  is the third, reduced again for a browser tab. Three implementation calls sit
+  on top of his files and each has a reason worth not undoing:
+  **the structure is `currentColor`**, not the fixed white his source names, so
+  one file works on light and dark chrome — every call site today sets white on
+  a dark ground, but the default page surface is light and a hardcoded white
+  mark would vanish the first time one is placed on it;
+  **both components crop the viewBox to `35 15 130 170`**, the artwork's own
+  bounds inside his 200x200 favicon square, so the mark fills the height it is
+  given and CSS owns the spacing — no coordinate is changed, and because both
+  crop identically the two are interchangeable without anything shifting;
+  and **`Goalpost` drops his clip path** because measurement showed it removes
+  nothing there, which also keeps a duplicate `id` out of the DOM, that
+  component being rendered twice on every page. The emblem's clip is kept: its
+  ticks have round caps that end on the plot edge and would bulge past the axis
+  uncut.
 - **Chase McLaughlin is on the kicker board but not in `players.json`.** He has
   no player page and no headshot, so his card falls back to initials. Adding
   him means adding a 21st kicker to the K rankings, which is a ranking decision
@@ -588,6 +620,26 @@ copy claiming O-line injuries move the line.**
   aliases both pairs and `canonTeams` normalises each payload at its boundary.
   **Check a join's output against a name you expect to find**; a count that
   looks plausible is not evidence.
+- **`src/app/favicon.ico` outranks `metadata.icons`, and it was the Next.js
+  starter's from the first commit until 2026-08-26.** Next's file-based
+  convention emits that file as the *first* `<link rel="icon">` in the head,
+  ahead of everything `metadata.icons` declares, and `.ico` is what several
+  browsers prefer. It had not been touched since `create-next-app`, so the tab
+  had been showing the Next.js logo while `layout.tsx` confidently pointed at
+  the Vantage one.
+  Grepping the source for the brand path finds the metadata line and misses
+  this completely: the file is referenced by nothing, its **location** is the
+  reference. It is now packed from the same SVG as the rest.
+  **Read the rendered `<head>`, not the source, when checking what a page
+  actually declares.**
+- **A 200-unit icon goes to mush at 16px and the fix is a second file.** At
+  that size the favicon's strokes land at 1.0-1.2px: the goalpost greys out,
+  the amber line breaks into dashes, and the 3-unit plate outline is pure haze.
+  `brand/vantage-icon-16.svg` is the same geometry with weights up about 27%
+  and the outline dropped, and it supplies only the 16px tile of the `.ico` —
+  32 and 48 come from the served SVG. **Both files change together.** Inspect a
+  favicon by blowing the render up with a nearest-neighbour resize; at native
+  size the difference between legible and not is invisible.
 - **Do not trust a sheet's name for where its data is.** The "Historic RB 1-3"
   table — 27 top-three finishes back to 2017, with the quartiles and both tier
   benchmarks under it — sits at **row 260 of "RB Statistics & Graphs"**, not on
