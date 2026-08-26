@@ -30,8 +30,9 @@ coverage column from F to G. Every extractor names the version it targets in
 before trusting the output.
 
 **Nine extractors feed the site** and write JSON into `src/data/`. The first
-five are the only things that touch the workbook; the last four read a PDF, the
-nflverse export and the prediction pipeline's artifacts instead:
+five read the workbook and the last four read a PDF, the nflverse export and the
+prediction pipeline's artifacts instead — except that `wr_charts.py` sits on
+both sides, and is the only one that does:
 
 | Script | Writes | Covers |
 | --- | --- | --- |
@@ -39,7 +40,7 @@ nflverse export and the prediction pipeline's artifacts instead:
 | `scripts/curated/kicker_charts.py` | `kicker-charts.json` | FG attempts, kicker scoring, advantages, board |
 | `scripts/curated/defense_charts.py` | `defense-charts.json` | 9 defense blocks + coordinators |
 | `scripts/curated/te_charts.py` | `te-charts.json` | 5 TE scatters, history, TE1-3/4-6 grids |
-| `scripts/curated/wr_charts.py` | `wr-charts.json` | 3 WR scatters, notable names, check-the-box grid |
+| `scripts/curated/wr_charts.py` | `wr-charts.json` | 3 WR scatters, stickiness and consistency (**also reads the nflverse export**), check-the-box grid with fitted TD columns, verdicts |
 | `scripts/curated/qb_charts.py` | `qb-charts.json` | 4 QB scatters + correlations (**reads a PDF**) |
 | `scripts/curated/player_profiles.py` | `player-profiles.json` | 79 player profiles (**reads the nflverse export**) |
 | `scripts/curated/model_misses.py` | `model-misses.json` | Case study: 292 misses, 16 season folds (**reads the pipeline's report + artifacts**) |
