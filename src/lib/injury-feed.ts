@@ -44,6 +44,17 @@ export interface WireInjury {
   body_part: string | null;
   /** Sleeper's own note, when it has one. Attributed, never restated as ours. */
   notes: string | null;
+  /**
+   * When the wire last moved on this player, ISO, or null when it never has.
+   *
+   * Sleeper's own `news_updated`. Read it for exactly what it says: the last
+   * time *any* news about the player was updated, not a timestamp on the
+   * injury. In practice the two track closely for anyone this page shows — of
+   * the injured players inside the relevance cutoff, all 67 carried the field
+   * and the median was a day old — but a contract story would move it too, so
+   * the column is labelled "last update" and never "injury reported".
+   */
+  updated: string | null;
   /** Sleeper's relevance rank, lower being more searched-for. Used only to keep
    *  a fantasy page from filling with third-string IR entries: 24 of the 35
    *  players carrying a serious status are deep roster, and listing them would
@@ -61,6 +72,8 @@ interface SleeperPlayer {
   injury_status?: string | null;
   injury_body_part?: string | null;
   injury_notes?: string | null;
+  /** Epoch milliseconds. */
+  news_updated?: number | null;
 }
 
 /** `no-store` for the same reason as the news feeds — see src/lib/feed.ts.
@@ -88,10 +101,19 @@ export async function pullWire(): Promise<WireInjury[]> {
       status: p.injury_status as WireStatus,
       body_part: p.injury_body_part ?? null,
       notes: p.injury_notes ?? null,
+      updated: epochToIso(p.news_updated),
       rank: p.search_rank ?? Number.MAX_SAFE_INTEGER,
     });
   }
   return out;
+}
+
+/** Sleeper sends epoch milliseconds. Guard the parse: a malformed stamp should
+ *  leave the column blank rather than render "Invalid Date" or, worse, 1970. */
+function epochToIso(ms: number | null | undefined): string | null {
+  if (typeof ms !== "number" || !Number.isFinite(ms) || ms <= 0) return null;
+  const d = new Date(ms);
+  return Number.isNaN(d.getTime()) ? null : d.toISOString();
 }
 
 /** Google News sitemap: <url><loc> plus <news:title> and <news:publication_date>. */

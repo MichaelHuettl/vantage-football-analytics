@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useSyncExternalStore } from "react";
+import { parseLocalDate } from "@/lib/dates";
 
 /**
  * §10 requires this on every data-backed page, and §6 is blunt that it is not
@@ -74,16 +75,4 @@ export function DataFreshness({
       </span>
     </p>
   );
-}
-
-/**
- * `new Date("2026-08-11")` is parsed as UTC midnight, which renders as the
- * previous day anywhere west of Greenwich — the timestamp would read a day
- * stale in the operator's own timezone. Date-only strings are therefore built
- * as local dates; anything carrying a time is left to the normal parser.
- */
-function parseLocalDate(value: string): Date {
-  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value.trim());
-  if (!match) return new Date(value);
-  return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
 }

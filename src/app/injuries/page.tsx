@@ -7,7 +7,7 @@ import {
   getInjuryHeadlines, getInjuryTracker, trackerByTeam,
 } from "@/lib/injury-tracker";
 import { WireStatusPill } from "@/components/WireStatus";
-import { InjuryTimeline, PracticeStrip, StatusPill } from "@/components/Injury";
+import { InjuryTimeline, LastUpdateCell, PracticeStrip, StatusPill } from "@/components/Injury";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { PlayerLink, PositionBadge } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
@@ -168,6 +168,17 @@ export default async function InjuriesPage({
             says so rather than picking one.
           </p>
 
+          <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+            <strong>Updated</strong> is the later of two dates: the last time the
+            wire moved on that player, or the day the written record was
+            reported. Whichever it is, the cell names it. Sleeper stamps the
+            last update to any news about a player rather than to the injury
+            alone, so read it as when something was last said about him, never
+            as when anyone expects him back (§5.3). Anything older than a
+            fortnight is marked, because a designation the wire has stopped
+            touching is the one most likely to have moved on without it.
+          </p>
+
           {tracker.live ? (
             <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
               {tracker.pulled} players carried a designation on this pull;{" "}
@@ -204,6 +215,7 @@ export default async function InjuriesPage({
                     <col className="w-[240px]" />
                     <col className="w-[110px]" />
                     <col className="w-[170px]" />
+                    <col className="w-[120px]" />
                     <col />
                   </colgroup>
                   <thead>
@@ -212,6 +224,7 @@ export default async function InjuriesPage({
                       <Th>Injury</Th>
                       <Th>Wire</Th>
                       <Th>Written record</Th>
+                      <Th>Updated</Th>
                       <Th>Latest</Th>
                     </tr>
                   </thead>
@@ -291,6 +304,9 @@ export default async function InjuriesPage({
                                 Wire only
                               </span>
                             )}
+                          </td>
+                          <td className="px-4 py-3">
+                            <LastUpdateCell update={r.lastUpdate} />
                           </td>
                           <td
                             className="px-4 py-3"

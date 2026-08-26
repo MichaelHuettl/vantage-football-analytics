@@ -68,7 +68,49 @@ export interface TrackerRow {
   record: CampInjury | null;
   /** The wire and the record making claims that cannot both be true. */
   conflict: boolean;
+  /** When this row last moved, and which source moved it. Null when neither
+   *  side carries a date. */
+  lastUpdate: LastUpdate | null;
   severity: number;
+}
+
+export interface LastUpdate {
+  /** ISO. A datetime from the wire, a date from a written record. */
+  at: string;
+  /** Which side is the more recent, so the reader can weigh it. */
+  source: "wire" | "record";
+}
+
+/**
+ * The more recent of the two dates a row carries.
+ *
+ * The wire's stamp is Sleeper's `news_updated` — the last time anything about
+ * the player moved, which for an injured player is usually the designation but
+ * is not promised to be. The record's is the day the write-up was reported.
+ * Taking the later of the two answers the question a reader actually has, which
+ * is "how old is the newest thing on this row", and naming the source keeps it
+ * auditable rather than asking them to trust a bare date.
+ *
+ * The headline feed is deliberately not folded in. `latestNewsFor` already
+ * surfaces a newer story on the row as a badge carrying the headline itself,
+ * which says more than a date would, and counting it here as well would state
+ * the same fact twice in one row.
+ */
+function lastUpdateOf(
+  wireAt: string | null | undefined,
+  record: CampInjury | null,
+): LastUpdate | null {
+  const recordAt = record?.reported ?? null;
+  if (wireAt && recordAt) {
+    // Compare on the calendar day: the wire carries a time and a record does
+    // not, so a same-day pair would otherwise always resolve to the wire.
+    return wireAt.slice(0, 10) >= recordAt
+      ? { at: wireAt, source: "wire" }
+      : { at: recordAt, source: "record" };
+  }
+  if (wireAt) return { at: wireAt, source: "wire" };
+  if (recordAt) return { at: recordAt, source: "record" };
+  return null;
 }
 
 export interface InjuryTracker {
@@ -129,6 +171,7 @@ function archiveOnly(failures: { name: string; reason: string }[]): InjuryTracke
     name: record.name, team: record.team, position: record.position,
     wire: null, body_part: record.body_part ?? null, notes: null,
     record, conflict: false,
+    lastUpdate: lastUpdateOf(null, record),
     severity: 10, // written records outrank a silent wire; see sort below
   }));
   return {
@@ -184,6 +227,7 @@ async function pullOnce(): Promise<InjuryTracker> {
       notes: w.notes ?? null,
       record,
       conflict: record ? disagrees(record.status, w.status) : false,
+      lastUpdate: lastUpdateOf(w.updated, record),
       severity: WIRE_SEVERITY[w.status] ?? 2,
     });
   }
@@ -200,6 +244,7 @@ async function pullOnce(): Promise<InjuryTracker> {
       name: record.name, team: record.team, position: record.position,
       wire: null, body_part: record.body_part ?? null, notes: null,
       record, conflict: false,
+      lastUpdate: lastUpdateOf(null, record),
       // Below anything the wire flags, above a bare "Questionable": the record
       // is real reporting, but the wire is the fresher claim.
       severity: 2,
