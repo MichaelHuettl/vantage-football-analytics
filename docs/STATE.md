@@ -578,6 +578,33 @@ copy claiming O-line injuries move the line.**
   All five years now reconcile and `fg_attempts.contradictions` is empty.
   **When the workbook itself is fixed, delete the entry** — the script prints
   "correction now matches the workbook" once it has become redundant.
+- **Headlines are joined to tracker rows by name, and the match is strict on
+  purpose.** `src/lib/headline-match.ts` requires a player's **full name** as
+  consecutive whole words. Surname alone is tempting and wrong: two Kenneth
+  Walkers, two Josh Allens, and "Chase" is both Ja'Marr Chase and Chase Brown.
+  A missed headline costs a reader a detail; a wrong one puts another man's
+  injury on a player's row. Three rules do the work and each one is a bug this
+  project has already met: apostrophes are **deleted** rather than treated as
+  separators, so "Ja'Marr"/"Ja’Marr"/"JaMarr" agree (news.json carries 19 curly
+  and 32 straight, and a filter written with one quote character misses the
+  other); a trailing `s` is allowed on the final token, or "Ashton Jeanty's
+  Week 1 Status" fails to match Ashton Jeanty; and generational suffixes are
+  dropped from the player's name. Measured on live feeds: 21 of 67 relevant
+  injured players match, zero names unmatchable, zero false positives.
+  **The first version was wrong in a way that looked fine.** It folded both
+  sides to bare letters and took a substring, which needs a length floor to stop
+  `bonix` matching inside "turbo nixed" — and any floor that does that also
+  throws out `jamarrchase` at eleven characters, which silently dropped 33 of 67
+  players. Token comparison needs no floor. **Do not go back to substring
+  matching.**
+- **Nothing on the injury page composes a diagnosis out of a feed.** A wire-only
+  row says "Not written up" and points at the matched reporting beside it. A
+  record carries a diagnosis and, only ever with an attribution, a timeline
+  (§5.3); generating one from a headline would be auto-generated analysis
+  published under the operator's name, which §11 forbids. Matched headlines are
+  published as their publishers wrote them, credited and linked, headline and
+  date only (§2). If the "Written record" column should be populated for a
+  player, that is a paragraph for a human to write into `camp-injuries.json`.
 - **The tracker's "Updated" column is Sleeper's `news_updated`, and it does not
   mean what its position implies.** It is the last time *any* news about that
   player moved, not a timestamp on the injury. Measured before it was published:
