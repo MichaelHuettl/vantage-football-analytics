@@ -578,6 +578,17 @@ copy claiming O-line injuries move the line.**
   All five years now reconcile and `fg_attempts.contradictions` is empty.
   **When the workbook itself is fixed, delete the entry** — the script prints
   "correction now matches the workbook" once it has become redundant.
+- **The tracker's "Updated" column is Sleeper's `news_updated`, and it does not
+  mean what its position implies.** It is the last time *any* news about that
+  player moved, not a timestamp on the injury. Measured before it was published:
+  67 of 67 injured skill players inside the relevance cutoff carried the field,
+  median age one day, 59 of 67 within a week, so it tracks the designation
+  closely for everyone the page shows. Outside the cutoff it rots — the stalest
+  was 1,837 days — which is another reason the cutoff earns its keep. The column
+  is therefore called "Updated" and never "Reported", the cell names its source,
+  and the section prose states the distinction. **It is not a return date and
+  must never become one** (§5.3). Where the wire is silent the written record's
+  own `reported` date stands in, which is why a row can read "record".
 - **Five component libraries were evaluated on 2026-08-26; one was adopted, by
   hand.** The operator asked for React Bits, Manus.im, Animmaster Lib, Skiper UI
   and Vengeance AI. What they turned out to be:
@@ -642,6 +653,15 @@ copy claiming O-line injuries move the line.**
   aliases both pairs and `canonTeams` normalises each payload at its boundary.
   **Check a join's output against a name you expect to find**; a count that
   looks plausible is not evidence.
+- **Formatting a date needs to know whether it is an instant or a calendar
+  day.** `src/lib/dates.ts` splits them on whether the string carries a `T`. A
+  wire datetime is an absolute instant and is pinned to `America/New_York`,
+  because a server in UTC renders Sleeper's `2026-08-24T01:25Z` as Sunday when
+  it was Saturday evening in the US (§6). A date-only string carries no instant
+  and `parseLocalDate` already builds it as local midnight, so pinning a zone on
+  top shifts it a day the *other* way. Getting one branch right and the other
+  wrong is easy and invisible from the author's own timezone; both are checked
+  under UTC, Los Angeles, Tokyo and New York.
 - **A scroll-driven animation needs `animation-duration: auto`, and the
   shorthand silently takes it away.** `animation: name 1ms linear both` on a
   `view()` timeline looks correct and does nothing: progress comes from scroll
