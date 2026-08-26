@@ -12,6 +12,9 @@ Last updated: 2026-08-22.
 
 If you are picking this up cold, in this order:
 
+0. **`docs/HANDOFF.md`** — the most recent session's handoff: what changed, the
+   findings that changed what the site claims, and the traps that cost that
+   session real time. Shorter than this file and written to be read first.
 1. **`docs/BRIEF.md`** — the brief. Every `§` in the codebase points at it.
 2. **This file** — what is built, what was decided, what is still open.
 3. **`git log`** — every change carries its reasoning in the commit message.
