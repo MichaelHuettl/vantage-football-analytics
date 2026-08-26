@@ -232,7 +232,7 @@ export default function Home() {
             <li key={card.href} className="reveal">
               <Link
                 href={card.href}
-                className="group relative flex h-64 flex-col justify-end overflow-hidden rounded-lg p-6 isolate"
+                className="glare group relative flex h-64 flex-col justify-end overflow-hidden rounded-lg p-6 isolate"
                 style={{ background: "var(--color-vantage-black)" }}
               >
                 <Image

@@ -339,6 +339,56 @@
     }
   }
 
+  /* ----------------------------------------------------------------
+     Glare on hover.
+
+     Ported by hand from React Bits' Glare Hover (reactbits.dev). A soft
+     diagonal highlight crosses the card when the pointer is on it, over the
+     image scale and the amber dot already there.
+
+     It introduces no colour: white at 13%, over a scrim that is already
+     there. §11 bars a second accent, and a specular highlight is light rather
+     than a hue, so the card still has exactly one accent on it and the amber
+     dot is still the thing that says "this is a link you are on".
+
+     Drawn as ::after on the card itself rather than another element, so it
+     costs one class and no markup. `z-index: -5` puts it above the scrim at
+     -10 and below the label, which is in normal flow and therefore painted
+     after every negative layer. Oversized by 40% on each side so the skewed
+     band clears the corners instead of arriving as a hard edge; the card
+     clips it.
+
+     Defined only under no-preference, like the entrance motion. It is
+     decoration, so under reduced motion the correct amount of it is none —
+     and the global reset would otherwise collapse the transition into an
+     instant flash of a white band, which is worse than nothing.
+     ---------------------------------------------------------------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .glare::after {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      z-index: -5;
+      pointer-events: none;
+      background: linear-gradient(
+        115deg,
+        transparent 46%,
+        color-mix(in oklab, var(--color-vantage-white) 11%, transparent) 50%,
+        transparent 54%
+      );
+      transform: translateX(-70%);
+      transition: transform 720ms cubic-bezier(0.22, 0.68, 0.3, 1);
+    }
+
+    /* Keyboard focus gets it too. The focus ring is what carries the meaning
+       (§7), but there is no reason the two input methods should see a
+       different card. */
+    .glare:hover::after,
+    .glare:focus-visible::after {
+      transform: translateX(70%);
+    }
+  }
+
   /* Skip link, revealed on focus only. */
   .skip-link {
     position: absolute;
