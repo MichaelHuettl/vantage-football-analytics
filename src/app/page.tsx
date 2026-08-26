@@ -112,12 +112,15 @@ export default function Home() {
         <Container className="relative pb-16 pt-28 w-full">
           <div className="grid gap-10 lg:grid-cols-[1.5fr_auto] lg:items-end">
             <div>
-              <div style={{ color: "var(--color-vantage-white)" }}>
+              <div
+                className="rise rise-1"
+                style={{ color: "var(--color-vantage-white)" }}
+              >
                 <Wordmark size="lg" />
               </div>
 
               <h1
-                className="mt-10 uppercase tracking-wide leading-[0.88] text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
+                className="rise rise-2 mt-10 uppercase tracking-wide leading-[0.88] text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
                 style={{
                   fontFamily: "var(--font-display)",
                   color: "var(--color-vantage-white)",
@@ -128,7 +131,7 @@ export default function Home() {
               </h1>
 
               <p
-                className="mt-7 max-w-xl text-lg leading-relaxed"
+                className="rise rise-3 mt-7 max-w-xl text-lg leading-relaxed"
                 style={{ color: "var(--color-ink-300)" }}
               >
                 Most sites publish the conclusion and ask you to take it on
@@ -138,7 +141,7 @@ export default function Home() {
                 position.
               </p>
 
-              <div className="mt-9 flex flex-wrap gap-3">
+              <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
                 <Link
                   href="/rankings"
                   className="rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-transform hover:-translate-y-0.5"
@@ -168,7 +171,7 @@ export default function Home() {
                 it earns a fixed position the reader can learn. */}
             <Link
               href="/rankings?pos=RB&format=ppr"
-              className="group hidden lg:block w-[320px] rounded-lg overflow-hidden backdrop-blur-md transition-transform hover:-translate-y-1"
+              className="rise rise-4 group hidden lg:block w-[320px] rounded-lg overflow-hidden backdrop-blur-md transition-transform hover:-translate-y-1"
               style={{
                 background: "color-mix(in oklab, var(--color-vantage-panel) 82%, transparent)",
                 boxShadow: "inset 0 0 0 1px var(--color-ink-700)",
@@ -212,7 +215,7 @@ export default function Home() {
           entry points rather than six empty rectangles.
           --------------------------------------------------------------- */}
       <Container className="py-16 sm:py-24" id="sections">
-        <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2">
+        <div className="reveal flex flex-wrap items-baseline gap-x-6 gap-y-2">
           <h2
             className="text-4xl sm:text-5xl uppercase tracking-wide leading-none"
             style={{ fontFamily: "var(--font-display)" }}
@@ -226,7 +229,7 @@ export default function Home() {
 
         <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SECTION_CARDS.map((card) => (
-            <li key={card.href}>
+            <li key={card.href} className="reveal">
               <Link
                 href={card.href}
                 className="group relative flex h-64 flex-col justify-end overflow-hidden rounded-lg p-6 isolate"
@@ -304,7 +307,7 @@ export default function Home() {
             <span style={{ color: "var(--color-ink-200)" }}>The method</span>
           </p>
           <h2
-            className="mt-5 max-w-3xl text-4xl sm:text-6xl uppercase tracking-wide leading-[0.9]"
+            className="reveal mt-5 max-w-3xl text-4xl sm:text-6xl uppercase tracking-wide leading-[0.9]"
             style={{
               fontFamily: "var(--font-display)",
               color: "var(--color-vantage-white)",

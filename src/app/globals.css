@@ -263,6 +263,82 @@
     color: var(--text-muted);
   }
 
+  /* ----------------------------------------------------------------
+     Entrance motion.
+
+     Ported by hand from React Bits' Animated Content and Fade Content
+     (reactbits.dev, MIT + Commons Clause) rather than installed. Their
+     versions drive the same fade-and-rise through Framer Motion or GSAP;
+     this site carries no runtime dependency beyond React, and the operator
+     ruled out GSAP and Lenis, so the effect is rebuilt in CSS. Nothing here
+     needs JavaScript, which also means it works in a server component.
+
+     Two rules hold everything together:
+
+     1. **Visible is the default state.** The reveal only ever applies inside
+        an `@supports` block. If scroll-driven animation is unsupported, or
+        the stylesheet never loads, the content is simply there. Hiding
+        content and revealing it with an animation is how a page ends up
+        blank when one assumption fails.
+     2. **Reduced motion switches it off outright, not down.** The global
+        reset in @layer base collapses `animation-duration`, which is enough
+        for a time-driven animation but does nothing to a view-timeline one:
+        its progress comes from scroll position, so a collapsed duration
+        would leave anything off-screen stuck at opacity 0. These are gated
+        on `prefers-reduced-motion: no-preference` instead.
+     ---------------------------------------------------------------- */
+
+  @keyframes vantage-rise {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Above the fold, where there is nothing to scroll into. Runs on load.
+     `both` holds the closing frame, so the collapsed duration under reduced
+     motion lands on the visible state rather than the hidden one. */
+  @media (prefers-reduced-motion: no-preference) {
+    .rise {
+      animation: vantage-rise 640ms cubic-bezier(0.22, 0.68, 0.3, 1) both;
+    }
+    .rise-1 { animation-delay: 60ms; }
+    .rise-2 { animation-delay: 150ms; }
+    .rise-3 { animation-delay: 240ms; }
+    .rise-4 { animation-delay: 330ms; }
+  }
+
+  /* Below the fold. Driven by the element's own position in the viewport,
+     which is a native CSS timeline and not a scroll hijack — the page still
+     scrolls exactly as far and as fast as the reader moves it.
+
+     The range starts a little after the element enters and finishes well
+     before it is centred, so a card has settled by the time it is worth
+     looking at. A reveal still running at the point someone wants to read
+     is an obstacle, not an effect. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        /* Longhands, not the shorthand. A view timeline drives progress from
+           scroll position, so the duration must stay `auto` and let the range
+           below define the extent; the `animation` shorthand would reset it to
+           0s, which finishes the animation in the first sliver of the range and
+           holds the end state for all of it. That failure is invisible — the
+           content looks correct, it simply never animates. */
+        animation-name: vantage-rise;
+        animation-duration: auto;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        animation-timeline: view();
+        animation-range: entry 8% cover 26%;
+      }
+    }
+  }
+
   /* Skip link, revealed on focus only. */
   .skip-link {
     position: absolute;
