@@ -84,7 +84,7 @@ export default async function NewsPage({
         objectPosition="center 55%"
         eyebrow="What happened"
         title="News"
-        lede="Headline, source, and timestamp, tagged to the players it affects. Follow the link for the article. No body text is reproduced here."
+        lede="Live and breaking NFL news and reports."
       />
 
       <Container className="py-10">
@@ -107,11 +107,6 @@ export default async function NewsPage({
             Season long
           </span>
         </div>
-        <p className="mb-6 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          Published reporting from national outlets, running now and through the
-          season. Headline, source and timestamp only. Follow the link to read the piece.
-        </p>
-
         <div className="flex flex-wrap items-start justify-between gap-6">
           <div className="flex flex-col gap-4">
             <nav aria-label="Team">

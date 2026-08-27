@@ -56,7 +56,7 @@ export default async function RankingsPage({
         objectPosition="center 72%"
         eyebrow="Draft board"
         title="Rankings"
-        lede="Draft rankings for 2026, PPR scoring, twenty deep at every position. Team and bye week alongside each name."
+        lede="Draft rankings for 2026, PPR scoring, twenty deep at every position."
       />
 
       <div

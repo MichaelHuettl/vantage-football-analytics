@@ -98,7 +98,7 @@ export default async function InjuriesPage({
         objectPosition="center 50%"
         eyebrow="Status and trend"
         title="Injury Database"
-        lede="Training camp status now, practice participation once the season starts. The Friday designation alone is not the signal. The movement across the week is."
+        lede="Training camp status now, practice participation once the season starts."
       />
 
       <Container className="py-10">

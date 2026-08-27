@@ -27,7 +27,6 @@ export default async function GamesPage({
   const parsed = Number(params.week);
   const week = WEEKS.includes(parsed) ? parsed : SCHEDULE_WEEK;
   const slots = gamesBySlot(week);
-  const count = slots.reduce((n, s) => n + s.games.length, 0);
 
   return (
     <>
@@ -36,7 +35,7 @@ export default async function GamesPage({
         objectPosition="center 8%"
         eyebrow="Week by week"
         title="Game Tracker"
-        lede="Every matchup with its kickoff, roof and venue, the market's number, the forecast where there is one, and, once it is played, the four players who decided it."
+        lede="Every matchup with its kickoff, roof and venue, the market's number, the forecast where there is one, and key positional players for each team."
       />
 
       {/* The same band the rankings tabs sit in, directly under the hero: the
@@ -76,13 +75,6 @@ export default async function GamesPage({
           </div>
           <DataFreshness updated={SCHEDULE_UPDATED} label="Schedule" staleAfterDays={30} />
         </div>
-
-        <p className="mt-4 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-          {count} games. Matchups, kickoff times, venues and roofs are the
-          published schedule. Lines, forecasts, scores and the four named
-          players per side are slots waiting on data. They are drawn empty so
-          the shape of the page does not change once a game is played.
-        </p>
 
         {slots.length === 0 ? (
           <div className="mt-6">

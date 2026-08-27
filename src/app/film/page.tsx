@@ -64,7 +64,7 @@ export default function FilmPage() {
         objectPosition="center 40%"
         eyebrow="Concepts and diagrams"
         title="Film room"
-        lede="Which concepts each offense runs, and therefore which player profiles its passing game rewards."
+        lede="A catalog of film analysis and breakdowns, and the future site of a work-in-progress statistical model."
       />
 
       <Container className="py-10">
