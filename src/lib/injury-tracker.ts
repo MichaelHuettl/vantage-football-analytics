@@ -27,7 +27,7 @@
  */
 import campFile from "@/data/camp-injuries.json";
 import {
-  INJURY_REVALIDATE_SECONDS, RELEVANCE_RANK, SERIOUS_WIRE, isVaguePart,
+  INJURY_REVALIDATE_SECONDS, SERIOUS_WIRE, isVaguePart,
   pullBoards, pullDraftSharks, pullWire,
 } from "./injury-feed";
 import type { ExternalInjury, WireInjury, WireStatus } from "./injury-feed";
@@ -239,10 +239,12 @@ async function pullOnce(): Promise<InjuryTracker> {
   for (const w of wire) {
     const k = key(w.name, w.position);
     const record = records.get(k) ?? null;
-    // Everyone the site would rank, plus anyone already written up however deep
-    // on a roster — a hand-authored record is an editorial decision that this
-    // player matters, and a rank cutoff should not overrule it.
-    if (!record && w.rank >= RELEVANCE_RANK) continue;
+    // Every fantasy skill position carrying a designation, with no relevance
+    // cutoff. There used to be one at search rank 400, and on 2026-08-27 it was
+    // hiding 90 of the 158 designated players Sleeper carries — 36 of them on a
+    // serious status. The operator's call is that position is the filter and
+    // popularity is not: a backup tight end on IR is still an injury this page
+    // is for.
     // `pullWire` already drops teamless players, but the type still allows it:
     // a designation with no club is not actionable on this page, and a written
     // record is the better source for the club if it has one.

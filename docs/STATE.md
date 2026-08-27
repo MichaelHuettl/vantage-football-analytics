@@ -164,6 +164,14 @@ build` with a line number instead of shipping a broken page.
      deleted rather than left dead — the tracker reconciles inline on every row,
      so that section's conflict and "not in the report" lists were duplicating
      the table above them. Headlines kept their own light puller.
+   - **There is no relevance cutoff any more (2026-08-27).** It sat at Sleeper
+     search rank 400 and was hiding **90 of the 158** designated skill players,
+     36 of them on a serious status — Graham Mertz on IR with an ACL, Julian
+     Hill on IR, Kurtis Rourke with ribs. The operator's call is that position
+     is the filter and popularity is not, so every QB, RB, WR, TE and K carrying
+     a designation is listed. The table went from 93 rows to 182 across all 32
+     teams. **Do not reintroduce a rank filter** to shorten the page; filter by
+     team, which the page already does.
    - **CBS Sports and Sharp Football Analysis feed the tracker (2026-08-27).**
      Both are HTML scrapes in `injury-feed.ts`, pulled inside the same TTL
      window as the wire and never fatal: a board that fails contributes an empty

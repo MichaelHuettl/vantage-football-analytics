@@ -22,7 +22,6 @@ import {
   teamsWithInjuries,
 } from "@/lib/injuries";
 import { getPlayer } from "@/lib/content";
-import { shortDate } from "@/lib/dates";
 import { isNewerThan } from "@/lib/freshness";
 import { getTeam, readableOn } from "@/lib/teams";
 import type { Player, Position, Team } from "@/lib/types";
@@ -346,12 +345,6 @@ export default async function InjuriesPage({
                                       >
                                         {h.headline}
                                       </a>
-                                      <span
-                                        className="ml-1.5 whitespace-nowrap text-xs"
-                                        style={{ color: "var(--text-muted)" }}
-                                      >
-                                        {h.source}, {shortDate(h.timestamp)}
-                                      </span>
                                     </li>
                                   ))}
                                 </ul>
@@ -360,15 +353,7 @@ export default async function InjuriesPage({
                                    status in plain words. "Questionable for
                                    Week 1 at L.A. Chargers" says more than an
                                    empty cell and is not this site's claim. */
-                                <span className="block">
-                                  {r.board.status}
-                                  <span
-                                    className="ml-1.5 whitespace-nowrap text-xs"
-                                    style={{ color: "var(--text-muted)" }}
-                                  >
-                                    {r.board.source}
-                                  </span>
-                                </span>
+                                <span className="block">{r.board.status}</span>
                               ) : null)}
                             {r.record?.history && (
                               <span

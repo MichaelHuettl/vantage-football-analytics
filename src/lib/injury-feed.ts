@@ -159,9 +159,7 @@ export async function pullDraftSharks(): Promise<NewsEntry[]> {
  *  players and therefore contradicts nothing. */
 export const SERIOUS_WIRE: WireStatus[] = ["IR", "Out", "PUP", "Doubtful", "DNR", "Sus"];
 
-/** Relevance cutoff for the league-wide list. Keeps Charbonnet and Aiyuk,
- *  drops the third-string tight ends. */
-export const RELEVANCE_RANK = 400;
+
 
 export const INJURY_WORDS =
   /\b(injur|hamstring|acl|mcl|lcl|pcl|achilles|concussion|strain|sprain|surgery|pup\b|ir\b|carted|tear|fracture|hurt|ankle|knee|groin|quad|calf|shoulder|ruled out|questionable|doubtful|activated|designated to return)/i;
