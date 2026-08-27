@@ -1,4 +1,4 @@
-# Handoff — Vantage, the fantasy model, and what changed
+# Handoff — Vantage, the design pass, and the injury tracker
 
 Written to be read cold, by the session that did the work below.
 Everything is committed. Nothing is in flight.
@@ -11,42 +11,52 @@ Three directories matter, and they are **not** one project.
 
 | Path | What | Owner |
 | --- | --- | --- |
-| `~/Desktop/Claude Code/vantage/` | The Next.js site. 28 commits this session | yours |
-| `~/Desktop/Claude Code/fantasy-model/` | The fantasy projection model. 9 commits this session | yours |
+| `~/Desktop/Claude Code/vantage/` | The Next.js site. 27 commits this session | yours |
+| `~/Desktop/Claude Code/fantasy-model/` | The fantasy projection model. Untouched this session | yours |
 | `~/Desktop/nflverse-data/nfl_predictor/` | The game-prediction pipeline | **a peer session — do not edit its Python** |
 
-**Read `docs/BRIEF.md` and `docs/STATE.md` first.** Code comments cite the brief
-constantly as §2, §5.3, §7, §11. STATE.md is current as of this handoff: the
-sections table, the extractor table and all fifteen open items reflect what is
-actually built.
+**Read `docs/BRIEF.md`, then `docs/STATE.md`, then `DESIGN.md`.** The brief says
+*why* and code comments cite it constantly as §2, §5.3, §7, §11. STATE.md says
+what is built and what is still open. DESIGN.md is new this session: the visual
+system as it actually stands, tokens and all.
 
-`git log` in each repo carries the reasoning for every change. That is this
-project's convention and it is worth reading before changing anything you did
-not write.
+`git log` carries the reasoning for every change. That is this project's
+convention and it is worth reading before changing anything you did not write.
+The messages are long on purpose.
+
+**Twenty-two skills are installed globally** in `~/.claude/skills/`, up from
+eight. New: `impeccable` (1 skill, 23 `/impeccable` commands, 59 detector rules)
+and all thirteen `taste-skill` entries. **impeccable also installed hooks** into
+`~/.claude/settings.json` — PostToolUse on Edit/Write and a Stop deep pass — so a
+design check now runs on every turn in every project. `npx impeccable detect src`
+runs the deterministic rules standalone with no LLM.
 
 ---
 
 ## 1. What changed this session
 
-**The wide receiver page was built** — the last position without one, closing
-open item 2. `wr_charts.py` reads rows 2-183 of the WRTE sheet (tight ends
-start at 189). Three workbook scatters, plus two charts computed from the
-nflverse export, plus three fitted touchdown columns, plus three conclusion
-panels.
+**The brand mark was replaced**, in three cuts the operator supplied: `Emblem`
+(detailed, home lockup only), `Goalpost` (plain, header and footer), and a
+favicon. A full icon set is generated from one SVG.
 
-**The injury page was rebuilt as a live season tracker**, on the news page's
-architecture, at the operator's request. The hand-written camp records are now
-the *floor* under a live Sleeper pull rather than a separate section.
+**The site got entrance motion and a glare hover**, both pure CSS, no
+dependency. Home page and the six position cards.
 
-**The accuracy tab gained hit rates** — "how often is it close" alongside
-average error — at both weekly and season scale, plus a conclusion panel at the
-top stating what the model can and cannot be trusted for.
+**Ten routes now generate share cards.** There was no `og:image` and no
+`twitter:card` on the site at all before this.
 
-**The 2026 board gained an eligibility rule** and lost its quietly-broken
-Arizona join.
+**`DESIGN.md` was written** and immediately earned its keep: it turned the
+detector into a conformance check and found real type-scale drift.
 
-**Em dashes were removed from all user-facing copy**, with a grammar pass
-alongside.
+**The side-tab callout was retired** — eleven copies of a `border-l-4` card
+across eight components, replaced by one `Callout` component.
+
+**The injury tracker was rebuilt substantially**: an Updated column, headlines
+matched to players by name, composed written records, plain writing throughout,
+two new sources, and no relevance cutoff.
+
+**The narrow-screen nav went to a vaul drawer and came back.** Reverted the same
+day at the operator's request; vaul and Radix are uninstalled.
 
 ---
 
@@ -54,200 +64,216 @@ alongside.
 
 These are the ones a fresh session is most likely to undo by accident.
 
-**Opportunity does not forecast better than scoring does.** The WR page said it
-did. Across 571 paired receiver seasons since 2015, points per game repeats at
-**0.59** while target share and WOPR repeat at **0.49** — so that claim is
-false and was removed. What survives is narrower: *efficiency* does not repeat.
-Yards per target comes back at 0.25 and touchdowns per target at **0.17**. The
-page states the failed half under its own "what this does not show" heading.
-**Do not reinstate the stronger claim.**
+**The favicon was the `create-next-app` default the entire time.**
+`src/app/favicon.ico` had never been touched, and Next's file-based convention
+emits it as the *first* `<link rel="icon">`, ahead of everything
+`metadata.icons` declares. Browsers preferring `.ico` were showing the Next.js
+logo while `layout.tsx` pointed confidently at the Vantage one. Nothing
+references that file — its **location** is the reference — so a source grep for
+the brand path finds the metadata line and misses it entirely.
 
-**Two season-total numbers exist and only one is a forecast.** Summing a
-player's seventeen weekly forecasts gives an average miss of **22 points**; the
-model's August projection for the same season misses by **38**. The gap is not
-that the model sharpens — weekly accuracy is flat across the year — it is that
-the in-season sum may follow a role that changed in October. **Do not quote 22
-as season accuracy.**
+**Sleeper publishes a per-player `news_updated` and the pull was discarding it.**
+158 distinct values across 160 injured players, median one day old inside the
+old cutoff. It is now the Updated column. Read it for what it is: the last time
+*any* news about that player moved, not a timestamp on the injury.
 
-**The weekly baseline cannot be reused at season scale.** Summed over a year, a
-trailing three-game average is a lagged copy of the player's own scores:
-r = 0.986 against the actual season total. Scored that way it "beats" the model
-88% to 57%, which measures nothing. The season comparator is the player's own
-prior-season rate instead.
+**Sleeper says "Undisclosed" for a fifth of the players shown, and CBS can name
+nearly half of them.** Measured before building anything: 61 of 67 relevant
+injured players appear on CBS or Sharp, and **9 of 19 undisclosed rows get a
+real body part** — Nacua groin, Kirk calf, Downs calf, Egbuka toe.
 
-**There is a measured ceiling, and it is close.** An oracle told each player's
-own season median in advance hits 78.5% at the 8-point band; the model reaches
-73.5%, or 94% of it. **Roughly 5 points of headroom at any band, not 30.** A
-target like "80% within 5 points" is above what perfect foreknowledge achieves.
-Check this before promising an accuracy gain.
+**The relevance cutoff was hiding more than half the injuries.** It sat at
+Sleeper search rank 400 and dropped **90 of 158** designated skill players, 36 of
+them on a serious status. It is gone. The table went 93 rows to 182 across all
+32 teams. **Do not reintroduce a rank filter to shorten the page** — filter by
+team, which the page already does.
 
-**Aubrey was not promoted by hand and should not be.** Prior-season kicker
-scoring predicts the next season at a Spearman of 0.11, 0.14 and 0.35 over the
-last three years. He moved K10 → K8 on the eligibility rule alone.
-
-**All history beats a shorter training window**, at all six positions, with
-window-10 between window-5 and all-history. Monotonic across twelve
-comparisons. The negative result is committed as
-`artifacts/backtest_window10.csv` so nobody re-runs it.
+**ESPN's robots.txt names `anthropic-ai` with `Disallow: /`.** Its
+`User-agent: *` rules would permit `/nfl/injuries`, so **this is available to the
+operator directly**; what is ruled out is an agent fetching it. CBS and Sharp
+name no Anthropic agent and disallow neither path — checked, not assumed.
 
 ---
 
 ## 3. Gotchas that cost real time this session
 
-**Team codes**
+**Scroll-driven animation, three separate traps**
 
-- **nflverse disagrees with itself.** Rosters say `AZ`; schedules, stats and
-  every processed parquet say `ARI`. The forecast's inner join on `team`
-  silently dropped **every Arizona player** from the 2026 board. Nothing
-  errored — a board is expected to be shorter than a roster. The join now
-  asserts every rostered team has fixture rows. **Check a join's output against
-  a name you expect to find; a plausible count is not evidence.**
-- **`LA` vs `LAR`.** Both files call the Rams `LA` where the site keys on
-  `LAR`, and an unresolved code never errors — `TeamChip` prints a grey
-  fallback. `getTeam` aliases both pairs; `canonTeams` normalises each payload
-  at its boundary.
-- **The site's roster wins over the export's.** `players.json` is audited
-  against a live endpoint; the export records where a player *played* in 2025.
-  AJ Brown and Jaylen Waddle differ, and a scheme column is a claim about the
-  offense a receiver is joining.
+- **A `view()` timeline cannot animate an element already on screen.** The range
+  is positional, so an element inside the viewport at load starts part-way
+  through it and never plays from the beginning. With `opacity` in the keyframe
+  it sits permanently dimmed at whatever progress it loaded at, and reads as
+  "that card didn't get the effect". Card grids therefore use the **load-time
+  `rise` with a delay off the index**; `.reveal` animates transform only.
+- **The `animation` shorthand silently kills `duration: auto`.**
+  `animation: name 1ms linear both` on a view timeline looks right and does
+  nothing — the animation finishes in the first sliver of the range and holds
+  the end state across all of it. Write the longhands.
+- **The global reduced-motion reset does not cover view timelines.** It
+  collapses `animation-duration`, which is meaningless to a positional timeline.
+  Motion classes are defined *inside* `prefers-reduced-motion: no-preference`
+  rather than undone afterwards.
 
-**Em dashes hide from a search, two ways**
+**The preview pane runs hidden, and that breaks three kinds of measurement**
 
-- **`&mdash;`** is a different string. Sixteen survived the first pass.
-- **Python escapes it.** `json.dumps` writes the six characters `—`, so a
-  generated payload greps clean while still rendering a dash. **66 more** were
-  hiding that way.
-- **Crawl the rendered pages; do not trust a source grep.** Three exemptions
-  stand: quoted material (`curated-posts.json`, `news.json` headlines —
-  rewriting them is misquoting), the `PracticeStatus` `"—"` data contract
-  (renders as `·`, changing the key breaks the match), and code comments.
+`document.visibilityState` is `hidden`, so `requestAnimationFrame` never fires.
+CSS animation `currentTime` stays at 0, a `ViewTimeline`'s `currentTime` stops
+updating on scroll even while `getBoundingClientRect` keeps moving, images never
+decode (so canvas readback returns nothing), and vaul's close sequence never
+completes. **Reading opacity through `javascript_tool` reports working motion as
+broken.** Three things do work: driving the animation manually
+(`animation.currentTime = t`, then read computed style), disabling the
+transition and checking the end state, and **screenshots, which force a real
+paint**. Measure image luminance from the files with `sharp` instead.
 
-**Scanning**
+**satori is not a browser**
 
-- A scanner that replaces HTML tags with a space reports a false
-  "space before punctuation" for every inline tag. The first run flagged ~65
-  defects; the real count was **one**. Strip `<!-- -->` too — React inserts it
-  between adjacent text nodes.
+A `repeating-linear-gradient` is flattened into one blended fill: it drew no
+stripes *and* silently lifted the OG card's background off the brand black to
+`#1e242a`. The card looked fine. Sampling its pixels is what found it. Draw
+repeated elements explicitly. satori also cannot read the woff2 that
+`next/font` caches, which is why `assets/fonts/` holds TTFs.
 
-**Extractors**
+**Name matching, twice bitten**
 
-- **`te_charts.py`'s date-serial guard drops anything over 1,000.** The first WR
-  chart's x-axis is air yards, which runs to 1,841 — left as-is it would have
-  deleted most of the chart. The guard is per-axis now.
-- **The name column is not always B.** WR block 1 keeps names in D.
-- **The export writes `"P.Nacua"` with no space.** Passing that to `surname()`
-  makes the whole string one token; it matched 1 of 88 before the initial was
-  split off.
+- **Substring folding needs a length floor, and any floor big enough breaks
+  real names.** Folding to bare letters requires a floor to stop `bonix`
+  matching inside "turbo nixed" — and any floor that does that also discards
+  `jamarrchase` at eleven characters, silently dropping half the league.
+  **Compare token sequences instead.** No floor needed.
+- **Apostrophes, again.** `news.json` carries 19 headlines with a curly
+  apostrophe and 32 with a straight one. Delete them rather than treating them
+  as separators, so "Ja'Marr"/"Ja’Marr"/"JaMarr" agree. Allow a trailing `s` on
+  the last name token or possessives never match.
+
+**Tooling**
+
+- **`npx impeccable install --help` runs the installer.** It does not print
+  help. It took the default project scope and wrote into the working directory
+  before the intended global install.
+- **macOS `"file 2.ts"` duplicates in `.next/types` break `tsc`** with
+  duplicate-identifier errors that look like your own code. `find .next -name
+  "* 2.ts" -delete`.
+- **Claude in Chrome is not connected** on this machine, so there is no visible
+  browser to fall back to when the pane's hidden state matters.
 
 **Everything from the previous handoff still holds** — the nflverse download
-traps, `_combined/snap_counts.csv` being unusable, `curl -f`, pre-rounding,
-the nav breakpoints, image cache-busting by rename, macOS `"file 2.ts"`
-duplicates, and the browser pane being unreliable. On the pane: `curl` plus
-parsing and `javascript_tool` against the DOM are what work, and **reading a
-generated PDF with the Read tool is an excellent way to check a rendered
-document** — it caught two real defects in the brief.
+traps, `curl -f`, pre-rounding, image cache-busting by rename, and the browser
+pane being unreliable in general.
 
 ---
 
 ## 4. Decisions the operator made — do not re-litigate
 
-- **Everything from the previous handoff stands**: `historicalfantasyfootballstats.com`
-  is off limits (robots.txt names ClaudeBot); the film room's concepts were
-  deleted because an agent wrote them and the remaining sample play's **Sample**
-  badge is load-bearing; two heroes carry NFL marks by his call; licensed 4for4
-  columns are published on the RB and TE pages by his decision; smooth scroll /
-  GSAP / Lenis and a home-page stats band remain rejected.
-- **The WR grid's "High YPRR" and "High TPRR" columns are a third 4for4
-  place.** What is published is his own categorisation — names under a heading —
-  not the licensed figures. Flagged to him rather than assumed.
-- **The notable-names block was deleted** at his request; sixteen of its
-  twenty-three entries were bare surnames the sheet never spelled out.
-- **The em dash is out of user-facing copy**, with the three exemptions above.
-- **The headline accuracy bands are 8 points weekly and 40 season-long**, chosen
-  on the size of the edge rather than on significance — with 37,000 paired weeks
-  every band from 5 to 10 clears significance, so it cannot be the tie-breaker.
-  30 was rejected for the season band because the model and baseline tie at
-  quarterback at exactly that width.
+- **Everything from the previous handoff stands**:
+  `historicalfantasyfootballstats.com` is off limits; the film room's concepts
+  were deleted and the **Sample** badge is load-bearing; two heroes carry NFL
+  marks by his call; licensed 4for4 columns are published on the RB and TE pages
+  by his decision; GSAP, Lenis and a home-page stats band remain rejected.
+- **Motion is CSS and entrance only**, home page and position cards. The
+  GSAP/Lenis rejection was reaffirmed this session.
+- **No shadcn, and `shadcn init` must not run here.** It writes a second
+  CSS-variable layer into `globals.css`, which is exactly the duplication §7
+  exists to prevent.
+- **The narrow-screen nav is the scrolling row**, right-aligned from `md`. A
+  vaul drawer was tried and reverted the same day; **vaul and Radix are
+  uninstalled** and `package.json` is back to three dependencies.
+- **taste-skill's house styles are not applied to Vantage.** Its aesthetic
+  skills prescribe their own look, which fights §7's "the brand already exists,
+  do not redesign it". impeccable's audit/critique/typeset commands are the part
+  that is used.
+- **§11 was spent deliberately on the injury page**, twice. First to compose a
+  written record where none exists; then, on 2026-08-27, to drop the "Composed"
+  label and every hedge with it. The column states the injury plainly. **He
+  asked for this explicitly both times.**
+- **ESPN is not used** (see §2). CBS and Sharp are.
+- **The injury page is the tracker.** All explanatory prose under the Season
+  tracker heading is gone, as is the standalone Injury headlines section. The
+  wire-failure notice stays, because §10 requires a pipeline failure to surface.
 
 ---
 
 ## 5. Corrections I made to my own earlier claims
 
-- The WOPR chart's paragraph claimed opportunity forecasts better than scoring.
-  It does not. See §2.
-- STATE.md was dated 2026-08-17 while recording work from the 21st and 22nd; the
-  extractor table said "the last three" when there were four; the home row said
-  seven section cards when there were eight. All fixed.
-- The accuracy entry quoted "83.6% within 10 points" after the tab had moved to
-  5 points and 51.5%, then to 8 points and 73.5%. Stale in the direction that
-  oversells, which is the worst way for a record to be wrong.
-- My first pass at a spacing scan reported ~65 grammar defects that were
-  artifacts of my own tag-stripping. The real count was one.
+- I told him the long position pages "run full container width". **They do
+  not** — prose caps at `max-w-3xl`, used in 144 places. That was already right
+  and I had not checked before saying it.
+- I twice guessed wrong about why the first two cards in each grid looked
+  different: first that their photographs were too bright for the glare
+  (measured false — they are mid-pack at 0.410 and 0.425), then that their
+  markup differed (false at both the server and DOM layers). The cause was
+  viewport position. **Only measuring geometry found it.**
+- Asked which *ranked* players were missing from the tracker and found none, and
+  reported that as "nothing is missing". Wrong question — the cutoff was not
+  dropping ranked players, it was dropping everyone else. His follow-up
+  corrected it.
+- A `STATE.md` entry I wrote said nothing on the injury page composes a
+  diagnosis, and the next commit made that false. Corrected the same session.
+- `DESIGN.md` claimed `rounded-full` was "for the drawer handle only", which was
+  wrong even before the drawer was reverted.
 
 ---
 
 ## 6. Open items
 
-`docs/STATE.md` has all fifteen with detail. Item 2 is now closed. The ones
-worth knowing:
+`docs/STATE.md` has all of them with detail. The ones worth knowing:
 
-1. **The fantasy model's intervals under-cover.** The band is built to hold 80%
-   and holds 66.8% at WR, 69.9% at RB, 71.8% at K, 71.9% at QB. Only TE reaches
-   its advertised width. Widening the quantiles is the obvious next change.
-2. **`rb_charts.py` still targets the `(2)` workbook** while everything else
-   targets `(4)`. Re-running it as-is reads a two-versions-old sheet; fixing it
-   is a row remap, not a path change. Untouched this session.
-3. **The beat feed is Nitter-dependent and was blocked.** `npm run beat`
-   returned zero from all 39 accounts.
-4. **The prediction head-to-head cannot show its heaviest inputs** — eight of
-   twelve ranked features have no per-team values. Changes go through Michael to
-   the peer session.
-5. **No rookies on the 2026 board**, by construction: a player with no prior game
-   has no history to lag.
-6. **Sleeper's injury notes are free text.** On the pull the tracker was built
-   against, none of the 26 notes contained return-date language — they are
-   single words like "Surgery". That is a property of the current data, not a
-   guarantee. **Re-check if the column ever starts printing sentences**, because
-   a note reading "expected back Week 3" breaches §5.3 the moment it renders.
+1. **Four display clamps are off the type ramp.** `clamp(2.5rem, 5vw, 3.75rem)`,
+   `clamp(12rem, 34vw, 26rem)` and two more — four separate fluid scales for
+   headings. Consolidating changes headline sizes across several pages, so it
+   was left rather than done quietly. `npx impeccable detect src` reports them.
+2. **The Latest column can show a non-injury headline.** The matcher is
+   deliberately not category-filtered, so "CBS Sports NFL All-Breakout Team" can
+   land on an injury row. Harmless at 93 rows, more visible at 182. Filtering
+   risks dropping real updates that carry no injury vocabulary.
+3. **`rb_charts.py` still targets the `(2)` workbook** while everything else
+   targets `(4)`. Untouched for a third session.
+4. **The stacked lockup PNGs still carry the retired goalpost.** Nothing
+   references them, but they are what anyone would reach for to make an avatar.
+5. **The beat feed is Nitter-dependent and was blocked.**
+6. **The fantasy model's intervals under-cover** — 66.8% at WR against an
+   advertised 80%.
+7. **`impeccable detect` reports 9 findings, 5 of them false positives that
+   should stay**: four are `ChartFigure`'s goalpost frame (three-sided, §7's
+   signature element) and one is the yardlines background (a football site's own
+   motif).
 
 ---
 
 ## 7. Running things
 
 ```bash
-cd ~/Desktop/Claude\ Code/fantasy-model
-./.venv/bin/python fantasy_model.py all          # build → train → report → project
-./.venv/bin/python hit_rates.py --rerun          # walk-forward, keeps per-row residuals
-./.venv/bin/python export_site_payload.py        # -> artifacts/site_payload.json
-cd ../vantage && python3 scripts/curated/fantasy_model.py   # -> src/data/fantasy-model.json
+cd ~/Desktop/Claude\ Code/vantage
+npm run build          # the check that matters
+npm run news           # refreshes news.json — was 10 days stale, now current
+npx impeccable detect src
 ```
 
-**Run the last two after any retrain.** The site reads the copy and nothing
-watches the source. `export_site_payload.py` now **fails** rather than omitting
-the section if `hit_rates.json` is missing.
+`news.json` feeds the injury tracker's Latest column by name matching, so a
+stale one quietly costs that column coverage. It was refreshed 2026-08-27.
 
-```bash
-python3 scripts/curated/wr_charts.py    # -> src/data/wr-charts.json
-npm run build                            # the check that matters
-```
+The injury tracker pulls Sleeper, Draft Sharks, CBS and Sharp at request time,
+all inside one 300-second TTL window. None can take the page down: a failed
+board contributes an empty map and rows keep the field they had.
 
-`wr_charts.py` is the only extractor reading two sources — the workbook for
-three charts, the nflverse export for the stickiness and consistency ones. It
-reconciles its own correlations against a second pairing and refuses to publish
-if they diverge by more than 0.12.
+The OG cards need `assets/fonts/*.ttf` present at build time and
+`NEXT_PUBLIC_SITE_URL` set at deploy time — `metadataBase` falls back to
+localhost, which no crawler can fetch.
 
 ---
 
 ## 8. Standing rules
 
-- `src/app/globals.css` is the only source of color and type. **No hex in a
-  component** (§7).
+- `src/app/globals.css` is the only source of colour and type. **No hex in a
+  component** (§7). One sanctioned exception: `src/lib/og.tsx`, which renders
+  through satori where no stylesheet exists.
 - Amber is for the focal thing on screen, one per screen (§7).
+- **No thick coloured side border on a card.** It is the single most
+  recognisable tell of a generated interface and it took a commit to remove
+  eleven of them.
 - **No React component computes a metric** (§11).
-- **Never estimate a return date** (§5.3).
-- **No em dashes in user-facing copy**, three exemptions above.
-- American spellings. `prose.ts` fixes the peer session's "defence" on the way in.
-- Empty states are directions, not apologies (§8).
+- No em dashes in user-facing copy; three exemptions in `DESIGN.md`.
+- American spellings. Empty states are directions, not apologies (§8).
 - **`npm run build` is the check that matters.**
 - Commit in logical pieces, and put the reasoning in the message.
 
@@ -255,10 +281,7 @@ if they diverge by more than 0.12.
 
 ## 9. Not part of the site
 
-`~/Desktop/Vantage-2026-Positional-Brief.pdf` — a 19-page tiered write-up of all
-six positions, generated this session from the repo's data at the operator's
-request. It is **deliberately not connected to the site**: §11 forbids
-publishing auto-generated written analysis, and the document says so on its
-first page. Source HTML is in this session's scratchpad, not in the repo. If it
-is ever wanted on the site, that is a decision for the operator and the labelling
-is the thing to preserve.
+`~/Desktop/Vantage-2026-Positional-Brief.pdf` — a 19-page tiered write-up,
+generated in an earlier session and **deliberately not connected to the site**.
+If it is ever wanted there, that is the operator's decision and the labelling is
+the thing to preserve.

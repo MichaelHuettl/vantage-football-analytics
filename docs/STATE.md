@@ -4,7 +4,7 @@ Read `docs/BRIEF.md` first — it defines the `§` references in code comments.
 This file records where the build actually is, what was decided against the
 brief, and what is still open.
 
-Last updated: 2026-08-26.
+Last updated: 2026-08-27.
 
 ---
 
