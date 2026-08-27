@@ -53,7 +53,7 @@ export default async function RankingsPage({
       <SectionHero
         image="/img/bg/parcells.jpg"
         alt=""
-        objectPosition="center 30%"
+        objectPosition="center 72%"
         eyebrow="Draft board"
         title="Rankings"
         lede="Draft rankings for 2026, PPR scoring, twenty deep at every position. Team and bye week alongside each name."
