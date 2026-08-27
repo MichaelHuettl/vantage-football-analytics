@@ -24,13 +24,28 @@ const barlow = Barlow({
   display: "swap",
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
 export const metadata: Metadata = {
+  // Required for the share cards: og:image has to be an absolute URL, and
+  // without a base Next emits a relative one that no crawler can fetch. Set
+  // NEXT_PUBLIC_SITE_URL at deploy time; localhost is only a dev default.
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Vantage Football Analytics",
     template: "%s | Vantage",
   },
   description:
     "Opportunity metrics underneath the rankings. Every ranked player links to the chart that justifies his position.",
+  openGraph: {
+    type: "website",
+    siteName: "Vantage Football Analytics",
+    locale: "en_US",
+  },
+  // The card image itself comes from the opengraph-image files per route; X
+  // falls back to og:image when twitter:image is absent, so the card *type* is
+  // the part that has to be declared here.
+  twitter: { card: "summary_large_image" },
   // SVG first so the tab gets the vector; the PNGs are the fallback for
   // anything that will not take one, and the 180 is what iOS puts on a home
   // screen. All three are the same artwork — the PNGs are rendered from
