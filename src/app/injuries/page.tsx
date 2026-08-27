@@ -132,7 +132,6 @@ export default async function InjuriesPage({
           )}
         </nav>
 
-        {/* ================= Training camp and preseason ================= */}
         {/* ===================== Season tracker ===================== */}
         <section>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
@@ -163,64 +162,12 @@ export default async function InjuriesPage({
             />
           </div>
 
-          <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-            Every fantasy-relevant player carrying a designation, pulled when the
-            page is requested and re-rendered on a timer. The written records
-            below merge <em>under</em> the wire and are never overwritten by it:
-            a feed status is a coarse claim, a record is reporting with a
-            diagnosis behind it, and where the two cannot both be true the row
-            says so rather than picking one.
-          </p>
-
-          <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-            <strong>Updated</strong> is the later of two dates: the last time the
-            wire moved on that player, or the day the written record was
-            reported. Whichever it is, the cell names it. Sleeper stamps the
-            last update to any news about a player rather than to the injury
-            alone, so read it as when something was last said about him, never
-            as when anyone expects him back (§5.3). Anything older than a
-            fortnight is marked, because a designation the wire has stopped
-            touching is the one most likely to have moved on without it.
-            Headlines carry their own dates, so a row can show reporting newer
-            than the designation beside it.
-          </p>
-
-          <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-            <strong>Latest</strong> is the written record wherever one exists.
-            Where none does, it carries other people&rsquo;s reporting instead:
-            every headline naming that player, from the live sitemap and the
-            committed news file, published as its publisher wrote it and
-            credited to them. That is where the detail lives that a wire field
-            cannot hold. Sleeper can say <em>Knee</em>; only a headline can say
-            he hyperextended it. A headline only ever matches a player when his
-            full name appears in it.
-          </p>
-
-          <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-            <strong>Written record</strong> is hand-authored reporting. Where
-            none exists, the column carries a sentence composed from the wire
-            and the matched headline instead, marked{" "}
-            <strong>Composed</strong> so it is never mistaken for the written
-            ones. Those sentences are built from a fixed vocabulary rather than
-            written freely, they credit the publisher whose headline supplied
-            the detail, and they never state a return date: that is a separate
-            rule (§5.3), and where a headline gives a timeline it stays in the
-            headline with its publisher&rsquo;s name on it.
-          </p>
-
-          {tracker.live ? (
-            <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
-              {tracker.pulled} players carried a designation on this pull;{" "}
-              {tracker.rows.length} are shown: everyone the site ranks, plus anyone already written up however deep on a roster.{" "}
-              {tracker.counts.both} of them have a written record as well,{" "}
-              {tracker.counts.recordOnly} are records the wire is currently
-              silent on, and{" "}
-              {tracker.counts.conflicts === 0
-                ? "none contradict what is written here."
-                : `${tracker.counts.conflicts} contradict what is written here.`}
-            </p>
-          ) : (
-            <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+          {/* The page is the tracker now, with no commentary above it. This
+              one line stays: §10 requires a pipeline failure to surface rather
+              than the page quietly serving a stale archive as if it were
+              live. */}
+          {!tracker.live && (
+            <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
               The wire did not answer on this render, so this is the written record alone, stale rather than empty (§8).{" "}
               {tracker.failures.map((f) => `${f.name}: ${f.reason}`).join("; ")}
             </p>
@@ -491,48 +438,6 @@ export default async function InjuriesPage({
               </TeamBlock>
             ))}
           </div>
-        </section>
-
-        {/* ===================== Live wire ===================== */}
-        <section className="mt-20">
-          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-            <h2
-              className="text-3xl uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              Injury headlines
-            </h2>
-            <AutoRefresh />
-          </div>
-          <p className="mt-2 max-w-2xl text-sm" style={{ color: "var(--text-muted)" }}>
-            Pulled while you are reading it. Headline, source and link only, never the article (§2), and no status here is this site&rsquo;s
-            prognosis (§5.3). The reconciliation that used to sit in this section
-            now happens in the tracker itself, on every row.
-          </p>
-          {headlines.length === 0 ? (
-            <p className="mt-4 text-sm" style={{ color: "var(--text-muted)" }}>
-              Draft Sharks&rsquo; sitemap did not answer on this render. The
-              tracker above is unaffected.
-            </p>
-          ) : (
-            <ul className="mt-4 flex flex-col gap-2">
-              {headlines.map((h) => (
-                <li key={h.id} className="text-sm">
-                  <a
-                    href={h.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline-offset-2 hover:underline"
-                  >
-                    {h.headline}
-                  </a>
-                  <span className="ml-2 text-xs" style={{ color: "var(--text-muted)" }}>
-                    {h.source}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          )}
         </section>
 
         {/* ===================== Week-by-week report ===================== */}

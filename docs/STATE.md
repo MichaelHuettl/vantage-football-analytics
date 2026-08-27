@@ -164,7 +164,13 @@ build` with a line number instead of shipping a broken page.
      deleted rather than left dead — the tracker reconciles inline on every row,
      so that section's conflict and "not in the report" lists were duplicating
      the table above them. Headlines kept their own light puller.
-   - **Injury headlines** from Draft Sharks, headline and link only (§2).
+   - **The Draft Sharks pull stays, its section does not.** The standalone
+     "Injury headlines" list was removed on 2026-08-27 at the operator's
+     request, along with every explanatory paragraph under the Season tracker
+     heading: he wants the page to be the tracker, not commentary about it.
+     `getInjuryHeadlines()` is still called, because those headlines are what
+     the tracker's Latest column matches per player — deleting the fetch would
+     empty that column. Only the display went.
 
    **ESPN and Yahoo were requested and are deliberately not used.** Both name
    `anthropic-ai` in robots.txt with `Disallow: /`; Yahoo also names
