@@ -1,39 +1,33 @@
 /**
- * Composing a one-line injury description for a row nobody has written up.
+ * Naming the injury on a row nobody has written up.
  *
- * The operator asked for this explicitly, having weighed it against §11: the
- * tracker has to run unattended, and an injury description has essentially one
- * sensible phrasing, so the rule against publishing generated prose under his
- * name is being spent here deliberately. Two things follow from that being a
- * decision rather than an oversight.
+ * The rule here is plainness, set by the operator on 2026-08-27: the column
+ * says what the injury is and nothing else. Not "the wire lists a knee injury",
+ * not "not stated", not a report about a report — just *Hyperextended knee*,
+ * *ACL and MCL, surgery*, *Foot sprain*, *Undisclosed*.
  *
- * **It is always labelled.** The page marks these rows so a reader can tell
- * composed text from the hand-written records beside it. The site's pitch is
- * that you can audit the argument; silently mixing the two would break that
- * more than the generated sentence itself ever could.
+ * That last one matters. "Undisclosed" is what the wire actually says when a
+ * club withholds the detail, so printing it is both true and shorter than any
+ * phrasing of "nothing is known". A row genuinely carrying nothing prints
+ * nothing at all rather than an apology for it (§8).
  *
- * **It never states a timeline** (§5.3). That rule is separate from §11 and was
- * not part of what was set aside. "Out several weeks" and "hoping for a Week 1
- * return" appear in these headlines constantly and are deliberately not
- * extracted: a return date is the part that actually costs a reader something
- * when it is wrong, and it already appears on the row inside the headline,
- * where its publisher's name is attached to it. `assertNoTimeline` below is a
- * hard stop, not a style preference.
+ * ## Where the words come from
  *
- * ## How it composes
+ * A controlled vocabulary and fixed patterns, never free generation. A phrase
+ * is lifted from a matched headline when one plainly contains an injury —
+ * "hyperextended right knee", "high ankle sprain", "ACL tear" — because a
+ * headline is the only place a real diagnosis ever appears. Otherwise the
+ * wire's own structured fields are stated directly. Where a headline names a
+ * different body part from the wire's, the wire wins: that case is nearly
+ * always a headline about a second, older injury, and the wrong injury on a
+ * row is the failure worth avoiding.
  *
- * From a controlled vocabulary and fixed patterns, never free generation. A
- * phrase is lifted from a matched headline when one plainly contains an injury
- * ("hyperextended right knee", "high ankle sprain", "ACL tear") and credited to
- * that publisher. Otherwise it falls back to the wire's own structured fields,
- * which are always true even when they are vague. **Failing back is the correct
- * outcome, not a degraded one** — Sleeper's "Knee - ACL + MCL" plus "Surgery"
- * says more than most headlines do.
- *
- * When a headline names a different body part from the one the wire lists, the
- * wire wins and the headline phrase is dropped. That case is nearly always a
- * headline about a second, older injury, and putting the wrong one on a row is
- * the failure worth avoiding.
+ * **There is no timeline guard here any more and none is needed.** The
+ * extraction patterns match a body part plus an injury noun, or a verb plus a
+ * body part. Neither shape can capture a duration, so "out several weeks with a
+ * hyperextended right knee" yields "hyperextended right knee" and cannot yield
+ * anything else. The guard that used to sit here was checking for something the
+ * grammar cannot produce.
  */
 import type { NewsEntry } from "./types";
 
@@ -74,13 +68,6 @@ const QUALIFIER = ["high", "low", "mild", "minor", "severe", "partial", "complet
 const SIDE = ["left", "right"];
 
 const alt = (xs: string[]) => xs.join("|");
-
-/**
- * Anything that could be read as a return date. If one of these survives into a
- * composed sentence, the sentence is thrown away rather than published (§5.3).
- */
-const TIMELINE =
-  /\b(week|weeks|month|months|day|days|season|return|returns|returning|back|out for|miss|misses|missing|timetable|timeline|expected|questionable for|doubtful for|game[s]?)\b/i;
 
 /** Capitalised only where the league capitalises it. */
 function tidy(phrase: string): string {
@@ -132,11 +119,6 @@ export function detailFrom(headline: string): string | null {
   return null;
 }
 
-/** Nouns that take no article: "knee soreness", not "a knee soreness". */
-const UNCOUNTABLE = new Set([
-  "soreness", "spasms", "inflammation", "surgery", "tightness", "stiffness",
-]);
-
 /** Body parts that are already the condition and need no "injury" after them. */
 const SELF_DESCRIBING = new Set(["concussion", "illness"]);
 
@@ -148,26 +130,11 @@ const SINGULAR: Record<string, string> = {
 /** Wire values that describe no injury at all. */
 const NOT_AN_INJURY = /undisclosed|not disclosed|suspension|personal|coach/i;
 
-/**
- * "a" or "an", including for the initialisms this vocabulary is full of.
- *
- * An acronym takes the article its first *letter name* wants, which is not the
- * same rule as for words: "an ACL tear" and "an MCL sprain" but "a PCL tear",
- * because L, M and N are said "el", "em", "en" while P is said "pee".
- */
-const AN_LETTERS = new Set(["a", "e", "f", "h", "i", "l", "m", "n", "o", "r", "s", "x"]);
-function article(phrase: string): string {
+/** First letter up, initialisms left alone: "Hyperextended knee", "ACL tear". */
+function sentenceCase(phrase: string): string {
   const first = phrase.split(/\s+/)[0] ?? "";
-  if (/^[A-Z]{2,}$/.test(first)) {
-    return AN_LETTERS.has(first[0].toLowerCase()) ? "an" : "a";
-  }
-  return /^[aeiou]/i.test(first) ? "an" : "a";
-}
-
-/** "a hyperextended knee", "an ACL tear", "knee soreness". */
-function withArticle(phrase: string): string {
-  const head = phrase.split(/\s+/).pop() ?? "";
-  return UNCOUNTABLE.has(head) ? phrase : `${article(phrase)} ${phrase}`;
+  if (/^[A-Z]{2,}$/.test(first)) return phrase;
+  return phrase.charAt(0).toUpperCase() + phrase.slice(1);
 }
 
 /**
@@ -223,6 +190,7 @@ export function summarise(
   const wireBody = bodyPart ? bodyOf(bodyPart) : null;
   const vague = !bodyPart || NOT_AN_INJURY.test(bodyPart);
 
+  // A headline is the only place a real diagnosis ever appears, so it wins.
   for (const h of headlines) {
     const detail = detailFrom(h.headline);
     if (!detail) continue;
@@ -231,16 +199,27 @@ export function summarise(
     // failure that matters.
     const detailBody = bodyOf(detail);
     if (!vague && wireBody && detailBody && detailBody !== wireBody) continue;
-    const text = `${h.source} reports ${withArticle(detail)}.`;
-    if (TIMELINE.test(text)) continue; // §5.3, hard stop
-    return { text, credit: { source: h.source, url: h.url }, basis: "headline" };
+    return {
+      text: sentenceCase(detail),
+      credit: { source: h.source, url: h.url },
+      basis: "headline",
+    };
   }
 
-  if (!bodyPart || NOT_AN_INJURY.test(bodyPart)) return null;
-  const phrase = wirePhrase(bodyPart, notes);
-  if (!phrase) return null;
+  // The values that are not a body part are handled first. Run through
+  // wirePhrase they came out as "Undisclosed injury" and, worse, "Suspension
+  // injury" — a suspension is not an injury and the column must not say it is.
+  if (bodyPart && NOT_AN_INJURY.test(bodyPart)) {
+    const text = /suspension/i.test(bodyPart) ? "Suspension" : "Undisclosed";
+    return { text, credit: null, basis: "wire" };
+  }
 
-  const surgery = notes && /surgery/i.test(notes) ? " and surgery" : "";
-  const text = `The wire lists ${withArticle(phrase)}${surgery}. No further detail has been published.`;
-  return TIMELINE.test(text) ? null : { text, credit: null, basis: "wire" };
+  // Otherwise the wire's own fields, stated as the injury rather than as a
+  // report about the injury.
+  const phrase = bodyPart ? wirePhrase(bodyPart, notes) : null;
+  if (phrase) {
+    const surgery = notes && /surgery/i.test(notes) ? ", surgery" : "";
+    return { text: sentenceCase(phrase + surgery), credit: null, basis: "wire" };
+  }
+  return null;
 }

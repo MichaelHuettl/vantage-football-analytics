@@ -168,28 +168,11 @@ export function LastUpdateCell({
   update: LastUpdate | null;
   staleAfterDays?: number;
 }) {
-  if (!update) {
-    return (
-      <span
-        className="text-xs uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-      >
-        Not stated
-      </span>
-    );
-  }
-
+  // No date, no cell. Both of these printed "Not stated", which is two words
+  // saying what an empty cell says on its own.
+  if (!update) return null;
   const when = parseLocalDate(update.at);
-  if (Number.isNaN(when.getTime())) {
-    return (
-      <span
-        className="text-xs uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
-      >
-        Not stated
-      </span>
-    );
-  }
+  if (Number.isNaN(when.getTime())) return null;
 
   const now = new Date();
   const age = relativeAge(when, now);

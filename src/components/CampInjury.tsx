@@ -98,13 +98,11 @@ export function CampStatusPill({ status }: { status: CampStatus }) {
  * timeline would read as this site's own prognosis.
  */
 export function Timeline({ injury }: { injury: CampInjury }) {
-  if (!injury.timeline) {
-    return (
-      <span className="text-xs" style={{ color: "var(--text-muted)" }}>
-        Not stated
-      </span>
-    );
-  }
+  // No timeline, no line. This used to print "Not stated", which put the same
+  // two words on 38 of 93 tracker rows and told a reader nothing they could not
+  // see from the empty space. A blank cell says the same thing and says it
+  // faster (§8).
+  if (!injury.timeline) return null;
   return (
     <span className="block">
       <span className="block text-sm">{injury.timeline}</span>

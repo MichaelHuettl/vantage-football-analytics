@@ -254,28 +254,15 @@ export default async function InjuriesPage({
                                 )}
                               </>
                             ) : r.body_part || r.notes ? (
-                              <>
-                                <span className="block font-semibold">
-                                  {[r.body_part, r.notes].filter(Boolean).join(", ")}
-                                </span>
-                                <span
-                                  className="mt-0.5 block text-xs uppercase tracking-wider"
-                                  style={{
-                                    fontFamily: "var(--font-condensed)",
-                                    color: "var(--text-muted)",
-                                  }}
-                                >
-                                  As the wire lists it
-                                </span>
-                              </>
-                            ) : (
-                              <span
-                                className="block"
-                                style={{ color: "var(--text-muted)" }}
-                              >
-                                No diagnosis reported
+                              /* The body part, and nothing about where it came
+                                 from. This used to caption every wire-only row
+                                 "As the wire lists it", which is the same
+                                 meta-commentary the rest of this page just
+                                 lost. */
+                              <span className="block font-semibold">
+                                {[r.body_part, r.notes].filter(Boolean).join(", ")}
                               </span>
-                            )}
+                            ) : null}
                           </td>
                           <td className="px-4 py-3">
                             {r.wire ? (
@@ -301,39 +288,16 @@ export default async function InjuriesPage({
                                 </span>
                               </>
                             ) : r.summary ? (
-                              /* Composed, not written. The operator asked for
-                                 this after weighing it against §11, so it is
-                                 labelled rather than quietly mixed in with the
-                                 hand-written records above it: a page whose
-                                 pitch is that you can audit the argument has to
-                                 say which sentences it wrote itself. It never
-                                 carries a timeline (§5.3) — see
-                                 lib/injury-summary.ts. */
-                              <>
-                                <span
-                                  className="inline-flex h-5 items-center rounded px-1.5 text-micro font-bold uppercase tracking-wider"
-                                  style={{
-                                    fontFamily: "var(--font-condensed)",
-                                    background: "var(--surface-sunken)",
-                                    color: "var(--text-muted)",
-                                    boxShadow: "inset 0 0 0 1px var(--border-subtle)",
-                                  }}
-                                  title="Composed from the wire and matched reporting, not written by hand"
-                                >
-                                  Composed
-                                </span>
-                                <span className="mt-1.5 block text-xs">
-                                  {r.summary.text}
-                                </span>
-                              </>
-                            ) : (
-                              <span
-                                className="text-xs"
-                                style={{ color: "var(--text-muted)" }}
-                              >
-                                Not written up.
+                              /* The injury, named. No badge, no hedge, no
+                                 sentence about where the words came from — the
+                                 operator's call on 2026-08-27 is that this
+                                 column says what is wrong with the player and
+                                 stops. A row with genuinely nothing prints
+                                 nothing rather than an apology for it (§8). */
+                              <span className="block font-semibold">
+                                {r.summary.text}
                               </span>
-                            )}
+                            ) : null}
                           </td>
                           <td className="px-4 py-3">
                             <LastUpdateCell update={r.lastUpdate} />
@@ -391,15 +355,7 @@ export default async function InjuriesPage({
                                     </li>
                                   ))}
                                 </ul>
-                              ) : (
-                                <span
-                                  className="text-xs"
-                                  style={{ color: "var(--text-muted)" }}
-                                >
-                                  Nothing published under this name yet. The
-                                  wire designation is the whole of it.
-                                </span>
-                              ))}
+                              ) : null)}
                             {r.record?.history && (
                               <span
                                 className="mt-1.5 block text-xs"
@@ -643,13 +599,6 @@ export default async function InjuriesPage({
           )}
         </section>
 
-        <p className="mt-16 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
-          Every expected absence on this page is quoted from the team, a coach
-          or a published report, and is attributed to whoever said it. This site
-          does not estimate return dates or assign a probability of playing. That is a medical claim, and not one it is qualified to make. An
-          absence shown as &ldquo;not stated&rdquo; means nobody has stated one,
-          not that the injury is minor.
-        </p>
       </Container>
     </>
   );
