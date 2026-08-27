@@ -60,7 +60,7 @@ export default function PositionsIndex() {
           {docs.map((doc) => {
             const built = POSITION_BUILT.has(doc.position);
             return (
-              <li key={doc.position}>
+              <li key={doc.position} className="reveal">
                 <Link
                   href={`/positions/${doc.position.toLowerCase()}`}
                   className="group flex h-full flex-col overflow-hidden rounded-lg border transition-colors hover:border-[var(--accent)]"
@@ -73,8 +73,14 @@ export default function PositionsIndex() {
                       rather than cropped to it. `object-position` comes from
                       the data, per photo, because "center" puts the subject's
                       chest in frame on one and the turf on another. */}
+                  {/* The home page's card treatment, applied here so the two
+                      grids read as one system: the photo scales, a glare
+                      crosses it, and the amber square appears in the corner.
+                      The glare sits at +1 rather than the default -5 because
+                      this card puts its copy in a panel below the photo
+                      instead of over it, so there is nothing to get behind. */}
                   <div
-                    className="relative aspect-[2/1] w-full overflow-hidden"
+                    className="glare [--glare-z:1] [--glare-strength:18%] relative aspect-[2/1] w-full overflow-hidden"
                     style={{ background: "var(--color-vantage-panel)" }}
                   >
                     <Image
@@ -82,8 +88,13 @@ export default function PositionsIndex() {
                       alt=""
                       fill
                       sizes="(min-width: 640px) 50vw, 100vw"
-                      className="transition-transform duration-300 group-hover:scale-[1.03]"
+                      className="transition-transform duration-500 group-hover:scale-105"
                       style={{ objectFit: "cover", objectPosition: doc.photo_position }}
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="absolute top-4 right-4 z-[2] h-2.5 w-2.5 opacity-0 transition-opacity group-hover:opacity-100"
+                      style={{ background: "var(--color-vantage-amber)" }}
                     />
                   </div>
 
