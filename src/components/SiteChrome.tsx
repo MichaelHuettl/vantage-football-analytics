@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Goalpost } from "./Goalpost";
-import { NavDrawer } from "./NavDrawer";
 import { SITE_NAV } from "@/lib/nav";
 
 export function SiteHeader() {
@@ -19,11 +18,9 @@ export function SiteHeader() {
         }}
       />
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
-        {/* One row at every width now. The column layout existed to give the
-            link bar its own line below md; with the links behind the Menu
-            button there is nothing left to wrap, and the header keeps a single
-            20-unit height all the way down to 360px. */}
-        <div className="flex h-20 flex-row items-center gap-6">
+        {/* Below md the six links need their own row — wrapping them beside
+            the logo collides with it. */}
+        <div className="flex flex-col gap-2 py-4 md:h-20 md:flex-row md:items-center md:gap-6 md:py-0">
           <Link
             href="/"
             className="flex items-center gap-2.5 shrink-0"
@@ -89,12 +86,41 @@ export function SiteHeader() {
             </ul>
           </nav>
 
-          {/* Below `xl` the same links live in a bottom sheet behind the
-              Menu button. This replaced a sideways-scrolling row of them on
-              2026-08-26 at the operator's request; NavDrawer.tsx records what
-              that row was for and why it went, because the breakpoint here has
-              already moved twice and will move again. */}
-          <NavDrawer />
+          {/* Narrow screens get the same links on their own row rather than a
+              menu behind a tap, and the row scrolls sideways rather than
+              wrapping or truncating.
+
+              This takes over below `xl`, and it has moved twice for the same
+              reason. First below `md`, until the section renames of 2026-08-21
+              ("Positions" to "Positional Data", "Injuries" to "Injury
+              Database", plus "Game Prediction Model") pushed the bar past the
+              viewport between 900px and 1000px. Then below `lg`, until the
+              fantasy model added an eighth item and the bar ran flush to the
+              edge at 1024 with no margin left. The breakpoint follows the
+              labels; an eighth long name is where an inline bar stops being the
+              right device below a wide desktop.
+
+              A vaul bottom sheet replaced this on 2026-08-26 and was reverted
+              the same day: the row is the operator's preference and the
+              dependency it cost was not worth it. */}
+          <nav aria-label="Primary" className="xl:hidden -mx-4 px-4 overflow-x-auto">
+            <ul className="flex gap-x-4">
+              {SITE_NAV.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="block whitespace-nowrap text-xs font-bold uppercase tracking-wider"
+                    style={{
+                      fontFamily: "var(--font-condensed)",
+                      color: "var(--color-ink-200)",
+                    }}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </header>

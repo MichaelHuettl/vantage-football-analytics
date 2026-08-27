@@ -190,9 +190,11 @@ full-bleed photography sections or a capped reading column inside it.
 The page itself must never scroll horizontally; a wide table scrolls inside its
 own `overflow-x-auto` container instead.
 
-**Below `xl` the primary nav is a bottom sheet** behind a Menu button, because
-eight items with names like "Game Prediction Model" do not fit an inline bar.
-Above it, the bar shows all eight with a hover dropdown on Positional Data.
+**Below `xl` the primary nav is a sideways-scrolling row of the same links**,
+on its own line under the wordmark, rather than a menu behind a tap: a visible
+link is one tap and a hidden one is two. Above `xl` the bar shows all eight
+inline with a hover dropdown on Positional Data. That breakpoint has moved twice
+as section names grew and follows the labels, not a device width.
 
 ## Elevation & Depth
 
@@ -214,8 +216,9 @@ floating.
 
 Radii are small and consistent: `rounded-sm` 2px for chips, `rounded` 4px for
 most controls, `rounded-md` 6px for callout panels and chart frames,
-`rounded-lg` 8px for cards, `rounded-full` for the drawer handle only. Nothing
-on this site is a squircle.
+`rounded-lg` 8px for cards. `rounded-full` is reserved for two things and is not
+a general shape: circular player thumbnails, and the small status dots that
+carry a state beside a label. Nothing on this site is a squircle.
 
 **The signature shape is the goalpost**: an inverted U whose crossbar is a chart
 axis. It appears as the logo mark and as the frame on the featured chart of a

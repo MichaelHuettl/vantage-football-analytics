@@ -650,16 +650,14 @@ copy claiming O-line injuries move the line.**
   spending the reserved amber twice per callout. The four detector hits that
   remain on `ChartFigure` are the goalpost frame, which is three-sided and is
   §7's signature element: **a false positive, deliberately left standing.**
-- **The narrow-screen nav is a vaul drawer, and that reversed a written
-  decision.** Below `xl` the links used to sit in a sideways-scrolling row,
-  placed there explicitly "rather than a menu behind a tap", with a breakpoint
-  that had already moved twice as section names grew. The operator asked for the
-  drawer on 2026-08-26 knowing that. **vaul brought Radix in**: it depends on
-  `@radix-ui/react-dialog` and about ten Radix packages, which is the same Radix
-  kept out a few hours earlier when shadcn was declined. `package.json` is now
-  four dependencies rather than three. That does not reopen shadcn — `shadcn
-  init` still must not run here, for the CSS-variable reason below — but "this
-  repo has no UI dependencies" is no longer true and should stop being said.
+- **The narrow-screen nav is the scrolling link row, and a drawer was tried and
+  reverted.** On 2026-08-26 the sub-`xl` links were moved into a vaul bottom
+  sheet at the operator's request and moved back the same day: he prefers the
+  row, and the dependency was not worth it. **vaul is uninstalled and Radix went
+  with it** — `package.json` is back to three dependencies, next/react/react-dom,
+  and "this repo has no UI dependencies" is true again. The row's own comment in
+  `SiteChrome.tsx` explains why it exists and records that the drawer was tried,
+  so nobody re-proposes it as a fresh idea.
 - **Five component libraries were evaluated on 2026-08-26; one was adopted, by
   hand.** The operator asked for React Bits, Manus.im, Animmaster Lib, Skiper UI
   and Vengeance AI. What they turned out to be:
