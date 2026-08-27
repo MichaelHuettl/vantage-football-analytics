@@ -33,7 +33,7 @@ export function TeamChip({
 
   const dims =
     size === "sm"
-      ? "text-[0.625rem] h-4 min-w-[1.75rem] px-1"
+      ? "text-micro h-4 min-w-[1.75rem] px-1"
       : "text-xs h-5 min-w-[2.25rem] px-1.5";
 
   return (
@@ -63,7 +63,7 @@ export function TeamChip({
 export function FreeAgentChip({ size = "md" }: { size?: "sm" | "md" }) {
   const dims =
     size === "sm"
-      ? "text-[0.625rem] h-4 px-1"
+      ? "text-micro h-4 px-1"
       : "text-xs h-5 px-1.5";
 
   return (

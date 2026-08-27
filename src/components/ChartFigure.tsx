@@ -53,7 +53,9 @@ export function ChartFigure({
                   borderLeft: "6px solid var(--text-primary)",
                   borderRight: "6px solid var(--text-primary)",
                   borderBottom: "6px solid var(--text-primary)",
-                  borderRadius: "3px",
+                  // 4px, the scale's default. Was 3px, which is off the
+                  // radius scale and indistinguishable from it under a 6px frame.
+                  borderRadius: "4px",
                 }
               : {
                   border: "1px solid var(--border-subtle)",
@@ -100,7 +102,7 @@ export function ChartFigure({
               width: "6px",
               height: "24px",
               background: "var(--text-primary)",
-              borderRadius: "0 0 3px 3px",
+              borderRadius: "0 0 4px 4px",
             }}
           />
         )}

@@ -267,7 +267,7 @@ function List({ entries }: { entries: AdvantageEntry[] }) {
             <TeamChip abbr={e.team} size="sm" />
           ) : (
             <span
-              className="inline-flex h-5 items-center rounded px-1.5 text-[10px] font-bold uppercase tracking-wider"
+              className="inline-flex h-5 items-center rounded px-1.5 text-micro font-bold uppercase tracking-wider"
               style={{
                 fontFamily: "var(--font-condensed)",
                 color: "var(--text-muted)",

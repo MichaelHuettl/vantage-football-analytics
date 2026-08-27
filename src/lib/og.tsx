@@ -121,7 +121,7 @@ export async function shareCard({
             <div
               style={{
                 marginLeft: 16,
-                fontFamily: "Condensed",
+                fontFamily: "Barlow Condensed",
                 fontSize: 26,
                 letterSpacing: 6,
                 textTransform: "uppercase",
@@ -135,7 +135,7 @@ export async function shareCard({
           <div
             style={{
               marginTop: 24,
-              fontFamily: "Display",
+              fontFamily: "Anton",
               fontSize: title.length > 34 ? 84 : 108,
               lineHeight: 1.02,
               letterSpacing: 1,
@@ -151,7 +151,7 @@ export async function shareCard({
             <div
               style={{
                 marginTop: 26,
-                fontFamily: "Condensed",
+                fontFamily: "Barlow Condensed",
                 fontSize: 30,
                 letterSpacing: 1,
                 color: INK_300,
@@ -167,8 +167,8 @@ export async function shareCard({
     {
       ...OG_SIZE,
       fonts: [
-        { name: "Display", data: anton, style: "normal", weight: 400 },
-        { name: "Condensed", data: condensed, style: "normal", weight: 600 },
+        { name: "Anton", data: anton, style: "normal", weight: 400 },
+        { name: "Barlow Condensed", data: condensed, style: "normal", weight: 600 },
       ],
     },
   );

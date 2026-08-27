@@ -55,7 +55,7 @@ export function PracticeStrip({
     ["T", practice.thu],
     ["F", practice.fri],
   ];
-  const dim = size === "sm" ? "h-5 w-5 text-[0.6rem]" : "h-7 w-7 text-xs";
+  const dim = size === "sm" ? "h-5 w-5 text-micro" : "h-7 w-7 text-xs";
 
   return (
     <span className="inline-flex gap-1" role="img" aria-label={practiceLabel(practice)}>
@@ -111,7 +111,7 @@ export function InjuryTimeline({
             title={`Week ${h.week}: ${h.status}`}
           />
           <span
-            className="text-[0.625rem] tnum"
+            className="text-micro tnum"
             style={{
               fontFamily: "var(--font-condensed)",
               color: "var(--text-muted)",

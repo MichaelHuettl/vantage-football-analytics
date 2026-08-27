@@ -44,7 +44,7 @@ export function Wordmark({
           reads as a leftward shift against a centred block. The negative
           margin cancels exactly that. */}
       <p
-        className={`mt-2 uppercase ${lg ? "text-sm" : "text-[0.625rem]"}`}
+        className={`mt-2 uppercase ${lg ? "text-sm" : "text-micro"}`}
         style={{
           fontFamily: "var(--font-condensed)",
           letterSpacing: lg ? "0.42em" : "0.3em",

@@ -93,7 +93,7 @@ function SubHead() {
     <>
       <th
         scope="col"
-        className="px-3 py-1 text-left text-[10px] font-bold uppercase tracking-wider"
+        className="px-3 py-1 text-left text-micro font-bold uppercase tracking-wider"
         style={{
           fontFamily: "var(--font-condensed)",
           color: "var(--text-muted)",
@@ -104,14 +104,14 @@ function SubHead() {
       </th>
       <th
         scope="col"
-        className="px-3 py-1 text-right text-[10px] font-bold uppercase tracking-wider"
+        className="px-3 py-1 text-right text-micro font-bold uppercase tracking-wider"
         style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
       >
         Pts / G
       </th>
       <th
         scope="col"
-        className="px-3 py-1 text-right text-[10px] font-bold uppercase tracking-wider"
+        className="px-3 py-1 text-right text-micro font-bold uppercase tracking-wider"
         style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
       >
         EPA

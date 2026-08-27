@@ -172,7 +172,7 @@ function FutureTable({
                 <td className="py-2">
                   {r.player}
                   {r.thin && (
-                    <span className="ml-2 inline-flex h-4 items-center rounded px-1 text-[0.6rem] font-bold uppercase tracking-wider"
+                    <span className="ml-2 inline-flex h-4 items-center rounded px-1 text-micro font-bold uppercase tracking-wider"
                           style={{
                             fontFamily: "var(--font-condensed)",
                             color: "var(--text-muted)",

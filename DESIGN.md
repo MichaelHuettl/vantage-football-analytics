@@ -52,6 +52,12 @@ typography:
     fontWeight: 600
     lineHeight: "1rem"
     letterSpacing: "0.12em"
+  micro:
+    fontFamily: "Barlow Condensed, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "0.625rem"
+    fontWeight: 700
+    lineHeight: "0.875rem"
+    letterSpacing: "0.05em"
 rounded:
   sm: "2px"
   DEFAULT: "4px"
@@ -157,6 +163,13 @@ Three families, each with one job.
 **Tabular figures everywhere a number appears in a column.** `font-variant-numeric:
 tabular-nums` is set on every `table` in base, and `.tnum` exists for figures
 outside one.
+
+**One size below the eyebrow, not four.** `--text-micro` at 0.625rem carries
+every micro label: table sub-headers, chip text, the line under the wordmark.
+Four values were doing that job until 2026-08-26 — 0.625rem, 10px, 0.6rem and
+0.65rem, three within half a pixel of each other and one not in rem. The
+detector found it by checking the codebase against this file, which is the
+reason this file exists.
 
 **The eyebrow is a device, not a style.** Barlow Condensed at 0.6875rem, 0.12em
 tracking, uppercase, muted. It labels a block; it never carries the block's

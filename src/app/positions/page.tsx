@@ -93,7 +93,7 @@ export default function PositionsIndex() {
                     <span className="eyebrow">{POSITION_NAME[doc.position]}</span>
                     {!built && (
                       <span
-                        className="ml-auto inline-flex h-5 shrink-0 items-center rounded px-1.5 text-[0.65rem] font-bold uppercase tracking-wider"
+                        className="ml-auto inline-flex h-5 shrink-0 items-center rounded px-1.5 text-micro font-bold uppercase tracking-wider"
                         style={{
                           fontFamily: "var(--font-condensed)",
                           color: "var(--text-muted)",

@@ -364,7 +364,7 @@ export default async function InjuriesPage({
                                  lib/injury-summary.ts. */
                               <>
                                 <span
-                                  className="inline-flex h-5 items-center rounded px-1.5 text-[0.625rem] font-bold uppercase tracking-wider"
+                                  className="inline-flex h-5 items-center rounded px-1.5 text-micro font-bold uppercase tracking-wider"
                                   style={{
                                     fontFamily: "var(--font-condensed)",
                                     background: "var(--surface-sunken)",

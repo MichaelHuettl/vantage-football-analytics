@@ -631,6 +631,12 @@ copy claiming O-line injuries move the line.**
   and the section prose states the distinction. **It is not a return date and
   must never become one** (§5.3). Where the wire is silent the written record's
   own `reported` date stands in, which is why a row can read "record".
+- **Four display clamps are still off the type ramp, and that is the next real
+  typographic job.** `clamp(2.5rem, 5vw, 3.75rem)`, `clamp(12rem, 34vw, 26rem)`,
+  `clamp(1.75rem, 3vw, 2.5rem)` and `clamp(1.75rem, 3.4vw, 2.5rem)` are four
+  separate fluid scales for headings. Consolidating them changes headline sizes
+  across several pages, so it was left rather than done quietly. `npx impeccable
+  detect src` reports them.
 - **`DESIGN.md` at the repo root is the visual system of record.** Extracted
   from the codebase on 2026-08-26 in the DESIGN.md format: token frontmatter
   plus the eight canonical sections. It records what is built; `docs/BRIEF.md`

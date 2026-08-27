@@ -48,7 +48,7 @@ export function SiteHeader() {
                         tab order. */}
                     <Link href={item.href} className={linkClass} style={linkStyle}>
                       {item.label}
-                      <span aria-hidden="true" className="ml-1.5 text-[0.6rem]">
+                      <span aria-hidden="true" className="ml-1.5 text-micro">
                         ▼
                       </span>
                     </Link>
