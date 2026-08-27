@@ -27,10 +27,10 @@
  */
 import campFile from "@/data/camp-injuries.json";
 import {
-  INJURY_REVALIDATE_SECONDS, RELEVANCE_RANK, SERIOUS_WIRE, pullDraftSharks,
-  pullWire,
+  INJURY_REVALIDATE_SECONDS, RELEVANCE_RANK, SERIOUS_WIRE, isVaguePart,
+  pullBoards, pullDraftSharks, pullWire,
 } from "./injury-feed";
-import type { WireInjury, WireStatus } from "./injury-feed";
+import type { ExternalInjury, WireInjury, WireStatus } from "./injury-feed";
 import { headlinesFor } from "./headline-match";
 import { summarise } from "./injury-summary";
 import type { AutoSummary } from "./injury-summary";
@@ -82,6 +82,10 @@ export interface TrackerRow {
    * `injury-summary.ts` for why this exists at all.
    */
   summary: AutoSummary | null;
+  /** What CBS or Sharp says about him, when either does. Used to name an
+   *  injury Sleeper left as "Undisclosed", and to give the Latest column a
+   *  plain status line on a row carrying no record and no headline. */
+  board: ExternalInjury | null;
   /** The wire and the record making claims that cannot both be true. */
   conflict: boolean;
   /** When this row last moved, and which source moved it. Null when neither
@@ -187,7 +191,7 @@ function archiveOnly(failures: { name: string; reason: string }[]): InjuryTracke
   const rows = camp.data.map((record) => ({
     name: record.name, team: record.team, position: record.position,
     wire: null, body_part: record.body_part ?? null, notes: null,
-    record, conflict: false, headlines: [], summary: null,
+    record, conflict: false, board: null, headlines: [], summary: null,
     lastUpdate: lastUpdateOf(null, record),
     severity: 10, // written records outrank a silent wire; see sort below
   }));
@@ -207,6 +211,11 @@ function sortRows(rows: TrackerRow[]): TrackerRow[] {
   );
 }
 
+/** Same reduction `headline-match` uses, so one key serves both. */
+const boardKey = (v: string) =>
+  v.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]/g, "");
+
 async function pullOnce(): Promise<InjuryTracker> {
   let wire: WireInjury[];
   try {
@@ -217,6 +226,11 @@ async function pullOnce(): Promise<InjuryTracker> {
     return archiveOnly([{ name: "Sleeper", reason: String(err) }]);
   }
   if (!wire.length) return archiveOnly([{ name: "Sleeper", reason: "no rows" }]);
+
+  // CBS and Sharp, pulled alongside the wire and inside the same TTL window.
+  // Never fatal: a board that fails contributes an empty map and the rows keep
+  // Sleeper's own field, which is what they had before these existed.
+  const boards = await pullBoards().catch(() => new Map<string, ExternalInjury>());
 
   const records = new Map(camp.data.map((r) => [key(r.name, r.position), r]));
   const seen = new Set<string>();
@@ -235,12 +249,24 @@ async function pullOnce(): Promise<InjuryTracker> {
     const team = w.team ?? record?.team;
     if (!team) continue;
     seen.add(k);
+    // A board only ever fills a gap. Where Sleeper names anatomy that stands;
+    // where it says "Undisclosed" and CBS says "Groin", the reader gets
+    // "Groin", because a column whose job is to name the injury cannot do it
+    // from the word undisclosed.
+    const board = boards.get(boardKey(record?.name ?? w.name)) ?? null;
+    const bodyPart =
+      (!isVaguePart(w.body_part) && w.body_part) ||
+      record?.body_part ||
+      board?.part ||
+      w.body_part ||
+      null;
     rows.push({
       name: record?.name ?? w.name,
       team,
       position: w.position as CampInjury["position"],
       wire: w.status,
-      body_part: w.body_part ?? record?.body_part ?? null,
+      body_part: bodyPart,
+      board,
       notes: w.notes ?? null,
       record,
       conflict: record ? disagrees(record.status, w.status) : false,
@@ -261,7 +287,7 @@ async function pullOnce(): Promise<InjuryTracker> {
     rows.push({
       name: record.name, team: record.team, position: record.position,
       wire: null, body_part: record.body_part ?? null, notes: null,
-      record, conflict: false, headlines: [], summary: null,
+      record, conflict: false, board: null, headlines: [], summary: null,
       lastUpdate: lastUpdateOf(null, record),
       // Below anything the wire flags, above a bare "Questionable": the record
       // is real reporting, but the wire is the fresher claim.

@@ -165,3 +165,133 @@ export const RELEVANCE_RANK = 400;
 
 export const INJURY_WORDS =
   /\b(injur|hamstring|acl|mcl|lcl|pcl|achilles|concussion|strain|sprain|surgery|pup\b|ir\b|carted|tear|fracture|hurt|ankle|knee|groin|quad|calf|shoulder|ruled out|questionable|doubtful|activated|designated to return)/i;
+
+/**
+ * Two more injury boards, added 2026-08-27 to name what Sleeper will not.
+ *
+ * Sleeper writes "Undisclosed" for a fifth of the players this page shows, and
+ * a column whose job is to say what the injury is cannot do it from that word.
+ * Measured against a live pull before either was built: 61 of the 67 relevant
+ * injured players appear on one of these boards, and **9 of the 19 undisclosed
+ * rows get a real body part** — Nacua groin, Kirk calf, Downs calf, Egbuka toe.
+ * That is the whole reason they are here.
+ *
+ * **ESPN was requested and is not used.** Its robots.txt names `anthropic-ai`
+ * with `Disallow: /`. The `User-agent: *` rules would permit the injury page,
+ * so this is available to the operator directly; it is specifically an agent
+ * fetching it that ESPN has ruled out, and swapping the user-agent to get round
+ * a rule aimed at the agent writing the code is not a thing this file will do.
+ * CBS and Sharp name no Anthropic agent and disallow neither path, checked
+ * rather than assumed.
+ *
+ * **These are HTML, so they are brittle in a way the JSON feeds are not.** A
+ * markup change breaks a selector and yields nothing. Both callers therefore
+ * treat an empty result as normal: the tracker falls back to Sleeper's own
+ * field, which is what it used before these existed. Neither can take the page
+ * down and neither is allowed to override a value Sleeper actually filled in.
+ */
+const CBS_INJURIES = "https://www.cbssports.com/nfl/injuries/";
+const SHARP_INJURIES =
+  "https://www.sharpfootballanalysis.com/analysis/nfl-injury-report-ir-tracker/";
+
+export interface ExternalInjury {
+  /** Anatomy as that board words it. */
+  part: string | null;
+  /** Its own status line, in its own words. */
+  status: string | null;
+  source: "CBS Sports" | "Sharp Football Analysis";
+}
+
+/** Letters and digits only — the same reduction `headline-match` uses, so
+ *  "Ja'Marr Chase" and "JaMarr Chase" land on one key. */
+const nameKey = (v: string) =>
+  v.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]/g, "");
+
+const decode = (v: string) =>
+  v.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&")
+    .replace(/&#x27;|&apos;/g, "'").replace(/&quot;/g, '"')
+    .replace(/&#8212;|&mdash;/g, "\u2014").replace(/&#8211;|&ndash;/g, "\u2013");
+
+/** Tags out, entities decoded, whitespace collapsed. For a table cell. */
+const stripTags = (v: string) =>
+  decode(v.replace(/<[^>]+>/g, " ")).replace(/[^\S\n]+/g, " ").replace(/\s+/g, " ").trim();
+
+/** Tags become line breaks and the breaks survive. For Sharp, whose rows are
+ *  lines of prose rather than cells — collapsing whitespace here would join the
+ *  whole page into one line and the row pattern would never match. */
+const stripToLines = (v: string) =>
+  decode(v.replace(/<[^>]+>/g, "\n")).replace(/[^\S\n]+/g, " ");
+
+/** Values that name no anatomy. A board may fill one of these in. */
+export const isVaguePart = (v: string | null | undefined) =>
+  !v || /undisclosed|not disclosed|^general\b|^lower body$|^upper body$/i.test(v.trim());
+
+const VAGUE = /undisclosed|not disclosed|^general\b|^lower body$|^upper body$/i;
+
+/** CBS publishes a real table: player, position, updated, injury, status. */
+export async function pullCbs(): Promise<Map<string, ExternalInjury>> {
+  const out = new Map<string, ExternalInjury>();
+  const res = await fetch(CBS_INJURIES, {
+    headers: { "user-agent": UA },
+    signal: AbortSignal.timeout(25_000),
+    cache: "no-store",
+  });
+  if (!res.ok) throw new Error(`CBS: HTTP ${res.status}`);
+  const html = await res.text();
+
+  for (const row of html.split(/<tr[^>]*>/i).slice(1)) {
+    const cells = (row.match(/<t[dh][^>]*>[\s\S]*?<\/t[dh]>/gi) ?? [])
+      .map(stripTags).filter(Boolean);
+    if (cells.length < 5 || cells[0] === "Player") continue;
+    // The name cell carries an abbreviated form and the full one: "T. Benson
+    // Trey Benson". The full name is the trailing pair of words.
+    const full = cells[0].replace(/^[A-Z]\.\s*\S+\s+/, "").trim();
+    if (!full.includes(" ")) continue;
+    out.set(nameKey(full), {
+      part: cells[3] && !VAGUE.test(cells[3]) ? cells[3] : null,
+      status: cells[4] || null,
+      source: "CBS Sports",
+    });
+  }
+  return out;
+}
+
+/** Sharp writes prose, not a table: "Trey Benson, RB — Knee — Out for Season",
+ *  grouped under team headings. Parsed off that shape. */
+export async function pullSharp(): Promise<Map<string, ExternalInjury>> {
+  const out = new Map<string, ExternalInjury>();
+  const res = await fetch(SHARP_INJURIES, {
+    headers: { "user-agent": UA },
+    signal: AbortSignal.timeout(25_000),
+    cache: "no-store",
+  });
+  if (!res.ok) throw new Error(`Sharp: HTTP ${res.status}`);
+  const html = (await res.text()).replace(/<(script|style)[\s\S]*?<\/\1>/gi, "");
+
+  for (const line of stripToLines(html).split("\n")) {
+    const m = /^([A-Z][A-Za-z.'-]+(?:\s+[A-Z][A-Za-z.'-]+)+),\s*[A-Z]{1,4}\s*[—–-]\s*(.+)$/
+      .exec(line.trim());
+    if (!m) continue;
+    const [, full, rest] = m;
+    const bits = rest.split(/\s*[—–]\s*/).map((b) => b.trim());
+    out.set(nameKey(full), {
+      part: bits[0] && !VAGUE.test(bits[0]) ? bits[0] : null,
+      status: bits[1] ?? null,
+      source: "Sharp Football Analysis",
+    });
+  }
+  return out;
+}
+
+/** Both boards, merged, CBS first because it names more. Never throws: a board
+ *  that fails contributes nothing and the tracker keeps Sleeper's own field. */
+export async function pullBoards(): Promise<Map<string, ExternalInjury>> {
+  const [cbs, sharp] = await Promise.all([
+    pullCbs().catch(() => new Map<string, ExternalInjury>()),
+    pullSharp().catch(() => new Map<string, ExternalInjury>()),
+  ]);
+  const merged = new Map(sharp);
+  for (const [k, v] of cbs) merged.set(k, v);
+  return merged;
+}

@@ -355,6 +355,20 @@ export default async function InjuriesPage({
                                     </li>
                                   ))}
                                 </ul>
+                              ) : r.board?.status ? (
+                                /* No record and no headline, but a board has a
+                                   status in plain words. "Questionable for
+                                   Week 1 at L.A. Chargers" says more than an
+                                   empty cell and is not this site's claim. */
+                                <span className="block">
+                                  {r.board.status}
+                                  <span
+                                    className="ml-1.5 whitespace-nowrap text-xs"
+                                    style={{ color: "var(--text-muted)" }}
+                                  >
+                                    {r.board.source}
+                                  </span>
+                                </span>
                               ) : null)}
                             {r.record?.history && (
                               <span

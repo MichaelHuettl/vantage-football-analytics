@@ -164,6 +164,24 @@ build` with a line number instead of shipping a broken page.
      deleted rather than left dead — the tracker reconciles inline on every row,
      so that section's conflict and "not in the report" lists were duplicating
      the table above them. Headlines kept their own light puller.
+   - **CBS Sports and Sharp Football Analysis feed the tracker (2026-08-27).**
+     Both are HTML scrapes in `injury-feed.ts`, pulled inside the same TTL
+     window as the wire and never fatal: a board that fails contributes an empty
+     map and the rows keep Sleeper's own field. **A board only ever fills a
+     gap** — where Sleeper names anatomy that stands. The reason they exist is
+     measured, not assumed: 61 of 67 relevant injured players appear on one of
+     them, and they name a body part for 9 of the 19 rows Sleeper leaves as
+     "Undisclosed" (Nacua groin, Kirk calf, Downs calf, Egbuka toe). Live, that
+     took undisclosed records from 19 to 10 and empty Latest cells from 25 to 1.
+     They are HTML, so a markup change breaks a selector and yields nothing;
+     that is designed for rather than guarded against.
+   - **ESPN was requested again on 2026-08-27 and is still not used.** Its
+     robots.txt names `anthropic-ai` with `Disallow: /`. The `User-agent: *`
+     rules would permit `/nfl/injuries`, so **this remains available to the
+     operator directly** — what is ruled out is an agent fetching it, and
+     changing the user-agent to get round a rule aimed at the agent writing the
+     code is not something to do on his behalf. CBS and Sharp name no Anthropic
+     agent and disallow neither path; both were checked rather than assumed.
    - **The Draft Sharks pull stays, its section does not.** The standalone
      "Injury headlines" list was removed on 2026-08-27 at the operator's
      request, along with every explanatory paragraph under the Season tracker
