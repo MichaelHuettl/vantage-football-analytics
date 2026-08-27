@@ -191,10 +191,12 @@ The page itself must never scroll horizontally; a wide table scrolls inside its
 own `overflow-x-auto` container instead.
 
 **Below `xl` the primary nav is a sideways-scrolling row of the same links**,
-on its own line under the wordmark, rather than a menu behind a tap: a visible
-link is one tap and a hidden one is two. Above `xl` the bar shows all eight
-inline with a hover dropdown on Positional Data. That breakpoint has moved twice
-as section names grew and follows the labels, not a device width.
+rather than a menu behind a tap: a visible link is one tap and a hidden one is
+two. It takes its own line under the wordmark below `md`, and from `md` up it
+shares the line and right-aligns, ending flush with the container's padding edge
+so it lines up with the wide bar above it. Above `xl` that wide bar shows all
+eight inline with a hover dropdown on Positional Data. The `xl` breakpoint has
+moved twice as section names grew and follows the labels, not a device width.
 
 ## Elevation & Depth
 

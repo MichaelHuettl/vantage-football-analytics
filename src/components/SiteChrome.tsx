@@ -103,7 +103,20 @@ export function SiteHeader() {
               A vaul bottom sheet replaced this on 2026-08-26 and was reverted
               the same day: the row is the operator's preference and the
               dependency it cost was not worth it. */}
-          <nav aria-label="Primary" className="xl:hidden -mx-4 px-4 overflow-x-auto">
+          {/* `md:ml-auto` from the point the row shares a line with the
+              wordmark. Left-aligned it sat hard against the logo with the dead
+              space all on the right — at 1100px the links ended at 825 and left
+              251px empty — which read as though the bar had failed to fill
+              rather than been placed. Below `md` it keeps its own line and
+              stays left, because there it is the reading order.
+
+              The negative margins survive on purpose: `-mr-4` against the inner
+              `px-4` lands the last link exactly on the container's padding
+              edge, so the row ends flush with the wide bar above it. */}
+          <nav
+            aria-label="Primary"
+            className="xl:hidden -mx-4 px-4 md:ml-auto overflow-x-auto"
+          >
             <ul className="flex gap-x-4">
               {SITE_NAV.map((item) => (
                 <li key={item.href}>
