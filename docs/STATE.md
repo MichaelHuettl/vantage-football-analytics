@@ -631,6 +631,19 @@ copy claiming O-line injuries move the line.**
   and the section prose states the distinction. **It is not a return date and
   must never become one** (§5.3). Where the wire is silent the written record's
   own `reported` date stands in, which is why a row can read "record".
+- **`DESIGN.md` at the repo root is the visual system of record.** Extracted
+  from the codebase on 2026-08-26 in the DESIGN.md format: token frontmatter
+  plus the eight canonical sections. It records what is built; `docs/BRIEF.md`
+  stays the authority on why, and where the two disagree the brief wins and
+  DESIGN.md is stale. Worth updating in the same commit as any change to
+  `globals.css`.
+- **The side-tab callout is retired and must not come back.** Eleven copies of a
+  `border-l-4` card across eight components were replaced by one `Callout`
+  component on 2026-08-26. A thick coloured rule down one side of a card is the
+  single most recognisable tell of a generated interface, and it was also
+  spending the reserved amber twice per callout. The four detector hits that
+  remain on `ChartFigure` are the goalpost frame, which is three-sided and is
+  §7's signature element: **a false positive, deliberately left standing.**
 - **The narrow-screen nav is a vaul drawer, and that reversed a written
   decision.** Below `xl` the links used to sit in a sideways-scrolling row,
   placed there explicitly "rather than a menu behind a tap", with a breakpoint

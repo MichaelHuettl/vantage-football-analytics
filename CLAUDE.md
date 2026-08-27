@@ -11,6 +11,8 @@ conclusion, and the site publishes the argument underneath them.
   `§2`, `§7`, `§5.3` and so on. Without it those references mean nothing.
 - **`docs/STATE.md`** — what is actually built, where the build departs from the
   brief and why, what is still open, and where the source materials live.
+- **`DESIGN.md`** — the visual system as it currently stands: tokens, type,
+  depth, shapes, and the do/don't list. The brief says *why*; this says *what*.
 
 ## The rules that matter most
 
