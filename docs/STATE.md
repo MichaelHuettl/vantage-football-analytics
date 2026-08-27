@@ -731,6 +731,18 @@ copy claiming O-line injuries move the line.**
   top shifts it a day the *other* way. Getting one branch right and the other
   wrong is easy and invisible from the author's own timezone; both are checked
   under UTC, Los Angeles, Tokyo and New York.
+- **A `view()` timeline cannot animate an element that is already on screen,
+  and that is not a bug you will see in the code.** The range is positional, so
+  an element inside the viewport when the page loads starts part-way through it:
+  it never plays from the beginning, and with `opacity` in the keyframe it sits
+  permanently dimmed at whatever progress it loaded at. It reads as "that card
+  didn't get the effect". Found on `/positions`, where at 1280x800 the QB and RB
+  cards sit at y=680 against an 800px viewport while the other four are below
+  the fold, and every card's markup is byte-identical. **Card grids therefore
+  use the load-time `rise` with a delay off the index**, which does not care
+  where an element sits, and `.reveal` now animates `vantage-rise-in-place` —
+  transform only, no opacity — so the worst case anywhere else is an element a
+  few pixels low rather than a faded one.
 - **A scroll-driven animation needs `animation-duration: auto`, and the
   shorthand silently takes it away.** `animation: name 1ms linear both` on a
   `view()` timeline looks correct and does nothing: progress comes from scroll

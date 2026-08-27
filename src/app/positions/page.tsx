@@ -56,11 +56,18 @@ export default function PositionsIndex() {
         lede="What each position is actually measured on, and the evidence behind every ranking it produces."
       />
       <Container className="py-10">
+        {/* Staggered on load, not on scroll: see the note on the home page
+            grid. The first row of this grid sits inside the viewport at common
+            heights, which is exactly the case a view timeline handles badly. */}
         <ul className="grid gap-4 sm:grid-cols-2">
-          {docs.map((doc) => {
+          {docs.map((doc, i) => {
             const built = POSITION_BUILT.has(doc.position);
             return (
-              <li key={doc.position} className="reveal">
+              <li
+                key={doc.position}
+                className="rise"
+                style={{ animationDelay: `${i * 70}ms` }}
+              >
                 <Link
                   href={`/positions/${doc.position.toLowerCase()}`}
                   className="group flex h-full flex-col overflow-hidden rounded-lg border transition-colors hover:border-[var(--accent)]"

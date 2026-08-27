@@ -295,6 +295,23 @@
         on `prefers-reduced-motion: no-preference` instead.
      ---------------------------------------------------------------- */
 
+  /* The scroll-driven variant moves but never fades. A view timeline is
+     positional, so an element that is already partly on screen when the page
+     loads starts part-way through its range — it cannot play from the start,
+     and with opacity in the keyframe it sits permanently dimmed at whatever
+     progress it loaded at. Animating transform alone means the worst case is
+     an element a few pixels low, which settles on the first scroll and is
+     invisible until then. Elements that must fade in use a load-time `rise`
+     instead, which has no such dependency on where it sits. */
+  @keyframes vantage-rise-in-place {
+    from {
+      transform: translateY(14px);
+    }
+    to {
+      transform: none;
+    }
+  }
+
   @keyframes vantage-rise {
     from {
       opacity: 0;
@@ -336,7 +353,7 @@
            0s, which finishes the animation in the first sliver of the range and
            holds the end state for all of it. That failure is invisible — the
            content looks correct, it simply never animates. */
-        animation-name: vantage-rise;
+        animation-name: vantage-rise-in-place;
         animation-duration: auto;
         animation-timing-function: linear;
         animation-fill-mode: both;

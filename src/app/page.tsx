@@ -227,9 +227,18 @@ export default function Home() {
           </p>
         </div>
 
+        {/* A load-time stagger rather than a scroll reveal. Whether a card is
+            on screen when the page loads decides how much of a view-timeline
+            reveal it ever plays, so the first row behaved differently from the
+            rest depending on viewport height. A delay off the index is the
+            same for every card wherever it sits. */}
         <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {SECTION_CARDS.map((card) => (
-            <li key={card.href} className="reveal">
+          {SECTION_CARDS.map((card, i) => (
+            <li
+              key={card.href}
+              className="rise"
+              style={{ animationDelay: `${i * 70}ms` }}
+            >
               <Link
                 href={card.href}
                 className="glare group relative flex h-64 flex-col justify-end overflow-hidden rounded-lg p-6 isolate"
