@@ -1,3 +1,4 @@
+import { Callout } from "../Callout";
 import { MARKET, PRED_PERF } from "@/lib/predictions";
 
 /**
@@ -16,22 +17,13 @@ import { MARKET, PRED_PERF } from "@/lib/predictions";
  */
 export function ModelHonesty() {
   return (
-    <aside
-      className="rounded border-l-4 p-4 sm:p-5"
-      style={{
-        borderColor: "var(--color-vantage-amber)",
-        background: "var(--surface-sunken)",
-      }}
-    >
-      <p className="eyebrow" style={{ color: "var(--text-muted)" }}>
-        Read this before the numbers
-      </p>
-      <p className="mt-2 max-w-3xl">{PRED_PERF.honest_caveat}</p>
+    <Callout as="aside" label="Read this before the numbers">
+      <p className="max-w-3xl">{PRED_PERF.honest_caveat}</p>
       <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         Measured out of sample: the market called {(MARKET.vegas.accuracy * 100).toFixed(1)}% of
         games correctly against this model&rsquo;s {(MARKET.model.accuracy * 100).toFixed(1)}%.
         Where the two disagree, the market has been the better guide.
       </p>
-    </aside>
+    </Callout>
   );
 }

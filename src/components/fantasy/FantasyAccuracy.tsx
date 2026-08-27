@@ -1,3 +1,4 @@
+import { Callout } from "../Callout";
 import { PositionBadge } from "@/components/PlayerLink";
 import {
   FM_BACKTEST_EXTENT, FM_CALIBRATION, FM_CONFIG, FM_COVERAGE, FM_HIT_RATES,
@@ -72,16 +73,12 @@ export function FantasyAccuracy() {
   return (
     <section>
       {/* ---- the conclusion, before the evidence ---- */}
-      <div className="rounded border-l-4 p-5 sm:p-6"
-           style={{ borderColor: "var(--color-vantage-amber)", background: "var(--surface-sunken)" }}>
-        <p className="eyebrow" style={{ color: "var(--color-vantage-amber)" }}>
-          What this model is for
-        </p>
-        <h2 className="mt-2 text-2xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}>
-          It avoids bad calls. It does not call scores.
-        </h2>
-        <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+      <Callout
+        label="What this model is for"
+        title="It avoids bad calls. It does not call scores."
+        titleAs="h2"
+      >
+        <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
           Everything below is one claim, measured {hr.season_count} different
           ways: this model beats &ldquo;assume the player keeps doing what he has
           been doing&rdquo; by a modest amount, reliably. It is a second opinion
@@ -197,7 +194,7 @@ export function FantasyAccuracy() {
           against, and it is the reason the numbers below are quoted against a
           baseline rather than against zero.
         </p>
-      </div>
+      </Callout>
 
       <h2 className="text-3xl uppercase tracking-wide"
           style={{ fontFamily: "var(--font-display)" }}>
@@ -212,17 +209,15 @@ export function FantasyAccuracy() {
       </p>
 
       {/* ---- the benchmark ---- */}
-      <div className="mt-8 rounded border-l-4 p-4 sm:p-5"
-           style={{ borderColor: "var(--border-strong)", background: "var(--surface-sunken)" }}>
-        <p className="eyebrow">Read this column before the others</p>
-        <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+      <Callout className="mt-8" tone="note" label="Read this column before the others">
+        <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
           Weekly fantasy scoring is mostly noise. The benchmark that matters is
           not zero error, it is &ldquo;assume the player keeps doing what he has been doing&rdquo;, which is his own three-game average. Beating that by six or
           seven percent at the skill positions is the honest result for this
           problem, and it is roughly what published projection systems manage.
           Anything dramatically better would mean a leak, not skill.
         </p>
-      </div>
+      </Callout>
 
       {/* ---- per-position back-test ---- */}
       <h3 className="eyebrow mt-12">Average error across {seasons.length} back-tested seasons</h3>

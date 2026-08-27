@@ -1,3 +1,4 @@
+import { Callout } from "./Callout";
 import { ChartFigure } from "@/components/ChartFigure";
 import { ScatterChart } from "@/components/ScatterChart";
 import { TeamChip } from "@/components/TeamChip";
@@ -153,17 +154,13 @@ export function WideReceiverAnalysis() {
           </p>
 
           {WR_GROUPS && (
-            <div className="mt-8 rounded border-l-4 p-5 sm:p-6"
-                 style={{ borderColor: "var(--color-vantage-amber)",
-                          background: "var(--surface-sunken)" }}>
-              <p className="eyebrow" style={{ color: "var(--color-vantage-amber)" }}>
-                Where they land
-              </p>
-              <h4 className="mt-2 text-2xl uppercase tracking-wide"
-                  style={{ fontFamily: "var(--font-display)" }}>
-                Four corners, and the one that is worth acting on
-              </h4>
-              <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+            <Callout
+              className="mt-8"
+              label="Where they land"
+              title="Four corners, and the one that is worth acting on"
+              titleAs="h4"
+            >
+              <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
                 The field split on its own medians, at {WR_GROUPS.medians.bust.toFixed(1)}% bust and {WR_GROUPS.medians.boom.toFixed(1)}% boom. Read these as a
                 description of {WR_SEASON} rather than a forecast: better receivers
                 boom more, so the corners partly re-say who scored the most. The
@@ -211,7 +208,7 @@ export function WideReceiverAnalysis() {
                   </p>
                 </>
               )}
-            </div>
+            </Callout>
           )}
         </div>
       )}
@@ -230,15 +227,14 @@ export function WideReceiverAnalysis() {
 
         {/* ---- who the grid is good and bad news for ---- */}
         {WR_VERDICTS && (
-          <div className="mt-8 rounded border-l-4 p-5 sm:p-6"
-               style={{ borderColor: "var(--border-strong)",
-                        background: "var(--surface-sunken)" }}>
-            <p className="eyebrow">Reading the grid</p>
-            <h4 className="mt-2 text-2xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}>
-              Who it is good and bad news for
-            </h4>
-            <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+          <Callout
+            className="mt-8"
+            tone="note"
+            label="Reading the grid"
+            title="Who it is good and bad news for"
+            titleAs="h4"
+          >
+            <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
               All seven columns crossed, and every one of the{" "}
               {WR_VERDICTS.counted} names in the grid sorted by which way its
               entries point. A receiver inherits his offense&rsquo;s three
@@ -267,7 +263,7 @@ export function WideReceiverAnalysis() {
               {WR_STICKINESS?.metrics.find((m) => m.label === "Yards per target")
                 ?.rho.toFixed(2)}.
             </p>
-          </div>
+          </Callout>
         )}
 
         {WR_GRID_COMPUTED && (
@@ -307,15 +303,14 @@ export function WideReceiverAnalysis() {
             </div>
 
             {WR_GRID_COMPUTED.agreement && (
-              <div className="mt-8 rounded border-l-4 p-5 sm:p-6"
-                   style={{ borderColor: "var(--border-strong)",
-                            background: "var(--surface-sunken)" }}>
-                <p className="eyebrow">Where the two agree</p>
-                <h4 className="mt-2 text-2xl uppercase tracking-wide"
-                    style={{ fontFamily: "var(--font-display)" }}>
-                  A judgement and a measurement, side by side
-                </h4>
-                <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+              <Callout
+                className="mt-8"
+                tone="note"
+                label="Where the two agree"
+                title="A judgement and a measurement, side by side"
+                titleAs="h4"
+              >
+                <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
                   The operator&rsquo;s two touchdown columns are a judgement
                   about next season. The fitted ones measure one specific thing
                   about the last. Publishing both and naming the difference is
@@ -347,7 +342,7 @@ export function WideReceiverAnalysis() {
                   survives. Davante Adams sits on both computed lists at once for the same reason in reverse. He led every receiver in end-zone looks by ten, so even scoring above expectation he is
                   a milder regression case than a raw touchdown count suggests.
                 </p>
-              </div>
+              </Callout>
             )}
           </>
         )}
@@ -582,14 +577,13 @@ function Block({
         </div>
       )}
       {chart.notes && chart.notes.length > 0 && (
-        <div className="mt-4 rounded border-l-2 pl-4" style={{ borderColor: "var(--border-strong)" }}>
-          {chart.notes_label && <p className="eyebrow">{chart.notes_label}</p>}
-          <ul className="mt-2 flex flex-col gap-1 text-sm" style={{ color: "var(--text-secondary)" }}>
+        <Callout className="mt-4" plain tone="note" label={chart.notes_label ?? "Notes"}>
+          <ul className="flex flex-col gap-1 text-sm" style={{ color: "var(--text-secondary)" }}>
             {chart.notes.map((note) => (
               <li key={note}>{note}</li>
             ))}
           </ul>
-        </div>
+        </Callout>
       )}
     </div>
   );

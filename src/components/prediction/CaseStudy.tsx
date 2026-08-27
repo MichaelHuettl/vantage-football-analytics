@@ -1,3 +1,4 @@
+import { Callout } from "../Callout";
 import { TeamChip } from "@/components/TeamChip";
 import {
   MISS_BANDS, MISS_BEST, MISS_BEST_VS_MARKET, MISS_DIVISIONAL, MISS_HEADLINE,
@@ -91,12 +92,13 @@ export function CaseStudy() {
  */
 function Reframing() {
   return (
-    <div
-      className="mt-8 rounded border-l-4 p-4 sm:p-6"
-      style={{ borderColor: "var(--border-strong)", background: "var(--surface-sunken)" }}
+    <Callout
+      className="mt-8"
+      tone="note"
+      label="The finding that reframes the rest"
+      labelAs="h3"
     >
-      <h3 className="eyebrow">The finding that reframes the rest</h3>
-      <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
+      <p className="max-w-3xl" style={{ color: "var(--text-secondary)" }}>
         Of the {MISS_HEADLINE.misses} misses, the betting market picked the same
         losing side in <strong className="tnum">{MISS_SHARED}</strong> of them
         ({pct(MISS_SHARED_SHARE, 0)}). Only{" "}
@@ -122,7 +124,7 @@ function Reframing() {
           </div>
         ))}
       </dl>
-    </div>
+    </Callout>
   );
 }
 
@@ -494,17 +496,29 @@ function Finding({
 }) {
   return (
     <div
-      className="rounded border-l-4 p-4 sm:p-5"
+      className="rounded-md p-4 sm:p-5"
       style={{
-        borderColor: focal ? "var(--color-vantage-amber)" : "var(--border-strong)",
         background: "var(--surface-raised)",
+        boxShadow:
+          "inset 0 0 0 1px color-mix(in oklab, var(--text-primary) 8%, transparent)",
       }}
     >
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
         <h4 className="text-lg uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
           {title}
         </h4>
-        <span className="eyebrow" style={{ color: focal ? "var(--color-vantage-amber)" : "var(--text-muted)" }}>
+        <span className="eyebrow flex items-center gap-2" style={{ color: "var(--text-muted)" }}>
+          {/* The focal card is marked, not outlined: one amber element rather
+              than a coloured rule down the side of the card (§7). */}
+          <span
+            aria-hidden="true"
+            className="inline-block h-2 w-2 shrink-0"
+            style={{
+              background: focal
+                ? "var(--color-vantage-amber)"
+                : "var(--color-ink-400)",
+            }}
+          />
           {verdict}
         </span>
       </div>

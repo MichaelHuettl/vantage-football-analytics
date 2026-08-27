@@ -1,3 +1,4 @@
+import { Callout } from "../Callout";
 import { PositionBadge } from "@/components/PlayerLink";
 import {
   FM_CONFIG, FM_DRIVERS, FM_METRICS, FM_POSITION_NAME, FM_POSITIONS, FM_SCORING,
@@ -66,12 +67,8 @@ export function FantasyMethod() {
         ))}
       </ul>
 
-      <div className="mt-8 rounded border-l-4 p-4 sm:p-5"
-           style={{ borderColor: "var(--color-vantage-amber)", background: "var(--surface-sunken)" }}>
-        <p className="eyebrow" style={{ color: "var(--color-vantage-amber)" }}>
-          Why every feature is lagged
-        </p>
-        <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
+      <Callout className="mt-8" label="Why every feature is lagged">
+        <p className="max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
           The quickest way to build a projection model that looks brilliant and is
           worthless is to let a week&rsquo;s own statistics into the features that
           predict it. Every rolling average, share and matchup rating here is
@@ -80,7 +77,7 @@ export function FantasyMethod() {
           the accuracy itself: a leaking model does not beat a three-game average
           by six percent, it beats it by eighty.
         </p>
-      </div>
+      </Callout>
 
       {/* ---------------- per-position models ---------------- */}
       <h3 className="eyebrow mt-12">A different model for each position</h3>

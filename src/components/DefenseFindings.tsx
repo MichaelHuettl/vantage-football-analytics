@@ -1,3 +1,4 @@
+import { Callout } from "./Callout";
 import { Team } from "@/components/DefenseData";
 import { TeamChip } from "@/components/TeamChip";
 import { DEFENSE } from "@/lib/defense";
@@ -207,13 +208,8 @@ export function DefenseFindings() {
         {support
           .filter((s) => s.appears.length === 0)
           .map((s) => (
-            <div
-              key={s.team}
-              className="mt-6 max-w-3xl border-l-4 pl-5"
-              style={{ borderColor: "var(--color-vantage-amber)" }}
-            >
-              <p className="eyebrow">The exception</p>
-              <p className="mt-2 leading-relaxed">
+            <Callout key={s.team} plain className="mt-6 max-w-3xl" label="The exception">
+              <p className="leading-relaxed">
                 {s.team} scored <Stat>{s.fpts}</Stat> points and appear in{" "}
                 <strong>none of the seven</strong>: not sacks, interceptions, forced fumbles, pressure rate, EPA per pass, pass success rate or
                 EPA per play. Every other defense on this list appears in at
@@ -227,7 +223,7 @@ export function DefenseFindings() {
                 units: the personnel case may be right, but it is being added to
                 a starting point lower than tenth.
               </p>
-            </div>
+            </Callout>
           ))}
       </section>
 

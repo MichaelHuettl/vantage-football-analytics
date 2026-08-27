@@ -68,7 +68,13 @@ export function ChartFigure({
           ) : (
             <div
               className="relative w-full"
-              style={{ aspectRatio: ratio, background: "#FFFFFF" }}
+              style={{
+                aspectRatio: ratio,
+                // Deliberately white in both themes: the chart PNGs are
+                // exported on white, so the plate has to match the image
+                // rather than the page. The token, not the literal (§7).
+                background: "var(--color-vantage-white)",
+              }}
             >
               {src ? (
                 <Image
@@ -122,15 +128,18 @@ function ChartSlot() {
       <div
         className="h-10 w-14 rounded-sm"
         style={{
-          borderLeft: "4px solid #D2D8DC",
-          borderRight: "4px solid #D2D8DC",
-          borderBottom: "4px solid #D2D8DC",
+          // Tokens, not hex. These were #D2D8DC / #4A555F / #66727D, which is
+          // exactly what §7 forbids in a component and which also meant the
+          // placeholder ignored dark mode entirely.
+          borderLeft: "4px solid var(--color-ink-200)",
+          borderRight: "4px solid var(--color-ink-200)",
+          borderBottom: "4px solid var(--color-ink-200)",
         }}
       />
-      <p className="text-sm font-semibold" style={{ color: "#4A555F" }}>
+      <p className="text-sm font-semibold" style={{ color: "var(--color-ink-600)" }}>
         Chart slot
       </p>
-      <p className="text-xs max-w-xs" style={{ color: "#66727D" }}>
+      <p className="text-xs max-w-xs" style={{ color: "var(--color-ink-500)" }}>
         Drop the PNG in <code>/public/charts</code> and pass its path as{" "}
         <code>src</code>.
       </p>
