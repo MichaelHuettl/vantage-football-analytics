@@ -102,12 +102,6 @@ export default async function GamesPage({
             ))}
           </div>
         )}
-
-        <p className="mt-16 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
-          Implied team totals are stored with the lines they come from rather
-          than worked out on the page, so the same number appears everywhere it
-          is quoted. A blank is a number nobody has posted yet, not a zero.
-        </p>
       </Container>
     </>
   );

@@ -6,7 +6,7 @@ import { FantasyAccuracy } from "@/components/fantasy/FantasyAccuracy";
 import { FantasyBoard } from "@/components/fantasy/FantasyBoard";
 import { FantasyMethod } from "@/components/fantasy/FantasyMethod";
 import {
-  FM_CONFIG, FM_METRICS, FM_POSITIONS, FM_SOURCE, FM_SPAN, FM_UPDATED,
+  FM_CONFIG, FM_METRICS, FM_POSITIONS, FM_SPAN,
 } from "@/lib/fantasy";
 import type { FantasyPosition } from "@/lib/fantasy";
 
@@ -55,9 +55,6 @@ export default async function FantasyModelPage({
   const href = (tab: string, pos?: FantasyPosition) =>
     `/fantasy-model?tab=${tab}${pos ? `&pos=${pos}` : ""}`;
 
-  const skill = (["QB", "RB", "WR", "TE"] as const)
-    .map((p) => FM_METRICS[p])
-    .filter(Boolean);
   const bestLift = Math.max(...Object.values(FM_METRICS).map((m) => m.backtest_lift));
   const worstLift = Math.min(...Object.values(FM_METRICS).map((m) => m.backtest_lift));
 
@@ -177,11 +174,6 @@ export default async function FantasyModelPage({
             </section>
           )}
         </div>
-
-        <p className="mt-12 text-xs" style={{ color: "var(--text-muted)" }}>
-          {FM_SOURCE} · {skill.length} skill-position models plus kicker and
-          defense · updated {FM_UPDATED}
-        </p>
       </Container>
     </>
   );

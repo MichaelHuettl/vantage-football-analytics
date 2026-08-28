@@ -11,8 +11,6 @@ import { GAME_MARGINS as M, PRED_OVERVIEW as O } from "@/lib/predictions";
  */
 export function PredictionOverview() {
   const pct = (n: number) => `${(n * 100).toFixed(1)}%`;
-  const pp = (n: number) =>
-    `${n >= 0 ? "+" : "−"}${Math.abs(n * 100).toFixed(1)} pts`;
 
   const items: { value: string; label: string; note?: string }[] = [
     {
@@ -92,22 +90,6 @@ export function PredictionOverview() {
         <strong className="tnum">{pct(M.perfect_above_7_ceiling)}</strong>. Across{" "}
         {M.games.toLocaleString()} games, {M.seasons[0]}–{M.seasons[1]}.
       </p>
-
-      {/* Both comparisons, in the same breath. */}
-      <div
-        className="mt-px grid gap-px sm:grid-cols-2"
-        style={{ background: "var(--border-subtle)" }}
-      >
-        <p className="p-5 text-sm sm:p-6" style={{ background: "var(--surface-page)" }}>
-          <strong className="tnum">{pp(O.over_home_baseline)}</strong> better than always
-          picking the home team ({pct(O.home_baseline)}), the baseline it was built to beat.
-        </p>
-        <p className="p-5 text-sm sm:p-6" style={{ background: "var(--surface-page)" }}>
-          <strong className="tnum">{pp(O.vs_market)}</strong> against the betting market
-          ({pct(O.market_baseline)}). The market is the better forecaster, and this page
-          does not pretend otherwise.
-        </p>
-      </div>
     </section>
   );
 }

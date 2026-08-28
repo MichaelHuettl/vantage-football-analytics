@@ -7,7 +7,6 @@ import { TeamChip } from "@/components/TeamChip";
 import { CaseStudy } from "@/components/prediction/CaseStudy";
 import { ConfidenceTiers } from "@/components/prediction/ConfidenceTiers";
 import { Methodology } from "@/components/prediction/Methodology";
-import { ModelHonesty } from "@/components/prediction/ModelHonesty";
 import { PredictionOverview } from "@/components/prediction/PredictionOverview";
 import { PRED_META, PRED_WEEKS, TIER_LABEL, gamesForWeek, kickoffLabel } from "@/lib/predictions";
 
@@ -46,15 +45,10 @@ export default async function GamePredictionIndex({
         image="/img/bg/vegas.jpg"
         eyebrow="Win probability"
         title="Game Prediction Model"
-        lede="How the model works, how well it has done, and what it expects this week."
       />
 
       <Container className="py-16 sm:py-24">
         <PredictionOverview />
-
-        <div className="mt-10">
-          <ModelHonesty />
-        </div>
 
         {/* ---- tabs ---- */}
         <nav aria-label="Prediction sections" className="mt-12">

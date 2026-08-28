@@ -270,16 +270,6 @@ export default async function NewsPage({
               >
                 Preseason
               </span>
-              <span
-                className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
-                style={{
-                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
-                  color: "var(--text-secondary)",
-                  boxShadow: "inset 0 0 0 1px var(--border-strong)",
-                }}
-              >
-                From X
-              </span>
             </div>
             <DataFreshness updated={BEAT_UPDATED} label="Beat feed" staleAfterDays={2} />
           </div>

@@ -7,20 +7,13 @@ import {
   attachHeadlines, getInjuryHeadlines, getInjuryTracker, trackerByTeam,
 } from "@/lib/injury-tracker";
 import { WireStatusPill } from "@/components/WireStatus";
-import { InjuryTimeline, LastUpdateCell, PracticeStrip, StatusPill } from "@/components/Injury";
+import { LastUpdateCell } from "@/components/Injury";
 import { Container, EmptyState } from "@/components/PageHeader";
-import { PlayerLink, PositionBadge } from "@/components/PlayerLink";
+import { PositionBadge } from "@/components/PlayerLink";
 import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
 import { FilterLink, TeamFilterLink } from "@/components/FilterLink";
-import {
-  CURRENT_WEEK,
-  INJURY_UPDATED,
-  WEEKS,
-  backlog,
-  rowsByTeam,
-  teamsWithInjuries,
-} from "@/lib/injuries";
+import { teamsWithInjuries } from "@/lib/injuries";
 import { getPlayer } from "@/lib/content";
 import { isNewerThan } from "@/lib/freshness";
 import { getTeam, readableOn } from "@/lib/teams";
@@ -35,14 +28,9 @@ export const metadata: Metadata = {
 export default async function InjuriesPage({
   searchParams,
 }: {
-  searchParams: Promise<{ week?: string; team?: string }>;
+  searchParams: Promise<{ team?: string }>;
 }) {
   const params = await searchParams;
-  const parsed = Number(params.week);
-  const week = WEEKS.includes(parsed) ? parsed : CURRENT_WEEK;
-
-  const groups = rowsByTeam(week);
-  const carried = backlog();
   const teams = teamsWithInjuries();
 
   // Both pulled at request time; AutoRefresh re-runs this render on a timer.
@@ -53,11 +41,9 @@ export default async function InjuriesPage({
     getInjuryHeadlines(),
   ]);
 
-  // One team filter across the whole page rather than one per section. News
-  // keeps its two feeds on separate params because they cover different
-  // periods, but camp and the weekly report are the same question asked at two
-  // points in a season — a reader filtering to a team wants that team
-  // everywhere, not in one table and not the other.
+  // The page is the season tracker now, so team is the only filter on it.
+  // The weekly report, the backlog and the team index were removed on
+  // 2026-08-28, and the `week` param went with them.
   const filterTeams = [
     // Built from the tracker as well as the schedule, so a club that only
     // appears on the wire this week is still filterable.
@@ -68,14 +54,9 @@ export default async function InjuriesPage({
     : undefined;
   const activeTeam = team ? getTeam(team) : undefined;
 
-  /** Links that change one filter keep the other. */
-  const q = (over: { week?: number; team?: string }) => {
-    const next = { week, team, ...over };
-    const p = new URLSearchParams();
-    if (next.week !== undefined) p.set("week", String(next.week));
-    if (next.team) p.set("team", next.team);
-    const s = p.toString();
-    return s ? `/injuries?${s}` : "/injuries";
+  const q = (over: { team?: string }) => {
+    const next = over.team ?? team;
+    return next ? `/injuries?team=${next}` : "/injuries";
   };
 
   // Tracker rows grouped by team, each group worst-first, groups ordered by
@@ -88,8 +69,6 @@ export default async function InjuriesPage({
     .map((g) => ({ ...g, team: getTeam(g.abbr) }))
     .filter((g) => !team || g.abbr === team);
 
-  const weekGroups = groups.filter((g) => !team || g.team.abbr === team);
-  const carriedRows = carried.filter((c) => !team || c.team.abbr === team);
 
   return (
     <>
@@ -98,13 +77,13 @@ export default async function InjuriesPage({
         objectPosition="center 50%"
         eyebrow="Status and trend"
         title="Injury Database"
-        lede="Training camp status now, practice participation once the season starts."
+        lede="Training camp, practice, and in-season player injury status"
       />
 
       <Container className="py-16 sm:py-24">
-        {/* A page-level control, not a section one: it governs camp, the weekly
-            report and the backlog together, so it sits above all three rather
-            than inside whichever table it appears to belong to. */}
+        {/* The page's only filter. It governed three tables until the weekly
+            report, backlog and team index were removed on 2026-08-28; now it
+            governs the season tracker alone and still sits above it. */}
         <nav aria-label="Team" className="pb-8">
           <ul className="flex flex-wrap items-center gap-2">
             <li className="eyebrow mr-1">Team</li>
@@ -393,209 +372,6 @@ export default async function InjuriesPage({
               </TeamBlock>
             ))}
           </div>
-        </section>
-
-        {/* ===================== Week-by-week report ===================== */}
-        <section className="mt-16">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <h2
-              className="text-3xl uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
-            >
-              Week {week} report
-            </h2>
-            <DataFreshness updated={INJURY_UPDATED} label="Report pulled" />
-          </div>
-
-          <nav aria-label="Week" className="mt-4">
-            <ul className="flex flex-wrap items-center gap-x-3 gap-y-1">
-              <li className="eyebrow">Week</li>
-              {WEEKS.map((w) => (
-                <li key={w}>
-                  <Link
-                    href={q({ week: w })}
-                    aria-current={w === week ? "page" : undefined}
-                    className="inline-flex h-8 min-w-8 items-center justify-center rounded px-2 text-sm font-bold tnum"
-                    style={{
-                      fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
-                      background: w === week ? "var(--text-primary)" : "transparent",
-                      color:
-                        w === week ? "var(--surface-page)" : "var(--text-secondary)",
-                      boxShadow:
-                        w === week ? undefined : "inset 0 0 0 1px var(--border-strong)",
-                    }}
-                  >
-                    {w}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          {weekGroups.length === 0 ? (
-            <div className="mt-6">
-              <EmptyState
-                title={
-                  activeTeam
-                    ? `No week ${week} designations for the ${activeTeam.nickname}.`
-                    : `No designations filed for week ${week}.`
-                }
-                direction={
-                  activeTeam
-                    ? "Choose another team, or All to see the full report."
-                    : "Add rows to src/data/injuries.json."
-                }
-              />
-            </div>
-          ) : (
-            <div className="mt-6 flex flex-col gap-4">
-              {weekGroups.map(({ team, rows }) => (
-                <TeamBlock key={team.abbr} team={team} abbr={team.abbr} history>
-                  {/* table-fixed with a shared colgroup: every team block uses
-                      identical column widths, so Injury, W/T/F, Status and
-                      Note line up down the whole page instead of each table
-                      sizing itself to its own content. */}
-                  <table className="w-full table-fixed text-sm">
-                    <colgroup>
-                      <col className="w-[210px]" />
-                      <col className="w-[170px]" />
-                      <col className="w-[130px]" />
-                      <col className="w-[130px]" />
-                      <col />
-                    </colgroup>
-                    <thead>
-                      <tr style={{ background: "var(--surface-sunken)" }}>
-                        <Th>Player</Th>
-                        <Th>Injury</Th>
-                        <Th>W / T / F</Th>
-                        <Th>Status</Th>
-                        <Th>Note</Th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {rows.map(({ entry, player }) => (
-                        <tr
-                          key={entry.player_id}
-                          className="border-t align-top"
-                          style={{ borderColor: "var(--border-subtle)" }}
-                        >
-                          <td className="px-4 py-3">
-                            <PlayerCell
-                              player={player}
-                              name={player.name}
-                              position={player.position}
-                            />
-                          </td>
-                          <td className="px-4 py-3">{entry.injury}</td>
-                          <td className="px-4 py-3">
-                            <PracticeStrip practice={entry.practice} />
-                          </td>
-                          <td className="px-4 py-3">
-                            <StatusPill status={entry.status} />
-                          </td>
-                          <td
-                            className="px-4 py-3"
-                            style={{ color: "var(--text-secondary)" }}
-                          >
-                            {entry.note}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </TeamBlock>
-              ))}
-            </div>
-          )}
-        </section>
-
-        {/* =========================== Backlog =========================== */}
-        <section className="mt-16">
-          <h2
-            className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
-          >
-            Backlog
-          </h2>
-          <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-            Players who have carried a designation for more than one week. A
-            one-week knock and a managed condition look identical on a Friday
-            report and nothing alike here.
-          </p>
-
-          {carriedRows.length === 0 ? (
-            <div className="mt-6">
-              <EmptyState
-                title={
-                  activeTeam
-                    ? `Nothing carried over for the ${activeTeam.nickname}.`
-                    : "Nothing carried over."
-                }
-                direction={
-                  activeTeam
-                    ? "Choose another team, or All to see every carried designation."
-                    : "Players appearing in more than one week will collect here."
-                }
-              />
-            </div>
-          ) : (
-            <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {carriedRows.map((item) => (
-                <li
-                  key={item.player.id}
-                  className="rounded-lg border p-5"
-                  style={{ borderColor: "var(--border-subtle)" }}
-                >
-                  <div className="flex items-start justify-between gap-3">
-                    <PlayerLink player={item.player} />
-                    <TeamChip abbr={item.team.abbr} />
-                  </div>
-                  <p className="mt-4 text-sm">
-                    <span className="eyebrow mr-2">{item.injury}</span>
-                    <span style={{ color: "var(--text-secondary)" }}>
-                      {item.weeks} weeks
-                    </span>
-                  </p>
-                  <div className="mt-3">
-                    <InjuryTimeline history={item.history} />
-                  </div>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
-
-        {/* ========================== Team index ========================== */}
-        <section className="mt-16">
-          <h2
-            className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
-          >
-            By team
-          </h2>
-          {teams.length === 0 ? (
-            <div className="mt-6">
-              <EmptyState
-                title="No team reports yet."
-                direction="A team appears here once it has filed a weekly injury report."
-              />
-            </div>
-          ) : (
-          <ul className="mt-6 flex flex-wrap gap-2">
-            {teams.map((team) => (
-              <li key={team.abbr}>
-                <Link
-                  href={`/injuries/${team.abbr.toLowerCase()}`}
-                  className="flex items-center gap-2 rounded px-3 py-2 text-sm font-semibold"
-                  style={{ boxShadow: "inset 0 0 0 1px var(--border-strong)" }}
-                >
-                  <TeamChip abbr={team.abbr} size="sm" />
-                  {team.nickname}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          )}
         </section>
 
       </Container>

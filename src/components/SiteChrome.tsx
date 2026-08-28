@@ -172,10 +172,6 @@ export function SiteFooter() {
                 Vantage
               </span>
             </div>
-            <p className="mt-4 text-sm" style={{ color: "var(--color-ink-400)" }}>
-              Rankings are a conclusion. This site publishes the argument
-              underneath them.
-            </p>
           </div>
 
           <nav aria-label="Footer">

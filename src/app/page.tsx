@@ -14,76 +14,60 @@ const SECTION_CARDS: {
   {
     href: "/rankings",
     label: "Rankings",
-    blurb: "Tiered by position and format. Every row opens the chart underneath it.",
+    blurb: "2026 Points Per Reception (PPR) in-season and redraft Fantasy Football Player Rankings",
     image: "/img/players/bijan-robinson.jpg",
     position: "center 22%",
   },
   {
     href: "/positions",
     label: "Positional Data",
-    blurb: "The framework used to evaluate each position, applied to the current pool.",
+    blurb: "Statistical Evaluation of Quarterback, Running back, Wide Receiver, Tight End, Team Defense, and Kicker Positions",
     image: "/img/players/justin-jefferson.jpg",
     position: "center 18%",
   },
   {
     href: "/injuries",
     label: "Injury Database",
-    blurb: "Practice participation across the week, because the trend is the signal.",
+    blurb: "Live fantasy football player injury tracker for all 32 teams",
     image: "/img/players/christian-mccaffrey.jpg",
     position: "center 20%",
   },
   {
     href: "/film",
     label: "Film",
-    blurb: "Route concepts and play diagrams, drawn here rather than borrowed.",
+    blurb: "Team Film Breakdowns and log (Coming Soon)",
     image: "/img/players/jamarr-chase.jpg",
     position: "center 18%",
   },
   {
     href: "/games",
     label: "Game Tracker",
-    blurb: "Implied team totals, weather, and the designations that move a lineup.",
+    blurb: "Weekly NFL Game overviews, betting odds, weather reports, and more",
     image: "/img/bg/game-tracker.jpg",
     position: "center 35%",
   },
   {
     href: "/model",
     label: "Game Prediction Model",
-    blurb: "A win probability for every game, its record, and every call it got wrong.",
+    blurb: "Statistical model trained on NFL historical data for predicting individual game outcomes",
     image: "/img/bg/vegas.jpg",
     position: "center",
   },
   {
     href: "/fantasy-model",
     label: "Fantasy Football Model",
-    blurb: "PPR projections by position, and how far they beat a three-game average.",
+    blurb: "Statistical model trained on NFL historical data for predicting fantasy football value, scoring, and individual statistics",
     image: "/img/bg/fantasy-model.jpg",
     position: "center 30%",
   },
   {
     href: "/news",
     label: "News",
-    blurb: "Headlines tagged to players. Source and timestamp, then a link out.",
+    blurb: "Breaking news and headlines from training camp, free agency, trades, practices, games, and more",
     image: "/img/players/lamar-jackson.jpg",
     position: "center 18%",
   },
 ];
-
-/**
- * The card count, spelled out, taken from the list rather than typed beside it.
- *
- * It read "Six sections" while there were seven, because adding a card and
- * updating a sentence two hundred lines away are separate acts and the second
- * one gets forgotten. Counting the array is not the kind of derivation §11
- * rules out — there is no data file and no metric here, only this file's own
- * literal.
- */
-const NUMBER_WORD = [
-  "No", "One", "Two", "Three", "Four", "Five", "Six",
-  "Seven", "Eight", "Nine", "Ten",
-];
-const SECTION_COUNT =
-  NUMBER_WORD[SECTION_CARDS.length] ?? String(SECTION_CARDS.length);
 
 export default function Home() {
   const rb = getRankingList("RB");
@@ -143,7 +127,7 @@ export default function Home() {
 
               <div className="rise rise-4 mt-9 flex flex-wrap gap-3">
                 <Link
-                  href="/rankings"
+                  href="/positions"
                   className="rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-transform hover:-translate-y-0.5"
                   style={{
                     fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
@@ -151,7 +135,7 @@ export default function Home() {
                     color: "var(--color-vantage-black)",
                   }}
                 >
-                  See the rankings
+                  See the statistics
                 </Link>
                 <Link
                   href="/glossary"
@@ -162,7 +146,7 @@ export default function Home() {
                     boxShadow: "inset 0 0 0 1px var(--color-ink-600)",
                   }}
                 >
-                  How the metrics work
+                  The Metrics and Data
                 </Link>
               </div>
             </div>
@@ -215,16 +199,13 @@ export default function Home() {
           entry points rather than six empty rectangles.
           --------------------------------------------------------------- */}
       <Container className="py-16 sm:py-24" id="sections">
-        <div className="reveal flex flex-wrap items-baseline gap-x-6 gap-y-2">
+        <div className="reveal">
           <h2
             className="text-4xl sm:text-5xl uppercase tracking-wide leading-none"
             style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
-            Where to start
+            Contents
           </h2>
-          <p className="text-lg" style={{ color: "var(--text-secondary)" }}>
-            {SECTION_COUNT} sections. Each one shows its work.
-          </p>
         </div>
 
         {/* A load-time stagger rather than a scroll reveal. Whether a card is

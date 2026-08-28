@@ -133,13 +133,6 @@ export function FantasyMethod() {
           );
         })}
       </div>
-      <p className="mt-5 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
-        Read a pair of these together rather than one at a time. The three- and
-        five-game windows of the same statistic are nearly the same column: at tight end the two weighted-opportunity windows correlate at 0.95,
-        so a ridge fit splits one shared signal into a large positive and a large
-        negative that mostly cancel. The pair means something; neither half means
-        anything alone.
-      </p>
     </section>
   );
 }
