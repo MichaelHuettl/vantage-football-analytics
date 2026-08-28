@@ -55,14 +55,14 @@
 
   /* --- Type. One family, three roles.
      §7 named Anton, Barlow Condensed and Barlow. The operator collapsed those
-     to a single typeface (Bricolage Grotesque) on 2026-08-27, so the three roles are now separated
+     to a single typeface (Roboto, the sans) on 2026-08-27, so the three roles are now separated
      by weight and width on one family rather than by three family names. The
      three tokens below are kept deliberately: every component already
      references them, and keeping the *roles* named means the next font change
      is this block rather than 218 components. --- */
-  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
-  --font-condensed: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
-  --font-sans: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
+  --font-condensed: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
 
   /* Weight and width are what separate the roles now that the family does not.
      Anton was a single weight and intrinsically heavy, so not one of the 109
@@ -70,9 +70,9 @@
      rendered every hero far too light. These carry that job instead, and they
      are tokens rather than literals so the roles stay defined in this file. */
   --weight-display: 800;
-  /* Both sit inside Bricolage's wdth range (75-100), which is why swapping the
-     family needed no other change. Archivo's range was wider (62-125) but the
-     values in use were always these two. */
+  /* Both sit inside Roboto's wdth range (75-100), which is why swapping the
+     family needed no other change. Archivo (62-125) and Bricolage (75-100)
+     were tried before it and the values in use never moved. */
   --stretch-display: 78%;
   --stretch-condensed: 84%;
 

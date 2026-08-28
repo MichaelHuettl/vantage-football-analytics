@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import "./globals.css";
 
@@ -9,25 +9,29 @@ import "./globals.css";
  * Anton, Barlow Condensed and Barlow were three faces doing three jobs. The
  * operator's call on 2026-08-27 was to collapse to a single typeface, so the
  * three roles are now one family separated by weight and width rather than by
- * name. Bricolage Grotesque is the choice for three reasons: it has a real
- * `wdth` axis (75-100) so the condensed table furniture survives, it reaches
- * weight 800 so heroes keep the heft Anton gave them, and it carries an `opsz`
- * axis (12-96) that browsers apply automatically from font-size. That last one
- * matters more than it sounds — the face is deliberately irregular, and optical
- * sizing concentrates that character at display sizes while opening the
- * letterforms up at 16px, which is where the site's long arguments live.
+ * name. Roboto is the choice, on a brief of clean, appealing and legible with
+ * data rather than distinctive: it has a real `wdth` axis (75-100) so the
+ * condensed table furniture survives, it reaches weight 900 for the heroes, and
+ * its figures are unusually easy to tell apart at the 14px the tables use,
+ * which is what the site is mostly made of.
  *
- * A family without a width axis would have lost the condensed character the
- * whole broadcast look rests on. Archivo was tried first and rejected as too
- * blocky; its evenness is what a signage grotesque is for.
+ * **This is `Roboto`, the sans, not `Roboto_Serif`.** next/font exposes six
+ * families beginning with that word — Roboto, Roboto Condensed, Roboto Flex,
+ * Roboto Mono, Roboto Serif and Roboto Slab — and only this one has the
+ * wdth 75-100 / wght 100-900 pair the tokens below rely on.
+ *
+ * Two faces were tried and rejected first. Archivo was too blocky, which is
+ * what an even signage grotesque is for. Bricolage Grotesque was picked for
+ * character and dropped once the brief turned out to be clarity: its
+ * deliberate irregularity is an asset in a hero and noise in a 182-row table.
  *
  * The variable font ships one file for every weight and width, so this is also
  * one request instead of the nine that three families at four weights cost.
  */
-const bricolage = Bricolage_Grotesque({
+const roboto = Roboto({
   subsets: ["latin"],
-  axes: ["opsz", "wdth"],
-  variable: "--font-bricolage",
+  axes: ["wdth"],
+  variable: "--font-roboto",
   display: "swap",
 });
 
@@ -73,7 +77,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={bricolage.variable}
+      className={roboto.variable}
     >
       <body className="min-h-screen flex flex-col">
         <a href="#main" className="skip-link">

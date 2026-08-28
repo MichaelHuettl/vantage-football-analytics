@@ -29,43 +29,43 @@ colors:
   status-full: "#2f7a4f"
 typography:
   display:
-    fontFamily: "Bricolage Grotesque, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Roboto, ui-sans-serif, system-ui, sans-serif"
     fontSize: "clamp(1.875rem, 5vw, 6rem)"
     fontWeight: 800
     fontStretch: "78%"
     lineHeight: 0.9
     letterSpacing: "0.025em"
   condensed:
-    fontFamily: "Bricolage Grotesque, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Roboto, ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.875rem"
     fontWeight: 600
     fontStretch: "84%"
     lineHeight: 1.45
     letterSpacing: "0.05em"
   body:
-    fontFamily: "Bricolage Grotesque, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Roboto, ui-sans-serif, system-ui, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     fontStretch: "100%"
     lineHeight: 1.6
     letterSpacing: "normal"
   eyebrow:
-    fontFamily: "Bricolage Grotesque, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Roboto, ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.6875rem"
     fontWeight: 600
     fontStretch: "84%"
     lineHeight: "1rem"
     letterSpacing: "0.12em"
   og-display:
-    fontFamily: "Bricolage Display"
+    fontFamily: "Roboto Display"
     fontWeight: 800
-    note: "satori only; static instance of Bricolage at wght 800 / wdth 78 / opsz 96"
+    note: "satori only; static instance of Roboto (sans) at wght 800 / wdth 78"
   og-condensed:
-    fontFamily: "Bricolage Condensed"
+    fontFamily: "Roboto Condensed"
     fontWeight: 600
-    note: "satori only; static instance of Bricolage at wght 600 / wdth 84 / opsz 14"
+    note: "satori only; static instance of Roboto (sans) at wght 600 / wdth 84"
   micro:
-    fontFamily: "Bricolage Grotesque, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Roboto, ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.625rem"
     fontWeight: 700
     fontStretch: "84%"
@@ -153,13 +153,11 @@ at the top of that one file.
 
 The same file is the one exception on type. satori renders a variable font at
 its default instance and ignores the weight it is handed, so `assets/fonts/`
-holds two static instances cut from Bricolage's variable file at the coordinates
-the pages use — wght 800 / wdth 78 / opsz 96 and wght 600 / wdth 84 / opsz 14.
-`opsz` has to be pinned there for the same reason the weight does: the browser
-applies that axis automatically from font-size and satori does not, so an
-unpinned card would set its headline in the text cut. They are registered with
-satori as "Bricolage Display" and "Bricolage Condensed", which is why those two
-names appear in the table above and nowhere else.
+holds two static instances cut from Roboto's variable file at the coordinates
+the pages use — wght 800 / wdth 78 and wght 600 / wdth 84. They are registered
+with satori as "Roboto Display" and "Roboto Condensed", which is why those two
+names appear in the table above and nowhere else. Both are cut from
+`ofl/roboto`; the serif, slab and mono of that name are separate families.
 
 **The ink ramp is derived from the brand black's hue**, so greys never read as
 neutral-cool against the warm amber. Components reference the semantic layer
@@ -175,8 +173,11 @@ word. Every position badge prints its abbreviation.
 
 ## Typography
 
-**One family, three roles.** Bricolage Grotesque, loaded once as a variable
-font with its `wdth` (75-100) and `opsz` (12-96) axes alongside weight 200-800. Until 2026-08-27 this was three
+**One family, three roles.** Roboto — **the sans, not Roboto Serif** — loaded
+once as a variable font with its `wdth` axis (75-100) alongside weight 100-900.
+Google publishes six families under that name (Roboto, Condensed, Flex, Mono,
+Serif, Slab); only this one carries the wdth 75-100 / wght 100-900 pair the
+tokens depend on, and the share-card instances are cut from `ofl/roboto`. Until 2026-08-27 this was three
 faces — Anton for display, Barlow Condensed for interface furniture, Barlow for
 reading. The operator collapsed them to a single typeface, so what separates the
 roles now is weight and width rather than three family names.
@@ -187,19 +188,25 @@ roles now is weight and width rather than three family names.
   out, for table headers, eyebrows, buttons, badges and nav.
 - **Reading text** is weight 400 at normal width.
 
-Bricolage was chosen over five other candidates for three reasons. It has a real
-width axis, and collapsing to a family without one would have lost the condensed
-character the whole broadcast look rests on. It reaches weight 800, where the
-nearest runner-up (Instrument Sans) stops at 700 and would have cost every hero
-its heft. And it carries an `opsz` axis that browsers apply automatically from
-font-size, which is what makes a deliberately irregular face safe here: the
-character concentrates at display sizes and the letterforms open up at 16px,
-where the site's long arguments live.
+**Three faces were tried on 2026-08-27 before this one, and the order they were
+rejected in records what the brief turned out to be.** Archivo went in first and
+was rejected the same day as too blocky, which is what an even signage grotesque
+is for. Bricolage Grotesque replaced it, chosen for character. Then the brief
+was stated properly — clean, appealing, and easy to read data from — and
+Bricolage went too: its deliberate irregularity is an asset in a hero and noise
+in a 182-row table.
 
-**Archivo was tried first, on 2026-08-27, and rejected the same day** as too
-blocky — an even signage grotesque, which is what that genus is for. The values
-in use did not change when it was replaced, because 78% and 84% sit inside both
-families' width ranges. That is the token layer doing its job.
+Roboto is what that brief asks for. It keeps a real width axis, so the condensed
+furniture survives; it reaches weight 900, where a near-miss like Instrument
+Sans stops at 700 and would have cost every hero its heft; and its figures are
+unusually easy to tell apart at the 14px the tables actually use, which is most
+of what this site is made of. The charge against it is fair — it has been
+Android's system font since 2011 and is close to invisible through familiarity.
+On a site whose job is conveying numbers, that was judged a feature.
+
+**Through all three swaps the tokens never moved.** 78% and 84% sit inside every
+one of those families' width ranges, so each change was the family name and
+nothing else. That is the token layer doing its job.
 
 **Weight and width are tokens, not literals.** `--weight-display`,
 `--stretch-display` and `--stretch-condensed` live in `globals.css` beside the
@@ -228,7 +235,7 @@ outside one.
 **One size below the eyebrow, not four.** `--text-micro` at 0.625rem carries
 every micro label: table sub-headers, chip text, the line under the wordmark.
 
-**The eyebrow is a device, not a style.** Bricolage at 0.6875rem, weight 600, 84%
+**The eyebrow is a device, not a style.** Roboto at 0.6875rem, weight 600, 84%
 width, 0.12em tracking, uppercase, muted. It labels a block; it never carries
 the block's meaning.
 

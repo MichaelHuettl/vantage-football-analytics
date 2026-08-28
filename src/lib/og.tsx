@@ -48,23 +48,24 @@ let fonts: { display: Buffer; condensed: Buffer } | null = null;
 async function loadFonts() {
   if (fonts) return fonts;
   const dir = join(process.cwd(), "assets", "fonts");
-  // Static instances cut from Bricolage's variable file at the coordinates
-  // the site uses — wght 800 / wdth 78 / opsz 96 for display, wght 600 /
-  // wdth 84 / opsz 14 for the kicker — so a share card matches the page it
-  // came from. satori renders a variable font at its default instance and
-  // ignores the weight it is handed, which would have put a 400 on every card.
-  // opsz has to be pinned for the same reason: the browser applies that axis
-  // automatically from font-size, and satori does not.
+  // Static instances cut from Roboto's variable file at the coordinates the
+  // site uses — wght 800 / wdth 78 for display, wght 600 / wdth 84 for the
+  // kicker — so a share card matches the page it came from. satori renders a
+  // variable font at its default instance and ignores the weight it is handed,
+  // which would have put a 400 on every card.
+  //
+  // These are cut from `ofl/roboto`, the sans. Roboto Serif, Slab, Mono,
+  // Condensed and Flex are five separate families and none of them is this.
   const [display, condensed] = await Promise.all([
-    readFile(join(dir, "Bricolage-Display.ttf")),
-    readFile(join(dir, "Bricolage-Condensed.ttf")),
+    readFile(join(dir, "Roboto-Display.ttf")),
+    readFile(join(dir, "Roboto-Condensed.ttf")),
   ]);
   fonts = { display, condensed };
   return fonts;
 }
 
 /**
- * @param title    The headline, in Bricolage Display. Kept short: this is read
+ * @param title    The headline, in Roboto Display. Kept short: this is read
  *                 size in a timeline, not at 1200px.
  * @param kicker   The small tracked-out line above it, naming the section.
  * @param footnote Optional supporting line, for a page with a number worth
@@ -128,7 +129,7 @@ export async function shareCard({
             <div
               style={{
                 marginLeft: 16,
-                fontFamily: "Bricolage Condensed",
+                fontFamily: "Roboto Condensed",
                 fontSize: 26,
                 letterSpacing: 6,
                 textTransform: "uppercase",
@@ -142,7 +143,7 @@ export async function shareCard({
           <div
             style={{
               marginTop: 24,
-              fontFamily: "Bricolage Display",
+              fontFamily: "Roboto Display",
               fontSize: title.length > 34 ? 84 : 108,
               lineHeight: 1.02,
               letterSpacing: 1,
@@ -158,7 +159,7 @@ export async function shareCard({
             <div
               style={{
                 marginTop: 26,
-                fontFamily: "Bricolage Condensed",
+                fontFamily: "Roboto Condensed",
                 fontSize: 30,
                 letterSpacing: 1,
                 color: INK_300,
@@ -174,8 +175,8 @@ export async function shareCard({
     {
       ...OG_SIZE,
       fonts: [
-        { name: "Bricolage Display", data: display, style: "normal", weight: 800 },
-        { name: "Bricolage Condensed", data: condensed, style: "normal", weight: 600 },
+        { name: "Roboto Display", data: display, style: "normal", weight: 800 },
+        { name: "Roboto Condensed", data: condensed, style: "normal", weight: 600 },
       ],
     },
   );
