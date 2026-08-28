@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/PageHeader";
 import { Wordmark } from "@/components/Wordmark";
-import { getRankingList } from "@/lib/content";
 
 const SECTION_CARDS: {
   href: string;
@@ -70,7 +69,6 @@ const SECTION_CARDS: {
 ];
 
 export default function Home() {
-  const rb = getRankingList("RB");
 
   return (
     <>
@@ -151,10 +149,23 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Latest card. The one thing on the page that changes weekly, so
-                it earns a fixed position the reader can learn. */}
+            {/* Latest card. The one thing on the page that moves on its own, so
+                it earns a fixed position the reader can learn.
+
+                It pointed at the RB draft board until 2026-08-28, which was the
+                stalest thing on the site — a list dated 2026-08-06 under a
+                heading saying "latest update". The injury tracker is the honest
+                occupant: it pulls at request time and is the only section that
+                is current without anyone running a command.
+
+                **It states that it is live rather than printing a count.**
+                Fetching the tracker here would give a row number, and it would
+                also drag the home page out of static rendering and put a
+                fourteen-megabyte Sleeper pull in front of the site's most
+                visited route. The card's job is to send a reader somewhere, not
+                to be the tracker. */}
             <Link
-              href="/rankings?pos=RB&format=ppr"
+              href="/injuries"
               className="rise rise-4 group hidden lg:block w-[320px] rounded-lg overflow-hidden backdrop-blur-md transition-transform hover:-translate-y-1"
               style={{
                 background: "color-mix(in oklab, var(--color-vantage-panel) 82%, transparent)",
@@ -163,11 +174,11 @@ export default function Home() {
             >
               <div className="relative h-40">
                 <Image
-                  src="/img/players/jahmyr-gibbs.jpg"
+                  src="/img/bg/injury-database.jpg"
                   alt=""
                   fill
                   sizes="320px"
-                  style={{ objectFit: "cover", objectPosition: "center 20%" }}
+                  style={{ objectFit: "cover", objectPosition: "center 32%" }}
                 />
               </div>
               <div className="p-5">
@@ -181,10 +192,10 @@ export default function Home() {
                     color: "var(--color-vantage-white)",
                   }}
                 >
-                  RB tiers
+                  Injury Database
                 </p>
                 <p className="mt-2 text-sm" style={{ color: "var(--color-ink-400)" }}>
-                  Top {rb.entries.length} backs · {rb.updated}
+                  Live wire · All 32 teams
                 </p>
               </div>
             </Link>
