@@ -25,7 +25,7 @@ export function PlayerProfileBody({ profile }: { profile: Profile }) {
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
           <h2
             className="text-2xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             The {season.season} season
           </h2>
@@ -42,7 +42,7 @@ export function PlayerProfileBody({ profile }: { profile: Profile }) {
             <li key={k} className="p-4 sm:p-5" style={{ background: "var(--surface-page)" }}>
               <span
                 className="block leading-none tnum"
-                style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3.4vw, 2.5rem)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)", fontSize: "clamp(1.75rem, 3.4vw, 2.5rem)" }}
               >
                 {formatStat(k, season.stats[k], profile.decimals[k] ?? 1)}
               </span>
@@ -73,7 +73,7 @@ export function PlayerProfileBody({ profile }: { profile: Profile }) {
         <section>
           <h2
             className="text-2xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             What the tracking data says
           </h2>
@@ -119,7 +119,7 @@ function SeasonTrend({ profile }: { profile: Profile }) {
   const seasons = profile.seasons.slice(-6);
   return (
     <section>
-      <h2 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+      <h2 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         Year to year
       </h2>
       <div className="mt-5 overflow-x-auto">
@@ -169,7 +169,7 @@ function GameLog({ profile }: { profile: Profile }) {
   return (
     <section>
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-        <h2 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h2 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           Week by week
         </h2>
         <p className="eyebrow" style={{ color: "var(--text-muted)" }}>

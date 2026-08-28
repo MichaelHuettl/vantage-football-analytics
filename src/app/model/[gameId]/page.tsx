@@ -42,7 +42,7 @@ export default async function GamePredictionPage({
   if (!game) notFound();
 
   return (
-    <Container className="py-10">
+    <Container className="py-16 sm:py-24">
       <p className="mb-6">
         <Link href="/model" className="eyebrow hover:underline">
           ← All games

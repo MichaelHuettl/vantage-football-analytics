@@ -54,7 +54,7 @@ export function FantasyBoard({
 
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
         <h3 className="flex items-center gap-3 text-2xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}>
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           <PositionBadge position={position as Position} />
           {FM_POSITION_NAME[position]}
         </h3>
@@ -174,7 +174,7 @@ function FutureTable({
                   {r.thin && (
                     <span className="ml-2 inline-flex h-4 items-center rounded px-1 text-micro font-bold uppercase tracking-wider"
                           style={{
-                            fontFamily: "var(--font-condensed)",
+                            fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                             color: "var(--text-muted)",
                             boxShadow: "inset 0 0 0 1px var(--border-strong)",
                           }}>

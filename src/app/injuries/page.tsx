@@ -101,7 +101,7 @@ export default async function InjuriesPage({
         lede="Training camp status now, practice participation once the season starts."
       />
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         {/* A page-level control, not a section one: it governs camp, the weekly
             report and the backlog together, so it sits above all three rather
             than inside whichever table it appears to belong to. */}
@@ -137,14 +137,14 @@ export default async function InjuriesPage({
             <div className="flex flex-wrap items-center gap-3">
               <h2
                 className="text-3xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 Season tracker
               </h2>
               <span
                 className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
                 style={{
-                  fontFamily: "var(--font-condensed)",
+                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                   background: tracker.live ? "var(--text-primary)" : "var(--surface-sunken)",
                   color: tracker.live ? "var(--surface-page)" : "var(--text-muted)",
                   boxShadow: tracker.live ? undefined : "inset 0 0 0 1px var(--border-strong)",
@@ -243,7 +243,7 @@ export default async function InjuriesPage({
                                   <span
                                     className="mt-0.5 block text-xs uppercase tracking-wider"
                                     style={{
-                                      fontFamily: "var(--font-condensed)",
+                                      fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                                       color: "var(--text-muted)",
                                     }}
                                   >
@@ -270,7 +270,7 @@ export default async function InjuriesPage({
                               <span
                                 className="text-xs uppercase tracking-wider"
                                 style={{
-                                  fontFamily: "var(--font-condensed)",
+                                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                                   color: "var(--text-muted)",
                                 }}
                               >
@@ -316,7 +316,7 @@ export default async function InjuriesPage({
                               >
                                 <span
                                   className="shrink-0 font-bold uppercase tracking-wider"
-                                  style={{ fontFamily: "var(--font-condensed)" }}
+                                  style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}
                                 >
                                   Disagrees
                                 </span>
@@ -377,7 +377,7 @@ export default async function InjuriesPage({
                               >
                                 <span
                                   className="shrink-0 font-bold uppercase tracking-wider"
-                                  style={{ fontFamily: "var(--font-condensed)" }}
+                                  style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}
                                 >
                                   Newer
                                 </span>
@@ -396,11 +396,11 @@ export default async function InjuriesPage({
         </section>
 
         {/* ===================== Week-by-week report ===================== */}
-        <section className="mt-20">
+        <section className="mt-16">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <h2
               className="text-3xl uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
             >
               Week {week} report
             </h2>
@@ -417,7 +417,7 @@ export default async function InjuriesPage({
                     aria-current={w === week ? "page" : undefined}
                     className="inline-flex h-8 min-w-8 items-center justify-center rounded px-2 text-sm font-bold tnum"
                     style={{
-                      fontFamily: "var(--font-condensed)",
+                      fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                       background: w === week ? "var(--text-primary)" : "transparent",
                       color:
                         w === week ? "var(--surface-page)" : "var(--text-secondary)",
@@ -510,10 +510,10 @@ export default async function InjuriesPage({
         </section>
 
         {/* =========================== Backlog =========================== */}
-        <section className="mt-20">
+        <section className="mt-16">
           <h2
             className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             Backlog
           </h2>
@@ -566,10 +566,10 @@ export default async function InjuriesPage({
         </section>
 
         {/* ========================== Team index ========================== */}
-        <section className="mt-20">
+        <section className="mt-16">
           <h2
             className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             By team
           </h2>
@@ -631,7 +631,7 @@ function TeamBlock({
       >
         <span
           className="text-lg uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           {team ? `${team.city} ${team.nickname}` : abbr}
         </span>
@@ -639,7 +639,7 @@ function TeamBlock({
           <Link
             href={`/injuries/${abbr.toLowerCase()}`}
             className="ml-auto text-xs font-bold uppercase tracking-wider hover:underline"
-            style={{ fontFamily: "var(--font-condensed)" }}
+            style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}
           >
             Team history →
           </Link>
@@ -690,7 +690,7 @@ function Th({ children }: { children: React.ReactNode }) {
     <th
       scope="col"
       className="px-4 py-2 text-left text-xs font-bold uppercase tracking-wider"
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

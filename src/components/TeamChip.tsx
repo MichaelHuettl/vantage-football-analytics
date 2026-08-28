@@ -21,7 +21,7 @@ export function TeamChip({
       <span
         className="inline-flex items-center rounded px-1.5 font-semibold uppercase"
         style={{
-          fontFamily: "var(--font-condensed)",
+          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
           background: "var(--surface-sunken)",
           color: "var(--text-muted)",
         }}
@@ -40,7 +40,7 @@ export function TeamChip({
     <span
       className={`inline-flex items-center justify-center rounded font-bold uppercase tracking-wide tnum ${dims}`}
       style={{
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         background: team.primary,
         color: readableOn(team.primary),
         boxShadow: needsEdge(team.primary)
@@ -70,7 +70,7 @@ export function FreeAgentChip({ size = "md" }: { size?: "sm" | "md" }) {
     <span
       className={`inline-flex items-center justify-center rounded font-bold uppercase tracking-wide ${dims}`}
       style={{
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         color: "var(--text-muted)",
         boxShadow: "inset 0 0 0 1px var(--border-strong)",
       }}

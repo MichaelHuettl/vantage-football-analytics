@@ -17,7 +17,7 @@ export function TopicTag({ topic }: { topic: BeatTopic }) {
   return (
     <span
       className="inline-flex h-5 shrink-0 items-center rounded px-1.5 text-xs font-bold uppercase tracking-wider text-white"
-      style={{ fontFamily: "var(--font-condensed)", background: TOPIC_TOKEN[topic] }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", background: TOPIC_TOKEN[topic] }}
       title={TOPIC_BLURB[topic]}
     >
       {topic}
@@ -89,7 +89,7 @@ export function BeatItem({ post }: { post: BeatPost }) {
           href={post.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 block leading-relaxed"
+          className="mt-2 block"
         >
           {(() => {
             const { before, mark, after } = splitOnTakeaway(post);

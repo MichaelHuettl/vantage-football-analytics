@@ -29,7 +29,7 @@ export function WireStatusPill({ status }: { status: WireStatus }) {
     <span
       className="inline-flex h-6 items-center whitespace-nowrap rounded px-2 text-xs font-bold uppercase tracking-wide"
       style={{
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         color: tone,
         boxShadow: `inset 0 0 0 1px ${tone}`,
       }}

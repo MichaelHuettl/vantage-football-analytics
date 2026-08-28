@@ -67,20 +67,20 @@ export default function FilmPage() {
         lede="A catalog of film analysis and breakdowns, and the future site of a work-in-progress statistical model."
       />
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         {/* ---------- Sample breakdown ---------- */}
         <section>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
             <h2
               className="text-3xl uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
             >
               What a breakdown looks like
             </h2>
             <span
               className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
               style={{
-                fontFamily: "var(--font-condensed)",
+                fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                 color: "var(--text-secondary)",
                 boxShadow: "inset 0 0 0 1px var(--border-strong)",
               }}
@@ -102,7 +102,7 @@ export default function FilmPage() {
         <section className="mt-16">
           <h2
             className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             By team
           </h2>
@@ -141,7 +141,7 @@ export default function FilmPage() {
                     <span
                       className="text-base uppercase tracking-wide"
                       style={{
-                        fontFamily: "var(--font-display)",
+                        fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
                         color: readableOn(team.primary),
                       }}
                     >

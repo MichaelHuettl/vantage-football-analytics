@@ -57,7 +57,7 @@ export function RankTable({
               >
                 <td
                   className="px-3 py-2 text-right tnum"
-                  style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                  style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
                 >
                   {i + 1}
                 </td>
@@ -124,7 +124,7 @@ function Th({
     <th
       scope="col"
       className={`px-3 py-2 text-left text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

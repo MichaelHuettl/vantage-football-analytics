@@ -53,12 +53,12 @@ export function DefenseAnalysis() {
     .filter((c): c is NonNullable<typeof c> => Boolean(c));
 
   return (
-    <section className="mt-14">
+    <section className="mt-16">
       {/* ==================== what it is worth ==================== */}
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           What a defense is worth
         </h2>
@@ -66,7 +66,7 @@ export function DefenseAnalysis() {
       </div>
 
       {spread && (
-        <div className="mt-5 flex flex-col gap-4 max-w-3xl leading-relaxed">
+        <div className="mt-5 flex flex-col gap-4 max-w-3xl">
           <p>
             {spread.top.team} scored <Stat>{spread.top.fpts}</Stat> points last
             season and the tenth-best defense scored{" "}
@@ -101,7 +101,7 @@ export function DefenseAnalysis() {
               <tr key={f.team} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
                 <td
                   className="px-3 py-2"
-                  style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                  style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
                 >
                   {f.rank}
                 </td>
@@ -132,7 +132,7 @@ export function DefenseAnalysis() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           The measures against the finish
         </h2>
@@ -162,7 +162,7 @@ export function DefenseAnalysis() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           Pass rush
         </h2>
@@ -211,7 +211,7 @@ export function DefenseAnalysis() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           Secondary
         </h2>
@@ -226,7 +226,7 @@ export function DefenseAnalysis() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           Box rates
         </h2>
@@ -242,7 +242,7 @@ export function DefenseAnalysis() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           What changed
         </h2>
@@ -286,7 +286,7 @@ export function DefenseAnalysis() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           Schedule
         </h2>
@@ -313,7 +313,7 @@ export function DefenseAnalysis() {
                     <span
                       className="w-8 shrink-0 text-xs tnum"
                       style={{
-                        fontFamily: "var(--font-condensed)",
+                        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                         color: "var(--text-muted)",
                       }}
                     >
@@ -336,7 +336,7 @@ export function DefenseAnalysis() {
             >
               <h3
                 className="text-xs font-bold uppercase tracking-wider"
-                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
               >
                 {s.source}
               </h3>
@@ -365,7 +365,7 @@ function Movement({ label, names }: { label: string; names: string[] }) {
     <div>
       <p
         className="text-xs font-bold uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
       >
         {label}
       </p>
@@ -405,7 +405,7 @@ function Verdict({
       <h3
         className="text-xs font-bold uppercase tracking-wider"
         style={{
-          fontFamily: "var(--font-condensed)",
+          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
           color: focus ? "var(--color-vantage-amber)" : "var(--text-muted)",
         }}
       >
@@ -436,7 +436,7 @@ function SosColumn({ label, teams }: { label: string; teams: TeamRef[] }) {
           <li key={t.name} className="flex items-baseline gap-2">
             <span
               className="w-3 shrink-0 text-xs tnum"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
             >
               {i + 1}
             </span>
@@ -465,7 +465,7 @@ function Th({
     <th
       scope="col"
       className={`px-3 py-2 text-right text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

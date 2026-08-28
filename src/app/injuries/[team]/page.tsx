@@ -44,7 +44,7 @@ export default async function TeamInjuryPage({
           boxShadow: `inset 0 -6px 0 0 ${team.secondary}`,
         }}
       >
-        <Container className="pt-28 pb-12">
+        <Container className="pt-28 pb-16 sm:pb-24">
           <Link
             href="/injuries"
             className="eyebrow hover:underline"
@@ -54,7 +54,7 @@ export default async function TeamInjuryPage({
           </Link>
           <h1
             className="mt-4 text-5xl sm:text-7xl uppercase tracking-wide leading-[0.9]"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             {team.city}
             <br />
@@ -68,7 +68,7 @@ export default async function TeamInjuryPage({
         </Container>
       </header>
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         {rows.length === 0 ? (
           <EmptyState
             title={`No designations filed for the ${team.nickname}.`}
@@ -80,7 +80,7 @@ export default async function TeamInjuryPage({
             <section>
               <h2
                 className="text-3xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 Player history
               </h2>
@@ -112,7 +112,7 @@ export default async function TeamInjuryPage({
             <section className="mt-16">
               <h2
                 className="text-3xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 Week by week
               </h2>

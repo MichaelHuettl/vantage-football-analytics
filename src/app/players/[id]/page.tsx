@@ -54,7 +54,7 @@ export default async function PlayerPage({
           borderColor: "var(--border-inverse)",
         }}
       >
-        <Container className="py-10">
+        <Container className="py-16 sm:py-24">
           <div className="flex flex-wrap items-center gap-5">
             <PlayerAvatar
               name={player.name}
@@ -65,7 +65,7 @@ export default async function PlayerPage({
               <h1
                 className="text-4xl sm:text-5xl uppercase tracking-wide leading-none"
                 style={{
-                  fontFamily: "var(--font-display)",
+                  fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
                   color: "var(--text-on-inverse)",
                 }}
               >
@@ -97,7 +97,7 @@ export default async function PlayerPage({
                 <p
                   className="text-5xl tnum leading-none"
                   style={{
-                    fontFamily: "var(--font-display)",
+                    fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
                     color: "var(--color-vantage-amber)",
                   }}
                 >
@@ -118,13 +118,13 @@ export default async function PlayerPage({
         </Container>
       </div>
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         <div className="grid gap-12 lg:grid-cols-[2fr_1fr]">
           <div>
             {entry?.note && (
               <section className="mb-10">
                 <h2 className="eyebrow mb-2">The note</h2>
-                <p className="text-xl leading-relaxed">{entry.note}</p>
+                <p className="text-xl">{entry.note}</p>
               </section>
             )}
 
@@ -139,7 +139,7 @@ export default async function PlayerPage({
               <section>
                 <h2
                   className="text-2xl uppercase tracking-wide"
-                  style={{ fontFamily: "var(--font-display)" }}
+                  style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
                 >
                   The record
                 </h2>
@@ -154,10 +154,10 @@ export default async function PlayerPage({
               </section>
             )}
 
-            <section className="mt-10">
+            <section className="mt-16">
               <h2
                 className="text-2xl uppercase tracking-wide mb-4"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 Film
               </h2>
@@ -172,7 +172,7 @@ export default async function PlayerPage({
             <section>
               <h2
                 className="text-2xl uppercase tracking-wide mb-4"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 Injury
               </h2>
@@ -185,7 +185,7 @@ export default async function PlayerPage({
             <section>
               <h2
                 className="text-2xl uppercase tracking-wide mb-4"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 News
               </h2>

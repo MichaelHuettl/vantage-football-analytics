@@ -90,7 +90,7 @@ export default async function PositionPage({
           aria-hidden="true"
           className="pointer-events-none absolute -right-4 top-1/2 -translate-y-1/2 select-none leading-none"
           style={{
-            fontFamily: "var(--font-display)",
+            fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
             fontSize: "clamp(12rem, 34vw, 26rem)",
             color: "var(--color-ink-900)",
           }}
@@ -99,7 +99,7 @@ export default async function PositionPage({
         </span>
         <div className="absolute inset-0 -z-10 yardlines-inverse opacity-15" />
 
-        <Container className="relative pt-28 pb-12">
+        <Container className="relative pt-28 pb-16 sm:pb-24">
           <nav aria-label="Breadcrumb">
             <Link
               href="/positions"
@@ -125,7 +125,7 @@ export default async function PositionPage({
           <h1
             className="mt-3 text-5xl sm:text-7xl uppercase tracking-wide leading-[0.9]"
             style={{
-              fontFamily: "var(--font-display)",
+              fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
               color: "var(--color-vantage-white)",
             }}
           >
@@ -142,7 +142,7 @@ export default async function PositionPage({
         </Container>
       </header>
 
-      <Container className="py-12">
+      <Container className="py-16 sm:py-24">
         {/*
           A position with its own charts runs as one column: methodology, then
           straight into the evidence. The two-column layout below exists to
@@ -156,7 +156,7 @@ export default async function PositionPage({
             {PLACEHOLDER_COPY.has(upper) && (
               <section className="mt-8 max-w-3xl">
                 <h2 className="eyebrow mb-3">Methodology</h2>
-                <p className="text-lg leading-relaxed">{doc.methodology}</p>
+                <p className="text-lg">{doc.methodology}</p>
               </section>
             )}
             {upper === "RB" && <RunningBackAnalysis />}
@@ -173,7 +173,7 @@ export default async function PositionPage({
 
               <section className="mt-8">
                 <h2 className="eyebrow mb-3">Methodology</h2>
-                <p className="text-lg leading-relaxed">{doc.methodology}</p>
+                <p className="text-lg">{doc.methodology}</p>
               </section>
 
               <ChartFigure
@@ -187,7 +187,7 @@ export default async function PositionPage({
             <aside>
               <h2
                 className="text-2xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 The pool
               </h2>

@@ -43,7 +43,7 @@ function Reading({ value, label }: { value: string; label: string }) {
       <span className="font-semibold tnum">{value}</span>
       <span
         className="text-xs uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
       >
         {label}
       </span>

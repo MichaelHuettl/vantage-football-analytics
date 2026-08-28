@@ -149,7 +149,7 @@ export function FilmSample() {
               template uses and the one a coach's copy would use. */}
           <g
             fill="var(--color-vantage-white)"
-            style={{ fontFamily: "var(--font-condensed)" }}
+            style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}
             fontSize={2.5}
             fontWeight={700}
             textAnchor="middle"

@@ -25,19 +25,19 @@ export function KickerAnalysis() {
   const latest = scoring.spread[scoring.spread.length - 1];
 
   return (
-    <section className="mt-14">
+    <section className="mt-16">
       {/* ==================== 1. why the position matters ==================== */}
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           Why a kicker is worth thinking about
         </h2>
         <span className="eyebrow">2023&ndash;2025 scoring</span>
       </div>
 
-      <div className="mt-5 flex flex-col gap-4 max-w-3xl leading-relaxed">
+      <div className="mt-5 flex flex-col gap-4 max-w-3xl">
         <p>
           The gap between the best kicker and the last startable one was{" "}
           <Stat>{latest.points}</Stat> points last season,{" "}
@@ -91,12 +91,12 @@ export function KickerAnalysis() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           The top half sticks. The bottom half is noise.
         </h2>
 
-        <div className="mt-5 flex flex-col gap-4 max-w-3xl leading-relaxed">
+        <div className="mt-5 flex flex-col gap-4 max-w-3xl">
           <p>
             Take the kicker top 16 as a whole and it looks random: 8 and 9 of 16
             came back the following year, and a list of sixteen drawn from a pool
@@ -158,7 +158,7 @@ export function KickerAnalysis() {
           </table>
         </div>
 
-        <div className="mt-6 flex flex-col gap-4 max-w-3xl leading-relaxed">
+        <div className="mt-6 flex flex-col gap-4 max-w-3xl">
           <p>
             One caveat, stated because it is real: some of that gap is
             mechanical. A kicker at K16 only has to slip one place to fall out of
@@ -197,7 +197,7 @@ export function KickerAnalysis() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           Top three
         </h2>
@@ -213,7 +213,7 @@ export function KickerAnalysis() {
 
         <h2
           className="mt-14 text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           Value picks
         </h2>
@@ -271,7 +271,7 @@ function PickCard({
           ) : (
             <span
               className="absolute inset-0 flex items-center justify-center text-sm font-bold"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
             >
               {initials(pick.name)}
             </span>
@@ -283,7 +283,7 @@ function PickCard({
               <span
                 className="text-sm tnum"
                 style={{
-                  fontFamily: "var(--font-condensed)",
+                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                   color: focus ? "var(--color-vantage-amber)" : "var(--text-muted)",
                 }}
               >
@@ -307,7 +307,7 @@ function PickCard({
             <div key={s.year} className="flex items-baseline gap-2">
               <dt
                 className="w-10 shrink-0 text-xs tnum"
-                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
               >
                 {s.year}
               </dt>
@@ -397,7 +397,7 @@ function Figure({
       <div
         className="text-4xl tnum"
         style={{
-          fontFamily: "var(--font-display)",
+          fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
           color: focus ? "var(--color-vantage-amber)" : "var(--text-primary)",
         }}
       >
@@ -405,7 +405,7 @@ function Figure({
       </div>
       <div
         className="mt-1 text-xs uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
       >
         {label}
       </div>
@@ -436,7 +436,7 @@ function Th({
     <th
       scope="col"
       className={`px-3 py-2 text-right text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

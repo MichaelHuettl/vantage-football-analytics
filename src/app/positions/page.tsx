@@ -55,7 +55,7 @@ export default function PositionsIndex() {
         title="Positional Data"
         lede="What each position is actually measured on, and the evidence behind every ranking it produces."
       />
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         {/* Staggered on load, not on scroll: see the note on the home page
             grid. The first row of this grid sits inside the viewport at common
             heights, which is exactly the case a view timeline handles badly. */}
@@ -113,7 +113,7 @@ export default function PositionsIndex() {
                       <span
                         className="ml-auto inline-flex h-5 shrink-0 items-center rounded px-1.5 text-micro font-bold uppercase tracking-wider"
                         style={{
-                          fontFamily: "var(--font-condensed)",
+                          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                           color: "var(--text-muted)",
                           boxShadow: "inset 0 0 0 1px var(--border-strong)",
                         }}
@@ -125,7 +125,7 @@ export default function PositionsIndex() {
 
                   <span
                     className="text-xl uppercase tracking-wide"
-                    style={{ fontFamily: "var(--font-display)" }}
+                    style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
                   >
                     {doc.evaluated_on}
                   </span>

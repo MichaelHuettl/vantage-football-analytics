@@ -197,7 +197,7 @@ export function FantasyAccuracy() {
       </Callout>
 
       <h2 className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}>
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         {FM_SPAN.from}&ndash;{FM_SPAN.to}, measured
       </h2>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>

@@ -53,11 +53,40 @@
   --color-status-questionable: #8a6d1f;
   --color-status-full: #2f7a4f;
 
-  /* --- Type. §7: Anton display, Barlow Condensed for dense UI,
-     Barlow for anything read in sentences. --- */
-  --font-display: var(--font-anton), ui-sans-serif, system-ui, sans-serif;
-  --font-condensed: var(--font-barlow-condensed), ui-sans-serif, system-ui, sans-serif;
-  --font-sans: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+  /* --- Type. One family, three roles.
+     §7 named Anton, Barlow Condensed and Barlow. The operator collapsed those
+     to a single typeface (Bricolage Grotesque) on 2026-08-27, so the three roles are now separated
+     by weight and width on one family rather than by three family names. The
+     three tokens below are kept deliberately: every component already
+     references them, and keeping the *roles* named means the next font change
+     is this block rather than 218 components. --- */
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-condensed: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+
+  /* Weight and width are what separate the roles now that the family does not.
+     Anton was a single weight and intrinsically heavy, so not one of the 109
+     display sites carried a font-weight — pointing them at a 400 would have
+     rendered every hero far too light. These carry that job instead, and they
+     are tokens rather than literals so the roles stay defined in this file. */
+  --weight-display: 800;
+  /* Both sit inside Bricolage's wdth range (75-100), which is why swapping the
+     family needed no other change. Archivo's range was wider (62-125) but the
+     values in use were always these two. */
+  --stretch-display: 78%;
+  --stretch-condensed: 84%;
+
+  /* --- Line height.
+     `body` set 1.6 while Tailwind's own text-sm (1.43) and text-xs (1.33)
+     silently overrode it at 347 call sites, with 18 `leading-relaxed` patches
+     papering over the result. Two intentional ratios now, set on the scale
+     itself so the utilities carry them: reading sizes share the body's 1.6,
+     and the two dense sizes used for table cells and labels share 1.45. --- */
+  --text-xs--line-height: 1.45;
+  --text-sm--line-height: 1.45;
+  --text-base--line-height: 1.6;
+  --text-lg--line-height: 1.6;
+  --text-xl--line-height: 1.6;
 
   /* The smallest label on the site: table micro-headers, chip text, the
      sub-line under the wordmark. Four values were doing this job before
@@ -262,6 +291,7 @@
 
   .eyebrow {
     font-family: var(--font-condensed);
+    font-stretch: var(--stretch-condensed);
     font-size: var(--text-eyebrow);
     line-height: var(--text-eyebrow--line-height);
     letter-spacing: var(--text-eyebrow--letter-spacing);

@@ -23,11 +23,11 @@ export function PageHeader({
           line of the title underneath it. Every other header on the site
           clears it with `pt-28`; this one did not, because it is the only page
           that uses this component and nothing else exercised the bug. */}
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 pt-28 pb-10">
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 pt-28 pb-16 sm:pb-24">
         {eyebrow && <p className="eyebrow mb-2">{eyebrow}</p>}
         <h1
-          className="text-4xl sm:text-5xl leading-[0.95] tracking-wide uppercase"
-          style={{ fontFamily: "var(--font-display)" }}
+          className="text-4xl sm:text-5xl leading-[0.9] tracking-wide uppercase"
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           {title}
         </h1>

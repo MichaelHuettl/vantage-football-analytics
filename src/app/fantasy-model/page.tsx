@@ -71,7 +71,7 @@ export default async function FantasyModelPage({
         lede="A 1-point-PPR projection for every position, trained on 27 seasons and measured against the only benchmark that matters."
       />
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         {/* ---- headline numbers ---- */}
         <dl className="grid gap-px sm:grid-cols-2 lg:grid-cols-4"
             style={{ background: "var(--border-subtle)" }}>
@@ -87,7 +87,7 @@ export default async function FantasyModelPage({
           ].map((t) => (
             <div key={t.k} className="p-5" style={{ background: "var(--surface-page)" }}>
               <dt className="eyebrow">{t.k}</dt>
-              <dd className="mt-1 text-3xl tnum" style={{ fontFamily: "var(--font-display)" }}>
+              <dd className="mt-1 text-3xl tnum" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
                 {t.v}
               </dd>
               <dd className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>{t.s}</dd>
@@ -119,7 +119,7 @@ export default async function FantasyModelPage({
           {active === "2025" && (
             <section>
               <h2 className="text-3xl uppercase tracking-wide"
-                  style={{ fontFamily: "var(--font-display)" }}>
+                  style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
                 {FM_CONFIG.test_season}, with the answers
               </h2>
               <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -141,7 +141,7 @@ export default async function FantasyModelPage({
           {active === "2026" && (
             <section>
               <h2 className="text-3xl uppercase tracking-wide"
-                  style={{ fontFamily: "var(--font-display)" }}>
+                  style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
                 2026, before it happens
               </h2>
               <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>

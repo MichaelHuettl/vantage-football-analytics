@@ -40,7 +40,7 @@ export default async function ConceptPage({
   return (
     <>
       <header style={{ background: "var(--color-vantage-panel)" }}>
-        <Container className="pt-28 pb-12">
+        <Container className="pt-28 pb-16 sm:pb-24">
           <Link
             href="/film"
             className="eyebrow hover:underline"
@@ -54,7 +54,7 @@ export default async function ConceptPage({
           <h1
             className="mt-2 text-6xl sm:text-8xl uppercase tracking-wide leading-[0.9]"
             style={{
-              fontFamily: "var(--font-display)",
+              fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
               color: "var(--color-vantage-white)",
             }}
           >
@@ -63,20 +63,20 @@ export default async function ConceptPage({
         </Container>
       </header>
 
-      <Container className="py-12">
+      <Container className="py-16 sm:py-24">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-start">
           <PlayDiagram paths={concept.paths} title={concept.name} />
 
           <div>
             <section>
               <h2 className="eyebrow mb-2">What it does</h2>
-              <p className="text-lg leading-relaxed">{concept.summary}</p>
+              <p className="text-lg">{concept.summary}</p>
             </section>
 
             {concept.beneficiaries && (
               <section className="mt-8">
                 <h2 className="eyebrow mb-2">Who it helps</h2>
-                <p className="leading-relaxed">{concept.beneficiaries}</p>
+                <p className="">{concept.beneficiaries}</p>
               </section>
             )}
 

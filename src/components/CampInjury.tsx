@@ -84,7 +84,7 @@ export function CampStatusPill({ status }: { status: CampStatus }) {
     <span
       className="inline-flex h-6 items-center whitespace-nowrap rounded px-2 text-xs font-bold uppercase tracking-wide text-white"
       style={{
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         background: STATUS_TOKEN[status],
       }}
     >

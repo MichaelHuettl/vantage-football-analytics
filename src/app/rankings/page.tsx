@@ -71,12 +71,12 @@ export default async function RankingsPage({
         </Container>
       </div>
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
           <div className="flex flex-wrap items-center gap-3">
             <h2
               className="text-3xl uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
             >
               {POSITION_LABEL[position]}
             </h2>
@@ -87,7 +87,7 @@ export default async function RankingsPage({
             <span
               className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
               style={{
-                fontFamily: "var(--font-condensed)",
+                fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                 background: "var(--text-primary)",
                 color: "var(--surface-page)",
               }}
@@ -97,7 +97,7 @@ export default async function RankingsPage({
             <span
               className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
               style={{
-                fontFamily: "var(--font-condensed)",
+                fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                 color: "var(--text-secondary)",
                 boxShadow: "inset 0 0 0 1px var(--border-strong)",
               }}
@@ -140,7 +140,7 @@ export default async function RankingsPage({
                   >
                     <td
                       className="px-4 py-3 text-right text-lg font-bold tnum"
-                      style={{ fontFamily: "var(--font-condensed)" }}
+                      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}
                     >
                       {entry.rank}
                     </td>
@@ -202,7 +202,7 @@ function PositionTabs({ current }: { current: Position }) {
                 aria-current={active ? "page" : undefined}
                 className="block rounded px-4 py-2 text-sm font-bold uppercase tracking-wider transition-colors"
                 style={{
-                  fontFamily: "var(--font-condensed)",
+                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                   background: active ? "var(--text-primary)" : "transparent",
                   color: active ? "var(--surface-page)" : "var(--text-secondary)",
                   boxShadow: active
@@ -232,7 +232,7 @@ function Th({
       scope="col"
       className={`px-4 py-2.5 text-left text-xs font-bold uppercase tracking-wider ${className}`}
       style={{
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         color: "var(--text-muted)",
       }}
     >

@@ -1,26 +1,33 @@
 import type { Metadata } from "next";
-import { Anton, Barlow, Barlow_Condensed } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import "./globals.css";
 
-const anton = Anton({
-  weight: "400",
+/**
+ * One family for the whole site.
+ *
+ * Anton, Barlow Condensed and Barlow were three faces doing three jobs. The
+ * operator's call on 2026-08-27 was to collapse to a single typeface, so the
+ * three roles are now one family separated by weight and width rather than by
+ * name. Bricolage Grotesque is the choice for three reasons: it has a real
+ * `wdth` axis (75-100) so the condensed table furniture survives, it reaches
+ * weight 800 so heroes keep the heft Anton gave them, and it carries an `opsz`
+ * axis (12-96) that browsers apply automatically from font-size. That last one
+ * matters more than it sounds — the face is deliberately irregular, and optical
+ * sizing concentrates that character at display sizes while opening the
+ * letterforms up at 16px, which is where the site's long arguments live.
+ *
+ * A family without a width axis would have lost the condensed character the
+ * whole broadcast look rests on. Archivo was tried first and rejected as too
+ * blocky; its evenness is what a signage grotesque is for.
+ *
+ * The variable font ships one file for every weight and width, so this is also
+ * one request instead of the nine that three families at four weights cost.
+ */
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  variable: "--font-anton",
-  display: "swap",
-});
-
-const barlowCondensed = Barlow_Condensed({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-  variable: "--font-barlow-condensed",
-  display: "swap",
-});
-
-const barlow = Barlow({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-  variable: "--font-barlow",
+  axes: ["opsz", "wdth"],
+  variable: "--font-bricolage",
   display: "swap",
 });
 
@@ -66,7 +73,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${anton.variable} ${barlowCondensed.variable} ${barlow.variable}`}
+      className={bricolage.variable}
     >
       <body className="min-h-screen flex flex-col">
         <a href="#main" className="skip-link">

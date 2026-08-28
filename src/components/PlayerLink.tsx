@@ -101,7 +101,7 @@ export function PlayerAvatar({
         width: size,
         height: size,
         fontSize: size * (label && label.length > 2 ? 0.32 : 0.4),
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         background,
         color: tint ? readableOn(tint) : POSITION_INK[position],
       }}
@@ -116,7 +116,7 @@ export function PositionBadge({ position }: { position: Position }) {
     <span
       className="inline-flex h-5 items-center rounded px-1.5 text-xs font-bold uppercase"
       style={{
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         background: POSITION_TOKEN[position],
         color: POSITION_INK[position],
       }}
@@ -172,7 +172,7 @@ export function PlayerLink({
             <span
               className="text-xs font-semibold uppercase"
               style={{
-                fontFamily: "var(--font-condensed)",
+                fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                 color: "var(--text-muted)",
               }}
             >

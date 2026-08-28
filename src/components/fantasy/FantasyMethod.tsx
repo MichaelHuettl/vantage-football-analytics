@@ -21,7 +21,7 @@ export function FantasyMethod() {
   return (
     <section>
       <h2 className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}>
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         How it works
       </h2>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -110,7 +110,7 @@ export function FantasyMethod() {
                 {drv.items.slice(0, 5).map((it) => (
                   <li key={it.feature} className="flex items-center gap-3 text-xs">
                     <span className="w-40 shrink-0 truncate tnum"
-                          style={{ fontFamily: "var(--font-condensed)" }}>
+                          style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}>
                       {it.feature.replace(/_/g, " ")}
                     </span>
                     <span className="relative h-2 flex-1 rounded-sm"

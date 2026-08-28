@@ -63,7 +63,7 @@ export function ShowMore({
             onClick={() => setShown((n) => n + step)}
             className="inline-block rounded px-4 py-2 text-xs font-bold uppercase tracking-wider transition-opacity hover:opacity-80"
             style={{
-              fontFamily: "var(--font-condensed)",
+              fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
               color: "var(--text-secondary)",
               boxShadow: "inset 0 0 0 1px var(--border-strong)",
             }}

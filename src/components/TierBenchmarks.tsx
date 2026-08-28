@@ -39,7 +39,7 @@ function Candidate({ name }: { name: string }) {
         ) : (
           <span
             className="absolute inset-0 flex items-center justify-center text-sm font-bold"
-            style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+            style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
           >
             {name.slice(0, 2).toUpperCase()}
           </span>
@@ -86,7 +86,7 @@ export function TierBenchmarks({ tiers }: { tiers: Tier[] }) {
             <th
               scope="col"
               className="px-3 py-2 text-left text-xs font-bold uppercase tracking-wider"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
             >
               Benchmark
             </th>
@@ -95,7 +95,7 @@ export function TierBenchmarks({ tiers }: { tiers: Tier[] }) {
                 key={t.label}
                 scope="col"
                 className="px-3 py-2 text-right text-xs font-bold uppercase tracking-wider"
-                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
               >
                 {t.label}
               </th>
@@ -126,7 +126,7 @@ export function TierBenchmarks({ tiers }: { tiers: Tier[] }) {
           <tr className="border-t" style={{ borderColor: "var(--border-strong)" }}>
             <td
               className="px-3 py-2 align-top text-xs uppercase tracking-wider"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
             >
               Clearing it now
             </td>

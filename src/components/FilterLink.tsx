@@ -23,7 +23,7 @@ export function FilterLink({
       aria-current={active ? "page" : undefined}
       className="inline-block rounded px-3 py-1.5 text-xs font-bold uppercase tracking-wider"
       style={{
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         background: active ? "var(--text-primary)" : "transparent",
         color: active ? "var(--surface-page)" : "var(--text-secondary)",
         boxShadow: active ? undefined : "inset 0 0 0 1px var(--border-strong)",

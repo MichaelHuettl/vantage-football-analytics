@@ -83,7 +83,7 @@ export function Callout({
       {title && (
         <Title
           className="mt-2 text-2xl uppercase tracking-wide leading-tight"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           {title}
         </Title>

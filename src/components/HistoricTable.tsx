@@ -56,7 +56,7 @@ export function HistoricTable({ data }: { data: Data }) {
                 <td
                   className="px-2 py-1.5"
                   style={{
-                    fontFamily: "var(--font-condensed)",
+                    fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                     color: newYear ? "var(--text-primary)" : "var(--text-muted)",
                   }}
                 >
@@ -116,7 +116,7 @@ export function HistoricTable({ data }: { data: Data }) {
               <td
                 className="px-2 py-1.5 text-xs uppercase tracking-wider"
                 colSpan={2}
-                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
               >
                 {label}
               </td>
@@ -218,7 +218,7 @@ function Th({
     <th
       scope="col"
       className={`whitespace-nowrap px-2 py-2 text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

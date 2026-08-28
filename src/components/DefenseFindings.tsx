@@ -23,12 +23,12 @@ export function DefenseFindings() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           Which numbers actually carry
         </h2>
 
-        <div className="mt-5 flex flex-col gap-4 max-w-3xl leading-relaxed">
+        <div className="mt-5 flex flex-col gap-4 max-w-3xl">
           <p>
             Only the top ten scoring defenses are recorded, so the question a
             measure can be asked is narrow but clean: do its leaders turn out to
@@ -108,7 +108,7 @@ export function DefenseFindings() {
                   </td>
                   <td
                     className="px-3 py-2 text-xs uppercase tracking-wider"
-                    style={{ fontFamily: "var(--font-condensed)", color: tone(m) }}
+                    style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: tone(m) }}
                   >
                     {m.tier === "none" ? "at chance" : m.tier}
                   </td>
@@ -131,7 +131,7 @@ export function DefenseFindings() {
       <section className="mt-16">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           What each finish was built on
         </h2>
@@ -165,7 +165,7 @@ export function DefenseFindings() {
                     <td
                       className="px-3 py-2"
                       style={{
-                        fontFamily: "var(--font-condensed)",
+                        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                         color: "var(--text-muted)",
                       }}
                     >
@@ -209,13 +209,13 @@ export function DefenseFindings() {
           .filter((s) => s.appears.length === 0)
           .map((s) => (
             <Callout key={s.team} plain className="mt-6 max-w-3xl" label="The exception">
-              <p className="leading-relaxed">
+              <p className="">
                 {s.team} scored <Stat>{s.fpts}</Stat> points and appear in{" "}
                 <strong>none of the seven</strong>: not sacks, interceptions, forced fumbles, pressure rate, EPA per pass, pass success rate or
                 EPA per play. Every other defense on this list appears in at
                 least three.
               </p>
-              <p className="mt-3 leading-relaxed">
+              <p className="mt-3">
                 A scoring finish with no per-play support behind it usually came
                 from return touchdowns or the sequencing of turnovers, and
                 neither carries into a new season. Worth holding in mind against
@@ -232,7 +232,7 @@ export function DefenseFindings() {
         <section className="mt-16">
           <h2
             className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             The defense the data likes and the scoreboard did not
           </h2>
@@ -240,7 +240,7 @@ export function DefenseFindings() {
           <div className="mt-6 rounded-lg border p-6" style={{ borderColor: "var(--color-vantage-amber)" }}>
             <div className="flex flex-wrap items-center gap-3">
               {spotlight.abbr && <TeamChip abbr={spotlight.abbr} />}
-              <span className="text-2xl" style={{ fontFamily: "var(--font-display)" }}>
+              <span className="text-2xl" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
                 {spotlight.team}
               </span>
               <span className="eyebrow">outside the 2025 top ten</span>
@@ -261,7 +261,7 @@ export function DefenseFindings() {
                 ))}
             </div>
 
-            <p className="mt-6 max-w-3xl leading-relaxed">
+            <p className="mt-6 max-w-3xl">
               The mirror image of the row above. The {spotlight.team} appear in{" "}
               <Stat>{spotlight.appears.length}</Stat> of the {spotlight.of}{" "}
               advanced leaderboards, everything except{" "}
@@ -272,7 +272,7 @@ export function DefenseFindings() {
               of thirty-two at keeping offenses off the sticks. They did not
               finish in the scoring top ten at all.
             </p>
-            <p className="mt-3 max-w-3xl leading-relaxed">
+            <p className="mt-3 max-w-3xl">
               A defense playing that well without the points is the cleanest case
               of positive regression in this sheet, and the only one that will
               not be priced like it. The teams above them all have a top-ten
@@ -314,7 +314,7 @@ function Figure({
       <div
         className="text-3xl tnum"
         style={{
-          fontFamily: "var(--font-display)",
+          fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
           color: focus ? "var(--color-vantage-amber)" : "var(--text-primary)",
         }}
       >
@@ -322,7 +322,7 @@ function Figure({
       </div>
       <div
         className="mt-1 text-xs uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
       >
         {label}
       </div>
@@ -345,7 +345,7 @@ function Th({
     <th
       scope="col"
       className={`px-3 py-2 text-right text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

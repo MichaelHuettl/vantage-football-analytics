@@ -33,7 +33,7 @@ export function RunningBackAnalysis() {
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
         <h2
           className="text-3xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           The evidence
         </h2>
@@ -295,23 +295,23 @@ function Block({
   children: React.ReactNode;
 }) {
   return (
-    <section className="mt-14">
+    <section className="mt-16">
       <h3 className="flex items-baseline gap-3">
         <span
           className="text-sm tnum"
-          style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+          style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
         >
           {String(n).padStart(2, "0")}
         </span>
         <span
           className="text-2xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           {title}
         </span>
       </h3>
       {chart}
-      <div className="flex max-w-3xl flex-col gap-4 leading-relaxed">{children}</div>
+      <div className="flex max-w-3xl flex-col gap-4">{children}</div>
     </section>
   );
 }

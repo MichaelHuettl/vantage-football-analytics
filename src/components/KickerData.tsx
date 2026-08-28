@@ -23,7 +23,7 @@ export function FieldGoalAttempts() {
     <section className="mt-16">
       <h2
         className="text-3xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         Team field goal attempts
       </h2>
@@ -50,7 +50,7 @@ export function FieldGoalAttempts() {
               <tr key={i} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
                 <td
                   className="px-3 py-1.5 tnum"
-                  style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                  style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
                 >
                   {i + 1}
                 </td>
@@ -81,7 +81,7 @@ export function FieldGoalAttempts() {
               <tr key={i} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
                 <td
                   className="px-3 py-1.5 tnum"
-                  style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                  style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
                 >
                   {28 + i}
                 </td>
@@ -122,7 +122,7 @@ export function KickerScoring() {
     <section className="mt-16">
       <h2
         className="text-3xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         Kicker scoring
       </h2>
@@ -156,7 +156,7 @@ export function KickerScoring() {
                       <td
                         className="px-2 py-1.5"
                         style={{
-                          fontFamily: "var(--font-condensed)",
+                          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                           color: "var(--text-muted)",
                         }}
                       >
@@ -196,7 +196,7 @@ export function KickerAdvantages() {
     <section className="mt-16">
       <h2
         className="text-3xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         Kicker advantages
       </h2>
@@ -215,7 +215,7 @@ export function KickerAdvantages() {
           >
             <h3
               className="text-xs font-bold uppercase tracking-wider"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
             >
               {a.label}
             </h3>
@@ -269,7 +269,7 @@ function List({ entries }: { entries: AdvantageEntry[] }) {
             <span
               className="inline-flex h-5 items-center rounded px-1.5 text-micro font-bold uppercase tracking-wider"
               style={{
-                fontFamily: "var(--font-condensed)",
+                fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                 color: "var(--text-muted)",
                 boxShadow: "inset 0 0 0 1px var(--border-strong)",
               }}
@@ -295,7 +295,7 @@ function Th({
     <th
       scope="col"
       className={`px-3 py-2 text-right text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

@@ -42,7 +42,7 @@ export function SituationalCards({ cards }: { cards: SituationalCard[] }) {
     <section>
       <h2
         className="text-2xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         Around the game
       </h2>

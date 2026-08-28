@@ -29,7 +29,7 @@ export function SiteHeader() {
             <Goalpost className="h-8 w-auto" title="Vantage" />
             <span
               className="text-2xl leading-none tracking-wide uppercase"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
             >
               Vantage
             </span>
@@ -64,7 +64,7 @@ export function SiteHeader() {
                               href={child.href}
                               className="block px-4 py-2 text-sm font-semibold transition-colors hover:text-white"
                               style={{
-                                fontFamily: "var(--font-condensed)",
+                                fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                                 color: "var(--color-ink-300)",
                               }}
                             >
@@ -124,7 +124,7 @@ export function SiteHeader() {
                     href={item.href}
                     className="block whitespace-nowrap text-xs font-bold uppercase tracking-wider"
                     style={{
-                      fontFamily: "var(--font-condensed)",
+                      fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                       color: "var(--color-ink-200)",
                     }}
                   >
@@ -144,7 +144,7 @@ const linkClass =
   "block whitespace-nowrap rounded px-3 py-2 text-sm font-bold uppercase tracking-wider transition-colors hover:text-white";
 
 const linkStyle: React.CSSProperties = {
-  fontFamily: "var(--font-condensed)",
+  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
   color: "var(--color-ink-200)",
 };
 
@@ -157,7 +157,7 @@ export function SiteFooter() {
         borderColor: "var(--color-ink-800)",
       }}
     >
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 py-14">
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 py-16 sm:py-24">
         <div className="flex flex-wrap gap-10 justify-between">
           <div className="max-w-sm">
             <div
@@ -167,7 +167,7 @@ export function SiteFooter() {
               <Goalpost className="h-8 w-auto" />
               <span
                 className="text-2xl leading-none tracking-wide uppercase"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 Vantage
               </span>

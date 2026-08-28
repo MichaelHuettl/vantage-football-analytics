@@ -21,7 +21,7 @@ export function TightEndAnalysis() {
   return (
     <section className="mt-16">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-        <h2 className="text-3xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h2 className="text-3xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           The evidence
         </h2>
         <span className="eyebrow">{TE_SEASON} production</span>
@@ -72,7 +72,7 @@ export function TightEndAnalysis() {
       {/* ===================== 6. History and the box ===================== */}
       <div className="mt-20">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-          <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+          <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
             What has happened before
           </h3>
           <span className="eyebrow">{TE_HISTORY.era}</span>
@@ -106,7 +106,7 @@ export function TightEndAnalysis() {
         )}
 
         <div className="mt-12 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-          <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+          <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
             Checking the boxes
           </h3>
           <span className="eyebrow">{TE_BOX.era}</span>
@@ -149,7 +149,7 @@ function Block({ n, chart, children }: { n: number; chart: TeChart; children: Re
     <div className="mt-16">
       <div className="flex items-baseline gap-3">
         <span className="eyebrow">{String(n).padStart(2, "0")}</span>
-        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           {chart.title}
         </h3>
       </div>

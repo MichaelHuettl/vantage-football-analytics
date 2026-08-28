@@ -27,7 +27,7 @@ export function ConfidenceTiers() {
     <section>
       <h2
         className="text-2xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         What the confidence means
       </h2>

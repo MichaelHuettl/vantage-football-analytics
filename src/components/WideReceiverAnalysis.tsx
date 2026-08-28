@@ -31,7 +31,7 @@ export function WideReceiverAnalysis() {
   return (
     <section className="mt-16">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-        <h2 className="text-3xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h2 className="text-3xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           The evidence
         </h2>
         <span className="eyebrow">{WR_SEASON} production</span>
@@ -68,7 +68,7 @@ export function WideReceiverAnalysis() {
       {/* ---- what repeats ---- */}
       {WR_STICKINESS && (
         <div className="mt-16">
-          <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+          <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
             {WR_STICKINESS.title}
           </h3>
           <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -117,7 +117,7 @@ export function WideReceiverAnalysis() {
       {/* ---- what a week looks like ---- */}
       {WR_CONSISTENCY && (
         <div className="mt-16">
-          <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+          <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
             {WR_CONSISTENCY.title}
           </h3>
           <div className="mt-4">
@@ -180,7 +180,7 @@ export function WideReceiverAnalysis() {
               {WR_GROUPS.usage && (
                 <>
                   <h4 className="mt-8 text-2xl uppercase tracking-wide"
-                      style={{ fontFamily: "var(--font-display)" }}>
+                      style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
                     What the usage says about it
                   </h4>
                   <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
@@ -215,7 +215,7 @@ export function WideReceiverAnalysis() {
 
       {/* ---- the check-the-box grid ---- */}
       <div className="mt-16">
-        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           Check the box
         </h3>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -269,7 +269,7 @@ export function WideReceiverAnalysis() {
         {WR_GRID_COMPUTED && (
           <>
             <h4 className="mt-10 text-2xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}>
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
               Three more columns, fitted rather than judged
             </h4>
             <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -550,7 +550,7 @@ function Block({
     <div className="mt-16">
       <div className="flex items-baseline gap-3">
         <span className="eyebrow">{String(n).padStart(2, "0")}</span>
-        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           {chart.title}
         </h3>
       </div>

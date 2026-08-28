@@ -25,7 +25,7 @@ export function QuarterbackAnalysis() {
   return (
     <section className="mt-16">
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-        <h2 className="text-3xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h2 className="text-3xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           The evidence
         </h2>
         <span className="eyebrow">{QB_SEASON} production</span>
@@ -158,7 +158,7 @@ function Block({
     <div className="mt-16">
       <div className="flex items-baseline gap-3">
         <span className="eyebrow">{String(n).padStart(2, "0")}</span>
-        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h3 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           {title}
         </h3>
       </div>

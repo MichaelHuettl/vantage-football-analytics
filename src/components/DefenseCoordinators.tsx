@@ -19,7 +19,7 @@ export function DefenseCoordinators() {
     <section className="mt-16">
       <h2
         className="text-3xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         Coordinator changes
       </h2>
@@ -70,7 +70,7 @@ export function DefenseCoordinators() {
               <h3
                 className="text-xs font-bold uppercase tracking-wider"
                 style={{
-                  fontFamily: "var(--font-condensed)",
+                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                   color: i === 0 ? "var(--color-vantage-amber)" : "var(--text-muted)",
                 }}
               >
@@ -130,7 +130,7 @@ function Outlook({
       <h3
         className="text-xs font-bold uppercase tracking-wider"
         style={{
-          fontFamily: "var(--font-condensed)",
+          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
           color: focus ? "var(--color-vantage-amber)" : "var(--text-muted)",
         }}
       >
@@ -164,7 +164,7 @@ function Th({
     <th
       scope="col"
       className={`px-3 py-2 text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

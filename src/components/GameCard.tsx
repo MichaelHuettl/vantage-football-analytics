@@ -51,7 +51,7 @@ export function GameCard({ game }: { game: Game }) {
         </span>
         <span
           className="flex items-baseline gap-3 text-xs font-bold uppercase tracking-wider"
-          style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+          style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
         >
           {game.neutral && <span>Neutral site</span>}
           <span>{ROOF_LABEL[game.roof]}</span>
@@ -178,7 +178,7 @@ function TeamSide({
         <span
           className="text-2xl tnum"
           style={{
-            fontFamily: "var(--font-display)",
+            fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
             color: played ? "var(--text-primary)" : "var(--text-muted)",
           }}
         >
@@ -210,7 +210,7 @@ function LeaderRow({ label, leader }: { label: string; leader?: GameLeader }) {
     <div className="flex items-baseline gap-3 text-sm">
       <dt
         className="w-9 shrink-0 text-xs font-bold uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
       >
         {label}
       </dt>
@@ -249,7 +249,7 @@ function Figure({ label, value }: { label: string; value?: string }) {
     <span className="flex items-baseline gap-2">
       <span
         className="text-xs font-bold uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
       >
         {label}
       </span>

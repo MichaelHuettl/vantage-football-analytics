@@ -55,7 +55,7 @@ const pts = (n: number) => `${n > 0 ? "+" : ""}${round(n * 100, 1).toFixed(1)}`;
 export function CaseStudy() {
   return (
     <section>
-      <h2 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+      <h2 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         Where the model was wrong
       </h2>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -118,7 +118,7 @@ function Reframing() {
         ].map((s) => (
           <div key={s.k}>
             <dt className="eyebrow">{s.k}</dt>
-            <dd className="mt-1 text-2xl tnum" style={{ fontFamily: "var(--font-display)" }}>
+            <dd className="mt-1 text-2xl tnum" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
               {s.v}
             </dd>
           </div>
@@ -133,7 +133,7 @@ function Reframing() {
 function Concentration() {
   return (
     <div className="mt-12">
-      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         Where the misses concentrate
       </h3>
 
@@ -228,7 +228,7 @@ function Seasons() {
 
   return (
     <div className="mt-12">
-      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         Its best and worst seasons
       </h3>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -331,10 +331,10 @@ function SeasonCard({ season, kind }: { season: SeasonRecord; kind: "best" | "wo
       style={{ borderColor: "var(--border-subtle)", background: "var(--surface-sunken)" }}
     >
       <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-        <h4 className="text-lg uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h4 className="text-lg uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           {best ? "Best season" : "Worst season"} · {season.season}
         </h4>
-        <span className="text-2xl tnum" style={{ fontFamily: "var(--font-display)" }}>
+        <span className="text-2xl tnum" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           {pct(season.accuracy)}
         </span>
       </div>
@@ -388,7 +388,7 @@ function WhatItCouldNotSee() {
   const { div_accuracy, div_games, non_div_accuracy, non_div_games } = MISS_DIVISIONAL;
   return (
     <div className="mt-12">
-      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         What the model could not see
       </h3>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -504,7 +504,7 @@ function Finding({
       }}
     >
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-        <h4 className="text-lg uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h4 className="text-lg uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           {title}
         </h4>
         <span className="eyebrow flex items-center gap-2" style={{ color: "var(--text-muted)" }}>
@@ -534,7 +534,7 @@ function Finding({
 function WorstTwenty() {
   return (
     <div className="mt-12">
-      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         The twenty worst
       </h3>
       <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
@@ -583,7 +583,7 @@ function WorstTwenty() {
 function HonestLimit() {
   return (
     <div className="mt-12">
-      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+      <h3 className="text-xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
         The honest limit
       </h3>
       <ul className="mt-4 flex max-w-3xl flex-col gap-2 text-sm" style={{ color: "var(--text-secondary)" }}>

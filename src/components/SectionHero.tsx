@@ -65,9 +65,9 @@ export function SectionHero({
         )}
 
         <h1
-          className="text-5xl sm:text-7xl lg:text-8xl uppercase tracking-wide leading-[0.88]"
+          className="text-5xl sm:text-7xl lg:text-8xl uppercase tracking-wide leading-[0.9]"
           style={{
-            fontFamily: "var(--font-display)",
+            fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
             color: "var(--color-vantage-white)",
           }}
         >

@@ -46,7 +46,7 @@ export function MatchupHeader({ game }: { game: PredictedGame }) {
           <span
             className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider text-white"
             style={{
-              fontFamily: "var(--font-condensed)",
+              fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
               background: CONFIDENCE_TOKEN[game.confidence],
             }}
           >
@@ -84,7 +84,7 @@ export function MatchupHeader({ game }: { game: PredictedGame }) {
           >
             <span
               className="text-lg tnum"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--surface-page)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--surface-page)" }}
             >
               {awayPct}%
             </span>
@@ -98,7 +98,7 @@ export function MatchupHeader({ game }: { game: PredictedGame }) {
           >
             <span
               className="text-lg tnum"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--surface-page)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--surface-page)" }}
             >
               {homePct}%
             </span>
@@ -141,7 +141,7 @@ function Figure({ label, value, note }: { label: string; value: string; note?: s
       <p className="eyebrow" style={{ color: "var(--text-muted)" }}>{label}</p>
       <p
         className="mt-1 text-3xl leading-none tnum"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         {value}
       </p>

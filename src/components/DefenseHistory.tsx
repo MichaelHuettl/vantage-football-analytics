@@ -23,7 +23,7 @@ export function HistoricFinishes() {
     <section className="mt-16">
       <h2
         className="text-3xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         Historic finishes
       </h2>
@@ -46,7 +46,7 @@ export function HistoricFinishes() {
                   colSpan={3}
                   className="px-3 py-2 text-left text-xs font-bold uppercase tracking-wider"
                   style={{
-                    fontFamily: "var(--font-condensed)",
+                    fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                     color: "var(--text-muted)",
                     borderLeft: "1px solid var(--border-subtle)",
                   }}
@@ -67,7 +67,7 @@ export function HistoricFinishes() {
               <tr key={i} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
                 <td
                   className="px-3 py-1.5"
-                  style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                  style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
                 >
                   {i + 1}
                 </td>
@@ -95,7 +95,7 @@ function SubHead() {
         scope="col"
         className="px-3 py-1 text-left text-micro font-bold uppercase tracking-wider"
         style={{
-          fontFamily: "var(--font-condensed)",
+          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
           color: "var(--text-muted)",
           borderLeft: "1px solid var(--border-subtle)",
         }}
@@ -105,14 +105,14 @@ function SubHead() {
       <th
         scope="col"
         className="px-3 py-1 text-right text-micro font-bold uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
       >
         Pts / G
       </th>
       <th
         scope="col"
         className="px-3 py-1 text-right text-micro font-bold uppercase tracking-wider"
-        style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
       >
         EPA
       </th>
@@ -170,10 +170,10 @@ export function MeasureVsFinish({
   const years = Object.keys(blocks).sort().reverse();
 
   return (
-    <section className="mt-14">
+    <section className="mt-16">
       <h3
         className="text-xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         {title}
       </h3>
@@ -251,7 +251,7 @@ function Th({
     <th
       scope="col"
       className={`px-2 py-2 text-right text-xs font-bold uppercase tracking-wider ${className}`}
-      style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
     >
       {children}
     </th>

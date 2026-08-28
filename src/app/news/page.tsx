@@ -87,19 +87,19 @@ export default async function NewsPage({
         lede="Live and breaking NFL news and reports."
       />
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         {/* ==================== Headline feed ==================== */}
         <div className="flex flex-wrap items-center gap-3 mb-2">
           <h2
             className="text-3xl uppercase tracking-wide"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             Headlines
           </h2>
           <span
             className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
             style={{
-              fontFamily: "var(--font-condensed)",
+              fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
               background: "var(--text-primary)",
               color: "var(--surface-page)",
             }}
@@ -249,21 +249,21 @@ export default async function NewsPage({
           one continuous list. */}
       <div className="yard-rule" />
 
-      <Container className="py-14">
+      <Container className="py-16 sm:py-24">
         {/* ==================== Beat reports ==================== */}
         <section>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
             <div className="flex flex-wrap items-center gap-3">
               <h2
                 className="text-3xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 Beat reports
               </h2>
               <span
                 className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
                 style={{
-                  fontFamily: "var(--font-condensed)",
+                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                   background: "var(--text-primary)",
                   color: "var(--surface-page)",
                 }}
@@ -273,7 +273,7 @@ export default async function NewsPage({
               <span
                 className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
                 style={{
-                  fontFamily: "var(--font-condensed)",
+                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                   color: "var(--text-secondary)",
                   boxShadow: "inset 0 0 0 1px var(--border-strong)",
                 }}

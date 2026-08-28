@@ -120,9 +120,9 @@ export default function Home() {
               </div>
 
               <h1
-                className="rise rise-2 mt-10 uppercase tracking-wide leading-[0.88] text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
+                className="rise rise-2 mt-10 uppercase tracking-wide leading-[0.9] text-5xl sm:text-7xl lg:text-8xl max-w-4xl"
                 style={{
-                  fontFamily: "var(--font-display)",
+                  fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
                   color: "var(--color-vantage-white)",
                 }}
               >
@@ -131,7 +131,7 @@ export default function Home() {
               </h1>
 
               <p
-                className="rise rise-3 mt-7 max-w-xl text-lg leading-relaxed"
+                className="rise rise-3 mt-7 max-w-xl text-lg"
                 style={{ color: "var(--color-ink-300)" }}
               >
                 Most sites publish the conclusion and ask you to take it on
@@ -146,7 +146,7 @@ export default function Home() {
                   href="/rankings"
                   className="rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-transform hover:-translate-y-0.5"
                   style={{
-                    fontFamily: "var(--font-condensed)",
+                    fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                     background: "var(--color-vantage-amber)",
                     color: "var(--color-vantage-black)",
                   }}
@@ -157,7 +157,7 @@ export default function Home() {
                   href="/glossary"
                   className="rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider transition-colors hover:bg-white/10"
                   style={{
-                    fontFamily: "var(--font-condensed)",
+                    fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                     color: "var(--color-vantage-white)",
                     boxShadow: "inset 0 0 0 1px var(--color-ink-600)",
                   }}
@@ -193,7 +193,7 @@ export default function Home() {
                 <p
                   className="mt-2 text-2xl uppercase tracking-wide leading-none"
                   style={{
-                    fontFamily: "var(--font-display)",
+                    fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
                     color: "var(--color-vantage-white)",
                   }}
                 >
@@ -218,7 +218,7 @@ export default function Home() {
         <div className="reveal flex flex-wrap items-baseline gap-x-6 gap-y-2">
           <h2
             className="text-4xl sm:text-5xl uppercase tracking-wide leading-none"
-            style={{ fontFamily: "var(--font-display)" }}
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
           >
             Where to start
           </h2>
@@ -260,7 +260,7 @@ export default function Home() {
                 <span
                   className="text-3xl uppercase tracking-wide leading-none"
                   style={{
-                    fontFamily: "var(--font-display)",
+                    fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
                     color: "var(--color-vantage-white)",
                   }}
                 >
@@ -318,7 +318,7 @@ export default function Home() {
           <h2
             className="reveal mt-5 max-w-3xl text-4xl sm:text-6xl uppercase tracking-wide leading-[0.9]"
             style={{
-              fontFamily: "var(--font-display)",
+              fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)",
               color: "var(--color-vantage-white)",
             }}
           >
@@ -336,7 +336,7 @@ export default function Home() {
             href="/glossary"
             className="mt-8 inline-block rounded px-6 py-3.5 text-sm font-bold uppercase tracking-wider"
             style={{
-              fontFamily: "var(--font-condensed)",
+              fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
               background: "var(--color-vantage-amber)",
               color: "var(--color-vantage-black)",
             }}

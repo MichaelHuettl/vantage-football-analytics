@@ -169,7 +169,7 @@ export function ScatterChart({
             <text
               x={px(band.x0) + 6}
               y={py(band.y1) - 6}
-              style={{ fontFamily: "var(--font-condensed)", fontSize: 11, letterSpacing: ".08em" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: 11, letterSpacing: ".08em" }}
               fill="var(--text-secondary)"
             >
               {bandLabel.toUpperCase()}
@@ -189,14 +189,14 @@ export function ScatterChart({
       />
       <text
         x={mx + 5} y={M.top + 11}
-        style={{ fontFamily: "var(--font-condensed)", fontSize: 11 }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: 11 }}
         fill="var(--text-muted)"
       >
         median {fmt(series.x_median)}
       </text>
       <text
         x={M.left + 5} y={my - 5}
-        style={{ fontFamily: "var(--font-condensed)", fontSize: 11 }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: 11 }}
         fill="var(--text-muted)"
       >
         median {fmt(series.y_median)}
@@ -220,7 +220,7 @@ export function ScatterChart({
       {[series.x_min, series.x_median, series.x_max].map((v, i) => (
         <text
           key={`xt${i}`} x={px(v)} y={M.top + ih + 20} textAnchor="middle"
-          style={{ fontFamily: "var(--font-condensed)", fontSize: 11 }}
+          style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: 11 }}
           fill="var(--text-muted)"
         >
           {fmt(v)}
@@ -229,7 +229,7 @@ export function ScatterChart({
       {[series.y_min, series.y_median, series.y_max].map((v, i) => (
         <text
           key={`yt${i}`} x={M.left - 8} y={py(v) + 4} textAnchor="end"
-          style={{ fontFamily: "var(--font-condensed)", fontSize: 11 }}
+          style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: 11 }}
           fill="var(--text-muted)"
         >
           {fmt(v)}
@@ -238,14 +238,14 @@ export function ScatterChart({
 
       <text
         x={M.left + iw / 2} y={H - 12} textAnchor="middle"
-        style={{ fontFamily: "var(--font-condensed)", fontSize: 12, letterSpacing: ".06em" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: 12, letterSpacing: ".06em" }}
         fill="var(--text-secondary)"
       >
         {series.x_label.toUpperCase()}
       </text>
       <text
         x={-(M.top + ih / 2)} y={16} textAnchor="middle" transform="rotate(-90)"
-        style={{ fontFamily: "var(--font-condensed)", fontSize: 12, letterSpacing: ".06em" }}
+        style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: 12, letterSpacing: ".06em" }}
         fill="var(--text-secondary)"
       >
         {series.y_label.toUpperCase()}
@@ -276,7 +276,7 @@ export function ScatterChart({
             />
             <text
               x={lx} y={ly} textAnchor={anchor}
-              style={{ fontFamily: "var(--font-condensed)", fontSize: FS }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: FS }}
               fill={ink}
             >
               {p.short ?? p.name}
@@ -306,7 +306,7 @@ function RegionLabel({
   return (
     <text
       x={x} y={y} textAnchor={anchor}
-      style={{ fontFamily: "var(--font-condensed)", fontSize: 11, letterSpacing: ".08em" }}
+      style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", fontSize: 11, letterSpacing: ".08em" }}
       fill="var(--text-muted)"
     >
       {text.toUpperCase()}

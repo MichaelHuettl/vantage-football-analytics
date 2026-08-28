@@ -53,19 +53,19 @@ export default async function GamesPage({
         </Container>
       </div>
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
           <div className="flex flex-wrap items-center gap-3">
             <h2
               className="text-3xl uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}
+              style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
             >
               Week {week}
             </h2>
             <span
               className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
               style={{
-                fontFamily: "var(--font-condensed)",
+                fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                 background: "var(--text-primary)",
                 color: "var(--surface-page)",
               }}
@@ -89,7 +89,7 @@ export default async function GamesPage({
               <section key={slot.label}>
                 <h3
                   className="text-xl uppercase tracking-wide"
-                  style={{ fontFamily: "var(--font-display)" }}
+                  style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
                 >
                   {slot.label}
                 </h3>
@@ -130,7 +130,7 @@ function WeekTabs({ current }: { current: number }) {
                 aria-label={`Week ${w}`}
                 className="block min-w-9 rounded px-3 py-2 text-center text-sm font-bold tnum transition-colors"
                 style={{
-                  fontFamily: "var(--font-condensed)",
+                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                   background: active ? "var(--text-primary)" : "transparent",
                   color: active ? "var(--surface-page)" : "var(--text-secondary)",
                   boxShadow: active

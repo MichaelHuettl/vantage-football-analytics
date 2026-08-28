@@ -21,7 +21,7 @@ export function FeatureComparison({ rows }: { rows: FC[] }) {
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
         <h2
           className="text-2xl uppercase tracking-wide"
-          style={{ fontFamily: "var(--font-display)" }}
+          style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
         >
           How the teams compare
         </h2>
@@ -127,7 +127,7 @@ function Pair({
           <div key={t.team} className="flex items-center gap-3">
             <span
               className="w-10 shrink-0 text-xs font-bold uppercase"
-              style={{ fontFamily: "var(--font-condensed)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}
             >
               {t.team}
             </span>

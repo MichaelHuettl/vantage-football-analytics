@@ -49,7 +49,7 @@ export default async function GamePredictionIndex({
         lede="How the model works, how well it has done, and what it expects this week."
       />
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         <PredictionOverview />
 
         <div className="mt-10">
@@ -127,7 +127,7 @@ function WeekSlate({ week }: { week: number }) {
   return (
     <section>
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-        <h2 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+        <h2 className="text-2xl uppercase tracking-wide" style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}>
           Week {week}
         </h2>
         <p className="text-xs" style={{ color: "var(--text-muted)" }}>

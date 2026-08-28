@@ -24,7 +24,7 @@ export function Methodology() {
     <section>
       <h2
         className="text-2xl uppercase tracking-wide"
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         How this is worked out
       </h2>
@@ -77,7 +77,7 @@ export function Methodology() {
               <li key={s.title} className="flex gap-4">
                 <span
                   className="shrink-0 text-lg tnum leading-none"
-                  style={{ fontFamily: "var(--font-display)", color: "var(--text-muted)" }}
+                  style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)", color: "var(--text-muted)" }}
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>

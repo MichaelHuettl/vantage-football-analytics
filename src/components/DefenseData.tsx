@@ -44,7 +44,7 @@ export function RankedColumns({
           >
             <h3
               className="text-xs font-bold uppercase tracking-wider"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
             >
               {c.label}
             </h3>
@@ -54,7 +54,7 @@ export function RankedColumns({
                   <span
                     className="w-4 shrink-0 text-xs tnum"
                     style={{
-                      fontFamily: "var(--font-condensed)",
+                      fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                       color: "var(--text-muted)",
                     }}
                   >
@@ -98,7 +98,7 @@ export function RankedTable({ columns }: { columns: LeaderColumn[] }) {
             <th
               scope="col"
               className="w-10 px-3 py-2 text-left text-xs font-bold uppercase tracking-wider"
-              style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+              style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
             >
               #
             </th>
@@ -107,7 +107,7 @@ export function RankedTable({ columns }: { columns: LeaderColumn[] }) {
                 key={c.label}
                 scope="col"
                 className="px-3 py-2 text-left text-xs font-bold uppercase tracking-wider"
-                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
               >
                 {c.label}
               </th>
@@ -119,7 +119,7 @@ export function RankedTable({ columns }: { columns: LeaderColumn[] }) {
             <tr key={i} className="border-t" style={{ borderColor: "var(--border-subtle)" }}>
               <td
                 className="px-3 py-1.5 tnum"
-                style={{ fontFamily: "var(--font-condensed)", color: "var(--text-muted)" }}
+                style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
               >
                 {i + 1}
               </td>

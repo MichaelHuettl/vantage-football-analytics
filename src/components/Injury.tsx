@@ -20,7 +20,7 @@ export function StatusPill({ status }: { status: GameStatus }) {
     <span
       className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wide text-white whitespace-nowrap"
       style={{
-        fontFamily: "var(--font-condensed)",
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         background: STATUS_TOKEN[status],
       }}
     >
@@ -64,7 +64,7 @@ export function PracticeStrip({
           key={day}
           className={`inline-flex items-center justify-center rounded font-bold text-white ${dim}`}
           style={{
-            fontFamily: "var(--font-condensed)",
+            fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
             background: PRACTICE_TOKEN[value].bg,
           }}
           title={`${day}: ${PRACTICE_TOKEN[value].label}`}
@@ -113,7 +113,7 @@ export function InjuryTimeline({
           <span
             className="text-micro tnum"
             style={{
-              fontFamily: "var(--font-condensed)",
+              fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
               color: "var(--text-muted)",
             }}
           >
@@ -189,7 +189,7 @@ export function LastUpdateCell({
       <span
         className="mt-0.5 block text-xs uppercase tracking-wider"
         style={{
-          fontFamily: "var(--font-condensed)",
+          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
           color: stale ? "var(--color-status-doubtful)" : "var(--text-muted)",
         }}
       >

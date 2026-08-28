@@ -36,7 +36,7 @@ export function Wordmark({
         className={`mt-3 uppercase leading-[0.85] tracking-wide ${
           lg ? "text-5xl sm:text-6xl" : "text-3xl"
         }`}
-        style={{ fontFamily: "var(--font-display)" }}
+        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
       >
         Vantage
       </p>
@@ -46,7 +46,7 @@ export function Wordmark({
       <p
         className={`mt-2 uppercase ${lg ? "text-sm" : "text-micro"}`}
         style={{
-          fontFamily: "var(--font-condensed)",
+          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
           letterSpacing: lg ? "0.42em" : "0.3em",
           marginRight: lg ? "-0.42em" : "-0.3em",
           fontWeight: 500,

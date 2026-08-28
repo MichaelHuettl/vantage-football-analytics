@@ -43,8 +43,8 @@ export function PredictionOverview() {
         {items.map((it) => (
           <li key={it.label} className="p-5 sm:p-6" style={{ background: "var(--surface-page)" }}>
             <span
-              className="block leading-[0.85] tnum"
-              style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.5rem, 5vw, 3.75rem)" }}
+              className="block leading-[0.9] tnum"
+              style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)", fontSize: "clamp(2.5rem, 5vw, 3.75rem)" }}
             >
               {it.value}
             </span>
@@ -75,7 +75,7 @@ export function PredictionOverview() {
           <div key={x.l} className="p-5 sm:p-6" style={{ background: "var(--surface-page)" }}>
             <span
               className="block leading-none tnum"
-              style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
+              style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)" }}
             >
               {x.v}
             </span>

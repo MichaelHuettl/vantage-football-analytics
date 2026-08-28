@@ -55,7 +55,7 @@ export default function GlossaryPage() {
         lede="Every metric on this site, defined in one sentence, with what a good value looks like and where the number came from. If a figure appears on a chart and not on this page, that is a bug."
       />
 
-      <Container className="py-10">
+      <Container className="py-16 sm:py-24">
         {/* ---- jump links ---- */}
         <nav aria-label="Sections" className="max-w-3xl">
           <ul className="flex flex-wrap gap-2">
@@ -65,7 +65,7 @@ export default function GlossaryPage() {
                   href={`#${g.id}`}
                   className="inline-block rounded px-3 py-1.5 text-xs font-bold uppercase tracking-wider transition-opacity hover:opacity-70"
                   style={{
-                    fontFamily: "var(--font-condensed)",
+                    fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
                     color: "var(--text-secondary)",
                     boxShadow: "inset 0 0 0 1px var(--border-strong)",
                   }}
@@ -91,7 +91,7 @@ export default function GlossaryPage() {
             <section key={group.id} id={group.id} className="mt-16 scroll-mt-24">
               <h2
                 className="text-3xl uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
                 {group.name}
               </h2>
@@ -108,7 +108,7 @@ export default function GlossaryPage() {
                     <dt>
                       <span
                         className="text-2xl uppercase tracking-wide"
-                        style={{ fontFamily: "var(--font-display)" }}
+                        style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
                       >
                         {t.term}
                       </span>
