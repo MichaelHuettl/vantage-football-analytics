@@ -41,6 +41,28 @@ export function Goalpost({
       aria-hidden={title ? undefined : true}
       fill="none"
     >
+      {/* The plot grid, added 2026-08-28 at the operator's request so the
+          chrome mark carries the same device as the emblem in the home lockup.
+
+          It is the emblem's *major* grid only — three horizontals and three
+          verticals, not the seven of each the emblem draws. At 32px the
+          viewBox scales to about 0.19px per unit, so seven lines each way
+          would collapse into haze; three carry the idea and stay separable.
+          Stroke is 3 rather than the emblem's 1.5 for the same reason: at this
+          size 1.5 renders below half a pixel and antialiases away to nothing.
+
+          **No clip path, deliberately.** The emblem clips because its tick
+          marks have round caps that would bulge past the axis. There are no
+          ticks here, and these lines use the default butt cap and stop exactly
+          on the frame's inner edges, so nothing overhangs and no clip is
+          needed. That matters: this component renders twice on every page, in
+          the header and the footer, and a clip would put a duplicate `id` in
+          the DOM. */}
+      <g stroke="currentColor" strokeWidth="3">
+        <path d="M44.5 103H155.5M44.5 75H155.5M44.5 48H155.5" opacity=".3" />
+        <path d="M72 20.5V129.5M100 20.5V129.5M128 20.5V129.5" opacity=".17" />
+      </g>
+
       {/* The data, rising left to right. Amber, and the only amber here — §7
           reserves it for the focal thing on screen. */}
       <path

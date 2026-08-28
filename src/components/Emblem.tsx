@@ -40,14 +40,28 @@ export function Emblem({
 
       <g clipPath="url(#vantage-emblem-plot)">
         {/* Minor grid, then major. Both inherit, so on light chrome they read
-            as light grey rather than disappearing into a fixed silver. */}
-        <g stroke="currentColor" strokeWidth="1.2" opacity=".07">
-          <path d="M43.5 117H156.5M43.5 89H156.5M43.5 62H156.5M43.5 34H156.5" />
-          <path d="M58 20V130.5M86 20V130.5M114 20V130.5M142 20V130.5" />
+            as light grey rather than disappearing into a fixed silver.
+
+            Horizontals sit above verticals on purpose, and carry roughly twice
+            the opacity. They were at .07 and .14 alongside the verticals until
+            2026-08-28, which on a dark hero is white at seven percent — present
+            in the file and invisible on screen, which is what the operator was
+            seeing. On a chart the horizontals are the value reference and the
+            verticals are the lighter of the pair, so raising them is also the
+            right way round rather than just the louder one. */}
+        <g stroke="currentColor" strokeWidth="1.2">
+          <path
+            d="M43.5 117H156.5M43.5 89H156.5M43.5 62H156.5M43.5 34H156.5"
+            opacity=".18"
+          />
+          <path
+            d="M58 20V130.5M86 20V130.5M114 20V130.5M142 20V130.5"
+            opacity=".10"
+          />
         </g>
-        <g stroke="currentColor" strokeWidth="1.5" opacity=".14">
-          <path d="M43.5 103H156.5M43.5 75H156.5M43.5 48H156.5" />
-          <path d="M72 20V130.5M100 20V130.5M128 20V130.5" />
+        <g stroke="currentColor" strokeWidth="1.5">
+          <path d="M43.5 103H156.5M43.5 75H156.5M43.5 48H156.5" opacity=".32" />
+          <path d="M72 20V130.5M100 20V130.5M128 20V130.5" opacity=".18" />
         </g>
 
         {/* Area under the line. Amber at 11% — the fill states the shape, the
