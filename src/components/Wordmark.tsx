@@ -40,21 +40,52 @@ export function Wordmark({
       >
         Vantage
       </p>
-      {/* Tracked-out type adds trailing space after the final letter, which
-          reads as a leftward shift against a centred block. The negative
-          margin cancels exactly that. */}
-      <p
-        className={`mt-2 uppercase ${lg ? "text-sm" : "text-micro"}`}
-        style={{
-          fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
-          letterSpacing: lg ? "0.42em" : "0.3em",
-          marginRight: lg ? "-0.42em" : "-0.3em",
-          fontWeight: 500,
-          opacity: 0.75,
-        }}
-      >
-        Football Analytics
-      </p>
+      {/* The sub-line, flanked by a rule on each side.
+
+          **The rules carry a minimum width, and that is the whole trick.**
+          `flex-1` alone gave them zero: the sub-line is tracked out to 0.42em
+          and at 240px it plus its gaps already exceeded the 266px block, so
+          there was nothing left to distribute and both rules measured 0. A
+          floor makes the row the widest thing in the lockup instead, and the
+          block — `w-fit` — grows to it. The rules then extend past the name on
+          both sides, which is the point of the device.
+
+          Tracking is deliberately not reduced to make room. 0.42em is the
+          lockup as the operator set it, and narrowing the sub-line to buy space
+          for a decorative rule would be the wrong thing to spend it on.
+
+          The rules inherit `currentColor` at 30%, like the grid inside the
+          mark, so one lockup works on light and dark chrome (§7). They are
+          `aria-hidden` — this is a rule, not content, and the name is already
+          read out by the emblem's label. */}
+      <div className={`flex w-full items-center self-stretch ${lg ? "mt-3 gap-4" : "mt-2 gap-2.5"}`}>
+        <span
+          aria-hidden="true"
+          className="h-px flex-1"
+          style={{ background: "currentColor", opacity: 0.3, minWidth: lg ? 32 : 20 }}
+        />
+        {/* Tracked-out type adds trailing space after the final letter, which
+            reads as a leftward shift against a centred block. The negative
+            margin cancels exactly that, and here it also stops the right-hand
+            rule sitting a tracking-unit further out than the left. */}
+        <p
+          className={`shrink-0 uppercase ${lg ? "text-sm" : "text-micro"}`}
+          style={{
+            fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
+            letterSpacing: lg ? "0.42em" : "0.3em",
+            marginRight: lg ? "-0.42em" : "-0.3em",
+            fontWeight: 500,
+            opacity: 0.75,
+          }}
+        >
+          Football Analytics
+        </p>
+        <span
+          aria-hidden="true"
+          className="h-px flex-1"
+          style={{ background: "currentColor", opacity: 0.3, minWidth: lg ? 32 : 20 }}
+        />
+      </div>
     </div>
   );
 }

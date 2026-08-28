@@ -63,6 +63,24 @@ export function Goalpost({
         <path d="M72 20.5V129.5M100 20.5V129.5M128 20.5V129.5" opacity=".17" />
       </g>
 
+      {/* Area under the line, same 11% amber as the emblem's. Added
+          2026-08-28 so the header and footer marks read as the same object as
+          the home lockup rather than a stripped cousin of it.
+
+          It traces this component's own trend path, which is not quite the
+          emblem's — that one ends at y=36 and this at y=38 — and closes on
+          y=129.5, the crossbar's inner edge. Copying the emblem's fill
+          verbatim would have left a hairline of amber floating off the line.
+
+          A fill needs no clip where a hairline tick would: the polygon is
+          bounded by its own coordinates, x 54-142 and y 38-129.5, entirely
+          inside the frame. */}
+      <path
+        d="M54 108L72 118L90 84L108 94L126 56L142 38L142 129.5L54 129.5Z"
+        fill="var(--color-vantage-amber)"
+        opacity=".11"
+      />
+
       {/* The data, rising left to right. Amber, and the only amber here — §7
           reserves it for the focal thing on screen. */}
       <path
