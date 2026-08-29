@@ -1,4 +1,5 @@
 import rbFile from "@/data/rb-charts.json";
+import rbMatchupsFile from "@/data/rb-matchups.json";
 import teFile from "@/data/te-charts.json";
 import wrFile from "@/data/wr-charts.json";
 import qbFile from "@/data/qb-charts.json";
@@ -393,3 +394,38 @@ export const QB_CORRECTIONS = qbFile_.data.corrections;
 export const QB_RUSHING_TABLE = qbFile_.data.rushing_table;
 export const QB_SEASON = qbFile_.season;
 export const QB_SOURCE = qbFile_.source;
+
+/**
+ * Run-defence matchup tables, five seasons of them.
+ *
+ * A separate payload from `rb-charts.json` on purpose: these two blocks were
+ * screenshotted rather than being in the workbook, and `rb_charts.py` still
+ * targets the `(2)` workbook (docs/STATE.md open item 10), so folding them in
+ * would have meant regenerating every RB chart from a two-versions-old sheet.
+ * `scripts/curated/rb_matchups.py` validates the transcription and computes the
+ * persistence, appearance and overlap figures the page quotes (§11).
+ */
+export const RB_MATCHUPS = rbMatchupsFile as unknown as RbMatchups;
+
+export interface RbMatchupTable {
+  title: string;
+  operator_note: string;
+  least_label: string;
+  most_label: string;
+  seasons: { season: number; least: string[]; most: string[] }[];
+  persistence: Record<
+    "least" | "most",
+    { pairs: number; retained: number; per_season: number; chance: number }
+  >;
+  appearances: Record<"least" | "most", { abbr: string; seasons: number }[]>;
+}
+
+export interface RbMatchups {
+  updated: string;
+  source: string;
+  seasons: number[];
+  yards_allowed: RbMatchupTable;
+  rush_rate: RbMatchupTable;
+  overlap: { season: number; teams: { abbr: string; nickname: string }[] }[];
+  overlap_per_season: number;
+}

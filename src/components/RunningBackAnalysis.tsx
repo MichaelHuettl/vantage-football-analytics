@@ -1,5 +1,6 @@
 import { ChartFigure } from "@/components/ChartFigure";
 import { RankTable } from "@/components/RankTable";
+import { RunBlockMatchups } from "@/components/RunBlockMatchups";
 import { HistoricTable } from "@/components/HistoricTable";
 import { ScatterChart } from "@/components/ScatterChart";
 import { TierBenchmarks } from "@/components/TierBenchmarks";
@@ -267,6 +268,26 @@ export function RunningBackAnalysis() {
           that starts a flex.
         </p>
       </Block>
+
+      {/* Block 7 is the only one on this page not fed by rb_charts.json —
+          see RunBlockMatchups for why it has its own payload. */}
+      <section className="mt-16">
+        <h3 className="flex items-baseline gap-3">
+          <span
+            className="text-sm tnum"
+            style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)", color: "var(--text-muted)" }}
+          >
+            07
+          </span>
+          <span
+            className="text-2xl uppercase tracking-wide"
+            style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
+          >
+            Who to run at
+          </span>
+        </h3>
+        <RunBlockMatchups />
+      </section>
 
       <p className="mt-10 text-sm" style={{ color: "var(--text-muted)" }}>
         {RB_SOURCE} {routes.note}

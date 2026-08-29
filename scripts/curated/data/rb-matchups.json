@@ -1,0 +1,63 @@
+{
+  "note": "Transcribed by hand from the operator's workbook screenshots on 2026-08-28, the same way scripts/curated/data/dst-history.json was. Two blocks, five seasons each, ten teams per list. Not in the (4) workbook this repo's other extractors read, and deliberately not folded into rb_charts.py: that script still targets the (2) workbook (docs/STATE.md open item 10) and re-running it would regenerate every RB chart from a two-versions-old sheet. Team names are the operator's own shorthand; scripts/curated/rb_matchups.py resolves them and refuses to emit if any fail.",
+  "source": "Workbook screenshots, rows 6-18 and 34-46",
+  "transcribed": "2026-08-28",
+  "blocks": {
+    "rush_yards_allowed": {
+      "title": "Rushing yards per game allowed",
+      "operator_note": "want bottom 10 for fantasy RBs",
+      "least_label": "Fewest allowed",
+      "most_label": "Most allowed",
+      "seasons": {
+        "2025": {
+          "least": ["Jags", "Texans", "Seahawks", "Broncos", "Bucs", "Patriots", "Colts", "Chiefs", "Ravens", "Chargers"],
+          "most": ["Bengals", "Giants", "Commanders", "Jets", "Bills", "Dolphins", "Bears", "Cardinals", "Falcons", "Cowboys"]
+        },
+        "2024": {
+          "least": ["Ravens", "Vikings", "Bucs", "Eagles", "Broncos", "Lions", "Packers", "Dolphins", "Texans", "Chiefs"],
+          "most": ["Panthers", "Commanders", "Saints", "Cowboys", "Rams", "Bears", "Giants", "Titans", "Jags", "Colts"]
+        },
+        "2023": {
+          "least": ["Bears", "Lions", "Patriots", "Bucs", "49ers", "Vikings", "Dolphins", "Texans", "Jaguars", "Browns"],
+          "most": ["Cardinals", "Seahawks", "Broncos", "Giants", "Packers", "Commanders", "Bengals", "Jets", "Colts", "Panthers"]
+        },
+        "2022": {
+          "least": ["Titans", "49ers", "Ravens", "Dolphins", "Bengals", "Bills", "Patriots", "Chiefs", "Steelers", "Broncos"],
+          "most": ["Texans", "Bears", "Seahawks", "Lions", "Giants", "Chargers", "Packers", "Browns", "Saints", "Falcons"]
+        },
+        "2021": {
+          "least": ["Titans", "Ravens", "Bucs", "Saints", "Rams", "49ers", "Bengals", "Commanders", "Eagles", "Packers"],
+          "most": ["Steelers", "Texans", "Chargers", "Jets", "Lions", "Falcons", "Vikings", "Giants", "Patriots", "Bears"]
+        }
+      }
+    },
+    "opponent_rush_play_rate": {
+      "title": "Opponent rushing play rate",
+      "operator_note": "top 10 least = passing offense, bottom 10 = rushing offense",
+      "least_label": "Run against least",
+      "most_label": "Run against most",
+      "seasons": {
+        "2025": {
+          "least": ["Jags", "Seahawks", "Broncos", "Bucs", "Ravens", "Colts", "Texans", "Rams", "Steelers", "Patriots"],
+          "most": ["Vikings", "Jets", "Saints", "Raiders", "Browns", "Panthers", "Commanders", "Bills", "Dolphins", "Bengals"]
+        },
+        "2024": {
+          "least": ["Vikings", "Ravens", "Bucs", "Lions", "Eagles", "Dolphins", "Broncos", "Chargers", "Steelers", "Packers"],
+          "most": ["Panthers", "Titans", "Giants", "Colts", "Commanders", "Patriots", "Jets", "Bears", "Browns", "49ers"]
+        },
+        "2023": {
+          "least": ["49ers", "Eagles", "Bears", "Ravens", "Bucs", "Lions", "Jags", "Rams", "Bills", "Vikings"],
+          "most": ["Panthers", "Cardinals", "Jets", "Cowboys", "Falcons", "Colts", "Seahawks", "Packers", "Patriots", "Raiders"]
+        },
+        "2022": {
+          "least": ["Titans", "Chiefs", "Ravens", "Dolphins", "Bills", "49ers", "Bengals", "Patriots", "Broncos", "Cardinals"],
+          "most": ["Bears", "Texans", "Packers", "Seahawks", "Browns", "Colts", "Falcons", "Saints", "Jets", "Chargers"]
+        },
+        "2021": {
+          "least": ["Bucs", "Titans", "Ravens", "Bengals", "Rams", "Packers", "Chiefs", "Dolphins", "Colts", "Saints"],
+          "most": ["Bears", "Texans", "Lions", "Falcons", "Jaguars", "Chargers", "Panthers", "Jets", "Patriots", "Steelers"]
+        }
+      }
+    }
+  }
+}

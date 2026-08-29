@@ -1,0 +1,903 @@
+{
+ "schema_version": 1,
+ "updated": "2026-08-28",
+ "source": "Workbook screenshots, rows 6-18 and 34-46",
+ "note": "Transcribed by hand from the operator's workbook screenshots on 2026-08-28, the same way scripts/curated/data/dst-history.json was. Two blocks, five seasons each, ten teams per list. Not in the (4) workbook this repo's other extractors read, and deliberately not folded into rb_charts.py: that script still targets the (2) workbook (docs/STATE.md open item 10) and re-running it would regenerate every RB chart from a two-versions-old sheet. Team names are the operator's own shorthand; scripts/curated/rb_matchups.py resolves them and refuses to emit if any fail.",
+ "seasons": [
+  2025,
+  2024,
+  2023,
+  2022,
+  2021
+ ],
+ "yards_allowed": {
+  "title": "Rushing yards per game allowed",
+  "operator_note": "want bottom 10 for fantasy RBs",
+  "least_label": "Fewest allowed",
+  "most_label": "Most allowed",
+  "seasons": [
+   {
+    "season": 2025,
+    "least": [
+     "JAX",
+     "HOU",
+     "SEA",
+     "DEN",
+     "TB",
+     "NE",
+     "IND",
+     "KC",
+     "BAL",
+     "LAC"
+    ],
+    "most": [
+     "CIN",
+     "NYG",
+     "WAS",
+     "NYJ",
+     "BUF",
+     "MIA",
+     "CHI",
+     "ARI",
+     "ATL",
+     "DAL"
+    ]
+   },
+   {
+    "season": 2024,
+    "least": [
+     "BAL",
+     "MIN",
+     "TB",
+     "PHI",
+     "DEN",
+     "DET",
+     "GB",
+     "MIA",
+     "HOU",
+     "KC"
+    ],
+    "most": [
+     "CAR",
+     "WAS",
+     "NO",
+     "DAL",
+     "LAR",
+     "CHI",
+     "NYG",
+     "TEN",
+     "JAX",
+     "IND"
+    ]
+   },
+   {
+    "season": 2023,
+    "least": [
+     "CHI",
+     "DET",
+     "NE",
+     "TB",
+     "SF",
+     "MIN",
+     "MIA",
+     "HOU",
+     "JAX",
+     "CLE"
+    ],
+    "most": [
+     "ARI",
+     "SEA",
+     "DEN",
+     "NYG",
+     "GB",
+     "WAS",
+     "CIN",
+     "NYJ",
+     "IND",
+     "CAR"
+    ]
+   },
+   {
+    "season": 2022,
+    "least": [
+     "TEN",
+     "SF",
+     "BAL",
+     "MIA",
+     "CIN",
+     "BUF",
+     "NE",
+     "KC",
+     "PIT",
+     "DEN"
+    ],
+    "most": [
+     "HOU",
+     "CHI",
+     "SEA",
+     "DET",
+     "NYG",
+     "LAC",
+     "GB",
+     "CLE",
+     "NO",
+     "ATL"
+    ]
+   },
+   {
+    "season": 2021,
+    "least": [
+     "TEN",
+     "BAL",
+     "TB",
+     "NO",
+     "LAR",
+     "SF",
+     "CIN",
+     "WAS",
+     "PHI",
+     "GB"
+    ],
+    "most": [
+     "PIT",
+     "HOU",
+     "LAC",
+     "NYJ",
+     "DET",
+     "ATL",
+     "MIN",
+     "NYG",
+     "NE",
+     "CHI"
+    ]
+   }
+  ],
+  "persistence": {
+   "least": {
+    "pairs": 4,
+    "retained": 17,
+    "per_season": 4.25,
+    "chance": 3.12
+   },
+   "most": {
+    "pairs": 4,
+    "retained": 17,
+    "per_season": 4.25,
+    "chance": 3.12
+   }
+  },
+  "appearances": {
+   "least": [
+    {
+     "abbr": "BAL",
+     "seasons": 4
+    },
+    {
+     "abbr": "TB",
+     "seasons": 4
+    },
+    {
+     "abbr": "DEN",
+     "seasons": 3
+    },
+    {
+     "abbr": "HOU",
+     "seasons": 3
+    },
+    {
+     "abbr": "KC",
+     "seasons": 3
+    },
+    {
+     "abbr": "MIA",
+     "seasons": 3
+    },
+    {
+     "abbr": "NE",
+     "seasons": 3
+    },
+    {
+     "abbr": "SF",
+     "seasons": 3
+    },
+    {
+     "abbr": "CIN",
+     "seasons": 2
+    },
+    {
+     "abbr": "DET",
+     "seasons": 2
+    },
+    {
+     "abbr": "GB",
+     "seasons": 2
+    },
+    {
+     "abbr": "JAX",
+     "seasons": 2
+    },
+    {
+     "abbr": "MIN",
+     "seasons": 2
+    },
+    {
+     "abbr": "PHI",
+     "seasons": 2
+    },
+    {
+     "abbr": "TEN",
+     "seasons": 2
+    },
+    {
+     "abbr": "BUF",
+     "seasons": 1
+    },
+    {
+     "abbr": "CHI",
+     "seasons": 1
+    },
+    {
+     "abbr": "CLE",
+     "seasons": 1
+    },
+    {
+     "abbr": "IND",
+     "seasons": 1
+    },
+    {
+     "abbr": "LAC",
+     "seasons": 1
+    },
+    {
+     "abbr": "LAR",
+     "seasons": 1
+    },
+    {
+     "abbr": "NO",
+     "seasons": 1
+    },
+    {
+     "abbr": "PIT",
+     "seasons": 1
+    },
+    {
+     "abbr": "SEA",
+     "seasons": 1
+    },
+    {
+     "abbr": "WAS",
+     "seasons": 1
+    }
+   ],
+   "most": [
+    {
+     "abbr": "NYG",
+     "seasons": 5
+    },
+    {
+     "abbr": "CHI",
+     "seasons": 4
+    },
+    {
+     "abbr": "ATL",
+     "seasons": 3
+    },
+    {
+     "abbr": "NYJ",
+     "seasons": 3
+    },
+    {
+     "abbr": "WAS",
+     "seasons": 3
+    },
+    {
+     "abbr": "ARI",
+     "seasons": 2
+    },
+    {
+     "abbr": "CAR",
+     "seasons": 2
+    },
+    {
+     "abbr": "CIN",
+     "seasons": 2
+    },
+    {
+     "abbr": "DAL",
+     "seasons": 2
+    },
+    {
+     "abbr": "DET",
+     "seasons": 2
+    },
+    {
+     "abbr": "GB",
+     "seasons": 2
+    },
+    {
+     "abbr": "HOU",
+     "seasons": 2
+    },
+    {
+     "abbr": "IND",
+     "seasons": 2
+    },
+    {
+     "abbr": "LAC",
+     "seasons": 2
+    },
+    {
+     "abbr": "NO",
+     "seasons": 2
+    },
+    {
+     "abbr": "SEA",
+     "seasons": 2
+    },
+    {
+     "abbr": "BUF",
+     "seasons": 1
+    },
+    {
+     "abbr": "CLE",
+     "seasons": 1
+    },
+    {
+     "abbr": "DEN",
+     "seasons": 1
+    },
+    {
+     "abbr": "JAX",
+     "seasons": 1
+    },
+    {
+     "abbr": "LAR",
+     "seasons": 1
+    },
+    {
+     "abbr": "MIA",
+     "seasons": 1
+    },
+    {
+     "abbr": "MIN",
+     "seasons": 1
+    },
+    {
+     "abbr": "NE",
+     "seasons": 1
+    },
+    {
+     "abbr": "PIT",
+     "seasons": 1
+    },
+    {
+     "abbr": "TEN",
+     "seasons": 1
+    }
+   ]
+  }
+ },
+ "rush_rate": {
+  "title": "Opponent rushing play rate",
+  "operator_note": "top 10 least = passing offense, bottom 10 = rushing offense",
+  "least_label": "Run against least",
+  "most_label": "Run against most",
+  "seasons": [
+   {
+    "season": 2025,
+    "least": [
+     "JAX",
+     "SEA",
+     "DEN",
+     "TB",
+     "BAL",
+     "IND",
+     "HOU",
+     "LAR",
+     "PIT",
+     "NE"
+    ],
+    "most": [
+     "MIN",
+     "NYJ",
+     "NO",
+     "LV",
+     "CLE",
+     "CAR",
+     "WAS",
+     "BUF",
+     "MIA",
+     "CIN"
+    ]
+   },
+   {
+    "season": 2024,
+    "least": [
+     "MIN",
+     "BAL",
+     "TB",
+     "DET",
+     "PHI",
+     "MIA",
+     "DEN",
+     "LAC",
+     "PIT",
+     "GB"
+    ],
+    "most": [
+     "CAR",
+     "TEN",
+     "NYG",
+     "IND",
+     "WAS",
+     "NE",
+     "NYJ",
+     "CHI",
+     "CLE",
+     "SF"
+    ]
+   },
+   {
+    "season": 2023,
+    "least": [
+     "SF",
+     "PHI",
+     "CHI",
+     "BAL",
+     "TB",
+     "DET",
+     "JAX",
+     "LAR",
+     "BUF",
+     "MIN"
+    ],
+    "most": [
+     "CAR",
+     "ARI",
+     "NYJ",
+     "DAL",
+     "ATL",
+     "IND",
+     "SEA",
+     "GB",
+     "NE",
+     "LV"
+    ]
+   },
+   {
+    "season": 2022,
+    "least": [
+     "TEN",
+     "KC",
+     "BAL",
+     "MIA",
+     "BUF",
+     "SF",
+     "CIN",
+     "NE",
+     "DEN",
+     "ARI"
+    ],
+    "most": [
+     "CHI",
+     "HOU",
+     "GB",
+     "SEA",
+     "CLE",
+     "IND",
+     "ATL",
+     "NO",
+     "NYJ",
+     "LAC"
+    ]
+   },
+   {
+    "season": 2021,
+    "least": [
+     "TB",
+     "TEN",
+     "BAL",
+     "CIN",
+     "LAR",
+     "GB",
+     "KC",
+     "MIA",
+     "IND",
+     "NO"
+    ],
+    "most": [
+     "CHI",
+     "HOU",
+     "DET",
+     "ATL",
+     "JAX",
+     "LAC",
+     "CAR",
+     "NYJ",
+     "NE",
+     "PIT"
+    ]
+   }
+  ],
+  "persistence": {
+   "least": {
+    "pairs": 4,
+    "retained": 17,
+    "per_season": 4.25,
+    "chance": 3.12
+   },
+   "most": {
+    "pairs": 4,
+    "retained": 18,
+    "per_season": 4.5,
+    "chance": 3.12
+   }
+  },
+  "appearances": {
+   "least": [
+    {
+     "abbr": "BAL",
+     "seasons": 5
+    },
+    {
+     "abbr": "TB",
+     "seasons": 4
+    },
+    {
+     "abbr": "DEN",
+     "seasons": 3
+    },
+    {
+     "abbr": "LAR",
+     "seasons": 3
+    },
+    {
+     "abbr": "MIA",
+     "seasons": 3
+    },
+    {
+     "abbr": "BUF",
+     "seasons": 2
+    },
+    {
+     "abbr": "CIN",
+     "seasons": 2
+    },
+    {
+     "abbr": "DET",
+     "seasons": 2
+    },
+    {
+     "abbr": "GB",
+     "seasons": 2
+    },
+    {
+     "abbr": "IND",
+     "seasons": 2
+    },
+    {
+     "abbr": "JAX",
+     "seasons": 2
+    },
+    {
+     "abbr": "KC",
+     "seasons": 2
+    },
+    {
+     "abbr": "MIN",
+     "seasons": 2
+    },
+    {
+     "abbr": "NE",
+     "seasons": 2
+    },
+    {
+     "abbr": "PHI",
+     "seasons": 2
+    },
+    {
+     "abbr": "PIT",
+     "seasons": 2
+    },
+    {
+     "abbr": "SF",
+     "seasons": 2
+    },
+    {
+     "abbr": "TEN",
+     "seasons": 2
+    },
+    {
+     "abbr": "ARI",
+     "seasons": 1
+    },
+    {
+     "abbr": "CHI",
+     "seasons": 1
+    },
+    {
+     "abbr": "HOU",
+     "seasons": 1
+    },
+    {
+     "abbr": "LAC",
+     "seasons": 1
+    },
+    {
+     "abbr": "NO",
+     "seasons": 1
+    },
+    {
+     "abbr": "SEA",
+     "seasons": 1
+    }
+   ],
+   "most": [
+    {
+     "abbr": "NYJ",
+     "seasons": 5
+    },
+    {
+     "abbr": "CAR",
+     "seasons": 4
+    },
+    {
+     "abbr": "ATL",
+     "seasons": 3
+    },
+    {
+     "abbr": "CHI",
+     "seasons": 3
+    },
+    {
+     "abbr": "CLE",
+     "seasons": 3
+    },
+    {
+     "abbr": "IND",
+     "seasons": 3
+    },
+    {
+     "abbr": "NE",
+     "seasons": 3
+    },
+    {
+     "abbr": "GB",
+     "seasons": 2
+    },
+    {
+     "abbr": "HOU",
+     "seasons": 2
+    },
+    {
+     "abbr": "LAC",
+     "seasons": 2
+    },
+    {
+     "abbr": "LV",
+     "seasons": 2
+    },
+    {
+     "abbr": "NO",
+     "seasons": 2
+    },
+    {
+     "abbr": "SEA",
+     "seasons": 2
+    },
+    {
+     "abbr": "WAS",
+     "seasons": 2
+    },
+    {
+     "abbr": "ARI",
+     "seasons": 1
+    },
+    {
+     "abbr": "BUF",
+     "seasons": 1
+    },
+    {
+     "abbr": "CIN",
+     "seasons": 1
+    },
+    {
+     "abbr": "DAL",
+     "seasons": 1
+    },
+    {
+     "abbr": "DET",
+     "seasons": 1
+    },
+    {
+     "abbr": "JAX",
+     "seasons": 1
+    },
+    {
+     "abbr": "MIA",
+     "seasons": 1
+    },
+    {
+     "abbr": "MIN",
+     "seasons": 1
+    },
+    {
+     "abbr": "NYG",
+     "seasons": 1
+    },
+    {
+     "abbr": "PIT",
+     "seasons": 1
+    },
+    {
+     "abbr": "SF",
+     "seasons": 1
+    },
+    {
+     "abbr": "TEN",
+     "seasons": 1
+    }
+   ]
+  }
+ },
+ "overlap": [
+  {
+   "season": 2025,
+   "teams": [
+    {
+     "abbr": "CIN",
+     "nickname": "Bengals"
+    },
+    {
+     "abbr": "BUF",
+     "nickname": "Bills"
+    },
+    {
+     "abbr": "WAS",
+     "nickname": "Commanders"
+    },
+    {
+     "abbr": "MIA",
+     "nickname": "Dolphins"
+    },
+    {
+     "abbr": "NYJ",
+     "nickname": "Jets"
+    }
+   ]
+  },
+  {
+   "season": 2024,
+   "teams": [
+    {
+     "abbr": "CHI",
+     "nickname": "Bears"
+    },
+    {
+     "abbr": "IND",
+     "nickname": "Colts"
+    },
+    {
+     "abbr": "WAS",
+     "nickname": "Commanders"
+    },
+    {
+     "abbr": "NYG",
+     "nickname": "Giants"
+    },
+    {
+     "abbr": "CAR",
+     "nickname": "Panthers"
+    },
+    {
+     "abbr": "TEN",
+     "nickname": "Titans"
+    }
+   ]
+  },
+  {
+   "season": 2023,
+   "teams": [
+    {
+     "abbr": "ARI",
+     "nickname": "Cardinals"
+    },
+    {
+     "abbr": "IND",
+     "nickname": "Colts"
+    },
+    {
+     "abbr": "NYJ",
+     "nickname": "Jets"
+    },
+    {
+     "abbr": "GB",
+     "nickname": "Packers"
+    },
+    {
+     "abbr": "CAR",
+     "nickname": "Panthers"
+    },
+    {
+     "abbr": "SEA",
+     "nickname": "Seahawks"
+    }
+   ]
+  },
+  {
+   "season": 2022,
+   "teams": [
+    {
+     "abbr": "CHI",
+     "nickname": "Bears"
+    },
+    {
+     "abbr": "CLE",
+     "nickname": "Browns"
+    },
+    {
+     "abbr": "LAC",
+     "nickname": "Chargers"
+    },
+    {
+     "abbr": "ATL",
+     "nickname": "Falcons"
+    },
+    {
+     "abbr": "GB",
+     "nickname": "Packers"
+    },
+    {
+     "abbr": "NO",
+     "nickname": "Saints"
+    },
+    {
+     "abbr": "SEA",
+     "nickname": "Seahawks"
+    },
+    {
+     "abbr": "HOU",
+     "nickname": "Texans"
+    }
+   ]
+  },
+  {
+   "season": 2021,
+   "teams": [
+    {
+     "abbr": "CHI",
+     "nickname": "Bears"
+    },
+    {
+     "abbr": "LAC",
+     "nickname": "Chargers"
+    },
+    {
+     "abbr": "ATL",
+     "nickname": "Falcons"
+    },
+    {
+     "abbr": "NYJ",
+     "nickname": "Jets"
+    },
+    {
+     "abbr": "DET",
+     "nickname": "Lions"
+    },
+    {
+     "abbr": "NE",
+     "nickname": "Patriots"
+    },
+    {
+     "abbr": "PIT",
+     "nickname": "Steelers"
+    },
+    {
+     "abbr": "HOU",
+     "nickname": "Texans"
+    }
+   ]
+  }
+ ],
+ "overlap_per_season": 6.6
+}
