@@ -420,6 +420,13 @@ export interface RbMatchupTable {
   appearances: Record<"least" | "most", { abbr: string; seasons: number }[]>;
 }
 
+export interface RbStalwart {
+  abbr: string;
+  yards_seasons: number;
+  rate_seasons: number;
+  combined: number;
+}
+
 export interface RbMatchups {
   updated: string;
   source: string;
@@ -428,4 +435,11 @@ export interface RbMatchups {
   rush_rate: RbMatchupTable;
   overlap: { season: number; teams: { abbr: string; nickname: string }[] }[];
   overlap_per_season: number;
+  /** Clubs in the *top* ten of both blocks in 3+ of the five seasons: hard to
+   *  run on, and not run at much either. */
+  stalwarts: RbStalwart[];
+  /** Qualified on five-year counts but sits in the latest season's bottom
+   *  overlap — the counterexample, published rather than dropped. */
+  stalwarts_lapsed: RbStalwart[];
+  latest_season: number;
 }

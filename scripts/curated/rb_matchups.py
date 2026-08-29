@@ -181,6 +181,35 @@ def main() -> int:
             "appearances": appearances(block, teams),
         }
 
+    # Clubs that are in the *top* ten of both blocks often: hard to run on, and
+    # not run at much either. The mirror of the overlap above, and the answer to
+    # "who has always been good against the run".
+    ya = appearances(yards, teams)["least"]
+    rr = appearances(rate, teams)["least"]
+    rr_by = {a["abbr"]: a["seasons"] for a in rr}
+    stalwarts = sorted(
+        (
+            {
+                "abbr": a["abbr"],
+                "yards_seasons": a["seasons"],
+                "rate_seasons": rr_by.get(a["abbr"], 0),
+                "combined": a["seasons"] + rr_by.get(a["abbr"], 0),
+            }
+            for a in ya
+            if a["seasons"] >= 3 and rr_by.get(a["abbr"], 0) >= 3
+        ),
+        key=lambda d: (-d["combined"], d["abbr"]),
+    )
+
+    # A club can qualify on five-year counts and still have collapsed in the
+    # most recent season — Miami was top ten in both blocks 2022-2024 and bottom
+    # ten in both in 2025. Calling that "never moves" beside the 2025 overlap
+    # would contradict itself on one screen, so the two are separated and the
+    # lapsed case is published rather than quietly dropped.
+    latest_bottom = {t["abbr"] for t in overlap[0]["teams"]} if overlap else set()
+    holding = [s for s in stalwarts if s["abbr"] not in latest_bottom]
+    lapsed = [s for s in stalwarts if s["abbr"] in latest_bottom]
+
     payload = {
         "schema_version": 1,
         "updated": raw["transcribed"],
@@ -190,6 +219,9 @@ def main() -> int:
         "yards_allowed": table(yards),
         "rush_rate": table(rate),
         "overlap": overlap,
+        "stalwarts": holding,
+        "stalwarts_lapsed": lapsed,
+        "latest_season": overlap[0]["season"] if overlap else None,
         "overlap_per_season": round(
             sum(len(o["teams"]) for o in overlap) / len(overlap), 1
         ),
@@ -203,6 +235,11 @@ def main() -> int:
         print(f"  {label}: {p['per_season']} of 10 bottom-ten teams repeat "
               f"year to year (chance {p['chance']})")
     print(f"  in both bottom tens: {payload['overlap_per_season']} teams per season")
+    print("  still holding (top ten both, 3+ seasons): " + ", ".join(
+        f"{s['abbr']} ({s['yards_seasons']}/{s['rate_seasons']})" for s in holding))
+    if lapsed:
+        print("  lapsed into the latest bottom overlap: " + ", ".join(
+            f"{s['abbr']} ({s['yards_seasons']}/{s['rate_seasons']})" for s in lapsed))
     return 0
 
 

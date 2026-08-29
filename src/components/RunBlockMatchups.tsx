@@ -27,10 +27,9 @@ export function RunBlockMatchups() {
   const yards = m.yards_allowed;
   const rate = m.rush_rate;
 
-  // Clubs in the bottom ten of yards allowed in four or five of the five
-  // seasons. Read off the payload's counts; nothing is worked out here.
-  const persistent = yards.appearances.most.filter((a) => a.seasons >= 4);
-  const rateOften = rate.appearances.most.filter((a) => a.seasons >= 4);
+  // All read off the payload; nothing is worked out here (§11).
+  const stalwarts = m.stalwarts;
+  const lapsed = m.stalwarts_lapsed;
   const latest = m.overlap[0];
 
   return (
@@ -40,62 +39,104 @@ export function RunBlockMatchups() {
 
       <Callout
         as="aside"
-        label="What the five years support"
-        title="A soft run defense is a weak tip, not a plan"
+        label="What this does to a running back's week"
+        title="A defense decides the carries before it decides the yards"
         className="mt-10"
       >
         <div className="flex max-w-3xl flex-col gap-4">
           <p>
-            Both lists carry over year to year, and both carry over less than
-            they look like they should. Of the ten teams allowing the most
-            rushing yards in a season,{" "}
-            <Stat>{yards.persistence.most.per_season}</Stat> are in the same ten
-            the following season. Picking ten clubs at random would land{" "}
-            <Stat>{yards.persistence.most.chance}</Stat>. Opponent rushing rate
-            behaves the same way, at{" "}
-            <Stat>{rate.persistence.most.per_season}</Stat> against the same
-            baseline. The edge is real and it is roughly one extra team in ten.
+            A running back's fantasy week is volume times efficiency, and these
+            two tables are one lever each. Opponent rushing rate is the volume
+            half: it says how often the defense faces a run at all, which is the
+            carry count before anyone measures a yard. Rushing yards allowed is
+            the efficiency half, and it only pays out on carries that happen.
           </p>
           <p>
-            So last year's bottom ten is worth consulting in August and is not
-            worth planning a season around. Six of the ten change.
+            That order matters more than the tables make it look. Carries are
+            the part of a back's line that scores whether or not he is good that
+            afternoon; yards per carry swings hard week to week on a dozen
+            snaps. A defense that gets run at often hands a back the floor.
+            A defense that gives up yards but is rarely run at hands him
+            nothing he can count on, because the thing that unlocks it is a
+            game script neither he nor you control. Chase the volume half and
+            treat the efficiency half as the upside on top of it.
           </p>
           <p>
-            What does hold is the handful of clubs that never leave. For yards
-            allowed, {inOfFive(persistent)} of the five seasons in the bottom
-            ten.
-            {rateOften.length > 0 && (
+            Both lists carry from one season to the next, and both carry less
+            than they appear to. Of the ten teams allowing the most rushing
+            yards, <Stat>{yards.persistence.most.per_season}</Stat> are in the
+            same ten a year later against a chance rate of{" "}
+            <Stat>{yards.persistence.most.chance}</Stat>; rushing rate runs at{" "}
+            <Stat>{rate.persistence.most.per_season}</Stat> on the same
+            baseline. That is about one extra team in ten, so six of the ten
+            turn over every year. Last season's list is a place to start in
+            August and not a plan to hold through November.
+          </p>
+          <p>
+            The clubs that never move are the exception worth knowing.{" "}
+            {stalwarts.length > 0 && (
               <>
-                {" "}
-                For how often they are run at, {inOfFive(rateOften)}.
+                {stalwarts.map((s, i) => (
+                  <span key={s.abbr}>
+                    {i > 0 && i === stalwarts.length - 1
+                      ? " and "
+                      : i > 0
+                        ? ", "
+                        : ""}
+                    <TeamChip abbr={s.abbr} size="sm" />
+                  </span>
+                ))}{" "}
+                sit in the top ten of both blocks in at least three of the five
+                seasons and are still there: hard to run on, and then not run
+                at, which is the profile of a defense nobody solves and nobody
+                keeps trying.{" "}
               </>
-            )}{" "}
-            Those are standing conditions rather than a season's noise.
-          </p>
-          <p>
-            The two tables are worth more crossed than read apart. A defense that
-            allows yards but is not run at often is a matchup a game script can
-            take away; one that is run at often but holds up gives volume without
-            efficiency. The backs worth chasing face teams in{" "}
-            <em>both</em> bottom tens, and there are{" "}
-            <Stat>{m.overlap_per_season}</Stat> of those in an average season.
+            )}
+            At the other end, teams in <em>both</em> bottom tens are giving up
+            volume and yards at once, and there are{" "}
+            <Stat>{m.overlap_per_season}</Stat> of them in an average season.
             {latest && latest.teams.length > 0 && (
               <>
                 {" "}
-                In {latest.season} they were{" "}
-                {latest.teams.map((t, i) => (
-                  <span key={t.abbr}>
+                In {latest.season}:{" "}
+                {latest.teams.map((tm, i) => (
+                  <span key={tm.abbr}>
                     {i > 0 && i === latest.teams.length - 1
                       ? " and "
                       : i > 0
                         ? ", "
                         : ""}
-                    <TeamChip abbr={t.abbr} size="sm" />
+                    <TeamChip abbr={tm.abbr} size="sm" />
                   </span>
                 ))}
                 .
               </>
             )}
+          </p>
+          {lapsed.length > 0 && (
+            <p>
+              One club shows how fast that can go.{" "}
+              {lapsed.map((s, i) => (
+                <span key={s.abbr}>
+                  {i > 0 ? ", " : ""}
+                  <TeamChip abbr={s.abbr} size="sm" />
+                </span>
+              ))}{" "}
+              cleared the same bar on the five-year counts and then landed in
+              both bottom tens in {m.latest_season}. A standing reputation is
+              still last year's information, and this is what the{" "}
+              <Stat>{yards.persistence.most.per_season}</Stat>-in-ten carry-over
+              rate looks like when it happens to a team you thought was settled.
+            </p>
+          )}
+          <p>
+            What these two columns cannot tell you is <em>why</em> a defense
+            holds up year after year. Scheme and personnel both produce the same
+            row, and separating them needs coaching tenure this site does not
+            carry. The only coordinator data here is the 2026 hiring round on the
+            defense page, which says nothing about who has been good against the
+            run for five years. Treat the standing names as a pattern to check,
+            not as a claim about a coordinator.
           </p>
         </div>
       </Callout>
@@ -249,19 +290,3 @@ function Stat({ children }: { children: React.ReactNode }) {
   return <span className="font-semibold tnum">{children}</span>;
 }
 
-/** Counts read as words beside "the five seasons"; a bare numeral next to a
- *  spelled-out total reads as a typo. */
-const COUNT_WORD: Record<number, string> = {
-  1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
-};
-
-/** "CHI in four and NYG in all five" — a readable list, not a scoreboard. */
-function inOfFive(entries: { abbr: string; seasons: number }[]) {
-  return entries.map((a, i) => (
-    <span key={a.abbr}>
-      {i > 0 && i === entries.length - 1 ? " and " : i > 0 ? ", " : ""}
-      <TeamChip abbr={a.abbr} size="sm" /> in{" "}
-      <Stat>{a.seasons === 5 ? "all five" : COUNT_WORD[a.seasons] ?? a.seasons}</Stat>
-    </span>
-  ));
-}
