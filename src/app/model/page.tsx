@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container, EmptyState } from "@/components/PageHeader";
+import { Callout } from "@/components/Callout";
 import { FilterLink } from "@/components/FilterLink";
 import { SectionHero } from "@/components/SectionHero";
 import { TeamChip } from "@/components/TeamChip";
@@ -8,7 +9,7 @@ import { CaseStudy } from "@/components/prediction/CaseStudy";
 import { ConfidenceTiers } from "@/components/prediction/ConfidenceTiers";
 import { Methodology } from "@/components/prediction/Methodology";
 import { PredictionOverview } from "@/components/prediction/PredictionOverview";
-import { PRED_META, PRED_WEEKS, TIER_LABEL, gamesForWeek, kickoffLabel } from "@/lib/predictions";
+import { PRED_HORIZON, PRED_META, PRED_WEEKS, TIER_LABEL, gamesForWeek, isCurrentWeek, kickoffLabel } from "@/lib/predictions";
 
 export const metadata: Metadata = {
   title: "Game Prediction Model",
@@ -95,7 +96,10 @@ export default async function GamePredictionIndex({
           ) : activeWeek === null ? (
             <Methodology />
           ) : (
-            <WeekSlate week={activeWeek} />
+            <>
+              {!isCurrentWeek(activeWeek) && <StaleHorizonNotice />}
+              <WeekSlate week={activeWeek} />
+            </>
           )}
         </div>
 
@@ -104,6 +108,20 @@ export default async function GamePredictionIndex({
         </p>
       </Container>
     </>
+  );
+}
+
+/**
+ * The one thing a reader has to know before reading a week-12 forecast made in
+ * August. Rendered from the payload's own flag rather than a week comparison in
+ * the component, so if the pipeline ever gains a real multi-week horizon the
+ * caveat disappears on its own.
+ */
+function StaleHorizonNotice() {
+  return (
+    <Callout as="aside" tone="note" label="What this forecast is built on" className="mb-8">
+      <p className="max-w-3xl">{PRED_HORIZON.note}</p>
+    </Callout>
   );
 }
 

@@ -128,6 +128,12 @@ interface Payload {
     steps: { title: string; body: string }[];
   };
   feature_importance: { feature: string; importance: number; label: string }[];
+  /**
+   * Which weeks the payload's own generator considers scored on current form.
+   * Present because the site now carries all 18 weeks while the model only
+   * scores one of them against live rolling state — see PRED_HORIZON below.
+   */
+  forecast_horizon: { current_week: number; weeks: number[]; note: string };
   games: PredictedGame[];
   /** Completed games with heavy injury asymmetry, so the injury metric has real
    *  values to illustrate. A compact shape, not full game objects — and
@@ -159,6 +165,23 @@ export const PRED_GAMES = file.games;
 export const PRED_GENERATED = file.generated_at;
 export const PRED_TIERS = file.confidence_tiers;
 export const PRED_REFERENCE = file.reference_games;
+
+/**
+ * Which weeks are scored on current form, and which are not.
+ *
+ * Added 2026-08-28 with the full-season payload. The pipeline's own exporter
+ * emits one week on purpose — beyond the next unplayed week both teams' rolling
+ * features are stale by construction, because no result exists to update them.
+ * The operator asked for all 18 anyway, so the generator marks every game with
+ * `features_current` and the page has to say which is which.
+ *
+ * `current_week` is the only week whose forecast uses live form. The rest vary
+ * by opponent, rest, venue and market line alone, and the accuracy figures on
+ * this page do not describe them (§6: say how old the number is).
+ */
+export const PRED_HORIZON = file.forecast_horizon;
+export const isCurrentWeek = (week: number) =>
+  week === PRED_HORIZON.current_week;
 
 /** Band metadata by tier, for labelling a single game. */
 export const TIER_BY_NAME = Object.fromEntries(
