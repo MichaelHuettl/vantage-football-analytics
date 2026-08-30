@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AutoRefresh } from "@/components/AutoRefresh";
 import { DataFreshness } from "@/components/DataFreshness";
+import { shortDate } from "@/lib/dates";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { ShowMore } from "@/components/ShowMore";
 import { PlayerLink } from "@/components/PlayerLink";
@@ -277,27 +278,39 @@ export default async function NewsPage({
                 className="text-3xl uppercase tracking-wide"
                 style={{ fontFamily: "var(--font-display)", fontWeight: "var(--weight-display)", fontStretch: "var(--stretch-display)" }}
               >
-                Beat reports
+                Camp archive
               </h2>
+              {/* "Closed", not a staleness warning. This section had a
+                  DataFreshness stamp reading "12 days ago" until 2026-08-29,
+                  which said the wrong thing: a freshness stamp means a thing
+                  that should be current and is not, and this can never be
+                  current again. Its source was beat writers on X reached
+                  through Nitter, and that route is gone — ten public instances
+                  tested, none returning an item. Framing it as a closed record
+                  is honest; leaving a clock on it was not. */}
               <span
                 className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
                 style={{
                   fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
-                  background: "var(--text-primary)",
-                  color: "var(--surface-page)",
+                  color: "var(--text-muted)",
+                  boxShadow: "inset 0 0 0 1px var(--border-strong)",
                 }}
               >
-                Preseason
+                Closed
               </span>
             </div>
-            <DataFreshness updated={BEAT_UPDATED} label="Beat feed" staleAfterDays={2} />
+            <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+              Collected through {shortDate(BEAT_UPDATED)}
+            </p>
           </div>
 
           <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-            Camp and preseason reporting from team beat writers, covering OTAs
-            in June through to the preseason games. Live posts are filtered to what changes a decision (role, scheme, availability and roster moves) rather than every rep of every practice. The {CURATED_COUNT}{" "}
-            June and July entries were collected by hand and are shown as
-            gathered. This section winds down once the season starts.
+            A fixed record of camp and preseason reporting from team beat
+            writers, from OTAs in June through the preseason games. The{" "}
+            {CURATED_COUNT} June and July entries were collected by hand and are
+            shown as gathered. It stops here: this ran on beat writers&rsquo; posts
+            on X, and the route to them closed. Around the clubs, above, is the
+            live section now.
           </p>
 
           <nav aria-label="Topic" className="mt-5">
