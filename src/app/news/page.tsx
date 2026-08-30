@@ -11,6 +11,8 @@ import { getPlayer } from "@/lib/content";
 import { getTeam } from "@/lib/teams";
 import { BEAT_POSTS, BEAT_TOPICS, BEAT_UPDATED, CURATED_COUNT, TOPIC_BLURB } from "@/lib/beat";
 import { BeatItem } from "@/components/BeatFeed";
+import { TeamNewsroom } from "@/components/TeamNewsroom";
+import { getLiveTeamFeed } from "@/lib/live-team-feed";
 import type { BeatTopic } from "@/lib/beat";
 import type { NewsEntry } from "@/lib/types";
 import { getLiveNews } from "@/lib/live-news";
@@ -32,7 +34,7 @@ const CATEGORIES = [
 export default async function NewsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ team?: string; category?: string; topic?: string; beatTeam?: string }>;
+  searchParams: Promise<{ team?: string; category?: string; topic?: string; beatTeam?: string; teamNews?: string }>;
 }) {
   const params = await searchParams;
   const team = params.team?.toUpperCase();
@@ -44,6 +46,20 @@ export default async function NewsPage({
   // Its own team param: the two sections cover different periods, so filtering
   // one to a team should not silently filter the other.
   const beatTeam = params.beatTeam?.toUpperCase();
+  const teamNews = params.teamNews?.toUpperCase();
+
+  // All 32 club newsrooms, pulled at request time behind the same TTL cache the
+  // other live sections use.
+  const clubs = await getLiveTeamFeed();
+  const clubQ = (over: { teamNews?: string }) => {
+    const q = new URLSearchParams();
+    const merged: Record<string, string | undefined> = {
+      team, category, topic, beatTeam, teamNews, ...over,
+    };
+    for (const [k, v] of Object.entries(merged)) if (v) q.set(k, v);
+    const str = q.toString();
+    return str ? `/news?${str}` : "/news";
+  };
   const beat = BEAT_POSTS.filter(
     (p) =>
       (!topic || p.topic === topic) &&
@@ -250,6 +266,9 @@ export default async function NewsPage({
       <div className="yard-rule" />
 
       <Container className="py-16 sm:py-24">
+        {/* ============= Around the clubs (live, all 32) ============= */}
+        <TeamNewsroom feed={clubs} team={teamNews} href={clubQ} />
+
         {/* ==================== Beat reports ==================== */}
         <section>
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
