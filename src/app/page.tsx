@@ -20,7 +20,7 @@ const SECTION_CARDS: {
   {
     href: "/positions",
     label: "Positional Data",
-    blurb: "Statistical Evaluation of Quarterback, Running back, Wide Receiver, Tight End, Team Defense, and Kicker Positions",
+    blurb: "Statistical Evaluation of Quarterback, Running Back, Wide Receiver, Tight End, Team Defense, and Kicker Positions",
     image: "/img/players/justin-jefferson.jpg",
     position: "center 18%",
   },
@@ -34,14 +34,14 @@ const SECTION_CARDS: {
   {
     href: "/film",
     label: "Film",
-    blurb: "Team Film Breakdowns and log (Coming Soon)",
+    blurb: "Team Film Breakdowns and Log (Coming Soon)",
     image: "/img/players/jamarr-chase.jpg",
     position: "center 18%",
   },
   {
     href: "/games",
     label: "Game Tracker",
-    blurb: "Weekly NFL Game overviews, betting odds, weather reports, and more",
+    blurb: "Weekly NFL game overviews, betting odds, weather reports, and more",
     image: "/img/bg/game-tracker.jpg",
     position: "center 35%",
   },

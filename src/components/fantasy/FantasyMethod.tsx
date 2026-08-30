@@ -14,6 +14,27 @@ import type { Position } from "@/lib/types";
  * full — and closes with the factors, because "what does it actually look at"
  * is the question every reader of a model page arrives with.
  */
+/**
+ * Payload keys as English.
+ *
+ * These were rendered with `key.replace(/_/g, " ")` until 2026-08-30, which
+ * printed the key rather than a label: "rushing receiving yards" reads as a
+ * run-on, and "passing td" leaves an initialism in lower case. The fallback is
+ * kept for a key this map has not met yet, so a new scoring rule still renders
+ * rather than disappearing.
+ */
+const SCORING_LABEL: Record<string, string> = {
+  passing_yards: "Passing yards",
+  passing_td: "Passing TD",
+  interception: "Interception",
+  rushing_receiving_yards: "Rushing and receiving yards",
+  rushing_receiving_td: "Rushing and receiving TD",
+  reception: "Reception",
+  fumble_lost: "Fumble lost",
+  kicking: "Kicking",
+  defense: "Defense",
+};
+
 export function FantasyMethod() {
   const trainFrom = Math.min(...FM_CONFIG.train_seasons);
   const trainTo = Math.max(...FM_CONFIG.train_seasons);
@@ -41,7 +62,7 @@ export function FantasyMethod() {
       <dl className="mt-4 grid gap-x-8 gap-y-3 sm:grid-cols-2">
         {Object.entries(FM_SCORING).map(([key, rule]) => (
           <div key={key} className="flex flex-col">
-            <dt className="eyebrow">{key.replace(/_/g, " ")}</dt>
+            <dt className="eyebrow">{SCORING_LABEL[key] ?? key.replace(/_/g, " ")}</dt>
             <dd className="text-sm">{rule}</dd>
           </div>
         ))}

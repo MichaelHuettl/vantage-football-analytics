@@ -283,7 +283,7 @@ export default async function RankingsPage({
             weekly or rest-of-season list. */}
         {scope === "draft" && (
           <p className="mt-4 text-xs" style={{ color: "var(--text-muted)" }}>
-            {list.scope} rankings, {list.format} scoring. These are pre-season
+            {list.scope} rankings, {list.format} scoring. These are preseason
             draft ranks and are not updated week to week, so in-season order will diverge from this. Bye weeks are for the {BYE_SEASON} season.
           </p>
         )}

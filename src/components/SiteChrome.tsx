@@ -205,7 +205,7 @@ export function SiteFooter() {
             <p>
               This site is a personal portfolio project, published for
               educational and non-profit purposes only. It is not a commercial
-              product, it is not monetised, and it is not for sale.
+              product, it is not monetized, and it is not for sale.
             </p>
             <p>
               Vantage Football Analytics is not affiliated with, endorsed by,

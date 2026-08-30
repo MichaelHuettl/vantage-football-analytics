@@ -292,7 +292,7 @@ export function DefenseAnalysis() {
         </h2>
         <p className="mt-3 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
           A defense is streamed against opponents, so the weeks matter as much as
-          the unit. These are the favourable stretches, and then three views of
+          the unit. These are the favorable stretches, and then three views of
           the season as a whole.
         </p>
 
