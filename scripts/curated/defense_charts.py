@@ -24,6 +24,24 @@ from xml.etree import ElementTree as ET
 
 N = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 ROOT = Path(__file__).resolve().parents[2]
+# Names the workbook spells wrong, keyed on the wrong spelling so the entry
+# stops firing the moment the sheet is fixed. Same contract as CORRECTIONS in
+# kicker_charts.py: it announces itself when it has become redundant rather than
+# sitting there forever.
+NAME_CORRECTIONS = {
+    "Chirs O'Leary": "Chris O'Leary",
+}
+_name_corrections_used: set[str] = set()
+
+
+def correct_name(name: str) -> str:
+    fixed = NAME_CORRECTIONS.get(name)
+    if fixed:
+        _name_corrections_used.add(name)
+        return fixed
+    return name
+
+
 DEFAULT_WB = (
     Path.home() / "Downloads" / "2026-2027 Fantasy Football Analytics (Original) (4).xlsx"
 )
@@ -286,6 +304,7 @@ def main():
             continue
         m = re.match(r"(.+?)\s*\((.+?)\)\s*$", raw)
         name = m.group(1).strip() if m else raw
+        name = correct_name(name)
         team = m.group(2).strip() if m else None
         coordinators.append(
             {
@@ -543,6 +562,10 @@ def main():
     print("seasons      " + ", ".join(
         f"{y} x{len(v)}" for y, v in sorted(seasons_scoring.items(), reverse=True)))
     print(f"success rate {len(success)} seasons | DVOA {len(dvoa)} seasons")
+    for wrong, right in NAME_CORRECTIONS.items():
+        if wrong not in _name_corrections_used:
+            print(f"  name correction now matches the workbook, delete it: "
+                  f"{wrong!r} -> {right!r}")
     print(f"coordinators {len(coordinators)} hires, "
           + ", ".join(f"{b['label']} {len(b['entries'])}" for b in inherited)
           + f" | outlook {len(dc_outlook['improve'])} up / {len(dc_outlook['regress'])} down")
