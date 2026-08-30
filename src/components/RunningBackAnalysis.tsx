@@ -4,7 +4,7 @@ import { RunBlockMatchups } from "@/components/RunBlockMatchups";
 import { HistoricTable } from "@/components/HistoricTable";
 import { ScatterChart } from "@/components/ScatterChart";
 import { TierBenchmarks } from "@/components/TierBenchmarks";
-import { RB_CHARTS, RB_SEASON, RB_SOURCE } from "@/lib/charts";
+import { RB_CHARTS, RB_SEASON } from "@/lib/charts";
 import { teamByName } from "@/lib/teams";
 
 const abbrOf = (team: string) => teamByName(team)?.abbr;
@@ -288,10 +288,6 @@ export function RunningBackAnalysis() {
         </h3>
         <RunBlockMatchups />
       </section>
-
-      <p className="mt-10 text-sm" style={{ color: "var(--text-muted)" }}>
-        {RB_SOURCE} {routes.note}
-      </p>
     </section>
   );
 }

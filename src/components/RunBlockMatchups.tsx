@@ -140,12 +140,6 @@ export function RunBlockMatchups() {
           </p>
         </div>
       </Callout>
-
-      <p className="mt-6 max-w-3xl text-xs" style={{ color: "var(--text-muted)" }}>
-        {m.source}, {m.seasons[m.seasons.length - 1]}&ndash;{m.seasons[0]}.
-        Ranks are the operator's own top and bottom ten; the middle twelve clubs
-        are not listed in either column.
-      </p>
     </>
   );
 }
