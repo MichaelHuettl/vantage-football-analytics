@@ -312,15 +312,18 @@ export default function Home() {
               color: "var(--color-vantage-white)",
             }}
           >
-            You should be able to audit the argument.
+            No metric without an explanation.
           </h2>
           <p
             className="mt-6 max-w-xl text-lg"
             style={{ color: "var(--color-ink-300)" }}
           >
-            Every metric on this site resolves to a one-sentence definition and
-            a statement of what a good value looks like. If a number appears on
-            a chart and not in the glossary, that is a bug.
+            Advanced analytics are easy to publish and hard to read. Every
+            number on this site resolves to a glossary entry giving its
+            definition, its source and what a good value looks like. The data
+            stays advanced and the presentation does the simplifying, so any
+            fan can follow what is driving a result without a statistics
+            background.
           </p>
           <Link
             href="/glossary"
