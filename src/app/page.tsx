@@ -108,19 +108,17 @@ export default function Home() {
                   color: "var(--color-vantage-white)",
                 }}
               >
-                Rankings are
-                <br />a conclusion.
+                What actually
+                <br />wins.
               </h1>
 
               <p
                 className="rise rise-3 mt-7 max-w-xl text-lg"
                 style={{ color: "var(--color-ink-300)" }}
               >
-                Most sites publish the conclusion and ask you to take it on
-                faith. This one publishes the opportunity metrics underneath,
-                and marks the places where the ranking disagrees with the data.
-                Every ranked player links to the chart that justifies his
-                position.
+                Not what the box score says won. The opportunity, efficiency
+                and situation underneath it, measured across every season there
+                is data for, and shown where they disagree with the ranking.
               </p>
 
               <div className="rise rise-4 mt-9 flex flex-wrap gap-3">

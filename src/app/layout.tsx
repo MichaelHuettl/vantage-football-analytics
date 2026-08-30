@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     template: "%s | Vantage",
   },
   description:
-    "Opportunity metrics underneath the rankings. Every ranked player links to the chart that justifies his position.",
+    "What actually wins: the opportunity, efficiency and situation underneath the result, measured across every season there is data for.",
   openGraph: {
     type: "website",
     siteName: "Vantage Football Analytics",
