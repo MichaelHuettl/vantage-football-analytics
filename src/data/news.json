@@ -4,6 +4,50 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "C5m74yHkuMZ2PuSK",
+   "headline": "Cleveland Browns news: Practice squads and QBs. Always QBs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-practice-squads-100000256.html",
+   "timestamp": "2026-09-01T10:00:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "hTibqE5YoibRdUtf",
+   "headline": "Giants news: Practice squad signings include Braxton Berrios, Jalin Hyatt",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-news-practice-squad-signings-100000880.html",
+   "timestamp": "2026-09-01T10:00:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "rPYfnowgAgPf2E0F",
+   "headline": "Bengals News: Practice Squad Watch",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bengals-news-practice-squad-watch-100000929.html",
+   "timestamp": "2026-09-01T10:00:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "naNVybpBErzWggv8",
+   "headline": "What’s the Steelers’ plan at safety?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-plan-safety-100000853.html",
+   "timestamp": "2026-09-01T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
    "id": "oEI6zr2f2CZNApzt",
    "headline": "Passports for practice squad signings are a logistical challenge for 49ers and Rams",
    "source": "Yahoo Sports",
@@ -1561,55 +1605,6 @@
    "url": "https://www.cbssports.com/nfl/news/taylen-green-makes-nfl-preseason-debut/",
    "timestamp": "2026-08-28T03:01:32.000Z",
    "category": "camp"
-  },
-  {
-   "id": "jcbdMCisSqPQ8f8Q",
-   "headline": "NFL waiver wire rules and the Steelers’ position in the waiver order",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-waiver-wire-rules-steelers-030000015.html",
-   "timestamp": "2026-08-28T03:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "6xiK5CR9pfcE88_w",
-   "headline": "Eddy Pineiro caps off the 49ers’ preseason with a perfect performance",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eddy-pineiro-caps-off-49ers-025939945.html",
-   "timestamp": "2026-08-28T02:59:39.000Z",
-   "category": "camp",
-   "player_ids": [
-    "eddy-pineiro"
-   ],
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "U9a6kOUcm3PoFiqv",
-   "headline": "Browns vs Patriots: 8 takeaways as Dillon Gabriel, Taylen Green each show something",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-vs-patriots-8-takeaways-025231547.html",
-   "timestamp": "2026-08-28T02:52:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "NE"
-   ]
-  },
-  {
-   "id": "8n2Bm-31524U4O2g",
-   "headline": "Bills game recap: Buffalo wins 28-27 over Steelers in preseason finale",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-game-recap-buffalo-wins-025227660.html",
-   "timestamp": "2026-08-28T02:52:27.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "BUF",
-    "PIT"
-   ]
   }
  ]
 }
