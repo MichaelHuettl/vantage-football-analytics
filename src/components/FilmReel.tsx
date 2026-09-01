@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FILM_GAME, FILM_PLAYS, FILM_SOURCE_NOTE } from "@/lib/film";
+import { FilmGameSummary } from "@/components/FilmGameSummary";
+import { FILM_GAME, FILM_PLAYS } from "@/lib/film";
 
 /**
  * One game's play-by-play film, as the operator drew it.
@@ -62,7 +63,11 @@ export function FilmReel() {
         </p>
       </div>
 
-      <ol className="mt-8 flex flex-col gap-12">
+      {/* The game in aggregate, under the title and before the plays. All of
+          it is settled in `scripts/curated/film_summary.py` (§11). */}
+      <FilmGameSummary />
+
+      <ol className="mt-12 flex flex-col gap-12">
         {FILM_PLAYS.map((p, i) => (
           <li key={p.n} id={`play-${p.n}`} className="scroll-mt-24">
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
@@ -147,10 +152,6 @@ export function FilmReel() {
           </li>
         ))}
       </ol>
-
-      <p className="mt-10 max-w-3xl text-xs" style={{ color: "var(--text-muted)" }}>
-        {FILM_SOURCE_NOTE}
-      </p>
     </section>
   );
 }

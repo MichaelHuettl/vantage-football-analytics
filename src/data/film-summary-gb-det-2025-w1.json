@@ -1,0 +1,225 @@
+{
+ "schema_version": 2,
+ "generated_at": "2026-08-31",
+ "source": "src/data/film-gb-det-2025-w1.json",
+ "charted": 47,
+ "yards": {
+  "total": 263,
+  "perPlay": 5.6,
+  "explosive": 6,
+  "explosiveThreshold": 15,
+  "touchdowns": 3
+ },
+ "playType": {
+  "rush": {
+   "plays": 23,
+   "pct": 48.9,
+   "yards": 76,
+   "perPlay": 3.3,
+   "yardShare": 28.9
+  },
+  "pass": {
+   "plays": 24,
+   "pct": 51.1,
+   "yards": 187,
+   "perPlay": 7.8,
+   "yardShare": 71.1
+  },
+  "scrambleCountedAs": "pass"
+ },
+ "byHalf": [
+  {
+   "label": "First half",
+   "plays": 23,
+   "rush": 7,
+   "rushPct": 30.4,
+   "pass": 16,
+   "passPct": 69.6,
+   "yards": 174
+  },
+  {
+   "label": "Second half",
+   "plays": 24,
+   "rush": 16,
+   "rushPct": 66.7,
+   "pass": 8,
+   "passPct": 33.3,
+   "yards": 89
+  }
+ ],
+ "byDown": [
+  {
+   "down": 1,
+   "label": "1st down",
+   "plays": 20,
+   "rush": 11,
+   "rushPct": 55.0,
+   "pass": 9,
+   "passPct": 45.0
+  },
+  {
+   "down": 2,
+   "label": "2nd down",
+   "plays": 15,
+   "rush": 7,
+   "rushPct": 46.7,
+   "pass": 8,
+   "passPct": 53.3
+  },
+  {
+   "down": 3,
+   "label": "3rd down",
+   "plays": 11,
+   "rush": 4,
+   "rushPct": 36.4,
+   "pass": 7,
+   "passPct": 63.6
+  },
+  {
+   "down": 4,
+   "label": "4th down",
+   "plays": 1,
+   "rush": 1,
+   "rushPct": 100.0,
+   "pass": 0,
+   "passPct": 0.0
+  }
+ ],
+ "passing": {
+  "dropbacks": 24,
+  "attempts": 23,
+  "completions": 16,
+  "incompletions": 7,
+  "completionPct": 69.6,
+  "yards": 187,
+  "perAttempt": 8.0,
+  "perCompletion": 11.5,
+  "longest": 45,
+  "scrambles": 1,
+  "short": 7,
+  "shortThreshold": 5,
+  "explosive": 5
+ },
+ "rushing": {
+  "carries": 23,
+  "yards": 76,
+  "perCarry": 3.3,
+  "longest": 15,
+  "stuffed": 6,
+  "stuffedPct": 26.1,
+  "explosive": 1
+ },
+ "motion": {
+  "plays": 20,
+  "of": 47,
+  "pct": 42.6,
+  "onRuns": {
+   "plays": 23,
+   "motion": 11,
+   "pct": 47.8
+  },
+  "onPasses": {
+   "plays": 24,
+   "motion": 9,
+   "pct": 37.5
+  },
+  "byHalf": [
+   {
+    "label": "First half",
+    "plays": 23,
+    "motion": 10,
+    "pct": 43.5
+   },
+   {
+    "label": "Second half",
+    "plays": 24,
+    "motion": 10,
+    "pct": 41.7
+   }
+  ],
+  "yardsWith": 5.2,
+  "yardsWithout": 5.9,
+  "drawnRed": 1,
+  "playNumbers": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   11,
+   12,
+   16,
+   17,
+   23,
+   29,
+   30,
+   32,
+   33,
+   36,
+   37,
+   38,
+   39,
+   44,
+   45
+  ]
+ },
+ "coverage": {
+  "charted": 45,
+  "unreadable": 2,
+  "families": [
+   {
+    "label": "Cover 1",
+    "plays": 26,
+    "pct": 57.8
+   },
+   {
+    "label": "Cover 2",
+    "plays": 10,
+    "pct": 22.2
+   },
+   {
+    "label": "Cover 3",
+    "plays": 8,
+    "pct": 17.8
+   },
+   {
+    "label": "Cover 0",
+    "plays": 1,
+    "pct": 2.2
+   }
+  ],
+  "man": {
+   "plays": 33,
+   "pct": 73.3
+  },
+  "zone": {
+   "plays": 12,
+   "pct": 26.7
+  },
+  "robber": 8
+ },
+ "quarters": [
+  {
+   "q": 1,
+   "plays": 18
+  },
+  {
+   "q": 2,
+   "plays": 5
+  },
+  {
+   "q": 3,
+   "plays": 12
+  },
+  {
+   "q": 4,
+   "plays": 12
+  }
+ ],
+ "fieldPositionUsable": false,
+ "reconciliation": {
+  "checked": 41,
+  "agreed": 30,
+  "pct": 73.2
+ }
+}

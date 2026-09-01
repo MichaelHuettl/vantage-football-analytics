@@ -92,8 +92,8 @@ export default function FilmPage() {
               className="mt-5 max-w-md text-lg"
               style={{ color: "var(--color-ink-300)" }}
             >
-              Team breakdowns and a play log, drawn from coordinates rather than
-              clipped from a broadcast.
+              Enjoy a sneak peek of full film from a personal favorite
+              in-person attended game.
             </p>
 
             {/* Three ticks on the baseline, the same device the emblem uses
