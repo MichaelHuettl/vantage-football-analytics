@@ -4,6 +4,72 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "s3cQ8CnvWr7-Xv9K",
+   "headline": "Report: Detroit Lions to re-sign TE Tyler Conklin",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-detroit-lions-sign-te-165011399.html",
+   "timestamp": "2026-09-01T16:50:11.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "IUyD5vK31aXUak07",
+   "headline": "Commanders injury news: Bill’s back; Odafe Oweh, K’Lavon Chaisson sidelined",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-injury-news-bill-back-163858765.html",
+   "timestamp": "2026-09-01T16:38:58.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "7o6PDtYTK4PG5ga8",
+   "headline": "Report: Vikings to Host Kyle Van Noy on Free Agent Visit",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-vikings-host-kyle-van-163856229.html",
+   "timestamp": "2026-09-01T16:38:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "jczzI-xQ9JPALXiS",
+   "headline": "Josh Johnson is signed to Bengals’ practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-johnson-signed-bengals-practice-163536845.html",
+   "timestamp": "2026-09-01T16:35:36.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "rzPSkwrg8zfA-sTq",
+   "headline": "CSC Reacts Survey: How would you grade the Saints offseason?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/csc-reacts-survey-grade-saints-163527171.html",
+   "timestamp": "2026-09-01T16:35:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "I_hASBQXwvUKBSYy",
+   "headline": "The 5 biggest takeaways from the Chiefs’ 53-man roster reveal",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-biggest-takeaways-chiefs-53-163000517.html",
+   "timestamp": "2026-09-01T16:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
    "id": "wWRumDY9Ffmqkyio",
    "headline": "Grading every NFL team's 2026 preseason: Rams ace the summer, Falcons fail amid quarterback uncertainty",
    "source": "CBS Sports",
@@ -59,6 +125,14 @@
     "CLE",
     "DAL"
    ]
+  },
+  {
+   "id": "Jzxq9No6Bz3nYnUf",
+   "headline": "NFL Comeback Player of the Year Odds: Can Aaron Donald Win It?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-comeback-player-odds-mccaffrey-180300692.html",
+   "timestamp": "2026-09-01T16:13:00.000Z",
+   "category": "breaking"
   },
   {
    "id": "XrN78xcUnC94BW1d",
@@ -227,7 +301,7 @@
   },
   {
    "id": "SdSWdJ7k733RAyP0",
-   "headline": "Did the 49ers sign their Sky Moore of 2026 on the practice squad?",
+   "headline": "Did the 49ers sign their Skyy Moore of 2026 on the practice squad?",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/did-49ers-sign-sky-moore-153423220.html",
    "timestamp": "2026-09-01T15:34:23.000Z",
@@ -1555,80 +1629,6 @@
     "LAR",
     "SF"
    ]
-  },
-  {
-   "id": "mjGd-KCmMYIG7iMT",
-   "headline": "Rams Unsure Of Aaron Donald’s Week 1 Status; Latest On DT’s Return",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/rams-unsure-of-aaron-donalds-week-1-status-latest-on-dts-return",
-   "timestamp": "2026-09-01T04:53:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "2D-A62HhPX2oj33r",
-   "headline": "Cowboys To Waive QB Joe Milton",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/cowboys-to-waive-qb-joe-milton",
-   "timestamp": "2026-09-01T04:30:48.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "KUbG2hsf3K1qBTtd",
-   "headline": "Jets Name Cade Klubnik Backup QB",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/jets-name-cade-klubnik-backup-qb",
-   "timestamp": "2026-09-01T04:25:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "a98745RsiaIaPPrz",
-   "headline": "Dolphins Make Seven Waiver Claims; QB Brady Cook, TE Justin Joly Among Them",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/dolphins-make-seven-waiver-claims-qb-brady-cook-te-justin-joly-among-them",
-   "timestamp": "2026-09-01T04:20:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "CUWPbl_LmbqPJJL8",
-   "headline": "Eagles Could Reunite With TE Zach Ertz?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/eagles-could-reunite-with-te-zach-ertz",
-   "timestamp": "2026-09-01T04:16:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "SpHyMHKPW4TBjZIj",
-   "headline": "Details Of Aaron Donald’s New Rams Contract",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/details-of-aaron-donalds-new-rams-contract",
-   "timestamp": "2026-09-01T03:55:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "mmLeSj4TOwg05YkU",
-   "headline": "Rebels in the Pros: Who survived NFL Cut Day",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rebels-pros-survived-nfl-cut-034248174.html",
-   "timestamp": "2026-09-01T03:42:48.000Z",
-   "category": "transaction"
   }
  ]
 }
