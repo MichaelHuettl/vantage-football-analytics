@@ -4,6 +4,29 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "oEI6zr2f2CZNApzt",
+   "headline": "Passports for practice squad signings are a logistical challenge for 49ers and Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/passports-practice-squad-signings-logistical-091638332.html",
+   "timestamp": "2026-09-01T09:16:38.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "q0eQu7QNnIAZYvzF",
+   "headline": "John Lynch: Aaron Donald makes the Rams better, but we're pretty good, too",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/john-lynch-aaron-donald-makes-085654249.html",
+   "timestamp": "2026-09-01T08:56:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "yvyvMTU8jLAgL041",
    "headline": "Patrick Herbert, brother of Justin Herbert, joins Chargers' practice squad",
    "source": "Yahoo Sports",
@@ -1585,28 +1608,6 @@
    "category": "camp",
    "team_abbrs": [
     "BUF",
-    "PIT"
-   ]
-  },
-  {
-   "id": "IrEVdRYJujlLMgBp",
-   "headline": "Justin Herbert loses fumble, tosses a 65-yard TD in his two drives",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/justin-herbert-loses-fumble-tosses-025159801.html",
-   "timestamp": "2026-08-28T02:51:59.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "justin-herbert"
-   ]
-  },
-  {
-   "id": "z7uXNqZq-1xGRtSe",
-   "headline": "Pittsburgh Steelers 2026 live cut tracker",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pittsburgh-steelers-2026-live-cut-025111556.html",
-   "timestamp": "2026-08-28T02:51:11.000Z",
-   "category": "transaction",
-   "team_abbrs": [
     "PIT"
    ]
   }
