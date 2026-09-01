@@ -4,6 +4,18 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "er1IJhGQJHU3jKPT",
+   "headline": "Will Aaron Donald play in Rams' season opener vs. 49ers?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-donald-play-rams-season-054936356.html",
+   "timestamp": "2026-09-01T05:49:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "mjGd-KCmMYIG7iMT",
    "headline": "Rams Unsure Of Aaron Donald’s Week 1 Status; Latest On DT’s Return",
    "source": "Pro Football Rumors",
@@ -1589,19 +1601,6 @@
    "url": "https://www.profootballrumors.com/2026/08/minor-nfl-transactions-8-27-26",
    "timestamp": "2026-08-28T02:32:32.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "CsHDIZmMWRuVM8Vd",
-   "headline": "Christian Gonzalez landing spots: Cowboys, Giants among trade candidates as Patriots CB seeks record contract",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/christian-gonzalez-landing-spots-cowboys-giants/",
-   "timestamp": "2026-08-28T02:16:16.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL",
-    "NE",
-    "NYG"
-   ]
   }
  ]
 }
