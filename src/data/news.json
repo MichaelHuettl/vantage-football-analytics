@@ -4,6 +4,111 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "ApghUMeU3dYGmFCO",
+   "headline": "Arizona Cardinals add two to their practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/arizona-cardinals-add-two-practice-181854742.html",
+   "timestamp": "2026-09-01T18:18:54.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "dEabLPQAxtLmgi3q",
+   "headline": "Cowboys Waive QB Joe Milton",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/cowboys-to-waive-qb-joe-milton",
+   "timestamp": "2026-09-01T18:18:48.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "w5Pyz_11hWyQ95kZ",
+   "headline": "Texans won't have extension talks with C.J. Stroud during season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/texans-wont-extension-talks-c-181738689.html",
+   "timestamp": "2026-09-01T18:17:38.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "qAnEVGoAIUJrp_G5",
+   "headline": "Waived Seahawks player signing with the Los Angeles Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/waived-seahawks-player-signing-los-181117560.html",
+   "timestamp": "2026-09-01T18:11:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SEA"
+   ]
+  },
+  {
+   "id": "QhB_kd6OcRqL7htx",
+   "headline": "APC’s Packers Practice Squad Tracker",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/apc-packers-practice-squad-tracker-180000574.html",
+   "timestamp": "2026-09-01T18:07:32.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "oZaDcmW0353PykLt",
+   "headline": "Bears put Coby Bryant and Hayden Large on IR, re-sign James Lynch and Jack Sanborn",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-put-coby-bryant-hayden-180509058.html",
+   "timestamp": "2026-09-01T18:05:09.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Jv1Sfguf70g7M3fJ",
+   "headline": "Fantasy Football: Justin Boone's rankings risers and fallers after preseason and NFL-cutdown day",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-justin-boones-rankings-risers-and-fallers-after-preseason-and-nfl-cutdown-day-180255918.html",
+   "timestamp": "2026-09-01T18:02:55.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "XjUMkbKBgouaUcS-",
+   "headline": "8 Badgers land NFL contracts after 53 man roster cutdown day",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/8-badgers-land-nfl-contracts-180200657.html",
+   "timestamp": "2026-09-01T18:02:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Sc3MB3BvO-0rvcvI",
+   "headline": "A Subjective Objective Look at Chicago Bears GM Ryan Poles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/subjective-objective-look-chicago-bears-180000896.html",
+   "timestamp": "2026-09-01T18:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "sL0QdfxdkYKBvUpY",
+   "headline": "3 Rams who could crack ESPN’s 2027 top 100 rankings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-rams-could-crack-espn-180000315.html",
+   "timestamp": "2026-09-01T18:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "zO9x6y8KR87FTiSO",
    "headline": "Browns sign CB Noah Igbinoghene, DE Sam Williams",
    "source": "Yahoo Sports",
@@ -12,6 +117,20 @@
    "category": "transaction",
    "team_abbrs": [
     "CLE"
+   ]
+  },
+  {
+   "id": "iwAOzDM59iyHTI1q",
+   "headline": "Should you draft Tucker Kraft in fantasy? Injury update, outlook for Packers TE",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/draft-tucker-kraft-fantasy-injury-175258765.html",
+   "timestamp": "2026-09-01T17:52:58.000Z",
+   "category": "injury",
+   "player_ids": [
+    "tucker-kraft"
+   ],
+   "team_abbrs": [
+    "GB"
    ]
   },
   {
@@ -26,6 +145,17 @@
    ]
   },
   {
+   "id": "ZsGTmOtS0th2IC3G",
+   "headline": "Former 49ers corner was the most claimed player on waiver wire by far on Monday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-49ers-corner-most-claimed-175000411.html",
+   "timestamp": "2026-09-01T17:50:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "QX7Nt_hF0zPHdCIl",
    "headline": "Packers Hope To Finalize Tucker Kraft Extension Before Week 1",
    "source": "Pro Football Rumors",
@@ -35,17 +165,6 @@
    "player_ids": [
     "tucker-kraft"
    ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "QhB_kd6OcRqL7htx",
-   "headline": "APC’s Packers Practice Squad Tracker",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/apc-packers-practice-squad-tracker-180000574.html",
-   "timestamp": "2026-09-01T17:47:42.000Z",
-   "category": "practice",
    "team_abbrs": [
     "GB"
    ]
@@ -1512,118 +1631,6 @@
    "category": "breaking",
    "team_abbrs": [
     "BUF"
-   ]
-  },
-  {
-   "id": "5XBWSRIsX_8_oMEP",
-   "headline": "Here is the ongoing Dallas Cowboys practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ongoing-dallas-cowboys-practice-squad-160000433.html",
-   "timestamp": "2026-09-01T13:07:43.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "iUe12KVVXeOgdjxD",
-   "headline": "Fantasy Football: NFL coaching and coordinating changes we like, are just 'fine' and those we're skeptical about",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-nfl-coaching-and-coordinating-changes-we-like-are-just-fine-and-those-were-skeptical-about-130500938.html",
-   "timestamp": "2026-09-01T13:05:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "NKfUL-eBrYogxJ2U",
-   "headline": "Bills abandon orthodox positional roster quotas with 53-man decisions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-abandon-orthodox-positional-roster-130157508.html",
-   "timestamp": "2026-09-01T13:01:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "SjLsy9CuProXuc2M",
-   "headline": "Is this the year the Chargers can finally make the jump?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-finally-jump-130000795.html",
-   "timestamp": "2026-09-01T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "nKK-5yJnqbg05Z1X",
-   "headline": "Waiver claims lead to updated Dolphins 53-man roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/waiver-claims-lead-updated-dolphins-130000984.html",
-   "timestamp": "2026-09-01T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "jT9jXOXHMslpcG1b",
-   "headline": "Saints’ penalty problem could become costly in 2026",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-penalty-problem-could-become-130000670.html",
-   "timestamp": "2026-09-01T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "l0GsdP0vzCW1tXMH",
-   "headline": "2026 Super Bowl tiers: Ranking all 32 NFL teams by their chances to win it all",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-power-rankings-super-bowl-tiers/",
-   "timestamp": "2026-09-01T12:47:07.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "o5Bh1RDrrFr37xcF",
-   "headline": "Ravens Discussion: Which roster cut was the biggest surprise?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ravens-discussion-roster-cut-biggest-121500127.html",
-   "timestamp": "2026-09-01T12:15:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "F1DRIg23D2VT5UYk",
-   "headline": "Every NFL team's greatest win of all time: Picking the signature victory for all 32 franchises",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-greatest-wins-2026-season/",
-   "timestamp": "2026-09-01T12:07:06.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "4Fnt5D1pRcOCVHJZ",
-   "headline": "Carolina Panthers fan mailbag: We’re on to the regular season!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/carolina-panthers-fan-mailbag-regular-120000554.html",
-   "timestamp": "2026-09-01T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "-TzuAvdIdoGXw0l4",
-   "headline": "Nnamdi Madubuike doing \"more and more,\" but Ravens uncertain about Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nnamdi-madubuike-doing-more-more-114102106.html",
-   "timestamp": "2026-09-01T11:41:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL"
    ]
   }
  ]
