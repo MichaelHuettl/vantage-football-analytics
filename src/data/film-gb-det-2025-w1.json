@@ -2,7 +2,7 @@
  "schema_version": 1,
  "updated": "2026-08-30",
  "source": "09_07_25 Lions @ Packers Week 1 Packers Offensive Film.pptx, the operator's own deck",
- "note": "Slides rendered as published. No shape was moved, resized or redrawn. The only change was to the slide canvas, grown from 5.625in to 5.875in before export: the three info boxes are 0.81in tall starting at 5.02in, so they ran 0.20in past the bottom of the slide and PowerPoint and Keynote both clipped their second line. Time, Result and DEF were invisible on every one of the 47 slides. Growing the canvas recovers them without touching the design.",
+ "note": "Rendered from the operator's own deck. No shape was moved, resized or redrawn. Three things were normalised at his request on 2026-08-30, all of them inconsistencies in the source: the slide canvas grew from 5.625in to 5.875in because the info boxes ran 0.20in past the bottom and both PowerPoint and Keynote clipped Time, Outcome and DEF off every slide; the outcome field, which the deck called Result then Outcome then Playcall, is now Outcome throughout; and each label is bold with its value plain, where most slides had the whole line bold. DEF was blank on slides 2, 20 and 41 and now repeats that slide's Pre-play.",
  "game": {
   "label": "Lions at Packers",
   "date": "2025-09-07",
@@ -29,7 +29,7 @@
    "downDistance": "2nd and 9 (18)",
    "outcome": "19 Yd Completion",
    "prePlay": "4-3 1 High Man",
-   "defense": null
+   "defense": "4-3 1 High Man"
   },
   {
    "n": 3,
@@ -194,7 +194,7 @@
   {
    "n": 19,
    "image": "/img/film/gb-det-2025-w1/p19.jpg",
-   "score": "1 0 (GB) - 3 (DET)",
+   "score": "10 (GB) - 3 (DET)",
    "time": "Q2 9:27",
    "downDistance": "1st and 10 (35)",
    "outcome": "45 yard completion",
@@ -204,12 +204,12 @@
   {
    "n": 20,
    "image": "/img/film/gb-det-2025-w1/p20.jpg",
-   "score": "1 0 (GB) - 3 (DET)",
+   "score": "10 (GB) - 3 (DET)",
    "time": "Q2 8:34",
    "downDistance": "1st and 10 (17)",
    "outcome": "17 yard completion TD",
    "prePlay": "Cover 0 Man",
-   "defense": null
+   "defense": "Cover 0 Man"
   },
   {
    "n": 21,
@@ -419,7 +419,7 @@
    "downDistance": "4th and 1 (10)",
    "outcome": "2 yard rush (QB Sneak)",
    "prePlay": "Bear Cover 1 Man",
-   "defense": null
+   "defense": "Bear Cover 1 Man"
   },
   {
    "n": 42,

@@ -17,11 +17,16 @@ import { FILM_GAME, FILM_PLAYS, FILM_SOURCE_NOTE } from "@/lib/film";
  * leaves every coordinate alone.
  *
  * Rendered from Keynote's vector PDF export rather than its image export, so
- * the diagrams are rasterised once at 1080px instead of being upscaled from the
- * slide's 720pt native size. §7's "sips upscales" warning is why.
+ * the diagrams are rasterised straight to their final size instead of being
+ * upscaled from the slide's 720pt native size. §7's "sips upscales" warning is why.
  *
- * `loading="lazy"` on every plate but the first: 47 plates is 4.5MB, and a
- * reader looking at play 1 should not pay for play 47.
+ * Sources are 2560px wide. The plate renders at 1352 CSS px in the 1400px
+ * container, which a 2x display turns into 2704 real pixels; a 1080px source
+ * was being upscaled two and a half times and looked it. Next downsamples per
+ * device from these, so the weight is repo weight rather than delivered weight.
+ *
+ * `loading="lazy"` on every plate but the first: 47 plates is 16MB on disk, and
+ * a reader looking at play 1 should not pay for play 47.
  */
 export function FilmReel() {
   return (
@@ -104,12 +109,19 @@ export function FilmReel() {
                     "inset 0 0 0 1px color-mix(in oklab, var(--text-primary) 8%, transparent)",
                 }}
               >
+                {/* `sizes` has to describe the real slot or Next serves a
+                    variant too small for it. This said 900px while the plate
+                    renders at 1352 inside the 1400px container, so a 2x display
+                    was upscaling a 1080px source by two and a half times, which
+                    is what "blurry" was. The plate is full container width, so
+                    the honest answer is the container. */}
                 <Image
                   src={p.image}
                   alt={`Play ${p.n}: ${p.downDistance ?? ""}${p.outcome ? `, ${p.outcome}` : ""}`}
-                  width={1080}
-                  height={634}
-                  sizes="(min-width: 1024px) 900px, 100vw"
+                  width={2560}
+                  height={1504}
+                  sizes="(min-width: 1424px) 1352px, (min-width: 640px) calc(100vw - 3rem), calc(100vw - 2rem)"
+                  quality={85}
                   priority={i === 0}
                   loading={i === 0 ? undefined : "lazy"}
                   className="h-auto w-full"
@@ -122,7 +134,7 @@ export function FilmReel() {
                 >
                   {p.outcome && (
                     <>
-                      <Label>Result</Label> {p.outcome}
+                      <Label>Outcome</Label> {p.outcome}
                     </>
                   )}
                   {p.outcome && p.defense && (
