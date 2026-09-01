@@ -41,17 +41,17 @@ export default function FilmPage() {
       />
 
       <Container className="py-16 sm:py-24">
-        {/* One real breakdown, above the placeholder. The Coming soon panel
-            stays: this is a preview of the section, not the section. */}
-        <FilmReel />
-
-        {/* The field motif carries the panel rather than an icon or an
+        {/* Moved above the reel on 2026-08-30 at the operator's request: the
+            section is in production and should say so before it shows work.
+            It is shorter than it was — at py-24/py-32 in this position it filled
+            the viewport and pushed the sneak peek below the fold, which defeats
+            having a sneak peek. The field motif carries it rather than an icon or an
             illustration: it is the site's own structural device, it needs no
             asset, and it reads at any width. The goalpost frame is deliberately
             not used here — §7 reserves it for the featured figure on a page,
             and a placeholder is not a figure. */}
         <section
-          className="relative isolate mt-16 overflow-hidden rounded-lg"
+          className="relative isolate overflow-hidden rounded-lg"
           style={{
             background: "var(--surface-inverse)",
             boxShadow: "inset 0 0 0 1px var(--color-ink-800)",
@@ -72,12 +72,12 @@ export default function FilmPage() {
             }}
           />
 
-          <div className="flex flex-col items-center px-6 py-24 text-center sm:py-32">
+          <div className="flex flex-col items-center px-6 py-14 text-center sm:py-16">
             <p className="eyebrow" style={{ color: "var(--color-ink-300)" }}>
               In production
             </p>
             <h2
-              className="mt-5 text-5xl uppercase tracking-wide sm:text-7xl"
+              className="mt-4 text-4xl uppercase tracking-wide sm:text-6xl"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: "var(--weight-display)",
@@ -89,7 +89,7 @@ export default function FilmPage() {
               Coming soon
             </h2>
             <p
-              className="mt-6 max-w-md text-lg"
+              className="mt-5 max-w-md text-lg"
               style={{ color: "var(--color-ink-300)" }}
             >
               Team breakdowns and a play log, drawn from coordinates rather than
@@ -101,7 +101,7 @@ export default function FilmPage() {
                 things the section will hold. */}
             <div
               aria-hidden="true"
-              className="mt-12 flex items-end gap-2.5"
+              className="mt-9 flex items-end gap-2.5"
               style={{ color: "var(--color-ink-600)" }}
             >
               <span className="h-3 w-px" style={{ background: "currentColor" }} />
@@ -110,6 +110,10 @@ export default function FilmPage() {
             </div>
           </div>
         </section>
+
+        {/* One real breakdown, under the notice rather than instead of it.
+            The section is in production; this is a preview of it. */}
+        <FilmReel />
       </Container>
     </>
   );

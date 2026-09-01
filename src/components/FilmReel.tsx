@@ -62,12 +62,6 @@ export function FilmReel() {
         </p>
       </div>
 
-      <p className="mt-2 max-w-3xl" style={{ color: "var(--text-secondary)" }}>
-        Every offensive snap of {FILM_GAME.label}, drawn play by play. These are
-        the operator&rsquo;s own slides, published as he drew them rather than
-        rebuilt, with the pre-snap look, the call and the result on each one.
-      </p>
-
       <ol className="mt-8 flex flex-col gap-12">
         {FILM_PLAYS.map((p, i) => (
           <li key={p.n} id={`play-${p.n}`} className="scroll-mt-24">
