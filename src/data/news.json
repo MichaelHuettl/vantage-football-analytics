@@ -4,6 +4,20 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "yvyvMTU8jLAgL041",
+   "headline": "Patrick Herbert, brother of Justin Herbert, joins Chargers' practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patrick-herbert-brother-justin-herbert-080039589.html",
+   "timestamp": "2026-09-01T08:00:39.000Z",
+   "category": "practice",
+   "player_ids": [
+    "justin-herbert"
+   ],
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
    "id": "er1IJhGQJHU3jKPT",
    "headline": "Will Aaron Donald play in Rams' season opener vs. 49ers?",
    "source": "Yahoo Sports",
@@ -1594,18 +1608,6 @@
    "category": "transaction",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "Ee1ENAq52e83O0Yx",
-   "headline": "Cleveland Browns vs. New England Patriots final score: Dillon Gabriel, Taylen Green show their strengths",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-vs-england-patriots-025024364.html",
-   "timestamp": "2026-08-28T02:50:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "NE"
    ]
   }
  ]
