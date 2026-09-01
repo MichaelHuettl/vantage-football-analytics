@@ -4,6 +4,61 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "mjGd-KCmMYIG7iMT",
+   "headline": "Rams Unsure Of Aaron Donald’s Week 1 Status; Latest On DT’s Return",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/rams-unsure-of-aaron-donalds-week-1-status-latest-on-dts-return",
+   "timestamp": "2026-09-01T04:53:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "2D-A62HhPX2oj33r",
+   "headline": "Cowboys To Waive QB Joe Milton",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/cowboys-to-waive-qb-joe-milton",
+   "timestamp": "2026-09-01T04:30:48.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "KUbG2hsf3K1qBTtd",
+   "headline": "Jets Name Cade Klubnik Backup QB",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/jets-name-cade-klubnik-backup-qb",
+   "timestamp": "2026-09-01T04:25:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "a98745RsiaIaPPrz",
+   "headline": "Dolphins Make Seven Waiver Claims; QB Brady Cook, TE Justin Joly Among Them",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/dolphins-make-seven-waiver-claims-qb-brady-cook-te-justin-joly-among-them",
+   "timestamp": "2026-09-01T04:20:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "CUWPbl_LmbqPJJL8",
+   "headline": "Eagles Could Reunite With TE Zach Ertz?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/08/eagles-could-reunite-with-te-zach-ertz",
+   "timestamp": "2026-09-01T04:16:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
    "id": "SpHyMHKPW4TBjZIj",
    "headline": "Details Of Aaron Donald’s New Rams Contract",
    "source": "Pro Football Rumors",
@@ -195,6 +250,17 @@
    "category": "practice",
    "team_abbrs": [
     "TB"
+   ]
+  },
+  {
+   "id": "QZf-wxpcWJnERKyh",
+   "headline": "Odell Beckham Jr. brought to tears of joy with Giants comeback complete",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/odell-beckham-jr-brought-tears-010732025.html",
+   "timestamp": "2026-09-01T01:07:32.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -1535,76 +1601,6 @@
     "DAL",
     "NE",
     "NYG"
-   ]
-  },
-  {
-   "id": "1eiCyp7N895u2Pid",
-   "headline": "Browns Claim CB Mekhi Blackmon",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/browns-claim-cb-mekhi-blackmon",
-   "timestamp": "2026-08-28T01:02:14.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "CBALkSxhTrQ909-V",
-   "headline": "Lions DE Payton Turner Lands On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/08/lions-de-payton-turner-lands-on-ir",
-   "timestamp": "2026-08-27T23:55:34.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "1os0aQKYKybgo_ya",
-   "headline": "Latest NFL injury updates: Ashton Jeanty avoids major injury, other running backs uncertain for Week 1",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/latest-nfl-injury-updates/",
-   "timestamp": "2026-08-27T23:03:55.000Z",
-   "category": "injury",
-   "player_ids": [
-    "ashton-jeanty"
-   ]
-  },
-  {
-   "id": "cKZpz0bN6PuBJvUf",
-   "headline": "Commanders offense called 'worst I've ever seen' in years: Fact or fiction from joint practice vs. Ravens",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/commanders-ravens-joint-practice-takeaways/",
-   "timestamp": "2026-08-27T21:43:03.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "BAL",
-    "WAS"
-   ]
-  },
-  {
-   "id": "-eME9HAP3LZwGZkv",
-   "headline": "What's next for Shedeur Sanders? NFL sources question whether Browns QB has a starting future",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/shedeur-sanders-future-browns-qb-job-deshaun-watson/",
-   "timestamp": "2026-08-27T21:29:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "ml1IKrbOAAPbzrkc",
-   "headline": "Packers' Josh Jacobs charged with two misdemeanors after May arrest; GM addresses possible NFL suspension",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/packers-josh-jacobs-charged-misdemeanors-suspension-possible/",
-   "timestamp": "2026-08-27T21:25:32.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "GB"
    ]
   }
  ]
