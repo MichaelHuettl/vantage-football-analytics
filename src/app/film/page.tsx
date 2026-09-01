@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/PageHeader";
+import { FilmReel } from "@/components/FilmReel";
 import { SectionHero } from "@/components/SectionHero";
 
 export const metadata: Metadata = {
@@ -40,13 +41,17 @@ export default function FilmPage() {
       />
 
       <Container className="py-16 sm:py-24">
+        {/* One real breakdown, above the placeholder. The Coming soon panel
+            stays: this is a preview of the section, not the section. */}
+        <FilmReel />
+
         {/* The field motif carries the panel rather than an icon or an
             illustration: it is the site's own structural device, it needs no
             asset, and it reads at any width. The goalpost frame is deliberately
             not used here — §7 reserves it for the featured figure on a page,
             and a placeholder is not a figure. */}
         <section
-          className="relative isolate overflow-hidden rounded-lg"
+          className="relative isolate mt-16 overflow-hidden rounded-lg"
           style={{
             background: "var(--surface-inverse)",
             boxShadow: "inset 0 0 0 1px var(--color-ink-800)",
