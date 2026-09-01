@@ -4,6 +4,91 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "K_iaPvVGANxqZdxn",
+   "headline": "Packers Film Review: TE Mark Redman",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-film-review-te-mark-172619086.html",
+   "timestamp": "2026-09-01T17:26:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "bLMJU6cYMEtHeINe",
+   "headline": "Eagles practice squad: 4 more signings are official",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-practice-squad-4-more-171242752.html",
+   "timestamp": "2026-09-01T17:12:42.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "1sDf6-ZB9aL8zBNA",
+   "headline": "Aaron Donald returns to Rams (salary cap)",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-donald-returns-rams-salary-170719527.html",
+   "timestamp": "2026-09-01T17:07:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "5_C1rSmhn2V52loH",
+   "headline": "Colin Kaepernick's kneeling protest sparked mixed reaction in NFL group chat",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colin-kaepernicks-kneeling-protest-sparked-170540855.html",
+   "timestamp": "2026-09-01T17:05:40.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "4NF6o5mvYkjQbv9H",
+   "headline": "Raiders roster 2026: Get to know Foley Fatukasi",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-roster-2026-know-foley-170300332.html",
+   "timestamp": "2026-09-01T17:03:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "VjvWvF00GbPYcj3_",
+   "headline": "Are the Giants getting better at drafting?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-getting-better-drafting-170000616.html",
+   "timestamp": "2026-09-01T17:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "sHets0JbAF60CJ6v",
+   "headline": "2026 Baltimore Ravens waiver wire and practice squad tracker",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/2026-baltimore-ravens-waiver-wire-000000211.html",
+   "timestamp": "2026-09-01T16:59:14.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "_yip670jX2Gcw75-",
+   "headline": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/nfl-survivor-pool-picks-knockout-strategy-guide-week-1-2026-fade-the-dallas-cowboys/",
+   "timestamp": "2026-09-01T16:55:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "s3cQ8CnvWr7-Xv9K",
    "headline": "Report: Detroit Lions to re-sign TE Tyler Conklin",
    "source": "Yahoo Sports",
@@ -12,6 +97,17 @@
    "category": "transaction",
    "team_abbrs": [
     "DET"
+   ]
+  },
+  {
+   "id": "gn-_wuN60v2fqFLV",
+   "headline": "NFL Rookie of the Year Odds: Jeremiyah Love, Rueben Bain Jr. Emerge as Early Favorites",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-rookie-odds-emeka-egbuka-155300006.html",
+   "timestamp": "2026-09-01T16:45:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jeremiyah-love"
    ]
   },
   {
@@ -56,6 +152,17 @@
    "category": "breaking",
    "team_abbrs": [
     "NO"
+   ]
+  },
+  {
+   "id": "eRsW9SLEci99Np0G",
+   "headline": "NFL Coach of the Year Odds: John Harbaugh Ushers in New Era for the Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-coach-odds-vrabel-proves-210900770.html",
+   "timestamp": "2026-09-01T16:35:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -133,6 +240,17 @@
    "url": "https://sports.yahoo.com/articles/nfl-comeback-player-odds-mccaffrey-180300692.html",
    "timestamp": "2026-09-01T16:13:00.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "out-U_E17rwIJBkI",
+   "headline": "Giants' Odell Beckham Jr. reclaims jersey No. 13",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-odell-beckham-jr-reclaims-161259553.html",
+   "timestamp": "2026-09-01T16:12:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
   },
   {
    "id": "XrN78xcUnC94BW1d",
@@ -1501,133 +1619,6 @@
    "category": "breaking",
    "team_abbrs": [
     "LAR"
-   ]
-  },
-  {
-   "id": "Qv1HmZE-oX7ajB52",
-   "headline": "Chiefs News: Chiefs looking to take advantage of tough cut for 49ers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-news-chiefs-looking-advantage-103000366.html",
-   "timestamp": "2026-09-01T10:30:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC",
-    "SF"
-   ]
-  },
-  {
-   "id": "UfPMxBbrtnBdDtty",
-   "headline": "Where is the Detroit Lions’ 53-man roster’s biggest weakness?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/where-detroit-lions-53-man-103000464.html",
-   "timestamp": "2026-09-01T10:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "C5m74yHkuMZ2PuSK",
-   "headline": "Cleveland Browns news: Practice squads and QBs. Always QBs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-practice-squads-100000256.html",
-   "timestamp": "2026-09-01T10:00:00.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "hTibqE5YoibRdUtf",
-   "headline": "Giants news: Practice squad signings include Braxton Berrios, Jalin Hyatt",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-news-practice-squad-signings-100000880.html",
-   "timestamp": "2026-09-01T10:00:00.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "rPYfnowgAgPf2E0F",
-   "headline": "Bengals News: Practice Squad Watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-news-practice-squad-watch-100000929.html",
-   "timestamp": "2026-09-01T10:00:00.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "naNVybpBErzWggv8",
-   "headline": "What’s the Steelers’ plan at safety?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-plan-safety-100000853.html",
-   "timestamp": "2026-09-01T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "oEI6zr2f2CZNApzt",
-   "headline": "Passports for practice squad signings are a logistical challenge for 49ers and Rams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/passports-practice-squad-signings-logistical-091638332.html",
-   "timestamp": "2026-09-01T09:16:38.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "q0eQu7QNnIAZYvzF",
-   "headline": "John Lynch: Aaron Donald makes the Rams better, but we're pretty good, too",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/john-lynch-aaron-donald-makes-085654249.html",
-   "timestamp": "2026-09-01T08:56:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "yvyvMTU8jLAgL041",
-   "headline": "Patrick Herbert, brother of Justin Herbert, joins Chargers' practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patrick-herbert-brother-justin-herbert-080039589.html",
-   "timestamp": "2026-09-01T08:00:39.000Z",
-   "category": "practice",
-   "player_ids": [
-    "justin-herbert"
-   ],
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "Fnl0qf2bxTGwm30a",
-   "headline": "Eagles GM Howie Roseman on Uar Bernard, lack of trades, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-gm-howie-roseman-uar-070000906.html",
-   "timestamp": "2026-09-01T07:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "er1IJhGQJHU3jKPT",
-   "headline": "Will Aaron Donald play in Rams' season opener vs. 49ers?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-donald-play-rams-season-054936356.html",
-   "timestamp": "2026-09-01T05:49:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
    ]
   }
  ]
