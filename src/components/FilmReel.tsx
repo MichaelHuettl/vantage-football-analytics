@@ -29,6 +29,27 @@ import { FILM_GAME, FILM_PLAYS } from "@/lib/film";
  * `loading="lazy"` on every plate but the first: 47 plates is 16MB on disk, and
  * a reader looking at play 1 should not pay for play 47.
  */
+/**
+ * The plate cropped to the field, dropping the slide's own info box.
+ *
+ * Measured, not guessed: scanning each plate from the bottom for the first row
+ * that is not a light band puts the boundary at row 1272 of 1504 on every slide
+ * sampled, which is the 0.81in box starting at 5.02in on a 5.875in canvas that
+ * the deck note describes. 2560x1273 is the field above it.
+ *
+ * **Why crop at all.** The box printed Score, Time, Down/Distance, Outcome,
+ * Pre-play and DEF, and every one of those already sits in the payload and is
+ * printed around the plate in HTML. It was duplication, and it was the
+ * duplication that overlapped: the boxes are fixed-width text frames, so a long
+ * score ran into Down/Distance and a long outcome ran into DEF on many slides.
+ * Text that reflows cannot do that. It is also selectable, searchable and
+ * available to a screen reader, which a raster never was.
+ *
+ * The images are untouched on disk. This is a display crop, and widening the
+ * ratio back to 2560/1504 restores the box.
+ */
+const PLATE_FIELD_RATIO = "2560 / 1273";
+
 export function FilmReel() {
   return (
     <section className="mt-16">
@@ -98,12 +119,22 @@ export function FilmReel() {
                   {p.time}
                 </span>
               )}
+              {p.score && (
+                <span className="text-sm tnum" style={{ color: "var(--text-muted)" }}>
+                  {p.score}
+                </span>
+              )}
             </div>
 
             <figure className="mt-3">
               <div
                 className="overflow-hidden rounded-md"
                 style={{
+                  // Crop the slide's own info box off the bottom. See
+                  // PLATE_FIELD_RATIO: the box is redundant with the fields
+                  // printed either side of the plate, and it is the thing that
+                  // overlaps.
+                  aspectRatio: PLATE_FIELD_RATIO,
                   boxShadow:
                     "inset 0 0 0 1px color-mix(in oklab, var(--text-primary) 8%, transparent)",
                 }}
@@ -123,28 +154,31 @@ export function FilmReel() {
                   quality={85}
                   priority={i === 0}
                   loading={i === 0 ? undefined : "lazy"}
-                  className="h-auto w-full"
+                  className="h-full w-full object-cover object-top"
                 />
               </div>
-              {(p.outcome || p.defense) && (
+              {(p.outcome || p.prePlay || p.defense) && (
                 <figcaption
-                  className="mt-2 text-sm"
+                  className="mt-3 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-3"
                   style={{ color: "var(--text-secondary)" }}
                 >
+                  {/* Each field on its own grid cell rather than run together
+                      with separators. Three of these on one line is what ran
+                      into itself on the slide, and a grid cannot overlap. */}
                   {p.outcome && (
-                    <>
+                    <span>
                       <Label>Outcome</Label> {p.outcome}
-                    </>
+                    </span>
                   )}
-                  {p.outcome && p.defense && (
-                    <span aria-hidden="true" style={{ color: "var(--text-muted)" }}>
-                      {"  ·  "}
+                  {p.prePlay && (
+                    <span>
+                      <Label>Pre-play</Label> {p.prePlay}
                     </span>
                   )}
                   {p.defense && (
-                    <>
+                    <span>
                       <Label>Defense</Label> {p.defense}
-                    </>
+                    </span>
                   )}
                 </figcaption>
               )}
