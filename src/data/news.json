@@ -4,6 +4,29 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "Qv1HmZE-oX7ajB52",
+   "headline": "Chiefs News: Chiefs looking to take advantage of tough cut for 49ers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-chiefs-looking-advantage-103000366.html",
+   "timestamp": "2026-09-01T10:30:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "KC",
+    "SF"
+   ]
+  },
+  {
+   "id": "UfPMxBbrtnBdDtty",
+   "headline": "Where is the Detroit Lions’ 53-man roster’s biggest weakness?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/where-detroit-lions-53-man-103000464.html",
+   "timestamp": "2026-09-01T10:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
    "id": "C5m74yHkuMZ2PuSK",
    "headline": "Cleveland Browns news: Practice squads and QBs. Always QBs",
    "source": "Yahoo Sports",
@@ -1589,22 +1612,6 @@
    "team_abbrs": [
     "SF"
    ]
-  },
-  {
-   "id": "B1-Q7Rlua15U52rW",
-   "headline": "Kirk Cousins, Fernando Mendoza both play in preseason finale",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kirk-cousins-fernando-mendoza-both-030219972.html",
-   "timestamp": "2026-08-28T03:02:19.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "_FhVExrjbobgXmDp",
-   "headline": "Taylen Green makes NFL preseason debut: Former Arkansas standout has electric scramble, leads touchdown drive",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/taylen-green-makes-nfl-preseason-debut/",
-   "timestamp": "2026-08-28T03:01:32.000Z",
-   "category": "camp"
   }
  ]
 }
