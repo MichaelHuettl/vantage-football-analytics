@@ -1,242 +1,213 @@
-# Handoff — Vantage, the design pass, and the injury tracker
+# Handoff — the typeface, the film room, and a lot of copy
 
 Written to be read cold, by the session that did the work below.
 Everything is committed. Nothing is in flight.
+
+Twenty-one commits, 2026-08-27 to 2026-08-30. `git log --oneline b87e3ee..HEAD`
+is the index; the messages carry the reasoning and are long on purpose.
 
 ---
 
 ## 0. Where things are
 
-Three directories matter, and they are **not** one project.
+Unchanged from the last handoff. Three directories, and they are **not** one
+project.
 
 | Path | What | Owner |
 | --- | --- | --- |
-| `~/Desktop/Claude Code/vantage/` | The Next.js site. 27 commits this session | yours |
+| `~/Desktop/Claude Code/vantage/` | The Next.js site | yours |
 | `~/Desktop/Claude Code/fantasy-model/` | The fantasy projection model. Untouched this session | yours |
 | `~/Desktop/nflverse-data/nfl_predictor/` | The game-prediction pipeline | **a peer session — do not edit its Python** |
 
-**Read `docs/BRIEF.md`, then `docs/STATE.md`, then `DESIGN.md`.** The brief says
-*why* and code comments cite it constantly as §2, §5.3, §7, §11. STATE.md says
-what is built and what is still open. DESIGN.md is new this session: the visual
-system as it actually stands, tokens and all.
-
-`git log` carries the reasoning for every change. That is this project's
-convention and it is worth reading before changing anything you did not write.
-The messages are long on purpose.
-
-**Twenty-two skills are installed globally** in `~/.claude/skills/`, up from
-eight. New: `impeccable` (1 skill, 23 `/impeccable` commands, 59 detector rules)
-and all thirteen `taste-skill` entries. **impeccable also installed hooks** into
-`~/.claude/settings.json` — PostToolUse on Edit/Write and a Stop deep pass — so a
-design check now runs on every turn in every project. `npx impeccable detect src`
-runs the deterministic rules standalone with no LLM.
+**Read `docs/BRIEF.md`, then `docs/STATE.md`, then `DESIGN.md`.** DESIGN.md was
+rewritten twice this session and is current.
 
 ---
 
-## 1. What changed this session
+## 1. What changed
 
-**The brand mark was replaced**, in three cuts the operator supplied: `Emblem`
-(detailed, home lockup only), `Goalpost` (plain, header and footer), and a
-favicon. A full icon set is generated from one SVG.
+**The site has one typeface now.** Anton, Barlow Condensed and Barlow became
+Roboto. Three faces were tried in one day and the order matters: Archivo went in
+first and was rejected as too blocky, Bricolage Grotesque replaced it for
+character, then the brief was stated properly — clean, appealing, easy to read
+data from — and Bricolage went too.
 
-**The site got entrance motion and a glare hover**, both pure CSS, no
-dependency. Home page and the six position cards.
+**Line height and vertical rhythm are on a scale for the first time.** Two
+ratios instead of four-plus-patches; seven container paddings became one
+standard; five section gaps became two.
 
-**Ten routes now generate share cards.** There was no `og:image` and no
-`twitter:card` on the site at all before this.
+**The mark gained its plot grid back and the chrome cut gained one**, plus the
+amber area fill and rules either side of "Football Analytics".
 
-**`DESIGN.md` was written** and immediately earned its keep: it turned the
-detector into a conformance check and found real type-scale drift.
+**Copy was cut across eight pages**, the home page rethesised on "What actually
+wins", and a full editorial audit run over all 21 routes.
 
-**The side-tab callout was retired** — eleven copies of a `border-l-4` card
-across eight components, replaced by one `Callout` component.
+**The game prediction model now carries all 18 weeks**, 272 games.
 
-**The injury tracker was rebuilt substantially**: an Updated column, headlines
-matched to players by name, composed written records, plain writing throughout,
-two new sources, and no relevance cutoff.
+**The beat feed's dead source was replaced** with all 32 club newsrooms, live.
 
-**The narrow-screen nav went to a vaul drawer and came back.** Reverted the same
-day at the operator's request; vaul and Radix are uninstalled.
+**The film room has real film**: 47 plays from the Lions at Packers Week 1 deck.
+
+**Run-defence matchup tables** are block 07 on the running back page.
 
 ---
 
 ## 2. Findings that changed what the site claims
 
-These are the ones a fresh session is most likely to undo by accident.
+The ones a fresh session is most likely to undo by accident.
 
-**The favicon was the `create-next-app` default the entire time.**
-`src/app/favicon.ico` had never been touched, and Next's file-based convention
-emits it as the *first* `<link rel="icon">`, ahead of everything
-`metadata.icons` declares. Browsers preferring `.ico` were showing the Next.js
-logo while `layout.tsx` pointed confidently at the Vantage one. Nothing
-references that file — its **location** is the reference — so a source grep for
-the brand path finds the metadata line and misses it entirely.
+**The prediction model's one-week limit is a deliberate guard, not missing
+data.** `FeatureEngineer._prepare_scoring_frame` filters to the first unplayed
+week and the author wrote why: beyond it both teams' rolling state is stale by
+construction. The operator asked for all 18 anyway after that was put to him
+twice. **Weeks 2-18 are every team at identical preseason form**, varying only by
+opponent, rest, venue and market line, and the accuracy figures on that page were
+measured on next-week predictions. The payload therefore carries
+`features_current` per game and a `forecast_horizon` block, and the page prints
+a caveat on every week where the flag is false. **Do not remove that notice
+while the flag exists.**
 
-**Sleeper publishes a per-player `news_updated` and the pull was discarding it.**
-158 distinct values across 160 injured players, median one day old inside the
-old cutoff. It is now the Updated column. Read it for what it is: the last time
-*any* news about that player moved, not a timestamp on the injury.
+**Nitter is not blocked, it is gone.** Ten public instances tested, none
+returning a single item: nitter.net 410, xcancel demanding whitelisting, three
+DNS failures, three 403s, a 429 that stayed 429 after a backoff, and a 502. X has
+no free read API. No list of accounts fixes this — the transport died. Do not
+re-investigate; add an instance to the list only if you have seen it work.
 
-**Sleeper says "Undisclosed" for a fifth of the players shown, and CBS can name
-nearly half of them.** Measured before building anything: 61 of 67 relevant
-injured players appear on CBS or Sharp, and **9 of 19 undisclosed rows get a
-real body part** — Nacua groin, Kirk calf, Downs calf, Egbuka toe.
+**SB Nation is ruled out the same way ESPN and Yahoo are.** Their network carries
+a beat blog for all 32 clubs and every feed works, but robots.txt names
+`anthropic-ai` with `Disallow: /`. Available to the operator directly, closed to
+an agent. The 32 official club feeds are what the live section uses instead, and
+they are labelled as club sources rather than beat reporting because that is what
+they are.
 
-**The relevance cutoff was hiding more than half the injuries.** It sat at
-Sleeper search rank 400 and dropped **90 of 158** designated skill players, 36 of
-them on a serious status. It is gone. The table went 93 rows to 182 across all
-32 teams. **Do not reintroduce a rank filter to shorten the page** — filter by
-team, which the page already does.
+**The film deck clips itself.** Its three info boxes are 0.81in tall starting at
+5.02in, so they end at 5.83in on a 5.625in slide. PowerPoint and Keynote both cut
+the second line off **every one of the 47 slides** — Time, Outcome and DEF, the
+result of every play, invisible. Rendering grows the canvas to 5.875in on a copy.
+**The original in `~/Downloads` still has this and should be fixed there.**
 
-**ESPN's robots.txt names `anthropic-ai` with `Disallow: /`.** Its
-`User-agent: *` rules would permit `/nfl/injuries`, so **this is available to the
-operator directly**; what is ruled out is an agent fetching it. CBS and Sharp
-name no Anthropic agent and disallow neither path — checked, not assumed.
+**`monetised` was in the footer disclaimer, so on every page of the site.** Found
+by crawling rendered text; a source grep for British spellings had missed it
+because the word was not in the pattern.
 
 ---
 
-## 3. Gotchas that cost real time this session
+## 3. Gotchas that cost real time
 
-**Scroll-driven animation, three separate traps**
+**`sizes` has to describe the real slot or the image is blurry and nothing
+errors.** The film plates declared `900px` while rendering at 1352 CSS px in the
+1400px container. On a 2x display that is 2704 real pixels against a 1080px
+source — a two-and-a-half-times upscale that looks exactly like a bad export.
+Measure `getBoundingClientRect().width * devicePixelRatio` before blaming the
+source.
 
-- **A `view()` timeline cannot animate an element already on screen.** The range
-  is positional, so an element inside the viewport at load starts part-way
-  through it and never plays from the beginning. With `opacity` in the keyframe
-  it sits permanently dimmed at whatever progress it loaded at, and reads as
-  "that card didn't get the effect". Card grids therefore use the **load-time
-  `rise` with a delay off the index**; `.reveal` animates transform only.
-- **The `animation` shorthand silently kills `duration: auto`.**
-  `animation: name 1ms linear both` on a view timeline looks right and does
-  nothing — the animation finishes in the first sliver of the range and holds
-  the end state across all of it. Write the longhands.
-- **The global reduced-motion reset does not cover view timelines.** It
-  collapses `animation-duration`, which is meaningless to a positional timeline.
-  Motion classes are defined *inside* `prefers-reduced-motion: no-preference`
-  rather than undone afterwards.
+**Next 16 rejects an unlisted image `quality` with a 400, not a fallback.**
+`<Image quality={85}>` returns `"q" parameter (quality) of 85 is not allowed` and
+the image does not load at all. `images.qualities` in `next.config.ts` is the fix;
+75 is the only value allowed by default.
 
-**The preview pane runs hidden, and that breaks three kinds of measurement**
+**Test horizontal overflow with `scrollLeft`, not `scrollWidth`.** Comparing
+`documentElement.scrollWidth` to `clientWidth` reported a page-level overflow at
+360px that does not exist: the narrow-screen nav's `-mx-4` and its own 788px
+internal scroller inflate the computed value. Setting `scrollLeft` and seeing
+whether it moves is the real test.
 
-`document.visibilityState` is `hidden`, so `requestAnimationFrame` never fires.
-CSS animation `currentTime` stays at 0, a `ViewTimeline`'s `currentTime` stops
-updating on scroll even while `getBoundingClientRect` keeps moving, images never
-decode (so canvas readback returns nothing), and vaul's close sequence never
-completes. **Reading opacity through `javascript_tool` reports working motion as
-broken.** Three things do work: driving the animation manually
-(`animation.currentTime = t`, then read computed style), disabling the
-transition and checking the end state, and **screenshots, which force a real
-paint**. Measure image luminance from the files with `sharp` instead.
+**A crawler that strips inline tags to a space invents punctuation errors.**
+The first copy audit produced pages of `127 ,` and `76.3% .` because
+`<strong>127</strong>,` became `127 ,`. Strip block tags to a newline and inline
+tags to nothing.
 
-**satori is not a browser**
+**Python's `json.dumps` escapes the em dash**, so a generated payload greps clean
+for `—` while containing `—`. Known before, met again.
 
-A `repeating-linear-gradient` is flattened into one blended fill: it drew no
-stripes *and* silently lifted the OG card's background off the brand black to
-`#1e242a`. The card looked fine. Sampling its pixels is what found it. Draw
-repeated elements explicitly. satori also cannot read the woff2 that
-`next/font` caches, which is why `assets/fonts/` holds TTFs.
+**Re-running an extractor reverts hand-cleanups.** `defense_charts.py` restored a
+workbook em dash and two whitespace slips that had been fixed by hand in the
+payload. The durable answer is boundary normalisation like `prose.ts` does for the
+prediction payloads; `normalizeDashes` exists and `defense.ts` does not call it.
 
-**Name matching, twice bitten**
+**Two `next dev` servers cannot share a directory.** Next 16's lock is
+per-directory, not per-port, so `autoPort: true` in `.claude/launch.json` starts a
+second server on a free port and it exits 1 anyway.
 
-- **Substring folding needs a length floor, and any floor big enough breaks
-  real names.** Folding to bare letters requires a floor to stop `bonix`
-  matching inside "turbo nixed" — and any floor that does that also discards
-  `jamarrchase` at eleven characters, silently dropping half the league.
-  **Compare token sequences instead.** No floor needed.
-- **Apostrophes, again.** `news.json` carries 19 headlines with a curly
-  apostrophe and 32 with a straight one. Delete them rather than treating them
-  as separators, so "Ja'Marr"/"Ja’Marr"/"JaMarr" agree. Allow a trailing `s` on
-  the last name token or possessives never match.
-
-**Tooling**
-
-- **`npx impeccable install --help` runs the installer.** It does not print
-  help. It took the default project scope and wrote into the working directory
-  before the intended global install.
-- **macOS `"file 2.ts"` duplicates in `.next/types` break `tsc`** with
-  duplicate-identifier errors that look like your own code. `find .next -name
-  "* 2.ts" -delete`.
-- **Claude in Chrome is not connected** on this machine, so there is no visible
-  browser to fall back to when the pane's hidden state matters.
-
-**Everything from the previous handoff still holds** — the nflverse download
-traps, `curl -f`, pre-rounding, image cache-busting by rename, and the browser
-pane being unreliable in general.
+**The browser pane got worse, not better.** On top of the known hidden-pane
+problems: it reported `naturalWidth` of 901 on an image curl confirms is
+2560x1504, it drifted to other routes mid-check twice, and scroll-then-screenshot
+returns blank almost every time. **curl plus parsing, and reading the built HTML
+in `.next/server/app/`, are what actually worked.**
 
 ---
 
 ## 4. Decisions the operator made — do not re-litigate
 
-- **Everything from the previous handoff stands**:
-  `historicalfantasyfootballstats.com` is off limits; the film room's concepts
-  were deleted and the **Sample** badge is load-bearing; two heroes carry NFL
-  marks by his call; licensed 4for4 columns are published on the RB and TE pages
-  by his decision; GSAP, Lenis and a home-page stats band remain rejected.
-- **Motion is CSS and entrance only**, home page and position cards. The
-  GSAP/Lenis rejection was reaffirmed this session.
-- **No shadcn, and `shadcn init` must not run here.** It writes a second
-  CSS-variable layer into `globals.css`, which is exactly the duplication §7
-  exists to prevent.
-- **The narrow-screen nav is the scrolling row**, right-aligned from `md`. A
-  vaul drawer was tried and reverted the same day; **vaul and Radix are
-  uninstalled** and `package.json` is back to three dependencies.
-- **taste-skill's house styles are not applied to Vantage.** Its aesthetic
-  skills prescribe their own look, which fights §7's "the brand already exists,
-  do not redesign it". impeccable's audit/critique/typeset commands are the part
-  that is used.
-- **§11 was spent deliberately on the injury page**, twice. First to compose a
-  written record where none exists; then, on 2026-08-27, to drop the "Composed"
-  label and every hedge with it. The column states the injury plainly. **He
-  asked for this explicitly both times.**
-- **ESPN is not used** (see §2). CBS and Sharp are.
-- **The injury page is the tracker.** All explanatory prose under the Season
-  tracker heading is gone, as is the standalone Injury headlines section. The
-  wire-failure notice stays, because §10 requires a pipeline failure to surface.
+- **Everything from the previous two handoffs stands**:
+  `historicalfantasyfootballstats.com` off limits, the film room's deleted
+  concepts, the **Sample** badge being load-bearing, licensed 4for4 columns on
+  the RB and TE pages, GSAP/Lenis/smooth-scroll rejected, no shadcn, the
+  narrow-screen nav being the scrolling row.
+- **Roboto, the sans.** Verified three ways because six families share the name.
+  Archivo (too blocky) and Bricolage (too irregular for data) were both tried and
+  rejected the same day.
+- **The full-season prediction payload**, with the staleness caveat, after the
+  trade-off was put to him twice.
+- **The club newsroom feed is labelled as club sources**, not beat reporting.
+- **The film is a "Sneak peek"** under an in-production notice that now leads the
+  page. He wrote "peak"; it ships as "peek".
+- **The film deck was normalised at his request** — bold labels with plain
+  values, "Outcome" replacing Result and Playcall, empty DEF filled from
+  Pre-play. This reverses his earlier "do not change any of the slides", which
+  applied to the first pass only.
+- **The RB source footers were deleted**, including the licensed-source
+  disclosure. Publishing those columns is still his decision; the page just no
+  longer says where the route data came from.
+- **The "if a number is not in the glossary that is a bug" line was dropped**
+  from the method band.
 
 ---
 
-## 5. Corrections I made to my own earlier claims
+## 5. Corrections I made to my own claims
 
-- I told him the long position pages "run full container width". **They do
-  not** — prose caps at `max-w-3xl`, used in 144 places. That was already right
-  and I had not checked before saying it.
-- I twice guessed wrong about why the first two cards in each grid looked
-  different: first that their photographs were too bright for the glare
-  (measured false — they are mid-pack at 0.410 and 0.425), then that their
-  markup differed (false at both the server and DOM layers). The cause was
-  viewport position. **Only measuring geometry found it.**
-- Asked which *ranked* players were missing from the tracker and found none, and
-  reported that as "nothing is missing". Wrong question — the cutoff was not
-  dropping ranked players, it was dropping everyone else. His follow-up
-  corrected it.
-- A `STATE.md` entry I wrote said nothing on the injury page composes a
-  diagnosis, and the next commit made that false. Corrected the same session.
-- `DESIGN.md` claimed `rounded-full` was "for the drawer handle only", which was
-  wrong even before the drawer was reverted.
+- Told him Sleeper trending was "the Sleeper accounts still working". Wrong
+  framing: the Sleeper *API* works, the Sleeper *X accounts* are as unreachable
+  as everyone else's. The transport is the blocker, not the account list.
+- Called a horizontal-overflow regression at 360px. There was none; my test was
+  wrong.
+- Recommended Bricolage on a brief of "not blocky", then changed the
+  recommendation once the brief turned out to be clarity. The width axis I had
+  called a hard filter partly inverts under that brief, because condensed
+  uppercase at 10px is harder to read, not easier.
+- Put the film reel above the Coming soon panel when he had asked for the notice
+  to lead, and left the section he had pointed at reading "12 days ago".
+- Put an em dash in new RB copy and caught it before commit.
+- Shipped `quality={85}`, which 400s on every plate, and caught it by curl.
 
 ---
 
 ## 6. Open items
 
-`docs/STATE.md` has all of them with detail. The ones worth knowing:
+`docs/STATE.md` has the full list. New or changed this session:
 
-1. **Four display clamps are off the type ramp.** `clamp(2.5rem, 5vw, 3.75rem)`,
-   `clamp(12rem, 34vw, 26rem)` and two more — four separate fluid scales for
-   headings. Consolidating changes headline sizes across several pages, so it
-   was left rather than done quietly. `npx impeccable detect src` reports them.
-2. **The Latest column can show a non-injury headline.** The matcher is
-   deliberately not category-filtered, so "CBS Sports NFL All-Breakout Team" can
-   land on an injury row. Harmless at 93 rows, more visible at 182. Filtering
-   risks dropping real updates that carry no injury vocabulary.
-3. **`rb_charts.py` still targets the `(2)` workbook** while everything else
-   targets `(4)`. Untouched for a third session.
-4. **The stacked lockup PNGs still carry the retired goalpost.** Nothing
-   references them, but they are what anyone would reach for to make an avatar.
-5. **The beat feed is Nitter-dependent and was blocked.**
-6. **The fantasy model's intervals under-cover** — 66.8% at WR against an
-   advertised 80%.
-7. **`impeccable detect` reports 9 findings, 5 of them false positives that
-   should stay**: four are `ChartFigure`'s goalpost frame (three-sided, §7's
-   signature element) and one is the yardlines background (a football site's own
-   motif).
+1. **`SPEC_multiweek_scoring_frame.md`** is filed in `~/Desktop/nflverse-data/`
+   asking the backend session for a supported `scoring_horizon` parameter. When
+   it lands, delete `scripts/curated/game_predictions_full_season.py` rather than
+   keeping it.
+2. **The prediction payload is 2.9 MB**, up from 188 KB, and `public/` is 39 MB
+   with the film. Worth watching, not yet a problem.
+3. **The weekly and rest-of-season ranking scopes are empty locations.** Each
+   empty state names the file to create *and* the `content.ts` import it needs,
+   because that module imports statically on purpose.
+4. **`defense.ts` does not call `normalizeDashes`**, so a re-extraction puts a
+   workbook em dash back into the payload.
+5. **The film deck's original still clips**, Pre-play is blank on slide 16, and a
+   long score runs into Down/Distance. All the deck's own layout.
+6. **The game tracker's key players are worth confirming** — Mike Evans on San
+   Francisco, Myles Garrett on the Rams, DJ Moore on Buffalo. From
+   `key-players.json`, plausibly real 2026 movement, not touched on a hunch.
+7. **`rb_charts.py` still targets the `(2)` workbook.** Fourth session running.
+   `rb_matchups.py` was written as a separate extractor specifically to avoid it.
+8. **The injury tracker's `Updated` column** was justified on a measurement
+   scoped to players inside a relevance cutoff that no longer exists. Half the
+   182 rows are now from the population where that field was measured to rot.
+   Never chased.
 
 ---
 
@@ -245,43 +216,37 @@ pane being unreliable in general.
 ```bash
 cd ~/Desktop/Claude\ Code/vantage
 npm run build          # the check that matters
-npm run news           # refreshes news.json — was 10 days stale, now current
+npm run news           # refreshes news.json
 npx impeccable detect src
+python3 scripts/curated/rb_matchups.py
 ```
 
-`news.json` feeds the injury tracker's Latest column by name matching, so a
-stale one quietly costs that column coverage. It was refreshed 2026-08-27.
+`detect` reports **9 findings and has all session**: five are known false
+positives (four on `ChartFigure`'s goalpost frame, one on the yardlines), four
+are the display clamps that are still open.
 
-The injury tracker pulls Sleeper, Draft Sharks, CBS and Sharp at request time,
-all inside one 300-second TTL window. None can take the page down: a failed
-board contributes an empty map and rows keep the field they had.
+The full-season prediction payload is regenerated with:
 
-The OG cards need `assets/fonts/*.ttf` present at build time and
-`NEXT_PUBLIC_SITE_URL` set at deploy time — `metadataBase` falls back to
-localhost, which no crawler can fetch.
+```bash
+~/Desktop/nflverse-data/.venv/bin/python scripts/curated/game_predictions_full_season.py
+```
+
+That imports the peer session's package and swaps one method on the class for the
+life of the process. **It edits no file in their repo** — verified by hash before
+and after — but `pipeline.run()` does rewrite their `artifacts/` reports.
 
 ---
 
 ## 8. Standing rules
 
+Unchanged, and all of them earned:
+
 - `src/app/globals.css` is the only source of colour and type. **No hex in a
-  component** (§7). One sanctioned exception: `src/lib/og.tsx`, which renders
-  through satori where no stylesheet exists.
+  component** (§7). Weight and width are tokens too now.
 - Amber is for the focal thing on screen, one per screen (§7).
-- **No thick coloured side border on a card.** It is the single most
-  recognisable tell of a generated interface and it took a commit to remove
-  eleven of them.
+- **No thick coloured side border on a card.**
 - **No React component computes a metric** (§11).
-- No em dashes in user-facing copy; three exemptions in `DESIGN.md`.
+- No em dashes in user-facing copy. Comments and quoted material are exempt.
 - American spellings. Empty states are directions, not apologies (§8).
 - **`npm run build` is the check that matters.**
 - Commit in logical pieces, and put the reasoning in the message.
-
----
-
-## 9. Not part of the site
-
-`~/Desktop/Vantage-2026-Positional-Brief.pdf` — a 19-page tiered write-up,
-generated in an earlier session and **deliberately not connected to the site**.
-If it is ever wanted there, that is the operator's decision and the labelling is
-the thing to preserve.

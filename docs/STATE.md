@@ -4,7 +4,7 @@ Read `docs/BRIEF.md` first — it defines the `§` references in code comments.
 This file records where the build actually is, what was decided against the
 brief, and what is still open.
 
-Last updated: 2026-08-27.
+Last updated: 2026-08-30.
 
 ---
 
@@ -45,6 +45,8 @@ both sides, and is the only one that does:
 | `scripts/curated/player_profiles.py` | `player-profiles.json` | 79 player profiles (**reads the nflverse export**) |
 | `scripts/curated/model_misses.py` | `model-misses.json` | Case study: 292 misses, 16 season folds (**reads the pipeline's report + artifacts**) |
 | `scripts/curated/fantasy_model.py` | `fantasy-model.json` | Fantasy projections, accuracy, boards (**copies a payload, computes nothing**) |
+| `scripts/curated/rb_matchups.py` | `rb-matchups.json` | Run-defence matchup tables, 5 seasons (**hand transcription from screenshots, validated before it emits**) |
+| `scripts/curated/game_predictions_full_season.py` | `game-predictions.json` | All 18 weeks of predictions (**runs the peer session's pipeline without editing it**) |
 
 **Nothing is scheduled.** There is no git remote, so no GitHub Action has ever
 run. Every feed and fetch happens when someone types the command (see open
@@ -367,7 +369,22 @@ build` with a line number instead of shipping a broken page.
    board, so Carlson is off the K board entirely and Chase McLaughlin is in at
    7. He still appears on the kicker page's scoring tables, with an FA marker,
    because those record what he did rather than who to take.
-5. **The film room holds one sample play and no analysis.** `concepts.json` is
+5. **The film room has one real breakdown and the sample is still shelved.**
+   Updated 2026-08-30: all 47 offensive snaps of Lions at Packers, Week 1 2025,
+   are published from the operator's own deck as a "Sneak peek" under an
+   in-production notice that leads the page. Rendered images, not rebuilt SVG.
+   `scripts` note: there is no extractor — the plates were rasterised from
+   Keynote's vector PDF export and the metadata parsed out of the slide XML, both
+   one-off. Re-doing it means re-reading `docs/HANDOFF.md` §2.
+   - **The deck clips itself and the original still does.** Info boxes 0.81in
+     tall at 5.02in on a 5.625in slide: Time, Outcome and DEF were cut off every
+     slide. The render grows the canvas to 5.875in on a copy.
+   - **Three labels were normalised at his request** — bold label with plain
+     value, "Outcome" replacing Result and Playcall, DEF filled from Pre-play on
+     slides 2, 20 and 41. This reversed his earlier "do not change any slides".
+   - The old note follows, and still holds for `concepts.json`:
+
+   **The film room holds one sample play and no analysis.** `concepts.json` is
    an empty array. Mesh, Dagger and Sail were written by an agent — the routes,
    the prose and the claims about which teams run them — and the operator had
    them removed on 2026-08-21 rather than publish football analysis he did not
@@ -407,7 +424,24 @@ build` with a line number instead of shipping a broken page.
    for "sack leaders with numbers" and the counts are not there. The only 2025
    block with values is simulated pressure. Sack counts *do* exist for 2021-24
    in `scripts/curated/data/dst-history.json`.
-9. **Nitter is fragile, and was blocked on 2026-08-17.** Five national insiders
+9. **Nitter is gone, not blocked. Closed 2026-08-30.** Ten public instances
+   tested and not one returned a single item: nitter.net 410, xcancel demanding
+   whitelisting, three DNS failures, three 403s, a 429 that stayed 429 after a
+   backoff, and a 502. X has no free read API. **No list of accounts fixes this**
+   — the transport died, so every beat writer and all 32 `Sleeper*` team accounts
+   are equally unreachable. `/news` now runs a live section off the 32 official
+   club feeds instead (`src/lib/live-team-feed.ts`), labelled "Around the clubs"
+   and explicitly *not* called beat reporting, because a club announces an
+   activation rather than telling you who looked a step slow. The beat archive is
+   badged **Closed** with no freshness stamp: a permanent record wearing a
+   staleness clock reads as broken rather than finished.
+   **SB Nation was the obvious independent replacement and is ruled out** the
+   same way ESPN and Yahoo are — all 32 of their team blogs have working feeds,
+   and their robots.txt names `anthropic-ai` with `Disallow: /`. Available to the
+   operator directly, closed to an agent fetching it.
+   The original entry follows.
+
+   **Nitter is fragile, and was blocked on 2026-08-17.** Five national insiders
    (`RapSheet`, `AdamSchefter`, `TomPelissero`, `MikeGarafolo`, `FieldYates`)
    were added to `fetch-beat.mjs` that day for injury news, but **could not be
    verified** — Nitter returned nothing even for `SleeperNFL`, which had
@@ -523,6 +557,53 @@ build` with a line number instead of shipping a broken page.
     Replacing them means rendering the new emblem over Anton type, which is a
     piece of brand art rather than a code change, so it is left for the
     operator to decide rather than assumed.
+
+17. **The prediction payload carries all 18 weeks, and only week 1 means much.**
+    Added 2026-08-30 at the operator's instruction after the trade-off was put to
+    him twice. `FeatureEngineer._prepare_scoring_frame` in the peer session's
+    pipeline restricts scoring to the first unplayed week *on purpose* — beyond
+    it both teams' rolling state is stale by construction. Everything upstream is
+    already season-wide, so that one function was the whole constraint.
+    - **`scripts/curated/game_predictions_full_season.py` swaps that method on
+      the class for one process.** It edits no file in their repo, verified by
+      hash before and after. Running `pipeline.run()` does rewrite their
+      `artifacts/` reports; the model was unchanged by it (accuracy 0.6445 to
+      0.6474).
+    - Weeks 2-18 are every team at identical preseason form. The payload says so
+      itself: `features_current` per game, `forecast_horizon` at the top, and the
+      page prints the caveat wherever the flag is false. **Do not remove that
+      notice while the flag exists.**
+    - `SPEC_multiweek_scoring_frame.md` is filed in `~/Desktop/nflverse-data/`
+      asking for a supported `scoring_horizon` config. **When it lands, delete
+      the workaround script** rather than keeping both.
+
+18. **Weekly and rest-of-season rankings are an addressable empty location.**
+    Added 2026-08-30. `/rankings?scope=week&week=N` and `?scope=ros` exist, with
+    an 18-week picker; all six lists are still draft-scope, so both render an
+    empty state naming the file to create *and* the `content.ts` import it needs.
+    `content.ts` imports statically on purpose — files under `src/` are
+    typechecked — so a new list needs both. Three things are gated to the draft
+    scope so they cannot leak onto an empty one: the freshness stamp, the scope
+    badge, and the pre-season caveat.
+
+19. **`defense.ts` does not normalise its prose at the boundary.**
+    `prose.ts` exists and does this for the prediction payloads; the defense
+    payload does not go through it, so re-running `defense_charts.py` puts a
+    workbook em dash back into `source` along with two whitespace slips that had
+    been fixed by hand. Restored manually on 2026-08-30; the durable fix is to
+    call `normalizeDashes` where the payload enters.
+
+20. **The site is one typeface, and the token layer is what made that cheap.**
+    Anton, Barlow Condensed and Barlow became Roboto on 2026-08-30, via Archivo
+    and Bricolage Grotesque in a single day. Weight and width are now tokens
+    (`--weight-display`, `--stretch-display`, `--stretch-condensed`) because
+    **not one of the 109 display call sites carried a `font-weight`** — Anton was
+    a single intrinsically heavy weight, so a variable family would have rendered
+    every hero at 400. 78% and 84% sat inside all three families' width ranges,
+    so each swap was the family name and nothing else.
+    **It must be `Roboto`, not `Roboto Serif`.** Six families share the name;
+    only this one has wdth 75-100 with wght 100-900. Verified at the import, in
+    the share-card font's own name table, and in the live computed face.
 
 ## Closed items
 
