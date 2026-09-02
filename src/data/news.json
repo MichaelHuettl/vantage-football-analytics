@@ -4,6 +4,25 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "whBlPB0ocR1-WISi",
+   "headline": "Long list of former Browns who didn’t make final rosters this past week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/long-list-former-browns-didn-012507996.html",
+   "timestamp": "2026-09-02T01:25:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "EJfTH_pHkHG35tVd",
+   "headline": "NFL Practice Squad Updates: 9/1/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-1-26",
+   "timestamp": "2026-09-02T01:06:57.000Z",
+   "category": "practice"
+  },
+  {
    "id": "rDgXtI1LAiNa7-wI",
    "headline": "Brian Gutekunst: Talks with Cardinals about Josh Sweat never happened",
    "source": "Yahoo Sports",
@@ -362,6 +381,17 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
+   ]
+  },
+  {
+   "id": "o2ETBZ-FpFnW23yN",
+   "headline": "49ers GM John Lynch sounds alarm with ‘startled’ Aaron Donald return reaction",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-gm-john-lynch-sounds-205926182.html",
+   "timestamp": "2026-09-01T20:59:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -1607,39 +1637,6 @@
    "category": "injury",
    "team_abbrs": [
     "HOU"
-   ]
-  },
-  {
-   "id": "SdSWdJ7k733RAyP0",
-   "headline": "Did the 49ers sign their Skyy Moore of 2026 on the practice squad?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/did-49ers-sign-sky-moore-153423220.html",
-   "timestamp": "2026-09-01T15:34:23.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "V40UGWI3IX_Yx9Jg",
-   "headline": "Josh Allen is highest-ranked QB in NFL’s Top 100 Players list",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/josh-allen-highest-ranked-qb-153130238.html",
-   "timestamp": "2026-09-01T15:31:30.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ]
-  },
-  {
-   "id": "3Fg8J1mm_PGNA6z0",
-   "headline": "Colts GM Chris Ballard on Keenan Allen: Give him some grace",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-gm-chris-ballard-keenan-153001890.html",
-   "timestamp": "2026-09-01T15:30:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
    ]
   }
  ]
