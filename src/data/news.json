@@ -4,6 +4,37 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "6OWLrFrpU7MnYw_o",
+   "headline": "Predicting Every Game of the 2026 NFL Season: NFC South",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/predicting-every-game-2026-nfl-122031960.html",
+   "timestamp": "2026-09-02T12:20:31.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "3_V6EXBzIOGRsiAB",
+   "headline": "Detroit Lions updated depth chart: Initial 53-man roster, practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-updated-depth-chart-121922338.html",
+   "timestamp": "2026-09-02T12:19:22.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "30FCy6Y8z4gcXmfp",
+   "headline": "The Bills lost to the Broncos, relive the misery by picking a play to define it",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-lost-broncos-relive-misery-120000070.html",
+   "timestamp": "2026-09-02T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "DEN"
+   ]
+  },
+  {
    "id": "n1MDX7cn948gYxg1",
    "headline": "Jaxson Dart says Giants’ defense is ‘best reps I could possibly get’",
    "source": "Yahoo Sports",
@@ -1598,40 +1629,6 @@
    ],
    "team_abbrs": [
     "KC"
-   ]
-  },
-  {
-   "id": "o0tQd3fy0sLLUSlL",
-   "headline": "Packers Injuries: Updates on IR’d players and Micah Parsons",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-injuries-updates-ir-d-174127547.html",
-   "timestamp": "2026-09-01T17:41:27.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "ebIUIDzbBx6XU78b",
-   "headline": "Assessing the impact of Texans losing RT for Week 1 against the Bills",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/assessing-impact-texans-losing-rt-173127688.html",
-   "timestamp": "2026-09-01T17:31:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "HOU"
-   ]
-  },
-  {
-   "id": "akfwwHgXAbrlPGCi",
-   "headline": "Cowboys practice squad analysis for all signed players",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-practice-squad-analysis-signed-173000935.html",
-   "timestamp": "2026-09-01T17:30:00.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DAL"
    ]
   }
  ]
