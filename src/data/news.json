@@ -4,12 +4,78 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "Ft9M3O6M7TvOmuRI",
+   "headline": "Nick Bosa says he felt great at practice, expects to play vs. Rams in Australia",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nick-bosa-says-felt-great-201806028.html",
+   "timestamp": "2026-09-02T20:18:06.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "qDMfAgDibZuZu4tw",
+   "headline": "Jets Try Out Justin Tucker, Michael Badgley, Joshua Karty",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/jets-try-out-justin-tucker-michael-badgley-joshua-karty",
+   "timestamp": "2026-09-02T20:14:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "Htrr_uKpft-fz5CI",
+   "headline": "Aaron Rodgers continues to praise Steelers young pass catchers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-rodgers-continues-praise-steelers-200233841.html",
+   "timestamp": "2026-09-02T20:02:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "VsT4aUsT7sqE29-M",
+   "headline": "Chicago Bears Mega Season Preview with Aaron Leming",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-mega-season-preview-200000173.html",
+   "timestamp": "2026-09-02T20:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "xuEZbAWvZlb4NwoL",
+   "headline": "Jets work out Justin Tucker: Eight-time All Pro accused of sexual misconduct gets look from New York",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jets-work-out-kicker-justin-tucker/",
+   "timestamp": "2026-09-02T19:51:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
    "id": "X6Sc7ye86t2i-fwP",
    "headline": "Players at each position Joel Smyth has changed his mind on the most throughout training camp and preseason for 2026 fantasy football",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/fantasy/article/players-at-each-position-joel-smyth-has-changed-his-mind-on-the-most-throughout-training-camp-and-preseason-for-2026-fantasy-football-195003645.html",
    "timestamp": "2026-09-02T19:50:03.000Z",
    "category": "camp"
+  },
+  {
+   "id": "8bSPzJn-Qr8CNU3r",
+   "headline": "Justin Tucker among kickers to work out with Jets on Wednesday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/justin-tucker-among-kickers-jets-193348381.html",
+   "timestamp": "2026-09-02T19:33:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
   },
   {
    "id": "zAQraGiYTs6jHdIy",
@@ -1564,66 +1630,6 @@
    ],
    "team_abbrs": [
     "GB"
-   ]
-  },
-  {
-   "id": "Z95Am36NXCelwrAp",
-   "headline": "2026 NFC North Season Forecast: Detroit Lions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfc-north-season-forecast-020852061.html",
-   "timestamp": "2026-09-02T02:08:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "CyWdeIgGmxN_yQoo",
-   "headline": "Saints rookie DB Lorenzo Styles Jr. lands on IR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-rookie-db-lorenzo-styles-020803200.html",
-   "timestamp": "2026-09-02T02:08:03.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "Jzxq9No6Bz3nYnUf",
-   "headline": "NFL Comeback Player of the Year Odds: Can Aaron Donald Win It?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-comeback-player-odds-mccaffrey-180300692.html",
-   "timestamp": "2026-09-02T02:05:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "7RMG8bbgNj-ICbUE",
-   "headline": "Official WVU Football Depth Chart for Coastal Carolina",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/official-wvu-football-depth-chart-020304500.html",
-   "timestamp": "2026-09-02T02:03:04.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "RrNq2Q-Zobo-d6uK",
-   "headline": "Bengals Bring Back QB Josh Johnson",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bengals-bring-back-qb-josh-johnson",
-   "timestamp": "2026-09-02T02:00:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "7l6bVawMp-1usHEO",
-   "headline": "San Francisco 49ers WR Mike Evans to practice next week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/san-francisco-49ers-wr-mike-015920250.html",
-   "timestamp": "2026-09-02T01:59:20.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "SF"
    ]
   }
  ]
