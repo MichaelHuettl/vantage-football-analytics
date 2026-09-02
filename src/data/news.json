@@ -4,6 +4,84 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "Uf5Aph9XQIyvnALl",
+   "headline": "Steelers sign former Titans safety, round out practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-sign-former-titans-safety-205155607.html",
+   "timestamp": "2026-09-02T20:51:55.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT",
+    "TEN"
+   ]
+  },
+  {
+   "id": "SVxaOlP4H_iKsr5I",
+   "headline": "John Harbaugh, Greg Newsome II weigh in on Giants cornerback competition",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/john-harbaugh-greg-newsome-ii-204353053.html",
+   "timestamp": "2026-09-02T20:43:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "CfsZbvs6J8vvUy45",
+   "headline": "Patriots up-to-date depth chart: Who is on the roster right now?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-date-depth-chart-roster-202222083.html",
+   "timestamp": "2026-09-02T20:42:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "sWIdBBhHZS3-3VEo",
+   "headline": "49ers injury updates: Nick Bosa opens up about his recovery; 2 rookies still out",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-injury-updates-nick-bosa-204159812.html",
+   "timestamp": "2026-09-02T20:41:59.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "yAlEmvCn5ICzBgwW",
+   "headline": "Patriots sign tight end Shane Zylstra to practice squad, reach settlements with two rookies",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-sign-tight-end-shane-203945171.html",
+   "timestamp": "2026-09-02T20:39:45.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "xIc9rbaA1UzZJU_T",
+   "headline": "Khalil Shakir: Optimism regarding Week 1",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/khalil-shakir-15892",
+   "timestamp": "2026-09-02T20:35:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "uIYXqOrAUYx_GtJe",
+   "headline": "Lions waive RB Jabari Small, C Seth McLaughlin",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-waive-rb-jabari-small-203315688.html",
+   "timestamp": "2026-09-02T20:33:15.000Z",
+   "category": "injury",
+   "player_ids": [
+    "chase-mclaughlin"
+   ],
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
    "id": "Ft9M3O6M7TvOmuRI",
    "headline": "Nick Bosa says he felt great at practice, expects to play vs. Rams in Australia",
    "source": "Yahoo Sports",
@@ -1553,83 +1631,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PHI"
-   ]
-  },
-  {
-   "id": "WcfnRZRX_rUdv1M4",
-   "headline": "Arch Manning, Jeremiah Smith and 2 more QBs in the top 10: 2027 NFL Draft big board entering Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/arch-manning-jeremiah-smith-and-2-more-qbs-in-the-top-10-2027-nfl-draft-big-board-entering-week-1-061222683.html",
-   "timestamp": "2026-09-02T06:12:22.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "iyo0rd90Gl9eSa9z",
-   "headline": "‘Hard Knocks’: Seahawks season finale recap, highlights, and what we learned",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/hard-knocks-seahawks-season-finale-035015413.html",
-   "timestamp": "2026-09-02T03:50:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "TXUrk_A-UBn4WPrR",
-   "headline": "Bears GM not sure if $40 million star Kyler Gordon will play at all this season in injury mystery",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-gm-not-sure-40-031302342.html",
-   "timestamp": "2026-09-02T03:13:02.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "WCN8ub0v1YaDrJeD",
-   "headline": "Texans Aiming To Extend QB C.J. Stroud Before Season?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/texans-aiming-to-extend-qb-c-j-stroud-before-season",
-   "timestamp": "2026-09-02T03:03:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "eLWF0OZGDctrD5yn",
-   "headline": "Vikings To Sign OLB Kyle Van Noy",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/vikings-meet-with-olb-kyle-van-noy",
-   "timestamp": "2026-09-02T02:58:46.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "pZoYyaNHnsQcfFzE",
-   "headline": "Bears Uncertain If CB Kyler Gordon Will Play In 2026",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bears-uncertain-if-cb-kyler-gordon-will-play-in-2026",
-   "timestamp": "2026-09-02T02:56:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "QX7Nt_hF0zPHdCIl",
-   "headline": "Packers Hope To Finalize Tucker Kraft Extension Before Week 1",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/packers-hope-to-finalize-tucker-kraft-extension-before-week-1",
-   "timestamp": "2026-09-02T02:48:31.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "tucker-kraft"
-   ],
-   "team_abbrs": [
-    "GB"
    ]
   }
  ]
