@@ -4,6 +4,81 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "mgo_XGf7EJt89gJX",
+   "headline": "Pats Facing Week 1 Deadline To Extend Christian Gonzalez?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/pats-facing-week-1-deadline-to-extend-christian-gonzalez",
+   "timestamp": "2026-09-02T13:54:35.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "R7kXz9ERGER-LU2Y",
+   "headline": "George Kittle ‘trending in the right direction’ for Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/george-kittle-trending-direction-week-135307428.html",
+   "timestamp": "2026-09-02T13:53:07.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
+   "id": "pHUE11-dsXI3mg8s",
+   "headline": "George Kittle, Nick Bosa travel with 49ers to Australia, signaling they could return in Week 1 vs. Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/george-kittle-nick-bosa-travel-with-49ers-to-australia-signaling-they-could-return-in-week-1-vs-rams-135206393.html",
+   "timestamp": "2026-09-02T13:52:06.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "lj9I2O287d3HaxXr",
+   "headline": "2027 NFL Draft WR rankings: Former FCS product rises as Jeremiah Smith holds top honors",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-wr-rankings-jeremiah-smith/",
+   "timestamp": "2026-09-02T13:41:31.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "aojTBkUqgAtFfUrE",
+   "headline": "Chargers will have 10 captains in 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-10-captains-2026-133456142.html",
+   "timestamp": "2026-09-02T13:34:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "LqjD6xUYH7TpdG27",
+   "headline": "Should Giants be concerned about their cornerbacks heading into 2026 season?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-concerned-cornerbacks-heading-2026-133057952.html",
+   "timestamp": "2026-09-02T13:30:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "gLwgU47Op0ZP2irR",
+   "headline": "Grading the 49ers’ initial 53-man roster: Is this a Super Bowl-caliber team?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/grading-49ers-initial-53-man-133000641.html",
+   "timestamp": "2026-09-02T13:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "X_epnvL8V7vXPtus",
    "headline": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
    "source": "CBS Sports",
@@ -1548,80 +1623,6 @@
    "url": "https://sports.yahoo.com/articles/nfl-home-field-advantage-bettors-190500021.html",
    "timestamp": "2026-09-01T19:05:00.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "nXsYmMpZP2CRvkI8",
-   "headline": "Grade Monti Ossenfort’s work in the NFL Draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/grade-monti-ossenfort-nfl-draft-190407082.html",
-   "timestamp": "2026-09-01T19:04:07.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Bror0nEW0Fy--AoN",
-   "headline": "Ja'Marr Chase, Tee Higgins out of practice Tuesday, but Bengals expect them for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jamarr-chase-tee-higgins-practice-185719421.html",
-   "timestamp": "2026-09-01T18:57:19.000Z",
-   "category": "practice",
-   "player_ids": [
-    "jamarr-chase"
-   ],
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "A7l5j4HWweqxlkAe",
-   "headline": "Rams add new player to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-add-player-practice-squad-185219842.html",
-   "timestamp": "2026-09-01T18:52:19.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "GgfXcCwMvXba9jg5",
-   "headline": "Ryan Poles: I don't know if Kyler Gordon will play for the Bears again",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ryan-poles-dont-know-kyler-184259632.html",
-   "timestamp": "2026-09-01T18:42:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "IiNYvE1WT0i5_wFg",
-   "headline": "USA TODAY Sports Plays of the Week: Vote for top play of Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/usa-today-sports-plays-week-184114840.html",
-   "timestamp": "2026-09-01T18:41:14.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "zmBiYtHz_7HVrFju",
-   "headline": "What their 6 post-cutdown roster moves mean for the Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/6-post-cutdown-roster-moves-183751143.html",
-   "timestamp": "2026-09-01T18:37:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "-41X1lLnIj5yTjA1",
-   "headline": "Packers TE Luke Musgrave expected to play in 2026",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-te-luke-musgrave-expected-183727560.html",
-   "timestamp": "2026-09-01T18:37:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
   }
  ]
 }
