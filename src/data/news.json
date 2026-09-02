@@ -4,6 +4,76 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "3Y4nUu1-7ktmlnN-",
+   "headline": "Raiders Name Kirk Cousins Starting QB",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/raiders-name-kirk-cousins-starting-qb",
+   "timestamp": "2026-09-02T16:35:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "1yxJcGjuFO-OeRMO",
+   "headline": "Justin Herbert, Derwin James named among 10 Chargers captains for 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/justin-herbert-derwin-james-named-162451108.html",
+   "timestamp": "2026-09-02T16:24:51.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ],
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "ESbPpNgSewYvkzmi",
+   "headline": "Extension Talks Between Colts, Quenton Nelson ‘Stagnant’",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/extension-talks-between-colts-quenton-nelson-stagnant",
+   "timestamp": "2026-09-02T16:17:46.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "tVH9FACGj7F6zgwT",
+   "headline": "5 takeaways from Lions GM Brad Holmes post-cuts press conference",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-takeaways-lions-gm-brad-161356504.html",
+   "timestamp": "2026-09-02T16:13:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "DbbGvbz47NOc6BqN",
+   "headline": "Former Eagles staffer finds another way the Bill Belichick Patriots tried to gain an advantage over opponents",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/former-eagles-staffer-finds-another-way-the-bill-belichick-patriots-tried-to-gain-an-advantage-over-opponents-160831456.html",
+   "timestamp": "2026-09-02T16:08:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "PHI"
+   ]
+  },
+  {
+   "id": "G-j_kp7WnfWjGZ7M",
+   "headline": "Chargers boost offensive line in latest 2027 NFL mock draft",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-boost-offensive-line-latest-160000723.html",
+   "timestamp": "2026-09-02T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
    "id": "T7PqQsbT2AnXQwXz",
    "headline": "Kirk Cousins, Ashton Jeanty not participating in Wednesday's practice",
    "source": "Yahoo Sports",
@@ -1557,72 +1627,6 @@
    "category": "transaction",
    "team_abbrs": [
     "GB"
-   ]
-  },
-  {
-   "id": "LJwTE1to5a7YBnXZ",
-   "headline": "Steelers’ Joey Porter Jr. doesn’t close door on sitting out Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-joey-porter-jr-doesn-203732482.html",
-   "timestamp": "2026-09-01T20:37:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "JJ1rWRESjMVmzdkn",
-   "headline": "Malik Nabers injury status: Giants WR shares honest assessment of progress, Week 1 availability",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/malik-nabers-injury-status-giants-wr-shares-honest-assessment-of-progress-week-1-availability/",
-   "timestamp": "2026-09-01T20:37:13.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "hGzP5K8BmYsS4KAP",
-   "headline": "Patriots announce six captains for 2026 season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-announce-six-captains-2026-203402175.html",
-   "timestamp": "2026-09-01T20:34:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "XhFzP9k5D4Zu8anh",
-   "headline": "Which position group is the deepest for the 49ers?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/position-group-deepest-49ers-203000819.html",
-   "timestamp": "2026-09-01T20:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "2zoh_XV6CN4V17bG",
-   "headline": "Max Brosmer will stick with Vikings on practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/max-brosmer-stick-vikings-practice-202901711.html",
-   "timestamp": "2026-09-01T20:29:01.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "_qB9g9C65vNfVN2D",
-   "headline": "Detroit Lions place RB Isiah Pacheco on IR, add WR to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/detroit-lions-place-rb-isiah-202440340.html",
-   "timestamp": "2026-09-01T20:24:40.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
    ]
   }
  ]
