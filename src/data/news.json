@@ -4,6 +4,42 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "n1MDX7cn948gYxg1",
+   "headline": "Jaxson Dart says Giants’ defense is ‘best reps I could possibly get’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxson-dart-says-giants-defense-115523848.html",
+   "timestamp": "2026-09-02T11:55:23.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "Z9HdvE9IhB_LaPUZ",
+   "headline": "Dolphins news: Joe Milton, Jacob Rodriguez, and more roster moves",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-news-joe-milton-jacob-114027122.html",
+   "timestamp": "2026-09-02T11:40:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "7RUXMTQqU7L4FJYv",
+   "headline": "Making sense of Cowboys' surprising roster cuts ahead of 2026 season: Joe Milton, Jaydon Blue and more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/making-sense-of-cowboys-surprising-roster-cuts/",
+   "timestamp": "2026-09-02T11:35:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "OcUceKa7uUl5oHxB",
    "headline": "Tampa Bay Buccaneers news: Initial 53-man roster sparks question marks",
    "source": "Yahoo Sports",
@@ -985,17 +1021,6 @@
    ]
   },
   {
-   "id": "7RUXMTQqU7L4FJYv",
-   "headline": "Making sense of Cowboys' surprising roster cuts ahead of 2026 season: Joe Milton, Jaydon Blue and more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/making-sense-of-cowboys-surprising-roster-cuts/",
-   "timestamp": "2026-09-01T20:24:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
    "id": "UWTErl_AdNN2JRiB",
    "headline": "Vikings Bring Back QB Max Brosmer On Practice Squad Deal",
    "source": "Pro Football Rumors",
@@ -1607,28 +1632,6 @@
    "category": "practice",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "3IQ0H9YkyiIiQKGw",
-   "headline": "Browns roster changes: 8 moves on Tuesday, including practice squad additions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-roster-changes-young-cornerback-171219391.html",
-   "timestamp": "2026-09-01T17:29:39.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "K_iaPvVGANxqZdxn",
-   "headline": "Packers Film Review: TE Mark Redman",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-film-review-te-mark-172619086.html",
-   "timestamp": "2026-09-01T17:26:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
    ]
   }
  ]
