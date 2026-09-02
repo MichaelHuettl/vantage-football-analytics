@@ -1,8 +1,19 @@
 {
  "schema_version": 1,
- "updated": "2026-09-01",
+ "updated": "2026-09-02",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "iyo0rd90Gl9eSa9z",
+   "headline": "‘Hard Knocks’: Seahawks season finale recap, highlights, and what we learned",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/hard-knocks-seahawks-season-finale-035015413.html",
+   "timestamp": "2026-09-02T03:50:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
   {
    "id": "WCN8ub0v1YaDrJeD",
    "headline": "Texans Aiming To Extend QB C.J. Stroud Before Season?",
@@ -23,6 +34,31 @@
    "category": "transaction",
    "team_abbrs": [
     "MIN"
+   ]
+  },
+  {
+   "id": "pZoYyaNHnsQcfFzE",
+   "headline": "Bears Uncertain If CB Kyler Gordon Will Play In 2026",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/bears-uncertain-if-cb-kyler-gordon-will-play-in-2026",
+   "timestamp": "2026-09-02T02:56:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "QX7Nt_hF0zPHdCIl",
+   "headline": "Packers Hope To Finalize Tucker Kraft Extension Before Week 1",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/packers-hope-to-finalize-tucker-kraft-extension-before-week-1",
+   "timestamp": "2026-09-02T02:48:31.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "tucker-kraft"
+   ],
+   "team_abbrs": [
+    "GB"
    ]
   },
   {
@@ -161,6 +197,14 @@
    "team_abbrs": [
     "NE"
    ]
+  },
+  {
+   "id": "xJak5y4rTmjwEBbn",
+   "headline": "Colin Kaepernick says NFL is ‘actively blackballing me’ 10 years after kneeling controversy",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colin-kaepernick-says-nfl-actively-234641725.html",
+   "timestamp": "2026-09-01T23:46:41.000Z",
+   "category": "breaking"
   },
   {
    "id": "DQX9xeK66O5YgDk-",
@@ -1059,17 +1103,6 @@
    ]
   },
   {
-   "id": "pZoYyaNHnsQcfFzE",
-   "headline": "Bears Uncertain If CB Kyler Gordon Will Play In 2026",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bears-uncertain-if-cb-kyler-gordon-will-play-in-2026",
-   "timestamp": "2026-09-01T18:56:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
    "id": "A7l5j4HWweqxlkAe",
    "headline": "Rams add new player to practice squad",
    "source": "Yahoo Sports",
@@ -1271,20 +1304,6 @@
    "category": "breaking",
    "team_abbrs": [
     "SF"
-   ]
-  },
-  {
-   "id": "QX7Nt_hF0zPHdCIl",
-   "headline": "Packers Hope To Finalize Tucker Kraft Extension Before Week 1",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/packers-hope-to-finalize-tucker-kraft-extension-before-week-1",
-   "timestamp": "2026-09-01T17:48:31.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "tucker-kraft"
-   ],
-   "team_abbrs": [
-    "GB"
    ]
   },
   {
@@ -1613,28 +1632,6 @@
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/09/browns-expected-to-sign-de-sam-williams",
    "timestamp": "2026-09-01T16:12:51.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "gbV5JMH5cxG4Hw0q",
-   "headline": "George Kittle: Going through team drills",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
-   "timestamp": "2026-09-01T16:12:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ]
-  },
-  {
-   "id": "QZxQq6YT9wjoooZu",
-   "headline": "Reports: Browns plan to sign DE Sam Williams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/reports-browns-plan-sign-sam-160752349.html",
-   "timestamp": "2026-09-01T16:07:52.000Z",
    "category": "transaction",
    "team_abbrs": [
     "CLE"
