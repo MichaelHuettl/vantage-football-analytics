@@ -4,6 +4,50 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "7l6bVawMp-1usHEO",
+   "headline": "San Francisco 49ers WR Mike Evans to practice next week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/san-francisco-49ers-wr-mike-015920250.html",
+   "timestamp": "2026-09-02T01:59:20.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "25v98DYlIRGPMiZd",
+   "headline": "Dolphins add two familiar faces to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-add-two-familiar-faces-014956906.html",
+   "timestamp": "2026-09-02T01:49:56.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "CXYsqj8EB7LBKJZL",
+   "headline": "Saints place S Lorenzo Styles Jr on injured reserve",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-place-lorenzo-styles-jr-014939993.html",
+   "timestamp": "2026-09-02T01:49:39.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "TBw6RoQ1iecSQXkh",
+   "headline": "Chicago Bears offer floor and ceiling cases in Round 4 of Yahoo Fantasy Expert League draft",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/chicago-bears-offer-floor-and-ceiling-cases-in-round-4-of-yahoo-fantasy-expert-league-draft-014700275.html",
+   "timestamp": "2026-09-02T01:47:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
    "id": "whBlPB0ocR1-WISi",
    "headline": "Long list of former Browns who didn’t make final rosters this past week",
    "source": "Yahoo Sports",
@@ -288,6 +332,17 @@
    ]
   },
   {
+   "id": "f2MQ7FJdHbpKTYQe",
+   "headline": "Rams rumors: Aaron Donald’s mysterious Rams Week 1 status less likely",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-rumors-aaron-donald-mysterious-214921125.html",
+   "timestamp": "2026-09-01T21:49:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "M5yZYrReZyMVkSmd",
    "headline": "Bears Place S Coby Bryant On IR, Bring Back LB Jack Sanborn",
    "source": "Pro Football Rumors",
@@ -305,6 +360,17 @@
    "url": "https://sports.yahoo.com/articles/iowa-football-former-hawks-impacted-213959675.html",
    "timestamp": "2026-09-01T21:39:59.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "BUdu7dyvE1iBRTEz",
+   "headline": "Pushing back on idea that Patriots' depth issues will doom team in 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pushing-back-idea-patriots-depth-213733640.html",
+   "timestamp": "2026-09-01T21:37:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
   },
   {
    "id": "QhB_kd6OcRqL7htx",
@@ -1569,75 +1635,6 @@
    "url": "https://sports.yahoo.com/nfl/article/colin-kaepernick-wont-support-nfl-says-league-is-actively-blackballing-me-and-others-who-protested-155736084.html",
    "timestamp": "2026-09-01T15:57:36.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "OJ_JwxybYwviawmw",
-   "headline": "Eagles practice squad tracker news: Signings, waiver claims, roster updates, and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-practice-squad-tracker-news-120800153.html",
-   "timestamp": "2026-09-01T15:55:52.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "qbc2YCubEgn2sZCK",
-   "headline": "Packers GM expects Josh Jacobs to play in 2026",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-gm-expects-josh-jacobs-155234924.html",
-   "timestamp": "2026-09-01T15:52:34.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "4NZjOKjQxJM_2cuA",
-   "headline": "Panthers sign LB Tyrel Dodson to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-sign-lb-tyrel-dodson-154415808.html",
-   "timestamp": "2026-09-01T15:44:15.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "Im_ANUeCG5tW6jW8",
-   "headline": "Chicago Bears Roster Moves: Coby Bryant to IR, Jack Sanborn signed",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-roster-moves-coby-154108363.html",
-   "timestamp": "2026-09-01T15:41:08.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "vqbByoeNtVIVoEKc",
-   "headline": "Lions To Re-Sign TE Tyler Conklin",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/lions-to-re-sign-te-tyler-conklin",
-   "timestamp": "2026-09-01T15:40:03.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "vY7RMdO7Mcdabe7B",
-   "headline": "Texans put Braden Smith on IR, re-sign Brevin Jordan and Dominique Robinson",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-put-braden-smith-ir-153543132.html",
-   "timestamp": "2026-09-01T15:35:43.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "HOU"
-   ]
   }
  ]
 }
