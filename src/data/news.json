@@ -4,6 +4,81 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "UmxDNoKJVTVQcTf4",
+   "headline": "'Not the same Roger.' 20 years in, Goodell's NFL is bigger than ever | Opinion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/not-same-roger-20-years-102030090.html",
+   "timestamp": "2026-09-03T10:20:30.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "VejLDRvzkL6Cr2w5",
+   "headline": "Evan Engram offers insight on Jaylen Waddle",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/evan-engram-offers-insight-jaylen-100000466.html",
+   "timestamp": "2026-09-03T10:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaylen-waddle",
+    "evan-engram"
+   ]
+  },
+  {
+   "id": "qIL2rMWJWpOzrIsM",
+   "headline": "Patriots rookie found out he made the roster via Instagram",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-rookie-found-made-roster-100000062.html",
+   "timestamp": "2026-09-03T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "5RRBg8an7Y2rxdvZ",
+   "headline": "Bengals News: No deal for DJ Turner?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bengals-news-no-deal-dj-100000216.html",
+   "timestamp": "2026-09-03T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "e74WYwaxR9idobn0",
+   "headline": "The Bear’s Den: Chicago is hot, and so are the Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bear-den-chicago-hot-bears-100000423.html",
+   "timestamp": "2026-09-03T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "a8o9lMpuccZzRGsc",
+   "headline": "Cleveland Browns news: Making a plan is easy. Executing it is hard.",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-making-plan-100000232.html",
+   "timestamp": "2026-09-03T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "z2lYOQodzDVzA3kI",
+   "headline": "NY Giants news: Joe Schoen, John Harbaugh on expectations; more headlines",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ny-giants-news-joe-schoen-100000650.html",
+   "timestamp": "2026-09-03T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
    "id": "ExPOkLKHH_dLEW8e",
    "headline": "Former NFL CB Alphonso Smith Jr. dies at 40",
    "source": "Yahoo Sports",
@@ -1552,83 +1627,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "GxrsTms9l7_WLISP",
-   "headline": "Lions GM Brad Holmes responds to criticism over handling of Terrion Arnold situation",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-gm-brad-holmes-responds-150126072.html",
-   "timestamp": "2026-09-02T15:01:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "6ieMQPTTlxJuxG54",
-   "headline": "Raiders roster 2026: Get to know Darrell Luter",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-roster-2026-know-darrell-150100572.html",
-   "timestamp": "2026-09-02T15:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "_LmcgrMDHIwCsnid",
-   "headline": "Here’s the first Seahawks unofficial 2026 regular season depth chart",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/first-seahawks-unofficial-2026-regular-150000727.html",
-   "timestamp": "2026-09-02T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "FkLNKKvH7mb8nqCZ",
-   "headline": "Patriots devised perfect way to mess with opposing field-goal kickers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-devised-perfect-way-mess-145553783.html",
-   "timestamp": "2026-09-02T14:55:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "9ndwlYM0kiWL4Ow0",
-   "headline": "Predict the Titans win total",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/predict-titans-win-total-145122997.html",
-   "timestamp": "2026-09-02T14:51:22.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "xpTrWLQMprpXJroL",
-   "headline": "Eagles News: “The Eagles are about as under the radar as can be”",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-eagles-under-radar-144506242.html",
-   "timestamp": "2026-09-02T14:45:06.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "Tv1zFm-xmKhqP-rU",
-   "headline": "Biggest surprises and questions from the Steelers’ initial 53-man roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/biggest-surprises-questions-steelers-initial-143757430.html",
-   "timestamp": "2026-09-02T14:37:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
    ]
   }
  ]
