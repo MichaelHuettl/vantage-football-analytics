@@ -4,6 +4,81 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "cjvIK4CXt3cWZy7v",
+   "headline": "2026 NFL schedule: Dates, times, matchups, TV, live streaming for all 272 games",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-schedule-dates-times/",
+   "timestamp": "2026-09-03T21:23:46.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "KfeuVxVR5gDbnuKo",
+   "headline": "NFL says Patriots' distracting video board tactic did not violate league rules",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-says-patriots-distracting-video-board-tactic-legal/",
+   "timestamp": "2026-09-03T21:20:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "NxBjuJYFmaIc1M4R",
+   "headline": "D'Andre Swift: Leaves practice with injury",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/dandre-swift-14394",
+   "timestamp": "2026-09-03T21:20:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "dandre-swift"
+   ]
+  },
+  {
+   "id": "jdnWDudhOqlFI-cW",
+   "headline": "Offseason In Review: Minnesota Vikings",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-minnesota-vikings-7",
+   "timestamp": "2026-09-03T21:15:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "YvkJhVjwHyIMmMdM",
+   "headline": "DJ Turner opens up about contract talks, which may be headed toward familiar territory for the Bengals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dj-turner-opens-contract-talks-211153683.html",
+   "timestamp": "2026-09-03T21:11:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "hBZDAKIW4fAj6UYN",
+   "headline": "Recently released Steelers LB signs with Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/recently-released-steelers-lb-signs-210736952.html",
+   "timestamp": "2026-09-03T21:07:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "PIT"
+   ]
+  },
+  {
+   "id": "_wWgNLcSwbrtMQZV",
+   "headline": "Cowboys countdown to kickoff: Top 100 iconic games – Day 10",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-countdown-kickoff-top-100-210000645.html",
+   "timestamp": "2026-09-03T21:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "nb05YL6osfhL5GfB",
    "headline": "Nnamdi Madubuike did team drills at Ravens practice Thursday",
    "source": "Yahoo Sports",
@@ -236,6 +311,17 @@
    ]
   },
   {
+   "id": "1uhN9Fk4jFiy_qy3",
+   "headline": "Caleb Williams: Coach talks him up",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/caleb-williams-17695",
+   "timestamp": "2026-09-03T19:24:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "caleb-williams"
+   ]
+  },
+  {
    "id": "ym2Yr3jxGOlFGI3V",
    "headline": "Former Lions, Broncos CB Alphonso Smith Jr. dies at 40",
    "source": "Yahoo Sports",
@@ -256,6 +342,17 @@
    "category": "breaking",
    "team_abbrs": [
     "ATL"
+   ]
+  },
+  {
+   "id": "jDWmawFyDnDW5sQJ",
+   "headline": "Giants signing LB Malik Harrison to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-signing-lb-malik-harrison-191034171.html",
+   "timestamp": "2026-09-03T19:10:34.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -1541,100 +1638,6 @@
    "category": "breaking",
    "team_abbrs": [
     "CIN"
-   ]
-  },
-  {
-   "id": "e74WYwaxR9idobn0",
-   "headline": "The Bear’s Den: Chicago is hot, and so are the Bears",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bear-den-chicago-hot-bears-100000423.html",
-   "timestamp": "2026-09-03T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "a8o9lMpuccZzRGsc",
-   "headline": "Cleveland Browns news: Making a plan is easy. Executing it is hard.",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-making-plan-100000232.html",
-   "timestamp": "2026-09-03T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "z2lYOQodzDVzA3kI",
-   "headline": "NY Giants news: Joe Schoen, John Harbaugh on expectations; more headlines",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ny-giants-news-joe-schoen-100000650.html",
-   "timestamp": "2026-09-03T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "ExPOkLKHH_dLEW8e",
-   "headline": "Former NFL CB Alphonso Smith Jr. dies at 40",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/former-nfl-cb-alphonso-smith-095423509.html",
-   "timestamp": "2026-09-03T09:54:23.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Fenm4kCpYrAdmdU4",
-   "headline": "Kayshon Boutte opens up about trade from Patriots to Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kayshon-boutte-opens-trade-patriots-092235719.html",
-   "timestamp": "2026-09-03T09:22:35.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "HOU",
-    "NE"
-   ]
-  },
-  {
-   "id": "kLzm-_CnkxAp37ex",
-   "headline": "49ers DE Sam Okuayinonu not on team flight to Australia, questionable with foot injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-sam-okuayinonu-not-team-091800500.html",
-   "timestamp": "2026-09-03T09:18:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "RJmfTuHp4eZFVVpq",
-   "headline": "49ers News: We are officially one week away from real football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-news-officially-one-week-090000823.html",
-   "timestamp": "2026-09-03T09:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "Hi8UNEPgspQ2hHc9",
-   "headline": "Who are the British players in the NFL?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/british-players-nfl-075039369.html",
-   "timestamp": "2026-09-03T07:50:39.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "MrKltvMm5e1LFUFu",
-   "headline": "Can Dontayvion Wicks elevate his game enough to become Eagles' WR2?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dontayvion-wicks-elevate-game-enough-070000120.html",
-   "timestamp": "2026-09-03T07:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
    ]
   }
  ]
