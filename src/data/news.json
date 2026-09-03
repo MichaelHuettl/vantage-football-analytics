@@ -4,6 +4,54 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "h2Z1PCHvTl-qlbrq",
+   "headline": "49ers land in Melbourne ahead of next week's game vs. Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-land-melbourne-ahead-next-220906800.html",
+   "timestamp": "2026-09-03T22:09:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "TcWzm-ETzKOXs9ZF",
+   "headline": "Bears' Rome Odunze, D'Andre Swift hurt at practice. Injury updates, what to know",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-rome-odunze-dandre-swift-220508743.html",
+   "timestamp": "2026-09-03T22:05:08.000Z",
+   "category": "injury",
+   "player_ids": [
+    "dandre-swift"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "tJ_2xM7tj_czLNh3",
+   "headline": "NY Giants sign LB Malik Harrison",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ny-giants-sign-lb-malik-215954609.html",
+   "timestamp": "2026-09-03T21:59:54.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "_mV-OcOOc0sE9Isd",
+   "headline": "Saints surprisingly waive two players with injury settlements",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-surprisingly-waive-two-players-215850908.html",
+   "timestamp": "2026-09-03T21:58:50.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
    "id": "8anmZBPmw_z3Ff0k",
    "headline": "Browns new DE Sam Williams: Everything you need to know from childhood to the pros",
    "source": "Yahoo Sports",
@@ -12,6 +60,17 @@
    "category": "breaking",
    "team_abbrs": [
     "CLE"
+   ]
+  },
+  {
+   "id": "YeYUJ3gMwBAVNyRg",
+   "headline": "Cowboys' Von Miller secures desired No. 40 from teammate with rare compensation that could last a lifetime",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cowboys-von-miller-no-40-uniform-teammate-compensation/",
+   "timestamp": "2026-09-03T21:48:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
    ]
   },
   {
@@ -1585,61 +1644,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "lgEBpPEvcgJYSR-2",
-   "headline": "Tennessee Titans news: Robert Saleh going all in on Cam Ward",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tennessee-titans-news-robert-saleh-110000015.html",
-   "timestamp": "2026-09-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "hjwBzYShbpdH7k3o",
-   "headline": "Fleur-de-links, September 3: Could the Saints’ new practice-squad WR play Week 1?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fleur-links-september-3-could-110000019.html",
-   "timestamp": "2026-09-03T11:00:00.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "U2M3wKZJ6eYp1vzO",
-   "headline": "New York Jets Flight Connections 09/03/26",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-flight-connections-09-110000524.html",
-   "timestamp": "2026-09-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "PHltjFwEqhInl9m1",
-   "headline": "Cardinals make small roster adjustments",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cardinals-small-roster-adjustments-110000914.html",
-   "timestamp": "2026-09-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "BpXw1Qy1NdBX_iaT",
-   "headline": "Which Lions RB will get the majority of Isiah Pacheco’s snaps?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-rb-majority-isiah-pacheco-110000769.html",
-   "timestamp": "2026-09-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
    ]
   }
  ]
