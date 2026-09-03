@@ -4,6 +4,76 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "nb05YL6osfhL5GfB",
+   "headline": "Nnamdi Madubuike did team drills at Ravens practice Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nnamdi-madubuike-did-team-drills-204858143.html",
+   "timestamp": "2026-09-03T20:48:58.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "KpLmKoWC-SoNyRAs",
+   "headline": "Agent's Take: Why the Patriots and superstar Christian Gonzalez are embroiled in a contract impasse",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/agents-take-why-the-patriots-and-superstar-christian-gonzalez-are-embroiled-in-a-contract-impasse/",
+   "timestamp": "2026-09-03T20:48:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "CfsZbvs6J8vvUy45",
+   "headline": "Patriots up-to-date depth chart: Who is on the roster right now?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-date-depth-chart-roster-202222083.html",
+   "timestamp": "2026-09-03T20:45:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "6cIL9ShVjgOuK5Un",
+   "headline": "Former Steelers coach Mike Tomlin 'having the time of my life' in retirement",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-having-the-time-of-my-life-in-retirement/",
+   "timestamp": "2026-09-03T20:45:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "MnTBUtfOvsBP4ilg",
+   "headline": "Mike Tomlin explains why Steelers traded George Pickens",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mike-tomlin-explains-why-steelers-204456822.html",
+   "timestamp": "2026-09-03T20:44:56.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-pickens"
+   ],
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "RGX_kA9B2AYJDnDK",
+   "headline": "Patriots add former Saints safety to practice squad, release defensive tackle",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-add-former-saints-safety-204256727.html",
+   "timestamp": "2026-09-03T20:42:56.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NE",
+    "NO"
+   ]
+  },
+  {
    "id": "PTEFAeAVtNSFLuON",
    "headline": "Giants To Sign LB Malik Harrison",
    "source": "Pro Football Rumors",
@@ -418,17 +488,6 @@
    "category": "breaking"
   },
   {
-   "id": "6cIL9ShVjgOuK5Un",
-   "headline": "Former Steelers coach Mike Tomlin 'having the time of my life' in retirement",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-having-the-time-of-my-life-in-retirement/",
-   "timestamp": "2026-09-03T17:54:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
    "id": "SwIDt0gg4jQ3Kk12",
    "headline": "Jeremiyah Love: Continues to progress",
    "source": "RotoWire",
@@ -538,17 +597,6 @@
    "category": "practice",
    "player_ids": [
     "zay-flowers"
-   ]
-  },
-  {
-   "id": "KpLmKoWC-SoNyRAs",
-   "headline": "Agent's Take: Why the Patriots and superstar Christian Gonzalez are embroiled in a contract impasse",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/agents-take-why-the-patriots-and-superstar-christian-gonzalez-are-embroiled-in-a-contract-impasse/",
-   "timestamp": "2026-09-03T17:14:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
    ]
   },
   {
@@ -1587,47 +1635,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PHI"
-   ]
-  },
-  {
-   "id": "qeluE6QlktrVJlkL",
-   "headline": "Eagles TEs coach excited about Stowers' development, but preaches patience",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-tes-coach-excited-stowers-070000954.html",
-   "timestamp": "2026-09-03T07:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "N_H5O-YuXFAXDN7c",
-   "headline": "From true contenders to tankers, ranking all 32 NFL teams by tiers entering the season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/from-true-contenders-to-tankers-ranking-all-32-nfl-teams-by-tiers-entering-the-season-051206810.html",
-   "timestamp": "2026-09-03T05:12:06.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "3Y4nUu1-7ktmlnN-",
-   "headline": "Raiders Name Kirk Cousins Starting QB",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/raiders-name-kirk-cousins-starting-qb",
-   "timestamp": "2026-09-03T04:30:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "nqPy00xYVmN8Hnaf",
-   "headline": "Texans Willing To Pay C.J. Stroud $50MM+ Per Year; QB Likely To Play Season Without Deal",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/texans-willing-to-pay-c-j-stroud-50mm-per-year-qb-likely-to-play-season-without-deal",
-   "timestamp": "2026-09-03T04:25:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
    ]
   }
  ]
