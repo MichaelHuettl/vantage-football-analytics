@@ -4,6 +4,62 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "TOrNYxcBR-KSnkYP",
+   "headline": "Sean Payton: We're preparing for Patrick Mahomes at his best",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-payton-were-preparing-patrick-135609389.html",
+   "timestamp": "2026-09-03T13:56:09.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "S8atHcA1ffOe0v_f",
+   "headline": "49ers, Rams taking opposite approaches to longest road trip in NFL history",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-rams-taking-opposite-approaches-135137989.html",
+   "timestamp": "2026-09-03T13:51:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "bSfHD_IPtRtEvawZ",
+   "headline": "Los Angeles Chargers news: McConkey, Johnston eye top-20 placement in Bolts receiving history",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-mcconkey-135000370.html",
+   "timestamp": "2026-09-03T13:50:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "v8e-aBkGuLo3W8og",
+   "headline": "Can the Chiefs establish a superpower this season?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-establish-superpower-season-133000243.html",
+   "timestamp": "2026-09-03T13:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "EL27hR_z7ODdFvB-",
+   "headline": "49ers pass rush takes another hit as starter listed as questionable with a foot injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-pass-rush-takes-another-133000964.html",
+   "timestamp": "2026-09-03T13:30:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "efeQjf3az5LgvCaJ",
    "headline": "Will CB Melvin Smith add something to Titans, or is he just another Jalyn Armour-Davis?",
    "source": "Yahoo Sports",
@@ -327,7 +383,7 @@
   },
   {
    "id": "UmxDNoKJVTVQcTf4",
-   "headline": "'Not the same Roger.' 20 years in, Goodell's NFL is bigger than ever | Opinion",
+   "headline": "Roger Goodell spent 20 years taking hits. The NFL never stopped winning | Opinion",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/not-same-roger-20-years-102030090.html",
    "timestamp": "2026-09-03T10:20:30.000Z",
@@ -1572,62 +1628,6 @@
    "category": "breaking",
    "team_abbrs": [
     "JAX",
-    "PHI"
-   ]
-  },
-  {
-   "id": "9pdaGKeaHw3NwySQ",
-   "headline": "Dolphins vs. Raiders: Kirk Cousins named starter for Las Vegas in Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-vs-raiders-kirk-cousins-170839733.html",
-   "timestamp": "2026-09-02T17:08:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "MIA"
-   ]
-  },
-  {
-   "id": "UtXCOYe5aww8dWjP",
-   "headline": "Joey Porter Jr may request trade from Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/joey-porter-jr-may-request-170655725.html",
-   "timestamp": "2026-09-02T17:06:55.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "LZXDc2ADzs77teN9",
-   "headline": "Raiders third-round pick Keyron Crawford to miss season with Achilles injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-third-round-pick-keyron-170243185.html",
-   "timestamp": "2026-09-02T17:02:43.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "EqGq6eUaJQC2Blf-",
-   "headline": "Can De’Zhaun Stribling break any 49ers’ rookie records this year?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/zhaun-stribling-break-49ers-rookie-170100369.html",
-   "timestamp": "2026-09-02T17:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "7nXlb7TGJUs5eF_H",
-   "headline": "Howie Roseman explains why the Eagles kept 4 quarterbacks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/howie-roseman-explains-why-eagles-170022998.html",
-   "timestamp": "2026-09-02T17:00:22.000Z",
-   "category": "breaking",
-   "team_abbrs": [
     "PHI"
    ]
   }
