@@ -4,6 +4,114 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "3lvV1ds4bixuxIHi",
+   "headline": "Josh Allen’s spot reveled in NFL’s Top 100 Players list",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-allen-spot-reveled-nfl-143005455.html",
+   "timestamp": "2026-09-03T14:30:05.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen"
+   ]
+  },
+  {
+   "id": "UJhVKOtNDJSQQ-Wy",
+   "headline": "Philadelphia Eagles live chat: Ask me anything",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/philadelphia-eagles-live-chat-ask-142129627.html",
+   "timestamp": "2026-09-03T14:21:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "1OWDNk_DdtkBjHz4",
+   "headline": "Was Rams’ Myles Garrett the No. 1 player in NFL’s top 100 players?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-myles-garrett-no-1-141500151.html",
+   "timestamp": "2026-09-03T14:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "F-552ONZHR9cSpyz",
+   "headline": "Pre-Snap Reads: Realistic expectations for Jadarian Price in 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pre-snap-reads-realistic-expectations-141318123.html",
+   "timestamp": "2026-09-03T14:13:18.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "bFuflTAqxF2e8_ZI",
+   "headline": "Ranking NFL's top 10 quarterback-coach duos for 2026: Patrick Mahomes, Andy Reid dethroned by NFC West risers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/ranking-nfls-top-10-quarterback-coach-duos-for-2026/",
+   "timestamp": "2026-09-03T14:09:32.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "IS4AVRIVPKGjOrTv",
+   "headline": "Falcons Undecided On Starting QB",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/falcons-undecided-on-starting-qb",
+   "timestamp": "2026-09-03T14:06:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "csCNPEX3igF6BBqY",
+   "headline": "Patriots' video tactic for field goals was, and still is, legal",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-video-tactic-field-goals-140222934.html",
+   "timestamp": "2026-09-03T14:02:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "h9k5RvcZXoMr7Pq3",
+   "headline": "C.J. Stroud’s contract negotiations with Houston Texans could be a win-win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/c-j-stroud-contract-negotiations-140210038.html",
+   "timestamp": "2026-09-03T14:02:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "hMCQM1n7i22R8CZX",
+   "headline": "6 defensive linemen the NY Giants should consider signing",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/6-defensive-linemen-ny-giants-140000322.html",
+   "timestamp": "2026-09-03T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "w7OPmzs8qB1S27XK",
+   "headline": "How much the Patriots roster has changed since Super Bowl loss to Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/much-patriots-roster-changed-since-140000861.html",
+   "timestamp": "2026-09-03T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
    "id": "TOrNYxcBR-KSnkYP",
    "headline": "Sean Payton: We're preparing for Patrick Mahomes at his best",
    "source": "Yahoo Sports",
@@ -28,11 +136,14 @@
   },
   {
    "id": "bSfHD_IPtRtEvawZ",
-   "headline": "Los Angeles Chargers news: McConkey, Johnston eye top-20 placement in Bolts receiving history",
+   "headline": "Chargers news: Ladd McConkey, Quentin Johnston eye top-20 placement in Bolts receiving history",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-mcconkey-135000370.html",
    "timestamp": "2026-09-03T13:50:00.000Z",
    "category": "breaking",
+   "player_ids": [
+    "ladd-mcconkey"
+   ],
    "team_abbrs": [
     "LAC"
    ]
@@ -1527,108 +1638,6 @@
    "category": "practice",
    "team_abbrs": [
     "GB"
-   ]
-  },
-  {
-   "id": "gn-_wuN60v2fqFLV",
-   "headline": "NFL Rookie of the Year Odds: Jeremiyah Love, Rueben Bain Jr. Emerge as Early Favorites",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-rookie-odds-emeka-egbuka-155300006.html",
-   "timestamp": "2026-09-02T17:32:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jeremiyah-love"
-   ]
-  },
-  {
-   "id": "ic7D0GnLchXMm_El",
-   "headline": "GM Joe Schoen happy with Giants roster, expects to compete 'week in and week out'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/gm-joe-schoen-happy-giants-173001300.html",
-   "timestamp": "2026-09-02T17:30:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "LFOrYsUyy6zRmcaC",
-   "headline": "Zay Flowers: Runs on side Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/zay-flowers-16919",
-   "timestamp": "2026-09-02T17:30:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "zay-flowers"
-   ]
-  },
-  {
-   "id": "2AcYXkxLdijQPa2a",
-   "headline": "Ty Simpson preseason film breakdown",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ty-simpson-preseason-film-breakdown-172929637.html",
-   "timestamp": "2026-09-02T17:29:29.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "pN8xtSwztijzVFOC",
-   "headline": "Vikings GM Nolan Teasley: J.J. McCarthy is practicing, expect him on Week 1 roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikings-gm-nolan-teasley-j-172721082.html",
-   "timestamp": "2026-09-02T17:27:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "8c3z5GQ_Wov39ME4",
-   "headline": "How many teams will be looking for a QB in the first round of 2027 NFL Draft? There might not be enough QBs to go around",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/how-many-teams-will-be-looking-for-a-qb-in-the-first-round-of-2027-nfl-draft-there-might-not-be-enough-qbs-to-go-around-172420394.html",
-   "timestamp": "2026-09-02T17:24:20.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "1GNIzrV_07G9br1U",
-   "headline": "Jonathon Brooks: Optimism for Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jonathon-brooks-17747",
-   "timestamp": "2026-09-02T17:24:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "fL4_njnyZ4aUG7hD",
-   "headline": "Giants add former NJ star offensive lineman to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-add-former-nj-star-171717343.html",
-   "timestamp": "2026-09-02T17:17:17.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "6Jymv3JFtrS97EaJ",
-   "headline": "Chris Jones out of practice with back injury, Chiefs expect he'll be fine",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chris-jones-practice-back-injury-171356080.html",
-   "timestamp": "2026-09-02T17:13:56.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "oDSr4E5AckKtbimf",
-   "headline": "Week 1 NFL odds, lines, best bets, predictions: Computer model backs Eagles and Jaguars",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-1-nfl-2026-odds-lines-spreads-predictions-picks/",
-   "timestamp": "2026-09-02T17:09:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "PHI"
    ]
   }
  ]
