@@ -4,6 +4,79 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "5BwqDx5zWXBTEF9J",
+   "headline": "5 2027 NFL Draft prospects for Falcons fans to watch on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-2027-nfl-draft-prospects-185525089.html",
+   "timestamp": "2026-09-03T18:55:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "LR3Ozplltw-tCZgp",
+   "headline": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/puka-nacua-suspension-watch-will-nfl-discipline-rams-star/",
+   "timestamp": "2026-09-03T18:53:55.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "7WicPX_wK5lGJoat",
+   "headline": "Will the 49ers benefit from any Rams suspensions ahead of Week 1?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-benefit-rams-suspensions-ahead-185126205.html",
+   "timestamp": "2026-09-03T18:51:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "l8O9cgKLjeEqMLvY",
+   "headline": "When did the Rams last beat teams on the 2026 schedule?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/did-rams-last-beat-teams-184500194.html",
+   "timestamp": "2026-09-03T18:45:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "IIY6W0W4m6k84i1t",
+   "headline": "Jets Host QBs Will Levis, Jack Plummer",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/jets-host-qbs-will-levis-jack-plummer",
+   "timestamp": "2026-09-03T18:44:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "8tVvjxLa7Ff4LaOS",
+   "headline": "Jayden Daniels, pass rush among four Commanders roster strengths",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jayden-daniels-pass-rush-among-182706165.html",
+   "timestamp": "2026-09-03T18:27:06.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jayden-daniels"
+   ],
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
    "id": "Dp-ldiF40E4hZA4c",
    "headline": "Jets work out two quarterbacks including Will Levis",
    "source": "Yahoo Sports",
@@ -1573,69 +1646,6 @@
    "category": "breaking",
    "team_abbrs": [
     "MIA"
-   ]
-  },
-  {
-   "id": "EIWwGzUsrjFYokAZ",
-   "headline": "Bears Over Beers Happy Hour and Open Thread: Bears Trade Incoming?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-over-beers-happy-hour-000000487.html",
-   "timestamp": "2026-09-03T00:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "fZ8bbPXgfi45SSAm",
-   "headline": "Giants should be ‘competitive week in and week out’, says Joe Schoen",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-competitive-week-week-says-235023547.html",
-   "timestamp": "2026-09-02T23:50:23.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "7HroVWD-p0f8HYpc",
-   "headline": "Jaguars Have Engaged WR Parker Washington In Extension Talks",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/jaguars-have-engaged-wr-parker-washington-in-extension-talks",
-   "timestamp": "2026-09-02T23:36:30.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "KLpLSSzkN7K9zYYB",
-   "headline": "Aaron Rodgers is in a four-quarterback room for the first time",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-rodgers-four-quarterback-room-233606549.html",
-   "timestamp": "2026-09-02T23:36:06.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "zx9LKIRBgaBrJyLf",
-   "headline": "Cleveland Browns have a strategy that may just be crazy enough to work",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-strategy-may-just-231052235.html",
-   "timestamp": "2026-09-02T23:10:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "0W3Bg6FXGrXpef4B",
-   "headline": "Buffalo Bills initial 2026 roster carries a few surprises",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buffalo-bills-initial-2026-roster-230220578.html",
-   "timestamp": "2026-09-02T23:02:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
    ]
   }
  ]
