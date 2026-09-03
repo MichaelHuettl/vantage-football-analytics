@@ -4,6 +4,108 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "z8OMSo33RH3Izduk",
+   "headline": "Cardinals, WR Michael Wilson agree to reported 3-year, $75 million extension",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/cardinals-wr-michael-wilson-agree-to-reported-3-year-75-million-extension-171652477.html",
+   "timestamp": "2026-09-03T17:16:52.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "gO0j10x1H1gO1jAb",
+   "headline": "Zay Flowers returned to practice Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/zay-flowers-returned-practice-thursday-171536942.html",
+   "timestamp": "2026-09-03T17:15:36.000Z",
+   "category": "practice",
+   "player_ids": [
+    "zay-flowers"
+   ]
+  },
+  {
+   "id": "KpLmKoWC-SoNyRAs",
+   "headline": "Agent's Take: Why the Patriots and superstar Christian Gonzalez are embroiled in a contract impasse",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/agents-take-why-the-patriots-and-superstar-christian-gonzalez-are-embroiled-in-a-contract-impasse/",
+   "timestamp": "2026-09-03T17:14:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "tqKzziWTZ0c4t3Am",
+   "headline": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Panthers-Bears, Vikings-Packers markets",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-panthers-bears-vikings-packers-markets/",
+   "timestamp": "2026-09-03T17:11:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "CHI",
+    "GB",
+    "MIN"
+   ]
+  },
+  {
+   "id": "ePZqxksXxJUI70f1",
+   "headline": "What did the preseason show us about the Las Vegas Raiders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/did-preseason-show-us-las-170900222.html",
+   "timestamp": "2026-09-03T17:09:00.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "BsHjjuoFCYecEDST",
+   "headline": "ESPN’s ‘bold surprise’ for Cowboys involves Caleb Downs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/espn-bold-surprise-cowboys-involves-170000514.html",
+   "timestamp": "2026-09-03T17:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "8AJ0RNiF92iBrcZe",
+   "headline": "Is Kentavius Street really the best Chicago Bears defensive tackle?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kentavius-street-really-best-chicago-170000876.html",
+   "timestamp": "2026-09-03T17:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "pLdIbItSZLc0zPvB",
+   "headline": "NFL teams that can win Super Bowl, top QB-coach combos for 2026 and 49ers just left for Australia",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-teams-that-can-win-super-bowl-top-qb-coach-combos-for-2026-and-49ers-just-left-for-australia/",
+   "timestamp": "2026-09-03T16:58:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "21Ftm4Ys-rkkAIJq",
+   "headline": "Colts name 5 team captains for 2026 campaign",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-name-5-team-captains-165712385.html",
+   "timestamp": "2026-09-03T16:57:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
    "id": "D7xPA_uXwMeOcGzl",
    "headline": "Anthony Richardson Wins Colts’ Backup QB Competition",
    "source": "Pro Football Rumors",
@@ -23,20 +125,6 @@
    "category": "breaking",
    "team_abbrs": [
     "BUF"
-   ]
-  },
-  {
-   "id": "tqKzziWTZ0c4t3Am",
-   "headline": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Panthers-Bears, Vikings-Packers markets",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-panthers-bears-vikings-packers-markets/",
-   "timestamp": "2026-09-03T16:38:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "CHI",
-    "GB",
-    "MIN"
    ]
   },
   {
@@ -1538,95 +1626,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "gdIT3i2YDMyyJTU8",
-   "headline": "Shemar Stewart continues to progress toward return for Bengals vs. Bucs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/shemar-stewart-continues-progress-toward-205850425.html",
-   "timestamp": "2026-09-02T20:58:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "Uf5Aph9XQIyvnALl",
-   "headline": "Steelers sign former Titans safety, round out practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-sign-former-titans-safety-205155607.html",
-   "timestamp": "2026-09-02T20:51:55.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PIT",
-    "TEN"
-   ]
-  },
-  {
-   "id": "SVxaOlP4H_iKsr5I",
-   "headline": "John Harbaugh, Greg Newsome II weigh in on Giants cornerback competition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/john-harbaugh-greg-newsome-ii-204353053.html",
-   "timestamp": "2026-09-02T20:43:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "CfsZbvs6J8vvUy45",
-   "headline": "Patriots up-to-date depth chart: Who is on the roster right now?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-date-depth-chart-roster-202222083.html",
-   "timestamp": "2026-09-02T20:42:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "sWIdBBhHZS3-3VEo",
-   "headline": "49ers injury updates: Nick Bosa opens up about his recovery; 2 rookies still out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-injury-updates-nick-bosa-204159812.html",
-   "timestamp": "2026-09-02T20:41:59.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "yAlEmvCn5ICzBgwW",
-   "headline": "Patriots sign tight end Shane Zylstra to practice squad, reach settlements with two rookies",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-sign-tight-end-shane-203945171.html",
-   "timestamp": "2026-09-02T20:39:45.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "xIc9rbaA1UzZJU_T",
-   "headline": "Khalil Shakir: Optimism regarding Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/khalil-shakir-15892",
-   "timestamp": "2026-09-02T20:35:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "uIYXqOrAUYx_GtJe",
-   "headline": "Lions waive RB Jabari Small, C Seth McLaughlin",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-waive-rb-jabari-small-203315688.html",
-   "timestamp": "2026-09-02T20:33:15.000Z",
-   "category": "injury",
-   "player_ids": [
-    "chase-mclaughlin"
-   ],
-   "team_abbrs": [
-    "DET"
    ]
   }
  ]
