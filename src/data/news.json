@@ -4,6 +4,31 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "5NR9u3_LB62HZhg1",
+   "headline": "Why the Bengals may choose not to extend DJ Turner, Dax Hill, or Chase Brown right now",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/why-bengals-may-choose-not-231021674.html",
+   "timestamp": "2026-09-03T23:10:21.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "chase-brown"
+   ],
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "dW6Tl2B8igwBRMKP",
+   "headline": "Former Giants Super Bowl champion questions both top-10 NFL Draft picks, calls one a 'tremendous risk'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/giants-arvell-reese-francis-mauigoa-2026-nfl-draft-picks/",
+   "timestamp": "2026-09-03T23:06:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
    "id": "_nr1qhhku_921NfZ",
    "headline": "Giants' Cam Skattebo considered retirement after gruesome injury; explains relationship with John Harbaugh",
    "source": "CBS Sports",
@@ -15,6 +40,17 @@
    ],
    "team_abbrs": [
     "NYG"
+   ]
+  },
+  {
+   "id": "_CLeGUpus2Gv32e6",
+   "headline": "Ravens re-sign CB Lardarius Webb Jr. to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-sign-cb-lardarius-webb-225558751.html",
+   "timestamp": "2026-09-03T22:55:58.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "BAL"
    ]
   },
   {
@@ -404,17 +440,6 @@
    "url": "https://sports.yahoo.com/articles/report-giants-sign-lb-malik-195703020.html",
    "timestamp": "2026-09-03T19:57:03.000Z",
    "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "dW6Tl2B8igwBRMKP",
-   "headline": "Former Giants Super Bowl champion questions both top-10 NFL Draft picks, calls one a 'tremendous risk'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/giants-arvell-reese-francis-mauigoa-2026-nfl-draft-picks/",
-   "timestamp": "2026-09-03T19:54:11.000Z",
-   "category": "breaking",
    "team_abbrs": [
     "NYG"
    ]
@@ -1628,28 +1653,6 @@
    "category": "practice",
    "team_abbrs": [
     "NO"
-   ]
-  },
-  {
-   "id": "PGkUbGVXcCV4ZqVY",
-   "headline": "Renner's 2027 NFL Draft scouting series: Arch Manning tops QB rankings, another passer draws Drake Maye comp",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-qb-rankings-arch-manning/",
-   "timestamp": "2026-09-03T11:53:47.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
-   ]
-  },
-  {
-   "id": "0a2n_Iu2iNabMe3B",
-   "headline": "How did NY Giants’ DT Darius Alexander really play this preseason?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/did-ny-giants-dt-darius-115241882.html",
-   "timestamp": "2026-09-03T11:52:41.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "NYG"
    ]
   }
  ]
