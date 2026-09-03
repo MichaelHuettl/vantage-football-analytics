@@ -4,6 +4,78 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "_nr1qhhku_921NfZ",
+   "headline": "Giants' Cam Skattebo considered retirement after gruesome injury; explains relationship with John Harbaugh",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/giants-cam-skattebo-says-he-considered-retirement/",
+   "timestamp": "2026-09-03T22:56:57.000Z",
+   "category": "injury",
+   "player_ids": [
+    "cam-skattebo"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "mGB_JVDu8lddH_z_",
+   "headline": "Colts name Anthony Richardson backup QB: What's next for former first-rounder with trade request in rearview",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/colts-anthony-richardson-backup-qb-whats-next/",
+   "timestamp": "2026-09-03T22:51:38.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "CBE6G2ZN1Qkyd4Ed",
+   "headline": "Giants RB Cam Skattebo Considered Retiring After 2025 Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/giants-rb-cam-skattebo-considered-retiring-after-2025-injury",
+   "timestamp": "2026-09-03T22:43:40.000Z",
+   "category": "injury",
+   "player_ids": [
+    "cam-skattebo"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "vO_4eTUMe67flDL_",
+   "headline": "Tutu Atwell on Rams return: I feel like I never left",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tutu-atwell-rams-return-feel-224256513.html",
+   "timestamp": "2026-09-03T22:42:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "VJED0PLD7qV33QMP",
+   "headline": "Raiders work out 16 players, including OL Evan Neal, WR Marquez Valdes-Scantling",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-16-players-including-ol-224241773.html",
+   "timestamp": "2026-09-03T22:42:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "42o0tZ66vYla_O5k",
+   "headline": "The fair, unfair criticism of the Detroit Lions’ handling of Terrion Arnold",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/fair-unfair-criticism-detroit-lions-223000754.html",
+   "timestamp": "2026-09-03T22:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
    "id": "h2Z1PCHvTl-qlbrq",
    "headline": "49ers land in Melbourne ahead of next week's game vs. Rams",
    "source": "Yahoo Sports",
@@ -674,20 +746,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "_nr1qhhku_921NfZ",
-   "headline": "Giants' Cam Skattebo considered retirement after gruesome injury; explains relationship with John Harbaugh",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/giants-cam-skattebo-says-he-considered-retirement/",
-   "timestamp": "2026-09-03T18:01:30.000Z",
-   "category": "injury",
-   "player_ids": [
-    "cam-skattebo"
-   ],
-   "team_abbrs": [
-    "NYG"
    ]
   },
   {
@@ -1592,58 +1650,6 @@
    "category": "camp",
    "team_abbrs": [
     "NYG"
-   ]
-  },
-  {
-   "id": "qyN9vpgKZec2j_Nq",
-   "headline": "MarShawn Lloyd: I'm ready for anything the Packers give me",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/marshawn-lloyd-im-ready-anything-115205858.html",
-   "timestamp": "2026-09-03T11:52:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "5XcGxUjWghEWOb4Z",
-   "headline": "Ranking NFL offenses from worst to first in 2026: Browns last, but who's No. 1?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ranking-nfl-offenses-worst-first-115016802.html",
-   "timestamp": "2026-09-03T11:50:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "VJtcCnqbH9y2PYvh",
-   "headline": "Notre Dame HC expects ‘50 50’ crowd at Lambeau Field for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/notre-dame-hc-expects-50-113000154.html",
-   "timestamp": "2026-09-03T11:30:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "8QNpGG6yITwvvd0B",
-   "headline": "Blake Freeland could quickly earn the Bengals’ swing tackle job",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/blake-freeland-could-quickly-earn-111500252.html",
-   "timestamp": "2026-09-03T11:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "-MYS-_E2wW7LksuW",
-   "headline": "Cowboys news: Joe Milton returns to Dallas",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-joe-milton-returns-110000037.html",
-   "timestamp": "2026-09-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
    ]
   }
  ]
