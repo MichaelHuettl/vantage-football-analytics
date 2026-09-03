@@ -4,6 +4,40 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "Fenm4kCpYrAdmdU4",
+   "headline": "Kayshon Boutte opens up about trade from Patriots to Texans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kayshon-boutte-opens-trade-patriots-092235719.html",
+   "timestamp": "2026-09-03T09:22:35.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "HOU",
+    "NE"
+   ]
+  },
+  {
+   "id": "kLzm-_CnkxAp37ex",
+   "headline": "49ers DE Sam Okuayinonu not on team flight to Australia, questionable with foot injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-sam-okuayinonu-not-team-091800500.html",
+   "timestamp": "2026-09-03T09:18:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "RJmfTuHp4eZFVVpq",
+   "headline": "49ers News: We are officially one week away from real football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-news-officially-one-week-090000823.html",
+   "timestamp": "2026-09-03T09:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "Hi8UNEPgspQ2hHc9",
    "headline": "Who are the British players in the NFL?",
    "source": "Yahoo Sports",
@@ -1598,39 +1632,6 @@
    "category": "breaking",
    "team_abbrs": [
     "MIA"
-   ]
-  },
-  {
-   "id": "iajVCsf_CowUeAxw",
-   "headline": "AP Chiefs Mailbag: What is Kansas City’s most concerning position group?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ap-chiefs-mailbag-kansas-city-143000451.html",
-   "timestamp": "2026-09-02T14:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "LN5HNkJsQFF4m8S_",
-   "headline": "Falcons shuffle practice squad and add Zach Harrison, Khalid Kareem",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-shuffle-practice-squad-add-142647194.html",
-   "timestamp": "2026-09-02T14:26:47.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "uoLy9XGQRg91uYm6",
-   "headline": "One reason each NFC team could disappoint its fan base: Are expectations too high for Rams?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/one-reason-each-nfc-team-could-disappoint-its-fan-base-are-expectations-too-high-for-rams/",
-   "timestamp": "2026-09-02T14:16:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
    ]
   }
  ]
