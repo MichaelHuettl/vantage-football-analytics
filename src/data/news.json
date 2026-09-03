@@ -4,6 +4,53 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "Dp-ldiF40E4hZA4c",
+   "headline": "Jets work out two quarterbacks including Will Levis",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-two-quarterbacks-including-levis-182349785.html",
+   "timestamp": "2026-09-03T18:23:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "q0gYZxRh0Eok0lYN",
+   "headline": "Anthony Richardson named Colts backup QB after offseason trade request",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/anthony-richardson-named-colts-backup-182319063.html",
+   "timestamp": "2026-09-03T18:23:19.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "Dq9MyAAeAJd-gS7m",
+   "headline": "Giants' Cam Skattebo thought about retirement after season-ending leg injury: 'Do I really want to do this?'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/giants-cam-skattebo-thought-about-retirement-after-season-ending-leg-injury-do-i-really-want-to-do-this-181738046.html",
+   "timestamp": "2026-09-03T18:17:38.000Z",
+   "category": "injury",
+   "player_ids": [
+    "cam-skattebo"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "IhxVWRxIU5Dl9p0l",
+   "headline": "Mike Tomlin believes Steelers can win Super Bowl",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mike-tomlin-believes-steelers-win-181426972.html",
+   "timestamp": "2026-09-03T18:14:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
    "id": "_nr1qhhku_921NfZ",
    "headline": "Giants' Cam Skattebo considered retirement after gruesome injury; explains relationship with John Harbaugh",
    "source": "CBS Sports",
@@ -89,6 +136,18 @@
    "category": "breaking",
    "team_abbrs": [
     "LAR"
+   ]
+  },
+  {
+   "id": "auqkXu38ODWpeyZj",
+   "headline": "Jets work out former Titans QB Will Levis: report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-former-titans-qb-levis-173724669.html",
+   "timestamp": "2026-09-03T17:37:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ",
+    "TEN"
    ]
   },
   {
@@ -1577,58 +1636,6 @@
    "category": "breaking",
    "team_abbrs": [
     "BUF"
-   ]
-  },
-  {
-   "id": "bFYN_xSY9rPoWegs",
-   "headline": "Greg Dortch can provide Bills with exactly what they need at WR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/greg-dortch-bills-exactly-wr-225446144.html",
-   "timestamp": "2026-09-02T22:54:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "eIWcEwPCANBC7S3u",
-   "headline": "Former NFL player Alphonso Smith Jr. dies at age 40",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/former-nfl-player-alphonso-smith-223918677.html",
-   "timestamp": "2026-09-02T22:39:18.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "DfEQjbEYmoTd9_lz",
-   "headline": "Eric DeCosta \"optimistic\" about a deal for Lamar Jackson before March",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eric-decosta-optimistic-deal-lamar-223302607.html",
-   "timestamp": "2026-09-02T22:33:02.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ]
-  },
-  {
-   "id": "mpkEQCyEki1PS54R",
-   "headline": "Cowboys Add QB Joe Milton To Practice Squad",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/cowboys-add-qb-joe-milton-to-practice-squad",
-   "timestamp": "2026-09-02T22:12:31.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "BEJSGVWw4erZmIkn",
-   "headline": "Ja'Marr Chase: Doesn't practice Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jamarr-chase-15183",
-   "timestamp": "2026-09-02T22:12:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "jamarr-chase"
    ]
   }
  ]
