@@ -4,6 +4,58 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "X2YcP1vgz-ddOHKV",
+   "headline": "NFL Practice Squad Updates: 9/2/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-2-26",
+   "timestamp": "2026-09-03T01:26:45.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "xEULJCx7zhUuKj8J",
+   "headline": "Jed York, 49ers' brass are making plans in advance of potential suspension",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jed-york-49ers-brass-making-012316011.html",
+   "timestamp": "2026-09-03T01:23:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "MCkVtOqzAx2aqE9v",
+   "headline": "Ravens sign offensive line depth, TE Nick Vannett to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-sign-offensive-line-depth-011622599.html",
+   "timestamp": "2026-09-03T01:16:22.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "PIGFBR0CTeMF0vJW",
+   "headline": "Brad Holmes: Long-term plans for Sam LaPorta, Brian Branch haven't changed",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brad-holmes-long-term-plans-010302405.html",
+   "timestamp": "2026-09-03T01:03:02.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-laporta"
+   ]
+  },
+  {
+   "id": "Ug5QUDDG3lP4WPyY",
+   "headline": "Packers Roster: Which units improved their standing in training camp?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-roster-units-improved-standing-010220448.html",
+   "timestamp": "2026-09-03T01:02:20.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
    "id": "x8lvU9OBPduWafNn",
    "headline": "Minor NFL Transactions: 9/2/26",
    "source": "Pro Football Rumors",
@@ -254,6 +306,17 @@
    "category": "transaction",
    "team_abbrs": [
     "DAL"
+   ]
+  },
+  {
+   "id": "n4HNvrlCZQ2hxyJH",
+   "headline": "Are Rams ruining football? Quentin Lake knows NFL already ‘hates’ them",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-ruining-football-quentin-lake-210735330.html",
+   "timestamp": "2026-09-02T21:07:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
    ]
   },
   {
@@ -1567,69 +1630,6 @@
    "team_abbrs": [
     "BUF"
    ]
-  },
-  {
-   "id": "Pv3o8ICf0LdQHvUC",
-   "headline": "Rams buy all-in, Rams owner buys Angels",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-buy-rams-owner-buys-130200796.html",
-   "timestamp": "2026-09-02T13:02:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "mY6d2vV6ZewQxW9a",
-   "headline": "That Sums It Up: One sentence about each projected Packers starter",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sums-one-sentence-projected-packers-130000472.html",
-   "timestamp": "2026-09-02T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "TcggneYQhgyFpDAG",
-   "headline": "Mike Tanier: “Commanders could be the worst team in the NFL” - Daily Slop",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mike-tanier-commanders-could-worst-130000109.html",
-   "timestamp": "2026-09-02T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "_brqf2QPncUaNCWt",
-   "headline": "Cowboys betting on 2 former Top 100 draft picks to upgrade OT depth",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-betting-2-former-top-130000238.html",
-   "timestamp": "2026-09-02T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "_Qhe1ZOEBra-O_i_",
-   "headline": "Pre-Snap Reads: Reactions to season finale of Seahawks’ Hard Knocks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pre-snap-reads-reactions-season-130000015.html",
-   "timestamp": "2026-09-02T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "bABiUGsGq3kPjtlP",
-   "headline": "State of the NFC South: Preseason recap",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/state-nfc-south-preseason-recap-130000690.html",
-   "timestamp": "2026-09-02T13:00:00.000Z",
-   "category": "camp"
   }
  ]
 }
