@@ -4,6 +4,58 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "2Bw4qwEH0iQPfff1",
+   "headline": "Miami Dolphins Discussion: Favorite Latest Addition Edition",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-discussion-favorite-latest-000000482.html",
+   "timestamp": "2026-09-03T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "EIWwGzUsrjFYokAZ",
+   "headline": "Bears Over Beers Happy Hour and Open Thread: Bears Trade Incoming?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-over-beers-happy-hour-000000487.html",
+   "timestamp": "2026-09-03T00:00:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "fZ8bbPXgfi45SSAm",
+   "headline": "Giants should be ‘competitive week in and week out’, says Joe Schoen",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-competitive-week-week-says-235023547.html",
+   "timestamp": "2026-09-02T23:50:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "7HroVWD-p0f8HYpc",
+   "headline": "Jaguars Have Engaged WR Parker Washington In Extension Talks",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/jaguars-have-engaged-wr-parker-washington-in-extension-talks",
+   "timestamp": "2026-09-02T23:36:30.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "JAX"
+   ]
+  },
+  {
+   "id": "KLpLSSzkN7K9zYYB",
+   "headline": "Aaron Rodgers is in a four-quarterback room for the first time",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-rodgers-four-quarterback-room-233606549.html",
+   "timestamp": "2026-09-02T23:36:06.000Z",
+   "category": "breaking"
+  },
+  {
    "id": "zx9LKIRBgaBrJyLf",
    "headline": "Cleveland Browns have a strategy that may just be crazy enough to work",
    "source": "Yahoo Sports",
@@ -336,6 +388,17 @@
    "url": "https://sports.yahoo.com/fantasy/article/players-at-each-position-joel-smyth-has-changed-his-mind-on-the-most-throughout-training-camp-and-preseason-for-2026-fantasy-football-195003645.html",
    "timestamp": "2026-09-02T19:50:03.000Z",
    "category": "camp"
+  },
+  {
+   "id": "wBQSG85WMkupDEaZ",
+   "headline": "Jets bring Justin Tucker in for tryout after 2025 suspension for sexual misconduct allegations",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-bring-justin-tucker-tryout-194440048.html",
+   "timestamp": "2026-09-02T19:44:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
   },
   {
    "id": "8bSPzJn-Qr8CNU3r",
@@ -1569,70 +1632,6 @@
    "category": "breaking",
    "player_ids": [
     "jeremiyah-love"
-   ]
-  },
-  {
-   "id": "irP84CjXL6hFV2M9",
-   "headline": "Best NFL player for every franchise before and after 2000: Peyton Manning earns unique distinction",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/best-nfl-player-every-franchise-ebefore-after-2000/",
-   "timestamp": "2026-09-02T12:41:45.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "6OWLrFrpU7MnYw_o",
-   "headline": "Predicting Every Game of the 2026 NFL Season: NFC South",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/predicting-every-game-2026-nfl-122031960.html",
-   "timestamp": "2026-09-02T12:20:31.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "3_V6EXBzIOGRsiAB",
-   "headline": "Detroit Lions updated depth chart: Initial 53-man roster, practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/detroit-lions-updated-depth-chart-121922338.html",
-   "timestamp": "2026-09-02T12:19:22.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "30FCy6Y8z4gcXmfp",
-   "headline": "The Bills lost to the Broncos, relive the misery by picking a play to define it",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-lost-broncos-relive-misery-120000070.html",
-   "timestamp": "2026-09-02T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "DEN"
-   ]
-  },
-  {
-   "id": "n1MDX7cn948gYxg1",
-   "headline": "Jaxson Dart says Giants’ defense is ‘best reps I could possibly get’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaxson-dart-says-giants-defense-115523848.html",
-   "timestamp": "2026-09-02T11:55:23.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "Z9HdvE9IhB_LaPUZ",
-   "headline": "Dolphins news: Joe Milton, Jacob Rodriguez, and more roster moves",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-news-joe-milton-jacob-114027122.html",
-   "timestamp": "2026-09-02T11:40:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
    ]
   }
  ]
