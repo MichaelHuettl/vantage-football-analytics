@@ -4,6 +4,117 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "_nr1qhhku_921NfZ",
+   "headline": "Giants' Cam Skattebo considered retirement after gruesome injury; explains relationship with John Harbaugh",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/giants-cam-skattebo-says-he-considered-retirement/",
+   "timestamp": "2026-09-03T18:01:30.000Z",
+   "category": "injury",
+   "player_ids": [
+    "cam-skattebo"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "ciw4dFdDrBSlCEWL",
+   "headline": "2026 NFL season preview, betting, odds: 1 bet I like for every NFC team",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/betting/article/2026-nfl-season-preview-betting-odds-1-bet-i-like-for-every-nfc-team-175838964.html",
+   "timestamp": "2026-09-03T17:58:38.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "6cIL9ShVjgOuK5Un",
+   "headline": "Former Steelers coach Mike Tomlin 'having the time of my life' in retirement",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-having-the-time-of-my-life-in-retirement/",
+   "timestamp": "2026-09-03T17:54:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "SwIDt0gg4jQ3Kk12",
+   "headline": "Jeremiyah Love: Continues to progress",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jeremiyah-love-19235",
+   "timestamp": "2026-09-03T17:50:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jeremiyah-love"
+   ]
+  },
+  {
+   "id": "-uHHg5r2MBnxhak5",
+   "headline": "Cardinals shell out big-money extension to breakout wide receiver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-shell-big-money-extension-174932586.html",
+   "timestamp": "2026-09-03T17:49:32.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "RSPwcUSn4XNGhR7F",
+   "headline": "Will Levis, Jack Plummer worked out for Jets on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/levis-jack-plummer-worked-jets-174718612.html",
+   "timestamp": "2026-09-03T17:47:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "dqeKT5PaDHOx0el1",
+   "headline": "Seattle Seahawks tweak practice squad, release ‘Hard Knocks’ star",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seattle-seahawks-tweak-practice-squad-174544116.html",
+   "timestamp": "2026-09-03T17:45:44.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "C2k0RNU9ZEHjSAvA",
+   "headline": "Aaron Donald can earn $10 million if Rams win the Super Bowl",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-donald-earn-10-million-174346599.html",
+   "timestamp": "2026-09-03T17:43:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "Hw3L5u1Bsd0cgSJ0",
+   "headline": "Three Rivers Report: Did the Steelers lie about Joey Porter Jr’s injury?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/three-rivers-report-did-steelers-173656333.html",
+   "timestamp": "2026-09-03T17:36:56.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "WrdmDkuQ1zr0nDal",
+   "headline": "49ers, Rams hoping big-name players will be healthy enough to play in Australia matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/49ers-rams-hoping-big-name-players-will-be-healthy-enough-to-play-in-australia-matchup-173518804.html",
+   "timestamp": "2026-09-03T17:35:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "z8OMSo33RH3Izduk",
    "headline": "Cardinals, WR Michael Wilson agree to reported 3-year, $75 million extension",
    "source": "Yahoo Sports",
@@ -59,6 +170,17 @@
    "category": "camp",
    "team_abbrs": [
     "LV"
+   ]
+  },
+  {
+   "id": "C8L7bw_e8ikcsYUp",
+   "headline": "Cardinals Extend WR Michael Wilson",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/cards-michael-wilson-agree-to-extension",
+   "timestamp": "2026-09-03T17:00:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
    ]
   },
   {
@@ -1507,125 +1629,6 @@
    "category": "practice",
    "player_ids": [
     "jamarr-chase"
-   ]
-  },
-  {
-   "id": "3clKhbrP-A5UlB4J",
-   "headline": "Browns practice schedule is interesting heading into Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-practice-schedule-interesting-heading-220311950.html",
-   "timestamp": "2026-09-02T22:03:11.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "r5xX_DQSLAatDBl5",
-   "headline": "You’re not crazy: The refs really do hate the Chicago Bears",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/not-crazy-refs-really-hate-220000002.html",
-   "timestamp": "2026-09-02T22:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "0L_ko4ub2FLhNVYO",
-   "headline": "2027 NFL Draft Odds: Arch Manning Leads as QB Race Takes Shape",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfl-draft-odds-mendoza-180300896.html",
-   "timestamp": "2026-09-02T21:58:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "RMUIeiimMTO3k_BZ",
-   "headline": "Disgraced former Ravens kicker Justin Tucker reportedly works out for Jets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/disgraced-former-ravens-kicker-justin-tucker-reportedly-works-out-for-jets-215114605.html",
-   "timestamp": "2026-09-02T21:51:14.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "AGMQ173Imr6w63vi",
-   "headline": "Bears injury spat with $40 million star takes twist with training video",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-injury-spat-40-million-214738138.html",
-   "timestamp": "2026-09-02T21:47:38.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "A5aAGSPydB1REPwj",
-   "headline": "Colts Quenton Nelson listed as ‘Name to Watch’ for contract negotiations",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-quenton-nelson-named-name-213800102.html",
-   "timestamp": "2026-09-02T21:38:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "VkVaG4IFYIPNSkyn",
-   "headline": "Cian Slone, Greedy Vance, players who deserved to make Las Vegas Raiders’ 53-man roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cian-slone-greedy-vance-players-213800556.html",
-   "timestamp": "2026-09-02T21:38:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "VoEtexqkS3tfjYru",
-   "headline": "Cowboys sign QB Joe Milton to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-sign-qb-joe-milton-211702780.html",
-   "timestamp": "2026-09-02T21:17:02.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "QadLFJJ_dTs4ec6C",
-   "headline": "Cowboys to re-sign QB Joe Milton to their practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-sign-qb-joe-milton-211551471.html",
-   "timestamp": "2026-09-02T21:15:51.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "n4HNvrlCZQ2hxyJH",
-   "headline": "Are Rams ruining football? Quentin Lake knows NFL already ‘hates’ them",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-ruining-football-quentin-lake-210735330.html",
-   "timestamp": "2026-09-02T21:07:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "TG1Tq0hJUist_bZP",
-   "headline": "Cowboys countdown to kickoff: Top 100 iconic games – Day 11",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-countdown-kickoff-top-100-210000466.html",
-   "timestamp": "2026-09-02T21:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
    ]
   }
  ]
