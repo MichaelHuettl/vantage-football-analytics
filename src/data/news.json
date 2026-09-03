@@ -4,6 +4,124 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "LFOrYsUyy6zRmcaC",
+   "headline": "Zay Flowers: Returns to practice Thursday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/zay-flowers-16919",
+   "timestamp": "2026-09-03T16:29:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "zay-flowers"
+   ]
+  },
+  {
+   "id": "bFuflTAqxF2e8_ZI",
+   "headline": "Ranking NFL's top 10 quarterback-coach duos for 2026: Patrick Mahomes, Andy Reid dethroned by NFC West risers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/ranking-nfls-top-10-quarterback-coach-duos-for-2026/",
+   "timestamp": "2026-09-03T16:27:50.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "7O64zYoxVGzilCMn",
+   "headline": "Browns DT Mike Hall addresses 'mishap on the field' with teammate Quinshon Judkins",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/browns-mike-hall-addresses-mishap-quinshon-judkins/",
+   "timestamp": "2026-09-03T16:26:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "cJWmlRcvYOpZ0F0I",
+   "headline": "Ranking 2026 NFL payrolls: Which teams spend the most money on their rosters?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/ranking-2026-nfl-payrolls-which-teams-spend-the-most/",
+   "timestamp": "2026-09-03T16:25:55.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "lmAJy-9EGZFDBzvD",
+   "headline": "10 games that will define the 2026 NFL season: Iconic Christmas matchups, possible Super Bowl previews",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/10-games-that-will-define-the-2026-nfl-season/",
+   "timestamp": "2026-09-03T16:10:55.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "DhmhTbC_1KoUBV0X",
+   "headline": "Submit your Las Vegas Raiders mailbag questions!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/submit-las-vegas-raiders-mailbag-160800864.html",
+   "timestamp": "2026-09-03T16:08:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "b4PMW4YhPNq2TQX_",
+   "headline": "Rams' Myles Garrett tops NFL's 'Top 100' list, edging out No. 2 Josh Allen",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/rams-myles-garrett-tops-nfls-top-100-list-edging-out-no-2-josh-allen-160702779.html",
+   "timestamp": "2026-09-03T16:07:02.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "_-y_gfOg5MrLnKvP",
+   "headline": "2027 Colts WAY Too Early Big Board: EDGEs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/2027-colts-way-too-early-160616383.html",
+   "timestamp": "2026-09-03T16:06:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "m8CATTvkdZTm-alO",
+   "headline": "Andy Reid praises Chiefs’ rookie and ‘No.2 back’ for pass protection",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/andy-reid-praises-chiefs-rookie-160000189.html",
+   "timestamp": "2026-09-03T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "HMhC5ky8B7M0YFhD",
+   "headline": "Chargers among NFL’s most watchable teams in 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-among-nfl-most-watchable-160000155.html",
+   "timestamp": "2026-09-03T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "sIU1bZ5cNyl3MgAo",
+   "headline": "One reason each AFC team could disappoint their fan base: Will offensive line let down Lamar Jackson?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/one-reason-each-afc-team-could-disappoint/",
+   "timestamp": "2026-09-03T15:58:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "lamar-jackson"
+   ]
+  },
+  {
    "id": "Gn83P4rqhPhN5KiL",
    "headline": "Anthony Richardson: I'm thankful the Colts believe in me enough to make me QB2",
    "source": "Yahoo Sports",
@@ -142,17 +260,6 @@
    "category": "breaking",
    "team_abbrs": [
     "KC"
-   ]
-  },
-  {
-   "id": "bFuflTAqxF2e8_ZI",
-   "headline": "Ranking NFL's top 10 quarterback-coach duos for 2026: Patrick Mahomes, Andy Reid dethroned by NFC West risers",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/ranking-nfls-top-10-quarterback-coach-duos-for-2026/",
-   "timestamp": "2026-09-03T14:56:53.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
    ]
   },
   {
@@ -1520,113 +1627,6 @@
    "category": "breaking",
    "team_abbrs": [
     "CHI"
-   ]
-  },
-  {
-   "id": "xuEZbAWvZlb4NwoL",
-   "headline": "Jets work out Justin Tucker: Eight-time All Pro accused of sexual misconduct gets look from New York",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jets-work-out-kicker-justin-tucker/",
-   "timestamp": "2026-09-02T19:51:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "X6Sc7ye86t2i-fwP",
-   "headline": "Players at each position Joel Smyth has changed his mind on the most throughout training camp and preseason for 2026 fantasy football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/players-at-each-position-joel-smyth-has-changed-his-mind-on-the-most-throughout-training-camp-and-preseason-for-2026-fantasy-football-195003645.html",
-   "timestamp": "2026-09-02T19:50:03.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "wBQSG85WMkupDEaZ",
-   "headline": "Jets bring Justin Tucker in for tryout after 2025 suspension for sexual misconduct allegations",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-bring-justin-tucker-tryout-194440048.html",
-   "timestamp": "2026-09-02T19:44:40.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "8bSPzJn-Qr8CNU3r",
-   "headline": "Justin Tucker among kickers to work out with Jets on Wednesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/justin-tucker-among-kickers-jets-193348381.html",
-   "timestamp": "2026-09-02T19:33:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "zAQraGiYTs6jHdIy",
-   "headline": "Baker Mayfield’s 7 goals for the 2026 season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/baker-mayfield-7-goals-2026-192846023.html",
-   "timestamp": "2026-09-02T19:28:46.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "baker-mayfield"
-   ]
-  },
-  {
-   "id": "8A-07lBkHaMNXZ5l",
-   "headline": "Justin Tucker's NFL future takes new turn with Jets workout",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/justin-tuckers-nfl-future-takes-192812004.html",
-   "timestamp": "2026-09-02T19:28:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "ucXBZHS4Id4BeViU",
-   "headline": "Jarrett Stidham To Remain Broncos’ QB2",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/jarrett-stidham-to-remain-broncos-qb2",
-   "timestamp": "2026-09-02T19:23:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "9qqFMihxcToEqmq6",
-   "headline": "Jets work out three kickers, including Justin Tucker",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-three-kickers-including-justin-191745071.html",
-   "timestamp": "2026-09-02T19:17:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "a7G-u72B09LxHw41",
-   "headline": "What are the biggest concerns heading into Week 1 for the 49ers?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/biggest-concerns-heading-week-1-190911768.html",
-   "timestamp": "2026-09-02T19:09:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "sWl0Ahu4xxAulhW6",
-   "headline": "Two recent lists feature Cardinals players",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/two-recent-lists-feature-cardinals-190516832.html",
-   "timestamp": "2026-09-02T19:05:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI"
    ]
   }
  ]
