@@ -4,10 +4,68 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "44jlBZ8r6je8HX7r",
+   "headline": "Report: Giants to sign LB Malik Harrison to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-giants-sign-lb-malik-195703020.html",
+   "timestamp": "2026-09-03T19:57:03.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "nV9MA9Ar9p3fVoFU",
+   "headline": "Khosla Ownership Group Finalizes Seahawks Purchase",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/khosla-ownership-group-finalizes-seahawks-purchase",
+   "timestamp": "2026-09-03T19:42:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "LR3Ozplltw-tCZgp",
+   "headline": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/puka-nacua-suspension-watch-will-nfl-discipline-rams-star/",
+   "timestamp": "2026-09-03T19:36:23.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "GUbMmxUIiQ2GPxP-",
+   "headline": "TreVeyon Henderson remains out of Patriots practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/treveyon-henderson-remains-patriots-practice-192800669.html",
+   "timestamp": "2026-09-03T19:28:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
    "id": "riXarroYrAdew9pS",
    "headline": "Dolphins coach Jeff Hafley says opposing teams are learning play calls from training camp videos taken by fans",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/article/dolphins-coach-jeff-hafley-says-opposing-teams-are-learning-play-calls-from-training-camp-videos-taken-by-fans-192514284.html",
+   "timestamp": "2026-09-03T19:25:14.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "PcZmnciWt6oDgYoO",
+   "headline": "Dolphins coach Jeff Hafley says opposing teams are learning plays from training camp videos taken by fans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/dolphins-coach-jeff-hafley-says-opposing-teams-are-learning-plays-from-training-camp-videos-taken-by-fans-192514284.html",
    "timestamp": "2026-09-03T19:25:14.000Z",
    "category": "camp",
    "team_abbrs": [
@@ -36,6 +94,14 @@
    "team_abbrs": [
     "ATL"
    ]
+  },
+  {
+   "id": "f37MjWA1-6-OIk5I",
+   "headline": "2026 NFL Defensive Player of the Year Award Odds: Myles Garrett Eyes Hollywood Encore",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/2025-26-nfl-defensive-player-153900255.html",
+   "timestamp": "2026-09-03T19:06:00.000Z",
+   "category": "breaking"
   },
   {
    "id": "T6v65gf6EmP0wUIr",
@@ -128,20 +194,6 @@
    "category": "breaking",
    "team_abbrs": [
     "ATL"
-   ]
-  },
-  {
-   "id": "LR3Ozplltw-tCZgp",
-   "headline": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/puka-nacua-suspension-watch-will-nfl-discipline-rams-star/",
-   "timestamp": "2026-09-03T18:53:55.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
    ]
   },
   {
@@ -1588,61 +1640,6 @@
     "CHI",
     "GB",
     "MIN"
-   ]
-  },
-  {
-   "id": "7i9R1bc6nG8kCEZi",
-   "headline": "Colts GM Discusses Keenan Allen Arrest",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/colts-gm-discusses-keenan-allen-arrest",
-   "timestamp": "2026-09-03T02:09:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "bixTyRtYjq6UuIED",
-   "headline": "Falcons QB Michael Penix the eventual starter?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-qb-michael-penix-eventual-014631627.html",
-   "timestamp": "2026-09-03T01:46:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "21IdJgslRFR3RcPG",
-   "headline": "Isaiah Likely already sees why Malik Nabers is Giants’ ‘alpha receiver’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/isaiah-likely-already-sees-why-014518866.html",
-   "timestamp": "2026-09-03T01:45:18.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "isaiah-likely"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "X2YcP1vgz-ddOHKV",
-   "headline": "NFL Practice Squad Updates: 9/2/26",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-2-26",
-   "timestamp": "2026-09-03T01:26:45.000Z",
-   "category": "practice"
-  },
-  {
-   "id": "xEULJCx7zhUuKj8J",
-   "headline": "Jed York, 49ers' brass are making plans in advance of potential suspension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jed-york-49ers-brass-making-012316011.html",
-   "timestamp": "2026-09-03T01:23:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
    ]
   }
  ]
