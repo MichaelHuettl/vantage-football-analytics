@@ -4,14 +4,69 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "5ykDVmi5J887fO8n",
+   "headline": "3 players the Cowboys could extend during the 2026 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-players-cowboys-could-extend-190000562.html",
+   "timestamp": "2026-09-04T19:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "rjT0LPsQ4f1BMri9",
+   "headline": "Eagles News: “Don’t be surprised if Philadelphia has the NFL’s best defense”",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-news-don-t-surprised-184531705.html",
+   "timestamp": "2026-09-04T18:45:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "S5nKF7Wq7RSwGAGC",
+   "headline": "2027 NFL Draft predictions: Our experts pick No. 1 overall, biggest riser, strongest position and more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-predictions-no-1-pick-risers-sleepers/",
+   "timestamp": "2026-09-04T18:45:29.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "-8DMjBvbVnIVWZUF",
+   "headline": "Green Bay Packers RB Josh Jacobs has court appearance set",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/green-bay-packers-rb-josh-184006235.html",
+   "timestamp": "2026-09-04T18:40:06.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
    "id": "lLThn8o5y7EORdWc",
-   "headline": "Josh Jacobs: Court Date Moved Up",
+   "headline": "Josh Jacobs: Court date moved up",
    "source": "RotoWire",
    "url": "https://www.rotowire.com//football/player/josh-jacobs-13582",
    "timestamp": "2026-09-04T18:34:00.000Z",
    "category": "breaking",
    "player_ids": [
     "josh-jacobs"
+   ]
+  },
+  {
+   "id": "zsa2d3OUXcxg5TAK",
+   "headline": "What to expect from Sonny Styles, Commanders draft class in 2026 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/expect-sonny-styles-commanders-draft-183000587.html",
+   "timestamp": "2026-09-04T18:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
    ]
   },
   {
@@ -1588,65 +1643,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "MnTBUtfOvsBP4ilg",
-   "headline": "Mike Tomlin explains why Steelers traded George Pickens",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mike-tomlin-explains-why-steelers-204456822.html",
-   "timestamp": "2026-09-03T20:44:56.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-pickens"
-   ],
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "RGX_kA9B2AYJDnDK",
-   "headline": "Patriots add former Saints safety to practice squad, release defensive tackle",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-add-former-saints-safety-204256727.html",
-   "timestamp": "2026-09-03T20:42:56.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NE",
-    "NO"
-   ]
-  },
-  {
-   "id": "vQ2T241naDbIB0rC",
-   "headline": "Daejon Love fake 49ers preseason hype video goes bonkers online, should annoy San Fran rookie",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/daejon-love-fake-49ers-preseason-203722378.html",
-   "timestamp": "2026-09-03T20:37:22.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "PTEFAeAVtNSFLuON",
-   "headline": "Giants To Sign LB Malik Harrison",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-to-sign-lb-malik-harrison",
-   "timestamp": "2026-09-03T20:31:45.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "MLxBP9716i1J34Lj",
-   "headline": "Rams' depth chart lists Stetson Bennett as No. 2 QB, Ty Simpson No. 3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-depth-chart-lists-stetson-201731269.html",
-   "timestamp": "2026-09-03T20:17:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
    ]
   }
  ]
