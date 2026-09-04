@@ -4,6 +4,32 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "iN603h_01YASdTNJ",
+   "headline": "'I love the eyes on me.' Giants' Cam Skattebo back after brutal injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/love-eyes-giants-cam-skattebo-093116628.html",
+   "timestamp": "2026-09-04T09:31:16.000Z",
+   "category": "injury",
+   "player_ids": [
+    "cam-skattebo"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "8lhj3NnsGcbWhoMy",
+   "headline": "49ers News: Swoop on those Rams like an angry magpie",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-news-swoop-those-rams-090500743.html",
+   "timestamp": "2026-09-04T09:05:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "C8L7bw_e8ikcsYUp",
    "headline": "Cardinals Extend WR Michael Wilson",
    "source": "Pro Football Rumors",
@@ -1624,29 +1650,6 @@
    "category": "breaking",
    "team_abbrs": [
     "HOU"
-   ]
-  },
-  {
-   "id": "hMCQM1n7i22R8CZX",
-   "headline": "6 defensive linemen the NY Giants should consider signing",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/6-defensive-linemen-ny-giants-140000322.html",
-   "timestamp": "2026-09-03T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "w7OPmzs8qB1S27XK",
-   "headline": "How much the Patriots roster has changed since Super Bowl loss to Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/much-patriots-roster-changed-since-140000861.html",
-   "timestamp": "2026-09-03T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
    ]
   }
  ]
