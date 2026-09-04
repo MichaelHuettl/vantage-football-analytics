@@ -4,6 +4,47 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "6cIL9ShVjgOuK5Un",
+   "headline": "Former Steelers coach Mike Tomlin 'having the time of my life' in retirement",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-having-the-time-of-my-life-in-retirement/",
+   "timestamp": "2026-09-04T01:50:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "rQzgdnouMN4UPXRi",
+   "headline": "Stephen Jones On George Pickens’ Future",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/stephen-jones-on-george-pickens-future",
+   "timestamp": "2026-09-04T01:48:36.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-pickens"
+   ]
+  },
+  {
+   "id": "j8CezddhFDX7YVAB",
+   "headline": "DE Azeez Ojulari, OL Evan Neal, WR Ronnie Bell sign with Raiders' practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/azeez-ojulari-ol-evan-neal-014131630.html",
+   "timestamp": "2026-09-04T01:41:31.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "O7VfUvOdjS8K2jTY",
+   "headline": "NFL Practice Squad Updates: 9/3/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-3-26",
+   "timestamp": "2026-09-04T01:41:13.000Z",
+   "category": "practice"
+  },
+  {
    "id": "myS7iKmt2SB6EPac",
    "headline": "Cowboys create more than $19 million in cap space with restructurings",
    "source": "Yahoo Sports",
@@ -464,17 +505,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "6cIL9ShVjgOuK5Un",
-   "headline": "Former Steelers coach Mike Tomlin 'having the time of my life' in retirement",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-having-the-time-of-my-life-in-retirement/",
-   "timestamp": "2026-09-03T20:45:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
    ]
   },
   {
@@ -1623,39 +1653,6 @@
    "category": "breaking",
    "team_abbrs": [
     "TEN"
-   ]
-  },
-  {
-   "id": "HX9J06F8lKeXhFeK",
-   "headline": "Wilson's 2027 NFL Draft big board: Dante Moore over Arch Manning as eight QBs crack preseason top 50",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-big-board-top-50-prospects-preseason-rankings/",
-   "timestamp": "2026-09-03T13:14:54.000Z",
-   "category": "camp"
-  },
-  {
-   "id": "syOLIucSl3eE9iHi",
-   "headline": "Eagles News: Howie Roseman disagrees that Jalen Hurts is entering a make-or-break year",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-howie-roseman-disagrees-131011613.html",
-   "timestamp": "2026-09-03T13:10:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "mMtom3KH38EvtCJ-",
-   "headline": "Doubt in Dolphins; Can Miami prove everyone wrong?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/doubt-dolphins-miami-prove-everyone-130012812.html",
-   "timestamp": "2026-09-03T13:00:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
    ]
   }
  ]
