@@ -4,6 +4,61 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "PjvNX48Y7zDEhSDd",
+   "headline": "Experts sound off on failed grass field at new Bills stadium",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/experts-sound-off-failed-grass-175523592.html",
+   "timestamp": "2026-09-04T17:55:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "KonmzxGtNTFoQQrp",
+   "headline": "Five reasons the explosive NFL passing game has plummeted over the past decade and will it ever return?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-passing-game-demise-past-decade/",
+   "timestamp": "2026-09-04T17:47:05.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "vtIXcsZxyu5NDNO-",
+   "headline": "Three Rivers Report: Do the Steelers regret moving on from George Pickens?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/three-rivers-report-steelers-regret-174541346.html",
+   "timestamp": "2026-09-04T17:45:41.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-pickens"
+   ],
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "wuY-TlJqP9E-tGru",
+   "headline": "Texans quietly land high-upside DE Chris Braswell",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/texans-quietly-land-high-upside-174254562.html",
+   "timestamp": "2026-09-04T17:42:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "cq6w2ncbMe6LQksy",
+   "headline": "Jayden Daniels: I can't live off what I did in 2024",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jayden-daniels-cant-live-off-174048871.html",
+   "timestamp": "2026-09-04T17:40:48.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jayden-daniels"
+   ]
+  },
+  {
    "id": "bxVZKnGCO-o56Lra",
    "headline": "Patriots CB Christian Gonzalez Non-Committal On Playing In Week 1",
    "source": "Pro Football Rumors",
@@ -260,14 +315,6 @@
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/betting/article/2026-nfl-week-1-odds-betting-full-list-of-week-1-spreads-151703390.html",
    "timestamp": "2026-09-04T15:17:03.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "KonmzxGtNTFoQQrp",
-   "headline": "Five reasons the explosive NFL passing game has plummeted over the past decade and will it ever return?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-passing-game-demise-past-decade/",
-   "timestamp": "2026-09-04T15:09:27.000Z",
    "category": "breaking"
   },
   {
@@ -1599,47 +1646,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NYJ"
-   ]
-  },
-  {
-   "id": "44jlBZ8r6je8HX7r",
-   "headline": "Report: Giants to sign LB Malik Harrison to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/report-giants-sign-lb-malik-195703020.html",
-   "timestamp": "2026-09-03T19:57:03.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "OA1IP8TGt8dtMXrl",
-   "headline": "NFL Offensive Player of the Year Odds: Jahmyr Gibbs Poised for a Career Year?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-offensive-player-odds-nacua-183400310.html",
-   "timestamp": "2026-09-03T19:46:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jahmyr-gibbs"
-   ]
-  },
-  {
-   "id": "1h0nIfbm6oCc7AMR",
-   "headline": "Michael Wilson to sign massive extension: Why Cards made him one of NFL's top-paid No. 2 WRs",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cardinals-sign-michael-wilson-to-massive-extension/",
-   "timestamp": "2026-09-03T19:41:58.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "3Zjxc7pnjtOj3OEl",
-   "headline": "Giants add another former John Harbaugh player with Malik Harrison signing",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-add-another-former-john-193607472.html",
-   "timestamp": "2026-09-03T19:36:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
    ]
   }
  ]
