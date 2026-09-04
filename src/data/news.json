@@ -4,6 +4,28 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "USSYiVOfYLWQ1iQI",
+   "headline": "Dan Campbell: Jared Goff is massively underrated, reminds me of Drew Brees",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dan-campbell-jared-goff-massively-105228015.html",
+   "timestamp": "2026-09-04T10:52:28.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jared-goff"
+   ]
+  },
+  {
+   "id": "extGoc0UnCuHCVyR",
+   "headline": "49ers’ depth at key spot takes hit as likely starter ruled out for Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-depth-key-spot-takes-103355297.html",
+   "timestamp": "2026-09-04T10:33:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "-UoDE8HvzBtj2RmU",
    "headline": "Dolphins news: Reasons for optimism, quarterbacks updates, and rookie talk",
    "source": "Yahoo Sports",
@@ -1639,28 +1661,6 @@
    "category": "breaking",
    "team_abbrs": [
     "BUF"
-   ]
-  },
-  {
-   "id": "8Rn-3RbeJeckB1zL",
-   "headline": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-week-1-2026-fade-dallas-cowboys/",
-   "timestamp": "2026-09-03T14:44:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "3lvV1ds4bixuxIHi",
-   "headline": "Josh Allen’s spot revealed in NFL’s Top 100 Players list",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/josh-allen-spot-reveled-nfl-143005455.html",
-   "timestamp": "2026-09-03T14:30:05.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
    ]
   }
  ]
