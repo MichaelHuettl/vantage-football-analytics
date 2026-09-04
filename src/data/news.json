@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated": "2026-09-03",
+ "updated": "2026-09-04",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
@@ -172,6 +172,17 @@
    "url": "https://www.cbssports.com/nfl/news/mark-sanchez-to-plead-guilty-in-stabbing-case/",
    "timestamp": "2026-09-03T23:30:33.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "czalQ6YONlid2mUR",
+   "headline": "Rams legend close to Sean McVay makes bold Aaron Donald prediction: ‘That fire’ is back",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-legend-close-sean-mcvay-232606980.html",
+   "timestamp": "2026-09-03T23:26:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
   },
   {
    "id": "5NR9u3_LB62HZhg1",
@@ -1636,20 +1647,6 @@
    "team_abbrs": [
     "LAR",
     "SF"
-   ]
-  },
-  {
-   "id": "bSfHD_IPtRtEvawZ",
-   "headline": "Chargers news: Ladd McConkey, Quentin Johnston eye top-20 placement in Bolts receiving history",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-mcconkey-135000370.html",
-   "timestamp": "2026-09-03T13:50:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "ladd-mcconkey"
-   ],
-   "team_abbrs": [
-    "LAC"
    ]
   }
  ]
