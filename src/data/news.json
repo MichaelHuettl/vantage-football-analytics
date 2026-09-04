@@ -4,6 +4,28 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "LFJPRPpDZ93e7nbZ",
+   "headline": "Sean McVay knows Rams' delayed Australian travel plans could lead to criticism",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-mcvay-knows-rams-delayed-200306095.html",
+   "timestamp": "2026-09-04T20:03:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "JjnkVA0lE_9QumSI",
+   "headline": "Josh Jacobs’ initial hearing has been moved up by several months",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-jacobs-initial-hearing-moved-200212910.html",
+   "timestamp": "2026-09-04T20:02:12.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ]
+  },
+  {
    "id": "F9I8SugWrvDcuH5u",
    "headline": "Aaron Donald is ‘TBD’ for Week 1",
    "source": "Yahoo Sports",
@@ -1623,28 +1645,6 @@
    "category": "breaking",
    "team_abbrs": [
     "CLE"
-   ]
-  },
-  {
-   "id": "jR8B0bUfgc8ccIKj",
-   "headline": "Ex-NFL QB and broadcaster Mark Sanchez to plead guilty in assault case",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ex-nfl-qb-broadcaster-mark-213427010.html",
-   "timestamp": "2026-09-03T21:34:27.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "0pBpckiFkPXHmJ0N",
-   "headline": "Rome Odunze, D'Andre Swift left Bears practice early",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rome-odunze-dandre-swift-left-212738386.html",
-   "timestamp": "2026-09-03T21:27:38.000Z",
-   "category": "practice",
-   "player_ids": [
-    "dandre-swift"
-   ],
-   "team_abbrs": [
-    "CHI"
    ]
   }
  ]
