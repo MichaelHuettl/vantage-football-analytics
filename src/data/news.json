@@ -4,6 +4,62 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "9Dat_dNhZZteBIrD",
+   "headline": "NFL Returnees Granted Injunction To Play At LSU; SEC To Appeal",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-returnees-granted-injunction-to-play-at-lsu-sec-to-appeal",
+   "timestamp": "2026-09-04T22:18:39.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "mfDjy6Lfpc0U5pKH",
+   "headline": "Chiefs sign international tight end, release 3 from IR",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-sign-international-tight-end-221647852.html",
+   "timestamp": "2026-09-04T22:16:47.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "TcF3e9PEFqi8MxJ5",
+   "headline": "49ers poach former 5th-round pick from the Falcons’ practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-poach-former-5th-round-221140520.html",
+   "timestamp": "2026-09-04T22:11:40.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "ATL",
+    "SF"
+   ]
+  },
+  {
+   "id": "9YOVXS3RMvV9-9gX",
+   "headline": "Agent's Take: How the Rams built a salary-cap super team around Matthew Stafford",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/agents-take-rams-2026-salary-cap-super-bowl-window/",
+   "timestamp": "2026-09-04T22:06:46.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "matthew-stafford"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "2T0is46YoZoIkONp",
+   "headline": "Report: 49ers to sign DE Khalid Kareem to active roster",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-49ers-sign-khalid-kareem-215911003.html",
+   "timestamp": "2026-09-04T21:59:11.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "B_2TJZJFaMKVAR0U",
    "headline": "Raiders 2026: Game-by-game predictions for Klint Kubiak’s 1st year",
    "source": "Yahoo Sports",
@@ -150,20 +206,6 @@
    "url": "https://sports.yahoo.com/articles/hoos-nfl-checking-every-former-192725405.html",
    "timestamp": "2026-09-04T19:27:25.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "9YOVXS3RMvV9-9gX",
-   "headline": "Agent's Take: How the Rams built a salary-cap super team around Matthew Stafford",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/agents-take-rams-2026-salary-cap-super-bowl-window/",
-   "timestamp": "2026-09-04T19:20:36.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
   },
   {
    "id": "ouMaSr9shQngbd5E",
@@ -1595,53 +1637,6 @@
    "category": "transaction",
    "team_abbrs": [
     "IND"
-   ]
-  },
-  {
-   "id": "CBE6G2ZN1Qkyd4Ed",
-   "headline": "Giants RB Cam Skattebo Considered Retiring After 2025 Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-rb-cam-skattebo-considered-retiring-after-2025-injury",
-   "timestamp": "2026-09-03T22:43:40.000Z",
-   "category": "injury",
-   "player_ids": [
-    "cam-skattebo"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "vO_4eTUMe67flDL_",
-   "headline": "Tutu Atwell on Rams return: I feel like I never left",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tutu-atwell-rams-return-feel-224256513.html",
-   "timestamp": "2026-09-03T22:42:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "VJED0PLD7qV33QMP",
-   "headline": "Raiders work out 16 players, including OL Evan Neal, WR Marquez Valdes-Scantling",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-16-players-including-ol-224241773.html",
-   "timestamp": "2026-09-03T22:42:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "U2c41Evh_3_BuquX",
-   "headline": "Rams insider warns neglected weakness could make everything ‘fall apart’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-insider-warns-neglected-weakness-223910837.html",
-   "timestamp": "2026-09-03T22:39:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
    ]
   }
  ]
