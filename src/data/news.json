@@ -4,6 +4,14 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "s81M5-b2nrkMTz-Q",
+   "headline": "Former NFL quarterback Mark Sanchez to plead guilty in Indianapolis stabbing case",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/mark-sanchez-to-plead-guilty-in-stabbing-case/",
+   "timestamp": "2026-09-03T23:30:33.000Z",
+   "category": "breaking"
+  },
+  {
    "id": "5NR9u3_LB62HZhg1",
    "headline": "Why the Bengals may choose not to extend DJ Turner, Dax Hill, or Chase Brown right now",
    "source": "Yahoo Sports",
@@ -486,6 +494,17 @@
    ],
    "team_abbrs": [
     "LAR"
+   ]
+  },
+  {
+   "id": "3Zjxc7pnjtOj3OEl",
+   "headline": "Giants add another former John Harbaugh player with Malik Harrison signing",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-add-another-former-john-193607472.html",
+   "timestamp": "2026-09-03T19:36:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -1632,28 +1651,6 @@
    "url": "https://sports.yahoo.com/articles/nfl-4-rules-changes-2026-120000438.html",
    "timestamp": "2026-09-03T12:00:00.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "3laM_aGDhIWjCA8F",
-   "headline": "Chiefs News: Is everyone sleeping on the Chiefs?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-news-everyone-sleeping-chiefs-120000441.html",
-   "timestamp": "2026-09-03T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "DLgxCHULA5fNo9ox",
-   "headline": "Saints add pair of pass catchers to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-add-pair-pass-catchers-120000060.html",
-   "timestamp": "2026-09-03T12:00:00.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "NO"
-   ]
   }
  ]
 }
