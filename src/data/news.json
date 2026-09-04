@@ -4,12 +4,54 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "TNQtUN-tjalDvGwX",
+   "headline": "Bills news: Latest news and roster notes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-news-latest-news-roster-123250280.html",
+   "timestamp": "2026-09-04T12:32:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "VkSakjos896UfBvl",
+   "headline": "The Detroit Lions may be over the salary cap by next week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-may-over-salary-123000008.html",
+   "timestamp": "2026-09-04T12:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "djf5nkykrG8okjR3",
+   "headline": "Best running back handcuffs for 2026 fantasy football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/best-running-back-handcuffs-2026-122500009.html",
+   "timestamp": "2026-09-04T12:25:00.000Z",
+   "category": "breaking"
+  },
+  {
    "id": "UdGyQ301cWSnwgRg",
    "headline": "2026 NFL Survivor Squad: Building a 32-man juggernaut with one player or coach from every single team",
    "source": "CBS Sports",
    "url": "https://www.cbssports.com/nfl/news/2026-nfl-survivor-squad-building-32-man-roster/",
-   "timestamp": "2026-09-04T12:02:48.000Z",
+   "timestamp": "2026-09-04T12:12:00.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "CxUJyLHuvYTeyh7x",
+   "headline": "2026 NFL team win totals, odds, picks, best bets: Sleeping on Seattle? Lions bounce back, but fade Falcons",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-team-win-totals-odds-picks-best-bets/",
+   "timestamp": "2026-09-04T12:11:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "DET"
+   ]
   },
   {
    "id": "lB10H0zdDkw6hpZK",
@@ -20,6 +62,17 @@
    "category": "breaking",
    "team_abbrs": [
     "CHI"
+   ]
+  },
+  {
+   "id": "YCAKArzPHMDSuu7v",
+   "headline": "Chiefs News: NFL executives rank Chiefs outside of the AFC’s top 5",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-nfl-executives-rank-120000845.html",
+   "timestamp": "2026-09-04T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
    ]
   },
   {
@@ -1604,61 +1657,6 @@
    "category": "breaking",
    "player_ids": [
     "lamar-jackson"
-   ]
-  },
-  {
-   "id": "Gn83P4rqhPhN5KiL",
-   "headline": "Anthony Richardson: I'm thankful the Colts believe in me enough to make me QB2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/anthony-richardson-im-thankful-colts-155316162.html",
-   "timestamp": "2026-09-03T15:53:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "5YlYSd-5zyHGhXMW",
-   "headline": "Chiefs Restructure G Trey Smith’s Deal",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/chiefs-restructure-g-trey-smiths-deal",
-   "timestamp": "2026-09-03T15:52:30.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "zrQh4VH-KAqnS63X",
-   "headline": "Anthony Richardson named Colts backup quarterback",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/anthony-richardson-named-colts-backup-153701197.html",
-   "timestamp": "2026-09-03T15:37:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "7XC_GlJkOTHcCdlh",
-   "headline": "Browns exec draws criticism for wearing 'Los Angeles made me do it' sweater amid Myles Garrett trade",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/browns-exec-wears-la-sweater-myles-garrett-trade/",
-   "timestamp": "2026-09-03T15:28:54.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "KKpy3ua718K3_jeD",
-   "headline": "Ian Cunningham: Falcons still deciding QB battle",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ian-cunningham-falcons-still-deciding-152628111.html",
-   "timestamp": "2026-09-03T15:26:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
    ]
   }
  ]
