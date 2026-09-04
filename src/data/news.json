@@ -4,6 +4,60 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "UdGyQ301cWSnwgRg",
+   "headline": "2026 NFL Survivor Squad: Building a 32-man juggernaut with one player or coach from every single team",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-survivor-squad-building-32-man-roster/",
+   "timestamp": "2026-09-04T12:02:48.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "lB10H0zdDkw6hpZK",
+   "headline": "The Madden Curse is real and it’s coming for the Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/madden-curse-real-coming-bears-120000078.html",
+   "timestamp": "2026-09-04T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "iU8BoJOY8VfPGHA_",
+   "headline": "Report: D'Andre Swift left Thursday's practice due to a cramp",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-dandre-swift-left-thursdays-115505546.html",
+   "timestamp": "2026-09-04T11:55:05.000Z",
+   "category": "practice",
+   "player_ids": [
+    "dandre-swift"
+   ]
+  },
+  {
+   "id": "yGumYY3-ZP5PxsPT",
+   "headline": "What uniform combination should the Lions wear vs. the Saints?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/uniform-combination-lions-wear-vs-113642594.html",
+   "timestamp": "2026-09-04T11:36:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "NO"
+   ]
+  },
+  {
+   "id": "8JMuWct37JY3BqSS",
+   "headline": "49ers announce defensive end Sam Okuayinonu will not play Thursday vs. Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-announce-defensive-end-sam-113610155.html",
+   "timestamp": "2026-09-04T11:36:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "W1Whu2aptIhHdKnj",
    "headline": "What the media is saying about the Cardinals inking WR Michael Wilson’s extension",
    "source": "Yahoo Sports",
@@ -1605,59 +1659,6 @@
    "category": "breaking",
    "team_abbrs": [
     "ATL"
-   ]
-  },
-  {
-   "id": "0vij95rZzqXMb8Mq",
-   "headline": "2027 NFL Draft breakout candidates: CJ Carr could become top-10 pick, plus one prospect at every position",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-breakout-candidates-cj-carr-prospects-to-watch/",
-   "timestamp": "2026-09-03T15:21:34.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "DPKEETxrSe3o7ZsL",
-   "headline": "Can Commanders Wr Antonio Williams have a Scary Terry-like rookie year? - Daily Slop",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-wr-antonio-williams-scary-151103406.html",
-   "timestamp": "2026-09-03T15:11:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "mswx103kuVurIxj5",
-   "headline": "Payton Wilson takes jab at previous Steelers coaching staff",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/payton-wilson-takes-jab-previous-150702493.html",
-   "timestamp": "2026-09-03T15:07:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "ic04NsSviF67gzvY",
-   "headline": "Week 1 NFL odds, lines, best bets, predictions: Computer model backs Eagles and Jaguars",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-1-nfl-2026-odds-lines-spreads-bets-predictions-picks/",
-   "timestamp": "2026-09-03T15:05:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "PHI"
-   ]
-  },
-  {
-   "id": "62ayUaYMZXx5hu47",
-   "headline": "Patriots News: What will Brown do Week 1?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-news-brown-week-1-150354654.html",
-   "timestamp": "2026-09-03T15:03:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
    ]
   }
  ]
