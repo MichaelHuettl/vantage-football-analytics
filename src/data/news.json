@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "myS7iKmt2SB6EPac",
+   "headline": "Cowboys create more than $19 million in cap space with restructurings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-create-more-19-million-011509358.html",
+   "timestamp": "2026-09-04T01:15:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "e5hAFQADFlhOMW0f",
    "headline": "Minor NFL Transactions: 9/3/26",
    "source": "Pro Football Rumors",
@@ -408,6 +419,18 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
+   ]
+  },
+  {
+   "id": "qyQ0zVMQZFW4Y_88",
+   "headline": "Jets work out draft bust Will Levis after Titans release",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-draft-bust-levis-titans-205904297.html",
+   "timestamp": "2026-09-03T20:59:04.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYJ",
+    "TEN"
    ]
   },
   {
@@ -1634,25 +1657,6 @@
    "team_abbrs": [
     "MIA"
    ]
-  },
-  {
-   "id": "JUYjk76eCSqc9mdN",
-   "headline": "Saints rookie report: Preseason Recap",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-rookie-report-preseason-recap-130000417.html",
-   "timestamp": "2026-09-03T13:00:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "6stgE5h_LNyaSjaa",
-   "headline": "2027 NFL Draft: Connor Rogers' preseason Top 50 rankings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2027-nfl-draft-connor-rogers-130000101.html",
-   "timestamp": "2026-09-03T13:00:00.000Z",
-   "category": "camp"
   }
  ]
 }
