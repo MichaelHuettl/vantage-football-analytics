@@ -4,6 +4,31 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "4To9Nj6IaJjWEAwx",
+   "headline": "Is the 5,000-yard QB extinct? Where Browns find themselves in the NFL’s cyclical nature",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-000-yard-qb-extinct-125010288.html",
+   "timestamp": "2026-09-05T12:50:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "A3KluG7KBZ5V1osl",
+   "headline": "Commanders Jayden Daniels is ready to remind everyone who he is - Daily Slop",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-jayden-daniels-ready-remind-123000403.html",
+   "timestamp": "2026-09-05T12:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jayden-daniels"
+   ],
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
    "id": "VGbqr2yMUGI1cIRq",
    "headline": "Offseason In Review: Tampa Bay Buccaneers",
    "source": "Pro Football Rumors",
@@ -1597,28 +1622,6 @@
    "category": "camp",
    "team_abbrs": [
     "TEN"
-   ]
-  },
-  {
-   "id": "0xJdxNJKH9u8ORQh",
-   "headline": "Cowboys news: Dallas restructures deals for more salary cap room",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-dallas-restructures-deals-110000944.html",
-   "timestamp": "2026-09-04T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "KcHuC_-dDMfRribs",
-   "headline": "New York Jets News: Jets give a workout to Will Levis",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-news-jets-workout-110000335.html",
-   "timestamp": "2026-09-04T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
    ]
   }
  ]
