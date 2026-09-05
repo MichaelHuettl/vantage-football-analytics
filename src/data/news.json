@@ -4,6 +4,36 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "Jsn70yllABHzb5Ea",
+   "headline": "Pre-Snap Reads: UFDA to trade canditate, Avery Smith surprised to join ‘Hawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pre-snap-reads-ufda-trade-134844086.html",
+   "timestamp": "2026-09-05T13:48:44.000Z",
+   "category": "transaction"
+  },
+  {
+   "id": "Ow12EXToZq0nK7e0",
+   "headline": "Malachi Fields has big-time potential during rookie season with Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/malachi-fields-big-time-potential-134401059.html",
+   "timestamp": "2026-09-05T13:44:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "9-fvylPnyyqKKUfn",
+   "headline": "Where would you rank the Kyle Shanahan/Brock Purdy duo in the NFL?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/where-rank-kyle-shanahan-brock-133000078.html",
+   "timestamp": "2026-09-05T13:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-purdy"
+   ]
+  },
+  {
    "id": "x7HI3NvFbUn1lEsh",
    "headline": "NFL fines Browns' Tytus Howard $12,537 for tripping",
    "source": "Yahoo Sports",
@@ -1597,34 +1627,6 @@
    "timestamp": "2026-09-04T12:30:00.000Z",
    "category": "breaking",
    "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "djf5nkykrG8okjR3",
-   "headline": "Best running back handcuffs for 2026 fantasy football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/best-running-back-handcuffs-2026-122500009.html",
-   "timestamp": "2026-09-04T12:25:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "UdGyQ301cWSnwgRg",
-   "headline": "2026 NFL Survivor Squad: Building a 32-man juggernaut with one player or coach from every single team",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-survivor-squad-building-32-man-roster/",
-   "timestamp": "2026-09-04T12:12:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "CxUJyLHuvYTeyh7x",
-   "headline": "2026 NFL team win totals, odds, picks, best bets: Sleeping on Seattle? Lions bounce back, but fade Falcons",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-team-win-totals-odds-picks-best-bets/",
-   "timestamp": "2026-09-04T12:11:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
     "DET"
    ]
   }
