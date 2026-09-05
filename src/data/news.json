@@ -4,6 +4,89 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "x7HI3NvFbUn1lEsh",
+   "headline": "NFL fines Browns' Tytus Howard $12,537 for tripping",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-fines-browns-tytus-howard-131300102.html",
+   "timestamp": "2026-09-05T13:13:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "i5kzZtTsvU2CpM6N",
+   "headline": "Based on 2025, Browns will need at least this many passing yards to make the playoffs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/based-2025-browns-least-many-131131069.html",
+   "timestamp": "2026-09-05T13:11:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "au736VtThO4UbKKH",
+   "headline": "Chiefs News: Sean Payton not expecting Patrick Mahomes to be limited",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-sean-payton-not-131000253.html",
+   "timestamp": "2026-09-05T13:10:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ],
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "MjYPg-btsBE8yZjt",
+   "headline": "Chiefs News: Sean Payton not expecting Patrick Mahomes to be limited",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-sean-payton-not-130000776.html",
+   "timestamp": "2026-09-05T13:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ],
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "-DcxGjmILsnpBBbd",
+   "headline": "Which Detroit Lions player is under the most pressure in 2026?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-player-under-most-130000120.html",
+   "timestamp": "2026-09-05T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "5015VJvjIHh1j8l7",
+   "headline": "Quinnen Williams sees growth in the Cowboys defense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/quinnen-williams-sees-growth-cowboys-130000623.html",
+   "timestamp": "2026-09-05T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "wmO4y1E7sTTG2Db_",
+   "headline": "Fleur-de-links: New Orleans Saints News: The importance of the rookie WRs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/fleur-links-orleans-saints-news-130000024.html",
+   "timestamp": "2026-09-05T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
    "id": "4To9Nj6IaJjWEAwx",
    "headline": "Is the 5,000-yard QB extinct? Where Browns find themselves in the NFL’s cyclical nature",
    "source": "Yahoo Sports",
@@ -1543,85 +1626,6 @@
    "team_abbrs": [
     "ATL",
     "DET"
-   ]
-  },
-  {
-   "id": "lB10H0zdDkw6hpZK",
-   "headline": "The Madden Curse is real and it’s coming for the Bears",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/madden-curse-real-coming-bears-120000078.html",
-   "timestamp": "2026-09-04T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "YCAKArzPHMDSuu7v",
-   "headline": "Chiefs News: NFL executives rank Chiefs outside of the AFC’s top 5",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-news-nfl-executives-rank-120000845.html",
-   "timestamp": "2026-09-04T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "iU8BoJOY8VfPGHA_",
-   "headline": "Report: D'Andre Swift left Thursday's practice due to a cramp",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/report-dandre-swift-left-thursdays-115505546.html",
-   "timestamp": "2026-09-04T11:55:05.000Z",
-   "category": "practice",
-   "player_ids": [
-    "dandre-swift"
-   ]
-  },
-  {
-   "id": "yGumYY3-ZP5PxsPT",
-   "headline": "What uniform combination should the Lions wear vs. the Saints?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/uniform-combination-lions-wear-vs-113642594.html",
-   "timestamp": "2026-09-04T11:36:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "8JMuWct37JY3BqSS",
-   "headline": "49ers announce defensive end Sam Okuayinonu will not play Thursday vs. Rams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-announce-defensive-end-sam-113610155.html",
-   "timestamp": "2026-09-04T11:36:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "W1Whu2aptIhHdKnj",
-   "headline": "What the media is saying about the Cardinals inking WR Michael Wilson’s extension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/media-saying-cardinals-inking-wr-110000474.html",
-   "timestamp": "2026-09-04T11:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "RffxYrWMnWTKrUuw",
-   "headline": "Tennessee Titans news: Training camp may be over, but fixes are still needed",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tennessee-titans-news-training-camp-110000618.html",
-   "timestamp": "2026-09-04T11:00:00.000Z",
-   "category": "camp",
-   "team_abbrs": [
-    "TEN"
    ]
   }
  ]
