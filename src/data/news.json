@@ -4,6 +4,75 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "9YOVXS3RMvV9-9gX",
+   "headline": "Agent's Take: How the Rams built a salary-cap super team around Matthew Stafford",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/agents-take-rams-2026-salary-cap-super-bowl-window/",
+   "timestamp": "2026-09-05T15:18:44.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "matthew-stafford"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "jY2G4l22QdSVQfBh",
+   "headline": "From Tunsil’s injury to passive approach at center, fans are losing sleep over Commanders’ OL - Poll Results",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tunsil-injury-passive-approach-center-150134443.html",
+   "timestamp": "2026-09-05T15:01:34.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "4ENxKrap8SlHxe5k",
+   "headline": "You predict the 2026 Seattle Seahawks season in our Field Gulls form!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/predict-2026-seattle-seahawks-season-150000733.html",
+   "timestamp": "2026-09-05T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "0Bspz1hMdmyttdqR",
+   "headline": "2026 college football players to watch in Week 1 for the NY Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/2026-college-football-players-watch-150000355.html",
+   "timestamp": "2026-09-05T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "q_WLRuxuklRo93lN",
+   "headline": "Predicting the New York Jets Opening Day Lineup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/predicting-york-jets-opening-day-150000980.html",
+   "timestamp": "2026-09-05T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "NUwcRF56I6hbJMqx",
+   "headline": "Cowboys have struggled in recent season openers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-struggled-recent-season-openers-150000720.html",
+   "timestamp": "2026-09-05T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "9Dat_dNhZZteBIrD",
    "headline": "NFL Returnees Granted Injunction To Play At LSU; SEC To Appeal",
    "source": "Pro Football Rumors",
@@ -588,20 +657,6 @@
    "category": "injury",
    "team_abbrs": [
     "KC"
-   ]
-  },
-  {
-   "id": "9YOVXS3RMvV9-9gX",
-   "headline": "Agent's Take: How the Rams built a salary-cap super team around Matthew Stafford",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/agents-take-rams-2026-salary-cap-super-bowl-window/",
-   "timestamp": "2026-09-04T22:06:46.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ],
-   "team_abbrs": [
-    "LAR"
    ]
   },
   {
@@ -1567,65 +1622,6 @@
    "url": "https://sports.yahoo.com/articles/bears-restructure-joe-thuney-dayo-131454982.html",
    "timestamp": "2026-09-04T13:14:54.000Z",
    "category": "transaction",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "owrMYuEDTqmfh58W",
-   "headline": "NY Giants’ Cam Skattebo addresses rumors of rift with John Harbaugh",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ny-giants-cam-skattebo-addresses-130938131.html",
-   "timestamp": "2026-09-04T13:09:38.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-skattebo"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "VabYzqCUsdXFGrnh",
-   "headline": "New England Patriots vs. Seattle Seahawks: How to watch the Super Bowl LX rematch kick off the NFL season with DIRECTV",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/new-england-patriots-vs-seattle-seahawks-how-to-watch-the-super-bowl-lx-rematch-kick-off-the-nfl-season-with-directv-130600633.html",
-   "timestamp": "2026-09-04T13:06:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "PCLN2HsIlULf9c_k",
-   "headline": "One outlet has extreme confidence in Dallas against the Giants",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/one-outlet-extreme-confidence-dallas-130000537.html",
-   "timestamp": "2026-09-04T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "kgIPih25qTk3AlOb",
-   "headline": "Fleur-de-links: Saints move on from two players",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fleur-links-saints-move-two-130000070.html",
-   "timestamp": "2026-09-04T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "i8ZSoYl-68Vy0v6W",
-   "headline": "Chicago Bears Question of the Day: What defines a successful 2026?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-day-defines-successful-130000639.html",
-   "timestamp": "2026-09-04T13:00:00.000Z",
-   "category": "breaking",
    "team_abbrs": [
     "CHI"
    ]
