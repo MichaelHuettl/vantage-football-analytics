@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "cbORekCYHVVgNsJ9",
+   "headline": "Cleveland Browns news: HoF isssues, dustups, salary cap, and more!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-hof-isssues-103000903.html",
+   "timestamp": "2026-09-05T10:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
    "id": "w92Yirbg9JcjU1bf",
    "headline": "Steelers have avoided franchise tag since Le'Veon Bell. Joey Porter Jr. may change that",
    "source": "Yahoo Sports",
@@ -1613,20 +1624,6 @@
    ],
    "team_abbrs": [
     "CIN"
-   ]
-  },
-  {
-   "id": "WXUYWnYBhAQMGKjn",
-   "headline": "NY Giants news: Darius Slayton value, Cam Skattebo interview, more news",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ny-giants-news-darius-slayton-100000644.html",
-   "timestamp": "2026-09-04T10:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-skattebo"
-   ],
-   "team_abbrs": [
-    "NYG"
    ]
   }
  ]
