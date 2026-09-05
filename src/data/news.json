@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "8-Y0G5cdH-ky8i5I",
+   "headline": "Cowboys news: Von Miller is ‘living a dream’ in Dallas",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-news-von-miller-living-110000251.html",
+   "timestamp": "2026-09-05T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "cbORekCYHVVgNsJ9",
    "headline": "Cleveland Browns news: HoF isssues, dustups, salary cap, and more!",
    "source": "Yahoo Sports",
@@ -78,6 +89,17 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
+   ]
+  },
+  {
+   "id": "E4hjVTvn47f_2gDn",
+   "headline": "A dozen records and milestones within reach with Eagles set to open 2026 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dozen-records-milestones-within-reach-070000319.html",
+   "timestamp": "2026-09-05T07:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
    ]
   },
   {
@@ -1597,33 +1619,6 @@
    "category": "breaking",
    "team_abbrs": [
     "MIA"
-   ]
-  },
-  {
-   "id": "ULshg_-OVQFDgQhQ",
-   "headline": "Broncos vs Chiefs loaded with storylines, but Denver is focused on itself",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-chiefs-loaded-storylines-100000790.html",
-   "timestamp": "2026-09-04T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "5oitqEi52cl98iV7",
-   "headline": "Bengals News: Orlando Brown Jr. is a fan of Myles Hinton addition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-news-orlando-brown-jr-100000717.html",
-   "timestamp": "2026-09-04T10:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "amon-ra-st-brown",
-    "aj-brown"
-   ],
-   "team_abbrs": [
-    "CIN"
    ]
   }
  ]
