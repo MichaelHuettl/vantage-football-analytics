@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "LIV2FB6j28G8vV-n",
+   "headline": "Bucs GM Jason Licht Addresses QB Baker Mayfield’s Contract Situation",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/bucs-gm-jason-licht-addresses-qb-baker-mayfields-contract-situation",
+   "timestamp": "2026-09-06T14:54:37.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "baker-mayfield"
+   ]
+  },
+  {
    "id": "KveGod6SwXgqNamD",
    "headline": "How integral to Bills defense line will Greg Gaines be in 2026?",
    "source": "Yahoo Sports",
@@ -286,6 +297,14 @@
    "headline": "Has the NFL season ever started on Wednesday? Here's the history of the Kickoff Game",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/nfl-season-ever-started-wednesday-102102293.html",
+   "timestamp": "2026-09-06T10:21:02.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "whLpTJ-cRHwphbON",
+   "headline": "Has the NFL season ever started on Wednesday? Here's the history of the Kickoff Game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-season-ever-started-wednesday-102102498.html",
    "timestamp": "2026-09-06T10:21:02.000Z",
    "category": "breaking"
   },
@@ -1614,31 +1633,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DET"
-   ]
-  },
-  {
-   "id": "xQgzSYWETE5WBj7u",
-   "headline": "Matthew Stafford’s wife Kelly reveals intimate ‘reset’ before Rams season",
-   "source": "Yahoo Sports",
-   "url": "https://www.yahoo.com/entertainment/celebrity/articles/matthew-stafford-wife-kelly-reveals-204713424.html",
-   "timestamp": "2026-09-04T20:47:13.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "kpFwds1vXLyG3XyK",
-   "headline": "Falcons sign LB Bralen Trice back to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-sign-lb-bralen-trice-204411077.html",
-   "timestamp": "2026-09-04T20:44:11.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ATL"
    ]
   }
  ]
