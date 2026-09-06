@@ -4,6 +4,44 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "KK-mNjf6rxKlNCQo",
+   "headline": "NFL announces new contract for Roger Goodell",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-announces-contract-roger-goodell-172026050.html",
+   "timestamp": "2026-09-06T17:20:26.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "6V3Ni1tm57uKgKn3",
+   "headline": "NFL Commissioner Roger Goodell finalizes 4-year extension through 2030 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-commissioner-roger-goodell-finalizes-4-year-extension-through-2030-season-171938990.html",
+   "timestamp": "2026-09-06T17:19:38.000Z",
+   "category": "transaction"
+  },
+  {
+   "id": "1WLRPqDi9l692jPh",
+   "headline": "Revisiting the Raiders’ return game with the 53-man roster settled",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/revisiting-raiders-return-game-53-171000314.html",
+   "timestamp": "2026-09-06T17:10:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "W8qctyHvIx5BhgkJ",
+   "headline": "See the Cowboys offseason grade according to fans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/see-cowboys-offseason-grade-according-170000406.html",
+   "timestamp": "2026-09-06T17:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "CfsZbvs6J8vvUy45",
    "headline": "Patriots up-to-date depth chart: Who is on the roster right now?",
    "source": "Yahoo Sports",
@@ -1588,51 +1626,6 @@
    "category": "breaking",
    "team_abbrs": [
     "LV"
-   ]
-  },
-  {
-   "id": "dcfsLx7JMsNcrWSt",
-   "headline": "Referee announced for Packers’ Week 1 matchup vs. Vikings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/referee-announced-packers-week-1-003010608.html",
-   "timestamp": "2026-09-05T00:30:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "MIN"
-   ]
-  },
-  {
-   "id": "wCR-QYMLP33gZGcq",
-   "headline": "First Hearing For RB Josh Jacobs Moved To Next Week",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/first-hearing-for-rb-josh-jacobs-moved-to-next-week",
-   "timestamp": "2026-09-05T00:21:23.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ]
-  },
-  {
-   "id": "YpqQCqlCotnb9FiF",
-   "headline": "Saints Reacts Results: How would you grade the offseason?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-reacts-results-grade-offseason-001741686.html",
-   "timestamp": "2026-09-05T00:17:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "OBZAOVdof0uO8NeJ",
-   "headline": "49ers are facing adversity before season even begins",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-facing-adversity-season-even-235654957.html",
-   "timestamp": "2026-09-04T23:56:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
    ]
   }
  ]
