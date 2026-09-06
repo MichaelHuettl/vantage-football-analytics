@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "ac5gkMa6K26viwDF",
+   "headline": "49ers News: The last Sunday without NFL football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-news-last-sunday-without-090000597.html",
+   "timestamp": "2026-09-06T09:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "rnerEZE1xiZqz3nl",
    "headline": "Vikings, S Harrison Smith Agree To Deal",
    "source": "Pro Football Rumors",
@@ -1630,17 +1641,6 @@
    "category": "breaking",
    "player_ids": [
     "jayden-daniels"
-   ]
-  },
-  {
-   "id": "bxVZKnGCO-o56Lra",
-   "headline": "Patriots CB Christian Gonzalez Non-Committal On Playing In Week 1",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/patriots-cb-christian-gonzalez-non-committal-on-playing-in-week-1",
-   "timestamp": "2026-09-04T17:32:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
    ]
   }
  ]
