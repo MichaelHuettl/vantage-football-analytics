@@ -4,6 +4,25 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "PHs81H_ry9UWOaUs",
+   "headline": "What NFL games are on today? Sunday schedule for Sept. 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-games-today-sunday-schedule-100518198.html",
+   "timestamp": "2026-09-06T10:05:18.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "NP-2Sp_cpCOSLiTm",
+   "headline": "Broncos have to find consistency on the ground in 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-consistency-ground-2026-100000656.html",
+   "timestamp": "2026-09-06T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
    "id": "ac5gkMa6K26viwDF",
    "headline": "49ers News: The last Sunday without NFL football",
    "source": "Yahoo Sports",
@@ -1619,28 +1638,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "wuY-TlJqP9E-tGru",
-   "headline": "Texans quietly land high-upside DE Chris Braswell",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-quietly-land-high-upside-174254562.html",
-   "timestamp": "2026-09-04T17:42:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "cq6w2ncbMe6LQksy",
-   "headline": "Jayden Daniels: I can't live off what I did in 2024",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jayden-daniels-cant-live-off-174048871.html",
-   "timestamp": "2026-09-04T17:40:48.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jayden-daniels"
    ]
   }
  ]
