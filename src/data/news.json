@@ -4,6 +4,39 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "yPv1FTZomLNFiIju",
+   "headline": "Giants Sign QB Jameis Winston To 2-Year Extension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/giants-sign-qb-jameis-winston-to-2-year-extension",
+   "timestamp": "2026-09-06T19:55:38.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "lXosX2QyqGf_1Acj",
+   "headline": "Patriots RB TreVeyon Henderson in danger of missing Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-rb-treveyon-henderson-danger-194040777.html",
+   "timestamp": "2026-09-06T19:40:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "QZoLxsmSE4AOnMFU",
+   "headline": "Matthew Stafford is fantastic in international games",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/matthew-stafford-fantastic-international-games-193000479.html",
+   "timestamp": "2026-09-06T19:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "matthew-stafford"
+   ]
+  },
+  {
    "id": "8wPYCYggPePSNWv5",
    "headline": "Inside Harrison Smith's eleventh-hour deal to return to the Vikings",
    "source": "Yahoo Sports",
@@ -1584,39 +1617,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "cbORekCYHVVgNsJ9",
-   "headline": "Cleveland Browns news: HoF isssues, dustups, salary cap, and more!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-hof-isssues-103000903.html",
-   "timestamp": "2026-09-05T10:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "w92Yirbg9JcjU1bf",
-   "headline": "Steelers have avoided franchise tag since Le'Veon Bell. Joey Porter Jr. may change that",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-avoided-franchise-tag-since-100547827.html",
-   "timestamp": "2026-09-05T10:05:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "oYqJ6nSqrtcvdyDI",
-   "headline": "Broncos news: Sean Payton comments on focus competing in a ‘real good’ division",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-news-sean-payton-comments-100000666.html",
-   "timestamp": "2026-09-05T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
    ]
   }
  ]
