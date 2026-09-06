@@ -4,6 +4,29 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "yLLFP8cz8snXaoI9",
+   "headline": "Steelers will face depleted Falcons pass rush Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-face-depleted-falcons-pass-225351808.html",
+   "timestamp": "2026-09-06T22:53:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "PIT"
+   ]
+  },
+  {
+   "id": "Xy6ciyodgc5eDUax",
+   "headline": "Myles Garrett returns to practice for Rams, but will Aaron Donald play in opener?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/myles-garrett-returns-practice-rams-224729672.html",
+   "timestamp": "2026-09-06T22:47:29.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "GqAtCC3ZDXHEyVYD",
    "headline": "Broncos Country ready to watch Coleman, revived running game in Denver",
    "source": "Yahoo Sports",
@@ -276,6 +299,18 @@
    "category": "breaking",
    "team_abbrs": [
     "GB"
+   ]
+  },
+  {
+   "id": "VPtBKZ0EM8xln9bW",
+   "headline": "Rams release veteran cornerback days before season opener against 49ers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-release-veteran-cornerback-days-190514749.html",
+   "timestamp": "2026-09-06T19:05:14.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LAR",
+    "SF"
    ]
   },
   {
@@ -1580,36 +1615,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "SNJgPEgQz-100kO3",
-   "headline": "Vrabel, Gonzalez address star CB's contract talks as Week 1 looms",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vrabel-gonzalez-address-star-cbs-145915165.html",
-   "timestamp": "2026-09-05T14:59:15.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "jkXlnnaQ0qjOgdt4",
-   "headline": "New York Jets Flight Conections 09/05/26",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-flight-conections-09-143237639.html",
-   "timestamp": "2026-09-05T14:32:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "6RgVV-EwCq2bdj1X",
-   "headline": "Rams have not announced official QB2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-not-announced-official-qb2-142419982.html",
-   "timestamp": "2026-09-05T14:24:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
    ]
   }
  ]
