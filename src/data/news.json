@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "gbV5JMH5cxG4Hw0q",
+   "headline": "George Kittle: In line to practice Monday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
+   "timestamp": "2026-09-06T22:05:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
    "id": "FGTUgzu7QCgd6k5-",
    "headline": "Seahawks-Patriots preview: Pats insider details key offseason changes",
    "source": "Yahoo Sports",
@@ -13,6 +24,17 @@
    "team_abbrs": [
     "NE",
     "SEA"
+   ]
+  },
+  {
+   "id": "SVXZydl5OKwCQsiX",
+   "headline": "Giants, Jon Runyan reach agreement on two-year, $22 million contract extension",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-jon-runyan-reach-agreement-215439216.html",
+   "timestamp": "2026-09-06T21:54:39.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -1589,28 +1611,6 @@
    "team_abbrs": [
     "NYG",
     "NYJ"
-   ]
-  },
-  {
-   "id": "5ZMRY4oQaUboHkxn",
-   "headline": "Eight 2025 Buffalo Bills defenders are currently out of the NFL, what does it mean?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eight-2025-buffalo-bills-defenders-141237415.html",
-   "timestamp": "2026-09-05T14:12:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "a5wJfuuUhY7g42Ga",
-   "headline": "Falcons don’t have a QB controversy; they have a leadership vacuum",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-don-t-qb-controversy-140511153.html",
-   "timestamp": "2026-09-05T14:05:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
    ]
   }
  ]
