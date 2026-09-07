@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated": "2026-09-06",
+ "updated": "2026-09-07",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
@@ -198,6 +198,17 @@
    "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-6-26",
    "timestamp": "2026-09-06T23:50:10.000Z",
    "category": "practice"
+  },
+  {
+   "id": "mcikwGL3UUArH0Lw",
+   "headline": "Rams betting they can beat jet lag by ignoring it in wild 16-hour Australia gamble",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-betting-beat-jet-lag-234654584.html",
+   "timestamp": "2026-09-06T23:46:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
   },
   {
    "id": "lz1rjS7mOhGhQw3T",
@@ -424,6 +435,17 @@
    ]
   },
   {
+   "id": "9_n6Tf3wlpy-gazO",
+   "headline": "Kyle Shanahan reacts to 49ers fan takeover of Melbourne before NFL season opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kyle-shanahan-reacts-49ers-fan-205051599.html",
+   "timestamp": "2026-09-06T20:50:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "LreSZc7mcIKPCzWz",
    "headline": "Steelers offensive line named one of the ‘best bargains’ in NFL",
    "source": "Yahoo Sports",
@@ -443,6 +465,20 @@
    "category": "breaking",
    "team_abbrs": [
     "LAR"
+   ]
+  },
+  {
+   "id": "UB9iiJumLR1B3SH-",
+   "headline": "Why Christian McCaffrey believes in 49ers' ‘detailed' travel plan to Australia",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/why-christian-mccaffrey-believes-49ers-202650997.html",
+   "timestamp": "2026-09-06T20:26:50.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-mccaffrey"
+   ],
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -1584,39 +1620,6 @@
    "category": "breaking",
    "team_abbrs": [
     "LAR"
-   ]
-  },
-  {
-   "id": "5yS5aGeAICdxxwEP",
-   "headline": "Rams Reacts: Aaron Donald’s return benefits young defensive line most",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-reacts-aaron-donald-return-190300445.html",
-   "timestamp": "2026-09-05T19:03:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "wMG5jDhKDA0jE93a",
-   "headline": "Arthur Marshall, former Giants receiver, dead at 57",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/arthur-marshall-former-giants-receiver-185331494.html",
-   "timestamp": "2026-09-05T18:53:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "wmO4y1E7sTTG2Db_",
-   "headline": "New Orleans Saints News: The importance of the rookie WRs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fleur-links-orleans-saints-news-130000024.html",
-   "timestamp": "2026-09-05T18:36:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
    ]
   }
  ]
