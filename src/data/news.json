@@ -4,6 +4,57 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "633tGRly2x2scl46",
+   "headline": "Rams Expect WR Puka Nacua To Play Week 1",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/rams-expect-wr-puka-nacua-to-play-week-1",
+   "timestamp": "2026-09-07T01:29:15.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "peui0TR5ziLcagHY",
+   "headline": "49ers player gets cut after flying 16 hours to Australia: Why he might be sent home and why they made the move",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/49ers-player-gets-cut-after-flying-16-hours-to-australia/",
+   "timestamp": "2026-09-07T01:26:45.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "x-8GiJuBRZsOeble",
+   "headline": "With opener looming, Rams DE Myles Garrett returns to practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/opener-looming-rams-myles-garrett-012357874.html",
+   "timestamp": "2026-09-07T01:23:57.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "PAbqJ-gJhM4wLc57",
+   "headline": "Rams expect both Puka Nacua, Alaric Jackson to play against 49ers in Australia despite off-field incidents",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/rams-expect-both-puka-nacua-alaric-jackson-to-play-against-49ers-in-australia-despite-off-field-incidents-010513812.html",
+   "timestamp": "2026-09-07T01:05:13.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "qOSX3-M3MwVpVpFe",
    "headline": "Giants extend guard Jon Runyan Jr. by two years",
    "source": "Yahoo Sports",
@@ -22,6 +73,26 @@
    "timestamp": "2026-09-07T00:24:05.000Z",
    "category": "practice",
    "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "ylt3c3BIuIJq9xis",
+   "headline": "AFC West Predictions, Odds & NFL Best Picks for 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/afc-west-predictions-odds-nfl-125400058.html",
+   "timestamp": "2026-09-07T00:23:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "6mFzRIijk8vVKbxY",
+   "headline": "Patriots vs Seahawks Prediction, Picks & Early Odds for Wednesday’s Season Opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-prediction-picks-120000415.html",
+   "timestamp": "2026-09-07T00:22:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
     "SEA"
    ]
   },
@@ -246,6 +317,17 @@
    "url": "https://sports.yahoo.com/articles/tracking-snap-counts-pro-football-210000219.html",
    "timestamp": "2026-09-06T21:00:00.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "Ci1FSKVq-F81sP_5",
+   "headline": "Giants extend Jameis Winston on two-year, $13 million deal",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-extend-jameis-winston-two-205221536.html",
+   "timestamp": "2026-09-06T20:52:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
   },
   {
    "id": "CfsZbvs6J8vvUy45",
@@ -659,17 +741,6 @@
    ]
   },
   {
-   "id": "peui0TR5ziLcagHY",
-   "headline": "49ers player gets cut after flying 16 hours to Australia: Why he might be sent home and why they made the move",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/49ers-player-gets-cut-after-flying-16-hours-to-australia/",
-   "timestamp": "2026-09-06T15:22:23.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
    "id": "TM5ApGdQy6aj-N-5",
    "headline": "Where did the players the Cardinals released end up?",
    "source": "Yahoo Sports",
@@ -882,18 +953,6 @@
    "category": "breaking",
    "team_abbrs": [
     "CHI"
-   ]
-  },
-  {
-   "id": "6mFzRIijk8vVKbxY",
-   "headline": "Patriots vs Seahawks Prediction, Picks & Early Odds for Wednesday’s Season Opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-prediction-picks-120000415.html",
-   "timestamp": "2026-09-06T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
    ]
   },
   {
@@ -1558,58 +1617,6 @@
    "category": "breaking",
    "team_abbrs": [
     "LAR"
-   ]
-  },
-  {
-   "id": "CVmrz68EiVt2MToQ",
-   "headline": "How the Cowboys season could go wrong",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-season-could-wrong-170000178.html",
-   "timestamp": "2026-09-05T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "jrvfSQKKJ4GJjQv2",
-   "headline": "The Eagles’ trendsetting roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-trendsetting-roster-163400947.html",
-   "timestamp": "2026-09-05T16:34:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "9InHbTDeKV23Xogk",
-   "headline": "2026 NFL Season Award Predictions: Offensive Player of the Year",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfl-season-award-predictions-163000018.html",
-   "timestamp": "2026-09-05T16:30:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "C-L1Sw0OruSe6Kyg",
-   "headline": "Eagles News: NFL offense rankings have Philadelphia in the middle of the pack",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-nfl-offense-rankings-161956652.html",
-   "timestamp": "2026-09-05T16:19:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "fdqB6_H5AKp7K25_",
-   "headline": "Cowboys Restructure Three Contracts, Create $19MM in Cap Space",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/cowboys-restructure-3-contracts-create-19-million-in-cap-space",
-   "timestamp": "2026-09-05T16:19:39.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
    ]
   }
  ]
