@@ -4,6 +4,58 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "vNoZ5RAuHUfAyoFM",
+   "headline": "Former Bears FB Matt Suhey dies at 68",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-bears-fb-matt-suhey-185312278.html",
+   "timestamp": "2026-09-07T18:53:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "rnerEZE1xiZqz3nl",
+   "headline": "Vikings, S Harrison Smith Agree To Deal",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/vikings-s-harrison-smith-agree-to-deal",
+   "timestamp": "2026-09-07T18:50:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "FpVrvpLNUjLPxdyx",
+   "headline": "Rome Odunze didn't practice Monday, but D'Andre Swift and Kyle Monangai did",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rome-odunze-didnt-practice-monday-184520955.html",
+   "timestamp": "2026-09-07T18:45:20.000Z",
+   "category": "practice",
+   "player_ids": [
+    "dandre-swift"
+   ]
+  },
+  {
+   "id": "NxBjuJYFmaIc1M4R",
+   "headline": "D'Andre Swift: Back at practice Monday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/dandre-swift-14394",
+   "timestamp": "2026-09-07T18:43:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "dandre-swift"
+   ]
+  },
+  {
+   "id": "_DjjM6PeHUEXpGuG",
+   "headline": "Notre Dame Football Stats: Week 1 Review of Win over Wisconsin",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/notre-dame-football-stats-week-183309034.html",
+   "timestamp": "2026-09-07T18:33:09.000Z",
+   "category": "breaking"
+  },
+  {
    "id": "hZmXMzs2SDssZqDs",
    "headline": "Buccaneers name captains for the 2026 season",
    "source": "Yahoo Sports",
@@ -23,6 +75,18 @@
    "category": "breaking"
   },
   {
+   "id": "xWwa8FG6dN7mX5ki",
+   "headline": "Cowboys vs Giants Prediction, Picks & Early Odds for Sunday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-vs-giants-prediction-picks-181600702.html",
+   "timestamp": "2026-09-07T18:16:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NYG"
+   ]
+  },
+  {
    "id": "qRAWZTdgg-3DlDMK",
    "headline": "Malik Willis, De’Von Achane among six Dolphins captains for 2026",
    "source": "Yahoo Sports",
@@ -31,6 +95,18 @@
    "category": "breaking",
    "team_abbrs": [
     "MIA"
+   ]
+  },
+  {
+   "id": "BiwbCoGtaAIyFKjA",
+   "headline": "Bills vs Texans Prediction, Picks & Early Odds: NFL Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-vs-texans-prediction-picks-180700438.html",
+   "timestamp": "2026-09-07T18:07:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "HOU"
    ]
   },
   {
@@ -1570,84 +1646,6 @@
    "category": "practice",
    "team_abbrs": [
     "LAR"
-   ]
-  },
-  {
-   "id": "PAbqJ-gJhM4wLc57",
-   "headline": "Rams expect both Puka Nacua, Alaric Jackson to play against 49ers in Australia despite off-field incidents",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/rams-expect-both-puka-nacua-alaric-jackson-to-play-against-49ers-in-australia-despite-off-field-incidents-010513812.html",
-   "timestamp": "2026-09-07T01:05:13.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "4apRt-Em4-7NYpzb",
-   "headline": "Puka Nacua expected to play week 1 against 49ers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/puka-nacua-expected-play-week-010233488.html",
-   "timestamp": "2026-09-07T01:02:33.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "qOSX3-M3MwVpVpFe",
-   "headline": "Giants extend guard Jon Runyan Jr. by two years",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-extend-guard-jon-runyan-004315457.html",
-   "timestamp": "2026-09-07T00:43:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "DVUPEVTWcHrBByVo",
-   "headline": "Seahawks S Nick Emmanwori (ankle) was limited in practice on Sunday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-nick-emmanwori-ankle-limited-002405414.html",
-   "timestamp": "2026-09-07T00:24:05.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "ylt3c3BIuIJq9xis",
-   "headline": "AFC West Predictions, Odds & NFL Best Picks for 2026",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/afc-west-predictions-odds-nfl-125400058.html",
-   "timestamp": "2026-09-07T00:23:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "ukSoNWcscTBTBojN",
-   "headline": "RB TreVeyon Henderson (ankle) misses practice, three days before Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rb-treveyon-henderson-ankle-misses-000658334.html",
-   "timestamp": "2026-09-07T00:06:58.000Z",
-   "category": "practice"
-  },
-  {
-   "id": "DxzXcpK58uzsX8-D",
-   "headline": "A slow start could sink the Buccaneers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/slow-start-could-sink-buccaneers-000000021.html",
-   "timestamp": "2026-09-07T00:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TB"
    ]
   }
  ]
