@@ -4,6 +4,61 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "BMjps6Vqn2jAzDjh",
+   "headline": "Ja'Marr Chase on practice field Monday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jamarr-chase-practice-field-monday-174602217.html",
+   "timestamp": "2026-09-07T17:46:02.000Z",
+   "category": "practice",
+   "player_ids": [
+    "jamarr-chase"
+   ]
+  },
+  {
+   "id": "ZcG8JtoJh2Ung4hi",
+   "headline": "Michael Penix Jr. is ‘very close’ but says Falcons deserve 100% from him",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/michael-penix-jr-very-close-174141962.html",
+   "timestamp": "2026-09-07T17:41:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "8Y9zUNvdy3-mLSk0",
+   "headline": "Arizona Cardinals fans think Monti Ossenfort has struggled in the NFL Draft",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/arizona-cardinals-fans-think-monti-173937588.html",
+   "timestamp": "2026-09-07T17:39:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "BEJSGVWw4erZmIkn",
+   "headline": "Ja'Marr Chase: Present at practice",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jamarr-chase-15183",
+   "timestamp": "2026-09-07T17:38:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "jamarr-chase"
+   ]
+  },
+  {
+   "id": "cZ6INlEUsbiR7vhl",
+   "headline": "Detroit Lions believe DJ Wonnum is great complement to Aidan Hutchinson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-believe-dj-wonnum-173000754.html",
+   "timestamp": "2026-09-07T17:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
    "id": "KGn_N1vA4nglr3io",
    "headline": "Todd Monken names Deshaun Watson one of five Week 1 captains",
    "source": "Yahoo Sports",
@@ -24,13 +79,15 @@
   },
   {
    "id": "C7uueBbDBTfejH26",
-   "headline": "Rams key starters expected to play Thursday against 49ers",
+   "headline": "Puka Nacua, A.J. Jackson expected to play against 49ers",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/rams-key-starters-expected-play-170224280.html",
    "timestamp": "2026-09-07T17:02:24.000Z",
    "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
    "team_abbrs": [
-    "LAR",
     "SF"
    ]
   },
@@ -1589,63 +1646,6 @@
    "url": "https://sports.yahoo.com/articles/giants-extend-jameis-winston-jon-220636004.html",
    "timestamp": "2026-09-06T22:06:36.000Z",
    "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "gbV5JMH5cxG4Hw0q",
-   "headline": "George Kittle: In line to practice Monday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
-   "timestamp": "2026-09-06T22:05:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "george-kittle"
-   ]
-  },
-  {
-   "id": "FGTUgzu7QCgd6k5-",
-   "headline": "Seahawks-Patriots preview: Pats insider details key offseason changes",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-patriots-preview-pats-insider-215719356.html",
-   "timestamp": "2026-09-06T21:57:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "SVXZydl5OKwCQsiX",
-   "headline": "Giants, Jon Runyan reach agreement on two-year, $22 million contract extension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-jon-runyan-reach-agreement-215439216.html",
-   "timestamp": "2026-09-06T21:54:39.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "zXGgPEoga0RkeLwx",
-   "headline": "Steelers could face Falcons fourth-string QB in Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-could-face-falcons-fourth-215321817.html",
-   "timestamp": "2026-09-06T21:53:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "PIT"
-   ]
-  },
-  {
-   "id": "w-NYjYzGsH_dAqi6",
-   "headline": "Giants, QB Jameis Winston agree to two-year extension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-qb-jameis-winston-agree-214851213.html",
-   "timestamp": "2026-09-06T21:48:51.000Z",
-   "category": "transaction",
    "team_abbrs": [
     "NYG"
    ]
