@@ -4,6 +4,28 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "BQsFAvWkEkovXyML",
+   "headline": "Vikings 2026 Season Forecast",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-2026-season-forecast-041918552.html",
+   "timestamp": "2026-09-07T04:19:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "Hk92iJ5rkm9I_mhe",
+   "headline": "Shanahan throws shade at Rams: NFL ‘let them off the hook’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/shanahan-throws-shade-rams-nfl-040311912.html",
+   "timestamp": "2026-09-07T04:03:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "sT31T4UuRtbFx4XM",
    "headline": "49ers announced 2026 team captains (spoiler: it’s the same as 2025)",
    "source": "Yahoo Sports",
@@ -381,6 +403,20 @@
    "url": "https://sports.yahoo.com/articles/walter-payton-nfl-man-nominee-212630013.html",
    "timestamp": "2026-09-06T21:26:30.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "9gYELsqna-m0aEvq",
+   "headline": "Nick Bosa, Christian McCaffrey don't practice as 49ers begin Week 1 preparation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nick-bosa-christian-mccaffrey-dont-212311019.html",
+   "timestamp": "2026-09-06T21:23:11.000Z",
+   "category": "practice",
+   "player_ids": [
+    "christian-mccaffrey"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
   },
   {
    "id": "IXILgA5hUvqJwHEw",
@@ -1587,39 +1623,6 @@
    "category": "breaking",
    "team_abbrs": [
     "LV"
-   ]
-  },
-  {
-   "id": "TmpQzynN-cHpnaSM",
-   "headline": "Patriots RB TreVeyon Henderson still not practicing with ankle injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-rb-treveyon-henderson-still-194156487.html",
-   "timestamp": "2026-09-05T19:41:56.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "nQrR9Jo2P5BEni0I",
-   "headline": "Commanders debate: How much pressure is Dan Quinn under heading into 2026?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-debate-much-pressure-dan-191258719.html",
-   "timestamp": "2026-09-05T19:12:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "cJ9SAu_tzOdWVDRa",
-   "headline": "Sean McVay’s recent response gives puzzling thoughts on Rams backup quarterback situation",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sean-mcvay-recent-response-gives-191234356.html",
-   "timestamp": "2026-09-05T19:12:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
    ]
   }
  ]
