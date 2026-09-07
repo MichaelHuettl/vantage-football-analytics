@@ -4,6 +4,74 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "9jPD-9LdWFaC0AC4",
+   "headline": "Giants release veteran WR Darius Slayton ahead of season opener vs. Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/giants-release-veteran-wr-darius-slayton-ahead-of-season-opener-vs-cowboys-221545049.html",
+   "timestamp": "2026-09-07T22:15:45.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL",
+    "NYG"
+   ]
+  },
+  {
+   "id": "eJWaAGzofRoC20Kg",
+   "headline": "Darius Slayton: Grateful for time with Giants, excited to see what's next",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/darius-slayton-grateful-time-giants-221054990.html",
+   "timestamp": "2026-09-07T22:10:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "bBoQI5eZ6sniTCk-",
+   "headline": "NFL Week 1 odds: Eagles favored to beat Commanders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-1-odds-eagles-221014961.html",
+   "timestamp": "2026-09-07T22:10:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "WAS"
+   ]
+  },
+  {
+   "id": "XW5rzuEW509gQWo9",
+   "headline": "Titans LB Cedric Gray injured in off-road vehicle accident",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-lb-cedric-gray-injured-220111544.html",
+   "timestamp": "2026-09-07T22:01:11.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "4-oOkrAktGI9lYLg",
+   "headline": "Detroit Lions announce 7 captains for 2026 season, including 3 first-timers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-announce-7-captains-220000199.html",
+   "timestamp": "2026-09-07T22:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "oTJDeCklTVJFAyfm",
+   "headline": "Rams DC Chris Shula: Everything's day by day with Aaron Donald",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-dc-chris-shula-everythings-215836889.html",
+   "timestamp": "2026-09-07T21:58:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "83f8qd5T_1iOFPeG",
    "headline": "Former Bears FB Matt Suhey Dies At 68",
    "source": "Pro Football Rumors",
@@ -1570,72 +1638,6 @@
    "url": "https://sports.yahoo.com/articles/2026-quarterback-competitions-went-older-125213428.html",
    "timestamp": "2026-09-07T12:52:13.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "4l7GNhqpc5wH7e7o",
-   "headline": "Report: Giants to sign DL Dean Lowry to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/report-giants-sign-dl-dean-124452503.html",
-   "timestamp": "2026-09-07T12:44:52.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "xey94Miu4mGpNuZb",
-   "headline": "Sean McVay expects Puka Nacua, Alaric Jackson to be available Thursday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sean-mcvay-expects-puka-nacua-123615584.html",
-   "timestamp": "2026-09-07T12:36:15.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "Ri53ABzvTlrrU4jR",
-   "headline": "49ers play it safe with Nick Bosa as George Kittle practices Monday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-play-safe-nick-bosa-123312029.html",
-   "timestamp": "2026-09-07T12:33:12.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ],
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "igz4s_cP4yE9wbjC",
-   "headline": "What is the Detroit Lions’ ceiling for the 2026 season?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/detroit-lions-ceiling-2026-season-123000568.html",
-   "timestamp": "2026-09-07T12:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "CubfnRh-qoM3YYLn",
-   "headline": "Tua Tagovailoa: Will start Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tua-tagovailoa-14465",
-   "timestamp": "2026-09-07T12:23:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "bU9B0RDPEtzAtaLl",
-   "headline": "Falcons pick Tua Tagovailoa as their Week 1 starting quarterback",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-pick-tua-tagovailoa-week-121952022.html",
-   "timestamp": "2026-09-07T12:19:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
   }
  ]
 }
