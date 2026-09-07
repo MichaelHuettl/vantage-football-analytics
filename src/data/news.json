@@ -4,14 +4,83 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "Veq5_d-iRodcHqZd",
+   "headline": "2026 NFL Week 1 early odds: Cowboys road favorites vs. Giants, while Panthers in familiar position vs. Bears",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-1-early-odds-cowboys-road-favorites-vs-giants-while-panthers-in-familiar-position-vs-bears/",
+   "timestamp": "2026-09-07T12:56:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "CHI",
+    "DAL",
+    "NYG"
+   ]
+  },
+  {
    "id": "Eq16A092kR7L9Ebs",
-   "headline": "As Joe Schoen hinted they would, the Giants have added a defensive tackle",
+   "headline": "As Joe Schoen hinted they would, the Giants may have added a defensive tackle",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/joe-schoen-hinted-giants-added-123151635.html",
-   "timestamp": "2026-09-07T12:31:51.000Z",
+   "timestamp": "2026-09-07T12:54:11.000Z",
    "category": "breaking",
    "team_abbrs": [
     "NYG"
+   ]
+  },
+  {
+   "id": "lgTk0_5fJKYdlGD-",
+   "headline": "All 2026 quarterback competitions went to the older players",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/2026-quarterback-competitions-went-older-125213428.html",
+   "timestamp": "2026-09-07T12:52:13.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "4l7GNhqpc5wH7e7o",
+   "headline": "Report: Giants to sign DL Dean Lowry to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-giants-sign-dl-dean-124452503.html",
+   "timestamp": "2026-09-07T12:44:52.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "D11k2lPLBAgAI6xY",
+   "headline": "Falcons name Tua Tagovailoa starting QB over Michael Penix Jr. for Week 1",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/falcons-qb-starter-tua-tagovailoa-michael-penix-jr/",
+   "timestamp": "2026-09-07T12:39:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "xey94Miu4mGpNuZb",
+   "headline": "Sean McVay expects Puka Nacua, Alaric Jackson to be available Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-mcvay-expects-puka-nacua-123615584.html",
+   "timestamp": "2026-09-07T12:36:15.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "Ri53ABzvTlrrU4jR",
+   "headline": "49ers play it safe with Nick Bosa as George Kittle practices Monday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-play-safe-nick-bosa-123312029.html",
+   "timestamp": "2026-09-07T12:33:12.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ],
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -64,6 +133,18 @@
    "category": "breaking"
   },
   {
+   "id": "6mFzRIijk8vVKbxY",
+   "headline": "Patriots vs Seahawks Prediction, Picks & Early Odds for Wednesday’s Season Opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-prediction-picks-120000415.html",
+   "timestamp": "2026-09-07T12:14:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
    "id": "21m5MVig32RqLt5q",
    "headline": "Falcons choose Tua Tagovailoa over Michael Penix Jr. as Week 1 starter vs. Steelers",
    "source": "Yahoo Sports",
@@ -73,6 +154,18 @@
    "team_abbrs": [
     "ATL",
     "PIT"
+   ]
+  },
+  {
+   "id": "MEWgX03NP8lT_70w",
+   "headline": "Week 1 NFL odds, lines, best bets, predictions: Computer model backs Eagles and Jaguars",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-1-nfl-2026-odds-spreads-lines-predictions-best-bets/",
+   "timestamp": "2026-09-07T12:07:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "JAX",
+    "PHI"
    ]
   },
   {
@@ -310,20 +403,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "Veq5_d-iRodcHqZd",
-   "headline": "2026 NFL Week 1 early odds: Cowboys road favorites vs. Giants, while Panthers in familiar position vs. Bears",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-1-early-odds-cowboys-road-favorites-vs-giants-while-panthers-in-familiar-position-vs-bears/",
-   "timestamp": "2026-09-07T10:01:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "CHI",
-    "DAL",
-    "NYG"
    ]
   },
   {
@@ -700,18 +779,6 @@
    "url": "https://sports.yahoo.com/articles/afc-west-predictions-odds-nfl-125400058.html",
    "timestamp": "2026-09-07T00:23:00.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "6mFzRIijk8vVKbxY",
-   "headline": "Patriots vs Seahawks Prediction, Picks & Early Odds for Wednesday’s Season Opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-prediction-picks-120000415.html",
-   "timestamp": "2026-09-07T00:22:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
   },
   {
    "id": "ukSoNWcscTBTBojN",
@@ -1568,67 +1635,6 @@
    "team_abbrs": [
     "DAL"
    ]
-  },
-  {
-   "id": "I8DKA0fzFgT05h5I",
-   "headline": "Pre-Snap Reads: Week 1 previews as Seahawks prep for Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pre-snap-reads-week-1-130000160.html",
-   "timestamp": "2026-09-06T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "cKPyivSYAE8P_8PT",
-   "headline": "Rams release player who was on injured reserve",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-release-player-injured-130000789.html",
-   "timestamp": "2026-09-06T13:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "GlU8DjGvBSTm5ZOy",
-   "headline": "Eagles News: Philadelphia’s X factors for the 2026 season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-philadelphia-x-factors-124729674.html",
-   "timestamp": "2026-09-06T12:47:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "SPzY8iozQxYN1bfC",
-   "headline": "RB Rachaad White bet on himself; will it pay off for the Commanders? - Daily Slop",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rb-rachaad-white-bet-himself-123000538.html",
-   "timestamp": "2026-09-06T12:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "uaWbWZbHWYck_RrM",
-   "headline": "Who is playing in NFL Week 1? Here's the full schedule",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/playing-nfl-week-1-heres-120044331.html",
-   "timestamp": "2026-09-06T12:00:44.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "6itNYDLh6CVeB15O",
-   "headline": "Who is playing in NFL Week 1? Here's the full schedule",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/playing-nfl-week-1-heres-120044307.html",
-   "timestamp": "2026-09-06T12:00:44.000Z",
-   "category": "breaking"
   }
  ]
 }
