@@ -4,6 +4,28 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "OPYjMsjJalkWFwNZ",
+   "headline": "Derrick Henry: I am tired of watching the Super Bowl on TV",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/derrick-henry-am-tired-watching-230928307.html",
+   "timestamp": "2026-09-07T23:09:28.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "derrick-henry"
+   ]
+  },
+  {
+   "id": "LK5KcbEWRBaNR7pP",
+   "headline": "Giants release Darius Slayton: Possible landing spots for veteran receiver",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/giants-release-darius-slayton-landing-spots/",
+   "timestamp": "2026-09-07T23:02:27.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
    "id": "ZGUTAU_EDWv3WglB",
    "headline": "Ravens Name Jovaughn Gwyn No. 1 Center",
    "source": "Pro Football Rumors",
@@ -1615,29 +1637,6 @@
    "url": "https://sports.yahoo.com/articles/2026-nfl-season-award-predictions-130000153.html",
    "timestamp": "2026-09-07T13:00:00.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "oqKarn4eTaXsFRcm",
-   "headline": "3 reasons to be excited, 3 reasons to be concerned about the Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-reasons-excited-3-reasons-130000675.html",
-   "timestamp": "2026-09-07T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "IddmDbaHnwxSNOgb",
-   "headline": "What are the odds? Saints open as 6.5-point underdogs in their season opener at the Lions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/odds-saints-open-6-5-130000256.html",
-   "timestamp": "2026-09-07T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
   }
  ]
 }
