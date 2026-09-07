@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "o9ibf9PZloSA2rYc",
+   "headline": "NFL Staff Rumors: Shanahan, Giants, Revis",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-staff-rumors-shanahan-giants-revis",
+   "timestamp": "2026-09-07T03:00:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
    "id": "fN0TOXHwp81bG9sG",
    "headline": "49ers DL has a broken foot, hopes to return later in the season",
    "source": "Yahoo Sports",
@@ -434,6 +445,17 @@
    "category": "transaction",
    "team_abbrs": [
     "NYG"
+   ]
+  },
+  {
+   "id": "HOSbV4PRrJQyzMqc",
+   "headline": "Kyle Shanahan, 49ers go from cheering Aaron Donald retirement to cursing return",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kyle-shanahan-49ers-cheering-aaron-195209879.html",
+   "timestamp": "2026-09-06T19:52:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -1599,25 +1621,6 @@
    "team_abbrs": [
     "NYJ"
    ]
-  },
-  {
-   "id": "wOEaesLWKESz2qbM",
-   "headline": "Packers GM Brian Gutekunst Shoots Down Josh Sweat Trade Rumors",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/packers-gm-brian-gutekunst-shoots-down-josh-sweat-trade-rumors",
-   "timestamp": "2026-09-05T17:50:20.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "9Dat_dNhZZteBIrD",
-   "headline": "NFL Returnees Granted Injunction To Play At LSU; SEC To Appeal",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/nfl-returnees-granted-injunction-to-play-at-lsu-sec-to-appeal",
-   "timestamp": "2026-09-05T17:30:39.000Z",
-   "category": "breaking"
   }
  ]
 }
