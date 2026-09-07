@@ -4,6 +4,52 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "DqlhvraeXz15tKbO",
+   "headline": "Seahawks-Patriots injury report: Concerns at safety grow with Ty Okada injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-patriots-injury-report-concerns-235235349.html",
+   "timestamp": "2026-09-06T23:52:35.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "oCzB15ZFELEa0Co0",
+   "headline": "NFL Practice Squad Updates: 9/6/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-6-26",
+   "timestamp": "2026-09-06T23:50:10.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "lz1rjS7mOhGhQw3T",
+   "headline": "49ers TE George Kittle expected to practice Monday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-te-george-kittle-expected-234027678.html",
+   "timestamp": "2026-09-06T23:40:27.000Z",
+   "category": "practice",
+   "player_ids": [
+    "george-kittle"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "cOz0Q6w9CelC5dk-",
+   "headline": "Patriots vs. Seahawks Sunday injury report: TreVeyon Henderson among 3 non-participants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-sunday-injury-233858901.html",
+   "timestamp": "2026-09-06T23:38:58.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
    "id": "yLLFP8cz8snXaoI9",
    "headline": "Steelers will face depleted Falcons pass rush Week 1",
    "source": "Yahoo Sports",
@@ -1571,50 +1617,6 @@
    "category": "injury",
    "team_abbrs": [
     "WAS"
-   ]
-  },
-  {
-   "id": "4ENxKrap8SlHxe5k",
-   "headline": "You predict the 2026 Seattle Seahawks season in our Field Gulls form!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/predict-2026-seattle-seahawks-season-150000733.html",
-   "timestamp": "2026-09-05T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "0Bspz1hMdmyttdqR",
-   "headline": "2026 college football players to watch in Week 1 for the NY Giants",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-college-football-players-watch-150000355.html",
-   "timestamp": "2026-09-05T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "q_WLRuxuklRo93lN",
-   "headline": "Predicting the New York Jets Opening Day Lineup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/predicting-york-jets-opening-day-150000980.html",
-   "timestamp": "2026-09-05T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "NUwcRF56I6hbJMqx",
-   "headline": "Cowboys have struggled in recent season openers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-struggled-recent-season-openers-150000720.html",
-   "timestamp": "2026-09-05T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
    ]
   }
  ]
