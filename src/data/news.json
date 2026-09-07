@@ -4,6 +4,14 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "kAbw6YNlimfSTgm4",
+   "headline": "NFL's new three-strike system doesn't apply until the 2026 regular season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfls-three-strike-system-doesnt-050914816.html",
+   "timestamp": "2026-09-07T05:09:14.000Z",
+   "category": "breaking"
+  },
+  {
    "id": "BQsFAvWkEkovXyML",
    "headline": "Vikings 2026 Season Forecast",
    "source": "Yahoo Sports",
@@ -137,6 +145,20 @@
    ],
    "team_abbrs": [
     "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "4apRt-Em4-7NYpzb",
+   "headline": "Puka Nacua expected to play week 1 against 49ers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/puka-nacua-expected-play-week-010233488.html",
+   "timestamp": "2026-09-07T01:02:33.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
     "SF"
    ]
   },
@@ -1601,28 +1623,6 @@
    "category": "breaking",
    "team_abbrs": [
     "CLE"
-   ]
-  },
-  {
-   "id": "aa9tZsFGHZpMDM1h",
-   "headline": "Combatting old faces in new places dominate the key Week 1 storylines for Jets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/combatting-old-faces-places-dominate-201302999.html",
-   "timestamp": "2026-09-05T20:13:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "OTasRDZgx0fhrNcH",
-   "headline": "Raiders’ Patrick Johnson a feel-good story, but veteran earned his spot",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-patrick-johnson-feel-good-200100305.html",
-   "timestamp": "2026-09-05T20:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
    ]
   }
  ]
