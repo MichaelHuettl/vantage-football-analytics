@@ -4,6 +4,21 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "87ZfptwUgeolsz3i",
+   "headline": "NFL Power Rankings: Are the Bills and Josh Allen the biggest threat to the Rams' reign?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/article/nfl-power-rankings-are-the-bills-and-josh-allen-the-biggest-threat-to-the-rams-reign-071327328.html",
+   "timestamp": "2026-09-07T07:13:27.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen"
+   ],
+   "team_abbrs": [
+    "BUF",
+    "LAR"
+   ]
+  },
+  {
    "id": "4QNNMnvE8JRmBsOc",
    "headline": "Christian McCaffrey: Sitting out early drills Monday",
    "source": "RotoWire",
@@ -1612,17 +1627,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "D1Au4a5XLFcBKXcC",
-   "headline": "49ers place DE Sam Okuayinonu on IR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-place-sam-okuayinonu-ir-202528121.html",
-   "timestamp": "2026-09-05T20:25:28.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SF"
    ]
   }
  ]
