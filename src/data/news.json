@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "4QNNMnvE8JRmBsOc",
+   "headline": "Christian McCaffrey: Sitting out early drills Monday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/christian-mccaffrey-11690",
+   "timestamp": "2026-09-07T05:57:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-mccaffrey"
+   ]
+  },
+  {
    "id": "kAbw6YNlimfSTgm4",
    "headline": "NFL's new three-strike system doesn't apply until the 2026 regular season",
    "source": "Yahoo Sports",
@@ -31,6 +42,39 @@
    "category": "breaking",
    "team_abbrs": [
     "LAR"
+   ]
+  },
+  {
+   "id": "yPv1FTZomLNFiIju",
+   "headline": "Giants To Give Jameis Winston Extension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/giants-sign-qb-jameis-winston-to-2-year-extension",
+   "timestamp": "2026-09-07T03:55:38.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "BN3PX672_ydBslaQ",
+   "headline": "Bears Looking To Trade For Pass Rusher?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/bears-looking-to-trade-for-pass-rusher",
+   "timestamp": "2026-09-07T03:50:30.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "jGRoRNmWu_I8xCjh",
+   "headline": "Giants, Jon Runyan Jr. Agree On Extension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/giants-sign-g-jon-runyan-to-2-year-extension",
+   "timestamp": "2026-09-07T03:45:30.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -99,7 +143,7 @@
   },
   {
    "id": "633tGRly2x2scl46",
-   "headline": "Rams Expect WR Puka Nacua To Play Week 1",
+   "headline": "Rams Expect WR Puka Nacua To Play In Week 1",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/09/rams-expect-wr-puka-nacua-to-play-week-1",
    "timestamp": "2026-09-07T01:29:15.000Z",
@@ -383,17 +427,6 @@
    ]
   },
   {
-   "id": "jGRoRNmWu_I8xCjh",
-   "headline": "Giants Sign G Jon Runyan To 2-Year Extension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-sign-g-jon-runyan-to-2-year-extension",
-   "timestamp": "2026-09-06T21:45:30.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
    "id": "RmuBG-9yE_2oGgzP",
    "headline": "Andy Borregales returning to football roots with jersey number change",
    "source": "Yahoo Sports",
@@ -581,17 +614,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "yPv1FTZomLNFiIju",
-   "headline": "Giants Sign QB Jameis Winston To 2-Year Extension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-sign-qb-jameis-winston-to-2-year-extension",
-   "timestamp": "2026-09-06T19:55:38.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
    ]
   },
   {
@@ -915,17 +937,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "BN3PX672_ydBslaQ",
-   "headline": "Bears Looking To Trade For Pass Rusher?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bears-looking-to-trade-for-pass-rusher",
-   "timestamp": "2026-09-06T16:02:30.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI"
    ]
   },
   {
@@ -1612,17 +1623,6 @@
    "category": "injury",
    "team_abbrs": [
     "SF"
-   ]
-  },
-  {
-   "id": "fXMTH8uxW3t7jNpb",
-   "headline": "Browns offensive lineman receives NFL's first big fine of 2026 season",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/browns-offensive-lineman-receives-nfls-first-big-fine-of-2026-season/",
-   "timestamp": "2026-09-05T20:22:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
    ]
   }
  ]
