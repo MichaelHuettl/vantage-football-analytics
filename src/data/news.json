@@ -4,6 +4,65 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "Fth7VcNhrXXAlG4G",
+   "headline": "Sean McVay: Myles Garrett is ready to go against the 49ers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-mcvay-myles-garrett-ready-221116285.html",
+   "timestamp": "2026-09-08T22:11:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "qLev1x4OiNL9T6Yz",
+   "headline": "Baker Mayfield, Buccaneers agree to massive three-year contract extension",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/baker-mayfield-buccaneers-contract-extension/",
+   "timestamp": "2026-09-08T22:10:29.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "baker-mayfield"
+   ],
+   "team_abbrs": [
+    "TB"
+   ]
+  },
+  {
+   "id": "11SvipNEhzrjYqLP",
+   "headline": "Cyrus Allen: Labeled as reserve on depth chart",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/cyrus-allen-19631",
+   "timestamp": "2026-09-08T22:05:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "A38t1TpoJ-NWAcDl",
+   "headline": "NFL confirms Puka Nacua is playing in Rams' season opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-confirms-puka-nacua-playing-220028387.html",
+   "timestamp": "2026-09-08T22:00:28.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "iOIyM_0tWxHK2AVm",
+   "headline": "Patriots vs. Seahawks Tuesday injury report: TreVeyon Henderson ruled out for season opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-tuesday-injury-215935695.html",
+   "timestamp": "2026-09-08T21:59:35.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
    "id": "CT5AE5rcnzKacCsa",
    "headline": "Bucs Sign QB Baker Mayfield To Extension",
    "source": "Pro Football Rumors",
@@ -71,6 +130,17 @@
    ]
   },
   {
+   "id": "ZO2LAoTWE7OJgPVM",
+   "headline": "2026 NFL MVP odds, award best bets: Joe Burrow a runaway favorite, buy Will Anderson Jr. for DPOY, and more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-mvp-odds-award-best-bets-joe-burrow-mvp/",
+   "timestamp": "2026-09-08T21:30:23.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "joe-burrow"
+   ]
+  },
+  {
    "id": "hbIXjkrDh8nIGwRT",
    "headline": "Saints reveal 2026 team captains",
    "source": "Yahoo Sports",
@@ -79,6 +149,18 @@
    "category": "breaking",
    "team_abbrs": [
     "NO"
+   ]
+  },
+  {
+   "id": "GOhGmyV4MkC9U-vE",
+   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Seahawks-Patriots, Ohio State-Texas, MLB today",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-seahawks-patriots-ohio-state-texas-mlb-tuesday/",
+   "timestamp": "2026-09-08T21:26:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
    ]
   },
   {
@@ -1490,83 +1572,6 @@
    "category": "breaking",
    "team_abbrs": [
     "SF"
-   ]
-  },
-  {
-   "id": "-7JhclDYJejCvnFh",
-   "headline": "Aaron Rodgers did not expect Steelers to keep four QBs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-rodgers-did-not-expect-163055653.html",
-   "timestamp": "2026-09-08T16:30:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "6iaiE-xg86tWYFMR",
-   "headline": "Nittany Lions in the NFL 2026: Final Rosters",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nittany-lions-nfl-2026-final-163000574.html",
-   "timestamp": "2026-09-08T16:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "8cFOfuaCEK2bX1S6",
-   "headline": "Week 1 fantasy tight end rankings: Top TE streamers, starts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-1-fantasy-tight-end-162714916.html",
-   "timestamp": "2026-09-08T16:27:14.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "TutMysgSIeVjIQT6",
-   "headline": "Browns rookie ‘already driving league buzz’ heading into Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-rookie-already-driving-league-162437854.html",
-   "timestamp": "2026-09-08T16:24:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "_VtNVua_SdzkdcgI",
-   "headline": "Breece Hall set to practice this week, \"trending towards playing\" against Titans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/breece-hall-set-practice-week-162206243.html",
-   "timestamp": "2026-09-08T16:22:06.000Z",
-   "category": "practice",
-   "player_ids": [
-    "breece-hall"
-   ],
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "_6gTce0r0L1SngZY",
-   "headline": "Let’s Remember Some Guys, Packers UDFA edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/let-remember-guys-packers-udfa-161000203.html",
-   "timestamp": "2026-09-08T16:10:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "RnNYdJlO4SHX31yT",
-   "headline": "Christian Gonzalez now turns attention to again slowing down Jaxon Smith-Njigba",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/christian-gonzalez-now-turns-attention-160234313.html",
-   "timestamp": "2026-09-08T16:02:34.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxon-smith-njigba"
    ]
   }
  ]
