@@ -4,6 +4,36 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "C2whI5butHtas25s",
+   "headline": "Minor NFL Transactions: 9/7/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/minor-nfl-transactions-9-7-26",
+   "timestamp": "2026-09-08T03:34:55.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "ToS9EIgZm0NpwsOV",
+   "headline": "George Kittle \"in good shape\" to play season opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/george-kittle-good-shape-play-031606633.html",
+   "timestamp": "2026-09-08T03:16:06.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
+   "id": "GcW29uPS7CZ-7l_5",
+   "headline": "Rams DT Aaron Donald’s Week 1 Status Remains Up In Air",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/rams-dt-aaron-donalds-week-1-status-remains-up-in-air",
+   "timestamp": "2026-09-08T03:08:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "o5yfCG91PpI478sG",
    "headline": "Early NFL Survivor Picks & Strategy: Who to Target in Week 1",
    "source": "Yahoo Sports",
@@ -235,6 +265,17 @@
    ]
   },
   {
+   "id": "_pmpRdrrKAAVFxwI",
+   "headline": "NFL legends saw right through fake 49ers WR’s $1.3M act: ‘That’s not what an NFL dude looks like’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-legends-saw-fake-49ers-232033160.html",
+   "timestamp": "2026-09-07T23:20:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "OPYjMsjJalkWFwNZ",
    "headline": "Derrick Henry: I am tired of watching the Super Bowl on TV",
    "source": "Yahoo Sports",
@@ -254,6 +295,32 @@
    "category": "transaction",
    "team_abbrs": [
     "NYG"
+   ]
+  },
+  {
+   "id": "mrR-O7CY5MctQzZu",
+   "headline": "Justin Herbert nearly gets blindsided in bizarre Chargers practice scare",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/justin-herbert-nearly-gets-blindsided-225814090.html",
+   "timestamp": "2026-09-07T22:58:14.000Z",
+   "category": "practice",
+   "player_ids": [
+    "justin-herbert"
+   ],
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "OFWthWHSqU2n77y5",
+   "headline": "49ers’ support of Australia could give them unexpected advantage vs Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-support-australia-could-them-225448436.html",
+   "timestamp": "2026-09-07T22:54:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
    ]
   },
   {
@@ -1569,78 +1636,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "Mw6CTNnRu0qsx00N",
-   "headline": "Falcons finally name starting QB for Week 1 vs. Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-finally-name-starting-qb-141436951.html",
-   "timestamp": "2026-09-07T14:14:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "PIT"
-   ]
-  },
-  {
-   "id": "6077C5WuMXcfg0uU",
-   "headline": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Panthers-Bears, Packers-Vikings markets",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-panthers-bears-packers-vikings-markets/",
-   "timestamp": "2026-09-07T14:05:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "CHI",
-    "GB",
-    "MIN"
-   ]
-  },
-  {
-   "id": "JJwSOP6zUY83TkWr",
-   "headline": "Raiders News: Former Raider Richie Incognito is excited about the new OL coach",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-news-former-raider-richie-140200589.html",
-   "timestamp": "2026-09-07T14:02:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "tZ6J32v41maW-q_g",
-   "headline": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-advice-week-1-2026-fade-the-dallas-cowboys/",
-   "timestamp": "2026-09-07T14:00:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "icDke7rr7hRZpgRu",
-   "headline": "Saints Spotlight: Week 1 at the Lions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-spotlight-week-1-lions-140000113.html",
-   "timestamp": "2026-09-07T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "pIDrr4NgzVNKHTO-",
-   "headline": "Jets vs Titans Prediction, Picks & Early Odds: NFL Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-vs-titans-prediction-picks-135800032.html",
-   "timestamp": "2026-09-07T13:58:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ",
-    "TEN"
    ]
   }
  ]
