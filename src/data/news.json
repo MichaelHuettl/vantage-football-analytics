@@ -4,6 +4,85 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "_5qrv1HwGFVvwwNR",
+   "headline": "5 Jets storylines to watch as 2026 NFL season begins",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-jets-storylines-watch-2026-132418621.html",
+   "timestamp": "2026-09-08T13:24:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "_FNRwtjlvTkGbwRj",
+   "headline": "Myles Garrett expected to go for Rams on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/myles-garrett-expected-rams-thursday-132158367.html",
+   "timestamp": "2026-09-08T13:21:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "cYoiNz7pxx2kS0K-",
+   "headline": "Who will lead the Titans in receiving in Week 1?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lead-titans-receiving-week-1-131500594.html",
+   "timestamp": "2026-09-08T13:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "RXX9s4zioHt0T8Sb",
+   "headline": "The quiet shift reshaping the Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/quiet-shift-reshaping-cowboys-130000807.html",
+   "timestamp": "2026-09-08T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "NWuwvbp4gauBmezf",
+   "headline": "Pre-Snap Reads: What is the likelihood the Seahawks repeat as champions?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pre-snap-reads-likelihood-seahawks-130000088.html",
+   "timestamp": "2026-09-08T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "3vYfd_9SJAWObRxS",
+   "headline": "Getting Defensive: Week 1 fantasy plays led by Jaguars, Chargers; top streaming defenses",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/getting-defensive-week-1-fantasy-125404088.html",
+   "timestamp": "2026-09-08T12:54:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "JAX",
+    "LAC"
+   ]
+  },
+  {
+   "id": "lCQNUTdp_H0eljNa",
+   "headline": "Pete Prisco eyes Cowboys, Jaguars in season's first NFL Power Rankings; Aaron Judge returning for Yankees",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/pete-prisco-eyes-cowboys-jaguars-in-seasons-first-nfl-power-rankings-aaron-judge-returning-for-yankees/",
+   "timestamp": "2026-09-08T12:53:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "JAX"
+   ]
+  },
+  {
    "id": "uN7tX47AH3kUBXZY",
    "headline": "Mike Tomlin chooses Josh Allen as the quarterback he would love to coach: 'He's built for it'",
    "source": "Yahoo Sports",
@@ -13,6 +92,14 @@
    "player_ids": [
     "josh-allen"
    ]
+  },
+  {
+   "id": "PkNHCnB3etIRL9w7",
+   "headline": "2026 NFL season primer: Rule changes, notable games and more things to know entering Week 1",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-season-primer-what-to-know-entering-week-1/",
+   "timestamp": "2026-09-08T12:38:40.000Z",
+   "category": "breaking"
   },
   {
    "id": "kSKe97oAdXr8P1QY",
@@ -677,6 +764,17 @@
    ]
   },
   {
+   "id": "sqpHtm8gJ8l4_Fyv",
+   "headline": "Christian Gonzalez: Inks extension with Patriots",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/christian-gonzalez-16683",
+   "timestamp": "2026-09-08T05:04:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
    "id": "vFeInfBgKSXbEmsS",
    "headline": "Patriots' CB Christian Gonzalez reportedly signs record-setting 4-year, $135 million extension",
    "source": "Yahoo Sports",
@@ -758,7 +856,7 @@
   },
   {
    "id": "gbV5JMH5cxG4Hw0q",
-   "headline": "George Kittle: Looking increasingly likely to play vs. Rams",
+   "headline": "George Kittle: Looking likely to face Rams",
    "source": "RotoWire",
    "url": "https://www.rotowire.com//football/player/george-kittle-11892",
    "timestamp": "2026-09-08T04:10:00.000Z",
@@ -783,7 +881,7 @@
   },
   {
    "id": "4QNNMnvE8JRmBsOc",
-   "headline": "Christian McCaffrey: Fully dressed for second practice of week",
+   "headline": "Christian McCaffrey: Fully dressed for latest practice",
    "source": "RotoWire",
    "url": "https://www.rotowire.com//football/player/christian-mccaffrey-11690",
    "timestamp": "2026-09-08T04:00:00.000Z",
@@ -1532,97 +1630,6 @@
    "category": "injury",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "v2dexzbvvGyIdont",
-   "headline": "Mike McCarthy hopeful that Joey Porter will play Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mike-mccarthy-hopeful-joey-porter-202246035.html",
-   "timestamp": "2026-09-07T20:22:46.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "WtNotvZ7ESPdBb9c",
-   "headline": "Lions sign LB Joe Bachie to active roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-sign-lb-joe-bachie-202216510.html",
-   "timestamp": "2026-09-07T20:22:16.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "mzJhhLw58zJzYlNo",
-   "headline": "Cardinals vs Chargers Prediction, Picks & Early Odds: NFL Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cardinals-vs-chargers-prediction-picks-201800860.html",
-   "timestamp": "2026-09-07T20:18:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "LAC"
-   ]
-  },
-  {
-   "id": "eR6qolC0wDLagV0e",
-   "headline": "Dylan Cook trending to start at right tackle for Steelers Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dylan-cook-trending-start-tackle-201503421.html",
-   "timestamp": "2026-09-07T20:15:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "eRsW9SLEci99Np0G",
-   "headline": "NFL Coach of the Year Odds 2026: Minter, Harbaugh Head into Week 1 as Co-Favorites",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-coach-odds-vrabel-proves-210900770.html",
-   "timestamp": "2026-09-07T20:12:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Y2umzqoNdQIuDkwo",
-   "headline": "Steelers won't have full-season captains under Mike McCarthy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-wont-full-season-captains-195349934.html",
-   "timestamp": "2026-09-07T19:53:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "LSDm58_rzpH2Zsmk",
-   "headline": "Alec Pierce: Expected to play Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/alec-pierce-16022",
-   "timestamp": "2026-09-07T19:50:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "uXyomjxPNNEBm6G3",
-   "headline": "ESPN’s models project just 7 wins for the NY Giants",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/espn-models-project-just-7-194850513.html",
-   "timestamp": "2026-09-07T19:48:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "WAzghR-VVYDNA_JF",
-   "headline": "Patriots-Christian Gonzalez contract negotiations reportedly ‘nowhere’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-christian-gonzalez-contract-negotiations-194210392.html",
-   "timestamp": "2026-09-07T19:42:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
    ]
   }
  ]
