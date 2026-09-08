@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "PGj2I0q4pcyx4FIx",
+   "headline": "Patriots, Christian Gonzalez agree to four-year, $135 million extension to reset the cornerback market",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/patriots-christian-gonzalez-extension-cornerback/",
+   "timestamp": "2026-09-08T06:37:51.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
    "id": "bkcV-PJMW8_eHyDV",
    "headline": "Christian Gonzalez inks contract extension with Patriots: What to know",
    "source": "Yahoo Sports",
@@ -1631,17 +1642,6 @@
    "category": "transaction",
    "team_abbrs": [
     "DEN"
-   ]
-  },
-  {
-   "id": "mlDHEyh518GqF4PC",
-   "headline": "Eagles News: NFL secondary rankings have Philadelphia in the top four",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-nfl-secondary-rankings-153230094.html",
-   "timestamp": "2026-09-07T15:32:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
    ]
   }
  ]
