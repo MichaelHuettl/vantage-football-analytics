@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "uN7tX47AH3kUBXZY",
+   "headline": "Mike Tomlin chooses Josh Allen as the quarterback he would love to coach: 'He's built for it'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/mike-tomlin-chooses-josh-allen-as-the-quarterback-he-would-love-to-coach-hes-built-for-it-124420489.html",
+   "timestamp": "2026-09-08T12:44:20.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen"
+   ]
+  },
+  {
    "id": "kSKe97oAdXr8P1QY",
    "headline": "Defining success for NFL's seven biggest Super Bowl long shots, including Raiders, Jets and Titans",
    "source": "CBS Sports",
@@ -14,6 +25,18 @@
     "LV",
     "NYJ",
     "TEN"
+   ]
+  },
+  {
+   "id": "NLc25uo1QtZtwILa",
+   "headline": "Bills must be prepared for this unique but straight-forward wrinkle from Texans defense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-must-prepared-unique-straight-123121951.html",
+   "timestamp": "2026-09-08T12:31:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "HOU"
    ]
   },
   {
@@ -61,6 +84,14 @@
     "MIA",
     "NYJ"
    ]
+  },
+  {
+   "id": "GJt_kGeSHNJF6ZNt",
+   "headline": "NFL Week 1 Odds & Betting Lines: Super Bowl Rematch to Kick Off Season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-1-odds-betting-153300092.html",
+   "timestamp": "2026-09-08T12:22:00.000Z",
+   "category": "breaking"
   },
   {
    "id": "hrfHC_J6oAxzk3by",
@@ -164,7 +195,7 @@
   },
   {
    "id": "3Iz24-mz2IqcDQC3",
-   "headline": "NFL power rankings Week 1: Did a Super Bowl 60 teams miss top five?",
+   "headline": "NFL power rankings Week 1: Did a Super Bowl 60 team miss top five?",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-1-115729954.html",
    "timestamp": "2026-09-08T11:57:29.000Z",
@@ -364,6 +395,14 @@
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/article/nfl-week-1-how-to-watch-every-football-game-this-week-during-the-2026-season-104500498.html",
    "timestamp": "2026-09-08T10:45:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "wCTGGNkg1moKIEv5",
+   "headline": "The NFL’s Most Attractive Head Coaches: 5,000+ Fans Rank the Sideline Smokeshows",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-most-attractive-head-coaches-140000682.html",
+   "timestamp": "2026-09-08T10:41:00.000Z",
    "category": "breaking"
   },
   {
@@ -1585,48 +1624,6 @@
    "team_abbrs": [
     "NE"
    ]
-  },
-  {
-   "id": "6riLOLMOzatnMuj-",
-   "headline": "Cowboys starting left guard Tyler Smith out 4-6 weeks with thumb injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-starting-left-guard-tyler-193943152.html",
-   "timestamp": "2026-09-07T19:39:43.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "QdGqOvUBcPzM6Ix-",
-   "headline": "Monken doesn't rule out Browns using rookie QB in offensive 'package' Week 1 at Jaguars",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/monken-doesnt-rule-out-browns-using-rookie-qb-in-offensive-package-week-1-at-jaguars-193557518.html",
-   "timestamp": "2026-09-07T19:35:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "JAX"
-   ]
-  },
-  {
-   "id": "_3mQfBoQL80hxEDl",
-   "headline": "Cowboys LG Tyler Smith to have thumb surgery, miss 4-6 weeks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-lg-tyler-smith-thumb-193020689.html",
-   "timestamp": "2026-09-07T19:30:20.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "E9nHoLjYBoaoBJwc",
-   "headline": "Badgers snap counts, grades on offense vs. Notre Dame: The RB distribution was quite even",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/badgers-snap-counts-grades-offense-193000189.html",
-   "timestamp": "2026-09-07T19:30:00.000Z",
-   "category": "breaking"
   }
  ]
 }
