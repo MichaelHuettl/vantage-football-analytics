@@ -4,6 +4,25 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "IjGd22cDuyVE2hT0",
+   "headline": "NFL fines Cam Taylor-Britt and four other players for preseason Week 3 infractions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-fines-cam-taylor-britt-094936351.html",
+   "timestamp": "2026-09-08T09:49:36.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "Tnzy0YpjlmUKA32a",
+   "headline": "What the Christian Gonzalez extension means for the Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-gonzalez-extension-means-patriots-094421949.html",
+   "timestamp": "2026-09-08T09:44:21.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
    "id": "SfP3VznVXKSJ-reM",
    "headline": "Prisco's NFL Week 1 Power Rankings: Jaguars, Cowboys deserve attention; Rams' super team too good to be true",
    "source": "CBS Sports",
@@ -36,6 +55,18 @@
    ],
    "team_abbrs": [
     "SF"
+   ]
+  },
+  {
+   "id": "njIZv8a3LjjGOlwJ",
+   "headline": "Patriots vs Seahawks Prediction, Picks & Odds: NFL Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-prediction-picks-090000630.html",
+   "timestamp": "2026-09-08T09:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
    ]
   },
   {
@@ -1618,39 +1649,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DEN"
-   ]
-  },
-  {
-   "id": "m0mB7RsmpIiAP4DP",
-   "headline": "Browns roster news: Switch out defensive linemen with Monday’s roster moves",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-roster-news-switch-defensive-161234780.html",
-   "timestamp": "2026-09-07T16:12:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "EZ6HSHJ5mALKoqN8",
-   "headline": "Tyler’s Take: Washington Commanders defense will be the key to success",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tyler-washington-commanders-defense-key-160959861.html",
-   "timestamp": "2026-09-07T16:09:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "xsRx1R4q6LErb2XO",
-   "headline": "Raiders Weekly: Week 0",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-weekly-week-0-160900791.html",
-   "timestamp": "2026-09-07T16:09:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
    ]
   }
  ]
