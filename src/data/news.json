@@ -4,6 +4,56 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "gbV5JMH5cxG4Hw0q",
+   "headline": "George Kittle: Looking increasingly likely to play vs. Rams",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
+   "timestamp": "2026-09-08T04:10:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "i1bQ5I2_248vr6SU",
+   "headline": "Offseason In Review: Cleveland Browns",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-cleveland-browns-8",
+   "timestamp": "2026-09-08T04:00:43.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "4QNNMnvE8JRmBsOc",
+   "headline": "Christian McCaffrey: Fully dressed for second practice of week",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/christian-mccaffrey-11690",
+   "timestamp": "2026-09-08T04:00:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "christian-mccaffrey"
+   ]
+  },
+  {
+   "id": "1sYMnmZuCXBu0fgr",
+   "headline": "49ers DE Nick Bosa, TE George Kittle On Track To Play In Week 1",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/49ers-de-nick-bosa-te-george-kittle-on-track-to-play-in-week-1",
+   "timestamp": "2026-09-08T03:55:18.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "C2whI5butHtas25s",
    "headline": "Minor NFL Transactions: 9/7/26",
    "source": "Pro Football Rumors",
@@ -99,17 +149,6 @@
    "team_abbrs": [
     "NE",
     "SEA"
-   ]
-  },
-  {
-   "id": "i1bQ5I2_248vr6SU",
-   "headline": "Offseason In Review: Cleveland Browns",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-cleveland-browns-8",
-   "timestamp": "2026-09-08T02:15:43.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
    ]
   },
   {
@@ -1600,42 +1639,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DET"
-   ]
-  },
-  {
-   "id": "kCtbKRBDBc6e_XeB",
-   "headline": "Monday Musings: Will Chiefs’ offense or defense rank higher in 2026?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/monday-musings-chiefs-offense-defense-143000599.html",
-   "timestamp": "2026-09-07T14:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "MjpeChlOIDHDVPsZ",
-   "headline": "NFL news, live updates: Falcons name Tua Tagovailoa their starter; Christian McCaffrey, Nick Bosa not spotted at practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-roster-updates-week-1-142542967.html",
-   "timestamp": "2026-09-07T14:25:42.000Z",
-   "category": "practice",
-   "player_ids": [
-    "christian-mccaffrey"
-   ],
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "QUKNTRamJzr1tIg5",
-   "headline": "Patriots preparing to go soundless in Seattle to start the new season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-preparing-soundless-seattle-start-141530500.html",
-   "timestamp": "2026-09-07T14:15:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
    ]
   }
  ]
