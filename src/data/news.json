@@ -4,12 +4,139 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "T2M-f-rShIDaWfK8",
+   "headline": "Eagles depth chart doesn't name a backup to Jalen Hurts",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-depth-chart-doesnt-name-151017361.html",
+   "timestamp": "2026-09-08T15:10:17.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "yXuFyQ5qX9lDlxuJ",
+   "headline": "Who is the “Face of the Cardinals”?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/face-cardinals-150438143.html",
+   "timestamp": "2026-09-08T15:04:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "UcQGfSR7q5PSWkES",
+   "headline": "Titans season win predictions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-season-win-predictions-150259513.html",
+   "timestamp": "2026-09-08T15:02:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "wk2mmghF0YczcsfT",
+   "headline": "Patriots News: Gonzo locked up & locked in, Pats-Seahawks preview",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-news-gonzo-locked-locked-150230713.html",
+   "timestamp": "2026-09-08T15:02:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "xuryJskBWK0qCqkR",
+   "headline": "How the Las Vegas Raiders are going to win the season opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/las-vegas-raiders-going-win-150200466.html",
+   "timestamp": "2026-09-08T15:02:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "ah-HTCEZ0XePYxJN",
+   "headline": "ESPN simulation predicts the 49ers will return to the top of the NFC West",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/espn-simulation-predicts-49ers-return-150100058.html",
+   "timestamp": "2026-09-08T15:01:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "ykoMHSXOYqwlsMhg",
+   "headline": "Are the Saints for real if they beat the Lions on the road to open the season?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-real-beat-lions-road-150000015.html",
+   "timestamp": "2026-09-08T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "NO"
+   ]
+  },
+  {
+   "id": "8tYksL6saawM7lKW",
+   "headline": "NFL power rankings, Week 1: Giants haven’t convinced the voters, yet",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-1-150000418.html",
+   "timestamp": "2026-09-08T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "aapuqkA_9U-9ECx8",
+   "headline": "2026 NFL Preseason All-Rookie Team: Fernando Mendoza, Caleb Downs headline selections",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-all-rookie-team/",
+   "timestamp": "2026-09-08T14:58:12.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "cITeYgVejPVSVNQi",
+   "headline": "CBS Sports predicts every NFL division winner: Experts high on Cowboys, fading Chiefs, and split on NFC North",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cbs-sports-predicts-nfl-division-winners/",
+   "timestamp": "2026-09-08T14:47:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "KC"
+   ]
+  },
+  {
    "id": "TGU5F01RpEFYLu0k",
    "headline": "Fantasy Football: What to expect from some of the buzziest names in preseason heading into Week 1",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-what-to-expect-from-some-of-the-buzziest-names-in-preseason-heading-into-week-1-144233452.html",
    "timestamp": "2026-09-08T14:42:33.000Z",
    "category": "camp"
+  },
+  {
+   "id": "duqEI9cP-b1raDi0",
+   "headline": "Use FanDuel promo code to get $350 bonus bets by targeting Patriots-Seahawks, 49ers-Rams, Week 1 NFL betting",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-patriots-seahawks-49ers-rams-week-1-nfl-betting/",
+   "timestamp": "2026-09-08T14:34:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NE",
+    "SEA",
+    "SF"
+   ]
   },
   {
    "id": "TLNx2DLxYdoMBfVK",
@@ -1499,130 +1626,6 @@
    "category": "breaking",
    "team_abbrs": [
     "BAL"
-   ]
-  },
-  {
-   "id": "PB8l05E9vLWrgAfM",
-   "headline": "Cleveland Browns: Did Todd Monken tip his hand about the QB rotation?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-did-todd-monken-224407384.html",
-   "timestamp": "2026-09-07T22:44:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "xfvK7C0YZ4ydd137",
-   "headline": "New York Giants release Darius Slayton, their longest-tenured player",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-giants-release-darius-slayton-222149372.html",
-   "timestamp": "2026-09-07T22:21:49.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "9jPD-9LdWFaC0AC4",
-   "headline": "Giants release veteran WR Darius Slayton ahead of season opener vs. Cowboys",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/giants-release-veteran-wr-darius-slayton-ahead-of-season-opener-vs-cowboys-221545049.html",
-   "timestamp": "2026-09-07T22:15:45.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL",
-    "NYG"
-   ]
-  },
-  {
-   "id": "eJWaAGzofRoC20Kg",
-   "headline": "Darius Slayton: Grateful for time with Giants, excited to see what's next",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/darius-slayton-grateful-time-giants-221054990.html",
-   "timestamp": "2026-09-07T22:10:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "bBoQI5eZ6sniTCk-",
-   "headline": "NFL Week 1 odds: Eagles favored to beat Commanders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-1-odds-eagles-221014961.html",
-   "timestamp": "2026-09-07T22:10:14.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "XW5rzuEW509gQWo9",
-   "headline": "Titans LB Cedric Gray injured in off-road vehicle accident",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-lb-cedric-gray-injured-220111544.html",
-   "timestamp": "2026-09-07T22:01:11.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "4-oOkrAktGI9lYLg",
-   "headline": "Detroit Lions announce 7 captains for 2026 season, including 3 first-timers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/detroit-lions-announce-7-captains-220000199.html",
-   "timestamp": "2026-09-07T22:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "oTJDeCklTVJFAyfm",
-   "headline": "Rams DC Chris Shula: Everything's day by day with Aaron Donald",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-dc-chris-shula-everythings-215836889.html",
-   "timestamp": "2026-09-07T21:58:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "o5wiWxTJ416F2NxD",
-   "headline": "Hilarious Rams debate reveals seatmate problems for 16-hour Australia flight",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/hilarious-rams-debate-reveals-seatmate-215536468.html",
-   "timestamp": "2026-09-07T21:55:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "83f8qd5T_1iOFPeG",
-   "headline": "Former Bears FB Matt Suhey Dies At 68",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/former-bears-fb-matt-suhey-dies-at-68",
-   "timestamp": "2026-09-07T21:51:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "VX2Z_B4GXt_UIR7f",
-   "headline": "Ravens Colts Preview: How Shane Steichen Dominated Jesse Minter’s Defense in 2025",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ravens-colts-preview-shane-steichen-214911634.html",
-   "timestamp": "2026-09-07T21:49:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "IND"
    ]
   }
  ]
