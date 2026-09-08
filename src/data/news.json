@@ -4,6 +4,94 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "YG2vhv2bLeEhzxjc",
+   "headline": "NFL Practice Squad Updates: 9/7/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-7-26",
+   "timestamp": "2026-09-07T23:59:13.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "TfFp_7DCl1DGlEJd",
+   "headline": "Colts d-line could be poised for interior dominance with latest Ravens lineup update",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-d-line-could-poised-235111520.html",
+   "timestamp": "2026-09-07T23:51:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "IND"
+   ]
+  },
+  {
+   "id": "x1eMZ7wUH7LbOVoY",
+   "headline": "Super Bowl betting, odds: Odds for every NFL team to win Super Bowl 61 entering the season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/betting/article/super-bowl-betting-odds-odds-for-every-nfl-team-to-win-super-bowl-61-entering-the-season-234929205.html",
+   "timestamp": "2026-09-07T23:49:29.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "T_0buTl0KCSCO9w-",
+   "headline": "Cardinals hopeful RB Jeremiyah Love can play vs. Chargers in Week 1 after preseason ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/cardinals-hopeful-rb-jeremiyah-love-can-play-vs-chargers-in-week-1-after-preseason-ankle-injury-234733540.html",
+   "timestamp": "2026-09-07T23:47:33.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jeremiyah-love"
+   ],
+   "team_abbrs": [
+    "ARI",
+    "LAC"
+   ]
+  },
+  {
+   "id": "eyGbR1jWgKz3EICz",
+   "headline": "Browns workout 9 on Monday of Week 1 game prep: Offensive weapons, DLine are the focus",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-workout-9-monday-week-233639748.html",
+   "timestamp": "2026-09-07T23:36:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "xj1xPg5vFlVA-mQt",
+   "headline": "Titans' leading tackler may miss time after UTV accident, concussion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-leading-tackler-may-miss-233443672.html",
+   "timestamp": "2026-09-07T23:34:43.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "vC7HBfmvNoZ5IbEz",
+   "headline": "Colts WR Alec Pierce expected to be ready for regular season opener against Ravens",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-wr-alec-pierce-expected-233054603.html",
+   "timestamp": "2026-09-07T23:30:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "IND"
+   ]
+  },
+  {
+   "id": "BRHQVPb1-9p7popZ",
+   "headline": "Green Bay Packers name team captains for 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/green-bay-packers-name-team-232108344.html",
+   "timestamp": "2026-09-07T23:21:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
    "id": "OPYjMsjJalkWFwNZ",
    "headline": "Derrick Henry: I am tired of watching the Super Bowl on TV",
    "source": "Yahoo Sports",
@@ -1552,91 +1640,6 @@
    "team_abbrs": [
     "NYG"
    ]
-  },
-  {
-   "id": "yaXU8xtdNPeJj1yC",
-   "headline": "Patriots Week 1 preview: Get to know the Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-week-1-preview-know-132053452.html",
-   "timestamp": "2026-09-07T13:20:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "LaqYPQ71N0RTXRuL",
-   "headline": "Falcons Name Tua Tagovailoa Starting QB",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/falcons-name-tua-tagovailoa-starting-qb",
-   "timestamp": "2026-09-07T13:10:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "2Gr1O52LOQlaYA22",
-   "headline": "Falcons name Tua Tagovailoa starting quarterback over Michael Penix Jr.",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-name-tua-tagovailoa-starting-130613696.html",
-   "timestamp": "2026-09-07T13:06:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "PDhqx1M7I3LUoXRs",
-   "headline": "Patriots OC Josh McDaniels: I have to do a better job of limiting Seahawks opportunities",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-oc-josh-mcdaniels-better-130236931.html",
-   "timestamp": "2026-09-07T13:02:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "umpu9BdCyAXlt_Bq",
-   "headline": "Winners, losers, grades from Week 1 in college football; NFL season predictions produce shocker",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/college-football/news/winners-losers-grades-from-week-1-in-college-football-nfl-season-predictions-produce-shocker/",
-   "timestamp": "2026-09-07T13:01:40.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "2WuRdV3yPHbMqxr5",
-   "headline": "Pre-Snap Reads: OC Brian Fleury set to premiere new Seahawks offense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pre-snap-reads-oc-brian-130000194.html",
-   "timestamp": "2026-09-07T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "cH2FYP2nY2_4HY-g",
-   "headline": "Dallas Cowboys 2026 Opponent Preview: Tampa Bay Buccaneers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dallas-cowboys-2026-opponent-preview-130000276.html",
-   "timestamp": "2026-09-07T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "TB"
-   ]
-  },
-  {
-   "id": "GFFVN6Iz54dynVAn",
-   "headline": "2026 NFL Season Award Predictions: Offensive Rookie of the Year",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfl-season-award-predictions-130000153.html",
-   "timestamp": "2026-09-07T13:00:00.000Z",
-   "category": "breaking"
   }
  ]
 }
