@@ -4,6 +4,73 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "CT5AE5rcnzKacCsa",
+   "headline": "Bucs Sign QB Baker Mayfield To Extension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/buccaneers-baker-mayfield-agree-on-extension",
+   "timestamp": "2026-09-08T21:55:20.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "baker-mayfield"
+   ]
+  },
+  {
+   "id": "Y_FmjzK97y3WPFPR",
+   "headline": "Seahawks-Patriots injury designations: Ty Okada ruled out, Nick Emmanwori questionable",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-patriots-injury-designations-ty-214806003.html",
+   "timestamp": "2026-09-08T21:48:06.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "zRQA7ScdJ1MRvaLj",
+   "headline": "Garrett Wilson expects Jets to make playoffs, calls chances 'very realistic'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/garrett-wilson-expects-jets-playoffs-214450820.html",
+   "timestamp": "2026-09-08T21:44:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "uilapTZfzKUMrm2z",
+   "headline": "Michael Mayer, Jackson Powers-Johnson, 8 Las Vegas Raiders entering make-or-break season in 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/michael-mayer-jackson-powers-johnson-214000630.html",
+   "timestamp": "2026-09-08T21:40:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "oXvIweGRItPVjvmU",
+   "headline": "Dolphins ranked bottom-five in Week One power rankings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-ranked-bottom-five-week-213854728.html",
+   "timestamp": "2026-09-08T21:38:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "jvydZNAkcfRDS39O",
+   "headline": "BREAKING: Buccaneers, Mayfield agree to 3-year extension",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/breaking-buccaneers-mayfield-agree-3-213603729.html",
+   "timestamp": "2026-09-08T21:36:03.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "TB"
+   ]
+  },
+  {
    "id": "hbIXjkrDh8nIGwRT",
    "headline": "Saints reveal 2026 team captains",
    "source": "Yahoo Sports",
@@ -123,17 +190,6 @@
    ]
   },
   {
-   "id": "CT5AE5rcnzKacCsa",
-   "headline": "Bucs, Baker Mayfield Agree On Extension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/buccaneers-baker-mayfield-agree-on-extension",
-   "timestamp": "2026-09-08T21:15:20.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "baker-mayfield"
-   ]
-  },
-  {
    "id": "bRyp-gFQ4g_zrIb-",
    "headline": "6 takeaways from Detroit Lions’ associate/assistant head coaches Week 1 pressers",
    "source": "Yahoo Sports",
@@ -142,6 +198,20 @@
    "category": "breaking",
    "team_abbrs": [
     "DET"
+   ]
+  },
+  {
+   "id": "asMjWlLkIAbe5Jnt",
+   "headline": "Baker Mayfield reportedly signs 3-year, $165 million extension with Buccaneers days before season opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/baker-mayfield-reportedly-signs-3-year-165-million-extension-with-buccaneers-days-before-season-opener-211222393.html",
+   "timestamp": "2026-09-08T21:12:22.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "baker-mayfield"
+   ],
+   "team_abbrs": [
+    "TB"
    ]
   },
   {
@@ -1498,73 +1568,6 @@
    "player_ids": [
     "jaxon-smith-njigba"
    ]
-  },
-  {
-   "id": "LVN9RVJFj5Wib8vl",
-   "headline": "Dallas Cowboys 2026 Opponent Preview: Tennessee Titans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dallas-cowboys-2026-opponent-preview-160000252.html",
-   "timestamp": "2026-09-08T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "TEN"
-   ]
-  },
-  {
-   "id": "vkaoe7eQ5V7YczU7",
-   "headline": "Future Hogs – Week 1: College football players who could help the Commanders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/future-hogs-week-1-college-160000865.html",
-   "timestamp": "2026-09-08T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "_A_35NHObxFI2mmG",
-   "headline": "2026 NFC North Season Preview and Prediction: The Bears will repeat",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfc-north-season-preview-160000178.html",
-   "timestamp": "2026-09-08T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "BhKt4PbGOanPwz_F",
-   "headline": "NFL Playoff Odds 2026-27: Rams Heavily Favored to Reach Postseason Ahead of Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-playoff-odds-2025-26-182000751.html",
-   "timestamp": "2026-09-08T15:56:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "8k66lhf1V9sj4hTm",
-   "headline": "Lions Still Aiming For Sam LaPorta, Brian Branch Extensions",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/lions-still-aiming-for-sam-laporta-brian-branch-extensions",
-   "timestamp": "2026-09-08T15:50:57.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-laporta"
-   ],
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "3KNco6Gr3s124N5c",
-   "headline": "Week 1 fantasy wide reciever rankings: Top WR streamers, starts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-1-fantasy-wide-reciever-154854454.html",
-   "timestamp": "2026-09-08T15:48:54.000Z",
-   "category": "breaking"
   }
  ]
 }
