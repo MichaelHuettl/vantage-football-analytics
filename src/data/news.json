@@ -4,6 +4,122 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "gbV5JMH5cxG4Hw0q",
+   "headline": "George Kittle: Listed as limited participant",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
+   "timestamp": "2026-09-08T22:54:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
+   "id": "-hglg1tiRkzYArJ6",
+   "headline": "Joe Burrow silences any doubts about staying with the Bengals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/joe-burrow-silences-doubts-staying-224912598.html",
+   "timestamp": "2026-09-08T22:49:12.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "joe-burrow"
+   ],
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "3le1hEkag5evIeC0",
+   "headline": "Dolphins LT Patrick Paul: Maxx Crosby is a hothead, have to get him off his game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-lt-patrick-paul-maxx-224638283.html",
+   "timestamp": "2026-09-08T22:46:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "aBcfa2XTNfAwb_PK",
+   "headline": "Nick Bosa, George Kittle limited participants in practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nick-bosa-george-kittle-limited-224438961.html",
+   "timestamp": "2026-09-08T22:44:38.000Z",
+   "category": "practice",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
+   "id": "4QNNMnvE8JRmBsOc",
+   "headline": "Christian McCaffrey: Not listed on injury report",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/christian-mccaffrey-11690",
+   "timestamp": "2026-09-08T22:40:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "christian-mccaffrey"
+   ]
+  },
+  {
+   "id": "TTaqlQFHyMiVAbLm",
+   "headline": "Steelers rookie Max Iheanachor has home broken into",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-rookie-max-iheanachor-home-223804037.html",
+   "timestamp": "2026-09-08T22:38:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "FEyijkDPcKH1Dc6H",
+   "headline": "A new starter pops up on the 49ers injury report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/starter-pops-49ers-injury-report-223212529.html",
+   "timestamp": "2026-09-08T22:32:12.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "T38xp7NPzfc0i-28",
+   "headline": "Broncos vs Chiefs Prediction, Picks & Early Odds for Monday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-chiefs-prediction-picks-132000987.html",
+   "timestamp": "2026-09-08T22:13:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "njIZv8a3LjjGOlwJ",
+   "headline": "Patriots vs Seahawks Prediction, Picks & Odds: NFL Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-prediction-picks-090000630.html",
+   "timestamp": "2026-09-08T22:12:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "xWwa8FG6dN7mX5ki",
+   "headline": "Cowboys vs Giants Prediction, Picks & Early Odds for Sunday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-vs-giants-prediction-picks-181600702.html",
+   "timestamp": "2026-09-08T22:12:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NYG"
+   ]
+  },
+  {
    "id": "Fth7VcNhrXXAlG4G",
    "headline": "Sean McVay: Myles Garrett is ready to go against the 49ers",
    "source": "Yahoo Sports",
@@ -26,6 +142,18 @@
    ],
    "team_abbrs": [
     "TB"
+   ]
+  },
+  {
+   "id": "Hh1sG0k3KPUqV_Ez",
+   "headline": "49ers vs Rams Prediction, Picks & Odds for Thursday Night Football Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-vs-rams-prediction-picks-221000089.html",
+   "timestamp": "2026-09-08T22:10:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
    ]
   },
   {
@@ -1476,103 +1604,6 @@
    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-justin-boones-week-1-wr-rankings-165303341.html",
    "timestamp": "2026-09-08T16:53:03.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "wqEUG9fNua-2mgML",
-   "headline": "Fantasy Football WR Rankings: Top wide receivers for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-wr-rankings-top-wide-receivers-for-week-1-165302852.html",
-   "timestamp": "2026-09-08T16:53:02.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "vdidDt_SRWikGRZx",
-   "headline": "Fantasy Football: Justin Boone's Week 1 RB Rankings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-justin-boones-week-1-rb-rankings-165241364.html",
-   "timestamp": "2026-09-08T16:52:41.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "PGj2I0q4pcyx4FIx",
-   "headline": "Patriots, Christian Gonzalez agree to four-year, $135 million extension to reset the cornerback market",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/patriots-christian-gonzalez-extension-cornerback/",
-   "timestamp": "2026-09-08T16:52:39.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "00SJacgsmu3DzGuh",
-   "headline": "Fantasy Football: Justin Boone's Week 1 QB Rankings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-justin-boones-week-1-qb-rankings-165217932.html",
-   "timestamp": "2026-09-08T16:52:17.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "RSy33MZFWlcQNzxc",
-   "headline": "Fantasy Football Week 1 Rankings: Justin Boone's top overall players",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-rankings-justin-boones-top-overall-players-165054284.html",
-   "timestamp": "2026-09-08T16:50:54.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "vHkHJ23cfnA-bk11",
-   "headline": "Fantasy Football RB Rankings: Top running backs for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rb-rankings-top-running-backs-for-week-1-164952139.html",
-   "timestamp": "2026-09-08T16:49:52.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Dl25REvuqfoTT-G6",
-   "headline": "Fantasy Football QB Rankings: Top quarterbacks for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-qb-rankings-top-quarterbacks-for-week-1-164648741.html",
-   "timestamp": "2026-09-08T16:46:48.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "-jjwz4d3nRztGdGK",
-   "headline": "Fantasy Football Rankings for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-for-week-1-164129934.html",
-   "timestamp": "2026-09-08T16:41:29.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "TyuLPmTEnR5jryS_",
-   "headline": "2026 NFL season predictions for Super Bowl winner, MVP, top surprises and disappointments",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/2026-nfl-season-predictions-for-super-bowl-winner-mvp-top-surprises-and-disappointments-163716464.html",
-   "timestamp": "2026-09-08T16:37:16.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "4iC7pP-t9BL-KyRK",
-   "headline": "NFL Week 1 Vegas power rankings: Los Angeles Rams are the clear No. 1 team",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/nfl-week-1-vegas-power-rankings-los-angeles-rams-are-the-clear-no-1-team-163708242.html",
-   "timestamp": "2026-09-08T16:37:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "wEEndM6zU_uObBc0",
-   "headline": "Klay Kubiak discusses the 49ers left guard competition and who will play",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/klay-kubiak-discusses-49ers-left-163208242.html",
-   "timestamp": "2026-09-08T16:32:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
   }
  ]
 }
