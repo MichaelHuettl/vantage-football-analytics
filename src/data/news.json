@@ -4,6 +4,21 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "xqaeIbrzJOrybCgX",
+   "headline": "Why Baker Mayfield’s new contract is relevant to Seahawks, Sam Darnold",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/why-baker-mayfield-contract-relevant-021500252.html",
+   "timestamp": "2026-09-09T02:15:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold",
+    "baker-mayfield"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
    "id": "sdzt7kFlFsp0dnS6",
    "headline": "Will Sam Darnold turn back into a pumpkin?",
    "source": "Yahoo Sports",
@@ -420,6 +435,17 @@
    ]
   },
   {
+   "id": "QQ9vF8eKArYuL5OU",
+   "headline": "TreVeyon Henderson ruled out for Week 1 in Patriots injury crusher",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/treveyon-henderson-ruled-week-1-220623833.html",
+   "timestamp": "2026-09-08T22:06:23.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
    "id": "11SvipNEhzrjYqLP",
    "headline": "Cyrus Allen: Labeled as reserve on depth chart",
    "source": "RotoWire",
@@ -440,6 +466,14 @@
    "team_abbrs": [
     "LAR"
    ]
+  },
+  {
+   "id": "GbOVGvtRGe1zIs8g",
+   "headline": "The 10 most influential women in NFL for 2026 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/10-most-influential-women-nfl-220000936.html",
+   "timestamp": "2026-09-08T22:00:00.000Z",
+   "category": "breaking"
   },
   {
    "id": "iOIyM_0tWxHK2AVm",
@@ -1607,33 +1641,6 @@
     "NYJ",
     "TEN"
    ]
-  },
-  {
-   "id": "1fdE-l_W2g_6wOcg",
-   "headline": "Chicago Bears Announce ‘26 Team Captains",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-announce-26-team-173523016.html",
-   "timestamp": "2026-09-08T17:35:23.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "52zqwqMVLbh17eOZ",
-   "headline": "Badgers snap counts, grades on defense: The rotations are starting to settle out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/badgers-snap-counts-grades-defense-173119862.html",
-   "timestamp": "2026-09-08T17:31:19.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "1StaMcm1yT-JHcY2",
-   "headline": "Fantasy Football Week 1: Justin Boone's rankings (half and full-PPR)",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-justin-boones-rankings-half-and-full-ppr-172922968.html",
-   "timestamp": "2026-09-08T17:29:22.000Z",
-   "category": "breaking"
   }
  ]
 }
