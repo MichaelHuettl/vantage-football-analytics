@@ -4,6 +4,88 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "RLunEhPQf6mnuIdB",
+   "headline": "Offseason In Review: Indianapolis Colts",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-indianapolis-colts-8",
+   "timestamp": "2026-09-09T00:05:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "qfkXYB7X6E21m1gi",
+   "headline": "Miami Dolphins Fans Choose Team’s Biggest Rival",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-fans-choose-team-000000554.html",
+   "timestamp": "2026-09-09T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "J4vnNLMb4n4ZYQpF",
+   "headline": "Caleb Williams, Ben Johnson, Chicago Bears about to take fans on a fun ride",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/caleb-williams-ben-johnson-chicago-000000941.html",
+   "timestamp": "2026-09-09T00:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "zmpwb80OtvyuR0bE",
+   "headline": "Packers sign RB Damon Bankston",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-sign-rb-damon-bankston-235516346.html",
+   "timestamp": "2026-09-08T23:55:16.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "ldqZhCgkC6DH7ZJE",
+   "headline": "NFL Practice Squad Updates: 9/8/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-8-26",
+   "timestamp": "2026-09-08T23:51:47.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "8GC0DWT2e88Mviv7",
+   "headline": "Myles Garrett ready for start of season despite lack of training camp reps",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/myles-garrett-ready-start-season-234816666.html",
+   "timestamp": "2026-09-08T23:48:16.000Z",
+   "category": "camp"
+  },
+  {
+   "id": "dw513d3_H6eJpIbt",
+   "headline": "Minor NFL Transactions: 9/8/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/minor-nfl-transactions-9-8-26",
+   "timestamp": "2026-09-08T23:41:53.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "IXILgA5hUvqJwHEw",
+   "headline": "Puka Nacua: Avoids injury report",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/puka-nacua-16790",
+   "timestamp": "2026-09-08T23:32:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
    "id": "n-rXWKEfR64C0pE2",
    "headline": "Surprising name added to Rams injury report",
    "source": "Yahoo Sports",
@@ -1542,76 +1624,6 @@
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/fantasy/article/2026-fantasy-football-full-ppr-rankings-justin-boones-top-players-for-week-1-170728422.html",
    "timestamp": "2026-09-08T17:07:28.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "wjOzQU7owBU2h82l",
-   "headline": "2026 Fantasy Football Full-PPR Rankings: Justin Boone's top wide receivers for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/2026-fantasy-football-full-ppr-rankings-justin-boones-top-wide-receivers-for-week-1-170726544.html",
-   "timestamp": "2026-09-08T17:07:26.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "XGcVy85Wn2kM17g2",
-   "headline": "Fantasy Football Kicker Rankings for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-kicker-rankings-for-week-1-170554101.html",
-   "timestamp": "2026-09-08T17:05:54.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "tgnLHODZXbW8_i8w",
-   "headline": "Fantasy Football FLEX Rankings for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-flex-rankings-for-week-1-170141329.html",
-   "timestamp": "2026-09-08T17:01:41.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "z6uGf_l25FTkIEUp",
-   "headline": "Rams’ fans want to see Ty Simpson as QB2 over Stetson Bennett",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-fans-want-see-ty-170100478.html",
-   "timestamp": "2026-09-08T17:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "u1shyD-PCdBSsc4s",
-   "headline": "Eagles depth chart: Roster thoughts entering Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-depth-chart-roster-thoughts-165836742.html",
-   "timestamp": "2026-09-08T16:58:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "xPe6mn8OM6cWW268",
-   "headline": "Fantasy Football: Justin Boone's Week 1 Defense Rankings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-justin-boones-week-1-defense-rankings-165755027.html",
-   "timestamp": "2026-09-08T16:57:55.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "o3slImVCDgSK2AEq",
-   "headline": "Fantasy Football: Justin Boone's Week 1 Kicker Rankings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-justin-boones-week-1-kicker-rankings-165701383.html",
-   "timestamp": "2026-09-08T16:57:01.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "sA-uPErNZMxjWcgi",
-   "headline": "Fantasy Football TE Rankings: Top tight ends for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-te-rankings-top-tight-ends-for-week-1-165608946.html",
-   "timestamp": "2026-09-08T16:56:08.000Z",
    "category": "breaking"
   }
  ]
