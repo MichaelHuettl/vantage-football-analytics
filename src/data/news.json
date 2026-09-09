@@ -4,6 +4,17 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "EHg7izgX5B4mIPyr",
+   "headline": "NFL season predictions: Super Bowl-favorite Rams aren't the champ pick",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-season-predictions-super-bowl-091538042.html",
+   "timestamp": "2026-09-09T09:15:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "DX3mk2UpUCAIyLO8",
    "headline": "Aaron Rodgers: Steelers are Super Bowl contenders, that's why I came back",
    "source": "Yahoo Sports",
@@ -1630,17 +1641,6 @@
    "category": "transaction",
    "team_abbrs": [
     "IND"
-   ]
-  },
-  {
-   "id": "tMGIv-PGRInFeC81",
-   "headline": "Patrick Mahomes has a 'good chance' to play in Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patrick-mahomes-good-chance-play-181709581.html",
-   "timestamp": "2026-09-08T18:17:09.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
    ]
   }
  ]
