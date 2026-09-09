@@ -4,12 +4,34 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "DX3mk2UpUCAIyLO8",
+   "headline": "Aaron Rodgers: Steelers are Super Bowl contenders, that's why I came back",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-rodgers-steelers-super-bowl-081424578.html",
+   "timestamp": "2026-09-09T08:14:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
    "id": "_utjNMxK696YBFsR",
    "headline": "Super Bowl rematch to open new season - your guide to NFL's key games",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/super-bowl-rematch-open-season-071715367.html",
-   "timestamp": "2026-09-09T07:17:15.000Z",
+   "timestamp": "2026-09-09T08:13:26.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "JzCDkfvLw8Br9V1w",
+   "headline": "NFL 2026 season predictions: which teams can bring down the Rams juggernaut?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-2026-season-predictions-teams-080004354.html",
+   "timestamp": "2026-09-09T08:00:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
   },
   {
    "id": "CT5AE5rcnzKacCsa",
@@ -1619,29 +1641,6 @@
    "category": "breaking",
    "player_ids": [
     "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "8FQudIAXF6K7C0qh",
-   "headline": "Patriots at Seahawks: Why the NFL season is opening on a Wednesday for just the second time in 107 years",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/patriots-at-seahawks-why-nfl-season-is-opening-wednesday/",
-   "timestamp": "2026-09-08T18:16:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "k9q9SHsI20NRb6N7",
-   "headline": "Justin Herbert receives MVP votes in 2026 NFL award predictions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/justin-herbert-receives-mvp-votes-181620005.html",
-   "timestamp": "2026-09-08T18:16:20.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "justin-herbert"
    ]
   }
  ]
