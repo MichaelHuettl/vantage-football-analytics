@@ -4,6 +4,28 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "sdzt7kFlFsp0dnS6",
+   "headline": "Will Sam Darnold turn back into a pumpkin?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sam-darnold-turn-back-pumpkin-014709753.html",
+   "timestamp": "2026-09-09T01:47:09.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
+   "id": "1IEZlWWG0fS5IgP9",
+   "headline": "George Kittle limited in practice on Tuesday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/george-kittle-limited-practice-tuesday-013751729.html",
+   "timestamp": "2026-09-09T01:37:51.000Z",
+   "category": "practice",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
    "id": "l7hsdk9ddfIGuFqC",
    "headline": "NFL survivor contest picks, predictions, advice, strategy: My favorite Week 1 selections",
    "source": "Yahoo Sports",
@@ -29,6 +51,17 @@
    "url": "https://sports.yahoo.com/articles/iowa-football-former-hawkeyes-nfl-012752819.html",
    "timestamp": "2026-09-09T01:27:52.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "qPYvGoMnr5knFkcU",
+   "headline": "Report: Steelers made an offer to Joey Porter Jr., but sides aren't close",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-steelers-made-offer-joey-012739466.html",
+   "timestamp": "2026-09-09T01:27:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
   },
   {
    "id": "07ZtswXMQw3z7yWf",
@@ -1600,37 +1633,6 @@
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-justin-boones-rankings-half-and-full-ppr-172922968.html",
    "timestamp": "2026-09-08T17:29:22.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "qvHHwyyHGc82-6yE",
-   "headline": "NFL Power Rankings (Week 1): Sorting Them Out Before the Season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-1-172639988.html",
-   "timestamp": "2026-09-08T17:26:39.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "_pu6X4hUFDyn2Ls0",
-   "headline": "'Very good chance' Patrick Mahomes starts Week 1 vs. Broncos, says Chiefs coach Andy Reid",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/very-good-chance-patrick-mahomes-starts-week-1-vs-broncos-says-chiefs-coach-andy-reid-172525331.html",
-   "timestamp": "2026-09-08T17:25:25.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ],
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "q8yqQ9cOLv1DYXNq",
-   "headline": "CBS Sports 2026 NFL award predictions: Experts have clear No. 1 choice for MVP, pick other top honors",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cbs-sports-2026-nfl-award-predictions-mvp/",
-   "timestamp": "2026-09-08T17:23:36.000Z",
    "category": "breaking"
   }
  ]
