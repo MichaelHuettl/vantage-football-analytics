@@ -4,6 +4,28 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "CT5AE5rcnzKacCsa",
+   "headline": "Bucs Sign QB Baker Mayfield To Extension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/buccaneers-baker-mayfield-agree-on-extension",
+   "timestamp": "2026-09-09T04:55:20.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "baker-mayfield"
+   ]
+  },
+  {
+   "id": "RLunEhPQf6mnuIdB",
+   "headline": "Offseason In Review: Indianapolis Colts",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-indianapolis-colts-8",
+   "timestamp": "2026-09-09T04:23:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
    "id": "o_Ej4VTosY3rdlXb",
    "headline": "49ers lose another key contributor to a season-ending injury",
    "source": "Yahoo Sports",
@@ -13,6 +35,14 @@
    "team_abbrs": [
     "SF"
    ]
+  },
+  {
+   "id": "-X44ONZuwBzQwgJd",
+   "headline": "Community Tailgate: 2026 NFL Season",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/community-tailgate-2026-nfl-season",
+   "timestamp": "2026-09-09T03:50:06.000Z",
+   "category": "breaking"
   },
   {
    "id": "XKG2qGhnbcK_JmXO",
@@ -31,6 +61,17 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
+   ]
+  },
+  {
+   "id": "2HpP3jmhPWzkjeSi",
+   "headline": "Aaron Donald Will Not Travel To Australia For Rams’ Opener",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/aaron-donald-will-not-travel-to-australia-for-rams-opener",
+   "timestamp": "2026-09-09T03:30:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
    ]
   },
   {
@@ -230,6 +271,17 @@
    "category": "breaking"
   },
   {
+   "id": "erSBiapDeLV3OyEZ",
+   "headline": "D’Angelo Ponds, Kenyon Sadiq have each other to lean on as they hope to make Jets impact after injuries",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/d-angelo-ponds-kenyon-sadiq-004411985.html",
+   "timestamp": "2026-09-09T00:44:11.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
    "id": "549v4LnWfmpFESba",
    "headline": "Geno Smith touched by Jets captain nod in return to New York",
    "source": "Yahoo Sports",
@@ -283,17 +335,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "RLunEhPQf6mnuIdB",
-   "headline": "Offseason In Review: Indianapolis Colts",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-indianapolis-colts-8",
-   "timestamp": "2026-09-09T00:05:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
    ]
   },
   {
@@ -653,17 +694,6 @@
    "team_abbrs": [
     "NE",
     "SEA"
-   ]
-  },
-  {
-   "id": "CT5AE5rcnzKacCsa",
-   "headline": "Bucs Sign QB Baker Mayfield To Extension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/buccaneers-baker-mayfield-agree-on-extension",
-   "timestamp": "2026-09-08T21:55:20.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "baker-mayfield"
    ]
   },
   {
@@ -1167,17 +1197,6 @@
    ]
   },
   {
-   "id": "2HpP3jmhPWzkjeSi",
-   "headline": "Aaron Donald Will Not Travel To Australia For Rams’ Opener",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/aaron-donald-will-not-travel-to-australia-for-rams-opener",
-   "timestamp": "2026-09-08T20:00:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
    "id": "VuoxmtNp_2g3IdUo",
    "headline": "Predicting Dallas Cowboys win/loss record in 2026",
    "source": "Yahoo Sports",
@@ -1389,14 +1408,6 @@
    "team_abbrs": [
     "LAC"
    ]
-  },
-  {
-   "id": "-X44ONZuwBzQwgJd",
-   "headline": "Community Tailgate: 2026 NFL Season",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/community-tailgate-2026-nfl-season",
-   "timestamp": "2026-09-08T19:11:06.000Z",
-   "category": "breaking"
   },
   {
    "id": "NPZJ-uWX_OVmqeRG",
@@ -1635,18 +1646,6 @@
    "team_abbrs": [
     "NE",
     "SEA"
-   ]
-  },
-  {
-   "id": "YDkHgmU3hgiNNd_P",
-   "headline": "Rams-49ers and other Week 1 NFL picks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-49ers-other-week-1-180345265.html",
-   "timestamp": "2026-09-08T18:03:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
    ]
   }
  ]
