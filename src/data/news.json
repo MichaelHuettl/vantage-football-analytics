@@ -4,8 +4,77 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "p8Q9Hzy8UHEnA8tk",
+   "headline": "Bengals Preparing for Week 1 vs. Buccaneers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bengals-preparing-week-1-vs-215100141.html",
+   "timestamp": "2026-09-09T21:51:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "TB"
+   ]
+  },
+  {
+   "id": "8FQudIAXF6K7C0qh",
+   "headline": "Seahawks vs. Patriots: Why the NFL season is opening on a Wednesday for just the second time in 107 years",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/patriots-at-seahawks-why-nfl-season-is-opening-wednesday/",
+   "timestamp": "2026-09-09T21:46:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "J2kquI3q1aUb_vho",
+   "headline": "Commanders vs Eagles Wednesday Injury Report: Three players limited",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-vs-eagles-wednesday-injury-214518191.html",
+   "timestamp": "2026-09-09T21:45:18.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PHI",
+    "WAS"
+   ]
+  },
+  {
+   "id": "iEy2BhTLdiAeKkTR",
+   "headline": "Seahawks were sold after Super Bowl. What to know about Neeru and Vinod Khosla",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-were-sold-super-bowl-214516287.html",
+   "timestamp": "2026-09-09T21:45:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "n9JW_kmemD6CPO2Y",
+   "headline": "Kirk Cousins buys Las Vegas Raiders some, but not much, goodwill in NFL Power rankings heading into 2026 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kirk-cousins-buys-las-vegas-214300048.html",
+   "timestamp": "2026-09-09T21:43:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "6p78HzKW742phc7p",
+   "headline": "Tucker Kraft: Not on Week 1 injury report",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/tucker-kraft-16649",
+   "timestamp": "2026-09-09T21:41:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "tucker-kraft"
+   ]
+  },
+  {
    "id": "FEMeFv2lmXB-ks-W",
-   "headline": "Raiders TE Brock Bowers To ‘A Game Or 2’ Following Knee Procedure",
+   "headline": "Raiders TE Brock Bowers To Miss ‘A Game Or 2’ Following Knee Procedure",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/09/raiders-te-brock-bowers-to-a-game-or-2-following-knee-procedure",
    "timestamp": "2026-09-09T21:26:22.000Z",
@@ -532,7 +601,7 @@
   },
   {
    "id": "v3msK-S0Hx2tRvCw",
-   "headline": "Brock Bowers injury update as Raiders TE undergoes knee surgery",
+   "headline": "Brock Bowers injury update as Raiders TE undergoes meniscus trim",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/brock-bowers-injury-raiders-te-201506356.html",
    "timestamp": "2026-09-09T20:15:06.000Z",
@@ -1222,17 +1291,6 @@
    ]
   },
   {
-   "id": "6p78HzKW742phc7p",
-   "headline": "Tucker Kraft: In full pads Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tucker-kraft-16649",
-   "timestamp": "2026-09-09T17:48:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tucker-kraft"
-   ]
-  },
-  {
    "id": "YMMQ2xQ8z-X--M4o",
    "headline": "TE Dae'Quan Wright waiting to hear if he can return to NFL after flirtation with LSU",
    "source": "Yahoo Sports",
@@ -1623,59 +1681,6 @@
    "team_abbrs": [
     "NE",
     "SEA"
-   ]
-  },
-  {
-   "id": "rAJvmFexHDjtLg9l",
-   "headline": "Rams-49ers rivalry as intense as ever heading into high-stakes Australian opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-vs-49ers-rivalry-intense-155734962.html",
-   "timestamp": "2026-09-09T15:57:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "u0dowxfFrGe52czM",
-   "headline": "Cowboys Sign G Laken Tomlinson To Practice Squad",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/cowboys-sign-g-laken-tomlinson-to-practice-squad",
-   "timestamp": "2026-09-09T15:57:13.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "olsiUte3-2Ro0gdH",
-   "headline": "What NFL scouts say about Texas QB Arch Manning ahead of Ohio State test: 'Good's really good, but ...'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/college-football/news/what-nfl-scouts-say-about-texas-quarterback-arch-manning-ahead-of-ohio-state-test/",
-   "timestamp": "2026-09-09T15:50:38.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "S8oCaEJwU6S1Qomb",
-   "headline": "Can John Harbaugh succeed with the Giants where others have failed?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/john-harbaugh-succeed-giants-where-154748828.html",
-   "timestamp": "2026-09-09T15:47:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "w2nb5-KDVkx443V4",
-   "headline": "Why the Jets’ Addition of Geno Smith Is an Important Test for Aaron Glenn and Darren Mougey",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/why-jets-addition-geno-smith-154732372.html",
-   "timestamp": "2026-09-09T15:47:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
    ]
   }
  ]
