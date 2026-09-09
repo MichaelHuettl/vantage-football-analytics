@@ -4,6 +4,39 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "ad9hTpJRDs9txZUn",
+   "headline": "49ers DT Alfred Collins To Miss Season With Torn Patella Tendon",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/49ers-dt-alfred-collins-to-miss-season-with-torn-patella-tendon",
+   "timestamp": "2026-09-09T02:52:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "gbV5JMH5cxG4Hw0q",
+   "headline": "George Kittle: Could see limited Week 1 role",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
+   "timestamp": "2026-09-09T02:49:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
+   "id": "fK3RlDTIlYUqpppq",
+   "headline": "Should the Chicago Bears extend D’Andre Swift?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-extend-d-andre-024500217.html",
+   "timestamp": "2026-09-09T02:45:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
    "id": "xqaeIbrzJOrybCgX",
    "headline": "Why Baker Mayfield’s new contract is relevant to Seahawks, Sam Darnold",
    "source": "Yahoo Sports",
@@ -279,17 +312,6 @@
    "category": "injury",
    "team_abbrs": [
     "KC"
-   ]
-  },
-  {
-   "id": "gbV5JMH5cxG4Hw0q",
-   "headline": "George Kittle: Listed as limited participant",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
-   "timestamp": "2026-09-08T22:54:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "george-kittle"
    ]
   },
   {
@@ -1614,32 +1636,6 @@
    "category": "practice",
    "player_ids": [
     "breece-hall"
-   ]
-  },
-  {
-   "id": "6NOSfkfh4SEjemjd",
-   "headline": "Andy Reid: Patrick Mahomes will \"most likely\" start Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/andy-reid-patrick-mahomes-most-173804496.html",
-   "timestamp": "2026-09-08T17:38:04.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "un5Vq8s-jH0XUe99",
-   "headline": "Jets Notes: Breece Hall 'trending towards playing' in Week 1 at Titans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-notes-breece-hall-trending-173638385.html",
-   "timestamp": "2026-09-08T17:36:38.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "breece-hall"
-   ],
-   "team_abbrs": [
-    "NYJ",
-    "TEN"
    ]
   }
  ]
