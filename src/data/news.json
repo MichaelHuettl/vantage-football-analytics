@@ -4,6 +4,58 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "qUoSbiZVLTYN1Zsy",
+   "headline": "J.J. McCarthy, a first-round pick in 2024, named Vikings' No. 3 quarterback behind backup Carson Wentz",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/jj-mccarthy-a-first-round-pick-in-2024-named-vikings-no-3-quarterback-behind-backup-carson-wentz-185201048.html",
+   "timestamp": "2026-09-09T18:52:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "lTi4SikJRfgjUDrk",
+   "headline": "Vikings demote former starting QB J.J. McCarthy to third string",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-demote-former-starting-qb-185030212.html",
+   "timestamp": "2026-09-09T18:50:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "Tk1GqkEA2yBCZKx3",
+   "headline": "Carson Wentz is Vikings' No. 2 quarterback, J.J. McCarthy is No. 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/carson-wentz-vikings-no-2-184812722.html",
+   "timestamp": "2026-09-09T18:48:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "xufnFNWyWYbkiTQb",
+   "headline": "J.J. McCarthy: Opens season third on depth chart",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jj-mccarthy-17689",
+   "timestamp": "2026-09-09T18:46:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "ka94MOPAxJQM_IWL",
+   "headline": "Vikings unsure if Harrison Smith will play on Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-unsure-harrison-smith-play-184436217.html",
+   "timestamp": "2026-09-09T18:44:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
    "id": "IgkiK_kGN7uLHO_y",
    "headline": "Agent's Take: George Pickens, Puka Nacua headline non-quarterbacks who are at a crossroads entering 2026",
    "source": "CBS Sports",
@@ -13,6 +65,17 @@
    "player_ids": [
     "puka-nacua",
     "george-pickens"
+   ]
+  },
+  {
+   "id": "9kgQmHMooN1skT97",
+   "headline": "Seahawks will have white throwback jersey in 2027",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-white-throwback-jersey-2027-183513465.html",
+   "timestamp": "2026-09-09T18:35:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
    ]
   },
   {
@@ -1544,73 +1607,6 @@
    "team_abbrs": [
     "NE",
     "SEA"
-   ]
-  },
-  {
-   "id": "ICaE70UFe737CeC7",
-   "headline": "Eagles News: ESPN picks Philadelphia to return to the Super Bowl against the Chiefs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-espn-picks-philadelphia-120921282.html",
-   "timestamp": "2026-09-09T12:09:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "PHI"
-   ]
-  },
-  {
-   "id": "p-UZBvDhp6SfShhw",
-   "headline": "Rams vs 49ers: How to watch on TV, stream or listen on radio",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-vs-49ers-watch-tv-120200041.html",
-   "timestamp": "2026-09-09T12:02:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "iX2kW6pYQltZIGyo",
-   "headline": "2026 Chicago Bears Season Preview: The Hunter is now the Hunted",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-chicago-bears-season-preview-120000818.html",
-   "timestamp": "2026-09-09T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "p_5Ai56uGD1wXGvi",
-   "headline": "Lions scouting report: Saints a possible sleeper?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-scouting-report-saints-possible-120000587.html",
-   "timestamp": "2026-09-09T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "NWZIFkqI9z4RuTO9",
-   "headline": "Cat Scratch Reader Reacts Survey: Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cat-scratch-reader-reacts-survey-120000782.html",
-   "timestamp": "2026-09-09T12:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "4SM0fOwCG6b-LLvS",
-   "headline": "Steelers’ secondary concerns and other storylines to follow in Week 1 vs. Falcons",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-secondary-concerns-other-storylines-120000875.html",
-   "timestamp": "2026-09-09T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "PIT"
    ]
   }
  ]
