@@ -4,6 +4,98 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "gbV5JMH5cxG4Hw0q",
+   "headline": "George Kittle: In clear to play Week 1",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
+   "timestamp": "2026-09-10T04:34:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
+   "id": "9avD9fZwAGG7k4hJ",
+   "headline": "Rhamondre Stevenson: Heavy volume in Week 1 loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/rhamondre-stevenson-15372",
+   "timestamp": "2026-09-10T04:33:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "uMRAtYVtrzQF1tqW",
+   "headline": "49ers stars Christian McCaffrey, George Kittle and Nick Bosa all cleared to play vs. Rams in Australia",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/49ers-stars-christian-mccaffrey-george-kittle-and-nick-bosa-all-cleared-to-play-vs-rams-in-australia-043234910.html",
+   "timestamp": "2026-09-10T04:32:34.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-mccaffrey",
+    "george-kittle"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "a4Qhi_rq1JzmNR4r",
+   "headline": "Drake Maye struggles in Super Bowl rematch",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-maye-struggles-super-bowl-041659422.html",
+   "timestamp": "2026-09-10T04:16:59.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
+   "id": "c07NpSWmQ4WkD4RH",
+   "headline": "Mike Vrabel laments Drake Maye's 3 interceptions in loss to Seahawks: 'We want to be aggressive, not reckless'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/mike-vrabel-laments-drake-mayes-3-interceptions-in-loss-to-seahawks-we-want-to-be-aggressive-not-reckless-041105398.html",
+   "timestamp": "2026-09-10T04:11:05.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "Qmq-wXUjKc1g3iMK",
+   "headline": "Jadarian Price: Efficient in Week 1 win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jadarian-price-19299",
+   "timestamp": "2026-09-10T04:11:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "e8f5wN8KvIpFe09q",
+   "headline": "Instant analysis from Patriots’ 13-10 loss to Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/instant-analysis-patriots-13-10-040553928.html",
+   "timestamp": "2026-09-10T04:05:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "phsLnxXVJMSYTDx8",
+   "headline": "Patriots' A.J. Brown injures ankle, misses most of second half in loss to Seahawks",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
+   "timestamp": "2026-09-10T04:05:15.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
    "id": "xuIbD_yUNYT_c9YV",
    "headline": "5 moments that defined the Patriots’ loss to the Seahawks",
    "source": "Yahoo Sports",
@@ -178,17 +270,6 @@
    ]
   },
   {
-   "id": "phsLnxXVJMSYTDx8",
-   "headline": "Patriots' A.J. Brown injures ankle, ruled out for rest of season opener",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
-   "timestamp": "2026-09-10T03:07:33.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
    "id": "CY5Mfx4ybO_fL7pw",
    "headline": "Jaxon Smith-Njigba 45-yard TD ties Seahawks-Patriots at 10-10 in fourth quarter",
    "source": "Yahoo Sports",
@@ -302,13 +383,13 @@
   },
   {
    "id": "RrviBk_ui453zcbD",
-   "headline": "A.J. Brown injures ankle, latest updates after WR leaves game vs. Seahawks",
+   "headline": "A.J. Brown injury update as Patriots WR seen in walking boot after ankle injury",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/j-brown-injury-patriots-wr-020422784.html",
    "timestamp": "2026-09-10T02:04:22.000Z",
    "category": "injury",
    "team_abbrs": [
-    "SEA"
+    "NE"
    ]
   },
   {
@@ -547,7 +628,7 @@
   },
   {
    "id": "vB0lijoueAfpO0RP",
-   "headline": "Sam Darnold injury update: Seahawks QB injures hip, leaves game vs. Patriots",
+   "headline": "Sam Darnold injury update as Seahawks get 'great news' after QB exits vs. Patriots",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/sam-darnold-injury-seahawks-qb-004119869.html",
    "timestamp": "2026-09-10T00:41:19.000Z",
@@ -1001,17 +1082,6 @@
    "category": "breaking",
    "player_ids": [
     "george-pickens"
-   ]
-  },
-  {
-   "id": "gbV5JMH5cxG4Hw0q",
-   "headline": "George Kittle: Remains limited Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
-   "timestamp": "2026-09-09T22:38:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
    ]
   },
   {
@@ -1656,76 +1726,6 @@
    ],
    "team_abbrs": [
     "BAL"
-   ]
-  },
-  {
-   "id": "paswRNA2LGuVVzdi",
-   "headline": "Brock Bowers injury: Raiders TE expected to miss time after having meniscus trim, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/brock-bowers-injury-raiders-te-expected-to-miss-time/",
-   "timestamp": "2026-09-09T20:32:29.000Z",
-   "category": "injury",
-   "player_ids": [
-    "brock-bowers"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "vrl0wx2x0BQQvI6J",
-   "headline": "UPDATE: The Chicago Bears have a full 16-man practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-signed-11-players-000535834.html",
-   "timestamp": "2026-09-09T20:31:54.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "6TpCUvMwqAZDexSv",
-   "headline": "Seahawks sign S AJ Finley to 53-man roster, elevate two",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-sign-aj-finley-53-203111163.html",
-   "timestamp": "2026-09-09T20:31:11.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "2uifz5ons6lyq2wY",
-   "headline": "Cowboys countdown to kickoff: Top 100 iconic games – Day 4",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-countdown-kickoff-top-100-203000432.html",
-   "timestamp": "2026-09-09T20:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "cOmKyap1pGOP3Mb5",
-   "headline": "Send us your final record predictions for the 2026 Cincinnati Bengals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/send-us-final-record-predictions-202950700.html",
-   "timestamp": "2026-09-09T20:29:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "tfY8FU5mzDV-S39f",
-   "headline": "Wednesday Same Game Parlay: Patriots @ Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/wednesday-same-game-parlay-patriots-202933470.html",
-   "timestamp": "2026-09-09T20:29:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
    ]
   }
  ]
