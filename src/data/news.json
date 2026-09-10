@@ -4,15 +4,50 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "70b5NrPqRxQDMyiu",
+   "headline": "Mike Vrabel: You can't throw three interceptions, Drake Maye knows that",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mike-vrabel-cant-throw-three-092446512.html",
+   "timestamp": "2026-09-10T09:24:46.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
    "id": "S8wV6a1Cig3KPXCY",
    "headline": "Champions Seahawks beat Patriots in season opener",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/champions-seahawks-beat-patriots-season-071042107.html",
-   "timestamp": "2026-09-10T08:22:35.000Z",
+   "timestamp": "2026-09-10T09:09:51.000Z",
    "category": "breaking",
    "team_abbrs": [
     "NE",
     "SEA"
+   ]
+  },
+  {
+   "id": "qFto9efk_br9gTEZ",
+   "headline": "6 winners and losers from Patriots’ loss to the Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/6-winners-losers-patriots-loss-090000815.html",
+   "timestamp": "2026-09-10T09:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "92WfuenFeTxnnZRp",
+   "headline": "49ers vs Rams Prop Picks for Thursday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-vs-rams-prop-picks-090000986.html",
+   "timestamp": "2026-09-10T09:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
    ]
   },
   {
@@ -1700,45 +1735,6 @@
    "team_abbrs": [
     "CAR",
     "CHI"
-   ]
-  },
-  {
-   "id": "tW4U6mxtn9XEd-6v",
-   "headline": "How Commanders QB Jayden Daniels shut out noise, prepped for important Year 3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-qb-jayden-daniels-shut-211244935.html",
-   "timestamp": "2026-09-09T21:12:44.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jayden-daniels"
-   ],
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "6zWu_raW0Zmdp0uZ",
-   "headline": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Patriots-Seahawks, Packers-Vikings markets",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-patriots-seahawks-packers-vikings-markets/",
-   "timestamp": "2026-09-09T21:10:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "MIN",
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "XuVV9MBPRQuBoIYM",
-   "headline": "Cowboys backup OG Ajani Cornelius limited in practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-backup-og-ajani-cornelius-211023124.html",
-   "timestamp": "2026-09-09T21:10:23.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DAL"
    ]
   }
  ]
