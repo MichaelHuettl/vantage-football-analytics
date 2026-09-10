@@ -4,6 +4,29 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "1_jvipPt_3ln-xEG",
+   "headline": "How Mike Macdonald made NFL history with Seahawks win over Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mike-macdonald-made-nfl-history-062535079.html",
+   "timestamp": "2026-09-10T06:25:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "06X172iPOo_wie8p",
+   "headline": "Josh Jobe’s game-winning pick for Seahawks proves to be an NFL rarity",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-jobe-game-winning-pick-061144412.html",
+   "timestamp": "2026-09-10T06:11:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
    "id": "NlxJBszreHsmSfUx",
    "headline": "Vinod Khosla has priceless reaction to first win as Seahawks owner",
    "source": "Yahoo Sports",
@@ -415,6 +438,20 @@
    "category": "injury",
    "team_abbrs": [
     "NE"
+   ]
+  },
+  {
+   "id": "Lf7hXKzDspfIkzIq",
+   "headline": "Brock Bowers’ girlfriend shares encouraging update on Raiders’ injured tight end",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-bowers-girlfriend-shares-encouraging-021100835.html",
+   "timestamp": "2026-09-10T02:11:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "brock-bowers"
+   ],
+   "team_abbrs": [
+    "LV"
    ]
   },
   {
@@ -1692,39 +1729,6 @@
    "url": "https://sports.yahoo.com/betting/article/nfl-odds-betting-storylines-3-underdogs-to-back-in-week-1-205009502.html",
    "timestamp": "2026-09-09T20:50:09.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "CfsZbvs6J8vvUy45",
-   "headline": "Patriots up-to-date depth chart: Who is on the roster right now?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-date-depth-chart-roster-202222083.html",
-   "timestamp": "2026-09-09T20:49:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "Bd2rYNA3B7MATdYL",
-   "headline": "Patriots reach injury settlement with defensive lineman Isaiah Iton",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-reach-injury-settlement-defensive-204929365.html",
-   "timestamp": "2026-09-09T20:49:29.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "6KLVAU_J_h2AAuWn",
-   "headline": "Falcons list Michael Penix as full practice participant",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-list-michael-penix-full-204551406.html",
-   "timestamp": "2026-09-09T20:45:51.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "ATL"
-   ]
   }
  ]
 }
