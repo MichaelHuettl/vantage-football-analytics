@@ -4,6 +4,18 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "S8wV6a1Cig3KPXCY",
+   "headline": "Champions Seahawks beat Patriots in season opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/champions-seahawks-beat-patriots-season-071042107.html",
+   "timestamp": "2026-09-10T07:29:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
    "id": "xqjuCfRLaEJh9Y1x",
    "headline": "Drake Maye's explanation for game-sealing INT in Patriots' season-opening defeat vs. Seahawks: 'I just stopped being patient'",
    "source": "Yahoo Sports",
@@ -16,6 +28,20 @@
    "team_abbrs": [
     "NE",
     "SEA"
+   ]
+  },
+  {
+   "id": "nH9FIAVmN8zb6i29",
+   "headline": "As Patriots fail to overcome loss of A.J. Brown, Drake Maye admits: ‘I just stopped being patient’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/as-patriots-fail-to-overcome-loss-of-aj-brown-drake-maye-admits-i-just-stopped-being-patient-065811130.html",
+   "timestamp": "2026-09-10T06:58:11.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
    ]
   },
   {
@@ -1707,31 +1733,6 @@
    "team_abbrs": [
     "DAL",
     "NYG"
-   ]
-  },
-  {
-   "id": "Nv6kAkb1p9UVLGht",
-   "headline": "Packers Salary Cap: Jonnu Smith contract details released",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-salary-cap-jonnu-smith-205634268.html",
-   "timestamp": "2026-09-09T20:56:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "6CzsuNSgheta7fpW",
-   "headline": "Emeka Egbuka full, Jalen McMillan limited at Buccaneers practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/emeka-egbuka-full-jalen-mcmillan-205544969.html",
-   "timestamp": "2026-09-09T20:55:44.000Z",
-   "category": "practice",
-   "player_ids": [
-    "emeka-egbuka"
-   ],
-   "team_abbrs": [
-    "TB"
    ]
   }
  ]
