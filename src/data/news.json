@@ -1,8 +1,138 @@
 {
  "schema_version": 1,
- "updated": "2026-09-09",
+ "updated": "2026-09-10",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "xuIbD_yUNYT_c9YV",
+   "headline": "5 moments that defined the Patriots’ loss to the Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-moments-defined-patriots-loss-035542572.html",
+   "timestamp": "2026-09-10T03:55:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "jNLzrLsUpU7myQBv",
+   "headline": "Sam Darnold: In line for MRI on hip",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/sam-darnold-12490",
+   "timestamp": "2026-09-10T03:54:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
+   "id": "6CCj6-Wb6QlxZ4U-",
+   "headline": "Seahawks' Sam Darnold injures hip in win over Patriots, fracture ruled out",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/sam-darnold-hip-exits-seahawks-patriots-season-opener/",
+   "timestamp": "2026-09-10T03:53:06.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "ge3C03tA3ObWj234",
+   "headline": "Drake Maye: Trio of critical INTs in loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/drake-maye-17673",
+   "timestamp": "2026-09-10T03:51:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
+   "id": "cm3_t5iRVXt6mIdM",
+   "headline": "Winners and losers from the Seahawks win over Patriots in NFL opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/winners-losers-seahawks-win-over-034323339.html",
+   "timestamp": "2026-09-10T03:43:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "9azgYKSKxbZxmadB",
+   "headline": "Jaxon Smith-Njigba: Cranks it up in second half",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jaxon-smith-njigba-16654",
+   "timestamp": "2026-09-10T03:43:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxon-smith-njigba"
+   ]
+  },
+  {
+   "id": "Mu-qjIhRmJqGOdBg",
+   "headline": "Relevant to the Eagles: Two injuries from the Seahawks-Patriots game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/relevant-eagles-two-injuries-seahawks-033942476.html",
+   "timestamp": "2026-09-10T03:39:42.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "PHI",
+    "SEA"
+   ]
+  },
+  {
+   "id": "dpZ8D_R3ywQReE9A",
+   "headline": "NFL Kickoff 2026: Seahawks beat Patriots 13-10, but lose Sam Darnold to hip injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-kickoff-2026-seahawks-beat-033733738.html",
+   "timestamp": "2026-09-10T03:37:33.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "IbGY0P-V1mWNMEoo",
+   "headline": "Seahawks-Patriots score: 1-0! Seattle rallies despite Sam Darnold injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-patriots-score-1-0-033554392.html",
+   "timestamp": "2026-09-10T03:35:54.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "he2ItwyePz5aMS7w",
+   "headline": "Patriots vs. Seahawks recap: Drake Maye melts down in 13-10 loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
+   "timestamp": "2026-09-10T03:31:56.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
   {
    "id": "mH4J7y7IxPS2zgsr",
    "headline": "Offseason In Review: Los Angeles Rams",
@@ -38,7 +168,7 @@
   },
   {
    "id": "mbLsH5oB17MwGqBA",
-   "headline": "Romeo Doubs' brutal drop is lowlight of WR's quiet Patriots debut",
+   "headline": "Romeo Doubs' brutal drop is lowlight of WR's silent Patriots debut",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/romeo-doubs-brutal-drop-lowlight-032451788.html",
    "timestamp": "2026-09-10T03:24:51.000Z",
@@ -48,15 +178,14 @@
    ]
   },
   {
-   "id": "he2ItwyePz5aMS7w",
-   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
-   "timestamp": "2026-09-10T03:12:39.000Z",
-   "category": "breaking",
+   "id": "phsLnxXVJMSYTDx8",
+   "headline": "Patriots' A.J. Brown injures ankle, ruled out for rest of season opener",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
+   "timestamp": "2026-09-10T03:07:33.000Z",
+   "category": "injury",
    "team_abbrs": [
-    "NE",
-    "SEA"
+    "NE"
    ]
   },
   {
@@ -82,21 +211,6 @@
    "timestamp": "2026-09-10T02:49:06.000Z",
    "category": "injury",
    "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "6CCj6-Wb6QlxZ4U-",
-   "headline": "Seahawks' Sam Darnold injures hip, ruled out for season opener vs. Patriots; Drew Lock takes over",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/sam-darnold-hip-exits-seahawks-patriots-season-opener/",
-   "timestamp": "2026-09-10T02:35:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "NE",
     "SEA"
    ]
   },
@@ -175,14 +289,25 @@
    ]
   },
   {
+   "id": "tRFZSPsI-nythVa8",
+   "headline": "Patriots WR A.J. Brown leaves season-opening loss to Seahawks with ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/patriots-wr-aj-brown-leaves-season-opening-loss-to-seahawks-with-ankle-injury-020722265.html",
+   "timestamp": "2026-09-10T02:07:22.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
    "id": "RrviBk_ui453zcbD",
-   "headline": "A.J. Brown injury live updates as Patriots WR injures ankle, leaves game vs. Seahawks",
+   "headline": "A.J. Brown injures ankle, latest updates after WR leaves game vs. Seahawks",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/j-brown-injury-patriots-wr-020422784.html",
    "timestamp": "2026-09-10T02:04:22.000Z",
    "category": "injury",
    "team_abbrs": [
-    "NE",
     "SEA"
    ]
   },
@@ -360,17 +485,6 @@
    "category": "breaking"
   },
   {
-   "id": "jNLzrLsUpU7myQBv",
-   "headline": "Sam Darnold: Questionable to return",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/sam-darnold-12490",
-   "timestamp": "2026-09-10T00:47:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-darnold"
-   ]
-  },
-  {
    "id": "G0fjcvae4GKVn2m-",
    "headline": "Seahawks quarterback Sam Darnold injured, replaced by Drew Lock",
    "source": "Yahoo Sports",
@@ -404,6 +518,20 @@
    "category": "injury",
    "player_ids": [
     "sam-darnold"
+   ]
+  },
+  {
+   "id": "-s4UuKRa4VjisYN4",
+   "headline": "Sam Darnold ruled out with hip injury after only one drive, replaced by Drew Lock in Seahawks win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/sam-darnold-ruled-out-with-hip-injury-after-only-one-drive-replaced-by-drew-lock-in-seahawks-win-004222706.html",
+   "timestamp": "2026-09-10T00:42:22.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA"
    ]
   },
   {
@@ -946,11 +1074,14 @@
   },
   {
    "id": "xaMJRf1D45_JcU8p",
-   "headline": "Patriots vs. Seahawks NFL season opener: With some major mistakes, New England finds a way to lose to Seattle",
+   "headline": "Patriots vs. Seahawks NFL season opener: With some major mistakes, Drake Maye and New England find a way to lose to Seattle, 13-10",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/patriots-vs-seahawks-score-live-updates-highlights-stats-where-to-watch-week-1-season-opener-super-bowl-lx-rematch-222000691.html",
    "timestamp": "2026-09-09T22:20:00.000Z",
    "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
    "team_abbrs": [
     "NE",
     "SEA"
@@ -1596,127 +1727,6 @@
     "NE",
     "SEA"
    ]
-  },
-  {
-   "id": "NxBjuJYFmaIc1M4R",
-   "headline": "D'Andre Swift: Cleared for Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/dandre-swift-14394",
-   "timestamp": "2026-09-09T20:27:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "dandre-swift"
-   ]
-  },
-  {
-   "id": "os1nhL0T_uGFxPsx",
-   "headline": "Seahawks turn to practice squad for secondary depth in opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-turn-practice-squad-secondary-202523370.html",
-   "timestamp": "2026-09-09T20:25:23.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "nY1sybYyZBzJ91k1",
-   "headline": "Breece Hall: Returns to full practice",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/breece-hall-15810",
-   "timestamp": "2026-09-09T20:19:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "breece-hall"
-   ]
-  },
-  {
-   "id": "CQaY9QYM4PqQFIfg",
-   "headline": "Raiders news: Brock Bowers out Sunday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-news-brock-bowers-sunday-201744203.html",
-   "timestamp": "2026-09-09T20:17:44.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-bowers"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "IJ-Pk93HrxUI09cj",
-   "headline": "Breece Hall, Kenyon Sadiq listed as full participants in Jets practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/breece-hall-kenyon-sadiq-listed-201637834.html",
-   "timestamp": "2026-09-09T20:16:37.000Z",
-   "category": "practice",
-   "player_ids": [
-    "breece-hall"
-   ],
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "Z199t8fCV34tD2OG",
-   "headline": "Lions, Saints injury report: Only 3 players limited on Wednesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-saints-injury-report-only-201625729.html",
-   "timestamp": "2026-09-09T20:16:25.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "WihE8QZbInHJ9Lxm",
-   "headline": "Brock Bowers injury: Raiders star to miss ‘game or two’ after knee surgery",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-bowers-injury-raiders-star-201619526.html",
-   "timestamp": "2026-09-09T20:16:19.000Z",
-   "category": "injury",
-   "player_ids": [
-    "brock-bowers"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "hjuADoHc73FB-OcH",
-   "headline": "Patriots elevate pair from practice squad for Week 1 against Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-elevate-pair-practice-squad-201541456.html",
-   "timestamp": "2026-09-09T20:15:41.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "v3msK-S0Hx2tRvCw",
-   "headline": "Brock Bowers injury update as Raiders TE undergoes meniscus trim",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-bowers-injury-raiders-te-201506356.html",
-   "timestamp": "2026-09-09T20:15:06.000Z",
-   "category": "injury",
-   "player_ids": [
-    "brock-bowers"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "omrv97v4UqTCv6LG",
-   "headline": "Dae’Quan Wright Exploring NFL Return",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/daequan-wright-exploring-nfl-return",
-   "timestamp": "2026-09-09T20:14:30.000Z",
-   "category": "breaking"
   }
  ]
 }
