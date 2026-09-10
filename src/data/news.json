@@ -4,6 +4,36 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "BHpoe5nNFczY67wA",
+   "headline": "Panthers QB Bryce Young isn't flinching in the face of 'prove-it' year | Opinion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-qb-bryce-young-isnt-104557477.html",
+   "timestamp": "2026-09-10T10:45:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "CoIXxfrX0BsfAp1K",
+   "headline": "Before the Roar: Previewing Week 1 vs New Orleans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roar-previewing-week-1-vs-103146119.html",
+   "timestamp": "2026-09-10T10:31:46.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "YpRH7gN6PkS1uX9S",
+   "headline": "George Kittle, Nick Bosa have no injury designations for Thursday's game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/george-kittle-nick-bosa-no-103136845.html",
+   "timestamp": "2026-09-10T10:31:36.000Z",
+   "category": "injury",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
    "id": "ZmuQ0lx7RQ1OITYI",
    "headline": "Is Ricky Pearsall out for the season? Injury update for 49ers WR",
    "source": "Yahoo Sports",
@@ -12,6 +42,25 @@
    "category": "injury",
    "team_abbrs": [
     "SF"
+   ]
+  },
+  {
+   "id": "FRbJQmMpqAa72HjM",
+   "headline": "NFL analyst predicts Cashius Howell will win NFL Defensive Rookie of the Year Award",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-analyst-predicts-cashius-howell-103000107.html",
+   "timestamp": "2026-09-10T10:30:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "hSrk7Ek2ENvxCpg7",
+   "headline": "Chiefs News: Alex Smith named Drum Honoree for Monday night",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-alex-smith-named-103000995.html",
+   "timestamp": "2026-09-10T10:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
    ]
   },
   {
@@ -1682,59 +1731,6 @@
    "team_abbrs": [
     "BUF",
     "HOU"
-   ]
-  },
-  {
-   "id": "Ql5TFnB7Qi5209oG",
-   "headline": "Best NFL Betting Promos for Week 1: Sportsbook Promos, Bonus Codes for Seahawks vs. Patriots",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/best-nfl-promos-week-1-sportsbook-promos-bonus-codes-seahawks-vs-patriots/",
-   "timestamp": "2026-09-09T22:13:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "jdJ5fGvAMdyo-oPf",
-   "headline": "Ashton Jeanty: Logs full practice Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/ashton-jeanty-18487",
-   "timestamp": "2026-09-09T22:10:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "ashton-jeanty"
-   ]
-  },
-  {
-   "id": "WdTXrUpqlsblHDTa",
-   "headline": "Chargers Name Kayode Awosika Starting LG",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/chargers-name-kayode-awosika-starting-lg",
-   "timestamp": "2026-09-09T22:07:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "SeAbOHzXwyOMvObK",
-   "headline": "NFL betting, odds, lines: Betting trends to know for Week 1's biggest games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/nfl-betting-odds-lines-betting-trends-to-know-for-week-1s-biggest-games-220600861.html",
-   "timestamp": "2026-09-09T22:06:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "7YLdj2Fn36LbGJKT",
-   "headline": "Packers Injury Report: Updates on the offensive line",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-injury-report-updates-offensive-220410782.html",
-   "timestamp": "2026-09-09T22:04:10.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "GB"
    ]
   }
  ]
