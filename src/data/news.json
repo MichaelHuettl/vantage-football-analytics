@@ -4,6 +4,121 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "sW-Vk-95MdbDb6WY",
+   "headline": "Commanders P Tress Way thinks this will be his final NFL season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-p-tress-way-thinks-185534023.html",
+   "timestamp": "2026-09-10T18:55:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "1yO6ZNjmUhEfA7U3",
+   "headline": "49ers-Rams preview: Familiarity, new looks, and aggressive QBs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-rams-preview-familiarity-looks-182152989.html",
+   "timestamp": "2026-09-10T18:50:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "ulnEqZ1hmCwzgfL8",
+   "headline": "NFL Week 1 preview & bold predictions: Josh Allen's worst nightmare, Baker vs. Burrow barnburner",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-week-1-preview--bold-predictions-josh-allens-worst-nightmare-baker-vs-burrow-barnburner-184849832.html",
+   "timestamp": "2026-09-10T18:48:49.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen"
+   ]
+  },
+  {
+   "id": "mK06lyEJI_7yjv8Y",
+   "headline": "Big Dom is reportedly being investigated by the NFL because of Emmanuel Acho",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/big-dom-reportedly-being-investigated-184603127.html",
+   "timestamp": "2026-09-10T18:46:03.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "j0bR0Vb_wXJ99OwT",
+   "headline": "Fantasy Football Week 1 Rankings: Hayden Winks' WR2 (ranked 13-36) wide receiver projections",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-rankings-hayden-winks-wr2-ranked-13-36-wide-receiver-projections-184526457.html",
+   "timestamp": "2026-09-10T18:45:26.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "pmZrm2P0yJc-BwkP",
+   "headline": "What Drake Maye’s rough Week 1 reminds us about Caleb Williams and the Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-maye-rough-week-1-184500362.html",
+   "timestamp": "2026-09-10T18:45:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye",
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "RF5AXrLgxdz-r9ev",
+   "headline": "Short-Term Absence Expected For Seahawks QB Sam Darnold",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/short-term-absence-expected-for-seahawks-qb-sam-darnold",
+   "timestamp": "2026-09-10T18:44:49.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "RRWA3oi5oWZF5_1W",
+   "headline": "Is George Kittle playing in Week 1? Latest on San Francisco 49ers TE",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/george-kittle-playing-week-1-183945915.html",
+   "timestamp": "2026-09-10T18:39:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "5meT7AIJagj9gJB-",
+   "headline": "It will be hard for Patrick Mahomes not to be himself in Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/hard-patrick-mahomes-not-himself-183000969.html",
+   "timestamp": "2026-09-10T18:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "GhMwbSRw4w2_-xPT",
+   "headline": "Titans sign CB Jaylon Jones",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-sign-cb-jaylon-jones-182837713.html",
+   "timestamp": "2026-09-10T18:28:37.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
    "id": "4bmicdCUjA0ceq6B",
    "headline": "Patriots and Seahawks overreactions: From Drake Maye and Drew Lock, to Will Campbell and Jadarian Price",
    "source": "CBS Sports",
@@ -16,18 +131,6 @@
    "team_abbrs": [
     "NE",
     "SEA"
-   ]
-  },
-  {
-   "id": "1yO6ZNjmUhEfA7U3",
-   "headline": "49ers-Rams preview: Familiarity, new looks, and aggressive QBs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-rams-preview-familiarity-looks-182152989.html",
-   "timestamp": "2026-09-10T18:21:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
    ]
   },
   {
@@ -1614,113 +1717,6 @@
    "team_abbrs": [
     "ATL",
     "PIT"
-   ]
-  },
-  {
-   "id": "nsYTHgwgIOhJ9-hH",
-   "headline": "Predict the Browns’ First Offensive Play, Tackle, and Touchdown",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/predict-browns-first-offensive-play-120000895.html",
-   "timestamp": "2026-09-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "lbNRAoqXJ9XOv8do",
-   "headline": "How the Broncos can defeat the Chiefs on Monday Night Football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-defeat-chiefs-monday-night-120000286.html",
-   "timestamp": "2026-09-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "Fi8jbt6h7nimVHRU",
-   "headline": "Giants to unveil new-look, physical offense against Cowboys",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-unveil-look-physical-offense-120000714.html",
-   "timestamp": "2026-09-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "NYG"
-   ]
-  },
-  {
-   "id": "VjkFZJLxaOfHZaZ4",
-   "headline": "Panthers vs Bears: Matchups to watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-vs-bears-matchups-watch-120000988.html",
-   "timestamp": "2026-09-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "CHI"
-   ]
-  },
-  {
-   "id": "Wv0WrxbCg4VHqgqR",
-   "headline": "The Packers’ defense was the opposite of the Seahawks last season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-defense-opposite-seahawks-last-115158796.html",
-   "timestamp": "2026-09-10T11:51:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "SEA"
-   ]
-  },
-  {
-   "id": "keQSiM2bbAR_kd-7",
-   "headline": "NFL Week 1 Trends: Bengals Still Sleeping",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-1-trends-bengals-190300466.html",
-   "timestamp": "2026-09-10T11:38:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "e-xxkRdIVcXOLFRf",
-   "headline": "5 Qs Lions vs. Saints preview: How New Orleans will navigate early-season injuries",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-qs-lions-vs-saints-113000828.html",
-   "timestamp": "2026-09-10T11:30:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "lvUznnPAU6k2J65F",
-   "headline": "Houston house of horrors: Why Josh Allen has struggled vs. Texans' turbo-charged defense",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/why-josh-allen-has-struggled-vs-texans-turbo-charged-defense/",
-   "timestamp": "2026-09-10T11:23:29.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ],
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "fbKBbRfH9EOH07G3",
-   "headline": "It took one series for Anthony Richardson to see his future with the Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/took-one-series-anthony-richardson-111500380.html",
-   "timestamp": "2026-09-10T11:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
    ]
   }
  ]
