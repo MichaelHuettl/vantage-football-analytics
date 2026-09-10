@@ -4,6 +4,103 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "bzZMqotGhJdrXXrg",
+   "headline": "Packers face real test against Vikings in Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-face-real-test-against-145649103.html",
+   "timestamp": "2026-09-10T14:56:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "MIN"
+   ]
+  },
+  {
+   "id": "phsLnxXVJMSYTDx8",
+   "headline": "Patriots' A.J. Brown believed to have suffered high ankle sprain, severity to be determined",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
+   "timestamp": "2026-09-10T14:56:05.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "Kk970fLGkWY3Rwfz",
+   "headline": "Fantasy Football Rankings Week 1: Top options for the Flex position (full PPR)",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-week-1-top-options-for-the-flex-position-full-ppr-145405849.html",
+   "timestamp": "2026-09-10T14:54:05.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "sAI9-Dde5wvfEq3z",
+   "headline": "Bengals, DJ Turner Not Close To Extension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/bengals-dj-turner-not-close-to-extension",
+   "timestamp": "2026-09-10T14:50:59.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "vsNGKes7AajYJ24Q",
+   "headline": "Fantasy Football Rankings Week 1: Tight Ends (full PPR)",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-week-1-tight-ends-full-ppr-144924430.html",
+   "timestamp": "2026-09-10T14:49:24.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "0B4s_QgncZzj00NI",
+   "headline": "Fantasy Football Rankings Week 1: Wide Receivers (full PPR)",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-week-1-wide-receivers-full-ppr-144528558.html",
+   "timestamp": "2026-09-10T14:45:28.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "L4ke5VAa9mQFIMVc",
+   "headline": "Fantasy Football Rankings Week 1: Running Backs (full PPR)",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-week-1-running-backs-full-ppr-143945722.html",
+   "timestamp": "2026-09-10T14:39:45.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Y8Lsu4GyLGoI6pFF",
+   "headline": "Fantasy Football Rankings Week 1 (Full PPR)",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-week-1-full-ppr-143556097.html",
+   "timestamp": "2026-09-10T14:35:56.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "x-SiRU5mJFURkxOU",
+   "headline": "Cowboys at Giants: 3 reasons Dallas could lose in Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-giants-3-reasons-dallas-143000063.html",
+   "timestamp": "2026-09-10T14:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NYG"
+   ]
+  },
+  {
+   "id": "qrF-JRI37xVfkuG1",
+   "headline": "10 NFL Insiders pick Texans to make Super Bowl",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/10-nfl-insiders-pick-texans-143000403.html",
+   "timestamp": "2026-09-10T14:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
    "id": "QXazQ9mNu9fxRdFW",
    "headline": "A.J. Brown has a high-ankle sprain",
    "source": "Yahoo Sports",
@@ -13,6 +110,17 @@
    "player_ids": [
     "amon-ra-st-brown",
     "aj-brown"
+   ]
+  },
+  {
+   "id": "4jKmqdlAs9iJjfI7",
+   "headline": "Arizona Cardinals news: RG Isaiah Adams could miss Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/arizona-cardinals-news-rg-isaiah-142702143.html",
+   "timestamp": "2026-09-10T14:27:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
    ]
   },
   {
@@ -40,7 +148,7 @@
   },
   {
    "id": "ywSjdaw2HapxqZ5h",
-   "headline": "#Jaguars vs Cleveland: First Injury Report Ahead of Week 1",
+   "headline": "Jaguars vs Cleveland: First Injury Report Ahead of Week 1",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/jaguars-vs-cleveland-first-injury-141224032.html",
    "timestamp": "2026-09-10T14:12:24.000Z",
@@ -1490,18 +1598,6 @@
    ]
   },
   {
-   "id": "phsLnxXVJMSYTDx8",
-   "headline": "Patriots' A.J. Brown injures ankle, misses most of second half in loss to Seahawks",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
-   "timestamp": "2026-09-10T04:05:15.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
    "id": "-bdFeWYnv5IDC0Uy",
    "headline": "Dave Portnoy blasts Patriots for ‘F-minus s–t’ in brutal opening loss to Seahawks",
    "source": "Yahoo Sports",
@@ -1611,129 +1707,6 @@
    "team_abbrs": [
     "NE",
     "SEA"
-   ]
-  },
-  {
-   "id": "IbGY0P-V1mWNMEoo",
-   "headline": "Seahawks-Patriots score: 1-0! Seattle rallies despite Sam Darnold injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-patriots-score-1-0-033554392.html",
-   "timestamp": "2026-09-10T03:35:54.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "he2ItwyePz5aMS7w",
-   "headline": "Patriots vs. Seahawks recap: Drake Maye melts down in 13-10 loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
-   "timestamp": "2026-09-10T03:31:56.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "mH4J7y7IxPS2zgsr",
-   "headline": "Offseason In Review: Los Angeles Rams",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-los-angeles-rams-6",
-   "timestamp": "2026-09-10T03:30:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "ICKDme6XuUAu9iJo",
-   "headline": "Vikings Name Carson Wentz QB2, J.J. McCarthy QB3",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/vikings-name-carson-wentz-qb2-j-j-mccarthy-qb3",
-   "timestamp": "2026-09-10T03:28:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "WnE43q_lR31fVnG5",
-   "headline": "Steelers Have Made Offer To Joey Porter Jr.; Deal Not Imminent",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/steelers-have-made-offer-to-joey-porter-jr-deal-not-imminent",
-   "timestamp": "2026-09-10T03:26:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "mbLsH5oB17MwGqBA",
-   "headline": "Romeo Doubs' brutal drop is lowlight of WR's silent Patriots debut",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/romeo-doubs-brutal-drop-lowlight-032451788.html",
-   "timestamp": "2026-09-10T03:24:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "hfo5I2wkztC9ewqN",
-   "headline": "Rams and 49ers rivalry goes to new levels, with media frenzy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-49ers-rivalry-goes-levels-025106270.html",
-   "timestamp": "2026-09-10T02:51:06.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "CY5Mfx4ybO_fL7pw",
-   "headline": "Jaxon Smith-Njigba 45-yard TD ties Seahawks-Patriots at 10-10 in fourth quarter",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaxon-smith-njigba-45-yard-025010468.html",
-   "timestamp": "2026-09-10T02:50:10.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxon-smith-njigba"
-   ],
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "5FvW_Zdl8iM_Z9Hu",
-   "headline": "A.J. Brown ruled out of Seahawks game with ankle injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/j-brown-leaving-seahawks-game-021102750.html",
-   "timestamp": "2026-09-10T02:49:06.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "6P5j5kIkibF4afJE",
-   "headline": "A.J. Brown exits first game with Patriots in injury nightmare",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/j-brown-exits-first-game-024858313.html",
-   "timestamp": "2026-09-10T02:48:58.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
    ]
   }
  ]
