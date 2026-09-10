@@ -4,11 +4,55 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "mH4J7y7IxPS2zgsr",
+   "headline": "Offseason In Review: Los Angeles Rams",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-los-angeles-rams-6",
+   "timestamp": "2026-09-10T03:30:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "ICKDme6XuUAu9iJo",
+   "headline": "Vikings Name Carson Wentz QB2, J.J. McCarthy QB3",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/vikings-name-carson-wentz-qb2-j-j-mccarthy-qb3",
+   "timestamp": "2026-09-10T03:28:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "WnE43q_lR31fVnG5",
+   "headline": "Steelers Have Made Offer To Joey Porter Jr.; Deal Not Imminent",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/steelers-have-made-offer-to-joey-porter-jr-deal-not-imminent",
+   "timestamp": "2026-09-10T03:26:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "mbLsH5oB17MwGqBA",
+   "headline": "Romeo Doubs' brutal drop is lowlight of WR's quiet Patriots debut",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/romeo-doubs-brutal-drop-lowlight-032451788.html",
+   "timestamp": "2026-09-10T03:24:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
    "id": "he2ItwyePz5aMS7w",
    "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
-   "timestamp": "2026-09-10T02:54:16.000Z",
+   "timestamp": "2026-09-10T03:12:39.000Z",
    "category": "breaking",
    "team_abbrs": [
     "NE",
@@ -132,7 +176,7 @@
   },
   {
    "id": "RrviBk_ui453zcbD",
-   "headline": "A.J. Brown injury update as Patriots WR ruled out with ankle injury vs. Seahawks",
+   "headline": "A.J. Brown injury live updates as Patriots WR injures ankle, leaves game vs. Seahawks",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/j-brown-injury-patriots-wr-020422784.html",
    "timestamp": "2026-09-10T02:04:22.000Z",
@@ -729,17 +773,6 @@
    ]
   },
   {
-   "id": "ICKDme6XuUAu9iJo",
-   "headline": "Vikings Name Carson Wentz QB2, J.J. McCarthy QB3",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/vikings-name-carson-wentz-qb2-j-j-mccarthy-qb3",
-   "timestamp": "2026-09-09T22:58:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
    "id": "uHB2AcBbpsHTwvgc",
    "headline": "Michael Penix Jr. was a full participant in Falcons practice, and Zachariah Branch was limited",
    "source": "Yahoo Sports",
@@ -913,14 +946,11 @@
   },
   {
    "id": "xaMJRf1D45_JcU8p",
-   "headline": "Patriots vs. Seahawks score, live updates: A.J. Brown, Sam Darnold ruled out with injuries in Week 1",
+   "headline": "Patriots vs. Seahawks NFL season opener: With some major mistakes, New England finds a way to lose to Seattle",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/patriots-vs-seahawks-score-live-updates-highlights-stats-where-to-watch-week-1-season-opener-super-bowl-lx-rematch-222000691.html",
    "timestamp": "2026-09-09T22:20:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-darnold"
-   ],
+   "category": "breaking",
    "team_abbrs": [
     "NE",
     "SEA"
@@ -1687,40 +1717,6 @@
    "url": "https://www.profootballrumors.com/2026/09/daequan-wright-exploring-nfl-return",
    "timestamp": "2026-09-09T20:14:30.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "yv-ZboyIWQEgvSpG",
-   "headline": "Joey Porter Jr. lone name on Steelers-Falcons injury report",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/joey-porter-jr-lone-name-201236386.html",
-   "timestamp": "2026-09-09T20:12:36.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ATL",
-    "PIT"
-   ]
-  },
-  {
-   "id": "RNQUidpRiWdQjRqB",
-   "headline": "Patriots elevate RB Lan Larison, P Mitch Wishnowsky for Wednesday night's game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-elevate-rb-lan-larison-200958084.html",
-   "timestamp": "2026-09-09T20:09:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "kyaHy8pCY9n5ZZy7",
-   "headline": "Michael Mayer: Likely to start at TE for Raiders in Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/michael-mayer-16666",
-   "timestamp": "2026-09-09T20:09:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
   }
  ]
 }
