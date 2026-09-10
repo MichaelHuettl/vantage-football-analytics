@@ -4,6 +4,84 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "7xbK_hMVKvKfeaI3",
+   "headline": "First tush push of NFL season draws borderline penalty, spoils would-be drive-saving dart from backup Seahawks QB Drew Lock",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/first-tush-push-of-nfl-season-draws-borderline-penalty-spoils-would-be-drive-saving-dart-from-backup-seahawks-qb-drew-lock-015548163.html",
+   "timestamp": "2026-09-10T01:55:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "i9S81xsqObCHsiGe",
+   "headline": "Seahawks rule out QB Sam Darnold's return tonight",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-rule-qb-sam-darnolds-014457432.html",
+   "timestamp": "2026-09-10T01:44:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "ua6dB2NZvMPNlAqr",
+   "headline": "Sam Darnold injury update: Seahawks quarterback will have ‘off-site’ hip testing",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sam-darnold-injury-seahawks-quarterback-014349125.html",
+   "timestamp": "2026-09-10T01:43:49.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "he2ItwyePz5aMS7w",
+   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
+   "timestamp": "2026-09-10T01:43:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "B-P3EgasGGnjXvUG",
+   "headline": "NFL Kickoff 2026: Patriots lead Seahawks 7-0 at halftime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-kickoff-2026-patriots-lead-014115398.html",
+   "timestamp": "2026-09-10T01:41:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "6CCj6-Wb6QlxZ4U-",
+   "headline": "Seahawks' Sam Darnold injures hip, ruled out for season opener vs. Patriots",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/sam-darnold-hip-exits-seahawks-patriots-season-opener/",
+   "timestamp": "2026-09-10T01:38:01.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
    "id": "wDld--r8c1AThefS",
    "headline": "Prisco's Week 1 NFL picks: Rams edge 49ers, Bills end skid vs. Texans",
    "source": "CBS Sports",
@@ -15,18 +93,6 @@
     "HOU",
     "LAR",
     "SF"
-   ]
-  },
-  {
-   "id": "he2ItwyePz5aMS7w",
-   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
-   "timestamp": "2026-09-10T01:19:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
    ]
   },
   {
@@ -71,21 +137,6 @@
    "category": "injury",
    "player_ids": [
     "sam-darnold"
-   ]
-  },
-  {
-   "id": "6CCj6-Wb6QlxZ4U-",
-   "headline": "Sam Darnold (hip) exits Seahawks-Patriots season opener, questionable to return; Drew Lock in for Seattle",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/sam-darnold-hip-exits-seahawks-patriots-season-opener/",
-   "timestamp": "2026-09-10T01:00:48.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "NE",
-    "SEA"
    ]
   },
   {
@@ -167,6 +218,17 @@
    ]
   },
   {
+   "id": "DZp9AC9EMSuGO4L5",
+   "headline": "Sam Darnold ruled out with hip injury after only one drive, replaced by Drew Lock",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/sam-darnold-ruled-out-with-hip-injury-after-only-one-drive-replaced-by-drew-lock-004222706.html",
+   "timestamp": "2026-09-10T00:42:22.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
    "id": "9-Zlpb5W8FIO5ITQ",
    "headline": "Sam Darnold heads to locker room with hip injury",
    "source": "Yahoo Sports",
@@ -194,7 +256,7 @@
   },
   {
    "id": "wUcXHgpcr1OcVrWM",
-   "headline": "Sam Darnold injury: Seahawks QB to locker room after sack",
+   "headline": "Sam Darnold injury: Seahawks QB ruled out with hip injury",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/sam-darnold-injury-seahawks-qb-004102363.html",
    "timestamp": "2026-09-10T00:41:02.000Z",
@@ -717,7 +779,7 @@
   },
   {
    "id": "xaMJRf1D45_JcU8p",
-   "headline": "Patriots vs. Seahawks score, live updates: Sam Darnold questionable with hip injury, replaced by Drew Lock after opening drive",
+   "headline": "Patriots vs. Seahawks score, live updates: Sam Darnold ruled out with hip injury, replaced by Drew Lock after opening drive",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/patriots-vs-seahawks-score-live-updates-highlights-stats-where-to-watch-week-1-season-opener-super-bowl-lx-rematch-222000691.html",
    "timestamp": "2026-09-09T22:20:00.000Z",
@@ -1667,55 +1729,6 @@
    "category": "practice",
    "player_ids": [
     "brock-bowers"
-   ]
-  },
-  {
-   "id": "keQSiM2bbAR_kd-7",
-   "headline": "NFL Week 1 Trends: Bengals Still Sleeping",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-1-trends-bengals-190300466.html",
-   "timestamp": "2026-09-09T19:58:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "KStUNhBf8R2EWDBI",
-   "headline": "Jonathan Greenard returns to Eagles practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jonathan-greenard-returns-eagles-practice-195110707.html",
-   "timestamp": "2026-09-09T19:51:10.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "DdhAWG641wZbX-Ca",
-   "headline": "Week 1 Fantasy Football Rankings: TE, K, DEF",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-1-fantasy-football-rankings-153807586.html",
-   "timestamp": "2026-09-09T19:47:54.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "7_eAm2F0JT2NhxM-",
-   "headline": "Week 1 Fantasy Football Rankings: RB",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-1-fantasy-football-rankings-153803860.html",
-   "timestamp": "2026-09-09T19:47:49.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "qn9vMIf5X3hpxEcI",
-   "headline": "Titans announce 2026 team captains",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-announce-2026-team-captains-194448424.html",
-   "timestamp": "2026-09-09T19:44:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
    ]
   }
  ]
