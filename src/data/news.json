@@ -4,15 +4,99 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "wDld--r8c1AThefS",
+   "headline": "Prisco's Week 1 NFL picks: Rams edge 49ers, Bills end skid vs. Texans",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/priscos-week-1-nfl-picks/",
+   "timestamp": "2026-09-10T01:30:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "HOU",
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "he2ItwyePz5aMS7w",
    "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
-   "timestamp": "2026-09-10T00:58:00.000Z",
+   "timestamp": "2026-09-10T01:19:42.000Z",
    "category": "breaking",
    "team_abbrs": [
     "NE",
     "SEA"
+   ]
+  },
+  {
+   "id": "6uhB1zo4-a1dtdfn",
+   "headline": "In Super Bowl rematch, it's a Patriots rookie who surprisingly gets first TD of NFL season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/in-super-bowl-rematch-its-a-patriots-rookie-who-surprisingly-gets-first-td-of-nfl-season-011730032.html",
+   "timestamp": "2026-09-10T01:17:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "nsFih1_nFR3bYJxp",
+   "headline": "Patriots take 7-0 lead on Drake Maye 2-yard touchdown pass",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-7-0-lead-drake-011219139.html",
+   "timestamp": "2026-09-10T01:12:19.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "JoaT5ifGWSbu5AnK",
+   "headline": "Will Aaron Donald play in Week 2? The word is \"we'll see\"",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-donald-play-week-2-010854013.html",
+   "timestamp": "2026-09-10T01:08:54.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Zi03NbgqMRZADAv9",
+   "headline": "Drew Lock enters at Seattle QB after Sam Darnold injury. What to know about backup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-drew-lock-replaces-sam-010109905.html",
+   "timestamp": "2026-09-10T01:01:09.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
+   "id": "6CCj6-Wb6QlxZ4U-",
+   "headline": "Sam Darnold (hip) exits Seahawks-Patriots season opener, questionable to return; Drew Lock in for Seattle",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/sam-darnold-hip-exits-seahawks-patriots-season-opener/",
+   "timestamp": "2026-09-10T01:00:48.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "6eUuVUviCUgBB-8R",
+   "headline": "Broncos are ready for Monday night spotlight",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-ready-monday-night-spotlight-010017932.html",
+   "timestamp": "2026-09-10T01:00:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
    ]
   },
   {
@@ -120,6 +204,26 @@
    ],
    "team_abbrs": [
     "SEA"
+   ]
+  },
+  {
+   "id": "sBXLAU62Tl4lNLjl",
+   "headline": "NFL Moneyline Picks for Every Week 1 Game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-moneyline-picks-every-week-162500410.html",
+   "timestamp": "2026-09-10T00:40:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "imZKL2e9uaxvZPhB",
+   "headline": "Chicago Bears Discussion Thread: Getting Ready For Panthers Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-over-beers-happy-hour-003658549.html",
+   "timestamp": "2026-09-10T00:36:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "CHI"
    ]
   },
   {
@@ -506,20 +610,6 @@
    "url": "https://www.cbssports.com/nfl/news/highest-paid-players-at-every-nfl-position-2026/",
    "timestamp": "2026-09-09T22:48:40.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "wDld--r8c1AThefS",
-   "headline": "Prisco's Week 1 NFL picks: Seahawks dominate Patriots once again, Bills end skid vs. Texans",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/priscos-week-1-nfl-picks/",
-   "timestamp": "2026-09-09T22:47:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "HOU",
-    "NE",
-    "SEA"
-   ]
   },
   {
    "id": "8FQudIAXF6K7C0qh",
@@ -1627,83 +1717,6 @@
    "team_abbrs": [
     "TEN"
    ]
-  },
-  {
-   "id": "x8_N64CJk4SmtJ4Y",
-   "headline": "Who’s under the most pressure with the Buffalo Bills in 2026?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/under-most-pressure-buffalo-bills-194433055.html",
-   "timestamp": "2026-09-09T19:44:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "l0mcM3di12FzKFTR",
-   "headline": "Seahawks vs. Patriots odds, picks, predictions, best bets: Betting preview for 2026 NFL Kickoff Game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/seahawks-patriots-odds-picks-predictions-best-bets-betting-preview-2026-nfl-kickoff-game/",
-   "timestamp": "2026-09-09T19:43:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "6i-NgWl_A5zKsa4B",
-   "headline": "Jonathan Greenard injury news: Eagles edge rusher returns to practice ahead of Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jonathan-greenard-injury-news-eagles-194134822.html",
-   "timestamp": "2026-09-09T19:41:34.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "cumEg7bkHfU8wJC-",
-   "headline": "Fantasy Football Week 1: Justin Boone's TE Trade Value Charts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-justin-boones-te-trade-value-charts-194108969.html",
-   "timestamp": "2026-09-09T19:41:08.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "j6zgSjbJb-ZqWv8O",
-   "headline": "RB Jonathon Brooks limited in Wednesday's Panthers practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rb-jonathon-brooks-limited-wednesdays-194037172.html",
-   "timestamp": "2026-09-09T19:40:37.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "aWgBkdDhKvLeO9sk",
-   "headline": "Malik Nabers 'ready to go' for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-nabers-ready-week-1-193854578.html",
-   "timestamp": "2026-09-09T19:38:54.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "AVJJfTZysU6ubknQ",
-   "headline": "Fantasy Football Week 1: Justin Boone's WR Trade Value Charts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-justin-boones-wr-trade-value-charts-193843688.html",
-   "timestamp": "2026-09-09T19:38:43.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "lmip0KyzRAJ2mwG5",
-   "headline": "Fantasy Football Week 1: Justin Boone's RB Trade Value Charts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-justin-boones-rb-trade-value-charts-193804763.html",
-   "timestamp": "2026-09-09T19:38:04.000Z",
-   "category": "transaction"
   }
  ]
 }
