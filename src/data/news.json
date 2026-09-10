@@ -4,6 +4,44 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "he2ItwyePz5aMS7w",
+   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
+   "timestamp": "2026-09-10T02:54:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "CY5Mfx4ybO_fL7pw",
+   "headline": "Jaxon Smith-Njigba 45-yard TD ties Seahawks-Patriots at 10-10 in fourth quarter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxon-smith-njigba-45-yard-025010468.html",
+   "timestamp": "2026-09-10T02:50:10.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxon-smith-njigba"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "5FvW_Zdl8iM_Z9Hu",
+   "headline": "A.J. Brown ruled out of Seahawks game with ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-brown-leaving-seahawks-game-021102750.html",
+   "timestamp": "2026-09-10T02:49:06.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
    "id": "6CCj6-Wb6QlxZ4U-",
    "headline": "Seahawks' Sam Darnold injures hip, ruled out for season opener vs. Patriots; Drew Lock takes over",
    "source": "CBS Sports",
@@ -19,16 +57,34 @@
    ]
   },
   {
-   "id": "he2ItwyePz5aMS7w",
-   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
+   "id": "i2Hrv4mKPT7rhwiG",
+   "headline": "A.J. Browns injures ankle",
    "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
-   "timestamp": "2026-09-10T02:20:15.000Z",
+   "url": "https://sports.yahoo.com/articles/j-browns-injures-ankle-022958764.html",
+   "timestamp": "2026-09-10T02:29:58.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "vddnM41YhmUP1W2i",
+   "headline": "More buzz that the Bengals won’t get any big contract extensions done with 2027 free agents",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/more-buzz-bengals-won-t-022827871.html",
+   "timestamp": "2026-09-10T02:28:27.000Z",
    "category": "breaking",
    "team_abbrs": [
-    "NE",
-    "SEA"
+    "CIN"
    ]
+  },
+  {
+   "id": "ii8DGQ1vNsRuAuQ6",
+   "headline": "NFL Picks Against the Spread for Every Week 1 Game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-picks-against-spread-every-143900958.html",
+   "timestamp": "2026-09-10T02:19:00.000Z",
+   "category": "breaking"
   },
   {
    "id": "eCSIqN6m7MtKHnp1",
@@ -43,24 +99,13 @@
   },
   {
    "id": "WPZMT-pn4hMsUYUh",
-   "headline": "A.J. Brown injury: Patriots WR to locker room with ankle injury",
+   "headline": "A.J. Brown injury: Patriots WR ruled out with ankle injury",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/j-brown-injury-patriots-wr-021525096.html",
    "timestamp": "2026-09-10T02:15:25.000Z",
    "category": "injury",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "5FvW_Zdl8iM_Z9Hu",
-   "headline": "A.J. Brown leaving Seahawks game with ankle injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/j-brown-leaving-seahawks-game-021102750.html",
-   "timestamp": "2026-09-10T02:11:02.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SEA"
    ]
   },
   {
@@ -75,8 +120,19 @@
    ]
   },
   {
+   "id": "dP9O0S4d92F4JEAX",
+   "headline": "Patriots WR A.J. Brown out for season opener with ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/patriots-wr-aj-brown-out-for-season-opener-with-ankle-injury-020722265.html",
+   "timestamp": "2026-09-10T02:07:22.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
    "id": "RrviBk_ui453zcbD",
-   "headline": "A.J. Brown injury update: Patriots WR injures ankle, leaves game vs. Seahawks",
+   "headline": "A.J. Brown injury update as Patriots WR ruled out with ankle injury vs. Seahawks",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/j-brown-injury-patriots-wr-020422784.html",
    "timestamp": "2026-09-10T02:04:22.000Z",
@@ -857,7 +913,7 @@
   },
   {
    "id": "xaMJRf1D45_JcU8p",
-   "headline": "Patriots vs. Seahawks score, live updates: A.J. Brown questionable with ankle injury, Sam Darnold ruled out",
+   "headline": "Patriots vs. Seahawks score, live updates: A.J. Brown, Sam Darnold ruled out with injuries in Week 1",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/patriots-vs-seahawks-score-live-updates-highlights-stats-where-to-watch-week-1-season-opener-super-bowl-lx-rematch-222000691.html",
    "timestamp": "2026-09-09T22:20:00.000Z",
@@ -1664,63 +1720,6 @@
    "category": "breaking",
    "team_abbrs": [
     "LV"
-   ]
-  },
-  {
-   "id": "W2fljrYHiYfNaAQs",
-   "headline": "Sam LaPorta: Not listed on injury report",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/sam-laporta-17033",
-   "timestamp": "2026-09-09T20:09:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-laporta"
-   ]
-  },
-  {
-   "id": "F6czxgBVKMI8mWHn",
-   "headline": "Las Vegas Raiders Week 1: Scouting the Miami Dolphins offense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/las-vegas-raiders-week-1-200700303.html",
-   "timestamp": "2026-09-09T20:07:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "MIA"
-   ]
-  },
-  {
-   "id": "Gg2Iwvj3kWi4GTng",
-   "headline": "Report: Brock Bowers to miss \"a game or two\" after meniscus trim",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/report-brock-bowers-miss-game-200440530.html",
-   "timestamp": "2026-09-09T20:04:40.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-bowers"
-   ]
-  },
-  {
-   "id": "YQ7UneFQC5en8E05",
-   "headline": "Week 1 NFL odds, lines, best bets, predictions: Computer model backs Eagles and Jaguars",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-1-nfl-2026-odds-game-spreads-lines-predictions-best-bets/",
-   "timestamp": "2026-09-09T20:02:06.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "PHI"
-   ]
-  },
-  {
-   "id": "I9CN53nbeHKp4P4h",
-   "headline": "Patriots fans confident in team’s direction, survey shows",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-fans-confident-team-direction-200135612.html",
-   "timestamp": "2026-09-09T20:01:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
    ]
   }
  ]
