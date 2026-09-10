@@ -4,6 +4,100 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "6CCj6-Wb6QlxZ4U-",
+   "headline": "Seahawks' Sam Darnold injures hip, ruled out for season opener vs. Patriots; Drew Lock takes over",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/sam-darnold-hip-exits-seahawks-patriots-season-opener/",
+   "timestamp": "2026-09-10T02:35:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "he2ItwyePz5aMS7w",
+   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
+   "timestamp": "2026-09-10T02:20:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "eCSIqN6m7MtKHnp1",
+   "headline": "Colts receive an encouraging injury update regarding starting rookie safety",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-receive-encouraging-injury-regarding-021832920.html",
+   "timestamp": "2026-09-10T02:18:32.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "WPZMT-pn4hMsUYUh",
+   "headline": "A.J. Brown injury: Patriots WR to locker room with ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-brown-injury-patriots-wr-021525096.html",
+   "timestamp": "2026-09-10T02:15:25.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "5FvW_Zdl8iM_Z9Hu",
+   "headline": "A.J. Brown leaving Seahawks game with ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-brown-leaving-seahawks-game-021102750.html",
+   "timestamp": "2026-09-10T02:11:02.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "2vdVxfDZp8kuF9NN",
+   "headline": "New Patriots WR A.J. Brown leaves game with ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/new-patriots-wr-aj-brown-leaves-game-with-ankle-injury-020722265.html",
+   "timestamp": "2026-09-10T02:07:22.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "RrviBk_ui453zcbD",
+   "headline": "A.J. Brown injury update: Patriots WR injures ankle, leaves game vs. Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-brown-injury-patriots-wr-020422784.html",
+   "timestamp": "2026-09-10T02:04:22.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "lMnoYAwyZvN8Glqm",
+   "headline": "Falcons’ 2026 jersey schedule unveiled",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-2026-jersey-schedule-unveiled-015823555.html",
+   "timestamp": "2026-09-10T01:58:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
    "id": "7xbK_hMVKvKfeaI3",
    "headline": "First tush push of NFL season draws borderline penalty, spoils would-be drive-saving dart from backup Seahawks QB Drew Lock",
    "source": "Yahoo Sports",
@@ -43,39 +137,12 @@
    ]
   },
   {
-   "id": "he2ItwyePz5aMS7w",
-   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
-   "timestamp": "2026-09-10T01:43:14.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
    "id": "B-P3EgasGGnjXvUG",
    "headline": "NFL Kickoff 2026: Patriots lead Seahawks 7-0 at halftime",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/nfl-kickoff-2026-patriots-lead-014115398.html",
    "timestamp": "2026-09-10T01:41:15.000Z",
    "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "6CCj6-Wb6QlxZ4U-",
-   "headline": "Seahawks' Sam Darnold injures hip, ruled out for season opener vs. Patriots",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/sam-darnold-hip-exits-seahawks-patriots-season-opener/",
-   "timestamp": "2026-09-10T01:38:01.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-darnold"
-   ],
    "team_abbrs": [
     "NE",
     "SEA"
@@ -100,6 +167,17 @@
    "headline": "In Super Bowl rematch, it's a Patriots rookie who surprisingly gets first TD of NFL season",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/article/in-super-bowl-rematch-its-a-patriots-rookie-who-surprisingly-gets-first-td-of-nfl-season-011730032.html",
+   "timestamp": "2026-09-10T01:17:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "1Cuse5INy7Nt5tdP",
+   "headline": "In Super Bowl rematch, it's a Patriots rookie who surprisingly gets first TD of 2026 NFL season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/in-super-bowl-rematch-its-a-patriots-rookie-who-surprisingly-gets-first-td-of-2026-nfl-season-011730032.html",
    "timestamp": "2026-09-10T01:17:30.000Z",
    "category": "breaking",
    "team_abbrs": [
@@ -779,7 +857,7 @@
   },
   {
    "id": "xaMJRf1D45_JcU8p",
-   "headline": "Patriots vs. Seahawks score, live updates: Sam Darnold ruled out with hip injury, replaced by Drew Lock after opening drive",
+   "headline": "Patriots vs. Seahawks score, live updates: A.J. Brown questionable with ankle injury, Sam Darnold ruled out",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/patriots-vs-seahawks-score-live-updates-highlights-stats-where-to-watch-week-1-season-opener-super-bowl-lx-rematch-222000691.html",
    "timestamp": "2026-09-09T22:20:00.000Z",
@@ -1643,92 +1721,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "-SKhdO01zM5GLaX6",
-   "headline": "Seahawks vs. Patriots live updates: TV channel, start time, stream, where to watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-vs-patriots-live-updates-200049466.html",
-   "timestamp": "2026-09-09T20:00:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "jGfm63U0y9XcBA4O",
-   "headline": "Raiders All-Pro Brock Bowers reportedly had meniscus trim that will sideline him for season opener, maybe longer",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/raiders-all-pro-brock-bowers-reportedly-had-meniscus-trim-that-will-sideline-him-for-season-opener-maybe-longer-200007786.html",
-   "timestamp": "2026-09-09T20:00:07.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-bowers"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "bEbVt2Hqm8M_8o6i",
-   "headline": "Raiders All-Pro Brock Bowers reportedly had meniscus trim surgery that will sideline him for season opener, maybe longer",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/raiders-all-pro-brock-bowers-reportedly-had-meniscus-trim-surgery-that-will-sideline-him-for-season-opener-maybe-longer-200007786.html",
-   "timestamp": "2026-09-09T20:00:07.000Z",
-   "category": "injury",
-   "player_ids": [
-    "brock-bowers"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "quaPp_RozHrbGfKb",
-   "headline": "Falcons Week 1 kickoff show with Dave Choate and Tre’Shon Diaz",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-week-1-kickoff-show-200000614.html",
-   "timestamp": "2026-09-09T20:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "yGOzPweDkGQFLcq5",
-   "headline": "Patriots vs Seahawks Expert Picks & Predictions for Sept. 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-expert-picks-200000341.html",
-   "timestamp": "2026-09-09T20:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "n8uUs_U_tmaCyhKf",
-   "headline": "Patriots vs Seahawks Combo Picks for NFL Kickoff Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-combo-picks-200000618.html",
-   "timestamp": "2026-09-09T20:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "0f0y4O2HOWqrdgkx",
-   "headline": "Brock Bowers: Not spotted at Wednesday's practice",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/brock-bowers-17693",
-   "timestamp": "2026-09-09T19:58:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "brock-bowers"
    ]
   }
  ]
