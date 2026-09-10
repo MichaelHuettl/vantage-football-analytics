@@ -4,6 +4,54 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "yfWv3MHfGiB5FmmX",
+   "headline": "Jaxon Smith-Njigba had 122 of the Seahawks' 200 receiving yards, and Seattle's only TD",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxon-smith-njigba-had-122-094542945.html",
+   "timestamp": "2026-09-10T09:45:42.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxon-smith-njigba"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "G5WLflRbZZjys57D",
+   "headline": "Drake Maye says he made 'unacceptable' decisions in Patriots' loss. He's right",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-maye-says-made-unacceptable-094025559.html",
+   "timestamp": "2026-09-10T09:40:25.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "JdaBPFxLAZ0YeHnf",
+   "headline": "Do I need a Netflix subscription to watch NFL Australia game? All viewing options",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/netflix-subscription-watch-nfl-australia-093125267.html",
+   "timestamp": "2026-09-10T09:31:25.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "WtW-cNV70xJbL1Sb",
+   "headline": "Dolphins news: Rookie wide receivers to start, Raiders preview, Chop Robinson update",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-news-rookie-wide-receivers-093000510.html",
+   "timestamp": "2026-09-10T09:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "MIA"
+   ]
+  },
+  {
    "id": "70b5NrPqRxQDMyiu",
    "headline": "Mike Vrabel: You can't throw three interceptions, Drake Maye knows that",
    "source": "Yahoo Sports",
@@ -1689,52 +1737,6 @@
    "team_abbrs": [
     "NE",
     "SEA"
-   ]
-  },
-  {
-   "id": "FEMeFv2lmXB-ks-W",
-   "headline": "Raiders TE Brock Bowers To Miss ‘A Game Or 2’ Following Knee Procedure",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/raiders-te-brock-bowers-to-a-game-or-2-following-knee-procedure",
-   "timestamp": "2026-09-09T21:26:22.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-bowers"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "SSj0LcAOsDRSnY4O",
-   "headline": "Michael Pittman: Ready to go for Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/michael-pittman-14378",
-   "timestamp": "2026-09-09T21:18:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "1VTLb5S0R7JAmToN",
-   "headline": "Wednesday’s Saints vs. Lions injury report: Alvin Kamara returns",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/wednesday-saints-vs-lions-injury-211336363.html",
-   "timestamp": "2026-09-09T21:13:36.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "ajhYGThJ5l0eqmY-",
-   "headline": "Bears vs. Panthers Injury Report: Odunze Listed As Limited",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-vs-panthers-injury-report-211327652.html",
-   "timestamp": "2026-09-09T21:13:27.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CAR",
-    "CHI"
    ]
   }
  ]
