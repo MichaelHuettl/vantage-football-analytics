@@ -4,6 +4,72 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "T9dTQ0oHbgItz6D1",
+   "headline": "Fantasy Football Sleepers, Week 1: If you just lost Brock Bowers, his teammate can help fill the void",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-sleepers-week-1-if-you-just-lost-brock-bowers-his-teammate-can-help-fill-the-void-155716258.html",
+   "timestamp": "2026-09-10T15:57:16.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-bowers"
+   ]
+  },
+  {
+   "id": "x72AfKdRFG-_0mWK",
+   "headline": "FanDuel promo code: Get $350 bonus bets for 49ers vs. Rams betting, NFL Australia Game",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/fanduel-promo-code-get-350-bonus-bets-49ers-rams-betting-nfl-australia-game/",
+   "timestamp": "2026-09-10T15:52:28.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "SyojytCUGce9TgWv",
+   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Rams vs. 49ers in NFL Australia Game",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-rams-49ers-nfl-australia-game/",
+   "timestamp": "2026-09-10T15:49:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "p80taMCJyddmZyJH",
+   "headline": "NFL Week 1 expert picks: Moneyline predictions, against the spread",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-1-expert-picks-154809377.html",
+   "timestamp": "2026-09-10T15:48:09.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "TLU0hWiuXdDaiJDi",
+   "headline": "NFL Thursday Night Football preview: Rams and 49ers go all the way to Australia for opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-thursday-night-football-preview-rams-and-49ers-go-all-the-way-to-australia-for-opener-154320689.html",
+   "timestamp": "2026-09-10T15:43:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "WpjdcsnhXoUcEyz_",
+   "headline": "Harrison Smith Addresses Vikings Return",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/harrison-smith-addresses-vikings-return",
+   "timestamp": "2026-09-10T15:38:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
    "id": "MjX-8LUdllNVcnjD",
    "headline": "Week 1 NFL odds, lines, best bets, predictions: Computer model backs Eagles and Jaguars",
    "source": "CBS Sports",
@@ -1628,83 +1694,6 @@
    "category": "breaking",
    "player_ids": [
     "george-kittle"
-   ]
-  },
-  {
-   "id": "9avD9fZwAGG7k4hJ",
-   "headline": "Rhamondre Stevenson: Heavy volume in Week 1 loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/rhamondre-stevenson-15372",
-   "timestamp": "2026-09-10T04:33:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "uMRAtYVtrzQF1tqW",
-   "headline": "49ers stars Christian McCaffrey, George Kittle and Nick Bosa all cleared to play vs. Rams in Australia",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/49ers-stars-christian-mccaffrey-george-kittle-and-nick-bosa-all-cleared-to-play-vs-rams-in-australia-043234910.html",
-   "timestamp": "2026-09-10T04:32:34.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "christian-mccaffrey",
-    "george-kittle"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "PSPtVU-_YgQ88iSP",
-   "headline": "Drake Maye’s disastrous decision costs Patriots in crushing season-opening loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/drake-maye-disastrous-decision-costs-043143759.html",
-   "timestamp": "2026-09-10T04:31:43.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "pNwwavJSrp5jFsTd",
-   "headline": "Sam Darnold injury update: Seahawks get ‘good news’ on his hip",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sam-darnold-injury-seahawks-good-041755314.html",
-   "timestamp": "2026-09-10T04:17:55.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "a4Qhi_rq1JzmNR4r",
-   "headline": "Drake Maye struggles in Super Bowl rematch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/drake-maye-struggles-super-bowl-041659422.html",
-   "timestamp": "2026-09-10T04:16:59.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
-   ]
-  },
-  {
-   "id": "c07NpSWmQ4WkD4RH",
-   "headline": "Mike Vrabel laments Drake Maye's 3 interceptions in loss to Seahawks: 'We want to be aggressive, not reckless'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/mike-vrabel-laments-drake-mayes-3-interceptions-in-loss-to-seahawks-we-want-to-be-aggressive-not-reckless-041105398.html",
-   "timestamp": "2026-09-10T04:11:05.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "SEA"
    ]
   }
  ]
