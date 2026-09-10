@@ -4,6 +4,125 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "he2ItwyePz5aMS7w",
+   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
+   "timestamp": "2026-09-10T00:58:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "jlWM8XHDtmDxZhl7",
+   "headline": "Buccaneers at Bengals: Initial injury report for Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buccaneers-bengals-initial-injury-report-005729628.html",
+   "timestamp": "2026-09-10T00:57:29.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CIN",
+    "TB"
+   ]
+  },
+  {
+   "id": "fpSQuDCGYyFxjfv1",
+   "headline": "Seahawks Reacts results: Fans enter 2026 season with high expectations",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-reacts-results-fans-enter-005507540.html",
+   "timestamp": "2026-09-10T00:55:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "ark_mz0EK_-fMNMt",
+   "headline": "Jamaal Williams Still Hoping For NFL Opportunity",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/jamaal-williams-still-hoping-for-nfl-opportunity",
+   "timestamp": "2026-09-10T00:52:35.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "jNLzrLsUpU7myQBv",
+   "headline": "Sam Darnold: Questionable to return",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/sam-darnold-12490",
+   "timestamp": "2026-09-10T00:47:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
+   "id": "G0fjcvae4GKVn2m-",
+   "headline": "Seahawks quarterback Sam Darnold injured, replaced by Drew Lock",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-quarterback-sam-darnold-injured-004411014.html",
+   "timestamp": "2026-09-10T00:44:11.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "L6aVdtprdhMSUXbS",
+   "headline": "Sam Darnold limps off field with hip injury after first drive and heads to locker room, replaced by Drew Lock",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/sam-darnold-limps-off-field-with-hip-injury-after-first-drive-and-heads-to-locker-room-replaced-by-drew-lock-004222706.html",
+   "timestamp": "2026-09-10T00:42:22.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
+   "id": "9-Zlpb5W8FIO5ITQ",
+   "headline": "Sam Darnold heads to locker room with hip injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sam-darnold-heads-locker-room-004205648.html",
+   "timestamp": "2026-09-10T00:42:05.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
+   "id": "vB0lijoueAfpO0RP",
+   "headline": "Sam Darnold injury update: Seahawks QB injures hip, leaves game vs. Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sam-darnold-injury-seahawks-qb-004119869.html",
+   "timestamp": "2026-09-10T00:41:19.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "NE",
+    "SEA"
+   ]
+  },
+  {
+   "id": "wUcXHgpcr1OcVrWM",
+   "headline": "Sam Darnold injury: Seahawks QB to locker room after sack",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sam-darnold-injury-seahawks-qb-004102363.html",
+   "timestamp": "2026-09-10T00:41:02.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
    "id": "c5WUcpnWS7CMb7d9",
    "headline": "Malik Nabers looks ready for Week 1 game vs. Dallas Cowboys",
    "source": "Yahoo Sports",
@@ -12,18 +131,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "he2ItwyePz5aMS7w",
-   "headline": "Patriots vs. Seahawks live updates: Score, news, discussion from Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-live-updates-233103253.html",
-   "timestamp": "2026-09-10T00:30:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
    ]
   },
   {
@@ -520,13 +627,12 @@
   },
   {
    "id": "xaMJRf1D45_JcU8p",
-   "headline": "Patriots vs. Seahawks score, live updates: Drake Maye, Sam Darnold face off in Super Bowl LX rematch to open NFL season",
+   "headline": "Patriots vs. Seahawks score, live updates: Sam Darnold questionable with hip injury, replaced by Drew Lock after opening drive",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/patriots-vs-seahawks-score-live-updates-highlights-stats-where-to-watch-week-1-season-opener-super-bowl-lx-rematch-222000691.html",
    "timestamp": "2026-09-09T22:20:00.000Z",
-   "category": "breaking",
+   "category": "injury",
    "player_ids": [
-    "drake-maye",
     "sam-darnold"
    ],
    "team_abbrs": [
@@ -1598,107 +1704,6 @@
    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-justin-boones-rb-trade-value-charts-193804763.html",
    "timestamp": "2026-09-09T19:38:04.000Z",
    "category": "transaction"
-  },
-  {
-   "id": "vxijgtGTsjXoiWGw",
-   "headline": "Fantasy Football Week 1: Justin Boone's QB Trade Value Charts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-justin-boones-qb-trade-value-charts-193721885.html",
-   "timestamp": "2026-09-09T19:37:21.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "5ZXfps9lTiDREsGO",
-   "headline": "NFL Expert Picks for Week 1 of 2026",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-expert-picks-week-1-193256161.html",
-   "timestamp": "2026-09-09T19:32:56.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "yMlWe9KfHuOeHLiA",
-   "headline": "Dan Campbell’s 2026 message to Detroit Lions fans: ‘We will be ready’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dan-campbell-2026-message-detroit-192400666.html",
-   "timestamp": "2026-09-09T19:24:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "8UPSVfROfRg9LM7l",
-   "headline": "Use DraftKings promo code to get $200 in bonus bets by targeting Seahawks-Patriots in NFL Kickoff Game 2026",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-bets-seahawks-patriots-in-nfl-kickoff-game-2026/",
-   "timestamp": "2026-09-09T19:19:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "V2VSeyrU2FKRReot",
-   "headline": "Today's top games to watch, best bets, odds: Patriots vs. Seahawks NFL Kickoff Game, Reds vs. Dodgers and more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-patriots-vs-seahawks-nfl-kickoff-game-reds-vs-dodgers-and-more/",
-   "timestamp": "2026-09-09T19:15:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "i2RXJFdsnIAz4mc5",
-   "headline": "Commanders’ Dan Quinn, Jayden Daniels talk Eagles entering Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-dan-quinn-jayden-daniels-191236443.html",
-   "timestamp": "2026-09-09T19:12:36.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jayden-daniels"
-   ],
-   "team_abbrs": [
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "rU059foQH5EizIRH",
-   "headline": "Vikings name ex-top 10 pick J.J. McCarthy third quarterback for Week 1 vs. Packers; Carson Wentz backup",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/vikings-name-ex-top-10-pick-j-j-mccarthy-third-quarterback-for-week-1-vs-packers-carson-wentz-backup/",
-   "timestamp": "2026-09-09T19:10:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "MIN"
-   ]
-  },
-  {
-   "id": "YjhcjeP63yLPvzgi",
-   "headline": "New Seahawks owners announce white throwbacks are coming!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-owners-announce-white-throwbacks-190900520.html",
-   "timestamp": "2026-09-09T19:09:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "7R0n_wWql4GH-PE1",
-   "headline": "FanDuel promo code: $350 bonus bets for Patriots vs. Seahawks, 2026 NFL Kickoff Game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/fanduel-promo-code-350-bonus-bets-patriots-seahawks-2026-nfl-kickoff-game/",
-   "timestamp": "2026-09-09T19:07:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
   }
  ]
 }
