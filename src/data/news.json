@@ -4,6 +4,92 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "PS_LqQfwd3keAizQ",
+   "headline": "Eagles Injury Report: Jonathan Greenard limited again",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-injury-report-jonathan-greenard-015320137.html",
+   "timestamp": "2026-09-11T01:53:20.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "VYLjSfRianQd6LuO",
+   "headline": "Quentin Lake comes up with Rams' first turnover vs. 49ers, has fun celebration",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/quentin-lake-comes-rams-first-014656501.html",
+   "timestamp": "2026-09-11T01:46:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "4as_Rt4rhJRNTbfI",
+   "headline": "Brock Purdy long ball to Demarcus Robinson gives 49ers the lead back",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-purdy-long-ball-demarcus-014339599.html",
+   "timestamp": "2026-09-11T01:43:39.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-purdy"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "44QHJxoVHocU49To",
+   "headline": "49ers' De'Zhaun Stribling ruled out vs. Rams with left ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/49ers-dezhaun-stribling-ruled-out-vs-rams-with-left-ankle-injury-014204879.html",
+   "timestamp": "2026-09-11T01:42:04.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "twJAqDlzzaV1m044",
+   "headline": "De'Zhaun Stribling injury update: 49ers WR carted to locker room vs. Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dezhaun-stribling-injury-49ers-wide-013450705.html",
+   "timestamp": "2026-09-11T01:34:50.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "l3XZGcLfxKO6p1tr",
+   "headline": "Jeremiyah Love mum on his availability for Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jeremiyah-love-mum-availability-sunday-012555437.html",
+   "timestamp": "2026-09-11T01:25:55.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jeremiyah-love"
+   ]
+  },
+  {
+   "id": "KCS8gR_mOv3lJ3Zs",
+   "headline": "Kyren Williams gives Rams a 7-3 lead",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kyren-williams-gives-rams-7-012111598.html",
+   "timestamp": "2026-09-11T01:21:11.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kyren-williams"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "yWiKwxiAAxnEfZAm",
    "headline": "Rams' Puka Nacua opens up about using alcohol to cope with NFL stardom",
    "source": "Yahoo Sports",
@@ -28,6 +114,14 @@
     "BUF",
     "NE"
    ]
+  },
+  {
+   "id": "ii8DGQ1vNsRuAuQ6",
+   "headline": "NFL Picks Against the Spread for Every Week 1 Game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-picks-against-spread-every-143900958.html",
+   "timestamp": "2026-09-11T00:51:00.000Z",
+   "category": "breaking"
   },
   {
    "id": "OBumerFgZWEZ9ARD",
@@ -529,11 +623,11 @@
   },
   {
    "id": "uNDIcODJHNHAEM5H",
-   "headline": "49ers vs. Rams score, live updates: Myles Garrett makes debut for LA vs. an already banged-up San Francisco roster in Melbourne",
+   "headline": "49ers vs. Rams score, live updates: Niners promising rookie De'Zhaun Stribling exits with apparent non-contact injury in second quarter",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/49ers-rams-score-live-updates-highlights-stats-inactives-where-to-watch-start-time-week-1-melbourne-thursday-night-football-221500456.html",
    "timestamp": "2026-09-10T22:15:00.000Z",
-   "category": "breaking",
+   "category": "injury",
    "team_abbrs": [
     "LAR",
     "SF"
@@ -1605,97 +1699,6 @@
    "category": "transaction",
    "team_abbrs": [
     "TEN"
-   ]
-  },
-  {
-   "id": "4bmicdCUjA0ceq6B",
-   "headline": "Patriots and Seahawks overreactions: From Drake Maye and Drew Lock, to Will Campbell and Jadarian Price",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/patriots-and-seahawks-overreactions-drake-maye-drew-lock-will-campbell-jadarian-price/",
-   "timestamp": "2026-09-10T18:25:16.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "jNLzrLsUpU7myQBv",
-   "headline": "Sam Darnold: Receives good news on hip injury",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/sam-darnold-12490",
-   "timestamp": "2026-09-10T18:24:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-darnold"
-   ]
-  },
-  {
-   "id": "Mf1fV_tUHkDngXwe",
-   "headline": "Tua Tagovailoa limited in practice, reportedly day-to-day after injuring oblique just days before Week 1 start",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/tua-tagovailoa-appears-to-aggravate-back-injury-during-practice-just-days-before-week-1-start-181740559.html",
-   "timestamp": "2026-09-10T18:17:40.000Z",
-   "category": "injury"
-  },
-  {
-   "id": "R7VWrcpwgIgTG0-D",
-   "headline": "NFL odds, winners picks 2026 Week 1: 49ers vs. Rams predictions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-odds-winners-picks-2026-181010525.html",
-   "timestamp": "2026-09-10T18:10:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "6NqaE4Pto_SH1XMK",
-   "headline": "Ashton Jeanty will play in Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ashton-jeanty-play-week-1-180034345.html",
-   "timestamp": "2026-09-10T18:00:34.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "ashton-jeanty"
-   ]
-  },
-  {
-   "id": "TF8J2pLHI79zozww",
-   "headline": "Why the Rams should beat the Niners handily",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/why-rams-beat-niners-handily-180000366.html",
-   "timestamp": "2026-09-10T18:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "BKejvTaJkciCIc_c",
-   "headline": "Steelers given blueprint on how to beat Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-given-blueprint-beat-patriots-180000308.html",
-   "timestamp": "2026-09-10T18:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "LBEx5zv_8Skbol64",
-   "headline": "The 4 most underrated NFL teams entering 2026 season, including the Broncos",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/4-most-underrated-nfl-teams-180000144.html",
-   "timestamp": "2026-09-10T18:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
    ]
   }
  ]
