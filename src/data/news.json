@@ -4,6 +4,71 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "f-nQ10hh_3vBgXbC",
+   "headline": "NFL Practice Squad Updates: 9/10/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-10-26",
+   "timestamp": "2026-09-11T02:34:22.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "YXbvkWPKzhiv9X6w",
+   "headline": "Mike Evans makes big impact in 49ers debut, including a TD",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/mike-evans-makes-big-impact-in-49ers-debut-including-a-te-022517109.html",
+   "timestamp": "2026-09-11T02:25:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "UB0SpKLO4oGDVUtv",
+   "headline": "49ers rookie De’Zhaun Stribling ruled out after being carted off",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-rookie-zhaun-stribling-ruled-020722584.html",
+   "timestamp": "2026-09-11T02:07:22.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "pyzS2VfJsheVoIX3",
+   "headline": "49ers lead Rams 10-7 at halftime in Australia",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-lead-rams-10-7-020414694.html",
+   "timestamp": "2026-09-11T02:04:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "zxGF1Kx_w7b3J-UA",
+   "headline": "Thursday practice report for Jets",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-practice-report-jets-015601996.html",
+   "timestamp": "2026-09-11T01:56:01.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "YNLGO910M5BjaiHv",
+   "headline": "Jake Tonges injury update as 49ers TE injures knee in Week 1 game vs Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jake-tonges-injury-49ers-te-015441466.html",
+   "timestamp": "2026-09-11T01:54:41.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "PS_LqQfwd3keAizQ",
    "headline": "Eagles Injury Report: Jonathan Greenard limited again",
    "source": "Yahoo Sports",
@@ -1629,77 +1694,6 @@
    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-rankings-hayden-winks-wr2-ranked-13-36-wide-receiver-projections-184526457.html",
    "timestamp": "2026-09-10T18:45:26.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "5k4CPAIZs7lRhbmt",
-   "headline": "Fantasy Football Week 1 Rankings: Hayden Winks' WR2/3 (ranked 13-36) wide receiver projections",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-rankings-hayden-winks-wr23-ranked-13-36-wide-receiver-projections-184526457.html",
-   "timestamp": "2026-09-10T18:45:26.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "pmZrm2P0yJc-BwkP",
-   "headline": "What Drake Maye’s rough Week 1 reminds us about Caleb Williams and the Bears",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/drake-maye-rough-week-1-184500362.html",
-   "timestamp": "2026-09-10T18:45:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye",
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "RRWA3oi5oWZF5_1W",
-   "headline": "Is George Kittle playing in Week 1? Latest on San Francisco 49ers TE",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/george-kittle-playing-week-1-183945915.html",
-   "timestamp": "2026-09-10T18:39:45.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ],
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "5meT7AIJagj9gJB-",
-   "headline": "It will be hard for Patrick Mahomes not to be himself in Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/hard-patrick-mahomes-not-himself-183000969.html",
-   "timestamp": "2026-09-10T18:30:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "xdOdf39w9gfWbaNZ",
-   "headline": "How to Watch 49ers vs Rams for Free Tonight: Time, Channel & Live Streaming Info for TNF",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/watch-49ers-vs-rams-free-183000994.html",
-   "timestamp": "2026-09-10T18:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "GhMwbSRw4w2_-xPT",
-   "headline": "Titans sign CB Jaylon Jones",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-sign-cb-jaylon-jones-182837713.html",
-   "timestamp": "2026-09-10T18:28:37.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "TEN"
-   ]
   }
  ]
 }
