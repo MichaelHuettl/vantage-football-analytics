@@ -4,6 +4,60 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "OLGIe0yppcLT7dIJ",
+   "headline": "Cowboys agree to 3-year extension worth $18M with TE Brevyn Spann-Ford",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-agree-3-extension-worth-002252076.html",
+   "timestamp": "2026-09-11T00:22:52.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "jcNHhxCQqXShhIGn",
+   "headline": "Minor NFL Transactions: 9/10/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/minor-nfl-transactions-9-10-26",
+   "timestamp": "2026-09-11T00:21:24.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Qqo-smhWDnXHfNmM",
+   "headline": "Thursday practice report for Cardinals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-practice-report-cardinals-001721652.html",
+   "timestamp": "2026-09-11T00:17:21.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "LWbGPavLh2AOWbNp",
+   "headline": "49ers-Rams game thread: Will Kyle Shanahan and Sean McVay put on a show?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-rams-game-thread-kyle-000500909.html",
+   "timestamp": "2026-09-11T00:05:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "Wi0n9j6D6EBLC5o8",
+   "headline": "Rams-49ers Thursday night game thread",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-49ers-thursday-night-game-000500557.html",
+   "timestamp": "2026-09-11T00:05:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "_Oh7IPJrunidvgom",
    "headline": "Commanders add DT Daron Payne to injury report",
    "source": "Yahoo Sports",
@@ -12,6 +66,17 @@
    "category": "injury",
    "team_abbrs": [
     "WAS"
+   ]
+  },
+  {
+   "id": "FTGIz04-8krb2Vqu",
+   "headline": "Miami Dolphins Discussion: Game Week Defensive Predictions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-discussion-game-week-000000253.html",
+   "timestamp": "2026-09-11T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
    ]
   },
   {
@@ -415,7 +480,7 @@
   },
   {
    "id": "uNDIcODJHNHAEM5H",
-   "headline": "49ers vs. Rams: Where to watch, start time, inactives, live updates as Myles Garrett makes debut for LA vs. an already banged-up San Francisco roster in Melbourne",
+   "headline": "49ers vs. Rams score, live updates: Myles Garrett makes debut for LA vs. an already banged-up San Francisco roster in Melbourne",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/49ers-rams-score-live-updates-highlights-stats-inactives-where-to-watch-start-time-week-1-melbourne-thursday-night-football-221500456.html",
    "timestamp": "2026-09-10T22:15:00.000Z",
@@ -1626,71 +1691,6 @@
     "LAR",
     "SF"
    ]
-  },
-  {
-   "id": "I3_TDQ38t2GJTvD2",
-   "headline": "Why Seahawks defense is built to survive life without Sam Darnold",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/why-seahawks-defense-is-built-to-survive-life-without-sam-darnold/",
-   "timestamp": "2026-09-10T17:31:18.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "g9uX5jsY8LUUbSrw",
-   "headline": "NFL rejected 49ers post-Australia scheduling request, gave it to the Rams",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-rejected-49ers-post-australia-scheduling-request-gave-to-rams/",
-   "timestamp": "2026-09-10T17:30:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "WjvuNuw9p7pSF5iD",
-   "headline": "Behind the Numbers: Cowboys at Giants Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/behind-numbers-cowboys-giants-week-173000192.html",
-   "timestamp": "2026-09-10T17:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "NYG"
-   ]
-  },
-  {
-   "id": "XYbOiTQX-3kBjGm-",
-   "headline": "Mike Vrabel: A.J. Brown still undergoing tests, unsure of Week 2 availability",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mike-vrabel-j-brown-still-172921648.html",
-   "timestamp": "2026-09-10T17:29:21.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "opI1-gy6DyHCvQ3C",
-   "headline": "Josh Jacobs pleads no contest",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/josh-jacobs-pleads-no-contest-172858554.html",
-   "timestamp": "2026-09-10T17:28:58.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ]
-  },
-  {
-   "id": "k44P0iPbxpPEioUP",
-   "headline": "NFL Week 1 Injury Updates: Who's In, Who's Out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-1-injury-updates-214400874.html",
-   "timestamp": "2026-09-10T17:24:00.000Z",
-   "category": "injury"
   }
  ]
 }
