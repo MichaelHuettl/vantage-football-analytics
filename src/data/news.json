@@ -4,6 +4,29 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "InUAlDYWig53ugiL",
+   "headline": "More than 100,000 watch 49ers shock Rams at MCG",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/more-100-000-watch-49ers-062444311.html",
+   "timestamp": "2026-09-11T07:00:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "ZlCcDbIc0jyxAtk8",
+   "headline": "Seventy-four yards for Puka Nacua in Melbourne",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seventy-four-yards-puka-nacua-065516437.html",
+   "timestamp": "2026-09-11T06:55:16.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
    "id": "NBLjk-gVubwQ8EhQ",
    "headline": "Led by Brock Purdy's 3-TD night, 49ers remind NFL that Rams, Seahawks are no sure bet",
    "source": "Yahoo Sports",
@@ -16,18 +39,6 @@
    "team_abbrs": [
     "LAR",
     "SEA",
-    "SF"
-   ]
-  },
-  {
-   "id": "InUAlDYWig53ugiL",
-   "headline": "More than 100,000 watch 49ers shock Rams at MCG",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/more-100-000-watch-49ers-062444311.html",
-   "timestamp": "2026-09-11T06:24:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
     "SF"
    ]
   },
@@ -498,6 +509,32 @@
    "category": "transaction",
    "player_ids": [
     "tucker-kraft"
+   ]
+  },
+  {
+   "id": "0Ttls1Gm3Y99V2hu",
+   "headline": "Rams’ Davis Allen carted off after brutal hit against 49ers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-davis-allen-carted-off-031109162.html",
+   "timestamp": "2026-09-11T03:11:09.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "NCvP9rXAdUBRAFn0",
+   "headline": "Giants hope new D-coordinator will be one to finally stop Dak Prescott",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-hope-d-coordinator-one-030551171.html",
+   "timestamp": "2026-09-11T03:05:51.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dak-prescott"
+   ],
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -1685,40 +1722,6 @@
    "category": "breaking",
    "player_ids": [
     "josh-jacobs"
-   ]
-  },
-  {
-   "id": "xW990h7ueSY-de1x",
-   "headline": "Lan Larison, Mitch Wishnowsky revert to Patriots’ practice squad following opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lan-larison-mitch-wishnowsky-revert-205508068.html",
-   "timestamp": "2026-09-10T20:55:08.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "o_u-U6iO25zdBy9c",
-   "headline": "Lions sign WR Tom Kennedy to their 53-man roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-sign-wr-tom-kennedy-205308258.html",
-   "timestamp": "2026-09-10T20:53:08.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "H9IjdQsSJXJ1ASZ5",
-   "headline": "Packers Week 1 Preview: Why the Vikings are dangerous",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-week-1-preview-why-204500519.html",
-   "timestamp": "2026-09-10T20:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "MIN"
    ]
   }
  ]
