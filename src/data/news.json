@@ -4,6 +4,28 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "tdg5xccJTg2sVrfH",
+   "headline": "Deebo Samuel: Successful 49ers return in win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/deebo-samuel-13429",
+   "timestamp": "2026-09-11T05:26:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "gbV5JMH5cxG4Hw0q",
+   "headline": "George Kittle: Pair of catches in Week 1",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
+   "timestamp": "2026-09-11T05:18:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
    "id": "ydI0xaEsqRBhcmDg",
    "headline": "Davante Adams: Held in check in Week 1 loss",
    "source": "RotoWire",
@@ -605,6 +627,18 @@
    ]
   },
   {
+   "id": "WDbUPgyRefQqXdQo",
+   "headline": "Rams booed at ‘home’ as Melbourne turns into sea of 49ers red",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-booed-home-melbourne-turns-011251836.html",
+   "timestamp": "2026-09-11T01:12:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
    "id": "yWiKwxiAAxnEfZAm",
    "headline": "Rams' Puka Nacua opens up about using alcohol to cope with NFL stardom",
    "source": "Yahoo Sports",
@@ -637,6 +671,20 @@
    "url": "https://sports.yahoo.com/articles/nfl-picks-against-spread-every-143900958.html",
    "timestamp": "2026-09-11T00:51:00.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "VJA9G7OKWPqeQOqo",
+   "headline": "Jets’ Breece Hall ready to go after taking cautious approach with groin strain: ‘really fresh right now’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-breece-hall-ready-taking-005021908.html",
+   "timestamp": "2026-09-11T00:50:21.000Z",
+   "category": "injury",
+   "player_ids": [
+    "breece-hall"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
   },
   {
    "id": "OBumerFgZWEZ9ARD",
@@ -1666,49 +1714,6 @@
    "player_ids": [
     "breece-hall"
    ]
-  },
-  {
-   "id": "WcMaiXY9rZN6POzI",
-   "headline": "Rams and 49ers face off in NFL's first Australia game: Live updates",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-vs-49ers-live-updates-201053619.html",
-   "timestamp": "2026-09-10T20:10:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "KooyW2BaZ-nkVpxk",
-   "headline": "Detroit Lions sign Tom Kennedy to 53-man roster, add new defensive back",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/detroit-lions-sign-tom-kennedy-200724801.html",
-   "timestamp": "2026-09-10T20:07:24.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "wHFUftVojBPqAtPC",
-   "headline": "Lions, Saints injury report: 3 limited on Thursday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-saints-injury-report-3-200707830.html",
-   "timestamp": "2026-09-10T20:07:07.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "likrkiU5tKyZ7Ue2",
-   "headline": "Fantasy Football Week 1 Toolkit: Rankings, sleepers, start/sit advice and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-toolkit-rankings-sleepers-startsit-advice-and-more-200102005.html",
-   "timestamp": "2026-09-10T20:01:02.000Z",
-   "category": "breaking"
   }
  ]
 }
