@@ -4,12 +4,46 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "oFcO4nshuy6YQ-ea",
+   "headline": "Deebo Samuel's TD catch has 49ers up 24-7 in fourth quarter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/deebo-samuels-td-catch-49ers-025325034.html",
+   "timestamp": "2026-09-11T02:53:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "pq71V4IaurFrr5wu",
+   "headline": "Chicago Bears vs Carolina Panthers: Matchups, best bets, and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-vs-carolina-panthers-023452776.html",
+   "timestamp": "2026-09-11T02:34:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "CHI"
+   ]
+  },
+  {
    "id": "f-nQ10hh_3vBgXbC",
    "headline": "NFL Practice Squad Updates: 9/10/26",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-10-26",
    "timestamp": "2026-09-11T02:34:22.000Z",
    "category": "practice"
+  },
+  {
+   "id": "AxpQlp7gQ44dyrIR",
+   "headline": "Kaelon Black, Christian McCaffrey first-half carry split raises eyebrows",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kaelon-black-christian-mccaffrey-first-023157009.html",
+   "timestamp": "2026-09-11T02:31:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-mccaffrey"
+   ]
   },
   {
    "id": "YXbvkWPKzhiv9X6w",
@@ -21,6 +55,14 @@
    "team_abbrs": [
     "SF"
    ]
+  },
+  {
+   "id": "sBXLAU62Tl4lNLjl",
+   "headline": "NFL Moneyline Picks for Every Week 1 Game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-moneyline-picks-every-week-162500410.html",
+   "timestamp": "2026-09-11T02:16:00.000Z",
+   "category": "breaking"
   },
   {
    "id": "UB0SpKLO4oGDVUtv",
@@ -1655,45 +1697,6 @@
     "LAR",
     "SF"
    ]
-  },
-  {
-   "id": "1yO6ZNjmUhEfA7U3",
-   "headline": "49ers-Rams preview: Familiarity, new looks, and aggressive QBs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-rams-preview-familiarity-looks-182152989.html",
-   "timestamp": "2026-09-10T18:50:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "ulnEqZ1hmCwzgfL8",
-   "headline": "NFL Week 1 preview & bold predictions: Josh Allen's worst nightmare, Baker vs. Burrow barnburner",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-week-1-preview--bold-predictions-josh-allens-worst-nightmare-baker-vs-burrow-barnburner-184849832.html",
-   "timestamp": "2026-09-10T18:48:49.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ]
-  },
-  {
-   "id": "mK06lyEJI_7yjv8Y",
-   "headline": "Big Dom is reportedly being investigated by the NFL because of Emmanuel Acho",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/big-dom-reportedly-being-investigated-184603127.html",
-   "timestamp": "2026-09-10T18:46:03.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "j0bR0Vb_wXJ99OwT",
-   "headline": "Fantasy Football Week 1 Rankings: Hayden Winks' WR2 (ranked 13-36) wide receiver projections",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-rankings-hayden-winks-wr2-ranked-13-36-wide-receiver-projections-184526457.html",
-   "timestamp": "2026-09-10T18:45:26.000Z",
-   "category": "breaking"
   }
  ]
 }
