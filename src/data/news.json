@@ -1,8 +1,102 @@
 {
  "schema_version": 1,
- "updated": "2026-09-10",
+ "updated": "2026-09-11",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "IXILgA5hUvqJwHEw",
+   "headline": "Puka Nacua: Solid numbers in Week 1 loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/puka-nacua-16790",
+   "timestamp": "2026-09-11T04:01:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "4QNNMnvE8JRmBsOc",
+   "headline": "Christian McCaffrey: Efficient with modest workload",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/christian-mccaffrey-11690",
+   "timestamp": "2026-09-11T03:56:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-mccaffrey"
+   ]
+  },
+  {
+   "id": "wSPAr_hi3x5oslmN",
+   "headline": "Brock Purdy tosses three TDs in win over LA",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-purdy-tosses-three-tds-035119835.html",
+   "timestamp": "2026-09-11T03:51:19.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-purdy"
+   ]
+  },
+  {
+   "id": "XJHI3LyDagcdqy52",
+   "headline": "The 49ers-Rams travel question won't be fully resolved until Week 2, or beyond",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-rams-travel-wont-fully-034326209.html",
+   "timestamp": "2026-09-11T03:43:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "heNBnwNJRKquQZWR",
+   "headline": "Cowboys, WR Ryan Flournoy agree on 1-year extension worth up to $6M",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-wr-ryan-flournoy-agree-034027106.html",
+   "timestamp": "2026-09-11T03:40:27.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "HUVu7HSwPFwGlNYa",
+   "headline": "Is Myles Garrett injured? Star edge rusher posts dud in Rams debut",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/myles-garrett-injured-star-edge-033941719.html",
+   "timestamp": "2026-09-11T03:39:41.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "R62YVICMh7MRFfTj",
+   "headline": "Winners and losers of 49ers' thrashing of not-so-super Rams in Australia",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/winners-losers-49ers-thrashing-not-033854746.html",
+   "timestamp": "2026-09-11T03:38:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "aQ_sS43cNRL_oTnX",
+   "headline": "Brock Purdy, 49ers dominate Rams 27-7 in Australia",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-purdy-49ers-dominate-rams-033353772.html",
+   "timestamp": "2026-09-11T03:33:53.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-purdy"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
   {
    "id": "brwThNNFgMIPUCQY",
    "headline": "49ers embarrass the Rams for the entire world to see",
@@ -47,6 +141,17 @@
    "category": "breaking",
    "team_abbrs": [
     "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "wv7NZfRRnVkjk36V",
+   "headline": "Deebo Samuel Sr. scores first TD since rejoining 49ers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/deebo-samuel-sr-scores-first-032413358.html",
+   "timestamp": "2026-09-11T03:24:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
     "SF"
    ]
   },
@@ -122,6 +227,18 @@
    "timestamp": "2026-09-11T02:25:17.000Z",
    "category": "breaking",
    "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "aEKquTlkOeBLBFUZ",
+   "headline": "Mike Evans makes big impact in 49ers debut, including a TD in big victory over Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/mike-evans-makes-big-impact-in-49ers-debut-including-a-td-in-big-victory-over-rams-022517109.html",
+   "timestamp": "2026-09-11T02:25:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
     "SF"
    ]
   },
@@ -221,6 +338,18 @@
    "headline": "49ers' De'Zhaun Stribling ruled out vs. Rams with left ankle injury",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/article/49ers-dezhaun-stribling-ruled-out-vs-rams-with-left-ankle-injury-014204879.html",
+   "timestamp": "2026-09-11T01:42:04.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "CzAD01NpSin2JWax",
+   "headline": "49ers' De'Zhaun Stribling ruled out of win vs. Rams with left ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/49ers-dezhaun-stribling-ruled-out-of-win-vs-rams-with-left-ankle-injury-014204879.html",
    "timestamp": "2026-09-11T01:42:04.000Z",
    "category": "injury",
    "team_abbrs": [
@@ -1574,134 +1703,6 @@
    "team_abbrs": [
     "ATL"
    ]
-  },
-  {
-   "id": "ll4pJS_jC1UmAM4Q",
-   "headline": "Feeling 'fresh' following groin injury, Jets RB Breece Hall has sights set on beating Titans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/feeling-fresh-following-groin-injury-193344859.html",
-   "timestamp": "2026-09-10T19:33:44.000Z",
-   "category": "injury",
-   "player_ids": [
-    "breece-hall"
-   ],
-   "team_abbrs": [
-    "NYJ",
-    "TEN"
-   ]
-  },
-  {
-   "id": "BizTwXmbNo3CYTb3",
-   "headline": "Bears Week 1 Thursday practice report",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-week-1-thursday-practice-192855922.html",
-   "timestamp": "2026-09-10T19:28:55.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "sNLCt2cUTWvBXC9y",
-   "headline": "NFL Week 1 Weather Updates: What Games Will be Impacted?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-1-weather-updates-192300767.html",
-   "timestamp": "2026-09-10T19:23:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "h35e6_gcMwhP5Hqd",
-   "headline": "Aaron Rodgers responds to Packers' LaFleur saying Jordan Love is better pre-snap QB: 'Matt's a clown, man'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-responds-to-packers-lafleur-jordan-love/",
-   "timestamp": "2026-09-10T19:13:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "SdVPaNYP2T7mX4lB",
-   "headline": "NFL odds: Week 1 parlays for favorites and underdogs include Eagles-Commanders, Broncos-Chiefs",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-week-1-parlays-for-favorites-and-underdogs-include-eagles-commanders-broncos-chiefs/",
-   "timestamp": "2026-09-10T19:10:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC",
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "7jwfOx65EAUnaQlb",
-   "headline": "Seahawks-Patriots, Words of Prey: Not exactly where we left off, but close",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-patriots-post-game-analysis-190857924.html",
-   "timestamp": "2026-09-10T19:08:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "76Qz5PnUsVXRJSb7",
-   "headline": "In Patrick Mahomes' return from torn ACL, Chiefs likely to turn to undrafted rookie left tackle to start",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/in-patrick-mahomes-return-from-torn-acl-chiefs-likely-to-turn-to-undrafted-rookie-left-tackle-to-start-190856912.html",
-   "timestamp": "2026-09-10T19:08:56.000Z",
-   "category": "injury",
-   "player_ids": [
-    "patrick-mahomes"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "hhjCjaa1qZeja7E-",
-   "headline": "9 takeaways from Detroit Lions coordinators: Week 1 vs. Saints",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/9-takeaways-detroit-lions-coordinators-190555927.html",
-   "timestamp": "2026-09-10T19:05:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "S0pdgMBnXF5y0cme",
-   "headline": "Offseason In Review: Cincinnati Bengals",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/offseason-in-review-cincinnati-bengals-7",
-   "timestamp": "2026-09-10T19:05:09.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "DHS49zX76b8xu_XM",
-   "headline": "Las Vegas Raiders Week 1: Scouting the Miami Dolphins Defense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/las-vegas-raiders-week-1-190500635.html",
-   "timestamp": "2026-09-10T19:05:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "MIA"
-   ]
-  },
-  {
-   "id": "zFo86pO4XCMV1L5h",
-   "headline": "How to bet on 2026 NFL Week 1: Betting guide, odds, game previews, trends, schedule, promo codes, and offers",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/how-to-bet-on-2026-nfl-week-1-betting-guide-odds-game-previews-trends-schedule-promo-codes-and-offers/",
-   "timestamp": "2026-09-10T19:00:51.000Z",
-   "category": "breaking"
   }
  ]
 }
