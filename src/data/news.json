@@ -4,6 +4,488 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "1EISxoeLYxYMKkD3",
+   "headline": "Lions restructure two contracts: What salary cap flexibility means for Sam LaPorta, Brian Branch extensions",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/lions-restructure-two-contracts-salary-cap-flexibility/",
+   "timestamp": "2026-09-12T17:21:38.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "sam-laporta"
+   ],
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "TNcudklnX8NnZcdR",
+   "headline": "Poll: Steelers CB Joey Porter Jr.’s Future",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/poll-steelers-cb-joey-porter-jr-s-future",
+   "timestamp": "2026-09-12T17:10:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "dUAiVGM5P60f28Br",
+   "headline": "Raiders Mailbag: Who needs to step up against Dolphins with Brock Bowers out?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-mailbag-needs-step-against-170800198.html",
+   "timestamp": "2026-09-12T17:08:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-bowers"
+   ],
+   "team_abbrs": [
+    "LV",
+    "MIA"
+   ]
+  },
+  {
+   "id": "NJD6UjVxQ4roRpWw",
+   "headline": "Giants complete 53-man roster by adding Dalen Cambre off practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-complete-53-man-roster-165140521.html",
+   "timestamp": "2026-09-12T16:51:40.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "IZHexnt1Apy3QS4m",
+   "headline": "Myles Garrett, Rams, may have a knee problem",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/myles-garrett-rams-may-knee-165058665.html",
+   "timestamp": "2026-09-12T16:50:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "gx3C9KIj28zX5ycx",
+   "headline": "Three Steelers with the most to lose against the Falcons",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/three-steelers-most-lose-against-165056054.html",
+   "timestamp": "2026-09-12T16:50:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "PIT"
+   ]
+  },
+  {
+   "id": "6SFX6FH6RXr0oF3N",
+   "headline": "The Commanders have done a 360",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-done-360-163400072.html",
+   "timestamp": "2026-09-12T16:34:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "VEzeOB4VrkMoknxY",
+   "headline": "Colts downgrade LB Austin Ajiake to out, elevate one",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-downgrade-lb-austin-ajiake-163154905.html",
+   "timestamp": "2026-09-12T16:31:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "ZIByd4G3HpvDgpOS",
+   "headline": "Jim Harbaugh: Justin Herbert will be remembered as the greatest quarterback ever",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jim-harbaugh-justin-herbert-remembered-160957475.html",
+   "timestamp": "2026-09-12T16:09:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ]
+  },
+  {
+   "id": "RxNfvpo_FBDg0LYB",
+   "headline": "Falcons Draft 2027: 12 Prospects to watch in week two of CFB",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-draft-2027-12-prospects-160835920.html",
+   "timestamp": "2026-09-12T16:08:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "WWu_yTQlHAe5ASX2",
+   "headline": "3 Key Matchups for Ravens-Colts Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-key-matchups-ravens-colts-160000993.html",
+   "timestamp": "2026-09-12T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "IND"
+   ]
+  },
+  {
+   "id": "4TIBL4VoBZnxU3NG",
+   "headline": "Bears Looking to Turn Offseason Work Into Results in Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-looking-turn-offseason-results-160000803.html",
+   "timestamp": "2026-09-12T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "YgGvIJ9oatOMTtVr",
+   "headline": "NFL Week 1 betting advice: Giants-Cowboys picks and props",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-1-betting-advice-160000963.html",
+   "timestamp": "2026-09-12T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NYG"
+   ]
+  },
+  {
+   "id": "DEMHreTRzdRquOEe",
+   "headline": "Why a rocky start to the 2026 season wouldn’t break Commanders’ playoff hopes - poll results",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/why-rocky-start-2026-season-160000419.html",
+   "timestamp": "2026-09-12T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "7eIIUTOGObgpXZ2r",
+   "headline": "Tucker Kraft, Michael Mayer join highest-paid tight ends with contract extensions",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/tucker-kraft-agrees-to-contract-extension-packers/",
+   "timestamp": "2026-09-12T15:59:55.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tucker-kraft"
+   ]
+  },
+  {
+   "id": "6QgCjorjQjjerb2d",
+   "headline": "Week 1 always lies. These parts of the Rams’ loss might not.",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/week-1-always-lies-parts-155828697.html",
+   "timestamp": "2026-09-12T15:58:28.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "C9AW1ppp9fPCK2OQ",
+   "headline": "Titans vs. Jets: Robert Saleh makes debut as Tennessee coach against team that fired him",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/titans-vs-jets-where-to-watch-odds-prediction/",
+   "timestamp": "2026-09-12T15:57:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ",
+    "TEN"
+   ]
+  },
+  {
+   "id": "O7nafzK52SVQQvwj",
+   "headline": "Packers tight end becomes highest paid in NFL with new contract",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-tight-end-becomes-highest-155435840.html",
+   "timestamp": "2026-09-12T15:54:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "HPWGmpwXJLs0e1Zt",
+   "headline": "Eagles News: Sean Mannion is focused on running the ball",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-news-sean-mannion-focused-154722446.html",
+   "timestamp": "2026-09-12T15:47:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "hLu4cELgCE1UkpwY",
+   "headline": "Colts vs Ravens: The experts’ predictions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-vs-ravens-experts-predictions-154629135.html",
+   "timestamp": "2026-09-12T15:46:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "IND"
+   ]
+  },
+  {
+   "id": "DfcEC4A8PHbhJwr1",
+   "headline": "Cardinals vs. Chargers: Justin Herbert debuts new-look offense under Mike McDaniel for Los Angeles",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cardinals-vs-chargers-where-to-watch-prediction-odds/",
+   "timestamp": "2026-09-12T15:42:24.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ],
+   "team_abbrs": [
+    "ARI",
+    "LAC"
+   ]
+  },
+  {
+   "id": "XsniLzQfVBJ5j1Sm",
+   "headline": "Bengals News: Marvin Lewis Reveals his AFC North Favorite",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bengals-news-marvin-lewis-reveals-153650269.html",
+   "timestamp": "2026-09-12T15:36:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "L9i2eGDSUW0NVlOt",
+   "headline": "Raiders news: Tight end gets paid",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-news-tight-end-gets-153335290.html",
+   "timestamp": "2026-09-12T15:33:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "dPuDqdnJsNR68E2d",
+   "headline": "How to bet on 2026 NFL Week 1: Betting guide, odds, trends, game previews, schedule, promo codes, more offers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/how-to-bet-on-2026-nfl-week-1-betting-guide-odds-trends-game-previews-schedule-promo-codes-more-offers/",
+   "timestamp": "2026-09-12T15:27:33.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "rDI6U-HHcIFFhG8x",
+   "headline": "Packers vs. Vikings: Kyler Murray opens Minnesota career in NFC North showdown",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/packers-vs-vikings-how-to-watch-preview-prediction/",
+   "timestamp": "2026-09-12T15:22:30.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kyler-murray"
+   ],
+   "team_abbrs": [
+    "GB",
+    "MIN"
+   ]
+  },
+  {
+   "id": "jCdfnmVVzUmFwiaS",
+   "headline": "NFL Week 1 odds, predictions, expert picks: Who has edge in Bills-Texans? Can Saints upset Lions?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-1-odds-expert-picks-best-bets-teasers-survivor/",
+   "timestamp": "2026-09-12T15:18:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "DET",
+    "HOU",
+    "NO"
+   ]
+  },
+  {
+   "id": "sks_kTtL6nTgh20u",
+   "headline": "49ers had zero sacks against the Rams, but still made massive improvements getting to the quarterback",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-had-zero-sacks-against-151100960.html",
+   "timestamp": "2026-09-12T15:11:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "oS_zZ0-YoVCr-ilA",
+   "headline": "Raiders, Michael Mayer agree to three-year extension",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-michael-mayer-agree-three-150900514.html",
+   "timestamp": "2026-09-12T15:09:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "22L88xaEboDQw-Xj",
+   "headline": "Raiders extend Michael Mayer, reportedly make him one of NFL's highest-paid TEs with 3-year, $45 million deal",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/raiders-extend-michael-mayer-reportedly-make-him-one-of-nfls-highest-paid-tes-with-3-year-45-million-deal-150600308.html",
+   "timestamp": "2026-09-12T15:06:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "gU1iWqrPXx5KTrHC",
+   "headline": "Tucker Kraft agrees to four-year extension",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tucker-kraft-agrees-four-extension-150555742.html",
+   "timestamp": "2026-09-12T15:05:55.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "tucker-kraft"
+   ]
+  },
+  {
+   "id": "TUOHXIT7lfpE6cpA",
+   "headline": "Arch Manning looks to make NFL draft statement vs Ohio State in rematch",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/arch-manning-looks-nfl-draft-150325914.html",
+   "timestamp": "2026-09-12T15:03:25.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "FaDZfxTp8pUdbKUB",
+   "headline": "Raiders Extend TE Michael Mayer",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/raiders-extend-te-michael-mayer",
+   "timestamp": "2026-09-12T15:00:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "3cRIxguOybrAGEo1",
+   "headline": "Defensive head-to-head preview: Saints vs Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/defensive-head-head-preview-saints-150000725.html",
+   "timestamp": "2026-09-12T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "NO"
+   ]
+  },
+  {
+   "id": "SirbfcGcL442v2cT",
+   "headline": "College Football Week 2 – Games and players to watch for the NY Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/college-football-week-2-games-150000540.html",
+   "timestamp": "2026-09-12T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "iJJz9118ZB0VIVoW",
+   "headline": "Commanders missing on Romeo Doubs but signing Stefon Diggs looks good at the moment - Daily Slop",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-missing-romeo-doubs-signing-150000535.html",
+   "timestamp": "2026-09-12T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "1Bs_mZksLQ0Srv1L",
+   "headline": "Packers sign Tucker Kraft to 4-year contract extension on eve of season opener",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-sign-tucker-kraft-4-145910356.html",
+   "timestamp": "2026-09-12T14:59:10.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "tucker-kraft"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "aDPlXkRjsKu9dI_8",
+   "headline": "Daily Norseman Roundtable: Know Your Enemy — The Chicago Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daily-norseman-roundtable-know-enemy-145359520.html",
+   "timestamp": "2026-09-12T14:53:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "6p78HzKW742phc7p",
+   "headline": "Tucker Kraft: Agrees to four-year extension",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/tucker-kraft-16649",
+   "timestamp": "2026-09-12T14:52:00.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "tucker-kraft"
+   ]
+  },
+  {
+   "id": "hiyu7NZymXVbIZHf",
+   "headline": "Packers To Extend TE Tucker Kraft",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/packers-to-extend-te-tucker-kraft",
+   "timestamp": "2026-09-12T14:51:05.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tucker-kraft"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "uOufolUa5Lai7YR4",
+   "headline": "Packers' Tucker Kraft signs reported 4-year, $75M contract extension",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/packers-tucker-kraft-signs-reported-4-year-75m-contract-extension-144923835.html",
+   "timestamp": "2026-09-12T14:49:23.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "tucker-kraft"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "rOF3NU4vqZXKklTW",
+   "headline": "Best NFL Betting Promos for Week 1: Sportsbook Promos, Bonus Codes for Packers-Vikings, Giants-Cowboys",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/best-nfl-promos-week-1-sportsbook-promos-bonus-codes-packers-vikings-giants-cowboys/",
+   "timestamp": "2026-09-12T14:18:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "GB",
+    "MIN",
+    "NYG"
+   ]
+  },
+  {
    "id": "CYQp-idAnkN9uJeU",
    "headline": "Brian Burns: Giants are ready to exploit weakness at Cowboys' RT position",
    "source": "Yahoo Sports",
@@ -1202,471 +1684,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NYG"
-   ]
-  },
-  {
-   "id": "SwIDt0gg4jQ3Kk12",
-   "headline": "Jeremiyah Love: Questionable for Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jeremiyah-love-19235",
-   "timestamp": "2026-09-11T20:33:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jeremiyah-love"
-   ]
-  },
-  {
-   "id": "WP9n6QAKo8f6QDZ2",
-   "headline": "Detroit Lions release Levi Onwuzurike and rookie DL",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/detroit-lions-release-levi-onwuzurike-202952841.html",
-   "timestamp": "2026-09-11T20:29:52.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "VYMCmJtaJk4dx_2n",
-   "headline": "Week 1 NFL odds, picks, predictions: Computer model backs Eagles and Jaguars",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-1-nfl-2026-odds-picks-game-spreads-lines-predictions-football-betting-guide/",
-   "timestamp": "2026-09-11T20:26:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "PHI"
-   ]
-  },
-  {
-   "id": "waZQEIlCtTNu1jBT",
-   "headline": "Cowboys injuries: Dallas running back ruled out after Friday injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-injuries-dallas-running-back-202636258.html",
-   "timestamp": "2026-09-11T20:26:36.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "sOYGgc7ivmueZ9m1",
-   "headline": "Titans postponing Chris Johnson's Ring of Honor induction ceremony since former RB, family unable to travel for opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/titans-postponing-chris-johnsons-ring-of-honor-induction-ceremony-since-former-rb-family-unable-to-travel-for-opener-202550258.html",
-   "timestamp": "2026-09-11T20:25:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "TLV40E0fN61RAQmz",
-   "headline": "Giants' Malik Nabers listed as questionable for season opener against Cowboys",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-malik-nabers-listed-questionable-202317971.html",
-   "timestamp": "2026-09-11T20:23:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "NYG"
-   ]
-  },
-  {
-   "id": "AzTpycf9LmKFQaH8",
-   "headline": "Steelers' Joey Porter Jr. denies seeking record contract as Week 1 deadline approaches",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/steelers-joey-porter-contract/",
-   "timestamp": "2026-09-11T20:21:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "JMjx8l5gpg8K2dXG",
-   "headline": "Week 1 injury report for the New York Jets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-1-injury-report-york-201833795.html",
-   "timestamp": "2026-09-11T20:18:33.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "Unn1aFXjGxPXURDb",
-   "headline": "Chris Johnson unable to travel to Nashville, Titans postpone Ring of Honor ceremony",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chris-johnson-unable-travel-nashville-201602060.html",
-   "timestamp": "2026-09-11T20:16:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "zIzohKNYTQJ2K0cR",
-   "headline": "Eagles-Commanders Final Injury Report: Jonathan Greenard ruled OUT",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-commanders-final-injury-report-201119390.html",
-   "timestamp": "2026-09-11T20:11:19.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "OK4d3g70guH93PCV",
-   "headline": "Giants WR Malik Nabers On Playing Week 1: ‘It’s My Career’",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-wr-malik-nabers-on-playing-week-1-its-my-career",
-   "timestamp": "2026-09-11T20:10:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "iNn9SSaw7p9nZfyE",
-   "headline": "Jacory Croskey-Merritt: No designation for Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jacory-croskey-merritt-18811",
-   "timestamp": "2026-09-11T20:09:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "qKKjLXE25ZFdVWCV",
-   "headline": "Packers list Bako-Bewele & Banks as questionable against Vikings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-list-bako-bewele-banks-200635652.html",
-   "timestamp": "2026-09-11T20:06:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "MIN"
-   ]
-  },
-  {
-   "id": "xwqD7u_rW223ZQYb",
-   "headline": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bears-re-sign-dandre-swift-to-three-year-deal/",
-   "timestamp": "2026-09-11T20:03:55.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "dandre-swift"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "jk0GzRXJoozExgpM",
-   "headline": "Eagles rule Jonathan Greenard out for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-rule-jonathan-greenard-week-200318026.html",
-   "timestamp": "2026-09-11T20:03:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "wDYVfRCdImXnevg0",
-   "headline": "49ers Snap Counts and Grades: Nick Bosa and Fred Warner return and dominate",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-snap-counts-grades-nick-200100648.html",
-   "timestamp": "2026-09-11T20:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "S3U6B7w2UiZvL3WI",
-   "headline": "Chicago Bears at Carolina Panthers: 3 Props to Play",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-carolina-panthers-3-200000670.html",
-   "timestamp": "2026-09-11T20:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "CHI"
-   ]
-  },
-  {
-   "id": "KKnMO40aCYwev1Hu",
-   "headline": "Canal Street Chronicles: Week 1 Saints at Lions Bold Predictions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/canal-street-chronicles-week-1-200000832.html",
-   "timestamp": "2026-09-11T20:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "BfMKASV3Sdw5ZGzI",
-   "headline": "3 keys to a Cincinnati Bengals victory vs. the Tampa Bay Buccaneers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-keys-cincinnati-bengals-victory-195749694.html",
-   "timestamp": "2026-09-11T19:57:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "TB"
-   ]
-  },
-  {
-   "id": "EwV5FNxYol9D34y5",
-   "headline": "RB D'Andre Swift becomes latest key Bears player to earn a big extension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/rb-dandre-swift-becomes-latest-key-bears-player-to-earn-a-big-extension-195342263.html",
-   "timestamp": "2026-09-11T19:53:42.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "dandre-swift"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "8S5mE-67FUegjQ5F",
-   "headline": "Vic Fangio talks about the Eagles’ plan at edge rusher while Jonathan Greenard ramps up",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vic-fangio-talks-eagles-plan-195100870.html",
-   "timestamp": "2026-09-11T19:51:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "sqgbpn2QrVMqdVaZ",
-   "headline": "Lions-Saints injury report: Only 1 questionable player",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-saints-injury-report-only-195042822.html",
-   "timestamp": "2026-09-11T19:50:42.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "c1JUQzgDAc87KKT9",
-   "headline": "Saints Reacts Results: Do you think the Saints will defeat the Lions on Sunday?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-reacts-results-think-saints-195016409.html",
-   "timestamp": "2026-09-11T19:50:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "AXlSnofXnJ5b7vfc",
-   "headline": "Bears lock in RB D'Andre Swift with contract extension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-lock-rb-dandre-swift-194806668.html",
-   "timestamp": "2026-09-11T19:48:06.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "dandre-swift"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "ylfcGzSc1AQJd-6g",
-   "headline": "Bears extend D’Andre Swift to three-year, $33.75 million deal",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-extend-d-andre-swift-194738460.html",
-   "timestamp": "2026-09-11T19:47:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "1KjG1Hnc509VtIvo",
-   "headline": "Joey Porter Jr. questionable for Steelers-Falcons",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/joey-porter-jr-questionable-steelers-194721383.html",
-   "timestamp": "2026-09-11T19:47:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "PIT"
-   ]
-  },
-  {
-   "id": "lEmLCpzCrCNiJVDj",
-   "headline": "Bears, D'Andre Swift agree to three-year contract extension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-dandre-swift-agree-three-194518212.html",
-   "timestamp": "2026-09-11T19:45:18.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "dandre-swift"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "dSF5DWv8cAyvApPC",
-   "headline": "See which Bills and Texans were listed on the first injury report for Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/see-bills-texans-were-listed-221558797.html",
-   "timestamp": "2026-09-11T19:43:15.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "BUF",
-    "HOU"
-   ]
-  },
-  {
-   "id": "Q9rBNoPFhKNYc8x5",
-   "headline": "NFL Week 1 betting advice: Eagles-Commanders pick and props",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-1-betting-advice-194014571.html",
-   "timestamp": "2026-09-11T19:40:14.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "IY68iJv_V-Tw5mJO",
-   "headline": "Bears vs Panthers Final Injury Report: 4 Questionable for Chicago",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-vs-panthers-final-injury-193858394.html",
-   "timestamp": "2026-09-11T19:38:58.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CAR",
-    "CHI"
-   ]
-  },
-  {
-   "id": "u4SoAmwbIiXdgN8l",
-   "headline": "Malik Davis suffers hip injury, Week 1 status in doubt",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-davis-suffers-hip-injury-193004777.html",
-   "timestamp": "2026-09-11T19:30:04.000Z",
-   "category": "injury"
-  },
-  {
-   "id": "7eDQv3ns-9BCx7Nn",
-   "headline": "Cowboys countdown to kickoff: Top 100 iconic games – Day 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-countdown-kickoff-top-100-193000967.html",
-   "timestamp": "2026-09-11T19:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "-0YUudnc3TOfo-L2",
-   "headline": "Texans place second-round pick Kayden McDonald on IR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-place-second-round-pick-192945796.html",
-   "timestamp": "2026-09-11T19:29:45.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "mY9xSsIm-KVCqgde",
-   "headline": "Shemar Stewart doubtful, Ja'Marr Chase and Tee Higgins set to play Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/shemar-stewart-doubtful-jamarr-chase-192639224.html",
-   "timestamp": "2026-09-11T19:26:39.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jamarr-chase"
-   ]
-  },
-  {
-   "id": "PQOtewm8i0Uuje-0",
-   "headline": "RB Malik Davis carted off at Cowboys practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rb-malik-davis-carted-off-192246769.html",
-   "timestamp": "2026-09-11T19:22:46.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "0f0y4O2HOWqrdgkx",
-   "headline": "Brock Bowers: Coach hopes he'll be back soon",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/brock-bowers-17693",
-   "timestamp": "2026-09-11T19:18:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-bowers"
-   ]
-  },
-  {
-   "id": "q4I7MUq_cPWGHQKs",
-   "headline": "Rome Odunze, Xavier Woods questionable for Bears vs. Panthers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rome-odunze-xavier-woods-questionable-191232243.html",
-   "timestamp": "2026-09-11T19:12:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "CHI"
-   ]
-  },
-  {
-   "id": "FA0lcjy_pgLFDaMK",
-   "headline": "Fantasy Football Week 1 Rankings: Hayden Winks' flex running back projections (ranked 31-40)",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-1-rankings-hayden-winks-flex-running-back-projections-ranked-31-40-191118318.html",
-   "timestamp": "2026-09-11T19:11:18.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "_J7EWmG2S6g4ibzx",
-   "headline": "Rome Odunze: Listed as questionable for Week 1",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/rome-odunze-17020",
-   "timestamp": "2026-09-11T19:11:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "MAq3Rkhln02u3hQy",
-   "headline": "Best Lions content of the week: Jack Campbell’s personal, professional growth",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/best-lions-content-week-jack-190455936.html",
-   "timestamp": "2026-09-11T19:04:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "BEJSGVWw4erZmIkn",
-   "headline": "Ja'Marr Chase: Good to go, no designation",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jamarr-chase-15183",
-   "timestamp": "2026-09-11T19:04:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jamarr-chase"
    ]
   }
  ]
