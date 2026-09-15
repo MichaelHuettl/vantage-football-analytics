@@ -4,6 +4,508 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "QxFXg5UYrTSFGgoY",
+   "headline": "Notes on Vikings Win Over the Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/notes-vikings-win-over-packers-221559498.html",
+   "timestamp": "2026-09-15T22:15:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "MIN"
+   ]
+  },
+  {
+   "id": "Xx7PI3J52eDxuWwv",
+   "headline": "Tuesday practice report for Bills",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tuesday-practice-report-bills-221529247.html",
+   "timestamp": "2026-09-15T22:15:29.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "PzYbLiuAn5DB7AwZ",
+   "headline": "Steelers Week 2 power rankings roundup: Any love for Pittsburgh after beating Cooper Rush?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-week-2-power-rankings-221109305.html",
+   "timestamp": "2026-09-15T22:11:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "8L751e26W0YMBAau",
+   "headline": "Browns roster: 8 moves made on Tuesday, including Dylan Sampson to IR",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-roster-8-moves-made-220615562.html",
+   "timestamp": "2026-09-15T22:06:15.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "JJw4I5hhTg7L12rI",
+   "headline": "Fantasy football waiver wire: 10 players to add for NFL Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/fantasy-football-waiver-wire-10-220528403.html",
+   "timestamp": "2026-09-15T22:05:28.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "x4VCi74S0pliTEt3",
+   "headline": "Sean McVay and Rams W-L record following 49ers loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-mcvay-rams-w-l-220500138.html",
+   "timestamp": "2026-09-15T22:05:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "HZO9l7tpoTv2v_Y6",
+   "headline": "4 overreactions from Week 1 that might stick this season: Woes for Cowboys, Broncos and Patriots, and joy for future Bears fireworks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/4-overreactions-from-week-1-that-might-stick-this-season-woes-for-cowboys-broncos-and-patriots-and-joy-for-future-bears-fireworks-220357626.html",
+   "timestamp": "2026-09-15T22:03:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "DAL",
+    "DEN",
+    "NE"
+   ]
+  },
+  {
+   "id": "qW-3qHwfFqwC99xy",
+   "headline": "Eagles-Commanders Film Review: Offense did some good things but must improve",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-commanders-film-review-offense-220019249.html",
+   "timestamp": "2026-09-15T22:00:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "WAS"
+   ]
+  },
+  {
+   "id": "44GXYBGHVBU5hH46",
+   "headline": "Brian Schottenheimer report card: Cowboys culture crashes in Week 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brian-schottenheimer-report-card-cowboys-220000967.html",
+   "timestamp": "2026-09-15T22:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "WAgBnhD-xKYCw9by",
+   "headline": "Adam Stenavich explains the Packers’ offensive line woes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/adam-stenavich-explains-packers-offensive-215651782.html",
+   "timestamp": "2026-09-15T21:56:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "7yXWPlucMuNps0MC",
+   "headline": "Bills DL T.J. Sanders misses practice with an illness",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-dl-t-j-sanders-215314219.html",
+   "timestamp": "2026-09-15T21:53:14.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "FaI4V69xDr3_0HPW",
+   "headline": "Tuesday practice report for Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tuesday-practice-report-lions-214627406.html",
+   "timestamp": "2026-09-15T21:46:27.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "jiJOgEZBfDjZTUZD",
+   "headline": "Ravens rookie WR Ja'Kobi Lane to undergo wrist surgery",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-rookie-wr-ja-kobi-214625606.html",
+   "timestamp": "2026-09-15T21:46:25.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "GS0eDyW9A7g0XLTh",
+   "headline": "’Hoos in the NFL: Wicks, Sanker off to hot starts",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/hoos-nfl-wicks-sanker-off-214607638.html",
+   "timestamp": "2026-09-15T21:46:07.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "RbxcWkcBZnAqFbeo",
+   "headline": "2026 Week 2 NFL odds, start times, betting lines, spreads: Get Week 2 NFL picks, predictions for every game",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-odds-betting-lines-spreads-picks-predictions/",
+   "timestamp": "2026-09-15T21:42:03.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "htWVFxWLDIn8EJbc",
+   "headline": "Eagles sign WR Britain Covey to 53-man roster",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-sign-wr-britain-covey-214145221.html",
+   "timestamp": "2026-09-15T21:41:45.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "d5dKvBmsR9K4du0Q",
+   "headline": "Las Vegas Raiders slide in some NFL Power Rankings despite win against Miami Dolphins",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/las-vegas-raiders-slide-nfl-214000002.html",
+   "timestamp": "2026-09-15T21:40:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "MIA"
+   ]
+  },
+  {
+   "id": "C1m5WoxR20OWLUB2",
+   "headline": "Fantasy Football Rankings for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-for-week-2-213911503.html",
+   "timestamp": "2026-09-15T21:39:11.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "oo8wUAD_7BGbrwo7",
+   "headline": "Use DraftKings promo code to get $200 bonus bets by targeting Bills-Lions, NFL, MLB, Nationals-Phillies today",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-bets-bills-lions-nfl-mlb-nationals-phillies-tuesday/",
+   "timestamp": "2026-09-15T21:38:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "DET"
+   ]
+  },
+  {
+   "id": "Ngc7hR0I3fFvCCH5",
+   "headline": "Ravens open as heavy favorites in potential Week 2 trap game vs. Saints",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-open-heavy-favorites-potential-213315301.html",
+   "timestamp": "2026-09-15T21:33:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "NO"
+   ]
+  },
+  {
+   "id": "_CQLoQPqIMKYYn6j",
+   "headline": "Ravens WR Ja’Kobi Lane Fractures Wrist",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/ravens-rookie-wr-jakobi-lane-fractures-wrist",
+   "timestamp": "2026-09-15T21:30:40.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "mV7PEWZdNEQQ_QTB",
+   "headline": "What the Bills first injury report of the week really tells us.",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-first-injury-report-week-215405138.html",
+   "timestamp": "2026-09-15T21:26:35.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "9r2hM1goOb0zNv9K",
+   "headline": "49ers held tryouts for 5 players after Jake Tonges and Alfred Collins’ injuries",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-held-tryouts-5-players-212404819.html",
+   "timestamp": "2026-09-15T21:24:04.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "pG8LjYnKPQtEkStG",
+   "headline": "Dolphins receiver Caleb Douglas nominated for Rookie of the Week award",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-receiver-caleb-douglas-nominated-212334597.html",
+   "timestamp": "2026-09-15T21:23:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "1yEw5vtjNDzpPo4Q",
+   "headline": "Giants-Cowboys delivers 25.7 million viewers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-cowboys-delivers-25-7-211346137.html",
+   "timestamp": "2026-09-15T21:13:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NYG"
+   ]
+  },
+  {
+   "id": "MBjMOCfBCopGgGxX",
+   "headline": "Fantasy Football Kicker Rankings for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-kicker-rankings-for-week-2-211255858.html",
+   "timestamp": "2026-09-15T21:12:55.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "tNRNEFO3fte58W3J",
+   "headline": "Texans Meeting With LB Kenneth Murray, To Place LB Henry To’oTo’o On IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/texans-meeting-with-lb-kenneth-murray",
+   "timestamp": "2026-09-15T21:10:31.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "QbyLGvOCcJYPtacL",
+   "headline": "Fantasy Football QB Rankings for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-qb-rankings-for-week-2-211021971.html",
+   "timestamp": "2026-09-15T21:10:21.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "zVv2GegFGmFippQf",
+   "headline": "Fantasy Football Defense Rankings for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-defense-rankings-for-week-2-210707701.html",
+   "timestamp": "2026-09-15T21:07:07.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "FOgtsX4WAmlEplZ8",
+   "headline": "Week 1 NFLSU Report Card",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/week-1-nflsu-report-card-210000559.html",
+   "timestamp": "2026-09-15T21:00:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "PPX46GPtlzuxZql1",
+   "headline": "Former NY Giants WR Sterling Shepard signs with Jets’ practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-ny-giants-wr-sterling-205809456.html",
+   "timestamp": "2026-09-15T20:58:09.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "NYG",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "2SQ0tOw01xfyX4s3",
+   "headline": "Steelers open as 4.5 point underdogs to Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-open-4-5-point-205701739.html",
+   "timestamp": "2026-09-15T20:57:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "I7iQkBR3ersuq8Bb",
+   "headline": "Lions, Bills injury report: CB D.J. Reed added Tuesday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-bills-injury-report-cb-205539544.html",
+   "timestamp": "2026-09-15T20:55:39.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BUF",
+    "DET"
+   ]
+  },
+  {
+   "id": "vOKADEs6LLDH7mrr",
+   "headline": "Examining 5 teams that could be trade candidates for Steelers CB Joey Porter Jr.",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/examining-5-teams-that-could-be-trade-candidates-for-steelers-cb-joey-porter-jr-205230175.html",
+   "timestamp": "2026-09-15T20:52:30.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "LzV6h-0wq0eB2uMi",
+   "headline": "Cleveland’s defense could adjust some snap counts after first game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-defense-could-adjust-snap-205213887.html",
+   "timestamp": "2026-09-15T20:52:13.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "GCOwbmeap_HCAXJq",
+   "headline": "Ravens release K Jake Moody from their practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-release-k-jake-moody-204959606.html",
+   "timestamp": "2026-09-15T20:49:59.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "67HgR82RS1xGMvQ9",
+   "headline": "Rams Hoping To Have Aaron Donald For Week 2",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/rams-hoping-to-have-aaron-donald-for-week-2",
+   "timestamp": "2026-09-15T20:48:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "bWxKvxResLoimDK0",
+   "headline": "Justin Boone's Fantasy Football FLEX Rankings for Full PPR in Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/justin-boones-fantasy-football-flex-rankings-for-full-ppr-in-week-2-204848004.html",
+   "timestamp": "2026-09-15T20:48:48.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "5_QZ-w4xSllstFiD",
+   "headline": "Panthers waive kick returner after costly muffed punt in Week 1 blowout",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-waive-jimmy-horn-jr-204752224.html",
+   "timestamp": "2026-09-15T20:47:52.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "xNlc8lv34olcyj7g",
+   "headline": "Fantasy Football Full-PPR Rankings: Justin Boone's top TEs for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-full-ppr-rankings-justin-boones-top-tes-for-week-2-204650145.html",
+   "timestamp": "2026-09-15T20:46:50.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "cJCAUpD5EmFhqJwW",
+   "headline": "Carolina Panthers Roster: Jimmy Horn Jr waived to make room for run defender",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/carolina-panthers-roster-jimmy-horn-204600237.html",
+   "timestamp": "2026-09-15T20:46:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "j99dCvnOPHPZQilP",
+   "headline": "Cleveland’s defense could adjust some snap counts after first game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-defense-could-adjust-snap-204438282.html",
+   "timestamp": "2026-09-15T20:44:38.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "WkqUuBtRpcVl1FBq",
+   "headline": "Fantasy Football Full-PPR Rankings: Justin Boone's top WRs for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-full-ppr-rankings-justin-boones-top-wrs-for-week-2-204409871.html",
+   "timestamp": "2026-09-15T20:44:09.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "g_LSBNZoHSXdVEWE",
+   "headline": "Andy Reid says ESPN's Chris Berman sent him the 90-year-old play that cemented Chiefs' Week 1 blowout of Broncos",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/andy-reid-says-espns-chris-berman-sent-him-the-90-year-old-play-that-cemented-chiefs-week-1-blowout-of-broncos-204348746.html",
+   "timestamp": "2026-09-15T20:43:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "uWFMjJHDKW5Af8Ks",
+   "headline": "Fantasy Football Full-PPR Rankings: Justin Boone's top RBs for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-full-ppr-rankings-justin-boones-top-rbs-for-week-2-204124849.html",
+   "timestamp": "2026-09-15T20:41:24.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "jgLlJIqJbfrWFk1U",
+   "headline": "Fantasy Football Rankings: Justin Boone's top defenses for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-defenses-for-week-2-203742831.html",
+   "timestamp": "2026-09-15T20:37:42.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "5IIVQyX1EajUHEVK",
+   "headline": "Fantasy Football Rankings: Justin Boone's top kickers for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-kickers-for-week-2-203544120.html",
+   "timestamp": "2026-09-15T20:35:44.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "bTyg0lJRH2Eyq-Q1",
+   "headline": "Justin Boone's Fantasy Football FLEX Rankings for Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/justin-boones-fantasy-football-flex-rankings-for-week-2-203257269.html",
+   "timestamp": "2026-09-15T20:32:57.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "VOnRL8pAPtIES0_2",
+   "headline": "Jets Sign WRs Tyler Johnson, Sterling Shepard To Practice Squad",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/jets-sign-wrs-tyler-johnson-sterling-shepard-to-practice-squad",
+   "timestamp": "2026-09-15T20:02:57.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
    "id": "PXFUNJEBb7RLRzIG",
    "headline": "Super Bowl stock report for Week 2: 49ers are healthy and formidable, Chargers dig deeper hole",
    "source": "CBS Sports",
@@ -256,14 +758,6 @@
    "team_abbrs": [
     "JAX"
    ]
-  },
-  {
-   "id": "RbxcWkcBZnAqFbeo",
-   "headline": "2026 Week 2 NFL odds, start times, betting lines, spreads: Get Week 2 NFL picks, predictions for every game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-odds-betting-lines-spreads-picks-predictions/",
-   "timestamp": "2026-09-15T18:16:23.000Z",
-   "category": "breaking"
   },
   {
    "id": "sBxeP_YSvcX2JfwQ",
@@ -1132,536 +1626,6 @@
    "player_ids": [
     "caleb-williams",
     "trevor-lawrence"
-   ]
-  },
-  {
-   "id": "KuOWeZF5G1dzoXGl",
-   "headline": "NFL Week 2 picks and score predictions: Bills top Lions in Thursday shootout, Seahawks suffer shocking loss",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-2-picks-score-predictions/",
-   "timestamp": "2026-09-15T12:27:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "DET",
-    "SEA"
-   ]
-  },
-  {
-   "id": "GOkv4rK2Jv8Pp3Dw",
-   "headline": "Chiefs vs. Broncos overreactions: Should Sean Payton reclaim play-calling duties? Patrick Mahomes fully back?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/chiefs-vs-broncos-overreactions-sean-payton-patrick-mahomes/",
-   "timestamp": "2026-09-15T11:43:57.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ],
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "xvcvB64sDgYM3hDC",
-   "headline": "These five rookies balled out in their NFL debuts, but is their early success sustainable?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-rookies-week-1-standouts/",
-   "timestamp": "2026-09-15T11:32:19.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "HJfUUcgChRJaJf7y",
-   "headline": "Sunday Ticket prices increase, while NFL decreases the number of Sunday afternoon games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sunday-ticket-prices-increase-while-113147960.html",
-   "timestamp": "2026-09-15T11:31:47.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "QnuYccO9Nz970g1J",
-   "headline": "Bills news: Buffalo’s coaches react to season-opening win",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-news-buffalo-coaches-react-110610685.html",
-   "timestamp": "2026-09-15T11:06:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "IB6NcYtUUFnP6u_L",
-   "headline": "The Panthers could add some backend versatility early in the NFL Draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-could-add-backend-versatility-110000573.html",
-   "timestamp": "2026-09-15T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "BjYoiDhl8v4DL1uT",
-   "headline": "5 things we learned from the Steelers’ Week 1 snap counts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-things-learned-steelers-week-110000255.html",
-   "timestamp": "2026-09-15T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "N3gMlndJgVNoVGk8",
-   "headline": "Bengals Tuesday Trenches: 1-0 and ready for Houston",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-tuesday-trenches-1-0-110000764.html",
-   "timestamp": "2026-09-15T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "EvAuWnIFhhgNdSzf",
-   "headline": "Biggest surprises from the Detroit Lions’ Week 1 win over Saints",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/biggest-surprises-detroit-lions-week-110000155.html",
-   "timestamp": "2026-09-15T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "cgZIBmk8EfWAzhHH",
-   "headline": "Cowboys news: Young defenders made mistakes, “critical” improvements needed",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-young-defenders-made-110000384.html",
-   "timestamp": "2026-09-15T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "jRJWPxc9BhG6DGD_",
-   "headline": "New York Jets News: Week 1 Results Deliver Gift For Jets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-news-week-1-110000402.html",
-   "timestamp": "2026-09-15T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "NiP9S3-d3Tlqg143",
-   "headline": "Kyle Williams among Patriots ready to step up after A.J. Brown injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kyle-williams-among-patriots-ready-110000262.html",
-   "timestamp": "2026-09-15T11:00:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "javonte-williams"
-   ],
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "BBlR3RUDZ-gGJQTn",
-   "headline": "Giants-Cowboys: 5 plays that were key to victory",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-cowboys-5-plays-were-104620166.html",
-   "timestamp": "2026-09-15T10:46:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "NYG"
-   ]
-  },
-  {
-   "id": "4NdObX3XQ3y6Kv6p",
-   "headline": "Patrick Mahomes: Rushing TD gave me confidence I could be myself",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patrick-mahomes-rushing-td-gave-104057901.html",
-   "timestamp": "2026-09-15T10:40:57.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "VGRIE_dUJB96eir-",
-   "headline": "Terps in the NFL Week 1: DJ Moore hits 100 yards in Buffalo Bills debut",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/terps-nfl-week-1-dj-104000042.html",
-   "timestamp": "2026-09-15T10:40:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "mxxyaIv8q9ycnVlS",
-   "headline": "Bengals social media perfectly trolls Bucs and Zyon McCollum for his Joe Burrow prediction",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-social-media-perfectly-trolls-103000761.html",
-   "timestamp": "2026-09-15T10:30:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "joe-burrow"
-   ],
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "XD_pQlrNMqcSaZI0",
-   "headline": "NFL power rankings Week 2: There's a new No. 1 after Rams tumble",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-2-101615207.html",
-   "timestamp": "2026-09-15T10:16:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "0nZTn10GLu45U_di",
-   "headline": "Inside the moment Patrick Mahomes passed the test he was waiting to take",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/inside-moment-patrick-mahomes-passed-101023220.html",
-   "timestamp": "2026-09-15T10:10:23.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "eedCqft4CE1aJmMf",
-   "headline": "Fantasy football Start ‘Em, Sit ‘Em: 16 players to start or sit in Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fantasy-football-start-em-sit-100854986.html",
-   "timestamp": "2026-09-15T10:08:54.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "gZIYUpx-7Mg8FSB4",
-   "headline": "Will the Steelers offense take a step forward?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-offense-step-forward-100000543.html",
-   "timestamp": "2026-09-15T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "-GObCeWCLeqdNBFK",
-   "headline": "Coverage diversity something to watch under Bills new DC Jim Leonhard",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/coverage-diversity-something-watch-under-100000718.html",
-   "timestamp": "2026-09-15T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "ofS8U0vEaZDTf4dJ",
-   "headline": "Giants news: John Harbaugh, roster moves, grades, game reviews, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-news-john-harbaugh-roster-100000320.html",
-   "timestamp": "2026-09-15T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "rE0xXl-Ekb_2VzMR",
-   "headline": "Patriots kickoff return unit has started showing signs of life",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-kickoff-return-unit-started-100000149.html",
-   "timestamp": "2026-09-15T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "tbuS0Rk4TuQLBuPT",
-   "headline": "The Bear’s Den: Bears victory of Carolina Panthers big in many ways",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bear-den-bears-victory-carolina-100000819.html",
-   "timestamp": "2026-09-15T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "CHI"
-   ]
-  },
-  {
-   "id": "vmpRDcOOs0HRvQrk",
-   "headline": "Bengals News: Al Golden Resurgence",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-news-al-golden-resurgence-100000344.html",
-   "timestamp": "2026-09-15T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "xu6PLHVdHEkIOx8_",
-   "headline": "New Patriots DT DaQuan Jones ‘still has some good snaps ahead of him’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-dt-daquan-jones-still-095803735.html",
-   "timestamp": "2026-09-15T09:58:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "mg4r1X_Y7f4O8vuo",
-   "headline": "NFL Week 1 overreactions: Are the Chiefs back? Matt LaFleur hot seat, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-1-overreactions-chiefs-095535053.html",
-   "timestamp": "2026-09-15T09:55:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "ofSXK9W59NcWIo7d",
-   "headline": "Sporticast: NFL Opens, US Open Closes, and Steve Ballmer Bails",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sporticast-nfl-opens-us-open-095500658.html",
-   "timestamp": "2026-09-15T09:55:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Mo5rkpY2UUNHpZFY",
-   "headline": "Golden Nuggets: NFL Week 1 is officially in the books",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/golden-nuggets-nfl-week-1-085600496.html",
-   "timestamp": "2026-09-15T08:56:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "J8_Iuw4yFu7EQtuL",
-   "headline": "Matt LaFleur saw \"protection busts that should not and cannot happen\" on Vikings film",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/matt-lafleur-saw-protection-busts-082911031.html",
-   "timestamp": "2026-09-15T08:29:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "D_k3nooInroUHjbk",
-   "headline": "Sean Payton: Broncos' loss starts with me, starts with our coaching staff",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sean-payton-broncos-loss-starts-075408246.html",
-   "timestamp": "2026-09-15T07:54:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "NCzSjS873rM6f9d4",
-   "headline": "Vikes Views: Nincompoop of the Week – Packers @ Vikings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikes-views-nincompoop-week-packers-071900751.html",
-   "timestamp": "2026-09-15T07:19:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "MIN"
-   ]
-  },
-  {
-   "id": "JJB6lzOWmQJlaRli",
-   "headline": "Roob's Stats returns with all the numbers and trends from the Eagles' opener",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/roobs-stats-returns-numbers-trends-070000275.html",
-   "timestamp": "2026-09-15T07:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "-GF5o1Sg9xmABSqF",
-   "headline": "‘He's never talked about enough:' Under-rated Dallas Goedert comes up huge again",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/hes-never-talked-enough-under-070000267.html",
-   "timestamp": "2026-09-15T07:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "dallas-goedert"
-   ]
-  },
-  {
-   "id": "mDfzQxefFltrqUlZ",
-   "headline": "Eagles snap counts: Takeaways from a lopsided Week 1 vs. Commanders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-snap-counts-takeaways-lopsided-070000149.html",
-   "timestamp": "2026-09-15T07:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "yGyN1SggSwUKw4UP",
-   "headline": "How will Eagles replace Landon Dickerson during his IR stint?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-replace-landon-dickerson-during-070000340.html",
-   "timestamp": "2026-09-15T07:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "om8S1Om5UjpDWw6c",
-   "headline": "'I held my breath': As Kenneth Walker carries Chiefs win, Patrick Mahomes explains where he's fully back — and where he's not",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/i-held-my-breath-as-kenneth-walker-carries-chiefs-win-patrick-mahomes-explains-where-hes-fully-back--and-where-hes-not-065649979.html",
-   "timestamp": "2026-09-15T06:56:49.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes",
-    "kenneth-walker"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "K8r5xhF4BEgdcWRr",
-   "headline": "Walker stars for Chiefs as Swift & Cruise watch on",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/walker-stars-chiefs-swift-cruise-063301237.html",
-   "timestamp": "2026-09-15T06:33:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "RRVXX9bkTKy5r-hB",
-   "headline": "Emmett Johnson totals 68 yards in NFL debut",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/emmett-johnson-totals-68-yards-050501821.html",
-   "timestamp": "2026-09-15T05:05:01.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Z4-Ze3DmpIXg4BnP",
-   "headline": "7 Winners and 3 Losers from the Chiefs’ win over the Broncos",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/7-winners-3-losers-chiefs-050000566.html",
-   "timestamp": "2026-09-15T05:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "kvn3MbubohrDez8l",
-   "headline": "Travis Kelce: Game-long catch in Week 1 win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/travis-kelce-8783",
-   "timestamp": "2026-09-15T04:27:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "travis-kelce"
-   ]
-  },
-  {
-   "id": "ZRToe6om7pgq9MBU",
-   "headline": "Broncos Staff Approached Drew Brees About AFC Championship Comeback",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/broncos-staff-approached-drew-brees-about-afc-championship-comeback",
-   "timestamp": "2026-09-15T04:21:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "5wn8-3OhZHdRlnx2",
-   "headline": "Browns QB Deshaun Watson Expected To Start In Week 2",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/browns-hc-todd-monken-non-committal-on-deshaun-watsons-week-2-status",
-   "timestamp": "2026-09-15T04:20:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "ntz7Tiv8EhkuUunr",
-   "headline": "Bo Nix: Miserable showing in Week 1 loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/bo-nix-16995",
-   "timestamp": "2026-09-15T04:20:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "r8XcFHSxJ-HK2LOz",
-   "headline": "2027 QB Market Impacted C.J. Stroud’s Texans Extension Talks",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/2027-qb-market-impacted-c-j-strouds-texans-extension-talks",
-   "timestamp": "2026-09-15T04:18:50.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "Q0M6SVYut9-c26F8",
-   "headline": "3 takeaways from the Chiefs’ season-opening beatdown of the Broncos",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-fresh-takes-chiefs-season-041500470.html",
-   "timestamp": "2026-09-15T04:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "nt_a1rwmVcBuVsRT",
-   "headline": "Patrick Mahomes: Three total TDs in season debut",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/patrick-mahomes-11839",
-   "timestamp": "2026-09-15T04:12:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "0hz-j5jEVwXRsMQ1",
-   "headline": "NFL Power Rankings entering Week 2: What do we make of the Rams without Myles Garrett?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-power-rankings-entering-week-2-what-do-we-make-of-the-rams-without-myles-garrett-040841481.html",
-   "timestamp": "2026-09-15T04:08:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
    ]
   }
  ]
