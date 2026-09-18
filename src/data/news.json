@@ -4,6 +4,93 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "xITbUGt7JZcbhwe4",
+   "headline": "Golden Nuggets: Offensive line was Week 1’s pleasant surprise",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/golden-nuggets-offensive-line-week-090112172.html",
+   "timestamp": "2026-09-18T09:01:12.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "mqSEndxv8dXN1aru",
+   "headline": "Allen stars as Bills open new stadium in style",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/allen-stars-bills-open-stadium-061453086.html",
+   "timestamp": "2026-09-18T07:08:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "hgZWtgHv3BpcZBI3",
+   "headline": "Indianapolis Colts Injury Report: Thursday Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/indianapolis-colts-injury-report-thursday-064849902.html",
+   "timestamp": "2026-09-18T06:48:49.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "fo8z6NSph_rlfKzX",
+   "headline": "Vikes Views: Who Ya Got? Minnesota Vikings at Chicago Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikes-views-ya-got-minnesota-062800705.html",
+   "timestamp": "2026-09-18T06:28:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "MIN"
+   ]
+  },
+  {
+   "id": "yosKRW-LkDOUzf1V",
+   "headline": "Rams’ Sean McVay wants no part of playing in Australia ‘ever again’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-sean-mcvay-wants-no-052503736.html",
+   "timestamp": "2026-09-18T05:25:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "T6YQkuoJT0vjAnNo",
+   "headline": "Lions' loss to Bills has panic level high after another poor performance by defense",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/lions-loss-bills-poor-defense/",
+   "timestamp": "2026-09-18T05:24:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "DET"
+   ]
+  },
+  {
+   "id": "Pv5jM2ULzClvBpAA",
+   "headline": "Buffalo struggles to cover Sam LaPorta on Thursday night",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buffalo-struggles-cover-sam-laporta-051950185.html",
+   "timestamp": "2026-09-18T05:19:50.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-laporta"
+   ]
+  },
+  {
+   "id": "Tu1yA3KOBjHsepox",
+   "headline": "Buffalo Bills OLB Greg Rousseau hunting QBs at a HOF pace",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buffalo-bills-olb-greg-rousseau-051615285.html",
+   "timestamp": "2026-09-18T05:16:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
    "id": "W2fljrYHiYfNaAQs",
    "headline": "Sam LaPorta: Scores first TD of '26 in loss",
    "source": "RotoWire",
@@ -12,6 +99,17 @@
    "category": "breaking",
    "player_ids": [
     "sam-laporta"
+   ]
+  },
+  {
+   "id": "2kBgGiANjBa0PmJb",
+   "headline": "Two Bills traditions make it into new Highmark Stadium with a song and table jump",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/two-bills-traditions-highmark-stadium-043218774.html",
+   "timestamp": "2026-09-18T04:32:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
    ]
   },
   {
@@ -213,6 +311,25 @@
    ]
   },
   {
+   "id": "Uk0YZKtX_xoNCFZo",
+   "headline": "Roger Goodell: International NFL Expansion Likely To Target Europe",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/roger-goodell-international-nfl-expansion-likely-to-target-europe",
+   "timestamp": "2026-09-18T03:34:13.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "1WmZwjCMwBhzBTQe",
+   "headline": "Kyle Shanahan gives encouraging news on 49ers injured running back",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kyle-shanahan-gives-encouraging-news-032826913.html",
+   "timestamp": "2026-09-18T03:28:26.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "8BmMGaDx3Okhuw-m",
    "headline": "Lions, Bills recap: Defense obliterated by Josh Allen in 41-31 loss",
    "source": "Yahoo Sports",
@@ -248,6 +365,17 @@
    "category": "breaking",
    "team_abbrs": [
     "MIN"
+   ]
+  },
+  {
+   "id": "Na5tW0pCO1yNP7Lx",
+   "headline": "Matthew Stafford reveals secret behind throws few NFL QBs can make",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/matthew-stafford-reveals-secret-behind-031404038.html",
+   "timestamp": "2026-09-18T03:14:04.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "matthew-stafford"
    ]
   },
   {
@@ -295,12 +423,15 @@
    ]
   },
   {
-   "id": "Uk0YZKtX_xoNCFZo",
-   "headline": "Roger Goodell: International NFL Expansion Likely To Target Europe",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/roger-goodell-international-nfl-expansion-likely-to-target-europe",
-   "timestamp": "2026-09-18T02:34:13.000Z",
-   "category": "breaking"
+   "id": "EszCaGAUiL3tGcz_",
+   "headline": "DJ Moore exits with shoulder injury in Bills ‘TNF’ nightmare",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dj-moore-exits-shoulder-injury-022445316.html",
+   "timestamp": "2026-09-18T02:24:45.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BUF"
+   ]
   },
   {
    "id": "LKpMU9fYXCetFvpN",
@@ -334,6 +465,20 @@
    "category": "injury",
    "team_abbrs": [
     "PHI"
+   ]
+  },
+  {
+   "id": "s111PVUn3DbTbs3G",
+   "headline": "Josh Allen christens new Bills stadium with historic start to season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-allen-christens-bills-stadium-021342302.html",
+   "timestamp": "2026-09-18T02:13:42.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen"
+   ],
+   "team_abbrs": [
+    "BUF"
    ]
   },
   {
@@ -1565,156 +1710,6 @@
    "category": "practice",
    "team_abbrs": [
     "WAS"
-   ]
-  },
-  {
-   "id": "Y0k_cfOuPupOiwEa",
-   "headline": "Week 2 picks: Raiders-Chargers prediction, Silver and Black Pride’s Pick’em competition!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-2-picks-raiders-chargers-200900241.html",
-   "timestamp": "2026-09-17T20:09:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC",
-    "LV"
-   ]
-  },
-  {
-   "id": "D0C-wieELaFN6pf7",
-   "headline": "Bills-Lions Thursday Night Football odds, betting: 1 bettor has $1 million wager on Lions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/bills-lions-thursday-night-football-odds-betting-1-bettor-has-1-million-wager-on-lions-195742843.html",
-   "timestamp": "2026-09-17T19:57:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "DET"
-   ]
-  },
-  {
-   "id": "EURECDshmjTTEo7r",
-   "headline": "As Cowboys' defense is reminded NFL 'isn’t a fairy tale,' DC Christian Parker holds himself accountable first",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/as-cowboys-defense-is-reminded-nfl-isnt-a-fairy-tale-dc-christian-parker-holds-himself-accountable-first-194715853.html",
-   "timestamp": "2026-09-17T19:47:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "fac1Afqm8tSnWNfn",
-   "headline": "49ers Try Out DT Larry Ogunjobi",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/49ers-try-out-dt-larry-ogunjobi",
-   "timestamp": "2026-09-17T19:36:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "59fVE6SF6w9sHodI",
-   "headline": "Today's top games to watch, best bets, odds: Bills vs. Lions, Pitt vs. Syracuse, MLB and more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-bills-vs-lions-pitt-vs-syracuse-mlb-and-more/",
-   "timestamp": "2026-09-17T19:35:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "DET"
-   ]
-  },
-  {
-   "id": "nQoC58OdK_Icyf7I",
-   "headline": "Fantasy Football Week 2 Toolkit: Rankings, sleepers, start/sit advice and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-2-toolkit-rankings-sleepers-startsit-advice-and-more-192048643.html",
-   "timestamp": "2026-09-17T19:20:48.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "vKTqm3Fx_DYcehKA",
-   "headline": "Zay Flowers injury: Who will step up if Ravens star WR misses Week 2 matchup against Saints?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/zay-flowers-injury-who-will-step-up-baltimore-ravens-new-orleans-saints/",
-   "timestamp": "2026-09-17T19:09:27.000Z",
-   "category": "injury",
-   "player_ids": [
-    "zay-flowers"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "NO"
-   ]
-  },
-  {
-   "id": "zYxgu7QVOAPDOMyn",
-   "headline": "How to buy Los Angeles Chargers vs Las Vegas Raiders Week 2 NFL tickets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buy-los-angeles-chargers-vs-185554162.html",
-   "timestamp": "2026-09-17T18:55:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC",
-    "LV"
-   ]
-  },
-  {
-   "id": "Y2RDi0bcyS_-1-uk",
-   "headline": "How to buy Baltimore Ravens vs New Orleans Saints Week 2 NFL tickets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buy-baltimore-ravens-vs-orleans-184817960.html",
-   "timestamp": "2026-09-17T18:48:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "NO"
-   ]
-  },
-  {
-   "id": "x8_Of9wq7GPo4IYQ",
-   "headline": "Rams Place DE Myles Garrett On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/rams-to-place-de-myles-garrett-on-ir",
-   "timestamp": "2026-09-17T18:43:30.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "6eXvnlBmFYaz-W3G",
-   "headline": "How did the 49ers rookies fare in Week 1?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/did-49ers-rookies-fare-week-183648528.html",
-   "timestamp": "2026-09-17T18:36:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "sGHWHblhYW2ieZIS",
-   "headline": "Scouting New York Jets kicker Blake Grupe",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/scouting-york-jets-kicker-blake-183000925.html",
-   "timestamp": "2026-09-17T18:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "edOyWhE5OBZV9oQ0",
-   "headline": "5 biggest matchup advantages in Detroit Lions vs. Buffalo Bills",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-biggest-matchup-advantages-detroit-183000977.html",
-   "timestamp": "2026-09-17T18:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "DET"
    ]
   }
  ]
