@@ -216,6 +216,24 @@ export interface HitRates {
  * the hit-rate records. The band set lives in the model repo; this keeps
  * adding one from being a type change on this side too.
  */
+/**
+ * A model input's key as a label.
+ *
+ * These printed as the raw key with underscores spaced, so every short form
+ * was lower case: "wopr prev season", "fg att r5", "implied total opp". Short
+ * forms are capitalized as the game model's EPA and CPOE are, and a yardage
+ * band written with underscores ("fg_made_50_59") reads as the range it is.
+ * A key with none of these still renders, spaced, rather than disappearing.
+ */
+const SHORT_FORMS = /\b(wopr|fg|fp|pat|att|pct|opp|prev|qb|td|r\d+)\b/g;
+
+export function driverLabel(feature: string): string {
+  return feature
+    .replace(/_(\d+)_(\d+)(?=_|$)/g, "_$1-$2")
+    .replace(/_/g, " ")
+    .replace(SHORT_FORMS, (m) => m.toUpperCase());
+}
+
 export const bandValue = (row: object, key: string): number =>
   (row as Record<string, number>)[key] ?? 0;
 

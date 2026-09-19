@@ -3,6 +3,7 @@ import { PositionBadge } from "@/components/PlayerLink";
 import {
   FM_CONFIG, FM_DRIVERS, FM_METRICS, FM_POSITION_NAME, FM_POSITIONS, FM_SCORING,
   FM_SPAN,
+  driverLabel,
 } from "@/lib/fantasy";
 import type { Position } from "@/lib/types";
 
@@ -132,7 +133,7 @@ export function FantasyMethod() {
                   <li key={it.feature} className="flex items-center gap-3 text-xs">
                     <span className="w-40 shrink-0 truncate tnum"
                           style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}>
-                      {it.feature.replace(/_/g, " ")}
+                      {driverLabel(it.feature)}
                     </span>
                     <span className="relative h-2 flex-1 rounded-sm"
                           style={{ background: "var(--border-subtle)" }}>

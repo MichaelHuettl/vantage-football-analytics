@@ -35,10 +35,16 @@ export function normalizeDashes(text: string): string {
 }
 
 /**
- * British spellings in copied prose.
+ * Spelling in copied prose.
  *
  * The site's copy is American (docs/STATE.md), and the prediction pipeline
  * writes "defence". Same reasoning as the dashes: their file, our page.
+ *
+ * Extended on 2026-09-19 after a spelling audit of every rendered page, and
+ * now also applied to the workbook payloads (defense.ts, kickers.ts), whose
+ * text is the operator's own shorthand. Re-running their extractors writes the
+ * workbook's wording back, so a fix to the JSON would not last; a fix here
+ * does. Compound words are corrected alongside the British spellings.
  */
 const SPELLINGS: [RegExp, string][] = [
   [/\bdefence\b/g, "defense"],
@@ -47,6 +53,33 @@ const SPELLINGS: [RegExp, string][] = [
   [/\bOffence\b/g, "Offense"],
   [/\bneighbour/g, "neighbor"],
   [/\btravelled\b/g, "traveled"],
+  [/\bmodell(ing|ed)\b/g, "model$1"],
+  [/\bModell(ing|ed)\b/g, "Model$1"],
+  // Catches "misjudgement" as well as "judgement".
+  [/([Jj])udgement/g, "$1udgment"],
+  [/\b[Ss]uper ?[Bb]owl\b/g, "Super Bowl"],
+  [/\bredzone\b/g, "red zone"],
+  [/\bRedzone\b/g, "Red zone"],
+];
+
+/**
+ * Player names the source text misspells or shortens, corrected to the name the
+ * rest of the site uses.
+ *
+ * Each was found by comparing every name on the rendered site with the
+ * nflverse player register, and confirmed there before being added. Scoped to
+ * the full name, so a correction cannot touch a different player who shares a
+ * surname.
+ */
+const NAMES: [RegExp, string][] = [
+  [/\bNnamdi Madubike\b/g, "Nnamdi Madubuike"], // BAL DT
+  [/\bMadubike\b/g, "Madubuike"],
+  [/\bRashaan Gary\b/g, "Rashan Gary"], // one A
+  [/\bMiles Garrett\b/g, "Myles Garrett"],
+  // Not a misspelling: the workbook's short form, where every other page says
+  // Kenneth Walker. Charts label him from a separate `short` field
+  // ("K. Walker"), so this lengthens no chart label.
+  [/\bKen Walker\b/g, "Kenneth Walker"],
 ];
 
 /** Every string in a copied payload, rewritten. Keys are left alone. */
@@ -54,6 +87,7 @@ export function normalizeProse<T>(node: T): T {
   if (typeof node === "string") {
     let s = normalizeDashes(node);
     for (const [rx, to] of SPELLINGS) s = s.replace(rx, to);
+    for (const [rx, to] of NAMES) s = s.replace(rx, to);
     return s as unknown as T;
   }
   if (Array.isArray(node)) return node.map(normalizeProse) as unknown as T;

@@ -1,4 +1,5 @@
 import rbFile from "@/data/rb-charts.json";
+import { normalizeProse } from "./prose";
 import rbMatchupsFile from "@/data/rb-matchups.json";
 import teFile from "@/data/te-charts.json";
 import wrFile from "@/data/wr-charts.json";
@@ -96,7 +97,10 @@ interface RbCharts {
   };
 }
 
-const file = rbFile as unknown as RbCharts;
+// Normalised where it enters, like defense.ts and kickers.ts. rb_charts.py still
+// targets an older workbook (docs/STATE.md), so a correction made in the JSON
+// would not survive the next run of it; one made here does.
+const file = normalizeProse(rbFile as unknown as RbCharts);
 
 export const RB_CHARTS = file.data;
 export const RB_SEASON = file.season;

@@ -279,8 +279,11 @@ export function Methodology() {
       <tr className="border-b" style={{ borderColor: "var(--border-subtle)" }}>
         <td className="py-2">
           {name}
+          {/* A real space as well as the margin, so the text reads "The
+              betting market best" rather than "marketbest" to a screen reader. */}
+          {best && " "}
           {best && (
-            <span className="ml-2 text-xs" style={{ color: "var(--text-muted)" }}>
+            <span className="ml-1 text-xs" style={{ color: "var(--text-muted)" }}>
               best
             </span>
           )}

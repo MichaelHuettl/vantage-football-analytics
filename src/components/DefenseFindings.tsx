@@ -75,9 +75,13 @@ export function DefenseFindings() {
                 >
                   <td className="px-3 py-2">
                     <span style={{ color: tone(m) }}>{m.label}</span>
+                    {/* A real space, not only a margin: with ml-2 alone the
+                        text read "Allowedread from the bottom" to a screen
+                        reader and in a copy-paste, though it looked right. */}
+                    {m.direction === "worst-first" && " "}
                     {m.direction === "worst-first" && (
                       <span
-                        className="ml-2 text-xs"
+                        className="ml-1 text-xs"
                         style={{ color: "var(--text-muted)" }}
                       >
                         read from the bottom

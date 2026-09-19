@@ -201,7 +201,7 @@ function Concentration() {
       </ul>
       <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         {MISS_MARGINS[0].misses} of {MISS_HEADLINE.misses} misses were lost by a
-        field goal or less. Those are not misjudgements. A one-score game is near a coin flip whatever was known beforehand. The{" "}
+        field goal or less. Those are not misjudgments. A one-score game is near a coin flip whatever was known beforehand. The{" "}
         {MISS_MARGINS[MISS_MARGINS.length - 1].misses} lost by fifteen or more are
         the ones worth interrogating.
       </p>

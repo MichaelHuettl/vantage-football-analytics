@@ -82,7 +82,7 @@ export function ConfidenceTiers() {
       <h3 className="eyebrow mt-10">Being choosier buys accuracy, and costs coverage</h3>
       <p className="mt-2 max-w-3xl text-sm" style={{ color: "var(--text-secondary)" }}>
         Each row is the same model, ignoring the games below a threshold. Accuracy
-        rises only because the hard games have been dropped. The modelling does not improve down the table.
+        rises only because the hard games have been dropped. The modeling does not improve down the table.
       </p>
       <ul className="mt-4 flex flex-col gap-2">
         {PRED_TIERS.cumulative.map((c) => (

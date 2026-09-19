@@ -1,4 +1,5 @@
 import defenseFile from "@/data/defense-charts.json";
+import { normalizeProse } from "./prose";
 
 export interface TeamRef {
   name: string;
@@ -163,7 +164,10 @@ interface DefenseFile {
   };
 }
 
-const file = defenseFile as unknown as DefenseFile;
+// Normalised where it enters, like the prediction payloads (docs/STATE.md,
+// open item 19): the workbook's spellings and any em dash a re-extraction
+// brings back are corrected here rather than in a JSON the next run rewrites.
+const file = normalizeProse(defenseFile as unknown as DefenseFile);
 
 export const DEFENSE = file.data;
 export const DEFENSE_UPDATED = file.updated;

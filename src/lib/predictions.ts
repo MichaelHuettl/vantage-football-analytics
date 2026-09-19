@@ -221,6 +221,11 @@ const TERMS: [RegExp, string][] = [
   [/\broof closed\b/, "indoor roof"],
   [/\brest diff\b/, "rest advantage"],
   [/\bsuccess proxy\b/, "success rate"],
+  // Short forms in capitals, as EPA and CPOE already are. Added 2026-09-19:
+  // these printed as "Team qbr" and "Home inj qb out".
+  [/\bqbr\b/g, "QBR"],
+  [/\bqb\b/g, "QB"],
+  [/\binj\b/g, "INJ"],
 ];
 
 export function featureLabel(feature: string): string {

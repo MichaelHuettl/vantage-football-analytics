@@ -1,4 +1,5 @@
 import kickerFile from "@/data/kicker-charts.json";
+import { normalizeProse } from "./prose";
 
 export interface ScoringRow {
   rank: number;
@@ -91,7 +92,8 @@ interface KickerFile {
   };
 }
 
-const file = kickerFile as unknown as KickerFile;
+// Normalised where it enters, for the same reason as defense.ts.
+const file = normalizeProse(kickerFile as unknown as KickerFile);
 
 export const KICKERS = file.data;
 export const KICKER_UPDATED = file.updated;
