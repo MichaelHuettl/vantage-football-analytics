@@ -4,7 +4,7 @@ Read `docs/BRIEF.md` first — it defines the `§` references in code comments.
 This file records where the build actually is, what was decided against the
 brief, and what is still open.
 
-Last updated: 2026-08-30.
+Last updated: 2026-09-19.
 
 ---
 
@@ -20,8 +20,12 @@ If you are picking this up cold, in this order:
 3. **`git log`** — every change carries its reasoning in the commit message.
    `git log --oneline -30` is a faster history than any summary of it.
 
-**The workbook is the source and it is versioned.** The current one is
-`~/Downloads/2026-2027 Fantasy Football Analytics (Original) (4).xlsx`.
+**The workbook is the source and it is versioned.** The newest is
+`~/Downloads/2026-2027 Vantage Football Analytics (Original).xlsx`, the first
+named "Vantage" rather than "Fantasy"; only `weekly_rankings.py` reads it so
+far. The chart extractors still name
+`~/Downloads/2026-2027 Fantasy Football Analytics (Original) (4).xlsx`, and
+`rb_charts.py` the `(2)` before it (open item 10).
 Each new version the operator sends is a new file, and **sheet numbers and row
 numbers both shift between them** — the (4) sheet inserted success-rate and
 DVOA blocks at rows 115-146 and pushed everything below down, and moved a
@@ -29,10 +33,10 @@ coverage column from F to G. Every extractor names the version it targets in
 `DEFAULT_WB`; when a new one arrives, re-run each script and read the row map
 before trusting the output.
 
-**Nine extractors feed the site** and write JSON into `src/data/`. The first
-five read the workbook and the last four read a PDF, the nflverse export and the
-prediction pipeline's artifacts instead — except that `wr_charts.py` sits on
-both sides, and is the only one that does:
+**Thirteen extractors feed the site** and write JSON into `src/data/`. Six read
+the workbook; the rest read a PDF, the nflverse export, the prediction
+pipeline, hand transcriptions or the film data. `wr_charts.py` reads both the
+workbook and the nflverse export:
 
 | Script | Writes | Covers |
 | --- | --- | --- |
@@ -47,10 +51,16 @@ both sides, and is the only one that does:
 | `scripts/curated/fantasy_model.py` | `fantasy-model.json` | Fantasy projections, accuracy, boards (**copies a payload, computes nothing**) |
 | `scripts/curated/rb_matchups.py` | `rb-matchups.json` | Run-defence matchup tables, 5 seasons (**hand transcription from screenshots, validated before it emits**) |
 | `scripts/curated/game_predictions_full_season.py` | `game-predictions.json` | All 18 weeks of predictions (**runs the peer session's pipeline without editing it**) |
+| `scripts/curated/weekly_rankings.py` | `rankings/week-N.json`, `players.json` | Weekly rankings from the **Rankings** sheet of the new "Vantage" workbook, found by name. `--sync-players` adds new players from the nflverse roster CSV and fetches NFL.com headshots |
+| `scripts/curated/film_summary.py` | `film-summary-gb-det-2025-w1.json` | "What Green Bay ran", from the film data plus a hand transcription of the plates' grey motion lines |
 
-**Nothing is scheduled.** There is no git remote, so no GitHub Action has ever
-run. Every feed and fetch happens when someone types the command (see open
-item 1 and the Commands section).
+**One thing is scheduled, and it is busier than it looks.** The repo reached
+GitHub (`MichaelHuettl/vantage`, private) on 2026-09-01, and
+`.github/workflows/news.yml` has run on its 30-minute cron ever since: about 480
+commits to `main` by 2026-09-19, each touching only `src/data/news.json`. That
+means local `main` falls behind within the hour, and a host that deploys on
+push rebuilds about 26 times a day. See open item 21. Everything else runs when
+someone types the command, or pulls at request time.
 
 **Published analysis** (private artifacts, shareable from their own pages):
 - Kicker: what predicts a kicker — https://claude.ai/code/artifact/659c7318-1074-4920-85ab-5fac3b13cc90
@@ -69,16 +79,16 @@ build` with a line number instead of shipping a broken page.
 
 | Section | State |
 | --- | --- |
-| Home | Built. Lambeau hero, eight section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
-| Rankings | **Live with real data** — 120 players, 6 positions, PPR draft ranks |
+| Home | Built. Lambeau hero with **"By Michael Huettl"** under the lockup (also in the footer and metadata, from `src/lib/site.ts`), eight section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
+| Rankings | **Draft and weekly.** Draft: 120 players, 6 positions, PPR, the operator's hand order. Weekly: Week 1 (updated 2026-09-08) and Week 2 (2026-09-16), up to 25 a position; "Weekly" opens on the latest week. No rest-of-season scope |
 | Positional Data | Index cards carry a photo per position in a shared 2:1 frame, and head on `evaluated_on` — the family of statistics a position is judged on — Six pages, and **all six are built** — one column each: methodology, then the evidence. The two-column slot-and-pool placeholder is no longer used by any position |
 | Injury Database | **Season tracker pulls live** — the camp section is now a league-wide table on the news page's pattern, pulled at request time and re-rendered on `AutoRefresh`. The 58 hand-authored records are the floor and merge *under* the wire, never overwritten; a wire status and a written record sit in adjacent columns and the row says so where they disagree. Team filter in the URL. Weekly report empty until Week 1 |
-| Film | **One sample breakdown**, rebuilt from the operator's own PowerPoint template, above a by-team index over all 32 clubs whose cards are all empty. `PlayDiagram`, `/film/[concept]` and the `PlayConcept` shape are all kept |
-| Game Tracker | **All 18 weeks navigable** — 272 matchups, week selector, key players per team. Lines/scores/weather come from `npm run games` |
+| Film | An in-production notice, then **Lions at Packers, Week 1 2025**: a "What Green Bay ran" summary (call sheet, halves, downs, passing, running, motion, coverage faced) above all 47 plays. Plates are cropped to the field and their info fields printed as text. `PlayDiagram`, `/film/[concept]` and `film-sample.json` are kept but not rendered |
+| Game Tracker | **Pulls live** — scores, game state and the current line from CBS, forecasts from nflweather, merged over the 272-game schedule at request time. Opens on the current week by the calendar. See open item 3 |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
 | Fantasy Football Model | **Built**, at `/fantasy-model` — a 1-point-PPR projection model over 153,026 player-weeks, 1999-2025. Four tabs: method, accuracy, the tested 2025 season and the 2026 board. The accuracy tab **opens with a conclusion panel** — what holds up, what does not, and how much room is left against a measured ceiling (an oracle knowing each player's own season median hits 78.5% at the 8-point band; the model reaches 94% of that) — then publishes **hit rates as well as average error**, at two scales. Weekly: 73.5% of startable player-weeks within **8** points against 67.7% for recent form. Season-long: 63.6% of seasons within **40** points against 61.1% for repeating last year, measured **from the model's projection on each player's first row of the season**, which is the only version of that number a drafter could have had. **Both bands were chosen on the size of the edge, not on significance** — see open item 15. `hit_rates.py` in the model repo computes both; the export **fails rather than omits** if it has not run. See open item 14. Every board is scoped to a position and the position is in the URL. The 2026 board **only recommends players with sixteen prior games** and names the 24 it excludes, with the rank each would have held (see open item 13). Payload copied from `~/Desktop/Claude Code/fantasy-model/` |
 | Game Prediction Model | **Built**, at `/model` — methodology, confidence tiers, a **case study of every miss**, and a page per game for 16 week-one matchups. Named by the operator on 2026-08-21; the route is the short `/model` rather than the full name. The payload file keeps its `game-predictions.json` name — that is the prediction pipeline's export filename and this repo only copies it |
-| Player pages | 120 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
+| Player pages | 168 generated. **79 carry a profile** — season line, Next Gen, year-to-year, game log. The rest say plainly that there is nothing recorded |
 | Glossary | **Rebuilt 2026-08-21** — 67 terms in 9 groups, each with a definition, what a good value looks like, its source (nflverse, Next Gen, 4for4, workbook, market, model) and the pages it appears on. It had 6 entries while the home page promised full coverage |
 
 ## Departures from the brief, and why
@@ -108,6 +118,12 @@ build` with a line number instead of shipping a broken page.
     place the site now contradicts it. Flagged to the operator when it went in.
     If the rule is meant to cover photography as well, this is the single file to
     swap; `whiteboard.jpg` is free again and is what that page used before.
+- **The game tracker's sources are not §4.3's** (§4.3, §5.5). The brief names
+  nflverse schedules for lines and Open-Meteo for weather. Since 2026-09-19 the
+  tracker pulls scores, state and the current line from CBS and forecasts from
+  nflweather at request time, the sources the operator named. ESPN, which the
+  old `npm run games` read, is not used on the page: its robots.txt names
+  `anthropic-ai` with `Disallow: /`.
 - **Return timelines are reported, never estimated** (§5.3). Injury records
   carry a `timeline` only alongside an `attribution`. Reporting that a coach
   said Week 1 is journalism; asserting a return date is the medical claim the
@@ -356,14 +372,24 @@ build` with a line number instead of shipping a broken page.
    - **The scatters and tables compute nothing.** Medians, extents, quartiles,
      which points get a name and the order they are placed in all come out of
      the Python.
-3. **Games is fetched, not authored, and nothing schedules the fetch.**
-   `npm run games` fills lines, implied totals, scores, per-team leaders and
-   weather; by default it does the weeks with a game between 7 days ago and 14
-   days ahead, so in season it is a weekly command. Like the news feeds, it
-   only runs when someone runs it — see item 1. Week 1 lines are loaded;
-   everything else waits on the season. The defensive leader is ESPN's sack
-   leader, falling back to tackles: neither is "who decided it", so it is worth
-   overriding by hand on a game that turned on one play.
+3. **The game tracker pulls live, and its in-progress state has not met a live
+   game.** Rewritten 2026-09-19. `src/lib/live-games.ts` pulls CBS's week
+   scoreboard and nflweather's week page at request time, and merges both over
+   `schedule.json`, which stays the floor. The parsers are in
+   `scoreboard-parse.ts` with no runtime imports so they can be tested with
+   plain `node` against saved pages.
+   - **Verified against real pages**: every Week 1 final equals the sum of its
+     quarters, overtime included; line direction was read from all 15 Week 2
+     pregame cards (the away cell is the total, the home cell the home side's
+     spread, which is `schedule.json`'s convention); and nflweather's four dome
+     markings fall on exactly the site's four retractable venues.
+   - **Not verified: a live game.** It was built on a Saturday. The
+     in-progress card is parsed defensively and falls back to the schedule, but
+     check `/games` during a game: the card should read "Live" with CBS's clock.
+   - **Known gaps.** No closing line once a game starts, because CBS drops it at
+     kickoff, so Week 1 keeps its August lines. No per-game leaders, so a
+     finished card lists the team's key players under "Key players".
+   - **`npm run games` is redundant** and still reads ESPN. Retire it.
 4. ~~**Daniel Carlson is ranked K16 and unsigned.**~~ **Closed.** The operator
    made the editorial call: an unsigned kicker does not belong on a draft
    board, so Carlson is off the K board entirely and Chase McLaughlin is in at
@@ -379,6 +405,13 @@ build` with a line number instead of shipping a broken page.
    - **The deck clips itself and the original still does.** Info boxes 0.81in
      tall at 5.02in on a 5.625in slide: Time, Outcome and DEF were cut off every
      slide. The render grows the canvas to 5.875in on a copy.
+   - **The page no longer shows the deck's info box** (2026-09-19). Its fixed
+     text frames ran a long score into Down/Distance and a long outcome into
+     DEF. Every field was already in the payload, so the plate is cropped to the
+     field by CSS (`PLATE_FIELD_RATIO`, measured at row 1272 of 1504) and the
+     fields print as text. The image files are untouched.
+   - **A summary sits above the reel**, from `film_summary.py`: what the
+     offense ran, since the deck records the defense and no formation.
    - **Three labels were normalised at his request** — bold label with plain
      value, "Outcome" replacing Result and Playcall, DEF filled from Pre-play on
      slides 2, 20 and 41. This reversed his earlier "do not change any slides".
@@ -457,6 +490,10 @@ build` with a line number instead of shipping a broken page.
    a two-versions-old sheet. Nothing is wrong on the page today — `rb-charts.json`
    was generated from the version the script named at the time — but the next
    run needs either the path argument or a remap against `(4)` first.
+   **Since 2026-09-19 a newer workbook exists**, the "Vantage" file, and every
+   chart extractor predates it. `rb-charts.json`, `defense-charts.json` and
+   `kicker-charts.json` now pass through `normalizeProse` as they load, so a
+   re-run cannot bring back the spellings and names fixed there.
 11. **The prediction head-to-head cannot show the model's heaviest inputs.**
    `model-features.json` publishes the full 55-feature list and
    `feature_importance` ranks twelve, but eight of those twelve have no
@@ -577,21 +614,22 @@ build` with a line number instead of shipping a broken page.
       asking for a supported `scoring_horizon` config. **When it lands, delete
       the workaround script** rather than keeping both.
 
-18. **Weekly and rest-of-season rankings are an addressable empty location.**
-    Added 2026-08-30. `/rankings?scope=week&week=N` and `?scope=ros` exist, with
-    an 18-week picker; all six lists are still draft-scope, so both render an
-    empty state naming the file to create *and* the `content.ts` import it needs.
-    `content.ts` imports statically on purpose — files under `src/` are
-    typechecked — so a new list needs both. Three things are gated to the draft
-    scope so they cannot leak onto an empty one: the freshness stamp, the scope
-    badge, and the pre-season caveat.
+18. **Weekly rankings are published for Weeks 1 and 2; rest of season is
+    gone.** Rewritten 2026-09-19. Each week is one file, `rankings/week-N.json`,
+    holding all six positions and the date the operator gave it, imported
+    statically in `content.ts`. A week with no file is still an addressable
+    empty scope. To publish Week N: fill its block in the workbook's Rankings
+    sheet, add `N: "YYYY-MM-DD"` to `PUBLISHED` in `weekly_rankings.py`, run it
+    with `--sync-players`, then import the file and add it to `WEEKLY_FILES`.
+    A weekly list is never flagged stale: it is dated to its week by
+    construction.
 
-19. **`defense.ts` does not normalise its prose at the boundary.**
-    `prose.ts` exists and does this for the prediction payloads; the defense
-    payload does not go through it, so re-running `defense_charts.py` puts a
-    workbook em dash back into `source` along with two whitespace slips that had
-    been fixed by hand. Restored manually on 2026-08-30; the durable fix is to
-    call `normalizeDashes` where the payload enters.
+19. ~~**`defense.ts` does not normalise its prose at the boundary.**~~
+    **Closed 2026-09-19.** `defense.ts`, `kickers.ts` and the RB payload in
+    `charts.ts` now pass through `normalizeProse`, which fixes em dashes,
+    British spellings and a short list of verified player-name corrections.
+    Before each was wrapped, a dry run confirmed it changed only the intended
+    strings and none the code looks anything up by.
 
 20. **The site is one typeface, and the token layer is what made that cheap.**
     Anton, Barlow Condensed and Barlow became Roboto on 2026-08-30, via Archivo
@@ -605,8 +643,51 @@ build` with a line number instead of shipping a broken page.
     only this one has wdth 75-100 with wght 100-900. Verified at the import, in
     the share-card font's own name table, and in the live computed face.
 
+21. **The news bot commits to `main` about 26 times a day.** Added 2026-09-19.
+    400 runs from 09-04 to 09-19, all green, median 1.4 minutes, each billed up
+    to 2 minutes: roughly 1,500-1,600 billed minutes a month on a private repo
+    against a 2,000 free allowance. Every push needs `git pull --rebase` first,
+    and a host that deploys on push rebuilds each time. Its value is small now
+    that `/news` pulls live on render. The operator has not decided whether to
+    turn the schedule off or have the host skip `news.json`-only commits.
+
+22. **The host needs `NEXT_PUBLIC_SITE_URL` at build time.** The only
+    environment variable the site reads. It falls back to localhost, so without
+    it every shared link previews a broken image. The operator is moving host;
+    set it before the first build there.
+
+23. **Stat lines still use lower-case short forms**: "15 tgt · 55 rec yds",
+    "Rush att", "ppg". Model labels were capitalised on 2026-09-19 at the
+    operator's request; these were not in scope.
+
+24. **Git identity is unset**, so every commit's author is the machine-derived
+    `michaelhuettl@Michaels-MacBook-Pro.local`, which GitHub cannot link to an
+    account. The operator's call.
+
+25. **Film loose ends.** `FILM_SOURCE_NOTE` in `src/lib/film.ts` is exported and
+    no longer rendered. `/film`'s meta description still says "drawn from
+    scratch rather than clipped from a broadcast". `film.ts`'s docstring calls
+    the plays "all 47 offensive snaps", but quarter counts of 18/5/12/12 show a
+    selection. And 47 `p## 2.jpg` files in `public/img/film/gb-det-2025-w1/` are
+    the old 1080px export: gitignored, 4.5 MB on disk only.
+
+26. **Two name inconsistencies outside this repo's control.** "Joe Forson"
+    appeared on `/injuries` from the live wire; it is almost certainly Joe
+    Fortson (KC). And the fantasy model writes "Audric Estimé" where the injury
+    wire writes "Estime".
+
 ## Closed items
 
+- **Teams re-audited (2026-09-19).** All 100 existing non-DST players matched
+  the nflverse roster current through Week 2 on name plus position, with no
+  disagreement. The same roster confirms two moves the last handoff flagged:
+  Mike Evans to San Francisco and DJ Moore to Buffalo.
+- **A site-wide text audit (2026-09-19)** covered 540 rendered pages with the
+  macOS US English dictionary and the nflverse player register. It fixed
+  Madubuike, Rashan Gary, Myles Garrett, Super Bowl, red zone, modeling and
+  misjudgments; capitalised short forms in the model labels; and put real
+  spaces in three labels that read as one word to a screen reader. No em dash
+  appears in any rendered page.
 - **Team data is audited (2026-08-14).** All 100 non-DST players were checked
   against Sleeper's public roster endpoint by `scripts/audit-teams.mjs`; the 20
   defences carry their own team by construction. Every name matched on name
@@ -628,12 +709,13 @@ build` with a line number instead of shipping a broken page.
 
 | What | Where |
 | --- | --- |
-| Analytics workbook | `~/Downloads/2026-2027 Fantasy Football Analytics (Original) (4).xlsx` — **versioned; each new one is a new file and shifts rows** |
+| Analytics workbook | Newest: `~/Downloads/2026-2027 Vantage Football Analytics (Original).xlsx` (read by `weekly_rankings.py`). The chart extractors still name `... Fantasy Football Analytics (Original) (4).xlsx`. **Versioned; each new one is a new file and shifts rows** |
 | Defense scoring history | `scripts/curated/data/dst-history.json` — 2021-24 with components, transcribed from screenshots, not in the workbook |
-| Rankings source | Sheet 2 "Mock Drafts & Rankings", rows 80–99, cols B–G, labelled **"My Rankings (WIP)"** |
+| Rankings source | Draft: sheet 2 "Mock Drafts & Rankings", rows 80–99, cols B–G, labelled **"My Rankings (WIP)"**. Weekly: the **"Rankings"** sheet of the Vantage workbook, one block per week under a "Week N" header, found by name |
 | Injury source | Sheet 11 "Key Injuries" — rehab block rows 3–72, camp block rows 74–91 |
 | X screenshots | Sheet 10 "Offseason News" — 117 images in 32 team columns |
-| Headshots | `~/Desktop/Player Photos/` — 100 transparent cutouts by position |
+| Headshots | `~/Desktop/Player Photos/` — the original 100 transparent cutouts. The 39 added on 2026-09-19 are **NFL.com's**, via the Cloudinary URL on the nflverse roster, resized by the CDN (`f_png,fl_png32,c_fill,w_320,h_232`) |
+| nflverse mirror | `~/Desktop/nflverse/` — 860 parquet files and `nflverse.duckdb` with 36 views. Not a repo. The roster in it is an August snapshot; `weekly_rankings.py` downloads the current release CSV instead |
 | Photography | `~/Desktop/Claude Code/` and `Thumbnails copy/` |
 | QB statistics PDF | `2026-2027 Fantasy Football Analytics (Original) - QB Statistics.pdf` — there is no QB tab in the workbook |
 | nflverse export | `~/Desktop/Claude Code/NFL Verse Data /` (**the trailing space is real**) — what `player_profiles.py` reads |
@@ -817,6 +899,29 @@ copy claiming O-line injuries move the line.**
   no player page and no headshot, so his card falls back to initials. Adding
   him means adding a 21st kicker to the K rankings, which is a ranking decision
   rather than a data fix.
+
+### Decided 2026-08-31 to 2026-09-19
+
+- **The site is credited "By Michael Huettl"**, from `src/lib/site.ts`. "Built
+  by" was suggested on §11's grounds and declined.
+- **Wil Lutz is spelled Wil.** The operator believed "Will" was right; the NFL
+  roster says William, football name Wil. The workbook's "Will" is corrected in
+  `weekly_rankings.py`.
+- **Week 1's duplicates** resolved by the operator: Bears stay at DST 8 with the
+  Cowboys at 17; Will Reichard stays at K 12 with Ryan Fitzgerald at 16.
+- **No rest-of-season rankings**, and the draft lists are untouched by the new
+  workbook, whose Draft block differs from the operator's hand order.
+- **Headshots come from NFL.com.** The operator asked for ESPN, which blocks
+  this agent by name.
+- **The film summary is about the offense.** The deck records the defense and
+  no formation, so no formation rate is claimed. Staying-on-schedule, disguise
+  and pressure sections, the lede and the footnotes were cut at the operator's
+  request. Motion is the plates' grey line, 20 of 47; play 10's jet motion is
+  drawn red and deliberately not counted.
+- **Coming soon reads** "Enjoy a sneak peek of full film from a personal
+  favorite in-person attended game." Written "peak"; shipped "peek".
+- **Short forms are in capitals** in both models' labels, and Ken Walker reads
+  Kenneth Walker (his chart label stays "K. Walker").
 
 ## Gotchas
 
@@ -1010,6 +1115,29 @@ copy claiming O-line injuries move the line.**
   Several British spellings had to be removed, and `prose.ts` also fixes the
   prediction pipeline's "defence" on the way in.
 
+- **`scrollLeft` cannot see content clipped inside a box.** It passed the
+  rankings table at 360px while an `overflow-hidden` wrapper cut the Bye column
+  off. Compare an element's right edge with its container's.
+- **`innerText` and copy-paste ignore CSS margins.** A label spaced by `ml-2`
+  alone reads as one word to a screen reader. Put a real space in.
+- **Measure layout in same-origin iframes at fixed widths.** The preview pane
+  clears viewport emulation between turns and drifts routes; an iframe inside
+  the page gives honest layout at any width, many views per call.
+- **A text crawl for spelling needs inline tags as word breaks**, not stripped
+  to nothing, or a chip beside a name reads `DENWil`.
+- **`preview_start` reads `.claude/launch.json` once a session**, and
+  `autoPort` fights Next 16's per-directory dev lock.
+- **Turbopack refuses a symlinked `node_modules`**, so builds in a `git
+  worktree` fail. Use `tsc --noEmit` there, and plant a deliberate error to
+  prove the check runs.
+- **NFL.com's image CDN needs `fl_png32`**: without it 16-bit PNGs, with
+  `q_auto` a banding palette.
+- **nflverse names need suffixes stripped and position checked**: Jr., Sr. and
+  III miss on exact match, one name matched a DL as well as an RB, and the Rams
+  are `LA`.
+- **CBS's line is gone after kickoff**, and nflweather prints an outdoor
+  forecast for games it marks as indoors.
+
 ## Commands
 
 ```
@@ -1019,15 +1147,18 @@ npm run news           # pull RSS headlines
 npm run beat           # pull X posts via Nitter
 npm run draft-injury <url>   # draft injury records for review, writes nothing
 npm run audit-teams          # check every team against the live roster, writes nothing
-npm run games                # lines, scores, leaders, weather for the current window
+npm run games                # superseded by the live pull; still reads ESPN (open item 3)
 npm run games -- --week=5    # one week
 npm run games -- --all       # the whole season
 npm run games:dry            # read and report, write nothing
+git pull --rebase            # before any push: the news bot commits to main (open item 21)
 ```
 
-The three workbook extractors are Python and are run directly, not through npm:
+The extractors are Python and are run directly, not through npm:
 
 ```
+python3 scripts/curated/weekly_rankings.py --sync-players  # -> rankings/week-N.json, players.json, headshots
+python3 scripts/curated/film_summary.py     # -> src/data/film-summary-gb-det-2025-w1.json
 python3 scripts/curated/rb_charts.py        # -> src/data/rb-charts.json
 python3 scripts/curated/kicker_charts.py    # -> src/data/kicker-charts.json
 python3 scripts/curated/defense_charts.py   # -> src/data/defense-charts.json
