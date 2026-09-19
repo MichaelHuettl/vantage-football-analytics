@@ -222,16 +222,20 @@ export default async function RankingsPage({
           </div>
         ) : (
           <div
-            className="mt-6 overflow-hidden rounded-lg border"
+            // overflow-x-auto rather than overflow-hidden. Both clip to the
+            // rounded corners, but hidden also clipped the Bye column off at
+            // 360px without anything looking wrong; auto scrolls it inside
+            // its own box instead, so an overflow can never hide data again.
+            className="mt-6 overflow-x-auto rounded-lg border"
             style={{ borderColor: "var(--border-subtle)" }}
           >
             <table className="w-full">
               <thead>
                 <tr style={{ background: "var(--surface-sunken)" }}>
-                  <Th className="w-16 text-right">Rank</Th>
+                  <Th className="w-12 text-right sm:w-16">Rank</Th>
                   <Th>{position === "DST" ? "Defense" : "Player"}</Th>
-                  <Th className="w-24">Team</Th>
-                  <Th className="w-28 text-right">Bye</Th>
+                  <Th className="w-16 sm:w-24">Team</Th>
+                  <Th className="w-12 text-right sm:w-28">Bye</Th>
                 </tr>
               </thead>
               <tbody>
@@ -242,15 +246,15 @@ export default async function RankingsPage({
                     style={{ borderColor: "var(--border-subtle)" }}
                   >
                     <td
-                      className="px-4 py-3 text-right text-lg font-bold tnum"
+                      className="px-2 py-3 text-right text-lg font-bold tnum sm:px-4"
                       style={{ fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)" }}
                     >
                       {entry.rank}
                     </td>
-                    <td className="px-4 py-3">
-                      <PlayerLink player={player} showTeam={false} />
+                    <td className="px-2 py-3 sm:px-4">
+                      <PlayerLink player={player} showTeam={false} wrap />
                     </td>
-                    <td className="px-4 py-3">
+                    <td className="px-2 py-3 sm:px-4">
                       {player.team ? (
                         <TeamChip abbr={player.team} />
                       ) : player.status === "fa" ? (
@@ -263,7 +267,7 @@ export default async function RankingsPage({
                       )}
                     </td>
                     <td
-                      className="px-4 py-3 text-right tnum"
+                      className="px-2 py-3 text-right tnum sm:px-4"
                       style={{ color: "var(--text-secondary)" }}
                     >
                       {bye ? (
@@ -338,7 +342,7 @@ function Th({
   return (
     <th
       scope="col"
-      className={`px-4 py-2.5 text-left text-xs font-bold uppercase tracking-wider ${className}`}
+      className={`px-2 py-2.5 text-left text-xs font-bold uppercase tracking-wider sm:px-4 ${className}`}
       style={{
         fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
         color: "var(--text-muted)",

@@ -135,6 +135,7 @@ export function PlayerLink({
   showTeam = true,
   showAvatar = true,
   showPhoto = true,
+  wrap = false,
 }: {
   player: Player;
   showTeam?: boolean;
@@ -143,6 +144,16 @@ export function PlayerLink({
    *  better with a flat colour tile than with 40 small faces competing with
    *  the text. */
   showPhoto?: boolean;
+  /**
+   * Let the name wrap instead of truncating. For a table column: `truncate`
+   * sets nowrap, and in an auto-sized table that makes the column's minimum
+   * width the longest name on one line. On the rankings board at 360px that
+   * was 218px for "Jaxon Smith-Njigba", which pushed the table to 404px in a
+   * 328px box and clipped the Bye column. Wrapping keeps every name readable;
+   * an ellipsis would have hidden who is ranked, which is what the table is
+   * for.
+   */
+  wrap?: boolean;
 }) {
   return (
     <Link
@@ -159,7 +170,9 @@ export function PlayerLink({
         />
       )}
       <span className="min-w-0">
-        <span className="block truncate font-semibold group-hover:underline">
+        <span
+          className={`block font-semibold group-hover:underline ${wrap ? "break-words" : "truncate"}`}
+        >
           {player.name}
         </span>
         {showTeam && (
