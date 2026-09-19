@@ -1,21 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AutoRefresh } from "@/components/AutoRefresh";
 import { DataFreshness } from "@/components/DataFreshness";
 import { GameCard } from "@/components/GameCard";
 import { Container, EmptyState } from "@/components/PageHeader";
 import { SectionHero } from "@/components/SectionHero";
-import {
-  SCHEDULE_UPDATED,
-  SCHEDULE_WEEK,
-  SEASON,
-  WEEKS,
-  gamesBySlot,
-} from "@/lib/games";
+import { SEASON, WEEKS, currentWeek, gamesBySlot } from "@/lib/games";
+import { getLiveWeek } from "@/lib/live-games";
 
 export const metadata: Metadata = {
   title: "Game Tracker",
   description:
-    "Week 1 matchups with kickoff, venue and roof, and the slots for lines, weather, scores and the players who decided each game.",
+    "Every NFL week with live scores, the market's line and implied totals, the forecast for open-air games, and key players.",
 };
 
 export default async function GamesPage({
@@ -25,8 +21,13 @@ export default async function GamesPage({
 }) {
   const params = await searchParams;
   const parsed = Number(params.week);
-  const week = WEEKS.includes(parsed) ? parsed : SCHEDULE_WEEK;
-  const slots = gamesBySlot(week);
+  const week = WEEKS.includes(parsed) ? parsed : currentWeek();
+
+  // Pulled at request time and merged over the committed schedule, like the
+  // news and injury wires. It never throws: a source that is down is reported
+  // on the page below, and the week falls back to its fixtures.
+  const live = await getLiveWeek(week);
+  const slots = gamesBySlot(live.games);
 
   return (
     <>
@@ -73,8 +74,39 @@ export default async function GamesPage({
               {SEASON}
             </span>
           </div>
-          <DataFreshness updated={SCHEDULE_UPDATED} label="Schedule" staleAfterDays={30} />
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <DataFreshness
+              updated={live.updated}
+              label={live.live ? "Scores updated" : "Schedule"}
+              staleAfterDays={live.live ? 2 : 30}
+            />
+            {live.pulledAt && (
+              <span className="text-xs tnum" style={{ color: "var(--text-muted)" }}>
+                {live.pulledAt}
+              </span>
+            )}
+            {/* Every minute while a game in this week is on; every five
+                otherwise. Either way the sources are polled no faster than the
+                cache in live-games.ts allows, so an open tab is not a scraper. */}
+            <AutoRefresh seconds={live.inWindow ? 60 : 300} />
+          </div>
         </div>
+
+        {/* Each source reported separately, as the news page does: scores and
+            weather failing are different problems for a reader (§6). */}
+        {(!live.scores.ok || !live.weather.ok) && (
+          <ul className="mt-3 flex flex-col gap-0.5 text-xs" style={{ color: "var(--text-muted)" }}>
+            {!live.scores.ok && (
+              <li>
+                Live scores and lines unavailable ({live.scores.error}). Showing the
+                committed schedule.
+              </li>
+            )}
+            {!live.weather.ok && (
+              <li>Forecasts unavailable ({live.weather.error}).</li>
+            )}
+          </ul>
+        )}
 
         {slots.length === 0 ? (
           <div className="mt-6">

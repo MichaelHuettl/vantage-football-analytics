@@ -24,6 +24,24 @@ export const WEEKS: number[] = [...new Set(GAMES.map((g) => g.week))].sort(
   (a, b) => a - b,
 );
 
+/**
+ * The week a reader most likely wants: the one holding the next game that has
+ * not finished, allowing twelve hours after a kickoff for it to be read.
+ *
+ * `schedule.json` carries a fixed `week` of 1, which was right in August and
+ * wrong from the first Thursday of the season. This moves with the calendar:
+ * Saturday shows the coming Sunday's week, Monday night still shows the week
+ * being finished, and Tuesday rolls on to the next. Past the last game it
+ * holds on the final week.
+ */
+export function currentWeek(now = Date.now()): number {
+  const cutoff = now - 12 * 3_600_000;
+  const next = GAMES.filter((g) => new Date(g.kickoff).getTime() >= cutoff).sort((a, b) =>
+    a.kickoff.localeCompare(b.kickoff),
+  )[0];
+  return next ? next.week : WEEKS[WEEKS.length - 1];
+}
+
 export function gamesForWeek(week: number): Game[] {
   return GAMES.filter((g) => g.week === week).sort((a, b) =>
     a.kickoff.localeCompare(b.kickoff),
@@ -38,9 +56,9 @@ export function gamesForWeek(week: number): Game[] {
  * sixteen equal cards. Ordering is by the timestamp, so a slot label never has
  * to be parsed back into a time.
  */
-export function gamesBySlot(week: number): { label: string; games: Game[] }[] {
+export function gamesBySlot(games: Game[]): { label: string; games: Game[] }[] {
   const slots = new Map<string, Game[]>();
-  for (const game of gamesForWeek(week)) {
+  for (const game of [...games].sort((a, b) => a.kickoff.localeCompare(b.kickoff))) {
     slots.set(game.kickoff, [...(slots.get(game.kickoff) ?? []), game]);
   }
   return [...slots.entries()]
@@ -75,8 +93,10 @@ export function kickoffTime(kickoff: string): string {
 }
 
 /** Weather is only a factor where the game is open to it. §4.3 short-circuits
- *  on roof rather than fetching a forecast nobody will read. */
+ *  on roof rather than fetching a forecast nobody will read. A retractable
+ *  roof the weather source expects closed counts as closed. */
 export function weatherApplies(game: Game): boolean {
+  if (game.roof_closed) return false;
   return game.roof === "outdoor" || game.roof === "retractable";
 }
 

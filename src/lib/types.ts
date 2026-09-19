@@ -199,9 +199,28 @@ export interface Game {
   weather?: {
     temp_f: number;
     wind_mph: number;
-    precip_pct: number;
+    /** Compass point the wind blows from, e.g. "NW". */
+    wind_dir?: string;
+    /**
+     * Chance of precipitation. Optional because the source prints it only when
+     * there is one worth printing, and a missing chance is not a 0% chance.
+     */
+    precip_pct?: number;
     summary: string;
   };
+  /**
+   * A retractable roof the weather source expects to be closed for this game.
+   * Set by the live pull from nflweather's per-game dome marking, and only
+   * ever on a `retractable` venue: it narrows the site's own roof data, it
+   * never overrides a fixed dome or an open stadium.
+   */
+  roof_closed?: boolean;
+  /**
+   * Where the game stands. Absent in the committed schedule, which knows only
+   * fixtures; filled by the live pull. `detail` is the source's own words for
+   * a live game ("3rd 5:21") and "Final" or "Final/OT" once it ends.
+   */
+  status?: { state: "pre" | "live" | "final"; detail?: string };
   /** Absent until the game is played. Absent is not zero. */
   score?: { away: number; home: number };
   leaders?: { away?: GameLeaders; home?: GameLeaders };

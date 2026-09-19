@@ -41,9 +41,7 @@ export function GameCard({ game }: { game: Game }) {
         style={{ background: "var(--surface-sunken)" }}
       >
         <span className="flex items-baseline gap-3">
-          <time dateTime={game.kickoff} className="text-sm font-bold tnum">
-            {kickoffTime(game.kickoff)}
-          </time>
+          <GameClock game={game} />
           <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
             {game.venue}
             {game.city ? `, ${game.city}` : ""}
@@ -121,6 +119,44 @@ export function GameCard({ game }: { game: Game }) {
 }
 
 /**
+ * Where the game stands, in the slot the kickoff time has always held.
+ *
+ * Before kickoff it is the kickoff time, as it was. Once the live pull reports
+ * a game on, it becomes "Live" and the source's own clock ("3rd 5:21"); after
+ * the whistle, "Final". The live marker is a green dot — the same one
+ * DataFreshness uses to mean "current" — rather than amber, because on a
+ * Sunday afternoon eight games are live at once and §7 allows amber one focal
+ * thing a screen. The word is always printed, so the dot is never the only
+ * thing carrying the state (§7).
+ */
+function GameClock({ game }: { game: Game }) {
+  const state = game.status?.state;
+  if (state === "live") {
+    return (
+      <span className="inline-flex items-baseline gap-2 text-sm font-bold tnum">
+        <span
+          aria-hidden="true"
+          className="inline-block h-2 w-2 self-center rounded-full"
+          style={{ background: "var(--color-status-full)" }}
+        />
+        <span>Live</span>
+        {game.status?.detail && (
+          <span style={{ color: "var(--text-secondary)" }}>{game.status.detail}</span>
+        )}
+      </span>
+    );
+  }
+  if (state === "final") {
+    return <span className="text-sm font-bold">{game.status?.detail ?? "Final"}</span>;
+  }
+  return (
+    <time dateTime={game.kickoff} className="text-sm font-bold tnum">
+      {kickoffTime(game.kickoff)}
+    </time>
+  );
+}
+
+/**
  * One team's column: who they are, what they scored, and the four players
  * worth naming afterwards.
  */
@@ -191,7 +227,12 @@ function TeamSide({
         <span className="font-semibold">{name}</span>
       </div>
 
-      <p className="mt-4 eyebrow">{showLeaders ? "Led the game" : "Watch"}</p>
+      {/* "Watch" is a pregame instruction. Once there is a score and no game
+          leaders to replace the list, the same four are simply the team's key
+          players, and saying "Watch" under a final would be the wrong tense. */}
+      <p className="mt-4 eyebrow">
+        {showLeaders ? "Led the game" : played ? "Key players" : "Watch"}
+      </p>
       <dl className="mt-2 flex flex-col gap-1.5">
         {rows.map(([label, entry]) => (
           <LeaderRow key={label} label={label} leader={entry} />
