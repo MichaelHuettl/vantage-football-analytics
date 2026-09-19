@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/PageHeader";
 import { Wordmark } from "@/components/Wordmark";
+import { AUTHOR, CREDIT } from "@/lib/site";
 
 const SECTION_CARDS: {
   href: string;
@@ -94,11 +95,28 @@ export default function Home() {
         <Container className="relative pb-16 pt-28 w-full">
           <div className="grid gap-10 lg:grid-cols-[1.5fr_auto] lg:items-end">
             <div>
+              {/* The author, set inside the lockup's own fitted column so it
+                  centres under the mark like a signature, rather than hanging
+                  flush left under a centred composition. The first thing on
+                  the site names who made it. Muted verb, white name, and no
+                  amber, which §7 keeps for the focal thing on a screen. */}
               <div
-                className="rise rise-1"
+                className="rise rise-1 flex w-fit flex-col items-center"
                 style={{ color: "var(--color-vantage-white)" }}
               >
                 <Wordmark size="lg" />
+                <p
+                  className="mt-5 text-sm font-semibold uppercase"
+                  style={{
+                    fontFamily: "var(--font-condensed)",
+                    fontStretch: "var(--stretch-condensed)",
+                    letterSpacing: "var(--text-eyebrow--letter-spacing)",
+                    color: "var(--color-ink-300)",
+                  }}
+                >
+                  {CREDIT}{" "}
+                  <span style={{ color: "var(--color-vantage-white)" }}>{AUTHOR}</span>
+                </p>
               </div>
 
               <h1

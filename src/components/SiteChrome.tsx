@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Goalpost } from "./Goalpost";
 import { SITE_NAV } from "@/lib/nav";
+import { AUTHOR, CREDIT } from "@/lib/site";
 
 export function SiteHeader() {
   return (
@@ -172,6 +173,10 @@ export function SiteFooter() {
                 Vantage
               </span>
             </div>
+            <p className="mt-4 text-sm" style={{ color: "var(--color-ink-400)" }}>
+              {CREDIT}{" "}
+              <span style={{ color: "var(--color-vantage-white)" }}>{AUTHOR}</span>
+            </p>
           </div>
 
           <nav aria-label="Footer">
@@ -203,7 +208,7 @@ export function SiteFooter() {
             style={{ color: "var(--color-ink-500)" }}
           >
             <p>
-              This site is a personal portfolio project, published for
+              This site is a personal portfolio project by {AUTHOR}, published for
               educational and non-profit purposes only. It is not a commercial
               product, it is not monetized, and it is not for sale.
             </p>
@@ -228,6 +233,9 @@ export function SiteFooter() {
               any player&apos;s health or availability.
             </p>
           </div>
+          <p className="mt-6 text-xs" style={{ color: "var(--color-ink-500)" }}>
+            © {new Date().getFullYear()} {AUTHOR}
+          </p>
         </div>
       </div>
     </footer>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import "./globals.css";
+import { AUTHOR } from "@/lib/site";
 
 /**
  * One family for the whole site.
@@ -48,6 +49,11 @@ export const metadata: Metadata = {
   },
   description:
     "What actually wins: the opportunity, efficiency and situation underneath the result, measured across every season there is data for.",
+  // Read by search engines and link previews, so the site is attributed to its
+  // author wherever it is shared, not only on its own pages.
+  authors: [{ name: AUTHOR }],
+  creator: AUTHOR,
+  publisher: AUTHOR,
   openGraph: {
     type: "website",
     siteName: "Vantage Football Analytics",
