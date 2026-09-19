@@ -1,7 +1,7 @@
 {
  "schema_version": 4,
  "generated_at": "2026-08-14",
- "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams audited 2026-08-14 against Sleeper's public roster endpoint: all 100 non-DST players matched on name plus position with no ambiguous or unmatched names, and the six disagreements were each confirmed against a second source before being changed. Corrections: Kyler Murray to Minnesota, Kenneth Walker to Kansas City, Travis Etienne to New Orleans, Isaiah Likely to the Giants, Chig Okonkwo to Washington, and Daniel Carlson unsigned. The 20 defences carry their own team by construction and need no audit.",
+ "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams audited 2026-08-14 against Sleeper's public roster endpoint: all 100 non-DST players matched on name plus position with no ambiguous or unmatched names, and the six disagreements were each confirmed against a second source before being changed. Corrections: Kyler Murray to Minnesota, Kenneth Walker to Kansas City, Travis Etienne to New Orleans, Isaiah Likely to the Giants, Chig Okonkwo to Washington, and Daniel Carlson unsigned. The 20 defences carry their own team by construction and need no audit. Weekly rankings added 48 more on 2026-09-19 via scripts/curated/weekly_rankings.py --sync-players: team from the nflverse roster current through week 2, headshot from the NFL.com image CDN.",
  "data": [
   {
    "id": "josh-allen",
@@ -822,6 +822,333 @@
    "position": "K",
    "team": "NE",
    "photo": "/img/headshots/andy-borregales.png"
+  },
+  {
+   "id": "def-chi",
+   "name": "Chicago Bears",
+   "position": "DST",
+   "team": "CHI"
+  },
+  {
+   "id": "def-cin",
+   "name": "Cincinnati Bengals",
+   "position": "DST",
+   "team": "CIN"
+  },
+  {
+   "id": "def-tb",
+   "name": "Tampa Bay Buccaneers",
+   "position": "DST",
+   "team": "TB"
+  },
+  {
+   "id": "def-atl",
+   "name": "Atlanta Falcons",
+   "position": "DST",
+   "team": "ATL"
+  },
+  {
+   "id": "def-nyg",
+   "name": "New York Giants",
+   "position": "DST",
+   "team": "NYG"
+  },
+  {
+   "id": "def-nyj",
+   "name": "New York Jets",
+   "position": "DST",
+   "team": "NYJ"
+  },
+  {
+   "id": "def-car",
+   "name": "Carolina Panthers",
+   "position": "DST",
+   "team": "CAR"
+  },
+  {
+   "id": "def-lv",
+   "name": "Las Vegas Raiders",
+   "position": "DST",
+   "team": "LV"
+  },
+  {
+   "id": "def-ten",
+   "name": "Tennessee Titans",
+   "position": "DST",
+   "team": "TEN"
+  },
+  {
+   "id": "daniel-carlson",
+   "name": "Daniel Carlson",
+   "position": "K",
+   "team": "NO",
+   "photo": "/img/headshots/daniel-carlson.png"
+  },
+  {
+   "id": "nick-folk",
+   "name": "Nick Folk",
+   "position": "K",
+   "team": "ATL",
+   "photo": "/img/headshots/nick-folk.png"
+  },
+  {
+   "id": "ryan-fitzgerald",
+   "name": "Ryan Fitzgerald",
+   "position": "K",
+   "team": "CAR",
+   "photo": "/img/headshots/ryan-fitzgerald.png"
+  },
+  {
+   "id": "trey-smack",
+   "name": "Trey Smack",
+   "position": "K",
+   "team": "GB",
+   "photo": "/img/headshots/trey-smack.png"
+  },
+  {
+   "id": "tyler-bass",
+   "name": "Tyler Bass",
+   "position": "K",
+   "team": "BUF",
+   "photo": "/img/headshots/tyler-bass.png"
+  },
+  {
+   "id": "bryce-young",
+   "name": "Bryce Young",
+   "position": "QB",
+   "team": "CAR",
+   "photo": "/img/headshots/bryce-young.png"
+  },
+  {
+   "id": "cj-stroud",
+   "name": "CJ Stroud",
+   "position": "QB",
+   "team": "HOU",
+   "photo": "/img/headshots/cj-stroud.png"
+  },
+  {
+   "id": "daniel-jones",
+   "name": "Daniel Jones",
+   "position": "QB",
+   "team": "IND",
+   "photo": "/img/headshots/daniel-jones.png"
+  },
+  {
+   "id": "jacoby-brissett",
+   "name": "Jacoby Brissett",
+   "position": "QB",
+   "team": "ARI",
+   "photo": "/img/headshots/jacoby-brissett.png"
+  },
+  {
+   "id": "jordan-love",
+   "name": "Jordan Love",
+   "position": "QB",
+   "team": "GB",
+   "photo": "/img/headshots/jordan-love.png"
+  },
+  {
+   "id": "bhayshul-tuten",
+   "name": "Bhayshul Tuten",
+   "position": "RB",
+   "team": "JAX",
+   "photo": "/img/headshots/bhayshul-tuten.png"
+  },
+  {
+   "id": "bucky-irving",
+   "name": "Bucky Irving",
+   "position": "RB",
+   "team": "TB",
+   "photo": "/img/headshots/bucky-irving.png"
+  },
+  {
+   "id": "chuba-hubbard",
+   "name": "Chuba Hubbard",
+   "position": "RB",
+   "team": "CAR",
+   "photo": "/img/headshots/chuba-hubbard.png"
+  },
+  {
+   "id": "david-montgomery",
+   "name": "David Montgomery",
+   "position": "RB",
+   "team": "HOU",
+   "photo": "/img/headshots/david-montgomery.png"
+  },
+  {
+   "id": "jadarian-price",
+   "name": "Jadarian Price",
+   "position": "RB",
+   "team": "SEA",
+   "photo": "/img/headshots/jadarian-price.png"
+  },
+  {
+   "id": "jaylen-warren",
+   "name": "Jaylen Warren",
+   "position": "RB",
+   "team": "PIT",
+   "photo": "/img/headshots/jaylen-warren.png"
+  },
+  {
+   "id": "quinshon-judkins",
+   "name": "Quinshon Judkins",
+   "position": "RB",
+   "team": "CLE",
+   "photo": "/img/headshots/quinshon-judkins.png"
+  },
+  {
+   "id": "rhamondre-stevenson",
+   "name": "Rhamondre Stevenson",
+   "position": "RB",
+   "team": "NE",
+   "photo": "/img/headshots/rhamondre-stevenson.png"
+  },
+  {
+   "id": "tyler-allgeier",
+   "name": "Tyler Allgeier",
+   "position": "RB",
+   "team": "ARI",
+   "photo": "/img/headshots/tyler-allgeier.png"
+  },
+  {
+   "id": "cade-otton",
+   "name": "Cade Otton",
+   "position": "TE",
+   "team": "TB",
+   "photo": "/img/headshots/cade-otton.png"
+  },
+  {
+   "id": "dalton-schultz",
+   "name": "Dalton Schultz",
+   "position": "TE",
+   "team": "HOU",
+   "photo": "/img/headshots/dalton-schultz.png"
+  },
+  {
+   "id": "gunnar-helm",
+   "name": "Gunnar Helm",
+   "position": "TE",
+   "team": "TEN",
+   "photo": "/img/headshots/gunnar-helm.png"
+  },
+  {
+   "id": "hunter-henry",
+   "name": "Hunter Henry",
+   "position": "TE",
+   "team": "NE",
+   "photo": "/img/headshots/hunter-henry.png"
+  },
+  {
+   "id": "kenyon-sadiq",
+   "name": "Kenyon Sadiq",
+   "position": "TE",
+   "team": "NYJ",
+   "photo": "/img/headshots/kenyon-sadiq.png"
+  },
+  {
+   "id": "michael-mayer",
+   "name": "Michael Mayer",
+   "position": "TE",
+   "team": "LV",
+   "photo": "/img/headshots/michael-mayer.png"
+  },
+  {
+   "id": "mike-gesicki",
+   "name": "Mike Gesicki",
+   "position": "TE",
+   "team": "CIN",
+   "photo": "/img/headshots/mike-gesicki.png"
+  },
+  {
+   "id": "pat-freiermuth",
+   "name": "Pat Freiermuth",
+   "position": "TE",
+   "team": "PIT",
+   "photo": "/img/headshots/pat-freiermuth.png"
+  },
+  {
+   "id": "chris-godwin",
+   "name": "Chris Godwin",
+   "position": "WR",
+   "team": "TB",
+   "photo": "/img/headshots/chris-godwin.png"
+  },
+  {
+   "id": "christian-watson",
+   "name": "Christian Watson",
+   "position": "WR",
+   "team": "GB",
+   "photo": "/img/headshots/christian-watson.png"
+  },
+  {
+   "id": "dj-moore",
+   "name": "DJ Moore",
+   "position": "WR",
+   "team": "BUF",
+   "photo": "/img/headshots/dj-moore.png"
+  },
+  {
+   "id": "deebo-samuel",
+   "name": "Deebo Samuel",
+   "position": "WR",
+   "team": "SF",
+   "photo": "/img/headshots/deebo-samuel.png"
+  },
+  {
+   "id": "garrett-wilson",
+   "name": "Garrett Wilson",
+   "position": "WR",
+   "team": "NYJ",
+   "photo": "/img/headshots/garrett-wilson.png"
+  },
+  {
+   "id": "jalen-coker",
+   "name": "Jalen Coker",
+   "position": "WR",
+   "team": "CAR",
+   "photo": "/img/headshots/jalen-coker.png"
+  },
+  {
+   "id": "luther-burden",
+   "name": "Luther Burden",
+   "position": "WR",
+   "team": "CHI",
+   "photo": "/img/headshots/luther-burden.png"
+  },
+  {
+   "id": "malik-nabers",
+   "name": "Malik Nabers",
+   "position": "WR",
+   "team": "NYG",
+   "photo": "/img/headshots/malik-nabers.png"
+  },
+  {
+   "id": "matthew-golden",
+   "name": "Matthew Golden",
+   "position": "WR",
+   "team": "GB",
+   "photo": "/img/headshots/matthew-golden.png"
+  },
+  {
+   "id": "mike-evans",
+   "name": "Mike Evans",
+   "position": "WR",
+   "team": "SF",
+   "photo": "/img/headshots/mike-evans.png"
+  },
+  {
+   "id": "parker-washington",
+   "name": "Parker Washington",
+   "position": "WR",
+   "team": "JAX",
+   "photo": "/img/headshots/parker-washington.png"
+  },
+  {
+   "id": "tee-higgins",
+   "name": "Tee Higgins",
+   "position": "WR",
+   "team": "CIN",
+   "photo": "/img/headshots/tee-higgins.png"
   }
  ]
 }

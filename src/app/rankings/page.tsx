@@ -8,7 +8,9 @@ import { SectionHero } from "@/components/SectionHero";
 import { FreeAgentChip, TeamChip } from "@/components/TeamChip";
 import {
   BYE_SEASON,
+  LATEST_WEEK,
   getRankingList,
+  getWeeklyList,
   rankedEntries,
   validateContent,
 } from "@/lib/content";
@@ -18,7 +20,7 @@ import type { Position } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Rankings",
   description:
-    "2026 draft rankings, PPR, 1-20 by position, with team and bye week.",
+    "2026 draft and weekly rankings, PPR, by position, with team and bye week.",
 };
 
 const POSITION_LABEL: Record<Position, string> = {
@@ -38,18 +40,15 @@ function parsePosition(v: string | undefined): Position {
 /**
  * Where a ranking sits in the season, in the URL so it is linkable (§5.1).
  *
- * Only `draft` has data. The other two are built out because the operator
- * asked for the location on 2026-08-28, before there is anything to put in it,
- * and an addressable empty scope is what lets the data arrive without a code
- * change to the page. `content.ts` imports its ranking files statically and
- * deliberately — files under `src/` are typechecked, so a bad edit fails the
- * build with a line number — which is why each new list needs an import there
- * as well as a file. The empty states below name both.
+ * Two scopes. Rest of season was dropped on 2026-09-19 at the operator's
+ * request: the site publishes draft and weekly rankings and nothing between
+ * them. A week with no list is still an addressable empty scope, which is what
+ * lets next week's list arrive without a change to this page — only a file and
+ * its import in `content.ts`, which the empty state names.
  */
 const SCOPES = [
   { key: "draft", label: "Draft" },
   { key: "week", label: "Weekly" },
-  { key: "ros", label: "Rest of season" },
 ] as const;
 type Scope = (typeof SCOPES)[number]["key"];
 
@@ -66,12 +65,15 @@ export default async function RankingsPage({
   const scope: Scope =
     (SCOPES.find((s) => s.key === params.scope)?.key as Scope) ?? "draft";
   const parsedWeek = Number(params.week);
-  const week = WEEKS.includes(parsedWeek) ? parsedWeek : 1;
+  // A bare "Weekly" link lands on the latest published week rather than
+  // Week 1: once the season is under way, last week's list is the stale one.
+  const week = WEEKS.includes(parsedWeek) ? parsedWeek : (LATEST_WEEK ?? 1);
 
-  const list = getRankingList(position);
-  // Draft is the only scope carrying a list today. Weekly and rest-of-season
-  // resolve to nothing until their files exist, and the page says where.
-  const rows = scope === "draft" ? rankedEntries(position) : [];
+  const draft = getRankingList(position);
+  const weekly = scope === "week" ? getWeeklyList(week, position) : undefined;
+  // The list on screen: the draft board, or this week's list if it exists.
+  const list = scope === "draft" ? draft : weekly;
+  const rows = list ? rankedEntries(list) : [];
   const problems = validateContent();
 
   const q = (over: { pos?: string; scope?: Scope; week?: number }) => {
@@ -167,11 +169,7 @@ export default async function RankingsPage({
                 color: "var(--surface-page)",
               }}
             >
-              {scope === "draft"
-                ? `${list.scope} rankings`
-                : scope === "ros"
-                  ? "Rest of season"
-                  : `Week ${week}`}
+              {scope === "draft" ? `${draft.scope} rankings` : `Week ${week}`}
             </span>
             <span
               className="inline-flex h-6 items-center rounded px-2 text-xs font-bold uppercase tracking-wider"
@@ -181,14 +179,24 @@ export default async function RankingsPage({
                 boxShadow: "inset 0 0 0 1px var(--border-strong)",
               }}
             >
-              {list.format} scoring
+              {(list ?? draft).format} scoring
             </span>
           </div>
-          {/* Only the draft list has a date. Stamping the draft file's date on
-              an empty weekly scope would claim a freshness that scope does not
-              have (§6). */}
-          {scope === "draft" && (
-            <DataFreshness updated={list.updated} label="Rankings updated" staleAfterDays={21} />
+          {/* Each list carries its own date, and an unpublished week shows
+              none: stamping the draft file's date on an empty week would claim
+              a freshness that week does not have (§6).
+
+              A weekly list is never flagged stale. It is dated to its week by
+              construction and the week is on screen, so a finished week's list
+              is a record rather than an out-of-date one — Week 1's would
+              otherwise read "11 days ago" in the warning colour on a list
+              that is exactly as current as it will ever be. */}
+          {list && (
+            <DataFreshness
+              updated={list.updated}
+              label="Rankings updated"
+              staleAfterDays={scope === "week" ? Number.POSITIVE_INFINITY : 21}
+            />
           )}
         </div>
 
@@ -203,16 +211,12 @@ export default async function RankingsPage({
               title={
                 scope === "draft"
                   ? `No ${position} draft rankings published yet.`
-                  : scope === "ros"
-                    ? `No ${position} rest-of-season rankings yet.`
-                    : `No ${position} rankings for week ${week} yet.`
+                  : `No ${position} rankings for week ${week} yet.`
               }
               direction={
                 scope === "draft"
                   ? `Add entries to src/data/rankings/${position.toLowerCase()}.json.`
-                  : scope === "ros"
-                    ? `Add src/data/rankings/ros/${position.toLowerCase()}.json and import it in src/lib/content.ts.`
-                    : `Add src/data/rankings/week-${week}/${position.toLowerCase()}.json and import it in src/lib/content.ts.`
+                  : `Fill the Week ${week} block of the workbook's Rankings sheet, date it in PUBLISHED in scripts/curated/weekly_rankings.py and run it, then import src/data/rankings/week-${week}.json in src/lib/content.ts.`
               }
             />
           </div>
@@ -280,10 +284,10 @@ export default async function RankingsPage({
 
         {/* Draft-only. This paragraph exists to stop a reader taking pre-season
             ranks for in-season ones, which is the wrong caveat to print on a
-            weekly or rest-of-season list. */}
+            weekly list. */}
         {scope === "draft" && (
           <p className="mt-4 text-xs" style={{ color: "var(--text-muted)" }}>
-            {list.scope} rankings, {list.format} scoring. These are preseason
+            {draft.scope} rankings, {draft.format} scoring. These are preseason
             draft ranks and are not updated week to week, so in-season order will diverge from this. Bye weeks are for the {BYE_SEASON} season.
           </p>
         )}
