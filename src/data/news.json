@@ -4,6 +4,389 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "8IneTxvV1aGyKSV-",
+   "headline": "NFL Week 2 injury report: Puka Nacua and Joe Burrow questionable, Michael Pittman and Kyler Murray out",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-joe-burrow/",
+   "timestamp": "2026-09-19T18:55:16.000Z",
+   "category": "injury",
+   "player_ids": [
+    "joe-burrow",
+    "kyler-murray",
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "MZ54d7gEBkqC4CC-",
+   "headline": "The Titans are already in trouble",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-already-trouble-185031281.html",
+   "timestamp": "2026-09-19T18:50:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "slXLL8TU1l9Izlc4",
+   "headline": "Puka Nacua questionable for Monday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/puka-nacua-questionable-monday-night-184403275.html",
+   "timestamp": "2026-09-19T18:44:03.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "4t6XGg7oXAig0gBv",
+   "headline": "Patriots DC calls Darnell Washington a ‘big challenge’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-dc-calls-darnell-washington-184121121.html",
+   "timestamp": "2026-09-19T18:41:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "05bZsaDFMQyfipBJ",
+   "headline": "Packers downgrade DT Javon Hargrave to out, remove DE Lukas Van Ness from injury report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-downgrade-dt-javon-hargrave-184019840.html",
+   "timestamp": "2026-09-19T18:40:19.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "hdoibU7gEEK5u4OD",
+   "headline": "How has the jet lag impacted the 49ers this week ahead of Dolphins game?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jet-lag-impacted-49ers-week-183422256.html",
+   "timestamp": "2026-09-19T18:34:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA",
+    "SF"
+   ]
+  },
+  {
+   "id": "dl1Cno0pbAWWqpX6",
+   "headline": "Dolphins vs 49ers predictions, prop bets, and odds in Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-vs-49ers-predictions-prop-182601793.html",
+   "timestamp": "2026-09-19T18:26:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA",
+    "SF"
+   ]
+  },
+  {
+   "id": "BpIQ_bDAyluAeoQk",
+   "headline": "Steelers vs. Patriots: How to watch Maye vs. Rodgers in New England, prediction",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/steelers-vs-patriots-how-to-watch-maye-vs-rodgers/",
+   "timestamp": "2026-09-19T18:20:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "T_CAM1YFz6ohyl-B",
+   "headline": "Jaguars vs. Broncos: Jacksonville aims for 10th consecutive regular-season win",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/how-to-watch-jaguars-vs-broncos-preview-prediction/",
+   "timestamp": "2026-09-19T18:20:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "JAX"
+   ]
+  },
+  {
+   "id": "vCyKy8TOSEEA9HcE",
+   "headline": "Concerns arise regarding Brazil field where Ravens-Cowboys will be played",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/concerns-arise-regarding-brazil-field-181944756.html",
+   "timestamp": "2026-09-19T18:19:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "DAL"
+   ]
+  },
+  {
+   "id": "gktUOmjtzuyNH7RH",
+   "headline": "Chiefs vs. Colts: How to watch, stream 'Sunday Night Football,' plus odds and prediction",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/chiefs-vs-colts-how-to-watch-tv-channel-live-stream-nfl-start-time-odds/",
+   "timestamp": "2026-09-19T18:18:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "KC"
+   ]
+  },
+  {
+   "id": "BNQHyD0uUcmAbHaT",
+   "headline": "Bengals vs. Texans: How to watch as Houston attempts to avoid starting 0-2",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/bengals-vs-texans-how-to-watch-prediction-preview/",
+   "timestamp": "2026-09-19T18:17:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "HOU"
+   ]
+  },
+  {
+   "id": "fVDizwwPpcxwDl92",
+   "headline": "TE Dae’Quan Wright, DT Zxavian Harris Ineligible To Join NFL Teams In 2026",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/te-daequan-wright-dt-zxavian-harris-ineligible-to-join-nfl-teams-in-2026",
+   "timestamp": "2026-09-19T18:00:39.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "D-ZsnI21gbZqgKkf",
+   "headline": "Eagles News: Makai Lemon “just doesn’t look ready”",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-news-makai-lemon-just-180030504.html",
+   "timestamp": "2026-09-19T18:00:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "3gQYIIj6QiGM4IPg",
+   "headline": "Let’s hope this Colston Loveland prediction comes true for the Bears this Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/let-hope-colston-loveland-prediction-180000489.html",
+   "timestamp": "2026-09-19T18:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "colston-loveland"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "cDO6D4PhXJTvCykG",
+   "headline": "Daily Norseman Staff NFL Picks: Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daily-norseman-staff-nfl-picks-174223786.html",
+   "timestamp": "2026-09-19T17:42:23.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "9udyFx3RAxB1fhsF",
+   "headline": "Steelers WR Michael Pittman Jr. OUT vs. Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/michael-pittman-jr-vs-patriots-173555992.html",
+   "timestamp": "2026-09-19T17:35:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "Vu7ZlJCfNLwlyYwd",
+   "headline": "2026 Week 2 NFL predictions, odds, picks, best bets: Experts backing Broncos, Cowboys on Sunday",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-predictions-odds-picks-best-bets-experts-backing-broncos-cowboys-sunday/",
+   "timestamp": "2026-09-19T17:33:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "DEN"
+   ]
+  },
+  {
+   "id": "L3sSCKqYNG_Hfdle",
+   "headline": "Jets Place WR Omar Cooper On IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/jets-place-wr-omar-cooper-on-ir",
+   "timestamp": "2026-09-19T17:30:45.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "ptoAmVX_InQUkwBZ",
+   "headline": "Jets rookie Omar Cooper Jr. headed to injured reserve, will miss at least four games",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jets-omar-cooper-injured-reserve/",
+   "timestamp": "2026-09-19T17:30:38.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "JEkbP3BorFDDvvh_",
+   "headline": "Cowboys key matchup: Dallas WRs versus Commanders CBs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-key-matchup-dallas-wrs-173000196.html",
+   "timestamp": "2026-09-19T17:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "WAS"
+   ]
+  },
+  {
+   "id": "6GznBL6LjzXeRP8X",
+   "headline": "Steelers downgrade WR Michael Pittman Jr. to out, with a foot injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-downgrade-wr-michael-pittman-172819151.html",
+   "timestamp": "2026-09-19T17:28:19.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "hBC5jxalt33QI4qO",
+   "headline": "Falcons Draft 2027: 11 2027 NFL Draft Prospects to Watch for the Falcons in Week 3 of College Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-draft-2027-11-2027-172606439.html",
+   "timestamp": "2026-09-19T17:26:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "2AnyYzsfjg0FVQih",
+   "headline": "Giving Props: Vikings Player Bets Against the Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giving-props-vikings-player-bets-172121186.html",
+   "timestamp": "2026-09-19T17:21:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "MIN"
+   ]
+  },
+  {
+   "id": "OC5YKV0DJOs2Y97_",
+   "headline": "Browns add CB Noah Igbinoghene to injury report, list him as questionable",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-add-cb-noah-igbinoghene-172025117.html",
+   "timestamp": "2026-09-19T17:20:25.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "SSj0LcAOsDRSnY4O",
+   "headline": "Michael Pittman: Ruled out for Week 2",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/michael-pittman-14378",
+   "timestamp": "2026-09-19T17:09:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Y4QTxH7JyPNFMjod",
+   "headline": "Jets to put rookie WR Omar Cooper on IR",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-put-rookie-wr-omar-170817184.html",
+   "timestamp": "2026-09-19T17:08:17.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "UcWsIfZSJYnV5X7-",
+   "headline": "At least one team has called Steelers about Joey Porter Jr.",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/least-one-team-called-steelers-170739525.html",
+   "timestamp": "2026-09-19T17:07:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "vFzcCzKn_Yq9rBwE",
+   "headline": "2026 Week 2 NFL picks, predictions, player props at NFL sportsbooks like DraftKings, FanDuel, BetMGM",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-picks-predictions-player-props-nfl-sportsbooks-draftkings-fanduel-betmgm/",
+   "timestamp": "2026-09-19T17:05:31.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "5v5NJfRzZUtHOK41",
+   "headline": "Raiders Mailbag: Will Rob Leonard dial up more blitzes in Las Vegas’ Week 2 matchup against Los Angeles Chargers?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-mailbag-rob-leonard-dial-170200671.html",
+   "timestamp": "2026-09-19T17:02:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "LV"
+   ]
+  },
+  {
+   "id": "at580o0G1ussEF7-",
+   "headline": "Dolphins draft prospects 2027: Players to watch LSU vs. Ole Miss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-draft-prospects-2027-players-170000719.html",
+   "timestamp": "2026-09-19T17:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "MC8n2eE--WA6Nu3A",
+   "headline": "SB Nation Reacts Results: Vikings Fans Less Confident Despite Big Win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sb-nation-reacts-results-vikings-164720984.html",
+   "timestamp": "2026-09-19T16:47:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "x0YgIm1Gg4fqmlO6",
+   "headline": "Jets placing rookie WR Omar Cooper Jr. on injured reserve with high ankle sprain",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-placing-rookie-wr-omar-164000784.html",
+   "timestamp": "2026-09-19T16:40:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "aSYgG2ylomO_eRCo",
+   "headline": "Justin Herbert, Mike McDaniel and Chargers seek urgent reset against Raiders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/justin-herbert-mike-mcdaniel-chargers-163433423.html",
+   "timestamp": "2026-09-19T16:34:33.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ],
+   "team_abbrs": [
+    "LAC",
+    "LV"
+   ]
+  },
+  {
    "id": "7OY2SMUEqVPusuxE",
    "headline": "Seahawks QB Sam Darnold Could Be Out Until October",
    "source": "Pro Football Rumors",
@@ -227,18 +610,6 @@
    "category": "breaking"
   },
   {
-   "id": "BNQHyD0uUcmAbHaT",
-   "headline": "Bengals vs. Texans: How to watch as Houston attempts to avoid starting 0-2",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bengals-vs-texans-how-to-watch-prediction-preview/",
-   "timestamp": "2026-09-19T14:37:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "HOU"
-   ]
-  },
-  {
    "id": "84beunKfQ4zPTXVh",
    "headline": "College football’s top Cowboys draft targets in Week 3",
    "source": "Yahoo Sports",
@@ -259,30 +630,6 @@
    "team_abbrs": [
     "SEA",
     "TB"
-   ]
-  },
-  {
-   "id": "gktUOmjtzuyNH7RH",
-   "headline": "Chiefs vs. Colts: How to watch, stream 'Sunday Night Football,' plus odds and prediction",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/chiefs-vs-colts-how-to-watch-tv-channel-live-stream-nfl-start-time-odds/",
-   "timestamp": "2026-09-19T14:25:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "BpIQ_bDAyluAeoQk",
-   "headline": "Steelers vs. Patriots: How to watch Maye vs. Rodgers in New England, prediction",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/steelers-vs-patriots-how-to-watch-maye-vs-rodgers/",
-   "timestamp": "2026-09-19T14:10:09.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "PIT"
    ]
   },
   {
@@ -376,18 +723,6 @@
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/broncos-vs-jaguars-score-predictions-140000917.html",
    "timestamp": "2026-09-19T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "JAX"
-   ]
-  },
-  {
-   "id": "T_CAM1YFz6ohyl-B",
-   "headline": "Jaguars vs. Broncos: Jacksonville aims for 10th consecutive regular-season win",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/how-to-watch-jaguars-vs-broncos-preview-prediction/",
-   "timestamp": "2026-09-19T13:56:19.000Z",
    "category": "breaking",
    "team_abbrs": [
     "DEN",
@@ -1358,367 +1693,6 @@
    "team_abbrs": [
     "NE",
     "PIT"
-   ]
-  },
-  {
-   "id": "8IneTxvV1aGyKSV-",
-   "headline": "NFL Week 2 injury report: Joe Burrow questionable, Brock Bowers doubtful, Kyler Murray out",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-joe-burrow/",
-   "timestamp": "2026-09-18T23:00:49.000Z",
-   "category": "injury",
-   "player_ids": [
-    "joe-burrow",
-    "kyler-murray",
-    "brock-bowers"
-   ]
-  },
-  {
-   "id": "SdgFfjjVm2dGZCHn",
-   "headline": "Will Aaron Donald play for Rams against Giants? 'That's the plan,' he says",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-donald-play-rams-against-225731900.html",
-   "timestamp": "2026-09-18T22:57:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "sxoNnSNfONFK-E9V",
-   "headline": "Nothing standing in 49ers’ way against Dolphins — besides that 8,000-mile flight they took last week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nothing-standing-49ers-way-against-225520831.html",
-   "timestamp": "2026-09-18T22:55:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "SF"
-   ]
-  },
-  {
-   "id": "TM-XFNbgz_CE4zHO",
-   "headline": "George Kittle will play in Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/george-kittle-play-week-2-225130680.html",
-   "timestamp": "2026-09-18T22:51:30.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ]
-  },
-  {
-   "id": "nErhMhmT5rmE14Uv",
-   "headline": "Aaron Donald says he plans to make 2026 debut in Rams' MNF game vs. Giants",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/aaron-donald-says-he-plans-to-make-2026-debut-in-rams-mnf-game-vs-giants-224923328.html",
-   "timestamp": "2026-09-18T22:49:23.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "ZnlSAF0voGizPXlr",
-   "headline": "Aaron Donald plans to play vs. Giants; Puka Nacua sits out Rams practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-donald-plans-play-vs-224549670.html",
-   "timestamp": "2026-09-18T22:45:49.000Z",
-   "category": "practice",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "Q6-f6d7BOo3Rv6g-",
-   "headline": "Bengals star Joe Burrow listed as questionable: Here's what Zac Taylor said about Week 2 status",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/joe-burrow-injury-update-bengals-qb-questionable/",
-   "timestamp": "2026-09-18T22:40:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "joe-burrow"
-   ],
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "cKZ0ZBby3SVF5yHQ",
-   "headline": "49ers could reunite with Jake Moody as Eddy Piñeiro is questionable for Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-could-reunite-jake-moody-223012071.html",
-   "timestamp": "2026-09-18T22:30:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "IXILgA5hUvqJwHEw",
-   "headline": "Puka Nacua: DNP due to hip injury",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/puka-nacua-16790",
-   "timestamp": "2026-09-18T22:21:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "eFX6Jg-0gd7sLCaQ",
-   "headline": "49ers To Make K Addition",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/49ers-to-make-k-addition",
-   "timestamp": "2026-09-18T22:16:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "tYPbITb9Xbky6oSf",
-   "headline": "Bears-Vikings: Keys to a Chicago victory",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-vikings-keys-chicago-victory-220000166.html",
-   "timestamp": "2026-09-18T22:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "MIN"
-   ]
-  },
-  {
-   "id": "ekRxWY8z0txm3mPp",
-   "headline": "Cowboys vs Commanders predictions: Dak Prescott goes off",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-vs-commanders-predictions-dak-220000935.html",
-   "timestamp": "2026-09-18T22:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "dak-prescott"
-   ],
-   "team_abbrs": [
-    "DAL",
-    "WAS"
-   ]
-  },
-  {
-   "id": "gbV5JMH5cxG4Hw0q",
-   "headline": "George Kittle: Cleared for Week 2",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/george-kittle-11892",
-   "timestamp": "2026-09-18T21:57:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ]
-  },
-  {
-   "id": "nmoZe4QvQxF6Ziva",
-   "headline": "Jaguars vs. Broncos: Predictions, picks, odds",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-vs-broncos-predictions-picks-215643008.html",
-   "timestamp": "2026-09-18T21:56:43.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "JAX"
-   ]
-  },
-  {
-   "id": "72Tmj_b9Dqi2d6uV",
-   "headline": "Indianapolis Colts Injury Report: Week 2 Who’s In and Out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/indianapolis-colts-injury-report-week-214855625.html",
-   "timestamp": "2026-09-18T21:48:55.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "Zr38_Xbpd6ZRD0xT",
-   "headline": "Raiders Week 2: The must-account-for Chargers in an AFC West tilt",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-week-2-must-account-213900849.html",
-   "timestamp": "2026-09-18T21:39:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC",
-    "LV"
-   ]
-  },
-  {
-   "id": "SoSJZT1Fufq23wE5",
-   "headline": "Seahawks Rule Out QB Sam Darnold For Week 2",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/seahawks-rule-out-qb-sam-darnold-for-week-2",
-   "timestamp": "2026-09-18T21:33:04.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "uvGUxFMyWkvz_xAe",
-   "headline": "Top 5 Packers Comebacks of the 21st Century",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/top-5-packers-comebacks-21st-213050956.html",
-   "timestamp": "2026-09-18T21:30:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "Ry4Z_xCsoNDp631H",
-   "headline": "Brian Thomas: Cleared for Week 2 action",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/brian-thomas-17716",
-   "timestamp": "2026-09-18T21:25:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "_IU21_JhfD0jaY03",
-   "headline": "Jakobi Meyers: Ready for Week 2",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jakobi-meyers-13517",
-   "timestamp": "2026-09-18T21:22:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "0yDyf38AQjgGx6PT",
-   "headline": "Seahawks-Cardinals injury designations: Ty Okada out again, Bradford and Emmanwori iffy to play",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-cardinals-injury-designations-ty-212106321.html",
-   "timestamp": "2026-09-18T21:21:06.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ARI",
-    "SEA"
-   ]
-  },
-  {
-   "id": "DpJlJ0TOoI9JL0BT",
-   "headline": "Chargers Injury Report: Ladd McConkey questionable, Elijah Molden out vs. Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-injury-report-ladd-mcconkey-211659875.html",
-   "timestamp": "2026-09-18T21:16:59.000Z",
-   "category": "injury",
-   "player_ids": [
-    "ladd-mcconkey"
-   ],
-   "team_abbrs": [
-    "LAC",
-    "LV"
-   ]
-  },
-  {
-   "id": "kTr3SMTveOCixwDB",
-   "headline": "What the Packers’ game-day roster could look like: Week 2, New York Jets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-game-day-roster-could-211548835.html",
-   "timestamp": "2026-09-18T21:15:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "i_OeaF693tjZLOl3",
-   "headline": "Report: Steelers have received no serious trade inquiries about Joey Porter Jr.",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/report-steelers-received-no-serious-210740590.html",
-   "timestamp": "2026-09-18T21:07:40.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "a400t288ZPNsQkSX",
-   "headline": "The 49ers might need a temporary kicker with Eddy Pineiro’s illness",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-might-temporary-kicker-eddy-210625043.html",
-   "timestamp": "2026-09-18T21:06:25.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "eddy-pineiro"
-   ],
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "h_3TjjomHMzeCHMy",
-   "headline": "Vikings-Bears Final Injury Report",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikings-bears-final-injury-report-210511078.html",
-   "timestamp": "2026-09-18T21:05:11.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI",
-    "MIN"
-   ]
-  },
-  {
-   "id": "CaS1FoCAnDZo-u4-",
-   "headline": "Giants place Paulson Adebo on IR, sign Nikko Reed from Chargers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-place-paulson-adebo-ir-210027544.html",
-   "timestamp": "2026-09-18T21:00:27.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAC",
-    "NYG"
-   ]
-  },
-  {
-   "id": "HiEwEwbekoqQCOkd",
-   "headline": "Panthers Injury Report & Transactions – Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-injury-report-transactions-week-210000024.html",
-   "timestamp": "2026-09-18T21:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "NkSSwW5owERzlutg",
-   "headline": "Rooting interests for Bills in Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rooting-interests-bills-week-2-210000647.html",
-   "timestamp": "2026-09-18T21:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "TxNp0jXU-L6zOoiW",
-   "headline": "Texans rule out two-time Pro Bowl WR Nico Collins for Week 2 vs. Bengals",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nico-collins-hamstring-injury-status-unclear-for-week-2-per-report/",
-   "timestamp": "2026-09-18T20:59:48.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "nico-collins"
-   ],
-   "team_abbrs": [
-    "CIN",
-    "HOU"
    ]
   }
  ]
