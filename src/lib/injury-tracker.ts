@@ -27,10 +27,13 @@
  */
 import campFile from "@/data/camp-injuries.json";
 import {
-  INJURY_REVALIDATE_SECONDS, SERIOUS_WIRE, isVaguePart,
-  pullBoards, pullDraftSharks, pullWire,
+  INJURY_REVALIDATE_SECONDS, SERIOUS_WIRE, isVaguePart, officialKey,
+  pullBoards, pullDraftSharks, pullOfficialInjuries, pullWire,
 } from "./injury-feed";
-import type { ExternalInjury, WireInjury, WireStatus } from "./injury-feed";
+import type {
+  ExternalInjury, OfficialInjuries, OfficialReport, WireInjury, WireStatus,
+} from "./injury-feed";
+import { SEASON, gamesForWeek } from "./games";
 import { headlinesFor } from "./headline-match";
 import { summarise } from "./injury-summary";
 import type { AutoSummary } from "./injury-summary";
@@ -59,6 +62,40 @@ export const WIRE_SEVERITY: Record<string, number> = {
   IR: 6, PUP: 5, DNR: 5, Sus: 4, Out: 4, Doubtful: 3, Questionable: 1, NA: 0,
 };
 
+/** The club's own game designation, on the same scale and low for the same
+ *  reason: `Questionable` is filed freely and means little by itself. */
+const GAME_SEVERITY: Record<string, number> = { Out: 4, Doubtful: 3, Questionable: 1 };
+
+/**
+ * On this week's report with an injury, but practicing and undesignated. Under
+ * a bare `Questionable` and over the players carrying nothing at all, so a team
+ * block runs worst first and ends with the ones who are fine.
+ */
+const ON_REPORT = 0.5;
+
+/**
+ * One scale for both paths, so where a row lands does not depend on which
+ * source found the player. Without it George Kittle, on the Week 2 report with
+ * an Achilles, sorted level with Christian McCaffrey, who is on it for a rest
+ * day, and the two read as equally worrying when only one is on it for an
+ * injury at all.
+ */
+function severityOf(
+  wire: WireStatus | null,
+  game: OfficialReport["game"] | undefined,
+  current: string | null,
+  historical: boolean,
+): number {
+  // No wire designation: a record the report has moved past sinks to the floor,
+  // while one it has not is real reporting and outranks a silent wire.
+  const wireScore = wire ? (WIRE_SEVERITY[wire] ?? 2) : historical ? 0 : 2;
+  return Math.max(
+    wireScore,
+    game ? (GAME_SEVERITY[game] ?? 2) : 0,
+    current ? ON_REPORT : 0,
+  );
+}
+
 export interface TrackerRow {
   name: string;
   team: string;
@@ -86,6 +123,42 @@ export interface TrackerRow {
    *  injury Sleeper left as "Undisclosed", and to give the Latest column a
    *  plain status line on a row carrying no record and no headline. */
   board: ExternalInjury | null;
+  /**
+   * His entry on this week's NFL injury report: the injury as the club filed
+   * it, his practice participation and his game designation. Null when he is
+   * not on it, or when the report did not load.
+   */
+  official: OfficialReport | null;
+  /**
+   * His club filed this week's report and he is not on it. Only ever true when
+   * the club filed: a club on its bye has no report for him to be missing from.
+   */
+  offReport: boolean;
+  /**
+   * The written record is about a different injury from the one he carries
+   * now: its body region and the current one's differ. De'Zhaun Stribling's
+   * record, from 2026-08-17, is hamstring tightness; in Week 2 he is out with
+   * an ankle injury on both the NFL report and the wire. The row then leads
+   * with the current injury and keeps the record, dated, as the earlier one.
+   */
+  recordSuperseded: boolean;
+  /**
+   * The written record predates this week's official report, so it is history
+   * rather than his status now.
+   *
+   * Every record in `camp-injuries.json` is camp reporting from July and
+   * August, and by Week 2 the report contradicted 28 of them: Christian
+   * McCaffrey's said "Out" while he practised fully, George Kittle's said
+   * "PUP" while he did the same. The record still renders — the archive is the
+   * floor and the reporting is not lost — but dated, quiet, and never as a
+   * live designation.
+   */
+  recordHistorical: boolean;
+  /**
+   * What he is carrying now, from the report first and the wire second. Null
+   * when neither names an injury, which is what "healthy" looks like here.
+   */
+  currentInjury: string | null;
   /** The wire and the record making claims that cannot both be true. */
   conflict: boolean;
   /** When this row last moved, and which source moved it. Null when neither
@@ -144,6 +217,10 @@ export interface InjuryTracker {
   pulled: number;
   /** Split of the table, for the page to describe itself honestly. */
   counts: { both: number; wireOnly: number; recordOnly: number; conflicts: number };
+  /** The week of the NFL injury report the rows carry, or null if it did not load. */
+  officialWeek: number | null;
+  /** Why the NFL injury report did not load, for the page to say (§10). */
+  officialError: string | null;
 }
 
 /** Eastern, not UTC — an evening render stamped in UTC reads as tomorrow (§6). */
@@ -192,6 +269,8 @@ function archiveOnly(failures: { name: string; reason: string }[]): InjuryTracke
     name: record.name, team: record.team, position: record.position,
     wire: null, body_part: record.body_part ?? null, notes: null,
     record, conflict: false, board: null, headlines: [], summary: null,
+    official: null, offReport: false, recordSuperseded: false,
+    recordHistorical: false, currentInjury: null,
     lastUpdate: lastUpdateOf(null, record),
     severity: 10, // written records outrank a silent wire; see sort below
   }));
@@ -202,6 +281,8 @@ function archiveOnly(failures: { name: string; reason: string }[]): InjuryTracke
     failures,
     pulled: 0,
     counts: { both: 0, wireOnly: 0, recordOnly: rows.length, conflicts: 0 },
+    officialWeek: null,
+    officialError: null,
   };
 }
 
@@ -210,6 +291,43 @@ function sortRows(rows: TrackerRow[]): TrackerRow[] {
     (a, b) => b.severity - a.severity || a.name.localeCompare(b.name),
   );
 }
+
+/**
+ * Anatomy grouped into regions, so two sources describing one injury in
+ * different words are read as one — "PCL" and "knee", "adductor" and "groin",
+ * "psoas" and "hip", "herniated disc" and "back" — and two genuinely different
+ * injuries are not. A word-level comparison flagged 21 rows on 2026-09-19 and
+ * 17 of them were the same injury. Generic entries ("lower body", "leg",
+ * "undisclosed") belong to no region and so can never count as a difference.
+ */
+const REGIONS: [RegExp, string][] = [
+  [/\b(knee|acl|mcl|pcl|lcl|meniscus|patella)/, "knee"],
+  [/\b(hamstring|quad|thigh)/, "thigh"],
+  [/\b(hip|groin|adductor|abductor|psoas|pelvi)/, "hip"],
+  [/\b(ankle|foot|toe|heel|achilles|lisfranc|plantar)/, "foot"],
+  [/\b(calf|shin|tibia|fibula)/, "calf"],
+  [/\b(shoulder|labrum|collarbone|clavicle|rotator)/, "shoulder"],
+  [/\b(back|spine|disc|lumbar)/, "back"],
+  [/\b(rib|chest|pectoral|sternum|oblique|abdom|hernia|core)/, "trunk"],
+  [/\b(hand|thumb|finger|wrist)/, "hand"],
+  [/\b(elbow|forearm|bicep|tricep)/, "arm"],
+  [/\b(head|concussion|neck)/, "head"],
+];
+const anatomy = (v: string | null | undefined): string | null => {
+  if (!v) return null;
+  const s = v.toLowerCase();
+  return REGIONS.find(([rx]) => rx.test(s))?.[1] ?? null;
+};
+/** Two injuries in different body regions. Unknown regions never differ. */
+const differentInjury = (a: string | null | undefined, b: string | null | undefined) => {
+  const [x, y] = [anatomy(a), anatomy(b)];
+  return !!x && !!y && x !== y;
+};
+
+/** An injury's first word, singular, for comparing two sources' anatomy:
+ *  "Knee - ACL" and "Knee" meet, "Quadriceps" and "Quadricep" meet. */
+const region = (v: string) =>
+  (v.toLowerCase().match(/[a-z]+/)?.[0] ?? "").replace(/s$/, "");
 
 /** Same reduction `headline-match` uses, so one key serves both. */
 const boardKey = (v: string) =>
@@ -230,7 +348,37 @@ async function pullOnce(): Promise<InjuryTracker> {
   // CBS and Sharp, pulled alongside the wire and inside the same TTL window.
   // Never fatal: a board that fails contributes an empty map and the rows keep
   // Sleeper's own field, which is what they had before these existed.
-  const boards = await pullBoards().catch(() => new Map<string, ExternalInjury>());
+  //
+  // The NFL's own report is pulled in the same window. It fails soft like the
+  // boards, but its failure is kept and printed: a row missing its practice
+  // line should not look like a player with nothing on the report (§10).
+  let officialError: string | null = null;
+  const [boards, official] = await Promise.all([
+    pullBoards().catch(() => new Map<string, ExternalInjury>()),
+    pullOfficialInjuries(SEASON).catch((err: unknown): OfficialInjuries => {
+      officialError = err instanceof Error ? err.message : String(err);
+      return { week: null, byPlayer: new Map(), teamsReported: new Set() };
+    }),
+  ]);
+  // The start of the report week's practice cycle: its first kickoff, less six
+  // days. A record written before it describes an earlier point in the season.
+  const reportWeekStart = (() => {
+    if (official.week == null) return null;
+    const first = gamesForWeek(official.week)[0];
+    if (!first) return null;
+    return new Date(new Date(first.kickoff).getTime() - 6 * 864e5)
+      .toISOString()
+      .slice(0, 10);
+  })();
+  const isHistorical = (record: CampInjury | null, team: string) =>
+    !!record && !!reportWeekStart && official.teamsReported.has(team) &&
+    record.reported < reportWeekStart;
+
+  const officialFor = (name: string, team: string) => {
+    const k = officialKey(name, team);
+    const entry = official.byPlayer.get(k) ?? null;
+    return { official: entry, offReport: !entry && official.teamsReported.has(team) };
+  };
 
   const records = new Map(camp.data.map((r) => [key(r.name, r.position), r]));
   const seen = new Set<string>();
@@ -251,30 +399,61 @@ async function pullOnce(): Promise<InjuryTracker> {
     const team = w.team ?? record?.team;
     if (!team) continue;
     seen.add(k);
+    const historical = isHistorical(record, team);
     // A board only ever fills a gap. Where Sleeper names anatomy that stands;
     // where it says "Undisclosed" and CBS says "Groin", the reader gets
     // "Groin", because a column whose job is to name the injury cannot do it
     // from the word undisclosed.
     const board = boards.get(boardKey(record?.name ?? w.name)) ?? null;
+    const fromReport = officialFor(record?.name ?? w.name, team);
+    // The league's report is the primary source for what is wrong with him
+    // this week (§2). Where it and Sleeper name the same body part, Sleeper's
+    // wording stays, because it is often the more specific ("Knee - ACL +
+    // MCL" against "Knee"). Where they differ, the report wins: Kaelon Black
+    // was "Illness" on the wire and "Groin" on the report in Week 2.
+    const off = fromReport.official?.primary ?? null;
+    const sleeperPart = !isVaguePart(w.body_part) ? w.body_part : null;
     const bodyPart =
-      (!isVaguePart(w.body_part) && w.body_part) ||
+      (off && sleeperPart && region(off) === region(sleeperPart) ? sleeperPart : null) ||
+      off ||
+      sleeperPart ||
       record?.body_part ||
       board?.part ||
       w.body_part ||
       null;
+    // What he carries now, from the report first, then the wire. A report entry
+    // for a rest day or a personal matter names no injury and cannot supersede.
+    const current =
+      (fromReport.official && !fromReport.official.notInjury
+        ? fromReport.official.primary
+        : null) ?? sleeperPart;
     rows.push({
       name: record?.name ?? w.name,
       team,
       position: w.position as CampInjury["position"],
       wire: w.status,
       body_part: bodyPart,
+      recordSuperseded: !!record && differentInjury(record.body_part ?? record.diagnosis, current),
+      recordHistorical: historical,
+      currentInjury: current ?? null,
       board,
       notes: w.notes ?? null,
       record,
-      conflict: record ? disagrees(record.status, w.status) : false,
+      // A record that predates this week is not disagreeing with the wire, it
+      // is simply older, and badging it as a conflict was noise.
+      conflict: record && !historical ? disagrees(record.status, w.status) : false,
+      ...fromReport,
       headlines: [], summary: null,
-      lastUpdate: lastUpdateOf(w.updated, record),
-      severity: WIRE_SEVERITY[w.status] ?? 2,
+      // A historical record no longer dates the row: the page stopped printing
+      // it, and an "Updated Aug 17" under a line about this week's report is
+      // the same stale claim in the one column that is meant to date it.
+      lastUpdate: lastUpdateOf(w.updated, historical ? null : record),
+      severity: severityOf(
+        w.status,
+        fromReport.official?.game ?? undefined,
+        current ?? null,
+        historical,
+      ),
     });
   }
 
@@ -286,14 +465,30 @@ async function pullOnce(): Promise<InjuryTracker> {
   for (const [k, record] of records) {
     if (seen.has(k)) continue;
     recordOnly += 1;
+    // Only the report can speak for a player the wire has dropped.
+    const rep = officialFor(record.name, record.team);
+    const superseded =
+      !!rep.official && !rep.official.notInjury &&
+      differentInjury(record.body_part ?? record.diagnosis, rep.official.primary);
+    const current =
+      rep.official && !rep.official.notInjury ? rep.official.primary : null;
+    const historical = isHistorical(record, record.team);
     rows.push({
       name: record.name, team: record.team, position: record.position,
-      wire: null, body_part: record.body_part ?? null, notes: null,
+      // The current injury when the record is about an earlier one. Taking the
+      // record's here made the row print its old injury as the current one:
+      // Jerry Jeudy read "Hamstring injury" twice, when the Week 2 practice
+      // report lists his wrist and the hamstring is from August 3.
+      wire: null,
+      body_part: superseded ? rep.official!.primary : (record.body_part ?? null),
+      notes: null,
       record, conflict: false, board: null, headlines: [], summary: null,
-      lastUpdate: lastUpdateOf(null, record),
-      // Below anything the wire flags, above a bare "Questionable": the record
-      // is real reporting, but the wire is the fresher claim.
-      severity: 2,
+      ...rep,
+      recordSuperseded: superseded,
+      recordHistorical: historical,
+      currentInjury: current,
+      lastUpdate: lastUpdateOf(null, historical ? null : record),
+      severity: severityOf(null, rep.official?.game ?? undefined, current, historical),
     });
   }
 
@@ -310,6 +505,8 @@ async function pullOnce(): Promise<InjuryTracker> {
       recordOnly,
       conflicts: rows.filter((r) => r.conflict).length,
     },
+    officialWeek: official.week,
+    officialError,
   };
   cached = { at: Date.now(), value };
   return value;
@@ -338,8 +535,15 @@ export function attachHeadlines(
       ...r,
       headlines,
       // A hand-written record is the authority on its row and is never
-      // supplemented by a composed sentence.
-      summary: r.record ? null : summarise(r.body_part, r.notes, headlines),
+      // supplemented by a composed sentence, unless it is about an earlier
+      // injury: then the current one has to be named from somewhere.
+      // A record the report has moved past is not printed at all any more, so
+      // it cannot be the authority on its row either: without this the Injury
+      // column fell back to the bare body part, and George Kittle read
+      // "Achilles" where the composed line says what the week actually holds.
+      summary: r.record && !r.recordSuperseded && !r.recordHistorical
+        ? null
+        : summarise(r.body_part, r.notes, headlines),
     };
   });
 }

@@ -82,7 +82,7 @@ build` with a line number instead of shipping a broken page.
 | Home | Built. Lambeau hero with **"By Michael Huettl"** under the lockup (also in the footer and metadata, from `src/lib/site.ts`), eight section cards (the count in the copy is read off the card list, not typed beside it), Walsh "audit the argument" band |
 | Rankings | **Draft and weekly.** Draft: 120 players, 6 positions, PPR, the operator's hand order. Weekly: Week 1 (updated 2026-09-08) and Week 2 (2026-09-16), up to 25 a position; "Weekly" opens on the latest week. No rest-of-season scope |
 | Positional Data | Index cards carry a photo per position in a shared 2:1 frame, and head on `evaluated_on` — the family of statistics a position is judged on — Six pages, and **all six are built** — one column each: methodology, then the evidence. The two-column slot-and-pool placeholder is no longer used by any position |
-| Injury Database | **Season tracker pulls live** — the camp section is now a league-wide table on the news page's pattern, pulled at request time and re-rendered on `AutoRefresh`. The 58 hand-authored records are the floor and merge *under* the wire, never overwritten; a wire status and a written record sit in adjacent columns and the row says so where they disagree. Team filter in the URL. Weekly report empty until Week 1 |
+| Injury Database | **Season tracker pulls live**, and since 2026-09-19 every row carries this week's **NFL injury report** (practice participation, designation, secondary injury) from nflverse's release; a record about an earlier injury leads with the current one and shows the record as "Earlier" — the camp section is now a league-wide table on the news page's pattern, pulled at request time and re-rendered on `AutoRefresh`. The 58 hand-authored records are the floor and merge *under* the wire, never overwritten; a wire status and a written record sit in adjacent columns and the row says so where they disagree. Team filter in the URL. Weekly report empty until Week 1 |
 | Film | An in-production notice, then **Lions at Packers, Week 1 2025**: a "What Green Bay ran" summary (call sheet, halves, downs, passing, running, motion, coverage faced) above all 47 plays. Plates are cropped to the field and their info fields printed as text. `PlayDiagram`, `/film/[concept]` and `film-sample.json` are kept but not rendered |
 | Game Tracker | **Pulls live** — scores, game state and the current line from CBS, forecasts from nflweather, merged over the 272-game schedule at request time. Opens on the current week by the calendar. See open item 3 |
 | News | **Headlines pull live at request time**; 139-post beat archive still refreshed by hand. See open item 1 |
@@ -676,6 +676,15 @@ build` with a line number instead of shipping a broken page.
     Fortson (KC). And the fantasy model writes "Audric Estimé" where the injury
     wire writes "Estime".
 
+27. **The August injury records are largely stale.** Added 2026-09-19. Six
+    (Stribling, Jeudy, Monangai, AJ Brown, Pacheco, McConkey) describe a
+    different body region from this week's official report, and render as
+    "Earlier". Refresh or retire `camp-injuries.json` now that the report covers
+    every row.
+
+28. **The project syncs to iCloud, and a busy sync hangs `next build`.** Added
+    2026-09-19. `~/Desktop` is in iCloud Drive. See the gotcha below.
+
 ## Closed items
 
 - **Teams re-audited (2026-09-19).** All 100 existing non-DST players matched
@@ -922,6 +931,8 @@ copy claiming O-line injuries move the line.**
   favorite in-person attended game." Written "peak"; shipped "peek".
 - **Short forms are in capitals** in both models' labels, and Ken Walker reads
   Kenneth Walker (his chart label stays "K. Walker").
+- **Injury detail is automatic only**: the NFL report on every row, no written
+  "how it happened" accounts. Offered for the 22 ranked players and declined.
 
 ## Gotchas
 
@@ -1137,6 +1148,13 @@ copy claiming O-line injuries move the line.**
   are `LA`.
 - **CBS's line is gone after kickoff**, and nflweather prints an outdoor
   forecast for games it marks as indoors.
+- **A busy iCloud sync hangs `next build`.** The Desktop syncs to iCloud Drive;
+  with `cloudd` near full CPU the build stalls after loading its config at 0%
+  CPU, `fileproviderd` holding `.next/lock`. `kill -9`, remove the stale lock,
+  and wait for `cloudd` to settle; the same build then takes seconds.
+- **The NFL injury report's injury can sit in the practice column only.**
+  Jerry Jeudy's Week 2 game-report injury is blank and his practice-report one
+  is "Wrist". Read both, game report first.
 
 ## Commands
 

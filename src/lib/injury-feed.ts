@@ -293,3 +293,187 @@ export async function pullBoards(): Promise<Map<string, ExternalInjury>> {
   for (const [k, v] of cbs) merged.set(k, v);
   return merged;
 }
+
+// --------------------------------------------------- official injury report --
+
+/**
+ * The NFL's own weekly injury report, as nflverse republishes it.
+ *
+ * Added 2026-09-19, when the operator found the tracker's descriptions too
+ * vague to tell what was going on. Sleeper carries a body part for most
+ * players and a one-word note for a few, and nothing about how a player is
+ * practising or whether the club has designated him. The league's report
+ * carries all three, and it is the primary source for them (§2 prefers
+ * official primary sources): the injury as the club filed it, a secondary
+ * injury where there is one, the final practice participation of the week, and
+ * the game designation.
+ *
+ * It does not say how a player was hurt. No source this page pulls does, and
+ * that detail lives only in reporting the page may not copy (§2). The operator
+ * chose automatic detail over written accounts on 2026-09-19.
+ *
+ * nflverse publishes it as a CSV release asset, openly licensed, refreshed
+ * through the week. It is small, so it is pulled whole and cached for an hour:
+ * the file changes a few times a day at most, and the tracker's own five-minute
+ * window would otherwise re-download it twelve times an hour.
+ */
+export interface OfficialReport {
+  week: number;
+  /** Site abbreviation. nflverse writes the Rams as LA. */
+  team: string;
+  /** The injury as the club filed it: "Groin", "Knee", "Illness". */
+  primary: string | null;
+  secondary: string | null;
+  /** Final practice participation of the week. */
+  practice: "DNP" | "Limited" | "Full" | null;
+  /** Game designation. Null is a real value: listed, but not designated. */
+  game: "Out" | "Doubtful" | "Questionable" | null;
+  /**
+   * Listed for something that is not an injury. The report files a veteran's
+   * rest day as "Not injury related - resting player" (51 players in Week 2)
+   * and an absence as "- personal matter" (7). Neither is an injury and the
+   * page must not print either as one, so it is lifted out of `primary`.
+   */
+  notInjury: "rest" | "personal" | null;
+}
+
+export interface OfficialInjuries {
+  /** The latest week in the file, or null when it is empty. */
+  week: number | null;
+  /** Each player on that week's report, keyed by `officialKey`. */
+  byPlayer: Map<string, OfficialReport>;
+  /**
+   * Clubs that filed a report for `week`. A player's absence from the report
+   * means something only when his club filed one: a club on its bye, or one
+   * that has not filed yet this week, has no report to be absent from.
+   */
+  teamsReported: Set<string>;
+}
+
+const OFFICIAL_TEAM: Record<string, string> = { LA: "LAR" };
+
+/**
+ * One key for a player across the report and the wire: letters only, accents
+ * and generational suffixes dropped, plus the club. "Michael Penix Jr." and
+ * "Michael Penix" meet, "T.J. Sanders" and "TJ Sanders" meet, and the club
+ * keeps the league's two Kenneth Walkers apart (docs/STATE.md, "Player names
+ * collide").
+ */
+export function officialKey(name: string, team: string): string {
+  const n = name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/\b(jr|sr|ii|iii|iv|v)\b\.?/g, "")
+    .replace(/[^a-z]/g, "");
+  return `${n}|${OFFICIAL_TEAM[team] ?? team}`;
+}
+
+const PRACTICE: Record<string, OfficialReport["practice"]> = {
+  "did not participate in practice": "DNP",
+  "limited participation in practice": "Limited",
+  "full participation in practice": "Full",
+};
+const GAME = new Set(["Out", "Doubtful", "Questionable"]);
+
+/** A CSV row into fields, honouring quotes. The file has none today; a club
+ *  filing "Knee, Ankle" in one cell would otherwise shift every column. */
+function csvFields(line: string): string[] {
+  const out: string[] = [];
+  let cur = "";
+  let quoted = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (quoted) {
+      if (c === '"' && line[i + 1] === '"') { cur += '"'; i++; }
+      else if (c === '"') quoted = false;
+      else cur += c;
+    } else if (c === '"') quoted = true;
+    else if (c === ",") { out.push(cur); cur = ""; }
+    else cur += c;
+  }
+  out.push(cur);
+  return out;
+}
+
+/** The report for the latest week in the file. Pure, so it can be tested
+ *  against a saved copy with plain `node`. */
+export function parseOfficialInjuries(csv: string): OfficialInjuries {
+  const lines = csv.split(/\r?\n/).filter(Boolean);
+  const head = csvFields(lines[0] ?? "");
+  const col = (name: string) => head.indexOf(name);
+  const idx = {
+    week: col("week"), team: col("team"), name: col("full_name"),
+    type: col("season_type"),
+    primary: col("report_primary_injury"), secondary: col("report_secondary_injury"),
+    status: col("report_status"), practice: col("practice_status"),
+    pPrimary: col("practice_primary_injury"), pSecondary: col("practice_secondary_injury"),
+  };
+  if (Object.values(idx).some((i) => i < 0)) {
+    throw new Error(`official report: unexpected columns (${head.join(",")})`);
+  }
+  const rows = lines.slice(1).map(csvFields)
+    .filter((f) => f[idx.type] === "REG" && Number(f[idx.week]) > 0);
+  const week = rows.length ? Math.max(...rows.map((f) => Number(f[idx.week]))) : null;
+
+  const byPlayer = new Map<string, OfficialReport>();
+  const teamsReported = new Set<string>();
+  for (const f of rows) {
+    if (Number(f[idx.week]) !== week) continue;
+    const team = OFFICIAL_TEAM[f[idx.team]] ?? f[idx.team];
+    teamsReported.add(team);
+    const clean = (v: string | undefined) => (v && v.trim() ? v.trim() : null);
+    const status = clean(f[idx.status]);
+    // The game report's injury leads; the practice report's fills a gap.
+    const injuries = [
+      clean(f[idx.primary]) ?? clean(f[idx.pPrimary]),
+      clean(f[idx.secondary]) ?? clean(f[idx.pSecondary]),
+    ];
+    const notInjury = injuries.some((v) => v && /^not injury related.*rest/i.test(v))
+      ? "rest"
+      : injuries.some((v) => v && /^not injury related/i.test(v))
+        ? "personal"
+        : null;
+    const [primary, secondary] = injuries.filter((v) => v && !/^not injury related/i.test(v));
+    byPlayer.set(officialKey(f[idx.name], team), {
+      week: week!,
+      team,
+      primary: primary ?? null,
+      secondary: secondary ?? null,
+      practice: PRACTICE[(f[idx.practice] ?? "").trim().toLowerCase()] ?? null,
+      game: status && GAME.has(status) ? (status as OfficialReport["game"]) : null,
+      notInjury,
+    });
+  }
+  return { week, byPlayer, teamsReported };
+}
+
+const OFFICIAL_TTL_MS = 60 * 60_000;
+let officialCache: { at: number; value: OfficialInjuries } | null = null;
+let officialInFlight: Promise<OfficialInjuries> | null = null;
+
+/** This season's report, at most once an hour. Throws on failure so the caller
+ *  can report it; a failure is not cached, so the next render retries. */
+export async function pullOfficialInjuries(season: number): Promise<OfficialInjuries> {
+  if (officialCache && Date.now() - officialCache.at < OFFICIAL_TTL_MS) {
+    return officialCache.value;
+  }
+  if (officialInFlight) return officialInFlight;
+  officialInFlight = (async () => {
+    const res = await fetch(
+      `https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_${season}.csv`,
+      {
+        headers: { "user-agent": UA },
+        signal: AbortSignal.timeout(20_000),
+        cache: "no-store",
+      },
+    );
+    if (!res.ok) throw new Error(`NFL injury report: HTTP ${res.status}`);
+    const value = parseOfficialInjuries(await res.text());
+    officialCache = { at: Date.now(), value };
+    return value;
+  })().finally(() => {
+    officialInFlight = null;
+  });
+  return officialInFlight;
+}

@@ -6,6 +6,7 @@ import { DataFreshness } from "@/components/DataFreshness";
 import {
   attachHeadlines, getInjuryHeadlines, getInjuryTracker, trackerByTeam,
 } from "@/lib/injury-tracker";
+import type { TrackerRow } from "@/lib/injury-tracker";
 import { WireStatusPill } from "@/components/WireStatus";
 import { LastUpdateCell } from "@/components/Injury";
 import { Container, EmptyState } from "@/components/PageHeader";
@@ -16,6 +17,7 @@ import { FilterLink, TeamFilterLink } from "@/components/FilterLink";
 import { teamsWithInjuries } from "@/lib/injuries";
 import { getPlayer } from "@/lib/content";
 import { isNewerThan } from "@/lib/freshness";
+import { shortDate } from "@/lib/dates";
 import { getTeam, readableOn } from "@/lib/teams";
 import type { Player, Position, Team } from "@/lib/types";
 
@@ -68,6 +70,15 @@ export default async function InjuriesPage({
   const trackerGroups = trackerByTeam(attachHeadlines(tracker.rows, headlines))
     .map((g) => ({ ...g, team: getTeam(g.abbr) }))
     .filter((g) => !team || g.abbr === team);
+
+  // The written-record column exists only while a record still speaks for the
+  // current week. Once every club has filed its report the camp notes are
+  // history and stop printing, which left the column empty in all 148 rows —
+  // a header over nothing. It returns whole the moment the wire fails, because
+  // then no report can date a record as historical (§8).
+  const showRecord = trackerGroups.some((g) =>
+    g.rows.some((r) => r.record && !r.recordHistorical),
+  );
 
 
   return (
@@ -151,6 +162,13 @@ export default async function InjuriesPage({
             </p>
           )}
 
+          {tracker.live && tracker.officialError && (
+            <p className="mt-3 max-w-3xl text-sm" style={{ color: "var(--text-muted)" }}>
+              The NFL injury report did not load on this render, so practice
+              participation and designations are missing ({tracker.officialError}).
+            </p>
+          )}
+
           {trackerGroups.length === 0 && (
             <div className="mt-6">
               <EmptyState
@@ -167,8 +185,8 @@ export default async function InjuriesPage({
                   <colgroup>
                     <col className="w-[190px]" />
                     <col className="w-[240px]" />
-                    <col className="w-[110px]" />
-                    <col className="w-[170px]" />
+                    <col className="w-[160px]" />
+                    {showRecord && <col className="w-[170px]" />}
                     <col className="w-[120px]" />
                     <col />
                   </colgroup>
@@ -176,8 +194,8 @@ export default async function InjuriesPage({
                     <tr style={{ background: "var(--surface-sunken)" }}>
                       <Th>Player</Th>
                       <Th>Injury</Th>
-                      <Th>Wire</Th>
-                      <Th>Written record</Th>
+                      <Th>Status</Th>
+                      {showRecord && <Th>Written record</Th>}
                       <Th>Updated</Th>
                       <Th>Latest</Th>
                     </tr>
@@ -192,6 +210,29 @@ export default async function InjuriesPage({
                       // record and an id on it. Name matching covers every row,
                       // and merges the live pull with the committed feed.
                       const fresh = r.headlines[0];
+                      // A record the current week's report has moved past is
+                      // not printed. The operator's call on 2026-09-19: the
+                      // tracker carries where a player stands this week, and a
+                      // camp note dated August beside it was the thing making
+                      // rows unreadable.
+                      //
+                      // This page is the only reader of camp-injuries.json, so
+                      // a record hidden here is published nowhere — the team
+                      // pages read injuries.json and the player pages read
+                      // neither. It comes back whole the moment the wire fails,
+                      // because then no report can date it as historical (§8),
+                      // but that is a fallback, not a home for the writing.
+                      const rec = r.recordHistorical ? null : r.record;
+                      // The Injury column answers the week directly for a
+                      // player carrying nothing, so the Status column must
+                      // not answer it a second time in different words.
+                      const carrying = !!r.currentInjury || (!!r.wire && r.wire !== "NA");
+                      const noInjuryThisWeek = r.recordHistorical && !carrying;
+                      // A written diagnosis still names what is wrong with a
+                      // player who is still out, so it prints — undated, as
+                      // one clause of this week rather than a camp bulletin.
+                      // It stops printing only when the week has moved past it.
+                      const diagnosis = carrying ? r.record : rec;
                       return (
                         <tr
                           key={`${r.name}-${r.position}`}
@@ -213,10 +254,29 @@ export default async function InjuriesPage({
                                 "Surgery", and burying it under a sentence
                                 saying nothing was reported was throwing away
                                 the one thing the row did know. */}
-                            {r.record ? (
+                            {noInjuryThisWeek ? (
+                              /* Nothing on this week's report, and the only
+                                 other thing on file is a camp note. The note
+                                 does not print: leading with an old diagnosis
+                                 made healthy players read as injured, and
+                                 McCaffrey's row said "Out" from August 17
+                                 while he practised fully in Week 2. */
+                              <span className="block" style={{ color: "var(--text-secondary)" }}>
+                                No injury on this week&rsquo;s report
+                              </span>
+                            ) : r.recordSuperseded && r.summary ? (
+                              /* The record is about an earlier injury: a
+                                 different body region from the one on this
+                                 week's report. Only the current one prints —
+                                 Jerry Jeudy's row read "Hamstring injury" from
+                                 August 3 while the report listed his wrist. */
+                              <span className="block font-semibold">
+                                {r.summary.text}
+                              </span>
+                            ) : diagnosis ? (
                               <>
                                 <span className="block font-semibold">
-                                  {r.record.diagnosis}
+                                  {diagnosis.diagnosis}
                                 </span>
                                 {r.body_part && (
                                   <span
@@ -231,16 +291,31 @@ export default async function InjuriesPage({
                                   </span>
                                 )}
                               </>
+                            ) : r.summary ? (
+                              /* The injury named in full ("Knee injury (ACL and
+                                 MCL), surgery"), where this column used to print
+                                 the wire's raw field and the next column the same
+                                 thing again as a sentence. One fact twice was a
+                                 large part of why rows read as vague. */
+                              <span className="block font-semibold">
+                                {r.summary.text}
+                              </span>
                             ) : r.body_part || r.notes ? (
-                              /* The body part, and nothing about where it came
-                                 from. This used to caption every wire-only row
-                                 "As the wire lists it", which is the same
-                                 meta-commentary the rest of this page just
-                                 lost. */
                               <span className="block font-semibold">
                                 {[r.body_part, r.notes].filter(Boolean).join(", ")}
                               </span>
                             ) : null}
+                            {r.official?.secondary && (
+                              <span
+                                className="mt-0.5 block text-xs uppercase tracking-wider"
+                                style={{
+                                  fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
+                                  color: "var(--text-muted)",
+                                }}
+                              >
+                                Also: {r.official.secondary}
+                              </span>
+                            )}
                           </td>
                           <td className="px-4 py-3">
                             {r.wire ? (
@@ -256,27 +331,25 @@ export default async function InjuriesPage({
                                 Not listed
                               </span>
                             )}
+                            <OfficialWeek row={r} week={tracker.officialWeek} said={noInjuryThisWeek} />
                           </td>
-                          <td className="px-4 py-3">
-                            {r.record ? (
-                              <>
-                                <CampStatusPill status={r.record.status} />
-                                <span className="mt-1.5 block">
-                                  <Timeline injury={r.record} />
-                                </span>
-                              </>
-                            ) : r.summary ? (
-                              /* The injury, named. No badge, no hedge, no
-                                 sentence about where the words came from — the
-                                 operator's call on 2026-08-27 is that this
-                                 column says what is wrong with the player and
-                                 stops. A row with genuinely nothing prints
-                                 nothing rather than an apology for it (§8). */
-                              <span className="block font-semibold">
-                                {r.summary.text}
-                              </span>
-                            ) : null}
-                          </td>
+                          {showRecord && (
+                            <td className="px-4 py-3">
+                              {rec && (
+                                <>
+                                  <CampStatusPill status={rec.status} />
+                                  <span className="mt-1.5 block">
+                                    <Timeline injury={rec} />
+                                  </span>
+                                </>
+                              )}
+                              {/* No record, nothing here: the composed
+                                  description moved to the Injury column on
+                                  2026-09-19, where it replaced the raw field it
+                                  used to repeat. An empty cell says "not
+                                  written up" (§8). */}
+                            </td>
+                          )}
                           <td className="px-4 py-3">
                             <LastUpdateCell update={r.lastUpdate} />
                           </td>
@@ -300,18 +373,25 @@ export default async function InjuriesPage({
                                   Disagrees
                                 </span>
                                 <span>
-                                  the record says {r.record?.status}, the wire has
+                                  the record says {rec?.status}, the wire has
                                   him {r.wire}
                                 </span>
                               </span>
                             )}
-                            {r.record?.latest}
+                            {rec?.latest &&
+                              (r.recordSuperseded ? (
+                                <span className="block" style={{ color: "var(--text-muted)" }}>
+                                  {shortDate(rec.reported)}: {rec.latest}
+                                </span>
+                              ) : (
+                                rec.latest
+                              ))}
                             {/* No record means nobody here has written this
                                 player up. What exists is other people's
                                 reporting, published as they wrote it and
                                 credited to them (§2: headline, source and link,
                                 never body text). */}
-                            {!r.record &&
+                            {!rec &&
                               (r.headlines.length > 0 ? (
                                 <ul className="flex flex-col gap-2">
                                   {r.headlines.map((h) => (
@@ -332,20 +412,33 @@ export default async function InjuriesPage({
                                    status in plain words. "Questionable for
                                    Week 1 at L.A. Chargers" says more than an
                                    empty cell and is not this site's claim. */
-                                <span className="block">{r.board.status}</span>
+                                <span className="block">
+                                  {r.board.status}
+                                  {/* Named, because these lines carry return
+                                      estimates ("Expected Return - Week 5") and
+                                      §5.3 allows a timeline only with the name
+                                      of whoever gave it. They printed bare
+                                      until 2026-09-19. */}
+                                  <span
+                                    className="mt-0.5 block text-xs"
+                                    style={{ color: "var(--text-muted)" }}
+                                  >
+                                    {r.board.source}
+                                  </span>
+                                </span>
                               ) : null)}
-                            {r.record?.history && (
+                            {rec?.history && (
                               <span
                                 className="mt-1.5 block text-xs"
                                 style={{ color: "var(--text-muted)" }}
                               >
-                                History: {r.record.history}
+                                History: {rec.history}
                               </span>
                             )}
                             {/* The feed cannot write a diagnosis, but it can say
                                 something has been reported since this row was
                                 written — which is what a static page gets wrong. */}
-                            {r.record && isNewerThan(fresh, r.record.reported) && (
+                            {rec && isNewerThan(fresh, rec.reported) && (
                               <span
                                 className="mt-2 flex items-start gap-1.5 rounded px-2 py-1.5 text-xs"
                                 style={{
@@ -377,6 +470,84 @@ export default async function InjuriesPage({
       </Container>
     </>
   );
+}
+
+const PRACTICE_TEXT = {
+  DNP: "Did not practice",
+  Limited: "Limited in practice",
+  Full: "Full practice",
+} as const;
+
+/** Statuses for reserve lists. A player on one is never on the weekly report,
+ *  so "not on this week's report" would be true and would mislead. */
+const RESERVE = new Set(["IR", "PUP", "Sus", "DNR"]);
+
+/**
+ * This week's NFL injury report for one row: how he practiced and how he is
+ * designated, in the league's own terms, labelled as the league's.
+ *
+ * Added 2026-09-19 because a row could name a knee and a status and still not
+ * say whether the player was practising, which is what a reader is actually
+ * asking. It states only what the report states: practice participation, game
+ * designation, and when the report lists him for a rest day or a personal
+ * matter, that it is not an injury. It never says how he was hurt (no source
+ * the page pulls does) and never states a return date (§5.3).
+ *
+ * "Not on the Week N injury report" is printed only when his club filed that
+ * week, and never for a player on a reserve list, who is not carried on the
+ * weekly report at all.
+ */
+function OfficialWeek({
+  row,
+  week,
+  said = false,
+}: {
+  row: Pick<TrackerRow, "official" | "offReport" | "wire">;
+  week: number | null;
+  /** The Injury column has already said he is not on the report. */
+  said?: boolean;
+}) {
+  const label = (w: number) => (
+    <span
+      className="mt-0.5 block text-xs uppercase tracking-wider"
+      style={{
+        fontFamily: "var(--font-condensed)", fontStretch: "var(--stretch-condensed)",
+        color: "var(--text-muted)",
+      }}
+    >
+      NFL injury report, Wk {w}
+    </span>
+  );
+  const o = row.official;
+  if (o) {
+    const parts = [
+      o.practice ? PRACTICE_TEXT[o.practice] : null,
+      o.game ? `${o.game} for Week ${o.week}` : "No game designation",
+    ].filter(Boolean);
+    return (
+      <span className="mt-2 block text-sm">
+        <span className="block" style={{ color: "var(--text-primary)" }}>
+          {parts.join(" · ")}
+        </span>
+        {o.notInjury && (
+          <span className="block text-xs" style={{ color: "var(--text-secondary)" }}>
+            {o.notInjury === "rest"
+              ? "Listed for a rest day, not an injury"
+              : "Listed for a personal matter, not an injury"}
+          </span>
+        )}
+        {label(o.week)}
+      </span>
+    );
+  }
+  if (!said && row.offReport && week && !(row.wire && RESERVE.has(row.wire))) {
+    return (
+      <span className="mt-2 block text-sm" style={{ color: "var(--text-secondary)" }}>
+        Not on the Week {week} injury report
+      </span>
+    );
+  }
+  return null;
 }
 
 /** A team's rows under its own colour bar. Shared by both report sections so

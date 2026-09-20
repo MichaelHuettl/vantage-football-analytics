@@ -48,6 +48,10 @@ extractor still names an older file in `DEFAULT_WB` (see §7).
   labels given real spaces. `7fe838d`.
 - **"By Michael Huettl"** under the home lockup, in the footer, and in
   metadata. `9bec624`.
+- **Injury tracker detail.** Every row now carries this week's NFL injury
+  report — practice participation and game designation — from nflverse's
+  release of the league's official report. A written record about an earlier
+  injury is marked as such, and outside status lines are credited. See §3.
 - **Film room**: a "What Green Bay ran" summary above the reel (`d0b47c7`), and
   the plates cropped to the field with their info fields printed as text
   (`f84a135`).
@@ -77,7 +81,8 @@ site requires wherever it runs.
    Pin it on the host rather than trusting its default.
 4. **Outbound HTTP from server functions, with room to wait.** Request-time
    pulls hit CBS, nflweather, four publisher RSS feeds, 32 club newsrooms,
-   Sleeper, CBS injuries, DraftSharks and Sharp, with timeouts of 15 to 30
+   Sleeper, CBS injuries, DraftSharks, Sharp and the NFL injury report (a
+   GitHub release asset, cached an hour), with timeouts of 15 to 30
    seconds. Check the host's default function timeout; a short one fails these
    on a cold cache. The pulls are cached in-process, so on serverless each cold
    instance pulls afresh, which is more upstream traffic than one server.
@@ -125,6 +130,28 @@ Same league photo shoots, same framing, and it resizes server-side.
 NFL roster has his first name as William and his football name as Wil; the site
 has said Wil since the 2026-08-14 audit. It stays. The workbook's "Will" is the
 typo, and `weekly_rankings.py` corrects it.
+
+**The injury tracker could not say what was going on, and now mostly can.**
+The operator found its descriptions too vague. Sleeper carries a body part for
+most players and a one-word note for a few; nothing about practice, and nothing
+about how anyone was hurt. The NFL's official weekly report, which nflverse
+republishes, adds practice participation, the game designation and a second
+injury. It changed rows outright: Kaelon Black was "Illness" on Sleeper and
+"Groin" on the report; Christian McCaffrey, "Out" in an August record, was on
+the Week 2 report only for a rest day, practising fully. **How a player was
+hurt is in no source the page pulls**, only in articles it may not copy (§2),
+and the operator chose automatic detail over written accounts.
+
+**Six written records describe an earlier injury.** Stribling, Jeudy,
+Monangai, AJ Brown, Pacheco and McConkey each carry an August record for a
+different body region from the one on this week's report. Those rows now lead
+with the current injury and show the record as "Earlier: …, date". The
+comparison is by body region, not by word: a word match flagged 21 rows, 17 of
+them one injury in two wordings.
+
+**Board status lines printed return timelines unsourced.** "Expected Return -
+Week 5" appeared with no name on it, which §5.3 does not allow. They now carry
+CBS Sports or Sharp Football Analysis.
 
 **CBS publishes a line only before kickoff.** Finished games show no closing
 line: Week 1 keeps the August lines from `schedule.json`, and later weeks show
@@ -188,6 +215,14 @@ older snapshot had Arizona as `AZ`.
 the release current through Week 2 has him in New Orleans. Download the
 current CSV rather than trusting the mirror.
 
+**The Desktop syncs to iCloud, and a busy sync hangs `next build`.** The
+project lives in `~/Desktop`, which is in iCloud Drive (Desktop & Documents).
+With `cloudd` at 93% CPU, `next build` stopped after "Running next.config.ts"
+at 0% CPU with no network, and `fileproviderd` held `.next/lock` alongside it.
+It ignored SIGTERM; `kill -9` and removing the stale `.next/lock` were needed.
+When `cloudd` fell to 7% the same build finished in seconds. If a build
+stalls with no output, check `cloudd` before suspecting the code.
+
 **A re-run can reproduce a generated file with only its date changed.**
 `film_summary.py` stamps `generated_at`. When nothing computed changed, restore
 the file rather than commit a date.
@@ -214,6 +249,9 @@ the file rather than commit a date.
 - **The film provenance note is off the page.** It stays in the JSON.
 - **Short forms in capitals** in both models' labels.
 - **Ken Walker reads Kenneth Walker.** The chart label stays "K. Walker".
+- **Injury detail is automatic only.** Official practice and designation on
+  every row; no written "how it happened" accounts, which were offered for the
+  22 ranked injured players and declined.
 
 ---
 
@@ -260,6 +298,13 @@ the file rather than commit a date.
    account. His call.
 9. **Offered and not taken up yet**: his name on the share-card images, and an
    About page. The About page needs a bio and links from him.
+10. **The August injury records are largely stale.** Six are about an earlier
+    injury and several more describe a status the Week 2 report contradicts.
+    `camp-injuries.json` either needs refreshing or retiring now the report
+    covers every row.
+11. **Consider moving the project out of iCloud** (§4). A git repo,
+    `node_modules` and a build folder rewritten thousands of files at a time are
+    the worst case for a syncing folder.
 
 Closed this session: STATE.md item 19 (`defense.ts` now normalises its prose,
 as do the kicker and RB payloads), and the previous handoff's item 6. Mike
