@@ -19,7 +19,7 @@ The messages carry the reasoning and are long on purpose.
 
 | Path | What | Owner |
 | --- | --- | --- |
-| `~/Desktop/Claude Code/vantage/` | The Next.js site. **On GitHub now**: `MichaelHuettl/vantage`, private | yours |
+| `~/Desktop/Claude Code/vantage/` | The Next.js site. **On GitHub now**: `MichaelHuettl/vantage-football-analytics`, public. The older `MichaelHuettl/vantage` is a private archive, still on `old-origin` | yours |
 | `~/Desktop/Claude Code/fantasy-model/` | The fantasy projection model. Untouched this session | yours |
 | `~/Desktop/nflverse-data/nfl_predictor/` | The game-prediction pipeline | **a peer session — do not edit its Python** |
 | `~/Desktop/nflverse/` | Parquet mirror of nflverse + `nflverse.duckdb` | yours; not a repo |
@@ -89,8 +89,11 @@ site requires wherever it runs.
 5. **Next image optimisation.** `next.config.ts` allows `qualities: [75, 85]`
    and Next 16 **400s any other value** rather than falling back. The film
    plates request 85.
-6. **Access to a private repo.** Whatever host is connected needs to be granted
-   `MichaelHuettl/vantage` explicitly.
+6. **Repository access.** The site now lives at the public
+   `MichaelHuettl/vantage-football-analytics`, so a host needs no private-repo
+   grant. It moved there on 2026-09-20, when every commit of the operator's was
+   rewritten to his GitHub noreply address so the work credits his profile and
+   his personal email appears nowhere.
 
 **The news bot pushes to `main` about 26 times a day** (§3). A host that
 deploys on every push will rebuild that often. Either switch the workflow's

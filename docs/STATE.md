@@ -55,7 +55,8 @@ workbook and the nflverse export:
 | `scripts/curated/film_summary.py` | `film-summary-gb-det-2025-w1.json` | "What Green Bay ran", from the film data plus a hand transcription of the plates' grey motion lines |
 
 **One thing is scheduled, and it is busier than it looks.** The repo reached
-GitHub (`MichaelHuettl/vantage`, private) on 2026-09-01, and
+GitHub on 2026-09-01 (as the private `MichaelHuettl/vantage`; since 2026-09-20
+the live repo is the public `MichaelHuettl/vantage-football-analytics`), and
 `.github/workflows/news.yml` has run on its 30-minute cron ever since: about 480
 commits to `main` by 2026-09-19, each touching only `src/data/news.json`. That
 means local `main` falls behind within the hour, and a host that deploys on
