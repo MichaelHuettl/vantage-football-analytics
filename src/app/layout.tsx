@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import "./globals.css";
 import { AUTHOR } from "@/lib/site";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 /**
  * One family for the whole site.
@@ -96,6 +97,7 @@ export default function RootLayout({
           {children}
         </main>
         <SiteFooter />
+        <SpeedInsights />
       </body>
     </html>
   );
