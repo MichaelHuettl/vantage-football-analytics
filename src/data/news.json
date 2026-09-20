@@ -1,8 +1,103 @@
 {
  "schema_version": 1,
- "updated": "2026-09-19",
+ "updated": "2026-09-20",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "ECVSq1ZX5KlCM_Bl",
+   "headline": "How will Commanders Mike Sainristil do vs Cowboys today? – All aTwitter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-mike-sainristil-vs-cowboys-040000370.html",
+   "timestamp": "2026-09-20T04:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "WAS"
+   ]
+  },
+  {
+   "id": "CIcvQ54j_oTj6z1t",
+   "headline": "NFL is aware of potential issues with field in Brazil for Ravens-Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-aware-potential-issues-field-032003472.html",
+   "timestamp": "2026-09-20T03:20:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "DAL"
+   ]
+  },
+  {
+   "id": "J7jq9mOV8gis4G3i",
+   "headline": "Trade Interest In Steelers CB Joey Porter Jr. Light",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/trade-interest-in-steelers-cb-joey-porter-jr-light",
+   "timestamp": "2026-09-20T03:08:14.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "vCVE0DT--lGC3fwc",
+   "headline": "3 Key Matchups for Ravens-Saints Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-key-matchups-ravens-saints-030155219.html",
+   "timestamp": "2026-09-20T03:01:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "NO"
+   ]
+  },
+  {
+   "id": "7OY2SMUEqVPusuxE",
+   "headline": "Seahawks QB Sam Darnold Could Be Out Until October",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/seahawks-qb-sam-darnold-could-be-out-until-october",
+   "timestamp": "2026-09-20T03:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "iWtcs4lT1EQ6h--K",
+   "headline": "Weekend Musings: A tough week for the Houston Texans after a tough loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/weekend-musings-tough-week-houston-030000463.html",
+   "timestamp": "2026-09-20T03:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "L3sSCKqYNG_Hfdle",
+   "headline": "Jets Place Omar Cooper Jr. On IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/jets-place-wr-omar-cooper-on-ir",
+   "timestamp": "2026-09-20T02:58:45.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "4zbWcGqtSVaGzY8U",
+   "headline": "AFC Restructures: Raiders, Hoecht, Dolphins, Brown",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/afc-restructures-raiders-hoecht-dolphins-brown",
+   "timestamp": "2026-09-20T02:54:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "MIA"
+   ]
+  },
   {
    "id": "eFX6Jg-0gd7sLCaQ",
    "headline": "49ers Host Younghoe Koo, Greg Joseph",
@@ -15,6 +110,17 @@
    ]
   },
   {
+   "id": "NeKJkAp3HKJRH7bD",
+   "headline": "Phil Simms now a fan of Jaxson Dart after originally not being ‘crazy about’ him",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/phil-simms-now-fan-jaxson-020102221.html",
+   "timestamp": "2026-09-20T02:01:02.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxson-dart"
+   ]
+  },
+  {
    "id": "2lX67mwN6b7Bony_",
    "headline": "Titans vs. Eagles preview: 5 questions with Bleeding Green Nation",
    "source": "Yahoo Sports",
@@ -24,6 +130,18 @@
    "team_abbrs": [
     "PHI",
     "TEN"
+   ]
+  },
+  {
+   "id": "S-eqQRLWWUYu05fm",
+   "headline": "Jets look to show offensive effectiveness wasn’t a fluke in Week 2 test vs. Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-look-show-offensive-effectiveness-014125786.html",
+   "timestamp": "2026-09-20T01:41:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "NYJ"
    ]
   },
   {
@@ -823,17 +941,6 @@
    ]
   },
   {
-   "id": "J7jq9mOV8gis4G3i",
-   "headline": "Trade Interest In Steelers CB Joey Porter Jr. Light",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/trade-interest-in-steelers-cb-joey-porter-jr-light",
-   "timestamp": "2026-09-19T19:45:14.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
    "id": "uRh9bsyFCoh43TJK",
    "headline": "Remembering a Random Packers Game: The New York Jets",
    "source": "Yahoo Sports",
@@ -1185,17 +1292,6 @@
    ]
   },
   {
-   "id": "L3sSCKqYNG_Hfdle",
-   "headline": "Jets Place WR Omar Cooper On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/jets-place-wr-omar-cooper-on-ir",
-   "timestamp": "2026-09-19T17:30:45.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
    "id": "ptoAmVX_InQUkwBZ",
    "headline": "Jets rookie Omar Cooper Jr. headed to injured reserve, will miss at least four games",
    "source": "CBS Sports",
@@ -1359,20 +1455,6 @@
    "team_abbrs": [
     "LAC",
     "LV"
-   ]
-  },
-  {
-   "id": "7OY2SMUEqVPusuxE",
-   "headline": "Seahawks QB Sam Darnold Could Be Out Until October",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/seahawks-qb-sam-darnold-could-be-out-until-october",
-   "timestamp": "2026-09-19T16:28:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "SEA"
    ]
   },
   {
@@ -1664,96 +1746,6 @@
    "team_abbrs": [
     "BAL",
     "NO"
-   ]
-  },
-  {
-   "id": "97hkFLE_9M_V67GV",
-   "headline": "Seahawks vs. Cardinals, Week 2 preview: Can Seattle win its 12th straight?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-vs-cardinals-week-2-140000303.html",
-   "timestamp": "2026-09-19T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "SEA"
-   ]
-  },
-  {
-   "id": "ooGepAjXgAiaS6rg",
-   "headline": "Patrick Mahomes is no stranger to Colts DC Lou Anarumo",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patrick-mahomes-no-stranger-colts-140000627.html",
-   "timestamp": "2026-09-19T14:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "C5VHJZrc4nLwUA5Q",
-   "headline": "Broncos vs. Jaguars score predictions for Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-jaguars-score-predictions-140000917.html",
-   "timestamp": "2026-09-19T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "JAX"
-   ]
-  },
-  {
-   "id": "hGJIxwy164m9RE48",
-   "headline": "Let’s project what Dalton Kincaid extension could look like with Bills",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/let-project-dalton-kincaid-extension-133920649.html",
-   "timestamp": "2026-09-19T13:39:20.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "dalton-kincaid"
-   ],
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "WVdXYRlbYUjwIH9b",
-   "headline": "Weird rule from Saints-Lions wasn't mentioned during AFC Championship",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/weird-rule-saints-lions-wasnt-133817006.html",
-   "timestamp": "2026-09-19T13:38:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NO"
-   ]
-  },
-  {
-   "id": "RWMSvFsBIr3nw6ar",
-   "headline": "What should the Lions do to fix their defense?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-fix-defense-133000622.html",
-   "timestamp": "2026-09-19T13:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "7L1Tkvh1YB7glx6y",
-   "headline": "How Brock Purdy’s story as the 49ers’ starting quarterback began with the Dolphins",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-purdy-story-49ers-starting-133000512.html",
-   "timestamp": "2026-09-19T13:30:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-purdy"
-   ],
-   "team_abbrs": [
-    "MIA",
-    "SF"
    ]
   }
  ]
