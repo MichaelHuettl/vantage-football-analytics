@@ -1,8 +1,466 @@
 {
  "schema_version": 1,
- "updated": "2026-09-20",
+ "updated": "2026-09-21",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "Vl5o8T4xxnb4yfU7",
+   "headline": "Commanders left Dallas beaten, bruised, and 0-2: All aTwitter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-left-dallas-beaten-bruised-080033597.html",
+   "timestamp": "2026-09-21T08:00:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "yoV6ifjS13H43pEs",
+   "headline": "Jets vs. Lions odds: Jets open as Week 3 underdogs vs Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-vs-lions-odds-jets-075349897.html",
+   "timestamp": "2026-09-21T07:53:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "l3E464y48KIGPIYJ",
+   "headline": "De'Von Achane shoulders the load in Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/devon-achane-shoulders-load-week-073124512.html",
+   "timestamp": "2026-09-21T07:31:24.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "devon-achane"
+   ]
+  },
+  {
+   "id": "6i3fm0ROZ_2IbgKd",
+   "headline": "Justin Herbert has been the quarterback of tomorrow his entire NFL career. Whose fault is that?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/justin-herbert-quarterback-tomorrow-entire-070038075.html",
+   "timestamp": "2026-09-21T07:00:38.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ]
+  },
+  {
+   "id": "aaYODyBHueb24azt",
+   "headline": "Eagles vs. Titans: 7 winners, 5 losers, 5 IDKs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-vs-titans-7-winners-064950328.html",
+   "timestamp": "2026-09-21T06:49:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "TEN"
+   ]
+  },
+  {
+   "id": "IjAMulXHyVcnp_z9",
+   "headline": "NFL Week 2 instant reactions: Chargers DISASTER, Brian Flores cages Bears, Bengals defense is legit?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-week-2-instant-reactions-chargers-disaster-brian-flores-cages-bears-bengals-defense-is-legit-063356268.html",
+   "timestamp": "2026-09-21T06:33:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "CIN",
+    "LAC"
+   ]
+  },
+  {
+   "id": "eMEE8NW0Cv5lltNK",
+   "headline": "Chiefs back in business as star QBs go down - five things from NFL week two",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-back-business-star-qbs-061115340.html",
+   "timestamp": "2026-09-21T06:11:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "H2_qUwESQBj5vqKh",
+   "headline": "Another huge night for Kenneth Walker III",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/another-huge-night-kenneth-walker-060314386.html",
+   "timestamp": "2026-09-21T06:03:14.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kenneth-walker"
+   ]
+  },
+  {
+   "id": "KiXeIqHLTptim9Ah",
+   "headline": "Colts drop heartbreaker to Chiefs as overtime expires behind Butker’s game-winner",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-drop-heartbreaker-chiefs-overtime-060021191.html",
+   "timestamp": "2026-09-21T06:00:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "KC"
+   ]
+  },
+  {
+   "id": "M6r5YGM0B0cwEdFP",
+   "headline": "Patrick Mahomes displays MVP form on SNF",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patrick-mahomes-displays-mvp-form-054704374.html",
+   "timestamp": "2026-09-21T05:47:04.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "ld2C-pQlQFTlaG5P",
+   "headline": "Words of Prey, Seahawks-Cardinals: Bullying, dastardly defense, and a ‘Jax trick’ in the desert",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/words-prey-seahawks-cardinals-bullying-052938446.html",
+   "timestamp": "2026-09-21T05:29:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "SEA"
+   ]
+  },
+  {
+   "id": "qSOeB2A216nkptaz",
+   "headline": "6 Winners and 3 Losers from the Chiefs’ overtime win over the Colts",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/6-winners-3-losers-chiefs-051500291.html",
+   "timestamp": "2026-09-21T05:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "KC"
+   ]
+  },
+  {
+   "id": "MN6E-J0p806KhsA2",
+   "headline": "Xavier Worthy: Five catches in Week 2 win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/xavier-worthy-17687",
+   "timestamp": "2026-09-21T05:08:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "kvn3MbubohrDez8l",
+   "headline": "Travis Kelce: Signature showing in OT win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/travis-kelce-8783",
+   "timestamp": "2026-09-21T05:03:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "travis-kelce"
+   ]
+  },
+  {
+   "id": "OpLhPAJezF6dWcqw",
+   "headline": "Rashee Rice: Robust yardage total in OT win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/rashee-rice-16963",
+   "timestamp": "2026-09-21T04:59:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "rashee-rice"
+   ]
+  },
+  {
+   "id": "00T_BycoAmjSlrjC",
+   "headline": "Bijan Robinson totals 81 yards in loss to Panthers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bijan-robinson-totals-81-yards-045745996.html",
+   "timestamp": "2026-09-21T04:57:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bijan-robinson"
+   ],
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "wjLpVXKOX4dnfWFM",
+   "headline": "Packers Injury Updates: Matt LaFleur addresses Jayden Reed and Zach Bako-Bewele injuries",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-injury-updates-matt-lafleur-213538605.html",
+   "timestamp": "2026-09-21T04:49:40.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "RTHhtI_lcXI_Ua6i",
+   "headline": "Colts finally get TKO’d in OT during heavyweight SNF fight against Chiefs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-finally-tko-d-ot-044410483.html",
+   "timestamp": "2026-09-21T04:44:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "KC"
+   ]
+  },
+  {
+   "id": "FmwlLF26aLZ7Dpcv",
+   "headline": "Falcons' Drake London regrets getting into verbal altercation with fan amid blowout loss to Panthers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/falcons-drake-london-regrets-getting-into-verbal-altercation-with-fan-amid-blowout-loss-to-panthers-044131930.html",
+   "timestamp": "2026-09-21T04:41:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-london"
+   ],
+   "team_abbrs": [
+    "ATL",
+    "CAR"
+   ]
+  },
+  {
+   "id": "nt_a1rwmVcBuVsRT",
+   "headline": "Patrick Mahomes: Vintage performance in OT win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/patrick-mahomes-11839",
+   "timestamp": "2026-09-21T04:33:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "k1_TaP4qo3dRBe-5",
+   "headline": "Bears QB Caleb Williams Carted Off After Suffering Hamstring Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/bears-qb-caleb-williams-carted-off-in-week-2",
+   "timestamp": "2026-09-21T04:30:03.000Z",
+   "category": "injury",
+   "player_ids": [
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Ys7JWHBgOIC4mk2f",
+   "headline": "Kenneth Walker: Thrives with massive workload",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/kenneth-walker-15909",
+   "timestamp": "2026-09-21T04:26:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kenneth-walker"
+   ]
+  },
+  {
+   "id": "EKDW6cyjjEYGnWYF",
+   "headline": "Commanders QB Jayden Daniels Reinjures Left Elbow",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/commanders-qb-jayden-daniels-carted-off-after-reinjuring-left-elbow",
+   "timestamp": "2026-09-21T04:22:16.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jayden-daniels"
+   ],
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "Y5AWJPI7qbhZ5P0e",
+   "headline": "Rams DT Aaron Donald Plans To Return Monday",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/rams-dt-aaron-donald-plans-to-return-monday",
+   "timestamp": "2026-09-21T04:15:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "s-Qg4G2mzcaHVuBa",
+   "headline": "Fantasy football week 2 recap - rethink everything!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/article/fantasy-football-week-2-recap---rethink-everything-040830484.html",
+   "timestamp": "2026-09-21T04:08:30.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "JhHB89Fq6Zno8ki2",
+   "headline": "NFL Week 2 grades for all 32 teams: Saints earn an 'A' for stunning Ravens, Steelers get low mark",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-2-grades-saints-ravens-steelers/",
+   "timestamp": "2026-09-21T04:07:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "NO",
+    "PIT"
+   ]
+  },
+  {
+   "id": "cuCy0lIArj5aFMCq",
+   "headline": "Cover 32: Steelers offense is broken under Aaron Rodgers, plus games balls, biggest gaffes from Week 2",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-2-storylines-games-balls-gaffes/",
+   "timestamp": "2026-09-21T04:04:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "HnVOXfeQitCg2VHl",
+   "headline": "Sunday Night Football: Patrick Mahomes throws for 382 yards, 3 TDs in 33-30 OT win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sunday-night-football-patrick-mahomes-040248690.html",
+   "timestamp": "2026-09-21T04:02:48.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "sdy0EcQ5Za9BCiwC",
+   "headline": "Week 2 Stock Up, Stock Down: Youth served early at running back",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/week-2-stock-stock-down-040109825.html",
+   "timestamp": "2026-09-21T04:01:09.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "0UZ6s7B4aOXoV6wS",
+   "headline": "Rapid Reaction: 3 instant takeaways from Chiefs-Colts",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rapid-reaction-3-instant-takeaways-040000022.html",
+   "timestamp": "2026-09-21T04:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "KC"
+   ]
+  },
+  {
+   "id": "Q4cwix9urmLqpRut",
+   "headline": "Chiefs-Colts refs rule Indy receiver down before overtime fumble in controversial call",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-colts-refs-rule-indy-035454459.html",
+   "timestamp": "2026-09-21T03:54:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "KC"
+   ]
+  },
+  {
+   "id": "gk9BnGCB3zXtloj7",
+   "headline": "Ashton Jeanty totals 63 scrimmage yards",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ashton-jeanty-totals-63-scrimmage-033511035.html",
+   "timestamp": "2026-09-21T03:35:11.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ashton-jeanty"
+   ]
+  },
+  {
+   "id": "JJStDChaCw0fewiN",
+   "headline": "Packers Week 2: Stats from Green Bay’s victory over the Jets",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-week-2-stats-green-031229513.html",
+   "timestamp": "2026-09-21T03:12:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "uVdNuc0bqEUqArk3",
+   "headline": "CeeDee Lamb crushes Washington again",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ceedee-lamb-crushes-washington-again-030952859.html",
+   "timestamp": "2026-09-21T03:09:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ceedee-lamb"
+   ]
+  },
+  {
+   "id": "U0FStO34WAidJe3F",
+   "headline": "Eagles' Cam Jurgens says 'radiating' turf at Titans' field damaged his cleats; Nick Sirianni needed an IV",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/eagles-cam-jurgens-says-radiating-turf-at-titans-field-damaged-his-cleats-nick-sirianni-needed-an-iv-030758054.html",
+   "timestamp": "2026-09-21T03:07:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "TEN"
+   ]
+  },
+  {
+   "id": "5VEbuBS1p_kI4QPd",
+   "headline": "Vikings Set Another Unique NFL Record In Win Over Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-set-another-unique-nfl-030144298.html",
+   "timestamp": "2026-09-21T03:01:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "MIN"
+   ]
+  },
+  {
+   "id": "Q4B7zr0u8gEBm6C1",
+   "headline": "Broncos Put Faith In OC Davis Webb",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/broncos-put-faith-in-oc-davis-webb",
+   "timestamp": "2026-09-21T03:01:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "EgqcgqDbWix713lz",
+   "headline": "Colts' Alec Pierce ruled out after injuring heel vs. Chiefs on 'Sunday Night Football'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/colts-alec-pierce-injurychiefs/",
+   "timestamp": "2026-09-21T03:00:54.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "IND",
+    "KC"
+   ]
+  },
+  {
+   "id": "AddlvBXGe53YGpm0",
+   "headline": "Ranking 10 crucial fantasy football winners and losers from Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ranking-10-crucial-fantasy-football-030044687.html",
+   "timestamp": "2026-09-21T03:00:44.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "3eHqM8dGKCWs91Vn",
+   "headline": "Seahawks vs. Cardinals post-game reaction: Biggest takeaways from Seattle’s 31-7 win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-vs-cardinals-post-game-025802819.html",
+   "timestamp": "2026-09-21T02:58:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "SEA"
+   ]
+  },
   {
    "id": "IW5yQEUbT6O5t0ZP",
    "headline": "Parker Washington: Stands out in tough matchup",
@@ -15,6 +473,29 @@
    ]
   },
   {
+   "id": "s70ixT-onFsW_0-g",
+   "headline": "Dak Prescott sets new franchise TD pass record",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dak-prescott-sets-franchise-td-025157363.html",
+   "timestamp": "2026-09-21T02:51:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dak-prescott"
+   ]
+  },
+  {
+   "id": "dLba-z60I3HVEpsL",
+   "headline": "Commanders report card: Grading Washington’s performance in a NFL Week 2 loss to Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-report-card-grading-washington-024640881.html",
+   "timestamp": "2026-09-21T02:46:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "WAS"
+   ]
+  },
+  {
    "id": "Q6PkHZHqOT2HoMUt",
    "headline": "Bhayshul Tuten: Records rush TD in loss",
    "source": "RotoWire",
@@ -23,6 +504,18 @@
    "category": "breaking",
    "player_ids": [
     "bhayshul-tuten"
+   ]
+  },
+  {
+   "id": "yj-4h1YlZqbDvcPV",
+   "headline": "Jaguars vs. Patriots odds: Opening lines for Week 3 matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaguars-vs-patriots-odds-opening-024133052.html",
+   "timestamp": "2026-09-21T02:41:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "JAX",
+    "NE"
    ]
   },
   {
@@ -61,6 +554,30 @@
    ]
   },
   {
+   "id": "6yjPQt4nR_VToH_i",
+   "headline": "The egregious moment that epitomized Jets running game’s struggles versus Packers: ‘Just didn’t get it’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/egregious-moment-epitomized-jets-running-023401082.html",
+   "timestamp": "2026-09-21T02:34:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "rhQjLgyEQ3KGc5CN",
+   "headline": "Richie Incognito trolls Chargers with fiery post after Raiders beatdown",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/richie-incognito-trolls-chargers-fiery-022214345.html",
+   "timestamp": "2026-09-21T02:22:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "LV"
+   ]
+  },
+  {
    "id": "IyTjILxzQ6hwih-D",
    "headline": "Lions Hosting Jalen Mills, Jordan Fuller At Workout For DBs",
    "source": "Pro Football Rumors",
@@ -83,6 +600,17 @@
    ],
    "team_abbrs": [
     "KC"
+   ]
+  },
+  {
+   "id": "AkN6exRmSUDIU-vo",
+   "headline": "Geno Smith didn’t want to hear about the Jets’ positives after costly mistakes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/geno-smith-didn-t-want-021704730.html",
+   "timestamp": "2026-09-21T02:17:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -160,14 +688,17 @@
    ]
   },
   {
-   "id": "cuCy0lIArj5aFMCq",
-   "headline": "Cover 32: Steelers offense is broken under Aaron Rodgers, plus games balls, biggest gaffes from Week 2",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-2-storylines-games-balls-gaffes/",
-   "timestamp": "2026-09-21T01:54:01.000Z",
+   "id": "Q47HwwysgQj6qUp9",
+   "headline": "Taylor Swift celebrates husband Travis Kelce’s touchdown for Chiefs with wedding ring point",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/taylor-swift-celebrates-husband-travis-015510924.html",
+   "timestamp": "2026-09-21T01:55:10.000Z",
    "category": "breaking",
+   "player_ids": [
+    "travis-kelce"
+   ],
    "team_abbrs": [
-    "PIT"
+    "KC"
    ]
   },
   {
@@ -324,18 +855,6 @@
    ]
   },
   {
-   "id": "EgqcgqDbWix713lz",
-   "headline": "Colts' Alec Pierce ruled out after injuring heel vs. Chiefs on 'Sunday Night Football'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/colts-alec-pierce-injurychiefs/",
-   "timestamp": "2026-09-21T01:27:08.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
    "id": "10XIERKcEoL-7edt",
    "headline": "Alec Pierce injury update as Colts WR exits against Chiefs",
    "source": "Yahoo Sports",
@@ -446,6 +965,18 @@
    "category": "injury",
    "team_abbrs": [
     "IND"
+   ]
+  },
+  {
+   "id": "dpepcxNhVzZ7Eu_m",
+   "headline": "Colts' No. 1 WR Alec Pierce carried to sideline medical tent, carted off field with heel injury in OT loss to Chiefs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/colts-no-1-wr-alec-pierce-carried-to-sideline-medical-tent-carted-off-field-with-heel-injury-in-ot-loss-to-chiefs-010627991.html",
+   "timestamp": "2026-09-21T01:06:27.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "IND",
+    "KC"
    ]
   },
   {
@@ -616,20 +1147,6 @@
    ]
   },
   {
-   "id": "k1_TaP4qo3dRBe-5",
-   "headline": "Bears QB Caleb Williams Carted Off After Suffering Hamstring Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bears-qb-caleb-williams-carted-off-in-week-2",
-   "timestamp": "2026-09-21T00:34:03.000Z",
-   "category": "injury",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
    "id": "Mc_wgspONnNFAXTw",
    "headline": "Updated: Chicago Bears’ Caleb Williams leaves the game with a hamstring injury",
    "source": "Yahoo Sports",
@@ -701,33 +1218,6 @@
    "category": "breaking",
    "team_abbrs": [
     "CLE"
-   ]
-  },
-  {
-   "id": "JhHB89Fq6Zno8ki2",
-   "headline": "NFL Week 2 grades for all 32 teams: Saints earn an 'A' for stunning Ravens, Steelers get low mark",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-2-grades-saints-ravens-steelers/",
-   "timestamp": "2026-09-21T00:14:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "NO",
-    "PIT"
-   ]
-  },
-  {
-   "id": "EKDW6cyjjEYGnWYF",
-   "headline": "Commanders QB Jayden Daniels Carted Off After Reinjuring Left Elbow",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/commanders-qb-jayden-daniels-carted-off-after-reinjuring-left-elbow",
-   "timestamp": "2026-09-21T00:12:16.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels"
-   ],
-   "team_abbrs": [
-    "WAS"
    ]
   },
   {
@@ -1185,15 +1675,14 @@
   },
   {
    "id": "z3r4GH7MP4vhSUV-",
-   "headline": "Colts vs. Chiefs live updates, news, inactives: Patrick Mahomes, Kenneth Walker hope to maintain momentum in Week 2 vs. Daniel Jones & Co.",
+   "headline": "Patrick Mahomes and Kenneth Walker lead game-winning drive in OT as Chiefs beat Colts",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/chiefs-colts-score-live-updates-fantasy-football-highlights-stats-week-2-sunday-night-football-224500369.html",
    "timestamp": "2026-09-20T22:50:00.000Z",
    "category": "breaking",
    "player_ids": [
     "patrick-mahomes",
-    "kenneth-walker",
-    "daniel-jones"
+    "kenneth-walker"
    ],
    "team_abbrs": [
     "IND",
@@ -1292,519 +1781,6 @@
    ],
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "763EGzvD6NHU9Fbu",
-   "headline": "Liam Coen flagged for unsportsmanlike conduct, Broncos take 20-13 lead",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/liam-coen-flagged-unsportsmanlike-conduct-223625439.html",
-   "timestamp": "2026-09-20T22:36:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "dh34hdv1eLyVkdRo",
-   "headline": "Mike Vrabel when asked about Drake Maye's game vs. Steelers: 'You're not going to ruin my Sunday'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/mike-vrabel-when-asked-about-drake-mayes-game-vs-steelers-youre-not-going-to-ruin-my-sunday-223604225.html",
-   "timestamp": "2026-09-20T22:36:04.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "unp4EULZNxRNMXF7",
-   "headline": "Jaylen Warren totals 77 yards in Week 2 against New England",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaylen-warren-totals-77-yards-223402540.html",
-   "timestamp": "2026-09-20T22:34:02.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaylen-warren"
-   ]
-  },
-  {
-   "id": "x4z-JmncOhQ4Fa9S",
-   "headline": "'Never seen him go down': Bears' locker room reacts to Caleb Williams injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/never-seen-him-down-bears-223150602.html",
-   "timestamp": "2026-09-20T22:31:50.000Z",
-   "category": "injury",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "iESe9ffkJt0_w38W",
-   "headline": "NFL Week 2 Winners and Losers: Deshaun Watson has his best moment for Browns in win, likely keeps job for another week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-week-2-winners-and-losers-deshaun-watson-has-his-best-moment-for-browns-in-win-likely-keeps-job-for-another-week-222344641.html",
-   "timestamp": "2026-09-20T22:23:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "8TtQ1cCK58jlpx0r",
-   "headline": "Tom Brady slips on air after seeing replay of Jayden Daniels' gruesome elbow injury vs. Cowboys: 'Oh s***'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/tom-brady-slips-on-air-after-seeing-replay-of-jayden-daniels-gruesome-elbow-injury-vs-cowboys-oh-s-221432350.html",
-   "timestamp": "2026-09-20T22:14:32.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels"
-   ],
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "hnoOO8UcYwGi34A5",
-   "headline": "Use FanDuel promo code to get $350 in bonus bets for Chiefs-Colts, NFL Sunday Night Football betting",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-get-350-bonus-bets-chiefs-colts-nfl-sunday-night-football-betting/",
-   "timestamp": "2026-09-20T22:10:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "toPPmslW8xM2rADc",
-   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Colts-Chiefs on Sunday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-colts-chiefs-sunday-night-football/",
-   "timestamp": "2026-09-20T22:04:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "sCePeEIigJY4IR8Y",
-   "headline": "Use DraftKings promo code to get $200 in bonus bets by targeting Colts-Chiefs, NFL Sunday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-get-200-bonus-bets-colts-chiefs-nfl-sunday-night-football/",
-   "timestamp": "2026-09-20T21:51:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "JErNvWmLcjF-kQS2",
-   "headline": "49ers WR Demarcus Robinson carted off after suffering ankle injury early in blowout win over Dolphins",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/49ers-wr-demarcus-robinson-carted-off-after-suffering-ankle-injury-early-in-blowout-win-over-dolphins-215019620.html",
-   "timestamp": "2026-09-20T21:50:19.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "MIA",
-    "SF"
-   ]
-  },
-  {
-   "id": "wjLpVXKOX4dnfWFM",
-   "headline": "Packers Injury Updates: Matt LaFleur addresses Jayden Reed and Zach Bako-Bewele injuries",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-injury-updates-matt-lafleur-213538605.html",
-   "timestamp": "2026-09-20T21:35:38.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "QL-mDqGyB-fMPnxj",
-   "headline": "Joe Burrow: Solid, mistake-free effort in win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/joe-burrow-14442",
-   "timestamp": "2026-09-20T21:31:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "joe-burrow"
-   ]
-  },
-  {
-   "id": "NxcdzfCO_mDmZaGt",
-   "headline": "Jaguars take 10-3 lead into halftime in Denver",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-10-3-lead-halftime-212726507.html",
-   "timestamp": "2026-09-20T21:27:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "14zmbWacXgDOxwfh",
-   "headline": "49ers lose another receiver as Demarcus Robinson was carted to the locker room",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-lose-another-receiver-demarcus-212724230.html",
-   "timestamp": "2026-09-20T21:27:24.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "TpVSQ9b-7PMWDm4y",
-   "headline": "49ers host Dolphins in home-opener: Live updates, winners and losers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-host-dolphins-home-opener-212721925.html",
-   "timestamp": "2026-09-20T21:27:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "SF"
-   ]
-  },
-  {
-   "id": "g45VHBfLED8PN9uo",
-   "headline": "Broncos vs. Jaguars second quarter recap",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-jaguars-second-quarter-212434911.html",
-   "timestamp": "2026-09-20T21:24:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "JAX"
-   ]
-  },
-  {
-   "id": "N4wEtTfFXZ8oIXvI",
-   "headline": "Dak Prescott has 150 yards, two TDs and Cowboys lead 17-3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dak-prescott-150-yards-two-212211071.html",
-   "timestamp": "2026-09-20T21:22:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "dak-prescott"
-   ],
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "tCQFZpnJpDCbpoDx",
-   "headline": "Former Browns tight end carted off with injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/former-browns-tight-end-carted-212207322.html",
-   "timestamp": "2026-09-20T21:22:07.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "gktUOmjtzuyNH7RH",
-   "headline": "Chiefs vs. Colts: How to watch, TV, streaming 'Sunday Night Football,' plus odds and prediction",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/chiefs-vs-colts-how-to-watch-tv-channel-live-stream-nfl-start-time-odds/",
-   "timestamp": "2026-09-20T21:16:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "OyAkNDbhq2Fmfnr9",
-   "headline": "Packers Snap Counts: Green Bay uses 8 offensive linemen vs. the New York Jets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-snap-counts-green-bay-211226763.html",
-   "timestamp": "2026-09-20T21:12:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "-YtoL-OQJzbRC-E6",
-   "headline": "Lamar Jackson throws one TD, one INT in Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lamar-jackson-throws-one-td-211120599.html",
-   "timestamp": "2026-09-20T21:11:20.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ]
-  },
-  {
-   "id": "mg23tDH52H1ou3JY",
-   "headline": "Puka Nacua Trending In ‘Wrong Direction’ For Week 2",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/puka-nacua-trending-in-wrong-direction-for-week-2",
-   "timestamp": "2026-09-20T21:08:01.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "uZTSLPeHOVjRZWi_",
-   "headline": "Steelers stock report after embarrassing loss to Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-stock-report-embarrassing-loss-210721997.html",
-   "timestamp": "2026-09-20T21:07:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "V6pK20WoB5D73qUW",
-   "headline": "Chargers TE David Njoku carted off vs. Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-te-david-njoku-carted-210136325.html",
-   "timestamp": "2026-09-20T21:01:36.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAC",
-    "LV"
-   ]
-  },
-  {
-   "id": "NtUJNDLJFVIEFf0D",
-   "headline": "Juwan Johnson finishes with 66 yards",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/juwan-johnson-finishes-66-yards-210101683.html",
-   "timestamp": "2026-09-20T21:01:01.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "juwan-johnson"
-   ]
-  },
-  {
-   "id": "GJEZnTen41FQ9GQI",
-   "headline": "Is Taylor Swift at the Chiefs game tonight? Latest updates for Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/taylor-swift-chiefs-game-tonight-210032753.html",
-   "timestamp": "2026-09-20T21:00:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "Kr_ZPcAVM4s80dz3",
-   "headline": "Jets blow late double-digit lead, lose to Packers in overtime, 20-17",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-blow-double-digit-lead-210016112.html",
-   "timestamp": "2026-09-20T21:00:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "QjxG5W-mafQSmVQh",
-   "headline": "Tracking snap counts and Pro Football Focus grades from Arizona’s win over NIU",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tracking-snap-counts-pro-football-210000620.html",
-   "timestamp": "2026-09-20T21:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "RR-yNfZw47rPxS8z",
-   "headline": "Kirk Cousins hits Tre Tucker for 40-yard touchdown, Raiders lead 7-0",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kirk-cousins-hits-tre-tucker-205903960.html",
-   "timestamp": "2026-09-20T20:59:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "6l1_oRXmEeNLeuai",
-   "headline": "Drew Lock finds a wide-open Jaxon Smith-Njigba for a perfect 82-yard TD early vs. Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/drew-lock-finds-a-wide-open-jaxon-smith-njigba-for-a-perfect-82-yard-td-early-vs-cardinals-205852902.html",
-   "timestamp": "2026-09-20T20:58:52.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxon-smith-njigba"
-   ],
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "NSz3fYEgdBQE6mN1",
-   "headline": "Drew Lock finds Jaxon Smith-Njigba for 3 TDs, including a perfect 82-yard score, in dominant win over Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/drew-lock-finds-jaxon-smith-njigba-for-3-tds-including-a-perfect-82-yard-score-in-dominant-win-over-cardinals-205852902.html",
-   "timestamp": "2026-09-20T20:58:52.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxon-smith-njigba"
-   ],
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "5BPLLnCkG9MUqXaN",
-   "headline": "Chiefs vs. Colts picks, prediction, player props: Expert's best bets for Sunday Night Football in NFL Week 2",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/chiefs-vs-colts-picks-prediction-player-props-experts-best-bets-for-sunday-night-football-in-nfl-week-2/",
-   "timestamp": "2026-09-20T20:57:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "8pQvUg-5emPgSeMZ",
-   "headline": "Winners and losers of Bengals' stifling NFL Week 2 victory over Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/winners-losers-bengals-stifling-nfl-205321668.html",
-   "timestamp": "2026-09-20T20:53:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "HOU"
-   ]
-  },
-  {
-   "id": "vau3SLrUK-wUYjw2",
-   "headline": "Chargers TE David Njoku carted off with knee injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-te-david-njoku-carted-205250451.html",
-   "timestamp": "2026-09-20T20:52:50.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "4LA9IDP5g0d5sO48",
-   "headline": "Chicago Bears Drop Home Opener to Vikings in the Rain and Lose Caleb Williams to Injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-drop-home-opener-205203653.html",
-   "timestamp": "2026-09-20T20:52:03.000Z",
-   "category": "injury",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI",
-    "MIN"
-   ]
-  },
-  {
-   "id": "eyOdkX6XG7PgXM99",
-   "headline": "Jaguars get out to 7-0 lead in Denver",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-7-0-lead-denver-205138114.html",
-   "timestamp": "2026-09-20T20:51:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "vaxyZc2T7MPlWkVl",
-   "headline": "LOOK: Ja'Marr Chase makes absurd TD catch that could be best grab you'll see all season",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/look-jamarr-chase-makes-absurd-td-catch-vs-texans/",
-   "timestamp": "2026-09-20T20:51:36.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jamarr-chase"
-   ]
-  },
-  {
-   "id": "3W5W4sHfoWghRMvW",
-   "headline": "Eagles-Titans final score: Jalen Hurts leads game-winning touchdown drive",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-vs-titans-live-score-164833701.html",
-   "timestamp": "2026-09-20T20:50:48.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI",
-    "TEN"
-   ]
-  },
-  {
-   "id": "VNmo0kPC8wSEKzb-",
-   "headline": "Instant analysis from Patriots’ 20-3 win over Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/instant-analysis-patriots-20-3-204845773.html",
-   "timestamp": "2026-09-20T20:48:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "mVC5B7JJ79CKPiqU",
-   "headline": "New York Jets vs Green Bay Packers: Jets fall in devastating home opener loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-vs-green-bay-204840727.html",
-   "timestamp": "2026-09-20T20:48:40.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "_l9hOqVdaWj7Q-Ib",
-   "headline": "Mike McCarthy takes blame for Steelers’ offensive struggles vs. Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mike-mccarthy-takes-blame-steelers-204736590.html",
-   "timestamp": "2026-09-20T20:47:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "vDBEGMUVs0bDOcYX",
-   "headline": "Saints left tackle Kelvin Banks Jr. suffers ankle injury: New Orleans loses 2025 No. 9 overall pick",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/saints-kelvin-banks-jr-suffers-ankle-injury/",
-   "timestamp": "2026-09-20T20:43:10.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "YeyJFZIaV1aSb-QR",
-   "headline": "Broncos vs. Jaguars first quarter recap",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-jaguars-first-quarter-204259650.html",
-   "timestamp": "2026-09-20T20:42:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "JAX"
    ]
   }
  ]
