@@ -4,6 +4,765 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "iHjCBqsiY3byQ3R0",
+   "headline": "Aaron Donald: Active for Week 2",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/aaron-donald-9391",
+   "timestamp": "2026-09-21T23:20:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "zFfasWsMhQ9O8tZ5",
+   "headline": "Browns HC Todd Monken optimistic over Deshaun Watson as QB1: 'I see him as still a very young player that is gonna continue to grow'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/browns-hc-todd-monken-optimistic-over-deshaun-watson-as-qb1-i-see-him-as-still-a-very-young-player-that-is-gonna-continue-to-grow-231947373.html",
+   "timestamp": "2026-09-21T23:19:47.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "ydI0xaEsqRBhcmDg",
+   "headline": "Davante Adams: No. 1 WR with Nacua inactive",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/davante-adams-9455",
+   "timestamp": "2026-09-21T23:09:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "davante-adams"
+   ]
+  },
+  {
+   "id": "K8KxtVVq3D8e8S_S",
+   "headline": "Giants vs. Rams picks, prediction, player props: Expert's best bets for Monday Night Football in NFL Week 2",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/giants-rams-picks-prediction-player-props-experts-best-bets-monday-night-football-nfl-week-2/",
+   "timestamp": "2026-09-21T23:07:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "AeCypRfVRi8vH30_",
+   "headline": "Use FanDuel promo code to get $250 in bonus bets by targeting Giants vs. Rams on NFL Monday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-giants-rams-on-nfl-monday-night-football/",
+   "timestamp": "2026-09-21T23:04:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "VS12ztEiE3AnDnDA",
+   "headline": "The best of the (actually funny) Caleb Williams injury memes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/the-best-of-the-actually-funny-caleb-williams-injury-memes-230354732.html",
+   "timestamp": "2026-09-21T23:03:54.000Z",
+   "category": "injury",
+   "player_ids": [
+    "caleb-williams"
+   ]
+  },
+  {
+   "id": "FhJ9x9H5TUSSsU8F",
+   "headline": "Eagles bringing back franchise legend Zach Ertz after Dallas Goedert injury",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/eagles-zach-ertz-practice-squad/",
+   "timestamp": "2026-09-21T23:01:13.000Z",
+   "category": "injury",
+   "player_ids": [
+    "dallas-goedert"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "cgchW1hkuXDArrUQ",
+   "headline": "Monday Night Football: Puka Nacua is officially inactive with hip injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/monday-night-football-puka-nacua-230030911.html",
+   "timestamp": "2026-09-21T23:00:30.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "3UkvIELJyHGvTZb4",
+   "headline": "Dak Prescott was at his best on Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dak-prescott-best-sunday-230000834.html",
+   "timestamp": "2026-09-21T23:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dak-prescott"
+   ]
+  },
+  {
+   "id": "EIMe4n66OtFt-b81",
+   "headline": "Giants without Deonte Banks; Puka Nacua won’t play Monday for Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-without-deonte-banks-puka-225858500.html",
+   "timestamp": "2026-09-21T22:58:58.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "LoibWiQcicih_gsg",
+   "headline": "Rams WR Puka Nacua inactive for Monday night's game vs. Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-wr-puka-nacua-inactive-225739593.html",
+   "timestamp": "2026-09-21T22:57:39.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "kwjmzatHOfdj81Kh",
+   "headline": "Zach Ertz returning to Philadelphia, will sign with Eagles' practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/zach-ertz-returning-philadelphia-sign-225425777.html",
+   "timestamp": "2026-09-21T22:54:25.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "3Oio063_063077OH",
+   "headline": "Use FanDuel promo code to get $250 in bonus bets for Giants vs. Rams Monday Night Football in NFL Week 2",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-get-250-bonus-bets-giants-rams-monday-night-football-nfl-week-2/",
+   "timestamp": "2026-09-21T22:50:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "IXILgA5hUvqJwHEw",
+   "headline": "Puka Nacua: Inactive in Week 2",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/puka-nacua-16790",
+   "timestamp": "2026-09-21T22:50:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "-Rr_8F4Us0focMo4",
+   "headline": "Rams vs. Giants preview: Aaron Donald makes return for Los Angeles on 'MNF'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/giants-vs-rams-how-to-watch-prediction-preview/",
+   "timestamp": "2026-09-21T22:48:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "mg23tDH52H1ou3JY",
+   "headline": "Rams Rule Out WR Puka Nacua For Week 2",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/puka-nacua-trending-in-wrong-direction-for-week-2",
+   "timestamp": "2026-09-21T22:47:01.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "M2GcF9NVp7-4u93Z",
+   "headline": "Is Puka Nacua playing on 'MNF?' A look at the Rams WR's status against Giants",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/is-puka-nacua-playing-on-mnf-rams-wrs-status-against-giants/",
+   "timestamp": "2026-09-21T22:46:59.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "9exbKQ-vC0q9kbDd",
+   "headline": "The Falcons finally have a QB. Now Michael Penix Jr. must prove he's a good one | Opinion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-finally-qb-now-michael-224306068.html",
+   "timestamp": "2026-09-21T22:43:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "79eBkifEls6D98IO",
+   "headline": "What happened to Jonathon Brooks? Panthers RB injury update",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/happened-jonathon-brooks-panthers-rb-223931608.html",
+   "timestamp": "2026-09-21T22:39:31.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "vMgPZS6rwQXR8vTr",
+   "headline": "Bears struggled in the rain while Vikings adapted",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-struggled-rain-while-vikings-223000556.html",
+   "timestamp": "2026-09-21T22:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "MIN"
+   ]
+  },
+  {
+   "id": "K4dSatohN0L8ZX4t",
+   "headline": "49ers vs. Cardinals odds: Opening lines for Week 3 matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-3-odds-49ers-222522362.html",
+   "timestamp": "2026-09-21T22:28:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "SF"
+   ]
+  },
+  {
+   "id": "3isXzupCII9vtfbk",
+   "headline": "Monday practice report for Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/monday-practice-report-packers-222333450.html",
+   "timestamp": "2026-09-21T22:23:33.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "rjE9FnfUqDg7R2uO",
+   "headline": "Zach Ertz: Joins Eagles practice squad",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/zach-ertz-8781",
+   "timestamp": "2026-09-21T22:22:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "q8G6qGqD1zbTuBU_",
+   "headline": "Eagles To Bring Back TE Zach Ertz",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/eagles-to-bring-back-te-zach-ertz",
+   "timestamp": "2026-09-21T22:19:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "4NWIZ-2aa5Be15Ps",
+   "headline": "Giants vs. Rams live updates, news, inactives: Puka Nacua ruled out, Aaron Donald comes out of retirement to make 2026 season debut",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/live/giants-vs-rams-score-live-updates-fantasy-football-highlights-stats-week-2-puka-nacua-playing-aaron-donald-returns-221500762.html",
+   "timestamp": "2026-09-21T22:15:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "WR_vLE_1oUapZMiH",
+   "headline": "Patriots projected to drop Week 3 game in Jacksonville",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-projected-drop-week-3-221358905.html",
+   "timestamp": "2026-09-21T22:13:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "4lsddd5TexWScezt",
+   "headline": "Cardinals CB Will Johnson has a neck injury that could end his season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-cb-johnson-neck-injury-221023956.html",
+   "timestamp": "2026-09-21T22:10:23.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "BQiGzXdLYbAxIaML",
+   "headline": "Giants vs. Rams odds, predictions, NFL picks, best bets: Betting preview for Monday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/giants-rams-odds-predictions-nfl-picks-best-bets-betting-preview-monday-night-football/",
+   "timestamp": "2026-09-21T22:08:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "GozK-GgCAmymHw65",
+   "headline": "Chargers place David Njoku, Charlie Kolar on injured reserve",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-place-david-njoku-charlie-220805056.html",
+   "timestamp": "2026-09-21T22:08:05.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "7w5AeHnHN5qUKakr",
+   "headline": "Scouting Report: How the Green Bay Packers’ offense performed in Week 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/scouting-report-green-bay-packers-220542527.html",
+   "timestamp": "2026-09-21T22:05:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "l9JC0o-B2GX9Vs3z",
+   "headline": "Monday practice report for Falcons",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/monday-practice-report-falcons-220212300.html",
+   "timestamp": "2026-09-21T22:02:12.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "r6DXJKxK2cyCDEcV",
+   "headline": "Dabble Promo Code YAHOOBONUS: $50 Bonus for Giants vs. Rams on Monday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/betting/sportsbook/promos/article/dabble-promo-code-yahoobonus-50-bonus-for-giants-vs-rams-on-monday-night-football-220000905.html",
+   "timestamp": "2026-09-21T22:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "JROsBUFyvA1_spjt",
+   "headline": "Chargers To Place TEs David Njoku, Charlie Kolar On IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/chargers-to-place-tes-david-njoku-charlie-kolar-on-ir",
+   "timestamp": "2026-09-21T21:57:09.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "Gl1R0t7QMkEtCGZv",
+   "headline": "Cowboys CB Cobie Durant, S P.J. Locke will miss a few weeks with injuries",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-cb-cobie-durant-p-214857105.html",
+   "timestamp": "2026-09-21T21:48:57.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "-I6q2rwD2FJ-VIzr",
+   "headline": "Panthers RB Jonathon Brooks is week-to-week with groin injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-rb-jonathon-brooks-week-214637157.html",
+   "timestamp": "2026-09-21T21:46:37.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "nF3Slj0Knw8oIE9F",
+   "headline": "Patriots bring four tight ends in for workouts following win over Steelers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-bring-four-tight-ends-214600926.html",
+   "timestamp": "2026-09-21T21:46:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "zywQMiYDmqbUDlew",
+   "headline": "Lessons from Week 2: Deshaun Watson, Baker Mayfield, Week 1 Browns, defense in our 4 Downs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lessons-week-2-deshaun-watson-214256356.html",
+   "timestamp": "2026-09-21T21:42:56.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "baker-mayfield"
+   ],
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "mBEH-PgKfQWhL0Tt",
+   "headline": "Bears vs. Vikings Game Balls: A No Good, Very Bad Day",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-vs-vikings-game-balls-213932704.html",
+   "timestamp": "2026-09-21T21:39:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "MIN"
+   ]
+  },
+  {
+   "id": "7pqViPkxgy9AmbbZ",
+   "headline": "Tyree Wilson quiet so far with New Orleans Saints",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tyree-wilson-quiet-far-orleans-213900010.html",
+   "timestamp": "2026-09-21T21:39:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "zOyEsVnCsjXCKJZq",
+   "headline": "Lions bring back veteran safety to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-bring-back-veteran-safety-213246928.html",
+   "timestamp": "2026-09-21T21:32:46.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "rTc5u1SzLV7I_8hv",
+   "headline": "How former Cyclones performed in Week 2 of the NFL",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-cyclones-performed-week-2-213015331.html",
+   "timestamp": "2026-09-21T21:30:15.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "2QFby8lE9JCNy-gj",
+   "headline": "Cowboys vs. Commanders Stock Report: Dak Prescott and offense up, defense still shaky",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-vs-commanders-stock-report-213000019.html",
+   "timestamp": "2026-09-21T21:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dak-prescott"
+   ],
+   "team_abbrs": [
+    "DAL",
+    "WAS"
+   ]
+  },
+  {
+   "id": "Rlud3UpZXY-PhDdQ",
+   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Rams-Giants, NFL Monday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-rams-giants-nfl-monday-night-football/",
+   "timestamp": "2026-09-21T21:29:47.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "yhql1zsILg7FzlNs",
+   "headline": "Steelers OT Troy Fautanu seen in walking boot after loss to Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-ot-troy-fautanu-seen-212853672.html",
+   "timestamp": "2026-09-21T21:28:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "YiwjaGPyRWLwG2-x",
+   "headline": "Green Bay Packers release first injury report of Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/green-bay-packers-release-first-212844264.html",
+   "timestamp": "2026-09-21T21:28:44.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "Lg_1bnzP27rUg9OO",
+   "headline": "Use DraftKings promo code to get $150 in bonus bets by targeting Rams vs. Giants, NFL Monday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-150-bonus-bets-rams-giants-nfl-monday-night-football/",
+   "timestamp": "2026-09-21T21:27:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "wJG1Cwi1x_6u1u_s",
+   "headline": "Dallas Goedert injury: Eagles tight end will miss time with MCL sprain",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dallas-goedert-injury-eagles-tight-212706334.html",
+   "timestamp": "2026-09-21T21:27:06.000Z",
+   "category": "injury",
+   "player_ids": [
+    "dallas-goedert"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "PEkDHnYlcEpI6_9s",
+   "headline": "Dallas Goedert sprained his MCL, will miss a few weeks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dallas-goedert-sprained-mcl-miss-211957641.html",
+   "timestamp": "2026-09-21T21:19:57.000Z",
+   "category": "injury",
+   "player_ids": [
+    "dallas-goedert"
+   ]
+  },
+  {
+   "id": "Ip8njmVyLCFv8b7O",
+   "headline": "NFL injury updates: No timeline on Jayden Daniels; Caleb Williams not ruled out for next week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-injury-updates-no-timeline-211841831.html",
+   "timestamp": "2026-09-21T21:18:41.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jayden-daniels",
+    "caleb-williams"
+   ]
+  },
+  {
+   "id": "9rJWdCyMaJyQAh4Z",
+   "headline": "Packers work out 3 players on Monday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-3-players-monday-211620151.html",
+   "timestamp": "2026-09-21T21:16:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "S8Q1kcaLfEZRTkF2",
+   "headline": "Falcons Name Michael Penix Jr. Week 3 Starting QB",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/falcons-name-michael-penix-jr-week-3-starting-qb",
+   "timestamp": "2026-09-21T21:13:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "bYd-awRdsM8CklVe",
+   "headline": "Falcons announce starting QB for Week 3: Michael Penix gets call against Packers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/falcons-announce-starting-qb-week-3-michael-penix-packers/",
+   "timestamp": "2026-09-21T21:07:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "PIi9OE_7A85Lcisf",
+   "headline": "Eagles reportedly bringing back TE Zach Ertz amid MCL injury that's expected to sideline Dallas Goedert for multiple weeks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/eagles-reportedly-bringing-back-te-zach-ertz-amid-mcl-injury-thats-expected-to-sideline-dallas-goedert-for-multiple-weeks-210353518.html",
+   "timestamp": "2026-09-21T21:03:53.000Z",
+   "category": "injury",
+   "player_ids": [
+    "dallas-goedert"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "k88B_0xt-5iFu_vG",
+   "headline": "Giants elevate Braxton Berrios, Malik Harrison from practice squad again",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-elevate-braxton-berrios-malik-210021159.html",
+   "timestamp": "2026-09-21T21:00:21.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "1wdxCG_4tFC-tVLS",
+   "headline": "Washington Commanders Whiteboard: Notes, observations from Week 2 loss and what should happen next",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/washington-commanders-whiteboard-notes-observations-210000150.html",
+   "timestamp": "2026-09-21T21:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "Ur_JdRnQnuoD2omZ",
+   "headline": "Joey Porter contract: Steelers cornerback rejected lucrative contract extension, per report",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/joey-porter-contract-steelers-cornerback-rejected-contract-extension/",
+   "timestamp": "2026-09-21T20:58:47.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "UDZ9VBidLHNOKz2H",
+   "headline": "Michael Penix Jr. will start at QB on Thursday Night Football against the Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/michael-penix-jr-start-qb-205313988.html",
+   "timestamp": "2026-09-21T20:53:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "rfaL00mGzBgffBfC",
+   "headline": "Jayden Daniels injury: Commanders QB examining options, Marcus Mariota to start Week 3",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jayden-daniels-injury-commanders-qb-examining-options/",
+   "timestamp": "2026-09-21T20:51:54.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jayden-daniels"
+   ],
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "xlOwh6L3Xaqw_Xak",
+   "headline": "Fantasy Football Video: After monster game vs. Colts, is Travis Kelce back to elite TE status?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-video-after-monster-game-vs-colts-is-travis-kelce-back-to-elite-te-status-205139005.html",
+   "timestamp": "2026-09-21T20:51:39.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "travis-kelce"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "YOPHBtu2SgQGjeSs",
+   "headline": "Romello Height becomes the latest 49ers’ rookie to suffer an injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/romello-height-becomes-latest-49ers-205122025.html",
+   "timestamp": "2026-09-21T20:51:22.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "t9IJkT9cB_xQZ6cD",
+   "headline": "The Packers will face Falcons QB Michael Penix on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-face-falcons-qb-michael-204642306.html",
+   "timestamp": "2026-09-21T20:46:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "8w1i1k4i12xLj5QZ",
+   "headline": "Michael Penix Jr. will start for Falcons on Thursday night",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/michael-penix-jr-start-falcons-204550871.html",
+   "timestamp": "2026-09-21T20:45:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "5wqoEl9lulImfH6E",
+   "headline": "Bears Not Expecting Long-Term Caleb Williams Absence",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/bears-not-expecting-long-term-caleb-williams-absence",
+   "timestamp": "2026-09-21T20:43:46.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "BkMx4IIqU_4UA_xx",
+   "headline": "Michael Penix Jr. named Falcons starting quarterback for Week 3 vs. Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/michael-penix-jr-named-falcons-starting-quarterback-for-week-3-vs-packers-203410804.html",
+   "timestamp": "2026-09-21T20:34:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
    "id": "0f0y4O2HOWqrdgkx",
    "headline": "Brock Bowers: Practicing in Week 3, aiming to play Sunday",
    "source": "RotoWire",
@@ -97,20 +856,6 @@
    ],
    "team_abbrs": [
     "MIN"
-   ]
-  },
-  {
-   "id": "rfaL00mGzBgffBfC",
-   "headline": "Jayden Daniels injury: Commanders QB examining options, Marcus Mariota to start Week 3, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jayden-daniels-injury-commanders-qb-examining-options/",
-   "timestamp": "2026-09-21T19:42:34.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels"
-   ],
-   "team_abbrs": [
-    "WAS"
    ]
   },
   {
@@ -538,20 +1283,6 @@
    ]
   },
   {
-   "id": "5wqoEl9lulImfH6E",
-   "headline": "Bears Not Expecting Long-Term Caleb Williams Absence",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bears-not-expecting-long-term-caleb-williams-absence",
-   "timestamp": "2026-09-21T17:53:46.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
    "id": "zpEQXcclWiI7LB_r",
    "headline": "NFL Injury Report, Week 3: Latest news, updates for Caleb Williams, more players with fantasy football analysis",
    "source": "Yahoo Sports",
@@ -616,21 +1347,6 @@
    "category": "breaking",
    "player_ids": [
     "caleb-williams"
-   ]
-  },
-  {
-   "id": "M2GcF9NVp7-4u93Z",
-   "headline": "Is Puka Nacua playing on 'MNF?' A look at the Rams WR's status against Giants",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/is-puka-nacua-playing-on-mnf-rams-wrs-status-against-giants/",
-   "timestamp": "2026-09-21T17:23:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
    ]
   },
   {
@@ -1070,725 +1786,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL",
-    "WAS"
-   ]
-  },
-  {
-   "id": "9WOXmMvOh9AMOfPC",
-   "headline": "The Good, the Bad, and the Ugly from the Saints win against the Ravens",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/good-bad-ugly-saints-win-143000152.html",
-   "timestamp": "2026-09-21T14:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "NO"
-   ]
-  },
-  {
-   "id": "dvjgDUXbSOtAS9zh",
-   "headline": "NFL Monday Night Football preview: Rams, without Myles Garrett and perhaps Puka Nacua too, already in big spot vs. Giants",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-monday-night-football-preview-rams-without-myles-garrett-and-perhaps-puka-nacua-too-already-in-big-spot-vs-giants-142656309.html",
-   "timestamp": "2026-09-21T14:26:56.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "uILVdCrG9zHe_C70",
-   "headline": "To kick, or not to kick? NFL's new OT rules leave coaches with tough choice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kick-not-kick-nfls-ot-142050036.html",
-   "timestamp": "2026-09-21T14:20:50.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "tJJQmx75xU7doFcA",
-   "headline": "The 3 biggest stars from the 49ers’ home opener: No rust for George Kittle",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-biggest-stars-49ers-home-141915631.html",
-   "timestamp": "2026-09-21T14:19:15.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ],
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "56tVytY6LpJMhxin",
-   "headline": "Aaron Glenn: No regrets about how we handled end of regulation against Packers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-glenn-no-regrets-handled-141534495.html",
-   "timestamp": "2026-09-21T14:15:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "owDmz1uAduBmVECo",
-   "headline": "Chiefs’ Kahlil Benson is ‘winning over a lot of people,’ says Andy Reid",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-kahlil-benson-winning-over-141500040.html",
-   "timestamp": "2026-09-21T14:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "XBFIHxpOE5lcaIK1",
-   "headline": "Colts receive initial encouraging injury update on Alec Pierce, but further evaluation coming on Monday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-receive-initial-encouraging-injury-141314614.html",
-   "timestamp": "2026-09-21T14:13:14.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "oFclJVVIbQwIGEFw",
-   "headline": "George Kittle scores in Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/george-kittle-scores-week-2-141206420.html",
-   "timestamp": "2026-09-21T14:12:06.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ]
-  },
-  {
-   "id": "7s4pLpZRCHI1DNQh",
-   "headline": "The Takeaway: Jalen Hurts can handle the heat",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/takeaway-jalen-hurts-handle-heat-140758176.html",
-   "timestamp": "2026-09-21T14:07:58.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ]
-  },
-  {
-   "id": "L5wmsRA1W1td7iYB",
-   "headline": "Lions Host S Mike Edwards",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/lions-host-s-mike-edwards",
-   "timestamp": "2026-09-21T14:01:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "VOgrmZbxNLyeOCB5",
-   "headline": "Seahawks vs. Commanders odds: Opening lines for Week 3 matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-vs-commanders-odds-opening-140000767.html",
-   "timestamp": "2026-09-21T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA",
-    "WAS"
-   ]
-  },
-  {
-   "id": "a1CzxpiJ2S7AkF8-",
-   "headline": "Will Rams enter the NFC West race on Monday Night Football?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-enter-nfc-west-race-140000084.html",
-   "timestamp": "2026-09-21T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "vonaNdOE1Iyy6eMY",
-   "headline": "Ravens vs. Saints: 4 winners and plenty of losers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ravens-vs-saints-4-winners-140000476.html",
-   "timestamp": "2026-09-21T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "NO"
-   ]
-  },
-  {
-   "id": "Ynm8dx7RmFsdrR09",
-   "headline": "5 Bears Takes: Waiting on a Williams update, red zone failures, and good defense?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-bears-takes-waiting-williams-140000028.html",
-   "timestamp": "2026-09-21T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "QPzWkBnoK0KSDdYZ",
-   "headline": "Week 2 AFC West roundup, Kansas City Chiefs’ overtime win keeps pace with Las Vegas",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-2-afc-west-roundup-140000309.html",
-   "timestamp": "2026-09-21T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "m4dieCU7b3-e8bdc",
-   "headline": "Heading into Chargers game, Bills can’t forget about this phenomenon",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/heading-chargers-game-bills-t-140000699.html",
-   "timestamp": "2026-09-21T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "LAC"
-   ]
-  },
-  {
-   "id": "07VDWJ40_6A8wCNw",
-   "headline": "Eagles' Nick Sirianni needs IV, players report melting cleats vs. Titans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-nick-sirianni-needs-iv-135915358.html",
-   "timestamp": "2026-09-21T13:59:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI",
-    "TEN"
-   ]
-  },
-  {
-   "id": "9hezcImDzUPirjh5",
-   "headline": "Use FanDuel promo code to get $350 in bonus bets by targeting Giants vs. Rams on NFL Monday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-giants-rams-nfl-monday-night-football/",
-   "timestamp": "2026-09-21T13:55:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "UvroWHJJsAkLvET6",
-   "headline": "Los Angeles Chargers news: Mike McDaniel’s run game is near an all-time low",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-mike-135242510.html",
-   "timestamp": "2026-09-21T13:52:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "ERR0GWUdNZnKRx1i",
-   "headline": "Texans vs. Colts odds: Opening lines for Week 3 matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-vs-colts-odds-opening-135132909.html",
-   "timestamp": "2026-09-21T13:51:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "gnYuVFxhqbJXj5Uk",
-   "headline": "Eagles and Titans players had their cleats melting in 157-degree heat",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-titans-players-had-cleats-134854499.html",
-   "timestamp": "2026-09-21T13:48:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI",
-    "TEN"
-   ]
-  },
-  {
-   "id": "mVH38xkUd5gxrW_v",
-   "headline": "Giants vs. Rams odds, predictions, NFL picks, best bets: Betting preview for Monday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/giants-rams-odds-predictions-nfl-picks-best-bets-betting-preview-for-monday-night-football/",
-   "timestamp": "2026-09-21T13:47:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "iS32rsZ9WO-PWdbc",
-   "headline": "Dak Prescott: \"Super honored\" to set Cowboys TD record, want to double it",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dak-prescott-super-honored-set-134117305.html",
-   "timestamp": "2026-09-21T13:41:17.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "dak-prescott"
-   ],
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "dRhg_Okz778LuvDd",
-   "headline": "Cowboys-Ravens field conditions draw concern ahead of historic NFL game in Rio",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cowboys-ravens-brazil-nfl-field/",
-   "timestamp": "2026-09-21T13:33:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "DAL"
-   ]
-  },
-  {
-   "id": "kwLdrsRcARe0xKNk",
-   "headline": "Chiefs’ Kenneth Walker is having a historic start to the season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-kenneth-walker-having-historic-133000200.html",
-   "timestamp": "2026-09-21T13:30:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "9jcBWDgQwc7NteXv",
-   "headline": "Packers Film Room: Long snapping on kicks in Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-film-room-long-snapping-133000019.html",
-   "timestamp": "2026-09-21T13:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "cjl2fPcnUYJBKExa",
-   "headline": "Dallas Goedert: Set for tests on knee injury",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/dallas-goedert-12860",
-   "timestamp": "2026-09-21T13:29:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "dallas-goedert"
-   ]
-  },
-  {
-   "id": "wXlu5f9vynXHKIJn",
-   "headline": "Broncos think Jaylen Waddle's big day \"only the tip of the iceberg\"",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-think-jaylen-waddles-big-132644094.html",
-   "timestamp": "2026-09-21T13:26:44.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaylen-waddle"
-   ],
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "gfyVQ8WXh_-5nTMo",
-   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Giants-Rams, NFL Monday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-giants-rams-nfl-monday-night-football/",
-   "timestamp": "2026-09-21T13:18:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "K4th9Mak6qVO6s_e",
-   "headline": "Which 0-2 teams could still make NFL playoffs despite winless start?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/0-2-teams-could-still-131757674.html",
-   "timestamp": "2026-09-21T13:17:57.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "4ULW4BkZsvjZzeuP",
-   "headline": "New York Giants vs. Los Angeles Rams Monday Night Football betting odds, picks and predictions: Best bets, player props",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/new-york-giants-vs-los-angeles-rams-monday-night-football-betting-odds-picks-and-predictions-best-bets-player-props-131129682.html",
-   "timestamp": "2026-09-21T13:11:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "nWExzIxvGy9omcDe",
-   "headline": "Derwin James gives blunt assessment after Chargers' 0-2 start: 'That s*** just looks trash'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/derwin-james-gives-blunt-assessment-after-chargers-0-2-start-that-s-just-looks-trash-130627208.html",
-   "timestamp": "2026-09-21T13:06:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "F8VmehHzqeHgutMV",
-   "headline": "DeMeco Ryans: History doesn't matter, the 2026 Texans have to play good football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/demeco-ryans-history-doesnt-matter-130229296.html",
-   "timestamp": "2026-09-21T13:02:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "fbpBtUwPndoRXWvb",
-   "headline": "Lions reportedly working out ‘group’ of defensive backs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-reportedly-working-group-defensive-002223979.html",
-   "timestamp": "2026-09-21T13:01:22.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "kRcR_UrmNwzqhpNH",
-   "headline": "Bears, Commanders await severity of QB injuries; Ole Miss passes LSU in CFP race",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bears-commanders-await-severity-of-qb-injuries-ole-miss-passes-lsu-in-cfp-race/",
-   "timestamp": "2026-09-21T12:50:39.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "rhy-dDopK7ClMNHi",
-   "headline": "NFL news, live updates: Caleb Williams reportedly avoids serious injury, considered 'week-to-week'; Jayden Daniels dislocates elbow",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/live/nfl-news-live-injury-updates-from-week-2-121007375.html",
-   "timestamp": "2026-09-21T12:10:07.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels",
-    "caleb-williams"
-   ]
-  },
-  {
-   "id": "xKmRRZEyuehdcg2o",
-   "headline": "2026 NFL Week 3 early odds: Eagles road favorites vs. Bears after Caleb Williams injury; Broncos home dogs",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-early-odds/",
-   "timestamp": "2026-09-21T11:55:58.000Z",
-   "category": "injury",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI",
-    "DEN",
-    "PHI"
-   ]
-  },
-  {
-   "id": "kyxispWlatbcYbkB",
-   "headline": "New York Giants vs. Los Angeles Rams: How to watch Monday Night Football, start time, where to stream free and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/new-york-giants-vs-los-angeles-rams-how-to-watch-monday-night-football-start-time-where-to-stream-free-and-more-101500212.html",
-   "timestamp": "2026-09-21T10:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "Vl5o8T4xxnb4yfU7",
-   "headline": "Commanders left Dallas beaten, bruised, and 0-2: All aTwitter",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-left-dallas-beaten-bruised-080033597.html",
-   "timestamp": "2026-09-21T08:00:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "yoV6ifjS13H43pEs",
-   "headline": "Jets vs. Lions odds: Jets open as Week 3 underdogs vs Lions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-vs-lions-odds-jets-075349897.html",
-   "timestamp": "2026-09-21T07:53:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "l3E464y48KIGPIYJ",
-   "headline": "De'Von Achane shoulders the load in Week 2",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/devon-achane-shoulders-load-week-073124512.html",
-   "timestamp": "2026-09-21T07:31:24.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "devon-achane"
-   ]
-  },
-  {
-   "id": "6i3fm0ROZ_2IbgKd",
-   "headline": "Justin Herbert has been the quarterback of tomorrow his entire NFL career. Whose fault is that?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/justin-herbert-quarterback-tomorrow-entire-070038075.html",
-   "timestamp": "2026-09-21T07:00:38.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "justin-herbert"
-   ]
-  },
-  {
-   "id": "aaYODyBHueb24azt",
-   "headline": "Eagles vs. Titans: 7 winners, 5 losers, 5 IDKs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-vs-titans-7-winners-064950328.html",
-   "timestamp": "2026-09-21T06:49:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI",
-    "TEN"
-   ]
-  },
-  {
-   "id": "IjAMulXHyVcnp_z9",
-   "headline": "NFL Week 2 instant reactions: Chargers DISASTER, Brian Flores cages Bears, Bengals defense is legit?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-week-2-instant-reactions-chargers-disaster-brian-flores-cages-bears-bengals-defense-is-legit-063356268.html",
-   "timestamp": "2026-09-21T06:33:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "CIN",
-    "LAC"
-   ]
-  },
-  {
-   "id": "eMEE8NW0Cv5lltNK",
-   "headline": "Chiefs back in business as star QBs go down - five things from NFL week two",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-back-business-star-qbs-061115340.html",
-   "timestamp": "2026-09-21T06:11:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "H2_qUwESQBj5vqKh",
-   "headline": "Another huge night for Kenneth Walker III",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/another-huge-night-kenneth-walker-060314386.html",
-   "timestamp": "2026-09-21T06:03:14.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker"
-   ]
-  },
-  {
-   "id": "KiXeIqHLTptim9Ah",
-   "headline": "Colts drop heartbreaker to Chiefs as overtime expires behind Butker’s game-winner",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-drop-heartbreaker-chiefs-overtime-060021191.html",
-   "timestamp": "2026-09-21T06:00:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "M6r5YGM0B0cwEdFP",
-   "headline": "Patrick Mahomes displays MVP form on SNF",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patrick-mahomes-displays-mvp-form-054704374.html",
-   "timestamp": "2026-09-21T05:47:04.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "ld2C-pQlQFTlaG5P",
-   "headline": "Words of Prey, Seahawks-Cardinals: Bullying, dastardly defense, and a ‘Jax trick’ in the desert",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/words-prey-seahawks-cardinals-bullying-052938446.html",
-   "timestamp": "2026-09-21T05:29:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "SEA"
-   ]
-  },
-  {
-   "id": "qSOeB2A216nkptaz",
-   "headline": "6 Winners and 3 Losers from the Chiefs’ overtime win over the Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/6-winners-3-losers-chiefs-051500291.html",
-   "timestamp": "2026-09-21T05:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "MN6E-J0p806KhsA2",
-   "headline": "Xavier Worthy: Five catches in Week 2 win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/xavier-worthy-17687",
-   "timestamp": "2026-09-21T05:08:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "kvn3MbubohrDez8l",
-   "headline": "Travis Kelce: Signature showing in OT win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/travis-kelce-8783",
-   "timestamp": "2026-09-21T05:03:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "travis-kelce"
-   ]
-  },
-  {
-   "id": "OpLhPAJezF6dWcqw",
-   "headline": "Rashee Rice: Robust yardage total in OT win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/rashee-rice-16963",
-   "timestamp": "2026-09-21T04:59:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "rashee-rice"
-   ]
-  },
-  {
-   "id": "00T_BycoAmjSlrjC",
-   "headline": "Bijan Robinson totals 81 yards in loss to Panthers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bijan-robinson-totals-81-yards-045745996.html",
-   "timestamp": "2026-09-21T04:57:45.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "bijan-robinson"
-   ],
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "wjLpVXKOX4dnfWFM",
-   "headline": "Packers Injury Updates: Matt LaFleur addresses Jayden Reed and Zach Bako-Bewele injuries",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-injury-updates-matt-lafleur-213538605.html",
-   "timestamp": "2026-09-21T04:49:40.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "RTHhtI_lcXI_Ua6i",
-   "headline": "Colts finally get TKO’d in OT during heavyweight SNF fight against Chiefs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-finally-tko-d-ot-044410483.html",
-   "timestamp": "2026-09-21T04:44:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
-   "id": "FmwlLF26aLZ7Dpcv",
-   "headline": "Falcons' Drake London regrets getting into verbal altercation with fan amid blowout loss to Panthers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/falcons-drake-london-regrets-getting-into-verbal-altercation-with-fan-amid-blowout-loss-to-panthers-044131930.html",
-   "timestamp": "2026-09-21T04:41:31.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-london"
-   ],
-   "team_abbrs": [
-    "ATL",
-    "CAR"
-   ]
-  },
-  {
-   "id": "nt_a1rwmVcBuVsRT",
-   "headline": "Patrick Mahomes: Vintage performance in OT win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/patrick-mahomes-11839",
-   "timestamp": "2026-09-21T04:33:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "k1_TaP4qo3dRBe-5",
-   "headline": "Bears QB Caleb Williams Carted Off After Suffering Hamstring Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bears-qb-caleb-williams-carted-off-in-week-2",
-   "timestamp": "2026-09-21T04:30:03.000Z",
-   "category": "injury",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "Ys7JWHBgOIC4mk2f",
-   "headline": "Kenneth Walker: Thrives with massive workload",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/kenneth-walker-15909",
-   "timestamp": "2026-09-21T04:26:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker"
-   ]
-  },
-  {
-   "id": "EKDW6cyjjEYGnWYF",
-   "headline": "Commanders QB Jayden Daniels Reinjures Left Elbow",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/commanders-qb-jayden-daniels-carted-off-after-reinjuring-left-elbow",
-   "timestamp": "2026-09-21T04:22:16.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jayden-daniels"
-   ],
-   "team_abbrs": [
     "WAS"
    ]
   }
