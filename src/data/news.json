@@ -4,6 +4,604 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "O-uxKM7HxQ_kkTm5",
+   "headline": "Fantasy Football Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-for-week-3-201928779.html",
+   "timestamp": "2026-09-22T20:19:28.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "bWmFMQCGh0Ta0AdN",
+   "headline": "Steelers sign former Giants wide receiver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-sign-former-giants-wide-201544127.html",
+   "timestamp": "2026-09-22T20:15:44.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG",
+    "PIT"
+   ]
+  },
+  {
+   "id": "nsy5af1i4gtf5Ocf",
+   "headline": "Eagles practice squad news: Gabe Hall released",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-practice-squad-news-gabe-201335576.html",
+   "timestamp": "2026-09-22T20:13:35.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "kNlpUlQIgnd7B-NT",
+   "headline": "Report: Saints to sign LS Cal Adomitis off Dolphins practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-saints-sign-ls-cal-201105643.html",
+   "timestamp": "2026-09-22T20:11:05.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "MIA",
+    "NO"
+   ]
+  },
+  {
+   "id": "-XlqC16_pXMt50mj",
+   "headline": "After putting two tight ends on injured reserve, Chargers sign Hayden Rucci",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/putting-two-tight-ends-injured-201050623.html",
+   "timestamp": "2026-09-22T20:10:50.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "AYD5xb1rJzOArrCm",
+   "headline": "Tua Tagovailoa returns to full participation at Falcons practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tua-tagovailoa-returns-full-participation-200629785.html",
+   "timestamp": "2026-09-22T20:06:29.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "20mX1sxNcyqjAv7G",
+   "headline": "Fantasy Football FLEX Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-flex-rankings-for-week-3-194720397.html",
+   "timestamp": "2026-09-22T19:47:20.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "LOFVYVcJ9SoZBMSC",
+   "headline": "Justin Boone's Fantasy Football Full PPR WR Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/justin-boones-fantasy-football-full-ppr-wr-rankings-for-week-3-194634606.html",
+   "timestamp": "2026-09-22T19:46:34.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "G-kob6EU7ZVycKfU",
+   "headline": "Justin Boone's Fantasy Football Full PPR TE Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/justin-boones-fantasy-football-full-ppr-te-rankings-for-week-3-194543648.html",
+   "timestamp": "2026-09-22T19:45:43.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "eIehwV3WxPB4hYkE",
+   "headline": "Fantasy Football WR Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-wr-rankings-for-week-3-194510544.html",
+   "timestamp": "2026-09-22T19:45:10.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "LBWP5So7V-1Y31Qb",
+   "headline": "Justin Boone's Fantasy Football Full PPR FLEX Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/justin-boones-fantasy-football-full-ppr-flex-rankings-for-week-3-194443464.html",
+   "timestamp": "2026-09-22T19:44:43.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "lVyqJL0rM9R8shzf",
+   "headline": "Fantasy Football RB Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rb-rankings-for-week-3-194320047.html",
+   "timestamp": "2026-09-22T19:43:20.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "5Ai_mrrNXthqAauM",
+   "headline": "Jaxson Dart injury: Giants’ QB could miss the remainder of the 2026 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxson-dart-injury-giants-qb-184943800.html",
+   "timestamp": "2026-09-22T19:42:36.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "5CTa2hN1FMkuRUGg",
+   "headline": "Fantasy Football QB Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-qb-rankings-for-week-3-193859070.html",
+   "timestamp": "2026-09-22T19:38:59.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "-r8j0Bv_tnwFMLU8",
+   "headline": "Fantasy Football Rankings: Justin Boone's top quarterbacks for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-quarterbacks-for-week-3-193803837.html",
+   "timestamp": "2026-09-22T19:38:03.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "E7xqDWFtE5IBuSpo",
+   "headline": "Fantasy Football Rankings: Justin Boone's top running backs for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-running-backs-for-week-3-193657633.html",
+   "timestamp": "2026-09-22T19:36:57.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "PL0X09eUP_NQSx0Y",
+   "headline": "Fantasy Football TE Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-te-rankings-for-week-3-193641428.html",
+   "timestamp": "2026-09-22T19:36:41.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "wBhqVRZxA0x0cAFs",
+   "headline": "Fantasy Football Rankings: Justin Boone's top wide receivers for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-wide-receivers-for-week-3-193542731.html",
+   "timestamp": "2026-09-22T19:35:42.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "4x_6xDLbTaY50ZUe",
+   "headline": "Fantasy Football Kicker Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-kicker-rankings-for-week-3-193413332.html",
+   "timestamp": "2026-09-22T19:34:13.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "znQnRDRMEjNO2s2h",
+   "headline": "Fantasy Football Rankings: Justin Boone's top tight ends for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-tight-ends-for-week-3-193404089.html",
+   "timestamp": "2026-09-22T19:34:04.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "U2UbT-tHAesCO_Oa",
+   "headline": "Bears sign long snapper Scott Daly off Saints’ practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-sign-ls-scott-daly-193224765.html",
+   "timestamp": "2026-09-22T19:32:24.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI",
+    "NO"
+   ]
+  },
+  {
+   "id": "ImESFOV6vV-py_Qi",
+   "headline": "Fantasy Football Rankings: Justin Boone's FLEX rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-flex-rankings-for-week-3-193112336.html",
+   "timestamp": "2026-09-22T19:31:12.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "GfSUUqFUgB16lFGx",
+   "headline": "Fantasy Football Rankings: Justin Boone's top kickers for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-kickers-for-week-3-193006766.html",
+   "timestamp": "2026-09-22T19:30:06.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "4xxT7DgHn0yvS-Wb",
+   "headline": "The 49ers need to improve in one key area",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-improve-one-key-area-193000058.html",
+   "timestamp": "2026-09-22T19:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "0e7IujlcAxq_xvZp",
+   "headline": "Dak Prescott stands alone atop Cowboys history in this area",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dak-prescott-stands-alone-atop-193000574.html",
+   "timestamp": "2026-09-22T19:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dak-prescott"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "I6j7oUz_a-RyDNLP",
+   "headline": "Did comeback win over Jets boost Packers fans’ confidence?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/did-comeback-win-over-jets-193000655.html",
+   "timestamp": "2026-09-22T19:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "bvXblHJ5kBdKIFcY",
+   "headline": "Fantasy Football Rankings: Justin Boone's top defenses for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-defenses-for-week-3-192915046.html",
+   "timestamp": "2026-09-22T19:29:15.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "CSaAu1qttyb09EBg",
+   "headline": "Chargers Week 3 Power Rankings Roundup:",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-week-3-power-rankings-192848717.html",
+   "timestamp": "2026-09-22T19:28:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "TydnI7crNaEevxWN",
+   "headline": "Week 3 NFL betting odds, lines, totals, spreads, for all 16 games, including Cowboys-Ravens, Rams-Broncos",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-3-nfl-betting-odds-lines-totals-spreads/",
+   "timestamp": "2026-09-22T19:27:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "DAL",
+    "DEN",
+    "LAR"
+   ]
+  },
+  {
+   "id": "aVxkQsQEFo8_NoU5",
+   "headline": "Broncos' cheating accusation against Seahawks almost led to lawsuit in 2024, according to Mike Macdonald",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/broncos-cheating-accusation-seahawks-mike-macdonald/",
+   "timestamp": "2026-09-22T19:27:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "w9kycF17Y9KBmNus",
+   "headline": "Giants’ Jaxson Dart could reportedly miss rest of season with knee injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-jaxson-dart-could-reportedly-192331847.html",
+   "timestamp": "2026-09-22T19:23:31.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "oei-PKpXiAdjLZKA",
+   "headline": "Fantasy Football Defense Rankings for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-defense-rankings-for-week-3-191932242.html",
+   "timestamp": "2026-09-22T19:19:32.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Rt-qhKJbyA5CPvvu",
+   "headline": "Giants' Jaxson Dart could miss rest of season with knee injury, per report",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jaxson-dart-injury-update-giants-qb-knee/",
+   "timestamp": "2026-09-22T19:15:19.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "sWy3370hy3QTdS-s",
+   "headline": "NFL 2026 backup QB rankings: A look at the five best and worst signal callers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-2026-backup-qb-rankings-five-best-worst/",
+   "timestamp": "2026-09-22T19:14:44.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "J4E26t3pHa2qNi_U",
+   "headline": "Cheating?! Mike Macdonald reveals why Seahawks threatened to sue Sean Payton",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cheating-mike-macdonald-reveals-why-191332170.html",
+   "timestamp": "2026-09-22T19:13:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "5gwXAn2eMscf5jHI",
+   "headline": "Hezekiah Masses, unsung heroes helping Las Vegas Raiders get love in Week 3 NFL Power Rankings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/hezekiah-masses-unsung-heroes-helping-190600233.html",
+   "timestamp": "2026-09-22T19:06:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "YZtm3HsfcnkgrcgO",
+   "headline": "Packers RT Zach Bako-Bewele out for season with torn patellar tendon",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-rt-zach-bako-bewele-190123328.html",
+   "timestamp": "2026-09-22T19:01:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "m2qDveX3NFU7zbzG",
+   "headline": "Should Blake Corum be Rams RB1?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/blake-corum-rams-rb1-190000864.html",
+   "timestamp": "2026-09-22T19:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "nIztwC7RjJZqsmBD",
+   "headline": "Giants' John Harbaugh talks Jaxson Dart injury, return timeline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-john-harbaugh-talks-jaxson-185951094.html",
+   "timestamp": "2026-09-22T18:59:51.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "tzNfaUSxAoE5g1q-",
+   "headline": "Jaxson Dart injury update: Giants QB could be facing season-ending surgery",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxson-dart-injury-giants-qb-185749074.html",
+   "timestamp": "2026-09-22T18:57:49.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "xUsA4iH9XLu1Pp0O",
+   "headline": "Buying or selling 2-0 & 0-2 NFL teams feat. Steve Palazzolo + Eli Manning joins!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/buying-or-selling-2-0--0-2-nfl-teams-feat-steve-palazzolo--eli-manning-joins-185719916.html",
+   "timestamp": "2026-09-22T18:57:19.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "qr9gBL9WopKH9Mvb",
+   "headline": "Maxx Crosby defends Caleb Williams' reaction to hamstring injury: 'That s*** will freak you the f*** out'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/maxx-crosby-defends-caleb-williams-reaction-to-hamstring-injury-that-s-will-freak-you-the-f-out-185425046.html",
+   "timestamp": "2026-09-22T18:54:25.000Z",
+   "category": "injury",
+   "player_ids": [
+    "caleb-williams"
+   ]
+  },
+  {
+   "id": "u3-0C0khSxc2F9DC",
+   "headline": "Browns Week 15 opponent loses QB for an ‘extended period of time, possibly the season’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-week-15-opponent-loses-185311245.html",
+   "timestamp": "2026-09-22T18:53:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "z5NXzHRjbbWud-mu",
+   "headline": "Jaxson Dart: May need season-ending surgery",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jaxson-dart-18574",
+   "timestamp": "2026-09-22T18:51:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ]
+  },
+  {
+   "id": "9NJisBAdaYxxc8Dq",
+   "headline": "Chicago Bears Injury News: Tyson Bagent in concussion protocol",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-injury-news-tyson-185000769.html",
+   "timestamp": "2026-09-22T18:50:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "s-yyMZiNv2n7GTCc",
+   "headline": "Jaxson Dart injury: Giants quarterback possibly out for season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxson-dart-injury-giants-quarterback-184909842.html",
+   "timestamp": "2026-09-22T18:49:09.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "-qbTm9LeL5GSG2_g",
+   "headline": "Giants QB Jaxson Dart Could Undergo Season-Ending Knee Surgery",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/giants-qb-jaxson-dart-could-undergo-season-ending-knee-surgery",
+   "timestamp": "2026-09-22T18:46:45.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "ugiYb7zYn1aLijsx",
+   "headline": "2026 NFL Week 3 injury panic meter: Jaxson Dart, Caleb Williams, Jayden Daniels go down in losses",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-injury-panic-meter-jaxson-dart-caleb-williams-jayden-daniels/",
+   "timestamp": "2026-09-22T18:46:01.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jayden-daniels",
+    "caleb-williams",
+    "jaxson-dart"
+   ]
+  },
+  {
+   "id": "wjSm87phWNpTE6aF",
+   "headline": "Packers rookie Brandon Cisse had wisdom teeth removed",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-rookie-brandon-cisse-had-184500882.html",
+   "timestamp": "2026-09-22T18:45:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "0nett1JgdBEkt1I7",
+   "headline": "Report: Jaxson Dart's injury could be season-ending",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-jaxson-darts-injury-could-184456689.html",
+   "timestamp": "2026-09-22T18:44:56.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ]
+  },
+  {
+   "id": "_G9emUf6t6TIS9UA",
+   "headline": "Giants QB Jaxson Dart's knee injury reportedly worse than anticipated, possibly season-ending",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/giants-qb-jaxson-darts-knee-injury-reportedly-worse-than-anticipated-possibly-season-ending-184213828.html",
+   "timestamp": "2026-09-22T18:42:13.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "pO2-eov9L0fXoIFp",
+   "headline": "Jaxson Dart injury: Giants QB suffered significant knee injury vs. Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxson-dart-injury-giants-qb-003027881.html",
+   "timestamp": "2026-09-22T18:41:11.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "NYG"
+   ]
+  },
+  {
+   "id": "MwhmHIk42m1Wf_ez",
+   "headline": "Tyson Bagent in concussion protocol as Bears could be down to third quarterback in Week 3, per report",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/tyson-bagent-concussion-protocol-bears-eagles/",
+   "timestamp": "2026-09-22T18:28:48.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "zEd_UQJn6IuEpdrO",
+   "headline": "Packers RT Zach Bako-Bewele To Undergo Season-Ending Knee Surgery",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/packers-rt-zach-bako-bewele-to-undergo-season-ending-knee-surgery",
+   "timestamp": "2026-09-22T18:19:54.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "hnzG7IeoyFXKhe8z",
+   "headline": "Bears QB Tyson Bagent In Concussion Protocol",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/bears-qb-tyson-bagent-in-concussion-protocol",
+   "timestamp": "2026-09-22T18:14:45.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "tuRM02IiBW_O8ogY",
+   "headline": "Jets adding a new QB: Titans cast-off Will Levis set to sign with New York's practice squad, per report",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jets-signing-will-levis-titans-cast-off/",
+   "timestamp": "2026-09-22T17:55:30.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYJ",
+    "TEN"
+   ]
+  },
+  {
    "id": "CQ1qAsLzxx4iJ9fh",
    "headline": "Eagles To Sign CB Kenny Moore",
    "source": "Pro Football Rumors",
@@ -71,6 +669,18 @@
    ]
   },
   {
+   "id": "zfAHStb3JKdn5dAq",
+   "headline": "Use FanDuel promo code to get $250 in bonus bets by targeting Falcons-Packers, NFL, MLB betting on Tuesday",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-falcons-packers-nfl-mlb-betting-tuesday/",
+   "timestamp": "2026-09-22T17:12:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
    "id": "Z_miamP6FaITMu-N",
    "headline": "NFL Power Rankings for Week 3: Denver Broncos solidly in the Top 10",
    "source": "Yahoo Sports",
@@ -90,6 +700,17 @@
    "category": "breaking",
    "team_abbrs": [
     "NYJ"
+   ]
+  },
+  {
+   "id": "auY6UUvB3evL9RGP",
+   "headline": "Three mock trades the Steelers could make to deal disgruntled CB Joey Porter Jr.",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/joey-porter-jr-contract-three-mock-trades-steelers/",
+   "timestamp": "2026-09-22T17:10:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
    ]
   },
   {
@@ -211,6 +832,17 @@
    "category": "breaking",
    "team_abbrs": [
     "JAX"
+   ]
+  },
+  {
+   "id": "g-1UBdq2r1Him5Xl",
+   "headline": "Cardinals might have a Marvin Harrison Jr. problem: Former top 5 pick has disappeared from Arizona offense",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cardinals-marvin-harrison-jr-potential-bust/",
+   "timestamp": "2026-09-22T16:44:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
    ]
   },
   {
@@ -553,19 +1185,6 @@
     "CIN",
     "GB",
     "MIN"
-   ]
-  },
-  {
-   "id": "ugiYb7zYn1aLijsx",
-   "headline": "2026 NFL Week 3 injury panic meter: Jaxson Dart, Caleb Williams, Jayden Daniels go down in losses",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-injury-panic-meter-jaxson-dart-caleb-williams-jayden-daniels/",
-   "timestamp": "2026-09-22T14:27:32.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels",
-    "caleb-williams",
-    "jaxson-dart"
    ]
   },
   {
@@ -1035,719 +1654,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "xcLsgAh2NOMosSkC",
-   "headline": "Will Jayden Daniels need elbow surgery? Experts explain 'unusual' reinjury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jayden-daniels-elbow-surgery-experts-094721688.html",
-   "timestamp": "2026-09-22T09:47:21.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels"
-   ]
-  },
-  {
-   "id": "LJQSMfQBVKHXh3rr",
-   "headline": "Monday Night Football game winner: Rams vs. Giants final score last night",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/monday-night-football-game-winner-093112666.html",
-   "timestamp": "2026-09-22T09:31:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "vXzK4XYGNdcpGOxi",
-   "headline": "Rams Winners & Losers: Davante Adams does it all in victory",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-winners-losers-davante-adams-081106872.html",
-   "timestamp": "2026-09-22T08:11:06.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "davante-adams"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "RWlTU9comxm83AqJ",
-   "headline": "Sean McVay attributes Week 1 loss to \"dumbass coach that makes travel plans\"",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sean-mcvay-attributes-week-1-080718200.html",
-   "timestamp": "2026-09-22T08:07:18.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "qFHbHNOLh5FVpTGG",
-   "headline": "Zach Ertz arrives in Philly, ‘honored' to be back in Eagles green",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/zach-ertz-arrives-philly-honored-070717768.html",
-   "timestamp": "2026-09-22T07:07:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "RqAjOHW7K48NexKf",
-   "headline": "An element the Eagles' definitely need to fix on offense after 2 weeks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/element-eagles-definitely-fix-offense-070000153.html",
-   "timestamp": "2026-09-22T07:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "eqWnr_VNQiK9ph2y",
-   "headline": "Roob's Eagles Stats: Only 4 other teams have reached 2-0 the way the Eagles have",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/roobs-eagles-stats-only-4-070000315.html",
-   "timestamp": "2026-09-22T07:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "RrU2hxWb467mUq6-",
-   "headline": "‘We have to be better there:' Eagles' running game sputtering after two games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/better-eagles-running-game-sputtering-070000334.html",
-   "timestamp": "2026-09-22T07:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "DIv-7ovwvPLnYuXi",
-   "headline": "Time will tell if Jaxson Dart’s injury sinks Giants’ season or they survive",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/time-tell-jaxson-dart-injury-055142239.html",
-   "timestamp": "2026-09-22T05:51:42.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "ZqlEmTpCAjYvOiEy",
-   "headline": "Malik Nabers headed for addiditional injury testing as Brian Burns hopes to avoid anything serious",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-nabers-brian-burns-hoping-052343395.html",
-   "timestamp": "2026-09-22T05:23:43.000Z",
-   "category": "injury",
-   "player_ids": [
-    "malik-nabers"
-   ]
-  },
-  {
-   "id": "469uzFY_XDK1dNlA",
-   "headline": "Vikes Views: Nincompoop of the Week – Vikings at Bears",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikes-views-nincompoop-week-vikings-051900358.html",
-   "timestamp": "2026-09-22T05:19:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "MIN"
-   ]
-  },
-  {
-   "id": "OcMECnv3VmyvMx7Z",
-   "headline": "Was Malik Nabers hurt? WR's no-show vs Rams could've been thanks to Trent McDuffie",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-nabers-hurt-wrs-no-051403004.html",
-   "timestamp": "2026-09-22T05:14:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "malik-nabers"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "qgL0CDr0WQYtcHpR",
-   "headline": "Sean McVay blames his 'dumbass' self for Australia travel plans that appear to have tanked Rams vs. 49ers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/sean-mcvay-blames-his-dumbass-self-for-australia-travel-plans-that-appear-to-have-tanked-rams-vs-49ers-051400497.html",
-   "timestamp": "2026-09-22T05:14:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SF"
-   ]
-  },
-  {
-   "id": "lTSPzLyYKXX212OH",
-   "headline": "NFL power rankings Week 3: Where do Rams slot after trouncing Giants?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-3-050010555.html",
-   "timestamp": "2026-09-22T05:00:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "3E7smBYCkg4shvsf",
-   "headline": "Matthew Stafford tosses four TD passes in win",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/matthew-stafford-tosses-four-td-045603138.html",
-   "timestamp": "2026-09-22T04:56:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ]
-  },
-  {
-   "id": "fCOsgrRFtdiJlS2y",
-   "headline": "Sean McVay says he put Rams 'in bad spot' in Australia with funny admission",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sean-mcvay-says-put-rams-045032186.html",
-   "timestamp": "2026-09-22T04:50:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "3B0sQLBC2xU8UEXT",
-   "headline": "4 things we learned from the Giants’ 28-6 loss to the Los Angeles Rams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/4-things-learned-giants-28-043346469.html",
-   "timestamp": "2026-09-22T04:33:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "ICGqtUy6gqWp4wd0",
-   "headline": "Four down territory: Takeaways from Rams first win of season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/four-down-territory-takeaways-rams-043000496.html",
-   "timestamp": "2026-09-22T04:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Uqw_k_oC6FE-k8VL",
-   "headline": "Rams 28, Giants 6: Instant position-by-position grades for New York",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-28-giants-6-instant-041913608.html",
-   "timestamp": "2026-09-22T04:19:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "27EtEDHRHAC9XHap",
-   "headline": "Isaiah Likely: Solid despite Dart injury",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/isaiah-likely-16033",
-   "timestamp": "2026-09-22T04:10:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "isaiah-likely"
-   ]
-  },
-  {
-   "id": "_TKz8Yb6741i5IuA",
-   "headline": "Another young NFL quarterback can’t finish Week 2 game: All aTwitter",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/another-young-nfl-quarterback-t-040000476.html",
-   "timestamp": "2026-09-22T04:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "t12MbSkLf9qKqkeF",
-   "headline": "Matthew Stafford: Vintage effort sans Nacua in win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/matthew-stafford-5971",
-   "timestamp": "2026-09-22T03:57:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ]
-  },
-  {
-   "id": "F92kEyHSmgTh1fMW",
-   "headline": "Tough sledding for Cam Skattebo on Monday night",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tough-sledding-cam-skattebo-monday-035500640.html",
-   "timestamp": "2026-09-22T03:55:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-skattebo"
-   ]
-  },
-  {
-   "id": "LF_P6c85x6DdqG2w",
-   "headline": "Rams vs Giants winners and losers led by Davante Adams, injured Jaxson Dart",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-vs-giants-winners-losers-035318440.html",
-   "timestamp": "2026-09-22T03:53:18.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart",
-    "davante-adams"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "LdivxVFchJRICa7t",
-   "headline": "Malik Nabers: Major downturn in Week 2 loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/malik-nabers-17704",
-   "timestamp": "2026-09-22T03:47:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "malik-nabers"
-   ]
-  },
-  {
-   "id": "bCSt09NaTvz0QBup",
-   "headline": "Jaxson Dart is believed to have a sprained MCL",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaxson-dart-believed-sprained-mcl-034611784.html",
-   "timestamp": "2026-09-22T03:46:11.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ]
-  },
-  {
-   "id": "iD_Ss-LX0w1cm6xA",
-   "headline": "Giants' Jaxson Dart suffered sprained MCL vs. Rams, expected to face 2-to-4 week absence",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-qb-jaxson-dart-questionable-002707470.html",
-   "timestamp": "2026-09-22T03:41:07.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "JzBsuGzOM8eXHwy7",
-   "headline": "Week 3 waiver wire - six players to immediately prioritize",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/article/week-3-waiver-wire---six-players-to-immediately-prioritize-033949275.html",
-   "timestamp": "2026-09-22T03:39:49.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "B4pGwwTrcO6rndz7",
-   "headline": "Jaxson Dart injury: Everything we know as Giants’ QB leaves game vs. Rams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaxson-dart-injury-ny-giants-003837188.html",
-   "timestamp": "2026-09-22T03:36:47.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "IWL1aiH4ub5FXsJb",
-   "headline": "Jaxson Dart to have MRI Tuesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaxson-dart-mri-tuesday-033037026.html",
-   "timestamp": "2026-09-22T03:30:37.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxson-dart"
-   ]
-  },
-  {
-   "id": "MJcVY1dIgYaSdp2K",
-   "headline": "Matthew Stafford, Davante Adams shine as Rams beat Giants in Aaron Donald's return",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/matthew-stafford-davante-adams-shine-033023988.html",
-   "timestamp": "2026-09-22T03:30:23.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford",
-    "davante-adams"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "vdHxApZ0PCVwsZnL",
-   "headline": "Darius Slayton signs with the Indianapolis Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/darius-slayton-signs-indianapolis-colts-032950265.html",
-   "timestamp": "2026-09-22T03:29:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "NTKiVvY0m93lCWCh",
-   "headline": "NFL Power Rankings entering Week 3: Are the Vikings the best team in the NFC North?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-power-rankings-entering-week-3-are-the-vikings-the-best-team-in-the-nfc-north-032818598.html",
-   "timestamp": "2026-09-22T03:28:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "7r3AHrrcxyxmPqgn",
-   "headline": "Giants outmatched in 28-6 loss to Rams after Jaxson Dart goes down early",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-outmatched-28-6-loss-032533280.html",
-   "timestamp": "2026-09-22T03:25:33.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "HPPUM3I2gRXqtajE",
-   "headline": "Monday Night Football: Rams roll Giants 28-6 after Jaxson Dart's departure",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/monday-night-football-rams-roll-032414540.html",
-   "timestamp": "2026-09-22T03:24:14.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "58AdkVdcq_yH6g7g",
-   "headline": "Giants-Rams, Week 2: Live updates, discussion, score, highlights",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ny-giants-la-rams-week-230000025.html",
-   "timestamp": "2026-09-22T03:20:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "Rt-qhKJbyA5CPvvu",
-   "headline": "Giants' Jaxson Dart feared to have sprained MCL in Week 2 loss to Rams, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jaxson-dart-injury-update-giants-qb-knee/",
-   "timestamp": "2026-09-22T03:20:20.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "a10LIiaTcopEjX9u",
-   "headline": "Giants’ Jaxson Dart Expected To Miss Time",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-jaxson-dart-expected-to-miss-time",
-   "timestamp": "2026-09-22T03:20:08.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "q8G6qGqD1zbTuBU_",
-   "headline": "Eagles To Bring Back TE Zach Ertz",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/eagles-to-bring-back-te-zach-ertz",
-   "timestamp": "2026-09-22T03:19:09.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "JhHB89Fq6Zno8ki2",
-   "headline": "NFL Week 2 grades for all 32 teams: Rams earn an 'A' for steamrolling Giants on Monday night",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-2-grades-saints-ravens-steelers/",
-   "timestamp": "2026-09-22T03:17:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "ywsxx6EE2CKr84XM",
-   "headline": "Colts To Sign WR Darius Slayton",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/colts-to-sign-wr-darius-slayton",
-   "timestamp": "2026-09-22T03:15:17.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "pkZTiwOxgBYhHz5H",
-   "headline": "Rams-Giants final score: Defense dominates Jameis Winston in win",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-giants-final-score-defense-031118293.html",
-   "timestamp": "2026-09-22T03:11:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "5wqoEl9lulImfH6E",
-   "headline": "Bears Not Expecting Long-Term Caleb Williams Absence",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bears-not-expecting-long-term-caleb-williams-absence",
-   "timestamp": "2026-09-22T03:05:46.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "S8Q1kcaLfEZRTkF2",
-   "headline": "Falcons Name Michael Penix Jr. Week 3 Starting QB",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/falcons-name-michael-penix-jr-week-3-starting-qb",
-   "timestamp": "2026-09-22T03:03:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "f3EcQecC0Mqirhqu",
-   "headline": "Multiple Marcus Mariota Starts Likely For Commanders; Jayden Daniels IR Stint Not Certain",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/multiple-marcus-mariota-starts-likely-for-commanders-jayden-daniels-ir-stint-not-certain",
-   "timestamp": "2026-09-22T03:01:38.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels"
-   ],
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "HIZeXY4_fyCMN5a7",
-   "headline": "Davante Adams has 195 yards, two TDs as Rams take 21-3 lead",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/davante-adams-195-yards-two-022355400.html",
-   "timestamp": "2026-09-22T02:23:55.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "davante-adams"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "9qrLA527i38yP-9U",
-   "headline": "Giants appear to avoid the worst with Jaxson Dart injury: ‘Going to be OK’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-appear-avoid-worst-jaxson-021823735.html",
-   "timestamp": "2026-09-22T02:18:23.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "XFobk8BhthhE_kAM",
-   "headline": "Monday Night Football: Matthew Stafford, Davante Adams have Rams up 14-3 at halftime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/monday-night-football-matthew-stafford-015253620.html",
-   "timestamp": "2026-09-22T01:52:53.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford",
-    "davante-adams"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "jSMtG3shra67aPiF",
-   "headline": "Jets confident turnovers will keep coming and turn into big things",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-confident-turnovers-keep-coming-014716817.html",
-   "timestamp": "2026-09-22T01:47:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "iKwM34b0nrhBosAJ",
-   "headline": "Malik Nabers returns to Monday night game on next drive",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-nabers-returns-monday-night-012217641.html",
-   "timestamp": "2026-09-22T01:22:17.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "malik-nabers"
-   ]
-  },
-  {
-   "id": "Xa96p0pwRKi7dj6I",
-   "headline": "Matthew Stafford moves into tie for sixth on all-time TDs list as Rams take 14-0 lead",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/matthew-stafford-moves-tie-sixth-011406893.html",
-   "timestamp": "2026-09-22T01:14:06.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "zoWxu7RcOhc5ZO_c",
-   "headline": "Darius Slayton: Linking up with Colts",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/darius-slayton-13522",
-   "timestamp": "2026-09-22T01:13:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "BYRbb9b0idZynq0q",
-   "headline": "Darius Slayton agrees to terms with Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/darius-slayton-agrees-terms-colts-011251370.html",
-   "timestamp": "2026-09-22T01:12:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "anJbH3QF2erdc2nc",
-   "headline": "Malik Nabers injury: Giants star WR returns after shoulder scare",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-nabers-injury-giants-star-011230436.html",
-   "timestamp": "2026-09-22T01:12:30.000Z",
-   "category": "injury",
-   "player_ids": [
-    "malik-nabers"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "x1-1o7URqabCOB1i",
-   "headline": "Malik Nabers exits MNF with shoulder injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-nabers-exits-mnf-shoulder-010805532.html",
-   "timestamp": "2026-09-22T01:08:05.000Z",
-   "category": "injury",
-   "player_ids": [
-    "malik-nabers"
-   ]
-  },
-  {
-   "id": "oZIMoPqV1OhEhKPC",
-   "headline": "Malik Nabers returns after Giants shoulder injury panic in first half vs. Rams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-nabers-returns-giants-shoulder-010603170.html",
-   "timestamp": "2026-09-22T01:06:03.000Z",
-   "category": "injury",
-   "player_ids": [
-    "malik-nabers"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
-   ]
-  },
-  {
-   "id": "78ON2ox25ZD3LIe7",
-   "headline": "Malik Nabers returns to 'MNF' game vs Rams after injury scare",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/malik-nabers-injury-giants-wr-010340269.html",
-   "timestamp": "2026-09-22T01:03:40.000Z",
-   "category": "injury",
-   "player_ids": [
-    "malik-nabers"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "1yY0Lp1Ihfcb3EsE",
-   "headline": "Giants WR Malik Nabers returns to game vs. Rams after leaving with shoulder injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/giants-wr-malik-nabers-returns-to-game-vs-rams-after-leaving-with-shoulder-injury-010137004.html",
-   "timestamp": "2026-09-22T01:01:37.000Z",
-   "category": "injury",
-   "player_ids": [
-    "malik-nabers"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "NYG"
    ]
   }
  ]
