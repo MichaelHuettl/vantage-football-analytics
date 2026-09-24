@@ -1,17 +1,168 @@
 {
  "schema_version": 1,
- "updated": "2026-09-23",
+ "updated": "2026-09-24",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "BApp4vQqUoymM6yZ",
+   "headline": "Who starts at right guard vs Seahawks if Sam Cosmi can’t? – All aTwitter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/starts-guard-vs-seahawks-sam-043000865.html",
+   "timestamp": "2026-09-24T04:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "kzbUyrYPChO4ZYg2",
+   "headline": "Giants To Add QB After Jaxson Dart Injury; OLB Brian Burns To Miss Time",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/giants-to-add-qb-after-jaxson-dart-injury-olb-brian-burns-to-miss-time",
+   "timestamp": "2026-09-24T03:50:04.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "B380k4EfJjvKVcWz",
+   "headline": "Panthers defense features prominently on first injury report of Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-defense-features-prominently-first-034517188.html",
+   "timestamp": "2026-09-24T03:45:17.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
   {
    "id": "YQMb0sll-5Ap_aE0",
    "headline": "Bengals’ Creative Defensive Overhaul Produces Promising Early Returns",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/09/420378",
-   "timestamp": "2026-09-24T01:10:21.000Z",
+   "timestamp": "2026-09-24T03:30:21.000Z",
    "category": "breaking",
    "team_abbrs": [
     "CIN"
+   ]
+  },
+  {
+   "id": "uMlqPINjgFs6wXXO",
+   "headline": "Potential Trade Interest In Cardinals’ Marvin Harrison Jr.",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/potential-trade-interest-in-cardinals-marvin-harrison-jr",
+   "timestamp": "2026-09-24T03:21:27.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "SPpg63cD_zQ_SReR",
+   "headline": "Patriots Injury Rumors: Lomu, Schooler, Hollins",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/patriots-injury-rumors-lomu-schooler-hollins",
+   "timestamp": "2026-09-24T03:16:57.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "tCrKXOl2NIGhb4D7",
+   "headline": "Rams pull fast one on Eagles with recent active roster acquisition",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-pull-fast-one-eagles-023825779.html",
+   "timestamp": "2026-09-24T02:38:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "i3MIuDpf0AOKI-TG",
+   "headline": "Raiders’ Kirk Cousins reveals shocking love interest",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-kirk-cousins-reveals-shocking-022631808.html",
+   "timestamp": "2026-09-24T02:26:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "D-u5qdXeMIn2O8ib",
+   "headline": "Day off for Christian McCaffrey",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/day-off-christian-mccaffrey-020301651.html",
+   "timestamp": "2026-09-24T02:03:01.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-mccaffrey"
+   ]
+  },
+  {
+   "id": "Ans9gUpakXhDhDcX",
+   "headline": "Chicago Bears Pass Protection Analysis on the Sacks Allowed vs Vikings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-pass-protection-analysis-020000380.html",
+   "timestamp": "2026-09-24T02:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "MIN"
+   ]
+  },
+  {
+   "id": "dbz3Pg1FxuUutVG5",
+   "headline": "John Harbaugh says ‘all options are open’ as Jaxson Dart leaves Giants QB void",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/john-harbaugh-says-options-open-015731070.html",
+   "timestamp": "2026-09-24T01:57:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "ie18lJlKREJq7-VE",
+   "headline": "Mike Evans misses practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mike-evans-misses-practice-015157266.html",
+   "timestamp": "2026-09-24T01:51:57.000Z",
+   "category": "practice",
+   "player_ids": [
+    "mike-evans"
+   ]
+  },
+  {
+   "id": "tUlO1xOowZcxiBh5",
+   "headline": "Case Keenum ready to start for Bears if needed",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/case-keenum-ready-start-bears-013858896.html",
+   "timestamp": "2026-09-24T01:38:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "NAFrya7G15kCviEi",
+   "headline": "Vikings-Bucs First Injury Report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-bucs-first-injury-report-012742908.html",
+   "timestamp": "2026-09-24T01:27:42.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "MIN"
    ]
   },
   {
@@ -59,6 +210,21 @@
    ]
   },
   {
+   "id": "U5gSUwO6j3-2V6NF",
+   "headline": "Rams still waiting on Puka Nacua as troubling injury lingers ahead of Broncos matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-still-waiting-puka-nacua-004437210.html",
+   "timestamp": "2026-09-24T00:44:37.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "DEN",
+    "LAR"
+   ]
+  },
+  {
    "id": "T7QpcKWyvtj1RPsc",
    "headline": "Chicago Bears Discussion: Caleb Williams Passion or Pain? Eagles Preview",
    "source": "Yahoo Sports",
@@ -95,17 +261,16 @@
   },
   {
    "id": "l-yTNP7Ih0i-ocdv",
-   "headline": "2026 NFL Week 3 Injury Report: Jaxson Dart's knee, Chargers down two TEs, more 49ers injuries",
+   "headline": "2026 NFL Week 3 Injury Report: Jaxson Dart out for season, updates on Puka Nacua, Zay Flowers, Travis Etienne",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/2026-nfl-week-3-injury-183614755.html",
    "timestamp": "2026-09-24T00:24:00.000Z",
    "category": "injury",
    "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "LAC",
-    "SF"
+    "jaxson-dart",
+    "travis-etienne",
+    "puka-nacua",
+    "zay-flowers"
    ]
   },
   {
@@ -117,6 +282,32 @@
    "category": "injury",
    "team_abbrs": [
     "GB"
+   ]
+  },
+  {
+   "id": "mL9e6S-hKxgT1y3F",
+   "headline": "Raiders’ plan has been in place for fresh start now, many Sundays ahead",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-plan-place-fresh-start-001432051.html",
+   "timestamp": "2026-09-24T00:14:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "T1uyPA93kbiSZnHx",
+   "headline": "Jameis Winston vows to be better for Giants after Rams debacle as he replaces Jaxson Dart",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jameis-winston-vows-better-giants-001315445.html",
+   "timestamp": "2026-09-24T00:13:15.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "NYG"
    ]
   },
   {
@@ -163,6 +354,17 @@
    ],
    "team_abbrs": [
     "BUF"
+   ]
+  },
+  {
+   "id": "PloGIbsHYAjc0ZWu",
+   "headline": "Robert Saleh reveals shocking Cam Skattebo news",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/robert-saleh-reveals-shocking-cam-234208038.html",
+   "timestamp": "2026-09-23T23:42:08.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "cam-skattebo"
    ]
   },
   {
@@ -241,6 +443,17 @@
    ]
   },
   {
+   "id": "Ch3kDWM41litXDlq",
+   "headline": "49ers’ signing of Brandin Cooks does more than address WR depth",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-signing-brandin-cooks-does-231638312.html",
+   "timestamp": "2026-09-23T23:16:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "I74-OPZ4DOgzhnWX",
    "headline": "John Harbaugh doesn't rule out Giants trading for QB, but he might not like what's out there",
    "source": "Yahoo Sports",
@@ -307,20 +520,6 @@
    "category": "injury",
    "team_abbrs": [
     "BUF"
-   ]
-  },
-  {
-   "id": "kzbUyrYPChO4ZYg2",
-   "headline": "Giants To Add QB After Jaxson Dart Injury; OLB Brian Burns To Miss Time",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-to-add-qb-after-jaxson-dart-injury-olb-brian-burns-to-miss-time",
-   "timestamp": "2026-09-23T22:50:04.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "NYG"
    ]
   },
   {
@@ -432,6 +631,17 @@
    "team_abbrs": [
     "CAR",
     "CLE"
+   ]
+  },
+  {
+   "id": "w-NQ0DhGG5GNuT7_",
+   "headline": "49ers QB Mac Jones dubbed ‘ladies man’ by teammate after wild DM confession",
+   "source": "Yahoo Sports",
+   "url": "https://www.yahoo.com/entertainment/celebrity/articles/49ers-qb-mac-jones-dubbed-221810413.html",
+   "timestamp": "2026-09-23T22:18:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -1519,205 +1729,6 @@
    ],
    "team_abbrs": [
     "NYG"
-   ]
-  },
-  {
-   "id": "5n8yncQU2MFLljDe",
-   "headline": "49ers in review: Are we ignoring concerning signs defensively?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-review-ignoring-concerning-signs-170310033.html",
-   "timestamp": "2026-09-23T17:03:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "cEnRzsONg9f77fkE",
-   "headline": "Drew Lock, Davante Adams, and Devin Lloyd are the NFC’s Week 2 Secret Superstars",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/drew-lock-davante-adams-devin-170113200.html",
-   "timestamp": "2026-09-23T17:01:13.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "davante-adams"
-   ]
-  },
-  {
-   "id": "pc8k4zUXJoyXOIQJ",
-   "headline": "Josh Palmer, Kahlil Benson, and Hezekiah Masses are the AFC’s Week 2 Secret Superstars",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/josh-palmer-kahlil-benson-hezekiah-170048343.html",
-   "timestamp": "2026-09-23T17:00:48.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "t3jzO43yI629ODUU",
-   "headline": "Jets DL David Onyemata had core muscle surgery, is expected back this season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-dl-david-onyemata-had-170038364.html",
-   "timestamp": "2026-09-23T17:00:38.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "7jyc0goWX7Pq3u_p",
-   "headline": "Colts placing Alec Pierce on IR: Big-play WR aggravated heel injury, hopes to return this year",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/colts-alec-pierce-ir-heel-injury/",
-   "timestamp": "2026-09-23T16:59:09.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "VxFIAXgKirjTs3tF",
-   "headline": "Bengals Film Room: Amarius Mims shines while Orlando Brown Jr. falters vs. Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-film-room-amarius-mims-165705945.html",
-   "timestamp": "2026-09-23T16:57:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "HOU"
-   ]
-  },
-  {
-   "id": "-qbTm9LeL5GSG2_g",
-   "headline": "Giants QB Jaxson Dart To Undergo Season-Ending Knee Surgery",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-qb-jaxson-dart-could-undergo-season-ending-knee-surgery",
-   "timestamp": "2026-09-23T16:55:45.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "w0kH6j_jsNTVsE7m",
-   "headline": "Dan Quinn: No update on Jayden Daniels, who's seeing another specialist on Wednesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dan-quinn-no-jayden-daniels-165421661.html",
-   "timestamp": "2026-09-23T16:54:21.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jayden-daniels"
-   ]
-  },
-  {
-   "id": "tfmdkFBWZ7GqXpY-",
-   "headline": "Jayden Daniels seeing another specialist about elbow injury. What we know",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jayden-daniels-seeing-another-specialist-165213488.html",
-   "timestamp": "2026-09-23T16:52:13.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels"
-   ]
-  },
-  {
-   "id": "-W_Nb26I0v5_dNSC",
-   "headline": "Per Steichen, Colts set to make roster maneuver regarding injured WR Alec Pierce",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/per-steichen-colts-set-roster-164925226.html",
-   "timestamp": "2026-09-23T16:49:25.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "PBZdXuVXSLKQqS-1",
-   "headline": "Jets WR Arian Smith Undergoes Season-Ending Knee Surgery",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/jets-wr-arian-smith-undergoes-season-ending-knee-surgery",
-   "timestamp": "2026-09-23T16:48:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "WudpAXp5PDEmaVBV",
-   "headline": "Marvin Harrison Jr. trade: 4 wild ideas if the Cardinals shop their WR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/marvin-harrison-jr-trade-4-164446489.html",
-   "timestamp": "2026-09-23T16:44:46.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "yG4d-imOThJtuInR",
-   "headline": "Latest NFL injury updates as Jaxson Dart, Alec Pierce get news on ailments",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/latest-nfl-injury-updates-jaxson-163446001.html",
-   "timestamp": "2026-09-23T16:34:46.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ]
-  },
-  {
-   "id": "LnFRe5iGKNUqwJ1N",
-   "headline": "Jaxson Dart’s injury could reverberate around the NFL",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaxson-dart-injury-could-reverberate-162348065.html",
-   "timestamp": "2026-09-23T16:23:48.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jaxson-dart"
-   ]
-  },
-  {
-   "id": "pg_P08WgvSDoQnmn",
-   "headline": "Michael Pittman Jr set to return to practice for Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/michael-pittman-jr-set-return-162252237.html",
-   "timestamp": "2026-09-23T16:22:52.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "_5lN0idxkCHUL7zU",
-   "headline": "Alleged Daejon Love victim says she reported scammer to 49ers eight months prior to arrest",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/daejon-love-arrest-victim-49ers-2026/",
-   "timestamp": "2026-09-23T16:20:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "tu65UBtObsJXYGAD",
-   "headline": "Josh Allen earns award for spectacular Week 2 performance vs. Li",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/josh-allen-earns-award-spectacular-162015838.html",
-   "timestamp": "2026-09-23T16:20:15.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ]
-  },
-  {
-   "id": "9WA5FEs3S4PtRpCY",
-   "headline": "Browns K Andre Szmyt named the AFC special teams player of the week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-k-andre-szmyt-named-161515576.html",
-   "timestamp": "2026-09-23T16:15:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
    ]
   }
  ]
