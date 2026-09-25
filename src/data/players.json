@@ -1,7 +1,7 @@
 {
  "schema_version": 4,
  "generated_at": "2026-08-14",
- "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams audited 2026-08-14 against Sleeper's public roster endpoint: all 100 non-DST players matched on name plus position with no ambiguous or unmatched names, and the six disagreements were each confirmed against a second source before being changed. Corrections: Kyler Murray to Minnesota, Kenneth Walker to Kansas City, Travis Etienne to New Orleans, Isaiah Likely to the Giants, Chig Okonkwo to Washington, and Daniel Carlson unsigned. The 20 defences carry their own team by construction and need no audit. Weekly rankings added 48 more on 2026-09-19 via scripts/curated/weekly_rankings.py --sync-players: team from the nflverse roster current through week 2, headshot from the NFL.com image CDN.",
+ "note": "Derived from the 'My Rankings (WIP)' block of the 2026-2027 workbook (sheet 2, rows 80-99). Teams audited 2026-08-14 against Sleeper's public roster endpoint: all 100 non-DST players matched on name plus position with no ambiguous or unmatched names, and the six disagreements were each confirmed against a second source before being changed. Corrections: Kyler Murray to Minnesota, Kenneth Walker to Kansas City, Travis Etienne to New Orleans, Isaiah Likely to the Giants, Chig Okonkwo to Washington, and Daniel Carlson unsigned. The 20 defences carry their own team by construction and need no audit. Weekly rankings added 48 more on 2026-09-19 via scripts/curated/weekly_rankings.py --sync-players: team from the nflverse roster current through week 2, headshot from the NFL.com image CDN. Weekly rankings added 7 more on 2026-09-19 via scripts/curated/weekly_rankings.py --sync-players: team from the nflverse roster current through week 3, headshot from the NFL.com image CDN.",
  "data": [
   {
    "id": "josh-allen",
@@ -1149,6 +1149,55 @@
    "position": "WR",
    "team": "CIN",
    "photo": "/img/headshots/tee-higgins.png"
+  },
+  {
+   "id": "cam-ward",
+   "name": "Cam Ward",
+   "position": "QB",
+   "team": "TEN",
+   "photo": "/img/headshots/cam-ward.png"
+  },
+  {
+   "id": "aaron-jones",
+   "name": "Aaron Jones",
+   "position": "RB",
+   "team": "MIN",
+   "photo": "/img/headshots/aaron-jones.png"
+  },
+  {
+   "id": "treveyon-henderson",
+   "name": "TreVeyon Henderson",
+   "position": "RB",
+   "team": "NE",
+   "photo": "/img/headshots/treveyon-henderson.png"
+  },
+  {
+   "id": "darren-waller",
+   "name": "Darren Waller",
+   "position": "TE",
+   "team": "CAR",
+   "photo": "/img/headshots/darren-waller.png"
+  },
+  {
+   "id": "oronde-gadsden",
+   "name": "Oronde Gadsden",
+   "position": "TE",
+   "team": "LAC",
+   "photo": "/img/headshots/oronde-gadsden.png"
+  },
+  {
+   "id": "adonai-mitchell",
+   "name": "Adonai Mitchell",
+   "position": "WR",
+   "team": "NYJ",
+   "photo": "/img/headshots/adonai-mitchell.png"
+  },
+  {
+   "id": "josh-downs",
+   "name": "Josh Downs",
+   "position": "WR",
+   "team": "IND",
+   "photo": "/img/headshots/josh-downs.png"
   }
  ]
 }

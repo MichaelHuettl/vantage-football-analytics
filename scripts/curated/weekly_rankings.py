@@ -61,7 +61,7 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_WB = Path.home() / "Downloads" / "2026-2027 Vantage Football Analytics (Original).xlsx"
+DEFAULT_WB = Path.home() / "Downloads" / "Vantage Weekly Rankings.xlsx"
 PLAYERS = ROOT / "src" / "data" / "players.json"
 TEAMS = ROOT / "src" / "data" / "teams.json"
 OUT_DIR = ROOT / "src" / "data" / "rankings"
@@ -79,6 +79,7 @@ R = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
 PUBLISHED = {
     1: "2026-09-08",
     2: "2026-09-16",
+    3: "2026-09-24",
 }
 
 # The sheet's column header, in order, onto the site's positions.
@@ -86,15 +87,10 @@ COLUMNS = {"QB": "QB", "RB": "RB", "WR": "WR", "TE": "TE", "DEF": "DST", "Kicker
 
 # Editorial corrections to the sheet: (week, position, rank) -> (expected, replacement).
 #
-# Both are duplicates in the Week 1 block, settled by the operator on
-# 2026-09-19. The Bears were ranked 8th and 17th at DST and Will Reichard 12th
-# and 16th at K; the earlier entry of each stands and the later slot takes the
-# player he named. `expected` is checked, so if a later workbook fixes either
-# cell itself, this fails rather than overwriting the fix.
-CORRECTIONS = {
-    (1, "DST", 17): ("Bears", "Cowboys"),
-    (1, "K", 16): ("Will Reichard", "Ryan Fitzgerald"),
-}
+# The two Week 1 duplicates settled by the operator on 2026-09-19 (Bears at
+# DST #17 -> Cowboys, Will Reichard at K #16 -> Ryan Fitzgerald) are gone from
+# here because the 2026-09-24 export already carries both fixes at the source.
+CORRECTIONS: dict[tuple[int, str, int], tuple[str, str]] = {}
 
 # Names the sheet spells differently from the player. Only what `norm` cannot
 # absorb needs an entry: case, punctuation, hyphen placement and generational
@@ -131,6 +127,17 @@ def read_sheet(path: Path, name: str) -> dict[tuple[int, str], str]:
         for sh in wb.iter(N + "sheet"):
             if sh.get("name") == name:
                 rid = sh.get(R + "id")
+                for rel in rels:
+                    if rel.get("Id") == rid:
+                        target = rel.get("Target").lstrip("/").removeprefix("xl/")
+        if target is None:
+            # A dedicated single-tab export (unlike the full workbook, which
+            # always carries a "Rankings" tab by that name) has nothing to
+            # disambiguate — one sheet is unambiguous no matter its name.
+            sheets = list(wb.iter(N + "sheet"))
+            if len(sheets) == 1:
+                print(f"  note: {path.name} has one sheet, {sheets[0].get('name')!r}, not {name!r} — using it")
+                rid = sheets[0].get(R + "id")
                 for rel in rels:
                     if rel.get("Id") == rid:
                         target = rel.get("Target").lstrip("/").removeprefix("xl/")
@@ -172,14 +179,17 @@ def week_blocks(cells: dict) -> dict[int, dict[str, list[tuple[int, str]]]]:
         cols = {c: COLUMNS[v] for (r, c), v in cells.items() if r == header and v in COLUMNS}
         if len(cols) != len(COLUMNS):
             sys.exit(f"Week {wk}: header row {header} does not carry all six positions")
+        # Rank is the row's position within its own column, not a stored
+        # number: the single-tab weekly export carries no rank column, and a
+        # dense per-position list (no gaps) makes position equivalent to the
+        # full workbook's explicit numbers anyway.
         lists = {pos: [] for pos in COLUMNS.values()}
-        for r in range(header + 1, end):
-            rank = cells.get((r, "A"))
-            if rank is None:
-                continue
-            for c, pos in cols.items():
+        for c, pos in cols.items():
+            rank = 0
+            for r in range(header + 1, end):
                 if (r, c) in cells:
-                    lists[pos].append((int(float(rank)), cells[(r, c)]))
+                    rank += 1
+                    lists[pos].append((rank, cells[(r, c)]))
         if any(lists.values()):
             blocks[wk] = lists
     return blocks

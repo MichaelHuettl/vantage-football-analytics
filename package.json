@@ -14,7 +14,8 @@
     "beat": "node scripts/fetch-beat.mjs",
     "beat:dry": "node scripts/fetch-beat.mjs --dry",
     "games": "node scripts/fetch-games.mjs",
-    "games:dry": "node scripts/fetch-games.mjs --dry"
+    "games:dry": "node scripts/fetch-games.mjs --dry",
+    "update": "bash scripts/weekly-update.sh"
   },
   "dependencies": {
     "next": "16.3.0",
