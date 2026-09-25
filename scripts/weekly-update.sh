@@ -104,6 +104,15 @@ else
     echo
 fi
 
+for f in src/data/rankings/week-*.json; do
+    n=$(basename "$f" .json)
+    if ! grep -q "rankings/$n.json" src/lib/content.ts; then
+        echo "$n.json exists but is not imported in src/lib/content.ts, so the site will not show it."
+        echo "Add the import and the WEEKLY_FILES entry, then re-run."
+        exit 1
+    fi
+done
+
 echo "-- verifying the site still builds --"
 if ! npm run build; then
     echo

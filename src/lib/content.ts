@@ -11,6 +11,7 @@ import dst from "@/data/rankings/dst.json";
 // typechecked, so a bad week fails the build with a line number.
 import week1 from "@/data/rankings/week-1.json";
 import week2 from "@/data/rankings/week-2.json";
+import week3 from "@/data/rankings/week-3.json";
 import type { Envelope, Player, Position, RankingEntry, RankingList } from "./types";
 
 /* ------------------------------------------------------------------
@@ -103,7 +104,7 @@ interface WeeklyFile {
   lists: Record<Position, RankingEntry[]>;
 }
 
-const WEEKLY_FILES = [week1, week2] as unknown as WeeklyFile[];
+const WEEKLY_FILES = [week1, week2, week3] as unknown as WeeklyFile[];
 const weeklyByWeek = new Map(WEEKLY_FILES.map((f) => [f.week, f]));
 
 /** Weeks that have a published list, ascending. */
