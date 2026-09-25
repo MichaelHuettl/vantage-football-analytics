@@ -4,12 +4,311 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "1DFUl426BcAVNraM",
+   "headline": "Packers-Falcons Final Score: Green Bay fails to run the ball again in home-opening loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-falcons-final-score-green-033106212.html",
+   "timestamp": "2026-09-25T03:31:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "7ORo7S_36-XmEcjQ",
+   "headline": "Bijan Robinson: Dominates throughout blowout win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/bijan-robinson-16739",
+   "timestamp": "2026-09-25T03:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bijan-robinson"
+   ]
+  },
+  {
+   "id": "ZgjgzVZ-FZwJRj_y",
+   "headline": "Thursday Night Football: Drake London, Bijan Robinson run by Packers 35-14",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-drake-london-032533936.html",
+   "timestamp": "2026-09-25T03:25:33.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bijan-robinson",
+    "drake-london"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "OvTfII23FXLXiRg7",
+   "headline": "Falcons – Packers instant recap: Making the Lambeau leap",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-packers-instant-recap-making-031939377.html",
+   "timestamp": "2026-09-25T03:19:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "Ivuvq-OyBiwKbIWp",
+   "headline": "Falcons vs Packers Week 3 postgame show: Penix awakens a dominant offense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-vs-packers-week-3-031820975.html",
+   "timestamp": "2026-09-25T03:18:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "KPHoZB1-vsG6usst",
+   "headline": "Bengals Unlikely To Trade QB Joe Flacco",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/bengals-unlikely-to-trade-qb-joe-flacco",
+   "timestamp": "2026-09-25T03:11:05.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "rTv2XjuPf0wuYZi5",
+   "headline": "Patrick Mahomes logs full practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patrick-mahomes-logs-full-practice-030601812.html",
+   "timestamp": "2026-09-25T03:06:01.000Z",
+   "category": "practice",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "CFXr4VnzglpM2oLc",
+   "headline": "Falcons rolling, taking a 24-7 lead on the Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-rolling-taking-24-7-022837181.html",
+   "timestamp": "2026-09-25T02:28:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "OOrxpQRfCmZc15Aj",
+   "headline": "Puka Nacua sits out practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/puka-nacua-sits-practice-020649442.html",
+   "timestamp": "2026-09-25T02:06:49.000Z",
+   "category": "practice",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "fQ0V5Pl5wSEI-LlN",
+   "headline": "Texans’ Nico Collins Likely To Miss Week 3",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/texans-nico-collins-likely-to-miss-week-3",
+   "timestamp": "2026-09-25T01:54:48.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "nico-collins"
+   ],
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "yR1VOUaBVXnWXMcD",
+   "headline": "Thursday Night Football: Falcons lead Packers 17-7 at halftime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-falcons-lead-015236503.html",
+   "timestamp": "2026-09-25T01:52:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "IVVTN2HZqFBhxz16",
+   "headline": "Full practice for Jacoby Brissett",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/full-practice-jacoby-brissett-014553129.html",
+   "timestamp": "2026-09-25T01:45:53.000Z",
+   "category": "practice",
+   "player_ids": [
+    "jacoby-brissett"
+   ]
+  },
+  {
+   "id": "E9oy8xeXNLHIcRv3",
+   "headline": "Are Matthew Stafford and Rams’ passing game Super Bowl ready?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/matthew-stafford-rams-passing-game-010845310.html",
+   "timestamp": "2026-09-25T01:08:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "matthew-stafford"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "LaotCaphGcPiyRZI",
+   "headline": "Week 2 Old Friend Update: How former Minnesota Vikings fared last week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/week-2-old-friend-former-010103836.html",
+   "timestamp": "2026-09-25T01:01:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "CoANAbdzDAn3_BZZ",
+   "headline": "Bijan Robinson's TD has Falcons tied 7-7 with Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bijan-robinsons-td-falcons-tied-005801012.html",
+   "timestamp": "2026-09-25T00:58:01.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bijan-robinson"
+   ],
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "WU4UwZ6MuyOyz89J",
+   "headline": "NFL Practice Squad Updates: 9/24/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/nfl-practice-squad-updates-9-24-26",
+   "timestamp": "2026-09-25T00:57:25.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "bDA5mVBWT9ts2TW6",
+   "headline": "Christian Watson scores his fourth TD of the season, giving Green Bay a 7-0 lead",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-scores-fourth-td-005035955.html",
+   "timestamp": "2026-09-25T00:50:35.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-watson"
+   ]
+  },
+  {
+   "id": "61dRV036Uyxp_gkj",
+   "headline": "Puka Nacua remains out of practice Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/puka-nacua-remains-practice-thursday-003250462.html",
+   "timestamp": "2026-09-25T00:32:50.000Z",
+   "category": "practice",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "g8xOTYRcrwBDegL5",
+   "headline": "Seahawks will continue right guard rotation with Anthony Bradford out",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-continue-guard-rotation-anthony-002740587.html",
+   "timestamp": "2026-09-25T00:27:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "TFemS5AXGrvq_kvP",
+   "headline": "Saquon Barkley logs limited practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saquon-barkley-logs-limited-practice-001135076.html",
+   "timestamp": "2026-09-25T00:11:35.000Z",
+   "category": "practice",
+   "player_ids": [
+    "saquon-barkley"
+   ]
+  },
+  {
+   "id": "6b8FyROEIqJ_dFvc",
+   "headline": "Green Bay Packers vs. Atlanta Falcons, NFL Week 3 ‘TNF’ fan discussion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/green-bay-packers-vs-atlanta-000409361.html",
+   "timestamp": "2026-09-25T00:04:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "a5cLgHCnR3b-tn2j",
+   "headline": "Week 3 Yahoo Fantasy x Arena Club Slab Packs: Josh Allen, Patrick Mahomes among chase cards",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/week-3-yahoo-fantasy-x-arena-club-slab-packs-josh-allen-patrick-mahomes-among-chase-cards-000055005.html",
+   "timestamp": "2026-09-25T00:00:55.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen",
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "u8efd0nWWm8P6mnz",
+   "headline": "BTSC game thread: Falcons at Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/btsc-game-thread-falcons-packers-000000558.html",
+   "timestamp": "2026-09-25T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
+   "id": "pXkhsSmr5rWgQ4JP",
+   "headline": "Packers vs. Falcons odds, picks: Analysis, predictions, player props for Thursday Night Football in Week 3",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/packers-vs-falcons-odds-picks-analysis-predictions-player-props-for-thursday-night-football-in-week-3/",
+   "timestamp": "2026-09-24T23:58:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "GB"
+   ]
+  },
+  {
    "id": "wdbdWfUNdkW6jBRt",
    "headline": "Minor NFL Transactions: 9/24/26",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/09/minor-nfl-transactions-9-24-26",
    "timestamp": "2026-09-24T23:55:33.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "RiYuvHqD9dWc1y3f",
+   "headline": "Seahawks Week 3 injury updates: Sam Darnold poised to start vs. Commanders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-week-3-injury-updates-235348375.html",
+   "timestamp": "2026-09-24T23:53:48.000Z",
+   "category": "injury",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA",
+    "WAS"
+   ]
   },
   {
    "id": "WFLzybkKdUzlggrN",
@@ -329,18 +628,6 @@
    ]
   },
   {
-   "id": "pXkhsSmr5rWgQ4JP",
-   "headline": "Packers vs. Falcons odds, picks: Analysis, predictions, player props for Thursday Night Football in Week 3",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/packers-vs-falcons-odds-picks-analysis-predictions-player-props-for-thursday-night-football-in-week-3/",
-   "timestamp": "2026-09-24T22:45:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "GB"
-   ]
-  },
-  {
    "id": "7uNIrYgOxij8HmQ5",
    "headline": "Vikings-Bucs Second Injury Report",
    "source": "Yahoo Sports",
@@ -377,7 +664,7 @@
   },
   {
    "id": "okCTFKYVsz1pGz4D",
-   "headline": "Falcons vs. Packers live updates, news, inactives: Michael Penix Jr. makes season debut on Thursday Night Football",
+   "headline": "Matt LaFleur jumps on the hot seat with Packers' embarrassing loss to Falcons",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/packers-falcons-score-live-updates-highlights-stats-where-to-watch-week-3-thursday-night-football-michael-penix-jr-224500422.html",
    "timestamp": "2026-09-24T22:30:00.000Z",
@@ -1452,283 +1739,6 @@
    "category": "breaking",
    "player_ids": [
     "zay-flowers"
-   ]
-  },
-  {
-   "id": "vkcDW0r_ZaItMb5x",
-   "headline": "NFL viewership is down four percent through two weeks (but it's still the third highest on record)",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-viewership-down-four-percent-170303548.html",
-   "timestamp": "2026-09-24T17:03:03.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "E4_AsaC62TtYcScW",
-   "headline": "Under further review, everyone overreacted to Commanders' response to Jayden Daniels injury",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/dan-quinn-responds-to-viral-clip-commanders-jayden-daniels/",
-   "timestamp": "2026-09-24T17:00:32.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels"
-   ],
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "jn7LU1TPCuGFJZt9",
-   "headline": "Brian Schottenheimer confident Cowboys will arrive in Brazil rested and ready to practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brian-schottenheimer-confident-cowboys-arrive-170007773.html",
-   "timestamp": "2026-09-24T17:00:07.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "jklrOoCh41hsnZQ3",
-   "headline": "Packers Week 3 Predictions: Will Green Bay cover against Falcons on Thursday?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-week-3-predictions-green-170000531.html",
-   "timestamp": "2026-09-24T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "GB"
-   ]
-  },
-  {
-   "id": "anpqbdbupvt9IMlr",
-   "headline": "Saquon Barkley: Status still muddled for Week 3",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/saquon-barkley-12507",
-   "timestamp": "2026-09-24T16:59:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "saquon-barkley"
-   ]
-  },
-  {
-   "id": "DFX608TZb8ydVTUG",
-   "headline": "Falcons-Packers predictions for Thursday night, plus NFL Week 3 picks and ranking 2-0 teams",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/falcons-packers-predictions-for-thursday-night-plus-nfl-week-3-picks-and-ranking-2-0-teams/",
-   "timestamp": "2026-09-24T16:54:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "GB"
-   ]
-  },
-  {
-   "id": "4ErOEao692HLGPq3",
-   "headline": "Eagles vs. Bears Game Preview: 5 questions and answers with the Week 3 enemy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-vs-bears-game-preview-165308843.html",
-   "timestamp": "2026-09-24T16:53:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "PHI"
-   ]
-  },
-  {
-   "id": "aEb273yNHJRo7z2o",
-   "headline": "Jaylen Warren: Practicing again Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jaylen-warren-15984",
-   "timestamp": "2026-09-24T16:53:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaylen-warren"
-   ]
-  },
-  {
-   "id": "uw8oL9FK3D2ZagZo",
-   "headline": "NFL picks against the spread, Week 3 2026: Expert ATS picks, predictions, player props for this week's games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-picks-against-the-spread-week-3-2026-expert-ats-picks-predictions-player-props-this-weeks-games/",
-   "timestamp": "2026-09-24T16:52:47.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "ffSjBlS0lveqpfGd",
-   "headline": "What Commanders OC David Blough, DC Daronte Jones said about Washington entering Week 3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-oc-david-blough-dc-164516489.html",
-   "timestamp": "2026-09-24T16:45:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "LRoDekc7qsgMBhkj",
-   "headline": "3 Browns who have disappointed so far and need to step up in Week 3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-browns-disappointed-far-step-164448195.html",
-   "timestamp": "2026-09-24T16:44:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "eG9AFAlc-zx-pjBJ",
-   "headline": "49ers' Kyle Juszczyk reportedly fined $14,926 for beer-chugging TD celebration",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/49ers-kyle-juszczyk-reportedly-fined-14926-for-beer-chugging-td-celebration-163915253.html",
-   "timestamp": "2026-09-24T16:39:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "V_KTdBnE28OPX9Rl",
-   "headline": "49ers' Kyle Juszczyk reportedly fined for beer-chugging celebration; Lions' Amon-Ra St. Brown fined four times for smoking gesture",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/49ers-kyle-juszczyk-reportedly-fined-for-beer-chugging-celebration-lions-amon-ra-st-brown-fined-four-times-for-smoking-gesture-163915253.html",
-   "timestamp": "2026-09-24T16:39:15.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "amon-ra-st-brown"
-   ],
-   "team_abbrs": [
-    "DET",
-    "SF"
-   ]
-  },
-  {
-   "id": "fu6TwFoiz01D6To4",
-   "headline": "Nico Collins: Not practicing Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/nico-collins-15200",
-   "timestamp": "2026-09-24T16:29:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "nico-collins"
-   ]
-  },
-  {
-   "id": "AOPV4v7Jnh0KEEyl",
-   "headline": "Use DraftKings promo code to get $150 in bonus bets by targeting Packers vs. Falcons, Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-150-bonus-bets-packers-falcons-thursday-night-football/",
-   "timestamp": "2026-09-24T16:25:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "GB"
-   ]
-  },
-  {
-   "id": "SeHwI6i-nZ1a0OXY",
-   "headline": "NFL betting, odds, lines: Betting trends to know for Week 3's biggest games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/nfl-betting-odds-lines-betting-trends-to-know-for-week-3s-biggest-games-161801188.html",
-   "timestamp": "2026-09-24T16:18:01.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "MolUGIXRG1UNjv5I",
-   "headline": "Use FanDuel promo code to get $250 in bonus bets by targeting Falcons vs. Packers on Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-falcons-packers-thursday-night-football/",
-   "timestamp": "2026-09-24T16:17:14.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "GB"
-   ]
-  },
-  {
-   "id": "YcnZeHbJPSYh-6Ym",
-   "headline": "John Lynch on Brock Purdy: We’re just entering his prime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/john-lynch-brock-purdy-just-160419797.html",
-   "timestamp": "2026-09-24T16:04:19.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-purdy"
-   ]
-  },
-  {
-   "id": "APqoP0Ng5XVpFfCo",
-   "headline": "Puka Nacua might miss Week 3 for Rams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/puka-nacua-might-miss-week-160100344.html",
-   "timestamp": "2026-09-24T16:01:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "5d2IVQhKzAC2NGuj",
-   "headline": "Saints Rookie Report: Week 3 preview",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-rookie-report-week-3-160000955.html",
-   "timestamp": "2026-09-24T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "OO9WNp6spUTx6p-9",
-   "headline": "Finding run game vs. Ravens would be timely for the Cowboys",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/finding-run-game-vs-ravens-160000783.html",
-   "timestamp": "2026-09-24T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "DAL"
-   ]
-  },
-  {
-   "id": "PXpzBvnIKn_MP7PP",
-   "headline": "NFL Week 3 picks, predictions: Can Giants win without Jaxson Dart?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-3-picks-predictions-160000963.html",
-   "timestamp": "2026-09-24T16:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxson-dart"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "eDi57mQHya-AAScA",
-   "headline": "Rashee Rice’s big play for Chiefs in Week 2 was set up in Week 1",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rashee-rice-big-play-chiefs-160000556.html",
-   "timestamp": "2026-09-24T16:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "rashee-rice"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "EP1kIwSwUWS5PA2Z",
-   "headline": "Eagles News: Sean Mannion says “the screen game’s going to be a big part of what we do”",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-sean-mannion-says-154126876.html",
-   "timestamp": "2026-09-24T15:41:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
    ]
   }
  ]
