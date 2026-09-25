@@ -364,13 +364,16 @@ def main() -> int:
 
     for wk, updated, lists in written:
         out = OUT_DIR / f"week-{wk}.json"
+        if out.exists():
+            print(f"kept {out.relative_to(ROOT)} (already published; delete it to regenerate)")
+            continue
         out.write_text(json.dumps({
             "schema_version": 1,
             "season": 2026,
             "week": wk,
             "format": "PPR",
             "updated": updated,
-            "source": f"{wb.name}, sheet {SHEET_NAME!r}, Week {wk} block",
+            "source": f"{wb.name}, Week {wk} block",
             "note": f"Week {wk} rankings, PPR scoring, the operator's own order.",
             "lists": lists,
         }, indent=1) + "\n")
