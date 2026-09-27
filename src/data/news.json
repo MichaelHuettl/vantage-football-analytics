@@ -1,8 +1,161 @@
 {
  "schema_version": 1,
- "updated": "2026-09-26",
+ "updated": "2026-09-27",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "GgsGMtHEoB7dS23c",
+   "headline": "Titans fans confident heading into Giants game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-fans-confident-heading-giants-033156361.html",
+   "timestamp": "2026-09-27T03:31:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "TEN"
+   ]
+  },
+  {
+   "id": "_Oo_hcN8tkBSI4Q_",
+   "headline": "NFL fines Tyrique Stevenson $22,342 for hit that knocked off Aaron Jones's helmet",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-fines-tyrique-stevenson-22-030945150.html",
+   "timestamp": "2026-09-27T03:09:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "aaron-jones"
+   ]
+  },
+  {
+   "id": "vpyK59rBMkq8NDhA",
+   "headline": "Jimmy Garoppolo Open To Deal; Giants Could Make Two QB Additions?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/jimmy-garoppolo-open-to-deal-giants-could-make-two-qb-additions",
+   "timestamp": "2026-09-27T02:58:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "nwugFdDLUKgvXPRG",
+   "headline": "A win on Sunday would tie Dak Prescott with Roger Staubach for second on Cowboys' all-time list",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/win-sunday-tie-dak-prescott-024030937.html",
+   "timestamp": "2026-09-27T02:40:30.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dak-prescott"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "VC8-RLi6QqfjeUWj",
+   "headline": "How to watch Seahawks vs. Commanders: TV network, live stream, kickoff time",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/watch-seahawks-vs-commanders-tv-021821635.html",
+   "timestamp": "2026-09-27T02:18:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA",
+    "WAS"
+   ]
+  },
+  {
+   "id": "Nh9OjFOnJa1w6FMu",
+   "headline": "Last-minute best bets for NFL Week 3: Seahawks cruise in Sam Darnold's return, Raiders suffer first loss",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/last-minute-best-bets-for-nfl-week-3-seahawks/",
+   "timestamp": "2026-09-27T02:00:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "LV",
+    "SEA"
+   ]
+  },
+  {
+   "id": "38uAxvWkmRjh8T57",
+   "headline": "How GM Les Snead's philosophy has benefitted the Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/gm-les-sneads-philosophy-benefitted-015703993.html",
+   "timestamp": "2026-09-27T01:57:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "aCPrutjYI5oPiipu",
+   "headline": "Confidence in the Chicago Bears drop",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/confidence-chicago-bears-drop-014513212.html",
+   "timestamp": "2026-09-27T01:45:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Y0baYlYXpmt4asMU",
+   "headline": "49ers Place WR Demarcus Robinson On IR; Team Hosts Several Pass Rushers",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/49ers-place-wr-demarcus-robinson-on-ir-team-hosts-several-pass-rushers",
+   "timestamp": "2026-09-27T01:34:48.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "Ae9tNmiLgIuiaT2i",
+   "headline": "Braxton Berries elevated for Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/braxton-berries-elevated-week-3-011656544.html",
+   "timestamp": "2026-09-27T01:16:56.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "juF3Xu-RRc5syXzJ",
+   "headline": "Zac Taylor recalls Steelers DC Patrick Graham being an option for Bengals before hiring Al Golden in 2025",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/zac-taylor-recalls-steelers-dc-011228843.html",
+   "timestamp": "2026-09-27T01:12:28.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "PIT"
+   ]
+  },
+  {
+   "id": "3vg0hg-zQat-Z23u",
+   "headline": "NFL Week 3 player props: Our favorite picks to score, including Seahawks rookie RB Jadarian Price",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-3-player-props-seahawks-jadarian-price/",
+   "timestamp": "2026-09-27T01:00:54.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jadarian-price"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "BgI1ZvvF72gOtxpK",
+   "headline": "Rams keeping close tabs on Texas draft prospects?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-keeping-close-tabs-texas-010035720.html",
+   "timestamp": "2026-09-27T01:00:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
   {
    "id": "fLqFHjoIgIcBVp6k",
    "headline": "Chargers Place OL Trey Pipkins On IR",
@@ -15,6 +168,41 @@
    ]
   },
   {
+   "id": "N_WSNgFfTC-xGF7U",
+   "headline": "Is it Max Iheanachor time for the Steelers? Will Joey Porter Jr. drama finally end?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/max-iheanachor-time-steelers-joey-000023169.html",
+   "timestamp": "2026-09-27T00:00:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "PfDtbNOtI7nKNrXe",
+   "headline": "Miami Dolphins Fans: Dolphins Vs KC Chiefs Predictions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-fans-dolphins-vs-000000170.html",
+   "timestamp": "2026-09-27T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "MIA"
+   ]
+  },
+  {
+   "id": "zBizRY7oXbqJ25S_",
+   "headline": "How to watch Commanders vs Seahawks: TV, radio, streaming, injury report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/watch-commanders-vs-seahawks-tv-000000350.html",
+   "timestamp": "2026-09-27T00:00:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SEA",
+    "WAS"
+   ]
+  },
+  {
    "id": "32wrvVVZKzkUNN1-",
    "headline": "How long is Rams' Myles Garrett out? What happened to star pass rusher?",
    "source": "Yahoo Sports",
@@ -23,6 +211,17 @@
    "category": "breaking",
    "team_abbrs": [
     "LAR"
+   ]
+  },
+  {
+   "id": "pBJajvykGydM7pxE",
+   "headline": "Giants kicking unit looking good — with wind and tricky weather to come at MetLife in Week 3",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-kicking-unit-looking-good-234325327.html",
+   "timestamp": "2026-09-26T23:43:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -58,6 +257,17 @@
    "team_abbrs": [
     "BAL",
     "DAL"
+   ]
+  },
+  {
+   "id": "7ETt3TAEwYm3kqcQ",
+   "headline": "Jets’ Isaiah Williams refuses to let two muffed punts get to his head",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-isaiah-williams-refuses-let-231720593.html",
+   "timestamp": "2026-09-26T23:17:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -148,6 +358,20 @@
    ]
   },
   {
+   "id": "kJk6oIpu_apcCgRg",
+   "headline": "Justin Herbert’s brother Patrick set for NFL debut after Chargers injury wave",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/justin-herbert-brother-patrick-set-221453389.html",
+   "timestamp": "2026-09-26T22:14:53.000Z",
+   "category": "injury",
+   "player_ids": [
+    "justin-herbert"
+   ],
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
    "id": "Gw-yMYGpzLB5X9RV",
    "headline": "It wouldn't shock me IF ... NFL Week 3: Steelers, Aaron Rodgers won't find end zone once again",
    "source": "CBS Sports",
@@ -159,6 +383,17 @@
    ]
   },
   {
+   "id": "v_HV7Mi9ymxlBKRh",
+   "headline": "Aaron Glenn’s Detroit return comes with an important Jets mission",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-glenn-detroit-return-comes-220306727.html",
+   "timestamp": "2026-09-26T22:03:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
    "id": "jEepKMOEA3DEfvbo",
    "headline": "What if the Raiders trade for Marvin Harrison Jr?",
    "source": "Yahoo Sports",
@@ -167,6 +402,20 @@
    "category": "transaction",
    "team_abbrs": [
     "LV"
+   ]
+  },
+  {
+   "id": "0FlUxmKfSmCCFyMI",
+   "headline": "Giants enter uncertain post-Jaxson Dart era with Jameis Winston taking over season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-enter-uncertain-post-jaxson-215720150.html",
+   "timestamp": "2026-09-26T21:57:20.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -1476,253 +1725,6 @@
    "team_abbrs": [
     "JAX",
     "NE"
-   ]
-  },
-  {
-   "id": "YgO5BmH-Y-Jwkk9x",
-   "headline": "Jets' suddenly stout defense gets a big test at Lions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-suddenly-stout-defense-gets-144457117.html",
-   "timestamp": "2026-09-26T14:44:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "cu46Ykj3wzcXJpW2",
-   "headline": "How to watch Cowboys vs. Ravens in Brazil: Lamar Jackson, Dak Prescott headline first Rio de Janeiro NFL game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/how-to-watch-cowboys-vs-ravens-storylines-prediction/",
-   "timestamp": "2026-09-26T14:44:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson",
-    "dak-prescott"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "DAL"
-   ]
-  },
-  {
-   "id": "7Wks-SDSxqTvKY2c",
-   "headline": "NFL draft prospects 2027: Players to watch TCU vs. UCF",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-draft-prospects-2027-players-144216607.html",
-   "timestamp": "2026-09-26T14:42:16.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "B5AWJGU3Ct5UD4Rf",
-   "headline": "Bengals vs. Steelers: Will Aaron Rodgers find the end zone again against a surging Cincinnati defense?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bengals-vs-steelers-how-to-watch-prediction/",
-   "timestamp": "2026-09-26T14:41:40.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "PIT"
-   ]
-  },
-  {
-   "id": "UYmgtpxAYmdNFD1O",
-   "headline": "Cleveland Browns: Grinding on defense, running the ball, and booing the QB",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-grinding-defense-running-144137607.html",
-   "timestamp": "2026-09-26T14:41:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "7rUuoHSKdrOSIux4",
-   "headline": "Vikings To Sign P Johnny Hekker",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/vikings-to-sign-p-johnny-hekker-2",
-   "timestamp": "2026-09-26T14:40:33.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "WMf2mHGKvt8bVb0l",
-   "headline": "NFL Week 3 weather updates as nor'easter threatens Giants-Titans, other games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-3-weather-updates-143752556.html",
-   "timestamp": "2026-09-26T14:37:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG",
-    "TEN"
-   ]
-  },
-  {
-   "id": "QoJxMdI6p5EYhIvj",
-   "headline": "Jonah Coleman ruled out for Week 3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jonah-coleman-ruled-week-3-143523626.html",
-   "timestamp": "2026-09-26T14:35:23.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "LFOrYsUyy6zRmcaC",
-   "headline": "Zay Flowers: Could be limited if active",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/zay-flowers-16919",
-   "timestamp": "2026-09-26T14:19:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "zay-flowers"
-   ]
-  },
-  {
-   "id": "VY2GGXr3LD3hjKol",
-   "headline": "Steelers CB Joey Porter Jr unlikely to play in Week 3 vs. Bengals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-cb-joey-porter-jr-141204242.html",
-   "timestamp": "2026-09-26T14:12:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "PIT"
-   ]
-  },
-  {
-   "id": "Jzn59nkuIK8fhIKD",
-   "headline": "49ers star edge rusher Nick Bosa suffered a calf injury and could miss next week’s game vs. the Broncos",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-star-edge-rusher-nick-140814019.html",
-   "timestamp": "2026-09-26T14:08:14.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DEN",
-    "SF"
-   ]
-  },
-  {
-   "id": "UZJI9I5ouf30vcIl",
-   "headline": "Bills sign WR from practice squad, place DB on injured reserve before Chargers game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-elevate-wr-practice-squad-210715189.html",
-   "timestamp": "2026-09-26T14:04:24.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "BUF",
-    "LAC"
-   ]
-  },
-  {
-   "id": "R1Xv6GIDkb_W3Yf9",
-   "headline": "Rams vs Broncos: How to watch on TV, stream, or listen on radio",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-vs-broncos-watch-tv-140300786.html",
-   "timestamp": "2026-09-26T14:03:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "LAR"
-   ]
-  },
-  {
-   "id": "tVel0m-QY9xNdyQO",
-   "headline": "Pay close attention these 5 Bills on Sunday against the Bills",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pay-close-attention-5-bills-140000485.html",
-   "timestamp": "2026-09-26T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "6Zj0X2jyDlLRorHJ",
-   "headline": "Seahawks vs. Commanders NFL Week 3 TV coverage maps and FOX commentators",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-vs-commanders-nfl-week-140000796.html",
-   "timestamp": "2026-09-26T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA",
-    "WAS"
-   ]
-  },
-  {
-   "id": "VFxW6dSgNB9vD9E3",
-   "headline": "Defensive head-to-head preview: Saints vs Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/defensive-head-head-preview-saints-140000392.html",
-   "timestamp": "2026-09-26T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "NO"
-   ]
-  },
-  {
-   "id": "W6OPZr0dU_Con5ZV",
-   "headline": "New York Jets vs. Detroit Lions Week 3 preview: 6 key stats",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-vs-detroit-lions-140000998.html",
-   "timestamp": "2026-09-26T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "YaNzcb6RGb8vsc3-",
-   "headline": "Bears Discussion: Eagles previews, 2027 NFL Draft LB prospects, DFS, and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-discussion-eagles-previews-2027-140000695.html",
-   "timestamp": "2026-09-26T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "PHI"
-   ]
-  },
-  {
-   "id": "BWBmPdIyF5H8hv9w",
-   "headline": "Could Commanders home opener be a ‘trap game’ for the Seahawks? - Daily Slop",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/could-commanders-home-opener-trap-140000164.html",
-   "timestamp": "2026-09-26T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA",
-    "WAS"
-   ]
-  },
-  {
-   "id": "QptvtFcZuYOVKlrW",
-   "headline": "Rams WR Puka Nacua is listed as doubtful for Sunday Night’s game vs. the Broncos",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-wr-puka-nacua-listed-135214194.html",
-   "timestamp": "2026-09-26T13:52:14.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "DEN",
-    "LAR"
-   ]
-  },
-  {
-   "id": "XRghtaRP2wvky8wc",
-   "headline": "Bills news: Previewing the Chargers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-news-previewing-chargers-135016699.html",
-   "timestamp": "2026-09-26T13:50:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "LAC"
    ]
   }
  ]
