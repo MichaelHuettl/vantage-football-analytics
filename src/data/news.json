@@ -1,8 +1,179 @@
 {
  "schema_version": 1,
- "updated": "2026-09-29",
+ "updated": "2026-09-30",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "mAYlkhLzrh9o3clp",
+   "headline": "Ravens open as massive favorites in Week 4 vs. winless Titans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-open-massive-favorites-week-063253243.html",
+   "timestamp": "2026-09-30T06:32:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "TEN"
+   ]
+  },
+  {
+   "id": "p_fOYZSKIWIF_ha5",
+   "headline": "J.J. McCarthy Trade Fallout: Dart, Winston, Harbaugh, Giants, Vikings",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/j-j-mccarthy-trade-fallout-dart-winston-harbaugh-giants-vikings",
+   "timestamp": "2026-09-30T04:59:02.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jaxson-dart"
+   ],
+   "team_abbrs": [
+    "MIN",
+    "NYG"
+   ]
+  },
+  {
+   "id": "9C2nOnttYTLHe_p7",
+   "headline": "Giants To Release WR Odell Beckham Jr.",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/giants-to-release-wr-odell-beckham-jr",
+   "timestamp": "2026-09-30T04:58:02.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "HDw9ZuwyPrvtfUct",
+   "headline": "Giants Among Suitors For Steelers CB Joey Porter Jr.?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/giants-among-suitors-for-steelers-cb-joey-porter-jr",
+   "timestamp": "2026-09-30T04:55:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "PIT"
+   ]
+  },
+  {
+   "id": "E6ohc0IsmAgYtrWO",
+   "headline": "Patriots rookie TE Eli Raridon announces death of newborn son after fatal birth defect diagnosis",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/patriots-rookie-te-eli-raridon-announces-death-of-newborn-son-after-fatal-birth-defect-diagnosis-045300606.html",
+   "timestamp": "2026-09-30T04:53:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "TA1fbgKsEXGVa-tP",
+   "headline": "Packers Meet With G Kevin Zeitler",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/packers-meet-with-g-kevin-zeitler",
+   "timestamp": "2026-09-30T04:52:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "FKGWm0Y9wF03tDQg",
+   "headline": "Opinions Split On Trade Value Of Cardinals WR Marvin Harrison Jr.",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/opinions-split-on-trade-value-of-cardinals-wr-marvin-harrison-jr",
+   "timestamp": "2026-09-30T04:50:55.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "UMFnHLJ0uPdsg3U8",
+   "headline": "49ers Reunite With WR Dante Pettis",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/49ers-reunite-with-wr-dante-pettis",
+   "timestamp": "2026-09-30T04:49:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "JgH5v1EM1fIDs0gh",
+   "headline": "Giants don't plan to add Odell Beckham Jr. to the practice squad \"at this time\"",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-dont-plan-add-odell-040258065.html",
+   "timestamp": "2026-09-30T04:02:58.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "S55lLugrGX7LQGSi",
+   "headline": "Schefter: Expect offseason surgery for Jayden Daniels - All aTwitter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/not-commanders-hop-across-pond-040000295.html",
+   "timestamp": "2026-09-30T04:00:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jayden-daniels"
+   ]
+  },
+  {
+   "id": "wk2W1O75O-gsaBVg",
+   "headline": "0-17 watch for Dolphins: The case for and largely against a winless season in Miami",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/0-17-watch-for-dolphins-the-case-for-and-largely-against-a-winless-season-in-miami-034721149.html",
+   "timestamp": "2026-09-30T03:47:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "KBFQO_c-qQt-nlCd",
+   "headline": "Titans Place Guards Fernando Carmona, Jackson Slater On IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/09/titans-place-guards-fernando-carmona-jackson-slater-on-ir",
+   "timestamp": "2026-09-30T03:43:59.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "J6p-V1chNsh7OZBL",
+   "headline": "Are you confident in the Bears and their quarterback room?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/confident-bears-quarterback-room-033205433.html",
+   "timestamp": "2026-09-30T03:32:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "LfNL_ijqVhDzfRP-",
+   "headline": "In the offseason, Giants weren't interested in Joe Flacco",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/offseason-giants-werent-interested-joe-023756262.html",
+   "timestamp": "2026-09-30T02:37:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "YN1GvzRsWikwuWgs",
+   "headline": "Jerry Jones sounds off on Cowboys' coaching gaffes at end of Week 3 loss in Brazil: 'We made mistakes'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jerry-jones-cowboys-coaching-gaffes-loss-to-ravens/",
+   "timestamp": "2026-09-30T02:14:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
   {
    "id": "GHar-qOZtBm2Jq72",
    "headline": "RAMalytics: One reason why Rams’ passing game feels anemic",
@@ -24,14 +195,13 @@
   },
   {
    "id": "f_CxE22BHcuEXTCI",
-   "headline": "Ravens Work Out Former Lions C Graham Glasgow",
+   "headline": "Ravens Work Out OL Graham Glasgow",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/09/ravens-work-out-former-lions-c-graham-glasgow",
    "timestamp": "2026-09-30T01:34:50.000Z",
    "category": "breaking",
    "team_abbrs": [
-    "BAL",
-    "DET"
+    "BAL"
    ]
   },
   {
@@ -41,6 +211,17 @@
    "url": "https://sports.yahoo.com/article/32-teams-32-fantasy-football-facts-to-bully-week-4-012741192.html",
    "timestamp": "2026-09-30T01:27:41.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "CzGNiH6KOyp7BRXP",
+   "headline": "49ers sign former second round pick Dante Pettis amid WR injuries",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-sign-former-second-round-011412796.html",
+   "timestamp": "2026-09-30T01:14:12.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
   },
   {
    "id": "KvQLUdkj4CfCZibk",
@@ -82,6 +263,29 @@
    "player_ids": [
     "josh-allen",
     "brock-purdy"
+   ]
+  },
+  {
+   "id": "ygIGSQPe53ffdY8o",
+   "headline": "Super Bowl champion quarterback reveals key factor in poor Justin Herbert performance",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/super-bowl-champion-quarterback-reveals-003159529.html",
+   "timestamp": "2026-09-30T00:31:59.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ]
+  },
+  {
+   "id": "OLzf6jaUuafMANXn",
+   "headline": "J.J. McCarthy’s Giants number revealed after shock Vikings trade",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-j-mccarthy-giants-number-002631023.html",
+   "timestamp": "2026-09-30T00:26:31.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "MIN",
+    "NYG"
    ]
   },
   {
@@ -237,6 +441,17 @@
    "url": "https://sports.yahoo.com/articles/silver-black-pride-reacts-survey-230606474.html",
    "timestamp": "2026-09-29T23:06:06.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "vj8LkqiYwYEnosVy",
+   "headline": "49ers work out multiple players, including Jerry Rice’s son and former UCLA quarterback",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-multiple-players-including-jerry-230253729.html",
+   "timestamp": "2026-09-29T23:02:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
   },
   {
    "id": "4luC45O34KeSsEQ5",
@@ -542,17 +757,6 @@
    ]
   },
   {
-   "id": "TA1fbgKsEXGVa-tP",
-   "headline": "Packers Meet With G Kevin Zeitler",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/packers-meet-with-g-kevin-zeitler",
-   "timestamp": "2026-09-29T21:26:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
    "id": "2A_8mR-lZjtzjImt",
    "headline": "Commanders roster moves: Two go on injured lists; Austin Ekeler signing official",
    "source": "Yahoo Sports",
@@ -833,17 +1037,6 @@
    ]
   },
   {
-   "id": "YN1GvzRsWikwuWgs",
-   "headline": "Jerry Jones sounds off on Cowboys' coaching gaffes at end of Week 3 loss in Brazil: 'We made mistakes'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jerry-jones-cowboys-coaching-gaffes-loss-to-ravens/",
-   "timestamp": "2026-09-29T19:56:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
    "id": "0Rtis1386YsvQWXd",
    "headline": "Predicting NFL's first coaching change of 2026: Why Todd Bowles, Jim Harbaugh are in greatest danger",
    "source": "CBS Sports",
@@ -991,17 +1184,6 @@
    "team_abbrs": [
     "LAR",
     "PHI"
-   ]
-  },
-  {
-   "id": "FKGWm0Y9wF03tDQg",
-   "headline": "Opinions Split On Trade Value Of Cardinals WR Marvin Harrison Jr.",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/opinions-split-on-trade-value-of-cardinals-wr-marvin-harrison-jr",
-   "timestamp": "2026-09-29T18:50:55.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ARI"
    ]
   },
   {
@@ -1330,17 +1512,6 @@
    ]
   },
   {
-   "id": "9C2nOnttYTLHe_p7",
-   "headline": "Giants To Release WR Odell Beckham Jr.",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-to-release-wr-odell-beckham-jr",
-   "timestamp": "2026-09-29T16:59:02.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
    "id": "BiiIcu44Wwy4OJpu",
    "headline": "Week 4 NFL betting odds, lines, spreads, totals, for every game, including Steelers-Browns, Cowboys-Texans",
    "source": "CBS Sports",
@@ -1404,18 +1575,6 @@
    ]
   },
   {
-   "id": "HDw9ZuwyPrvtfUct",
-   "headline": "Giants Among Suitors For Steelers CB Joey Porter Jr.?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/giants-among-suitors-for-steelers-cb-joey-porter-jr",
-   "timestamp": "2026-09-29T15:47:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG",
-    "PIT"
-   ]
-  },
-  {
    "id": "knIOuSwJxFeggo0a",
    "headline": "NFL Week 3 panic meter: Chargers in crisis, Patriots unraveling, Packers fading, but Rams will be fine",
    "source": "CBS Sports",
@@ -1468,158 +1627,6 @@
    "team_abbrs": [
     "BAL",
     "TEN"
-   ]
-  },
-  {
-   "id": "Xx1GCE_8LgS6nhBD",
-   "headline": "Dolphins To Add LB Shaka Heyward Off Bengals’ Practice Squad",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/dolphins-to-add-lb-shaka-heyward-off-bengals-practice-squad",
-   "timestamp": "2026-09-29T14:49:31.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CIN",
-    "MIA"
-   ]
-  },
-  {
-   "id": "zjubcIhxye6zFS4t",
-   "headline": "Return of the feature back: Why NFL running backs are making a massive comeback",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/return-of-the-nfls-feature-back-run-game-resurgence/",
-   "timestamp": "2026-09-29T14:33:49.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "4SpEGMz969qRSNs0",
-   "headline": "Weekly Stat Review: Post Week 3 edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/weekly-stat-review-post-week-140000298.html",
-   "timestamp": "2026-09-29T14:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "cBKbLywPl0QSNXiv",
-   "headline": "AP NFL Power Rankings Week 4: Jaguars crash Top 5",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ap-nfl-power-rankings-week-140000382.html",
-   "timestamp": "2026-09-29T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "CdfN0tyefCw8UGJi",
-   "headline": "The Raiders are done being punchlines",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-done-being-punchlines-135607828.html",
-   "timestamp": "2026-09-29T13:56:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "K8wUlyZkjN7TLWrl",
-   "headline": "Arizona Cardinals news: Cardinals nab LSU OT in new 2027 mock draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/arizona-cardinals-news-cardinals-nab-135556184.html",
-   "timestamp": "2026-09-29T13:55:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "Q6JsGNoyMmoRY_5q",
-   "headline": "Bengals To Sign WR Mitchell Tinsley Off Texans’ Practice Squad",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/09/bengals-to-sign-wr-mitchell-tinsley-off-texans-practice-squad",
-   "timestamp": "2026-09-29T13:54:13.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CIN",
-    "HOU"
-   ]
-  },
-  {
-   "id": "o4Q7rLDiRmi-7nDa",
-   "headline": "Green Bay Packers News: Brian Gutekunst makes an attempt to fix offensive line",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/green-bay-packers-news-brian-135055602.html",
-   "timestamp": "2026-09-29T13:50:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "5s49KdJTAt9cGs6x",
-   "headline": "Los Angeles Chargers news: Bolts add Indiana WR in new 2027 mock draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-bolts-135000299.html",
-   "timestamp": "2026-09-29T13:50:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "nBamnMo1DSTEOzic",
-   "headline": "Why didn’t George Kittle take a knee? Kyle Shanahan didn’t tell him to",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/why-didn-t-george-kittle-135000720.html",
-   "timestamp": "2026-09-29T13:50:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ]
-  },
-  {
-   "id": "UAewG6RPlpvd3va0",
-   "headline": "Houston Texans Opening Odds vs Dallas Cowboys",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/houston-texans-opening-odds-vs-134500081.html",
-   "timestamp": "2026-09-29T13:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "HOU"
-   ]
-  },
-  {
-   "id": "pcd4Lf5hl6z7vkwU",
-   "headline": "Bears' T.J. Edwards nabbed clutch INT vs Eagles. Did he steal the play call?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-t-j-edwards-nabbed-134241644.html",
-   "timestamp": "2026-09-29T13:42:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "PHI"
-   ]
-  },
-  {
-   "id": "wfemjg7pPWXTs99E",
-   "headline": "Boss Hog of the Week: Sonny Styles, Marcus Mariota among best Commanders from Week 3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/boss-hog-week-sonny-styles-134205441.html",
-   "timestamp": "2026-09-29T13:42:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "-dgc6MSdHochv7MK",
-   "headline": "Case Keenum went from forgotten QB to Bears hero on Monday Night Football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/case-keenum-went-forgotten-qb-133644278.html",
-   "timestamp": "2026-09-29T13:36:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
    ]
   }
  ]
