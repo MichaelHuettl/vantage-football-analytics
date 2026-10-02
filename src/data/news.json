@@ -1,8 +1,282 @@
 {
  "schema_version": 1,
- "updated": "2026-10-01",
+ "updated": "2026-10-02",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "HLGRuZGYKUhovHo5",
+   "headline": "Browns survive late comeback to defeat Steelers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-survive-comeback-defeat-steelers-065649433.html",
+   "timestamp": "2026-10-02T06:56:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "3ycjvp2fbkXDiO3d",
+   "headline": "Rams Week 4 injury report: Terrance Ferguson expected to miss Sunday’s game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-week-4-injury-report-055042189.html",
+   "timestamp": "2026-10-02T05:50:42.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "XYeg2K2RjnMnfZIg",
+   "headline": "Stop piling on Drake Maye. A deep dive look at his struggles, what's failing around him and why Patriots should believe he'll bounce back",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/stop-piling-on-drake-maye-a-deep-dive-look-at-his-struggles-whats-failing-around-him-and-why-patriots-should-believe-hell-bounce-back-052355810.html",
+   "timestamp": "2026-10-02T05:23:55.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "AmV7h-yNJE3nhfAw",
+   "headline": "KC Concepcion: Remains productive in Week 4 win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/kc-concepcion-19242",
+   "timestamp": "2026-10-02T05:10:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "8TczY0JKydnUWS_4",
+   "headline": "Denzel Boston: Continues thriving in Week 4 win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/denzel-boston-19298",
+   "timestamp": "2026-10-02T05:07:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "vQdRnx4nlddgudgF",
+   "headline": "Aaron Rodgers: Mixed performance in Week 4 loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/aaron-rodgers-4307",
+   "timestamp": "2026-10-02T04:48:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "zPCy0yHMx3x86oYt",
+   "headline": "LOOK: Aaron Rodgers' heated exchange with Mike McCarthy caught on camera during Steelers-Browns",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-mike-mccarthy-heated-exchange-steelers-browns/",
+   "timestamp": "2026-10-02T04:40:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "C8QiFvVZifQQ0mk0",
+   "headline": "Cowboys Trade Opens Door To Modern Contract Structure, But Hurdles Exist For Joey Porter Jr.",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/421427",
+   "timestamp": "2026-10-02T04:13:24.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "R9uFqExSLeI6h7bp",
+   "headline": "Joey Porter Jr. Hopes To Finish Career With Cowboys",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/joey-porter-jr-hopes-to-finish-career-with-cowboys",
+   "timestamp": "2026-10-02T04:10:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "mucKxJM6OyCf1Lbs",
+   "headline": "Saints Place RB Travis Etienne On IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/saints-place-rb-travis-etienne-on-ir",
+   "timestamp": "2026-10-02T04:07:41.000Z",
+   "category": "injury",
+   "player_ids": [
+    "travis-etienne"
+   ],
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "HnpnQ2ydPoxZBYWQ",
+   "headline": "Here's why the Steelers' 22-year run without a losing season is now their biggest problem",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/steelers-losing-season-2026-mike-tomlin-mike-mccarthy/",
+   "timestamp": "2026-10-02T04:06:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "lra-LEZjgwQcLssm",
+   "headline": "Joey Porter Jr. Trade Fallout: Steelers, Cowboys, Gonzalez, Bland",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/joey-porter-trade-fallout-steelers-cowboys-gonzalez",
+   "timestamp": "2026-10-02T04:06:09.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL",
+    "PIT"
+   ]
+  },
+  {
+   "id": "UIRkJKoQRZE1C-3P",
+   "headline": "Cardinals To Trade QB Gardner Minshew Before Deadline?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cardinals-to-trade-qb-gardner-minshew-before-deadline",
+   "timestamp": "2026-10-02T04:04:54.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "96KE3rbeazwz_WRR",
+   "headline": "Browns win battle with Steelers but are losing war with Deshaun Watson | Opinion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-win-battle-steelers-losing-040318551.html",
+   "timestamp": "2026-10-02T04:03:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "IcWwL1E3ae9cRWNX",
+   "headline": "Ranking the NFL's remaining international games, starting with Sunday's Colts-Commanders matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/ranking-the-nfls-remaining-international-games-starting-with-sundays-colts-commanders-matchup-040044766.html",
+   "timestamp": "2026-10-02T04:00:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "WAS"
+   ]
+  },
+  {
+   "id": "6DS5Ti7K0kcpSApo",
+   "headline": "Browns vs Steelers: 19 takeaways from big Week 4 AFC North win for Cleveland",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-vs-steelers-19-takeaways-035908717.html",
+   "timestamp": "2026-10-02T03:59:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "rrvvMLTU0imFqJgx",
+   "headline": "Panthers LG Damien Lewis To Miss Time With Elbow Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/panthers-lg-damien-lewis-to-miss-time-with-elbow-injury",
+   "timestamp": "2026-10-02T03:59:02.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "pfiikm8ARFHgyvQi",
+   "headline": "Steelers allow five sacks on Aaron Rodgers, fall to Browns 27-24",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-allow-five-sacks-aaron-035548104.html",
+   "timestamp": "2026-10-02T03:55:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "zcLJOGSi4XfWmn5n",
+   "headline": "Thursday Night Football: Deshaun Watson leads Browns to 27-24 win over Steelers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-deshaun-watson-035438233.html",
+   "timestamp": "2026-10-02T03:54:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "6u-esrFVNnf6SagN",
+   "headline": "Pittsburgh Steelers vs. Cleveland Browns recap: Big second quarter, clutch kick fuels win and first place in AFC North",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pittsburgh-steelers-vs-cleveland-browns-034519253.html",
+   "timestamp": "2026-10-02T03:45:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "psxJ0aRaGmPvKeg_",
+   "headline": "Aaron Rodgers' second TD draws Steelers to within 21-16",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-rodgers-second-td-draws-030555030.html",
+   "timestamp": "2026-10-02T03:05:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "RilnmULtDR2EbQ8g",
+   "headline": "Reviewing the Bears’ PFN grades from Week 3 vs. Eagles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/reviewing-bears-pfn-grades-week-000000894.html",
+   "timestamp": "2026-10-02T02:34:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "PHI"
+   ]
+  },
+  {
+   "id": "iw207DejHLCg0nKu",
+   "headline": "Aaron Rodgers has fiery tirade at Steelers’ sideline in wild ‘TNF’ moment: ‘What the f–k?!’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-rodgers-fiery-tirade-steelers-023003856.html",
+   "timestamp": "2026-10-02T02:30:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "a0nxDPJIAy-ergif",
+   "headline": "Seahawks injury report: Ty Okada is back, but Jadarian Price is now a question mark",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-injury-report-ty-okada-022534670.html",
+   "timestamp": "2026-10-02T02:25:34.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jadarian-price"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
   {
    "id": "X1lgVQVY_KqL84JF",
    "headline": "Browns' Mason Graham exits Steelers game with knee injury, will not return",
@@ -28,8 +302,19 @@
    ]
   },
   {
+   "id": "nRLRN1ARy1jOjbhS",
+   "headline": "Talanoa Hufanga and George Kittle reveal true feelings of each other ahead of Week 4 matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/talanoa-hufanga-george-kittle-reveal-015641778.html",
+   "timestamp": "2026-10-02T01:56:41.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ]
+  },
+  {
    "id": "HZgFyXFlml0A7itt",
-   "headline": "Browns DTs Mason Graham, Mike Hall injured vs Steelers on Thursday Night Football",
+   "headline": "Browns DTs Mason Graham, Mike Hall injured vs Steelers: Graham out, Hall returns",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/browns-dt-mason-graham-injured-003825689.html",
    "timestamp": "2026-10-02T01:48:00.000Z",
@@ -37,6 +322,17 @@
    "team_abbrs": [
     "CLE",
     "PIT"
+   ]
+  },
+  {
+   "id": "3JU26SooiR7p3Efj",
+   "headline": "Jets sign son of late ex-Nets star Darryl Dawkins to bolster offensive line depth",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-sign-son-ex-nets-014227336.html",
+   "timestamp": "2026-10-02T01:42:27.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -88,17 +384,6 @@
    ]
   },
   {
-   "id": "C8QiFvVZifQQ0mk0",
-   "headline": "Cowboys Trade Opens Door To Modern Contract Structure, But Hurdles Exist For Joey Porter Jr.",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/421427",
-   "timestamp": "2026-10-02T01:02:24.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
    "id": "dKjlmaEXOA_gaUvy",
    "headline": "Patrick Mahomes practicing Thursday",
    "source": "Yahoo Sports",
@@ -110,6 +395,21 @@
    ]
   },
   {
+   "id": "umZHMqP4hBfeXUzo",
+   "headline": "Brock Purdy is on cusp of NFL record — if he can get past Broncos, Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-purdy-cusp-nfl-record-005700216.html",
+   "timestamp": "2026-10-02T00:57:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-purdy"
+   ],
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
    "id": "Us78CCgoAqpKsX7n",
    "headline": "Aaron Rodgers, Mike McCarthy exchange F-bombs on Steelers' TD drive",
    "source": "Yahoo Sports",
@@ -117,6 +417,18 @@
    "timestamp": "2026-10-02T00:50:33.000Z",
    "category": "breaking",
    "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "AiMZ9YFWS56hHA2d",
+   "headline": "Aaron Rodgers, Mike McCarthy exchange F-bombs early in Steelers loss to Browns",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/aaron-rodgers-mike-mccarthy-exchange-f-bombs-early-in-steelers-loss-to-browns-005033259.html",
+   "timestamp": "2026-10-02T00:50:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
     "PIT"
    ]
   },
@@ -152,6 +464,21 @@
    ]
   },
   {
+   "id": "PoY934ZJtbaLvDil",
+   "headline": "Rams catch massive break as Eagles QB Jalen Hurts left to embody famous Will Smith meme",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-catch-massive-break-eagles-003626150.html",
+   "timestamp": "2026-10-02T00:36:26.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "PHI"
+   ]
+  },
+  {
    "id": "xKUyeuuQ_TblxPpt",
    "headline": "RB Jadarian Price did not practice; RB Zach Charbonnet limited in his return",
    "source": "Yahoo Sports",
@@ -160,6 +487,41 @@
    "category": "practice",
    "player_ids": [
     "jadarian-price"
+   ]
+  },
+  {
+   "id": "c1UES1XGAOCr2-wz",
+   "headline": "Puka Nacua opens up about ‘sharp pains’ from injury; Aaron Donald concern grows",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/puka-nacua-opens-sharp-pains-000701912.html",
+   "timestamp": "2026-10-02T00:07:01.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "XOI27JDqeFUTDzzv",
+   "headline": "Winners, losers as Browns outlast Steelers 27-24 on Thursday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/winners-losers-browns-outlast-steelers-000514646.html",
+   "timestamp": "2026-10-02T00:05:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "Rv1yO10s2JvcGF5g",
+   "headline": "Winners, losers as Browns outlast Steelers 27-24 on Thursday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/winners-losers-browns-outlast-steelers-000514246.html",
+   "timestamp": "2026-10-02T00:05:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
    ]
   },
   {
@@ -184,18 +546,6 @@
    "team_abbrs": [
     "CLE",
     "PIT"
-   ]
-  },
-  {
-   "id": "RilnmULtDR2EbQ8g",
-   "headline": "Reviewing the Bears’ PFN grades from Week 3 vs. Eagles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/reviewing-bears-pfn-grades-week-000000894.html",
-   "timestamp": "2026-10-02T00:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "PHI"
    ]
   },
   {
@@ -224,7 +574,7 @@
   },
   {
    "id": "6fDA5BtwoH8KBWT4",
-   "headline": "Bears OT Braxton Jones Week-To-Week, Ozzy Trapilo Nearing Return",
+   "headline": "Bears’ Braxton Jones Week-To-Week; Ozzy Trapilo Nearing Return",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/10/bears-ot-braxton-jones-week-to-week-ozzy-trapilo-nearing-return",
    "timestamp": "2026-10-01T23:53:31.000Z",
@@ -242,6 +592,18 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
+   ]
+  },
+  {
+   "id": "SKRTQjSg_piSng4D",
+   "headline": "Joey Porter Jr. felt ‘disrespected’ by Steelers before trade to Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/joey-porter-jr-felt-disrespected-234453561.html",
+   "timestamp": "2026-10-01T23:44:53.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL",
+    "PIT"
    ]
   },
   {
@@ -391,6 +753,17 @@
    "category": "transaction",
    "team_abbrs": [
     "CLE"
+   ]
+  },
+  {
+   "id": "tpAj36FB3vn3aVvu",
+   "headline": "Raiders defense having ball —literally — at outset of NFL season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-defense-having-ball-literally-231201806.html",
+   "timestamp": "2026-10-01T23:12:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
    ]
   },
   {
@@ -609,7 +982,7 @@
   },
   {
    "id": "GaUPDzfInA7yg9ft",
-   "headline": "Steelers vs. Browns score, live updates: Aaron Rodgers, Deshaun Watson meet on Thursday Night Football to open up Week 4",
+   "headline": "Deshaun Watson rallies Browns to a field goal in final seconds to beat the Steelers",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/steelers-browns-score-live-updates-inactives-highlights-stats-where-to-watch-week-4-thursday-night-football-224500412.html",
    "timestamp": "2026-10-01T22:30:00.000Z",
@@ -677,17 +1050,6 @@
    "category": "practice",
    "player_ids": [
     "devonta-smith"
-   ]
-  },
-  {
-   "id": "R9uFqExSLeI6h7bp",
-   "headline": "Joey Porter Jr. Hopes To Finish Career With Cowboys",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/joey-porter-jr-hopes-to-finish-career-with-cowboys",
-   "timestamp": "2026-10-01T22:23:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
    ]
   },
   {
@@ -1052,20 +1414,6 @@
    ]
   },
   {
-   "id": "mucKxJM6OyCf1Lbs",
-   "headline": "Saints Place RB Travis Etienne On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/saints-place-rb-travis-etienne-on-ir",
-   "timestamp": "2026-10-01T20:42:41.000Z",
-   "category": "injury",
-   "player_ids": [
-    "travis-etienne"
-   ],
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
    "id": "YQRf1kw1tJkF8H9S",
    "headline": "49ers Sign Brandin Cooks From P-Squad",
    "source": "Pro Football Rumors",
@@ -1074,17 +1422,6 @@
    "category": "transaction",
    "team_abbrs": [
     "SF"
-   ]
-  },
-  {
-   "id": "UIRkJKoQRZE1C-3P",
-   "headline": "Cardinals To Trade QB Gardner Minshew Before Deadline?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/cardinals-to-trade-qb-gardner-minshew-before-deadline",
-   "timestamp": "2026-10-01T19:50:54.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ARI"
    ]
   },
   {
@@ -1380,327 +1717,6 @@
    "team_abbrs": [
     "DAL",
     "HOU"
-   ]
-  },
-  {
-   "id": "ymn33eM9tlruABEg",
-   "headline": "Zach Charbonnet injury update: Seahawks running back returning to practice in Week 4",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/zach-charbonnet-injury-seahawks-running-172905031.html",
-   "timestamp": "2026-10-01T17:29:05.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "_PxDBSHCIp0ToGtJ",
-   "headline": "Eagles Undecided On S Setup; Latest On Kenny Moore",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-undecided-on-s-setup-latest-on-kenny-moore",
-   "timestamp": "2026-10-01T17:21:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "8rlsfRRLaGvKLSVt",
-   "headline": "Joey Porter Jr. posts new definition of \"seat belt\" in response to Cowboys trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/joey-porter-jr-posts-definition-171508951.html",
-   "timestamp": "2026-10-01T17:15:08.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "HU9NbGuC76mvV6hk",
-   "headline": "Vic Fangio talks about the Eagles’ plan at safety",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vic-fangio-talks-eagles-plan-171358936.html",
-   "timestamp": "2026-10-01T17:13:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "wy3tlbR2ERze1cOI",
-   "headline": "Brock Bowers offered this reminder: He’s a brilliant player",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-bowers-offered-reminder-brilliant-170700050.html",
-   "timestamp": "2026-10-01T17:07:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-bowers"
-   ]
-  },
-  {
-   "id": "NQzXj7-p69BFmNkD",
-   "headline": "Lamar Jackson: Present for start of Thursday's practice",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/lamar-jackson-12561",
-   "timestamp": "2026-10-01T17:02:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "lamar-jackson"
-   ]
-  },
-  {
-   "id": "tS9uQUXqktHa8_JH",
-   "headline": "Steelers DL Yahya Black questionable for Thursday Night Football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-dl-yahya-black-questionable-170157147.html",
-   "timestamp": "2026-10-01T17:01:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "a7IjRRDGSyLesipu",
-   "headline": "Evan McPherson named AFC Special Teams Player of the Month",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/evan-mcpherson-named-afc-special-165630105.html",
-   "timestamp": "2026-10-01T16:56:30.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "evan-mcpherson"
-   ]
-  },
-  {
-   "id": "Fkh4HWD8J5Y6WKRf",
-   "headline": "Steelers vs. Browns: Week 4 game picks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-vs-browns-week-4-164445883.html",
-   "timestamp": "2026-10-01T16:44:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "C780_9lBS261srWU",
-   "headline": "Eagles-Bears racks up 22.6 million viewers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-bears-racks-22-6-164409062.html",
-   "timestamp": "2026-10-01T16:44:09.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "PHI"
-   ]
-  },
-  {
-   "id": "EcKtHCuV5-yrjDPS",
-   "headline": "Former Steelers coach Mike Tomlin reveals massive Minecraft city he's spent over 12 years building",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/former-steelers-mike-tomlin-reveals-massive-minecraft-city/",
-   "timestamp": "2026-10-01T16:40:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "_8lXXbi3OyLkgPpq",
-   "headline": "Derrick Henry says Titans didn’t try to re-sign him",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/derrick-henry-says-titans-didn-163206089.html",
-   "timestamp": "2026-10-01T16:32:06.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "derrick-henry"
-   ],
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "I7hRE17q0xUdr3C_",
-   "headline": "Jim Harbaugh gave brother J.J. McCarthy scouting report before Giants trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jim-harbaugh-gave-brother-j-163018484.html",
-   "timestamp": "2026-10-01T16:30:18.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "7Yww-vmML7mC62rh",
-   "headline": "2027 Dallas Cowboys draft picks following Joey Porter Jr. trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2027-dallas-cowboys-draft-picks-163000158.html",
-   "timestamp": "2026-10-01T16:30:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "wRtK4UEbe3qyJmPf",
-   "headline": "The Rams have a right-side problem",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-side-problem-162558325.html",
-   "timestamp": "2026-10-01T16:25:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Zms-afviEHPgiC_D",
-   "headline": "Eagles make some practice squad moves",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-practice-squad-moves-162349539.html",
-   "timestamp": "2026-10-01T16:23:49.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "RaJQ80vTWqfze0r1",
-   "headline": "Titans LB Anthony Hill is the defensive rookie of the month",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-lb-anthony-hill-defensive-162339047.html",
-   "timestamp": "2026-10-01T16:23:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "PICM1chD01hf3_s6",
-   "headline": "Giants will be patient getting QB J.J. McCarthy settled in offense: 'That process takes time'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-patient-getting-qb-j-162000419.html",
-   "timestamp": "2026-10-01T16:20:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "DaBSPYGr_yUqAYbU",
-   "headline": "Jets fans can breathe a sigh of relief on Dylan Parham’s injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-fans-breathe-sigh-relief-161857116.html",
-   "timestamp": "2026-10-01T16:18:57.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "lFgeOA5pRBN6bytG",
-   "headline": "No. 3 Notre Dame visits North Carolina with a revamped rushing game after NFL departures",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/no-3-notre-dame-visits-161722828.html",
-   "timestamp": "2026-10-01T16:17:22.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "wpxAJgrjcKzKzYpa",
-   "headline": "Vikings KR Myles Price named the NFC special teams player of the month",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikings-kr-myles-price-named-161647658.html",
-   "timestamp": "2026-10-01T16:16:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "YqPBzjHdXlHYR0so",
-   "headline": "Browns-Steelers predictions for Thursday night, plus Joey Porter Jr. trade grades and NFL Week 4 picks",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/pick-six-browns-steelers-predictions-nfl-week-4-picks/",
-   "timestamp": "2026-10-01T16:11:30.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "JSxXl35up3HZZcq_",
-   "headline": "Giants OLB Brian Burns Tore Meniscus In Addition To ACL",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/giants-olb-brian-burns-tore-meniscus-in-addition-to-acl",
-   "timestamp": "2026-10-01T15:41:31.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "jfMqltTyOU2gV8UN",
-   "headline": "Week 4 NFL betting promos: Claim almost $3,000 in bonuses from top online betting apps, sportsbooks",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-4-nfl-betting-promos-claim-almost-3000-in-bonuses-from-top-online-betting-apps-sportsbooks/",
-   "timestamp": "2026-10-01T15:11:23.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "9Ubw-lR1EA1fObmu",
-   "headline": "Week 4 NFL score predictions, picks, odds, betting advice: Computer model reveals projections for all 16 games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-4-nfl-score-predictions-picks-odds-betting-advice-computer-model-reveals-projections-all-16-games/",
-   "timestamp": "2026-10-01T14:55:29.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "CHFh13LxG1WQbckd",
-   "headline": "Use FanDuel promo code to get $250 in bonus bets by targeting Browns vs. Steelers on Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-browns-steelers-thursday-night-football/",
-   "timestamp": "2026-10-01T14:53:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "GtiY4vNrJe1_CCDS",
-   "headline": "Titans Place Guards Fernando Carmona, Jackson Slater On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/titans-place-guards-fernando-carmona-jackson-slater-on-ir",
-   "timestamp": "2026-10-01T14:48:59.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "CScS8fOjJ51JaEm8",
-   "headline": "Week 4 NFL odds, betting lines, spreads, totals, for every game, including Browns-Steelers, Texans-Cowboys",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-4-nfl-odds-betting-lines-spreads-totals/",
-   "timestamp": "2026-10-01T14:48:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "DAL",
-    "HOU",
-    "PIT"
-   ]
-  },
-  {
-   "id": "FPuzwuxUpYXa2ffJ",
-   "headline": "Steelers trying to end this nightmare 46-year Thursday night losing streak in Week 4 against Browns",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/steelers-trying-to-end-nightmare-46-year-thursday-night-losing-streak/",
-   "timestamp": "2026-10-01T14:17:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
    ]
   }
  ]
