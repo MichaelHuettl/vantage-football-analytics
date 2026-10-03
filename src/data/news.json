@@ -1,8 +1,94 @@
 {
  "schema_version": 1,
- "updated": "2026-10-02",
+ "updated": "2026-10-03",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "lSDl3DbR0-jJ09gZ",
+   "headline": "NFL predictions: New York Jets vs Chicago Bears - Can the Jets pull off the upset?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-york-jets-vs-054513668.html",
+   "timestamp": "2026-10-03T05:45:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "E_R8dxze2v18vyl-",
+   "headline": "Cowboys Interested In Joey Porter Jr. Extension; CB Not On Dallas’ Week 4 Injury Report",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cowboys-interested-in-joey-porter-jr-extension-cb-not-on-dallas-week-4-injury-report",
+   "timestamp": "2026-10-03T04:39:15.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "AP-X2sd_ANqedBwM",
+   "headline": "49ers Owner Jed York Handed Six-Game Suspension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/49ers-owner-jed-york-handed-six-game-suspension",
+   "timestamp": "2026-10-03T04:19:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "10nTzV8Me01mZVxT",
+   "headline": "Bears QB Tyson Bagent Likely To Start In Week 4",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/bears-qb-tyson-bagent-likely-to-start-in-week-4",
+   "timestamp": "2026-10-03T04:18:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Z_CqErsIQM4gShx4",
+   "headline": "Rams DT Aaron Donald To Miss Week 4",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/rams-dt-aaron-donald-to-miss-week-4",
+   "timestamp": "2026-10-03T04:05:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "6Nvo58-CYba8BRLq",
+   "headline": "Jaylen Addai, son of former Colts RB Joseph Addai, makes insane touchdown catch",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaylen-addai-son-former-colts-040226208.html",
+   "timestamp": "2026-10-03T04:02:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "fruCbSA__g8W3TIh",
+   "headline": "Commanders will sport new logo in 2027 season – report – All aTwitter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-sport-logo-2027-season-040000673.html",
+   "timestamp": "2026-10-03T04:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "XGYTYObA4Yw7BQwW",
+   "headline": "YouTube believes NFL could \"deconstruct\" Sunday Ticket in next broadcast deals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/youtube-believes-nfl-could-deconstruct-035354847.html",
+   "timestamp": "2026-10-03T03:53:54.000Z",
+   "category": "breaking"
+  },
   {
    "id": "khBcuYCESOCijGH9",
    "headline": "Colts DT DeForest Buckner Mulled Retirement In Offseason",
@@ -13,6 +99,14 @@
    "team_abbrs": [
     "IND"
    ]
+  },
+  {
+   "id": "J76LjndIc3Opu6dW",
+   "headline": "Quarterbacks who didn't start in Week 1 are 6-0",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/quarterbacks-didnt-start-week-1-032205688.html",
+   "timestamp": "2026-10-03T03:22:05.000Z",
+   "category": "breaking"
   },
   {
    "id": "j-HEuF3UzHwz3OP4",
@@ -51,6 +145,17 @@
    "team_abbrs": [
     "MIA",
     "MIN"
+   ]
+  },
+  {
+   "id": "RTg3KOR-15mH8QW6",
+   "headline": "Patriots tight end Eli Raridon’s son dies in tragic reveal",
+   "source": "Yahoo Sports",
+   "url": "https://www.yahoo.com/entertainment/celebrity/articles/patriots-tight-end-eli-raridon-004948545.html",
+   "timestamp": "2026-10-03T00:49:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
    ]
   },
   {
@@ -97,6 +202,35 @@
    "team_abbrs": [
     "NYG",
     "SEA"
+   ]
+  },
+  {
+   "id": "M9Coy3Lwyoh0zpiM",
+   "headline": "Eagles’ loss of Devonta Smith and supporting cast is only for the Rams gain after Aaron Donald’s out ruling",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-loss-devonta-smith-supporting-001957124.html",
+   "timestamp": "2026-10-03T00:19:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "devonta-smith"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "uDn1kUChrQBTchsy",
+   "headline": "Breece Hall’s injury gives Jets’ Braelon Allen chance to prove he’s ‘workhorse back’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/breece-hall-injury-gives-jets-000624017.html",
+   "timestamp": "2026-10-03T00:06:24.000Z",
+   "category": "injury",
+   "player_ids": [
+    "breece-hall"
+   ],
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -151,17 +285,6 @@
    "team_abbrs": [
     "MIN",
     "NYG"
-   ]
-  },
-  {
-   "id": "10nTzV8Me01mZVxT",
-   "headline": "Bears QB Tyson Bagent Likely To Start In Week 4",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bears-qb-tyson-bagent-likely-to-start-in-week-4",
-   "timestamp": "2026-10-02T23:18:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
    ]
   },
   {
@@ -471,17 +594,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "E_R8dxze2v18vyl-",
-   "headline": "Cowboys Interested In Joey Porter Jr. Extension; CB Not On Dallas’ Week 4 Injury Report",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/cowboys-interested-in-joey-porter-jr-extension-cb-not-on-dallas-week-4-injury-report",
-   "timestamp": "2026-10-02T20:39:15.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL"
    ]
   },
   {
@@ -1012,17 +1124,6 @@
    ]
   },
   {
-   "id": "Z_CqErsIQM4gShx4",
-   "headline": "Rams DT Aaron Donald To Miss Week 4",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/rams-dt-aaron-donald-to-miss-week-4",
-   "timestamp": "2026-10-02T18:32:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
    "id": "HKenk2ueX9ENQYTy",
    "headline": "New York Jets vs Chicago Bears: Five Questions with Windy City Gridiron",
    "source": "Yahoo Sports",
@@ -1066,17 +1167,6 @@
    "team_abbrs": [
     "BUF",
     "NE"
-   ]
-  },
-  {
-   "id": "AP-X2sd_ANqedBwM",
-   "headline": "49ers Owner Jed York Handed Six-Game Suspension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/49ers-owner-jed-york-handed-six-game-suspension",
-   "timestamp": "2026-10-02T18:19:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
    ]
   },
   {
@@ -1650,101 +1740,6 @@
    "category": "breaking",
    "player_ids": [
     "jayden-daniels"
-   ]
-  },
-  {
-   "id": "W0g8zc7BjccMbyDD",
-   "headline": "Week 4 NFL odds, betting lines, spreads, totals, for every game, including Texans-Cowboys, Chiefs-Raiders",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-4-nfl-odds-betting-lines-totals-spreads/",
-   "timestamp": "2026-10-02T14:04:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "HOU",
-    "KC",
-    "LV"
-   ]
-  },
-  {
-   "id": "n04-Agz-swqH13lq",
-   "headline": "Patriots News: Pats-Bills matchups; What’s worse, Pats O or Bills D?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-news-pats-bills-matchups-140148943.html",
-   "timestamp": "2026-10-02T14:01:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "NE"
-   ]
-  },
-  {
-   "id": "seubHdwUUnKmxnBd",
-   "headline": "NFL Predictions: Will the Bears backup QB magic continue vs. the Jets?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-bears-backup-qb-140007056.html",
-   "timestamp": "2026-10-02T14:00:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "neija1UKB95ub7oS",
-   "headline": "Former Falcons C Jeff Van Note Dies At 80",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/former-falcons-c-jeff-van-note-dies-at-80",
-   "timestamp": "2026-10-02T14:00:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "-JuAmg1yg6TIjmlF",
-   "headline": "NFL predictions: Houston Texans run it back against the Dallas Cowboys",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-houston-texans-run-140000165.html",
-   "timestamp": "2026-10-02T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "HOU"
-   ]
-  },
-  {
-   "id": "nq6Nig4yPro1PVCJ",
-   "headline": "Carolina Panthers 2026 fan mailbag: Injuries, play call balance, practice squad rules, and more!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/carolina-panthers-2026-fan-mailbag-140000579.html",
-   "timestamp": "2026-10-02T14:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "ajXWr0I2lDz3LtWw",
-   "headline": "The morning after: The Steelers is the Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/morning-steelers-steelers-140000549.html",
-   "timestamp": "2026-10-02T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "4M7btuKiU3uS7oYD",
-   "headline": "Will the Chiefs’ pass rush return to form this week against the Raiders?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-pass-rush-return-form-140000119.html",
-   "timestamp": "2026-10-02T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "LV"
    ]
   }
  ]
