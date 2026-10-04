@@ -1,8 +1,200 @@
 {
  "schema_version": 1,
- "updated": "2026-10-03",
+ "updated": "2026-10-04",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "mR5ZmSSw79h8ML04",
+   "headline": "Prisco's Week 4 NFL picks: Eagles upset Rams, Texans over Cowboys",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-4-nfl-picks/",
+   "timestamp": "2026-10-04T05:00:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "HOU",
+    "LAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "7OgSW-Y9-OuZGEFM",
+   "headline": "Packers-Buccaneers Preview: Green Bay travels to Tampa Bay",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-buccaneers-preview-green-bay-043832173.html",
+   "timestamp": "2026-10-04T04:38:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "TB"
+   ]
+  },
+  {
+   "id": "tfiRAwyt0BNPLz8r",
+   "headline": "Packers OLB Micah Parsons Might Not Play Until November",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/packers-olb-micah-parsons-might-not-play-until-november",
+   "timestamp": "2026-10-04T04:34:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "GVdvHdJAjb_vaSIQ",
+   "headline": "Cardinals, Chiefs, 49ers Had Offseason Interest In Kirk Cousins",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cardinals-chiefs-49ers-had-offseason-interest-in-kirk-cousins",
+   "timestamp": "2026-10-04T04:30:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "KC",
+    "SF"
+   ]
+  },
+  {
+   "id": "O3t9WHSgQzFA4HKw",
+   "headline": "Bears vs. Jets: How to watch and listen, previews, odds, and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-vs-jets-watch-listen-041510990.html",
+   "timestamp": "2026-10-04T04:15:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "y8iwuSCq_Fev-GJt",
+   "headline": "London NFL Games: The Revenue Hit Some Owners Are Happy to Take",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/london-nfl-games-revenue-hit-040100505.html",
+   "timestamp": "2026-10-04T04:01:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "736SFgCPfEtmK1NE",
+   "headline": "NFL Mailbag: Porter, Cowboys, McCarthy, Giants, Packers, Texans, Harbaugh",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-mailbag-porter-cowboys-mccarthy-giants-packers-texans-harbaugh",
+   "timestamp": "2026-10-04T04:00:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "GB",
+    "HOU",
+    "NYG"
+   ]
+  },
+  {
+   "id": "E_R8dxze2v18vyl-",
+   "headline": "Cowboys Interested In Joey Porter Jr. Extension; CB To Play In Week 4",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cowboys-interested-in-joey-porter-jr-extension-cb-not-on-dallas-week-4-injury-report",
+   "timestamp": "2026-10-04T02:48:15.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "UcYGLhozSTnlN0eD",
+   "headline": "Patriots CB Christian Gonzalez, DT Christian Barmore Out For Week 4",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/patriots-cb-christian-gonzalez-dt-christian-barmore-out-for-week-4",
+   "timestamp": "2026-10-04T02:06:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "UoSFsefPNa-sEXif",
+   "headline": "Giants defense looking for more sacks despite Brian Burns’ absence",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-defense-looking-more-sacks-013609987.html",
+   "timestamp": "2026-10-04T01:36:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "hq5tGW_-X1rcVM_J",
+   "headline": "NFL Practice Squad Updates: 10/03/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-practice-squad-updates-10-03-26",
+   "timestamp": "2026-10-04T01:19:19.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "AChE5SelInRqZv3C",
+   "headline": "The Colts’ Strength of Schedule is evolving.",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-strength-schedule-evolving-011401928.html",
+   "timestamp": "2026-10-04T01:14:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "aeuvqeLnBskFAlOY",
+   "headline": "Do the New York Jets have an Isaiah Williams problem?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-isaiah-williams-problem-010000519.html",
+   "timestamp": "2026-10-04T01:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "kksugcjffXsv0evi",
+   "headline": "Jets’ Olu Fashanu wants to get ‘mojo back’ after rough two weeks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-olu-fashanu-wants-mojo-005448476.html",
+   "timestamp": "2026-10-04T00:54:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "6xDPSyzcN4FJPWGw",
+   "headline": "Bills rookie CB Kani Walker set to make NFL debut in Week 4",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-rookie-cb-kani-walker-003618007.html",
+   "timestamp": "2026-10-04T00:36:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "m_F7ywm_Fhru-vRS",
+   "headline": "Cowboys Open To Further Trades",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cowboys-open-to-further-trades",
+   "timestamp": "2026-10-04T00:35:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "PlHRGYo6BMrUTda-",
+   "headline": "Tyson Bagent is expected to start for the Bears on Sunday vs. Jets",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tyson-bagent-expected-start-bears-001205828.html",
+   "timestamp": "2026-10-04T00:12:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NYJ"
+   ]
+  },
   {
    "id": "FvEaGL492Pw-riqZ",
    "headline": "Last-minute best bets for NFL Week 4: Cowboys welcome Joey Porter Jr. with upset win, Rams edge out Eagles",
@@ -75,6 +267,18 @@
    "category": "breaking",
    "team_abbrs": [
     "DET"
+   ]
+  },
+  {
+   "id": "1n69nK_PvFhnRr7S",
+   "headline": "Aaron Glenn to square off vs. familiar face in Jets-Bears clash",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-glenn-square-off-vs-232500870.html",
+   "timestamp": "2026-10-03T23:25:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NYJ"
    ]
   },
   {
@@ -717,19 +921,6 @@
    ]
   },
   {
-   "id": "GVdvHdJAjb_vaSIQ",
-   "headline": "Cardinals, Chiefs, 49ers Had Offseason Interest In Kirk Cousins",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/cardinals-chiefs-49ers-had-offseason-interest-in-kirk-cousins",
-   "timestamp": "2026-10-03T19:00:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "KC",
-    "SF"
-   ]
-  },
-  {
    "id": "iha6caiDX-NpN_1u",
    "headline": "How to watch Commanders vs Colts in London: TV, radio, streaming, injury report",
    "source": "Yahoo Sports",
@@ -821,17 +1012,6 @@
    "category": "transaction",
    "team_abbrs": [
     "BUF"
-   ]
-  },
-  {
-   "id": "tfiRAwyt0BNPLz8r",
-   "headline": "Packers OLB Micah Parsons Might Not Play Until November",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/packers-olb-micah-parsons-might-not-play-until-november",
-   "timestamp": "2026-10-03T17:34:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
    ]
   },
   {
@@ -1517,20 +1697,6 @@
    ]
   },
   {
-   "id": "736SFgCPfEtmK1NE",
-   "headline": "NFL Mailbag: Porter, Cowboys, McCarthy, Giants, Packers, Texans, Harbaugh",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/nfl-mailbag-porter-cowboys-mccarthy-giants-packers-texans-harbaugh",
-   "timestamp": "2026-10-03T12:00:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB",
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
    "id": "OXenfAcHQVB_FXGM",
    "headline": "Chiefs News: Patrick Mahomes’ deep ball is back",
    "source": "Yahoo Sports",
@@ -1576,177 +1742,6 @@
    "category": "breaking",
    "team_abbrs": [
     "CLE"
-   ]
-  },
-  {
-   "id": "1oZwhcsqhHPun8FF",
-   "headline": "Rams don't have a timeline on Myles Garrett's return",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-dont-timeline-myles-garretts-115607571.html",
-   "timestamp": "2026-10-03T11:56:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "P-pHEaGv-IJvjpu8",
-   "headline": "Is front-office pride endangering yet another Bengals season?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/front-office-pride-endangering-yet-114500576.html",
-   "timestamp": "2026-10-03T11:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "ylWKWvSb-aN37r-4",
-   "headline": "A look back at the Colts’ international game history",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/look-back-colts-international-game-113000360.html",
-   "timestamp": "2026-10-03T11:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "sbWFUC2bp9k4S04l",
-   "headline": "Panthers vs Lions: 5 Questions with Pride of Detroit",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-vs-lions-5-questions-113000161.html",
-   "timestamp": "2026-10-03T11:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "DET"
-   ]
-  },
-  {
-   "id": "_6br1X5BSCJSVI3K",
-   "headline": "Chargers vs. Seahawks: How to watch, prediction and betting odds",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-vs-seahawks-watch-prediction-110000137.html",
-   "timestamp": "2026-10-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC",
-    "SEA"
-   ]
-  },
-  {
-   "id": "edlrJYG2hTpl0jgN",
-   "headline": "From 0-3 to the playoffs: History offers Chargers some hope for a comeback",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/0-3-playoffs-history-offers-110000471.html",
-   "timestamp": "2026-10-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "rdL6OGA7dxRG4g85",
-   "headline": "New York Jets Flight Connections 10/03/26",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-flight-connections-10-110000685.html",
-   "timestamp": "2026-10-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "MZDrhXro-uS7o0gu",
-   "headline": "Cowboys news: Joey Porter Jr. on track to play Sunday vs. Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-joey-porter-jr-110000148.html",
-   "timestamp": "2026-10-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "HOU"
-   ]
-  },
-  {
-   "id": "iiMpeFNwWsDWXSyg",
-   "headline": "Fleur-de-Links: Did the Saints find another underrated DT?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fleur-links-did-saints-another-110000341.html",
-   "timestamp": "2026-10-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "TIpK-FGSOkebl6nE",
-   "headline": "Rams vs. Eagles: How to watch, prediction and betting odds",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-vs-eagles-watch-prediction-110000416.html",
-   "timestamp": "2026-10-03T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "PHI"
-   ]
-  },
-  {
-   "id": "v1reQYJrBuUIHmk3",
-   "headline": "Cleveland Browns news: Injury news, kickers, and first place, baby!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-injury-news-103000865.html",
-   "timestamp": "2026-10-03T10:30:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "9w8jDFTPbZhJG6vZ",
-   "headline": "CSC Reacts Results: Despite Sunday’s loss to the Raiders, do you still feel the Saints can have a winning season?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/csc-reacts-results-despite-sunday-100613710.html",
-   "timestamp": "2026-10-03T10:06:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "NO"
-   ]
-  },
-  {
-   "id": "YQYmRMwfOu0j6_KC",
-   "headline": "Fantasy Football Week 4 roundup, rankings, sleepers, start/sit advice and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fantasy-football-week-4-roundup-100341863.html",
-   "timestamp": "2026-10-03T10:03:41.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "MM5HnGgR6wN_8Bhx",
-   "headline": "Patriots worried about ‘second play’ with Bills QB Josh Allen",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-worried-second-play-bills-100000812.html",
-   "timestamp": "2026-10-03T10:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ],
-   "team_abbrs": [
-    "BUF",
-    "NE"
-   ]
-  },
-  {
-   "id": "vPFkV8iO4GBr1VDe",
-   "headline": "Sean Payton gives high praise for 49ers coaching staff ahead of Week 4 matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sean-payton-gives-high-praise-100000938.html",
-   "timestamp": "2026-10-03T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
    ]
   }
  ]
