@@ -1,8 +1,195 @@
 {
  "schema_version": 1,
- "updated": "2026-10-06",
+ "updated": "2026-10-07",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "far9yvzoShzxugue",
+   "headline": "It’s not the QB, silly. Winless Texans stung by unexpected culprit | Opinion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/not-qb-silly-winless-texans-102027164.html",
+   "timestamp": "2026-10-07T10:20:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "nMnDUK7_VQtgj3aZ",
+   "headline": "Kyren Williams, Kenneth Walker: First players since 2016 with 2 TD runs in last 4 minutes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kyren-williams-kenneth-walker-first-100235961.html",
+   "timestamp": "2026-10-07T10:02:35.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kenneth-walker",
+    "kyren-williams"
+   ]
+  },
+  {
+   "id": "iymHXyYq7M1eFLOn",
+   "headline": "The Bear’s Den: How the Chicago Bears prepare for the Green Bay Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bear-den-chicago-bears-prepare-100000760.html",
+   "timestamp": "2026-10-07T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "GB"
+   ]
+  },
+  {
+   "id": "B4qo_6tHeCh54ou5",
+   "headline": "The Number Crunch: Patriots’ win in Buffalo a tale of 2 quarterbacks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/number-crunch-patriots-win-buffalo-100000063.html",
+   "timestamp": "2026-10-07T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "q-SVrX5o00utrbOu",
+   "headline": "NY Giants news: Braxton Berrios to IR, Dominic Zvada on early success, more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ny-giants-news-braxton-berrios-100000372.html",
+   "timestamp": "2026-10-07T10:00:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "D-cf8Sggu5Aznhhr",
+   "headline": "Cleveland Browns news: QB roster moves, rookies, and power rankings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-qb-roster-100000888.html",
+   "timestamp": "2026-10-07T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "p6TejPpv2rMXB6dH",
+   "headline": "NFL hot seat coaches include Jim Harbaugh – but still not Matt LaFluer",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-hot-seat-coaches-jim-091651390.html",
+   "timestamp": "2026-10-07T09:16:51.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "_UrJ-78u-LtbTUs1",
+   "headline": "Former second-round O-lineman among Patriots’ latest group of tryouts",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-second-round-o-lineman-090000395.html",
+   "timestamp": "2026-10-07T09:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "eBo5DhH6khUX3L8Z",
+   "headline": "49ers News: John Lynch better be working those phones",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-news-john-lynch-better-085800896.html",
+   "timestamp": "2026-10-07T08:58:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "vQP01Mrdb0iJBWfH",
+   "headline": "Rams are first NFL team to play four of their first five games in prime time",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-first-nfl-team-play-084546402.html",
+   "timestamp": "2026-10-07T08:45:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "km41wWEzN4ueLmbx",
+   "headline": "Aaron Donald likely to play vs Bills",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-donald-likely-play-vs-061021776.html",
+   "timestamp": "2026-10-07T06:10:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "1ujMh2YjTJRHwyrH",
+   "headline": "NFL's biggest surprises, disappointments and MVP through first 4 weeks of season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfls-biggest-surprises-disappointments-and-mvp-through-first-4-weeks-of-season-044648348.html",
+   "timestamp": "2026-10-07T04:46:48.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "NIizgncWcyrXub6E",
+   "headline": "The Re-Education of Kyler Murray and the Outlook for the Vikings Offense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/education-kyler-murray-outlook-vikings-040733490.html",
+   "timestamp": "2026-10-07T04:07:33.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kyler-murray"
+   ],
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "b89frsCkzxFVs7gR",
+   "headline": "Eagles RT Lane Johnson To Retire",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-rt-lane-johnson-to-retire",
+   "timestamp": "2026-10-07T04:00:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "6r6GjGVMEMPS50Pt",
+   "headline": "Will Commanders fill their open roster spot with a player returning from injured reserve? - All aTwitter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-fill-open-roster-spot-040000862.html",
+   "timestamp": "2026-10-07T04:00:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "J8NOMKnSLkbb-Jyd",
+   "headline": "Steelers Offered Joey Porter Jr. $28MM Per Year; Cowboys Made Only Serious Trade Proposal For CB",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/steelers-offered-joey-porter-jr-28mm-per-year-cowboys-made-only-serious-trade-proposal-for-cb",
+   "timestamp": "2026-10-07T03:41:39.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL",
+    "PIT"
+   ]
+  },
+  {
+   "id": "Kmq6hNdXFRx0_LpE",
+   "headline": "Seahawks Not Signing RB Joe Mixon",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/seahawks-not-signing-rb-joe-mixon",
+   "timestamp": "2026-10-07T03:20:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
   {
    "id": "6AlZFHFKtKRcaxbp",
    "headline": "Case Keenum officially listed as starting QB vs. Jets despite playing one snap",
@@ -21,6 +208,18 @@
    "url": "https://www.profootballrumors.com/2026/10/nfl-practice-squad-updates-10-6-26",
    "timestamp": "2026-10-07T02:48:58.000Z",
    "category": "practice"
+  },
+  {
+   "id": "tV-xyDfj6FDvhz1b",
+   "headline": "Raiders-Chiefs showdown scores record-breaking viewership",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-chiefs-showdown-scores-record-024241374.html",
+   "timestamp": "2026-10-07T02:42:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LV"
+   ]
   },
   {
    "id": "L9zQNUC_vH2t8Dc5",
@@ -70,6 +269,29 @@
    "team_abbrs": [
     "DAL",
     "TB"
+   ]
+  },
+  {
+   "id": "tFgzfou7WzaxNJow",
+   "headline": "Dominic Zvada’s perfect Giants start could be their ticket off the kicker carousel",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dominic-zvada-perfect-giants-start-011745939.html",
+   "timestamp": "2026-10-07T01:17:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "QOGleQD24C-QvBcG",
+   "headline": "Giants using their underdog ‘humbling’ as fuel for pivotal Commanders clash",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-using-underdog-humbling-fuel-010627189.html",
+   "timestamp": "2026-10-07T01:06:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "WAS"
    ]
   },
   {
@@ -204,18 +426,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PHI"
-   ]
-  },
-  {
-   "id": "J8NOMKnSLkbb-Jyd",
-   "headline": "Steelers Offered Joey Porter Jr. $28MM Per Year; Cowboys Made Only Serious Trade Proposal For CB",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/steelers-offered-joey-porter-jr-28mm-per-year-cowboys-made-only-serious-trade-proposal-for-cb",
-   "timestamp": "2026-10-06T22:41:39.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL",
-    "PIT"
    ]
   },
   {
@@ -775,17 +985,6 @@
    ]
   },
   {
-   "id": "b89frsCkzxFVs7gR",
-   "headline": "Eagles RT Lane Johnson To Retire",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-rt-lane-johnson-to-retire",
-   "timestamp": "2026-10-06T20:00:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
    "id": "5mb1t-PGOwb2Gyzx",
    "headline": "Ranking NFL division leaders by which are most vulnerable after opening month",
    "source": "CBS Sports",
@@ -1055,17 +1254,6 @@
    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-5-full-ppr-rankings-182046532.html",
    "timestamp": "2026-10-06T18:20:46.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "Kmq6hNdXFRx0_LpE",
-   "headline": "Seahawks Not Signing RB Joe Mixon",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/seahawks-not-signing-rb-joe-mixon",
-   "timestamp": "2026-10-06T18:20:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
   },
   {
    "id": "G69J199M9e-fKfDI",
@@ -1424,199 +1612,6 @@
    "category": "injury",
    "team_abbrs": [
     "IND"
-   ]
-  },
-  {
-   "id": "XOW_tlITxb0hIo29",
-   "headline": "10 Thoughts on the NFL, Week 4: Bears QB musical chairs wins again",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/10-thoughts-nfl-week-4-140000346.html",
-   "timestamp": "2026-10-06T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "btCPoJP8v695DyFP",
-   "headline": "5 cool things the Seahawks did in Chargers win that they haven’t done in years",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-cool-things-seahawks-did-140000611.html",
-   "timestamp": "2026-10-06T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC",
-    "SEA"
-   ]
-  },
-  {
-   "id": "qD5Y9ag1ERccD-zr",
-   "headline": "Carolina Panthers 2026 fan mailbag: Sunday Night Football triumph and bye week edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/carolina-panthers-2026-fan-mailbag-140000648.html",
-   "timestamp": "2026-10-06T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "yrKeCm1JeHrP0A2F",
-   "headline": "Miami Dolphins Week 4 reaction: Yikes!…and no likes to the Vikes!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/miami-dolphins-week-4-reaction-140000138.html",
-   "timestamp": "2026-10-06T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "dXnX3pkfkr5OA7M7",
-   "headline": "Rams Film Room: Kyren Williams is a weapon as a receiver",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-film-room-kyren-williams-140000176.html",
-   "timestamp": "2026-10-06T14:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kyren-williams"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "iRUOqnx6WOIRjBvC",
-   "headline": "What do the Packers do without linebacker Edgerrin Cooper?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-without-linebacker-edgerrin-cooper-135349340.html",
-   "timestamp": "2026-10-06T13:53:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "TSEmi_uod3qhZ082",
-   "headline": "Los Angeles Chargers news: Would you trade Khalil Mack?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-trade-135238986.html",
-   "timestamp": "2026-10-06T13:52:38.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "QWgCK2nLoUtSj_Hz",
-   "headline": "5 final observations from the 49ers win over the Broncos",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-final-observations-49ers-win-134536304.html",
-   "timestamp": "2026-10-06T13:45:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "SF"
-   ]
-  },
-  {
-   "id": "FFO7PwLzcxUd4HDs",
-   "headline": "Browns trade talk: Khalil Mack’s contract, salary cap hit, and performance review",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-trade-talk-khalil-mack-133749503.html",
-   "timestamp": "2026-10-06T13:37:49.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "ytb9X0YxJF5-SaWM",
-   "headline": "How non-first-round rookies are faring this NFL season: Denzel Boston among the leaders of the pack",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/how-non-first-round-rookies-faring-this-nfl-season-denzel-boston/",
-   "timestamp": "2026-10-06T13:37:03.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "VUUr1k5SoDwlEJoK",
-   "headline": "Lamar Jackson injury update: Ravens QB dealing with ankle sprain; Week 5 status still unknown, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/lamar-jackson-injury-update-ravens-qb-dealing-with-ankle-sprain/",
-   "timestamp": "2026-10-06T13:35:24.000Z",
-   "category": "injury",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "tAVZ4CyXnLzR4Ltv",
-   "headline": "Lions center Cade Mays likely to return to practice this week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-center-cade-mays-likely-133000302.html",
-   "timestamp": "2026-10-06T13:30:00.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "KY5RZr9gaZCBfRKx",
-   "headline": "AP NFL Power Rankings Week 5: Top 5 gets shaken up",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ap-nfl-power-rankings-week-133000243.html",
-   "timestamp": "2026-10-06T13:30:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "0EfBM5aKrkMr83eQ",
-   "headline": "Pro Football Focus grades and advanced stats for the Giants’ victory over the Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pro-football-focus-grades-advanced-133000974.html",
-   "timestamp": "2026-10-06T13:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "NYG"
-   ]
-  },
-  {
-   "id": "ZNseEjlBvtrTGdCB",
-   "headline": "False hope in Buffalo? Why Josh Allen's, Bills' 3-1 start isn't as impressive as it seems",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/why-josh-allen-buffalo-bills-3-1-start-isnt-impressive-as-it-seems/",
-   "timestamp": "2026-10-06T13:15:20.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ],
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "f0Zv0z4r0fUSKAhw",
-   "headline": "Report: \"Outside chance\" Lamar Jackson plays in Week 5",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/report-outside-chance-lamar-jackson-131320122.html",
-   "timestamp": "2026-10-06T13:13:20.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ]
-  },
-  {
-   "id": "DnKwPSbP7rBPh1_1",
-   "headline": "National NFL All-Rookie Team has 5 Browns, as 2026 NFL Draft class is impressing",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/national-nfl-rookie-team-5-131308791.html",
-   "timestamp": "2026-10-06T13:13:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
    ]
   }
  ]
