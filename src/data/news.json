@@ -4,6 +4,539 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "gxEK9psCYm1Bo9OZ",
+   "headline": "Cowboys get boost as Tyler Smith returns from injury for Week 5 showdown",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/tyler-smith-injury-return-cowboys-buccaneers/",
+   "timestamp": "2026-10-08T16:37:28.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "5gUAC945X_oP5RUe",
+   "headline": "Terry McLaurin: Not spotted Thursday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/terry-mclaurin-13536",
+   "timestamp": "2026-10-08T16:30:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "terry-mclaurin"
+   ]
+  },
+  {
+   "id": "oKckoeuQKBF_cVRs",
+   "headline": "Tyson Bagent Week 4 QB Grade: Jets @ Bears Film Breakdown",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tyson-bagent-week-4-qb-163000589.html",
+   "timestamp": "2026-10-08T16:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "oaXAL5YhyjDrdhUf",
+   "headline": "Sean Payton will be more heavily involved in the play-calling vs. the Chargers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-payton-more-heavily-involved-162127464.html",
+   "timestamp": "2026-10-08T16:21:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "OnLAa__BxcZy4BmM",
+   "headline": "NFL Secret Superstars, Week 4: Kyle Monangai, Alim McNeill, and Banana the Corgi are NFC standouts",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-secret-superstars-week-4-162051731.html",
+   "timestamp": "2026-10-08T16:20:51.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "W65zhMjnWuCN7Vmj",
+   "headline": "PFT's Week 5 2026 NFL picks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pfts-week-5-2026-nfl-161359287.html",
+   "timestamp": "2026-10-08T16:13:59.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "pCxw3PINb_gRH5eS",
+   "headline": "Pittsburgh Steelers WR Michael Pittman Jr. out multiple weeks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pittsburgh-steelers-wr-michael-pittman-161332749.html",
+   "timestamp": "2026-10-08T16:13:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "vYaS6MP9gRb11U-X",
+   "headline": "Pick Six: Buccaneers-Cowboys predictions for Thursday night, plus NFL Week 5 picks and trade possibilities",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/pick-six-buccaneers-cowboys-predictions-nfl-week-5-picks-trades/",
+   "timestamp": "2026-10-08T16:12:05.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
+   "id": "hFWWyBT_R2xHx7mV",
+   "headline": "Kelvin Sheppard: Lions S Brian Branch looks ready to play now",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kelvin-sheppard-lions-brian-branch-161021874.html",
+   "timestamp": "2026-10-08T16:10:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "-Noh77V_BekH312n",
+   "headline": "The Eagles keep punting on the field. Are they now punting on the 2026 season?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/the-eagles-keep-punting-on-the-field-are-they-now-punting-on-the-2026-season-160851572.html",
+   "timestamp": "2026-10-08T16:08:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "Y20vZmxcDoPZkJjm",
+   "headline": "Submit your Week 5 Las Vegas Raiders mailbag questions!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/submit-week-5-las-vegas-160700757.html",
+   "timestamp": "2026-10-08T16:07:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "WiJv3Ji-jAMcEWRC",
+   "headline": "Seahawks All-22 review: The good and bad from Seattle’s win over the LA Chargers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-22-review-good-bad-140000639.html",
+   "timestamp": "2026-10-08T16:00:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "RqlH4JwL1t5uR5jq",
+   "headline": "Are the Chiefs’ offseason bets on defense paying off 4 games in?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-offseason-bets-defense-paying-160000698.html",
+   "timestamp": "2026-10-08T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "TOlYvmSorqFmx7tt",
+   "headline": "Cowboys vs Buccaneers: 2 players Dallas should use more in Week 5",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-vs-buccaneers-2-players-160000993.html",
+   "timestamp": "2026-10-08T16:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
+   "id": "GJYb82phgZjtVzVT",
+   "headline": "NFL Picks Week 5: Celebrating the Past",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-picks-week-5-celebrating-160000577.html",
+   "timestamp": "2026-10-08T16:00:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "qx98lUPwl4-96JXe",
+   "headline": "Rico Dowdle: Chance to return against Colts",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/rico-dowdle-14657",
+   "timestamp": "2026-10-08T15:57:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "1PXxTLfdN4-J7E4d",
+   "headline": "Week 5 NFL score predictions, odds, picks, betting advice: Proven model locks in projections for every game",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-5-nfl-score-predictions-odds-picks-betting-advice-proven-model-locks-in-projections-for-every-game/",
+   "timestamp": "2026-10-08T15:55:28.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "vHjKG2m2KG4l3hsA",
+   "headline": "Steelers WR Michael Pittman Jr. will miss multiple games after re-injuring his foot",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-wr-michael-pittman-jr-155528066.html",
+   "timestamp": "2026-10-08T15:55:28.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "USmIUmyoQTqkLA01",
+   "headline": "Use DraftKings promo code to claim $150 in bonus bets by targeting Cowboys-Buccaneers, Thursday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/use-draftkings-promo-code-to-claim-150-bonus-bets-cowboys-buccaneers-thursday-night-football/",
+   "timestamp": "2026-10-08T15:53:21.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
+   "id": "WxEOfU7jTdTQaJLX",
+   "headline": "Miami Dolphins injury updates: Veteran reinforcements could arrive soon",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-injury-updates-veteran-155257755.html",
+   "timestamp": "2026-10-08T15:52:57.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "JU1LnoFcJR1ZNw4J",
+   "headline": "Jayden Daniels On Track To Return In Week 5; Marcus Mariota Sprains MCL",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/jayden-daniels-on-track-to-return-in-week-5-marcus-mariota-sprains-mcl",
+   "timestamp": "2026-10-08T15:50:54.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jayden-daniels"
+   ]
+  },
+  {
+   "id": "ukwF_zR6OLK3Ex2P",
+   "headline": "2027 NFL mock draft 1.0: 5 quarterbacks land in Round 1, but WR Jeremiah Smith lands at No. 1",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/2027-nfl-mock-draft-10-5-quarterbacks-land-in-round-1-but-wr-jeremiah-smith-lands-at-no-1-154904997.html",
+   "timestamp": "2026-10-08T15:49:04.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "aaVSxXgu_SSX8IFk",
+   "headline": "The 49ers proved that good teams can win ugly",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-proved-good-teams-win-154500184.html",
+   "timestamp": "2026-10-08T15:45:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "cE7OZgr1KwG3gntE",
+   "headline": "Browns roster’s biggest need may not be at defensive end, but options might be limited",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-roster-biggest-may-not-153704530.html",
+   "timestamp": "2026-10-08T15:37:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "sHvDcZGAJscQNz5f",
+   "headline": "Use BetMGM bonus code CBSSPORTS to get $1500 bonus bets by betting Cowboys-Buccaneers Thursday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-betting-cowboys-buccaneers-thursday-night-football/",
+   "timestamp": "2026-10-08T15:34:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
+   "id": "SvB5GqoIrXKfBf8b",
+   "headline": "Tucker Kraft on dropped passes: I'm trying to do too much",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tucker-kraft-dropped-passes-im-153338721.html",
+   "timestamp": "2026-10-08T15:33:38.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tucker-kraft"
+   ]
+  },
+  {
+   "id": "nENDdF-ZxF3BP8h7",
+   "headline": "Use FanDuel promo code to get $250 bonus bets by targeting Buccaneers vs. Cowboys on Thursday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-buccaneers-cowboys-thursday-night-football/",
+   "timestamp": "2026-10-08T15:18:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
+   "id": "dSGA2Dsm1rsy62y8",
+   "headline": "Buccaneers vs. Cowboys odds, picks: Surprising first touchdown predictions for Thursday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/buccaneers-vs-cowboys-odds-picks-first-touchdown-predictions-thursday-night-football/",
+   "timestamp": "2026-10-08T15:15:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
+   "id": "3fes-UBGOJ_Cuzbx",
+   "headline": "Cowboys To Activate Tyler Smith From IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cowboys-to-activate-tyler-smith-from-ir",
+   "timestamp": "2026-10-08T14:57:43.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "8LJkWoefRUaaEbgI",
+   "headline": "Jayden Daniels: No limitations expected in return",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jayden-daniels-17692",
+   "timestamp": "2026-10-08T14:57:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jayden-daniels"
+   ]
+  },
+  {
+   "id": "FNB0xklscECnXopn",
+   "headline": "Is Justin Herbert \"elite\"? He is NOT even one of the 10 best quarterbacks in the NFL",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/justin-herbert-is-not-even-one-of-the-10-best-quarterbacks-nfl/",
+   "timestamp": "2026-10-08T14:56:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ]
+  },
+  {
+   "id": "z5NuucEb3h4RIUsm",
+   "headline": "Week 5 NFL betting promos: Get over $3,000 in bonuses from top online betting apps, sportsbooks",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-5-nfl-betting-promos-get-over-3000-in-bonuses-from-top-online-betting-apps-sportsbooks/",
+   "timestamp": "2026-10-08T14:41:24.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Ukb2ZwXh_1HHXrCF",
+   "headline": "The hidden impact of George Pickens: How Cowboys WR is helping unlock CeeDee Lamb",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/george-pickens-stats-cowboys-wr-ceedee-lamb/",
+   "timestamp": "2026-10-08T14:38:51.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ceedee-lamb",
+    "george-pickens"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "_pyCS9iqemprgJ1K",
+   "headline": "How to bet on 2026 NFL Week 5: Betting odds, game previews, schedule, tips, trends, sportsbook promos, offers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/how-to-bet-on-2026-nfl-week-5-betting-odds-game-previews-schedule-tips-trends-sportsbook-promos-offers/",
+   "timestamp": "2026-10-08T14:19:24.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "N26M8CmCKPiE7rS8",
+   "headline": "Lions TE Sam LaPorta Addresses Stalled Extension Talks",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/lions-te-sam-laporta-addresses-stalled-extension-talks",
+   "timestamp": "2026-10-08T14:03:56.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "sam-laporta"
+   ],
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "e1kf3VmjnbNbI1Nz",
+   "headline": "Revamped defense plus Kenneth Walker III: How the Chiefs re-established themselves as a Super Bowl contender",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/how-chiefs-re-established-super-bowl-contender-mahomes-walker/",
+   "timestamp": "2026-10-08T14:02:19.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kenneth-walker"
+   ],
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "-1ApBfvWxslKJf1K",
+   "headline": "Cowboys vs. Buccaneers odds, predictions, betting preview: Thursday Night Football picks, best bets",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/cowboys-vs-buccaneers-odds-predictions-betting-preview-thursday-night-football-picks-best-bets/",
+   "timestamp": "2026-10-08T13:42:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
+   "id": "HekcsJnUt0fU8_ij",
+   "headline": "NFL trade deadline: 10 candidates who could be on the move and teams that could be buyers, sellers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-10-candidates-marvin-harrison-cardinals-chargers/",
+   "timestamp": "2026-10-08T13:30:33.000Z",
+   "category": "transaction"
+  },
+  {
+   "id": "298GH5iXCvz8zjkc",
+   "headline": "Week 5 NFL odds, picks, predictions: Computer model backs Vikings and Bengals",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-5-2026-nfl-odds-picks-predictions-lines-best-bets/",
+   "timestamp": "2026-10-08T13:17:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "MIN"
+   ]
+  },
+  {
+   "id": "DdDabWFBHvOJRKoa",
+   "headline": "Cowboys vs. Buccaneers odds, picks, prediction: Best bets, top player props for Week 5 Thursday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/cowboys-vs-buccaneers-odds-picks-prediction-best-bets-top-player-props-for-week-5-thursday-night-football/",
+   "timestamp": "2026-10-08T13:07:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
+   "id": "LlZhMnkrF1ZI6q3y",
+   "headline": "Rays sweep Yankees; Dodgers head to NLCS; Does Cam Jurgens trade signal more changes for Eagles?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/mlb/news/rays-sweep-yankees-dodgers-head-to-nlcs-does-cam-jurgens-trade-signal-more-changes-for-eagles/",
+   "timestamp": "2026-10-08T13:00:17.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "MrHgAyuVM3Ey875N",
+   "headline": "Ranking all 32 NFL teams into tiers: 49ers among the elite, but some teams not as good as they seem",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/ranking-all-32-nfl-teams-into-tiers-49ers-rams-miami/",
+   "timestamp": "2026-10-08T12:38:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "-gTccNqqaEGB3YWi",
+   "headline": "NFL Week 5 picks: Experts face off on Buccaneers at Cowboys, 49ers at Seahawks and more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-5-picks-buccaneers-at-cowboys-49ers-at-seahawks/",
+   "timestamp": "2026-10-08T12:12:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "SEA",
+    "SF",
+    "TB"
+   ]
+  },
+  {
+   "id": "YZ07N7JAhnsr8W2x",
+   "headline": "It wouldn't shock me IF ... NFL Week 5: Nick Sirianni's seat heats up, Sean Payton takes back playcalling",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/it-wouldnt-shock-me-if-nfl-week-5-nick-siriannis-sean-payton/",
+   "timestamp": "2026-10-08T11:58:30.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "fpdGrgIGYS5AP1SJ",
+   "headline": "Week 5 NFL odds, spreads, totals, betting lines, for all 16 games, including Buccaneers-Cowboys, Bears-Packers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-5-nfl-betting-odds-lines-spreads-totals/",
+   "timestamp": "2026-10-08T11:50:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "DAL",
+    "GB",
+    "TB"
+   ]
+  },
+  {
+   "id": "ta2uW44GCjI7_vwd",
+   "headline": "Super Bowl stock report for NFL Week 5: Jaguars enter peak form, Eagles trend toward rebuild",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/super-bowl-odds-stock-report-nfl-week-5/",
+   "timestamp": "2026-10-08T11:00:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "JAX",
+    "PHI"
+   ]
+  },
+  {
+   "id": "WtTI3azBKsxTBXq_",
+   "headline": "NFL Week 5 upset alert: Why these five favorites could easily lose, including the Patriots",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-5-upset-alert-why-five-favorites-could-lose-patriots/",
+   "timestamp": "2026-10-08T10:30:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "m-L3p9bz2rxduEI1",
+   "headline": "Cowboys vs. Buccaneers preview: Can Tampa Bay slow down CeeDee Lamb and high-powered Dallas offense?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cowboys-vs-buccaneers-prediction-where-to-watch-tnf/",
+   "timestamp": "2026-10-08T10:00:51.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ceedee-lamb"
+   ],
+   "team_abbrs": [
+    "DAL",
+    "TB"
+   ]
+  },
+  {
    "id": "5R1na8plf5pE6lAV",
    "headline": "Cowboys will \"move pieces around\" in field goal protection after blocks two weeks in a row",
    "source": "Yahoo Sports",
@@ -46,17 +579,6 @@
    "category": "breaking",
    "team_abbrs": [
     "HOU"
-   ]
-  },
-  {
-   "id": "JU1LnoFcJR1ZNw4J",
-   "headline": "Jayden Daniels On Track To Return In Week 5; Marcus Mariota Sprains MCL",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/jayden-daniels-on-track-to-return-in-week-5-marcus-mariota-sprains-mcl",
-   "timestamp": "2026-10-08T04:00:54.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jayden-daniels"
    ]
   },
   {
@@ -1183,532 +1705,6 @@
    "category": "transaction",
    "team_abbrs": [
     "PHI"
-   ]
-  },
-  {
-   "id": "6bMoicMnJzeUVH4E",
-   "headline": "Jayden Daniels up to full practice on Wednesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jayden-daniels-full-practice-wednesday-201812283.html",
-   "timestamp": "2026-10-07T20:18:12.000Z",
-   "category": "practice",
-   "player_ids": [
-    "jayden-daniels"
-   ]
-  },
-  {
-   "id": "mqB_EY4gTLqqvCYD",
-   "headline": "Patriots WR Mack Hollins hopes to practice later this week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-wr-mack-hollins-hopes-201754264.html",
-   "timestamp": "2026-10-07T20:17:54.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "BD2xauwib_Z0HroH",
-   "headline": "D'Andre Swift, Kyle Monangai, Caleb Williams did not practice Wednesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dandre-swift-kyle-monangai-caleb-201743440.html",
-   "timestamp": "2026-10-07T20:17:43.000Z",
-   "category": "practice",
-   "player_ids": [
-    "caleb-williams",
-    "dandre-swift"
-   ]
-  },
-  {
-   "id": "x0GzDlcfWU2qp77K",
-   "headline": "Cowboys appear to have a glaring flaw that's been exploited in two straight games: 'We saw a weakness'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cowboys-blocked-field-goals-2026/",
-   "timestamp": "2026-10-07T20:02:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "pVR61klv9CoEbKTz",
-   "headline": "NFL betting, odds, lines: Betting trends to know for Week 5's biggest games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/nfl-betting-odds-lines-betting-trends-to-know-for-week-5s-biggest-games-200217365.html",
-   "timestamp": "2026-10-07T20:02:17.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "2eG7g3seJBThzLfL",
-   "headline": "49ers injury updates: Upton Stout won’t practice today",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-injury-updates-upton-stout-200036720.html",
-   "timestamp": "2026-10-07T20:00:36.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "FR2tYQ12ceGYxmSW",
-   "headline": "Bucs Week 5 injury report",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bucs-week-5-injury-report-195757420.html",
-   "timestamp": "2026-10-07T19:57:57.000Z",
-   "category": "injury"
-  },
-  {
-   "id": "T05fJerAgnDq-GW4",
-   "headline": "Commanders CB Trey Amos, RB Jeremy McNichols, DE Deatrich Wise Return To Practice",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/commanders-cb-trey-amos-rb-jeremy-mcnichols-de-deatrich-wise-return-to-practice",
-   "timestamp": "2026-10-07T19:55:50.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "sJsrTlOOhdFnlaSg",
-   "headline": "Seahawks designate standout special teamer to return to practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-designate-standout-special-teamer-195247411.html",
-   "timestamp": "2026-10-07T19:52:47.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "s_XCIvm95URCYvfV",
-   "headline": "Dan Campbell reveals 2 Detroit Lions defenders who may play more vs. Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dan-campbell-reveals-2-detroit-194752606.html",
-   "timestamp": "2026-10-07T19:47:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "DET"
-   ]
-  },
-  {
-   "id": "MVxUY6ExX6j0jvH1",
-   "headline": "Numbers Never Lie: Can the Chiefs’ defense be the best in the AFC?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/numbers-never-lie-chiefs-defense-194500729.html",
-   "timestamp": "2026-10-07T19:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "doCAi0abuGZ5TA01",
-   "headline": "Seahawks designate WR Irv Charles for return to practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-designate-wr-irv-charles-194008634.html",
-   "timestamp": "2026-10-07T19:40:08.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "frdikM3Z0hllUgp1",
-   "headline": "Baker Mayfield ruled out for Week 5",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/baker-mayfield-ruled-week-5-193755404.html",
-   "timestamp": "2026-10-07T19:37:55.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "baker-mayfield"
-   ]
-  },
-  {
-   "id": "RCvX2LRU0kl8rPxH",
-   "headline": "Texans Open Practice Windows For Tank Dell, Kayden McDonald, Braden Smith",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/texans-open-practice-windows-for-tank-dell-kayden-mcdonald-braden-smith",
-   "timestamp": "2026-10-07T18:59:01.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "kVv4szawrGau2bXg",
-   "headline": "Agent's Take: Kenneth Walker III among best veteran acquisitions after four games of 2026 NFL season",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/agents-take-kenneth-walker-iii-best-veteran-acquisitions-nfl/",
-   "timestamp": "2026-10-07T18:49:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker"
-   ]
-  },
-  {
-   "id": "ZtTR5teiQ82DcHxm",
-   "headline": "Cam Jurgens trade grades: Eagles send two-time Pro Bowl center to the Ravens for two draft selections",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cam-jurgens-trade-eagles-ravens-nfl-draft-picks/",
-   "timestamp": "2026-10-07T18:19:21.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "ppN4uLysL8QPqUEk",
-   "headline": "Lions Open Practice Windows For Brian Branch, Cade Mays",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/lions-open-practice-windows-for-brian-branch-cade-mays",
-   "timestamp": "2026-10-07T18:17:32.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "bVnXHxW690Nz6dTB",
-   "headline": "Cowboys point/counterpoint: Still looking for answers against the Buccaneers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-point-counterpoint-still-looking-173000028.html",
-   "timestamp": "2026-10-07T17:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "TB"
-   ]
-  },
-  {
-   "id": "6534pn3Kh_qisYk9",
-   "headline": "Jayden Daniels expected to practice in full ahead of possible Week 5 return",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/jayden-daniels-expected-to-practice-in-full-ahead-of-possible-week-5-return-172615563.html",
-   "timestamp": "2026-10-07T17:26:15.000Z",
-   "category": "practice",
-   "player_ids": [
-    "jayden-daniels"
-   ]
-  },
-  {
-   "id": "ok2-1jpZpwH1wQzA",
-   "headline": "Patriots’ Drake Maye earns AFC Offensive Player of the Week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-drake-maye-earns-afc-172318728.html",
-   "timestamp": "2026-10-07T17:23:18.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "eZbHWDrrwSISMV2V",
-   "headline": "Fantasy Football Trade Tips: Why it's time to deal Puka Nacua before it's too late, plus 4 players to buy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-trade-tips-why-its-time-to-deal-puka-nacua-before-its-too-late-plus-4-players-to-buy-172231477.html",
-   "timestamp": "2026-10-07T17:22:31.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "IiG15SY07ZYVw7BT",
-   "headline": "Tee Higgins: Will be limited Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tee-higgins-14506",
-   "timestamp": "2026-10-07T17:21:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tee-higgins"
-   ]
-  },
-  {
-   "id": "XmDgHi-v7D5P2CZ_",
-   "headline": "Ja'Marr Chase, Tee Higgins' status up in the air ahead of Week 5 road game vs. Dolphins",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/jamarr-chase-tee-higgins-status-up-in-the-air-ahead-of-week-5-road-game-vs-dolphins-172023299.html",
-   "timestamp": "2026-10-07T17:20:23.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jamarr-chase",
-    "tee-higgins"
-   ],
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "simXvmkRtjb3T6vr",
-   "headline": "Rhamondre Stevenson, Mack Hollins set to miss practice for Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rhamondre-stevenson-mack-hollins-set-171729385.html",
-   "timestamp": "2026-10-07T17:17:29.000Z",
-   "category": "practice",
-   "player_ids": [
-    "rhamondre-stevenson"
-   ],
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "Ub-IRNuAIOuoru9-",
-   "headline": "49ers-Seahawks: 3 major differences from last year’s roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-seahawks-3-major-differences-171500629.html",
-   "timestamp": "2026-10-07T17:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA",
-    "SF"
-   ]
-  },
-  {
-   "id": "h2jK-dTwaay-Qhvo",
-   "headline": "Eagles trade two-time Pro Bowler Cam Jurgens to Ravens in latest line shake-up",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-trade-two-time-pro-171041879.html",
-   "timestamp": "2026-10-07T17:10:41.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "NcDYQOJsoXhgSBh5",
-   "headline": "Raiders at the quarter pole",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-quarter-pole-170800053.html",
-   "timestamp": "2026-10-07T17:08:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "f1nswDAgioM2ALCG",
-   "headline": "Cam Jurgens trade: Eagles send center to Ravens for draft picks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cam-jurgens-trade-eagles-send-170432055.html",
-   "timestamp": "2026-10-07T17:04:32.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "g7oa6nQHxpPJnYAQ",
-   "headline": "Colts opening practice day window for promising backup tight end",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-opening-practice-day-window-170227319.html",
-   "timestamp": "2026-10-07T17:02:27.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "CgG2qDfvafnjJzy-",
-   "headline": "Carnell Tate, Isaac TeSlaa headline Week 5's Regression Files",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/carnell-tate-isaac-teslaa-headline-170220886.html",
-   "timestamp": "2026-10-07T17:02:20.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "bsW-aderx35MiJuP",
-   "headline": "Marvin Harrison Jr. trade packages: What Cardinals could get for former No. 4 overall pick",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/marvin-harrison-jr-trade-proposals-cardinals-2026/",
-   "timestamp": "2026-10-07T17:01:14.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "ZcByVgNS7LKc_oLN",
-   "headline": "Tyreek Hill signing with the Bills would be wild",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tyreek-hill-signing-bills-wild-165934173.html",
-   "timestamp": "2026-10-07T16:59:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "kQkXYelkiFzkkSVe",
-   "headline": "Cowboys TE Jake Ferguson successfully appeals his beer celebration fine",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-te-jake-ferguson-successfully-165302863.html",
-   "timestamp": "2026-10-07T16:53:02.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jake-ferguson"
-   ],
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "XPjqXxbQll-rT45K",
-   "headline": "Fantasy football injury report: Latest Week 5 updates on Barkley, Jackson",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fantasy-football-injury-report-latest-164642838.html",
-   "timestamp": "2026-10-07T16:46:42.000Z",
-   "category": "injury"
-  },
-  {
-   "id": "qQUMIdV3eNBa_Ke2",
-   "headline": "Chiefs punter Matt Araiza named AFC Special Teams Player of the Week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-punter-matt-araiza-named-164500633.html",
-   "timestamp": "2026-10-07T16:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "Rvd_lbjOd5C9hm4l",
-   "headline": "Vikings Autopsy: Daily Norseman Week 4 Postgame Roundtable (A 15-10 win over the Dolphins)",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikings-autopsy-daily-norseman-week-164403449.html",
-   "timestamp": "2026-10-07T16:44:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "MIN"
-   ]
-  },
-  {
-   "id": "Lb_zFCzzyAI1PBuj",
-   "headline": "Former NFL rushing TD leader eyes comeback, works out for Patriots",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-rushing-touchdown-leader-comeback-patriots/",
-   "timestamp": "2026-10-07T16:39:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "5gUAC945X_oP5RUe",
-   "headline": "Terry McLaurin: Won't practice Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/terry-mclaurin-13536",
-   "timestamp": "2026-10-07T16:39:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "terry-mclaurin"
-   ]
-  },
-  {
-   "id": "t0H1yCAjf2dTQnBR",
-   "headline": "Eagles Sign RB Dameon Pierce From Practice Squad",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-sign-rb-dameon-pierce-from-practice-squad",
-   "timestamp": "2026-10-07T16:38:46.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "lhqquXz09rAd8eep",
-   "headline": "Will Reichard Named NFC Special Teams Player of the Week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/reichard-named-nfc-special-teams-163312915.html",
-   "timestamp": "2026-10-07T16:33:12.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "will-reichard"
-   ]
-  },
-  {
-   "id": "fXL_J7GvnNQnuQIG",
-   "headline": "Houston Texans NFL Power Rankings: Week 5",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/houston-texans-nfl-power-rankings-163000757.html",
-   "timestamp": "2026-10-07T16:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "AIS6DbiD01OTXLjO",
-   "headline": "ESPN insider offers 2 Detroit Lions trade target suggestion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/espn-insider-offers-2-detroit-161743787.html",
-   "timestamp": "2026-10-07T16:17:43.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "VD5Cc1kLZjuJcECu",
-   "headline": "Chiefs P Matt Araiza named the AFC special teams player of the week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-p-matt-araiza-named-161605727.html",
-   "timestamp": "2026-10-07T16:16:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "Bh-cLnZORkOSrBAq",
-   "headline": "Jaguars LB Foye Oluokun is the AFC defensive player of the week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-lb-foye-oluokun-afc-161033189.html",
-   "timestamp": "2026-10-07T16:10:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "u5uvGNXu6mYX3mRZ",
-   "headline": "Tetairoa McMillan wins first NFC offensive player of the week award",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tetairoa-mcmillan-wins-first-nfc-160633173.html",
-   "timestamp": "2026-10-07T16:06:33.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tetairoa-mcmillan"
-   ]
-  },
-  {
-   "id": "9XLocR5-_wPsVcKq",
-   "headline": "Commanders roster news: Two signed to practice squad; QB gets workout",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-roster-news-two-signed-160615618.html",
-   "timestamp": "2026-10-07T16:06:15.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "z5DtIY75jCdlsi20",
-   "headline": "Drake Maye named the AFC offensive player of the week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/drake-maye-named-afc-offensive-160521469.html",
-   "timestamp": "2026-10-07T16:05:21.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye"
    ]
   }
  ]
