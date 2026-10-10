@@ -1,8 +1,240 @@
 {
  "schema_version": 1,
- "updated": "2026-10-09",
+ "updated": "2026-10-10",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "3E5xnSJq9ajUtWW_",
+   "headline": "Bears Legend Mike Ditka Passes Away At 86",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/bears-legend-mike-ditka-passes-away-at-86",
+   "timestamp": "2026-10-10T04:30:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "ulJlQrcjpR66ttuu",
+   "headline": "Eagles Release QB Andy Dalton",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-to-release-qb-andy-dalton",
+   "timestamp": "2026-10-10T04:20:39.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "17ORN5Q-O_rZwSwS",
+   "headline": "J.J. McCarthy Could Step Into Giants’ QB2 Role",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/j-j-mccarthy-could-step-into-giants-qb2-role",
+   "timestamp": "2026-10-10T04:17:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "vIm-4fdpy-rP9Eri",
+   "headline": "Ravens’ Lamar Jackson, Cam Jurgens To Miss Week 5",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/ravens-lamar-jackson-cam-jurgens-to-miss-week-5",
+   "timestamp": "2026-10-10T04:15:27.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "lamar-jackson"
+   ],
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "PZCLKlB33aWPwc6l",
+   "headline": "NFL predictions: Who gets their first win in the Titans-Texans matchup?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-gets-first-win-031315251.html",
+   "timestamp": "2026-10-10T03:13:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU",
+    "TEN"
+   ]
+  },
+  {
+   "id": "q19aCSKHmt0URxY3",
+   "headline": "NFL Injury Updates: Charbonnet, Jets Offense, McGregor",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-injury-updates-charbonnet-jets-offense-mcgregor",
+   "timestamp": "2026-10-10T02:58:45.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "V9YlsjtDy52m3tF9",
+   "headline": "The complete history of the Bears-Packers rivalry",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/complete-history-bears-packers-rivalry-021311720.html",
+   "timestamp": "2026-10-10T02:13:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "GB"
+   ]
+  },
+  {
+   "id": "USDmlillUinfeJXy",
+   "headline": "Commanders Keeping Lucas Patrick As Starting C",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/commanders-keeping-lucas-patrick-as-starting-c",
+   "timestamp": "2026-10-10T01:31:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "BHvhJLcefXKhgaa-",
+   "headline": "Giants get good news on injured offensive trio",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-good-news-injured-offensive-013100932.html",
+   "timestamp": "2026-10-10T01:31:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "hGdb7CY2hohf1Kog",
+   "headline": "Former Bears Coach, Vikings Nemesis Mike Ditka Passes Away",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-bears-coach-vikings-nemesis-012653466.html",
+   "timestamp": "2026-10-10T01:26:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "MIN"
+   ]
+  },
+  {
+   "id": "3wrjAm1RiSMhtGk-",
+   "headline": "Puka Nacua literally ate the competition after Rams beat Eagles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/puka-nacua-literally-ate-competition-011852590.html",
+   "timestamp": "2026-10-10T01:18:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "liJXxOhEQTIWwCbw",
+   "headline": "Mike Ditka, Hall of Fame tight end and Bears' Super Bowl-winning coach, dies at age 86",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/mike-ditka-bears-super-bowl-winning-coach-dies-at-age-86/",
+   "timestamp": "2026-10-10T01:09:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "fLA4-o4Rm-xnUFid",
+   "headline": "Good news for CeeDee Lamb",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/good-news-ceedee-lamb-010457543.html",
+   "timestamp": "2026-10-10T01:04:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ceedee-lamb"
+   ]
+  },
+  {
+   "id": "iHJBpY3w3QDeah3y",
+   "headline": "Jaylen Watson reveals secret weapon that could allow him to play vs Bills on MNF",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaylen-watson-reveals-secret-weapon-003846183.html",
+   "timestamp": "2026-10-10T00:38:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "mnSQTam3TSE6KtvD",
+   "headline": "NFL predictions: Can the New York Jets halt their losing streak when they take on the Cleveland Browns?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-york-jets-halt-003117861.html",
+   "timestamp": "2026-10-10T00:31:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "RoKSLlSHknkWe526",
+   "headline": "Rams' Aaron Donald expects to return from injury vs. Bills: 'I feel great'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-aaron-donald-expects-return-002849086.html",
+   "timestamp": "2026-10-10T00:28:49.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BUF",
+    "LAR"
+   ]
+  },
+  {
+   "id": "LGfxKK19KfTI_FV1",
+   "headline": "Greg Newsome II ‘had all the confidence in the world’ coming to Giants — he’s backing it up",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/greg-newsome-ii-had-confidence-002424738.html",
+   "timestamp": "2026-10-10T00:24:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "Qn64JgSff0MpX08a",
+   "headline": "Aaron Donald reveals which NFL legend Josh Allen reminds him of ahead of Monday Night Football showdown",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-donald-reveals-nfl-legend-001833012.html",
+   "timestamp": "2026-10-10T00:18:33.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen"
+   ]
+  },
+  {
+   "id": "XTiqHcT18afOoE5B",
+   "headline": "Jets still waiting for David Bailey’s pass-rushing potential to take off",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-still-waiting-david-bailey-001745460.html",
+   "timestamp": "2026-10-10T00:17:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "8o3PjQmyNuAl6pP0",
+   "headline": "49ers star Nick Bosa uncovers injury timeline as NFC West clash for first place approaches",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-star-nick-bosa-uncovers-001450740.html",
+   "timestamp": "2026-10-10T00:14:50.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
   {
    "id": "5gUAC945X_oP5RUe",
    "headline": "Terry McLaurin: Seemingly game-time decision for Week 5",
@@ -96,6 +328,18 @@
    "category": "injury",
    "team_abbrs": [
     "IND"
+   ]
+  },
+  {
+   "id": "zscQyGtvHSHWi-0Y",
+   "headline": "Bills Pro Bowl lineman sends direct message to Rams’ Myles Garrett ahead of Monday night clash",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-pro-bowl-lineman-sends-231002878.html",
+   "timestamp": "2026-10-09T23:10:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "LAR"
    ]
   },
   {
@@ -245,6 +489,29 @@
    ]
   },
   {
+   "id": "vZ5BAIOVfrhLNuyP",
+   "headline": "Chargers provide Rashawn Slater major injury update ahead of Broncos clash",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-rashawn-slater-major-injury-221149686.html",
+   "timestamp": "2026-10-09T22:11:49.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DEN",
+    "LAC"
+   ]
+  },
+  {
+   "id": "zaw0-fT3EvZjARDd",
+   "headline": "Jerry Jones rails against Cowboys after shocking upset: ‘Extraordinarily disappointing’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jerry-jones-rails-against-cowboys-220527509.html",
+   "timestamp": "2026-10-09T22:05:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "1QNcWClj09Wf0MCL",
    "headline": "Giants Expected To Start Bryan Hudson At Center In Week 5",
    "source": "Pro Football Rumors",
@@ -300,6 +567,18 @@
    "category": "injury",
    "team_abbrs": [
     "SEA"
+   ]
+  },
+  {
+   "id": "tXcaBNc5HCijNRpy",
+   "headline": "Cowboys fan runs over TV with truck in crazy meltdown after embarrassing loss to Buccaneers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-fan-runs-over-tv-214602307.html",
+   "timestamp": "2026-10-09T21:46:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TB"
    ]
   },
   {
@@ -362,17 +641,15 @@
    ]
   },
   {
-   "id": "vIm-4fdpy-rP9Eri",
-   "headline": "Ravens’ Lamar Jackson, Cam Jurgens To Miss Week 5",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/ravens-lamar-jackson-cam-jurgens-to-miss-week-5",
-   "timestamp": "2026-10-09T21:21:27.000Z",
+   "id": "N0_k05Sbzx3Zcbuv",
+   "headline": "Lions coach shares touching memory of Mike Ditka after learning of Bears legend’s death",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-coach-shares-touching-memory-211216712.html",
+   "timestamp": "2026-10-09T21:12:16.000Z",
    "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ],
    "team_abbrs": [
-    "BAL"
+    "CHI",
+    "DET"
    ]
   },
   {
@@ -384,6 +661,17 @@
    "category": "breaking",
    "player_ids": [
     "jeremiyah-love"
+   ]
+  },
+  {
+   "id": "_Cao4ef1zJmOqJ-l",
+   "headline": "Keyshawn Johnson goes nuclear on Cowboys, Brian Schottenheimer after TNF loss: ‘It’s time’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/keyshawn-johnson-goes-nuclear-cowboys-210740581.html",
+   "timestamp": "2026-10-09T21:07:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
    ]
   },
   {
@@ -1018,17 +1306,6 @@
    ]
   },
   {
-   "id": "ulJlQrcjpR66ttuu",
-   "headline": "Eagles Release QB Andy Dalton",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-to-release-qb-andy-dalton",
-   "timestamp": "2026-10-09T18:20:39.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
    "id": "JRmSOEU0KM10hJJp",
    "headline": "Ashton Jeanty is questionable to play Sunday",
    "source": "Yahoo Sports",
@@ -1101,17 +1378,6 @@
    "team_abbrs": [
     "BUF",
     "LAR"
-   ]
-  },
-  {
-   "id": "17ORN5Q-O_rZwSwS",
-   "headline": "J.J. McCarthy Could Step Into Giants’ QB2 Role",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/j-j-mccarthy-could-step-into-giants-qb2-role",
-   "timestamp": "2026-10-09T18:00:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
    ]
   },
   {
@@ -1245,17 +1511,6 @@
    "category": "breaking"
   },
   {
-   "id": "3E5xnSJq9ajUtWW_",
-   "headline": "Bears Legend Mike Ditka Passes Away At 86",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bears-legend-mike-ditka-passes-away-at-86",
-   "timestamp": "2026-10-09T17:15:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
    "id": "CwBiWK29iNWC5MlS",
    "headline": "Cowboys' Jerry Jones expresses interest in making trades despite embarrassing loss to Buccaneers",
    "source": "CBS Sports",
@@ -1265,17 +1520,6 @@
    "team_abbrs": [
     "DAL",
     "TB"
-   ]
-  },
-  {
-   "id": "liJXxOhEQTIWwCbw",
-   "headline": "Mike Ditka, Hall of Fame tight end and Bears' Super Bowl-winning coach, dies at age 86",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/mike-ditka-bears-super-bowl-winning-coach-dies-at-age-86/",
-   "timestamp": "2026-10-09T16:48:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
    ]
   },
   {
@@ -1495,233 +1739,6 @@
    "url": "https://www.cbssports.com/betting/news/nfl-week-5-odds-will-brinsons-best-bets-player-props-anytime-touchdown-scorers-for-sundays-games/",
    "timestamp": "2026-10-09T14:59:16.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "kK0UmVinowBiVdR9",
-   "headline": "Browns Week 5: Jets rule out 3 starters early on Friday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-week-5-jets-rule-145750860.html",
-   "timestamp": "2026-10-09T14:57:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "7vHx4gbCWCNLJBxz",
-   "headline": "Fantasy Football Start 'Em, Sit 'Em: Justin Boone's lineup advice for Week 5",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-start-em-sit-em-justin-boones-lineup-advice-for-week-5-145428214.html",
-   "timestamp": "2026-10-09T14:54:28.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "qQmxocbfX52-FRuH",
-   "headline": "Misunderstood Shedeur Sanders opens up on public perception as Browns QB: 'Why would people think this?'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/shedeur-sanders-opens-up-on-public-perception-browns/",
-   "timestamp": "2026-10-09T14:47:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "Xl11SIpLkwkqrEed",
-   "headline": "Fantasy Football: 3 players set to enter the Circle of Trust in Week 5 — and 3 who could fall out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-3-players-set-to-enter-the-circle-of-trust-in-week-5--and-3-who-could-fall-out-144729267.html",
-   "timestamp": "2026-10-09T14:47:29.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "WwZ68ZyrAupMAzd_",
-   "headline": "Buccaneers rookie Jalon Daniels orchestrates wild upset of Cowboys in second career start",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/who-is-jalon-daniels-buccaneers-rookie-quarterback/",
-   "timestamp": "2026-10-09T14:44:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "TB"
-   ]
-  },
-  {
-   "id": "4mycE9rhsKr-fHP-",
-   "headline": "Three Rivers Report: Young receivers have golden opportunity vs. Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/three-rivers-report-young-receivers-144355811.html",
-   "timestamp": "2026-10-09T14:43:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "YEjal_hI76DzXCQW",
-   "headline": "Award-winning season loading for Browns rookie, according to ESPN",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/award-winning-season-loading-browns-142844325.html",
-   "timestamp": "2026-10-09T14:28:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "IPmBKLMGF9ZH8HBM",
-   "headline": "Fantasy Football Week 5 Fades & Busts: Jalen Hurts is officially out of the top 12",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-5-fades--busts-jalen-hurts-is-officially-out-of-the-top-12-141859485.html",
-   "timestamp": "2026-10-09T14:18:59.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ]
-  },
-  {
-   "id": "bN0F0yMhBzqxAL77",
-   "headline": "Why the 49ers likely won’t shadow Jaxon Smith Njigba",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/why-49ers-likely-won-t-141718565.html",
-   "timestamp": "2026-10-09T14:17:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "pzrjcjPCWF8gTqpc",
-   "headline": "Just how embarrassing was Dallas' loss to the Bucs? What went wrong and where Cowboys go from here",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/dallas-loss-to-the-bucs-what-went-wrong-where-cowboys-go-from-here/",
-   "timestamp": "2026-10-09T14:16:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "ByuHESwx288QEiy1",
-   "headline": "NFL odds, picks: Texans vs. Titans same-game parlay for historically bad Week 5 matchup",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-texans-vs-titans-same-game-parlay-for-historically-bad-week-5-matchup/",
-   "timestamp": "2026-10-09T14:15:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "TEN"
-   ]
-  },
-  {
-   "id": "teQxWunEKY0HGhZu",
-   "headline": "NFL Week 5 schedule: A look at three underrated games you should watch, including a rare matchup",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-5-schedule-underrated-games/",
-   "timestamp": "2026-10-09T14:15:18.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "vJyih5z1n1dkWyck",
-   "headline": "The Cowboys’ brand is soul-crushing embarrassment",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-brand-soul-crushing-embarrassment-141409136.html",
-   "timestamp": "2026-10-09T14:14:09.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "ooYv5OGgUHlLG5QF",
-   "headline": "Talking about the Browns’ 3-1 start: Team’s new identity setting the stage",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/talking-browns-3-1-start-140635743.html",
-   "timestamp": "2026-10-09T14:06:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "y4l_b_PrezNdWu44",
-   "headline": "Week 5 NFL score predictions, odds, picks, betting advice: Proven model reveals projections for every game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-5-nfl-score-predictions-odds-picks-betting-advice-proven-model-reveals-projections-for-every-game/",
-   "timestamp": "2026-10-09T14:05:10.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "PC0xmufp-dMadlNl",
-   "headline": "Week 5 NFL odds, picks, predictions: Computer model backs Vikings and Bengals",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-5-2026-nfl-odds-picks-predictions-lines-spread-total-bets/",
-   "timestamp": "2026-10-09T14:01:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "MIN"
-   ]
-  },
-  {
-   "id": "CzIA77QqwCIeZLP3",
-   "headline": "‘Dominant force’ Maxx Crosby the latest test for Patriots O-line",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dominant-force-maxx-crosby-latest-140000319.html",
-   "timestamp": "2026-10-09T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "Uk1obUf5u9anvmY6",
-   "headline": "Raiders News: Ashton Jeanty was limited at practice on Thursday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-news-ashton-jeanty-limited-140000585.html",
-   "timestamp": "2026-10-09T14:00:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "ashton-jeanty"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "M0-knQMx5Zc4LMlV",
-   "headline": "Our offense vs. their defense: Minnesota Vikings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/offense-vs-defense-minnesota-vikings-140000244.html",
-   "timestamp": "2026-10-09T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "puDXkWGZ8HKX-SuI",
-   "headline": "3 things that must improve about the Chiefs after the bye week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-things-must-improve-chiefs-140000230.html",
-   "timestamp": "2026-10-09T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "-HGX2XtT_5gJ-DWF",
-   "headline": "Seahawks vs. 49ers, Week 5 preview: The keys to Seattle giving the 49ers their first loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-vs-49ers-week-5-140000515.html",
-   "timestamp": "2026-10-09T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA",
-    "SF"
-   ]
   }
  ]
 }
