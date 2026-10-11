@@ -1,8 +1,275 @@
 {
  "schema_version": 1,
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "7bDSYzWuPjNt5PLH",
+   "headline": "Kirk Cousins is having a rare debut run with the Raiders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kirk-cousins-having-rare-debut-050251694.html",
+   "timestamp": "2026-10-11T05:02:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "MrgRPqnu6fbc1oR4",
+   "headline": "Prisco's Week 5 NFL picks: Jaguars roll over Eagles, Packers upset Bears, Rams edge Bills on 'MNF'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-5-nfl-picks-odds/",
+   "timestamp": "2026-10-11T05:00:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "CHI",
+    "GB",
+    "JAX",
+    "LAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "3FEVU78fMx_yRL0D",
+   "headline": "Bears vs. Packers: How to watch and listen, previews, odds, and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-vs-packers-watch-listen-050000804.html",
+   "timestamp": "2026-10-11T05:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "GB"
+   ]
+  },
+  {
+   "id": "IQPOUEY2wrxeZYcG",
+   "headline": "Matt LaFleur takes 12-3 record vs. Bears into Sunday's showdown",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/matt-lafleur-takes-12-3-044725712.html",
+   "timestamp": "2026-10-11T04:47:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "eGKWd0mgfxmU6rMn",
+   "headline": "Trevor Lawrence continues to perform among the NFL's elite quarterbacks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/trevor-lawrence-continues-perform-among-043409634.html",
+   "timestamp": "2026-10-11T04:34:09.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "trevor-lawrence"
+   ]
+  },
+  {
+   "id": "-5endYQY0CVHRYMe",
+   "headline": "NFL predictions: Rain could throw a wrench in Browns-Jets expected matchup advantages",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-rain-could-throw-031050656.html",
+   "timestamp": "2026-10-11T03:10:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "5pFrHf7J8it8GFAM",
+   "headline": "Texans Expected To Acquire Cardinals WR Marvin Harrison Jr.",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/texans-expected-to-acquire-cardinals-wr-marvin-harrison-jr",
+   "timestamp": "2026-10-11T03:09:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "HOU"
+   ]
+  },
+  {
+   "id": "d1W_No4TqjbSlxjD",
+   "headline": "Vikings Make Several Roster Moves Ahead of Saints Game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-several-roster-moves-ahead-030831135.html",
+   "timestamp": "2026-10-11T03:08:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN",
+    "NO"
+   ]
+  },
+  {
+   "id": "j39M7ePjRiK1ihFi",
+   "headline": "Falcons Draft 2027: Six Prospects to Watch for Week 6 of College Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-draft-2027-six-prospects-030713935.html",
+   "timestamp": "2026-10-11T03:07:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "ICwStHuyarIzlpzJ",
+   "headline": "Rams aren't likely to return Myles Garrett to practice this week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-arent-likely-return-myles-030541146.html",
+   "timestamp": "2026-10-11T03:05:41.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "odNYPfDkeaNc2Qy7",
+   "headline": "Ravens Completed Cam Jurgens’ Physical In Philly Before Finalizing Trade",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/ravens-completed-cam-jurgens-physical-in-philly-before-finalizing-trade",
+   "timestamp": "2026-10-11T03:00:30.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "_fasV8k3Lyu0iFhx",
+   "headline": "Packers will honor Mike Ditka with a moment of silence before Sunday's game vs. Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-honor-mike-ditka-moment-024713249.html",
+   "timestamp": "2026-10-11T02:47:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "GB"
+   ]
+  },
+  {
+   "id": "Tw2AJd3OHQxmciv_",
+   "headline": "NFL Mailbag: Eagles, Payton, Broncos, Hill, Chiefs, Vikings",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-mailbag-eagles-payton-broncos-hill-chiefs-vikings",
+   "timestamp": "2026-10-11T02:40:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC",
+    "MIN",
+    "PHI"
+   ]
+  },
+  {
+   "id": "Xbr0gZYtjb7YSFg-",
+   "headline": "Titans fans not confident heading into Texans game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-fans-not-confident-heading-020506952.html",
+   "timestamp": "2026-10-11T02:05:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU",
+    "TEN"
+   ]
+  },
+  {
+   "id": "7DeVWnmKcSe_ALcv",
+   "headline": "2026 NFL Injured Reserve Return Tracker",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/2026-nfl-injured-reserve-return-tracker",
+   "timestamp": "2026-10-11T02:00:46.000Z",
+   "category": "injury"
+  },
+  {
+   "id": "mfgUJfBE_4DXoT0a",
+   "headline": "Cam Skattebo’s calculated plan to ‘punish’ opponents for later gains",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cam-skattebo-calculated-plan-punish-014519739.html",
+   "timestamp": "2026-10-11T01:45:19.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "cam-skattebo"
+   ]
+  },
+  {
+   "id": "GtZrC7t66ZwYfIoQ",
+   "headline": "Packers Place RB Chris Brooks On IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/packers-place-rb-chris-brooks-on-ir",
+   "timestamp": "2026-10-11T01:39:23.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "Gc0zk-7mNQQoCrxI",
+   "headline": "Steelers vs. Colts: Week 5 Predictions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-vs-colts-week-5-010425365.html",
+   "timestamp": "2026-10-11T01:04:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "PIT"
+   ]
+  },
+  {
+   "id": "XwZTJf01JiVq6Tzf",
+   "headline": "Last minute best bets for NFL Week 5: Steelers capitalize on rest advantage, Bears stand strong",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-5-picks-predictions-bets-steelers-colts/",
+   "timestamp": "2026-10-11T01:01:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "PIT"
+   ]
+  },
+  {
+   "id": "nqYOCUgb9shpCdo0",
+   "headline": "Jets Activate WR Tim Patrick",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/jets-activate-wr-tim-patrick",
+   "timestamp": "2026-10-11T00:46:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "zxoevOPSe4rsn66J",
+   "headline": "John Franklin-Myers was fined only $12,537 for kneeing Derrick Henry in the stomach",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/john-franklin-myers-fined-only-004637694.html",
+   "timestamp": "2026-10-11T00:46:37.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "derrick-henry"
+   ]
+  },
+  {
+   "id": "5gUAC945X_oP5RUe",
+   "headline": "Terry McLaurin: Trending toward playing Sunday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/terry-mclaurin-13536",
+   "timestamp": "2026-10-11T00:33:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "terry-mclaurin"
+   ]
+  },
+  {
+   "id": "QAHG6so3PS7edBYV",
+   "headline": "New York Jets vs Cleveland Browns: Five Questions with Dawgs By Nature",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-vs-cleveland-browns-003000047.html",
+   "timestamp": "2026-10-11T00:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "NYJ"
+   ]
+  },
   {
    "id": "NOe8vF7-T84qnuFC",
    "headline": "What the Patriots’ roster moves ahead of the Raiders game mean",
@@ -50,6 +317,17 @@
    ]
   },
   {
+   "id": "3mOXR8lZmTVHNYpv",
+   "headline": "Jets finally get some good injury news with Mason Taylor set for return",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-finally-good-injury-news-233154837.html",
+   "timestamp": "2026-10-10T23:31:54.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
    "id": "_OuQHKqtUHQrbJRx",
    "headline": "NFL Week 5 player props, anytime TD best bets: Five value bets to consider",
    "source": "CBS Sports",
@@ -79,6 +357,17 @@
    "url": "https://www.profootballrumors.com/2026/10/minor-nfl-transactions-10-10-26",
    "timestamp": "2026-10-10T22:33:25.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "hB9Tva9gmGMk5Bpe",
+   "headline": "Week 5 is ripe for Jets and Aaron Glenn to flip the narrative",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/week-5-ripe-jets-aaron-221923267.html",
+   "timestamp": "2026-10-10T22:19:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
   },
   {
    "id": "RPtRvm09YHA0Dmw9",
@@ -257,6 +546,17 @@
    ]
   },
   {
+   "id": "7XMdOH77SthWYRVx",
+   "headline": "Shedeur Sanders knows he’s not ‘a bad guy’ as Browns QB wishes ‘people understood me more’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/shedeur-sanders-knows-not-bad-210016620.html",
+   "timestamp": "2026-10-10T21:00:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
    "id": "zwIQo7RYfGEpzqzm",
    "headline": "Dolphins activate Kenneth Grant from injured reserve",
    "source": "Yahoo Sports",
@@ -379,7 +679,7 @@
   },
   {
    "id": "tEwuXSdCJEgVAHbR",
-   "headline": "Chargers Place QB Trey Lance, T Trevor Penning On IR; Activate Two From IR",
+   "headline": "Chargers Place QB Trey Lance, T Trevor Penning On IR; L.A. Activates Two From IR",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/10/chargers-place-qb-trey-lance-t-trevor-penning-on-ir-activate-two-from-ir",
    "timestamp": "2026-10-10T20:28:09.000Z",
@@ -776,14 +1076,14 @@
    ]
   },
   {
-   "id": "odNYPfDkeaNc2Qy7",
-   "headline": "Ravens Completed Cam Jurgens’ Physical In Philly Before Finalizing Trade",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/ravens-completed-cam-jurgens-physical-in-philly-before-finalizing-trade",
-   "timestamp": "2026-10-10T18:05:30.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BAL"
+   "id": "Qlf02PE93Z8mCfd8",
+   "headline": "DJ Moore: Questionable for Week 5",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/dj-moore-12477",
+   "timestamp": "2026-10-10T18:05:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dj-moore"
    ]
   },
   {
@@ -965,17 +1265,6 @@
    "team_abbrs": [
     "SEA",
     "SF"
-   ]
-  },
-  {
-   "id": "Qlf02PE93Z8mCfd8",
-   "headline": "DJ Moore: Spotted at practice Saturday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/dj-moore-12477",
-   "timestamp": "2026-10-10T16:59:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "dj-moore"
    ]
   },
   {
@@ -1398,300 +1687,6 @@
    "url": "https://sports.yahoo.com/articles/chris-brooks-wont-play-week-134904597.html",
    "timestamp": "2026-10-10T13:49:04.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "jGpk2wi-qvTIs9zM",
-   "headline": "Khalil Mack could return to the Bears",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/khalil-mack-could-return-bears-134558541.html",
-   "timestamp": "2026-10-10T13:45:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "duUp0wFAchFYdHAH",
-   "headline": "Falcons vs. Ravens injury report: Lamar Jackson ruled OUT",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-vs-ravens-injury-report-133439565.html",
-   "timestamp": "2026-10-10T13:34:39.000Z",
-   "category": "injury",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "ATL",
-    "BAL"
-   ]
-  },
-  {
-   "id": "eDzvmLcLC0RMRkmH",
-   "headline": "That one time Kyle Shanahan forgot about Jaxon Smith-Njigba",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/one-time-kyle-shanahan-forgot-133300876.html",
-   "timestamp": "2026-10-10T13:33:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxon-smith-njigba"
-   ]
-  },
-  {
-   "id": "Kvojx-oXUkR5leJK",
-   "headline": "Pre-Snap Reads: Seahawks D getting healthy ahead of tomorrow’s tilt",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pre-snap-reads-seahawks-d-131157130.html",
-   "timestamp": "2026-10-10T13:11:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "l5SS7nHKQApzNtg1",
-   "headline": "Eagles opposing player to stop, Week 5 edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-opposing-player-stop-week-130218546.html",
-   "timestamp": "2026-10-10T13:02:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "yxrXZaq3ZkejvP4v",
-   "headline": "Previewing the New York Jets’ opposition: Cleveland Browns",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/previewing-york-jets-opposition-cleveland-130000318.html",
-   "timestamp": "2026-10-10T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "_Q_Wp7EOZKkhUFl6",
-   "headline": "Cowboys rookie report: Malachi Lawrence gets his first sack against Tampa Bay",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-rookie-report-malachi-lawrence-130000261.html",
-   "timestamp": "2026-10-10T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "yEtIWxdR8GKjXktt",
-   "headline": "Bears Discussion: Packers preview, 2027 NFL Draft QB prospects, DFS, and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-discussion-packers-preview-2027-130000384.html",
-   "timestamp": "2026-10-10T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "GB"
-   ]
-  },
-  {
-   "id": "196RaX0RBhS7DoYA",
-   "headline": "Bryce Young's breakout: How Panthers QB is looking 'like Alabama Bryce' and leading NFL in passing yards",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bryce-young-panthers-breakout-nfl-passing-yards/",
-   "timestamp": "2026-10-10T12:19:36.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "bryce-young"
-   ],
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "Tw2AJd3OHQxmciv_",
-   "headline": "NFL Mailbag: Eagles, Payton, Broncos, Hill, Chiefs, Vikings",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/nfl-mailbag-eagles-payton-broncos-hill-chiefs-vikings",
-   "timestamp": "2026-10-10T12:00:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC",
-    "MIN",
-    "PHI"
-   ]
-  },
-  {
-   "id": "IPpgtOTNw3_K2C1E",
-   "headline": "Future Broncos: 3 Prospects to Watch in Week 6 of NCAA Football Season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/future-broncos-3-prospects-watch-120000664.html",
-   "timestamp": "2026-10-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "1e9bnrfJRUuPmmfX",
-   "headline": "Chicago Bears Week 5 Flashbacks: Sweetness hits 100, an NFL Record is set, and a win in Lambeau",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-week-5-flashbacks-120000714.html",
-   "timestamp": "2026-10-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "3zMmOAZjcdnIoaYD",
-   "headline": "Lions vs. Cardinals Week 4 preview: Madden 27 simulation",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-vs-cardinals-week-4-120000535.html",
-   "timestamp": "2026-10-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "DET"
-   ]
-  },
-  {
-   "id": "HkGNHjuwQcwNzMH9",
-   "headline": "Week 5 Preview: Offensive Breakthrough?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-5-preview-offensive-breakthrough-120000596.html",
-   "timestamp": "2026-10-10T12:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "0vvrTz27lYXtteOT",
-   "headline": "The Bills need more James Cook, but they must stay dedicated to this philosophy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-more-james-cook-must-120000259.html",
-   "timestamp": "2026-10-10T12:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "james-cook"
-   ],
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "UjF1TDQF4sq_r8Kn",
-   "headline": "3-Point Stance: Josh McDaniels’ diversified offense gets Patriots back on track",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-point-stance-josh-mcdaniels-110000217.html",
-   "timestamp": "2026-10-10T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "TRXHd2LntGymLE8X",
-   "headline": "Despite play-calling demotion, Davis Webb excited for Broncos’ offense to finally take off",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/despite-play-calling-demotion-davis-110000193.html",
-   "timestamp": "2026-10-10T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "nkug-TT_SlW0uZZn",
-   "headline": "What can the Lions defense do vs. Cardinals to earn faith?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-defense-vs-cardinals-earn-110000121.html",
-   "timestamp": "2026-10-10T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "DET"
-   ]
-  },
-  {
-   "id": "GxGYB9ZmGDfKa4hV",
-   "headline": "Chargers vs. Denver Broncos: How to watch, prediction and betting odds",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-vs-denver-broncos-watch-110000692.html",
-   "timestamp": "2026-10-10T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "LAC"
-   ]
-  },
-  {
-   "id": "_YGiCG4YCC5fYVCu",
-   "headline": "Cowboys news: Brian Schottenheimer vows that changes will be made after disappointing loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-brian-schottenheimer-vows-110000668.html",
-   "timestamp": "2026-10-10T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "M3zr5LK_wAEYYjb0",
-   "headline": "ProCanes NFL Update: First Quarter Recap",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/procanes-nfl-first-quarter-recap-110000542.html",
-   "timestamp": "2026-10-10T11:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "cuK5OeL47VohzeHE",
-   "headline": "Falcons vs. Ravens: How to watch Bijan Robinson vs. Derrick Henry on 'SNF'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/falcons-vs-ravens-how-to-watch-preview-prediction-odds-snf/",
-   "timestamp": "2026-10-10T10:41:56.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "bijan-robinson",
-    "derrick-henry"
-   ],
-   "team_abbrs": [
-    "ATL",
-    "BAL"
-   ]
-  },
-  {
-   "id": "ckRecUfQHuaK5Uv5",
-   "headline": "Cleveland Browns news: A massive sports weekend incoming",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-massive-sports-103000068.html",
-   "timestamp": "2026-10-10T10:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "q5cg84kXh9c0Z_ks",
-   "headline": "Jaguars vs. Eagles: Where to watch NFL London matchup, plus pick, odds, kickoff time and latest updates",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/where-to-watch-jaguars-vs-eagles-prediction-odds-streaming-nfl/",
-   "timestamp": "2026-10-10T10:12:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "PHI"
-   ]
-  },
-  {
-   "id": "aH49XLaadkejy581",
-   "headline": "5 questions and answers about Patriots vs. Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-questions-answers-patriots-vs-100000448.html",
-   "timestamp": "2026-10-10T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "NE"
-   ]
   }
  ]
 }
