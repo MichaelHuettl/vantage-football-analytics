@@ -1,8 +1,150 @@
 {
  "schema_version": 1,
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "l1M83kS5s31oDrlR",
+   "headline": "Dan Campbell says pass protection shows why Jahmyr Gibbs is different from other backs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dan-campbell-says-pass-protection-082445577.html",
+   "timestamp": "2026-10-14T08:24:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jahmyr-gibbs"
+   ]
+  },
+  {
+   "id": "I0qd12ttfdMalkuI",
+   "headline": "Gayle Benson: Recent Saints Performance Level Unacceptable",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/gayle-benson-recent-saints-performance-unacceptable",
+   "timestamp": "2026-10-14T04:25:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "V5awg7pVmXej920m",
+   "headline": "Bears DE Montez Sweat Receives Two-Game PED Suspension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/bears-de-montez-sweat-receives-two-game-suspension",
+   "timestamp": "2026-10-14T04:20:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "WM22HhymLtO3zJB6",
+   "headline": "NFL Hands Rams LT Alaric Jackson Two-Game Suspension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-suspends-rams-lt-alaric-jackson-for-two-games",
+   "timestamp": "2026-10-14T04:10:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "_3IQRGoiN519tmQB",
+   "headline": "Tyreek Hill’s Civil Trial Concludes; ‘Chiefs Or Nowhere’ For Embattled WR?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/tyreek-hills-civil-trial-concludes-chiefs-or-nowhere-for-embattled-wr",
+   "timestamp": "2026-10-14T04:00:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "q6GYQtZ5sOZMAT7u",
+   "headline": "Dan Quinn safe for now, but heat ratchets up on his QB Jayden Daniels - All aTwitter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dan-quinn-safe-now-heat-040000425.html",
+   "timestamp": "2026-10-14T04:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jayden-daniels"
+   ]
+  },
+  {
+   "id": "Brl5rhZVXEAO3k_g",
+   "headline": "Sean McVay reveals Alaric Jackson’s next move after NFL suspends Rams star for throwing punch",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-mcvay-reveals-alaric-jackson-035407538.html",
+   "timestamp": "2026-10-14T03:54:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "OpMtA1PM1nAvTlxg",
+   "headline": "Door Opening For Fernando Mendoza Move Into Raiders’ Starting Lineup",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/door-opening-for-fernando-mendoza-move-into-raiders-starting-lineup",
+   "timestamp": "2026-10-14T03:52:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "XhYKLIw8Sr3Pr_JA",
+   "headline": "Sean McVay reveals why Rams cut Harrison Mevis after costly misses in Bills loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-mcvay-reveals-why-rams-033731140.html",
+   "timestamp": "2026-10-14T03:37:31.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "harrison-mevis"
+   ],
+   "team_abbrs": [
+    "BUF",
+    "LAR"
+   ]
+  },
+  {
+   "id": "JJxsSXkj7UtlqbdT",
+   "headline": "'Football 301' diagnoses fatal flaws of 6 NFL contenders: What could derail Bills, Chiefs, Seahawks and more?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/football-301-diagnoses-fatal-flaws-of-6-nfl-contenders-what-could-derail-bills-chiefs-seahawks-and-more-032354855.html",
+   "timestamp": "2026-10-14T03:23:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "KC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "lP1-xuYUEjBAdDc6",
+   "headline": "Chargers Sign QB Jake Browning",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/chargers-sign-qb-jake-browning",
+   "timestamp": "2026-10-14T03:17:37.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "YQUSQIf_pxf6Ai5B",
+   "headline": "Rams PFF grades: Jaylen Watson & Puka Nacua earn top marks vs Bills",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-pff-grades-jaylen-watson-025907880.html",
+   "timestamp": "2026-10-14T02:59:07.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "BUF",
+    "LAR"
+   ]
+  },
   {
    "id": "omTuqbiR7a2Y15nR",
    "headline": "NFL coaches on the hot seat: Who's in the most trouble after 5 weeks?",
@@ -12,14 +154,14 @@
    "category": "breaking"
   },
   {
-   "id": "_3IQRGoiN519tmQB",
-   "headline": "Tyreek Hill’s Civil Trial Concludes; ‘Chiefs Or Nowhere’ For Embattled WR?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/tyreek-hills-civil-trial-concludes-chiefs-or-nowhere-for-embattled-wr",
-   "timestamp": "2026-10-14T02:28:59.000Z",
+   "id": "-AAponssqMux5QuO",
+   "headline": "49ers Dre Greenlaw’s suspension appeal gets crushed after headbutt to helmetless player",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-dre-greenlaw-suspension-appeal-022831536.html",
+   "timestamp": "2026-10-14T02:28:31.000Z",
    "category": "breaking",
    "team_abbrs": [
-    "KC"
+    "SF"
    ]
   },
   {
@@ -56,6 +198,28 @@
    ]
   },
   {
+   "id": "xOMnKkrDoWkLb7SG",
+   "headline": "Saints owner Gayle Benson rips team as it limps into Week 6: ‘I will not accept this level of performance’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-owner-gayle-benson-rips-011145460.html",
+   "timestamp": "2026-10-14T01:11:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "9aQbJl5UQEcfFKFU",
+   "headline": "Giants are dialing up the blitz — and it’s already paying off",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-dialing-blitz-already-paying-010738795.html",
+   "timestamp": "2026-10-14T01:07:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
    "id": "dsNrwxToYoxSsfXj",
    "headline": "NFL has been \"monitoring developments\" in Tyreek Hill case",
    "source": "Yahoo Sports",
@@ -72,6 +236,20 @@
    "category": "breaking",
    "team_abbrs": [
     "CLE"
+   ]
+  },
+  {
+   "id": "uqXEuxIhaSTMMC0U",
+   "headline": "Micah Parsons believes Jayden Daniels ‘probably cost’ Dan Quinn his job after Giants overtime debacle",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/micah-parsons-believes-jayden-daniels-003526141.html",
+   "timestamp": "2026-10-14T00:35:26.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jayden-daniels"
+   ],
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -293,6 +471,17 @@
    ]
   },
   {
+   "id": "4t-kskcdpANmqrar",
+   "headline": "Vikings stadium board causes Tyreek Hill stir as wide receiver responds",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-stadium-board-causes-tyreek-225216349.html",
+   "timestamp": "2026-10-13T22:52:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
    "id": "ugQRxQXWBr8kqqyy",
    "headline": "Saints waive CB Jayden Price, sign CB Decamerion Richardson",
    "source": "Yahoo Sports",
@@ -326,17 +515,6 @@
    ],
    "team_abbrs": [
     "BUF"
-   ]
-  },
-  {
-   "id": "I0qd12ttfdMalkuI",
-   "headline": "Gayle Benson: Recent Saints Performance Level Unacceptable",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/gayle-benson-recent-saints-performance-unacceptable",
-   "timestamp": "2026-10-13T22:33:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
    ]
   },
   {
@@ -613,28 +791,6 @@
    "team_abbrs": [
     "CLE",
     "MIN"
-   ]
-  },
-  {
-   "id": "WM22HhymLtO3zJB6",
-   "headline": "NFL Hands Rams LT Alaric Jackson Two-Game Suspension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/nfl-suspends-rams-lt-alaric-jackson-for-two-games",
-   "timestamp": "2026-10-13T20:51:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "V5awg7pVmXej920m",
-   "headline": "Bears DE Montez Sweat Receives Two-Game PED Suspension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bears-de-montez-sweat-receives-two-game-suspension",
-   "timestamp": "2026-10-13T20:49:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
    ]
   },
   {
@@ -1495,159 +1651,6 @@
    "team_abbrs": [
     "NE"
    ]
-  },
-  {
-   "id": "jJoC53qjebmTm8hH",
-   "headline": "Who is the best WR in the NFL? How Puka Nacua stacks up vs. JSN, Ja'Marr after historic 'MNF'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/ranking-best-nfl-wrs-jaxon-smith-njigba-jamarr-chase-puka-nacua/",
-   "timestamp": "2026-10-13T15:11:43.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "ml4IJq9OMe_nU_Hq",
-   "headline": "Vikings Work Out WR JuJu Smith-Schuster",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/vikings-work-out-wr-juju-smith-schuster",
-   "timestamp": "2026-10-13T14:55:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "bdEddyNLt2QLVUAv",
-   "headline": "TreVeyon Henderson: Out multiple weeks with high-ankle sprain",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/treveyon-henderson-18517",
-   "timestamp": "2026-10-13T14:26:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "treveyon-henderson"
-   ]
-  },
-  {
-   "id": "Z6fkTW0LtYDvv5qF",
-   "headline": "Five NFL teams getting the most out of their rookie class: Dolphins, Browns leading the way",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/five-nfl-teams-getting-most-out-of-2026-rookie-class-dolphins-browns/",
-   "timestamp": "2026-10-13T14:05:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "MIA"
-   ]
-  },
-  {
-   "id": "kx3xDXWXrLnvkWM8",
-   "headline": "Rams vs. Bills thriller: Josh Allen accomplishes something he's never done before in Buffalo's OT win",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bills-josh-allen-earns-first-overtime-win-vs-rams/",
-   "timestamp": "2026-10-13T13:27:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ],
-   "team_abbrs": [
-    "BUF",
-    "LAR"
-   ]
-  },
-  {
-   "id": "eX6QZG_CZfcsnH2M",
-   "headline": "Josh Allen, Bills top Rams in dramatic OT thriller; Brewers go up 2-0 on Dodgers in NLCS",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/josh-allen-stafford-bills-rams-overtime-brewers-dodgers-nlcs/",
-   "timestamp": "2026-10-13T12:50:10.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ],
-   "team_abbrs": [
-    "BUF",
-    "LAR"
-   ]
-  },
-  {
-   "id": "jZ-ggdawuQ4WT2vm",
-   "headline": "Top 10 best NFL free agent acquisitions through Week 5: Kenneth Walker III, Mike Evans on top",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/best-nfl-free-agent-acquisitions-kenneth-walker-mike-evans/",
-   "timestamp": "2026-10-13T12:37:18.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker",
-    "mike-evans"
-   ]
-  },
-  {
-   "id": "5dLbmztH-vwwt7X-",
-   "headline": "How an initial 2026 NFL Draft embarrassment actually ended up benefitting the Steelers",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/how-an-initial-2026-nfl-draft-embarrassment-actually-ended-up-benefitting-the-steelers/",
-   "timestamp": "2026-10-13T12:35:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "_7kTMzbpgpavmpLN",
-   "headline": "Cam Ward isn't getting benched, but should Titans consider drafting a QB in 2027? History offers clues",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/should-titans-draft-qb-2027-nfl-draft-cam-ward/",
-   "timestamp": "2026-10-13T12:31:06.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-ward"
-   ],
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "ApCQarA2FzqFR4kD",
-   "headline": "Miami Dolphins’ Most Valuable Player | Week Five | Power",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/miami-dolphins-most-valuable-player-123000350.html",
-   "timestamp": "2026-10-13T12:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "PygynQIs0GuBSYwB",
-   "headline": "Where every Detroit Lions starter ranks at their position at the bye",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/where-every-detroit-lions-starter-123000267.html",
-   "timestamp": "2026-10-13T12:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "-tuP4JVO0LCz9JtD",
-   "headline": "Report: Jaguars OT Anton Harrison to have knee surgery",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/report-jaguars-ot-anton-harrison-122406780.html",
-   "timestamp": "2026-10-13T12:24:06.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "oFluc44rYY1Ub73V",
-   "headline": "Rebels in the Pros: NFL Week 5",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rebels-pros-nfl-week-5-121500739.html",
-   "timestamp": "2026-10-13T12:15:00.000Z",
-   "category": "breaking"
   }
  ]
 }
