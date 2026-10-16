@@ -1,8 +1,460 @@
 {
  "schema_version": 1,
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "ppf71ctEskU1rt2R",
+   "headline": "Twelve receptions for Jaxon Smith-Njigba in Week 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/twelve-receptions-jaxon-smith-njigba-050423760.html",
+   "timestamp": "2026-10-16T05:04:23.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxon-smith-njigba"
+   ]
+  },
+  {
+   "id": "fFa6g-kZEsEWHSoo",
+   "headline": "Jaylen Waddle: Team-high catch total Thursday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jaylen-waddle-15404",
+   "timestamp": "2026-10-16T04:59:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaylen-waddle"
+   ]
+  },
+  {
+   "id": "fyN2rwr0cMCMUQzZ",
+   "headline": "Commanders S Nick Cross full participant in Thurs practice – All aTwitter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-nick-cross-full-participant-045213583.html",
+   "timestamp": "2026-10-16T04:52:13.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "bEVeYRyn-89kZ919",
+   "headline": "What do NFL evaluators really see in Arch Manning's uneven season? 'There's a lot more polished guys that are farther along'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/what-do-nfl-evaluators-really-see-in-arch-mannings-uneven-season-theres-a-lot-more-polished-guys-that-are-farther-along-043424493.html",
+   "timestamp": "2026-10-16T04:34:24.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "jNLzrLsUpU7myQBv",
+   "headline": "Sam Darnold: Key errors in OT loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/sam-darnold-12490",
+   "timestamp": "2026-10-16T04:17:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
+   "id": "N0DA1TrptRUhTufj",
+   "headline": "Broncos batter Sam Darnold, outlast Seahawks in defensive slugfest: TNF winners, losers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-batter-sam-darnold-outlast-040442231.html",
+   "timestamp": "2026-10-16T04:04:42.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "SKDIsakpRD91seFy",
+   "headline": "Eagles QB Jalen Hurts To Miss Week 6 Due To ‘Superficial’ Blood Clot",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-qb-jalen-hurts-to-miss-week-6-due-to-superficial-blood-clot",
+   "timestamp": "2026-10-16T04:02:55.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "tHKeETk7Q9jCu4F3",
+   "headline": "Seahawks need to consider whether Drew Lock gives them a better chance to win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-consider-whether-drew-lock-034921176.html",
+   "timestamp": "2026-10-16T03:49:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "YeKgJy51WyzTK8AR",
+   "headline": "Thursday Night Football: Broncos beat Seahawks 17-14 in overtime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-broncos-beat-034554814.html",
+   "timestamp": "2026-10-16T03:45:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "_ezrHOu9ofePI6-v",
+   "headline": "Instant reaction: Broncos upend Seahawks in overtime thriller on Thursday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/instant-reaction-broncos-upend-seahawks-034553494.html",
+   "timestamp": "2026-10-16T03:45:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "F4EszDMPodeSdSmM",
+   "headline": "Seahawks-Broncos score: It might be time to bench Sam Darnold after OT loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-broncos-score-might-time-033922802.html",
+   "timestamp": "2026-10-16T03:39:22.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "RBk7eLwR1TwnMBnD",
+   "headline": "Broncos’ defense did everything possible to beat Seahawks; offense went three-and-out",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-defense-did-everything-possible-033444299.html",
+   "timestamp": "2026-10-16T03:34:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "uWZXKTNgplLXhqW0",
+   "headline": "Broncos vs. Seahawks: Week 6 Live Fan Discussion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-seahawks-week-6-235000001.html",
+   "timestamp": "2026-10-16T03:32:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "3niVyjnwv88JLms4",
+   "headline": "NFL overtime rules: What to know for the 2026 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-overtime-rules-know-2026-032240621.html",
+   "timestamp": "2026-10-16T03:22:40.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "ZA21w1heT4dGTXCj",
+   "headline": "Seahawks draw to within 14-11 of Broncos",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-draw-within-14-11-030330945.html",
+   "timestamp": "2026-10-16T03:03:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "3Eml6WW7ZV4BH5_u",
+   "headline": "Tanner McKee faces a big challenge for Eagles, who might soon have to face reality",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/tanner-mckee-faces-a-big-challenge-for-eagles-who-might-soon-have-to-face-reality-030038948.html",
+   "timestamp": "2026-10-16T03:00:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "g4N8rNMPMja1HY6Q",
+   "headline": "NFL says it will be \"selective\" about playing on Wednesdays",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-says-selective-playing-wednesdays-025237438.html",
+   "timestamp": "2026-10-16T02:52:37.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "JkFGKyFjWvj9WXGH",
+   "headline": "Bears QB Caleb Williams Suffered Hamstring Tear",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/bears-qb-caleb-williams-suffered-hamstring-tear",
+   "timestamp": "2026-10-16T02:50:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "DjXV-_lVDESWY9vk",
+   "headline": "Packers’ Josh Jacobs Files For Permanent Injunction Over Access To Evidence",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/packers-rb-josh-jacobs-files-for-permanent-injunction-over-access-to-evidence",
+   "timestamp": "2026-10-16T02:45:03.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "cP6hAYfMtqHD09Bd",
+   "headline": "Broncos vs. Seahawks third quarter recap",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-seahawks-third-quarter-023051464.html",
+   "timestamp": "2026-10-16T02:30:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "OqTFnIvN9pID8GG4",
+   "headline": "Falcons vs. Bears injury report: C.J. Henderson not practicing",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-vs-bears-injury-report-023019682.html",
+   "timestamp": "2026-10-16T02:30:19.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "W6vvyx0ChYHGjEAX",
+   "headline": "Jets S Minkah Fitzpatrick will appeal fine for hit on Browns WR KC Concepcion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-minkah-fitzpatrick-appeal-fine-022333961.html",
+   "timestamp": "2026-10-16T02:23:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "CU_cBHzCRceBBFUT",
+   "headline": "Buccaneers vs. Steelers: Week 6 Thursday Injury Report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buccaneers-vs-steelers-week-6-020748877.html",
+   "timestamp": "2026-10-16T02:07:48.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PIT",
+    "TB"
+   ]
+  },
+  {
+   "id": "CbKW8cCbeA18MucN",
+   "headline": "Broncos wide receiver Jaylen Waddle questionable to return with shoulder injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-wide-receiver-jaylen-waddle-020445644.html",
+   "timestamp": "2026-10-16T02:04:45.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaylen-waddle"
+   ],
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "TSko0myGb0VxINiG",
+   "headline": "Eagles Open Four Practice Windows",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-open-four-practice-windows",
+   "timestamp": "2026-10-16T02:02:58.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "9ASKpU8xFV0wPrYQ",
+   "headline": "Full practice for Jonathan Taylor",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/full-practice-jonathan-taylor-015959676.html",
+   "timestamp": "2026-10-16T01:59:59.000Z",
+   "category": "practice",
+   "player_ids": [
+    "jonathan-taylor"
+   ]
+  },
+  {
+   "id": "xMIBOqSUsjR6BoyZ",
+   "headline": "Jaylen Waddle injury update as Broncos WR hurts shoulder, returns vs. Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaylen-waddle-injury-broncos-wr-015207613.html",
+   "timestamp": "2026-10-16T01:52:07.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jaylen-waddle"
+   ],
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "aPlxLM-jPrz29EZ9",
+   "headline": "Daniel Jones a full go at practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daniel-jones-full-practice-014519529.html",
+   "timestamp": "2026-10-16T01:45:19.000Z",
+   "category": "practice",
+   "player_ids": [
+    "daniel-jones",
+    "aaron-jones"
+   ]
+  },
+  {
+   "id": "rfsIr-_45i5dQ__x",
+   "headline": "Thursday Night Football: Broncos lead Seahawks 14-3 at halftime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-broncos-lead-014446232.html",
+   "timestamp": "2026-10-16T01:44:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "vEq6hzg_6xJPeHPd",
+   "headline": "Seattle Seahawks at Denver Broncos Open Thread!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seattle-seahawks-denver-broncos-open-014422901.html",
+   "timestamp": "2026-10-16T01:44:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "WHsv0SM1h32fB7Ql",
+   "headline": "Josh Downs logs full practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-downs-logs-full-practice-013820663.html",
+   "timestamp": "2026-10-16T01:38:20.000Z",
+   "category": "practice",
+   "player_ids": [
+    "josh-downs"
+   ]
+  },
+  {
+   "id": "YlL8ndaHpXepwHFZ",
+   "headline": "Broncos vs. Seahawks second quarter recap",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-seahawks-second-quarter-013717226.html",
+   "timestamp": "2026-10-16T01:37:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
+  {
+   "id": "8JeasdkZaMnZRBzM",
+   "headline": "Broncos running back Tyler Badie ruled out for Thursday Night Football with thumb injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-running-back-tyler-badie-013030237.html",
+   "timestamp": "2026-10-16T01:30:30.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "X_jGe01hKHCdNJsE",
+   "headline": "Former Rams Super Bowl champion blasts Harrison Mevis following kicker’s release",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-rams-super-bowl-champion-012553226.html",
+   "timestamp": "2026-10-16T01:25:53.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "harrison-mevis"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "EO2ntthcsdq7LCuJ",
+   "headline": "Broncos run for a second TD, 14-3 lead",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-run-second-td-14-012013458.html",
+   "timestamp": "2026-10-16T01:20:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "UFxQ_sLtOXz6lMB1",
+   "headline": "NFL Practice Squad Updates: 10/15/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-practice-squad-updates-10-15-26",
+   "timestamp": "2026-10-16T01:16:04.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "ph2-f038mPNfdfsy",
+   "headline": "Bills injuries: Spencer Brown is back; DJ Moore a question mark for Week 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-injuries-spencer-brown-back-010601037.html",
+   "timestamp": "2026-10-16T01:06:01.000Z",
+   "category": "injury",
+   "player_ids": [
+    "amon-ra-st-brown",
+    "aj-brown",
+    "dj-moore"
+   ],
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "1PfgmJaZ7krEjjn-",
+   "headline": "Broncos take 7-3 lead over Seahawks in second quarter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-7-3-lead-over-010230137.html",
+   "timestamp": "2026-10-16T01:02:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
+   ]
+  },
   {
    "id": "hwpzOQ0576K1_2nT",
    "headline": "49ers WR Mike Evans misses practice with Achilles soreness",
@@ -15,6 +467,18 @@
    ],
    "team_abbrs": [
     "SF"
+   ]
+  },
+  {
+   "id": "n6QDNEWxTaHZjRgN",
+   "headline": "Broncos vs. Seahawks first quarter recap",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-seahawks-first-quarter-004746782.html",
+   "timestamp": "2026-10-16T00:47:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "SEA"
    ]
   },
   {
@@ -98,6 +562,20 @@
    ]
   },
   {
+   "id": "ehuAQAr-RiiGRz4S",
+   "headline": "Meet Tanner McKee, the Eagles backup expected to start after Jalen Hurts’ blood clot scare",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/meet-tanner-mckee-eagles-backup-000603220.html",
+   "timestamp": "2026-10-16T00:06:03.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
    "id": "luEGc-X1iQl10Vab",
    "headline": "Week 6 Yahoo Fantasy x Arena Club Slab Packs: Josh Allen, Puka Nacua among chase cards",
    "source": "Yahoo Sports",
@@ -127,18 +605,6 @@
    "source": "CBS Sports",
    "url": "https://www.cbssports.com/nfl/news/broncos-cheating-accusation-seahawks-mike-macdonald/",
    "timestamp": "2026-10-15T23:53:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "SEA"
-   ]
-  },
-  {
-   "id": "uWZXKTNgplLXhqW0",
-   "headline": "Broncos vs. Seahawks: Week 6 Live Fan Discussion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-seahawks-week-6-235000001.html",
-   "timestamp": "2026-10-15T23:50:00.000Z",
    "category": "breaking",
    "team_abbrs": [
     "DEN",
@@ -195,6 +661,17 @@
    "category": "practice",
    "player_ids": [
     "jeremiyah-love"
+   ]
+  },
+  {
+   "id": "5CFms1ctc8wWL_ho",
+   "headline": "Azareye’h Thomas emerging as Jets’ answer at cornerback",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/azareye-h-thomas-emerging-jets-233506776.html",
+   "timestamp": "2026-10-15T23:35:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -406,18 +883,16 @@
   },
   {
    "id": "ZjAF2bMKok39Oayg",
-   "headline": "Seahawks vs. Broncos live updates, inactives, where to watch: Jaxon Smith-Njigba, Sam Darnold take on short-handed Denver secondary on 'Thursday Night Football'",
+   "headline": "Broncos offense goes nowhere after halftime but wins in OT after Seattle's Sam Darnold throws INT",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/seahawks-broncos-score-live-updates-inactives-highlights-stats-where-to-watch-week-6-223000561.html",
    "timestamp": "2026-10-15T22:30:00.000Z",
    "category": "breaking",
    "player_ids": [
-    "sam-darnold",
-    "jaxon-smith-njigba"
+    "sam-darnold"
    ],
    "team_abbrs": [
-    "DEN",
-    "SEA"
+    "DEN"
    ]
   },
   {
@@ -701,20 +1176,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NO"
-   ]
-  },
-  {
-   "id": "DjXV-_lVDESWY9vk",
-   "headline": "Packers’ Josh Jacobs Files For Permanent Injunction Over Access To Evidence",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/packers-rb-josh-jacobs-files-for-permanent-injunction-over-access-to-evidence",
-   "timestamp": "2026-10-15T21:20:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "GB"
    ]
   },
   {
@@ -1176,7 +1637,7 @@
   },
   {
    "id": "2Z6-9XjD3JA3TxOe",
-   "headline": "Bucs QB Baker Mayfield To Miss 3rd Straight Game",
+   "headline": "Bucs QB Baker Mayfield To Miss Third Straight Game",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/10/bucs-qb-baker-mayfield-to-miss-3rd-straight-game",
    "timestamp": "2026-10-15T18:57:36.000Z",
@@ -1299,460 +1760,6 @@
    ],
    "team_abbrs": [
     "PHI"
-   ]
-  },
-  {
-   "id": "MIeQqul7xx-rsHJB",
-   "headline": "DeVonta Smith: Working off to side Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/devonta-smith-15406",
-   "timestamp": "2026-10-15T18:21:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "devonta-smith"
-   ]
-  },
-  {
-   "id": "BQogy4JKx1R6ifj3",
-   "headline": "Steve Spagnuolo on Chiefs’ pass rush: ‘It’s a step away’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steve-spagnuolo-chiefs-pass-rush-181500350.html",
-   "timestamp": "2026-10-15T18:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "lLThn8o5y7EORdWc",
-   "headline": "Josh Jacobs: Files civil suit Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/josh-jacobs-13582",
-   "timestamp": "2026-10-15T18:15:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ]
-  },
-  {
-   "id": "mbUijXhVsPC2Gqeo",
-   "headline": "Tanner McKee to start at QB for the Eagles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tanner-mckee-start-qb-eagles-181419460.html",
-   "timestamp": "2026-10-15T18:14:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "1rUng8Ricis2M16M",
-   "headline": "Jalen Hurts ruled out of Eagles' Week 6 matchup vs. Panthers due to superficial blood clot",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/eagles-rule-out-jalen-hurts-for-week-6-vs-panthers/",
-   "timestamp": "2026-10-15T18:01:51.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "CAR",
-    "PHI"
-   ]
-  },
-  {
-   "id": "bdHy9kXJzyaDvMq6",
-   "headline": "NFL predictions: Will underdog Giants upend the Saints?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-underdog-giants-upend-180000798.html",
-   "timestamp": "2026-10-15T18:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO",
-    "NYG"
-   ]
-  },
-  {
-   "id": "dtSekMi7ZBzth2fR",
-   "headline": "NFL Expert Picks for Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-expert-picks-week-6-180000128.html",
-   "timestamp": "2026-10-15T18:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "RfV70riEyVB4yaPG",
-   "headline": "Rams could bring back old friend as insurance behind A.J. Jackson",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-could-bring-back-old-175501073.html",
-   "timestamp": "2026-10-15T17:55:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "nQ9R0HB77Mq2Gxy0",
-   "headline": "Bucs OC Zac Robinson: Baker Mayfield \"just not quite ready\" to return this week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bucs-oc-zac-robinson-baker-174711286.html",
-   "timestamp": "2026-10-15T17:47:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "baker-mayfield"
-   ]
-  },
-  {
-   "id": "AKAcUSPnvCxo7H5I",
-   "headline": "Buccaneers, Steelers: Week 6 game preview",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buccaneers-steelers-week-6-game-174428399.html",
-   "timestamp": "2026-10-15T17:44:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT",
-    "TB"
-   ]
-  },
-  {
-   "id": "qv3wuJove3CWNzo0",
-   "headline": "Tanner McKee set for the first meaningful start of his NFL career with Jalen Hurts out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tanner-mckee-set-first-meaningful-173643978.html",
-   "timestamp": "2026-10-15T17:36:43.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ]
-  },
-  {
-   "id": "DpOtX6eIwtZA6j6B",
-   "headline": "Mason Graham, Quinshon Judkins, Carson Schwesinger remain out of Browns practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mason-graham-quinshon-judkins-carson-173042132.html",
-   "timestamp": "2026-10-15T17:30:42.000Z",
-   "category": "practice",
-   "player_ids": [
-    "quinshon-judkins"
-   ],
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "2_TwY2KwGCEUT37w",
-   "headline": "2026 NFL QB Rankings- Quarter Pole Edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfl-qb-rankings-quarter-173000456.html",
-   "timestamp": "2026-10-15T17:30:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "BzyLS-ajVxMnN7t7",
-   "headline": "49ers news: 10 trade targets for the Niners at the deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-news-10-trade-targets-173000612.html",
-   "timestamp": "2026-10-15T17:30:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "GXhznR4bqGWHX47l",
-   "headline": "Jalen Hurts to miss Week 6 due to blood clot",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jalen-hurts-miss-week-6-172030601.html",
-   "timestamp": "2026-10-15T17:20:30.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ]
-  },
-  {
-   "id": "x_Kgg4GQNn0SSqDr",
-   "headline": "Lamar Jackson remains out of practice on Thursday for Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lamar-jackson-remains-practice-thursday-172028625.html",
-   "timestamp": "2026-10-15T17:20:28.000Z",
-   "category": "practice",
-   "player_ids": [
-    "lamar-jackson"
-   ]
-  },
-  {
-   "id": "OMYEzVshbzPIZQ5J",
-   "headline": "Week 6 NFL odds, spreads, totals, lines for all 14 games, including Broncos-Seahawks, Packers-Cowboys",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-6-nfl-betting-odds-lines-spreads-totals/",
-   "timestamp": "2026-10-15T17:17:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "DEN",
-    "GB",
-    "SEA"
-   ]
-  },
-  {
-   "id": "c5cW9veAMB1lpS0A",
-   "headline": "Cowboys DC Christian Parker \"most likely\" coaching from the sideline this week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-dc-christian-parker-most-171250464.html",
-   "timestamp": "2026-10-15T17:12:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "9AR4-vN3wW3nWb91",
-   "headline": "Jalen Hurts will miss Eagles-Panthers game due to “superficial blood clot”",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jalen-hurts-miss-eagles-panthers-171248821.html",
-   "timestamp": "2026-10-15T17:12:48.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "CAR",
-    "PHI"
-   ]
-  },
-  {
-   "id": "dXgqPhPnR49ZU2WL",
-   "headline": "Eagles sign running back to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-sign-running-back-practice-171100763.html",
-   "timestamp": "2026-10-15T17:11:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "SKDIsakpRD91seFy",
-   "headline": "Eagles QB Jalen Hurts To Miss Week 6 Due To ‘Superficial’ Blood Clot",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-qb-jalen-hurts-to-miss-week-6-due-to-superficial-blood-clot",
-   "timestamp": "2026-10-15T17:08:55.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "pqQT9iXwJewc1CzD",
-   "headline": "Use DraftKings promo code to get $200 in bonus bets, free NBA League Pass for Broncos vs. Seahawks on TNF",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-bets-free-nba-league-pass-for-broncos-seahawks-thursday-night-football/",
-   "timestamp": "2026-10-15T17:08:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "SEA"
-   ]
-  },
-  {
-   "id": "f2E4ab3t_Tn647mJ",
-   "headline": "Eagles QB Jalen Hurts ruled out for Week 6 after blood clot found in his leg",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/eagles-qb-jalen-hurts-ruled-out-for-week-6-after-blood-clot-found-in-his-leg-171742514.html",
-   "timestamp": "2026-10-15T17:08:16.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "s0yDkoOXZhPvcS3W",
-   "headline": "Jalen Hurts' blood clot complicates already devolving Eagles' season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jalen-hurts-ruled-eagles-due-170802897.html",
-   "timestamp": "2026-10-15T17:08:02.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "_H21h-oRUDxJm4Tw",
-   "headline": "Tyreek Hill rumors: Do Chiefs even have room for WR after reworking record-breaking offense?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/tyreek-hill-rumors-do-chiefs-have-room-for-wr/",
-   "timestamp": "2026-10-15T17:02:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "1pZDqx29TjamrD7B",
-   "headline": "‘Peanut punch’ prevalence has gotten Giants’ attention",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/peanut-punch-prevalence-gotten-giants-165949767.html",
-   "timestamp": "2026-10-15T16:59:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "bI8sg2rAj6UYqOJq",
-   "headline": "Is “at least he didn’t turn it over” the new standard for Colts football?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/least-didn-t-turn-over-165420218.html",
-   "timestamp": "2026-10-15T16:54:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "oU7HwW35RSt7DJBU",
-   "headline": "Bills' Bradley Chubb reveals what he said that led to Alaric Jackson punch and suspension",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bills-bradley-chubb-reveals-what-he-said-alaric-jackson-punch/",
-   "timestamp": "2026-10-15T16:47:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "i-ucLJDKg5cZwNQk",
-   "headline": "Frank Reich on Jets RB room: ‘We have the best 1-2 combo in the NFL’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/frank-reich-jets-rb-room-164532618.html",
-   "timestamp": "2026-10-15T16:45:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "YWLrZx0JgYiYMCXy",
-   "headline": "Washington Commanders open practice window for key reserve linebacker",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/washington-commanders-open-practice-window-164352412.html",
-   "timestamp": "2026-10-15T16:43:52.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "nibMfkhI5Jjg9Dr8",
-   "headline": "Tiering the AFC by who the Chiefs should fear the most",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tiering-afc-chiefs-fear-most-163000154.html",
-   "timestamp": "2026-10-15T16:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "1k12h5PpWHke64wU",
-   "headline": "Giants DC Dennard Wilson: We love being home underdogs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-dc-dennard-wilson-love-162518543.html",
-   "timestamp": "2026-10-15T16:25:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "wn2ykZr_YMI689_y",
-   "headline": "Myles Garrett could make Rams return next week, per report",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ian-rapoport-reports-myles-garrett-161245568.html",
-   "timestamp": "2026-10-15T16:12:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "hAutMuAqmhTuuvQQ",
-   "headline": "NFL predictions: Las Vegas Raiders need major bounce-back performance in Week 6 against Buffalo Bills",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-las-vegas-raiders-160700275.html",
-   "timestamp": "2026-10-15T16:07:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "LV"
-   ]
-  },
-  {
-   "id": "lUGtUoP86w9O3aJi",
-   "headline": "Seahawks and Broncos set for rare uniform matchup on Thursday night: This almost never happens in NFL",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/seahawks-broncos-rare-uniform-matchup-thursday-night-football/",
-   "timestamp": "2026-10-15T16:05:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "SEA"
-   ]
-  },
-  {
-   "id": "eKd0wce2qRJkBLdN",
-   "headline": "Brock Purdy can achieve an NFL first on Monday Night Football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-purdy-achieve-nfl-first-160100238.html",
-   "timestamp": "2026-10-15T16:01:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-purdy"
-   ]
-  },
-  {
-   "id": "2E1nGcvYXINPIw7D",
-   "headline": "Cowboys edge player will see a playing time increase vs Packers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-edge-player-see-playing-160000556.html",
-   "timestamp": "2026-10-15T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "hm1NFrkyZnAGHjmI",
-   "headline": "Pick Six: Seahawks-Broncos predictions for Thursday night, plus NFL Week 6 picks and QB rankings",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/pick-six-seahawks-broncos-predictions-nfl-week-6-picks/",
-   "timestamp": "2026-10-15T15:50:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "SEA"
-   ]
-  },
-  {
-   "id": "SbACiT8SwJFkX474",
-   "headline": "Week 6 NFL odds, picks, predictions: Computer model backs Patriots and Cardinals",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-spreads-picks-predictions-lines-best-bets-week-6-2026/",
-   "timestamp": "2026-10-15T15:30:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "NE"
    ]
   }
  ]
