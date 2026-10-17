@@ -1,8 +1,186 @@
 {
  "schema_version": 1,
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "HjIQJdb7Ek91e10G",
+   "headline": "Seahawks Not Considering QB Change",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/seahawks-not-considering-qb-change",
+   "timestamp": "2026-10-17T03:44:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "Y20bPzLonlzAoJoI",
+   "headline": "Packers RB Josh Jacobs To Be Removed From Commissioner’s Exempt List",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/packers-rb-josh-jacobs-to-be-removed-from-commissioners-exempt-list",
+   "timestamp": "2026-10-17T03:09:49.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "7fmbZyyWUOiX84Mi",
+   "headline": "Eagles Sign QB Joe Milton Off Cowboys’ PS; Latest On Jalen Hurts",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-sign-qb-joe-milton-off-cowboys-ps-latest-on-jalen-hurts",
+   "timestamp": "2026-10-17T03:00:16.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "0mysH7LEzpYDMYYL",
+   "headline": "Ravens’ Lamar Jackson, Cam Jurgens Out For Week 6",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/ravens-lamar-jackson-cam-jurgens-out-for-week-6",
+   "timestamp": "2026-10-17T02:49:23.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "lamar-jackson"
+   ],
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "Ss7d9JRdbQOzTkCy",
+   "headline": "Troy Aikman's role with the Dolphins hovers over his broadcasting future",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/troy-aikmans-role-dolphins-hovers-022422961.html",
+   "timestamp": "2026-10-17T02:24:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "Vh_EghZ0bsRnpzYL",
+   "headline": "Spencer Brown is good to go, but five Bills remain questionable for Sunday’s game against the Raiders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/spencer-brown-good-five-bills-015744143.html",
+   "timestamp": "2026-10-17T01:57:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "LV"
+   ]
+  },
+  {
+   "id": "F6YXbqogM6Hr3-aN",
+   "headline": "Ravens vs. Browns Week 6 picks: No one believes in Cleveland",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-vs-browns-week-6-015316351.html",
+   "timestamp": "2026-10-17T01:53:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "CLE"
+   ]
+  },
+  {
+   "id": "xfkXGLZzSVuF9r95",
+   "headline": "Caleb Williams declares himself ready for Week 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/caleb-williams-declares-himself-ready-013433163.html",
+   "timestamp": "2026-10-17T01:34:33.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "caleb-williams"
+   ]
+  },
+  {
+   "id": "rfzjc6ITPqz3A92V",
+   "headline": "Cardinals To Activate S Kitan Crawford For Week 6",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cardinals-to-activate-s-kitan-crawford-for-week-6",
+   "timestamp": "2026-10-17T01:23:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "7umdDC4WUme_3Ujy",
+   "headline": "New York Jets: Geno Smith Appreciation Post",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-geno-smith-appreciation-003000503.html",
+   "timestamp": "2026-10-17T00:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "4C0yTGOzDCzo4dtT",
+   "headline": "Patrick Mahomes removed from injury report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patrick-mahomes-removed-injury-report-002922433.html",
+   "timestamp": "2026-10-17T00:29:22.000Z",
+   "category": "injury",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "IIf-ugTQpBRPRlYZ",
+   "headline": "The cracks in the Seahawks offense last season are now chasms under Brian Fleury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cracks-seahawks-offense-last-season-002326634.html",
+   "timestamp": "2026-10-17T00:23:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "5CQFufML7_3TTp7L",
+   "headline": "NFL Network analyst has doubts about Eagles’ Jalen Hurts story",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-network-analyst-doubts-eagles-001600730.html",
+   "timestamp": "2026-10-17T00:16:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "7QL-ktPJlwSTrzeU",
+   "headline": "Braelon Allen: Remains RB1 for Week 6",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/braelon-allen-17702",
+   "timestamp": "2026-10-17T00:02:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "fXX9OExZtqGkyEtM",
+   "headline": "NFL predictions: Bears will bounce back big against the Falcons",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-bears-bounce-back-000000526.html",
+   "timestamp": "2026-10-17T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
   {
    "id": "ELxQ_tDDgImZuuwb",
    "headline": "NFL Practice Squad Updates: 10/16/26",
@@ -10,6 +188,18 @@
    "url": "https://www.profootballrumors.com/2026/10/nfl-practice-squad-updates-10-16-26",
    "timestamp": "2026-10-16T23:54:47.000Z",
    "category": "practice"
+  },
+  {
+   "id": "p8qYwWHM1FcAc2-B",
+   "headline": "NFL predictions: Does Tennessee have an edge anywhere in Titans-Colts matchup?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-does-tennessee-edge-235419892.html",
+   "timestamp": "2026-10-16T23:54:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "TEN"
+   ]
   },
   {
    "id": "MN6E-J0p806KhsA2",
@@ -53,12 +243,49 @@
    ]
   },
   {
+   "id": "OBJF25VXTXygtSHe",
+   "headline": "Rams ‘Conductor’ finally meets his match — and gets a surprise he’ll never forget",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-conductor-finally-meets-match-232312099.html",
+   "timestamp": "2026-10-16T23:23:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "gSUJUeKjAiKszM33",
    "headline": "49ers injury updates: Kyle Juszczyk practices in full; 2 rookies miss",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/49ers-injury-updates-kyle-juszczyk-232003289.html",
    "timestamp": "2026-10-16T23:20:03.000Z",
    "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "gjbUjpFakOVyMQmB",
+   "headline": "Isaiah Likely emerging as Giants star after years in Mark Andrews’ shadow",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/isaiah-likely-emerging-giants-star-231939537.html",
+   "timestamp": "2026-10-16T23:19:39.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "isaiah-likely",
+    "mark-andrews"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "J-mW0shWTbSUA7KA",
+   "headline": "Why 49ers would be wise to hold Nick Bosa back one more week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/why-49ers-wise-hold-nick-231714608.html",
+   "timestamp": "2026-10-16T23:17:14.000Z",
+   "category": "breaking",
    "team_abbrs": [
     "SF"
    ]
@@ -73,6 +300,17 @@
    "team_abbrs": [
     "PIT",
     "TB"
+   ]
+  },
+  {
+   "id": "Nhiu7lD8FXW7LCMh",
+   "headline": "Giants get some good injury news after midweek scares",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-good-injury-news-midweek-230753144.html",
+   "timestamp": "2026-10-16T23:07:53.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -110,14 +348,14 @@
    ]
   },
   {
-   "id": "HjIQJdb7Ek91e10G",
-   "headline": "Seahawks Not Considering QB Change",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/seahawks-not-considering-qb-change",
-   "timestamp": "2026-10-16T22:45:14.000Z",
-   "category": "breaking",
+   "id": "vRW0SBrsNrFAs1Wu",
+   "headline": "Jason Pinnock gets chance to claim Giants starting job with Tyler Nubin sidelined",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jason-pinnock-gets-chance-claim-224531651.html",
+   "timestamp": "2026-10-16T22:45:31.000Z",
+   "category": "transaction",
    "team_abbrs": [
-    "SEA"
+    "NYG"
    ]
   },
   {
@@ -178,6 +416,20 @@
    "team_abbrs": [
     "BAL",
     "CLE"
+   ]
+  },
+  {
+   "id": "nnFsWaIZY57O0yaH",
+   "headline": "Cardinals star Jeremiyah Love to miss Week 6 during frustrating beginning to career",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-star-jeremiyah-love-miss-222404147.html",
+   "timestamp": "2026-10-16T22:24:04.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jeremiyah-love"
+   ],
+   "team_abbrs": [
+    "ARI"
    ]
   },
   {
@@ -253,6 +505,17 @@
    ]
   },
   {
+   "id": "VyfKvyt607ljZb9R",
+   "headline": "Josh Jacobs getting pulled off commissioner’s exempt list amid NFL investigation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-jacobs-getting-pulled-off-215327859.html",
+   "timestamp": "2026-10-16T21:53:27.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ]
+  },
+  {
    "id": "PMws2XZHBSIXPWTa",
    "headline": "Bills WR DJ Moore, DL Ed Oliver are questionable",
    "source": "Yahoo Sports",
@@ -325,20 +588,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "Y20bPzLonlzAoJoI",
-   "headline": "Packers RB Josh Jacobs To Be Removed From Commissioner’s Exempt List",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/packers-rb-josh-jacobs-to-be-removed-from-commissioners-exempt-list",
-   "timestamp": "2026-10-16T21:09:49.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "GB"
    ]
   },
   {
@@ -763,20 +1012,6 @@
    ]
   },
   {
-   "id": "0mysH7LEzpYDMYYL",
-   "headline": "Ravens’ Lamar Jackson, Cam Jurgens Out For Week 6",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/ravens-lamar-jackson-cam-jurgens-out-for-week-6",
-   "timestamp": "2026-10-16T19:37:23.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
    "id": "cTyeRZo_InM6zl-O",
    "headline": "Steelers may be without DK Metcalf vs. Buccaneers",
    "source": "Yahoo Sports",
@@ -1091,21 +1326,6 @@
    "team_abbrs": [
     "ARI",
     "LAR"
-   ]
-  },
-  {
-   "id": "7fmbZyyWUOiX84Mi",
-   "headline": "Eagles Sign QB Joe Milton Off Cowboys’ PS; Latest on Jalen Hurts",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-sign-qb-joe-milton-off-cowboys-ps-latest-on-jalen-hurts",
-   "timestamp": "2026-10-16T17:35:16.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "DAL",
-    "PHI"
    ]
   },
   {
@@ -1569,216 +1789,6 @@
    "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-super-bowl-contenders/",
    "timestamp": "2026-10-16T14:07:13.000Z",
    "category": "transaction"
-  },
-  {
-   "id": "Uj9pwlteNNw_6dRd",
-   "headline": "Ex-Giants wide receiver released by Indianapolis Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ex-giants-wide-receiver-released-140400104.html",
-   "timestamp": "2026-10-16T14:04:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "NYG"
-   ]
-  },
-  {
-   "id": "V0JAD_JOq9QwJKD9",
-   "headline": "Eagles News: Zack Baun says Tanner McKee has “got some sort of Tom Brady career arc to him”",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-zack-baun-says-140144533.html",
-   "timestamp": "2026-10-16T14:01:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "WgvIAg89JdH0hdSc",
-   "headline": "Jaxon Smith-Njigba on pace for NFL's first 2,000-yard receiving season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaxon-smith-njigba-pace-nfls-140039402.html",
-   "timestamp": "2026-10-16T14:00:39.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxon-smith-njigba"
-   ]
-  },
-  {
-   "id": "oFaofo8HfcveA8DT",
-   "headline": "Our Defense vs. Their Offense: New York Giants",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/defense-vs-offense-york-giants-140000976.html",
-   "timestamp": "2026-10-16T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "AG26PVBndJ1r1VRS",
-   "headline": "The Chiefs need Xavier Worthy now more than ever",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-xavier-worthy-now-more-140000407.html",
-   "timestamp": "2026-10-16T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "TJ3X8tstHZqe4g6w",
-   "headline": "Post-game analysis: Seahawks fight back vs. Broncos just to give the game away… again",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/post-game-analysis-seahawks-fight-140000923.html",
-   "timestamp": "2026-10-16T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "SEA"
-   ]
-  },
-  {
-   "id": "TYtpKqgZGBDxcDnW",
-   "headline": "Two playoff wins, one wild comeback, and a little Josh Allen history",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/two-playoff-wins-one-wild-140000858.html",
-   "timestamp": "2026-10-16T14:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen"
-   ]
-  },
-  {
-   "id": "HzF4A8pQ0eSaDh3s",
-   "headline": "‘War daddy’ Dre’Mont Jones has taken charge of Patriots’ edge room",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/war-daddy-dre-mont-jones-140000085.html",
-   "timestamp": "2026-10-16T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "6yXxzOlJBhuFjkRv",
-   "headline": "Does Marvin Harrison Jr. Make the Texans a Playoff Team?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/does-marvin-harrison-jr-texans-140000490.html",
-   "timestamp": "2026-10-16T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "dEghR9qv5y_m7ZpK",
-   "headline": "Duval Dispatch: Jaguars land Notre Dame pass rusher in new 2027 mock draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/duval-dispatch-jaguars-land-notre-135630639.html",
-   "timestamp": "2026-10-16T13:56:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "jcvKV_RvBO_zTKA0",
-   "headline": "Los Angeles Chargers news: Chargers-Chiefs final score predictions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-chargers-135156504.html",
-   "timestamp": "2026-10-16T13:51:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "LAC"
-   ]
-  },
-  {
-   "id": "sODUtiqAezyMN2V-",
-   "headline": "Ryan Fitzpatrick rips Broncos' Bo Nix after ugly 'TNF' game: 'He's not playing competitive football right now'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/ryan-fitzpatrick-rips-bo-nix-broncos-seahawks-overtime/",
-   "timestamp": "2026-10-16T13:42:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "fcUKmlumzITF8jJb",
-   "headline": "Colts release WR Darius Slayton",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-release-wr-darius-slayton-133950282.html",
-   "timestamp": "2026-10-16T13:39:50.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "rGl4INn72GDDZ__C",
-   "headline": "Which Week 6 game are you most looking forward to?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-6-game-most-looking-133000337.html",
-   "timestamp": "2026-10-16T13:30:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "NHUI-f3w5LDX3P7g",
-   "headline": "Marvin Harrison Jr. set for Texans debut as C.J. Stroud defends former Ohio State teammate",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/marvin-harrison-texans-debut-c-j-stroud/",
-   "timestamp": "2026-10-16T13:29:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "mxzT_oSs-CyaPPTG",
-   "headline": "Indianapolis Colts cut wide receiver Darius Slayton",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/indianapolis-colts-cut-wide-receiver-132858202.html",
-   "timestamp": "2026-10-16T13:28:58.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "eiaavU6n4ICgA6NX",
-   "headline": "Andrew Whitworth irritated with Harrison Mevis after Rams’ loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/andrew-whitworth-irritated-harrison-mevis-131133455.html",
-   "timestamp": "2026-10-16T13:11:33.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "harrison-mevis"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "2zqpvj9tsrIdFn1Q",
-   "headline": "Post-Snap Reads: Seahawks offense continues to struggle in loss to Broncos",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/post-snap-reads-seahawks-offense-130854263.html",
-   "timestamp": "2026-10-16T13:08:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "SEA"
-   ]
-  },
-  {
-   "id": "3N6N7GT8G8bbXVvK",
-   "headline": "Ranking NFL's best and worst divisions: New leader emerges entering Week 6",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-division-power-rankings-afc-north-nfc-west/",
-   "timestamp": "2026-10-16T13:06:08.000Z",
-   "category": "breaking"
   }
  ]
 }
