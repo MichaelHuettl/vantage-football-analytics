@@ -4,6 +4,629 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "VhCkN6vbdIDdop0a",
+   "headline": "Who has the edge between the Patriots and Jets?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/edge-between-patriots-jets-150808638.html",
+   "timestamp": "2026-10-18T15:08:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "6urW0F4xC2r4wvSK",
+   "headline": "Where to Watch: Colts host Titans for Week 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/where-watch-colts-host-titans-150744520.html",
+   "timestamp": "2026-10-18T15:07:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "TEN"
+   ]
+  },
+  {
+   "id": "_iqYTOULX2vDjeK8",
+   "headline": "Foster Moreau and Bhayshul Tuten have two TD catches each as Texans lead Jaguars",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/foster-moreau-bhayshul-tuten-two-150552157.html",
+   "timestamp": "2026-10-18T15:05:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bhayshul-tuten"
+   ],
+   "team_abbrs": [
+    "HOU",
+    "JAX"
+   ]
+  },
+  {
+   "id": "CoxzNvvHmG18-OCi",
+   "headline": "NFL Week 6 odds, picks: Best bets, player props, anytime touchdown scorers for Sunday games from Wil Brinson",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/nfl-week-6-odds-picks-best-bets-player-props-anytime-touchdown-scorers-for-sunday-games-will-brinson/",
+   "timestamp": "2026-10-18T15:01:16.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "o2ZjuclbT7GBSY9Y",
+   "headline": "Eagles Place QB Jalen Hurts On IR; Return Date Uncertain",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-to-place-jalen-hurts-on-ir",
+   "timestamp": "2026-10-18T15:01:06.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "J1HYJSse8y6JJWdt",
+   "headline": "Miami Dolphins offensive line review: Tracking the guards in Week 5",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-offensive-line-review-150000496.html",
+   "timestamp": "2026-10-18T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "HX-R-VNTDfLDEvmJ",
+   "headline": "LOOK: Marvin Harrison Jr. makes first catch as a member of the Texans",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/look-marvin-harrison-jr-makes-first-catch-texans/",
+   "timestamp": "2026-10-18T14:59:47.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "0UWl9gtjwGzDZKym",
+   "headline": "2026 Week 6 NFL odds, picks, predictions, best bets: Experts backing Giants, Chiefs, Packers on Sunday",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/2026-week-6-nfl-odds-picks-predictions-best-bets-experts-backing-giants-chiefs-packers-sunday/",
+   "timestamp": "2026-10-18T14:53:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "KC",
+    "NYG"
+   ]
+  },
+  {
+   "id": "3O_rYDnbR3o2DhtU",
+   "headline": "Dolphins fans losing faith in Malik Willis, team",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-fans-losing-faith-malik-144455516.html",
+   "timestamp": "2026-10-18T14:44:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "AZj73IqqxKvxUgRa",
+   "headline": "Panthers vs. Eagles odds, picks, prediction, spread: Start time, NFL Week 6 betting preview, best bets",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/panthers-vs-eagles-odds-picks-prediction-spread-start-time-nfl-week-6-betting-preview-best-bets/",
+   "timestamp": "2026-10-18T14:40:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "wjNHJmbVYnpPt_wO",
+   "headline": "Who is Josh Allen throwing to in Las Vegas Raiders-Buffalo Bills Week 6 matchup?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-allen-throwing-las-vegas-143900777.html",
+   "timestamp": "2026-10-18T14:39:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen"
+   ],
+   "team_abbrs": [
+    "BUF",
+    "LV"
+   ]
+  },
+  {
+   "id": "dPU_D5kESPZfrzKv",
+   "headline": "Will Campbell expected to play in Week 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/campbell-expected-play-week-6-143522953.html",
+   "timestamp": "2026-10-18T14:35:22.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "TJCWzsN3aI3nEJir",
+   "headline": "Intriguing players to watch in Falcons vs. Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/intriguing-players-watch-falcons-vs-143000599.html",
+   "timestamp": "2026-10-18T14:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "GtUVFZMXY2Q_uQFS",
+   "headline": "Patriots rooting guide for NFL Week 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-rooting-guide-nfl-week-223030765.html",
+   "timestamp": "2026-10-18T14:22:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "EiRTkJo5TSFdv57n",
+   "headline": "Patriots fans confident in Caleb Lomu if needed",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-fans-confident-caleb-lomu-141909203.html",
+   "timestamp": "2026-10-18T14:19:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "BlhofLhebY1xKB_x",
+   "headline": "Is Caleb Williams playing today? Bears QB injury update for Week 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/caleb-williams-playing-today-bears-141515164.html",
+   "timestamp": "2026-10-18T14:15:15.000Z",
+   "category": "injury",
+   "player_ids": [
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "gSymlUyUaco3BAFX",
+   "headline": "Best Kalshi promo code CBSSPORTS55 in California: Get $55 bonus for Chargers, Rams, 49ers Week 6 NFL games",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-in-california-get-55-bonus-for-chargers-rams-49ers-week-6-nfl-games/",
+   "timestamp": "2026-10-18T14:11:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "LAR",
+    "SF"
+   ]
+  },
+  {
+   "id": "mLCTXp5Ph-AQhMMa",
+   "headline": "‘Things I think’ before Giants-Saints kickoff: Giants have an opportunity",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/things-think-giants-saints-kickoff-110000424.html",
+   "timestamp": "2026-10-18T14:09:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO",
+    "NYG"
+   ]
+  },
+  {
+   "id": "y7uSCv_UF225HZvc",
+   "headline": "Browns Open To Re-Signing QB Deshaun Watson",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/browns-open-to-re-signing-qb-deshaun-watson",
+   "timestamp": "2026-10-18T14:06:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "acKrUNEDY3NJnthx",
+   "headline": "Cowboys vs. Packers odds, picks: First touchdown predictions for Sunday Night Football Week 6",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/cowboys-vs-packers-odds-picks-first-touchdown-predictions-for-sunday-night-football-week-6/",
+   "timestamp": "2026-10-18T14:00:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "GB"
+   ]
+  },
+  {
+   "id": "scIg5KCDccIbL3xE",
+   "headline": "Raiders News: Cian Sloan gets elevated from the practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-news-cian-sloan-gets-140000886.html",
+   "timestamp": "2026-10-18T14:00:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "gK0Z6Lqdg64IHbr0",
+   "headline": "Detroit Lions Week 6 NFL rooting guide: Best outcomes for playoff odds",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-week-6-nfl-140000317.html",
+   "timestamp": "2026-10-18T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "vGLeKzoVLjvb3Zga",
+   "headline": "Chicago Bears vs Atlanta Falcons Week 6 Pregame Live Message Board",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-vs-atlanta-falcons-140000372.html",
+   "timestamp": "2026-10-18T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "yyXvfVKdGVQffhlJ",
+   "headline": "NFL: Preparations continue for Steelers-Saints in Paris",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-preparations-continue-steelers-saints-135842424.html",
+   "timestamp": "2026-10-18T13:58:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO",
+    "PIT"
+   ]
+  },
+  {
+   "id": "F8N_B2IXYz7VbL5Z",
+   "headline": "Texans-Jaguars umpire Larry Smith injured, carted off in London",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/texans-jaguars-umpire-larry-smith-135510274.html",
+   "timestamp": "2026-10-18T13:55:10.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "HOU",
+    "JAX"
+   ]
+  },
+  {
+   "id": "B14N_xoynxPWnn5A",
+   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Steelers-Buccaneers, Chiefs-Chargers, NFL Week 6",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-steelers-buccaneers-chiefs-chargers-nfl-week-6/",
+   "timestamp": "2026-10-18T13:53:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC",
+    "PIT",
+    "TB"
+   ]
+  },
+  {
+   "id": "PYGvjzCKS7rBA_Zf",
+   "headline": "Use DraftKings promo code to get $200 in bonus bets, free NBA League Pass for Chiefs-Chargers, NFL betting",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/use-draftkings-promo-code-to-get-200-bonus-bets-free-nba-league-pass-chiefs-chargers-nfl-betting/",
+   "timestamp": "2026-10-18T13:45:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "JK28p87eIBP-Ms8u",
+   "headline": "Pre-Snap Reads: Seahawks searching for answers on a Sunday afternoon",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pre-snap-reads-seahawks-searching-134423475.html",
+   "timestamp": "2026-10-18T13:44:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "ZEUZUZCx9En3YaLl",
+   "headline": "Week 6 NFL odds, picks, predictions: Computer model backs Patriots and Cardinals",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-spread-predictions-bets-lines-for-week-6-2026/",
+   "timestamp": "2026-10-18T13:44:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "NE"
+   ]
+  },
+  {
+   "id": "PB6MrDdDI2bawG6g",
+   "headline": "Starkly split opinions on Bills entering Week 6’s game at Raiders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/starkly-split-opinions-bills-entering-134246906.html",
+   "timestamp": "2026-10-18T13:42:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "LV"
+   ]
+  },
+  {
+   "id": "YmGye9d7hwplwber",
+   "headline": "Bears-Falcons features NFL's top two rushing attacks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-falcons-features-nfls-top-134035584.html",
+   "timestamp": "2026-10-18T13:40:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "CtKhABol-EbUEyuv",
+   "headline": "A.J. Brown: Set to play 'good amount' of snaps Week 6",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/aj-brown-13432",
+   "timestamp": "2026-10-18T13:37:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "WpXN-_u-dVFUkgCy",
+   "headline": "NFL picks against the spread, Week 6 2026: Expert ATS picks, predictions, prop bets for Sunday, Oct. 18",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/nfl-picks-against-the-spread-week-6-2026-expert-ats-picks-predictions-prop-bets-sunday-oct-18/",
+   "timestamp": "2026-10-18T13:35:31.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "J7Z5w65hHvGs0hH5",
+   "headline": "Report: Najee Harris is expected to take larger role in Giants backfield",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-najee-harris-expected-larger-133425974.html",
+   "timestamp": "2026-10-18T13:34:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "pPVyiDCwGALQa_gv",
+   "headline": "NFL Week 6 live chat, game discussion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-6-live-chat-133000917.html",
+   "timestamp": "2026-10-18T13:30:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "MYJmSxDBOF8odW7M",
+   "headline": "Report: Tyler Shough has two broken bones in his left hand",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-tyler-shough-two-broken-132848070.html",
+   "timestamp": "2026-10-18T13:28:48.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tyler-shough"
+   ]
+  },
+  {
+   "id": "KEidrXIXyQpcYG56",
+   "headline": "Patriots RB TreVeyon Henderson To Play In Week 6; Latest On OLB Harold Landry, LT Will Campbell",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/patriots-rb-treveyon-henderson-could-miss-time-latest-on-olb-harold-landry",
+   "timestamp": "2026-10-18T13:27:49.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "treveyon-henderson"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "pCa-sFyX66_HLdm_",
+   "headline": "Use FanDuel promo code to get $350 in bonus bets by targeting Ravens-Browns, Chargers-Chiefs, NFL Week 6",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-ravens-browns-chargers-chiefs-nfl-week-6/",
+   "timestamp": "2026-10-18T13:24:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "CLE",
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "zLWP8DsyGy53rZfK",
+   "headline": "Week 6 game thread: The calm before Monday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/week-6-game-thread-calm-132432958.html",
+   "timestamp": "2026-10-18T13:24:32.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "vDthUaJq35PzBEia",
+   "headline": "Texans vs. Jaguars odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus, NFL Week 6 London game",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/texans-vs-jaguars-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-nfl-week-6-london-game/",
+   "timestamp": "2026-10-18T13:17:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU",
+    "JAX"
+   ]
+  },
+  {
+   "id": "vBLiuAO4fXKiIn5_",
+   "headline": "Seahawks fan chat: NFL Week 6 Sunday games, Cowboys vs. Packers live discussion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-fan-chat-nfl-week-131500518.html",
+   "timestamp": "2026-10-18T13:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "GB",
+    "SEA"
+   ]
+  },
+  {
+   "id": "Dn8NQjMLt75-lhnl",
+   "headline": "Polymarket promo code CBSSPORTS in Texas: Get $25 bonus for Texans, Cowboys in Week 6",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/polymarket-promo-code-cbssports-in-texas-get-25-bonus-for-texans-cowboys-in-week-6/",
+   "timestamp": "2026-10-18T13:09:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "HOU"
+   ]
+  },
+  {
+   "id": "5_2rSbEvbGs4Z0E0",
+   "headline": "Best Kalshi promo code CBSSPORTS55 in Florida: Get $55 bonus for Jaguars, Buccaneers in Week 6",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-in-florida-get-55-bonus-for-jaguars-buccaneers-in-week-6/",
+   "timestamp": "2026-10-18T13:02:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "JAX",
+    "TB"
+   ]
+  },
+  {
+   "id": "J4HVFGdd7WpVVUzh",
+   "headline": "Are the Vikings playing today? NFL Week 6 schedule, next game, NFC North standings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-playing-today-nfl-week-130049496.html",
+   "timestamp": "2026-10-18T13:00:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "_Z7viwy_a8nsxSJt",
+   "headline": "Week 6 NFL schedule, scores, live updates: Caleb Williams returns from hamstring injury, A.J. Brown activated from IR, will play vs. Jets",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/live/nfl-week-6-scores-news-live-updates-schedule-highlights-stats-where-to-watch-130000137.html",
+   "timestamp": "2026-10-18T13:00:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "caleb-williams",
+    "javonte-williams"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "7ZWucrsQYJBDPqQN",
+   "headline": "Cam Skattebo: Could be headed for lighter workload",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/cam-skattebo-18514",
+   "timestamp": "2026-10-18T12:48:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "cam-skattebo"
+   ]
+  },
+  {
+   "id": "hh0Z_rOT7J1mWtGU",
+   "headline": "Saints QB Tyler Shough playing through broken bones in non-throwing hand, per report",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/saints-tyler-shough-playing-through-broken-bones-non-throwing-hand/",
+   "timestamp": "2026-10-18T12:36:24.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tyler-shough"
+   ],
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "V8bra0PWOiKi8FFK",
+   "headline": "Saints Owner Gayle Benson Endorses HC Kellen Moore; QB Tyler Shough Dealing With Hand Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/saints-owner-gayle-benson-endorses-hc-kellen-moore-qb-tyler-shough-dealing-with-hand-injury",
+   "timestamp": "2026-10-18T12:29:44.000Z",
+   "category": "injury",
+   "player_ids": [
+    "tyler-shough"
+   ],
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "ENReYL9rDMWB1gTN",
+   "headline": "Pat Freiermuth: Chance to play in Week 6",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/pat-freiermuth-15267",
+   "timestamp": "2026-10-18T12:10:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "pat-freiermuth"
+   ]
+  },
+  {
+   "id": "8qN9v7FEBgn1lc9X",
+   "headline": "Tyler Shough: Playing through broken bones in hand",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/tyler-shough-17037",
+   "timestamp": "2026-10-18T12:02:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tyler-shough"
+   ]
+  },
+  {
+   "id": "-KnAzSrg8ijsYuxH",
+   "headline": "Chargers vs. Chiefs odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 division game",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/chargers-vs-chiefs-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-division-game/",
+   "timestamp": "2026-10-18T12:01:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "kr51BryD6P48tO5D",
+   "headline": "Cardinals vs. Rams odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 division game",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/cardinals-vs-rams-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-division-game/",
+   "timestamp": "2026-10-18T12:00:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "LAR"
+   ]
+  },
+  {
+   "id": "vuwzMqJ44Pfbvx1g",
+   "headline": "Texans vs. Jaguars live updates, inactives, where to watch: Jacksonville looks to stay among AFC's best at familiar home in London",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/live/texans-jaguars-score-live-updates-london-game-inactives-highlights-stats-where-to-watch-week-6-120000000.html",
+   "timestamp": "2026-10-18T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU",
+    "JAX"
+   ]
+  },
+  {
    "id": "rwm9YTleu7n-jMhV",
    "headline": "Buffalo Bills vs. Las Vegas Raiders: How to watch today, start time, where to stream and more",
    "source": "Yahoo Sports",
@@ -133,18 +756,6 @@
    "team_abbrs": [
     "BAL",
     "CLE"
-   ]
-  },
-  {
-   "id": "mLCTXp5Ph-AQhMMa",
-   "headline": "‘Things I think’ before Giants-Saints kickoff: Giants have an opportunity",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/things-think-giants-saints-kickoff-110000424.html",
-   "timestamp": "2026-10-18T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO",
-    "NYG"
    ]
   },
   {
@@ -506,20 +1117,6 @@
     "CHI",
     "HOU",
     "JAX"
-   ]
-  },
-  {
-   "id": "o2ZjuclbT7GBSY9Y",
-   "headline": "Eagles Place QB Jalen Hurts On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-to-place-jalen-hurts-on-ir",
-   "timestamp": "2026-10-18T03:00:06.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
    ]
   },
   {
@@ -1169,580 +1766,6 @@
    ],
    "team_abbrs": [
     "PHI"
-   ]
-  },
-  {
-   "id": "LzzQpya1qGxz2nmP",
-   "headline": "NFL Week 6 player props, anytime TD best bets: Steelers' Jaylen Warren is on a heater",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-6-player-props-anytime-td-best-bets/",
-   "timestamp": "2026-10-17T19:50:38.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaylen-warren"
-   ],
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "Aenm5kTrcJOZw2Lq",
-   "headline": "Chicago Bears vs. Atlanta Falcons – Game Picks and Predictions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-vs-atlanta-falcons-193000538.html",
-   "timestamp": "2026-10-17T19:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CHI"
-   ]
-  },
-  {
-   "id": "vWhy4rFi-lfV7CGZ",
-   "headline": "New York Jets make roster moves ahead of New England Patriots game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-roster-moves-ahead-193000837.html",
-   "timestamp": "2026-10-17T19:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "OTRPAqsPL1ZveZDG",
-   "headline": "Steelers place WR Roman Wilson on IR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-place-wr-roman-wilson-192829498.html",
-   "timestamp": "2026-10-17T19:28:29.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "KEidrXIXyQpcYG56",
-   "headline": "Patriots RB TreVeyon Henderson Could Miss Time; Latest On OLB Harold Landry",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/patriots-rb-treveyon-henderson-could-miss-time-latest-on-olb-harold-landry",
-   "timestamp": "2026-10-17T19:27:49.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "treveyon-henderson"
-   ],
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "KJIb15IHDw31q2Oi",
-   "headline": "Chargers rejecting trade calls as LA searches for first win of season vs Chiefs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-rejecting-trade-calls-la-192711333.html",
-   "timestamp": "2026-10-17T19:27:11.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC",
-    "LAC"
-   ]
-  },
-  {
-   "id": "X2nHJQ2wapFFnPa-",
-   "headline": "Eagles News: Riq Woolen mentioned among more trade buzz",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-riq-woolen-mentioned-192014030.html",
-   "timestamp": "2026-10-17T19:20:14.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "cSgp3U8n99v1gNeo",
-   "headline": "Steelers put Roman Wilson on injured reserve",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-put-roman-wilson-injured-191959077.html",
-   "timestamp": "2026-10-17T19:19:59.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "dG1I9NKDMqz4259m",
-   "headline": "Commanders vs. 49ers Saturday injury report: Bill Croskey-Merritt out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-vs-49ers-friday-injury-164531513.html",
-   "timestamp": "2026-10-17T19:14:06.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SF",
-    "WAS"
-   ]
-  },
-  {
-   "id": "sfXJZofZJwX2tCs-",
-   "headline": "Survey results: NY Giants’ fan confidence remains high",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/survey-results-ny-giants-fan-190000212.html",
-   "timestamp": "2026-10-17T19:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "gz8db_MseeQANFMh",
-   "headline": "Cowboys vs Packers: Writer predictions for Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-vs-packers-writer-predictions-190000150.html",
-   "timestamp": "2026-10-17T19:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "pTHjTgJGBkpfi-vz",
-   "headline": "Steelers send scout to Texas to watch Arch Manning",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-send-scout-texas-watch-185816799.html",
-   "timestamp": "2026-10-17T18:58:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "qp2B5U94D0KYvZaU",
-   "headline": "Daily Norseman Staff NFL Picks, Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/daily-norseman-staff-nfl-picks-183324549.html",
-   "timestamp": "2026-10-17T18:33:24.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "T-DsSABXNOoEqkDl",
-   "headline": "Jets activating Omar Cooper Jr. off IR, will play Sunday vs. Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-activating-omar-cooper-jr-183028687.html",
-   "timestamp": "2026-10-17T18:30:28.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "DBOtoqOt5DHX1tGE",
-   "headline": "Aaron Rodgers is ‘like the Simon Cowell’ of the Steelers with his famed receiver quizzes",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-rodgers-simon-cowell-steelers-183002666.html",
-   "timestamp": "2026-10-17T18:30:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "PhJz7Rec34feeuv7",
-   "headline": "Cowboys DC Christian Parker To Stay On Sidelines; More On Mike Pettine Hire",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/cowboys-dc-christian-parker-to-stay-on-sidelines-more-on-mike-pettine-hire",
-   "timestamp": "2026-10-17T18:24:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "3fw6jQe7La6LUn9i",
-   "headline": "Chicago Bears activate Kyler Gordon, Dayo Odeyingbo to injured reserve",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-activate-kyler-gordon-181726230.html",
-   "timestamp": "2026-10-17T18:17:26.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "WScmxDiHAxAvQD6V",
-   "headline": "Texans Activate LB Henry To’oTo’o From IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/texans-designate-henry-tootoo-for-return",
-   "timestamp": "2026-10-17T18:16:35.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "_0edmpv-_t89MfmL",
-   "headline": "Jaguars look to match best six-game start in team history",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-look-match-best-six-180723578.html",
-   "timestamp": "2026-10-17T18:07:23.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "qqlwpFIM66EZHJyS",
-   "headline": "Three Things I’m Looking At in the New York Jets vs New England Patriots Game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/three-things-m-looking-york-180000561.html",
-   "timestamp": "2026-10-17T18:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "uLytadAQLpHRJJiE",
-   "headline": "Eagles thoughts: The Panthers got paws",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-thoughts-panthers-got-paws-175717060.html",
-   "timestamp": "2026-10-17T17:57:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "PHI"
-   ]
-  },
-  {
-   "id": "vw4sXqL8AzWwSxAl",
-   "headline": "Rams represent ‘Super Bowl-sized’ game for the Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-represent-super-bowl-sized-175659531.html",
-   "timestamp": "2026-10-17T17:56:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "LAR"
-   ]
-  },
-  {
-   "id": "QsZK6OXk6cxH2-O0",
-   "headline": "Panthers activate Taylor Moton, Turk Wharton, Trevor Etienne",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-activate-taylor-moton-turk-175530735.html",
-   "timestamp": "2026-10-17T17:55:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "aLcMK4Ri5YCkhq0b",
-   "headline": "Bears activate Kyler Gordon, sign Nick McCloud to active roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-activate-kyler-gordon-sign-174020966.html",
-   "timestamp": "2026-10-17T17:40:20.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "bN5PPE7kVaKKrNUu",
-   "headline": "Bears Activate Kyler Gordon, Place Dayo Odeyingbo On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bears-activate-kyler-gordon-place-dayo-odeyingbo-on-ir",
-   "timestamp": "2026-10-17T17:38:07.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "PoY3CGB7CxWFpKEk",
-   "headline": "Even with top receivers returning, Chargers face tough task vs. unbeaten Chiefs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/even-top-receivers-returning-chargers-172725099.html",
-   "timestamp": "2026-10-17T17:27:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "LAC"
-   ]
-  },
-  {
-   "id": "KMwS-3JaptIYmpND",
-   "headline": "Eagles Not Planning To Place Jalen Hurts On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-not-planning-to-place-jalen-hurts-on-ir",
-   "timestamp": "2026-10-17T17:15:06.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "UoAY1WHqd8VI_Ojh",
-   "headline": "Raiders Mailbag: Is Spencer Burford offensive line’s biggest problem?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-mailbag-spencer-burford-offensive-170300597.html",
-   "timestamp": "2026-10-17T17:03:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "SwXu2uk58Je7SjWW",
-   "headline": "Colts make anticipated roster move regarding backup receiving tight end",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-anticipated-roster-move-regarding-170146274.html",
-   "timestamp": "2026-10-17T17:01:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "gP9zWhDHQi71yrnN",
-   "headline": "Falcons vs. Bears: A look at the series history going into 2026",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-vs-bears-look-series-170000042.html",
-   "timestamp": "2026-10-17T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CHI"
-   ]
-  },
-  {
-   "id": "0CuZBCeplgnCG1xe",
-   "headline": "Cowboys at Packers: Offensive, defensive impact players in Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-packers-offensive-defensive-impact-170000945.html",
-   "timestamp": "2026-10-17T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "F_73qUQyMIdF-8Tl",
-   "headline": "Bears-Falcons Franchise Connections",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-falcons-franchise-connections-170000254.html",
-   "timestamp": "2026-10-17T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CHI"
-   ]
-  },
-  {
-   "id": "33Js0no_I_Hcn7jQ",
-   "headline": "NFL Week 6 injury report: Lamar Jackson, Jalen Hurts sidelined; Caleb Williams could return",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-6-injury-report-lamar-jackson-jalen-hurts-caleb-williams/",
-   "timestamp": "2026-10-17T16:56:23.000Z",
-   "category": "injury",
-   "player_ids": [
-    "lamar-jackson",
-    "jalen-hurts",
-    "caleb-williams"
-   ]
-  },
-  {
-   "id": "zWgAXLpb-joLDV1G",
-   "headline": "Shedeur Sanders trade: What Browns GM Andrew Berry is rumored to think about the QB",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/shedeur-sanders-trade-browns-gm-165253202.html",
-   "timestamp": "2026-10-17T16:52:53.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "dij3S0vou2DQrpYT",
-   "headline": "Chargers vs. Kansas City Chiefs: How to watch, start time, score prediction and odds",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-vs-kansas-city-chiefs-164827764.html",
-   "timestamp": "2026-10-17T16:48:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "LAC"
-   ]
-  },
-  {
-   "id": "8pEGey1ImNxTZTS6",
-   "headline": "Steelers TE Pat Freiermuth questionable vs. Buccaneers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-te-pat-freiermuth-questionable-163552194.html",
-   "timestamp": "2026-10-17T16:35:52.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "pat-freiermuth"
-   ],
-   "team_abbrs": [
-    "PIT",
-    "TB"
-   ]
-  },
-  {
-   "id": "ENReYL9rDMWB1gTN",
-   "headline": "Pat Freiermuth: Dealing with calf injury, iffy for Week 6",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/pat-freiermuth-15267",
-   "timestamp": "2026-10-17T16:29:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "pat-freiermuth"
-   ]
-  },
-  {
-   "id": "LHiN-CfaFPKZRk2s",
-   "headline": "Colts need to do what they do best and punch down",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-best-punch-down-162855440.html",
-   "timestamp": "2026-10-17T16:28:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "HQEw_41BYLqCTnni",
-   "headline": "DK Metcalf: Cleared for Week 6",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/dk-metcalf-13424",
-   "timestamp": "2026-10-17T16:27:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "HsxToRBJoAc4CLFo",
-   "headline": "Jaguars WR Rumors: Washington, Thomas",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/jaguars-wr-rumors-washington-thomas",
-   "timestamp": "2026-10-17T16:24:22.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "hX-qoTVHsQ_Q-IXq",
-   "headline": "NFL picks against the spread, Week 6 2026: Expert ATS picks, predictions, prop bets for Sunday, Oct. 18",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-picks-against-the-spread-week-6-2026-expert-ats-picks-predictions-prop-bets-for-sunday-oct-18/",
-   "timestamp": "2026-10-17T16:15:53.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "zOME3z66YvL44hcW",
-   "headline": "Browns’ Shedeur Sanders Hires Agent; Trade Push On QB’s Radar?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/browns-shedeur-sanders-hires-agent-trade-push-on-qbs-radar",
-   "timestamp": "2026-10-17T16:00:40.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "UV5P4uCTTTypQvXx",
-   "headline": "Savion Williams questionable for Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/savion-williams-questionable-week-6-160014400.html",
-   "timestamp": "2026-10-17T16:00:14.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "bFGOl4mcMbJ8Ne5o",
-   "headline": "Bills vs. Raiders prediction: Can Las Vegas end losing streak? Everything to know for AFC matchup",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bills-vs-raiders-prediction-where-to-watch/",
-   "timestamp": "2026-10-17T15:59:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "LV"
-   ]
-  },
-  {
-   "id": "5L-w3CwovJultdry",
-   "headline": "Three Rivers Report: The Steelers offense must execute better on early downs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/three-rivers-report-steelers-offense-155805368.html",
-   "timestamp": "2026-10-17T15:58:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "g2W_sxgfDLQ6Fh5Z",
-   "headline": "Steelers vs. Buccaneers prediction: Both teams hoping to build off of impressive Week 5 wins",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/where-to-watch-steelers-vs-buccaneers-prediction/",
-   "timestamp": "2026-10-17T15:51:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT",
-    "TB"
-   ]
-  },
-  {
-   "id": "tPypBAl8btblnQKQ",
-   "headline": "Browns among many teams uncertain at the QB position; “franchise QBs” rare long-term",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-among-many-teams-uncertain-155105823.html",
-   "timestamp": "2026-10-17T15:51:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "czLzZ4cp-fT2xdWU",
-   "headline": "Skyy Moore won't play in Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/skyy-moore-wont-play-week-155025880.html",
-   "timestamp": "2026-10-17T15:50:25.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "E_pQRX1fqQ7Qn8c-",
-   "headline": "NFL Week 6 odds, picks: Brinson's best bets, player props, anytime touchdown scorers for Sunday's matchups",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-week-6-odds-picks-brinsons-best-bets-player-props-anytime-touchdown-scorers-for-sundays-matchups/",
-   "timestamp": "2026-10-17T15:47:31.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "vfLbDzt0xX3WRe2u",
-   "headline": "Back healthy, Omar Cooper Jr. has chance to establish himself in Jets’ offense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/back-healthy-omar-cooper-jr-154353523.html",
-   "timestamp": "2026-10-17T15:43:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "ICWmEqK7RcKYG4_N",
-   "headline": "Titans CEO says owner is 'feeling a lot of grief' about team's winless season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-ceo-says-owner-feeling-154244725.html",
-   "timestamp": "2026-10-17T15:42:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
    ]
   }
  ]
