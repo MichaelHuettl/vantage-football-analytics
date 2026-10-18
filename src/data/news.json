@@ -4,6 +4,735 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "3TIPkR3wvAwFNjI3",
+   "headline": "Rams kicker Blake Grupe doubtful to return with knee injury after attempting tackle on kickoff return",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/rams-kicker-blake-grupe-doubtful-to-return-with-knee-injury-after-attempting-tackle-on-kickoff-return-205210363.html",
+   "timestamp": "2026-10-18T20:52:10.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "Wt48ga2CQY6aXQtF",
+   "headline": "Caleb Williams is back, so are Chicago's big hopes: Bears vs. Falcons winners and losers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/caleb-williams-back-chicagos-big-205002062.html",
+   "timestamp": "2026-10-18T20:50:02.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "4y44xqmcBda4QcDL",
+   "headline": "Kenneth Walker puts Chiefs up 9-0 in first quarter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kenneth-walker-puts-chiefs-9-204549895.html",
+   "timestamp": "2026-10-18T20:45:49.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kenneth-walker"
+   ],
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "lhU0E2f-rZH4y71i",
+   "headline": "Aaron Rodgers, Steelers rally for OT win in Tampa as Buccaneers' struggles continue without Baker Mayfield",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/aaron-rodgers-steelers-rally-for-ot-win-in-tampa-as-buccaneers-struggles-continue-without-baker-mayfield-204353031.html",
+   "timestamp": "2026-10-18T20:43:53.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "baker-mayfield"
+   ],
+   "team_abbrs": [
+    "PIT",
+    "TB"
+   ]
+  },
+  {
+   "id": "9JrCDsLQtm_Kbl99",
+   "headline": "Fantasy Football Week 7 Early Waiver Wire: Omar Cooper Jr. leads group of young wide receivers worth adding",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-7-early-waiver-wire-omar-cooper-jr-leads-group-of-young-wide-receivers-worth-adding-204036550.html",
+   "timestamp": "2026-10-18T20:40:36.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "GKFDm573wYoVRnK0",
+   "headline": "Keenan Allen passes Terrell Owens, Anquan Boldin on NFL career receptions leaderboard: How high will he climb?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/keenan-allen-stats-career-nfl-receptions-terrell-owens/",
+   "timestamp": "2026-10-18T20:39:47.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "X8jY_EkAzEPRDELX",
+   "headline": "Giants fourth-quarter comeback attempt falls just short in 34-27 loss to Saints",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-fourth-quarter-comeback-attempt-203806117.html",
+   "timestamp": "2026-10-18T20:38:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO",
+    "NYG"
+   ]
+  },
+  {
+   "id": "DI9hu2leN9dI5lMS",
+   "headline": "Eagles injuries stack up late against the Panthers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-injuries-stack-against-panthers-203603213.html",
+   "timestamp": "2026-10-18T20:36:03.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "YOoMwH0hkwNzOit3",
+   "headline": "Saints survive J.J. McCarthy, Giants in 34-27 win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-survive-j-j-mccarthy-203558317.html",
+   "timestamp": "2026-10-18T20:35:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO",
+    "NYG"
+   ]
+  },
+  {
+   "id": "uqgo-Wzm4gPdkw4g",
+   "headline": "Panthers beat up Eagles 25-14",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-beat-eagles-25-14-203557080.html",
+   "timestamp": "2026-10-18T20:35:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "10XmEKD-B-VEOXLY",
+   "headline": "Blake Grupe injury: New Rams kicker injures knee vs. Cardinals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/blake-grupe-injury-rams-kicker-203557074.html",
+   "timestamp": "2026-10-18T20:35:57.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ARI",
+    "LAR"
+   ]
+  },
+  {
+   "id": "tF08P1V9j_o4nAy_",
+   "headline": "Morgan Moses injury: Updates on Patriots OT after exiting Jets game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/morgan-moses-exits-jets-game-180858341.html",
+   "timestamp": "2026-10-18T20:35:50.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "bAja-6s_N8fYzdSo",
+   "headline": "Giants-Saints, Week 6: Live updates, discussion, score, highlights",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-saints-week-6-live-150000955.html",
+   "timestamp": "2026-10-18T20:35:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO",
+    "NYG"
+   ]
+  },
+  {
+   "id": "g3Dpbubo-AoehdZa",
+   "headline": "Eagles-Panthers final score: Philadelphia loses fourth straight game in very boring fashion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-vs-panthers-live-score-162842738.html",
+   "timestamp": "2026-10-18T20:35:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "f4N6IG8QjbSlEkSz",
+   "headline": "Rams' new kicker Blake Grupe forced out with injury just minutes into debut",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-kicker-blake-grupe-forced-203414379.html",
+   "timestamp": "2026-10-18T20:34:14.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "YRZVw8Npzhm9ji0B",
+   "headline": "Rams K Blake Grupe doubtful to return after making tackle on first kickoff",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-k-blake-grupe-doubtful-203346587.html",
+   "timestamp": "2026-10-18T20:33:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "s7BTubKaG-ZvCFRM",
+   "headline": "Panthers vs Eagles: Recap and analysis",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-vs-eagles-recap-analysis-203344163.html",
+   "timestamp": "2026-10-18T20:33:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "De3EGewBN7xjXvcF",
+   "headline": "Rams lose new kicker moments into his L.A. debut",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-lose-kicker-moments-l-203339895.html",
+   "timestamp": "2026-10-18T20:33:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "D-anqbtAQjeV_OCN",
+   "headline": "NFL Week 6 Winners and Losers: With another listless loss, Eagles face possibility of major changes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-week-6-winners-and-losers-with-another-listless-loss-eagles-face-possibility-of-major-changes-202841055.html",
+   "timestamp": "2026-10-18T20:28:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "lfRfDK2EmgzcbSvR",
+   "headline": "Jets drop to 2-4 as Geno Smith throws season-first interception in loss at Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-drop-2-4-geno-202317616.html",
+   "timestamp": "2026-10-18T20:23:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "MlYHCJkNKj8Ad0m5",
+   "headline": "Caleb Williams and the Bears jump out to big lead, hold on to win 31-23",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/caleb-williams-bears-jump-big-202230283.html",
+   "timestamp": "2026-10-18T20:22:30.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "_RqReN8e3PJ7Hikh",
+   "headline": "Falcons – Bears instant recap: A late rally can’t save a rough loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-bears-instant-recap-rally-202115062.html",
+   "timestamp": "2026-10-18T20:21:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "huEmAfyH9tiT15ET",
+   "headline": "Ex-NFL CB Terence Newman arrested hours after he was honored by Kansas State for going into the College Football Hall of Fame",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/college-football/breaking-news/article/ex-nfl-cb-terence-newman-arrested-hours-after-he-was-honored-by-kansas-state-for-going-into-the-college-football-hall-of-fame-201914182.html",
+   "timestamp": "2026-10-18T20:19:14.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "wVhuMskJR6Qv_YVo",
+   "headline": "Titans get first win of 2026, beat Colts 26-20",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-first-win-2026-beat-201829578.html",
+   "timestamp": "2026-10-18T20:18:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "TEN"
+   ]
+  },
+  {
+   "id": "nchD5VMGmko8xxNL",
+   "headline": "New York Jets vs New England Patriots: Failure in Foxborough",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-vs-england-patriots-201629317.html",
+   "timestamp": "2026-10-18T20:16:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "R9Yslz3jQsbabStk",
+   "headline": "Patriots beat Jets 26-19, extend winning streak to three games",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-beat-jets-26-19-201614992.html",
+   "timestamp": "2026-10-18T20:16:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "qE8psb9CNgdAXUlO",
+   "headline": "Jameis Winston benched: Giants make move to J.J. McCarthy during Saints blowout",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jameis-winston-benched-giants-j-j-mccarthy-makes-debut/",
+   "timestamp": "2026-10-18T20:13:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO",
+    "NYG"
+   ]
+  },
+  {
+   "id": "WqPA8aKJx0swA5gL",
+   "headline": "Browns move into first place with 13-10 victory over Ravens",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-move-first-place-13-200323709.html",
+   "timestamp": "2026-10-18T20:03:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "CLE"
+   ]
+  },
+  {
+   "id": "NVfTBgHrpkM6lYar",
+   "headline": "Patriots vs. Jets recap: 26-19 win more gritty than pretty",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-jets-live-updates-161343775.html",
+   "timestamp": "2026-10-18T20:03:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "pfpzArdzgnvQ_pXr",
+   "headline": "Jason Kelce tailgates with Chiefs fans before Travis Kelce's game vs Chargers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jason-kelce-tailgates-chiefs-fans-200242783.html",
+   "timestamp": "2026-10-18T20:02:42.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "travis-kelce"
+   ],
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "aW7xWI8fk9Ozoie5",
+   "headline": "Three reasons why the Jaguars lost to the Texans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/three-reasons-why-jaguars-lost-200104338.html",
+   "timestamp": "2026-10-18T20:01:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU",
+    "JAX"
+   ]
+  },
+  {
+   "id": "URN8J07vGACCyB5j",
+   "headline": "Week 6 NFL betting promos: Claim over $3,000 in bonuses from top online betting apps, sportsbooks",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-6-nfl-betting-promos-claim-over-3000-in-bonuses-from-top-online-betting-apps-sportsbooks/",
+   "timestamp": "2026-10-18T20:01:03.000Z",
+   "category": "transaction"
+  },
+  {
+   "id": "FaK62md3oRydQTEz",
+   "headline": "Vikings WR Jauan Jennings Expected To Draw Trade Interest; No Deal Imminent",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/vikings-wr-jauan-jennings-expected-to-draw-trade-interest",
+   "timestamp": "2026-10-18T20:00:10.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "yMUQIoOhko3XOFCw",
+   "headline": "NFL today: How to watch Cowboys v Packers, TV channels & live stream Sunday 18 October",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-today-watch-cowboys-v-200008935.html",
+   "timestamp": "2026-10-18T20:00:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "GB"
+   ]
+  },
+  {
+   "id": "7tR31hbzNCq1rMgo",
+   "headline": "Buffalo Bills at Las Vegas Raiders, Week 6 open thread at Buffalo Rumblings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buffalo-bills-las-vegas-raiders-200000706.html",
+   "timestamp": "2026-10-18T20:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "LV"
+   ]
+  },
+  {
+   "id": "rlcXd-jluOzkEpYo",
+   "headline": "Browns vs. Ravens: Quick takeaways from Week 6’s amazing win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-vs-ravens-quick-takeaways-195744168.html",
+   "timestamp": "2026-10-18T19:57:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "CLE"
+   ]
+  },
+  {
+   "id": "YYYNtNQ3WoROdq0k",
+   "headline": "Eagles vs. Panthers Week 6 live chat",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-vs-panthers-week-6-161718690.html",
+   "timestamp": "2026-10-18T19:56:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "PHI"
+   ]
+  },
+  {
+   "id": "FDFX7ZEDzQjWJrQ3",
+   "headline": "Baltimore Ravens vs. Cleveland Browns recap: Back in first place of AFC North with late rally",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/baltimore-ravens-vs-cleveland-browns-195617101.html",
+   "timestamp": "2026-10-18T19:56:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "CLE"
+   ]
+  },
+  {
+   "id": "VkMEC1j-RW89Q8Z6",
+   "headline": "J.J. McCarthy falls short of comeback in second New York Giants game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-j-mccarthy-replaces-jameis-195318585.html",
+   "timestamp": "2026-10-18T19:53:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "7hzuxJxmx5LNJBHJ",
+   "headline": "Use DraftKings promo code to get $200 in bonus bets, free NBA League Pass for NFL betting, Chiefs-Chargers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/use-draftkings-promo-code-to-get-200-bonus-bets-free-nba-league-pass-nfl-betting-chiefs-chargers/",
+   "timestamp": "2026-10-18T19:48:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "TIM-m66RfrFmX8g-",
+   "headline": "Ben Brown becomes latest Patriots O-lineman to leave Jets game with injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ben-brown-becomes-latest-patriots-194658704.html",
+   "timestamp": "2026-10-18T19:46:58.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "9kBlq6c5s6qVQm6V",
+   "headline": "Titans take 20-13 lead with blocked punt returned for touchdown in fourth quarter",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-20-13-lead-blocked-193751027.html",
+   "timestamp": "2026-10-18T19:37:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "lFoQ2uugQ2i-N6jF",
+   "headline": "Badgers grades, snap counts on offense from Week 7 vs. UCLA: A lot of players struggled",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/badgers-grades-snap-counts-offense-193640465.html",
+   "timestamp": "2026-10-18T19:36:40.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "cmTFil9zTAVP6D_c",
+   "headline": "Aaron Rodgers' TD throw has Steelers within 16-10 of Bucs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-rodgers-td-throw-steelers-193608128.html",
+   "timestamp": "2026-10-18T19:36:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "UDKv_4iD9Pb14kQd",
+   "headline": "Rams vs. Cardinals: Game thread for Week 6",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-cardinals-week-6-game-193500420.html",
+   "timestamp": "2026-10-18T19:35:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "LAR"
+   ]
+  },
+  {
+   "id": "xkMQBUim4jA9A4pd",
+   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Chargers-Chiefs, Cowboys-Packers, NFL Week 6",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-chargers-chiefs-cowboys-packers-nfl-week-6/",
+   "timestamp": "2026-10-18T19:33:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "GB",
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "-sS62LMBxmMGpYbu",
+   "headline": "Cardinals-Rams Week 6 discussion thread",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-rams-week-6-discussion-193000399.html",
+   "timestamp": "2026-10-18T19:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "LAR"
+   ]
+  },
+  {
+   "id": "v_P1ylN_ETLRpr2_",
+   "headline": "Carnell Tate's first touchdown catch ties Titans-Colts at 13-13",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/carnell-tates-first-touchdown-catch-192821534.html",
+   "timestamp": "2026-10-18T19:28:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "TEN"
+   ]
+  },
+  {
+   "id": "sBlHWSq5Dv0e4Ggr",
+   "headline": "Use FanDuel promo code to get $350 in bonus bets by targeting Chargers-Chiefs, NFL Week 6",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-chargers-chiefs-nfl-week-6/",
+   "timestamp": "2026-10-18T19:26:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "p2S61OBaemC5grZ_",
+   "headline": "Chiefs-Chargers: Live Updates and Game Thread",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-chargers-live-updates-game-192500798.html",
+   "timestamp": "2026-10-18T19:25:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "I17m0c4f1P5BekN7",
+   "headline": "Jets DE Will McDonald Likely To Draw Trade Interest",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/jets-de-will-mcdonald-likely-to-draw-trade-interest",
+   "timestamp": "2026-10-18T19:20:45.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "kYZzhXu3Gvy7Owte",
+   "headline": "Kendal Daniels injury update as Falcons LB carted off on stretcher",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kendal-daniels-injury-falcons-lb-192019870.html",
+   "timestamp": "2026-10-18T19:20:19.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "t7ICDK7zJUlkShma",
+   "headline": "Pittsburgh coach Mike McCarthy suffers injury during Steelers' game vs. Buccaneers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/steelers-mike-mccarthy-suffers-injury-vs-buccaneers/",
+   "timestamp": "2026-10-18T19:04:07.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PIT",
+    "TB"
+   ]
+  },
+  {
+   "id": "o0YKKuqWI5cGL4rV",
+   "headline": "Kalshi promo code CBSSPORTS55: Get $55 bonus for Chargers vs. Chiefs, NFL Week 6 predictions",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/kalshi-promo-code-cbssports55-get-55-bonus-for-chargers-chiefs-nfl-week-6-predictions/",
+   "timestamp": "2026-10-18T19:00:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "Qlf02PE93Z8mCfd8",
+   "headline": "DJ Moore: Out again in Week 6",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/dj-moore-12477",
+   "timestamp": "2026-10-18T18:58:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dj-moore"
+   ]
+  },
+  {
+   "id": "jOAeBRIXY13wf1n6",
+   "headline": "Chargers vs. Chiefs live updates, inactives, where to watch: LA seeks first win of season as Mike McDaniel's seat heats up",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/live/chiefs-chargers-score-live-updates-inactives-highlights-stats-where-to-watch-week-6-185500338.html",
+   "timestamp": "2026-10-18T18:55:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "28iQWvyMkeONE_ID",
+   "headline": "Has the Travis Hunter breakout arrived? Jacksonville CB/WR showcases long-term, two-way potential vs. Texans",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jaguars-travis-hunter-breakout-two-way-potential-vs-texans/",
+   "timestamp": "2026-10-18T18:52:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "rxWp-dPDrdKZK5rY",
+   "headline": "Eagles lose another starter to injury after team already without Jalen Hurts, Saquon Barkley, others",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nolan-smith-injury-eagles-lose-another-starter/",
+   "timestamp": "2026-10-18T18:52:41.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jalen-hurts",
+    "saquon-barkley"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "dd34lLlL1iRVBQyD",
+   "headline": "Steelers coach Mike McCarthy misses halftime of OT win over Buccaneers, visits medical tent for treatment for ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/steelers-coach-mike-mccarthy-misses-halftime-of-ot-win-over-buccaneers-visits-medical-tent-for-treatment-for-ankle-injury-205219702.html",
+   "timestamp": "2026-10-18T18:50:44.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PIT",
+    "TB"
+   ]
+  },
+  {
+   "id": "A68esqlNUcwI0fCe",
+   "headline": "Bills vs. Raiders odds, picks, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/bills-vs-raiders-odds-picks-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6/",
+   "timestamp": "2026-10-18T18:45:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "LV"
+   ]
+  },
+  {
+   "id": "mTLp4XBZNLISoK1z",
+   "headline": "Chargers vs. Chiefs odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 showdown",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/chargers-vs-chiefs-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-showdown/",
+   "timestamp": "2026-10-18T18:30:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LAC"
+   ]
+  },
+  {
+   "id": "xAMSVFJanTf1mjHS",
+   "headline": "Cardinals vs. Rams odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 division clash",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/cardinals-vs-rams-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-division-clash/",
+   "timestamp": "2026-10-18T18:30:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "LAR"
+   ]
+  },
+  {
    "id": "Ndc2TTTkExUCUzCJ",
    "headline": "When is Josh Jacobs coming back? What to know about Packers RB",
    "source": "Yahoo Sports",
@@ -99,18 +828,6 @@
    "category": "injury"
   },
   {
-   "id": "bAja-6s_N8fYzdSo",
-   "headline": "Giants-Saints, Week 6: Live updates, discussion, score, highlights",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-saints-week-6-live-150000955.html",
-   "timestamp": "2026-10-18T17:43:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO",
-    "NYG"
-   ]
-  },
-  {
    "id": "ty8XCe6m-8bSrESC",
    "headline": "Romeo Doubs suffers shoulder injury on touchdown catch vs. Jets",
    "source": "Yahoo Sports",
@@ -118,18 +835,6 @@
    "timestamp": "2026-10-18T17:42:18.000Z",
    "category": "injury",
    "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "NVfTBgHrpkM6lYar",
-   "headline": "Patriots vs. Jets live updates: Score, news, discussion for NFL Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-jets-live-updates-161343775.html",
-   "timestamp": "2026-10-18T17:42:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
     "NYJ"
    ]
   },
@@ -269,18 +974,6 @@
    ]
   },
   {
-   "id": "YYYNtNQ3WoROdq0k",
-   "headline": "Eagles vs. Panthers Week 6 live chat",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-vs-panthers-week-6-161718690.html",
-   "timestamp": "2026-10-18T17:14:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "PHI"
-   ]
-  },
-  {
    "id": "Ot-Qo_fely22EetA",
    "headline": "NFL Week 6 early games fan discussion",
    "source": "Yahoo Sports",
@@ -396,18 +1089,6 @@
    "team_abbrs": [
     "NE",
     "NYJ"
-   ]
-  },
-  {
-   "id": "g3Dpbubo-AoehdZa",
-   "headline": "Eagles vs. Panthers: Live score updates, highlights, injury news",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-vs-panthers-live-score-162842738.html",
-   "timestamp": "2026-10-18T16:28:42.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CAR",
-    "PHI"
    ]
   },
   {
@@ -593,14 +1274,11 @@
   },
   {
    "id": "dPrCfvxXduG3yuoH",
-   "headline": "Ravens vs. Browns score, live updates: Lamar Jackson out with ankle injury, Tyler Huntley gets another start in AFC North clash",
+   "headline": "Browns vault into first place with last-second field goal, as Ravens blow another double-digit lead",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/ravens-browns-score-live-updates-inactives-highlights-stats-where-to-watch-week-6-lamar-jackson-152531174.html",
    "timestamp": "2026-10-18T15:25:31.000Z",
-   "category": "injury",
-   "player_ids": [
-    "lamar-jackson"
-   ],
+   "category": "breaking",
    "team_abbrs": [
     "BAL",
     "CLE"
@@ -622,6 +1300,21 @@
    "headline": "Bears vs. Falcons score, live updates: Caleb Williams returns in Week 6; Michael Penix Jr. good to go after rib injury",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/bears-falcons-score-live-updates-inactives-highlights-stats-where-to-watch-caleb-williams-return-152116446.html",
+   "timestamp": "2026-10-18T15:21:16.000Z",
+   "category": "injury",
+   "player_ids": [
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "FqAL5E8_RHqhms1L",
+   "headline": "Caleb Williams is sensational in return from injury with career-best completion streak to lead Bears past Falcons",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/live/bears-falcons-score-live-updates-inactives-highlights-stats-where-to-watch-caleb-williams-return-152116446.html",
    "timestamp": "2026-10-18T15:21:16.000Z",
    "category": "injury",
    "player_ids": [
@@ -1049,707 +1742,6 @@
    ],
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "pCa-sFyX66_HLdm_",
-   "headline": "Use FanDuel promo code to get $350 in bonus bets by targeting Ravens-Browns, Chargers-Chiefs, NFL Week 6",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-ravens-browns-chargers-chiefs-nfl-week-6/",
-   "timestamp": "2026-10-18T13:24:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CLE",
-    "KC",
-    "LAC"
-   ]
-  },
-  {
-   "id": "zLWP8DsyGy53rZfK",
-   "headline": "Week 6 game thread: The calm before Monday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-6-game-thread-calm-132432958.html",
-   "timestamp": "2026-10-18T13:24:32.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "vDthUaJq35PzBEia",
-   "headline": "Texans vs. Jaguars odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus, NFL Week 6 London game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/texans-vs-jaguars-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-nfl-week-6-london-game/",
-   "timestamp": "2026-10-18T13:17:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "JAX"
-   ]
-  },
-  {
-   "id": "vBLiuAO4fXKiIn5_",
-   "headline": "Seahawks fan chat: NFL Week 6 Sunday games, Cowboys vs. Packers live discussion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-fan-chat-nfl-week-131500518.html",
-   "timestamp": "2026-10-18T13:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB",
-    "SEA"
-   ]
-  },
-  {
-   "id": "Dn8NQjMLt75-lhnl",
-   "headline": "Polymarket promo code CBSSPORTS in Texas: Get $25 bonus for Texans, Cowboys in Week 6",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/polymarket-promo-code-cbssports-in-texas-get-25-bonus-for-texans-cowboys-in-week-6/",
-   "timestamp": "2026-10-18T13:09:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "HOU"
-   ]
-  },
-  {
-   "id": "5_2rSbEvbGs4Z0E0",
-   "headline": "Best Kalshi promo code CBSSPORTS55 in Florida: Get $55 bonus for Jaguars, Buccaneers in Week 6",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-in-florida-get-55-bonus-for-jaguars-buccaneers-in-week-6/",
-   "timestamp": "2026-10-18T13:02:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "TB"
-   ]
-  },
-  {
-   "id": "J4HVFGdd7WpVVUzh",
-   "headline": "Are the Vikings playing today? NFL Week 6 schedule, next game, NFC North standings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikings-playing-today-nfl-week-130049496.html",
-   "timestamp": "2026-10-18T13:00:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "_Z7viwy_a8nsxSJt",
-   "headline": "Week 6 NFL schedule, scores, live updates: Tyler Warren, Quinshon Judkins inactive; Caleb Williams, A.J. Brown return from injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/live/nfl-week-6-scores-news-live-updates-schedule-highlights-stats-where-to-watch-130000137.html",
-   "timestamp": "2026-10-18T13:00:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "caleb-williams",
-    "javonte-williams",
-    "tyler-warren",
-    "jaylen-warren",
-    "quinshon-judkins"
-   ]
-  },
-  {
-   "id": "7ZWucrsQYJBDPqQN",
-   "headline": "Cam Skattebo: Could be headed for lighter workload",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/cam-skattebo-18514",
-   "timestamp": "2026-10-18T12:48:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-skattebo"
-   ]
-  },
-  {
-   "id": "hh0Z_rOT7J1mWtGU",
-   "headline": "Saints QB Tyler Shough playing through broken bones in non-throwing hand, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/saints-tyler-shough-playing-through-broken-bones-non-throwing-hand/",
-   "timestamp": "2026-10-18T12:36:24.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tyler-shough"
-   ],
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "V8bra0PWOiKi8FFK",
-   "headline": "Saints Owner Gayle Benson Endorses HC Kellen Moore; QB Tyler Shough Dealing With Hand Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/saints-owner-gayle-benson-endorses-hc-kellen-moore-qb-tyler-shough-dealing-with-hand-injury",
-   "timestamp": "2026-10-18T12:29:44.000Z",
-   "category": "injury",
-   "player_ids": [
-    "tyler-shough"
-   ],
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "ENReYL9rDMWB1gTN",
-   "headline": "Pat Freiermuth: Chance to play in Week 6",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/pat-freiermuth-15267",
-   "timestamp": "2026-10-18T12:10:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "pat-freiermuth"
-   ]
-  },
-  {
-   "id": "8qN9v7FEBgn1lc9X",
-   "headline": "Tyler Shough: Playing through broken bones in hand",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tyler-shough-17037",
-   "timestamp": "2026-10-18T12:02:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tyler-shough"
-   ]
-  },
-  {
-   "id": "-KnAzSrg8ijsYuxH",
-   "headline": "Chargers vs. Chiefs odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 division game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/chargers-vs-chiefs-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-division-game/",
-   "timestamp": "2026-10-18T12:01:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "LAC"
-   ]
-  },
-  {
-   "id": "kr51BryD6P48tO5D",
-   "headline": "Cardinals vs. Rams odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 division game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/cardinals-vs-rams-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-division-game/",
-   "timestamp": "2026-10-18T12:00:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "LAR"
-   ]
-  },
-  {
-   "id": "vuwzMqJ44Pfbvx1g",
-   "headline": "Texans vs. Jaguars live updates, inactives, where to watch: Jacksonville looks to stay among AFC's best at familiar home in London",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/live/texans-jaguars-score-live-updates-london-game-inactives-highlights-stats-where-to-watch-week-6-120000000.html",
-   "timestamp": "2026-10-18T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "JAX"
-   ]
-  },
-  {
-   "id": "rwm9YTleu7n-jMhV",
-   "headline": "Buffalo Bills vs. Las Vegas Raiders: How to watch today, start time, where to stream and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/buffalo-bills-vs-las-vegas-raiders-how-to-watch-today-start-time-where-to-stream-and-more-112400378.html",
-   "timestamp": "2026-10-18T11:24:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "LV"
-   ]
-  },
-  {
-   "id": "mN8SvT1vOfSzHSPl",
-   "headline": "Tyler Warren: Deemed game-time decision",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tyler-warren-18534",
-   "timestamp": "2026-10-18T11:24:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tyler-warren"
-   ]
-  },
-  {
-   "id": "AefGLe7IfrjEbCz-",
-   "headline": "Texans vs. Jaguars prediction: Marvin Harrison Jr. makes Houston debut in London",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/texans-vs-jaguars-prediction-where-to-watch-london/",
-   "timestamp": "2026-10-18T11:22:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "JAX"
-   ]
-  },
-  {
-   "id": "CN-LZswirM4qJAB_",
-   "headline": "Who is Tanner McKee? Meet QB filling in for Eagles with Jalen Hurts out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tanner-mckee-meet-qb-filling-111532108.html",
-   "timestamp": "2026-10-18T11:15:32.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "PNvN0jczxoYV9rRV",
-   "headline": "Cowboys vs. Packers odds, picks, Week 6 NFL predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/cowboys-vs-packers-odds-picks-week-6-nfl-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-   "timestamp": "2026-10-18T11:00:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "MhDPU_yDRoXXlJbw",
-   "headline": "Bills vs. Raiders odds, picks, Week 6 NFL predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/bills-vs-raiders-odds-picks-week-6-nfl-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-   "timestamp": "2026-10-18T11:00:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "LV"
-   ]
-  },
-  {
-   "id": "l0Z8oVdEsM_zM4Fm",
-   "headline": "What channel is Cowboys vs. Packers game today? Start time, schedule, streaming",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/channel-cowboys-vs-packers-game-110047974.html",
-   "timestamp": "2026-10-18T11:00:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "NyNrJNmJqQEi-6AO",
-   "headline": "Ravens-Browns fantasy and prop bets: Bet on the basics",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ravens-browns-fantasy-prop-bets-110000780.html",
-   "timestamp": "2026-10-18T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CLE"
-   ]
-  },
-  {
-   "id": "IPqu2gLHbJvtFs4z",
-   "headline": "Cowboys news: DeMarvion Overshown out vs. Packers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-demarvion-overshown-vs-110000895.html",
-   "timestamp": "2026-10-18T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "54rdv9oMjSKI3253",
-   "headline": "New York Jets Flight Connections 10/18/26",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-flight-connections-10-110000820.html",
-   "timestamp": "2026-10-18T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "JvWA8If7vWfot4eo",
-   "headline": "5 Questions about Ravens-Browns with Dawgs By Nature",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-questions-ravens-browns-dawgs-110000927.html",
-   "timestamp": "2026-10-18T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CLE"
-   ]
-  },
-  {
-   "id": "FkMMGYpHGewVs9TW",
-   "headline": "How to watch Steelers vs. Buccaneers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/watch-steelers-vs-buccaneers-110000792.html",
-   "timestamp": "2026-10-18T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT",
-    "TB"
-   ]
-  },
-  {
-   "id": "agQ3-2OnUAFoxx9h",
-   "headline": "2026 Week 6 NFL odds, picks, best bets, predictions: Experts backing Giants, Chiefs, Packers on Sunday",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/2026-week-6-nfl-odds-picks-best-bets-predictions-experts-backing-giants-chiefs-packers-sunday/",
-   "timestamp": "2026-10-18T10:50:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "KC",
-    "NYG"
-   ]
-  },
-  {
-   "id": "YGxlMLqT_Sv0jrKy",
-   "headline": "Carolina Panthers vs. Philadelphia Eagles: How to watch today, start time, where to stream and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/carolina-panthers-vs-philadelphia-eagles-how-to-watch-today-start-time-where-to-stream-and-more-105000060.html",
-   "timestamp": "2026-10-18T10:50:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "PHI"
-   ]
-  },
-  {
-   "id": "gxDGED9qdaAqPnyd",
-   "headline": "Where do the Lions rank in the NFC right now?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/where-lions-rank-nfc-now-104500092.html",
-   "timestamp": "2026-10-18T10:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "l7c0nPDIDw8zyEQY",
-   "headline": "Chicago Bears vs. Atlanta Falcons: How to watch the NFL Week 6 game, channel, streaming info and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/chicago-bears-vs-atlanta-falcons-how-to-watch-the-nfl-week-6-game-channel-streaming-info-and-more-104500274.html",
-   "timestamp": "2026-10-18T10:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CHI"
-   ]
-  },
-  {
-   "id": "TViNOxyVZsFIMS4w",
-   "headline": "Baltimore Ravens vs. Cleveland Browns: How to watch the NFL Week 6 game, channel, streaming info and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/baltimore-ravens-vs-cleveland-browns-how-to-watch-the-nfl-week-6-game-channel-streaming-info-and-more-103500094.html",
-   "timestamp": "2026-10-18T10:35:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CLE"
-   ]
-  },
-  {
-   "id": "oNPAPdI5JPBcqKRx",
-   "headline": "Texans at Jaguars live game discussion, direct from London for Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-jaguars-live-game-discussion-103000631.html",
-   "timestamp": "2026-10-18T10:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "JAX"
-   ]
-  },
-  {
-   "id": "zLx05KI9i88fb8He",
-   "headline": "Eagles vs. Panthers Week 6 game information",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-vs-panthers-week-6-102955940.html",
-   "timestamp": "2026-10-18T10:29:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "PHI"
-   ]
-  },
-  {
-   "id": "7epI8J8IHyiKEnp6",
-   "headline": "Panthers fans optimistic, in spite of short term concerns",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-fans-optimistic-spite-short-101317771.html",
-   "timestamp": "2026-10-18T10:13:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "hkT8YYN7Xdkc955m",
-   "headline": "Sunday Night Football: How to watch the Dallas Cowboys vs. Green Bay Packers game tonight",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/sunday-night-football-how-to-watch-the-dallas-cowboys-vs-green-bay-packers-game-tonight-101100802.html",
-   "timestamp": "2026-10-18T10:11:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "mxrieT1pGKa3kbxW",
-   "headline": "NFL Week 6 betting advice: Giants-Saints picks and props",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-6-betting-advice-100906285.html",
-   "timestamp": "2026-10-18T10:09:06.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO",
-    "NYG"
-   ]
-  },
-  {
-   "id": "IP3K0LYfRJhXHjj1",
-   "headline": "What NFL games are on today? Week 6 TV channels, Sunday schedule, results",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-games-today-week-6-100327230.html",
-   "timestamp": "2026-10-18T10:03:27.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "enDYuqPnUMqSxC7O",
-   "headline": "Prisco's Week 6 NFL picks: Buccaneers upset Steelers, Packers over Cowboys",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-6-nfl-picks-odds-predictions/",
-   "timestamp": "2026-10-18T10:01:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB",
-    "PIT",
-    "TB"
-   ]
-  },
-  {
-   "id": "KoheEO8dMFZLBOyW",
-   "headline": "NFL Week 6 picks, odds: Our experts face off on Ravens at Browns, Packers vs. Cowboys and more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-experts-on-seahawks-broncos-ravens-browns/",
-   "timestamp": "2026-10-18T10:00:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CLE",
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "jLYcL3yRlBxO0MUu",
-   "headline": "Here’s how to watch Bills at Raiders in Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/watch-bills-raiders-week-6-100031835.html",
-   "timestamp": "2026-10-18T10:00:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "LV"
-   ]
-  },
-  {
-   "id": "Oijbi6KfZ8eSwJA9",
-   "headline": "Falcons vs. Bears 2026: How to watch, start time, TV, and odds for Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/falcons-vs-bears-2026-watch-100000451.html",
-   "timestamp": "2026-10-18T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CHI"
-   ]
-  },
-  {
-   "id": "ekc3FBjwOuLU-gi2",
-   "headline": "We asked, you answered: Ravens get B- for Cam Jurgens trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/asked-answered-ravens-b-cam-100000537.html",
-   "timestamp": "2026-10-18T10:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "AJCJ2OuDEDwxFiOb",
-   "headline": "Packers vs. Cowboys, Week 6: Game time, how to watch, odds, & more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-vs-cowboys-week-6-100000336.html",
-   "timestamp": "2026-10-18T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "unpjWIM_3X1F2g14",
-   "headline": "Bengals News: Early look at Cincinnati’s 2027 free agents",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-news-early-look-cincinnati-100000379.html",
-   "timestamp": "2026-10-18T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "CwTtrmzGFvbTTnos",
-   "headline": "Packers-Cowboys preview: How Dallas schemes up shot plays",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-cowboys-preview-dallas-schemes-100000904.html",
-   "timestamp": "2026-10-18T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "GO0JRgLg7uzc6xwI",
-   "headline": "Broncos keep finding ways to win, no matter the challenge",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-keep-finding-ways-win-100000250.html",
-   "timestamp": "2026-10-18T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "IGg1qbj50WoHpUHB",
-   "headline": "Enough with the fights and tantrums. NFL must fix sportsmanship problem | Opinion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/enough-fights-tantrums-nfl-must-094603841.html",
-   "timestamp": "2026-10-18T09:46:03.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "BB5yQoacQw-Rp1SK",
-   "headline": "Texans vs. Jaguars odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 London game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/texans-vs-jaguars-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-london-game/",
-   "timestamp": "2026-10-18T09:30:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "JAX"
-   ]
-  },
-  {
-   "id": "Y4rCRNkT1IA-YvU0",
-   "headline": "Which NFL games are Fox, CBS broadcasting? Week 6 coverage maps",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-games-fox-cbs-broadcasting-093039998.html",
-   "timestamp": "2026-10-18T09:30:39.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "UBXrr9staDn98rH8",
-   "headline": "49ers News: Go… Cardinals?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-news-cardinals-090000865.html",
-   "timestamp": "2026-10-18T09:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "SF"
-   ]
-  },
-  {
-   "id": "UHMBHUUpml0fESRp",
-   "headline": "New York Jets vs New England Patriots Game Day Forecast",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-vs-england-patriots-090000029.html",
-   "timestamp": "2026-10-18T09:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "cVYKWAelqMhlHcy_",
-   "headline": "Patriots vs. Jets: How to watch the Week 6 game on Sunday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-jets-watch-week-090000389.html",
-   "timestamp": "2026-10-18T09:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "xiBtuVaPUB7R-xYT",
-   "headline": "Bears vs. Falcons: How to watch and listen, previews, odds, and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-vs-falcons-watch-listen-040100750.html",
-   "timestamp": "2026-10-18T04:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CHI"
-   ]
-  },
-  {
-   "id": "Jq3UC8QvSssh2vdZ",
-   "headline": "NFL insider provides injury update on Colts wideout Alec Pierce’s recovery status",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-insider-provides-injury-colts-035517327.html",
-   "timestamp": "2026-10-18T03:55:17.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "gRSph2PROkHbgqpw",
-   "headline": "NFL Week 6 best bets: Texans to shine against Jaguars in London, two anytime TD scorers for Bears-Falcons",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-6-best-bets-texans-jaguars-london-two-anytime-td-scorers/",
-   "timestamp": "2026-10-18T03:43:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CHI",
-    "HOU",
-    "JAX"
-   ]
-  },
-  {
-   "id": "uTkWeCVWsN7-NsrN",
-   "headline": "Bears QB Caleb Williams Expected To Start In Week 6",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bears-qb-caleb-williams-expected-to-start-in-week-6",
-   "timestamp": "2026-10-18T02:58:17.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "rV6eKMqwYgdrf0Rw",
-   "headline": "NFL Mailbag: Cowboys, QB Prospects, 49ers, Herbert, Hurts",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/nfl-mailbag-cowboys-qb-prospects-49ers-herbert-hurts",
-   "timestamp": "2026-10-18T02:55:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "SF"
    ]
   }
  ]
