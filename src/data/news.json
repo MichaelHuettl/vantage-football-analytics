@@ -1,8 +1,90 @@
 {
  "schema_version": 1,
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "xiBtuVaPUB7R-xYT",
+   "headline": "Bears vs. Falcons: How to watch and listen, previews, odds, and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-vs-falcons-watch-listen-040100750.html",
+   "timestamp": "2026-10-18T04:01:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CHI"
+   ]
+  },
+  {
+   "id": "Jq3UC8QvSssh2vdZ",
+   "headline": "NFL insider provides injury update on Colts wideout Alec Pierce’s recovery status",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-insider-provides-injury-colts-035517327.html",
+   "timestamp": "2026-10-18T03:55:17.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "gRSph2PROkHbgqpw",
+   "headline": "NFL Week 6 best bets: Texans to shine against Jaguars in London, two anytime TD scorers for Bears-Falcons",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-6-best-bets-texans-jaguars-london-two-anytime-td-scorers/",
+   "timestamp": "2026-10-18T03:43:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CHI",
+    "HOU",
+    "JAX"
+   ]
+  },
+  {
+   "id": "ipBwue7t5v4QE2l9",
+   "headline": "Cowboys downgrade LB Demarvion Overshown to out; Joey Porter Jr. makes trip to Green Bay",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-downgrade-lb-demarvion-overshown-020915703.html",
+   "timestamp": "2026-10-18T02:09:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "5lYYLSSpGFl5vZSJ",
+   "headline": "Panthers Activate Three From Reserve Lists",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/panthers-activate-three-from-reserve-lists",
+   "timestamp": "2026-10-18T02:00:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "F0c_koAF8VfvqrSy",
+   "headline": "As NFL prepares to stage Steelers-Saints in Paris, local unrest intensifies",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-prepares-stage-steelers-saints-014247793.html",
+   "timestamp": "2026-10-18T01:42:47.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO",
+    "PIT"
+   ]
+  },
+  {
+   "id": "RTtPgv4QAmgl6PvJ",
+   "headline": "Former Broncos GM John Beake Dies At 87",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/former-broncos-gm-john-beake-dies-at-87",
+   "timestamp": "2026-10-18T01:23:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
   {
    "id": "pqa_LJk5M3l0K_ON",
    "headline": "Eagles Film Preview: The Panthers’ defense can be exploited",
@@ -55,6 +137,17 @@
    ]
   },
   {
+   "id": "lKa96GPHPD_o7lfV",
+   "headline": "Giants happy to play the underdog role and keep on defying the odds",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-happy-play-underdog-role-235855588.html",
+   "timestamp": "2026-10-17T23:58:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
    "id": "NHDe9J2agAzP2RYI",
    "headline": "Titans CEO Endorses GM Mike Borgonzi, HC Robert Saleh",
    "source": "Pro Football Rumors",
@@ -84,6 +177,29 @@
    "url": "https://www.profootballrumors.com/2026/10/minor-nfl-transactions-10-17-26",
    "timestamp": "2026-10-17T22:57:56.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "2O-Am8TCCfUNNXGb",
+   "headline": "49ers’ Kyle Juszczyk completes miraculous one-week recovery from brutal knee injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-kyle-juszczyk-completes-miraculous-223605929.html",
+   "timestamp": "2026-10-17T22:36:05.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "HmWdt7kYKcgvv-s1",
+   "headline": "Jets need struggling offense to finally deliver in crucial Patriots showdown",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-struggling-offense-finally-deliver-222423209.html",
+   "timestamp": "2026-10-17T22:24:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE",
+    "NYJ"
+   ]
   },
   {
    "id": "rUAYMRZJxHF5Ey_I",
@@ -287,12 +403,13 @@
   },
   {
    "id": "r8eyBeakaFJfPIIN",
-   "headline": "2026 NFL Week 6 Injury Report: A.J. Brown returns, LJax out another week, Jalen Hurts to IR",
+   "headline": "NFL Injury Report Week 6: A.J. Brown returns, Lamar Jackson out another week, Jalen Hurts to IR",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/2026-nfl-week-6-injury-191812688.html",
    "timestamp": "2026-10-17T20:45:00.000Z",
    "category": "injury",
    "player_ids": [
+    "lamar-jackson",
     "jalen-hurts"
    ]
   },
@@ -759,17 +876,6 @@
    "category": "breaking",
    "team_abbrs": [
     "JAX"
-   ]
-  },
-  {
-   "id": "5lYYLSSpGFl5vZSJ",
-   "headline": "Panthers Activate Three From Reserve Lists",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/panthers-activate-three-from-reserve-lists",
-   "timestamp": "2026-10-17T18:07:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
    ]
   },
   {
@@ -1635,108 +1741,6 @@
    "team_abbrs": [
     "DAL",
     "SF"
-   ]
-  },
-  {
-   "id": "r43YfQZfA4dbipd5",
-   "headline": "Detroit Lions to wear alternate uniforms in each of next 2 games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/detroit-lions-wear-alternate-uniforms-120000350.html",
-   "timestamp": "2026-10-17T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "sfEfj7rZVR4LFNb6",
-   "headline": "Chicago Bears Week 6 Flashbacks: A meltdown, a milestone, and a breakout",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-week-6-flashbacks-120000568.html",
-   "timestamp": "2026-10-17T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "d-KhWx7sDnDL-1KP",
-   "headline": "Big Blue View mailbag: Cam Skattebo, ‘peanut punch’, more questions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/big-blue-view-mailbag-cam-120000537.html",
-   "timestamp": "2026-10-17T12:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-skattebo"
-   ]
-  },
-  {
-   "id": "B-VGoJuyC744Tc2B",
-   "headline": "Lions fans’ confidence on the rise; anticipate immediate impact from Brian Branch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-fans-confidence-rise-anticipate-112155912.html",
-   "timestamp": "2026-10-17T11:21:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "0IZcV_eLtOz58eid",
-   "headline": "New York Jets Flight Connections 10/17/26",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-flight-connections-10-110000078.html",
-   "timestamp": "2026-10-17T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "EOS1YNUzfvGSdqng",
-   "headline": "Cowboys news: Plan for Caleb Downs may change for Packers game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-plan-caleb-downs-110000813.html",
-   "timestamp": "2026-10-17T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "Qca0YJMKyClqaejD",
-   "headline": "Cardinals vs. Rams Week 6 TV Map",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cardinals-vs-rams-week-6-110000202.html",
-   "timestamp": "2026-10-17T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "LAR"
-   ]
-  },
-  {
-   "id": "2PRqsc7Ki7NcHLLt",
-   "headline": "Rams vs. Arizona Cardinals: How to watch, start time, score prediction and odds",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-vs-arizona-cardinals-watch-110000110.html",
-   "timestamp": "2026-10-17T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "LAR"
-   ]
-  },
-  {
-   "id": "UGL0V4L9pYkCmieW",
-   "headline": "Sean McVay knows Rams must quickly fix special teams problems. 'Let's have solutions'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sean-mcvay-knows-rams-must-110000960.html",
-   "timestamp": "2026-10-17T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
    ]
   }
  ]
