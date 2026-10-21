@@ -4,12 +4,217 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "7zj_0ch_pzDrkwEL",
+   "headline": "32 Teams. 32 fantasy football facts to BULLY week 7",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/article/32-teams-32-fantasy-football-facts-to-bully-week-7-014006031.html",
+   "timestamp": "2026-10-21T01:40:06.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "JgJGp8fTIXx1tyyS",
+   "headline": "NFL looking to play 10 international games in 2027, possibly with one in Asia",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-looking-play-10-international-005803848.html",
+   "timestamp": "2026-10-21T00:58:03.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Ej_fOELAPInBqdLK",
+   "headline": "Eagles will not be punished for how team handled Jalen Hurts' blood clots situation, NFLPA responds",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/eagles-will-not-be-punished-jalen-hurts-blood-clots-situation/",
+   "timestamp": "2026-10-21T00:46:53.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "wsO1UsTY_jfyEEhg",
+   "headline": "Patriots Power Rankings Week 7: Win streak sends message from the mess",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-power-rankings-week-7-004247314.html",
+   "timestamp": "2026-10-21T00:42:47.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "XndmiSa9nQ2FAZ2e",
+   "headline": "Was last Sunday Davante Adams last game with the Rams?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/last-sunday-davante-adams-last-003000391.html",
+   "timestamp": "2026-10-21T00:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "davante-adams"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "N7ohD_TWTVLM5JiN",
+   "headline": "How does Rams’ depth chart look post-injuries?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/does-rams-depth-chart-look-002243088.html",
+   "timestamp": "2026-10-21T00:22:43.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "aDZRA_PlY3ZAbpeJ",
+   "headline": "Cardinals Notes: Harrison, Nabers, Brissett, Beck, Sweat",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cardinals-notes-harrison-nabers-brissett-beck-sweat",
+   "timestamp": "2026-10-21T00:17:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "IvY77qk4ZyWfGCMR",
+   "headline": "NFL will have heightened security for game in Paris after recent civil unrest",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-heightened-security-game-paris-001552736.html",
+   "timestamp": "2026-10-21T00:15:52.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "TmDZ8zfzomxolTNO",
+   "headline": "NFLPA calls for NFL to conduct full investigation into medical care provided to Jalen Hurts",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nflpa-calls-for-nfl-to-conduct-full-investigation-into-medical-care-provided-to-jalen-hurts-001505040.html",
+   "timestamp": "2026-10-21T00:15:05.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ]
+  },
+  {
+   "id": "tso2Bzn8s_QN70ck",
+   "headline": "NFLPA calls for an investigation into how Jalen Hurts’ blood clots were handled",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nflpa-calls-investigation-jalen-hurts-001239360.html",
+   "timestamp": "2026-10-21T00:12:39.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ]
+  },
+  {
+   "id": "kgGcGzAGydXUk7Nm",
+   "headline": "NFLPA calls for \"full investigation\" into Jalen Hurts situation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nflpa-calls-full-investigation-jalen-000201040.html",
+   "timestamp": "2026-10-21T00:02:01.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ]
+  },
+  {
+   "id": "wzXhAh-JGGWqPNz_",
+   "headline": "A.J. Brown’s recent struggles no cause for concern, says Drake Maye",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-brown-recent-struggles-no-000146776.html",
+   "timestamp": "2026-10-21T00:01:46.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
+   "id": "pK8qSm1FAhG-vIMj",
+   "headline": "Miami Dolphins Discussion: Malik Willis After 5 Games Edition",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-discussion-malik-willis-000000059.html",
+   "timestamp": "2026-10-21T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "rNY4ePUAj7kphN3k",
+   "headline": "NFL Practice Squad Updates: 10/20/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-practice-squad-updates-10-20-26",
+   "timestamp": "2026-10-20T23:58:45.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "6icYpYcMfqwV6sFk",
+   "headline": "Dan Quinn says he talked to Jayden Daniels about ill-advised fourth-down throwaway vs. 49ers, wants QB to take his 'shot'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/dan-quinn-says-he-talked-to-jayden-daniels-about-ill-advised-fourth-down-throwaway-vs-49ers-wants-qb-to-take-his-shot-233900445.html",
+   "timestamp": "2026-10-20T23:39:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jayden-daniels"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "ydr2OBM5Py81eilt",
+   "headline": "Eagles-Commanders stays in prime time for Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-commanders-stays-prime-time-233636323.html",
+   "timestamp": "2026-10-20T23:36:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "WAS"
+   ]
+  },
+  {
+   "id": "hiLNSXMjn-zdWCih",
+   "headline": "Cowboys at Packers: Dallas potential touchdown is a turning point",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-packers-dallas-potential-touchdown-233000469.html",
+   "timestamp": "2026-10-20T23:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "GB"
+   ]
+  },
+  {
+   "id": "cCa8JOE4v9wR8cG-",
+   "headline": "Purdue Football: Depth Chart Review – Washington – Defense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/purdue-football-depth-chart-review-232335306.html",
+   "timestamp": "2026-10-20T23:23:35.000Z",
+   "category": "breaking"
+  },
+  {
    "id": "f_h7h6VmlfNI4AFQ",
    "headline": "Minor NFL Transactions: 10/20/26",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/10/minor-nfl-transactions-10-20-26",
    "timestamp": "2026-10-20T23:11:22.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "yDaZwHuvCmw--IBo",
+   "headline": "Hot Take Tuesday: Chicago Bears’ Offense is Real, and it’s Spectacular",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/hot-tuesday-chicago-bears-offense-230000517.html",
+   "timestamp": "2026-10-20T23:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
   },
   {
    "id": "AhGJaG24xWTrJ8yQ",
@@ -23,6 +228,17 @@
    ],
    "team_abbrs": [
     "SF"
+   ]
+  },
+  {
+   "id": "cnK7EU6QYdCsc2tV",
+   "headline": "Seahawks host former SEC Defensive Player of the Year winner for a tryout",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-host-former-sec-defensive-224201799.html",
+   "timestamp": "2026-10-20T22:42:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
    ]
   },
   {
@@ -228,6 +444,17 @@
    ]
   },
   {
+   "id": "KFnWhW-d5GvmlYzk",
+   "headline": "Rams’ Australia travel gamble puts NFL’s hands-off approach in spotlight",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-australia-travel-gamble-puts-211853109.html",
+   "timestamp": "2026-10-20T21:18:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "I8Ro8hMZFnfnnIRq",
    "headline": "Baker Mayfield’s Status For Week 7 Uncertain",
    "source": "Pro Football Rumors",
@@ -283,17 +510,15 @@
    ]
   },
   {
-   "id": "Ej_fOELAPInBqdLK",
-   "headline": "Eagles will not be punished for how team handled Jalen Hurts' blood clots situation, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/eagles-will-not-be-punished-jalen-hurts-blood-clots-situation/",
-   "timestamp": "2026-10-20T20:54:56.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
+   "id": "GLVznQU9I34GUZXl",
+   "headline": "Former Giants bust Evan Neal cut from Raiders practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-giants-bust-evan-neal-205420714.html",
+   "timestamp": "2026-10-20T20:54:20.000Z",
+   "category": "transaction",
    "team_abbrs": [
-    "PHI"
+    "LV",
+    "NYG"
    ]
   },
   {
@@ -303,6 +528,17 @@
    "url": "https://sports.yahoo.com/nfl/article/can-you-trust-these-nfl-division-leaders-feat-trevor-sikkema--2027-qb-class-breakdown-a-new-qb1-205315570.html",
    "timestamp": "2026-10-20T20:53:15.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "EfS5HcZ5pL3S6CF5",
+   "headline": "Raiders owner divulges Fernando Mendoza starter decision-making process",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-owner-divulges-fernando-mendoza-205103173.html",
+   "timestamp": "2026-10-20T20:51:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
   },
   {
    "id": "pzjEZCJNPB2rJ5u1",
@@ -1399,262 +1635,6 @@
    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-backup-rb-rankings-as-we-head-into-week-7-143655562.html",
    "timestamp": "2026-10-20T14:36:55.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "mjbw9HK-FdUg__d7",
-   "headline": "Dolphins To Sign K Zane Gonzalez; Team Hosted Justin Tucker",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/dolphins-to-sign-k-zane-gonzalez-team-hosted-justin-tucker",
-   "timestamp": "2026-10-20T14:35:40.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "gATLZt4qz5Ccpapt",
-   "headline": "Giants release veteran linebacker after just 2 games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-release-veteran-linebacker-just-143157803.html",
-   "timestamp": "2026-10-20T14:31:57.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "CzatgXIfChhpGoLp",
-   "headline": "Patriots News: Vrabel – ’Everybody prepares as a starter’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-news-vrabel-everybody-prepares-143047031.html",
-   "timestamp": "2026-10-20T14:30:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "m46C0taeoDF94w-6",
-   "headline": "Week 7 odds: Steelers open as slight favorites vs. Saints",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-7-odds-steelers-open-143000179.html",
-   "timestamp": "2026-10-20T14:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO",
-    "PIT"
-   ]
-  },
-  {
-   "id": "upqxiE--PkhSsLD5",
-   "headline": "Cowboys at Packers: Joey Porter Jr. makes his presence felt in tough loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-packers-joey-porter-jr-143000990.html",
-   "timestamp": "2026-10-20T14:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "GB"
-   ]
-  },
-  {
-   "id": "9OnCHXez0O4oZtxa",
-   "headline": "Nittany Lions in the NFL 2026: Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nittany-lions-nfl-2026-week-143000407.html",
-   "timestamp": "2026-10-20T14:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "Nu1GOOIBQWw7_2le",
-   "headline": "Bengals sign S Russ Yeast to their active roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-sign-russ-yeast-active-142734354.html",
-   "timestamp": "2026-10-20T14:27:34.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "UKU6QQZz764pIwm1",
-   "headline": "Dolphins to make move at kicker amid Riley Patterson struggles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-move-kicker-amid-riley-142153149.html",
-   "timestamp": "2026-10-20T14:21:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "o6DA03dLBqqGEfOM",
-   "headline": "Titans release DT Jordan Elliott after incident at team's facility",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-release-dt-jordan-elliott-141820257.html",
-   "timestamp": "2026-10-20T14:18:20.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "8w8Fi_XnkpdufKLy",
-   "headline": "Packers battling penalty onslaught",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-battling-penalty-onslaught-141506564.html",
-   "timestamp": "2026-10-20T14:15:06.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "AHGLIArkKyV-9aWI",
-   "headline": "Giants release Jihad Ward",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-release-jihad-ward-141015297.html",
-   "timestamp": "2026-10-20T14:10:15.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "vJOX2WXDzC_8o07V",
-   "headline": "Mike Evans: Nursing Achilles tendinitis, iffy for Week 8",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/mike-evans-9253",
-   "timestamp": "2026-10-20T14:09:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "mike-evans"
-   ]
-  },
-  {
-   "id": "zLrIlGmI2uHymcKl",
-   "headline": "Commanders WR Terry McLaurin Carted Off With Knee Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/commanders-wr-terry-mclaurin-carted-off-with-knee-injury",
-   "timestamp": "2026-10-20T14:00:12.000Z",
-   "category": "injury",
-   "player_ids": [
-    "terry-mclaurin"
-   ],
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "bphq10bIHkrpG2gy",
-   "headline": "NFL Power Rankings Week 7 Roundup: Chiefs settle into No. 2 spot",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-7-140000974.html",
-   "timestamp": "2026-10-20T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "XQuPM1lP46tkoEol",
-   "headline": "Why the Seahawks don’t need to bench Sam Darnold",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/why-seahawks-don-t-bench-140000648.html",
-   "timestamp": "2026-10-20T14:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "X2dwVSCObKKHOHB7",
-   "headline": "NFL Week 6 betting: 5 biggest storylines, including how Rams upset loss shook up the odds",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/nfl-week-6-betting-5-biggest-storylines-including-how-rams-upset-loss-shook-up-the-odds-135846468.html",
-   "timestamp": "2026-10-20T13:58:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "lb0-N5o3NT6l3wln",
-   "headline": "NFL Panic Meter: Is Brian Schottenheimer already in trouble for the Cowboys?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-panic-meter-is-brian-schottenheimer-already-in-trouble-for-the-cowboys-135344019.html",
-   "timestamp": "2026-10-20T13:53:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "ZE1wUdTql_FtHkbx",
-   "headline": "Eagles News: Jalen Hurts situation “shakes the foundation of what we think we know about how the team operates”",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-jalen-hurts-situation-135003424.html",
-   "timestamp": "2026-10-20T13:50:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "d7yvMW8brcFBM2WG",
-   "headline": "Los Angeles Chargers news: What are you plans for the bye week?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-plans-135000840.html",
-   "timestamp": "2026-10-20T13:50:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "4W3DkOoRQRO2MB5C",
-   "headline": "Pre-Snap Reads: Will a big trade fix the Seahawks’ problems on offense?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pre-snap-reads-big-trade-134402232.html",
-   "timestamp": "2026-10-20T13:44:02.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "PQx-tRPtykCVndLq",
-   "headline": "NFC West Recap: 49ers continue to distance themselves; Rams and Seahawks lose",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfc-west-recap-49ers-continue-133000743.html",
-   "timestamp": "2026-10-20T13:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SEA",
-    "SF"
-   ]
-  },
-  {
-   "id": "i1CawV-er8rxF0Wk",
-   "headline": "Week 7 NFL odds, picks, predictions: Computer model backs Jets and Broncos",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-week-7-2026/",
-   "timestamp": "2026-10-20T13:26:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "NYJ"
-   ]
   }
  ]
 }
