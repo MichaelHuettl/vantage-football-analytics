@@ -1,17 +1,344 @@
 {
  "schema_version": 1,
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "MR0xuRG6HKvQ1oCd",
+   "headline": "Giants To Start QB J.J. McCarthy In Week 7",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/giants-plan-to-start-qb-j-j-mccarthy-in-week-7",
+   "timestamp": "2026-10-22T04:30:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "UJJffxtmctDx_1Lp",
+   "headline": "Seahawks Did Not Make Offer To RB Kenneth Walker",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/seahawks-did-not-make-offer-to-rb-kenneth-walker",
+   "timestamp": "2026-10-22T04:25:42.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kenneth-walker"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "72HzRo1j37KT258Y",
+   "headline": "Lions TE Sam LaPorta Frustrated With Lack Of Extension",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/lions-te-sam-laporta-frustrated-with-lack-of-extension",
+   "timestamp": "2026-10-22T04:21:08.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "sam-laporta"
+   ],
+   "team_abbrs": [
+    "DET"
+   ]
+  },
   {
    "id": "15dWu9lnwsuWNo6p",
    "headline": "Cardinals Aiming To Trade QB?",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/10/cardinals-aiming-to-trade-qb",
-   "timestamp": "2026-10-21T23:59:38.000Z",
+   "timestamp": "2026-10-22T03:59:38.000Z",
    "category": "transaction",
    "team_abbrs": [
     "ARI"
+   ]
+  },
+  {
+   "id": "dA9F2chHQCI9_rnj",
+   "headline": "Roger Goodell: NFL Welcomes Investigation Into Jalen Hurts Treatment",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/roger-goodell-nfl-welcomes-investigation-into-jalen-hurts-treatment",
+   "timestamp": "2026-10-22T03:41:17.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ]
+  },
+  {
+   "id": "yEXyCUPqX0Ojglh-",
+   "headline": "Joe Burrow says he didn't interact with VP Vance during Bengals practice visit",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/joe-burrow-says-didnt-interact-025516756.html",
+   "timestamp": "2026-10-22T02:55:16.000Z",
+   "category": "practice",
+   "player_ids": [
+    "joe-burrow"
+   ],
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "TiQiBubnwgYhGVQT",
+   "headline": "Steelers Release S Rayshawn Jenkins",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/steelers-release-s-rayshawn-jenkins",
+   "timestamp": "2026-10-22T02:23:18.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "Ty01UbtAoalKvA7O",
+   "headline": "Patrick Mahomes practicing Wednesday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patrick-mahomes-practicing-wednesday-014531889.html",
+   "timestamp": "2026-10-22T01:45:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "DA09x-M5UqTO35Nu",
+   "headline": "NFL Week 7 Injury Report: Mike Evans' Achilles; significant injuries to Terry McLaurin, Davante Adams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-7-injury-report-185122522.html",
+   "timestamp": "2026-10-22T01:25:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "davante-adams",
+    "terry-mclaurin",
+    "mike-evans"
+   ]
+  },
+  {
+   "id": "Tco56P8qaQp3DDf9",
+   "headline": "Former Chiefs, Falcons DL Allen Bailey Dies At 37",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/former-chiefs-falcons-dl-allen-bailey-dies-at-37",
+   "timestamp": "2026-10-22T01:19:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "KC"
+   ]
+  },
+  {
+   "id": "llL948uXtckTE2eE",
+   "headline": "NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-7-injury-report-ravens-lamar-jackson-jets-breece-hall/",
+   "timestamp": "2026-10-22T01:02:39.000Z",
+   "category": "injury",
+   "player_ids": [
+    "lamar-jackson",
+    "breece-hall"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "xOvIQ2n37DF9OZCe",
+   "headline": "NFL Practice Squad Updates: 10/21/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-practice-squad-updates-10-21-26",
+   "timestamp": "2026-10-22T00:56:02.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "XOYXok8wvhVj3V2o",
+   "headline": "J.J. McCarthy’s ‘whirlwind’ Giants tenure takes big leap into starting role",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-j-mccarthy-whirlwind-giants-005538739.html",
+   "timestamp": "2026-10-22T00:55:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "tX_joeAxUdFQxBLi",
+   "headline": "Giants’ Paulson Adebo returns to practice for first time since being put on IR",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-paulson-adebo-returns-practice-003939154.html",
+   "timestamp": "2026-10-22T00:39:39.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "I8bBSSZpiQazMCra",
+   "headline": "Minor NFL Transactions: 10/21/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/minor-nfl-transactions-10-21-26",
+   "timestamp": "2026-10-22T00:35:07.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "S6L5mtRM-i1oe3Wu",
+   "headline": "J.J. McCarthy honored to be the Giants’ starting quarterback",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-j-mccarthy-honored-giants-002942859.html",
+   "timestamp": "2026-10-22T00:29:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "TjLqoDQ6c-QpNCIf",
+   "headline": "NFL trade deadline 2026: Saquon Barkley to Seahawks among 10 moves that need to happen",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-10-moves-saquon-barkley-seahawks/",
+   "timestamp": "2026-10-22T00:28:45.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "saquon-barkley"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "oRhYn7P1wTBJpW5a",
+   "headline": "Adam Thielen gets candid about the ‘best thing’ J.J. McCarthy can do for Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/adam-thielen-gets-candid-best-002449584.html",
+   "timestamp": "2026-10-22T00:24:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "F55oOxmr2pqbJRCw",
+   "headline": "Buccaneers vs. Panthers: Week 7 Initial Injury Report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buccaneers-vs-panthers-week-7-001414554.html",
+   "timestamp": "2026-10-22T00:14:14.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CAR",
+    "TB"
+   ]
+  },
+  {
+   "id": "mM3MpheHHz5_C7Fw",
+   "headline": "Seahawks Week 7 Wednesday injury report: Zach Charbonnet on track to play vs. Chiefs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-week-7-wednesday-injury-001340927.html",
+   "timestamp": "2026-10-22T00:13:40.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "KC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "iAmvDOfx5womE3Ho",
+   "headline": "Sam Franklin Jr. becomes second Bills player suspended for spitting in same game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sam-franklin-jr-becomes-second-001331206.html",
+   "timestamp": "2026-10-22T00:13:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "3MRt5LkpdGvfMjTq",
+   "headline": "Jets get encouraging injury news on Adonai Mitchell, Dylan Parham",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-encouraging-injury-news-adonai-001324149.html",
+   "timestamp": "2026-10-22T00:13:24.000Z",
+   "category": "injury",
+   "player_ids": [
+    "adonai-mitchell"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "MpAg3kIM6aMp3OlN",
+   "headline": "Cardinals RB Jeremiyah Love remains out of practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-rb-jeremiyah-love-remains-001133910.html",
+   "timestamp": "2026-10-22T00:11:33.000Z",
+   "category": "practice",
+   "player_ids": [
+    "jeremiyah-love"
+   ],
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "d3gFSWAVrTcc26At",
+   "headline": "Broncos run game woes mostly a running back issue",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-run-game-woes-mostly-001023172.html",
+   "timestamp": "2026-10-22T00:10:23.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "hHfP6wWIgsytwbbh",
+   "headline": "Roger Goodell says NFL would welcome investigation into Eagles' handling of Jalen Hurts' blood clots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roger-goodell-says-nfl-welcome-000820641.html",
+   "timestamp": "2026-10-22T00:08:20.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "zbNSR_UAa1DImEiq",
+   "headline": "Miami Dolphins Discussion: Week 7 Game Vs New York Jets Predictions Edition",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-discussion-week-7-000000849.html",
+   "timestamp": "2026-10-22T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "tm2C3jOxVp2ih-BA",
+   "headline": "Josh Jacobs addresses battery incident ahead of Packers return: ‘Three-second decision can alter your life’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-jacobs-addresses-battery-incident-235845886.html",
+   "timestamp": "2026-10-21T23:58:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "g1_AhGl_rBPIbHTd",
+   "headline": "49ers defense gets good injury news as door is left open for Nick Bosa to return against Falcons",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-defense-gets-good-injury-235630432.html",
+   "timestamp": "2026-10-21T23:56:30.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ATL",
+    "SF"
    ]
   },
   {
@@ -39,6 +366,17 @@
    "team_abbrs": [
     "ARI",
     "DEN"
+   ]
+  },
+  {
+   "id": "soX0Ongh5bkaK3Sa",
+   "headline": "Jameis Winston embracing mentor role as Giants turn to J.J. McCarthy",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jameis-winston-embracing-mentor-role-233926278.html",
+   "timestamp": "2026-10-21T23:39:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -198,6 +536,17 @@
    ]
   },
   {
+   "id": "XSvqPt0YxCfF6hLe",
+   "headline": "Cornell Green, legendary Cowboys defensive back, dead at 86",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cornell-green-legendary-cowboys-defensive-222333800.html",
+   "timestamp": "2026-10-21T22:23:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "ib5nwdz3baQ2ZghX",
    "headline": "Kyle Louis returns to Miami Dolphins practice",
    "source": "Yahoo Sports",
@@ -217,20 +566,6 @@
    "category": "practice",
    "player_ids": [
     "matthew-golden"
-   ]
-  },
-  {
-   "id": "UJJffxtmctDx_1Lp",
-   "headline": "Seahawks Did Not Make Offer To RB Kenneth Walker",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/seahawks-did-not-make-offer-to-rb-kenneth-walker",
-   "timestamp": "2026-10-21T22:01:42.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker"
-   ],
-   "team_abbrs": [
-    "SEA"
    ]
   },
   {
@@ -331,6 +666,20 @@
    "team_abbrs": [
     "CLE",
     "TEN"
+   ]
+  },
+  {
+   "id": "bwtaMTFLMiZfrrmz",
+   "headline": "Rams face another looming threat as Puka Nacua’s NFL review drags on",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-face-another-looming-threat-212610344.html",
+   "timestamp": "2026-10-21T21:26:10.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
    ]
   },
   {
@@ -789,17 +1138,6 @@
    "category": "transaction",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "MR0xuRG6HKvQ1oCd",
-   "headline": "Giants To Start QB J.J. McCarthy In Week 7",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/giants-plan-to-start-qb-j-j-mccarthy-in-week-7",
-   "timestamp": "2026-10-21T19:13:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
    ]
   },
   {
@@ -1398,311 +1736,6 @@
    "category": "breaking",
    "team_abbrs": [
     "TEN"
-   ]
-  },
-  {
-   "id": "v9_KFbZuKN4G_izS",
-   "headline": "Giants pivoting to J.J. McCarthy as starting QB after surprising comeback bid: Report",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-pivoting-j-j-mccarthy-161602743.html",
-   "timestamp": "2026-10-21T16:16:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "Dl5Ak6O3N7czogdU",
-   "headline": "Giants reportedly plan to start J.J. McCarthy against Texans in Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/giants-reportedly-plan-to-start-jj-mccarthy-against-texans-in-week-7-160817365.html",
-   "timestamp": "2026-10-21T16:08:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "zEUOrk8X0oHiptXd",
-   "headline": "Giants plan to start QB J.J. McCarthy against Texans in Week 7 after Jameis Winston's struggles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/giants-plan-to-start-qb-jj-mccarthy-against-texans-in-week-7-after-jameis-winstons-struggles-191737160.html",
-   "timestamp": "2026-10-21T16:08:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "qLu5Eia150FOaPlK",
-   "headline": "Caleb Williams wins NFC offensive player of the week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/caleb-williams-wins-nfc-offensive-160521937.html",
-   "timestamp": "2026-10-21T16:05:21.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "caleb-williams"
-   ]
-  },
-  {
-   "id": "54CE2TU6LbVbBlto",
-   "headline": "Falcons To Open AJ Terrell’s Practice Window",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/falcons-trending-toward-opening-aj-terrells-practice-window",
-   "timestamp": "2026-10-21T16:04:08.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "9WwLNNxHzLtwS0vA",
-   "headline": "Week 7 Cincinnati Bengals Power Rankings Roundup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-7-cincinnati-bengals-power-160000094.html",
-   "timestamp": "2026-10-21T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "FMYmQ3Cv6ylalVX6",
-   "headline": "Make your Week 7 NFL picks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-7-nfl-picks-160000512.html",
-   "timestamp": "2026-10-21T16:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "4XvWeJt1GNVKZedR",
-   "headline": "The Browns running game is broken, but it’s not broken beyond repair",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-running-game-broken-not-155955305.html",
-   "timestamp": "2026-10-21T15:59:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "rRdoBRf_CDyj17SO",
-   "headline": "Week 7 NFL betting odds, spreads, totals, lines for every game, including Bears-Patriots, Seahawks-Chiefs",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-7-nfl-betting-lines-odds-totals-spreads/",
-   "timestamp": "2026-10-21T15:57:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "KC",
-    "NE",
-    "SEA"
-   ]
-  },
-  {
-   "id": "Af2g5bDr_CVd-lbX",
-   "headline": "Eagles-Panthers Film Review: This defense needs help. It also needs to play better.",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-panthers-film-review-defense-155119119.html",
-   "timestamp": "2026-10-21T15:51:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "PHI"
-   ]
-  },
-  {
-   "id": "DeYIC_mKUmTVZbJj",
-   "headline": "France Could Ban Public Outings Ahead Of NFL’s First Game In Country",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/france-could-ban-public-outings-ahead-of-nfls-first-game-in-country",
-   "timestamp": "2026-10-21T15:42:49.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "C7Ziqp1nMZxUym5K",
-   "headline": "Hawks in the NFL: Week 6",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/hawks-nfl-week-6-154224834.html",
-   "timestamp": "2026-10-21T15:42:24.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "pA7Cp558ovw-yQNI",
-   "headline": "T.J. Watt’s wife calls out NFL for Paris game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/t-j-watt-wife-calls-153642551.html",
-   "timestamp": "2026-10-21T15:36:42.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "3zfNz86YZNYJd5zv",
-   "headline": "Joe Thuney trade revisited: How Bears, Chiefs both came out as winners",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/joe-thuney-trade-revisited-bears-caleb-williams-chiefs/",
-   "timestamp": "2026-10-21T15:36:06.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI",
-    "KC"
-   ]
-  },
-  {
-   "id": "irdH6LL24aoDSQoz",
-   "headline": "Full list of 2026 NFL bye weeks for all 32 teams",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-bye-weeks/",
-   "timestamp": "2026-10-21T15:34:40.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "kMWbvE7RcpnKTos0",
-   "headline": "Titans' Jordan Elliott was released after reportedly going to retrieve a gun after dispute at practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/titans-jordan-elliott-was-released-after-reportedly-going-to-retrieve-a-gun-after-dispute-at-practice-155308821.html",
-   "timestamp": "2026-10-21T15:30:41.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "fVmG2QXSYSpiHTAj",
-   "headline": "Bears vs. Patriots: Can Grady Jarrett beat the ailing Pats interior?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-vs-patriots-grady-jarrett-153000568.html",
-   "timestamp": "2026-10-21T15:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NE"
-   ]
-  },
-  {
-   "id": "hEIaaN-tzaSjvcDc",
-   "headline": "Duval Dispatch: Jags remain top 5 team despite loss to Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/duval-dispatch-jags-remain-top-152336150.html",
-   "timestamp": "2026-10-21T15:23:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "2aUZkfMBRCp5liGR",
-   "headline": "The Rams and Chargers are both a mess, and it’s only getting worse",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-chargers-both-mess-only-152042908.html",
-   "timestamp": "2026-10-21T15:20:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC",
-    "LAR"
-   ]
-  },
-  {
-   "id": "Iscgh7OA8zkN4MvV",
-   "headline": "Bills news: Assessing Buffalo’s defensive issues at the bye week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-news-assessing-buffalo-defensive-151440247.html",
-   "timestamp": "2026-10-21T15:14:40.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "78HPDOvcAB-YycyE",
-   "headline": "Panthers sign Anthony Tyus to 53, open practice window for Bam Martin-Scott",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-sign-anthony-tyus-53-151405413.html",
-   "timestamp": "2026-10-21T15:14:05.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "3ilPMXUxKv29UtL9",
-   "headline": "Bills’ Sam Franklin To Appeal One-Game Suspension For Unsportsmanlike Conduct",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bills-sam-franklin-to-appeal-one-game-suspension-for-unsportsmanlike-conduct",
-   "timestamp": "2026-10-21T15:01:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "5TbZ4e54z-HYgFDR",
-   "headline": "Week 7 NFL odds, picks, predictions: Computer model backs Jets and Broncos",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-bets-week-7-2026/",
-   "timestamp": "2026-10-21T14:50:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "f6BOFWuXebBTkGFr",
-   "headline": "Titans Release DT Jordan Elliott",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/titans-release-dt-jordan-elliott",
-   "timestamp": "2026-10-21T14:30:35.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "hTsXGrP0RFepNCvU",
-   "headline": "Packers RB Josh Jacobs Expected To Play In Week 7",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/packers-rb-josh-jacobs-could-play-in-week-7",
-   "timestamp": "2026-10-21T14:05:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "RF2mafXNkFd-gEV9",
-   "headline": "Russell Wilson has one bold trade target that could make the Chiefs unstoppable",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/chiefs-news-nfl-trade-deadline-garrett-wilson-russell-wilson/",
-   "timestamp": "2026-10-21T13:58:05.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "YZCu9yXrvcIg_22z",
-   "headline": "Predicting the full 14-team NFL playoff bracket entering Week 7: NFC East produces a surprise winner",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-playoff-predictions-chiefs-49ers-nfc-east/",
-   "timestamp": "2026-10-21T13:19:39.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Uk52WMGiUKxkzRNd",
-   "headline": "NFL Week 7 picks, odds: Vikings and Chiefs stay undefeated, while Cardinals pull off another upset",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-against-the-spread-vikings-bengals-jets/",
-   "timestamp": "2026-10-21T12:07:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "KC",
-    "MIN"
    ]
   }
  ]
