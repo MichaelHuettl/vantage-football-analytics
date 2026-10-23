@@ -1,8 +1,391 @@
 {
  "schema_version": 1,
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "bdEddyNLt2QLVUAv",
+   "headline": "TreVeyon Henderson: Minimal role in Week 7 loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/treveyon-henderson-18517",
+   "timestamp": "2026-10-23T05:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "treveyon-henderson"
+   ]
+  },
+  {
+   "id": "-OLwdb_xoywhcsew",
+   "headline": "Hunter Henry: Busy night in Week 7 loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/hunter-henry-10735",
+   "timestamp": "2026-10-23T04:54:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "hunter-henry"
+   ]
+  },
+  {
+   "id": "B9Dm_NZqR3R6H42c",
+   "headline": "Patriots try unconventional late-game tactic in loss to Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-try-unconventional-game-tactic-043329485.html",
+   "timestamp": "2026-10-23T04:33:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "8aZstqKA0TuO_2hr",
+   "headline": "NFL Mailbag: Steichen, Cousins, Rams, McCarthy, Chargers",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-mailbag-steichen-cousins-rams-mccarthy-chargers",
+   "timestamp": "2026-10-23T04:27:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "LAR"
+   ]
+  },
+  {
+   "id": "4qlbti4MM3aGQ76h",
+   "headline": "Colston Loveland: Continues producing in Week 7 win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/colston-loveland-18460",
+   "timestamp": "2026-10-23T04:27:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "colston-loveland"
+   ]
+  },
+  {
+   "id": "rWxshNZjJ_cUGBS_",
+   "headline": "Teams Showing Interest In Colts RB Jonathan Taylor",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/teams-showing-interest-in-colts-rb-jonathan-taylor",
+   "timestamp": "2026-10-23T04:25:36.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "ze8wfThMY__iO4UR",
+   "headline": "Rams Expected To Explore WR Trade",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/rams-expected-to-explore-wr-trade",
+   "timestamp": "2026-10-23T04:20:15.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "CtKhABol-EbUEyuv",
+   "headline": "A.J. Brown: Slight improvement in Week 7 loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/aj-brown-13432",
+   "timestamp": "2026-10-23T04:19:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Rew9m7ir6o9Lpa0o",
+   "headline": "Instant analysis from Patriots’ loss to Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-7-instant-analysis-041759464.html",
+   "timestamp": "2026-10-23T04:17:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "HdbbobNPlo4wss9M",
+   "headline": "Cole Kmet exits Week 7 game against New England",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cole-kmet-exits-week-7-040730964.html",
+   "timestamp": "2026-10-23T04:07:30.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "BdqbWY5Mcx6W-Nkg",
+   "headline": "5 moments that defined the Patriots’ loss to the Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-moments-defined-patriots-loss-035900636.html",
+   "timestamp": "2026-10-23T03:59:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "eeA0dbUI7YF6-TQW",
+   "headline": "Cole Kmet injury updates as Bears TE carted off on 'Thursday Night Football'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cole-kmet-injury-updates-bears-034620075.html",
+   "timestamp": "2026-10-23T03:46:20.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Pv99iMGH3aKcIP04",
+   "headline": "Week 7 DeMarvion Overshown Return Expected; Cowboys Open Marist Liufau’s Practice Window",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/week-7-demarvion-overshown-return-expected-cowboys-open-marist-liufaus-practice-window",
+   "timestamp": "2026-10-23T03:45:08.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "sgb3p7YavorxcLxm",
+   "headline": "Steelers climb AFC playoff standings after Bears defeat Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-climb-afc-playoff-standings-034208335.html",
+   "timestamp": "2026-10-23T03:42:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "m_YHaagZZBCoeGqW",
+   "headline": "Bears v Patriots – Bears prevail with a statement win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-v-patriots-bears-prevail-034121199.html",
+   "timestamp": "2026-10-23T03:41:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "Ugz8NwbcWnDWCX4P",
+   "headline": "Patrick Mahomes practicing Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patrick-mahomes-practicing-thursday-033737073.html",
+   "timestamp": "2026-10-23T03:37:37.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "FLNX1gycu9HVkOap",
+   "headline": "NFC Playoff Picture: Bears up to the 5th spot with win over Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfc-playoff-picture-bears-5th-033732099.html",
+   "timestamp": "2026-10-23T03:37:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "ncMH0jY819U-lxpl",
+   "headline": "Patriots playoff picture: How loss to Bears impacts AFC standings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-playoff-picture-loss-bears-033631441.html",
+   "timestamp": "2026-10-23T03:36:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "v9QJ4Ec1eXwjEMKX",
+   "headline": "Thursday Night Football: Bears fend off Patriots 30-24",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-bears-fend-033121967.html",
+   "timestamp": "2026-10-23T03:31:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "R3tt9Vnel4KswyHe",
+   "headline": "Patriots vs. Bears recap: Error-prone Pats lose 30-24 in Chicago",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-bears-live-updates-232845241.html",
+   "timestamp": "2026-10-23T03:26:47.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "17feENSxDxWGE-Bk",
+   "headline": "Bears TE Kmet carted off with a knee injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-te-cole-kmet-carted-031033568.html",
+   "timestamp": "2026-10-23T03:10:33.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "ArnMuHmVxDMkCdWN",
+   "headline": "Bears DB Malik Muhammad doubtful to return with toe injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-db-malik-muhammad-doubtful-024917037.html",
+   "timestamp": "2026-10-23T02:49:17.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "CKzjJ3F-siaxeu9-",
+   "headline": "NFL teams are reportedly interested in potential Shemar Stewart trade",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-teams-reportedly-interested-potential-024510130.html",
+   "timestamp": "2026-10-23T02:45:10.000Z",
+   "category": "transaction"
+  },
+  {
+   "id": "VpXevBxcDI1Lvadc",
+   "headline": "Drake Maye's second TD makes it a one-score game again",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-mayes-second-td-makes-022631773.html",
+   "timestamp": "2026-10-23T02:26:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
+   "id": "HtIGzgaZRmavL9Mp",
+   "headline": "What were the Bears doing? Patriots score improbable TD on final play before halftime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/were-bears-doing-patriots-score-021711612.html",
+   "timestamp": "2026-10-23T02:17:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "deVsbgxEIWxBrmc1",
+   "headline": "Rare NFL penalty: Bears become first team in 16 years to get flagged for illegal forward handoff",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/what-is-illegal-forward-handing-bears-patriots-nfl-penalty/",
+   "timestamp": "2026-10-23T02:16:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Cw0eejUSQShxXcwy",
+   "headline": "Bears respond to disastrous end of first half with TD drive",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-respond-disastrous-end-first-021146306.html",
+   "timestamp": "2026-10-23T02:11:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "8DqqiHw0vuhyciM0",
+   "headline": "Patriots close first half of Thursday Night Football with Rhamondre Stevenson TD thanks to bizarre misfire by Bears coverage",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/patriots-close-first-half-of-thursday-night-football-with-rhamondre-stevenson-td-thanks-to-bizarre-misfire-by-bears-coverage-020545447.html",
+   "timestamp": "2026-10-23T02:05:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "rhamondre-stevenson"
+   ],
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "ikRJ6nknj2Uv_iF1",
+   "headline": "Thursday Night Football: Luther Burden, Bears lead Patriots 20-14 at halftime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-luther-burden-015132726.html",
+   "timestamp": "2026-10-23T01:51:32.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "luther-burden"
+   ],
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "ZXBjrWLMegiAzzoE",
+   "headline": "Brian Schottenheimer issues challenge to George Pickens as Cowboys search for answers on offense",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cowboys-brian-schottenheimer-challenges-george-pickens/",
+   "timestamp": "2026-10-23T01:37:34.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-pickens"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "LZCMykhE5AWsQ2Pj",
+   "headline": "Giants’ Matt Nagy ready to open up playbook for J.J. McCarthy’s first start",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-matt-nagy-ready-open-013326787.html",
+   "timestamp": "2026-10-23T01:33:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "gBn3zPDdO4yo6-Gk",
+   "headline": "Report: Multiple teams have trade interest in Jonathan Taylor",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-multiple-teams-trade-interest-012841828.html",
+   "timestamp": "2026-10-23T01:28:41.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor"
+   ]
+  },
+  {
+   "id": "URPETyBCG9M90CvF",
+   "headline": "Drake Maye's touchdown run has Patriots on the scoreboard",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-mayes-touchdown-run-patriots-010949371.html",
+   "timestamp": "2026-10-23T01:09:49.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
   {
    "id": "pTfDHHQcvXF-gAcr",
    "headline": "Why C.J. Stroud and a surging Texans pass game can still make a playoff run amid slow start",
@@ -15,6 +398,33 @@
    ]
   },
   {
+   "id": "JaQUvQxqlQO4RCxl",
+   "headline": "Split decision: Caleb Williams outperforms Drake Maye in Bears' win over Pats",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/split-decision-caleb-williams-outperforms-005855608.html",
+   "timestamp": "2026-10-23T00:58:55.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye",
+    "caleb-williams"
+   ],
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "7i5vzpiseO6IzjgQ",
+   "headline": "Bears lead Patriots 10-0",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-lead-patriots-10-0-005725145.html",
+   "timestamp": "2026-10-23T00:57:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
    "id": "Lyoin5p5WoFqxtjK",
    "headline": "Christian Watson limited Thursday",
    "source": "Yahoo Sports",
@@ -23,30 +433,6 @@
    "category": "breaking",
    "player_ids": [
     "christian-watson"
-   ]
-  },
-  {
-   "id": "R3tt9Vnel4KswyHe",
-   "headline": "Patriots vs. Bears live updates: Score, news, discussion for Thursday Night Football",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-bears-live-updates-232845241.html",
-   "timestamp": "2026-10-23T00:50:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NE"
-   ]
-  },
-  {
-   "id": "8aZstqKA0TuO_2hr",
-   "headline": "NFL Mailbag: Steichen, Cousins, Rams, McCarthy, Chargers",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/nfl-mailbag-steichen-cousins-rams-mccarthy-chargers",
-   "timestamp": "2026-10-23T00:49:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC",
-    "LAR"
    ]
   },
   {
@@ -198,6 +584,30 @@
    "team_abbrs": [
     "KC",
     "SEA"
+   ]
+  },
+  {
+   "id": "w55EmrmJKKpRJGH-",
+   "headline": "Winners, losers as Bears outlast Patriots 30-24 on Thursday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/winners-losers-bears-outlast-patriots-234615134.html",
+   "timestamp": "2026-10-22T23:46:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
+   ]
+  },
+  {
+   "id": "QPxc6reDLPsbFGZD",
+   "headline": "Winners, losers as Bears outlast Patriots 30-24 on Thursday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/winners-losers-bears-outlast-patriots-234615095.html",
+   "timestamp": "2026-10-22T23:46:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NE"
    ]
   },
   {
@@ -560,20 +970,6 @@
    ]
   },
   {
-   "id": "rWxshNZjJ_cUGBS_",
-   "headline": "Teams Showing Interest In Colts RB Jonathan Taylor",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/teams-showing-interest-in-colts-rb-jonathan-taylor",
-   "timestamp": "2026-10-22T22:31:36.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
    "id": "UbkZUh45tuzJBbgC",
    "headline": "Kansas State Football: Depth Chart Review – Defense – Kansas",
    "source": "Yahoo Sports",
@@ -676,14 +1072,13 @@
   },
   {
    "id": "Hm0DmopF3c9DJwng",
-   "headline": "Patriots vs. Bears live updates, inactives, where to watch: Drake Maye, Caleb Williams in showdown of the 2024 draft class",
+   "headline": "Bears hang on for win over Patriots on Thursday Night Football with Cairo Santos' clutch kick",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/patriots-bears-score-live-updates-inactives-highlights-stats-where-to-watch-week-7-thursday-night-football-221855929.html",
    "timestamp": "2026-10-22T22:18:55.000Z",
    "category": "breaking",
    "player_ids": [
-    "drake-maye",
-    "caleb-williams"
+    "cairo-santos"
    ],
    "team_abbrs": [
     "CHI",
@@ -1370,396 +1765,6 @@
    "category": "injury",
    "team_abbrs": [
     "SEA"
-   ]
-  },
-  {
-   "id": "aX_lrtt1s9bd6Ke5",
-   "headline": "Use DraftKings promo code to get $200 bonus, free NBA League Pass for Bears-Patriots, Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-free-nba-league-pass-bears-patriots-thursday-night-football/",
-   "timestamp": "2026-10-22T19:05:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NE"
-   ]
-  },
-  {
-   "id": "QN8bNZMf6UKVtZPq",
-   "headline": "Cowboys can get the victory Monday night in Philadelphia",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-victory-monday-night-philadelphia-190000967.html",
-   "timestamp": "2026-10-22T19:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "GTgvesJe8taeD2nQ",
-   "headline": "7 Lions coordinator takeaways for Packers week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/7-lions-coordinator-takeaways-packers-190000282.html",
-   "timestamp": "2026-10-22T19:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "GB"
-   ]
-  },
-  {
-   "id": "seVW8-sNJ5eIVFs8",
-   "headline": "Evaluating Commanders OC David Blough through Washington bye week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/evaluating-commanders-oc-david-blough-185303016.html",
-   "timestamp": "2026-10-22T18:53:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "wCrFlcbCyeEr5OsA",
-   "headline": "Rams have signed 9 different kickers since Greg Zuerlein left",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-signed-9-different-kickers-183242182.html",
-   "timestamp": "2026-10-22T18:32:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "3t0LZ-xiBFoJY4EL",
-   "headline": "Scouting New York Jets edge defender Quinton Bell",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/scouting-york-jets-edge-defender-183008831.html",
-   "timestamp": "2026-10-22T18:30:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "oH29cTer0ucN7AHM",
-   "headline": "NFL predictions, Week 7: Not much faith in Giants to upset Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-week-7-not-183000252.html",
-   "timestamp": "2026-10-22T18:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "llL948uXtckTE2eE",
-   "headline": "NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-7-injury-report-ravens-lamar-jackson-jets-breece-hall/",
-   "timestamp": "2026-10-22T18:26:53.000Z",
-   "category": "injury",
-   "player_ids": [
-    "lamar-jackson",
-    "breece-hall"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "7cWI-EAE54ZuJzam",
-   "headline": "Chicago Bears vs. New England Patriots: Week 7 Players to Watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-vs-england-patriots-182558611.html",
-   "timestamp": "2026-10-22T18:25:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NE"
-   ]
-  },
-  {
-   "id": "qUcbDdkeX_6u48oy",
-   "headline": "Seahawks activate Zach Charbonnet",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-activate-zach-charbonnet-182013375.html",
-   "timestamp": "2026-10-22T18:20:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "czfKh0T8uRMXuYng",
-   "headline": "Eagles reportedly waive E.J. Jenkins",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-reportedly-waive-e-j-181436326.html",
-   "timestamp": "2026-10-22T18:14:36.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "MfqgwDUUZw3R2Ebq",
-   "headline": "Re-drafting top 10 of the 2024 NFL Draft: Caleb Williams holds onto top spot, Drake Maye moves up",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/re-drafting-top-10-2024-nfl-draft-caleb-williams-drake-maye/",
-   "timestamp": "2026-10-22T18:14:24.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "drake-maye",
-    "caleb-williams"
-   ]
-  },
-  {
-   "id": "NrW-qPmy6MvAYF9G",
-   "headline": "3 things to watch for in 49ers-Falcons: Battle of two top-7 run defenses",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-things-watch-49ers-falcons-181257295.html",
-   "timestamp": "2026-10-22T18:12:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "SF"
-   ]
-  },
-  {
-   "id": "DdUipsYHQkb_Lv9l",
-   "headline": "Week 7 Fantasy Football Toolkit: Start/sit advice, rankings, sleepers, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/week-7-fantasy-football-toolkit-startsit-advice-rankings-sleepers-more-181058874.html",
-   "timestamp": "2026-10-22T18:10:58.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "dxiDj3hreFF-UXci",
-   "headline": "NFL trade rumors: 5 receivers the Rams should target in a deal, including Cowboys' George Pickens",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-trade-rumors-5-receivers-rams-should-target-george-pickens/",
-   "timestamp": "2026-10-22T18:09:23.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "george-pickens"
-   ],
-   "team_abbrs": [
-    "DAL",
-    "LAR"
-   ]
-  },
-  {
-   "id": "3A22RP3iz3LsTBqg",
-   "headline": "Lions promote punt returner, sign new DB to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-promote-punt-returner-sign-180322482.html",
-   "timestamp": "2026-10-22T18:03:22.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "H7m1Dqs-WvCHBYh-",
-   "headline": "Chiefs placing Josh Simmons on IR after LT resurfaced at practice, say he needs more time to 'return to full function'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/chiefs-placing-josh-simmons-on-ir-after-lt-resurfaced-at-practice-say-he-needs-more-time-to-return-to-full-function-175954606.html",
-   "timestamp": "2026-10-22T17:59:54.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "kytB94VGHCsW-SSS",
-   "headline": "He’s back! Seahawks activate running back Zach Charbonnet off PUP list",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/back-seahawks-activate-running-back-175626705.html",
-   "timestamp": "2026-10-22T17:56:26.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "bdxqKuruzGQrrwmc",
-   "headline": "NFL trade deadline: Browns connected to a whole lot of edge defenders as targets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-trade-deadline-browns-connected-175245106.html",
-   "timestamp": "2026-10-22T17:52:45.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "D0_BxN38E7xImZw2",
-   "headline": "Should Vikings trade for Justin Herbert? Making the case for and against potential blockbuster deal",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/should-vikings-trade-for-justin-herbert-chargers/",
-   "timestamp": "2026-10-22T17:51:57.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "justin-herbert"
-   ],
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "zmBHQGP9393ZfYFG",
-   "headline": "Bears vs. Patriots: How to watch and listen, previews, odds, and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-vs-patriots-watch-listen-175015689.html",
-   "timestamp": "2026-10-22T17:50:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NE"
-   ]
-  },
-  {
-   "id": "Pjod4l8ae6SkFYvB",
-   "headline": "Eagles vs. Cowboys odds: Opening lines for Week 7 matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-vs-cowboys-odds-opening-174942799.html",
-   "timestamp": "2026-10-22T17:49:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "5LlsX__dQyJCv6Gm",
-   "headline": "David Montgomery: Not practicing Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/david-montgomery-13556",
-   "timestamp": "2026-10-22T17:46:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "david-montgomery"
-   ]
-  },
-  {
-   "id": "F51TmMuFbBWsbG1t",
-   "headline": "Is Saquon Barkley playing this week? Latest injury update on Eagles RB",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saquon-barkley-playing-week-latest-174403844.html",
-   "timestamp": "2026-10-22T17:44:03.000Z",
-   "category": "injury",
-   "player_ids": [
-    "saquon-barkley"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "BUQ5QIRB0PAtk3nd",
-   "headline": "JJ Watt gets multiyear deal with CBS as lead NFL game analyst, will call Super Bowl in 2028",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jj-watt-gets-multiyear-deal-172051979.html",
-   "timestamp": "2026-10-22T17:20:51.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "lLThn8o5y7EORdWc",
-   "headline": "Josh Jacobs: Practicing Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/josh-jacobs-13582",
-   "timestamp": "2026-10-22T17:16:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ]
-  },
-  {
-   "id": "mN8SvT1vOfSzHSPl",
-   "headline": "Tyler Warren: Not spotted Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tyler-warren-18534",
-   "timestamp": "2026-10-22T17:13:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tyler-warren"
-   ]
-  },
-  {
-   "id": "0ClcWDhkzNcYWJYf",
-   "headline": "Stampede Blue Reacts Survey – Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/stampede-blue-reacts-survey-week-171244648.html",
-   "timestamp": "2026-10-22T17:12:44.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "at8KPuFkkl7Lv97z",
-   "headline": "Does J.J. McCarthy give the Giants worse odds against the Texans?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/does-j-j-mccarthy-giants-170938159.html",
-   "timestamp": "2026-10-22T17:09:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "_5c_0CueMzS-an-p",
-   "headline": "Teams ‘Tracking’ Bengals DE Shemar Stewart Before Trade Deadline",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/teams-tracking-bengals-de-shemar-stewart-before-trade-deadline",
-   "timestamp": "2026-10-22T17:00:26.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "hZgDMET2SQ5aRnux",
-   "headline": "Cowboys 2nd Philly visit under Schottenheimer is a sad reality check",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-2nd-philly-visit-under-170000664.html",
-   "timestamp": "2026-10-22T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "wQAqi31FfIJZyg12",
-   "headline": "Saints Super Bowl Odds: Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-super-bowl-odds-week-170000600.html",
-   "timestamp": "2026-10-22T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "mMnI2kpaePpqf8aY",
-   "headline": "Analyzing J.J. McCarthy's initial Giants performance and possible impact against Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/analyzing-j-j-mccarthys-initial-170000436.html",
-   "timestamp": "2026-10-22T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "J4YYB2HPTsSMqBxN",
-   "headline": "The Packers’ path is getting steeper",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-path-getting-steeper-165629379.html",
-   "timestamp": "2026-10-22T16:56:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
    ]
   }
  ]
