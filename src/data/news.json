@@ -1,8 +1,128 @@
 {
  "schema_version": 1,
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "0mpzjM4i8cAJDFQT",
+   "headline": "Bears TE Cole Kmet Suffers Season-Ending Knee Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/bears-cole-kmet-could-be-done-for-year",
+   "timestamp": "2026-10-24T04:00:07.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Hex6BFPhsVcBCHF6",
+   "headline": "Seahawks sent mixed signals about whether Zach Charbonnet would play on Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-sent-mixed-signals-whether-034154308.html",
+   "timestamp": "2026-10-24T03:41:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "o8a0TzoL7hmbR9C9",
+   "headline": "Colts QB Anthony Richardson Charged With Marijuana Possession",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/colts-qb-anthony-richardson-charged-with-marijuana-possession",
+   "timestamp": "2026-10-24T03:32:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "Q-hBpWpmEbDuMC1p",
+   "headline": "NFL predictions: Jets, Aaron Glenn face a must win game against winless Dolphins",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-jets-aaron-glenn-031654913.html",
+   "timestamp": "2026-10-24T03:16:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "Prlger_FNZ__0L0Q",
+   "headline": "Giants DE Chauncey Golston Out For Season",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/giants-de-chauncey-golston-out-for-season",
+   "timestamp": "2026-10-24T03:13:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "I7ogGTn8TA4pZz5c",
+   "headline": "President Trump on Sunday's game in Paris: \"The NFL probably could have postponed\"",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/president-trump-sundays-game-paris-025106353.html",
+   "timestamp": "2026-10-24T02:51:06.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "oMpFkt8JHeIHvbc5",
+   "headline": "Buccaneers vs. Panthers: Baker Mayfield expected back as three Bucs ruled out",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buccaneers-vs-panthers-baker-mayfield-023752532.html",
+   "timestamp": "2026-10-24T02:37:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "baker-mayfield"
+   ],
+   "team_abbrs": [
+    "CAR",
+    "TB"
+   ]
+  },
+  {
+   "id": "nZpnQ12M0qW5u_aH",
+   "headline": "Lamar Jackson Questionable With High Ankle Sprain",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/lamar-jackson-questionable-with-high-ankle-sprain",
+   "timestamp": "2026-10-24T02:11:38.000Z",
+   "category": "injury",
+   "player_ids": [
+    "lamar-jackson"
+   ]
+  },
+  {
+   "id": "cXetezhd0jHpWXoZ",
+   "headline": "49ers injury report for Week 7 vs. Falcons: Nick Bosa, Mike Evans, Deebo Samuel all out",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-injury-report-week-7-015056201.html",
+   "timestamp": "2026-10-24T01:50:56.000Z",
+   "category": "injury",
+   "player_ids": [
+    "deebo-samuel",
+    "mike-evans"
+   ],
+   "team_abbrs": [
+    "ATL",
+    "SF"
+   ]
+  },
+  {
+   "id": "YXg7UgZicyMDwg6k",
+   "headline": "Adonai Mitchell’s long-awaited Jets return from mystery finger injury gives offense the boost it needs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/adonai-mitchell-long-awaited-jets-012408210.html",
+   "timestamp": "2026-10-24T01:24:08.000Z",
+   "category": "injury",
+   "player_ids": [
+    "adonai-mitchell"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
   {
    "id": "-UgAdskXAzhdKI8n",
    "headline": "NFL predictions: Can Falcons take advantage of 49ers injuries?",
@@ -47,6 +167,17 @@
    ]
   },
   {
+   "id": "5t7tKN8tcKsAVVc4",
+   "headline": "Bills’ Sam Franklin gets spitting suspension overturned after winning appeal",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-sam-franklin-gets-spitting-002508732.html",
+   "timestamp": "2026-10-24T00:25:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
    "id": "7QL-ktPJlwSTrzeU",
    "headline": "Braelon Allen: Week 7 role uncertain",
    "source": "RotoWire",
@@ -65,6 +196,14 @@
     "CHI",
     "NE"
    ]
+  },
+  {
+   "id": "RSm_hqok5BgLToLh",
+   "headline": "Aaron Glenn faces $250K fine for conduct toward NFL officials",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-glenn-faces-250k-fine-001545708.html",
+   "timestamp": "2026-10-24T00:15:45.000Z",
+   "category": "breaking"
   },
   {
    "id": "e8j90GIGFaDCoME6",
@@ -87,6 +226,20 @@
    "category": "breaking",
    "player_ids": [
     "george-pickens"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "ZjM7NQRLdwEvMQ64",
+   "headline": "CeeDee Lamb has ‘why not us’ attitude for Cowboys’ NFC East chances despite worrying skid",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ceedee-lamb-why-not-us-000304625.html",
+   "timestamp": "2026-10-24T00:03:04.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ceedee-lamb"
    ],
    "team_abbrs": [
     "DAL"
@@ -128,6 +281,17 @@
    "category": "breaking"
   },
   {
+   "id": "NKhEJEeqp7oDK189",
+   "headline": "Raiders’ Dont’e Thornton running out of time as roster deadline looms",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-dont-e-thornton-running-232149696.html",
+   "timestamp": "2026-10-23T23:21:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
    "id": "pNO1UmCTN6SgroXW",
    "headline": "Las Vegas Raiders-Los Angeles Rams FEED Topic: Which team will win special teams battle?",
    "source": "Yahoo Sports",
@@ -148,6 +312,17 @@
    "category": "injury",
    "team_abbrs": [
     "NYG"
+   ]
+  },
+  {
+   "id": "E37RqBoVoNpXXVxO",
+   "headline": "Cowboys recognize cheerleaders union after years of fighting for higher pay",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-recognize-cheerleaders-union-years-230537477.html",
+   "timestamp": "2026-10-23T23:05:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
    ]
   },
   {
@@ -182,6 +357,17 @@
    "team_abbrs": [
     "DAL",
     "PHI"
+   ]
+  },
+  {
+   "id": "peqLiTUfkh3EAiCZ",
+   "headline": "Tremaine Edmunds out for season in crushing Giants injury blow",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tremaine-edmunds-season-crushing-giants-225629928.html",
+   "timestamp": "2026-10-23T22:56:29.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -230,6 +416,20 @@
    "category": "transaction",
    "team_abbrs": [
     "CLE"
+   ]
+  },
+  {
+   "id": "w5cD1r9KUoSBr_zy",
+   "headline": "Lamar Jackson leaves door open for Week 7 return against Bengals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lamar-jackson-leaves-door-open-223327145.html",
+   "timestamp": "2026-10-23T22:33:27.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "lamar-jackson"
+   ],
+   "team_abbrs": [
+    "CIN"
    ]
   },
   {
@@ -282,6 +482,14 @@
    ]
   },
   {
+   "id": "Jzn6FHcnwiOQAgfn",
+   "headline": "Roger Goodell wants NFL to expand international play to Tokyo: ‘It’s coming at some point’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roger-goodell-wants-nfl-expand-222515382.html",
+   "timestamp": "2026-10-23T22:25:15.000Z",
+   "category": "breaking"
+  },
+  {
    "id": "n0GR2kUzBxVhaAvP",
    "headline": "NFL Week 7 injury report: Seahawks' Zach Charbonnet won't return for Sunday's game vs. Chiefs",
    "source": "CBS Sports",
@@ -304,6 +512,18 @@
     "saquon-barkley"
    ],
    "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "e7CE38dUNp0PPo9q",
+   "headline": "Eagles vs. Cowboys in primetime: How to watch NFC East battle",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-vs-cowboys-primetime-watch-222219790.html",
+   "timestamp": "2026-10-23T22:22:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
     "PHI"
    ]
   },
@@ -335,6 +555,17 @@
    "category": "practice",
    "player_ids": [
     "devonta-smith"
+   ]
+  },
+  {
+   "id": "CgV7HRTPQIFNi8sm",
+   "headline": "49ers’ Nick Bosa gets another brutal reality check after bold return prediction",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-nick-bosa-gets-another-220241207.html",
+   "timestamp": "2026-10-23T22:02:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -854,17 +1085,6 @@
    ]
   },
   {
-   "id": "0mpzjM4i8cAJDFQT",
-   "headline": "Bears TE Cole Kmet Suffers Season-Ending Knee Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bears-cole-kmet-could-be-done-for-year",
-   "timestamp": "2026-10-23T18:08:07.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
    "id": "g-FRo6pOpwO5RE55",
    "headline": "Ravens OLB Tavius Robinson Suffers Season-Ending Pectoral Injury",
    "source": "Pro Football Rumors",
@@ -873,17 +1093,6 @@
    "category": "injury",
    "team_abbrs": [
     "BAL"
-   ]
-  },
-  {
-   "id": "o8a0TzoL7hmbR9C9",
-   "headline": "Colts QB Anthony Richardson Charged With Marijuana Possession",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/colts-qb-anthony-richardson-charged-with-marijuana-possession",
-   "timestamp": "2026-10-23T17:32:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
    ]
   },
   {
@@ -1511,219 +1720,6 @@
    "player_ids": [
     "caleb-williams"
    ]
-  },
-  {
-   "id": "tjpNGdi6Zgcj-CJJ",
-   "headline": "NFL Week 7 odds, predictions, expert picks: Who wins Ravens-Bengals AFC North showdown? Texans keep rolling?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-odds-predictions-expert-picks-against-the-spread/",
-   "timestamp": "2026-10-23T12:47:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CIN",
-    "HOU"
-   ]
-  },
-  {
-   "id": "BjSK1b9UC5Q3D4Ud",
-   "headline": "NFL Week 7 picks, odds, best bets: Why Bengals will beat Ravens, Saints to cover in Paris",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-chiefs-saints-steelers-paris/",
-   "timestamp": "2026-10-23T12:30:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CIN",
-    "NO"
-   ]
-  },
-  {
-   "id": "tR1kS7vzEn4KrzOc",
-   "headline": "NFL odds: Week 7 parlays featuring favorites, underdogs include Buccaneers-Panthers, Bengals-Ravens",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-week-7-parlays-featuring-favorites-underdogs-include-buccaneers-panthers-bengals-ravens/",
-   "timestamp": "2026-10-23T12:01:09.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CAR",
-    "CIN",
-    "TB"
-   ]
-  },
-  {
-   "id": "HoMnJYUlbcrqLDZs",
-   "headline": "Carolina Panthers 2026 fan mailbag: Injury woes, scoring points, safety room, and more!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/carolina-panthers-2026-fan-mailbag-114740740.html",
-   "timestamp": "2026-10-23T11:47:40.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "cOz0s5FDHknFQdaF",
-   "headline": "Should the Chiefs trade for Garrett Wilson? Why blockbuster deal makes sense, and why it probably won't happen",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/garrett-wilson-trade-chiefs-jets-star-receiver-2026/",
-   "timestamp": "2026-10-23T11:44:30.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "garrett-wilson"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "5wIG_jw2sx2pAaYW",
-   "headline": "The next two weeks will determine Shane Steichen’s future with the Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/next-two-weeks-determine-shane-113300994.html",
-   "timestamp": "2026-10-23T11:33:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "1INCdDyop3TmyQoa",
-   "headline": "Week 7 best bets: Browns keep stacking wins, two big-name running back under props to target",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/week-7-best-bets-browns-running-backs-2026/",
-   "timestamp": "2026-10-23T11:30:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "es-TjVfHHNpCXktJ",
-   "headline": "Dolphins news: Pending free agents, Jets preview, and trade rumors",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-news-pending-free-agents-113000564.html",
-   "timestamp": "2026-10-23T11:30:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "MIA",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "7VBVwKI4QQu3bCV3",
-   "headline": "Jared Goff vs. Packers' stifling secondary: How this crucial NFC North showdown will be won",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jared-goff-vs-packers-nfc-north-showdown-breakdown/",
-   "timestamp": "2026-10-23T11:24:36.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jared-goff"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "NraD1Qw4WRT6XpIs",
-   "headline": "Should the Browns work out a trade for RB Jonathan Taylor? Let’s explore",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-trade-rb-jonathan-taylor-111741571.html",
-   "timestamp": "2026-10-23T11:17:41.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "wVEOWlOCz_sKPXsN",
-   "headline": "Tennessee Titans news: A chance at a win streak",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tennessee-titans-news-chance-win-110000531.html",
-   "timestamp": "2026-10-23T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "yxi_T6Yf6tXPvlu7",
-   "headline": "New York Jets News: Reminder About a Very Bright Future",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-news-reminder-very-110000825.html",
-   "timestamp": "2026-10-23T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "lPl6_SvPwqXDQjiq",
-   "headline": "Cowboys news: Brian Schottenheimer is feeling the pressure",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-brian-schottenheimer-feeling-110000544.html",
-   "timestamp": "2026-10-23T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "fTxqZ8Gcyd2PPNNZ",
-   "headline": "Chiefs News: George Karlaftis is leading the Chiefs’ defense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-news-george-karlaftis-leading-110000577.html",
-   "timestamp": "2026-10-23T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "Zg1tTZygmmdHKgEU",
-   "headline": "Mike Macdonald: Kenneth Walker is playing at the highest level in the league right now",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mike-macdonald-kenneth-walker-playing-104415722.html",
-   "timestamp": "2026-10-23T10:44:15.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker"
-   ]
-  },
-  {
-   "id": "RLsFN7BtE9NnBhbs",
-   "headline": "Lions vs. Packers preview: 3 key matchups",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-vs-packers-preview-3-103000753.html",
-   "timestamp": "2026-10-23T10:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "GB"
-   ]
-  },
-  {
-   "id": "CI6g08fH7pZQrouL",
-   "headline": "The Bills can’t win this week, but the right teams can lose",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-t-win-week-teams-103000191.html",
-   "timestamp": "2026-10-23T10:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "MllCQKfMxMrV5qQL",
-   "headline": "DJ Turner tabbed NFL’s most underrated player",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dj-turner-tabbed-nfl-most-103000168.html",
-   "timestamp": "2026-10-23T10:30:00.000Z",
-   "category": "breaking"
   }
  ]
 }
