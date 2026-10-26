@@ -1,8 +1,374 @@
 {
  "schema_version": 1,
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "32x4qTRyyIDxzvTw",
+   "headline": "Jaxon Smith-Njigba on pace to break Calvin Johnson's yardage record, with a game to spare",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxon-smith-njigba-pace-break-090252038.html",
+   "timestamp": "2026-10-26T09:02:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxon-smith-njigba"
+   ]
+  },
+  {
+   "id": "SJKvpVdw86fkPBJo",
+   "headline": "Patriots vs. Dolphins opening odds: Pats in rebound territory in Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-vs-dolphins-opening-odds-090000607.html",
+   "timestamp": "2026-10-26T09:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA",
+    "NE"
+   ]
+  },
+  {
+   "id": "yuaR5NsSUCga7ofc",
+   "headline": "Vikings are last unbeaten team as Chiefs lose - NFL week seven",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-last-unbeaten-team-chiefs-064249359.html",
+   "timestamp": "2026-10-26T06:42:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "MIN"
+   ]
+  },
+  {
+   "id": "9SF_caNV-LAsWh9M",
+   "headline": "NFC Playoff Picture, Week 7: Seahawks climb back into NFC West race with win, 49ers loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfc-playoff-picture-week-7-063651767.html",
+   "timestamp": "2026-10-26T06:36:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA",
+    "SF"
+   ]
+  },
+  {
+   "id": "wwv8x9QyzcbWmRBa",
+   "headline": "Winners and Losers from Seahawks vs. Chiefs: ‘The Dark Side’ does it again",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/winners-losers-seahawks-vs-chiefs-061737199.html",
+   "timestamp": "2026-10-26T06:17:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "AnTkz6iiH5q6Db0G",
+   "headline": "Chargers vs. Rams Opening Odds: Bolts face challenge in Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-vs-rams-opening-odds-061027552.html",
+   "timestamp": "2026-10-26T06:10:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "LAR"
+   ]
+  },
+  {
+   "id": "dmuMb_mb50_JhZxH",
+   "headline": "NFL Week 7 INSTANT reactions: Seahawks shut down Mahomes, J.J. McCarthy SHOCKS Texans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-week-7-instant-reactions-seahawks-shut-down-mahomes-jj-mccarthy-shocks-texans-060219659.html",
+   "timestamp": "2026-10-26T06:02:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU",
+    "SEA"
+   ]
+  },
+  {
+   "id": "UplANIYm75RaZghJ",
+   "headline": "Raiders 'thinking about everything' after latest loss, including potentially starting Fernando Mendoza over Kirk Cousins at QB",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/raiders-thinking-about-everything-after-latest-loss-including-potentially-starting-fernando-mendoza-over-kirk-cousins-at-qb-052529166.html",
+   "timestamp": "2026-10-26T05:25:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "PLUhhf9uoM6bruIR",
+   "headline": "Chiefs vs. Broncos odds: Chiefs open as 1.5-point favorites against division rivals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-vs-broncos-odds-chiefs-050000109.html",
+   "timestamp": "2026-10-26T05:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "0n6N7jvgSdRiuVc2",
+   "headline": "Broncos are home underdogs to Chiefs in Week 8 (OVERDOG SZN)",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-home-underdogs-chiefs-week-043921926.html",
+   "timestamp": "2026-10-26T04:39:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "OKaUxc0mxTX_Vsfu",
+   "headline": "Trade Offers For Jaguars WR Brian Thomas Jr. Expected To Increase",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/trade-offers-for-jaguars-wr-brian-thomas-jr-expected-to-increase",
+   "timestamp": "2026-10-26T04:30:56.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "JAX"
+   ]
+  },
+  {
+   "id": "3L4_qxcRQzrkceH3",
+   "headline": "Troy Aikman Would Consider Cowboys Gig",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/troy-aikman-would-consider-cowboys-gig",
+   "timestamp": "2026-10-26T04:27:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "kfvTlVfx81wcfjLQ",
+   "headline": "Kenneth Walker skips handshakes with ex-Seahawks teammates after getting shut down in Chiefs’ first loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kenneth-walker-skips-handshakes-ex-042446188.html",
+   "timestamp": "2026-10-26T04:24:46.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kenneth-walker"
+   ],
+   "team_abbrs": [
+    "KC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "qO6E2VqvwrTgmcMO",
+   "headline": "Colts’ Deadline Strategy Still Uncertain; Latest On RB Jonathan Taylor, Other Trade Candidates",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/colts-deadline-strategy-still-uncertain-latest-on-rb-jonathan-taylor-other-trade-candidates",
+   "timestamp": "2026-10-26T04:15:13.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "-Hqux7vr7dnBlU8k",
+   "headline": "Aaron Glenn’s answer for Jets time out blunder was alarmingly ambiguous",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-glenn-answer-jets-time-041359526.html",
+   "timestamp": "2026-10-26T04:13:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "h_OKBnU4KqlW2xjY",
+   "headline": "Steelers Looking To Trade For WR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/steelers-looking-to-trade-for-wr",
+   "timestamp": "2026-10-26T04:13:52.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "YU2HLJygKx2Ltzte",
+   "headline": "Bears vs. Seahawks odds: Opening lines for Week 8 matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-vs-seahawks-odds-opening-041309537.html",
+   "timestamp": "2026-10-26T04:13:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "SEA"
+   ]
+  },
+  {
+   "id": "y4kKO90jyu51zzX4",
+   "headline": "Giants defense has a new motto after ‘traitors’ callout hits hard",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-defense-motto-traitors-callout-040915173.html",
+   "timestamp": "2026-10-26T04:09:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "4_oCL8rhnTJPcbDN",
+   "headline": "Eagles To Both Buy And Sell At Trade Deadline?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-to-both-buy-and-sell-at-trade-deadline",
+   "timestamp": "2026-10-26T04:00:34.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "fRmysK9Q1mf_3tF9",
+   "headline": "Packers By The Numbers: Stats from the Week 7 loss to the Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-numbers-stats-week-7-040021603.html",
+   "timestamp": "2026-10-26T04:00:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "GB"
+   ]
+  },
+  {
+   "id": "kvn3MbubohrDez8l",
+   "headline": "Travis Kelce: Moves to fifth on all-time catch list",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/travis-kelce-8783",
+   "timestamp": "2026-10-26T03:59:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "travis-kelce"
+   ]
+  },
+  {
+   "id": "rupm-UewZyUm092H",
+   "headline": "NFL Contract Details: Van Noy, Tomlinson, Cooks, Andreessen",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-contract-details-van-noy-tomlinson-cooks-andreessen",
+   "timestamp": "2026-10-26T03:57:06.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "nt_a1rwmVcBuVsRT",
+   "headline": "Patrick Mahomes: Two-game TD drought sans Rice",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/patrick-mahomes-11839",
+   "timestamp": "2026-10-26T03:56:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "zOX24DaNBMHk_OlL",
+   "headline": "Andy Reid on Chiefs kicker Harrison Butker: ‘He’s off a bit’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/andy-reid-chiefs-kicker-harrison-035500925.html",
+   "timestamp": "2026-10-26T03:55:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "harrison-butker"
+   ],
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "9TTntmwo5rZ0I08y",
+   "headline": "Seahawks vs. Chiefs post-game reaction video: What we learned from Seattle’s masterful performance",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-vs-chiefs-post-game-035421661.html",
+   "timestamp": "2026-10-26T03:54:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "jNLzrLsUpU7myQBv",
+   "headline": "Sam Darnold: One TD, one INT in comfortable win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/sam-darnold-12490",
+   "timestamp": "2026-10-26T03:53:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ]
+  },
+  {
+   "id": "s8gbi7vfyfhDpKP4",
+   "headline": "NFC Playoff Picture: Bears still in the 5th spot following Sunday’s games",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfc-playoff-picture-bears-still-035132103.html",
+   "timestamp": "2026-10-26T03:51:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "2y-WCqNu0dSL3P2L",
+   "headline": "Andy Reid provides one injury update after Chiefs’ loss to the Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/andy-reid-provides-one-injury-034500832.html",
+   "timestamp": "2026-10-26T03:45:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "KC",
+    "SEA"
+   ]
+  },
+  {
+   "id": "JGiHr79wEXwroIau",
+   "headline": "Cam Skattebo says he's going to keep breaking NFL rules after getting flagged for rarely enforced penalty",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cam-skattebo-rare-penalty-giants-texans-2026/",
+   "timestamp": "2026-10-26T03:40:02.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "cam-skattebo"
+   ]
+  },
+  {
+   "id": "6Dox2cA8iJC-fVR1",
+   "headline": "Seahawks defense holds Patrick Mahomes to the worst offensive performance of his career",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-defense-holds-patrick-mahomes-033852529.html",
+   "timestamp": "2026-10-26T03:38:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "2oUSueJnMoGr6hJa",
+   "headline": "Omar Cooper Jr. giving Jets what they’re missing from Garrett Wilson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/omar-cooper-jr-giving-jets-033716806.html",
+   "timestamp": "2026-10-26T03:37:16.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "garrett-wilson"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
   {
    "id": "Ys7JWHBgOIC4mk2f",
    "headline": "Kenneth Walker: Stymied by Seattle's elite front",
@@ -116,14 +482,15 @@
    ]
   },
   {
-   "id": "h_OKBnU4KqlW2xjY",
-   "headline": "Steelers Looking To Trade For WR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/steelers-looking-to-trade-for-wr",
-   "timestamp": "2026-10-26T03:13:52.000Z",
-   "category": "transaction",
+   "id": "vRKJXd4ZGPEauzGl",
+   "headline": "Packers’ Xavier McKinney blasts ‘bulls–t’ officiating after controversial calls in loss to Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-xavier-mckinney-blasts-bulls-031238226.html",
+   "timestamp": "2026-10-26T03:12:38.000Z",
+   "category": "breaking",
    "team_abbrs": [
-    "PIT"
+    "DET",
+    "GB"
    ]
   },
   {
@@ -135,17 +502,6 @@
    "category": "breaking",
    "player_ids": [
     "matthew-stafford"
-   ]
-  },
-  {
-   "id": "JGiHr79wEXwroIau",
-   "headline": "Cam Skattebo says he's going to keep breaking NFL rules after getting flagged for rarely enforced penalty",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cam-skattebo-rare-penalty-giants-texans-2026/",
-   "timestamp": "2026-10-26T03:09:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-skattebo"
    ]
   },
   {
@@ -282,6 +638,20 @@
    "category": "breaking",
    "team_abbrs": [
     "TEN"
+   ]
+  },
+  {
+   "id": "hsbN4f07JlpudrNT",
+   "headline": "George Kittle drops truth bomb on 49ers’ ineffectiveness at wide receiver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/george-kittle-drops-truth-bomb-020205267.html",
+   "timestamp": "2026-10-26T02:02:05.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-kittle"
+   ],
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -1184,17 +1554,6 @@
    ]
   },
   {
-   "id": "OKaUxc0mxTX_Vsfu",
-   "headline": "Trade Offers For Jaguars WR Brian Thomas Jr. Expected To Increase",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/trade-offers-for-jaguars-wr-brian-thomas-jr-expected-to-increase",
-   "timestamp": "2026-10-25T21:57:56.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
    "id": "7o17UDC7btSdeOV-",
    "headline": "Fantasy Football RB Report: Cam Skattebo bounces back in a big way, plus more on backfield committees from Week 7",
    "source": "Yahoo Sports",
@@ -1418,364 +1777,6 @@
     "KC",
     "SEA"
    ]
-  },
-  {
-   "id": "HTTdwZM_OkVXE73n",
-   "headline": "Week 7 NFL betting promos, Chiefs-Seahawks: Get over $3,000 in bonuses from online betting apps, sportsbooks",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-7-nfl-betting-promos-chiefs-seahawks-get-over-3000-in-bonuses-from-online-betting-apps-sportsbooks/",
-   "timestamp": "2026-10-25T21:26:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "SEA"
-   ]
-  },
-  {
-   "id": "9iNDynUd3-dw4LyG",
-   "headline": "Davis Allen's second TD catch gives Rams 14-3 lead over Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/davis-allens-second-td-catch-211908888.html",
-   "timestamp": "2026-10-25T21:19:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "LV"
-   ]
-  },
-  {
-   "id": "Rm6ABPUpRQZzfGOc",
-   "headline": "Cam Skattebo felt something in his hamstring on final run in OT",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cam-skattebo-felt-something-hamstring-211556252.html",
-   "timestamp": "2026-10-25T21:15:56.000Z",
-   "category": "injury",
-   "player_ids": [
-    "cam-skattebo"
-   ]
-  },
-  {
-   "id": "JPoJcMvSwk1Nhhgz",
-   "headline": "Kenneth Walker III is a Chiefs star. Why didn't the Seahawks try to keep him?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kenneth-walker-iii-chiefs-star-211534272.html",
-   "timestamp": "2026-10-25T21:15:34.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker"
-   ],
-   "team_abbrs": [
-    "KC",
-    "SEA"
-   ]
-  },
-  {
-   "id": "IN4duXOsa0jk4zck",
-   "headline": "Colts doomed for fire sale after suffering third straight loss to Vikings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-doomed-fire-sale-suffering-211022749.html",
-   "timestamp": "2026-10-25T21:10:22.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "MIN"
-   ]
-  },
-  {
-   "id": "GvQk0g-QEXWBFshT",
-   "headline": "J.J. McCarthy's first Giants start is a triumph – and reminder of QB's value",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/j-j-mccarthys-first-giants-210930917.html",
-   "timestamp": "2026-10-25T21:09:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "C3TUb8uacE62fMRi",
-   "headline": "National Tight Ends Day: Here's how George Kittle, more TEs performed in fantasy football in Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/national-tight-ends-day-heres-how-george-kittle-more-tes-performed-in-fantasy-football-in-week-7-210318946.html",
-   "timestamp": "2026-10-25T21:03:18.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-kittle"
-   ]
-  },
-  {
-   "id": "pjxc6zixud2kwiUm",
-   "headline": "Is Taylor Swift at the Chiefs game tonight? Status for Week 7 vs. Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/taylor-swift-chiefs-game-tonight-210036155.html",
-   "timestamp": "2026-10-25T21:00:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "SEA"
-   ]
-  },
-  {
-   "id": "uRwZ2btgGzUGQb4h",
-   "headline": "Brock Purdy needs help. Winners and losers from 49ers' loss to Falcons",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-purdy-needs-help-winners-210025521.html",
-   "timestamp": "2026-10-25T21:00:25.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-purdy"
-   ],
-   "team_abbrs": [
-    "ATL",
-    "SF"
-   ]
-  },
-  {
-   "id": "dJhVMInrQugmoe3z",
-   "headline": "Packers' top two centers are questionable to return",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-top-two-centers-questionable-205944812.html",
-   "timestamp": "2026-10-25T20:59:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "FWMz4CF1d9uJlWff",
-   "headline": "Aaron Glenn 'highly disappointed' after loss to Dolphins, but believes Jets are 'on the right track'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aaron-glenn-highly-disappointed-loss-205817347.html",
-   "timestamp": "2026-10-25T20:58:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "3L4_qxcRQzrkceH3",
-   "headline": "Troy Aikman Would Consider Cowboys Gig",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/troy-aikman-would-consider-cowboys-gig",
-   "timestamp": "2026-10-25T20:57:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "oukbcYZi4pf0OJol",
-   "headline": "Week 7 snap reactions: Falcons fight off their demons and finish",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-7-snap-reactions-falcons-205730503.html",
-   "timestamp": "2026-10-25T20:57:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "g1OUvjizld2fN5gg",
-   "headline": "Buccaneers Week 7 Top Performers at Carolina Panthers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buccaneers-week-7-top-performers-205402936.html",
-   "timestamp": "2026-10-25T20:54:02.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "TB"
-   ]
-  },
-  {
-   "id": "gFoDvDEZA-NGAEcs",
-   "headline": "Matthew Stafford touchdown pass gives Rams 7-0 lead over Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/matthew-stafford-touchdown-pass-gives-205338996.html",
-   "timestamp": "2026-10-25T20:53:38.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ],
-   "team_abbrs": [
-    "LAR",
-    "LV"
-   ]
-  },
-  {
-   "id": "Hu5C9pfvSxfeJwEU",
-   "headline": "Broncos vs. Cardinals first quarter recap",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-cardinals-first-quarter-205321810.html",
-   "timestamp": "2026-10-25T20:53:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "DEN"
-   ]
-  },
-  {
-   "id": "DNQVOm3aJx8lz0fn",
-   "headline": "T.J. Hockenson finds end zone in Week 7 vs. Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/t-j-hockenson-finds-end-205147628.html",
-   "timestamp": "2026-10-25T20:51:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "e65KrysOPEZthpOa",
-   "headline": "Lions lead 7-0 as Jameson Williams scores TD, Trey Smack misses 26-yard field goal",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-lead-7-0-jameson-204245700.html",
-   "timestamp": "2026-10-25T20:42:45.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "trey-smack"
-   ],
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "KbutYUO7h3NgqKy9",
-   "headline": "Giants beat Texans 27-21 in overtime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-beat-texans-27-21-203644750.html",
-   "timestamp": "2026-10-25T20:36:44.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "cfcBBM-yLzUj5Sbo",
-   "headline": "J.J. McCarthy, Cam Skattebo connect for Giants' 27-21 OT win against Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/j-j-mccarthy-cam-skattebo-203311009.html",
-   "timestamp": "2026-10-25T20:33:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-skattebo"
-   ],
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "FnvHXIfjIKtOf38L",
-   "headline": "Browns move to 5-2 with another game-winning field goal, defeat Titans 27-24",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-move-5-2-another-203132306.html",
-   "timestamp": "2026-10-25T20:31:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "TEN"
-   ]
-  },
-  {
-   "id": "1N_NPYHChxMj3YKV",
-   "headline": "Fantasy Football Week 8 Early Waiver Wire Pickups: Caleb Douglas, Kaelon Black among top options",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-8-early-waiver-wire-pickups-caleb-douglas-kaelon-black-among-top-options-202949127.html",
-   "timestamp": "2026-10-25T20:29:49.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "wA3Jmk1emRmuURHl",
-   "headline": "Texans tie game late to force overtime only to lose against Giants",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-tie-game-force-overtime-202825719.html",
-   "timestamp": "2026-10-25T20:28:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "0dW1EiRheEmNAld-",
-   "headline": "Falcons' Kendal Daniels, a week after scary neck injury, recovers fumble late to help lift Atlanta past San Francisco",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/falcons-kendal-daniels-a-week-after-scary-neck-injury-recovers-fumble-late-to-help-lift-atlanta-past-san-francisco-211239004.html",
-   "timestamp": "2026-10-25T20:27:10.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "HQVYO3upsIU1oBsz",
-   "headline": "Browns 27 Titans 24 quick recap",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-27-titans-24-quick-202512463.html",
-   "timestamp": "2026-10-25T20:25:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "TEN"
-   ]
-  },
-  {
-   "id": "skeR5_O7TZADVS5i",
-   "headline": "Browns win on walk-off field goal for second straight week, defeating Titans 27-24",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/browns-win-on-walk-off-field-goal-for-second-straight-week-defeating-titans-27-24-202246970.html",
-   "timestamp": "2026-10-25T20:22:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "TEN"
-   ]
-  },
-  {
-   "id": "GqE4M_VyRpVNAOw9",
-   "headline": "Cleveland Browns rookie WR hits historic mark against Titans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-rookie-wr-hits-202227502.html",
-   "timestamp": "2026-10-25T20:22:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "TEN"
-   ]
-  },
-  {
-   "id": "BhpU6hUjEjHxywhj",
-   "headline": "Giants at Texans, Week 7: Live updates, discussion, news, highlights",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-texans-week-7-live-135529772.html",
-   "timestamp": "2026-10-25T20:20:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "NYG"
-   ]
-  },
-  {
-   "id": "B4X6tFQf78V9RPjD",
-   "headline": "Jets hand Dolphins their first win of 2026 with 28-25 loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-hand-dolphins-first-win-201851719.html",
-   "timestamp": "2026-10-25T20:18:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "R6BYzc_9eu14_bF4",
-   "headline": "NFL Week 7 Late Games open thread",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-7-games-open-201714276.html",
-   "timestamp": "2026-10-25T20:17:14.000Z",
-   "category": "breaking"
   }
  ]
 }
