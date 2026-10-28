@@ -4,12 +4,438 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "lF_nwVRzsCkZNXfH",
+   "headline": "NFL Practice Squad Updates: 10/27/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-practice-squad-updates-10-27-26",
+   "timestamp": "2026-10-28T00:30:20.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "uic6xLt-hJjVhAV8",
+   "headline": "Jared Goff backs Dan Campbell's decision to go for it deep in Lions' own end",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jared-goff-backs-dan-campbells-001157520.html",
+   "timestamp": "2026-10-28T00:11:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jared-goff"
+   ],
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "mHnbv5Bl0h9RiPJl",
+   "headline": "Miami Dolphins Fans: Malik Willis Early Season Takes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-fans-malik-willis-000000091.html",
+   "timestamp": "2026-10-28T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "ElQJ000qSDEMSYib",
+   "headline": "Cardinals, WR Zay Jones Reunite",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cardinals-wr-zay-jones-reunite",
+   "timestamp": "2026-10-27T23:59:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "1-VlGJfxcJ_KshUc",
+   "headline": "2026 NFL trade deadline tracker: Grades, analysis and details from every key deal",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/2026-nfl-trade-deadline-tracker-grades-analysis-and-details-from-every-key-deal-233619744.html",
+   "timestamp": "2026-10-27T23:36:19.000Z",
+   "category": "transaction"
+  },
+  {
+   "id": "M6r6dQIXpzjzXtUY",
+   "headline": "Trolling The Nation for Cowboys at Eagles: “I petition we end the game now”",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/trolling-nation-cowboys-eagles-petition-233000073.html",
+   "timestamp": "2026-10-27T23:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "rXbGfA2P64LrKY4V",
+   "headline": "Patriots trade deadline tracker: News and rumors ahead of the Nov. 10 deadline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-trade-deadline-tracker-news-231608460.html",
+   "timestamp": "2026-10-27T23:16:08.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "n_NZDCllp526YrPS",
+   "headline": "Cardinals sign WR Zay Jones",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-sign-wr-zay-jones-231323706.html",
+   "timestamp": "2026-10-27T23:13:23.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "Qfu5Lnj_O-Ncxv1A",
+   "headline": "Packers Injury Report: LaFleur hopes Matthew Golden plays on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-injury-report-lafleur-hopes-230409088.html",
+   "timestamp": "2026-10-27T23:04:09.000Z",
+   "category": "injury",
+   "player_ids": [
+    "matthew-golden"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "F0eHbgk9MV0ImS49",
+   "headline": "Packers, Bears, Eagles Showed Interest In Quenton Nelson",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/packers-bears-eagles-showed-interest-in-quenton-nelson",
+   "timestamp": "2026-10-27T23:00:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "GB",
+    "PHI"
+   ]
+  },
+  {
+   "id": "DcyHsU1IkAh8MNDu",
+   "headline": "Broncos preparing for biggest game of the year (so far) vs. Chiefs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-preparing-biggest-game-far-230000716.html",
+   "timestamp": "2026-10-27T23:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "pMEQ6tqwN-xaVhqQ",
+   "headline": "Packers LB Zaire Franklin won't play Thursday night",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-lb-zaire-franklin-wont-225534135.html",
+   "timestamp": "2026-10-27T22:55:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "731d06CGHVGWgPMB",
+   "headline": "DeForest Buckner trade grades: 49ers get reunion with three-time Pro Bowler, Colts work toward rebuild",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/deforest-buckner-trade-grades-49ers-colts/",
+   "timestamp": "2026-10-27T22:33:47.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND",
+    "SF"
+   ]
+  },
+  {
+   "id": "275uSLLCTOOx-B9e",
+   "headline": "Complementary football gets Cowboys back on the horse in primetime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/complementary-football-gets-cowboys-back-223000599.html",
+   "timestamp": "2026-10-27T22:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "SkZ8IysS7MKDSv0c",
+   "headline": "Cleveland Browns WR up for a league honor after big game in Week 7",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-wr-league-honor-222631206.html",
+   "timestamp": "2026-10-27T22:26:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "tIFXZ2C-wCHVlcYr",
+   "headline": "Remembering a Random Packers Game: The Carolina Panthers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/remembering-random-packers-game-carolina-222039072.html",
+   "timestamp": "2026-10-27T22:20:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "ikppodScJ5tkpSL_",
+   "headline": "Eagles-Cowboys Film Review: Most annoying defensive performance of the Vic Fangio era",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-cowboys-film-review-most-221449812.html",
+   "timestamp": "2026-10-27T22:14:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "Xo7BLR_tCkdtBLyG",
+   "headline": "Ravens sign G Michael Jordan after Vega Ioane injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-sign-g-michael-jordan-220816273.html",
+   "timestamp": "2026-10-27T22:08:16.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "bZcYfwNL1VLVJKHu",
+   "headline": "Cowboys waive RB Emari Demercado",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-waive-rb-emari-demercado-220549394.html",
+   "timestamp": "2026-10-27T22:05:49.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "V6raU8xmVHg7Rg6z",
+   "headline": "DeForest Buckner trade: Colts send DT to 49ers in exchange for 2027 fourth-round pick",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/deforest-buckner-trade-colts-49ers/",
+   "timestamp": "2026-10-27T22:04:07.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND",
+    "SF"
+   ]
+  },
+  {
+   "id": "zxRC6Ladr1j8xhXK",
+   "headline": "Grading the trade: Colts send DeForest Buckner back to 49ers in smart reunion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/grading-the-trade-colts-send-deforest-buckner-back-to-49ers-in-smart-reunion-220343941.html",
+   "timestamp": "2026-10-27T22:03:43.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND",
+    "SF"
+   ]
+  },
+  {
+   "id": "ykKO9EABhZuNrm2O",
+   "headline": "Eagles-Cowboys snap counts: Jalen Carter and Jordan Davis play a lot, produce little",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-cowboys-snap-counts-jalen-215639330.html",
+   "timestamp": "2026-10-27T21:56:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "TrnR63HMXf_-AP5m",
+   "headline": "Jets stand to benefit from Colts' fire sale",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-stand-benefit-colts-fire-214352488.html",
+   "timestamp": "2026-10-27T21:43:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "9UmGR3qC8A8SsVXy",
+   "headline": "Who won the DeForest Buckner trade? 49ers, Colts heading in different directions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/won-deforest-buckner-trade-49ers-214050883.html",
+   "timestamp": "2026-10-27T21:40:50.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND",
+    "SF"
+   ]
+  },
+  {
+   "id": "ynE1bkzoXI-pQNDY",
+   "headline": "4 takeaways from Giants GM Joe Schoen: Trade deadline, J.J. McCarthy, more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/4-takeaways-giants-gm-joe-213348372.html",
+   "timestamp": "2026-10-27T21:33:48.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "em9qj3hmIMR7nFjq",
+   "headline": "Buffalo Bills make defensive roster moves before Week 8 vs. Baltimore Ravens",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buffalo-bills-defensive-roster-moves-212510060.html",
+   "timestamp": "2026-10-27T21:25:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "BUF"
+   ]
+  },
+  {
+   "id": "rXGjgGVLootBaN4A",
+   "headline": "How Las Vegas Raiders’ defense had no answer for Los Angeles Rams’ 13 personnel in Week 7 loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/las-vegas-raiders-defense-had-212400325.html",
+   "timestamp": "2026-10-27T21:24:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "LV"
+   ]
+  },
+  {
+   "id": "7Ro8bpJI8sfly7al",
+   "headline": "Yahoo Fantasy x BreakingT Week 7 shirt: Joe Burrow cools down heated rivalry with comeback against Ravens",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/yahoo-fantasy-x-breakingt-week-7-shirt-joe-burrow-cools-down-heated-rivalry-with-comeback-against-ravens-211910717.html",
+   "timestamp": "2026-10-27T21:19:10.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "joe-burrow"
+   ],
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "svW7CdWiYJQeK0ze",
+   "headline": "Jerry Jones teases hiring Troy Aikman for Cowboys amid ESPN contract drama",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jerry-jones-teases-hiring-troy-211645893.html",
+   "timestamp": "2026-10-27T21:16:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "Hi9trBuuyvJskiLY",
+   "headline": "CSC Reacts Survey: Who is the Saints Mid-Season MVP?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/csc-reacts-survey-saints-mid-211316570.html",
+   "timestamp": "2026-10-27T21:13:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "xYY9GUdtdrRQOvU_",
+   "headline": "NFL trade deadline: Four Eagles, a star Colt and two starting QBs included among top 25 candidates",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-rankings-top-25-eagles-colts/",
+   "timestamp": "2026-10-27T21:11:05.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "5SjIABKR4We2jPOY",
+   "headline": "With two trades in one day, Colts are clearly open for business",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/two-trades-one-day-colts-210611986.html",
+   "timestamp": "2026-10-27T21:06:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "tk_F4_bbJe7uYiso",
+   "headline": "Colts fire sale continues with a second player heading to NFC West",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-fire-sale-continues-second-210205026.html",
+   "timestamp": "2026-10-27T21:02:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "ATrG0thOWlYUQA-f",
+   "headline": "BREAKING: Colts trade DeForest Buckner back to San Francisco 49ers for fourth-round pick",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/breaking-colts-trade-deforest-buckner-210000039.html",
+   "timestamp": "2026-10-27T21:00:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND",
+    "SF"
+   ]
+  },
+  {
+   "id": "D34ckaVfklT1Iy-C",
+   "headline": "Cowboys run game paves the way in bounce-back win over Eagles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-run-game-paves-way-210000879.html",
+   "timestamp": "2026-10-27T21:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "x1y-RyRLsNYMU6py",
+   "headline": "Packers Film Room: Woulda Coulda Shouldas in Week 7",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-film-room-woulda-coulda-205445836.html",
+   "timestamp": "2026-10-27T20:54:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "eyQL03CIg5i-Ip91",
+   "headline": "Arizona Cardinals place Jalen Brooks on injured reserve, add two players to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/arizona-cardinals-place-jalen-brooks-205415010.html",
+   "timestamp": "2026-10-27T20:54:15.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
    "id": "SWQfMIJq1IMnrYNx",
-   "headline": "Colts trade star lineman to 49ers. Indy's fire sale aids San Fran's Super Bowl push",
+   "headline": "Colts' fire sale continues as Indianapolis trades DT DeForest Buckner back to 49ers",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/colts-trade-star-lineman-49ers-205404005.html",
    "timestamp": "2026-10-27T20:54:04.000Z",
-   "category": "transaction",
+   "category": "breaking",
    "team_abbrs": [
     "IND",
     "SF"
@@ -29,7 +455,7 @@
   },
   {
    "id": "q90bwQzm363VLinU",
-   "headline": "49ers To Acquire DT DeForest Buckner",
+   "headline": "49ers Reacquire DT DeForest Buckner",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/10/49ers-to-acquire-dt-deforest-buckner",
    "timestamp": "2026-10-27T20:46:21.000Z",
@@ -50,6 +476,17 @@
    ]
   },
   {
+   "id": "qKU4C0ebqNgYDZc-",
+   "headline": "Jerry Jones Does Not Anticipate Cowboys Adding On Defense; Rumors Persist On Moves",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/jerry-jones-does-not-anticipate-cowboys-adding-on-defense-rumors-persist-on-moves",
+   "timestamp": "2026-10-27T20:45:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
    "id": "nP-G6dS5I-iSvtgN",
    "headline": "Colts reportedly trade DT DeForest Buckner to 49ers",
    "source": "Yahoo Sports",
@@ -59,6 +496,31 @@
    "team_abbrs": [
     "IND",
     "SF"
+   ]
+  },
+  {
+   "id": "SedeKsbwjQNIvTKr",
+   "headline": "Colts trade DT DeForest Buckner to 49ers hours after dealing Quenton Nelson to Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/colts-trade-dt-deforest-buckner-215520579.html",
+   "timestamp": "2026-10-27T20:44:57.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND",
+    "SEA",
+    "SF"
+   ]
+  },
+  {
+   "id": "CVuVlvafhfG57c2M",
+   "headline": "Detroit Lions add former Vikings nose tackle to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-add-former-vikings-203851670.html",
+   "timestamp": "2026-10-27T20:38:51.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DET",
+    "MIN"
    ]
   },
   {
@@ -136,6 +598,18 @@
    "category": "injury",
    "team_abbrs": [
     "IND"
+   ]
+  },
+  {
+   "id": "2IDKqnRqIV9CX9Pm",
+   "headline": "Jets get huge 2027 NFL Draft boost with Colts starting trade deadline fire sale",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-huge-2027-nfl-draft-200839956.html",
+   "timestamp": "2026-10-27T20:08:39.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND",
+    "NYJ"
    ]
   },
   {
@@ -668,18 +1142,6 @@
    "category": "breaking",
    "team_abbrs": [
     "WAS"
-   ]
-  },
-  {
-   "id": "xYY9GUdtdrRQOvU_",
-   "headline": "NFL trade deadline: Four Eagles, two more Colts and two starting QBs included among top 25 candidates",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-rankings-top-25-eagles-colts/",
-   "timestamp": "2026-10-27T17:35:09.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "IND",
-    "PHI"
    ]
   },
   {
@@ -1218,471 +1680,6 @@
    "category": "injury",
    "team_abbrs": [
     "BAL"
-   ]
-  },
-  {
-   "id": "EMIQjzVlpaO_g1wL",
-   "headline": "NFL Week 8 betting: 5 biggest storylines, including the undefeated Vikings being underdogs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/nfl-week-8-betting-5-biggest-storylines-including-the-undefeated-vikings-being-underdogs-140152289.html",
-   "timestamp": "2026-10-27T14:01:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "fHZwALbQM81cJr8Q",
-   "headline": "Ex-Seahawks Boye Mafe, Riq Woolen trending in opposite directions with new teams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ex-seahawks-boye-mafe-riq-140000715.html",
-   "timestamp": "2026-10-27T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "SUhkUvOtC5vxk4p8",
-   "headline": "Week 8 NFL odds, picks, predictions: Computer model backs Steelers and Rams",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-8-2026-nfl-odds-picks-predictions/",
-   "timestamp": "2026-10-27T13:53:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "PIT"
-   ]
-  },
-  {
-   "id": "X837Nz-XyZF3xWhH",
-   "headline": "Lessons from NFL Week 7: Jaxon Smith-Njigba could make WR history, Seahawks look like champs again",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-7-lessons-seahawks-super-bowl-jaxson-smith-njigba/",
-   "timestamp": "2026-10-27T13:45:06.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaxon-smith-njigba"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "ekfTVuWpwgxdHEVn",
-   "headline": "NFL trade deadline matchmaker: Vikings add Jonathan Taylor to boost offense, Chiefs nab WR",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-matchmaker-vikings-jonathan-taylor-chiefs/",
-   "timestamp": "2026-10-27T12:52:44.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "KC",
-    "MIN"
-   ]
-  },
-  {
-   "id": "LsMfPrh_0piwtygS",
-   "headline": "Cowboys crush Eagles to revive NFC East hopes; Brewers hammer Rays for 3-0 World Series lead",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cowboys-eagles-nfc-east-nfl-brewers-rays-world-series-mlb/",
-   "timestamp": "2026-10-27T12:50:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "oEJ4hJOfzXHNaVSO",
-   "headline": "Why Cowboys' offensive revival could launch an NFC East run",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cowboys-nfc-east-run-dak-prescott-offense-eagles/",
-   "timestamp": "2026-10-27T12:23:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "72OfU0ujHx6tPfNS",
-   "headline": "Tennessee Titans news: Robert Saleh sounds off after another loss",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tennessee-titans-news-robert-saleh-110000700.html",
-   "timestamp": "2026-10-27T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "exa2M7zsHhrZrXSn",
-   "headline": "Horsepower or Horseplay? Highlighting Colts’ individual performances from Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/horsepower-horseplay-highlighting-colts-individual-110000613.html",
-   "timestamp": "2026-10-27T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "ABewe2KUsCPzYIU_",
-   "headline": "Tampa Bay Buccaneers news: Bucs have momentum after Panthers win",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tampa-bay-buccaneers-news-bucs-110000171.html",
-   "timestamp": "2026-10-27T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "TB"
-   ]
-  },
-  {
-   "id": "Cod1eyfZR-lf03vT",
-   "headline": "Bengals Tuesday Trenches: A Tale of Two Halves",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-tuesday-trenches-tale-two-110000524.html",
-   "timestamp": "2026-10-27T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "bsLFOoBM3tPeHrC1",
-   "headline": "Cowboys news: Javonte Williams runs team back into NFC East race",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-javonte-williams-runs-110000323.html",
-   "timestamp": "2026-10-27T11:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "javonte-williams"
-   ],
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "Eai8h3dy1nQyxffc",
-   "headline": "Javonte Williams: Good to give confidence to keep calling runs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/javonte-williams-good-confidence-keep-104945696.html",
-   "timestamp": "2026-10-27T10:49:45.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "javonte-williams"
-   ]
-  },
-  {
-   "id": "0vUCVVDPuG-rvR2B",
-   "headline": "Terps in the NFL Week 7: Glaze finds footing despite Raiders’ loss against Rams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/terps-nfl-week-7-glaze-104000759.html",
-   "timestamp": "2026-10-27T10:40:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "LV"
-   ]
-  },
-  {
-   "id": "cy1W5RQNVpjPxwgw",
-   "headline": "Chiefs News: The Chiefs are reportedly ‘calling around’ about a trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-news-chiefs-reportedly-calling-103000833.html",
-   "timestamp": "2026-10-27T10:30:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "OdufbzYzrSACyM5Y",
-   "headline": "What was the most impressive part of the Lions’ win over Packers?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/most-impressive-part-lions-win-101834170.html",
-   "timestamp": "2026-10-27T10:18:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "GB"
-   ]
-  },
-  {
-   "id": "x18QkF5Xj0Due4ps",
-   "headline": "Best Jonathan Taylor landing spots as trade rumors swirl around Colts RB",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/best-jonathan-taylor-landing-spots-101609064.html",
-   "timestamp": "2026-10-27T10:16:09.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "h7G33olkWPPiP3hu",
-   "headline": "'Banged up' Saquon Barkley faces uncertain future with Eagles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/banged-saquon-barkley-faces-uncertain-100754992.html",
-   "timestamp": "2026-10-27T10:07:54.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "saquon-barkley"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "UWtJ0_ik1XbhPDHT",
-   "headline": "Prisco's NFL Week 8 Power Rankings: Lone unbeaten Vikings take over top spot",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/priscos-nfl-week-8-power-rankings-vikings/",
-   "timestamp": "2026-10-27T10:00:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "3-a_hMxr8wvsvlk7",
-   "headline": "Bengals News: Erick All Jr. Injury Watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-news-erick-jr-injury-100000395.html",
-   "timestamp": "2026-10-27T10:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "FJMzmDTpj0yQ9iuC",
-   "headline": "Cleveland Browns news: Welcome to Steeler week!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-welcome-steeler-100000026.html",
-   "timestamp": "2026-10-27T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "2DO0ZuZD3lcgopsh",
-   "headline": "Patriots injury analysis: Pats get a much-needed reprieve in Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-injury-analysis-pats-much-100000707.html",
-   "timestamp": "2026-10-27T10:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "nCHQNjl6uk7niDYj",
-   "headline": "The Bear’s Den: The Chicago Bears open as dogs to the Seattle Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bear-den-chicago-bears-open-100000479.html",
-   "timestamp": "2026-10-27T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "SEA"
-   ]
-  },
-  {
-   "id": "8ktsxNx6qQci-3hg",
-   "headline": "Horse Tracks: Nix quells doubts in Broncos’ offense with big win over Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/horse-tracks-nix-quells-doubts-100000670.html",
-   "timestamp": "2026-10-27T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "DEN"
-   ]
-  },
-  {
-   "id": "K6FbMUIds1lrQpkD",
-   "headline": "Giants news: Playoff possibilities, running game spark, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-news-playoff-possibilities-running-100000358.html",
-   "timestamp": "2026-10-27T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "LxCMl4A6UppL71vo",
-   "headline": "Cowboys are the betting favorites to win the NFC East after win in Philadelphia",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-betting-favorites-win-nfc-092517986.html",
-   "timestamp": "2026-10-27T09:25:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "ncMH0jY819U-lxpl",
-   "headline": "Patriots playoff picture: How Week 7 impacts AFC standings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-playoff-picture-loss-bears-033631441.html",
-   "timestamp": "2026-10-27T09:00:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "yuaR5NsSUCga7ofc",
-   "headline": "Vikings remain unbeaten, Chiefs and Eagles lose - NFL week seven",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikings-last-unbeaten-team-chiefs-064249359.html",
-   "timestamp": "2026-10-27T07:50:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "MIN",
-    "PHI"
-   ]
-  },
-  {
-   "id": "iWnIV01qlGsPzI0A",
-   "headline": "‘It’s not like he’s naive’: As Cowboys hear Brian Schottenheimer criticism, they’re not content to just beat injury-riddled Eagles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/its-not-like-hes-naive-as-cowboys-hear-brian-schottenheimer-criticism-theyre-not-content-to-just-beat-injury-riddled-eagles-071848961.html",
-   "timestamp": "2026-10-27T07:18:48.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "eGoUyehQRRenQPVl",
-   "headline": "Makai Lemon registers his first NFL touchdown on MNF",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/makai-lemon-registers-first-nfl-061231009.html",
-   "timestamp": "2026-10-27T06:12:31.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "giuEfJczLo7wyTFO",
-   "headline": "George Pickens finds the end zone in Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/george-pickens-finds-end-zone-050009701.html",
-   "timestamp": "2026-10-27T05:00:09.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-pickens"
-   ]
-  },
-  {
-   "id": "KbZMMOX867AbqCN0",
-   "headline": "Cowboys vs. Cardinals odds: Opening lines for Week 8 matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-vs-cardinals-odds-opening-043000914.html",
-   "timestamp": "2026-10-27T04:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "DAL"
-   ]
-  },
-  {
-   "id": "V2IQhSDuwbSBVJJ8",
-   "headline": "Latest On Jets’ Trade Deadline Approach",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/latest-on-jets-trade-deadline-approach",
-   "timestamp": "2026-10-27T04:19:24.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "KFPlCJGfEosFbejX",
-   "headline": "Giants sticking with Dominic Zvada after ugly kicking performance",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-sticking-dominic-zvada-ugly-041834758.html",
-   "timestamp": "2026-10-27T04:18:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "cjl2fPcnUYJBKExa",
-   "headline": "Dallas Goedert: Five catches in Week 7 loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/dallas-goedert-12860",
-   "timestamp": "2026-10-27T04:16:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "dallas-goedert"
-   ]
-  },
-  {
-   "id": "JJ5cAuuVmZBhYYOX",
-   "headline": "NFL Power Rankings entering Week 8: Vikings are last undefeated team, but are they No. 1?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-power-rankings-entering-week-8-vikings-are-last-undefeated-team-but-are-they-no-1-041510569.html",
-   "timestamp": "2026-10-27T04:15:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "TEGgeuckMwVYKj0y",
-   "headline": "3 things we learned about the Cowboys from the Eagles game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-things-learned-cowboys-eagles-041500480.html",
-   "timestamp": "2026-10-27T04:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "G1iKHNH6Lr_le9B9",
-   "headline": "Saquon Barkley suffers new injury in disastrous Eagles return",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saquon-barkley-suffers-injury-disastrous-041321688.html",
-   "timestamp": "2026-10-27T04:13:21.000Z",
-   "category": "injury",
-   "player_ids": [
-    "saquon-barkley"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "3OvKi0TNYJBWb8KV",
-   "headline": "Makai Lemon: Paces pass catchers in Week 7 loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/makai-lemon-19231",
-   "timestamp": "2026-10-27T04:12:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "anpqbdbupvt9IMlr",
-   "headline": "Saquon Barkley: Suffers compensatory back injury",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/saquon-barkley-12507",
-   "timestamp": "2026-10-27T04:09:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "saquon-barkley"
    ]
   }
  ]
