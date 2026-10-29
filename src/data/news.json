@@ -1,8 +1,173 @@
 {
  "schema_version": 1,
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "O-Q9a5b27lH9mZkb",
+   "headline": "Is there a Thursday Night Football game tonight? NFL Week 8 schedule",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-game-tonight-090956420.html",
+   "timestamp": "2026-10-29T09:09:56.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "yYlZpphk0H3hb3FK",
+   "headline": "The NFL has a host of Hall of Fame caliber receivers. But which one is the best?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-host-hall-fame-caliber-090027120.html",
+   "timestamp": "2026-10-29T09:00:27.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "89uH9X5WtCT2f2Bg",
+   "headline": "NFL QB Power Rankings, Week 8: There's a new name at No. 1, Patrick Mahomes out of the top 10",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-qb-power-rankings-week-8-jared-goff-patrick-mahomes/",
+   "timestamp": "2026-10-29T04:27:09.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "36JkjI4DoX2fhMfZ",
+   "headline": "NFL Week 8 injury report: Lamar Jackson practices in full, Lions star Kerby Joseph returns",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-8-injury-report-lamar-jackson-kerby-joseph-updates/",
+   "timestamp": "2026-10-29T04:25:40.000Z",
+   "category": "injury",
+   "player_ids": [
+    "lamar-jackson"
+   ],
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "FU2kTmwDLmW23Mxu",
+   "headline": "Colts’ Jonathan Taylor Has Not Requested Trade; Josh Downs Wants Out",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/colts-jonathan-taylor-has-not-requested-trade-josh-downs-drawing-interest",
+   "timestamp": "2026-10-29T04:10:04.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor",
+    "josh-downs"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "PbyavR-GcF5jzvm4",
+   "headline": "Chiefs Add K Justin Tucker To P-Squad",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/chiefs-add-k-justin-tucker-to-practice-squad",
+   "timestamp": "2026-10-29T04:09:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "wg_wuWVGRjmZMQku",
+   "headline": "Chargers Sticking With Mike McDaniel As Play-Caller",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/chargers-sticking-with-mike-mcdaniel-as-play-caller",
+   "timestamp": "2026-10-29T04:09:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "4JsCxjwS0D2MWuX1",
+   "headline": "Texans, C.J. Stroud Were Close On Offseason Extension; Deal Expected In 2027",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/texans-c-j-stroud-were-close-on-offseason-extension-deal-expected-in-2027",
+   "timestamp": "2026-10-29T04:07:44.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "m5l3ml0u30YKqxm6",
+   "headline": "Bears Had Interest In DeForest Buckner",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/bears-had-interest-in-deforest-buckner",
+   "timestamp": "2026-10-29T04:06:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "3jTq630mPPLQZJOO",
+   "headline": "49ers no-show receiver in embarrassing Falcons loss still full throttle, seen flying plane",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-no-show-receiver-embarrassing-040144794.html",
+   "timestamp": "2026-10-29T04:01:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "SF"
+   ]
+  },
+  {
+   "id": "SMToPjl95OqG1g9w",
+   "headline": "'No one's coming to save us': Nick Sirianni faces questions about Eagles' effort, potential roster losses as NFL trade deadline nears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/no-ones-coming-to-save-us-nick-sirianni-faces-questions-about-eagles-effort-potential-roster-losses-as-nfl-trade-deadline-nears-035509114.html",
+   "timestamp": "2026-10-29T03:55:09.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "hfxc9VtNkIQRHFdt",
+   "headline": "CB Jack Jones Cut After 49ers’ Trade",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/cb-jack-jones-cut-after-49ers-trade",
+   "timestamp": "2026-10-29T03:12:35.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "hSd-glGxNLJSX25q",
+   "headline": "Buccaneers vs. Falcons: Initial injury report for Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buccaneers-vs-falcons-initial-injury-030410882.html",
+   "timestamp": "2026-10-29T03:04:10.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ATL",
+    "TB"
+   ]
+  },
+  {
+   "id": "9NkYrwGt-i9pIc3p",
+   "headline": "Raiders’ Maxx Crosby sends resoundingly clear message to haters amid losing streak",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-maxx-crosby-sends-resoundingly-025037219.html",
+   "timestamp": "2026-10-29T02:50:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "o8bkqAcrOL5r4dYE",
+   "headline": "Trent McDuffie, Nate Landman trending to play in Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/trent-mcduffie-nate-landman-trending-024839664.html",
+   "timestamp": "2026-10-29T02:48:39.000Z",
+   "category": "breaking"
+  },
   {
    "id": "Ya-CEXAd0idMWeVq",
    "headline": "Cardinals RB Jeremiyah Love limited in his return to practice",
@@ -40,6 +205,17 @@
    ]
   },
   {
+   "id": "RFXmr_3Yrrtqdmb6",
+   "headline": "Rams’ kicking carousel takes another wild turn as Josh Karty returns with a secret weapon",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-kicking-carousel-takes-another-014022957.html",
+   "timestamp": "2026-10-29T01:40:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "tJm_-BXjhEencQnN",
    "headline": "Falcons vs. Bucs injury report: Billy Bowman Jr., two others not practicing on Wednesday",
    "source": "Yahoo Sports",
@@ -65,6 +241,17 @@
    ]
   },
   {
+   "id": "FtawjOb0BRlLobnZ",
+   "headline": "49ers’ DeForest Buckner trade comes with harsh goodbye",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-deforest-buckner-trade-comes-010818590.html",
+   "timestamp": "2026-10-29T01:08:18.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "e3qK10PJFQfK_f6N",
    "headline": "Patrick Mahomes a full participant Wednesday",
    "source": "Yahoo Sports",
@@ -76,6 +263,17 @@
    ]
   },
   {
+   "id": "QfwTe6prlnod_Lx5",
+   "headline": "Klint Kubiak gives puzzling answer as Raiders await conflicting trade deadline decision",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/klint-kubiak-gives-puzzling-answer-004316459.html",
+   "timestamp": "2026-10-29T00:43:16.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
    "id": "HHe4EIW7NWpF82HK",
    "headline": "Eagles Place RB Dameon Pierce On IR",
    "source": "Pro Football Rumors",
@@ -84,20 +282,6 @@
    "category": "injury",
    "team_abbrs": [
     "PHI"
-   ]
-  },
-  {
-   "id": "36JkjI4DoX2fhMfZ",
-   "headline": "NFL Week 8 injury report: Lamar Jackson practices in full, Lions star Kerby Joseph returns",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-8-injury-report-lamar-jackson-kerby-joseph-updates/",
-   "timestamp": "2026-10-29T00:24:26.000Z",
-   "category": "injury",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "DET"
    ]
   },
   {
@@ -235,6 +419,18 @@
    ]
   },
   {
+   "id": "Nn2OKPiFw8GxnjW8",
+   "headline": "Raiders superstar running back calls out Jets’ toughness with eye-opening claim",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-superstar-running-back-calls-230050582.html",
+   "timestamp": "2026-10-28T23:00:50.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LV",
+    "NYJ"
+   ]
+  },
+  {
    "id": "B-SAZZaE4TNqzmow",
    "headline": "Broncos CB Patrick Surtain II was a full participant Wednesday",
    "source": "Yahoo Sports",
@@ -254,6 +450,17 @@
    "category": "injury",
    "team_abbrs": [
     "DAL"
+   ]
+  },
+  {
+   "id": "F5CTrFO6L2mKMowt",
+   "headline": "Sean McVay makes surprising trade deadline admission as Rams rivals reload",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-mcvay-makes-surprising-trade-224244575.html",
+   "timestamp": "2026-10-28T22:42:44.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LAR"
    ]
   },
   {
@@ -740,17 +947,6 @@
    "category": "breaking"
   },
   {
-   "id": "wg_wuWVGRjmZMQku",
-   "headline": "Chargers Sticking With Mike McDaniel As Play-Caller",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/chargers-sticking-with-mike-mcdaniel-as-play-caller",
-   "timestamp": "2026-10-28T20:27:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
    "id": "L-kwVENSxxqEtLHp",
    "headline": "Agent's Take: Detroit Lions' Sam LaPorta contract problem isn't going away",
    "source": "CBS Sports",
@@ -762,28 +958,6 @@
    ],
    "team_abbrs": [
     "DET"
-   ]
-  },
-  {
-   "id": "89uH9X5WtCT2f2Bg",
-   "headline": "NFL QB Power Rankings, Week 8: There's a new name at No. 1, Patrick Mahomes out of the top 10",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-qb-power-rankings-week-8-jared-goff-patrick-mahomes/",
-   "timestamp": "2026-10-28T19:59:06.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ]
-  },
-  {
-   "id": "4JsCxjwS0D2MWuX1",
-   "headline": "Texans, C.J. Stroud Were Close On Offseason Extension; Deal Expected In 2027",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/texans-c-j-stroud-were-close-on-offseason-extension-deal-expected-in-2027",
-   "timestamp": "2026-10-28T19:57:44.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "HOU"
    ]
   },
   {
@@ -1402,21 +1576,6 @@
    ]
   },
   {
-   "id": "FU2kTmwDLmW23Mxu",
-   "headline": "Colts’ Jonathan Taylor Has Not Requested Trade; Josh Downs Wants Out",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/colts-jonathan-taylor-has-not-requested-trade-josh-downs-drawing-interest",
-   "timestamp": "2026-10-28T16:18:04.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jonathan-taylor",
-    "josh-downs"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
    "id": "2nCdqY7BKJEVWS2S",
    "headline": "NFL odds, betting, storylines: 2 underdogs to back in Week 8",
    "source": "Yahoo Sports",
@@ -1556,176 +1715,6 @@
    "team_abbrs": [
     "BUF",
     "DAL"
-   ]
-  },
-  {
-   "id": "34WcplXNL_7pOIA0",
-   "headline": "Ravens’ reasons for concern and optimism",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ravens-reasons-concern-optimism-133000023.html",
-   "timestamp": "2026-10-28T13:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "xcEW2q4HV-123a1B",
-   "headline": "The AP Staff’s Week 8 NFL Power Rankings, Halloween edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ap-staff-week-8-nfl-133000614.html",
-   "timestamp": "2026-10-28T13:30:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "jWVMejDVn8BytIbN",
-   "headline": "State of the NFC South: Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/state-nfc-south-week-7-133000023.html",
-   "timestamp": "2026-10-28T13:30:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "XtnqJ8qlnVjpkiSD",
-   "headline": "Week 8 NFL betting odds, lines, totals, spreads for every game, including Packers-Panthers, Bills-Ravens",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-8-nfl-betting-odds-lines-totals-spreads/",
-   "timestamp": "2026-10-28T13:19:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "BUF",
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "Edx_pmoiqKWN2Xjz",
-   "headline": "Green Bay Packers News: Micah Parsons looms",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/green-bay-packers-news-micah-131442908.html",
-   "timestamp": "2026-10-28T13:14:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "ApWLiULO_KkQOUQ5",
-   "headline": "Chiefs sign Justin Tucker to practice squad as Harrison Butker struggles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-sign-justin-tucker-practice-131006298.html",
-   "timestamp": "2026-10-28T13:10:06.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "harrison-butker"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "YgW1BoyenfgVRd12",
-   "headline": "Chiefs sign veteran kicker Justin Tucker: What to know",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-sign-veteran-kicker-justin-130955443.html",
-   "timestamp": "2026-10-28T13:09:55.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "4O_i_uNhltaTZMK7",
-   "headline": "Pre-Snap Reads: Seahawks make splash by trading for an All-Pro Guard",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pre-snap-reads-seahawks-splash-130141205.html",
-   "timestamp": "2026-10-28T13:01:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "7oQnRvJo_Qr93MMY",
-   "headline": "Flawed Cowboys defense does enough versus Eagles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/flawed-cowboys-defense-does-enough-130000588.html",
-   "timestamp": "2026-10-28T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "p5neJsFepAVvAB-2",
-   "headline": "Do the Chicago Bears have a good defense now?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-good-defense-now-130000852.html",
-   "timestamp": "2026-10-28T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "bzldcF3PuNOnHJEo",
-   "headline": "Lions scouting report: Vikings’ strengths, weaknesses",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-scouting-report-vikings-strengths-130000853.html",
-   "timestamp": "2026-10-28T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIN"
-   ]
-  },
-  {
-   "id": "jO2IlzwlVayr-1Oe",
-   "headline": "Chiefs to sign Justin Tucker to their practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-sign-justin-tucker-practice-125903150.html",
-   "timestamp": "2026-10-28T12:59:03.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "HRjzNBGpBJw7n6Qn",
-   "headline": "Should Rams give Blake Corum the start?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-blake-corum-start-125900942.html",
-   "timestamp": "2026-10-28T12:59:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "PbyavR-GcF5jzvm4",
-   "headline": "Chiefs Add K Justin Tucker To P-Squad",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/chiefs-add-k-justin-tucker-to-practice-squad",
-   "timestamp": "2026-10-28T12:58:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "OVNQYXNMeEmThcQg",
-   "headline": "Chiefs reportedly sign Justin Tucker to practice squad after Harrison Butker misses two field goals in Week 7",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/chiefs-reportedly-sign-justin-tucker-to-practice-squad-after-harrison-butker-misses-two-field-goals-in-week-7-133034101.html",
-   "timestamp": "2026-10-28T12:57:24.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "harrison-butker"
-   ],
-   "team_abbrs": [
-    "KC"
    ]
   }
  ]
