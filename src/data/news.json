@@ -1,8 +1,571 @@
 {
  "schema_version": 1,
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "i6IiohIfCNzpO6T4",
+   "headline": "Two touchdowns for Josh Jacobs on TNF",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/two-touchdowns-josh-jacobs-tnf-055101641.html",
+   "timestamp": "2026-10-30T05:51:01.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ]
+  },
+  {
+   "id": "PWHpDcQdkKVleYw2",
+   "headline": "New monster in the Midway: Why Jeffery Simmons could be worth the price for Bears in a wide-open NFL",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/new-monster-in-the-midway-why-jeffery-simmons-could-be-worth-the-price-for-bears-in-a-wide-open-nfl-045335275.html",
+   "timestamp": "2026-10-30T04:53:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Sw9KgWllcOjoDdm-",
+   "headline": "Packers Snap Counts, Week 8: It’s the Josh Jacobs show in Green Bay",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-snap-counts-week-8-042356743.html",
+   "timestamp": "2026-10-30T04:23:56.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "YBZam6BrVMyX7jnQ",
+   "headline": "Jalen Coker: Salvages night with TD in loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jalen-coker-17976",
+   "timestamp": "2026-10-30T04:23:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-coker"
+   ]
+  },
+  {
+   "id": "7qoEsftQUXf4__G3",
+   "headline": "Jordan Love: Stays hot in Week 9 win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jordan-love-14371",
+   "timestamp": "2026-10-30T04:18:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jordan-love"
+   ]
+  },
+  {
+   "id": "5nhgcYEPPdXj9hNW",
+   "headline": "Packers' Christian Watson describes 'tough' hospital trip: 'I never wanted to go'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-christian-watson-describes-tough-041620089.html",
+   "timestamp": "2026-10-30T04:16:20.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-watson"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "cr6j4EqBGK7uRoOJ",
+   "headline": "Bryce Young: Struggles again in defeat",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/bryce-young-16807",
+   "timestamp": "2026-10-30T04:10:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bryce-young"
+   ]
+  },
+  {
+   "id": "vSiLQ50gpwuE0DJg",
+   "headline": "Christian Watson: Suffers broken rib Thursday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/christian-watson-15946",
+   "timestamp": "2026-10-30T04:06:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-watson"
+   ]
+  },
+  {
+   "id": "6p78HzKW742phc7p",
+   "headline": "Tucker Kraft: Back in end zone during win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/tucker-kraft-16649",
+   "timestamp": "2026-10-30T04:04:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tucker-kraft"
+   ]
+  },
+  {
+   "id": "Dga-rXeaRklOFMKu",
+   "headline": "Titans Trade DT Jeffery Simmons To Bears",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/titans-to-trade-jeffery-simmons-to-bears",
+   "timestamp": "2026-10-30T04:03:05.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI",
+    "TEN"
+   ]
+  },
+  {
+   "id": "yVnTS8mXFUM71Kvo",
+   "headline": "Packers' Christian Watson returns against Panthers after chest injury, hospital visit",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/christian-watson-injury-update-packers-wr-hospital/",
+   "timestamp": "2026-10-30T04:02:55.000Z",
+   "category": "injury",
+   "player_ids": [
+    "christian-watson"
+   ],
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "ls_x50aA0LssC-Pv",
+   "headline": "Jets’ Aaron Glenn On Hot Seat; GM Darren Mougey Likelier To Be Retained",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/jets-aaron-glenn-on-hot-seat-gm-darren-mougey-likelier-to-be-retained",
+   "timestamp": "2026-10-30T04:02:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "1ildEo_Gm0EPbcwR",
+   "headline": "Sauce Gardner Wants To Stay With Colts",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/sauce-gardner-wants-to-stay-with-colts",
+   "timestamp": "2026-10-30T04:01:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "RRaSSUXmflfE7pgr",
+   "headline": "Broncos’ Patrick Surtain To Return In Week 8; Latest On Jaylen Waddle",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/broncos-patrick-surtain-to-return-in-week-8-latest-on-jaylen-waddle",
+   "timestamp": "2026-10-30T03:59:08.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaylen-waddle"
+   ],
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "2pZ7w-YaroWd6pg-",
+   "headline": "Christian Watson, Jordan Love and surging Packers beat plummeting Panthers: TNF winners, losers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-jordan-love-surging-034017099.html",
+   "timestamp": "2026-10-30T03:40:17.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jordan-love",
+    "christian-watson"
+   ],
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "5YN03oplIG5OCYGh",
+   "headline": "Packers stick in a playoff spot with their Week 8 win",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-stick-playoff-spot-week-033935762.html",
+   "timestamp": "2026-10-30T03:39:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "u0tvyL3ZD6TqEDBX",
+   "headline": "Packers-Panthers Final Score: Pressure gets to Carolina’s Bryce Young",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-panthers-final-score-pressure-033645972.html",
+   "timestamp": "2026-10-30T03:36:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bryce-young"
+   ],
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "g31cJb7PxBjTONMj",
+   "headline": "Thursday Night Football: Packers hold on for 27-19 win over Panthers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-packers-hold-033445723.html",
+   "timestamp": "2026-10-30T03:34:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "ojGxyiuJ44Doab-y",
+   "headline": "Panthers fall into tie for NFC South lead with loss to Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-fall-tie-nfc-south-032510493.html",
+   "timestamp": "2026-10-30T03:25:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "oLVVzeJo2qsrF4_E",
+   "headline": "Aaron Donald isn't bothered by not having a sack since he returned to the Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-donald-isnt-bothered-not-030855546.html",
+   "timestamp": "2026-10-30T03:08:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "QQdJjPKUWI5lWeMN",
+   "headline": "Panthers close to within 27-19 of Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-close-within-27-19-030632801.html",
+   "timestamp": "2026-10-30T03:06:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "VxFFNJik1v44WvcR",
+   "headline": "Jaxon Smith-Njigba receives day off Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaxon-smith-njigba-receives-day-030306645.html",
+   "timestamp": "2026-10-30T03:03:06.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxon-smith-njigba"
+   ]
+  },
+  {
+   "id": "WtaVHqS0lAcvUapn",
+   "headline": "Christian Watson returns against Carolina",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-returns-against-carolina-024635863.html",
+   "timestamp": "2026-10-30T02:46:35.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-watson"
+   ]
+  },
+  {
+   "id": "wrNO7IIVu4YCtcbD",
+   "headline": "Packers-Panthers interrupted due to drone hovering near Lambeau Field",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/packers-panthers-interrupted-due-to-drone-hovering-near-lambeau-field-022752290.html",
+   "timestamp": "2026-10-30T02:27:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "zpT6AynltWDQsTmO",
+   "headline": "Falcons vs. Bucs injury report: A.J. Terrell limited on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-vs-bucs-injury-report-022551222.html",
+   "timestamp": "2026-10-30T02:25:51.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "3tNVtp69R2vqzU9u",
+   "headline": "Drone causes bizarre delay during Packers-Panthers ‘Thursday Night Football’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drone-causes-bizarre-delay-during-022133689.html",
+   "timestamp": "2026-10-30T02:21:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "Gc7u5cEvyGBLciss",
+   "headline": "Patrick Mahomes practices in full",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patrick-mahomes-practices-full-021901690.html",
+   "timestamp": "2026-10-30T02:19:01.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ]
+  },
+  {
+   "id": "_Mv36oqh8Q42vKMi",
+   "headline": "RAMalytics: Why the Rams are regressing on offense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ramalytics-why-rams-regressing-offense-021705710.html",
+   "timestamp": "2026-10-30T02:17:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "VJzO_ph3DlmZ_g9W",
+   "headline": "Christian Watson cleared, on his way back to Lambeau from hospital",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-cleared-way-back-021516453.html",
+   "timestamp": "2026-10-30T02:15:16.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-watson"
+   ]
+  },
+  {
+   "id": "PU0jGl-LibcmSU_y",
+   "headline": "It’s Official: Chicago Bears Announce Jeffery Simmons Trade",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/official-chicago-bears-announce-jeffery-021113257.html",
+   "timestamp": "2026-10-30T02:11:13.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "FJ53l8PYCN0fcIF2",
+   "headline": "Christian Watson taken to hospital with chest injury — before returning to game in stunner",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-taken-hospital-chest-020843538.html",
+   "timestamp": "2026-10-30T02:08:43.000Z",
+   "category": "injury",
+   "player_ids": [
+    "christian-watson"
+   ]
+  },
+  {
+   "id": "pukKxh9nQGobqLYK",
+   "headline": "Eagles Expected To Field Offers On Landon Dickerson, Dallas Goedert, Riq Woolen",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-expected-to-field-offers-on-landon-dickerson-dallas-goedert-riq-woolen",
+   "timestamp": "2026-10-30T02:04:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dallas-goedert"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "suc4amElkc18T2ts",
+   "headline": "Thursday Night Football: Packers lead Panthers 20-10 at halftime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-packers-lead-015013768.html",
+   "timestamp": "2026-10-30T01:50:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "kjERK-LxJltJ9Kpc",
+   "headline": "Panthers vs Packers TNF recap: Well, who’s next at guard and corner?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-vs-packers-tnf-first-014810333.html",
+   "timestamp": "2026-10-30T01:48:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "qD9fEsHh0ZnY67aS",
+   "headline": "Report: NFL flexes referee Alex Moore's crew out of prime time",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-nfl-flexes-referee-alex-014410499.html",
+   "timestamp": "2026-10-30T01:44:10.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "mEcu_hvsQu9zeim2",
+   "headline": "Christian Watson injury: Packers WR headed to hospital for chest evaluation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-injury-packers-wr-013415547.html",
+   "timestamp": "2026-10-30T01:34:15.000Z",
+   "category": "injury",
+   "player_ids": [
+    "christian-watson"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "uwve8GR47LLlbDTf",
+   "headline": "Ashton Jeanty gives Jets bulletin board material with vague defense dig",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ashton-jeanty-gives-jets-bulletin-013146329.html",
+   "timestamp": "2026-10-30T01:31:46.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ashton-jeanty"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "xB-WNwzj45ySN9aF",
+   "headline": "Christian Watson taken to hospital for chest injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-taken-hospital-chest-013023993.html",
+   "timestamp": "2026-10-30T01:30:23.000Z",
+   "category": "injury",
+   "player_ids": [
+    "christian-watson"
+   ]
+  },
+  {
+   "id": "N3Di9-a-IHCyr1Sl",
+   "headline": "Christian Watson transported to hospital; Will Lee injures hamstring on same play",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-transported-hospital-lee-012848854.html",
+   "timestamp": "2026-10-30T01:28:48.000Z",
+   "category": "injury",
+   "player_ids": [
+    "christian-watson"
+   ]
+  },
+  {
+   "id": "5mqoi1POr2PJ3CVI",
+   "headline": "Colts RB Jonathan Taylor is the last longstanding veteran pillar remaining, for now",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-rb-jonathan-taylor-last-012653685.html",
+   "timestamp": "2026-10-30T01:26:53.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "CV_ymhtN5njlE3ub",
+   "headline": "Former Falcons HC June Jones Passes Away At 73",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/former-falcons-hc-june-jones-passes-away-at-73",
+   "timestamp": "2026-10-30T01:22:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "BDysIIRKnuzw5n8P",
+   "headline": "Packers WR Christian Watson returns vs. Panthers after leaving game in ambulance coughing up blood with broken rib",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/packers-wr-christian-watson-returns-vs-panthers-after-leaving-game-in-ambulance-coughing-up-blood-with-broken-rib-043320762.html",
+   "timestamp": "2026-10-30T01:19:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-watson"
+   ],
+   "team_abbrs": [
+    "CAR",
+    "GB"
+   ]
+  },
+  {
+   "id": "DUaGrd_a1-_8gvdM",
+   "headline": "Bears announce trade for DT Jeffery Simmons",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-announce-trade-dt-jeffery-011826138.html",
+   "timestamp": "2026-10-30T01:18:26.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "moyVhZBd8e-EPK1U",
+   "headline": "Packers' Christian Watson makes stunning 'TNF' return after hospital trip",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-injury-packers-wr-011443284.html",
+   "timestamp": "2026-10-30T01:14:43.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-watson"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "BvVon01-KrxycMdu",
+   "headline": "Rams players open up about the 'double-edged sword' of CTE and football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-players-open-double-edged-011018003.html",
+   "timestamp": "2026-10-30T01:10:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "6gyxF0012d_qOl7b",
+   "headline": "Brewers bring World Series trophy to Packers game, Sal Frelick does Lambeau Leap, sausages race",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brewers-bring-world-series-trophy-010630460.html",
+   "timestamp": "2026-10-30T01:06:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "4D9SiozqNZ9yhQlM",
+   "headline": "Chiefs coach explains kicking situation after controversial Justin Tucker signing",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-coach-explains-kicking-situation-010504350.html",
+   "timestamp": "2026-10-30T01:05:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
   {
    "id": "yCXPSEOhoNjYUb0x",
    "headline": "Colts reportedly have no intention of trading breakout young defensive tackle",
@@ -101,6 +664,45 @@
    "url": "https://sports.yahoo.com/articles/week-8-preview-begin-gauntlet-003356014.html",
    "timestamp": "2026-10-30T00:33:56.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "UWkUMcJxvvZ5Af-W",
+   "headline": "Puka Nacua makes stunning reveal about Maxx Crosby matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/puka-nacua-makes-stunning-reveal-003202738.html",
+   "timestamp": "2026-10-30T00:32:02.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "V3IrKqGOJzwb-APN",
+   "headline": "Jets’ Frank Reich admits he must do better getting Garrett Wilson involved as frustrations mount",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-frank-reich-admits-must-003022700.html",
+   "timestamp": "2026-10-30T00:30:22.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "garrett-wilson"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "ywEf2tenWeQ3i-xz",
+   "headline": "Jonathan Taylor opens up about his Colts trade stance as rumors swirl",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jonathan-taylor-opens-colts-trade-001842738.html",
+   "timestamp": "2026-10-30T00:18:42.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
   },
   {
    "id": "hBW7Vs6WJizumhv3",
@@ -483,15 +1085,11 @@
   },
   {
    "id": "_i__WaQhexGiEt-P",
-   "headline": "Panthers vs. Packers live updates, inactives, where to watch: Jordan Love, Green Bay look to rebound on 'Thursday Night Football' vs. Bryce Young, Carolina",
+   "headline": "Packers take big lead and then hold on over Panthers, who are suddenly in a slump",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/packers-panthers-score-live-updates-inactives-highlights-stats-where-to-watch-week-8-thursday-night-football-225254485.html",
    "timestamp": "2026-10-29T22:52:54.000Z",
    "category": "breaking",
-   "player_ids": [
-    "bryce-young",
-    "jordan-love"
-   ],
    "team_abbrs": [
     "CAR",
     "GB"
@@ -1183,568 +1781,6 @@
    "category": "breaking",
    "team_abbrs": [
     "ATL"
-   ]
-  },
-  {
-   "id": "UWrtbHXXUEpjtzBA",
-   "headline": "Today's top games to watch, best bets, odds: Panthers vs. Packers, Kings vs. Pelicans and more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-panthers-vs-packers-kings-vs-pelicans-and-more/",
-   "timestamp": "2026-10-29T19:30:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "OkRZBoM4wFh8J-be",
-   "headline": "Seahawks plan to start Quenton Nelson at left guard Monday night",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-plan-start-quenton-nelson-192845650.html",
-   "timestamp": "2026-10-29T19:28:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "lwaJUbN46QoNaVIF",
-   "headline": "Use DraftKings promo code to get $200 bonus, free NBA League Pass for Panthers-Packers Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/use-draftkings-promo-code-to-get-200-bonus-free-nba-league-pass-panthers-packers-thursday-night-football/",
-   "timestamp": "2026-10-29T19:28:43.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "2XYYGEeesYcYjQXM",
-   "headline": "Jared Verse adds to the chatter between Browns and Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jared-verse-adds-chatter-between-191549842.html",
-   "timestamp": "2026-10-29T19:15:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "flBTc0jl2lFz83d3",
-   "headline": "Titans vs. Bengals Week 8 Preview: OBI Podcast",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-vs-bengals-week-8-190900672.html",
-   "timestamp": "2026-10-29T19:09:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "TEN"
-   ]
-  },
-  {
-   "id": "eZVeGVWIZiBDgod_",
-   "headline": "AJ Brown missed practice on Thursday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aj-brown-missed-practice-thursday-190741456.html",
-   "timestamp": "2026-10-29T19:07:41.000Z",
-   "category": "practice",
-   "player_ids": [
-    "aj-brown"
-   ]
-  },
-  {
-   "id": "ecljtn9QnlTa9Okq",
-   "headline": "Emerging rookie Omar Cooper Jr. will test Taron Johnson in slot for Las Vegas Raiders-New York Jets Week 8 key matchups",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/emerging-rookie-omar-cooper-jr-190400156.html",
-   "timestamp": "2026-10-29T19:04:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "VnQTHbuQ1AEyyQA4",
-   "headline": "Cowboys point/counterpoint: Time to build on success",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-point-counterpoint-time-build-190000833.html",
-   "timestamp": "2026-10-29T19:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "JGIkMbxia6goeEXv",
-   "headline": "Lions vs. Vikings 5 Qs preview: Are the 6-0 Vikings real or “frauds”?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-vs-vikings-5-qs-190000531.html",
-   "timestamp": "2026-10-29T19:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIN"
-   ]
-  },
-  {
-   "id": "GBCy9J3wkv6LBWtb",
-   "headline": "Cowboys open Jonathan Bullard's 21-day practice window",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-open-jonathan-bullards-21-185357896.html",
-   "timestamp": "2026-10-29T18:53:57.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "HkoWxaAPcGyrtJau",
-   "headline": "Seahawks Designate Jadarian Price For Return; Latest On Zach Charbonnet",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/seahawks-jadarian-price-will-practice-this-week-latest-on-zach-charbonnet",
-   "timestamp": "2026-10-29T18:49:57.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jadarian-price"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "1ildEo_Gm0EPbcwR",
-   "headline": "Sauce Gardner Wants To Stay With Colts",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/sauce-gardner-wants-to-stay-with-colts",
-   "timestamp": "2026-10-29T18:41:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "ty_y0ReyswBjtlvO",
-   "headline": "Titans coach Robert Saleh: Trading Jeffery Simmons 'sucks' but is 'necessary'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-coach-robert-saleh-trading-183430274.html",
-   "timestamp": "2026-10-29T18:34:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "V7S7Riaal-u0v5oL",
-   "headline": "Panthers at Packers, Week 8: Opponent Preview",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-packers-week-8-opponent-183000351.html",
-   "timestamp": "2026-10-29T18:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "C6M_doesaXhgU5rB",
-   "headline": "NFL Week 8 Game Picks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-8-game-picks-182919506.html",
-   "timestamp": "2026-10-29T18:29:19.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "dBqvQOISDK8lOkai",
-   "headline": "Ravens star rookie guard might play vs. Bills after all",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ravens-star-rookie-guard-might-182613346.html",
-   "timestamp": "2026-10-29T18:26:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "BUF"
-   ]
-  },
-  {
-   "id": "ZwJyK5tjWQ5un4CP",
-   "headline": "Browns Jared Verse unafraid to talk trash despite zero sacks; performance questions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-jared-verse-unafraid-talk-182559474.html",
-   "timestamp": "2026-10-29T18:25:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "xgVTcP8Iv9Mob97S",
-   "headline": "Use FanDuel promo code to get $150 bonus bets by targeting Panthers vs. Packers on Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-150-bonus-bets-panthers-vs-packers-thursday-night-football/",
-   "timestamp": "2026-10-29T18:11:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "OGVRPjf4yx7IVH_O",
-   "headline": "Week 8 NFL betting odds, lines, totals, spreads for every game, including Panthers-Packers, Bills-Ravens",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-8-nfl-betting-odds-lines-spreads-totals/",
-   "timestamp": "2026-10-29T18:10:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "BUF",
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "e9yCjzeGQr5bGyT8",
-   "headline": "NFL Expert Picks for Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-expert-picks-week-8-180938630.html",
-   "timestamp": "2026-10-29T18:09:38.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "iU0gjiD-JCCTvxDN",
-   "headline": "Bills trade deadline candidate: Eagles linebacker Zack Baun",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-trade-deadline-candidate-eagles-180853313.html",
-   "timestamp": "2026-10-29T18:08:53.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BUF",
-    "PHI"
-   ]
-  },
-  {
-   "id": "MnijGbdcfWWFvwR1",
-   "headline": "How to bet on 2026 NFL Week 8: Betting odds, game previews, tips, trends, schedule, sportsbook promos, offers",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/how-to-bet-on-2026-nfl-week-8-betting-odds-game-previews-tips-trends-schedule-sportsbook-promos-offers/",
-   "timestamp": "2026-10-29T18:05:44.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "7BuF5PYhDij-vhsv",
-   "headline": "Who's to blame for Eagles shocking collapse? Five places to point fingers",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/whos-to-blame-eagles-shocking-collapse-five-places-to-point-fingers/",
-   "timestamp": "2026-10-29T18:05:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "9_5ub4a4OrnBnFRL",
-   "headline": "Cardinals S Budda Baker Has Not Requested Trade",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/cardinals-s-budda-baker-has-not-requested-trade",
-   "timestamp": "2026-10-29T17:58:17.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "wP8h4k8SxyvKbpAr",
-   "headline": "Revisiting Panthers' blockbuster trade with Bears to draft Bryce Young: Chicago, Caleb Williams won big",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/revisiting-panthers-trade-bears-to-draft-bryce-young-caleb-williams/",
-   "timestamp": "2026-10-29T17:47:55.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "caleb-williams",
-    "bryce-young"
-   ],
-   "team_abbrs": [
-    "CAR",
-    "CHI"
-   ]
-  },
-  {
-   "id": "QebvSt8bcgXChvDJ",
-   "headline": "Caleb Williams plans to defy NFL: Bears QB to stick with unapproved cleat also worn by former Super Bowl MVP",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/caleb-williams-defy-nfl-stick-with-unapproved-caddix-cleat/",
-   "timestamp": "2026-10-29T17:32:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "LiFb0xDIdZK2or3R",
-   "headline": "Jeffery Simmons is Bears' all-in move. Caleb Williams and Ben Johnson make it worth the risk",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jeffery-simmons-trade-bears-all-in-caleb-williams-ben-johnson/",
-   "timestamp": "2026-10-29T17:11:31.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "caleb-williams"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "TcH33cbv7dfsF1kY",
-   "headline": "Ravens QB Lamar Jackson Trending Toward Week 8 Return",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/ravens-qb-lamar-jackson-trending-toward-week-8-return",
-   "timestamp": "2026-10-29T17:09:44.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "CAeFGnvAaXoqZqzi",
-   "headline": "Week 8 Fantasy Football Toolkit: Start/sit advice, rankings, sleepers, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/week-8-fantasy-football-toolkit-startsit-advice-rankings-sleepers-more-163313607.html",
-   "timestamp": "2026-10-29T16:33:13.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "EdKq2HtC1ORFkD6F",
-   "headline": "Pick Six: What to know about the NFL ahead of Week 8, plus picks and playoff projections",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/pick-six-what-to-know-about-nfl-week-8-picks-projections/",
-   "timestamp": "2026-10-29T16:18:47.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "AJdx9_oinnANjabF",
-   "headline": "Chargers Could Place Derwin James On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/chargers-could-place-s-derwin-james-on-ir",
-   "timestamp": "2026-10-29T16:09:02.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "-vRx6DKr7NvHNhml",
-   "headline": "Where can I watch the Dolphins vs. Patriots game?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/where-watch-dolphins-vs-patriots-160829173.html",
-   "timestamp": "2026-10-29T16:08:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "NE"
-   ]
-  },
-  {
-   "id": "MyTlvGrEiw0MnRpy",
-   "headline": "Chiefs-Broncos is just one of the pivotal AFC matchups in Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-broncos-just-one-pivotal-160000233.html",
-   "timestamp": "2026-10-29T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "mQPLkFD6POtXQHRc",
-   "headline": "Week 8 game preview: Chicago Bears vs. Seattle Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-8-game-preview-chicago-160000308.html",
-   "timestamp": "2026-10-29T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "SEA"
-   ]
-  },
-  {
-   "id": "Ag4sA9pDSf_wAML9",
-   "headline": "What to know about Falcons – Buccaneers in Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/know-falcons-buccaneers-week-8-160000735.html",
-   "timestamp": "2026-10-29T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "TB"
-   ]
-  },
-  {
-   "id": "Wcp5_Asykh5C9b-3",
-   "headline": "Indiana’s Omar Cooper Jr. earns back-to-back NFL Rookie of the Week awards",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/indiana-omar-cooper-jr-earns-160000456.html",
-   "timestamp": "2026-10-29T16:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "OdCd6Dj269KqqNHn",
-   "headline": "Bengals on pace for greatest differential of sacks allowed vs. defensive sacks in franchise history",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-pace-greatest-differential-sacks-160000761.html",
-   "timestamp": "2026-10-29T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "yeSjylaDPwkRUqbJ",
-   "headline": "Titans trade Jeffery Simmons, join Jets and Browns in draft stockpile: History offers hope -- and a warning",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-draft-first-round-gamble-what-jets-browns-can-learn/",
-   "timestamp": "2026-10-29T15:59:41.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE",
-    "NYJ",
-    "TEN"
-   ]
-  },
-  {
-   "id": "Q1LHjvtW552WuRHd",
-   "headline": "Grading the trade: Bears closer to a Super Bowl with Simmons, but the cost was steep",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/grading-the-trade-bears-closer-to-a-super-bowl-with-simmons-but-the-cost-was-steep-155800939.html",
-   "timestamp": "2026-10-29T15:58:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "vWJVm6g5fFQ5X3IV",
-   "headline": "Emeka Egbuka: Practicing in regular jersey",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/emeka-egbuka-18549",
-   "timestamp": "2026-10-29T15:57:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "emeka-egbuka"
-   ]
-  },
-  {
-   "id": "0GtaOhc5Q8Qcfwqu",
-   "headline": "Eagles News: Jalen Carter says he’s not playing “to what the fans want, even though it don’t really matter what they want”",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-jalen-carter-says-155501430.html",
-   "timestamp": "2026-10-29T15:55:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "zjgM_qyOnCbcV5RS",
-   "headline": "Jeffery Simmons trade grades: Bears earn high marks by going all-in, Titans start yet another rebuild",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jeffery-simmons-trade-grades-bears-titans-nfl-draft/",
-   "timestamp": "2026-10-29T15:50:14.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI",
-    "TEN"
-   ]
-  },
-  {
-   "id": "0Ttt9YIMh4NR9qi4",
-   "headline": "The biggest benefit for the 49ers from the DeForest Buckner trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/biggest-benefit-49ers-deforest-buckner-154500081.html",
-   "timestamp": "2026-10-29T15:45:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "wcx7C5P7ojlw86KV",
-   "headline": "Week 8 NFL odds, picks, predictions: Computer model backs Steelers and Rams",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-bets-week-8-2026/",
-   "timestamp": "2026-10-29T15:36:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "PIT"
-   ]
-  },
-  {
-   "id": "un973WF1mtJ8O00C",
-   "headline": "RotoPat’s Week 8 Fantasy Football Rankings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rotopats-week-8-fantasy-football-151833629.html",
-   "timestamp": "2026-10-29T15:36:12.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "eb4xg6aHCVOASCQT",
-   "headline": "Week 8 Fantasy Football Rankings: WR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-8-fantasy-football-rankings-151544093.html",
-   "timestamp": "2026-10-29T15:33:04.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Y6Zzjt6l1wG6wXYE",
-   "headline": "Week 8 Fantasy Football Rankings: RB",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-8-fantasy-football-rankings-151541156.html",
-   "timestamp": "2026-10-29T15:33:02.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "gzb3rxWRNYEFDHD2",
-   "headline": "Week 8 Fantasy Football Rankings: QB",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-8-fantasy-football-rankings-151539352.html",
-   "timestamp": "2026-10-29T15:33:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "OVDNiPOK_xcOQJWc",
-   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Packers vs. Panthers on Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-packers-vs-panthers-thursday-night-football/",
-   "timestamp": "2026-10-29T15:30:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "uTo3rM71qZ9mZz5p",
-   "headline": "Patrick Mahomes downplays past beef after Chiefs sign kicker Justin Tucker",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patrick-mahomes-downplays-past-beef-152300829.html",
-   "timestamp": "2026-10-29T15:23:00.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "patrick-mahomes"
-   ],
-   "team_abbrs": [
-    "KC"
    ]
   }
  ]
