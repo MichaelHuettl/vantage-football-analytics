@@ -1,8 +1,42 @@
 {
  "schema_version": 1,
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "MpDWBYReO5H6fsCm",
+   "headline": "Jeffery Simmons excited to play in prime time for Bears, something Titans rarely do",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jeffery-simmons-excited-play-prime-085712182.html",
+   "timestamp": "2026-10-31T08:57:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "TEN"
+   ]
+  },
+  {
+   "id": "R2ChuSwiR1UnK4Sh",
+   "headline": "Panthers Fire Defensive Coordinator Ejiro Evero; Todd Wash Named Interim DC",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/panthers-fire-dc-ejiro-evero",
+   "timestamp": "2026-10-31T03:20:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "Wdk_3fCFXsk2yJcp",
+   "headline": "Bears’ Ryan Poles Pursued Jeffery Simmons Over Time, Expects DT To Play Monday",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/bears-ryan-poles-pursued-jeffery-simmons-over-time-expects-dt-to-play-monday",
+   "timestamp": "2026-10-31T03:05:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
   {
    "id": "awXa-uaD20GMRwAQ",
    "headline": "Jordan Love passes Brett Favre for multi-touchdown games to start season",
@@ -41,6 +75,42 @@
    ]
   },
   {
+   "id": "mdZRG7s3lge5j7dJ",
+   "headline": "Giants Looking To Buy At Deadline; RB, DT Help On Radar",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/giants-looking-to-buy-at-deadline-rb-dt-help-on-radar",
+   "timestamp": "2026-10-31T01:22:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "XpHSSoc5GZpoZVm8",
+   "headline": "Omar Cooper Jr., Kenyon Sadiq ready for a Jets takeoff — at the same time",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/omar-cooper-jr-kenyon-sadiq-005932673.html",
+   "timestamp": "2026-10-31T00:59:32.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kenyon-sadiq"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "rkiPv7dykYMgh_yB",
+   "headline": "Commanders star Daron Payne likely heading to IR in crusher before trade deadline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-star-daron-payne-likely-004429801.html",
+   "timestamp": "2026-10-31T00:44:29.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
    "id": "GuhTvpryTAB5t6xv",
    "headline": "Minor NFL Transactions: 10/30/26",
    "source": "Pro Football Rumors",
@@ -58,6 +128,18 @@
    "team_abbrs": [
     "CHI",
     "SEA"
+   ]
+  },
+  {
+   "id": "uISfuvpPlY1h9JXa",
+   "headline": "David Bailey likely to miss chance at sacking Fernando Mendoza in Jets-Raiders meeting",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/david-bailey-likely-miss-chance-235419037.html",
+   "timestamp": "2026-10-30T23:54:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "NYJ"
    ]
   },
   {
@@ -138,6 +220,17 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
+   ]
+  },
+  {
+   "id": "tHDEiG20j5g0-a1S",
+   "headline": "49ers must pay necessary price to maximize Super Bowl window",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-must-pay-necessary-price-223812378.html",
+   "timestamp": "2026-10-30T22:38:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -798,17 +891,6 @@
    ]
   },
   {
-   "id": "mdZRG7s3lge5j7dJ",
-   "headline": "Giants Looking To Buy At Deadline; RB, DT Help On Radar",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/giants-looking-to-buy-at-deadline-rb-dt-help-on-radar",
-   "timestamp": "2026-10-30T19:22:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
    "id": "TrJ_ifJu3z-CQSGE",
    "headline": "Chiefs-Broncos Week 8 Final injury report: Rashee Rice returning",
    "source": "Yahoo Sports",
@@ -1455,17 +1537,6 @@
    ]
   },
   {
-   "id": "R2ChuSwiR1UnK4Sh",
-   "headline": "Panthers Fire Defensive Coordinator Ejiro Evero; Todd Wash Named Interim DC",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/panthers-fire-dc-ejiro-evero",
-   "timestamp": "2026-10-30T14:20:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
    "id": "YlsWaJliKwO1XGU2",
    "headline": "Week 8 best bets: Zay Flowers tallies big day in Lamar Jackson's return, Steelers win AFC North showdown",
    "source": "CBS Sports",
@@ -1692,80 +1763,6 @@
    "category": "breaking",
    "team_abbrs": [
     "MIA",
-    "NE"
-   ]
-  },
-  {
-   "id": "5rHXZHLbup7T6Wpm",
-   "headline": "NFL Predictions: Can the Bears’ defense slow down the Seahawks’ offense?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-bears-defense-slow-130000600.html",
-   "timestamp": "2026-10-30T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "SEA"
-   ]
-  },
-  {
-   "id": "9lwZzAmA9fkRdxoE",
-   "headline": "Cowboys have chance they can’t let fly away against Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-chance-t-let-fly-130000104.html",
-   "timestamp": "2026-10-30T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "DAL"
-   ]
-  },
-  {
-   "id": "Fn2s3MU1kcn12PZJ",
-   "headline": "Duval Dispatch: Jaguars-Colts final score predictions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/duval-dispatch-jaguars-colts-final-125926008.html",
-   "timestamp": "2026-10-30T12:59:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "JAX"
-   ]
-  },
-  {
-   "id": "gXkpJNtEJ4yhBQ9n",
-   "headline": "Jordan Love picks Panthers apart; Christian Watson's midgame hospital trip; top 50 MLB free agents",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jordan-love-picks-apart-panthers-christian-watsons-midgame-hospital-trip-top-50-mlb-free-agents/",
-   "timestamp": "2026-10-30T12:58:55.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jordan-love",
-    "christian-watson"
-   ],
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "0IZkhwQtwO1KTSvC",
-   "headline": "NFL's 'scariest' good, bad teams: Why Seahawks strike fear, Titans fans should be terrified",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfls-scariest-good-bad-teams-seahawks-titans/",
-   "timestamp": "2026-10-30T12:57:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA",
-    "TEN"
-   ]
-  },
-  {
-   "id": "rXbGfA2P64LrKY4V",
-   "headline": "Patriots trade deadline tracker: News and rumors ahead of the Nov. 10 deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-trade-deadline-tracker-news-231608460.html",
-   "timestamp": "2026-10-30T12:56:36.000Z",
-   "category": "transaction",
-   "team_abbrs": [
     "NE"
    ]
   }
