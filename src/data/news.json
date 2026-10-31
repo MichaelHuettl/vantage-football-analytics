@@ -4,6 +4,74 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "awXa-uaD20GMRwAQ",
+   "headline": "Jordan Love passes Brett Favre for multi-touchdown games to start season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jordan-love-passes-brett-favre-021251584.html",
+   "timestamp": "2026-10-31T02:12:51.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jordan-love"
+   ]
+  },
+  {
+   "id": "Y_0opp81s5C08RNL",
+   "headline": "Los Angeles Chargers news: Chargers-Rams final score predictions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-chargers-015000603.html",
+   "timestamp": "2026-10-31T01:50:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "LAR"
+   ]
+  },
+  {
+   "id": "0ewqOiVMEfkix-Uo",
+   "headline": "NFL Mailbag: Colts, Seahawks, 49ers, Simmons, Taylor, Jaguars, Thomas",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-mailbag-colts-seahawks-49ers-simmons-taylor-jaguars-thomas",
+   "timestamp": "2026-10-31T01:25:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "JAX",
+    "SEA",
+    "SF"
+   ]
+  },
+  {
+   "id": "GuhTvpryTAB5t6xv",
+   "headline": "Minor NFL Transactions: 10/30/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/minor-nfl-transactions-10-30-26",
+   "timestamp": "2026-10-31T00:38:53.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "twVl1mJEsbSMSnmK",
+   "headline": "Seahawks-Bears Friday injury report: Cross and Nwosu sit, Byron Murphy limited by back",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-bears-friday-injury-report-235815613.html",
+   "timestamp": "2026-10-30T23:58:15.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI",
+    "SEA"
+   ]
+  },
+  {
+   "id": "utj3Nxadrh6nuCCk",
+   "headline": "Ryan Poles says Bears aren't adopting 'F them picks' mindset with Jeffery Simmons trade, DT's impact on culture factored into deal",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/ryan-poles-says-bears-arent-adopting-f-them-picks-mindset-with-jeffery-simmons-trade-dts-impact-on-culture-factored-into-deal-232848179.html",
+   "timestamp": "2026-10-30T23:28:48.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
    "id": "Qmq-wXUjKc1g3iMK",
    "headline": "Jadarian Price: Practices fully Friday",
    "source": "RotoWire",
@@ -100,6 +168,14 @@
    ]
   },
   {
+   "id": "3OvKi0TNYJBWb8KV",
+   "headline": "Makai Lemon: Philly's top WR for Week 8",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/makai-lemon-19231",
+   "timestamp": "2026-10-30T22:33:00.000Z",
+   "category": "breaking"
+  },
+  {
    "id": "H_qt32DBFKV_xc3_",
    "headline": "NFL Week 8 final injury report: Latest on Lamar Jackson, AJ Brown, George Pickens, more",
    "source": "CBS Sports",
@@ -134,6 +210,48 @@
    "team_abbrs": [
     "DEN",
     "KC"
+   ]
+  },
+  {
+   "id": "rulFqUbtoBMon_eR",
+   "headline": "Jets defense quietly aware of Ashton Jeanty’s tackling comments",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-defense-quietly-aware-ashton-222158638.html",
+   "timestamp": "2026-10-30T22:21:58.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ashton-jeanty"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "2r0siY2F8iUV9SDc",
+   "headline": "Saquon Barkley explains why he’s powering through injuries in trying Eagles season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saquon-barkley-explains-why-powering-221707083.html",
+   "timestamp": "2026-10-30T22:17:07.000Z",
+   "category": "injury",
+   "player_ids": [
+    "saquon-barkley"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "-zAmP6O07Y_lGsKT",
+   "headline": "Aaron Glenn says his Jets will be ‘ready to play’ after Ashton Jeanty’s brutal dig",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/aaron-glenn-says-jets-ready-221337655.html",
+   "timestamp": "2026-10-30T22:13:37.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ashton-jeanty"
+   ],
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -1649,135 +1767,6 @@
    "category": "transaction",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "DA9S_FBp3PvKi_pu",
-   "headline": "5 things to watch as Jets face Raiders in Week 8 of 2026 NFL season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-things-watch-jets-face-125000826.html",
-   "timestamp": "2026-10-30T12:50:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "qFFJsxnK3XwbEHFw",
-   "headline": "Jets, Titans, Browns will control the first round of the 2026 NFL Draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-titans-browns-control-first-124835419.html",
-   "timestamp": "2026-10-30T12:48:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "NYJ",
-    "TEN"
-   ]
-  },
-  {
-   "id": "TsKzQ6zG4aizCOi1",
-   "headline": "NFL Week 8 bold predictions: Jared Goff tears up Vikings D and Justin Herbert plays a clean game?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-8-bold-predictions-jared-goff-vikings-justin-herbert/",
-   "timestamp": "2026-10-30T12:45:04.000Z",
-   "category": "injury",
-   "player_ids": [
-    "justin-herbert",
-    "jared-goff"
-   ],
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "Uj2gzQ4Gki2noGXy",
-   "headline": "Packers' Xavier McKinney says NFL fined him 'a lot' for criticizing refs after loss to Lions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/packers-xavier-mckinney-says-nfl-fined-him-a-lot-for-criticizing-refs-after-loss-to-lions-122820437.html",
-   "timestamp": "2026-10-30T12:28:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "GB"
-   ]
-  },
-  {
-   "id": "oc3nn89mlRuTfaO3",
-   "headline": "Before trade deadline, Bills reportedly “looking for another piece or two”",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/trade-deadline-bills-reportedly-looking-121200378.html",
-   "timestamp": "2026-10-30T12:12:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "1LrNCj89oejMN-Fg",
-   "headline": "NFL odds: Week 8 parlays featuring favorites, underdogs include Bills-Ravens, Bears-Seahawks",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-week-8-parlays-featuring-favorites-underdogs-include-bills-ravens-bears-seahawks/",
-   "timestamp": "2026-10-30T12:01:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "BUF",
-    "CHI",
-    "SEA"
-   ]
-  },
-  {
-   "id": "b1GRc2kOzNguXdBc",
-   "headline": "Lions vs. Vikings preview: 3 key matchups",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-vs-vikings-preview-3-120000411.html",
-   "timestamp": "2026-10-30T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIN"
-   ]
-  },
-  {
-   "id": "PYbj2rkP0yo9sEpl",
-   "headline": "The Bears acted like a Super Bowl contender with the Jeffery Simmons trade. It’s about time",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-acted-super-bowl-contender-120000364.html",
-   "timestamp": "2026-10-30T12:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "P7xllCknZHjoyLJp",
-   "headline": "NFL Week 8 picks, best bets: Lions hand Vikings first loss, Commanders cruise past Eagles",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-8-odds-picks-against-spread-predictions-2026/",
-   "timestamp": "2026-10-30T11:50:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIN",
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "igX3JpHRP6oUaHY5",
-   "headline": "NFL Week 8 picks: Experts split on Ravens vs. Bills as Lamar Jackson eyes return",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-8-expert-picks-predictions-odds-schedule-2026/",
-   "timestamp": "2026-10-30T11:48:42.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "BUF"
    ]
   }
  ]
