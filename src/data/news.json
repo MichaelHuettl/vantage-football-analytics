@@ -4,6 +4,624 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "7Io76mimYhtjVSAj",
+   "headline": "Steelers vs. Browns: Week 8 game picks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-vs-browns-week-8-151918912.html",
+   "timestamp": "2026-10-31T15:19:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "mYV4J0vOVgqE5Hgf",
+   "headline": "Colts are now open to trading RB Jonathan Taylor, and the Broncos are among the teams interested",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-now-open-trading-rb-151437250.html",
+   "timestamp": "2026-10-31T15:14:37.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "DEN",
+    "IND"
+   ]
+  },
+  {
+   "id": "ZaDdqVE6xCqCVD9k",
+   "headline": "Who is Tanner McKee? Eagles QB starting with Jalen Hurts out",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tanner-mckee-eagles-qb-starting-151037520.html",
+   "timestamp": "2026-10-31T15:10:37.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "dCcYFkIbtkJ6Hcen",
+   "headline": "Eagles News: Commanders get bad news ahead of hosting Philadelphia",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-news-commanders-bad-news-150159610.html",
+   "timestamp": "2026-10-31T15:01:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "WAS"
+   ]
+  },
+  {
+   "id": "ibzAUZDRE-YfB4MW",
+   "headline": "Commanders DT Daron Payne Out For Season",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/commanders-dt-daron-payne-to-miss-extensive-time",
+   "timestamp": "2026-10-31T15:00:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "ozOAozgYicl68Hxl",
+   "headline": "Draft prospects for the NY Giants in Week 9 of college football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/draft-prospects-ny-giants-week-150000770.html",
+   "timestamp": "2026-10-31T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "us1V5N5WvQCVoT4M",
+   "headline": "The importance of during the Saints’ bye week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/importance-during-saints-bye-week-150000634.html",
+   "timestamp": "2026-10-31T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "mBGNzouECzLMkPAa",
+   "headline": "College football’s top Cowboys draft targets in Week 9",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/college-football-top-cowboys-draft-150000758.html",
+   "timestamp": "2026-10-31T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "-uLub_7cNhLc3VTu",
+   "headline": "Previewing the New York Jets’ opposition: Las Vegas Raiders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/previewing-york-jets-opposition-las-150000998.html",
+   "timestamp": "2026-10-31T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "Loho53WQnarsW5gV",
+   "headline": "Packers’ Micah Parsons reportedly eyeing Week 12 return for Thanksgiving Eve game against Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/packers-micah-parsons-reportedly-eyeing-week-12-return-for-thanksgiving-eve-game-against-rams-145129348.html",
+   "timestamp": "2026-10-31T14:51:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "tECYeo-bD6Q8TBmU",
+   "headline": "Josh Jacobs could be on thin ice in Green Bay",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-jacobs-could-thin-ice-144145148.html",
+   "timestamp": "2026-10-31T14:41:45.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ]
+  },
+  {
+   "id": "YAikmVLB_a1QJHxr",
+   "headline": "KaVontae Turpin won't play in Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kavontae-turpin-wont-play-week-143928181.html",
+   "timestamp": "2026-10-31T14:39:28.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "XcQPk_8thzqSAxgO",
+   "headline": "Eagles opposing player to stop, Week 8 edition",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-opposing-player-stop-week-143651138.html",
+   "timestamp": "2026-10-31T14:36:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "N7YGqBRY0g9Gz5vs",
+   "headline": "Dolphins claim Jamree Kromah in edge rusher shake up",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-claim-jamree-kromah-edge-143500073.html",
+   "timestamp": "2026-10-31T14:35:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "43JHhSKmY8GchgFB",
+   "headline": "John Harbaugh violated norms, called Titans ownership about Jeffery Simmons",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/john-harbaugh-violated-norms-called-143405683.html",
+   "timestamp": "2026-10-31T14:34:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "gc4Wv_3YUadC_35p",
+   "headline": "Chiefs-Broncos: 5 questions with Mile High Report ahead of Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-broncos-5-questions-mile-143000396.html",
+   "timestamp": "2026-10-31T14:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "4YN3DNH3F_RiCVPC",
+   "headline": "Colts change course on Jonathan Taylor trade, insider says. What to know",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-change-course-jonathan-taylor-142601416.html",
+   "timestamp": "2026-10-31T14:26:01.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "RRl2i79ib7bBvyy7",
+   "headline": "Week 8 NFL betting promos: Claim over $3,000 in bonuses from betting apps, sportsbooks for Sunday's games",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-8-nfl-betting-promos-claim-over-3000-in-bonuses-from-betting-apps-sportsbooks-for-sundays-games/",
+   "timestamp": "2026-10-31T14:24:02.000Z",
+   "category": "transaction"
+  },
+  {
+   "id": "RfgUzn0m37RqUX2Q",
+   "headline": "Pre-Snap Reads: Can the Seahawks keep moving the chains on 3rd down?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pre-snap-reads-seahawks-keep-142142929.html",
+   "timestamp": "2026-10-31T14:21:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "CPdfs2by4Y6aaOv1",
+   "headline": "Reports: Packers targeting Week 12 for Micah Parsons return",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/reports-packers-targeting-week-12-141442840.html",
+   "timestamp": "2026-10-31T14:14:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "lT3mzfAPLOQnWyqe",
+   "headline": "Raiders Mailbag: Should Las Vegas sell Maxx Crosby, Kolton Miller, other players ahead of NFL trade deadline?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-mailbag-las-vegas-sell-141100293.html",
+   "timestamp": "2026-10-31T14:11:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "VnkxJbIu0CgK8W_r",
+   "headline": "How to bet on 2026 NFL Week 8: Betting odds, trends, game previews, tips, schedule, sportsbook promos, offers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/how-to-bet-on-2026-nfl-week-8-betting-odds-trends-game-previews-tips-schedule-sportsbook-promos-offers/",
+   "timestamp": "2026-10-31T14:06:40.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "mbjlVvuI-B_QlnrF",
+   "headline": "Week 8 NFL betting odds, lines, totals, spreads for every game, including Bills-Ravens, Lions-Vikings",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-8-nfl-betting-odds-spreads-totals-lines/",
+   "timestamp": "2026-10-31T14:04:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "BUF",
+    "DET",
+    "MIN"
+   ]
+  },
+  {
+   "id": "3YzAjvbnjXn8UqPl",
+   "headline": "Rams vs Chargers: How to watch on TV, stream, or listen on radio",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-vs-chargers-watch-tv-140100923.html",
+   "timestamp": "2026-10-31T14:01:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "LAR"
+   ]
+  },
+  {
+   "id": "aC2Bzryk92iFaE_D",
+   "headline": "Prove Them Wrong: An Open Letter to the Minnesota Vikings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/prove-them-wrong-open-letter-140055291.html",
+   "timestamp": "2026-10-31T14:00:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "7_eD8yYwrW7vTpVM",
+   "headline": "Buccaneers vs. Falcons final injury report: Emeka Egbuka ruled out for Sunday’s game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buccaneers-vs-falcons-final-injury-140033582.html",
+   "timestamp": "2026-10-31T14:00:33.000Z",
+   "category": "injury",
+   "player_ids": [
+    "emeka-egbuka"
+   ],
+   "team_abbrs": [
+    "ATL",
+    "TB"
+   ]
+  },
+  {
+   "id": "8Wc_ove8ROgNX0Nk",
+   "headline": "Seahawks Reacts Survey results: Fans confident Seattle comes out on top over Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-reacts-survey-results-fans-140000682.html",
+   "timestamp": "2026-10-31T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "SEA"
+   ]
+  },
+  {
+   "id": "HMb0IPLpNs4WfIAD",
+   "headline": "NFL predictions: Chargers face long odds vs. Rams in Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-chargers-face-long-140000939.html",
+   "timestamp": "2026-10-31T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "LAR"
+   ]
+  },
+  {
+   "id": "tjy6GiZtkef7nNHS",
+   "headline": "Bears Discussion: Jeffery Simmons trade, Seahawks preview, 2027 NFL Draft OT prospects, DFS",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-discussion-jeffery-simmons-trade-140000720.html",
+   "timestamp": "2026-10-31T14:00:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CHI",
+    "SEA"
+   ]
+  },
+  {
+   "id": "EIiBHy_0E_D__LVt",
+   "headline": "Broncos vs. Chiefs: 3 Players to Watch in Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-chiefs-3-players-140000678.html",
+   "timestamp": "2026-10-31T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "jSO4iE4vnVkz88ES",
+   "headline": "Kordell Stewart reflects on whether playing QB for Steelers cost him Hall of Fame career as WR",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/kordell-stewart-steelers-cost-him-hall-of-fame-receiver-career/",
+   "timestamp": "2026-10-31T13:58:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "XTtoi1WjssqVOKOJ",
+   "headline": "Giants' John Harbaugh called Titans owner directly in attempt to trade for All-Pro DT Jeffery Simmons",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-john-harbaugh-called-titans-134943069.html",
+   "timestamp": "2026-10-31T13:49:43.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG",
+    "TEN"
+   ]
+  },
+  {
+   "id": "eYYy7oUihZCvhduQ",
+   "headline": "Colts willing to trade RB Jonathan Taylor, per report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-willing-trade-rb-jonathan-133915000.html",
+   "timestamp": "2026-10-31T13:39:15.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "CYBc59nJni_cfoOK",
+   "headline": "Myles Garrett, Micah Parsons injury updates could impact Browns NFL draft stock",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/myles-garrett-micah-parsons-injury-133023613.html",
+   "timestamp": "2026-10-31T13:30:23.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "iCUh__Ng7lg3gAmT",
+   "headline": "‘Kudos and Wet Willies’, plus bye week thoughts on every Giants defensive player",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kudos-wet-willies-plus-bye-133000065.html",
+   "timestamp": "2026-10-31T13:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "UU3LpV9sjy4TJTQw",
+   "headline": "Vikings vs. Lions preview: 5 small weaknesses in Minnesota’s defense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-vs-lions-preview-5-133000833.html",
+   "timestamp": "2026-10-31T13:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "MIN"
+   ]
+  },
+  {
+   "id": "gv0Zl4KOYKVn-FED",
+   "headline": "Giants among teams with 'some level of interest' in Colts star RB Jonathan Taylor: report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-among-teams-level-interest-131419899.html",
+   "timestamp": "2026-10-31T13:14:19.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND",
+    "NYG"
+   ]
+  },
+  {
+   "id": "kj0Rqu-hndS729Ua",
+   "headline": "Colts reportedly open to trading RB Jonathan Taylor before Nov. 10 deadline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/colts-reportedly-open-to-trading-rb-jonathan-taylor-before-nov-10-deadline-131011904.html",
+   "timestamp": "2026-10-31T13:10:11.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "LEZqfLOYgQWkpUIw",
+   "headline": "Rams may have new longsnapper for Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-may-longsnapper-week-8-130100563.html",
+   "timestamp": "2026-10-31T13:01:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "2YRyO0W2XKnGePT-",
+   "headline": "Fleur-de-Links: Could the Saints go back to the offensive line in the draft?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/fleur-links-could-saints-back-130000908.html",
+   "timestamp": "2026-10-31T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "2krAzzNAhnangBaJ",
+   "headline": "3 things Cowboys HC Brian Schottenheimer can carry into week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-things-cowboys-hc-brian-130000575.html",
+   "timestamp": "2026-10-31T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "pTwp8vVX4lkxN_m5",
+   "headline": "NFL predictions: Broncos vs. Chiefs score predictions for Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-broncos-vs-chiefs-130000035.html",
+   "timestamp": "2026-10-31T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "qf3QBfVOtUD5WG05",
+   "headline": "Chiefs News: Third downs will be significant in Broncos rematch",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-third-downs-significant-130000937.html",
+   "timestamp": "2026-10-31T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "KC"
+   ]
+  },
+  {
+   "id": "GaLyh3_6GbQ4APQA",
+   "headline": "Falcons vs. Bucs injury report: Brian Robinson ruled out for Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-vs-bucs-injury-report-125116375.html",
+   "timestamp": "2026-10-31T12:51:16.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ATL"
+   ]
+  },
+  {
+   "id": "EVCM70MBISiY9LVh",
+   "headline": "Ed Oliver’s return can help unlock Bills defense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ed-oliver-return-help-unlock-124925937.html",
+   "timestamp": "2026-10-31T12:49:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "UnVVFUhzMu0onb3B",
+   "headline": "As the trade deadline approaches, should Browns listen to Jared Verse offers?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/trade-deadline-approaches-browns-listen-124855017.html",
+   "timestamp": "2026-10-31T12:48:55.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "Fl0wpXK0YKBN8N-u",
+   "headline": "Lions vs. Vikings Week 8 preview: Madden 27 simulation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-vs-vikings-week-8-124843157.html",
+   "timestamp": "2026-10-31T12:48:43.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "MIN"
+   ]
+  },
+  {
+   "id": "OqueHuItGeWmLYCA",
+   "headline": "5 Ravens to zero-in on vs. Bills",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-ravens-zero-vs-bills-123236345.html",
+   "timestamp": "2026-10-31T12:32:36.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "BUF"
+   ]
+  },
+  {
+   "id": "HGH6bXiwhehgJeBp",
+   "headline": "Jonathan Taylor trade talks are \"active and ongoing\"",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jonathan-taylor-trade-talks-active-120808011.html",
+   "timestamp": "2026-10-31T12:08:08.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor"
+   ]
+  },
+  {
+   "id": "1ZqnhwyJgFmMwXui",
+   "headline": "Jonathan Taylor: Trade talks heating up",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jonathan-taylor-14455",
+   "timestamp": "2026-10-31T12:04:00.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor"
+   ]
+  },
+  {
+   "id": "8gaXW3yFL_zQfGZ5",
+   "headline": "Future Broncos: A 2027 NFL Mock Draft for Denver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/future-broncos-2027-nfl-mock-120000101.html",
+   "timestamp": "2026-10-31T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "C4BPCwqblElYLgP7",
+   "headline": "Chicago Bears Week 8 Flashbacks: A Pair of Walk Offs and a Franchise Record",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-week-8-flashbacks-120000524.html",
+   "timestamp": "2026-10-31T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "CcCTcYbTWNhw9gql",
+   "headline": "Washington Commanders vs Philadelphia Eagles Week 8: Five Questions with Bleeding Green Nation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/washington-commanders-vs-philadelphia-eagles-120000997.html",
+   "timestamp": "2026-10-31T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "WAS"
+   ]
+  },
+  {
    "id": "MpDWBYReO5H6fsCm",
    "headline": "Jeffery Simmons excited to play in prime time for Bears, something Titans rarely do",
    "source": "Yahoo Sports",
@@ -186,17 +804,6 @@
    "team_abbrs": [
     "DET",
     "MIN"
-   ]
-  },
-  {
-   "id": "ibzAUZDRE-YfB4MW",
-   "headline": "Commanders DT Daron Payne Likely Headed To IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/commanders-dt-daron-payne-to-miss-extensive-time",
-   "timestamp": "2026-10-30T23:00:53.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "WAS"
    ]
   },
   {
@@ -1166,604 +1773,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "c2kjvug_76FX9haN",
-   "headline": "Steelers’ Jaquan Brisker credits trust and communication for hot stretch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-jaquan-brisker-credits-trust-175433383.html",
-   "timestamp": "2026-10-30T17:54:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "lUUfGMhJUecdGGDY",
-   "headline": "Bills Looking For Defensive Help",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bills-looking-for-defensive-help",
-   "timestamp": "2026-10-30T17:53:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "s5ANi29rzSvpZG8a",
-   "headline": "Ravens coach Jesse Minter confirms Lamar Jackson will return from ankle injury, start vs. Bills",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/ravens-lamar-jackson-injury-update-bills/",
-   "timestamp": "2026-10-30T17:50:27.000Z",
-   "category": "injury",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "BUF"
-   ]
-  },
-  {
-   "id": "ygMxdNZkjBizRfq_",
-   "headline": "Lamar Jackson set to return in Week 8 to help Ravens snap 2-game losing streak: 'That's what I'm ready to do'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/lamar-jackson-set-to-return-in-week-8-to-help-ravens-snap-2-game-losing-streak-thats-what-im-ready-to-do-174713573.html",
-   "timestamp": "2026-10-30T17:46:50.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "Gc5W4CgT7Mzu3sei",
-   "headline": "Packers RB Josh Jacobs says hands-behind-back gesture after first-half TD vs. Panthers was ode to gospel song",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/packers-rb-josh-jacobs-says-hands-behind-back-gesture-after-first-half-td-vs-panthers-was-ode-to-gospel-song-174240433.html",
-   "timestamp": "2026-10-30T17:42:40.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "G5GhwL3EveAs0ywY",
-   "headline": "Browns trying to end stunning 38-year drought against Steelers in Week 8 AFC North showdown",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/browns-trying-to-end-stunning-38-year-drought-against-steelers/",
-   "timestamp": "2026-10-30T17:33:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "TcH33cbv7dfsF1kY",
-   "headline": "Ravens QB Lamar Jackson To Return In Week 8",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/ravens-qb-lamar-jackson-trending-toward-week-8-return",
-   "timestamp": "2026-10-30T17:32:44.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "vdHOFRmT3nZ6uFOe",
-   "headline": "NFL Halloween costumes 2026: Roundup of some of the best looks ahead of the holiday",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-halloween-costumes-2026-roundup/",
-   "timestamp": "2026-10-30T17:31:44.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "gF4WUM8b55_naMM9",
-   "headline": "What the numbers say about a winner in Cowboys vs Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/numbers-winner-cowboys-vs-cardinals-173000661.html",
-   "timestamp": "2026-10-30T17:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "DAL"
-   ]
-  },
-  {
-   "id": "daDcW8bt6OnvX8Fz",
-   "headline": "Shane Steichen confirms Josh Downs requested a trade and will play Sunday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/shane-steichen-confirms-josh-downs-170831983.html",
-   "timestamp": "2026-10-30T17:08:31.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "josh-downs"
-   ]
-  },
-  {
-   "id": "NLOuYUWdj04hm0hp",
-   "headline": "'He resurrected himself': Packers' Christian Watson returns to game after leaving in ambulance",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/resurrected-himself-packers-christian-watson-170407743.html",
-   "timestamp": "2026-10-30T17:04:07.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "christian-watson"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "AKtbaGGpCo7KiAbT",
-   "headline": "Explainer: Why the NFL didn’t flex the Eagles vs. Commanders out of ‘Sunday Night Football’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/explainer-why-nfl-didn-t-170000097.html",
-   "timestamp": "2026-10-30T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "7e10rhSliVm59DTU",
-   "headline": "Chiefs-Broncos Week 8 game and score predictions from Arrowhead Pride",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-broncos-week-8-game-170000441.html",
-   "timestamp": "2026-10-30T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "Yd5wGl7Utu7rkXjT",
-   "headline": "Eagles at Commanders Game Preview: 5 questions and answers with the Week 8 enemy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-commanders-game-preview-5-164429419.html",
-   "timestamp": "2026-10-30T16:44:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "JQOnonelO-fANM3t",
-   "headline": "Saquon Barkley is at Eagles practice Friday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saquon-barkley-eagles-practice-friday-163254225.html",
-   "timestamp": "2026-10-30T16:32:54.000Z",
-   "category": "practice",
-   "player_ids": [
-    "saquon-barkley"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "kvIVXJY31xgZuOmG",
-   "headline": "John Lynch on Mike Evans’ Achilles injury: ‘I think the idea is you’ve just got to quiet that thing down’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/john-lynch-mike-evans-achilles-163000112.html",
-   "timestamp": "2026-10-30T16:30:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "mike-evans"
-   ]
-  },
-  {
-   "id": "tKCZsxk4lpXiEthh",
-   "headline": "Titans sign DT Timmy Horne to 53-man roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-sign-dt-timmy-horne-161850051.html",
-   "timestamp": "2026-10-30T16:18:50.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "DXMPpY9KBsHbCi0v",
-   "headline": "Eagles Rebuffing Trade Interest In DT Moro Ojomo",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/eagles-rebuffing-trade-interest-in-dt-moro-ojomo",
-   "timestamp": "2026-10-30T16:15:13.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "rajbGxKG5nqGmu-l",
-   "headline": "Bold Fantasy Football Predictions for Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/bold-fantasy-football-predictions-for-week-8-161453084.html",
-   "timestamp": "2026-10-30T16:14:53.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "ml2k6L6grmIvcoKK",
-   "headline": "Bring back Evero? Former Rams coach loses defensive coordinator job",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bring-back-evero-former-rams-160857954.html",
-   "timestamp": "2026-10-30T16:08:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "RkK-27zClg_8Kguh",
-   "headline": "Dylan Parham offers reminder about Raiders’ investment on offensive line",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dylan-parham-offers-reminder-raiders-160200632.html",
-   "timestamp": "2026-10-30T16:02:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "5Iy_zuDs6ZW0hUh2",
-   "headline": "Bryce Young and the Panthers' passing game are running into familiar problems, can they be fixed?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bryce-young-panthers-passing-game-familiar-problems-can-they-be-fixed/",
-   "timestamp": "2026-10-30T15:52:40.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "bryce-young"
-   ],
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "9YQ2dEL6lxyQ-Vmp",
-   "headline": "Browns vs. Steelers NFL picks, parlay: Surprising Cleveland would make history with road upset Sunday on CBS",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/browns-vs-steelers-nfl-picks-parlay-surprising-cleveland-would-make-history-with-road-upset-sunday-on-cbs/",
-   "timestamp": "2026-10-30T15:46:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "dqibWnah65oKVIn9",
-   "headline": "Cam Skattebo says he feared amputation after gruesome injury that ended his 2025 season",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/giants-cam-skattebo-feared-amputation-after-2025-injury/",
-   "timestamp": "2026-10-30T15:46:19.000Z",
-   "category": "injury",
-   "player_ids": [
-    "cam-skattebo"
-   ]
-  },
-  {
-   "id": "Iz1eALzcxqjY2b9h",
-   "headline": "NFL Week 8 odds, picks: Brinson's best bets, player props, anytime touchdown scorers for Sunday's games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-week-8-odds-picks-brinsons-best-bets-player-props-anytime-touchdown-scorers-for-sundays-games/",
-   "timestamp": "2026-10-30T15:42:48.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "7y9W_E2DdKRRKOja",
-   "headline": "Week 8 NFL betting promos: Get over $3,000 in bonuses from betting apps, sportsbooks for Sunday's games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-8-nfl-betting-promos-get-over-3000-in-bonuses-from-betting-apps-sportsbooks-for-sundays-games/",
-   "timestamp": "2026-10-30T15:21:18.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "C0O2kjr401cyYjUC",
-   "headline": "How to bet on 2026 NFL Week 8: Betting odds, game previews, trends, tips, schedule, sportsbook promos, offers",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/how-to-bet-on-2026-nfl-week-8-betting-odds-game-previews-trends-tips-schedule-sportsbook-promos-offers/",
-   "timestamp": "2026-10-30T15:15:54.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "Xi9jwXNMxTKcqPTu",
-   "headline": "Week 8 NFL betting odds, lines, totals, spreads for every game, including Bills-Ravens, Lions-Vikings",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-8-nfl-betting-odds-spreads-lines-totals/",
-   "timestamp": "2026-10-30T15:10:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "BUF",
-    "DET",
-    "MIN"
-   ]
-  },
-  {
-   "id": "c65rCdm28sPMykY6",
-   "headline": "2026 NFL trade deadline: One position of need and potential options for all 32 teams",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-needs-potential-options-all-32-teams/",
-   "timestamp": "2026-10-30T15:08:12.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "MRjio22KUYS8Fqgo",
-   "headline": "Panthers fire defensive coordinator Ejiro Evero, make other defensive changes after Packers loss",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/panthers-fire-defensive-coordinator-ejiro-evero/",
-   "timestamp": "2026-10-30T14:48:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "GB"
-   ]
-  },
-  {
-   "id": "ukbN1zAIhR6qeo7z",
-   "headline": "Cowboys already won 2026 NFL trade deadline with Joey Porter Jr. trade",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/cowboys-already-won-2026-nfl-trade-deadline-joey-porter-jr-trade/",
-   "timestamp": "2026-10-30T14:39:11.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "ko-l579AVrjASop_",
-   "headline": "Week 8 NFL odds, picks, predictions: Computer model backs Steelers and Rams",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-best-bets-week-8-2026/",
-   "timestamp": "2026-10-30T14:24:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "PIT"
-   ]
-  },
-  {
-   "id": "YlsWaJliKwO1XGU2",
-   "headline": "Week 8 best bets: Zay Flowers tallies big day in Lamar Jackson's return, Steelers win AFC North showdown",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-8-best-bets-zay-flowers-lamar-jackson-ravens-steelers/",
-   "timestamp": "2026-10-30T14:13:04.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson",
-    "zay-flowers"
-   ],
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "leE-BVx3KLQjD9VB",
-   "headline": "Fantasy Football Week 8 Fades & Busts: Leave the Broncos in the stable",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-8-fades--busts-leave-the-broncos-in-the-stable-141303756.html",
-   "timestamp": "2026-10-30T14:13:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "Lt7w1N1UmgFsvBAV",
-   "headline": "Week 8 NFL odds, picks, predictions: Our 6 best bets for this week's games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/week-8-nfl-odds-picks-predictions-our-6-best-bets-for-this-weeks-games-140216860.html",
-   "timestamp": "2026-10-30T14:02:16.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "qI8osMOTSAYqNfLg",
-   "headline": "Bears To Inquire About Khalil Mack?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/bears-to-inquire-about-khalil-mack",
-   "timestamp": "2026-10-30T14:01:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "8o6CP-d_36zRl_n6",
-   "headline": "NFLSU rookie check-in: Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nflsu-rookie-check-week-8-140000070.html",
-   "timestamp": "2026-10-30T14:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "xYOKuleoOn0EdDw8",
-   "headline": "Josh Jacobs explains controversial touchdown celebration vs. Panthers that seemed to mimic arrest",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/packers-josh-jacobs-explains-touchdown-celebration-panthers/",
-   "timestamp": "2026-10-30T13:48:29.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "4VdfQ1wVEOfqLKMl",
-   "headline": "Eagles News: Philadelphia has reportedly told teams that Moro Ojomo is not available for trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-philadelphia-reportedly-told-134538407.html",
-   "timestamp": "2026-10-30T13:45:38.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "nc_1LmexmCjwxWr8",
-   "headline": "Week 8 NFL betting buzz: Odds, sharp action and public betting splits",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/week-8-nfl-betting-buzz-odds-sharp-action-and-public-betting-splits-134525268.html",
-   "timestamp": "2026-10-30T13:45:25.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "M4PayfysydBNaqDI",
-   "headline": "Browns playoff odds: Big shift with Week 8 victory or loss to Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-playoff-odds-big-shift-133938534.html",
-   "timestamp": "2026-10-30T13:39:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "91H3TolWay3eVb_n",
-   "headline": "5 Questions with Stampede Blue: The Colts’ Rebuild is Underway",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-questions-stampede-blue-colts-133817881.html",
-   "timestamp": "2026-10-30T13:38:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "7NjcdbhAq02hh9Jm",
-   "headline": "5 Titans players who need to show up vs. Bengals in Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-titans-players-show-vs-133000850.html",
-   "timestamp": "2026-10-30T13:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "TEN"
-   ]
-  },
-  {
-   "id": "xZiaFv0in1jQqdAe",
-   "headline": "Arizona Cardinals Daily Links:",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/arizona-cardinals-daily-links-132545041.html",
-   "timestamp": "2026-10-30T13:25:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "dX9rN6CIkfyOJW-b",
-   "headline": "Titans Claim DT Jonah Laulu Off Waivers; Six Teams Put In Claims",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/titans-claim-dt-jonah-laulu-off-waivers",
-   "timestamp": "2026-10-30T13:14:03.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "4S1wSWQ5rQS0Ni11",
-   "headline": "Deshaun Watson vs. Steelers' suffocating secondary: How pivotal AFC North duel will be won",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/deshaun-watson-vs-steelers-how-pivotal-afc-north-duel-won/",
-   "timestamp": "2026-10-30T13:12:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "HmWF_vx29T8Wibto",
-   "headline": "Does Josh Downs make sense for the Rams?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/does-josh-downs-sense-rams-131003994.html",
-   "timestamp": "2026-10-30T13:10:03.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-downs"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "HfoGc5IGpvrSzjJ7",
-   "headline": "Lions vs. Vikings preview, prediction: On Paper",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-vs-vikings-preview-prediction-130726085.html",
-   "timestamp": "2026-10-30T13:07:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIN"
-   ]
-  },
-  {
-   "id": "GtEF9eN1aglxnOJl",
-   "headline": "Week 8 versus the Steelers shouldn’t be viewed as a litmus test for the Browns",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-8-versus-steelers-shouldn-130631897.html",
-   "timestamp": "2026-10-30T13:06:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "PIT"
-   ]
-  },
-  {
-   "id": "LbtdcNrYxbqPZVD_",
-   "headline": "Bills news: Exploring Buffalo’s needs leading into the trade deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-news-exploring-buffalo-needs-130446818.html",
-   "timestamp": "2026-10-30T13:04:46.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "OBz2dP5nSLsfwj6x",
-   "headline": "Jordan Love picks Panthers apart; Christian Watson's midgame hospital trip; top 50 MLB free agents",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jordan-love-picks-panthers-apart-christian-watsons-midgame-hospital-trip-top-50-mlb-free-agents/",
-   "timestamp": "2026-10-30T13:00:38.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jordan-love",
-    "christian-watson"
-   ],
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "Jr3C5wAdtqjPMvyx",
-   "headline": "Patriots vs. Dolphins predictions: Pats get back on track in Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-dolphins-predictions-pats-130000685.html",
-   "timestamp": "2026-10-30T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "NE"
    ]
   }
  ]
