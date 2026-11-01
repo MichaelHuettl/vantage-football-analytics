@@ -1,8 +1,125 @@
 {
  "schema_version": 1,
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "RGEGXDuiJFeSJsSR",
+   "headline": "New York Jets vs Las Vegas Raiders: Five Questions with Silver and Black Pride",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-vs-las-vegas-080033602.html",
+   "timestamp": "2026-11-01T08:00:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "3xlLnJCx2zGJKH1R",
+   "headline": "New York Jets make roster moves ahead of Las Vegas Raiders game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-roster-moves-ahead-074954270.html",
+   "timestamp": "2026-11-01T07:49:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "0a7W4oV7auzWtrWU",
+   "headline": "Vikings Elevate DeeJay Dallas from Practice Squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-elevate-deejay-dallas-practice-053526515.html",
+   "timestamp": "2026-11-01T05:35:26.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "dEiCHGqHOoXZ4F3G",
+   "headline": "Daily Norseman Staff NFL Picks, Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daily-norseman-staff-nfl-picks-050846343.html",
+   "timestamp": "2026-11-01T05:08:46.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "SG3XjSMmQ_4p4e-y",
+   "headline": "Colts Willing To Trade RB Jonathan Taylor; Giants, Vikings Frontrunners?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/colts-willing-to-trade-rb-jonathan-taylor",
+   "timestamp": "2026-11-01T04:15:10.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND",
+    "MIN",
+    "NYG"
+   ]
+  },
+  {
+   "id": "S43h1HUi5Pmqq7p-",
+   "headline": "NFL Reviewing New Josh Jacobs Abuse Allegations",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/nfl-reviewing-new-josh-jacobs-abuse-allegations",
+   "timestamp": "2026-11-01T04:05:11.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ]
+  },
+  {
+   "id": "7GJk-V3Uc8eEvX5d",
+   "headline": "Joe Burrow is one four-TD, no-INT game away from elite club",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/joe-burrow-one-four-td-030313654.html",
+   "timestamp": "2026-11-01T03:03:13.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "joe-burrow"
+   ]
+  },
+  {
+   "id": "ssOyc4b0VlH1Bc0Z",
+   "headline": "Vikings Interested In RB, TE Trades",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/vikings-interested-in-rb-te-trades",
+   "timestamp": "2026-11-01T02:53:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "5XcxtYPQmPlpu7Hs",
+   "headline": "Cowboys have a franchise-record 14 straight games with 20 or more points allowed",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-franchise-record-14-straight-024351367.html",
+   "timestamp": "2026-11-01T02:43:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "pukKxh9nQGobqLYK",
+   "headline": "Eagles Expected To Field Offers On Landon Dickerson, Dallas Goedert, Riq Woolen",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/10/eagles-expected-to-field-offers-on-landon-dickerson-dallas-goedert-riq-woolen",
+   "timestamp": "2026-11-01T02:02:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dallas-goedert"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
   {
    "id": "4c1NY1eAxHlYbKS7",
    "headline": "Cardinals make roster moves prior to Cowboys game",
@@ -35,6 +152,17 @@
    "category": "breaking",
    "player_ids": [
     "george-pickens"
+   ]
+  },
+  {
+   "id": "xQS12giOJNkgVHY5",
+   "headline": "Nahshon Wright’s ‘frustrating’ Jets year could see him on the move at trade deadline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nahshon-wright-frustrating-jets-could-004223466.html",
+   "timestamp": "2026-11-01T00:42:23.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -100,6 +228,20 @@
    ]
   },
   {
+   "id": "TRsnq6q9PCjiflrf",
+   "headline": "Giants’ Cam Skattebo gets hit with $7,073 fine for controversial use-of-helmet flag",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-cam-skattebo-gets-hit-232841899.html",
+   "timestamp": "2026-10-31T23:28:41.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "cam-skattebo"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
    "id": "sVE69b_f7eVshxP2",
    "headline": "What signing Lan Larison to the 53-man roster means for the Patriots",
    "source": "Yahoo Sports",
@@ -108,6 +250,17 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
+   ]
+  },
+  {
+   "id": "i5KoyqRUh7Qg_yGZ",
+   "headline": "State of the Giants entering bye week: How this team became a true contender",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/state-giants-entering-bye-week-232020161.html",
+   "timestamp": "2026-10-31T23:20:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
    ]
   },
   {
@@ -154,13 +307,25 @@
   },
   {
    "id": "WUFTg8CAW4QIzbXV",
-   "headline": "Chiefs CB L’Jarius Sneed Headed Back To IR",
+   "headline": "Chiefs’ L’Jarius Sneed Headed Back To IR",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/10/chiefs-cb-ljarius-sneed-headed-back-to-ir",
    "timestamp": "2026-10-31T22:15:54.000Z",
    "category": "injury",
    "team_abbrs": [
     "KC"
+   ]
+  },
+  {
+   "id": "YiXl6Ygc27JSVEvU",
+   "headline": "There’s only one thing Aaron Glenn can do against the Raiders to stop Jets noise",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/only-one-thing-aaron-glenn-221200522.html",
+   "timestamp": "2026-10-31T22:12:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "NYJ"
    ]
   },
   {
@@ -172,6 +337,21 @@
    "category": "injury",
    "team_abbrs": [
     "NYJ"
+   ]
+  },
+  {
+   "id": "Zx0Nnr75SW0ekcp_",
+   "headline": "49ers’ Dre Greenlaw slapped with hefty fine for punching Falcons’ Drake London",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-dre-greenlaw-slapped-hefty-220511293.html",
+   "timestamp": "2026-10-31T22:05:11.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-london"
+   ],
+   "team_abbrs": [
+    "ATL",
+    "SF"
    ]
   },
   {
@@ -708,17 +888,6 @@
    ]
   },
   {
-   "id": "S43h1HUi5Pmqq7p-",
-   "headline": "NFL Reviewing New Josh Jacobs Abuse Allegations",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/nfl-reviewing-new-josh-jacobs-abuse-allegations",
-   "timestamp": "2026-10-31T18:45:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ]
-  },
-  {
    "id": "i-OOQf3LOeWCkDSa",
    "headline": "Seahawks vs. Bears game preview: Another big primetime showdown at Lumen Field",
    "source": "Yahoo Sports",
@@ -728,20 +897,6 @@
    "team_abbrs": [
     "CHI",
     "SEA"
-   ]
-  },
-  {
-   "id": "SG3XjSMmQ_4p4e-y",
-   "headline": "Colts Willing To Trade RB Jonathan Taylor",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/10/colts-willing-to-trade-rb-jonathan-taylor",
-   "timestamp": "2026-10-31T18:27:10.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "IND"
    ]
   },
   {
@@ -1608,163 +1763,6 @@
    "team_abbrs": [
     "CHI",
     "SEA"
-   ]
-  },
-  {
-   "id": "EIiBHy_0E_D__LVt",
-   "headline": "Broncos vs. Chiefs: 3 Players to Watch in Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-chiefs-3-players-140000678.html",
-   "timestamp": "2026-10-31T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC"
-   ]
-  },
-  {
-   "id": "jSO4iE4vnVkz88ES",
-   "headline": "Kordell Stewart reflects on whether playing QB for Steelers cost him Hall of Fame career as WR",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/kordell-stewart-steelers-cost-him-hall-of-fame-receiver-career/",
-   "timestamp": "2026-10-31T13:58:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "XTtoi1WjssqVOKOJ",
-   "headline": "Giants' John Harbaugh called Titans owner directly in attempt to trade for All-Pro DT Jeffery Simmons",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-john-harbaugh-called-titans-134943069.html",
-   "timestamp": "2026-10-31T13:49:43.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG",
-    "TEN"
-   ]
-  },
-  {
-   "id": "eYYy7oUihZCvhduQ",
-   "headline": "Colts willing to trade RB Jonathan Taylor, per report",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-willing-trade-rb-jonathan-133915000.html",
-   "timestamp": "2026-10-31T13:39:15.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "CYBc59nJni_cfoOK",
-   "headline": "Myles Garrett, Micah Parsons injury updates could impact Browns NFL draft stock",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/myles-garrett-micah-parsons-injury-133023613.html",
-   "timestamp": "2026-10-31T13:30:23.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "iCUh__Ng7lg3gAmT",
-   "headline": "‘Kudos and Wet Willies’, plus bye week thoughts on every Giants defensive player",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kudos-wet-willies-plus-bye-133000065.html",
-   "timestamp": "2026-10-31T13:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "UU3LpV9sjy4TJTQw",
-   "headline": "Vikings vs. Lions preview: 5 small weaknesses in Minnesota’s defense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikings-vs-lions-preview-5-133000833.html",
-   "timestamp": "2026-10-31T13:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIN"
-   ]
-  },
-  {
-   "id": "gv0Zl4KOYKVn-FED",
-   "headline": "Giants among teams with 'some level of interest' in Colts star RB Jonathan Taylor: report",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-among-teams-level-interest-131419899.html",
-   "timestamp": "2026-10-31T13:14:19.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "IND",
-    "NYG"
-   ]
-  },
-  {
-   "id": "kj0Rqu-hndS729Ua",
-   "headline": "Colts reportedly open to trading RB Jonathan Taylor before Nov. 10 deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/colts-reportedly-open-to-trading-rb-jonathan-taylor-before-nov-10-deadline-131011904.html",
-   "timestamp": "2026-10-31T13:10:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "LEZqfLOYgQWkpUIw",
-   "headline": "Rams may have new longsnapper for Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-may-longsnapper-week-8-130100563.html",
-   "timestamp": "2026-10-31T13:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "2YRyO0W2XKnGePT-",
-   "headline": "Fleur-de-Links: Could the Saints go back to the offensive line in the draft?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fleur-links-could-saints-back-130000908.html",
-   "timestamp": "2026-10-31T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "2krAzzNAhnangBaJ",
-   "headline": "3 things Cowboys HC Brian Schottenheimer can carry into week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-things-cowboys-hc-brian-130000575.html",
-   "timestamp": "2026-10-31T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "pTwp8vVX4lkxN_m5",
-   "headline": "NFL predictions: Broncos vs. Chiefs score predictions for Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-broncos-vs-chiefs-130000035.html",
-   "timestamp": "2026-10-31T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "KC"
    ]
   }
  ]
