@@ -1,8 +1,386 @@
 {
  "schema_version": 1,
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "MyRv2S9MGWJsIhWP",
+   "headline": "Ravens Finalizing Trade For Cardinals QB Jacoby Brissett",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/ravens-finalizing-trade-for-cardinals-qb-jacoby-brissett",
+   "timestamp": "2026-11-05T05:40:23.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jacoby-brissett"
+   ],
+   "team_abbrs": [
+    "ARI",
+    "BAL"
+   ]
+  },
+  {
+   "id": "oW2V8QWghE_C8dc9",
+   "headline": "Colts QB Daniel Jones On Trade Radar?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/colts-daniel-jones-on-trade-radar",
+   "timestamp": "2026-11-05T05:33:51.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "HSa7SyoDvnyKpvFI",
+   "headline": "Lions LB Jack Campbell Issues Positive Update On Neck Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/lions-lb-jack-campbell-issues-positive-update-on-neck-injury",
+   "timestamp": "2026-11-05T05:20:04.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "bZBNVQ2MOdhXGWRe",
+   "headline": "Eagles To Start QB Joe Milton In Week 9",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/eagles-to-start-qb-joe-milton-in-week-9",
+   "timestamp": "2026-11-05T05:11:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "X60ARSjXkc4pYPm8",
+   "headline": "49ers WR Brandon Aiyuk Files For Reinstatement From Reserve/Left Squad List",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/49ers-wr-brandon-aiyuk-files-for-reinstatement",
+   "timestamp": "2026-11-05T05:00:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "xhgXMPmLMLt6RhPJ",
+   "headline": "DeForest Buckner Informed Colts Brass He Wanted Trade Back To 49ers",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/deforest-buckner-informed-colts-brass-he-wanted-trade-back-to-49ers",
+   "timestamp": "2026-11-05T04:43:14.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "IND",
+    "SF"
+   ]
+  },
+  {
+   "id": "i6OTcbAp6ejOshA2",
+   "headline": "Josh Jacobs not expecting to miss more time",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-jacobs-not-expecting-miss-041038792.html",
+   "timestamp": "2026-11-05T04:10:38.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-jacobs"
+   ]
+  },
+  {
+   "id": "Y9uOnNREL9KAaLWC",
+   "headline": "Ravens To Field Offers For Derrick Henry?",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/ravens-to-field-offers-for-rb-derrick-henry",
+   "timestamp": "2026-11-05T03:15:47.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "derrick-henry"
+   ],
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "v9ejqVI5Zj5IIapi",
+   "headline": "2026 Minnesota Golden Gophers in the NFL: Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/2026-minnesota-golden-gophers-nfl-031428029.html",
+   "timestamp": "2026-11-05T03:14:28.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "GhN_Udx6rdG_jDB_",
+   "headline": "Seahawks-Cardinals injury report: Leonard Williams held out with stinger, Drew Lock still limited",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-cardinals-injury-report-leonard-030859947.html",
+   "timestamp": "2026-11-05T03:08:59.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ARI",
+    "SEA"
+   ]
+  },
+  {
+   "id": "TExDriNAcB0CzIbo",
+   "headline": "NFL Week 9 injury report: Micah Parsons returns to Packers practice, Rams lose Jaylen Watson for season",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-9-injury-report-micah-parsons-jaylen-watson-rams/",
+   "timestamp": "2026-11-05T03:07:09.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "uNUjXtQaHNgBtVG1",
+   "headline": "Giants Interested In Buccaneers’ Vita Vea",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/giants-interested-in-buccaneers-vita-vea",
+   "timestamp": "2026-11-05T03:03:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "TB"
+   ]
+  },
+  {
+   "id": "J7UvxFNatwI1ucyx",
+   "headline": "Amon-Ra St. Brown’s heartbreaking message after Jack Campbell’s scary neck injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/amon-ra-st-brown-heartbreaking-025831615.html",
+   "timestamp": "2026-11-05T02:58:31.000Z",
+   "category": "injury",
+   "player_ids": [
+    "amon-ra-st-brown"
+   ]
+  },
+  {
+   "id": "LyNjMo05Cg9VJAL7",
+   "headline": "Geno Smith dialing up shot at historically great Jets season with one potential hurdle",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/geno-smith-dialing-shot-historically-025348066.html",
+   "timestamp": "2026-11-05T02:53:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "TnN3wnKBp1WmtYAC",
+   "headline": "AFC North Week 8 Recap: Steelers take the lead; Ravens lose Lamar Jackson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/afc-north-week-8-recap-024603395.html",
+   "timestamp": "2026-11-05T02:46:03.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "lamar-jackson"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "PIT"
+   ]
+  },
+  {
+   "id": "Zp_kGahO59rO6QBY",
+   "headline": "Bryce Young a full participant but with an ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bryce-young-full-participant-ankle-023151484.html",
+   "timestamp": "2026-11-05T02:31:51.000Z",
+   "category": "injury",
+   "player_ids": [
+    "bryce-young"
+   ]
+  },
+  {
+   "id": "DsAf3rxseXkcad2_",
+   "headline": "Buccaneers at Bears: Initial injury report for Week 9",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buccaneers-bears-initial-injury-report-022403354.html",
+   "timestamp": "2026-11-05T02:24:03.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI",
+    "TB"
+   ]
+  },
+  {
+   "id": "U3lFlZWZ90p9FiPn",
+   "headline": "The Daniel Jones Hate Is Just A Bit Out of Control",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daniel-jones-hate-just-bit-021916494.html",
+   "timestamp": "2026-11-05T02:19:16.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "daniel-jones",
+    "aaron-jones"
+   ]
+  },
+  {
+   "id": "uf0jpkrytFIqXUsd",
+   "headline": "Saints LT Kelvin Banks Jr. Underwent Ankle Surgery, In IR-Return Window",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/saints-lt-kelvin-banks-jr-underwent-ankle-surgery-in-ir-return-window",
+   "timestamp": "2026-11-05T02:08:55.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "UpLf2fooQVFCyouw",
+   "headline": "Minor NFL Transactions: 11/4/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/minor-nfl-transactions-11-4-26",
+   "timestamp": "2026-11-05T02:08:19.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "IlXGrSracwgoAtJ3",
+   "headline": "In just a few whirlwind Giants weeks, everything changed for J.J. McCarthy",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/just-few-whirlwind-giants-weeks-020447412.html",
+   "timestamp": "2026-11-05T02:04:47.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "KRgYD9U_p7e7UfJ8",
+   "headline": "Rams stars get emotional over Jaylen Watson’s devastating injury: ‘We’re going to do it for him’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-stars-emotional-over-jaylen-015307855.html",
+   "timestamp": "2026-11-05T01:53:07.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "aMUjG6SVeo6NegtS",
+   "headline": "Rams Designate TE Terrance Ferguson, RB Ronnie Rivers For Return",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/rams-designate-te-terrance-ferguson-rb-ronnie-rivers-for-return",
+   "timestamp": "2026-11-05T01:42:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "Cw6vn2KgwTfinWHA",
+   "headline": "Jim Harbaugh, Justin Herbert respond to Quentin Lake's \"seeing ghosts\" critique",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jim-harbaugh-justin-herbert-respond-013132827.html",
+   "timestamp": "2026-11-05T01:31:32.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ]
+  },
+  {
+   "id": "wYeda3-AaNk_kqd0",
+   "headline": "Matthew Stafford breaks silence on elbow injury scare with hilarious response",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/matthew-stafford-breaks-silence-elbow-012258703.html",
+   "timestamp": "2026-11-05T01:22:58.000Z",
+   "category": "injury",
+   "player_ids": [
+    "matthew-stafford"
+   ]
+  },
+  {
+   "id": "pQpRFr_wL_iljN3K",
+   "headline": "Matthew Stafford has full participation with elbow injury; Myles Garrett limited in return",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/matthew-stafford-full-participation-wednesday-012024613.html",
+   "timestamp": "2026-11-05T01:20:24.000Z",
+   "category": "injury",
+   "player_ids": [
+    "matthew-stafford"
+   ]
+  },
+  {
+   "id": "cpJMVn-32FaUQAK9",
+   "headline": "Bears T Braxton Jones, DT Kentavius Street Out For Season",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/bears-t-braxton-jones-dt-kentavius-street-out-for-season",
+   "timestamp": "2026-11-05T01:16:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "asa2s6yRCjoELw9L",
+   "headline": "Bears Over Beers: Big Jeff and Bears Prepare For Prime Time vs. Bucs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-over-beers-big-jeff-010217569.html",
+   "timestamp": "2026-11-05T01:02:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Xz9TrdW8msY-ZrI0",
+   "headline": "NFL Week 9 Injury Report: Jeremiyah Love hits IR, Lamar Jackson likely done for season, and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-9-injury-report-201510607.html",
+   "timestamp": "2026-11-05T01:00:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "lamar-jackson",
+    "jeremiyah-love"
+   ]
+  },
+  {
+   "id": "sIZL-kUwVFfqWpFI",
+   "headline": "Miami Dolphins Fans: Your Game 8 Takeaways",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-fans-game-8-010000649.html",
+   "timestamp": "2026-11-05T01:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "LSB1y1L99wG0n-7E",
+   "headline": "DeVonta Smith still sidelined with injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/devonta-smith-still-sidelined-injury-005903390.html",
+   "timestamp": "2026-11-05T00:59:03.000Z",
+   "category": "injury",
+   "player_ids": [
+    "devonta-smith"
+   ]
+  },
+  {
+   "id": "ub_X2p3isbHyy88i",
+   "headline": "Kyle Shanahan surprisingly leaves door open for possible Brandon Aiyuk 49ers return, with a catch",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kyle-shanahan-surprisingly-leaves-door-004613500.html",
+   "timestamp": "2026-11-05T00:46:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "2RNUSjFYF6ZROfQW",
+   "headline": "Former Steelers cornerback announces retirement",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-steelers-slot-cb-retiring-003818081.html",
+   "timestamp": "2026-11-05T00:38:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
   {
    "id": "t12MbSkLf9qKqkeF",
    "headline": "Matthew Stafford: Practices fully Wednesday",
@@ -16,7 +394,7 @@
   },
   {
    "id": "2NrBv1RStOuYdeDI",
-   "headline": "Fantasy Football: Offenses that surged — and slumped — in NFL season’s second month",
+   "headline": "Fantasy Football: Offenses that surged — and slumped — in NFL season's second month",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-offenses-that-surged--and-slumped--in-nfl-seasons-second-month-002649337.html",
    "timestamp": "2026-11-05T00:26:49.000Z",
@@ -31,6 +409,17 @@
    "category": "breaking",
    "team_abbrs": [
     "BUF"
+   ]
+  },
+  {
+   "id": "MoFu9QuAKa2EXHjb",
+   "headline": "Sean McVay sounds alarm as Rams’ injury crisis reaches historic levels",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-mcvay-sounds-alarm-rams-002349011.html",
+   "timestamp": "2026-11-05T00:23:49.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR"
    ]
   },
   {
@@ -131,6 +520,28 @@
    ]
   },
   {
+   "id": "AiT4ZQ3z40I32pyp",
+   "headline": "Jordan Love and wife dress as blind refs for Halloween",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jordan-love-wife-dress-blind-235031754.html",
+   "timestamp": "2026-11-04T23:50:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jordan-love"
+   ]
+  },
+  {
+   "id": "_peuz0XAhTjzwZgY",
+   "headline": "Kyle Shanahan refutes Jay Glazer’s Jauan Jennings report, confirms 49ers FaceTime",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kyle-shanahan-refutes-jay-glazer-234339443.html",
+   "timestamp": "2026-11-04T23:43:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
    "id": "havEGLjsSICYGSVG",
    "headline": "Eagles Injury Report: No practice for DeVonta Smith, Saquon Barkley, Tay Wicks",
    "source": "Yahoo Sports",
@@ -154,20 +565,6 @@
    "category": "breaking",
    "team_abbrs": [
     "LV"
-   ]
-  },
-  {
-   "id": "oW2V8QWghE_C8dc9",
-   "headline": "Colts QB Daniel Jones On Trade Radar?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-daniel-jones-on-trade-radar",
-   "timestamp": "2026-11-04T23:33:51.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "daniel-jones"
-   ],
-   "team_abbrs": [
-    "IND"
    ]
   },
   {
@@ -273,6 +670,17 @@
    "team_abbrs": [
     "CAR",
     "DEN"
+   ]
+  },
+  {
+   "id": "hIcxyDH-xKHVrCqd",
+   "headline": "49ers defense receives great news as Nick Bosa is suddenly ‘ready to go’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-defense-receives-great-news-230207342.html",
+   "timestamp": "2026-11-04T23:02:07.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
    ]
   },
   {
@@ -691,21 +1099,6 @@
    ]
   },
   {
-   "id": "MyRv2S9MGWJsIhWP",
-   "headline": "Ravens Finalizing Trade For Cardinals QB Jacoby Brissett",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/ravens-finalizing-trade-for-cardinals-qb-jacoby-brissett",
-   "timestamp": "2026-11-04T19:54:23.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jacoby-brissett"
-   ],
-   "team_abbrs": [
-    "ARI",
-    "BAL"
-   ]
-  },
-  {
    "id": "nUkwQEyfJHxqeyqu",
    "headline": "Eagles to start Joe Milton at quarterback vs. Giants, replacing Tanner McKee",
    "source": "CBS Sports",
@@ -887,17 +1280,6 @@
    ],
    "team_abbrs": [
     "SEA"
-   ]
-  },
-  {
-   "id": "bZBNVQ2MOdhXGWRe",
-   "headline": "Eagles To Start QB Joe Milton In Week 9",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/eagles-to-start-qb-joe-milton-in-week-9",
-   "timestamp": "2026-11-04T19:11:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
    ]
   },
   {
@@ -1111,17 +1493,6 @@
    "category": "breaking",
    "team_abbrs": [
     "LV"
-   ]
-  },
-  {
-   "id": "HSa7SyoDvnyKpvFI",
-   "headline": "Lions LB Jack Campbell Issues Positive Update On Neck Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/lions-lb-jack-campbell-issues-positive-update-on-neck-injury",
-   "timestamp": "2026-11-04T18:06:04.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
    ]
   },
   {
@@ -1389,380 +1760,6 @@
    "team_abbrs": [
     "KC",
     "WAS"
-   ]
-  },
-  {
-   "id": "Foc2L5TJ3C0lQK8d",
-   "headline": "Brandon Aiyuk files to be reinstated, will report to 49ers facility this week, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/brandon-aiyuk-files-to-be-reinstated-49ers/",
-   "timestamp": "2026-11-04T15:17:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "xOU-CVrmvOFqQHNf",
-   "headline": "Browns QB Deshaun Watson Placed In Concussion Protocol",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/browns-qb-deshaun-watson-placed-in-concussion-protocol",
-   "timestamp": "2026-11-04T14:36:11.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "K8HF3WQBM3ZsLcLD",
-   "headline": "Midseason All-Rookie Team: QB Jalon Daniels leads team filled with multiple Browns, Jets",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-midseason-all-rookie-team-jalon-daniels-browns-jets/",
-   "timestamp": "2026-11-04T14:28:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "Jc36Ao2Iu39yN8bX",
-   "headline": "Ravens QB Tyler Huntley To Miss Rest Of Season With Turf Toe Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/ravens-qb-tyler-huntley-to-miss-rest-of-season-with-turf-toe-injury",
-   "timestamp": "2026-11-04T14:22:49.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "X60ARSjXkc4pYPm8",
-   "headline": "49ers WR Brandon Aiyuk Files For Reinstatement From Reserve/Left Squad List",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/49ers-wr-brandon-aiyuk-files-for-reinstatement",
-   "timestamp": "2026-11-04T14:18:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "sQ0nwdWez6QFmtDR",
-   "headline": "NFL Week 9 picks, best bets: Bears continue to surge in primetime, Vikings lose second straight vs. Bills",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-9-picks-best-bets-bears-surge-vikings-lose/",
-   "timestamp": "2026-11-04T14:00:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "CHI",
-    "MIN"
-   ]
-  },
-  {
-   "id": "LyCG27tmToCyw89k",
-   "headline": "Biggest surprises from initial CFP Rankings; Ravens starting an undrafted rookie QB on 'TNF'",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/fantasy/football/news/biggest-surprises-from-initial-cfp-rankings-ravens-starting-an-undrafted-rookie-qb-on-tnf/",
-   "timestamp": "2026-11-04T13:53:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "hokjgG2tHxsnveOP",
-   "headline": "Tyler Huntley out for season: Ravens lose top backup with Lamar Jackson already out, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/ravens-tyler-huntley-injury-update-turf-toe-out-for-season/",
-   "timestamp": "2026-11-04T13:49:16.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "w5twpO9ZJEqxW04E",
-   "headline": "Commanders DL Javon Kinlaw, RB Jeremy McNichols To Miss Rest Of Season",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/commanders-make-series-of-moves",
-   "timestamp": "2026-11-04T13:46:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "wcH3nl25iwhoMqcA",
-   "headline": "Examining the roster ties between Patriots, Packers ahead of Week 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/examining-roster-ties-between-patriots-120000396.html",
-   "timestamp": "2026-11-04T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "NE"
-   ]
-  },
-  {
-   "id": "-qboj5cs75oQhr22",
-   "headline": "Statistical dive into Denver Broncos record-tying 15th straight win in one-score games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/statistical-dive-denver-broncos-record-120000147.html",
-   "timestamp": "2026-11-04T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "Gt7bwQeNHUGD1XLT",
-   "headline": "Survey: Will the Lions beat the Dolphins in Week 9?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/survey-lions-beat-dolphins-week-120000897.html",
-   "timestamp": "2026-11-04T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIA"
-   ]
-  },
-  {
-   "id": "EHF8UqJPYIgll3DD",
-   "headline": "NFL’s Secret Superstars, Week 8: 3 under-the-radar standouts from the NFC",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-secret-superstars-week-8-120000526.html",
-   "timestamp": "2026-11-04T12:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "-9AuqJvE5QoQKjqc",
-   "headline": "Bengals News: Falcons get key defender back vs. Cincinnati",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-news-falcons-key-defender-120000394.html",
-   "timestamp": "2026-11-04T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CIN"
-   ]
-  },
-  {
-   "id": "54Qbwdwo4fvGMbW5",
-   "headline": "Cowboys news: Jerry Jones likes the direction of his defense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-jerry-jones-likes-120000244.html",
-   "timestamp": "2026-11-04T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "Rks6khSzsbFfH9tz",
-   "headline": "NFL Secret Superstars: 3 under-the-radar AFC standouts in Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-secret-superstars-3-under-120000172.html",
-   "timestamp": "2026-11-04T12:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "rC30et0UB_8tEcbT",
-   "headline": "Tennessee Titans news: Bye week gives chance to reflect",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tennessee-titans-news-bye-week-120000509.html",
-   "timestamp": "2026-11-04T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "bDGO9jfXtQzt7Hs6",
-   "headline": "NFL Power Rankings Roundup Week 9: Bengals’ overtime win vs. Titans gets mixed reviews",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-roundup-week-113000430.html",
-   "timestamp": "2026-11-04T11:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "TEN"
-   ]
-  },
-  {
-   "id": "Rl-EjmB3dS8Z4ER4",
-   "headline": "Patriots vs. Dolphins snap counts: O-line shakeup continues",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-dolphins-snap-counts-111624187.html",
-   "timestamp": "2026-11-04T11:16:24.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "NE"
-   ]
-  },
-  {
-   "id": "eety4kRneEi0qQ9Q",
-   "headline": "Prisco's Week 9 NFL expert picks: Jaguars roll over Lamar Jackson-less Ravens, Cowboys rebound",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/priscos-week-9-nfl-expert-picks-jaguars-roll-over-lamar-jackson-less-ravens-cowboys-rebound/",
-   "timestamp": "2026-11-04T11:00:43.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "lamar-jackson"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "DAL",
-    "JAX"
-   ]
-  },
-  {
-   "id": "LuPPFTN49a0Clzvg",
-   "headline": "Giants news: Greg Newsome contract extension, running back rumors, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-news-greg-newsome-contract-110000419.html",
-   "timestamp": "2026-11-04T11:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "XKUYe8GrhrIZxXrb",
-   "headline": "Buyers or Sellers?: A deep dive into potential Commanders trade deadline targets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buyers-sellers-deep-dive-potential-110000302.html",
-   "timestamp": "2026-11-04T11:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "0ePnJnmO5L_KSpHr",
-   "headline": "The Bear’s Den: The Bears get back to work ahead of Tampa Bay Buccaneers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bear-den-bears-back-ahead-110000978.html",
-   "timestamp": "2026-11-04T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "TB"
-   ]
-  },
-  {
-   "id": "Ogzaj72nFbuUbCru",
-   "headline": "Chiefs News: Kingsley Suamataia is playing his part",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-news-kingsley-suamataia-playing-110000635.html",
-   "timestamp": "2026-11-04T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "ZL4gkc9YVEyo46QI",
-   "headline": "Jaguars' defense aiming for 25th straight game not allowing a 75-yard rusher",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-defense-aiming-25th-straight-091342910.html",
-   "timestamp": "2026-11-04T09:13:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "wsx3gOmWuwfsiGMM",
-   "headline": "Gardner-Johnson released by Bills after spitting ban",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/gardner-johnson-released-bills-spitting-071748773.html",
-   "timestamp": "2026-11-04T07:17:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "LPT-8lm9cN-i_hLT",
-   "headline": "Maxx Crosby Not Eyeing Raiders Trade",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/maxx-crosby-not-eyeing-raiders-trade",
-   "timestamp": "2026-11-04T05:38:33.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "q6B7DYoJZiBIrkoT",
-   "headline": "Giants To Extend CB Greg Newsome",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/giants-to-extend-cb-greg-newsome",
-   "timestamp": "2026-11-04T05:20:40.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "-8MYCKch6nF4_4JC",
-   "headline": "Buyers, sellers or fence-sitters? All 32 NFL teams slotted before the trade deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/buyers-sellers-or-fence-sitters-all-32-nfl-teams-slotted-before-the-trade-deadline-051811133.html",
-   "timestamp": "2026-11-04T05:18:11.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "B7ckZDU_qbYoi8hQ",
-   "headline": "Jake Ferguson gets good prognosis on ankle injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jake-ferguson-gets-good-prognosis-051557667.html",
-   "timestamp": "2026-11-04T05:15:57.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jake-ferguson"
-   ]
-  },
-  {
-   "id": "Dk1RYmRW9GSW9OD3",
-   "headline": "Bills Release S C.J. Gardner-Johnson",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/bills-release-s-c-j-gardner-johnson",
-   "timestamp": "2026-11-04T05:15:07.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "juwan-johnson"
-   ],
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "sxnATJN1icuNi6OU",
-   "headline": "Colts Agree To Extension With DT Adetomiwa Adebawore",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-agree-to-2-year-extension-with-dt-adetomiwa-adebawore",
-   "timestamp": "2026-11-04T05:14:57.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "8ecJihkVh62RlOS9",
-   "headline": "WR Notes: Harrison, Pittman, Saints",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/wr-notes-harrison-cardinals-pittman-steelers-saints-tyson-browns",
-   "timestamp": "2026-11-04T05:09:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
    ]
   }
  ]
