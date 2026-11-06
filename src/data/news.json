@@ -4,14 +4,698 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
-   "id": "Q6PkHZHqOT2HoMUt",
-   "headline": "Bhayshul Tuten: Expected to play Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/bhayshul-tuten-18524",
-   "timestamp": "2026-11-05T21:52:00.000Z",
+   "id": "pV6SQqgItvZ2j909",
+   "headline": "AFC Rumblings: Ravens, Henry, Colts, Taylor, Chargers, Raiders",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/afc-rumblings-ravens-henry-colts-taylor-chargers-raiders",
+   "timestamp": "2026-11-06T01:51:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "IND",
+    "LAC",
+    "LV"
+   ]
+  },
+  {
+   "id": "6IHEPnxdlL_DFtbQ",
+   "headline": "Joe Milton on his first start: The NFL is about being ready when your number is called",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/joe-milton-first-start-nfl-013433372.html",
+   "timestamp": "2026-11-06T01:34:33.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "eety4kRneEi0qQ9Q",
+   "headline": "Prisco's Week 9 NFL expert picks: Bengals rout Falcons in Madrid, Cowboys rebound",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/priscos-week-9-nfl-expert-picks-jaguars-roll-over-lamar-jackson-less-ravens-cowboys-rebound/",
+   "timestamp": "2026-11-06T01:27:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CIN",
+    "DAL"
+   ]
+  },
+  {
+   "id": "2a9mXyH3ujj9xZpE",
+   "headline": "Colts reportedly still hoping for ‘Christian McCaffrey-esque’ trade package for Jonathan Taylor",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-reportedly-still-hoping-christian-011947171.html",
+   "timestamp": "2026-11-06T01:19:47.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "christian-mccaffrey",
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "1bC7Y6pJJAe1OTSF",
+   "headline": "Dak Prescott delivers blunt assessment of Cowboys' offensive identity: 'Are we proud of it? I don't know'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/dak-prescott-cowboys-offensive-identity-comment-brian-schottenheimer/",
+   "timestamp": "2026-11-06T01:19:02.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dak-prescott"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "tDFT0IsAYxgyMQG-",
+   "headline": "Chargers Injury Report: Kayode Awosika continues path back to field on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-injury-report-kayode-awosika-011718510.html",
+   "timestamp": "2026-11-06T01:17:18.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "v0qE0IKC_wUu89_-",
+   "headline": "Thursday Night Football: Jaguars vs. Ravens live chat",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-jaguars-vs-010548979.html",
+   "timestamp": "2026-11-06T01:05:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "_svv4MIvfkYxZmmZ",
+   "headline": "Patriots rooting guide for NFL Week 9",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-rooting-guide-nfl-week-010006830.html",
+   "timestamp": "2026-11-06T01:00:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "d5TsaGnNH7oZwJFa",
+   "headline": "BTSC Thursday Night Football thread: Jaguars at Ravens",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/btsc-thursday-night-football-thread-010000272.html",
+   "timestamp": "2026-11-06T01:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "wFuMubd0D9zKysJt",
+   "headline": "Saints 2026 Trade Deadline Tracker",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-2026-trade-deadline-tracker-160000731.html",
+   "timestamp": "2026-11-06T00:58:01.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "0dSpuTnYiqy-purt",
+   "headline": "Week 9 Yahoo Fantasy x Arena Club Slab Packs: Chase Joe Burrow, Ja'Marr Chase and Josh Allen grails",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/week-9-yahoo-fantasy-x-arena-club-slab-packs-chase-joe-burrow-jamarr-chase-and-josh-allen-grails-005757459.html",
+   "timestamp": "2026-11-06T00:57:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen",
+    "joe-burrow",
+    "jamarr-chase"
+   ]
+  },
+  {
+   "id": "XHbr56lb8uGVgsD7",
+   "headline": "Baltimore Ravens vs. Jacksonville Jaguars, ‘TNF’ Week 9 open thread",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/baltimore-ravens-vs-jacksonville-jaguars-005550001.html",
+   "timestamp": "2026-11-06T00:55:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "0RA7BPTmEUcB2JU7",
+   "headline": "Packers Injury Report: Keisean Nixon, MarShawn Lloyd downgraded on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-injury-report-keisean-nixon-005457641.html",
+   "timestamp": "2026-11-06T00:54:57.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "tyvwaMaeVeiLHMDf",
+   "headline": "Minor NFL Transactions: 11/5/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/minor-nfl-transactions-11-5-26",
+   "timestamp": "2026-11-06T00:38:36.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "hArSx1ErAFJ4tix1",
+   "headline": "Quenton Nelson, five other Seahawks starters miss practice Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/quenton-nelson-five-other-seahawks-003245896.html",
+   "timestamp": "2026-11-06T00:32:45.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "tBpe76Sx2heyY4PJ",
+   "headline": "Best Kalshi promo code CBSSPORTS55: Secure $55 bonus for Jaguars vs. Ravens, Thursday Night Football picks",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-jaguars-vs-ravens-thursday-night-football-picks/",
+   "timestamp": "2026-11-06T00:32:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "6yFIlu_bV9mTYSy0",
+   "headline": "Drake Maye vs. Jordan Love: Which is the better quarterback?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-maye-vs-jordan-love-002306555.html",
+   "timestamp": "2026-11-06T00:23:06.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye",
+    "jordan-love"
+   ]
+  },
+  {
+   "id": "eRqiVAkduSif6kFm",
+   "headline": "What is Rams’ plan for Ty Simpson?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-plan-ty-simpson-002238121.html",
+   "timestamp": "2026-11-06T00:22:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "kV5h18nxjQRueONy",
+   "headline": "Thursday Night Football: Jacksonville Jaguars Vs Baltimore Ravens Discussion & Game Information",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-jacksonville-jaguars-001500914.html",
+   "timestamp": "2026-11-06T00:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "voUqbjEyl9dqOcc2",
+   "headline": "Thursday’s Saints vs. Browns Injury Report: RB CJ Donaldson did not practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-saints-vs-browns-injury-000209663.html",
+   "timestamp": "2026-11-06T00:02:09.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CLE",
+    "NO"
+   ]
+  },
+  {
+   "id": "ruhUI3FASJzmHISj",
+   "headline": "Use FanDuel promo code to claim $200 bonus bets by targeting Jaguars vs. Ravens on Thursday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-200-bonus-bets-by-targeting-jaguars-vs-ravens-thursday-night-football/",
+   "timestamp": "2026-11-06T00:01:28.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "QJoIW_9K_CDe2RiQ",
+   "headline": "Fantasy Football 2026: Week 9 preview — Start/sit and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/fantasy-football-2026-week-9-000100084.html",
+   "timestamp": "2026-11-06T00:01:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "AQSOioObT64mSqO6",
+   "headline": "Baltimore Ravens vs. Jacksonville Jaguars Week 9 game discussion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/baltimore-ravens-vs-jacksonville-jaguars-000000285.html",
+   "timestamp": "2026-11-06T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "1eDeU0fprUOZsXM8",
+   "headline": "Broncos pass rush has returned with a fury through eight games",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-pass-rush-returned-fury-000000494.html",
+   "timestamp": "2026-11-06T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "KMQLrsTVEjTm-qod",
+   "headline": "Thursday Night Football: DE Travon Walker, RB Bhayshul Tuten active for Jaguars vs. Ravens",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-travon-walker-235806755.html",
+   "timestamp": "2026-11-05T23:58:06.000Z",
    "category": "breaking",
    "player_ids": [
     "bhayshul-tuten"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "L-OLg7hGF8lwrgke",
+   "headline": "Jaguars vs. Ravens live updates, inactives, where to watch: Trevor Lawrence, Jacksonville visit Baltimore as Joe Fagnano starts in place of Lamar Jackson on 'Thursday Night Football'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/live/jaguars-vs-ravens-score-live-updates-inactives-highlights-stats-where-to-watch-week-9-235334072.html",
+   "timestamp": "2026-11-05T23:53:34.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "lamar-jackson",
+    "trevor-lawrence"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "Q6PkHZHqOT2HoMUt",
+   "headline": "Bhayshul Tuten: Officially active versus Baltimore",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/bhayshul-tuten-18524",
+   "timestamp": "2026-11-05T23:50:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bhayshul-tuten"
+   ]
+  },
+  {
+   "id": "by5MXEqEEorTNzVg",
+   "headline": "TreVeyon Henderson not on practice field Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/treveyon-henderson-not-practice-field-234554247.html",
+   "timestamp": "2026-11-05T23:45:54.000Z",
+   "category": "practice",
+   "player_ids": [
+    "treveyon-henderson"
+   ]
+  },
+  {
+   "id": "fQeaDv2ik00RBRuz",
+   "headline": "Jaguars vs. Ravens odds, picks, NFL Week 9 prediction: Best bets, player props for Thursday Night Football",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/jaguars-vs-ravens-odds-picks-nfl-week-9-prediction-best-bets-player-props-for-thursday-night-football/",
+   "timestamp": "2026-11-05T23:45:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "TWIuElEBRArIWYag",
+   "headline": "Alex Highsmith reveals what has helped the Steelers’ defense play at a high level",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/alex-highsmith-reveals-helped-steelers-233917760.html",
+   "timestamp": "2026-11-05T23:39:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "7nAV3ZkxjHjoXhfL",
+   "headline": "Commanders vs. Rams Thursday injury report: Johnny Newton trending up",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-vs-rams-thursday-injury-233826579.html",
+   "timestamp": "2026-11-05T23:38:26.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR",
+    "WAS"
+   ]
+  },
+  {
+   "id": "tKNtPkSn44PGSN0p",
+   "headline": "Jaguars vs. Ravens odds, prediction, betting preview, start time: Thursday Night Football picks, best bets",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/jaguars-vs-ravens-odds-prediction-betting-preview-start-time-thursday-night-football-picks-best-bets/",
+   "timestamp": "2026-11-05T23:38:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "ewWBJW_kiGSZE-k0",
+   "headline": "NY Giants cut QB Jake Haener, work out four veterans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ny-giants-cut-qb-jake-233449891.html",
+   "timestamp": "2026-11-05T23:34:49.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "yxfxY0iCsI1xbHjs",
+   "headline": "Vikings-Bills First Injury Report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-bills-first-injury-report-233321596.html",
+   "timestamp": "2026-11-05T23:33:21.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BUF",
+    "MIN"
+   ]
+  },
+  {
+   "id": "H63boQQmdR-4G9r3",
+   "headline": "Cowboys at Colts: 3 causes for concern in Week 9",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-colts-3-causes-concern-233000065.html",
+   "timestamp": "2026-11-05T23:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "IND"
+   ]
+  },
+  {
+   "id": "beab6PdDrWcEkfnV",
+   "headline": "NFL Week 9 picks, predictions: Jaguars vs. Ravens on TNF",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-9-picks-predictions-233000982.html",
+   "timestamp": "2026-11-05T23:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "NKbUW2k8Aq6NuBo_",
+   "headline": "Jaguars vs. Ravens odds, first touchdown scorer picks, predictions for Thursday Night Football, NFL Week 9",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/jaguars-vs-ravens-odds-first-touchdown-scorer-picks-predictions-for-thursday-night-football-nfl-week-9/",
+   "timestamp": "2026-11-05T23:21:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "wh0vmEZF-7GOpr_R",
+   "headline": "As Chargers' offense struggles, Mike McDaniel will move from the sideline to the booth",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-offense-struggles-mike-mcdaniel-231937778.html",
+   "timestamp": "2026-11-05T23:19:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "RW6db2pyfadX2o7e",
+   "headline": "First, 'meatball sub,' and now 'deli meat.' Even Justin Herbert's passes are getting the Subway treatment",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/first-meatball-sub-now-deli-231741961.html",
+   "timestamp": "2026-11-05T23:17:41.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert"
+   ]
+  },
+  {
+   "id": "8T8f0HPDNk-OUfg0",
+   "headline": "Week 9 NFL betting promos: Get over $3,000 in bonuses from betting apps, sportsbooks for Ravens vs. Jaguars",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-9-nfl-betting-promos-get-over-3000-in-bonuses-from-betting-apps-sportsbooks-for-ravens-jaguars/",
+   "timestamp": "2026-11-05T23:17:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "soOdfFHLAgjkVK22",
+   "headline": "Cleveland Browns are still struggling to change the team’s culture",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-still-struggling-change-231657662.html",
+   "timestamp": "2026-11-05T23:16:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "T5e5sJlmlVcLq4ny",
+   "headline": "Back surgery will keep Robert Kraft from Rob Gronkowski's Patriots Hall of Fame induction",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/back-surgery-keep-robert-kraft-231637022.html",
+   "timestamp": "2026-11-05T23:16:37.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "Lws7XEb7zBQqPH-k",
+   "headline": "Ravens place QBs Lamar Jackson, Tyler Huntley on injured reserve",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-place-qbs-lamar-jackson-222656064.html",
+   "timestamp": "2026-11-05T23:16:22.000Z",
+   "category": "injury",
+   "player_ids": [
+    "lamar-jackson"
+   ],
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "uYgeP0QetqHXMOUF",
+   "headline": "Christian Watson remains limited at practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-watson-remains-limited-practice-231348528.html",
+   "timestamp": "2026-11-05T23:13:48.000Z",
+   "category": "practice",
+   "player_ids": [
+    "christian-watson"
+   ]
+  },
+  {
+   "id": "HvzvygoXscILfr-q",
+   "headline": "Breece Hall up to full practice Thursday, says he's ready to play this week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/breece-hall-full-practice-thursday-230940347.html",
+   "timestamp": "2026-11-05T23:09:40.000Z",
+   "category": "practice",
+   "player_ids": [
+    "breece-hall"
+   ]
+  },
+  {
+   "id": "g6_fPx22uTZU5k1b",
+   "headline": "Chargers Designate TE David Njoku, LB Denzel Perryman For Return",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/chargers-designate-te-david-njoku-lb-denzel-perryman-for-return",
+   "timestamp": "2026-11-05T23:09:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "vmAqkgGBXDnv9abD",
+   "headline": "Broncos vs. Panthers practice participation report: Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-panthers-practice-participation-230831231.html",
+   "timestamp": "2026-11-05T23:08:31.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "CAR",
+    "DEN"
+   ]
+  },
+  {
+   "id": "dEnJ8C66-WFA8YZg",
+   "headline": "Raiders re-sign WR Cody White, waive TE Carter Runyon",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-sign-wr-cody-white-225706718.html",
+   "timestamp": "2026-11-05T22:57:06.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "AKlZZK0xTremGc7j",
+   "headline": "Christian McCaffrey returned to practice as limited participant",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-mccaffrey-returned-practice-limited-225608228.html",
+   "timestamp": "2026-11-05T22:56:08.000Z",
+   "category": "practice",
+   "player_ids": [
+    "christian-mccaffrey"
+   ]
+  },
+  {
+   "id": "1vXEXPeGpSVTEXv3",
+   "headline": "Cowboys stars reject George Pickens trade talk ahead of NFL deadline",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/george-pickens-trade-rumors-cowboys-nfl-deadline/",
+   "timestamp": "2026-11-05T22:52:14.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "george-pickens"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "OmpXtC4xmvCY6Wby",
+   "headline": "NFL Week 9 predictions: Lions vs. Dolphins, full schedule winners picks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-9-predictions-lions-225113574.html",
+   "timestamp": "2026-11-05T22:51:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "MIA"
+   ]
+  },
+  {
+   "id": "tK5-cC-TBNklFkcl",
+   "headline": "Talanoa Hufanga returns to Broncos practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/talanoa-hufanga-returns-broncos-practice-224902498.html",
+   "timestamp": "2026-11-05T22:49:02.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "TjnY8-s7VFQ1YpyY",
+   "headline": "Chiefs sign wide receiver Bub Means to the practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-sign-wide-receiver-bub-224500071.html",
+   "timestamp": "2026-11-05T22:45:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "3exd848Eenb42GFj",
+   "headline": "Saquon Barkley returns to limited work Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saquon-barkley-returns-limited-thursday-223810971.html",
+   "timestamp": "2026-11-05T22:38:10.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "saquon-barkley"
+   ]
+  },
+  {
+   "id": "e6PCLkerPmpU39LC",
+   "headline": "Raiders special teams’ resounding response key in Week 8 road victory",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-special-teams-resounding-response-223600872.html",
+   "timestamp": "2026-11-05T22:36:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "6aXqBqbmBd6Jr03D",
+   "headline": "DJ Moore limited, Dion Dawkins did not practice on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dj-moore-limited-dion-dawkins-222427605.html",
+   "timestamp": "2026-11-05T22:24:27.000Z",
+   "category": "practice",
+   "player_ids": [
+    "dj-moore"
+   ]
+  },
+  {
+   "id": "qzm3SEnkGnBNZypR",
+   "headline": "Jets Not Planning To Trade Breece Hall",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/jets-not-planning-to-trade-breece-hall",
+   "timestamp": "2026-11-05T22:19:43.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "breece-hall"
+   ],
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "hFl2mcJMxPuZBFE8",
+   "headline": "Is Bhayshul Tuten playing on TNF? A look at the Jaguars RB's status against Ravens",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jaguars-vs-ravens-bhayshul-tuten-status-tnf/",
+   "timestamp": "2026-11-05T22:14:40.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bhayshul-tuten"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "AqxREeIUFpnRhQau",
+   "headline": "Why Jordan Love could face an NFL fine over Halloween costume",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jordan-love-halloween-costume-nfl-fine/",
+   "timestamp": "2026-11-05T22:11:58.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jordan-love"
    ]
   },
   {
@@ -581,7 +1265,7 @@
   },
   {
    "id": "JandiUwQ12R-kMAv",
-   "headline": "Vikings To Start QB Carson Wentz In Week 9",
+   "headline": "Vikings To Start Carson Wentz In Week 9",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/11/vikings-to-start-qb-carson-wentz-in-week-9",
    "timestamp": "2026-11-05T18:32:20.000Z",
@@ -736,18 +1420,6 @@
    ]
   },
   {
-   "id": "fQeaDv2ik00RBRuz",
-   "headline": "Jaguars vs. Ravens odds, picks, NFL Week 9 prediction: Best bets, player props for Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/jaguars-vs-ravens-odds-picks-nfl-week-9-prediction-best-bets-player-props-for-thursday-night-football/",
-   "timestamp": "2026-11-05T15:14:41.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "JAX"
-   ]
-  },
-  {
    "id": "S2zNwNbRjcAzMidC",
    "headline": "NFL Week 9 upset alert: Texans allow Chargers their first win, Vikings overtake Josh Allen's Bills",
    "source": "CBS Sports",
@@ -808,6 +1480,18 @@
    "category": "breaking",
    "team_abbrs": [
     "GB"
+   ]
+  },
+  {
+   "id": "Br3XYQiKTMcFyX_I",
+   "headline": "NFL Thursday Night Football preview: Ravens to start rookie Joe Fagnano at QB vs. Jaguars",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-thursday-night-football-preview-ravens-to-start-rookie-joe-fagnano-at-qb-vs-jaguars-142237247.html",
+   "timestamp": "2026-11-05T14:22:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
    ]
   },
   {
@@ -1074,674 +1758,6 @@
    "category": "injury",
    "player_ids": [
     "bryce-young"
-   ]
-  },
-  {
-   "id": "DsAf3rxseXkcad2_",
-   "headline": "Buccaneers at Bears: Initial injury report for Week 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buccaneers-bears-initial-injury-report-022403354.html",
-   "timestamp": "2026-11-05T02:24:03.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI",
-    "TB"
-   ]
-  },
-  {
-   "id": "U3lFlZWZ90p9FiPn",
-   "headline": "The Daniel Jones Hate Is Just A Bit Out of Control",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/daniel-jones-hate-just-bit-021916494.html",
-   "timestamp": "2026-11-05T02:19:16.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-jones",
-    "aaron-jones"
-   ]
-  },
-  {
-   "id": "uf0jpkrytFIqXUsd",
-   "headline": "Saints LT Kelvin Banks Jr. Underwent Ankle Surgery, In IR-Return Window",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/saints-lt-kelvin-banks-jr-underwent-ankle-surgery-in-ir-return-window",
-   "timestamp": "2026-11-05T02:08:55.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "UpLf2fooQVFCyouw",
-   "headline": "Minor NFL Transactions: 11/4/26",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/minor-nfl-transactions-11-4-26",
-   "timestamp": "2026-11-05T02:08:19.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "IlXGrSracwgoAtJ3",
-   "headline": "In just a few whirlwind Giants weeks, everything changed for J.J. McCarthy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/just-few-whirlwind-giants-weeks-020447412.html",
-   "timestamp": "2026-11-05T02:04:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "KRgYD9U_p7e7UfJ8",
-   "headline": "Rams stars get emotional over Jaylen Watson’s devastating injury: ‘We’re going to do it for him’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-stars-emotional-over-jaylen-015307855.html",
-   "timestamp": "2026-11-05T01:53:07.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "aMUjG6SVeo6NegtS",
-   "headline": "Rams Designate TE Terrance Ferguson, RB Ronnie Rivers For Return",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/rams-designate-te-terrance-ferguson-rb-ronnie-rivers-for-return",
-   "timestamp": "2026-11-05T01:42:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Cw6vn2KgwTfinWHA",
-   "headline": "Jim Harbaugh, Justin Herbert respond to Quentin Lake's \"seeing ghosts\" critique",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jim-harbaugh-justin-herbert-respond-013132827.html",
-   "timestamp": "2026-11-05T01:31:32.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "justin-herbert"
-   ]
-  },
-  {
-   "id": "wYeda3-AaNk_kqd0",
-   "headline": "Matthew Stafford breaks silence on elbow injury scare with hilarious response",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/matthew-stafford-breaks-silence-elbow-012258703.html",
-   "timestamp": "2026-11-05T01:22:58.000Z",
-   "category": "injury",
-   "player_ids": [
-    "matthew-stafford"
-   ]
-  },
-  {
-   "id": "pQpRFr_wL_iljN3K",
-   "headline": "Matthew Stafford has full participation with elbow injury; Myles Garrett limited in return",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/matthew-stafford-full-participation-wednesday-012024613.html",
-   "timestamp": "2026-11-05T01:20:24.000Z",
-   "category": "injury",
-   "player_ids": [
-    "matthew-stafford"
-   ]
-  },
-  {
-   "id": "cpJMVn-32FaUQAK9",
-   "headline": "Bears T Braxton Jones, DT Kentavius Street Out For Season",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/bears-t-braxton-jones-dt-kentavius-street-out-for-season",
-   "timestamp": "2026-11-05T01:16:33.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "asa2s6yRCjoELw9L",
-   "headline": "Bears Over Beers: Big Jeff and Bears Prepare For Prime Time vs. Bucs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-over-beers-big-jeff-010217569.html",
-   "timestamp": "2026-11-05T01:02:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "Xz9TrdW8msY-ZrI0",
-   "headline": "NFL Week 9 Injury Report: Jeremiyah Love hits IR, Lamar Jackson likely done for season, and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-9-injury-report-201510607.html",
-   "timestamp": "2026-11-05T01:00:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "lamar-jackson",
-    "jeremiyah-love"
-   ]
-  },
-  {
-   "id": "sIZL-kUwVFfqWpFI",
-   "headline": "Miami Dolphins Fans: Your Game 8 Takeaways",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/miami-dolphins-fans-game-8-010000649.html",
-   "timestamp": "2026-11-05T01:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "LSB1y1L99wG0n-7E",
-   "headline": "DeVonta Smith still sidelined with injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/devonta-smith-still-sidelined-injury-005903390.html",
-   "timestamp": "2026-11-05T00:59:03.000Z",
-   "category": "injury",
-   "player_ids": [
-    "devonta-smith"
-   ]
-  },
-  {
-   "id": "ub_X2p3isbHyy88i",
-   "headline": "Kyle Shanahan surprisingly leaves door open for possible Brandon Aiyuk 49ers return, with a catch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kyle-shanahan-surprisingly-leaves-door-004613500.html",
-   "timestamp": "2026-11-05T00:46:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "2RNUSjFYF6ZROfQW",
-   "headline": "Former Steelers cornerback announces retirement",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/former-steelers-slot-cb-retiring-003818081.html",
-   "timestamp": "2026-11-05T00:38:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "t12MbSkLf9qKqkeF",
-   "headline": "Matthew Stafford: Practices fully Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/matthew-stafford-5971",
-   "timestamp": "2026-11-05T00:36:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ]
-  },
-  {
-   "id": "2NrBv1RStOuYdeDI",
-   "headline": "Fantasy Football: Offenses that surged — and slumped — in NFL season's second month",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-offenses-that-surged--and-slumped--in-nfl-seasons-second-month-002649337.html",
-   "timestamp": "2026-11-05T00:26:49.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "OvxP__fjm_Qw6NHy",
-   "headline": "Bills should be considering value of trading for player set to be a free agent",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-considering-value-trading-player-002549806.html",
-   "timestamp": "2026-11-05T00:25:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "MoFu9QuAKa2EXHjb",
-   "headline": "Sean McVay sounds alarm as Rams’ injury crisis reaches historic levels",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sean-mcvay-sounds-alarm-rams-002349011.html",
-   "timestamp": "2026-11-05T00:23:49.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Hil0f7ot6esOn7_I",
-   "headline": "Browns, Saints injuries: NO reinforcements; big CLE weapon added to list (Video)",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-saints-injuries-no-reinforcements-002216458.html",
-   "timestamp": "2026-11-05T00:22:16.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE",
-    "NO"
-   ]
-  },
-  {
-   "id": "xsDb1S1UkX2XvPAa",
-   "headline": "Saquon Barkley, DeVonta Smith, Dontayvion Wicks miss Wednesday's practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saquon-barkley-devonta-smith-dontayvion-001844200.html",
-   "timestamp": "2026-11-05T00:18:44.000Z",
-   "category": "practice",
-   "player_ids": [
-    "saquon-barkley",
-    "devonta-smith"
-   ]
-  },
-  {
-   "id": "DjGoEGOZcyGzKU3n",
-   "headline": "Jaguars Willing To Be Aggressive In D-Line Trade Market; Eagles’ Moro Ojomo On Radar",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/jaguars-willing-to-be-aggressive-in-d-line-trade-market-eagles-moro-ojomo-on-radar",
-   "timestamp": "2026-11-05T00:16:21.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "JAX",
-    "PHI"
-   ]
-  },
-  {
-   "id": "uYFYUGeBz1ZwpKJs",
-   "headline": "Buccaneers linebacker Alex Anzalone named NFC Defensive Player of the Week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buccaneers-linebacker-alex-anzalone-named-001043058.html",
-   "timestamp": "2026-11-05T00:10:43.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TB"
-   ]
-  },
-  {
-   "id": "D-4ScmnVnw6tnibI",
-   "headline": "Justin Herbert 'was throwing deli meat' in 2-INT loss to Rams, S Quentin Lake says; Jim Harbaugh disagrees",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/justin-herbert-was-throwing-deli-meat-in-2-int-loss-to-rams-s-quentin-lake-says-jim-harbaugh-disagrees-000628803.html",
-   "timestamp": "2026-11-05T00:05:46.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "justin-herbert"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "m2WX3ha5Jd2BIdi_",
-   "headline": "Myles Garrett returns to Rams practice; return to play unclear",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/myles-garrett-returns-rams-practice-235929173.html",
-   "timestamp": "2026-11-04T23:59:29.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "n3sioGRLzikEuveD",
-   "headline": "Seahawks sign former UFL MVP quarterback following Sam Darnold injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-sign-former-ufl-mvp-235745832.html",
-   "timestamp": "2026-11-04T23:57:45.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-darnold"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "eRsrr9pumqxpBNfF",
-   "headline": "What's next for Rams after season-ending injury to Jaylen Watson?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/whats-next-rams-season-ending-235215784.html",
-   "timestamp": "2026-11-04T23:52:15.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "AiT4ZQ3z40I32pyp",
-   "headline": "Jordan Love and wife dress as blind refs for Halloween",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jordan-love-wife-dress-blind-235031754.html",
-   "timestamp": "2026-11-04T23:50:31.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jordan-love"
-   ]
-  },
-  {
-   "id": "_peuz0XAhTjzwZgY",
-   "headline": "Kyle Shanahan refutes Jay Glazer’s Jauan Jennings report, confirms 49ers FaceTime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kyle-shanahan-refutes-jay-glazer-234339443.html",
-   "timestamp": "2026-11-04T23:43:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "havEGLjsSICYGSVG",
-   "headline": "Eagles Injury Report: No practice for DeVonta Smith, Saquon Barkley, Tay Wicks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-injury-report-no-practice-234307585.html",
-   "timestamp": "2026-11-04T23:43:07.000Z",
-   "category": "injury",
-   "player_ids": [
-    "saquon-barkley",
-    "devonta-smith"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "O3bfZ45jXspnTM0I",
-   "headline": "Las Vegas Raiders playoff hopes depend on the defense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/las-vegas-raiders-playoff-hopes-234200506.html",
-   "timestamp": "2026-11-04T23:42:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "Ks2TqcbpQ4wVbv6e",
-   "headline": "Jacoby Brissett trade gives Zay Flowers and the Ravens' offense a fantasy lifeline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/jacoby-brissett-trade-gives-zay-flowers-and-the-ravens-offense-a-fantasy-lifeline-233113075.html",
-   "timestamp": "2026-11-04T23:31:13.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "zay-flowers",
-    "jacoby-brissett"
-   ],
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "GaD-A94VrPO11MqP",
-   "headline": "Cowboys have a chance to respond in Indianapolis",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-chance-respond-indianapolis-233000334.html",
-   "timestamp": "2026-11-04T23:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "DGDT5kiZbdIFAWxr",
-   "headline": "Packers RB Josh Jacobs describes latest abuse allegations as an 'attack,' not worried about suspension from league",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/packers-rb-josh-jacobs-describes-latest-abuse-allegations-as-an-attack-not-worried-about-suspension-from-league-232954880.html",
-   "timestamp": "2026-11-04T23:29:54.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "Hr5zHD6qFON7OdfE",
-   "headline": "NFL odds, betting, storylines: 2 underdogs to back in Week 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/nfl-odds-betting-storylines-2-underdogs-to-back-in-week-9-232645096.html",
-   "timestamp": "2026-11-04T23:26:45.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "MIeQqul7xx-rsHJB",
-   "headline": "DeVonta Smith: No practice Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/devonta-smith-15406",
-   "timestamp": "2026-11-04T23:26:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "devonta-smith"
-   ]
-  },
-  {
-   "id": "anpqbdbupvt9IMlr",
-   "headline": "Saquon Barkley: Doesn't practice Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/saquon-barkley-12507",
-   "timestamp": "2026-11-04T23:21:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "saquon-barkley"
-   ]
-  },
-  {
-   "id": "H9YE93W3aYTcl0LV",
-   "headline": "Bengals vs. Falcons projected injury report has DJ Turner and Cedric Johnson getting DNP",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-vs-falcons-projected-injury-231551716.html",
-   "timestamp": "2026-11-04T23:15:51.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ATL",
-    "CIN"
-   ]
-  },
-  {
-   "id": "GuIk4ykzd0umCm8U",
-   "headline": "Broncos vs. Panthers practice participation report: Wednesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-panthers-practice-participation-230549989.html",
-   "timestamp": "2026-11-04T23:05:49.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "CAR",
-    "DEN"
-   ]
-  },
-  {
-   "id": "hIcxyDH-xKHVrCqd",
-   "headline": "49ers defense receives great news as Nick Bosa is suddenly ‘ready to go’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/49ers-defense-receives-great-news-230207342.html",
-   "timestamp": "2026-11-04T23:02:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "GCpj1uNBqeKzn5h5",
-   "headline": "Reviewing the Bears’ PFN grades from Week 8 vs. Seahawks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/reviewing-bears-pfn-grades-week-230000245.html",
-   "timestamp": "2026-11-04T23:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "SEA"
-   ]
-  },
-  {
-   "id": "emQB3K30s_tWPVnY",
-   "headline": "Raiders release early-season TD machine Cody White",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-release-early-season-td-225951898.html",
-   "timestamp": "2026-11-04T22:59:51.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "zWHGH-f4KYgeSUog",
-   "headline": "Mansoor Delane, Travis Kelce limited at Chiefs practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mansoor-delane-travis-kelce-limited-225827998.html",
-   "timestamp": "2026-11-04T22:58:27.000Z",
-   "category": "practice",
-   "player_ids": [
-    "travis-kelce"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "MV_FhMluFuK-WrSB",
-   "headline": "WR George Pickens, OG Tyler Smith were limited in Wednesday's practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/wr-george-pickens-og-tyler-225239783.html",
-   "timestamp": "2026-11-04T22:52:39.000Z",
-   "category": "practice",
-   "player_ids": [
-    "george-pickens"
-   ]
-  },
-  {
-   "id": "bvluRFu2qZdTLOJy",
-   "headline": "Rams cornerback Jaylen Watson to miss rest of season after shoulder surgery",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-cornerback-jaylen-watson-miss-224001902.html",
-   "timestamp": "2026-11-04T22:40:01.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "dASxwOW-ePDVlwZA",
-   "headline": "NFL Practice Squad Updates: 11/4/26",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/nfl-practice-squad-updates-11-4-26",
-   "timestamp": "2026-11-04T22:30:16.000Z",
-   "category": "practice"
-  },
-  {
-   "id": "xbCsDHJZXUPEGZC6",
-   "headline": "Kellen Moore confirms Charlie Smyth will kick for the Saints this week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kellen-moore-confirms-charlie-smyth-222914495.html",
-   "timestamp": "2026-11-04T22:29:14.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "charlie-smyth"
-   ],
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "wHurmKdnEHbyfgbV",
-   "headline": "Patriots vs. Packers Wednesday injury report: Hunter Henry among four sidelined",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-vs-packers-wednesday-injury-222453840.html",
-   "timestamp": "2026-11-04T22:24:53.000Z",
-   "category": "injury",
-   "player_ids": [
-    "hunter-henry"
-   ],
-   "team_abbrs": [
-    "GB",
-    "NE"
-   ]
-  },
-  {
-   "id": "4FY17IHUouutRF9r",
-   "headline": "Myles Garrett, Terrance Ferguson to practice Wednesday, while Rams CB Jaylen Watson will have season-ending surgery",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/myles-garrett-terrance-ferguson-to-practice-wednesday-while-rams-cb-jaylen-watson-will-have-season-ending-surgery-222137580.html",
-   "timestamp": "2026-11-04T22:21:37.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "d55InYvubLyl6-w1",
-   "headline": "Former Steelers RB Merril Hoge joins in praise of Mike McCarthy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/former-steelers-rb-merril-hoge-221719204.html",
-   "timestamp": "2026-11-04T22:17:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "X_eNZYYVwFmoCX42",
-   "headline": "Wednesday’s Saints vs. Browns Injury Report: Jordyn Tyson and Kelvin Banks Jr. are back",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/wednesday-saints-vs-browns-injury-221303175.html",
-   "timestamp": "2026-11-04T22:13:03.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE",
-    "NO"
-   ]
-  },
-  {
-   "id": "WgrCXjCFMX4fy3mK",
-   "headline": "The hits keep coming for wild-card hopefuls chasing the Packers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/hits-keep-coming-wild-card-220959680.html",
-   "timestamp": "2026-11-04T22:09:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "PlKUEOKvlD4fTKjY",
-   "headline": "Week 9 NFL odds, picks, predictions: Computer model backs Chiefs and Commanders",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-lines-picks-predictions-best-bets-week-9-2026/",
-   "timestamp": "2026-11-04T22:05:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "WAS"
-   ]
-  },
-  {
-   "id": "qQzXEmNOfe_xQZUL",
-   "headline": "Cowboys injuries: Caleb Downs, Jake Ferguson DNP",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-injuries-caleb-downs-jake-220530138.html",
-   "timestamp": "2026-11-04T22:05:30.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jake-ferguson"
-   ],
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "U0eX7HcE7XzIh15t",
-   "headline": "Broncos WR Pat Bryant has been designated to return from the IR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-wr-pat-bryant-designated-220234107.html",
-   "timestamp": "2026-11-04T22:02:34.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "k7mOCaFTbWBN7kYO",
-   "headline": "Chiefs-Jets Week 9 Wednesday injury report: Peter Woods misses practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-jets-week-9-wednesday-220000768.html",
-   "timestamp": "2026-11-04T22:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "KC",
-    "NYJ"
    ]
   }
  ]
