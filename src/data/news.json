@@ -4,6 +4,539 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "v5laILbL0KbTkgNu",
+   "headline": "Report: Colts are in trade talks regarding QB Daniel Jones",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/report-colts-trade-talks-regarding-145401899.html",
+   "timestamp": "2026-11-07T14:54:01.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "q9NYTtOcGBsle-yW",
+   "headline": "Giants trade rumors: Ravens say Derrick Henry won’t be dealt",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-trade-rumors-ravens-derrick-144757496.html",
+   "timestamp": "2026-11-07T14:47:57.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "derrick-henry"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "NYG"
+   ]
+  },
+  {
+   "id": "7EgZNve9384ZZMRT",
+   "headline": "Quenton Nelson to miss Week 9's game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/quenton-nelson-miss-week-9s-144518204.html",
+   "timestamp": "2026-11-07T14:45:18.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "kYT45LQ_wAqfuvr9",
+   "headline": "Lions vs. Dolphins Week 9 preview: Madden 27 simulation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-vs-dolphins-week-9-144500291.html",
+   "timestamp": "2026-11-07T14:45:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "MIA"
+   ]
+  },
+  {
+   "id": "w-WaZ6-WTPPLCqeG",
+   "headline": "Pre-Snap Reads: Seahawks’ depth will need to carry team tomorrow",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pre-snap-reads-seahawks-depth-144440436.html",
+   "timestamp": "2026-11-07T14:44:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "G5LgtlnQSPfwEdUx",
+   "headline": "Kyler Murray: Dealing with Grade 2 strain",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/kyler-murray-13613",
+   "timestamp": "2026-11-07T14:40:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "kyler-murray"
+   ]
+  },
+  {
+   "id": "OLXKAHaZ7zIPLEX8",
+   "headline": "NFL trade deadline rumors: Colts' Daniel Jones could get dealt and there's only one team that makes sense",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-rumors-colts-daniel-jones-vikings/",
+   "timestamp": "2026-11-07T14:18:37.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "7YFAGMTYAxO60N6u",
+   "headline": "Browns trade deadline rumor: GM Andrew Berry focused on 2 positions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-trade-deadline-rumor-gm-140936624.html",
+   "timestamp": "2026-11-07T14:09:36.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "FxE7cPms1UafbYdE",
+   "headline": "5 Things I Think I Think About the Miami Dolphins After Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-things-think-think-miami-140320290.html",
+   "timestamp": "2026-11-07T14:03:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "sYuqYmmRAQmTZ3yC",
+   "headline": "Chiefs News: Patrick Mahomes reminds us how he’s a great teammate",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-patrick-mahomes-reminds-140000940.html",
+   "timestamp": "2026-11-07T14:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ],
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "F4sKYzh1rYHfrKZI",
+   "headline": "Broncos vs. Panthers score predictions for Week 9",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-panthers-score-predictions-140000054.html",
+   "timestamp": "2026-11-07T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "DEN"
+   ]
+  },
+  {
+   "id": "Vy1DC0JOBvG0W9Nx",
+   "headline": "5 Bills to zero-in on at Vikings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-bills-zero-vikings-140000921.html",
+   "timestamp": "2026-11-07T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "MIN"
+   ]
+  },
+  {
+   "id": "xcGRihj7qCq8qjGw",
+   "headline": "Cowboys key matchup: Quinnen Williams vs the Colts interior OL",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-key-matchup-quinnen-williams-140000614.html",
+   "timestamp": "2026-11-07T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "IND"
+   ]
+  },
+  {
+   "id": "nIJ2uvFidocv3IkG",
+   "headline": "Hear what Aaron Donald says about his botched fumble recovery in Week 8",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/hear-aaron-donald-says-botched-135900471.html",
+   "timestamp": "2026-11-07T13:59:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Z5ykhFomjz-MOq-r",
+   "headline": "Detroit Lions vs. Miami Dolphins preview: 3 key stats",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-vs-miami-dolphins-132226012.html",
+   "timestamp": "2026-11-07T13:22:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "MIA"
+   ]
+  },
+  {
+   "id": "GUBXOhLSTC5lgtN_",
+   "headline": "Rams vs Commanders: How to watch on TV, stream, or listen on radio",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-vs-commanders-watch-tv-130200914.html",
+   "timestamp": "2026-11-07T13:02:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "WAS"
+   ]
+  },
+  {
+   "id": "vSsvQ2yrmupY1MFw",
+   "headline": "Future Broncos: 3 Prospects to Watch in Week 10 of NCAA Football Season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/future-broncos-3-prospects-watch-130000773.html",
+   "timestamp": "2026-11-07T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "JvL13iVlI0LI4nRV",
+   "headline": "Chicago Bears Week 9 Flashbacks: A Pair of Wins Against Rivals and a Defensive Masterclass",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-week-9-flashbacks-130000178.html",
+   "timestamp": "2026-11-07T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "CoCgJ_It5NuPiqYB",
+   "headline": "NFL Mailbag: Vikings, Henry, Taylor, Pollard, Giants, Bills",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-mailbag-vikings-henry-taylor-pollard-giants-bills",
+   "timestamp": "2026-11-07T12:30:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "MIN",
+    "NYG"
+   ]
+  },
+  {
+   "id": "PDJSntCz-hCLTQTU",
+   "headline": "Bengals News: Cincinnati goes International",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bengals-news-cincinnati-goes-international-121900820.html",
+   "timestamp": "2026-11-07T12:19:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "eGdFD7yVhedi5FbE",
+   "headline": "Rams vs. Commanders: How to watch, start time, prediction and odds",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-vs-commanders-watch-start-120000154.html",
+   "timestamp": "2026-11-07T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR",
+    "WAS"
+   ]
+  },
+  {
+   "id": "DOTr-qnCaUJiCMn3",
+   "headline": "Cardinals vs. Seahawks Week 9 TV Map",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-vs-seahawks-week-9-120000195.html",
+   "timestamp": "2026-11-07T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "SEA"
+   ]
+  },
+  {
+   "id": "9RhlcWWRlhkjXjxW",
+   "headline": "New York Jets Flight Connections 11/07/26",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-flight-connections-11-120000210.html",
+   "timestamp": "2026-11-07T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "tyiEdlj5yF0eTdR8",
+   "headline": "NFL predictions: Shedeur Sanders vs. Tyler Shough, a battle of last year’s rookie QBs in Browns-Saints",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-shedeur-sanders-vs-120000478.html",
+   "timestamp": "2026-11-07T12:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tyler-shough"
+   ],
+   "team_abbrs": [
+    "CLE",
+    "NO"
+   ]
+  },
+  {
+   "id": "XZfebowANztWmELX",
+   "headline": "Detroit Lions fan confidence soars to season-high",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-lions-fan-confidence-soars-120000489.html",
+   "timestamp": "2026-11-07T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "VxPCu7ymS_bX1ruM",
+   "headline": "3-Point Stance: Patriots’ trade deadline isn’t time for a youth movement",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-point-stance-patriots-trade-120000020.html",
+   "timestamp": "2026-11-07T12:00:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "oWuqxYAnrTRBWhyY",
+   "headline": "Chargers vs. Texans: How to watch, start time, prediction and odds",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-vs-texans-watch-start-120000990.html",
+   "timestamp": "2026-11-07T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU",
+    "LAC"
+   ]
+  },
+  {
+   "id": "fjsCm6IwWovo6Ze-",
+   "headline": "Cowboys news: Jerry Jones tries to walk back ‘paying coaches’ comments",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-news-jerry-jones-tries-120000486.html",
+   "timestamp": "2026-11-07T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "y11o2tLD_99WR_6P",
+   "headline": "Bengals vs. Falcons: How to watch, game time, TV info, online stream, and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bengals-vs-falcons-watch-game-114500240.html",
+   "timestamp": "2026-11-07T11:45:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CIN"
+   ]
+  },
+  {
+   "id": "rJPHs3XHEEfSa_In",
+   "headline": "Cleveland Browns news: Bulletin boards, injuries, and fan confidence",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-bulletin-boards-113000787.html",
+   "timestamp": "2026-11-07T11:30:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "2sD5yiHV4cxkFER6",
+   "headline": "3 overlooked Joe Burrow throws that helped Bengals defeat Titans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-overlooked-joe-burrow-throws-113000104.html",
+   "timestamp": "2026-11-07T11:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "joe-burrow"
+   ],
+   "team_abbrs": [
+    "CIN",
+    "TEN"
+   ]
+  },
+  {
+   "id": "oAKLWnL8DtGhkeue",
+   "headline": "Giants news: Cam Skattebo doubtful for Sunday, Eagles matchups, more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-news-cam-skattebo-doubtful-110000761.html",
+   "timestamp": "2026-11-07T11:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "cam-skattebo"
+   ],
+   "team_abbrs": [
+    "NYG",
+    "PHI"
+   ]
+  },
+  {
+   "id": "aGrbTMu5iyJeHGAv",
+   "headline": "Falcons vs. Bengals 2026: How to watch, start time, TV, and odds for Week 9 in Madrid",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/falcons-vs-bengals-2026-watch-110000531.html",
+   "timestamp": "2026-11-07T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ATL",
+    "CIN"
+   ]
+  },
+  {
+   "id": "Z5uD9GR0LnugBLOo",
+   "headline": "Myles Garrett: Rams' opponents will have to pick their poison, me or Aaron Donald",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/myles-garrett-rams-opponents-pick-101922949.html",
+   "timestamp": "2026-11-07T10:19:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "iQBfXFDXpiVbO4bm",
+   "headline": "3 Cardinals ruled out for Seattle contest",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-cardinals-ruled-seattle-contest-100000318.html",
+   "timestamp": "2026-11-07T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "XMmVEvhfeIN7ZuYm",
+   "headline": "Eagles making the switch to QB Joe Milton for Week 9 vs. Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-making-switch-qb-joe-141942994.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "PHI"
+   ]
+  },
+  {
+   "id": "dKixkiFRz_ycJAzn",
+   "headline": "If you stayed up late enough, you saw why the Eagles are so high on Eli Stowers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/stayed-enough-saw-why-eagles-092809360.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "A424XsTuwMuG3cNO",
+   "headline": "Eagles vs. Giants predictions for Week 9 of the 2026 NFL season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-vs-giants-predictions-week-070000813.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "PHI"
+   ]
+  },
+  {
+   "id": "Xzj55PYbcDopwfw_",
+   "headline": "10 things you need to know about new Eagles quarterback Joe Milton",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/10-things-know-eagles-quarterback-070000066.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "NBKEwpb6-cozISYG",
+   "headline": "Eagles notebook: What will the future hold for Drew Mukuba?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-notebook-future-hold-drew-070000038.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "NYRCsLn6mSqxqFk6",
+   "headline": "Roob's Eagles Observations: Life without Jalen Hurts just isn't any fun",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roobs-eagles-observations-life-without-070000828.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jalen-hurts"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "P_JZtp5L4_snhrwC",
+   "headline": "Eagles snap counts: Time to see more of Eli Stowers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-snap-counts-time-see-070000822.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "VIIDrHRmlLfiK0Ex",
+   "headline": "How new Eagles QB Joe Milton is preparing for unlikely first career start",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-qb-joe-milton-preparing-070000236.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "ptYU_j8hfL4XjODU",
+   "headline": "Future Eagles Fits: Four position versatile OTs to know in the 2027 NFL Draft",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/future-eagles-fits-four-position-070000497.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "TqX0UfH2UJ3z4pqt",
+   "headline": "Giants vs Eagles betting guide: Odds, props & picks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-vs-eagles-betting-guide-183507407.html",
+   "timestamp": "2026-11-07T09:32:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "PHI"
+   ]
+  },
+  {
    "id": "8hxYKnN2JC5PZKSt",
    "headline": "Is Brandon Aiyuk returning to 49ers? Latest on NFL's greatest soap opera",
    "source": "Yahoo Sports",
@@ -1223,533 +1756,6 @@
    "team_abbrs": [
     "GB"
    ]
-  },
-  {
-   "id": "vQK8RfkYONxYKD0a",
-   "headline": "Lions safety Kerby Joseph looking ‘better than anticipated’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-safety-kerby-joseph-looking-193000046.html",
-   "timestamp": "2026-11-06T19:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "xsxcTzcujL9tmgSB",
-   "headline": "Myles Garrett expected to make his return for Rams vs. Commanders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/myles-garrett-expected-return-rams-192413495.html",
-   "timestamp": "2026-11-06T19:24:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "WAS"
-   ]
-  },
-  {
-   "id": "YG6EMcAIG28ciXVR",
-   "headline": "Browns fill open roster spot after Thursday’s decision; likely due to a big injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-fill-open-roster-spot-192120690.html",
-   "timestamp": "2026-11-06T19:21:20.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "rxflr1V5-7yv3D5B",
-   "headline": "Mansoor Delane will not play for the Chiefs on Sunday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mansoor-delane-not-play-chiefs-191507315.html",
-   "timestamp": "2026-11-06T19:15:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "jeYmxAqqCh004xDI",
-   "headline": "A tale of the 2 best tight ends in the NFL: George Kittle vs. Brock Bowers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tale-2-best-tight-ends-191445610.html",
-   "timestamp": "2026-11-06T19:14:45.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-bowers",
-    "george-kittle"
-   ]
-  },
-  {
-   "id": "ynBCIfRyXt1_Q05u",
-   "headline": "Antonio Brown pleads guilty to aggravated assault with a firearm",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/antonio-brown-pleads-guilty-aggravated-191032791.html",
-   "timestamp": "2026-11-06T19:10:32.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "amon-ra-st-brown",
-    "aj-brown"
-   ]
-  },
-  {
-   "id": "DqjtbAwcejB29hA-",
-   "headline": "NFL in Spain: Bengals star Joe Burrow goes full tourist in Madrid, reveals the one thing he hates the most",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-spain-bengals-joe-burrow-full-tourist-in-madrid/",
-   "timestamp": "2026-11-06T19:08:24.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "joe-burrow"
-   ],
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "czNvBEIkxoTRCrEY",
-   "headline": "NFL predictions: Las Vegas Raiders-San Francisco 49ers reignite rivalry in Week 9 matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-las-vegas-raiders-190500085.html",
-   "timestamp": "2026-11-06T19:05:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "SF"
-   ]
-  },
-  {
-   "id": "jz2y6cFkHKFEXmRz",
-   "headline": "NFL Week 9 betting advice: Eagles-Giants pick and props",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-9-betting-advice-185546585.html",
-   "timestamp": "2026-11-06T18:55:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG",
-    "PHI"
-   ]
-  },
-  {
-   "id": "6imkHvGDkFIdeIa4",
-   "headline": "Uh-oh: Rams’ Myles Garrett reportedly on track to play Commanders in NFL Week 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/uh-oh-rams-myles-garrett-184035004.html",
-   "timestamp": "2026-11-06T18:40:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "WAS"
-   ]
-  },
-  {
-   "id": "eI_4lQ0SpD57gSJZ",
-   "headline": "Bengals vs. Falcons NFL in Spain Week 9 Preview: OBI Podcast",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-vs-falcons-nfl-spain-183807348.html",
-   "timestamp": "2026-11-06T18:38:07.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CIN"
-   ]
-  },
-  {
-   "id": "lqT-nEPOVar9byAa",
-   "headline": "Browns To Start QB Shedeur Sanders In Week 9",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/browns-to-start-qb-shedeur-sanders-in-week-9",
-   "timestamp": "2026-11-06T18:21:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "bt3gFgQQtxVCHcIe",
-   "headline": "Rams' Myles Garrett (knee) set to return this week vs. Commanders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/rams-myles-garrett-knee-set-to-return-this-week-vs-commanders-190940222.html",
-   "timestamp": "2026-11-06T17:34:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "WAS"
-   ]
-  },
-  {
-   "id": "eZBo8pCoJaLOA0Py",
-   "headline": "Week 9 NFL odds, picks, predictions: Computer model backs Chiefs and Commanders",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-lines-picks-game-predictions-best-bets-for-week-9-2026/",
-   "timestamp": "2026-11-06T17:08:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "WAS"
-   ]
-  },
-  {
-   "id": "Ec6X6KHqqhlUIVKV",
-   "headline": "Patriots' TreVeyon Henderson provides update on 'unknown and unexplainable' illness",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/patriots-treveyon-henderson-update-unknown-unexplainable-illness/",
-   "timestamp": "2026-11-06T16:55:37.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "treveyon-henderson"
-   ],
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "MyRv2S9MGWJsIhWP",
-   "headline": "Ravens Finalize Trade For Cardinals QB Jacoby Brissett",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/ravens-finalizing-trade-for-cardinals-qb-jacoby-brissett",
-   "timestamp": "2026-11-06T16:40:23.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jacoby-brissett"
-   ],
-   "team_abbrs": [
-    "ARI",
-    "BAL"
-   ]
-  },
-  {
-   "id": "81cqtCsgIMsJnxzE",
-   "headline": "Chargers' Mike McDaniel to begin calling play from the booth: Desperation move or possible fix?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/chargers-mike-mcdaniel-calling-play-from-booth-desperation-move/",
-   "timestamp": "2026-11-06T16:38:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "vrFIzufx_wjd525Q",
-   "headline": "Jacoby Brissett trade grades: Cardinals earn high mark, Ravens stay afloat in mutually beneficial trade",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/jacoby-brissett-trade-grades-cardinals-ravens-trade-deadline/",
-   "timestamp": "2026-11-06T16:30:50.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jacoby-brissett"
-   ],
-   "team_abbrs": [
-    "ARI",
-    "BAL"
-   ]
-  },
-  {
-   "id": "6a4JFW_CEn1cOSKv",
-   "headline": "Week 9 NFL betting promos: Get over $3,000 in bonuses from betting apps, sportsbooks, DraftKings, BetMGM",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-9-nfl-betting-promos-get-over-3000-in-bonuses-from-betting-apps-sportsbooks-draftkings-betmgm/",
-   "timestamp": "2026-11-06T16:22:16.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "6U1ysE5WT60biZGZ",
-   "headline": "Jacoby Brissett: Joins Baltimore via trade",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jacoby-brissett-10919",
-   "timestamp": "2026-11-06T16:20:00.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jacoby-brissett"
-   ]
-  },
-  {
-   "id": "xy1kODh-shqGBV_L",
-   "headline": "Garrett Wilson: Ruled out for Sunday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/garrett-wilson-15829",
-   "timestamp": "2026-11-06T16:16:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "garrett-wilson"
-   ]
-  },
-  {
-   "id": "qbXNT7hFIpMEPYSU",
-   "headline": "Week 9 NFL odds, lines, totals, spreads for every game, including Cowboys-Colts, Jets-Chiefs, Giants-Eagles",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-9-nfl-betting-lines-odds-spreads-totals/",
-   "timestamp": "2026-11-06T16:15:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "IND",
-    "KC",
-    "NYG",
-    "NYJ",
-    "PHI"
-   ]
-  },
-  {
-   "id": "zIw7qTWipDRGqFae",
-   "headline": "Jets rule out Garrett Wilson for Week 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-rule-garrett-wilson-week-161510570.html",
-   "timestamp": "2026-11-06T16:15:10.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "garrett-wilson"
-   ],
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "kNaiOIL7jHBJVrYb",
-   "headline": "NFL trade deadline 2026: Denver Broncos latest news and rumors",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-trade-deadline-2026-denver-160212726.html",
-   "timestamp": "2026-11-06T16:14:42.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "6H7wpP3aEvVR7V-y",
-   "headline": "Frustrated Derrick Henry responds to trade rumors following Ravens brutal 'TNF' loss to Jaguars",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/ravens-derrick-henry-trade-rumor-thoughts-nfl-trade-deadline/",
-   "timestamp": "2026-11-06T16:14:11.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "derrick-henry"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "JAX"
-   ]
-  },
-  {
-   "id": "QjYyvbDu7Q4McjfF",
-   "headline": "Kadyn Proctor will play against Detroit Lions in Week 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kadyn-proctor-play-against-detroit-161151002.html",
-   "timestamp": "2026-11-06T16:11:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "hPvv2f65I1x4o2vo",
-   "headline": "Week 9 NFL betting buzz: Odds, sharp action and public betting splits",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/week-9-nfl-betting-buzz-odds-sharp-action-and-public-betting-splits-160317797.html",
-   "timestamp": "2026-11-06T16:02:41.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "0hUs4aODLgp_6_Ci",
-   "headline": "2 reasons why the Raiders might give the 49ers fits",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2-reasons-why-raiders-might-160100246.html",
-   "timestamp": "2026-11-06T16:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "SF"
-   ]
-  },
-  {
-   "id": "NbPisNtbYRqhLzEJ",
-   "headline": "LSU Football’s NFL Draft Stock: First-round landing spots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lsu-football-nfl-draft-stock-160000124.html",
-   "timestamp": "2026-11-06T16:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "MuBftPNjBJMoDnPA",
-   "headline": "Interview with the Enemy: Cleveland Browns",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/interview-enemy-cleveland-browns-160000755.html",
-   "timestamp": "2026-11-06T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "gEwrD22vr9Ng_ZCs",
-   "headline": "Cowboys vs. Colts recent history puts spotlight on coaching",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-vs-colts-recent-history-160000995.html",
-   "timestamp": "2026-11-06T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "IND"
-   ]
-  },
-  {
-   "id": "jpbFSSYwQyM7mWv9",
-   "headline": "TreVeyon Henderson provides medical update, reveals recent hospitalization for ‘unexplainable’ illness",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/treveyon-henderson-provides-medical-reveals-155908110.html",
-   "timestamp": "2026-11-06T15:59:08.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "treveyon-henderson"
-   ]
-  },
-  {
-   "id": "NFoPZvQ9dpkwxzju",
-   "headline": "Ravens RB Derrick Henry Not Seeking Trade; Giants, Patriots Interested?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/ravens-rb-derrick-henry-not-seeking-trade-giants-patriots-interested",
-   "timestamp": "2026-11-06T15:56:29.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "derrick-henry"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "NE",
-    "NYG"
-   ]
-  },
-  {
-   "id": "qN8XLWT8rAOqMKji",
-   "headline": "Week 9 Fantasy Football Matchups to Exploit: Patriots, Dolphins have multiple players in good spots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/week-9-fantasy-football-matchups-to-exploit-patriots-dolphins-have-multiple-players-in-good-spots-155359512.html",
-   "timestamp": "2026-11-06T15:53:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "NE"
-   ]
-  },
-  {
-   "id": "I_t1HASmR9RipvOL",
-   "headline": "NFL Week 9 odds, picks: Brinson's best bets, player props, anytime touchdown scorers for Sunday's games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-week-9-odds-picks-brinsons-best-bets-player-props-anytime-touchdown-scorers-for-sundays-games/",
-   "timestamp": "2026-11-06T15:52:22.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "bf4wQhFntnVIbIRk",
-   "headline": "Fantasy Football Start 'Em Sit 'Em: Justin Boone's Week 9 lineup advice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-start-em-sit-em-justin-boones-week-9-lineup-advice-154600531.html",
-   "timestamp": "2026-11-06T15:46:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "udZOEhftNfe9YZ5K",
-   "headline": "What the Chiefs are saying about the Jets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-saying-jets-154500347.html",
-   "timestamp": "2026-11-06T15:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "Tf3W4jJ_NjxncRT_",
-   "headline": "Ben Roethlisberger says Steelers RB Jaylen Warren belongs in MVP conversation",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ben-roethlisberger-says-steelers-rb-153604496.html",
-   "timestamp": "2026-11-06T15:36:04.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaylen-warren"
-   ],
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "ThrNzAJ8KLyv9Ygg",
-   "headline": "Daily Slop: Why Jayden Daniels is next-level protecting the ball (via Washington Post)",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/daily-slop-why-jayden-daniels-153504866.html",
-   "timestamp": "2026-11-06T15:35:04.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jayden-daniels"
-   ]
-  },
-  {
-   "id": "UhhAEJTCj4DJJ6GJ",
-   "headline": "NFL Trade Deadline: 4 mock trades that would make Steelers a true Super Bowl contender",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-4-trade-options-steelers-super-bowl-contender/",
-   "timestamp": "2026-11-06T15:30:47.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "KknbkOMPoLnkSW_9",
-   "headline": "Giants’ offense vs. Eagles’ defense: The Vic Fangio factor",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-offense-vs-eagles-defense-153000274.html",
-   "timestamp": "2026-11-06T15:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG",
-    "PHI"
-   ]
-  },
-  {
-   "id": "UyAeXT0IJd4c_qr-",
-   "headline": "Fantasy Football Week 9 Start/Sit Advice: What to do with Ashton Jeanty, Jaylen Waddle, more players",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-9-startsit-advice-what-to-do-with-ashton-jeanty-jaylen-waddle-more-players-152617125.html",
-   "timestamp": "2026-11-06T15:26:17.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "ashton-jeanty",
-    "jaylen-waddle"
-   ]
-  },
-  {
-   "id": "YtF9QVsi1tejOQHQ",
-   "headline": "Patriots will have their hands full against Packers’ explosive passing game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-hands-full-against-packers-152529565.html",
-   "timestamp": "2026-11-06T15:25:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "NE"
-   ]
-  },
-  {
-   "id": "FMyTMmt8ysUIdMhd",
-   "headline": "Fantasy Football Week 9 Fades & Busts: Bad times to continue for Panthers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-week-9-fades--busts-bad-times-to-continue-for-panthers-150505930.html",
-   "timestamp": "2026-11-06T15:05:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "HhSqU1vGO3T7pyP6",
-   "headline": "NFL Week 9 underrated games: An international game, two AFC vs. NFC showdowns to add to your watch list",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-9-underrated-games-madrid-falcons-bengals/",
-   "timestamp": "2026-11-06T15:00:52.000Z",
-   "category": "breaking"
   }
  ]
 }
