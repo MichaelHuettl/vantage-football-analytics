@@ -1,8 +1,166 @@
 {
  "schema_version": 1,
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "CyVUNH0aiSVMIe16",
+   "headline": "No Team Coming Close To Colts’ Jonathan Taylor Price",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/no-team-coming-close-to-colts-jonathan-taylor-price",
+   "timestamp": "2026-11-08T05:14:30.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jonathan-taylor"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "ZuXE3rdWgXpgs-tl",
+   "headline": "Ravens Will Not Trade Derrick Henry; Giants Called About RB Justice Hill",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/ravens-will-not-trade-derrick-henry-giants-called-about-rb-justice-hill",
+   "timestamp": "2026-11-08T05:12:19.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "derrick-henry"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "NYG"
+   ]
+  },
+  {
+   "id": "8sO8vvVjnfva5q-M",
+   "headline": "Broncos Contacted Cardinals About TE Trey McBride",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/broncos-contacted-cardinals-about-te-trey-mcbride",
+   "timestamp": "2026-11-08T04:58:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "trey-mcbride"
+   ],
+   "team_abbrs": [
+    "ARI",
+    "DEN"
+   ]
+  },
+  {
+   "id": "CoCgJ_It5NuPiqYB",
+   "headline": "NFL Mailbag: Vikings, Henry, Taylor, Pollard, Giants, Bills",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-mailbag-vikings-henry-taylor-pollard-giants-bills",
+   "timestamp": "2026-11-08T04:55:01.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "MIN",
+    "NYG"
+   ]
+  },
+  {
+   "id": "Nh4iyd3nWgXkvB5X",
+   "headline": "Colts Have Fourth-Round Offer For Josh Downs; Keenan Allen Drawing Interest",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/colts-have-fourth-round-offer-for-josh-downs-keenan-allen-drawing-interest",
+   "timestamp": "2026-11-08T04:54:53.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen",
+    "josh-downs"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "xy3309BSglvEALR-",
+   "headline": "Bears To Host DT Jordan Elliott",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/bears-to-host-dt-jordan-elliott",
+   "timestamp": "2026-11-08T04:53:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "Cza_SvFvIt5zfCNL",
+   "headline": "Bills Eyeing Secondary Trade Addition",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/bills-eyeing-secondary-trade-addition",
+   "timestamp": "2026-11-08T03:22:57.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "pCHL5dp5H_ykICTD",
+   "headline": "Steelers Hall of Fame linebacker Jack Ham hospitalized",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-hall-fame-linebacker-jack-031450943.html",
+   "timestamp": "2026-11-08T03:14:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "oZbevanWmW5qw_zt",
+   "headline": "Bears vs. Buccaneers: Chicago looks to tame Tampa's running game while staying atop the NFC North",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/bears-vs-buccaneers-odds-prediction-where-to-watch/",
+   "timestamp": "2026-11-08T03:00:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "TB"
+   ]
+  },
+  {
+   "id": "Zp2xmQ0G3AXkbD7j",
+   "headline": "Vikings Remain High On Kyler Murray, Open To Trading For QB",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/vikings-remain-high-on-kyler-murray-open-to-trading-for-qb",
+   "timestamp": "2026-11-08T02:25:40.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kyler-murray"
+   ],
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "GgRMolPaiOTSNJb1",
+   "headline": "Ravens LB Roquan Smith fined for missed penalties vs. Bills’ Josh Allen, DJ Moore",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-lb-roquan-smith-fined-021711691.html",
+   "timestamp": "2026-11-08T02:17:11.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-allen",
+    "dj-moore"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "BUF"
+   ]
+  },
+  {
+   "id": "yKPtMj9-Bg-a7trW",
+   "headline": "Ravens film study: Zion Young stepping up after Tavius Robinson injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-film-study-zion-young-021359577.html",
+   "timestamp": "2026-11-08T02:13:59.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
   {
    "id": "8YkYByj8osGZ3YQ0",
    "headline": "Teams Interested In Falcons’ Jessie Bates; S Unlikely To Be Traded",
@@ -12,6 +170,28 @@
    "category": "breaking",
    "team_abbrs": [
     "ATL"
+   ]
+  },
+  {
+   "id": "76IGvl1vCQ_8eJ4I",
+   "headline": "J.J. McCarthy gets latest Giants road test in Philadelphia house of horrors",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-j-mccarthy-gets-latest-012809228.html",
+   "timestamp": "2026-11-08T01:28:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "0q_TAzAvo6PLyywK",
+   "headline": "Jets’ Joseph Ossai ‘extremely’ frustrated he will miss fourth straight game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jets-joseph-ossai-extremely-frustrated-012153997.html",
+   "timestamp": "2026-11-08T01:21:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -82,17 +262,13 @@
    ]
   },
   {
-   "id": "ZuXE3rdWgXpgs-tl",
-   "headline": "Ravens Will Not Trade Derrick Henry; Giants Called About RB Justice Hill",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/ravens-will-not-trade-derrick-henry-giants-called-about-rb-justice-hill",
-   "timestamp": "2026-11-08T00:42:19.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "derrick-henry"
-   ],
+   "id": "Rz-gFInTaYem9ttx",
+   "headline": "Chris Mara tells The Post what’s changed with J.J. McCarthy — two years after Giants passed on QB in draft",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chris-mara-tells-post-changed-001002119.html",
+   "timestamp": "2026-11-08T00:10:02.000Z",
+   "category": "breaking",
    "team_abbrs": [
-    "BAL",
     "NYG"
    ]
   },
@@ -200,6 +376,29 @@
    "team_abbrs": [
     "CIN",
     "TEN"
+   ]
+  },
+  {
+   "id": "s_6dtul-m1zze3_k",
+   "headline": "Giants can take commanding NFC East lead by ending Eagles nightmare",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-commanding-nfc-east-lead-231450157.html",
+   "timestamp": "2026-11-07T23:14:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "PHI"
+   ]
+  },
+  {
+   "id": "Fokd7Ik5CgcBxRS7",
+   "headline": "Top NFL draft prospect Drew Mestemaker has huge day with Jets GM Darren Mougey watching",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/top-nfl-draft-prospect-drew-230731153.html",
+   "timestamp": "2026-11-07T23:07:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
    ]
   },
   {
@@ -641,21 +840,6 @@
    ]
   },
   {
-   "id": "Nh4iyd3nWgXkvB5X",
-   "headline": "Colts Have Fourth-Round Offer For Josh Downs; Keenan Allen Drawing Interest",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-have-fourth-round-offer-for-josh-downs-keenan-allen-drawing-interest",
-   "timestamp": "2026-11-07T20:55:53.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen",
-    "josh-downs"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
    "id": "6U5qRZDVCbkjG76I",
    "headline": "Commanders Activate DT Jer’Zhan Newton From IR, Place WR Dyami Brown On IR",
    "source": "Pro Football Rumors",
@@ -712,20 +896,6 @@
    "url": "https://sports.yahoo.com/articles/colts-elevate-two-defensive-backs-202030630.html",
    "timestamp": "2026-11-07T20:20:30.000Z",
    "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "CyVUNH0aiSVMIe16",
-   "headline": "No Team Coming Close To Colts’ Jonathan Taylor Price",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/no-team-coming-close-to-colts-jonathan-taylor-price",
-   "timestamp": "2026-11-07T20:14:30.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
    "team_abbrs": [
     "IND"
    ]
@@ -1116,21 +1286,6 @@
    "team_abbrs": [
     "BUF",
     "MIN"
-   ]
-  },
-  {
-   "id": "8sO8vvVjnfva5q-M",
-   "headline": "Broncos Contacted Cardinals About TE Trey McBride",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/broncos-contacted-cardinals-about-te-trey-mcbride",
-   "timestamp": "2026-11-07T17:58:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "trey-mcbride"
-   ],
-   "team_abbrs": [
-    "ARI",
-    "DEN"
    ]
   },
   {
@@ -1570,164 +1725,6 @@
    "team_abbrs": [
     "CLE",
     "NO"
-   ]
-  },
-  {
-   "id": "Cvlvi54j8ryZ82CB",
-   "headline": "Broncos vs. Panthers: 3 Players to Watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-panthers-3-players-150000085.html",
-   "timestamp": "2026-11-07T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "DEN"
-   ]
-  },
-  {
-   "id": "a-Oc9vCCcOy0JBBw",
-   "headline": "Miami Dolphins vs. Detroit Lions: Three Reasons Why",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/miami-dolphins-vs-detroit-lions-150000111.html",
-   "timestamp": "2026-11-07T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIA"
-   ]
-  },
-  {
-   "id": "v5laILbL0KbTkgNu",
-   "headline": "Report: Colts are in trade talks regarding QB Daniel Jones",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/report-colts-trade-talks-regarding-145401899.html",
-   "timestamp": "2026-11-07T14:54:01.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "daniel-jones"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "q9NYTtOcGBsle-yW",
-   "headline": "Giants trade rumors: Ravens say Derrick Henry won’t be dealt",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-trade-rumors-ravens-derrick-144757496.html",
-   "timestamp": "2026-11-07T14:47:57.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "derrick-henry"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "NYG"
-   ]
-  },
-  {
-   "id": "7EgZNve9384ZZMRT",
-   "headline": "Quenton Nelson to miss Week 9's game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/quenton-nelson-miss-week-9s-144518204.html",
-   "timestamp": "2026-11-07T14:45:18.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "kYT45LQ_wAqfuvr9",
-   "headline": "Lions vs. Dolphins Week 9 preview: Madden 27 simulation",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-vs-dolphins-week-9-144500291.html",
-   "timestamp": "2026-11-07T14:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "MIA"
-   ]
-  },
-  {
-   "id": "w-WaZ6-WTPPLCqeG",
-   "headline": "Pre-Snap Reads: Seahawks’ depth will need to carry team tomorrow",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pre-snap-reads-seahawks-depth-144440436.html",
-   "timestamp": "2026-11-07T14:44:40.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "OLXKAHaZ7zIPLEX8",
-   "headline": "NFL trade deadline rumors: Colts' Daniel Jones could get dealt and there's only one team that makes sense",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-rumors-colts-daniel-jones-vikings/",
-   "timestamp": "2026-11-07T14:18:37.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "daniel-jones"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "7YFAGMTYAxO60N6u",
-   "headline": "Browns trade deadline rumor: GM Andrew Berry focused on 2 positions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-trade-deadline-rumor-gm-140936624.html",
-   "timestamp": "2026-11-07T14:09:36.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "FxE7cPms1UafbYdE",
-   "headline": "5 Things I Think I Think About the Miami Dolphins After Week 8",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-things-think-think-miami-140320290.html",
-   "timestamp": "2026-11-07T14:03:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "sYuqYmmRAQmTZ3yC",
-   "headline": "Chiefs News: Patrick Mahomes reminds us how he’s a great teammate",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-news-patrick-mahomes-reminds-140000940.html",
-   "timestamp": "2026-11-07T14:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "F4sKYzh1rYHfrKZI",
-   "headline": "Broncos vs. Panthers score predictions for Week 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-panthers-score-predictions-140000054.html",
-   "timestamp": "2026-11-07T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "DEN"
-   ]
-  },
-  {
-   "id": "Vy1DC0JOBvG0W9Nx",
-   "headline": "5 Bills to zero-in on at Vikings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/5-bills-zero-vikings-140000921.html",
-   "timestamp": "2026-11-07T14:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "MIN"
    ]
   }
  ]
