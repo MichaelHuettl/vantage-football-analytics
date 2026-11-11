@@ -1,8 +1,289 @@
 {
  "schema_version": 1,
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "db_SIq2P66hRawY4",
+   "headline": "Raiders Trade QB Kirk Cousins Back To Vikings",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/raiders-to-trade-qb-kirk-cousins-back-to-vikings",
+   "timestamp": "2026-11-11T05:30:07.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LV",
+    "MIN"
+   ]
+  },
+  {
+   "id": "cPxOWSMAxQZhSUTS",
+   "headline": "Chiefs To Acquire Josh Downs From Colts",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/chiefs-to-acquire-wr-josh-downs-from-colts",
+   "timestamp": "2026-11-11T05:14:10.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "josh-downs"
+   ],
+   "team_abbrs": [
+    "IND",
+    "KC"
+   ]
+  },
+  {
+   "id": "3DolTPR6ZTg3zida",
+   "headline": "Vikings Had Interest In Justin Herbert, Daniel Jones, Geno Smith",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/vikings-had-interest-in-justin-herbert-daniel-jones-geno-smith",
+   "timestamp": "2026-11-11T05:13:38.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "justin-herbert",
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "MREuPFWdTIalBnEX",
+   "headline": "Titans To Trade S Amani Hooker To Bills",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/titans-to-trade-s-amani-hooker-to-bills",
+   "timestamp": "2026-11-11T05:11:28.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "BUF",
+    "TEN"
+   ]
+  },
+  {
+   "id": "M3WLWgMoxiWZmGgE",
+   "headline": "49ers Acquire Keenan Allen From Colts",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/49ers-to-acquire-wr-keenan-allen",
+   "timestamp": "2026-11-11T05:10:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "SF"
+   ]
+  },
+  {
+   "id": "qdZqHa17vyx83_0x",
+   "headline": "Eagles-Bengals Arnold Ebiketie Trade Called Off",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/eagles-to-trade-arnold-ebiketie-to-bengals",
+   "timestamp": "2026-11-11T05:00:07.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CIN",
+    "PHI"
+   ]
+  },
+  {
+   "id": "w4_ugT0lPkXUg6O_",
+   "headline": "Cardinals Work Out QBs Cooper Rush, Trevor Siemian",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/cardinals-work-out-qbs-cooper-rush-trevor-siemian",
+   "timestamp": "2026-11-11T04:45:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "jIAyIpXGywCmDQbH",
+   "headline": "Packers Film Room: Packers defense picks off Drake Maye 3 times",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-film-room-packers-defense-040256019.html",
+   "timestamp": "2026-11-11T04:02:56.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "D6nGijHBCEemzV9k",
+   "headline": "Jets Work Out QBs Bailey Zappe, Austin Reed",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/jets-work-out-qbs-bailey-zappe-austin-reed",
+   "timestamp": "2026-11-11T03:42:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "tbquhiz98SHX4Ws3",
+   "headline": "CBA allows 49ers to not pay Brandon Aiyuk during two-week roster exemption",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cba-allows-49ers-not-pay-031224664.html",
+   "timestamp": "2026-11-11T03:12:24.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "NhtOfBIDBlLu8pBh",
+   "headline": "Justin Herbert, Khalil Mack remain with Chargers after trade deadline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/justin-herbert-khalil-mack-remain-025108237.html",
+   "timestamp": "2026-11-11T02:51:08.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "justin-herbert"
+   ],
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "0_hghFEA0nAsmS88",
+   "headline": "Cowboys Add RB Kendre Miller To Practice Squad",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/cowboys-add-rb-kendre-miller-to-practice-squad",
+   "timestamp": "2026-11-11T02:43:54.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "K2SvToMfkkPCP3Lb",
+   "headline": "Kansas City Chiefs roster",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kansas-city-chiefs-roster-003019778.html",
+   "timestamp": "2026-11-11T02:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "IkwKrS20M70lp-Cb",
+   "headline": "In Kirk Cousins, the Vikings landed their first choice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kirk-cousins-vikings-landed-first-020930243.html",
+   "timestamp": "2026-11-11T02:09:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "EiIfYZCccAsPyDrR",
+   "headline": "NFL Power Rankings Week 10: Commanders quickly running out of time to stick around in NFC East",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-10-020010457.html",
+   "timestamp": "2026-11-11T02:00:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "WBtuqUa-5WsmfWMw",
+   "headline": "49ers trade deadline grade reveals winners and losers from deals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-trade-deadline-grade-reveals-015212929.html",
+   "timestamp": "2026-11-11T01:52:12.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "LcPH-c_BJaqt7yx4",
+   "headline": "Jaguars-Ravens averages 13.96 million on Prime Video",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jaguars-ravens-averages-13-96-015132369.html",
+   "timestamp": "2026-11-11T01:51:32.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "JAX"
+   ]
+  },
+  {
+   "id": "AriYEpuUNG2pJnZA",
+   "headline": "NFL Practice Squad Updates: 11/10/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-practice-squad-updates-11-10-26",
+   "timestamp": "2026-11-11T01:37:00.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "0M3g30BcurspJlae",
+   "headline": "Patriots Power Rankings Week 10: Pats join mid-pack mediocrity",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-power-rankings-week-10-013546311.html",
+   "timestamp": "2026-11-11T01:35:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "CPwV_YViCRdkhLz_",
+   "headline": "NFL trade deadline: Ranking all 18 in-season deals as Kirk Cousins, Jeffery Simmons reshape Super Bowl race",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-ranking-all-18-deals-kirk-cousins-jeffery-simmons/",
+   "timestamp": "2026-11-11T01:27:42.000Z",
+   "category": "transaction"
+  },
+  {
+   "id": "fW2QEc5PGL2OFakP",
+   "headline": "Former Super Bowl champion says Rams are ‘toast’ after Puka Nacua injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/former-super-bowl-champion-says-012125895.html",
+   "timestamp": "2026-11-11T01:21:25.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "MedPevCeoZ42m4Ii",
+   "headline": "Shedeur Sanders or Deshaun Watson, who would you pick? Browns Reacts Survey",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/shedeur-sanders-deshaun-watson-pick-010945470.html",
+   "timestamp": "2026-11-11T01:09:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "8z6sdzFRh5aWj0w3",
+   "headline": "Miami Dolphins Discussion: Week 10 Game Vs Indianapolis Colts Predictions Edition",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-discussion-week-10-010000121.html",
+   "timestamp": "2026-11-11T01:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "MIA"
+   ]
+  },
+  {
+   "id": "MvbI_cUqK1qKvCL4",
+   "headline": "Chicago Bears Bye Week Confidence Check!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chicago-bears-bye-week-confidence-010000141.html",
+   "timestamp": "2026-11-11T01:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
   {
    "id": "LHHrbhPz0caXb3go",
    "headline": "Minor NFL Transactions: 11/10/26",
@@ -10,6 +291,14 @@
    "url": "https://www.profootballrumors.com/2026/11/minor-nfl-transactions-11-10-26",
    "timestamp": "2026-11-11T00:57:43.000Z",
    "category": "breaking"
+  },
+  {
+   "id": "c9eLu-av_pQJHlU-",
+   "headline": "NFL trade deadline aftermath: Which teams improved, which teams should have made moves",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-aftermath-vikings-chiefs-improve/",
+   "timestamp": "2026-11-11T00:55:18.000Z",
+   "category": "transaction"
   },
   {
    "id": "oZwEgA-DxqK3Hj4j",
@@ -35,6 +324,32 @@
    ],
    "team_abbrs": [
     "IND"
+   ]
+  },
+  {
+   "id": "jLdnFkFmzOwI9ITQ",
+   "headline": "Reggie Wayne jokes about needing to become a player-coach after Colts trade Josh Downs, Keenan Allen",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/reggie-wayne-jokes-about-needing-to-become-a-player-coach-after-colts-trade-josh-downs-keenan-allen-011432700.html",
+   "timestamp": "2026-11-11T00:52:54.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "josh-allen",
+    "josh-downs"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "zXoCAcCijye3EeA_",
+   "headline": "Dolphins workout multiple quarterbacks following Malik Willis injury news",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dolphins-workout-multiple-quarterbacks-following-004156944.html",
+   "timestamp": "2026-11-11T00:41:56.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "MIA"
    ]
   },
   {
@@ -92,7 +407,7 @@
   },
   {
    "id": "jf8lUwdUITYEinNs",
-   "headline": "Steelers Soured On Calvin Ridley; Pursued Brian Thomas Jr., Josh Downs",
+   "headline": "Steelers Soured On Calvin Ridley; Team Pursued Brian Thomas Jr., Josh Downs",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/11/steelers-soured-on-calvin-ridley-pursure-brian-thomas-jr-josh-downs",
    "timestamp": "2026-11-11T00:12:27.000Z",
@@ -124,6 +439,31 @@
    "category": "practice",
    "team_abbrs": [
     "WAS"
+   ]
+  },
+  {
+   "id": "Uj4JLpAgqF1eIz9h",
+   "headline": "Raiders offer blunt reasoning to holding onto Maxx Crosby at trade deadline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-offer-blunt-reasoning-holding-235720478.html",
+   "timestamp": "2026-11-10T23:57:20.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "3Mm70CWhX4h1yiu4",
+   "headline": "Rams make pair of wide receiver moves amid Puka Nacua injury after quiet trade deadline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-pair-wide-receiver-moves-235126788.html",
+   "timestamp": "2026-11-10T23:51:26.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
    ]
   },
   {
@@ -172,6 +512,20 @@
    ]
   },
   {
+   "id": "jL23NK8hPXJs0ngo",
+   "headline": "Rams fans pissed after trade deadline passes, and Matthew Stafford left holding bag",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-fans-pissed-trade-deadline-232603866.html",
+   "timestamp": "2026-11-10T23:26:03.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "matthew-stafford"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
    "id": "EM7gMOA8SC5ZdG00",
    "headline": "Cam Skattebo responds after Giants fail to trade for Jonathan Taylor: 'They know what I can do'",
    "source": "CBS Sports",
@@ -184,6 +538,17 @@
    ],
    "team_abbrs": [
     "NYG"
+   ]
+  },
+  {
+   "id": "Gb5wZk1d9S-ATEJB",
+   "headline": "What Vikings’ Kirk Cousins trade means for Odell Beckham Jr.’s roster spot",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/vikings-kirk-cousins-trade-means-231957659.html",
+   "timestamp": "2026-11-10T23:19:57.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "MIN"
    ]
   },
   {
@@ -240,21 +605,6 @@
    ],
    "team_abbrs": [
     "WAS"
-   ]
-  },
-  {
-   "id": "3DolTPR6ZTg3zida",
-   "headline": "Vikings Had Interest In Justin Herbert, Daniel Jones, Geno Smith",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/vikings-had-interest-in-justin-herbert-daniel-jones-geno-smith",
-   "timestamp": "2026-11-10T22:58:38.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "justin-herbert",
-    "daniel-jones"
-   ],
-   "team_abbrs": [
-    "MIN"
    ]
   },
   {
@@ -746,21 +1096,6 @@
    ]
   },
   {
-   "id": "cPxOWSMAxQZhSUTS",
-   "headline": "Chiefs To Acquire Josh Downs From Colts",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/chiefs-to-acquire-wr-josh-downs-from-colts",
-   "timestamp": "2026-11-10T20:43:10.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-downs"
-   ],
-   "team_abbrs": [
-    "IND",
-    "KC"
-   ]
-  },
-  {
    "id": "MHPU6QOTpPEaSADF",
    "headline": "NFL Week 10 picks and score predictions: Lions run over Patriots in Germany, Bengals survive",
    "source": "CBS Sports",
@@ -1163,18 +1498,6 @@
    ]
   },
   {
-   "id": "db_SIq2P66hRawY4",
-   "headline": "Raiders Trade QB Kirk Cousins Back To Vikings",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/raiders-to-trade-qb-kirk-cousins-back-to-vikings",
-   "timestamp": "2026-11-10T19:39:07.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "LV",
-    "MIN"
-   ]
-  },
-  {
    "id": "F-EgBhDXOKA_UsH5",
    "headline": "Vikings trade for Kirk Cousins: Minnesota reunites with former QB in deal with Raiders",
    "source": "Yahoo Sports",
@@ -1184,18 +1507,6 @@
    "team_abbrs": [
     "LV",
     "MIN"
-   ]
-  },
-  {
-   "id": "MREuPFWdTIalBnEX",
-   "headline": "Titans To Trade S Amani Hooker To Bills",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/titans-to-trade-s-amani-hooker-to-bills",
-   "timestamp": "2026-11-10T19:22:28.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BUF",
-    "TEN"
    ]
   },
   {
@@ -1253,18 +1564,6 @@
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/breaking-news/article/49ers-acquire-wr-keenan-allen-from-colts-give-up-2027-sixth-round-pick-201841239.html",
    "timestamp": "2026-11-10T18:43:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "SF"
-   ]
-  },
-  {
-   "id": "M3WLWgMoxiWZmGgE",
-   "headline": "49ers Acquire Keenan Allen From Colts",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/49ers-to-acquire-wr-keenan-allen",
-   "timestamp": "2026-11-10T18:40:24.000Z",
    "category": "breaking",
    "team_abbrs": [
     "IND",
@@ -1339,18 +1638,6 @@
    ]
   },
   {
-   "id": "qdZqHa17vyx83_0x",
-   "headline": "Eagles-Bengals Arnold Ebiketie Trade Called Off",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/eagles-to-trade-arnold-ebiketie-to-bengals",
-   "timestamp": "2026-11-10T17:28:07.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CIN",
-    "PHI"
-   ]
-  },
-  {
    "id": "DxaEg4Y60G513puh",
    "headline": "NFL Restructures: Madubuike, Ravens, Henry, Patriots, Panthers",
    "source": "Pro Football Rumors",
@@ -1415,6 +1702,18 @@
    ]
   },
   {
+   "id": "GSHT34wk7DX5mI8V",
+   "headline": "Fantasy Football Panic Meter: Matthew Stafford heads to Coping Corner after Puka Nacua injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-panic-meter-matthew-stafford-heads-to-coping-corner-after-puka-nacua-injury-153321689.html",
+   "timestamp": "2026-11-10T15:33:21.000Z",
+   "category": "injury",
+   "player_ids": [
+    "matthew-stafford",
+    "puka-nacua"
+   ]
+  },
+  {
    "id": "KMbAm727ks3Pguw0",
    "headline": "Prisco's NFL Week 10 Power Rankings: Top 5 remains same, Bengals and Packers surging thanks to MVP candidates",
    "source": "CBS Sports",
@@ -1447,297 +1746,6 @@
    "category": "transaction",
    "team_abbrs": [
     "MIN"
-   ]
-  },
-  {
-   "id": "80bIwExrAOQa5It9",
-   "headline": "Josh Allen, Bills suffocate Vikings; NFL trade deadline day arrives with big names on the market",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/josh-allen-bills-vikings-mnf-nfl-trade-deadline-market/",
-   "timestamp": "2026-11-10T13:49:55.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "josh-allen"
-   ],
-   "team_abbrs": [
-    "BUF",
-    "MIN"
-   ]
-  },
-  {
-   "id": "IpwkDNGWnULYWpzY",
-   "headline": "Vikings Expected To Explore QB Trade",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/vikings-expected-to-explore-qb-trade",
-   "timestamp": "2026-11-10T12:57:02.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "xlTaBOcj-am63MM1",
-   "headline": "NFL Draft 2027: Updated order after Jaguars-Eagles trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-draft-2027-updated-order-123000070.html",
-   "timestamp": "2026-11-10T12:30:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "JAX",
-    "PHI"
-   ]
-  },
-  {
-   "id": "JVNoTSAmYqsIp-BE",
-   "headline": "Dolphins vs. Colts odds: Opening lines for Week 10 matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-vs-colts-odds-opening-123000861.html",
-   "timestamp": "2026-11-10T12:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "MIA"
-   ]
-  },
-  {
-   "id": "xb9gU94uAhTeFunG",
-   "headline": "NFL Boilers – Weeks 8 & 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-boilers-weeks-8-9-122939426.html",
-   "timestamp": "2026-11-10T12:29:39.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "rA9kuLYJyvi-PD8d",
-   "headline": "Tennessee Titans news: How many more deals are coming?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tennessee-titans-news-many-more-120000539.html",
-   "timestamp": "2026-11-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "6XAXpZmNF80fo9tq",
-   "headline": "Cowboys news: Dallas will be missing a starter, role players due to injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-news-dallas-missing-starter-120000186.html",
-   "timestamp": "2026-11-10T12:00:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "LZv8nBBI8tLu7vg0",
-   "headline": "Discussion: What is your dream trade deadline move for the Detroit Lions?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/discussion-dream-trade-deadline-move-120000091.html",
-   "timestamp": "2026-11-10T12:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "cNvWTbkyFMGZHYsi",
-   "headline": "6 potential Patriots targets ahead of the NFL trade deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/6-potential-patriots-targets-ahead-120000057.html",
-   "timestamp": "2026-11-10T12:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "NfoQyh_3X01a3c3k",
-   "headline": "Snaps and analysis from the Broncos win over the Panthers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/snaps-analysis-broncos-win-over-120000516.html",
-   "timestamp": "2026-11-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "DEN"
-   ]
-  },
-  {
-   "id": "oikQ-YhZXi1gHtHV",
-   "headline": "Bengals Tuesday Trenches: Super in Spain, SNF and more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bengals-tuesday-trenches-super-spain-120000907.html",
-   "timestamp": "2026-11-10T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "LCROIgnxIv02UkE9",
-   "headline": "New York Jets News: Decision Time on NFL Trade Deadline Day",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/york-jets-news-decision-time-120000304.html",
-   "timestamp": "2026-11-10T12:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "rIZaEsFZtyQYElF6",
-   "headline": "Greg Rousseau: Bills defense showing \"what we can do\" over last two weeks",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/greg-rousseau-bills-defense-showing-115709726.html",
-   "timestamp": "2026-11-10T11:57:09.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "OQ4i6TLkvGYyPJZT",
-   "headline": "NFL power rankings Week 10: How will trade deadline affect pecking order?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-10-113245399.html",
-   "timestamp": "2026-11-10T11:32:45.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "eX3VT2NfWsw-qyZm",
-   "headline": "The Good, The Bad and The Ugly in Bengals’ 34-17 win over Falcons in Madrid",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/good-bad-ugly-bengals-34-113000483.html",
-   "timestamp": "2026-11-10T11:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL",
-    "CIN"
-   ]
-  },
-  {
-   "id": "IVh0Dmr-M8O51AUJ",
-   "headline": "Patriots injury analysis: The hits just keep coming",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-injury-analysis-hits-just-112312603.html",
-   "timestamp": "2026-11-10T11:23:12.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "a9FumZkiS4BxnruJ",
-   "headline": "What are the worst NFL trade deadline deals ever? These 7 top the list",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/worst-nfl-trade-deadline-deals-110234488.html",
-   "timestamp": "2026-11-10T11:02:34.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "HsvXZuFUEXj3supR",
-   "headline": "Giants news: Trade deadline day, Cam Skattebo should be ‘full-go’, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-news-trade-deadline-day-110000023.html",
-   "timestamp": "2026-11-10T11:00:00.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "cam-skattebo"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "YkMqNm_CJTgvK5G7",
-   "headline": "Ravens news: Eric DeCosta gets mixed grades for Jacoby Brissett trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ravens-news-eric-decosta-gets-110000510.html",
-   "timestamp": "2026-11-10T11:00:00.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jacoby-brissett"
-   ],
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "3xo9oMpISzm5YfI4",
-   "headline": "Chiefs News: 3 Chiefs players labeled as ‘Day-to-Day’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-news-3-chiefs-players-110000630.html",
-   "timestamp": "2026-11-10T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "4OvRTCuBQQufQrah",
-   "headline": "The Bear’s Den: Bears take sole possession of NFC North",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bear-den-bears-sole-possession-110000767.html",
-   "timestamp": "2026-11-10T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "dF2Okga4T7-93IdD",
-   "headline": "Cleveland Browns news: It’s the most insufferable time of the year",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-most-insufferable-110000687.html",
-   "timestamp": "2026-11-10T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "msYdFQSy6d3QWqDU",
-   "headline": "Patriots CB Christian Gonzalez had a game so bad, he did something never seen before",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-cb-christian-gonzalez-had-105638274.html",
-   "timestamp": "2026-11-10T10:56:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "RSrInYDg8vi6hJx4",
-   "headline": "James Cook's 31 carries vs. Vikings were the most in any NFL game this season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/james-cooks-31-carries-vs-100610559.html",
-   "timestamp": "2026-11-10T10:06:10.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "james-cook"
-   ],
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "wHA72fBCzspRUIZI",
-   "headline": "2026 NFL Trade Deadline live updates: Tracker, deals, news, rumors, analysis",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfl-trade-deadline-live-165219645.html",
-   "timestamp": "2026-11-10T10:01:00.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "9omkZBzaQ5SBohIc",
-   "headline": "Patriots continue losing ground in the AFC East in Week 9",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/afc-playoff-picture-patriots-hold-012247436.html",
-   "timestamp": "2026-11-10T10:00:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
    ]
   }
  ]
