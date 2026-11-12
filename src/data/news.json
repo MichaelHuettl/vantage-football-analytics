@@ -1,8 +1,496 @@
 {
  "schema_version": 1,
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "92Fkj7FhVIPA4XIg",
+   "headline": "Best available free agent edge rushers for Bengals to target after failed Arnold Ebiketie trade",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/best-available-free-agent-edge-113000983.html",
+   "timestamp": "2026-11-12T11:30:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "LgTIwYc3aGHS_5w6",
+   "headline": "What channel is the NFL game on today? Time, schedule for 'Thursday Night Football'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/channel-nfl-game-today-time-110346002.html",
+   "timestamp": "2026-11-12T11:03:46.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "oNcHyMk2k0E2IHW4",
+   "headline": "Is there a Thursday Night Football game tonight? NFL Week 10 schedule",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/thursday-night-football-game-tonight-110221959.html",
+   "timestamp": "2026-11-12T11:02:21.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "MvB-M019F03CivuI",
+   "headline": "Cleveland Browns news: Silencing the QB noise",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cleveland-browns-news-silencing-qb-110000405.html",
+   "timestamp": "2026-11-12T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "AzzUsuCoc1RWaLh8",
+   "headline": "Will the Broncos make any changes to the starting lineup over the bye week?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-changes-starting-lineup-over-110000136.html",
+   "timestamp": "2026-11-12T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "POHo_rzaY4kEfcKy",
+   "headline": "Mack Hollins happy with Patriots’ response after post-game challenge",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mack-hollins-happy-patriots-response-110000871.html",
+   "timestamp": "2026-11-12T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "jGlcf6UGgQkPqTw4",
+   "headline": "NFL Week 10 picks: Packers prevail over Vikings; Steelers beat Bengals",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-10-picks-packers-110000575.html",
+   "timestamp": "2026-11-12T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "GB",
+    "MIN",
+    "PIT"
+   ]
+  },
+  {
+   "id": "sVD1QU8fKNW2nlR1",
+   "headline": "Giants news: Game preview, Arvell Reese named Defensive Player Of The Week, more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-news-game-preview-arvell-110000603.html",
+   "timestamp": "2026-11-12T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "cColSzJ0Gl4x4aZ0",
+   "headline": "Which NFL trade do you wish the Lions had made?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-trade-wish-lions-had-110000243.html",
+   "timestamp": "2026-11-12T11:00:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "3TNxdYJFuy0s7CAi",
+   "headline": "Washington Commanders vs New York Giants Week 10: Five Questions with Big Blue View",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/washington-commanders-vs-york-giants-110000574.html",
+   "timestamp": "2026-11-12T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG",
+    "WAS"
+   ]
+  },
+  {
+   "id": "ScVwF4fBFxpbBCuU",
+   "headline": "Packers-Patriots on Fox leads Week 9 with 25.7 million",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-patriots-fox-leads-week-105355074.html",
+   "timestamp": "2026-11-12T10:53:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "NE"
+   ]
+  },
+  {
+   "id": "iGLChVjKr2peovTU",
+   "headline": "Golden Nuggets: We’re on to the Dallas Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/golden-nuggets-dallas-cowboys-101500480.html",
+   "timestamp": "2026-11-12T10:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "pKLCZ3gGktbUzrAP",
+   "headline": "How to watch Commanders vs Giants: TV, radio, streaming, Week 10 injury report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/watch-commanders-vs-giants-tv-100000605.html",
+   "timestamp": "2026-11-12T10:00:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG",
+    "WAS"
+   ]
+  },
+  {
+   "id": "-s-CWQMBlOcoXNkO",
+   "headline": "Patriots opponent preview: More offensive firepower awaits in Week 10",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/patriots-opponent-preview-more-offensive-100000135.html",
+   "timestamp": "2026-11-12T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "_ZxXnzAJpzbpztfe",
+   "headline": "NFL midseason awards: Allen’s brilliance, a Seahawks shocker and a new Super Bowl pick",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-midseason-awards-allen-brilliance-093014542.html",
+   "timestamp": "2026-11-12T09:30:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "uT5Bdip1zC5GlKKa",
+   "headline": "Broncos, Chargers announce Daiyan Henley will not be traded after all",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-chargers-announce-daiyan-henley-092338516.html",
+   "timestamp": "2026-11-12T09:23:38.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "LAC"
+   ]
+  },
+  {
+   "id": "cpKLs9PTlWRtAw4l",
+   "headline": "UW Huskies Film Study: Penn State Nittany Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/uw-huskies-film-study-penn-082937141.html",
+   "timestamp": "2026-11-12T08:29:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "DpwWnhMQ90rhXyaj",
+   "headline": "Lions, Patriots Week 10 injury report: Jared Goff limited; DJ Wonnum returns to practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-patriots-week-10-injury-211643861.html",
+   "timestamp": "2026-11-12T08:08:29.000Z",
+   "category": "injury",
+   "player_ids": [
+    "jared-goff"
+   ],
+   "team_abbrs": [
+    "DET",
+    "NE"
+   ]
+  },
+  {
+   "id": "wpyy-Do7jqHPK-Os",
+   "headline": "Daniel Jones bluntly says he’s ‘not happy’ with Colts trade deadline fire sale",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daniel-jones-bluntly-says-not-063756409.html",
+   "timestamp": "2026-11-12T06:37:56.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "KiuAjGUfaA5k7V-X",
+   "headline": "Broncos trade with Chargers for Daiyan Henley called off in stunner",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-trade-chargers-daiyan-henley-062049049.html",
+   "timestamp": "2026-11-12T06:20:49.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DEN",
+    "LAC"
+   ]
+  },
+  {
+   "id": "pwFRAyjR0e588D0P",
+   "headline": "Broncos announce trade for Chargers' Daiyan Henley 'will not be finalized'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-announce-trade-chargers-daiyan-060035563.html",
+   "timestamp": "2026-11-12T06:00:35.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DEN",
+    "LAC"
+   ]
+  },
+  {
+   "id": "6-PCre7vlOkxJgLH",
+   "headline": "Broncos announce trade with Chargers for LB Daiyan Henley is called off",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-announce-trade-chargers-lb-054535108.html",
+   "timestamp": "2026-11-12T05:45:35.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DEN",
+    "LAC"
+   ]
+  },
+  {
+   "id": "IQ_2oB0kztpe9ybk",
+   "headline": "Broncos' deal for Chargers LB Daiyan Henley falls through after NFL trade deadline",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/broncos-deal-for-chargers-lb-daiyan-henley-falls-through-after-nfl-trade-deadline-060825628.html",
+   "timestamp": "2026-11-12T05:43:50.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DEN",
+    "LAC"
+   ]
+  },
+  {
+   "id": "QMxQiwR3fAgNSq0D",
+   "headline": "The Broncos trade for Daiyan Henley will not be finalized",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-trade-daiyan-henley-not-053328942.html",
+   "timestamp": "2026-11-12T05:33:28.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "2rw4U1t3eEWRG5Aj",
+   "headline": "Broncos-Bolts’ Daiyan Henley Trade Nixed",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/broncos-chargers-daiyan-henley-trade-nixed",
+   "timestamp": "2026-11-12T05:23:41.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "nLhHD08WqJ0l_i2F",
+   "headline": "NFL midseason grades: 2 teams go from Super Bowl hopes to Fs, while overachieving Giants, Browns receive high praise",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-midseason-grades-2-teams-go-from-super-bowl-hopes-to-fs-while-overachieving-giants-browns-receive-high-praise-045511698.html",
+   "timestamp": "2026-11-12T04:55:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "NYG"
+   ]
+  },
+  {
+   "id": "_1CbuaoOO9xi7u94",
+   "headline": "Panthers injury report is full of reinforcements",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-injury-report-full-reinforcements-044729589.html",
+   "timestamp": "2026-11-12T04:47:29.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "s9QQ4oR5DpF9oriI",
+   "headline": "Giants Inquired About Bijan Robinson",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/giants-inquired-about-bijan-robinson",
+   "timestamp": "2026-11-12T04:40:49.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "bijan-robinson"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "ESQZ_A2KygcMznrF",
+   "headline": "Colts Turned Down Pair Of Day 3 Picks For DT Grover Stewart",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/colts-turned-down-pair-of-day-3-picks-for-dt-grover-stewart",
+   "timestamp": "2026-11-12T04:23:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "NUz-rAZ8SToZgj8O",
+   "headline": "Cardinals’ Gardner Minshew Needs UCL Surgery; QB Carson Beck Named Starter",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/cardinals-fear-gardner-minshew-suffered-ucl-tear",
+   "timestamp": "2026-11-12T04:17:08.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "oyLB9K7J2cx9oNxR",
+   "headline": "Day off for Jaxon Smith-Njigba",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/day-off-jaxon-smith-njigba-041120115.html",
+   "timestamp": "2026-11-12T04:11:20.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxon-smith-njigba"
+   ]
+  },
+  {
+   "id": "eW60T8z47kn2pOb9",
+   "headline": "Puka Nacua unable to practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/puka-nacua-unable-practice-030459758.html",
+   "timestamp": "2026-11-12T03:04:59.000Z",
+   "category": "practice",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "9jli1cn8_EA6zCG7",
+   "headline": "Calvin Ridley — $92 million NFL star — reveals what happened during airport incident",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/calvin-ridley-92-million-nfl-024057476.html",
+   "timestamp": "2026-11-12T02:40:57.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "qDfuhq9peXXZET8U",
+   "headline": "Matthew Stafford defiant as Rams face injury crisis without Puka Nacua, Davante Adams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/matthew-stafford-defiant-rams-face-022150243.html",
+   "timestamp": "2026-11-12T02:21:50.000Z",
+   "category": "injury",
+   "player_ids": [
+    "matthew-stafford",
+    "puka-nacua",
+    "davante-adams"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "E_D-avNtIcEwMBa0",
+   "headline": "Jordan Davis trade grades: Eagles celebrated, Jaguars dragged",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jordan-davis-trade-grades-eagles-102943943.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "JAX",
+    "PHI"
+   ]
+  },
+  {
+   "id": "Nq6ZcknZPbv6EqbR",
+   "headline": "Warning to NFL general managers: Howie Roseman is about to fleece you",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/warning-nfl-general-managers-howie-023500135.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "3hOItSyFyW7ZRTZe",
+   "headline": "Eagles snap counts: What happens after Jordan Davis trade?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-snap-counts-happens-jordan-070000966.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "Oaj-nXEqCEbL5hUs",
+   "headline": "The next step for the Eagles at DT after trading Jordan Davis",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/next-step-eagles-dt-trading-070000843.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "IT32anIPHU14_fxC",
+   "headline": "Eagles down 1 RB on active roster after waiving Blue",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-down-1-rb-active-173058718.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "frMQhB3VbvbNjBTR",
+   "headline": "An Eagles rookie progress report at the midway point of 2026 season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-rookie-progress-report-midway-023500155.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "bhzm7ZFFpZTtbJ5v",
+   "headline": "Bengals back out of trade with Eagles for Arnold Ebiketie",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bengals-back-trade-eagles-arnold-111819846.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CIN",
+    "PHI"
+   ]
+  },
+  {
+   "id": "XXpE0L1UQQWJaUwf",
+   "headline": "A blockbuster! Eagles trade Jordan Davis to Jaguars for 1st- and 2nd-round picks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/blockbuster-eagles-trade-jordan-davis-171924572.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "JAX",
+    "PHI"
+   ]
+  },
+  {
+   "id": "yoidkNJpXYRArsSp",
+   "headline": "Who is playing in NFL Week 10? Here's the full schedule",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/playing-nfl-week-10-heres-095123121.html",
+   "timestamp": "2026-11-12T02:04:02.000Z",
+   "category": "breaking"
+  },
   {
    "id": "Vw8MMtm1Nl0jSsNE",
    "headline": "Patrick Mahomes able to practice Wednesday",
@@ -23,6 +511,17 @@
    "category": "breaking",
    "team_abbrs": [
     "KC"
+   ]
+  },
+  {
+   "id": "5XeJbICPNVI19UMs",
+   "headline": "Cooper Kupp calls Klint Kubiak a different guy with Raiders than he was in Seattle",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cooper-kupp-calls-klint-kubiak-015659469.html",
+   "timestamp": "2026-11-12T01:56:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
    ]
   },
   {
@@ -839,21 +1338,6 @@
    ]
   },
   {
-   "id": "DpwWnhMQ90rhXyaj",
-   "headline": "Lions, Patriots Week 10 injury report: Jared Goff limited; DJ Wonnum returns to practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-patriots-week-10-injury-211643861.html",
-   "timestamp": "2026-11-11T21:16:43.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jared-goff"
-   ],
-   "team_abbrs": [
-    "DET",
-    "NE"
-   ]
-  },
-  {
    "id": "VsaO9C4rtTRoAO-D",
    "headline": "Why Packers' Jordan Love is the 2026 midseason MVP: Green Bay QB dominating with no help",
    "source": "CBS Sports",
@@ -1213,17 +1697,6 @@
    ]
   },
   {
-   "id": "ESQZ_A2KygcMznrF",
-   "headline": "Colts Turned Down Pair Of Day 3 Picks For DT Grover Stewart",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-turned-down-pair-of-day-3-picks-for-dt-grover-stewart",
-   "timestamp": "2026-11-11T18:23:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
    "id": "F0l3B9B8OQGN8ttP",
    "headline": "Week 10 QB Power Rankings: There's a new No. 1, while Caleb Williams drops out of top 10",
    "source": "CBS Sports",
@@ -1233,468 +1706,6 @@
    "player_ids": [
     "caleb-williams"
    ]
-  },
-  {
-   "id": "ezyj51gtgRsPTqMX",
-   "headline": "GM Mike Borgonzi: Titans Would ‘Love To Have’ Tony Pollard Back In 2027",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/gm-mike-borgonzi-titans-would-love-to-have-tony-pollard-back-in-2027",
-   "timestamp": "2026-11-11T17:54:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "kXj_zroamC5BGyBc",
-   "headline": "Former NFL head coach Rex Ryan arrested by Nashville police for allegedly striking two pedestrians with truck",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/former-nfl-head-coach-rex-ryan-arrested-nashville-police-striking-two-pedestrians-truck/",
-   "timestamp": "2026-11-11T17:38:59.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "bjB6KIG8pE-YqUAp",
-   "headline": "Colts Designate DE Arden Key For Return",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-designate-de-arden-key-for-return",
-   "timestamp": "2026-11-11T17:08:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "SmW1e-uhIP4T8rH7",
-   "headline": "Browns QB Deshaun Watson will start against Texans after spending time in concussion protocol, missing 1 game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/browns-qb-deshaun-watson-will-start-against-texans-after-spending-time-in-concussion-protocol-missing-1-game-165043093.html",
-   "timestamp": "2026-11-11T16:50:43.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE",
-    "HOU"
-   ]
-  },
-  {
-   "id": "PC0sPV02pCjB4oxI",
-   "headline": "Kirk Cousins traded to Vikings: Raiders gave QB option to stay or leave franchise, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/kirk-cousins-traded-vikings-raiders-gave-option-stay-leave-franchise-per-report/",
-   "timestamp": "2026-11-11T16:21:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "MIN"
-   ]
-  },
-  {
-   "id": "LyTOFUBNSen6J2fw",
-   "headline": "NFL pretenders and contenders after Week 9: NFC North is fierce, no faith in Giants and Steelers",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-pretenders-and-contenders-for-week-10-nfc-north-giants-steelers/",
-   "timestamp": "2026-11-11T15:56:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG",
-    "PIT"
-   ]
-  },
-  {
-   "id": "Ajr1SIWJZ9sIB8H5",
-   "headline": "NFL Panic Meter: While other NFC contenders loaded up at deadline, Rams and Lions were quiet",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-panic-meter-while-other-nfc-contenders-loaded-up-at-deadline-rams-and-lions-were-quiet-154129988.html",
-   "timestamp": "2026-11-11T15:41:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "LAR"
-   ]
-  },
-  {
-   "id": "Hv9aUIBUzpzmuPgr",
-   "headline": "Cat Scratch Reader Reacts Week 9: Confidence and outrage",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cat-scratch-reader-reacts-week-153359308.html",
-   "timestamp": "2026-11-11T15:33:59.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "VPHeA_q2RdbgRmY4",
-   "headline": "Giants attempted to trade for Falcons star RB Bijan Robinson at trade deadline, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/giants-attempted-to-trade-for-falcons-bijan-robinson-trade-deadline/",
-   "timestamp": "2026-11-11T15:31:35.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "bijan-robinson"
-   ],
-   "team_abbrs": [
-    "ATL",
-    "NYG"
-   ]
-  },
-  {
-   "id": "dB7IrLOZJXcCes3H",
-   "headline": "Bears v. Buccaneers Upon Further Review: A Closer Look at the Referees",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-v-buccaneers-upon-further-153000618.html",
-   "timestamp": "2026-11-11T15:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "TB"
-   ]
-  },
-  {
-   "id": "nuamJOxAfh0P9MIQ",
-   "headline": "Cowboys rookie report: One player rises above the rest",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-rookie-report-one-player-153000278.html",
-   "timestamp": "2026-11-11T15:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "KIGwEFIfzNiL0yUL",
-   "headline": "Eagles News: Howie Roseman among biggest winners from the NFL trade deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-howie-roseman-among-152213787.html",
-   "timestamp": "2026-11-11T15:22:13.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "YYUKRuILoBzR3eyK",
-   "headline": "Green Bay Packers News: Packers stand pat at trade deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/green-bay-packers-news-packers-151550458.html",
-   "timestamp": "2026-11-11T15:15:50.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "uWo7IVPc5d6UwyAk",
-   "headline": "Browns to start Deshaun Watson over Shedeur Sanders in Week 10 vs. Texans, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/browns-start-deshaun-watson-over-shedeur-sanders-texans/",
-   "timestamp": "2026-11-11T15:06:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "HOU"
-   ]
-  },
-  {
-   "id": "GlcCu4OKWXOsTN5J",
-   "headline": "Raiders ended up buying a third-round pick for $650,000",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-ended-buying-third-round-150531103.html",
-   "timestamp": "2026-11-11T15:05:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "zeNYm6TBO0EMRGyE",
-   "headline": "Duval Dispatch: Grade the Jaguars’ deadline trades!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/duval-dispatch-grade-jaguars-deadline-150242072.html",
-   "timestamp": "2026-11-11T15:02:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "cSrs87XdHsy4_vk-",
-   "headline": "Have the Saints finally cleaned up their discipline issues?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-finally-cleaned-discipline-issues-150000194.html",
-   "timestamp": "2026-11-11T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "2oIEP7hGrNL3YKVh",
-   "headline": "NFLSU Week 9 Report Card",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nflsu-week-9-report-card-150000523.html",
-   "timestamp": "2026-11-11T15:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "699LMnf97ATaKY2m",
-   "headline": "Commanders finally face true “must win” game to keep their season alive - Daily Slop",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/commanders-finally-face-true-must-133000883.html",
-   "timestamp": "2026-11-11T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "fp19N09Ousr11NoD",
-   "headline": "The Chiefs’ pass rush came alive against the Jets",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-pass-rush-came-alive-150000176.html",
-   "timestamp": "2026-11-11T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "PP_6qND4KtTAGDe-",
-   "headline": "Saints Super Bowl Odds: Week 10",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-super-bowl-odds-week-150000225.html",
-   "timestamp": "2026-11-11T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
-   "id": "3YiSkqO4VAZJZrEl",
-   "headline": "Rams cited as potential Brandon Aiyuk destination",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-cited-potential-brandon-aiyuk-150000584.html",
-   "timestamp": "2026-11-11T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "b6c8tnr0qf3sxVmG",
-   "headline": "Steelers midseason awards: Defensive Player of the Year",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-midseason-awards-defensive-player-150000506.html",
-   "timestamp": "2026-11-11T15:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "gjs-6SDVgubYmvaM",
-   "headline": "Week 10 NFL odds, picks, predictions: Computer model backs Bills and Texans",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-bets-week-10-2026/",
-   "timestamp": "2026-11-11T14:55:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "HOU"
-   ]
-  },
-  {
-   "id": "Ky1aSy7Rc5JfURCH",
-   "headline": "NFL trade deadline, odds: 3 bets that I like right now, including Fernando Mendoza to win Rookie of the Year",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/nfl-trade-deadline-odds-3-bets-that-i-like-right-now-including-fernando-mendoza-to-win-rookie-of-the-year-145303292.html",
-   "timestamp": "2026-11-11T14:53:03.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "IID32wJmclYSctzo",
-   "headline": "Los Angeles Chargers news: Daiyan Henley appreciation thread",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/los-angeles-chargers-news-daiyan-145000090.html",
-   "timestamp": "2026-11-11T14:50:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "s9QQ4oR5DpF9oriI",
-   "headline": "Giants Inquired About Bijan Robinson",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/giants-inquired-about-bijan-robinson",
-   "timestamp": "2026-11-11T14:49:49.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "bijan-robinson"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "_rH03_fmwKj2Plmj",
-   "headline": "Vikings/Packers Coverage Map: Most of the Country to Get NFC North Rematch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/vikings-packers-coverage-map-most-144701265.html",
-   "timestamp": "2026-11-11T14:47:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "MIN"
-   ]
-  },
-  {
-   "id": "aIFVSYZ8CwDeiS8r",
-   "headline": "Browns roster: 4 moves after trade deadline, including bringing back 2 familiar names",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-roster-4-moves-trade-144223240.html",
-   "timestamp": "2026-11-11T14:42:23.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "ZN1Pd6f4fUsyjNIA",
-   "headline": "Titans’ 3 biggest 2027 cap hits after 2026 trade deadline",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-3-biggest-2027-cap-143000336.html",
-   "timestamp": "2026-11-11T14:30:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "kmXkvWzKm8a-Uvfz",
-   "headline": "Browns roster has several players listed on the midseason All-Rookie Team",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-roster-several-players-listed-142328664.html",
-   "timestamp": "2026-11-11T14:23:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "WDCh9hMV0K2_OVKr",
-   "headline": "10 Fantasy Football Takeaways from Week 9: Jonah Coleman takes over, Breece Hall is back",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/10-fantasy-football-takeaways-week-142221304.html",
-   "timestamp": "2026-11-11T14:22:21.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "breece-hall"
-   ]
-  },
-  {
-   "id": "2Izc8mTcyGOjWXbr",
-   "headline": "Giants RB Cam Skattebo: ‘I know what I’m capable of’",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-rb-cam-skattebo-know-142033279.html",
-   "timestamp": "2026-11-11T14:20:33.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "cam-skattebo"
-   ],
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "8XeT6e8XEwckz1u9",
-   "headline": "Browns plan on starting Deshaun Watson against Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/reports-browns-still-plan-starting-142012736.html",
-   "timestamp": "2026-11-11T14:20:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "HOU"
-   ]
-  },
-  {
-   "id": "IXILgA5hUvqJwHEw",
-   "headline": "Puka Nacua: May be tracking for Week 14 or 15 return",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/puka-nacua-16790",
-   "timestamp": "2026-11-11T14:11:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "ODfi64x1BGkIXgtB",
-   "headline": "NFL midseason surprises: 6 teams and players nobody saw coming",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-midseason-surprises-6-teams-140000103.html",
-   "timestamp": "2026-11-11T14:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "-br8iik0J4rhD9y1",
-   "headline": "Pre-Snap Reads: Seahawks hold steady as trade deadline passes",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pre-snap-reads-seahawks-hold-140000645.html",
-   "timestamp": "2026-11-11T14:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "1UXuDFJaPmpD1YNv",
-   "headline": "Breaking Down the Bears Jeffery Simmons Trade",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/breaking-down-bears-jeffery-simmons-140000054.html",
-   "timestamp": "2026-11-11T14:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "p3DX9guw-4otKgfv",
-   "headline": "Cowboys are still reaping the benefits of previous big trade deadline move",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-still-reaping-benefits-previous-140000204.html",
-   "timestamp": "2026-11-11T14:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "1efI0Zmiv9idjS5h",
-   "headline": "Weekly Stat Review: Post Week 9 edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/weekly-stat-review-post-week-135900679.html",
-   "timestamp": "2026-11-11T13:59:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "1ykwflj5m22mjfF0",
-   "headline": "Are the Rams or Cardinals healthy entering Week 10?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-cardinals-healthy-entering-week-135900168.html",
-   "timestamp": "2026-11-11T13:59:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "LAR"
-   ]
-  },
-  {
-   "id": "M0yeMz02GEQGZJIL",
-   "headline": "Fernando Mendoza new favorite to win Offensive Rookie of the Year ahead of his first NFL start",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/raiders-fernando-mendoza-offensive-rookie-year-favorite-first-nfl-start/",
-   "timestamp": "2026-11-11T13:57:32.000Z",
-   "category": "breaking"
   }
  ]
 }
