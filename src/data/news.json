@@ -1,8 +1,711 @@
 {
  "schema_version": 1,
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "N1M_xnhp0KqSUYX7",
+   "headline": "49ers stun Cowboys, Chiefs and Bengals impress - NFL week 10",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-stun-cowboys-chiefs-bengals-073556398.html",
+   "timestamp": "2026-11-16T12:53:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "DAL",
+    "KC",
+    "SF"
+   ]
+  },
+  {
+   "id": "ZcCF4zuEl_qrTaZv",
+   "headline": "2027 NFL Draft order, team needs: Full first-round picks for all 32 teams entering Week 11",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/2027-nfl-draft-order-team-needs-first-round-picks-week-11/",
+   "timestamp": "2026-11-16T12:31:30.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "X5oOt2CC6U0fxuIf",
+   "headline": "Seahawks' team doctor OK after getting hit in the face by a Fernando Mendoza pass",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-team-doctor-ok-getting-123013813.html",
+   "timestamp": "2026-11-16T12:30:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "9TLyNX6RHKgJl9VV",
+   "headline": "NFL playoff picture after the Browns join the party in Week 10",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-playoff-picture-browns-join-123000372.html",
+   "timestamp": "2026-11-16T12:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "-HvLe7F6MqhzYoqA",
+   "headline": "Ravens discussion: loss to Chargers would be most embarrassing since…?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-discussion-loss-chargers-most-123000886.html",
+   "timestamp": "2026-11-16T12:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "LAC"
+   ]
+  },
+  {
+   "id": "ge3C03tA3ObWj234",
+   "headline": "Drake Maye: Could be dealing with significant lower-leg inury",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/drake-maye-17673",
+   "timestamp": "2026-11-16T12:25:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
+   "id": "voTKPuhmrXXv6y9P",
+   "headline": "Steelers' receiver problem proves they made a massive NFL trade deadline mistake",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/steelers-bengals-blowout-nfl-trade-deadline-aaron-rodgers/",
+   "timestamp": "2026-11-16T12:18:36.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "_mF2I0SNNoucusW7",
+   "headline": "Josh Downs \"excited to keep building\" connection with Patrick Mahomes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/josh-downs-excited-keep-building-121201390.html",
+   "timestamp": "2026-11-16T12:12:01.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes",
+    "josh-downs"
+   ]
+  },
+  {
+   "id": "_egZdfgiMNqNNJ-i",
+   "headline": "What the reported Drake Maye injury means for the Patriots",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/reported-drake-maye-injury-means-120920022.html",
+   "timestamp": "2026-11-16T12:09:20.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "Kviy7RCzrMI3B_3b",
+   "headline": "Aidan Hutchinson injury: Lions star joins bizarre list of NFL players hurt while celebrating",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/aidan-hutchinson-injury-lions-nfl-celebrations/",
+   "timestamp": "2026-11-16T12:03:49.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "McGVbevrwkMGpWvQ",
+   "headline": "Ravens vs. Chargers: Can LA get its first win on 'MNF' against the injury-plagued Ravens?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/ravens-vs-chargers-how-to-watch-spread-odds-preview-prediction/",
+   "timestamp": "2026-11-16T12:02:55.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "BAL",
+    "LAC"
+   ]
+  },
+  {
+   "id": "fk98_eaPV7pbR95Y",
+   "headline": "Bengals' blowout win over Steelers makes NFL history with 1,100th 'scorigami'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/bengals-steelers-sunday-night-football-2026-scorigami/",
+   "timestamp": "2026-11-16T12:01:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "PIT"
+   ]
+  },
+  {
+   "id": "07AiynOSfSKBlxZQ",
+   "headline": "Sounds unlikely Bills face Drake Maye vs. Patriots in early December",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sounds-unlikely-bills-face-drake-120117201.html",
+   "timestamp": "2026-11-16T12:01:17.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "BUF",
+    "NE"
+   ]
+  },
+  {
+   "id": "3my4WlgnVFTcLatg",
+   "headline": "Tennessee Titans news: Losing streak continues vs. Jaguars",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tennessee-titans-news-losing-streak-120000699.html",
+   "timestamp": "2026-11-16T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "JAX",
+    "TEN"
+   ]
+  },
+  {
+   "id": "okJANK0jSoIigmd-",
+   "headline": "Beaks & Geeks: Cardinals, Rams Winners & Losers: Arizona taken to the woodshed",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/beaks-geeks-cardinals-rams-winners-120000053.html",
+   "timestamp": "2026-11-16T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "LAR"
+   ]
+  },
+  {
+   "id": "K9vmehvw776SfTmn",
+   "headline": "Are you confident in the Lions defense without Aidan Hutchinson?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/confident-lions-defense-without-aidan-120000751.html",
+   "timestamp": "2026-11-16T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "vY0gr-U0gL7GxRqK",
+   "headline": "Cowboys news: Dallas defense gets trampled in loss to the 49ers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-news-dallas-defense-gets-120000922.html",
+   "timestamp": "2026-11-16T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "SF"
+   ]
+  },
+  {
+   "id": "s8IM6WNcXpt2d7XM",
+   "headline": "Kirk Cousins is still a Costco hot dog, but a wiener the Vikings needed",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kirk-cousins-still-costco-hot-120000827.html",
+   "timestamp": "2026-11-16T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "0Nk_RMY0l8yOggJq",
+   "headline": "Liam Coen: Parker Washington was ‘the best player on the field’ on Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/liam-coen-parker-washington-best-120000386.html",
+   "timestamp": "2026-11-16T12:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "parker-washington"
+   ]
+  },
+  {
+   "id": "x4smlpefMY40iYTH",
+   "headline": "Houston Texans News: Monday November 16, 2026",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/houston-texans-news-monday-november-120000435.html",
+   "timestamp": "2026-11-16T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "Ch9yn-FDoGP-POsU",
+   "headline": "New York Jets News: Is it Cade Klubnik Time?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-news-cade-klubnik-120000342.html",
+   "timestamp": "2026-11-16T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "SLVsLvWlUz9fH7dV",
+   "headline": "Drake Maye injury: Patriots QB hurts ankle vs. Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-maye-injury-patriots-qb-151411451.html",
+   "timestamp": "2026-11-16T11:57:45.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "DET",
+    "NE"
+   ]
+  },
+  {
+   "id": "3MX6ZEJ0XObShh6Y",
+   "headline": "Cover 32: Two NFL awards are already in the bag, plus game balls, biggest gaffes from Week 10",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-10-results-cover-32-2026-mvp/",
+   "timestamp": "2026-11-16T11:55:04.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "U--bZwVTeMeKAX3J",
+   "headline": "What channel is Chargers vs Ravens game today? Start time, NFL schedule, streaming",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/channel-chargers-vs-ravens-game-115418673.html",
+   "timestamp": "2026-11-16T11:54:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "LAC"
+   ]
+  },
+  {
+   "id": "IrY_yd-U9VFF4nYD",
+   "headline": "Los Angeles Chargers vs. Baltimore Ravens: How to watch Monday Night Football tonight, start time and where to stream",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/los-angeles-chargers-vs-baltimore-ravens-how-to-watch-monday-night-football-tonight-start-time-and-where-to-stream-114900920.html",
+   "timestamp": "2026-11-16T11:49:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "LAC"
+   ]
+  },
+  {
+   "id": "ozclU08ynS6OPfQT",
+   "headline": "Can the 0-8 Chargers finally win? Struggling Ravens provide an opportunity",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/0-8-chargers-finally-win-113000487.html",
+   "timestamp": "2026-11-16T11:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "LAC"
+   ]
+  },
+  {
+   "id": "-iLac1P-P3MKBhbJ",
+   "headline": "NFL Week 10 winners and losers: Packers' Matt LaFleur didn't learn his lesson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-10-winners-losers-110626897.html",
+   "timestamp": "2026-11-16T11:06:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "hWQ16Mn5HGxpcCoG",
+   "headline": "Chiefs News: Emmett Johnson was the star of the show in Atlanta",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-emmett-johnson-star-110000583.html",
+   "timestamp": "2026-11-16T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "f63a6HxRrCNL1ZM9",
+   "headline": "Chargers vs. Baltimore Ravens: How to watch, start time, prediction and betting odds",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-vs-baltimore-ravens-watch-110000617.html",
+   "timestamp": "2026-11-16T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "LAC"
+   ]
+  },
+  {
+   "id": "fIZkDnwvbJhWxOON",
+   "headline": "Yes or no: Has Odafe Oweh been a bust in Commanders NFL free agency?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/yes-no-odafe-oweh-bust-110000178.html",
+   "timestamp": "2026-11-16T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "AZrbAzEfhSlC1XvP",
+   "headline": "Broncos quarterbacks past and present, how does Bo Nix measure up?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-quarterbacks-past-present-does-110000870.html",
+   "timestamp": "2026-11-16T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "iAlg9NlgGkDguuve",
+   "headline": "Bengals News: Statement win vs. Steelers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bengals-news-statement-win-vs-110000678.html",
+   "timestamp": "2026-11-16T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "PIT"
+   ]
+  },
+  {
+   "id": "2jSTMIhza80b_38Y",
+   "headline": "Lions vs. Buccaneers odds: Opening lines for Week 11 matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-vs-buccaneers-odds-opening-110000168.html",
+   "timestamp": "2026-11-16T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "TB"
+   ]
+  },
+  {
+   "id": "9riEWBBRUovIwEWZ",
+   "headline": "NY Giants news: J.J. McCarthy, Tush Push, Jameis Winston, more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ny-giants-news-j-j-110000748.html",
+   "timestamp": "2026-11-16T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "8lg_qqCE-ruHMPXb",
+   "headline": "The Bear’s Den: Bears take weekend off, Lions win, Vikings crush Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bear-den-bears-weekend-off-110000047.html",
+   "timestamp": "2026-11-16T11:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "DET",
+    "GB",
+    "MIN"
+   ]
+  },
+  {
+   "id": "1JdMXjXb9aAQXq6m",
+   "headline": "Drake Maye injury: What we know after Patriots QB left Lions game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-maye-injury-know-patriots-195552414.html",
+   "timestamp": "2026-11-16T10:46:16.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "DET",
+    "NE"
+   ]
+  },
+  {
+   "id": "8pgG37ae1TxEkgJR",
+   "headline": "Drake Maye might miss rest of the season with 'significant lower leg injury'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/drake-maye-might-miss-rest-104238871.html",
+   "timestamp": "2026-11-16T10:42:38.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
+   "id": "ya8Q4XGzGvTXpmYf",
+   "headline": "2 winners and losers from the Patriots’ loss to the Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/2-winners-losers-patriots-loss-100000358.html",
+   "timestamp": "2026-11-16T10:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET",
+    "NE"
+   ]
+  },
+  {
+   "id": "w3InPgrRlpZsPQ8_",
+   "headline": "Jahmyr Gibbs in Hall of Fame company with a long list of statistical achievements",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jahmyr-gibbs-hall-fame-company-095815517.html",
+   "timestamp": "2026-11-16T09:58:15.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jahmyr-gibbs"
+   ]
+  },
+  {
+   "id": "YfzKXn3Ha469PHSa",
+   "headline": "Mike McCarthy: \"That's clearly not to the standard of the Pittsburgh Steelers\"",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mike-mccarthy-thats-clearly-not-090629028.html",
+   "timestamp": "2026-11-16T09:06:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "Fa7mcX7y_IG9Yjkw",
+   "headline": "Kyren Williams does next to nothing against Arizona in Week 10",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kyren-williams-does-next-nothing-090012891.html",
+   "timestamp": "2026-11-16T09:00:12.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kyren-williams"
+   ]
+  },
+  {
+   "id": "MDYgUVxewGwjpxmm",
+   "headline": "Matthew Stafford shines without top weapons in Week 10 rout of Arizona",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/matthew-stafford-shines-without-top-085950847.html",
+   "timestamp": "2026-11-16T08:59:50.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "matthew-stafford"
+   ]
+  },
+  {
+   "id": "Uxu9zrrEX3EWlTNf",
+   "headline": "Brock Purdy was once dismissed as a system guy. Now he is THE guy",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-purdy-once-dismissed-system-080253732.html",
+   "timestamp": "2026-11-16T08:02:53.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-purdy"
+   ]
+  },
+  {
+   "id": "BaU0BDreciBCZriw",
+   "headline": "Was the Seahawks’ bizarre play really a penalty? Here’s what the NFL rulebook says",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-bizarre-play-really-penalty-072559912.html",
+   "timestamp": "2026-11-16T07:25:59.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "5z3DgcWJmIVZxkxj",
+   "headline": "NFL Week 10 INSTANT reactions: Bengals & Jags dominate, Mendoza's first start, vintage Patrick Mahomes",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/nfl-week-10-instant-reactions-bengals--jags-dominate-mendozas-first-start-vintage-patrick-mahomes-072242331.html",
+   "timestamp": "2026-11-16T07:22:42.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ],
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "Nq6ZcknZPbv6EqbR",
+   "headline": "Warning to NFL general managers: Howie Roseman is about to fleece you",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/warning-nfl-general-managers-howie-023500135.html",
+   "timestamp": "2026-11-16T07:00:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "_00uwbHzHdBe7ZaG",
+   "headline": "Roob's Eagles Observations: Time to turn to a Stout disciple who's already here?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roobs-eagles-observations-time-turn-070000324.html",
+   "timestamp": "2026-11-16T07:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "EYPnBs5-R2J-Rb_g",
+   "headline": "Eagles continue reshaping roster by reportedly releasing veteran wide receiver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-continue-reshaping-roster-reportedly-221326007.html",
+   "timestamp": "2026-11-16T07:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "AzIrsT18TH1Lxq9c",
+   "headline": "Takeaways as Bengals crush Steelers 38-18 on Sunday Night Football",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/takeaways-bengals-crush-steelers-38-221305988.html",
+   "timestamp": "2026-11-16T07:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "PIT"
+   ]
+  },
+  {
+   "id": "dH3O_HOx0_ee8AOk",
+   "headline": "NFL Week 10 winners and losers: Vikings' offense arrives, 49ers top Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-10-winners-losers-164032097.html",
+   "timestamp": "2026-11-16T07:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "MIN",
+    "SF"
+   ]
+  },
+  {
+   "id": "u2Ex8X8C5pM2AvoU",
+   "headline": "Future Eagles Fits: Jeremiah Smith headlines an explosive 2027 WR class",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/future-eagles-fits-jeremiah-smith-070000656.html",
+   "timestamp": "2026-11-16T07:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "vr-6pyBEpFJElujd",
+   "headline": "Lions DE Aidan Hutchinson Expected To Miss Remainder Of Season",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/lions-de-aidan-hutchinson-expected-to-miss-remainder-of-season",
+   "timestamp": "2026-11-16T05:48:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "VAPgCJ_E1Dx16DMX",
+   "headline": "Vikings Interested In Re-Signing Kirk Cousins; Raiders Were Planning To Promote Fernando Mendoza Soon",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/vikings-interested-in-re-signing-kirk-cousins-raiders-were-planning-to-promote-fernando-mendoza-soon",
+   "timestamp": "2026-11-16T05:25:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "MIN"
+   ]
+  },
+  {
+   "id": "J6yAtYNneXDeOPtG",
+   "headline": "Patriots QB Drake Maye Ruled Out Of Week 10 Game With Lower Leg Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/patriots-qb-drake-maye-ruled-out-of-week-10-game-with-lower-leg-injury",
+   "timestamp": "2026-11-16T05:19:34.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "nhgkWGtd7p3Dytco",
+   "headline": "Chargers GM Joe Hortiz Discusses Deadline Process, Trade Talks; Latest On Daiyan Henley Controversy",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/chargers-gm-joe-hortiz-discusses-deadline-process-trade-talks-latest-on-daiyan-henley-controversy",
+   "timestamp": "2026-11-16T05:17:10.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "aEb273yNHJRo7z2o",
+   "headline": "Jaylen Warren: Stymied by Bengals in loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jaylen-warren-15984",
+   "timestamp": "2026-11-16T05:15:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaylen-warren"
+   ],
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "IiG15SY07ZYVw7BT",
+   "headline": "Tee Higgins: Five catches in Week 10 win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/tee-higgins-14506",
+   "timestamp": "2026-11-16T04:55:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tee-higgins"
+   ]
+  },
+  {
+   "id": "AN5IFCUNbeYvXchT",
+   "headline": "Chase Brown: Garners 18 touches in win",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/chase-brown-16934",
+   "timestamp": "2026-11-16T04:52:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "chase-brown"
+   ]
+  },
+  {
+   "id": "dMu-ca1pRZv1_IT8",
+   "headline": "NFL Week 10 grades: Packers fail in showdown with Vikings, Patrick Mahomes catches fire",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-10-grades-packers-vikings-patrick-mahomes/",
+   "timestamp": "2026-11-16T04:36:08.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ],
+   "team_abbrs": [
+    "GB",
+    "MIN"
+   ]
+  },
+  {
+   "id": "lgxXz3XXy70xnhOi",
+   "headline": "Steelers S DeShon Elliott Missing Game With Knee Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/steelers-s-deshon-elliott-missing-game-with-knee-injury",
+   "timestamp": "2026-11-16T04:28:21.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
   {
    "id": "gbV5JMH5cxG4Hw0q",
    "headline": "George Kittle: Six catches in Week 10 win",
@@ -923,21 +1626,6 @@
    ]
   },
   {
-   "id": "dMu-ca1pRZv1_IT8",
-   "headline": "NFL Week 10 grades: Packers fail in showdown with Vikings, Patrick Mahomes catches fire",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-10-grades-packers-vikings-patrick-mahomes/",
-   "timestamp": "2026-11-15T23:07:48.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "patrick-mahomes"
-   ],
-   "team_abbrs": [
-    "GB",
-    "MIN"
-   ]
-  },
-  {
    "id": "G5EIMUgCa5rAFslc",
    "headline": "Chargers rule out Ladd McConkey for Monday night at Baltimore",
    "source": "Yahoo Sports",
@@ -1108,699 +1796,6 @@
    ],
    "team_abbrs": [
     "LV"
-   ]
-  },
-  {
-   "id": "vDRKmHUX3IIqhuE0",
-   "headline": "The Chiefs are back atop AFC West thanks to tiebreakers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-back-atop-afc-west-223538188.html",
-   "timestamp": "2026-11-15T22:35:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "utRY_KNNY6vnPMge",
-   "headline": "RECAP: Texans Lose Heartbreaker to Browns, 27-24",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/recap-texans-lose-heartbreaker-browns-223008438.html",
-   "timestamp": "2026-11-15T22:30:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "HOU"
-   ]
-  },
-  {
-   "id": "42IoF7-hPOX5sczZ",
-   "headline": "Andy Reid gives 5 injury updates after Chiefs’ big win",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/andy-reid-gives-5-injury-223000651.html",
-   "timestamp": "2026-11-15T22:30:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "haxBItKVxzuIe6-P",
-   "headline": "The Chiefs’ offense rediscovers the deep ball in Atlanta",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-offense-rediscovers-deep-ball-223000173.html",
-   "timestamp": "2026-11-15T22:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "YH8aQk_XdiNlpdC0",
-   "headline": "Saints drop to 3-6 after loss to Panthers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-drop-3-6-loss-222749609.html",
-   "timestamp": "2026-11-15T22:27:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR",
-    "NO"
-   ]
-  },
-  {
-   "id": "s1EVZsuc6iLyeztL",
-   "headline": "Panthers win gives them a leg up in the NFC South standings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-win-gives-them-leg-222518975.html",
-   "timestamp": "2026-11-15T22:25:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "7L1NMEgmHVDa0IyJ",
-   "headline": "Use FanDuel promo code to get $200 in bonus bets by targeting Steelers-Bengals, Sunday Night Football betting",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-200-bonus-bets-steelers-bengals-sunday-night-football-betting/",
-   "timestamp": "2026-11-15T22:25:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "PIT"
-   ]
-  },
-  {
-   "id": "GBSbkVH9s6RSNgiT",
-   "headline": "Raiders lead Seahawks 10-7 at halftime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-lead-seahawks-10-7-222050931.html",
-   "timestamp": "2026-11-15T22:20:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "SEA"
-   ]
-  },
-  {
-   "id": "jBsM_8AistPzh3Sb",
-   "headline": "Colts survive late Dolphins rally to snap 5-game drought",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-survive-dolphins-rally-snap-222048269.html",
-   "timestamp": "2026-11-15T22:20:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "MIA"
-   ]
-  },
-  {
-   "id": "RXBqqYs9tss-_WGg",
-   "headline": "Cleveland Browns hit numerous milestones in win over Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cleveland-browns-hit-numerous-milestones-222031907.html",
-   "timestamp": "2026-11-15T22:20:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "HOU"
-   ]
-  },
-  {
-   "id": "-QijcM9wQoW-0oo9",
-   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Steelers-Bengals, NFL Sunday Night Football picks",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-steelers-bengals-nfl-sunday-night-football-picks/",
-   "timestamp": "2026-11-15T22:19:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "PIT"
-   ]
-  },
-  {
-   "id": "hLPUTioB-jpSFreE",
-   "headline": "Chargers WR Ladd McConkey ruled out for MNF vs. Ravens",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-wr-ladd-mcconkey-listed-123000180.html",
-   "timestamp": "2026-11-15T22:15:49.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "ladd-mcconkey"
-   ],
-   "team_abbrs": [
-    "BAL",
-    "LAC"
-   ]
-  },
-  {
-   "id": "u92rAVd2UsQkUt50",
-   "headline": "Brock Bowers injury update as Raiders TE leaves Week 10 game with ankle issue",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-bowers-injury-raiders-te-221244615.html",
-   "timestamp": "2026-11-15T22:12:44.000Z",
-   "category": "injury",
-   "player_ids": [
-    "brock-bowers"
-   ],
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "zPlMASL5plgkcyxD",
-   "headline": "Rams star Aaron Donald records first sack since coming out of retirement in game vs. Cardinals",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/rams-star-aaron-donald-records-first-sack-since-coming-out-of-retirement-in-game-vs-cardinals-220938892.html",
-   "timestamp": "2026-11-15T22:09:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "LAR"
-   ]
-  },
-  {
-   "id": "KIXsz80Pl83e2G5V",
-   "headline": "Jaguars can’t move up in playoff picture despite win",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-t-move-playoff-picture-220929445.html",
-   "timestamp": "2026-11-15T22:09:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX"
-   ]
-  },
-  {
-   "id": "uRRSLRy7qDwxsU-8",
-   "headline": "Best Kalshi promo code CBSSPORTS55: Score $55 bonus for Bengals vs. Steelers, NFL Sunday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-score-55-bonus-bengals-steelers-nfl-sunday-night-football/",
-   "timestamp": "2026-11-15T22:05:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "PIT"
-   ]
-  },
-  {
-   "id": "IkEqZ4Y5ZBoIJuOX",
-   "headline": "Jack Campbell in 'good spirits' after neck injury, Lions coach says in new update",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jack-campbell-good-spirits-neck-220349118.html",
-   "timestamp": "2026-11-15T22:03:49.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "wzYS_NmRoAZ96dQZ",
-   "headline": "Packers Winners and Losers: Week 10 vs. the Vikings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-winners-losers-week-10-220316451.html",
-   "timestamp": "2026-11-15T22:03:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "MIN"
-   ]
-  },
-  {
-   "id": "0fySSOyakwB3hMFI",
-   "headline": "Week 10 Snap Reactions: We’re on to 2027",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-10-snap-reactions-2027-220230443.html",
-   "timestamp": "2026-11-15T22:02:30.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "V-d4LBlkfa2Vjmjf",
-   "headline": "George Pickens' TD has Cowboys with a 10-7 lead",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/george-pickens-td-cowboys-10-220224047.html",
-   "timestamp": "2026-11-15T22:02:24.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "george-pickens"
-   ],
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "Rh7ZRqZ4MSEsLlcX",
-   "headline": "Jaguars Keep Rolling With Dominant Win Over Titans in NFL Week 10",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-keep-rolling-dominant-win-215451915.html",
-   "timestamp": "2026-11-15T21:54:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "TEN"
-   ]
-  },
-  {
-   "id": "Cwrgg2Kc5k9cks8V",
-   "headline": "Packers Snap Counts, Week 10: Green Bay’s offense played heavy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-snap-counts-week-10-215208697.html",
-   "timestamp": "2026-11-15T21:52:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "a2HsPMpswPM0T23f",
-   "headline": "Deebo Samuel scores on 49ers' first drive for 7-3 lead",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/deebo-samuel-scores-49ers-first-215106087.html",
-   "timestamp": "2026-11-15T21:51:06.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "deebo-samuel"
-   ],
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "CV3dG_3HOEU9e-KL",
-   "headline": "Lions move up in NFC playoff picture following win over Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-move-nfc-playoff-picture-173751162.html",
-   "timestamp": "2026-11-15T21:49:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NE"
-   ]
-  },
-  {
-   "id": "qG_ejzxKgJ74g1Gc",
-   "headline": "Brock Bowers is ruled out of game with ankle injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-bowers-returns-game-ankle-214824605.html",
-   "timestamp": "2026-11-15T21:48:24.000Z",
-   "category": "injury",
-   "player_ids": [
-    "brock-bowers"
-   ]
-  },
-  {
-   "id": "fuA9xl1uE6NEOdbF",
-   "headline": "LOOK: Fernando Mendoza scores first NFL TD on opening drive vs. Seahawks",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/why-raiders-fans-planning-stay-seated-fernando-mendoza-first-td/",
-   "timestamp": "2026-11-15T21:46:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "xSI_kbdrM_o5oY7s",
-   "headline": "Fernando Mendoza's first NFL TD evokes championship dive at Indiana",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fernando-mendoza-starts-first-nfl-214638167.html",
-   "timestamp": "2026-11-15T21:46:38.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "6CytKGKCLPmfb_Dz",
-   "headline": "Kirk Cousins gives Vikings what they expected. That's enough – for now",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kirk-cousins-gives-vikings-expected-214426393.html",
-   "timestamp": "2026-11-15T21:44:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "Ck4B4O2Xv82p_RsR",
-   "headline": "Fernando Mendoza's first NFL TD comes on designed run reminiscent of his iconic score that sealed Indiana's national championship",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/fernando-mendozas-first-nfl-td-comes-on-designed-run-reminiscent-of-his-iconic-score-that-sealed-indianas-national-championship-214724992.html",
-   "timestamp": "2026-11-15T21:29:35.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "ATCXfgt8zmMRvIA8",
-   "headline": "With Kirk Cousins back, the Vikings really can win the Super Bowl and here's how",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/kirk-cousins-vikings-super-bowl-odds-2026/",
-   "timestamp": "2026-11-15T21:28:14.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "u14hQnLpSag_khSY",
-   "headline": "Lions' Aidan Hutchinson feared to have possible season-ending injury after sack celebration, per report",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/lions-aidan-hutchinson-injury-update-patriots-germany/",
-   "timestamp": "2026-11-15T21:12:07.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "P5KKbzwBGVGLLV5O",
-   "headline": "Jets' Geno Smith ruled out with ankle injury: Rookie QB Cade Klubnik makes NFL debut",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bills-geno-smith-injury-updates-bills-cade-klubnik/",
-   "timestamp": "2026-11-15T20:51:57.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "fctNZ1N3WLjRBfV9",
-   "headline": "Packers’ Josh Jacobs Undergoes Finger Surgery; RB Chris Brooks Activated",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/packers-josh-jacobs-undergoes-finger-surgery-rb-chris-brooks-activated",
-   "timestamp": "2026-11-15T20:40:19.000Z",
-   "category": "injury",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "UlBf5fNPikT35pOE",
-   "headline": "Drake Maye, Aidan Hutchinson injured on same play: Injury updates for Patriots QB, Lions DE",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/drake-maye-aidan-hutchinson-injured-patriots-lions-stars-questionable/",
-   "timestamp": "2026-11-15T20:00:09.000Z",
-   "category": "injury",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "DET",
-    "NE"
-   ]
-  },
-  {
-   "id": "bhZFX3wddR8_c2FB",
-   "headline": "Seahawks vs. Raiders live updates, score: Fernando Mendoza scores rushing TD on opening drive of first career start",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/live/seahawks-raiders-score-live-updates-inactives-highlights-stats-where-to-watch-fernando-mendoza-first-start-195428227.html",
-   "timestamp": "2026-11-15T19:54:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "SEA"
-   ]
-  },
-  {
-   "id": "N8OuQptX4slAO14q",
-   "headline": "Seahawks vs. Raiders odds, NFL Week 10 predictions: Use Polymarket promo code CBSSPORTS to get a $25 bonus",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/seahawks-vs-raiders-odds-nfl-week-10-predictions-use-polymarket-promo-code-cbssports-to-get-a-25-bonus/",
-   "timestamp": "2026-11-15T19:50:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV",
-    "SEA"
-   ]
-  },
-  {
-   "id": "8PEowGwec4yBttb3",
-   "headline": "49ers vs. Cowboys odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus for NFL Week 10",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/49ers-vs-cowboys-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-for-nfl-week-10/",
-   "timestamp": "2026-11-15T19:50:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "SF"
-   ]
-  },
-  {
-   "id": "UODCd8a0IP2hzUNH",
-   "headline": "Use FanDuel promo code to get $200 in bonus bets by targeting Cowboys-49ers, Steelers-Bengals, NFL Week 10",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-200-bonus-bets-cowboys-49ers-steelers-bengals-nfl-week-10/",
-   "timestamp": "2026-11-15T19:49:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "DAL",
-    "PIT",
-    "SF"
-   ]
-  },
-  {
-   "id": "IrLe7ZF3O8G451Zp",
-   "headline": "Rams vs. Cardinals odds, NFL Week 10 predictions: Use Polymarket promo code CBSSPORTS to get a $25 bonus",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/rams-vs-cardinals-odds-nfl-week-10-predictions-use-polymarket-promo-code-cbssports-to-get-a-25-bonus/",
-   "timestamp": "2026-11-15T19:45:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "LAR"
-   ]
-  },
-  {
-   "id": "nvYrOhDi7ho2crw8",
-   "headline": "49ers vs. Cowboys NFL Week 10 odds, predictions: Use Polymarket promo code CBSSPORTS to get a $25 bonus",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/49ers-vs-cowboys-nfl-week-10-odds-predictions-use-polymarket-promo-code-cbssports-to-get-a-25-bonus/",
-   "timestamp": "2026-11-15T19:45:43.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "SF"
-   ]
-  },
-  {
-   "id": "lzYmqaSCs06mjzJO",
-   "headline": "Kirk Cousins, Vikings dominate, lead 17-0 at halftime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kirk-cousins-vikings-dominate-lead-194503944.html",
-   "timestamp": "2026-11-15T19:45:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "NvLzfcp4sq7wa07L",
-   "headline": "Thomas Booker, Dont'e Thornton are inactive for the Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/thomas-booker-donte-thornton-inactive-194338779.html",
-   "timestamp": "2026-11-15T19:43:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "c7HNonJmdoeImFfP",
-   "headline": "Seahawks Week 10 inactives",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-week-10-inactives-194226843.html",
-   "timestamp": "2026-11-15T19:42:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "SGdfHJA4w6nCu8iQ",
-   "headline": "Amon-Ra St. Brown: Two trips to end zone in Week 10 win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/amon-ra-st-brown-15332",
-   "timestamp": "2026-11-15T19:42:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "amon-ra-st-brown"
-   ]
-  },
-  {
-   "id": "Ew1IaJhzoXcjynhL",
-   "headline": "Jets cut Bills lead to 10-6 before halftime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-cut-bills-lead-10-193616570.html",
-   "timestamp": "2026-11-15T19:36:16.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "BUF",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "WakSoyOILxgl8Ehr",
-   "headline": "Josh Downs scores first TD with Chiefs, Kansas City leads Atlanta 14-3 at halftime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/josh-downs-scores-first-td-193522641.html",
-   "timestamp": "2026-11-15T19:35:22.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-downs"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "ZtTQMijb0pF1-RNb",
-   "headline": "Panthers take 7-0 lead into halftime in New Orleans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/panthers-7-0-lead-halftime-193045820.html",
-   "timestamp": "2026-11-15T19:30:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CAR"
-   ]
-  },
-  {
-   "id": "t8xmJfRKDQ_b1tVy",
-   "headline": "Colts lead Dolphins 14-7 at halftime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-lead-dolphins-14-7-193031611.html",
-   "timestamp": "2026-11-15T19:30:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "MIA"
-   ]
-  },
-  {
-   "id": "TYUTn-mu84qy-wT6",
-   "headline": "Jahmyr Gibbs: Massive numbers in Week 10 romp",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jahmyr-gibbs-16808",
-   "timestamp": "2026-11-15T19:23:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jahmyr-gibbs"
-   ]
-  },
-  {
-   "id": "KSHoCdfK7qCZ6hWo",
-   "headline": "14 winners, 3 losers from Detroit Lions’ win over the New England Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/14-winners-3-losers-detroit-191500560.html",
-   "timestamp": "2026-11-15T19:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NE"
-   ]
-  },
-  {
-   "id": "vr-6pyBEpFJElujd",
-   "headline": "Lions DE Aidan Hutchinson Expected To Miss Remainder Of Season",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/lions-de-aidan-hutchinson-expected-to-miss-remainder-of-season",
-   "timestamp": "2026-11-15T19:08:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "jC_MyG3UjZYqXJ61",
-   "headline": "Cowboys vs 49ers: Final score predictions for Week 10",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-vs-49ers-final-score-190000857.html",
-   "timestamp": "2026-11-15T19:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "SF"
-   ]
-  },
-  {
-   "id": "bkzybGSDuzIMiWqv",
-   "headline": "Dabble Promo Code YAHOOBONUS: Claim $20 in Bonuses on Sunday’s NHL, NBA, NFL and College Basketball Action",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/betting/promos/article/dabble-promo-code-yahoobonus-claim-20-in-bonuses-on-sundays-nhl-nba-nfl-and-college-basketball-action-190000973.html",
-   "timestamp": "2026-11-15T19:00:00.000Z",
-   "category": "transaction"
-  },
-  {
-   "id": "L9Ie5kBjLAAH-81-",
-   "headline": "Aidan Hutchinson injury: Lions star hurts knee during costly celebration",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/aidan-hutchinson-injury-lions-star-152113366.html",
-   "timestamp": "2026-11-15T18:59:31.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "XKu03Pj7RF_Aa8Zc",
-   "headline": "Fantasy Football: Jahmyr Gibbs posts best non-QB total of season against injury-ravaged Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-jahmyr-gibbs-posts-best-non-qb-total-of-season-against-injury-ravaged-patriots-185524646.html",
-   "timestamp": "2026-11-15T18:55:24.000Z",
-   "category": "injury",
-   "player_ids": [
-    "jahmyr-gibbs"
-   ],
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "mKdAkVqMshKe1Sxw",
-   "headline": "Patriots’ defensive woes continue against the Lions in Munich",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-defensive-woes-continue-against-185028617.html",
-   "timestamp": "2026-11-15T18:50:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET",
-    "NE"
-   ]
-  },
-  {
-   "id": "Mo32_rj904vwWzwJ",
-   "headline": "Lions DE Aidan Hutchinson Ruled Out Of Week 10 Game With Knee Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/lions-de-aidan-hutchinson-ruled-out-of-week-10-game-with-knee-injury",
-   "timestamp": "2026-11-15T18:45:52.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "8bqP8fYq-TtVtBfo",
-   "headline": "Travis Kelce injury: Chiefs TE hurts ankle vs. Falcons",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/travis-kelce-injury-chiefs-te-181912291.html",
-   "timestamp": "2026-11-15T18:45:44.000Z",
-   "category": "injury",
-   "player_ids": [
-    "travis-kelce"
-   ],
-   "team_abbrs": [
-    "ATL",
-    "KC"
-   ]
-  },
-  {
-   "id": "1av0Sz4r4YIoCfIs",
-   "headline": "Chiefs have 3 injuries in the first quarter against Falcons",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-3-injuries-first-quarter-184500401.html",
-   "timestamp": "2026-11-15T18:45:00.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ATL",
-    "KC"
    ]
   }
  ]
