@@ -1,8 +1,81 @@
 {
  "schema_version": 1,
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "H71ecW_LL7VHouht",
+   "headline": "Prisco's Week 11 NFL picks: Texans edge Colts on 'TNF,' Cowboys rout Titans, 49ers over Vikings",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/priscos-week-11-nfl-picks-odds-expert-picks-predictions/",
+   "timestamp": "2026-11-18T11:00:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "HOU",
+    "IND",
+    "MIN",
+    "SF",
+    "TEN"
+   ]
+  },
+  {
+   "id": "Kc4p-Eqzi2rYPaoO",
+   "headline": "Jerry Jones: Cowboys Discussing DC Christian Parker’s Future",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/jerry-jones-cowboys-discussing-dc-christian-parkers-future",
+   "timestamp": "2026-11-18T05:58:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "wwQxBOxqHGSDg1NM",
+   "headline": "Packers, Broncos Explored Trade For Titans RB Tony Pollard",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/packers-broncos-explored-trade-for-titans-tony-pollard",
+   "timestamp": "2026-11-18T05:40:58.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DEN",
+    "GB",
+    "TEN"
+   ]
+  },
+  {
+   "id": "u5JdXlUmPSQH2jvw",
+   "headline": "Lions Expect S Kerby Joseph To Play In Week 11",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/lions-expect-s-kerby-joseph-to-play-in-week-11",
+   "timestamp": "2026-11-18T05:34:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "VwQj74NdIux6oQTM",
+   "headline": "Buccaneers QB Baker Mayfield Could Miss Week 11",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/buccaneers-qb-baker-mayfield-could-miss-week-11",
+   "timestamp": "2026-11-18T05:10:08.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "baker-mayfield"
+   ],
+   "team_abbrs": [
+    "TB"
+   ]
+  },
+  {
+   "id": "uLpm-BaiHO_LDY1e",
+   "headline": "NFL Practice Squad Updates: 11/17/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-practice-squad-updates-11-17-26",
+   "timestamp": "2026-11-18T04:20:49.000Z",
+   "category": "practice"
+  },
   {
    "id": "xUyvpT9l1tlB2560",
    "headline": "Cardinals Place OLB Jordan Burch, S Andrew Wingard On IR",
@@ -55,19 +128,6 @@
    "url": "https://sports.yahoo.com/articles/former-cyclones-performed-week-10-021707403.html",
    "timestamp": "2026-11-18T02:17:07.000Z",
    "category": "breaking"
-  },
-  {
-   "id": "wwQxBOxqHGSDg1NM",
-   "headline": "Packers, Broncos Explored Trade For Titans RB Tony Pollard",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/packers-broncos-explored-trade-for-titans-tony-pollard",
-   "timestamp": "2026-11-18T01:58:58.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DEN",
-    "GB",
-    "TEN"
-   ]
   },
   {
    "id": "72SjQkqcIlk1dJjz",
@@ -177,6 +237,130 @@
    "category": "breaking",
    "team_abbrs": [
     "CHI"
+   ]
+  },
+  {
+   "id": "_00uwbHzHdBe7ZaG",
+   "headline": "Roob's Eagles Observations: Time to turn to a Stout disciple who's already here?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roobs-eagles-observations-time-turn-070000324.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "-i0UOX4I4R1aKFM1",
+   "headline": "Eagles sign Jaydon Blue to active roster, add NT to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-sign-jaydon-blue-active-165845857.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "EYPnBs5-R2J-Rb_g",
+   "headline": "Eagles continue reshaping roster by reportedly releasing veteran wide receiver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-continue-reshaping-roster-reportedly-221326007.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "emWrl9PLAz9KEcdp",
+   "headline": "Questions by position as Eagles return from 2026 bye week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/questions-position-eagles-return-2026-102036178.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "1-wId5Lt_fj-FjWx",
+   "headline": "Eagles sign Zach Ertz to 53-man roster in flurry of moves",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-sign-zach-ertz-53-134435836.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "u2Ex8X8C5pM2AvoU",
+   "headline": "Future Eagles Fits: Jeremiah Smith headlines an explosive 2027 WR class",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/future-eagles-fits-jeremiah-smith-070000656.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "p891l3tXjzm0pI1x",
+   "headline": "Eagles add consultant who coached under Chip Kelly, Doug Pederson, Nick Sirianni",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-add-consultant-coached-under-155319709.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "nSF4agK5YI2fi13l",
+   "headline": "Updating Eagles' 2027 draft pick after Week 10 bye week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/updating-eagles-2027-draft-pick-084300132.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "QaEyeMHDha5J9y0q",
+   "headline": "NFL flexes Raiders-Browns to NBC's Sunday Night Football, Patriots-Chargers out",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-flexes-raiders-browns-nbcs-154247566.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "LAC",
+    "LV",
+    "NE"
+   ]
+  },
+  {
+   "id": "IT32anIPHU14_fxC",
+   "headline": "Eagles down 1 RB on active roster after waiving Blue",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-down-1-rb-active-173058718.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "16I8hK405vCddzyO",
+   "headline": "Eagles waiving veteran OT Fred Johnson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-waiving-veteran-ot-fred-164600222.html",
+   "timestamp": "2026-11-17T23:21:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
    ]
   },
   {
@@ -442,83 +626,6 @@
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/articles/eagles-film-review-makai-lemon-213849740.html",
    "timestamp": "2026-11-17T21:38:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "_00uwbHzHdBe7ZaG",
-   "headline": "Roob's Eagles Observations: Time to turn to a Stout disciple who's already here?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/roobs-eagles-observations-time-turn-070000324.html",
-   "timestamp": "2026-11-17T21:33:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "-i0UOX4I4R1aKFM1",
-   "headline": "Eagles sign Jaydon Blue to active roster, add NT to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-sign-jaydon-blue-active-165845857.html",
-   "timestamp": "2026-11-17T21:33:13.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "EYPnBs5-R2J-Rb_g",
-   "headline": "Eagles continue reshaping roster by reportedly releasing veteran wide receiver",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-continue-reshaping-roster-reportedly-221326007.html",
-   "timestamp": "2026-11-17T21:33:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "emWrl9PLAz9KEcdp",
-   "headline": "Questions by position as Eagles return from 2026 bye week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/questions-position-eagles-return-2026-102036178.html",
-   "timestamp": "2026-11-17T21:33:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "1-wId5Lt_fj-FjWx",
-   "headline": "Eagles sign Zach Ertz to 53-man roster in flurry of moves",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-sign-zach-ertz-53-134435836.html",
-   "timestamp": "2026-11-17T21:33:13.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "u2Ex8X8C5pM2AvoU",
-   "headline": "Future Eagles Fits: Jeremiah Smith headlines an explosive 2027 WR class",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/future-eagles-fits-jeremiah-smith-070000656.html",
-   "timestamp": "2026-11-17T21:33:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "p891l3tXjzm0pI1x",
-   "headline": "Eagles add consultant who coached under Chip Kelly, Doug Pederson, Nick Sirianni",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-add-consultant-coached-under-155319709.html",
-   "timestamp": "2026-11-17T21:33:13.000Z",
    "category": "breaking",
    "team_abbrs": [
     "PHI"
@@ -979,17 +1086,6 @@
    ]
   },
   {
-   "id": "u5JdXlUmPSQH2jvw",
-   "headline": "Lions Expect S Kerby Joseph To Play In Week 11",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/lions-expect-s-kerby-joseph-to-play-in-week-11",
-   "timestamp": "2026-11-17T18:34:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
    "id": "UxIrqoXAEnwRRowk",
    "headline": "Luther Burden: Clears concussion protocol",
    "source": "RotoWire",
@@ -1047,17 +1143,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "Kc4p-Eqzi2rYPaoO",
-   "headline": "Jerry Jones: Cowboys Discussing DC Christian Parker’s Future",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/jerry-jones-cowboys-discussing-dc-christian-parkers-future",
-   "timestamp": "2026-11-17T15:58:15.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
    ]
   },
   {
@@ -1590,84 +1675,6 @@
    "category": "breaking",
    "team_abbrs": [
     "SF"
-   ]
-  },
-  {
-   "id": "I2hc8RR4iO2y4zXK",
-   "headline": "Bills and Chiefs both favored by 16.5 on Sunday, biggest point spreads of the season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-chiefs-both-favored-16-101551295.html",
-   "timestamp": "2026-11-17T10:15:51.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "KC"
-   ]
-  },
-  {
-   "id": "Nq6ZcknZPbv6EqbR",
-   "headline": "Warning to NFL general managers: Howie Roseman is about to fleece you",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/warning-nfl-general-managers-howie-023500135.html",
-   "timestamp": "2026-11-17T08:43:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "XTwcfYYsfKHAEywi",
-   "headline": "Mark Andrews: Season-best effort in Brissett's debut",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/mark-andrews-12559",
-   "timestamp": "2026-11-17T05:48:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "mark-andrews"
-   ]
-  },
-  {
-   "id": "CPiCiDeum-c6qOEH",
-   "headline": "Patriots Fear QB Drake Maye Suffered Ankle Fracture",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/patriots-fear-qb-drake-maye-suffered-ankle-fracture",
-   "timestamp": "2026-11-17T05:44:46.000Z",
-   "category": "injury",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "uHgL0KDm-QGCcfWi",
-   "headline": "Justin Herbert: Efficient in first win of season",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/justin-herbert-14446",
-   "timestamp": "2026-11-17T05:44:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "justin-herbert"
-   ]
-  },
-  {
-   "id": "LFOrYsUyy6zRmcaC",
-   "headline": "Zay Flowers: Solid night marred by key fumble",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/zay-flowers-16919",
-   "timestamp": "2026-11-17T05:21:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "zay-flowers"
-   ]
-  },
-  {
-   "id": "-h18KAkIW2f4WAgT",
-   "headline": "Follow-Up Tests Confirm Torn ACL For Lions’ Aidan Hutchinson",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/follow-up-tests-confirm-torn-acl-for-lions-aidan-hutchinson",
-   "timestamp": "2026-11-17T05:20:52.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
    ]
   }
  ]
