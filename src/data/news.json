@@ -1,8 +1,350 @@
 {
  "schema_version": 1,
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "AG4TKRl320pKW-TH",
+   "headline": "A.J. Brown reportedly ‘out a little while’ with hamstring injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/j-brown-reportedly-little-while-103021348.html",
+   "timestamp": "2026-11-19T10:30:21.000Z",
+   "category": "injury",
+   "player_ids": [
+    "amon-ra-st-brown",
+    "aj-brown"
+   ]
+  },
+  {
+   "id": "lbuUQgD5wKudbGn1",
+   "headline": "What channel is NFL game on today? Time, schedule for 'Thursday Night Football'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/channel-nfl-game-today-time-100244101.html",
+   "timestamp": "2026-11-19T10:02:44.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "MvoZUF6nWJUv7Qn_",
+   "headline": "Joe Burrow can become the first QB ever with 4+ touchdowns in 6 consecutive games",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/joe-burrow-become-first-qb-084847635.html",
+   "timestamp": "2026-11-19T08:48:47.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "joe-burrow"
+   ]
+  },
+  {
+   "id": "WIDYfHXQ47wXoiUt",
+   "headline": "Mike Pettine To Take Over As Cowboys’ Defensive Play Caller; Christian Parker To Remain DC",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/mike-pettine-to-take-over-as-cowboys-defensive-play-caller",
+   "timestamp": "2026-11-19T04:48:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "lLjN1gRfYA4AaXw9",
+   "headline": "Seahawks Optimistic Sam Darnold Will Return After Bye",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/seahawks-optimistic-sam-darnold-will-return-after-bye",
+   "timestamp": "2026-11-19T04:30:37.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "sam-darnold"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "l7vE90nm5aYY2x2V",
+   "headline": "Panthers injury report shows more help on the way for the defense",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/panthers-injury-report-shows-more-043000892.html",
+   "timestamp": "2026-11-19T04:30:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "X_E7X_UF031C36af",
+   "headline": "NFL Trade Deadline Notes: Titans, Giants, Bengals, Reed, Sainristil, Matlock",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-trade-deadline-notes-titans-giants-bengals-reed-sainristil-matlock",
+   "timestamp": "2026-11-19T04:22:16.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CIN",
+    "NYG",
+    "TEN"
+   ]
+  },
+  {
+   "id": "Aw3r3HpE5fHTXj7g",
+   "headline": "Texans Getting RB David Montgomery Back In Week 11; Team Rules Out Marvin Harrison Jr., Danielle Hunter",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/texans-getting-rb-david-montgomery-back-in-week-11-rule-out-marvin-harrison-danielle-hunter",
+   "timestamp": "2026-11-19T04:17:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "david-montgomery"
+   ],
+   "team_abbrs": [
+    "HOU"
+   ]
+  },
+  {
+   "id": "_00uwbHzHdBe7ZaG",
+   "headline": "Roob's Eagles Observations: Time to turn to a Stout disciple who's already here?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roobs-eagles-observations-time-turn-070000324.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "-i0UOX4I4R1aKFM1",
+   "headline": "Eagles sign Jaydon Blue to active roster, add NT to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-sign-jaydon-blue-active-165845857.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "emWrl9PLAz9KEcdp",
+   "headline": "Questions by position as Eagles return from 2026 bye week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/questions-position-eagles-return-2026-102036178.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "1-wId5Lt_fj-FjWx",
+   "headline": "Eagles sign Zach Ertz to 53-man roster in flurry of moves",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-sign-zach-ertz-53-134435836.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "u2Ex8X8C5pM2AvoU",
+   "headline": "Future Eagles Fits: Jeremiah Smith headlines an explosive 2027 WR class",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/future-eagles-fits-jeremiah-smith-070000656.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "p891l3tXjzm0pI1x",
+   "headline": "Eagles add consultant who coached under Chip Kelly, Doug Pederson, Nick Sirianni",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-add-consultant-coached-under-155319709.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "nSF4agK5YI2fi13l",
+   "headline": "Updating Eagles' 2027 draft pick after Week 10 bye week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/updating-eagles-2027-draft-pick-084300132.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "IT32anIPHU14_fxC",
+   "headline": "Eagles down 1 RB on active roster after waiving Blue",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-down-1-rb-active-173058718.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "16I8hK405vCddzyO",
+   "headline": "Eagles waiving veteran OT Fred Johnson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-waiving-veteran-ot-fred-164600222.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "EW-HGo_XsYSK_PMD",
+   "headline": "Roob's bye week stats: It's awful but we do have Makai Lemon and Dallas Goedert",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roobs-bye-week-stats-awful-070000905.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dallas-goedert"
+   ]
+  },
+  {
+   "id": "Mc8eyTBrexhy-Ur5",
+   "headline": "Eagles castoff Fred Johnson joins Andy Reid on Chiefs practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-castoff-fred-johnson-joins-092401704.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "KC",
+    "PHI"
+   ]
+  },
+  {
+   "id": "QjMA185L1Ppj24qi",
+   "headline": "Christian Parker stripped of play-calling duties with Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-parker-stripped-play-calling-100432854.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "9zc9k0g-c2ZtHMJe",
+   "headline": "Eagles injury update: Offensive reinforcements return after bye week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-injury-offensive-reinforcements-return-154934840.html",
+   "timestamp": "2026-11-19T04:15:41.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "s7q6cAKWGcYb-8fX",
+   "headline": "Injured 49ers receiver reveals surprising update in birthday post",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/injured-49ers-receiver-reveals-surprising-041339868.html",
+   "timestamp": "2026-11-19T04:13:39.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "1y3eGE4higF4nEKh",
+   "headline": "Eagles Injury Report: DeVonta Smith and Dontayvion Wicks return to practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-injury-report-devonta-smith-040658703.html",
+   "timestamp": "2026-11-19T04:06:58.000Z",
+   "category": "injury",
+   "player_ids": [
+    "devonta-smith"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "kpmBW7TjmTrirXKt",
+   "headline": "Ravens DT Nnamdi Madubuike misses first practice of Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ravens-dt-nnamdi-madubuike-misses-040000529.html",
+   "timestamp": "2026-11-19T04:00:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "gThdWATT3cKv4Fmv",
+   "headline": "AFC North Roundup: Bengals cruise to division lead; Browns stay in playoff hunt",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/afc-north-roundup-bengals-cruise-032654519.html",
+   "timestamp": "2026-11-19T03:26:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "CLE"
+   ]
+  },
+  {
+   "id": "V6GIESfFIZLQnaRv",
+   "headline": "Brock Bowers did not practice Wednesday with ankle, quad injuries",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-bowers-did-not-practice-025702046.html",
+   "timestamp": "2026-11-19T02:57:02.000Z",
+   "category": "injury",
+   "player_ids": [
+    "brock-bowers"
+   ]
+  },
+  {
+   "id": "7rZD3IB3Bc_pQJov",
+   "headline": "Eagles claim Cowboys draft pick off waivers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-claim-cowboys-draft-pick-025041210.html",
+   "timestamp": "2026-11-19T02:50:41.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "-Dify-aBQhOwhgAf",
+   "headline": "The real reason John Harbaugh opted to receive after Giants won coin toss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/real-reason-john-harbaugh-opted-024602891.html",
+   "timestamp": "2026-11-19T02:46:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "CViS-3v6g-LqB7RI",
+   "headline": "Jordan Addison to Avoid IR; Vikings Make Several Other Moves",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jordan-addison-avoid-ir-vikings-023956241.html",
+   "timestamp": "2026-11-19T02:39:56.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "SF6rwzxkuL8UA-Ih",
+   "headline": "What Record Will the Cleveland Browns Have at the End of the Season? Reacts Survey",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/record-cleveland-browns-end-season-023216433.html",
+   "timestamp": "2026-11-19T02:32:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
   {
    "id": "zUae9mNJYGijzhZK",
    "headline": "Hey NFL, Don’t Forget the Chicago Bears",
@@ -168,7 +510,7 @@
   },
   {
    "id": "VJBncOm-Rx38a06E",
-   "headline": "Chiefs Work Out Matt Prater Amid Harrison Butker’s Continuing Kicking Woes",
+   "headline": "Chiefs Work Out Matt Prater Amid Harrison Butker’s Kicking Woes",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/11/chiefs-work-out-matt-prater-amid-harrison-butkers-continuing-kicking-woes",
    "timestamp": "2026-11-19T00:03:27.000Z",
@@ -345,19 +687,6 @@
    "category": "practice",
    "player_ids": [
     "devonta-smith"
-   ]
-  },
-  {
-   "id": "X_E7X_UF031C36af",
-   "headline": "NFL Trade Deadline Notes: Titans, Giants, Bengals, Reed, Sainristil, Matlock",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/nfl-trade-deadline-notes-titans-giants-bengals-reed-sainristil-matlock",
-   "timestamp": "2026-11-18T22:49:16.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CIN",
-    "NYG",
-    "TEN"
    ]
   },
   {
@@ -1263,17 +1592,6 @@
    ]
   },
   {
-   "id": "WIDYfHXQ47wXoiUt",
-   "headline": "Mike Pettine To Take Over As Cowboys’ Defensive Play Caller; Christian Parker To Remain DC",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/mike-pettine-to-take-over-as-cowboys-defensive-play-caller",
-   "timestamp": "2026-11-18T14:48:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
    "id": "gcNjbD1KOLXfkXIP",
    "headline": "Sorting 9 struggling franchises into tiers, from hopeless to hopeful: When will Jets end drought?",
    "source": "CBS Sports",
@@ -1403,314 +1721,6 @@
    "team_abbrs": [
     "DAL",
     "SF"
-   ]
-  },
-  {
-   "id": "tQNMmwK-PbljWCFu",
-   "headline": "Pair of ex-Seahawks safeties find new teams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/pair-ex-seahawks-safeties-teams-024247847.html",
-   "timestamp": "2026-11-18T02:42:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "XN7_XALWxAyUOHEm",
-   "headline": "How former Cyclones performed in Week 10 of the NFL",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/former-cyclones-performed-week-10-021707403.html",
-   "timestamp": "2026-11-18T02:17:07.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "72SjQkqcIlk1dJjz",
-   "headline": "Trent Williams, 49ers silence Cowboys, fans on and off field",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/trent-williams-49ers-silence-cowboys-015620599.html",
-   "timestamp": "2026-11-18T01:56:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "SF"
-   ]
-  },
-  {
-   "id": "9D7axISJIIRpOKM5",
-   "headline": "Fred Johnson finds new NFL home after being cut by the Eagles",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fred-johnson-finds-nfl-home-013454376.html",
-   "timestamp": "2026-11-18T01:34:54.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "RdjXACdaacz0Sq79",
-   "headline": "The Rams’ season starts now",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-season-starts-now-012445337.html",
-   "timestamp": "2026-11-18T01:24:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "6ipF0nL_x-w_MBn9",
-   "headline": "Miami Dolphins Discussion: Week 11 Game Vs Buffalo Bills Predictions Edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/miami-dolphins-discussion-week-11-010000666.html",
-   "timestamp": "2026-11-18T01:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "MIA"
-   ]
-  },
-  {
-   "id": "y6XLFSynwBGKXHEZ",
-   "headline": "Chiefs worked out K Matt Prater on Tuesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-worked-k-matt-prater-001037660.html",
-   "timestamp": "2026-11-18T00:10:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "0EMtScyvdsSOsULu",
-   "headline": "Chiefs sign former Eagles offensive lineman to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-sign-former-eagles-offensive-000000830.html",
-   "timestamp": "2026-11-18T00:00:00.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC",
-    "PHI"
-   ]
-  },
-  {
-   "id": "eVKJPIBnsPr53TUt",
-   "headline": "Minor NFL Transactions: 11/17/26",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/minor-nfl-transactions-11-17-26",
-   "timestamp": "2026-11-17T23:59:41.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "XDO4FSW9wPzpZ0jG",
-   "headline": "Should the Denver Broncos shake-up their starting offensive line?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/denver-broncos-shake-starting-offensive-235916958.html",
-   "timestamp": "2026-11-17T23:59:16.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "yhTsI4tNQRBNiLcC",
-   "headline": "Packers add 2, drop 1 on Tuesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-add-2-drop-1-212955525.html",
-   "timestamp": "2026-11-17T23:47:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "MAZF7eNypXEzbSNP",
-   "headline": "Week 11 Chicago Bears power rankings roundup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-11-chicago-bears-power-234500269.html",
-   "timestamp": "2026-11-17T23:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "_00uwbHzHdBe7ZaG",
-   "headline": "Roob's Eagles Observations: Time to turn to a Stout disciple who's already here?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/roobs-eagles-observations-time-turn-070000324.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "-i0UOX4I4R1aKFM1",
-   "headline": "Eagles sign Jaydon Blue to active roster, add NT to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-sign-jaydon-blue-active-165845857.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "EYPnBs5-R2J-Rb_g",
-   "headline": "Eagles continue reshaping roster by reportedly releasing veteran wide receiver",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-continue-reshaping-roster-reportedly-221326007.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "emWrl9PLAz9KEcdp",
-   "headline": "Questions by position as Eagles return from 2026 bye week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/questions-position-eagles-return-2026-102036178.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "1-wId5Lt_fj-FjWx",
-   "headline": "Eagles sign Zach Ertz to 53-man roster in flurry of moves",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-sign-zach-ertz-53-134435836.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "u2Ex8X8C5pM2AvoU",
-   "headline": "Future Eagles Fits: Jeremiah Smith headlines an explosive 2027 WR class",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/future-eagles-fits-jeremiah-smith-070000656.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "p891l3tXjzm0pI1x",
-   "headline": "Eagles add consultant who coached under Chip Kelly, Doug Pederson, Nick Sirianni",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-add-consultant-coached-under-155319709.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "nSF4agK5YI2fi13l",
-   "headline": "Updating Eagles' 2027 draft pick after Week 10 bye week",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/updating-eagles-2027-draft-pick-084300132.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "QaEyeMHDha5J9y0q",
-   "headline": "NFL flexes Raiders-Browns to NBC's Sunday Night Football, Patriots-Chargers out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-flexes-raiders-browns-nbcs-154247566.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE",
-    "LAC",
-    "LV",
-    "NE"
-   ]
-  },
-  {
-   "id": "IT32anIPHU14_fxC",
-   "headline": "Eagles down 1 RB on active roster after waiving Blue",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-down-1-rb-active-173058718.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "16I8hK405vCddzyO",
-   "headline": "Eagles waiving veteran OT Fred Johnson",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-waiving-veteran-ot-fred-164600222.html",
-   "timestamp": "2026-11-17T23:21:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "hWPi5Ptu-lNqeQI-",
-   "headline": "Titans Place WR Wan’Dale Robinson On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/titans-place-wr-wandale-robinson-on-ir",
-   "timestamp": "2026-11-17T23:20:57.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "0CZTZ-XjnuvM9voE",
-   "headline": "Jerry Jones makes surprising statement about 49ers takeover",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jerry-jones-makes-surprising-statement-230535928.html",
-   "timestamp": "2026-11-17T23:05:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "lPWLe3O1OREKhQJZ",
-   "headline": "Lions create practice squad spot, set stage for Wednesday roster moves",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/lions-create-practice-squad-spot-230510401.html",
-   "timestamp": "2026-11-17T23:05:10.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "EZFL6pzOsm_JK8JW",
-   "headline": "Patriots Power Rankings: Pats plummet heading into Week 11",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-power-rankings-pats-plummet-230259655.html",
-   "timestamp": "2026-11-17T23:02:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "R2Txw0HNEOCNEvK4",
-   "headline": "New England Patriots 2026 schedule and scores",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/england-patriots-2026-schedule-scores-230021578.html",
-   "timestamp": "2026-11-17T23:00:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
    ]
   }
  ]
