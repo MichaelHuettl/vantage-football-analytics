@@ -4,6 +4,622 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "zUae9mNJYGijzhZK",
+   "headline": "Hey NFL, Don’t Forget the Chicago Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-over-beers-hey-nfl-013417613.html",
+   "timestamp": "2026-11-19T01:34:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "cAQbPEQRgXw36otc",
+   "headline": "NFL Practice Squad Updates: 11/18/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-practice-squad-updates-11-18-26",
+   "timestamp": "2026-11-19T01:20:47.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "mghvs6OGegT3tR15",
+   "headline": "Cam Skattebo done with backflip celebration in wake of Aidan Hutchinson injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cam-skattebo-done-backflip-celebration-012015188.html",
+   "timestamp": "2026-11-19T01:20:15.000Z",
+   "category": "injury",
+   "player_ids": [
+    "cam-skattebo"
+   ]
+  },
+  {
+   "id": "Yqmeja5F3ZXVJDlS",
+   "headline": "NFL slams NBC's Mike Florio, Chris Simms for 'offensive' Mike Vrabel joke",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-slams-nbcs-mike-florio-011729034.html",
+   "timestamp": "2026-11-19T01:17:29.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "qoQk7zr73MY_KsFr",
+   "headline": "NFL Week 11 injury report: Latest update on Chiefs' Kenneth Walker III; Lions' Kerby Joseph practices fully",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-11-injury-report-chiefs-kenneth-walker-iii-lions-kerby-joseph/",
+   "timestamp": "2026-11-19T01:17:02.000Z",
+   "category": "injury",
+   "player_ids": [
+    "kenneth-walker"
+   ],
+   "team_abbrs": [
+    "DET",
+    "KC"
+   ]
+  },
+  {
+   "id": "bcAF-vIG2roV0ScD",
+   "headline": "NFL Week 11 Injury Report: Drake Maye likely done for season, surgery for Jordan Addison",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-week-11-injury-report-201706530.html",
+   "timestamp": "2026-11-19T01:15:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
+   "id": "uu7XIHkYHVLhy80N",
+   "headline": "Miami Dolphins Fans: Your Post-Game Week 10 Vs Indianapolis Colts Takeaways",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-fans-post-game-010000825.html",
+   "timestamp": "2026-11-19T01:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND",
+    "MIA"
+   ]
+  },
+  {
+   "id": "T79pWx5TPVyvnxYa",
+   "headline": "Chargers-Jets Injury Report: Ladd McConkey returns to practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-jets-injury-report-ladd-005527495.html",
+   "timestamp": "2026-11-19T00:55:27.000Z",
+   "category": "injury",
+   "player_ids": [
+    "ladd-mcconkey"
+   ],
+   "team_abbrs": [
+    "LAC",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "sKF3Ki9DLsOUiPug",
+   "headline": "Skip Bayless pours cold water on Troy Aikman-Cowboys reunion: ex-QB ‘would be a threat’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/skip-bayless-pours-cold-water-005155271.html",
+   "timestamp": "2026-11-19T00:51:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "1umBXux5gLSVD2Dr",
+   "headline": "Minor NFL Transactions: 11/18/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/minor-nfl-transactions-11-18-26",
+   "timestamp": "2026-11-19T00:42:16.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "0H1-SUdRoPEAHjnW",
+   "headline": "Geno Smith plans to play against Chargers despite lingering ankle injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/geno-smith-plans-play-against-002220361.html",
+   "timestamp": "2026-11-19T00:22:20.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "EPK11lFy9dHFfSVK",
+   "headline": "Buccaneers at Lions: Initial injury report for Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buccaneers-lions-initial-injury-report-001834621.html",
+   "timestamp": "2026-11-19T00:18:34.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DET",
+    "TB"
+   ]
+  },
+  {
+   "id": "TizPu3cecXInM6by",
+   "headline": "Ladd McConkey: Limited in Wednesday's practice",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/ladd-mcconkey-17724",
+   "timestamp": "2026-11-19T00:17:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "ladd-mcconkey"
+   ]
+  },
+  {
+   "id": "aCdTKnx51dqijcdY",
+   "headline": "Maxx Crosby drops NSFW reason why Raiders still believe in AFC playoff run this season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/maxx-crosby-drops-nsfw-reason-001550108.html",
+   "timestamp": "2026-11-19T00:15:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "gyTrKPHixvBpzouP",
+   "headline": "Mike Florio and Chris Simms apologize for 'comments that some found offensive' after being called out by NFL",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mike-florio-chris-simms-apologize-001118704.html",
+   "timestamp": "2026-11-19T00:11:18.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "VJBncOm-Rx38a06E",
+   "headline": "Chiefs Work Out Matt Prater Amid Harrison Butker’s Continuing Kicking Woes",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/chiefs-work-out-matt-prater-amid-harrison-butkers-continuing-kicking-woes",
+   "timestamp": "2026-11-19T00:03:27.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "harrison-butker"
+   ],
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "dSDXaaqcjQ2jDUZH",
+   "headline": "Raiders may eventually be good and Broncos proved culture flips can be quick",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-may-eventually-good-broncos-000000632.html",
+   "timestamp": "2026-11-19T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "-U902E0UaxdKIqpW",
+   "headline": "Seahawks snap reactions: Dante Fowler Jr plays season-high snap share vs. Raiders",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/seahawks-snap-reactions-dante-fowler-235827601.html",
+   "timestamp": "2026-11-18T23:58:27.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV",
+    "SEA"
+   ]
+  },
+  {
+   "id": "nb9dm2qTrtX7eRNc",
+   "headline": "Giants' Cam Skattebo to halt backflip celebrations after Aidan Hutchinson jumping celebration injury",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/giants-cam-skattebo-backflip-celebrations-aidan-hutchinson-injury/",
+   "timestamp": "2026-11-18T23:43:27.000Z",
+   "category": "injury",
+   "player_ids": [
+    "cam-skattebo"
+   ],
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "2d4MTaQ1xTOpIo_5",
+   "headline": "Steelers release veteran wide receiver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-release-veteran-wide-receiver-233134784.html",
+   "timestamp": "2026-11-18T23:31:34.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "6-djTRbYuR5C03jX",
+   "headline": "Mike Evans, Dre Greenlaw don't practice Wednesday, 49ers hope they can on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/mike-evans-dre-greenlaw-dont-233036201.html",
+   "timestamp": "2026-11-18T23:30:36.000Z",
+   "category": "practice",
+   "player_ids": [
+    "mike-evans"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "rFcWH3yDrTef6pqL",
+   "headline": "Ravens CB Marlon Humphrey apologizes after saying Baltimore is 'best at making criminals'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/ravens-pro-bowl-cb-marlon-humphrey-apologizes-baltimore-best-making-criminals/",
+   "timestamp": "2026-11-18T23:22:16.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL"
+   ]
+  },
+  {
+   "id": "bISyLnezuJL0swFk",
+   "headline": "Chargers Week 10 PFF Grades: Del’Shawn Phillips lead spirited effort vs. Ravens rushing attack",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-week-10-pff-grades-231621536.html",
+   "timestamp": "2026-11-18T23:16:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "LAC"
+   ]
+  },
+  {
+   "id": "9aAuHJdIE7q57JIh",
+   "headline": "Browns roster seen as the best fit for one of the best 5 free agents left in the NFL",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/browns-roster-seen-best-fit-231002846.html",
+   "timestamp": "2026-11-18T23:10:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "WNq_F-g_hx6w7oKl",
+   "headline": "Broncos vs. Raiders practice participation report: Wednesday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-raiders-practice-participation-230742065.html",
+   "timestamp": "2026-11-18T23:07:42.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "hEqF3WJGEQJDC06V",
+   "headline": "Steelers-Bengals on Sunday Night Football draws 21.519 million viewers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-bengals-sunday-night-football-230618473.html",
+   "timestamp": "2026-11-18T23:06:18.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CIN",
+    "PIT"
+   ]
+  },
+  {
+   "id": "fFa6g-kZEsEWHSoo",
+   "headline": "Jaylen Waddle: Practices fully Wednesday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jaylen-waddle-15404",
+   "timestamp": "2026-11-18T23:06:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaylen-waddle"
+   ]
+  },
+  {
+   "id": "kFrvT5hwhcjjDJTD",
+   "headline": "Commanders, Cowboys get help from schedule in effort to chase down the Giants",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/commanders-cowboys-help-schedule-effort-230000209.html",
+   "timestamp": "2026-11-18T23:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NYG",
+    "WAS"
+   ]
+  },
+  {
+   "id": "K2SvToMfkkPCP3Lb",
+   "headline": "Kansas City Chiefs roster",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/kansas-city-chiefs-roster-003019778.html",
+   "timestamp": "2026-11-18T23:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "MIeQqul7xx-rsHJB",
+   "headline": "DeVonta Smith: Limited in return to practice",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/devonta-smith-15406",
+   "timestamp": "2026-11-18T22:59:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "devonta-smith"
+   ]
+  },
+  {
+   "id": "X_E7X_UF031C36af",
+   "headline": "NFL Trade Deadline Notes: Titans, Giants, Bengals, Reed, Sainristil, Matlock",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-trade-deadline-notes-titans-giants-bengals-reed-sainristil-matlock",
+   "timestamp": "2026-11-18T22:49:16.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CIN",
+    "NYG",
+    "TEN"
+   ]
+  },
+  {
+   "id": "nlrXILDIrMQIzgRn",
+   "headline": "Fernando Mendoza’s painful NFL debut could hold answers to next test vs Broncos",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/fernando-mendoza-painful-nfl-debut-224913592.html",
+   "timestamp": "2026-11-18T22:49:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "ls0B0XVA2JY-2VhV",
+   "headline": "Chiefs-Cardinals Week 11 Wednesday injury report: 3 Chiefs starters miss practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-cardinals-week-11-wednesday-224500238.html",
+   "timestamp": "2026-11-18T22:45:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ARI",
+    "KC"
+   ]
+  },
+  {
+   "id": "ErXhZwbulPaiaTyC",
+   "headline": "Bears vs. Saints Injury Report: Kyler Gordon DNP, Jeffery Simmons Limited",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-vs-saints-injury-report-224439372.html",
+   "timestamp": "2026-11-18T22:44:39.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI",
+    "NO"
+   ]
+  },
+  {
+   "id": "jbgPIwLqERvZs6UL",
+   "headline": "Cowboys' handling of DC Christian Parker is bizarre, leaving Dallas with more questions than answers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cowboys-handling-defensive-coordinator-christian-parker-mike-pettine/",
+   "timestamp": "2026-11-18T22:41:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "DzEMe8SfnJgbMHr7",
+   "headline": "Tre’Davious White to the rescue? Bills’ battered secondary may need a familiar face",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tre-davious-white-rescue-bills-224129917.html",
+   "timestamp": "2026-11-18T22:41:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "RF_gNg-cR7wo7Gcj",
+   "headline": "Roman Wilson full participant, Nick Herbig DNP in Steelers’ latest injury report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roman-wilson-full-participant-nick-223633506.html",
+   "timestamp": "2026-11-18T22:36:33.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "hL69p0SlAY2QNscr",
+   "headline": "49ers praise ‘off the chain’ Mexican fans for unbelievable support",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-praise-off-chain-mexican-223300181.html",
+   "timestamp": "2026-11-18T22:33:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "IkG4bqr-KwvRZmVU",
+   "headline": "49ers spare no expense for Mexico City trip with hope of taking team to new heights",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-spare-no-expense-mexico-223000297.html",
+   "timestamp": "2026-11-18T22:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "d86xkOSfnluESpo7",
+   "headline": "Hapless Chargers tickets now cheaper than a stadium cheeseburger",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/hapless-chargers-tickets-now-cheaper-222451318.html",
+   "timestamp": "2026-11-18T22:24:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "RNkSQVCd5fx4rjQP",
+   "headline": "NFL blasts Mike Florio’s ‘inappropriate’ Mike Vrabel-Hitler joke",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-blasts-mike-florio-inappropriate-221211741.html",
+   "timestamp": "2026-11-18T22:12:11.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "1fBQcBZtAHVloZgc",
+   "headline": "Who is the Buffalo Bills’ biggest threat for 1 seed in 2026 AFC playoffs?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/buffalo-bills-biggest-threat-1-220751605.html",
+   "timestamp": "2026-11-18T22:07:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "nB4kjNjslYz9QFSB",
+   "headline": "Dalton Kincaid, Christian Benford listed as out of Bills practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dalton-kincaid-christian-benford-listed-220243580.html",
+   "timestamp": "2026-11-18T22:02:43.000Z",
+   "category": "practice",
+   "player_ids": [
+    "dalton-kincaid"
+   ],
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "JVxUn8lR8WOoGxcn",
+   "headline": "How do the Steelers stack up in the AFC playoff picture?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-stack-afc-playoff-picture-220000057.html",
+   "timestamp": "2026-11-18T22:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "ML5ClGRe7KL4CsHn",
+   "headline": "Wednesday’s Saints vs. Bears Injury Report: CJ Donaldson is back",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/wednesday-saints-vs-bears-injury-215812818.html",
+   "timestamp": "2026-11-18T21:58:12.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI",
+    "NO"
+   ]
+  },
+  {
+   "id": "SCE8is6KAZxWgEWI",
+   "headline": "Eagles claim OL Ajani Cornelius off waivers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-claim-ol-ajani-cornelius-215649764.html",
+   "timestamp": "2026-11-18T21:56:49.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "1X4YJOFFHOm0AM_Q",
+   "headline": "Cowboys injuries: Dallas had 7 players who did not practice today",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-injuries-dallas-had-7-215528822.html",
+   "timestamp": "2026-11-18T21:55:28.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "_pfkYYWmmY_jcRFp",
+   "headline": "Rams’ Kyren Williams, Blake Corum keep team afloat during rough waters",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-kyren-williams-blake-corum-215459312.html",
+   "timestamp": "2026-11-18T21:54:59.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "kyren-williams"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "4bK9nubNvw4fQXqd",
+   "headline": "Arizona Cardinals sign wide receiver Bub Means to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/arizona-cardinals-sign-wide-receiver-215414686.html",
+   "timestamp": "2026-11-18T21:54:14.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "u5JdXlUmPSQH2jvw",
+   "headline": "Lions Expect S Kerby Joseph To Play In Week 11",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/lions-expect-s-kerby-joseph-to-play-in-week-11",
+   "timestamp": "2026-11-18T21:45:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "Du0s3X0L-EydtusH",
+   "headline": "NY Giants bring return man they just cut back to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ny-giants-bring-return-man-214400898.html",
+   "timestamp": "2026-11-18T21:44:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "CNbn1QkHQ-PiPdVs",
+   "headline": "Bucs' injury report confirms Baker Mayfield a non-participant Wednesday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bucs-injury-report-confirms-baker-214150955.html",
+   "timestamp": "2026-11-18T21:41:50.000Z",
+   "category": "injury",
+   "player_ids": [
+    "baker-mayfield"
+   ]
+  },
+  {
+   "id": "1pplL9JxYw1Xmy2W",
+   "headline": "Titans get Carnell Tate back at practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/titans-carnell-tate-back-practice-214003714.html",
+   "timestamp": "2026-11-18T21:40:03.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "TEN"
+   ]
+  },
+  {
+   "id": "EMq_DPXQiXqlRv3Y",
+   "headline": "Lions, Bucs Week 11 injury report: D.J. Reed returns to practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-bucs-week-11-injury-214000401.html",
+   "timestamp": "2026-11-18T21:40:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
    "id": "WI9pNlcs8hg7DTgK",
    "headline": "Indianapolis Colts Injury Report: Who’s In and Who’s Out TNF",
    "source": "Yahoo Sports",
@@ -76,17 +692,6 @@
    "category": "breaking",
    "team_abbrs": [
     "DAL"
-   ]
-  },
-  {
-   "id": "MIeQqul7xx-rsHJB",
-   "headline": "DeVonta Smith: Back at practice Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/devonta-smith-15406",
-   "timestamp": "2026-11-18T20:20:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "devonta-smith"
    ]
   },
   {
@@ -745,17 +1350,6 @@
    ]
   },
   {
-   "id": "u5JdXlUmPSQH2jvw",
-   "headline": "Lions Expect S Kerby Joseph To Play In Week 11",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/lions-expect-s-kerby-joseph-to-play-in-week-11",
-   "timestamp": "2026-11-18T05:34:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
    "id": "VwQj74NdIux6oQTM",
    "headline": "Buccaneers QB Baker Mayfield Could Miss Week 11",
    "source": "Pro Football Rumors",
@@ -1117,580 +1711,6 @@
    "category": "breaking",
    "team_abbrs": [
     "NE"
-   ]
-  },
-  {
-   "id": "h5qFPl9VvK3p4Jl3",
-   "headline": "Texans CB Kamari Lassiter downgraded to a non-participant Tuesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-cb-kamari-lassiter-downgraded-224805625.html",
-   "timestamp": "2026-11-17T22:48:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "fwoZnYXra-j332wI",
-   "headline": "Baker Mayfield: 'Trending' toward sitting Week 11",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/baker-mayfield-12619",
-   "timestamp": "2026-11-17T22:48:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "baker-mayfield"
-   ]
-  },
-  {
-   "id": "MrTCIJm-wjGyxK3q",
-   "headline": "Sauce Gardner, Charvarius Ward listed as out of Colts practice Tuesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/sauce-gardner-charvarius-ward-listed-224702670.html",
-   "timestamp": "2026-11-17T22:47:02.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "ol4CxFnHMFjiradT",
-   "headline": "Bears have a tough path to the playoffs, but are focused on 1-0",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-tough-path-playoffs-focused-224500713.html",
-   "timestamp": "2026-11-17T22:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "x_PDhRNGl-sZ5HjX",
-   "headline": "Highs and lows of Fernando Mendoza’s starting debut for Las Vegas Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/highs-lows-fernando-mendoza-starting-224400267.html",
-   "timestamp": "2026-11-17T22:44:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "LxsSHCLyxrYTqHFh",
-   "headline": "Texans Place LB Azeez Al-Shaair On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/texans-place-lb-azeez-al-shaair-on-ir",
-   "timestamp": "2026-11-17T22:35:20.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "cM7fBNsRsALWSdoF",
-   "headline": "Browns roster adds DLine help; once again, waive recent draft pick and injured DT",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/browns-roster-adds-dline-help-223224495.html",
-   "timestamp": "2026-11-17T22:32:24.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "3W5HU16tBDq3QwUf",
-   "headline": "Wan’Dale Robinson injury could cost Giants in 2027 NFL Draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/wan-dale-robinson-injury-could-223003194.html",
-   "timestamp": "2026-11-17T22:30:03.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "YWqdGUM5UXjBeNUV",
-   "headline": "Arizona Cardinals place Andrew Wingard and Jordan Burch on injured reserve",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/arizona-cardinals-place-andrew-wingard-222209318.html",
-   "timestamp": "2026-11-17T22:22:09.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "Phz0k-zgjz0ZSq47",
-   "headline": "Steelers worked out veteran safety",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-worked-veteran-safety-221952016.html",
-   "timestamp": "2026-11-17T22:19:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "uaT6991aVN2Fhxi8",
-   "headline": "Cardinals sign Jared Harrison-Hunte, Wydett Williams to 53-man roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cardinals-sign-jared-harrison-hunte-220810176.html",
-   "timestamp": "2026-11-17T22:08:10.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "22Cr66GfpfyEbSU1",
-   "headline": "Tuesday Miami Dolphins Thoughts With The Earl",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/tuesday-miami-dolphins-thoughts-earl-220626606.html",
-   "timestamp": "2026-11-17T22:06:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "sxbLfbfQWwimMo_A",
-   "headline": "Nick Bosa’s shocking drought comes with a 49ers silver lining",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nick-bosa-shocking-drought-comes-220529603.html",
-   "timestamp": "2026-11-17T22:05:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "n0f7GKzSjnJuZ5Fk",
-   "headline": "Inside the Cowboys historic defensive collapse against the 49ers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/inside-cowboys-historic-defensive-collapse-220000052.html",
-   "timestamp": "2026-11-17T22:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "SF"
-   ]
-  },
-  {
-   "id": "lDYdurU0MWKtXD9a",
-   "headline": "Chiefs sign RB E.J. Smith, Emmitt's son, to the practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chiefs-sign-rb-e-j-215702187.html",
-   "timestamp": "2026-11-17T21:57:02.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "4Fqp57BNTwAbcf-h",
-   "headline": "Dolphins DT Jordan Phillips Out For Season; Team Signs K Daniel Carlson",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/dolphins-dt-jordan-phillips-out-for-season-team-signs-k-daniel-carlson",
-   "timestamp": "2026-11-17T21:54:36.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-carlson"
-   ],
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "g0BbDUGFfq-idLYa",
-   "headline": "Dan Campbell sends Lions clear celebration message after Aidan Hutchinson injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dan-campbell-send-lions-clear-214724383.html",
-   "timestamp": "2026-11-17T21:47:24.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "Mrb5lFKHtMwtbi_C",
-   "headline": "Eagles sign RB Jaydon Blue to the active roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-sign-rb-jaydon-blue-213952360.html",
-   "timestamp": "2026-11-17T21:39:52.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "RXIFUeM7inrQW8yv",
-   "headline": "Eagles Film Review: What to make of Makai Lemon so far",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-film-review-makai-lemon-213849740.html",
-   "timestamp": "2026-11-17T21:38:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "tzwTY1tZgnYNmI2K",
-   "headline": "Buffalo Bills DB Te’Cory Couch signed to practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buffalo-bills-db-te-cory-213052260.html",
-   "timestamp": "2026-11-17T21:30:52.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "nN-MvsHqz1p7-or2",
-   "headline": "Titans place WR Wan'Dale Robinson on IR due to ankle injury, sign Xavier Restrepo to active roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/mlb/breaking-news/article/titans-place-wr-wandale-robinson-on-ir-due-to-ankle-injury-sign-xavier-restrepo-to-active-roster-212922575.html",
-   "timestamp": "2026-11-17T21:29:22.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "yMB9N5peJBifYEvz",
-   "headline": "Titans place WR Wan'Dale Robinson on season-ending IR due to ankle injury, sign Xavier Restrepo to active roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/mlb/breaking-news/article/titans-place-wr-wandale-robinson-on-season-ending-ir-due-to-ankle-injury-sign-xavier-restrepo-to-active-roster-172517580.html",
-   "timestamp": "2026-11-17T21:29:22.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "TL3m94GRJ2l6tXUg",
-   "headline": "Dolphins sign K Daniel Carlson to practice squad, make several more roster moves",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-sign-k-daniel-carlson-212854848.html",
-   "timestamp": "2026-11-17T21:28:54.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "daniel-carlson"
-   ],
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "atDLv4eFFuvhUKuY",
-   "headline": "Titans place Wan’Dale Robinson on IR; Promote Xavier Restrepo to roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-place-wan-dale-robinson-212743504.html",
-   "timestamp": "2026-11-17T21:27:43.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "QPFcDEzT0UDRNdDh",
-   "headline": "NFL makes surprising ‘Sunday Night Football’ for Week 12 featuring unexpected teams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-makes-surprising-sunday-night-212638182.html",
-   "timestamp": "2026-11-17T21:26:38.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "VnqMq3AP0vvNEVSn",
-   "headline": "Eagles sign Jaydon Blue to the roster (once again), add practice squad DT",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-sign-jaydon-blue-roster-212137158.html",
-   "timestamp": "2026-11-17T21:21:37.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "DPAObgJ4fwtLUp4z",
-   "headline": "Titans put Wan'Dale Robinson on injured reserve",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-put-wandale-robinson-injured-212120668.html",
-   "timestamp": "2026-11-17T21:21:20.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "SBjyfrxVDCVYrmnb",
-   "headline": "Dolphins DT Jordan Phillips will undergo season-ending biceps surgery",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-dt-jordan-phillips-undergo-211417243.html",
-   "timestamp": "2026-11-17T21:14:17.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "vP3yGTUD2pErRM2s",
-   "headline": "Packers Film Room: The Tucky Sneak adds a wrinkle",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-film-room-tucky-sneak-210940566.html",
-   "timestamp": "2026-11-17T21:09:40.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "qBJZwAphmugTE2Ww",
-   "headline": "Steelers sign former Seahawks safety",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-sign-former-seahawks-safety-210936493.html",
-   "timestamp": "2026-11-17T21:09:36.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "PIT",
-    "SEA"
-   ]
-  },
-  {
-   "id": "wqQsHhzh10Hjt2xW",
-   "headline": "Bills put OL Ar'maj Reed-Adams on injured reserve",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bills-put-ol-armaj-reed-210928690.html",
-   "timestamp": "2026-11-17T21:09:28.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "cKg-8NuUKpctvD2F",
-   "headline": "Week 11 Power Rankings Round Up: Packers come back down to earth",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-11-power-rankings-round-210636440.html",
-   "timestamp": "2026-11-17T21:06:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "7lC97Zlr9Q8CXyqm",
-   "headline": "Colts Place LB Jaylon Carlies On IR",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-place-lb-jaylon-carlies-on-ir",
-   "timestamp": "2026-11-17T21:05:45.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "5IZAJjTOpJPIdaNK",
-   "headline": "NFL schedule flex: League moves Week 12 'Sunday Night Football' matchup, shifts afternoon games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-schedule-flex-week-12-sunday-night-football-patriots-chargers/",
-   "timestamp": "2026-11-17T21:04:25.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "m486KR-NgGME3_pi",
-   "headline": "Can the Titans upset the Cowboys?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/titans-upset-cowboys-210200352.html",
-   "timestamp": "2026-11-17T21:02:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "TEN"
-   ]
-  },
-  {
-   "id": "2w4rhIuLKoX0GBva",
-   "headline": "Wolverines in the NFL: Lions’ Derrick Moore steps up for Aidan Hutchinson",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/wolverines-nfl-lions-derrick-moore-210000890.html",
-   "timestamp": "2026-11-17T21:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "bJdFXEIucdadVc8L",
-   "headline": "Cowboys sign OL Nick Leverett to active roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-sign-ol-nick-leverett-204951202.html",
-   "timestamp": "2026-11-17T20:49:51.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "H1npQp5HPPpKgKSU",
-   "headline": "CSC Reacts Survey: Can the Saints beat the Bears?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/csc-reacts-survey-saints-beat-204754195.html",
-   "timestamp": "2026-11-17T20:47:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NO"
-   ]
-  },
-  {
-   "id": "i8DkUnjoLBWlduGO",
-   "headline": "Bears WR Luther Burden has cleared concussion protocol",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/bears-wr-luther-burden-cleared-204457717.html",
-   "timestamp": "2026-11-17T20:44:57.000Z",
-   "category": "injury",
-   "player_ids": [
-    "luther-burden"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "pu971_wq6udhoxfz",
-   "headline": "Jaguars-Titans Week 12 Rematch Time and TV Network Changed",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-titans-week-12-rematch-204239321.html",
-   "timestamp": "2026-11-17T20:42:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "TEN"
-   ]
-  },
-  {
-   "id": "PRvq_2ulRwvc5Rsu",
-   "headline": "Ranking the 50 QBs who have started an NFL game in 2026: From cellar-dwellers to gold standard",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-starting-quarterback-rankings-joe-burrow-josh-allen/",
-   "timestamp": "2026-11-17T20:39:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "D84yWSMHC8NclO_I",
-   "headline": "Dolphins cornerback Chris Johnson nominated for Rookie of the Week award for Week 10",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/dolphins-cornerback-chris-johnson-nominated-203738541.html",
-   "timestamp": "2026-11-17T20:37:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA"
-   ]
-  },
-  {
-   "id": "47Tt4kYmrPBHscwe",
-   "headline": "2026 NFL Week 11 Power Rankings: Cowboys drift towards irrelevancy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfl-week-11-power-203000281.html",
-   "timestamp": "2026-11-17T20:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "qJnW276Phcx_llH1",
-   "headline": "NFL Power Rankings: Week 11 Edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-11-202758575.html",
-   "timestamp": "2026-11-17T20:27:58.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "NXP5HubYG5Mvj1f7",
-   "headline": "Falcons Extend CB C.J. Henderson",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/falcons-extend-cb-c-j-henderson",
-   "timestamp": "2026-11-17T20:20:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "bcAF-vIG2roV0ScD",
-   "headline": "NFL Week 11 Injury Report: Drake Maye likely done for season, surgery for Jordan Addison",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-11-injury-report-201706530.html",
-   "timestamp": "2026-11-17T20:17:06.000Z",
-   "category": "injury",
-   "player_ids": [
-    "drake-maye"
-   ]
-  },
-  {
-   "id": "Jwegl8sKSJgVnQFd",
-   "headline": "Colts sign WR Quez Watkins to the active roster from the practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-sign-wr-quez-watkins-201544203.html",
-   "timestamp": "2026-11-17T20:15:44.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "5gcfuRCDzXlEEGav",
-   "headline": "Awkward Chargers video sparks Justin Herbert trade speculation",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/awkward-chargers-video-sparks-justin-201427794.html",
-   "timestamp": "2026-11-17T20:14:27.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "justin-herbert"
-   ],
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "FNBzxt9EtchHuDB2",
-   "headline": "Week 11 fantasy quarterback rankings: Top QB streamers, starts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-11-fantasy-quarterback-rankings-200408550.html",
-   "timestamp": "2026-11-17T20:04:08.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "yY8K3tA5MgKEyTc8",
-   "headline": "Fernando Mendoza’s shaky starting debut primary focus for Las Vegas Raiders in Week 11 NFL Power Rankings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fernando-mendoza-shaky-starting-debut-200300669.html",
-   "timestamp": "2026-11-17T20:03:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "oW_HnTBhCly15f7d",
-   "headline": "What midseason 49ers trends matter?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/midseason-49ers-trends-matter-200100518.html",
-   "timestamp": "2026-11-17T20:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "pIeDr39yP69o_r49",
-   "headline": "Chicago Bears Stock Watch: Burden, Booker up, Johnson, Santos down",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chicago-bears-stock-watch-burden-200000249.html",
-   "timestamp": "2026-11-17T20:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
    ]
   }
  ]
