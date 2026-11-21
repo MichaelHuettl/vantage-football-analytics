@@ -4,6 +4,588 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "tUf5am4htosTD2jX",
+   "headline": "Week 11 NFL odds, lines, totals, spreads for every game, including Eagles-Steelers, 49ers-Vikings, more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-11-nfl-betting-lines-odds-spreads-totals/",
+   "timestamp": "2026-11-21T15:39:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN",
+    "PHI",
+    "PIT",
+    "SF"
+   ]
+  },
+  {
+   "id": "fwoZnYXra-j332wI",
+   "headline": "Baker Mayfield: Working through plantar fascia injury",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/baker-mayfield-12619",
+   "timestamp": "2026-11-21T15:31:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "baker-mayfield"
+   ]
+  },
+  {
+   "id": "PHBRSkoR-2ohA5gR",
+   "headline": "Antonio Brown critical of Steelers WR DK Metcalf amidst struggles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/antonio-brown-critical-steelers-wr-153000920.html",
+   "timestamp": "2026-11-21T15:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "Ojkv-h0tFkX182Bo",
+   "headline": "College football draft targets for the Cowboys: Week 12",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/college-football-draft-targets-cowboys-153000626.html",
+   "timestamp": "2026-11-21T15:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "gtnPdJtRbKKchY2t",
+   "headline": "Raiders-Broncos predictions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-broncos-predictions-150600630.html",
+   "timestamp": "2026-11-21T15:06:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "rz_iszZelaNEXgCQ",
+   "headline": "NFL predictions: Hope, without faith, is how we’re viewing the Panthers until further notice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-hope-without-faith-150440848.html",
+   "timestamp": "2026-11-21T15:04:40.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "V2n7lW43Or-os7--",
+   "headline": "Broncos vs. Raiders: 3 Players to Watch in Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-raiders-3-players-150000342.html",
+   "timestamp": "2026-11-21T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "bB6fG08NzNlBLZXG",
+   "headline": "Miami Dolphins offensive line review: Tracking the guards in Week 10",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-offensive-line-review-150000471.html",
+   "timestamp": "2026-11-21T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "nM7oBwM0gijbG1pK",
+   "headline": "Bears Discussion: Saints preview, bye week reflection, 2027 NFL Draft safety prospects",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-discussion-saints-preview-bye-150000687.html",
+   "timestamp": "2026-11-21T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NO"
+   ]
+  },
+  {
+   "id": "srmXyCJdvE5_TD7e",
+   "headline": "Previewing the New York Jets’ opposition: Los Angeles Chargers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/previewing-york-jets-opposition-los-150000859.html",
+   "timestamp": "2026-11-21T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "d9rBbsoidwwjxZLr",
+   "headline": "Saints vs. Bears: Key Matchups",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-vs-bears-key-matchups-150000322.html",
+   "timestamp": "2026-11-21T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NO"
+   ]
+  },
+  {
+   "id": "d6TpbwJHLu2VQfxA",
+   "headline": "Cardinals QB issues continue: Beck or Johnson to start?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-qb-issues-continue-beck-150000678.html",
+   "timestamp": "2026-11-21T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "izi1YeW_v-6dMRYK",
+   "headline": "5 Bills to watch vs. Dolphins",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-bills-watch-vs-dolphins-150000308.html",
+   "timestamp": "2026-11-21T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "MIA"
+   ]
+  },
+  {
+   "id": "ZJQNQIcB6Tvo9SGZ",
+   "headline": "Chiefs-Cardinals: 5 questions with Revenge of the Birds ahead of Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-cardinals-5-questions-revenge-150000496.html",
+   "timestamp": "2026-11-21T15:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "KC"
+   ]
+  },
+  {
+   "id": "s2P5lBixgjTgpJRB",
+   "headline": "NFL week 11 anytime TD best bets: There's value on Mark Andrews and a Tony Pollard revenge game",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-11-anytime-td-best-bets-mark-andrews/",
+   "timestamp": "2026-11-21T14:41:01.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "mark-andrews"
+   ]
+  },
+  {
+   "id": "s1g8ZxPCnaS-ypV3",
+   "headline": "Week 11 NFL odds, picks, predictions: Computer model backs Cowboys and Saints",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/nfl-odds-game-picks-spreads-betting-lines-predictions-week-11-2026/",
+   "timestamp": "2026-11-21T14:35:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NO"
+   ]
+  },
+  {
+   "id": "d-43nBPl7pQ65S5Z",
+   "headline": "NFL predictions: Steelers vs. Eagles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-steelers-vs-eagles-143453695.html",
+   "timestamp": "2026-11-21T14:34:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "PIT"
+   ]
+  },
+  {
+   "id": "WNMTCxdfG0zqVotK",
+   "headline": "NY Giants’ pass defense has been much better than expected",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/ny-giants-pass-defense-much-143051677.html",
+   "timestamp": "2026-11-21T14:30:51.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "EWO_giVsM3ogdNUA",
+   "headline": "Steelers KR Kaden Wetjen could be benched for undrafted free agent",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-kr-kaden-wetjen-could-141826498.html",
+   "timestamp": "2026-11-21T14:18:26.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "kU2bpUm-hP8jm4XV",
+   "headline": "Why Jaguars' Trevor Lawrence has legitimate 2026 NFL MVP case, is destined to win one at some point",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jaguars-trevor-lawrence-legitimate-2026-nfl-mvp-case-destined-win-one-some-point/",
+   "timestamp": "2026-11-21T14:14:48.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "trevor-lawrence"
+   ],
+   "team_abbrs": [
+    "JAX"
+   ]
+  },
+  {
+   "id": "xfBdqf2o_rbYyrKn",
+   "headline": "Don't sleep on these three NFL Week 11 games, from Joe Burrow's historic run to a rookie QB encore",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-11-games-joe-burrow-bengals-commanders/",
+   "timestamp": "2026-11-21T14:04:41.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "joe-burrow"
+   ]
+  },
+  {
+   "id": "coLBG-C4rwBOJ6Er",
+   "headline": "With no Rams game, who are you rooting for?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/no-rams-game-rooting-140200834.html",
+   "timestamp": "2026-11-21T14:02:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "tPB2YZNrSQKtH7NK",
+   "headline": "Bills news: Key matchups to know and players to watch vs. Buffalo",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bills-news-key-matchups-know-140157503.html",
+   "timestamp": "2026-11-21T14:01:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "8ev6Oxl601XUsRLV",
+   "headline": "Cowboys vs. Titans: Offensive, defensive impact players in Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-vs-titans-offensive-defensive-140000160.html",
+   "timestamp": "2026-11-21T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TEN"
+   ]
+  },
+  {
+   "id": "7nZ2Mzx95pFKaeH1",
+   "headline": "Broncos vs. Raiders score predictions for Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/broncos-vs-raiders-score-predictions-140000796.html",
+   "timestamp": "2026-11-21T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "3KtClEI8-kTKpJ9D",
+   "headline": "Packers should lean on running back Kaleb Johnson after their bye",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/packers-lean-running-back-kaleb-140000626.html",
+   "timestamp": "2026-11-21T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "ZPhH3rF1jxnPmHhV",
+   "headline": "Chargers first win comes at a price",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-first-win-comes-price-140000912.html",
+   "timestamp": "2026-11-21T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "b9NCtdJbwHNmMTXa",
+   "headline": "Lions vs. Bucs Week 11 preview: Madden 27 simulation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-vs-bucs-week-11-140000632.html",
+   "timestamp": "2026-11-21T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "vKbrLOQ-YAi-QZUl",
+   "headline": "5 Things I Think I Think About the Miami Dolphins After Week 10",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/5-things-think-think-miami-140000930.html",
+   "timestamp": "2026-11-21T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "88rmS_SHmiJWEwvl",
+   "headline": "Interview with the Enemy: Chicago Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/interview-enemy-chicago-bears-140000274.html",
+   "timestamp": "2026-11-21T14:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "YYOQe_Uv7jK1fzTM",
+   "headline": "Daiyan Henley being out with a knee injury changes nothing about the failed trade to Broncos",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daiyan-henley-being-knee-injury-135819365.html",
+   "timestamp": "2026-11-21T13:58:19.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "EvJrK-FoekvLMOWg",
+   "headline": "3 Keys to Victory for Ravens-Panthers in Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/3-keys-victory-ravens-panthers-135714164.html",
+   "timestamp": "2026-11-21T13:57:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BAL",
+    "CAR"
+   ]
+  },
+  {
+   "id": "wUZYXCo-eA1nbY9u",
+   "headline": "Can the Rams add anyone to replace Puka Nacua?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-add-anyone-replace-puka-135528160.html",
+   "timestamp": "2026-11-21T13:55:28.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "3GxQhZxyKznPRnSL",
+   "headline": "New York Jets News: Geno Smith likely to start vs. Chargers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/york-jets-news-geno-smith-134930785.html",
+   "timestamp": "2026-11-21T13:49:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "fXiEVR718otE1tM7",
+   "headline": "Miami Dolphins news roundup: Week 11 injury report includes Aaron Brewer update",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/miami-dolphins-news-roundup-week-131913308.html",
+   "timestamp": "2026-11-21T13:19:13.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "MIA"
+   ]
+  },
+  {
+   "id": "KDma5g3KAwKxVFB_",
+   "headline": "Tom Brady says it's 'obvious' who the NFL's best quarterback is right now: 'Numbers don't lie'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/tom-brady-says-its-obvious-who-nfls-best-quarterback-is-right-now/",
+   "timestamp": "2026-11-21T13:01:35.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "g5soG-FeDY7k2po-",
+   "headline": "NFL Mailbag: Jets, QBs, Broncos, Ward, Lions, Watson, Browns",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-mailbag-jets-qbs-broncos-ward-lions-watson-browns",
+   "timestamp": "2026-11-21T13:00:31.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "DEN",
+    "DET",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "a20PQkdjf2J3KjHk",
+   "headline": "Future Broncos: 3 Prospects to Watch in Week 12 of NCAA Football Season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/future-broncos-3-prospects-watch-130000446.html",
+   "timestamp": "2026-11-21T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "A0_zFiKYxdEuY5bV",
+   "headline": "Big Blue View mailbag: Play calling, Malik Nabers, Dominic Zvada, more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/big-blue-view-mailbag-play-130000937.html",
+   "timestamp": "2026-11-21T13:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "malik-nabers"
+   ]
+  },
+  {
+   "id": "zF19Vo2fP5SST6tO",
+   "headline": "Bears Week 11 Flashbacks: Ditka’s Revenge, Butler’s Boot, Jets Shutout",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bears-week-11-flashbacks-ditka-130000105.html",
+   "timestamp": "2026-11-21T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "hQIUtex6_gJt3fqw",
+   "headline": "Why this year is different for 49ers superstar Christian McCaffrey",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/why-different-49ers-superstar-christian-130000022.html",
+   "timestamp": "2026-11-21T13:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "christian-mccaffrey"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "Ri2N0sQTRlxqK4c2",
+   "headline": "New Orleans Saints News: Justin Reid says goodbye",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/orleans-saints-news-justin-reid-130000519.html",
+   "timestamp": "2026-11-21T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "hXEz4YmrdKwa8n4M",
+   "headline": "The Day After the Day After: Houston Texans stomp the Indianapolis Colts on Thursday Night",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/day-day-houston-texans-stomp-130000647.html",
+   "timestamp": "2026-11-21T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "HOU",
+    "IND"
+   ]
+  },
+  {
+   "id": "3Rlt0otkYs2i9aKN",
+   "headline": "Chiefs News: Cardinals preparing to start 4th QB in 4 weeks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chiefs-news-cardinals-preparing-start-130000342.html",
+   "timestamp": "2026-11-21T13:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "KC"
+   ]
+  },
+  {
+   "id": "_D4Z_ot0dEGUK-RO",
+   "headline": "NFL didn't know Puka Nacua had surgery when agreeing to suspension",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-didnt-know-puka-nacua-124034044.html",
+   "timestamp": "2026-11-21T12:40:34.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "_85ek__glW-diXR2",
+   "headline": "Philadelphia mayor wants the Eagles to play in a dome",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/philadelphia-mayor-wants-eagles-play-122148266.html",
+   "timestamp": "2026-11-21T12:21:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "FkSzRSFkOOHOKtnQ",
+   "headline": "Sean Payton gives curious answer on Broncos’ vision for Jahdae Barron",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/sean-payton-gives-curious-answer-120000223.html",
+   "timestamp": "2026-11-21T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "TL1XNlpCkom3MnCH",
+   "headline": "Cardinals vs. Chiefs Week 11 TV Map",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-vs-chiefs-week-11-120000753.html",
+   "timestamp": "2026-11-21T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI",
+    "KC"
+   ]
+  },
+  {
+   "id": "hxnlut4f4LCFfxgu",
+   "headline": "Cowboys news: Jerry Jones says Dallas is a ‘bad team’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-news-jerry-jones-says-120000768.html",
+   "timestamp": "2026-11-21T12:00:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "aaron-jones"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "MhDIdkIsv4hFzSJw",
+   "headline": "Detroit fans pick winner of the Lions vs. Bucs game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/detroit-fans-pick-winner-lions-120000534.html",
+   "timestamp": "2026-11-21T12:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
    "id": "FLKQD_P4_FTvJTc9",
    "headline": "NFL predictions: New York Jets vs Los Angeles Chargers - Battle of the Bottom Dwellers",
    "source": "Yahoo Sports",
@@ -1213,574 +1795,6 @@
    "team_abbrs": [
     "DAL",
     "TEN"
-   ]
-  },
-  {
-   "id": "zXUnUS_u-74GN4lO",
-   "headline": "Puka Nacua had surgery on MCL injury, will miss 'a couple of months,' Sean McVay says",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/rams-puka-nacua-injury-surgery-sean-mcvay/",
-   "timestamp": "2026-11-20T17:35:03.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "_t9_0q1oEbeQql4C",
-   "headline": "Here’s how the Raiders can still make the postseason in the AFC",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-still-postseason-afc-173449543.html",
-   "timestamp": "2026-11-20T17:34:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LV"
-   ]
-  },
-  {
-   "id": "KQdyFELc2xw80YmK",
-   "headline": "What will make the 2026 Eagles season a successful one following the bye week?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-eagles-season-successful-one-173400267.html",
-   "timestamp": "2026-11-20T17:34:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "mMgciwHh2l4dBU7U",
-   "headline": "Rams hope to have Kobie Turner back for Week 12",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-hope-kobie-turner-back-173328375.html",
-   "timestamp": "2026-11-20T17:33:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "tDcGSmkCrBiDpMKO",
-   "headline": "Jets confirm Geno Smith’s status for Chargers game after brutal hits",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-confirm-geno-smith-status-173200499.html",
-   "timestamp": "2026-11-20T17:32:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC",
-    "NYJ"
-   ]
-  },
-  {
-   "id": "P6798qxk4IV67moB",
-   "headline": "Davante Adams’ anticipated return against Packers hits a snag",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/davante-adams-anticipated-return-against-173119513.html",
-   "timestamp": "2026-11-20T17:31:19.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "davante-adams"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "MnfctNQHAl5Y2iY2",
-   "headline": "Packers’ upcoming Wednesday game isn’t their only schedule oddity",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-upcoming-wednesday-game-isn-172836325.html",
-   "timestamp": "2026-11-20T17:28:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "Q6PkHZHqOT2HoMUt",
-   "headline": "Bhayshul Tuten: At stretching portion of Friday's practice",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/bhayshul-tuten-18524",
-   "timestamp": "2026-11-20T17:28:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "bhayshul-tuten"
-   ]
-  },
-  {
-   "id": "1GGU-ROVC6MMLSRV",
-   "headline": "NFL Betting Advice: Giants-Jaguars picks and props",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-betting-advice-giants-jaguars-172753941.html",
-   "timestamp": "2026-11-20T17:27:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "NYG"
-   ]
-  },
-  {
-   "id": "NEJh38qWwlR8XIPY",
-   "headline": "Rams star Puka Nacua has knee surgery, likely will miss rest of season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-star-puka-nacua-knee-172552924.html",
-   "timestamp": "2026-11-20T17:25:52.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Gjzq5aYlErQqmMyW",
-   "headline": "Puka Nacua won’t play vs. Seahawks after ‘likely’ season-ending surgery",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/puka-nacua-won-t-play-172540319.html",
-   "timestamp": "2026-11-20T17:25:40.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "B2p6TUX6ir_ZRvjI",
-   "headline": "Puka Nacua will undergo knee surgery and likely miss the rest of the season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/puka-nacua-undergo-knee-surgery-172422240.html",
-   "timestamp": "2026-11-20T17:24:22.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "MP4lV3Yax3usoisj",
-   "headline": "Rams' Puka Nacua has surgery, could miss remainder of the season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/rams-puka-nacua-surgery-could-171752389.html",
-   "timestamp": "2026-11-20T17:17:52.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "IL_PcQk2pAePVR7W",
-   "headline": "Puka Nacua’s injury update is a serious bummer",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/puka-nacua-undergoes-mcl-surgery-171721856.html",
-   "timestamp": "2026-11-20T17:17:21.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "tiUw1lrzLCR_4Noq",
-   "headline": "Puka Nacua’s nightmare gets worse as his Rams season is lost",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/puka-nacua-nightmare-season-gets-171548991.html",
-   "timestamp": "2026-11-20T17:15:48.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "2FJC_xxcXuT3XXkn",
-   "headline": "Fantasy Football: Jaylen Waddle finally shows up, Bears' backfield goes off and more bold predictions for Week 11",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-jaylen-waddle-finally-shows-up-bears-backfield-goes-off-and-more-bold-predictions-for-week-11-171149139.html",
-   "timestamp": "2026-11-20T17:11:49.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jaylen-waddle"
-   ],
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "NmenHhpXBlzWJ_kj",
-   "headline": "Rams WR Puka Nacua potentially out for the rest of the 2026 season after undergoing MCL surgery",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/rams-wr-puka-nacua-potentially-out-for-the-rest-of-the-2026-season-after-undergoing-mcl-surgery-170914111.html",
-   "timestamp": "2026-11-20T17:09:14.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Mm4W91MVENjctkBx",
-   "headline": "Eagles opposing player to stop, Week 11 edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-opposing-player-stop-week-170700079.html",
-   "timestamp": "2026-11-20T17:07:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "7oWVTUVtUnziTIzm",
-   "headline": "Jets improved their special teams coverage by having fullback Andrew Beck handle kickoffs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-improved-special-teams-coverage-170401018.html",
-   "timestamp": "2026-11-20T17:04:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "OGottMMWJU2POEYx",
-   "headline": "3 things about Denver Broncos heading into Week 11",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-things-denver-broncos-heading-170100777.html",
-   "timestamp": "2026-11-20T17:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "HtVqSLsmsq4eXP6d",
-   "headline": "Detroit Lions name a new captain on defense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/detroit-lions-name-captain-defense-170010247.html",
-   "timestamp": "2026-11-20T17:00:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "O-xGTxNqD84ejr6b",
-   "headline": "NFL Predictions: Bears offense primed for a big day against Saints",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-predictions-bears-offense-primed-170000233.html",
-   "timestamp": "2026-11-20T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NO"
-   ]
-  },
-  {
-   "id": "DJA5MZcj7SF9P9w3",
-   "headline": "Kingdom Keys: 3 Keys to a Chiefs victory over the Cardinals in Week 11",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kingdom-keys-3-keys-chiefs-170000740.html",
-   "timestamp": "2026-11-20T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "KC"
-   ]
-  },
-  {
-   "id": "aN0Y3I-rv99NHInQ",
-   "headline": "Cowboys vs Titans: 3 causes for concern in Week 11",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-vs-titans-3-causes-170000832.html",
-   "timestamp": "2026-11-20T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "TEN"
-   ]
-  },
-  {
-   "id": "S8Rxfzn_0g6QOK9D",
-   "headline": "Three Rivers Report: The Steelers have a DK Metcalf problem",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/three-rivers-report-steelers-dk-165614466.html",
-   "timestamp": "2026-11-20T16:56:14.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "gtjzz2gIHoIIiJxA",
-   "headline": "Week 11 NFL odds, picks, predictions: Our best bets for this week's games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/week-11-nfl-odds-picks-predictions-our-best-bets-for-this-weeks-games-165442623.html",
-   "timestamp": "2026-11-20T16:54:42.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "BRISZd7VQDDzLbe2",
-   "headline": "Fan, 36, dies after violent 49ers, Cowboys brawls at AT&T Stadium",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/fan-36-dies-violent-49ers-165408844.html",
-   "timestamp": "2026-11-20T16:54:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "SF"
-   ]
-  },
-  {
-   "id": "lSYnRhFp7t5Yk6iR",
-   "headline": "Eagles News: Markel Bell and Philadelphia’s offensive line facing a huge challenge",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-news-markel-bell-philadelphia-165228888.html",
-   "timestamp": "2026-11-20T16:52:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "mGpsIkxIaMheAf6d",
-   "headline": "Colts HC Shane Steichen Noncommittal On Week 12 QB Starter",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-hc-shane-steichen-noncommittal-on-week-12-qb-starter",
-   "timestamp": "2026-11-20T16:51:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "Nqniz_A50AGXFyEE",
-   "headline": "Rams' Puka Nacua not the first NFL player to serve suspension while on IR",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/rams-puka-nacua-not-the-first-nfl-player-to-serve-suspension-while-on-ir-164759834.html",
-   "timestamp": "2026-11-20T16:47:59.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "XsuGR4UBExOeGQSX",
-   "headline": "Patriots rookie class has shown flashes so far, but questions remain",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-rookie-class-shown-flashes-164648849.html",
-   "timestamp": "2026-11-20T16:46:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "qRUY4heGcQo2N98M",
-   "headline": "Fantasy Football: These NFL teams are dead in the water — but can we still trust their stars in our lineups?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-these-nfl-teams-are-dead-in-the-water--but-can-we-still-trust-their-stars-in-our-lineups-163432393.html",
-   "timestamp": "2026-11-20T16:34:32.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "FUZDjGCdxYALNafU",
-   "headline": "Week 11 NFL betting buzz: Odds, sharp action and public betting splits",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/betting/article/week-11-nfl-betting-buzz-odds-sharp-action-and-public-betting-splits-161917089.html",
-   "timestamp": "2026-11-20T16:19:17.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "JLOTQBnWOwAkKMc2",
-   "headline": "Sam Hartman reveals why he’s doing ‘The Bachelor’ after NFL backlash",
-   "source": "Yahoo Sports",
-   "url": "https://www.yahoo.com/entertainment/tv/articles/sam-hartman-reveals-why-doing-161857841.html",
-   "timestamp": "2026-11-20T16:18:57.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "0ImR-sIFjm5WfwK6",
-   "headline": "In Kansas City, Kenneth Walker III and the run game makes the Chiefs contenders again",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/in-kansas-city-kenneth-walker-iii-run-game-completely-transformed-chiefs-offense-super-bowl/",
-   "timestamp": "2026-11-20T16:15:17.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kenneth-walker"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "DFBcmOvPBqBLABkC",
-   "headline": "The Texans’ path to the AFC playoffs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-path-afc-playoffs-161023763.html",
-   "timestamp": "2026-11-20T16:10:23.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "4iGloic7w9h9s1pS",
-   "headline": "Out of the Den: Nick Bosa has been here before, and Sunday is Week 3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/den-nick-bosa-sunday-week-160100169.html",
-   "timestamp": "2026-11-20T16:01:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "IVuemtG22U6aA4G2",
-   "headline": "Raiders-Broncos Week 11: 5 things to watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/raiders-broncos-week-11-5-160100583.html",
-   "timestamp": "2026-11-20T16:01:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "LV"
-   ]
-  },
-  {
-   "id": "XSXcc2glM1ValLlp",
-   "headline": "Should the NY Giants be interested in safety Justin Reid?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/ny-giants-interested-safety-justin-160000628.html",
-   "timestamp": "2026-11-20T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "IjX1Hiucd8Hwe48b",
-   "headline": "If Saints win/lose vs. Bears",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/saints-win-lose-vs-bears-160000641.html",
-   "timestamp": "2026-11-20T16:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "NO"
-   ]
-  },
-  {
-   "id": "Me-B-F_SoQ2F6Z6E",
-   "headline": "Patriots News: Bye week stock watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/patriots-news-bye-week-stock-155958217.html",
-   "timestamp": "2026-11-20T15:59:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "wJR7vr8tW-XzcDvz",
-   "headline": "Falcons Extend OLB Cameron Thomas",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/falcons-to-extend-olb-cameron-thomas",
-   "timestamp": "2026-11-20T15:50:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "nDUncJOoW1DdYIcd",
-   "headline": "Yahoo Fantasy x BreakingT: Joe Burrow, JSN are among the fantasy football MV-Tees",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/yahoo-fantasy-x-breakingt-joe-burrow-jsn-are-among-the-fantasy-football-mv-tees-153558018.html",
-   "timestamp": "2026-11-20T15:35:58.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "joe-burrow"
-   ]
-  },
-  {
-   "id": "WRqNKBGJY-0VQrnm",
-   "headline": "Lions' Jahmyr Gibbs laying early foundation for one of the best running back careers ever",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/lions-jahmyr-gibbs-laying-early-foundation-for-rb-goat-case/",
-   "timestamp": "2026-11-20T15:34:44.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jahmyr-gibbs"
-   ],
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "V1AJOaH3TVpA9PFt",
-   "headline": "NFL exploring possibility of implementing new travel rules for international games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-exploring-possibility-implementing-new-travel-rules-international-games/",
-   "timestamp": "2026-11-20T15:28:44.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "BQh8lSas6YaBFP6O",
-   "headline": "Week 11 NFL betting promos: Get almost $4,000 in bonuses from betting apps, sportsbooks for Sunday's games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-11-nfl-betting-promos-get-almost-4000-in-bonuses-betting-apps-sportsbooks-for-sundays-games/",
-   "timestamp": "2026-11-20T15:28:36.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "5tHrVM4AV0UJvL8r",
-   "headline": "NFL odds, picks: Brinson's Week 11 best bets, player props, anytime TD scorers for Sunday's games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-brinsons-week-11-best-bets-player-props-anytime-td-scorers-for-sundays-games/",
-   "timestamp": "2026-11-20T15:26:53.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "N3cu1Mi54-A6NDuY",
-   "headline": "Week 11 NFL odds, lines, totals, spreads for every game, including Steelers-Eagles, 49ers-Vikings, more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-11-nfl-betting-odds-lines-spreads-totals/",
-   "timestamp": "2026-11-20T15:19:55.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN",
-    "PHI",
-    "PIT",
-    "SF"
-   ]
-  },
-  {
-   "id": "zKIHqtMyhgKS34Xk",
-   "headline": "Commanders LT Laremy Tunsil Not Expected To Play In 2026",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/commanders-lt-laremy-tunsil-not-expected-to-play-in-2026",
-   "timestamp": "2026-11-20T15:02:58.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "qgGX7yo1MUEOkz8G",
-   "headline": "Week 11 NFL odds, picks, predictions: Computer model backs Cowboys and Saints",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-spreads-lines-predictions-best-bets-week-11-2026/",
-   "timestamp": "2026-11-20T14:44:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "NO"
    ]
   }
  ]
