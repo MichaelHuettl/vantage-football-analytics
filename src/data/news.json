@@ -4,8 +4,818 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "vmnVtnEwZIa8aTzC",
+   "headline": "49ers lose shot at breaking NFL record for most miles traveled due to Week 11 travel detour en route to Mexico",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/49ers-lose-shot-breaking-nfl-record-most-miles-traveled-week-11-travel-detour/",
+   "timestamp": "2026-11-20T23:51:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "LNq3cjIfiyDxkPyR",
+   "headline": "Caleb Williams Expected To Top 2024 QB Class Extensions",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/caleb-williams-expected-to-top-2024-qb-class-extensions",
+   "timestamp": "2026-11-20T23:47:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "caleb-williams"
+   ]
+  },
+  {
+   "id": "qlYLFr8ZB4hz1EyN",
+   "headline": "Brandon Jones listed as questionable; Brock Bowers also questionable",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brandon-jones-listed-questionable-brock-233442431.html",
+   "timestamp": "2026-11-20T23:34:42.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-bowers"
+   ]
+  },
+  {
+   "id": "757G-7tb5qxlXKUW",
+   "headline": "The Colts cut QB Daniel Jones. Should the Cardinals make a claim?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-cut-qb-daniel-jones-232334919.html",
+   "timestamp": "2026-11-20T23:23:34.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones",
+    "aaron-jones"
+   ],
+   "team_abbrs": [
+    "ARI",
+    "IND"
+   ]
+  },
+  {
+   "id": "93kBRJmGV25zShMU",
+   "headline": "Las Vegas Raiders-Denver Broncos FEED Topic: Kolton Miller, DJ Glaze vs. Nik Bonitto, Jonathon Cooper",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/las-vegas-raiders-denver-broncos-232100356.html",
+   "timestamp": "2026-11-20T23:21:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "ydI0xaEsqRBhcmDg",
+   "headline": "Davante Adams: Not in line to be ready following bye",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/davante-adams-9455",
+   "timestamp": "2026-11-20T23:18:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "davante-adams"
+   ]
+  },
+  {
+   "id": "uWJPfHtKbJvfAfOt",
+   "headline": "Daniel Jones has been released by the Colts. Should the Patriots go after him?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daniel-jones-released-colts-patriots-231727805.html",
+   "timestamp": "2026-11-20T23:17:27.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND",
+    "NE"
+   ]
+  },
+  {
+   "id": "XqY-mpq39yfIAned",
+   "headline": "Saints, S Justin Reid Agree To Part Ways",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/saints-s-justin-reid-agree-to-part-ways",
+   "timestamp": "2026-11-20T23:15:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
+   "id": "NxBjuJYFmaIc1M4R",
+   "headline": "D'Andre Swift: Welcoming back Monangai",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/dandre-swift-14394",
+   "timestamp": "2026-11-20T23:13:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dandre-swift"
+   ]
+  },
+  {
+   "id": "biT8wJFk140VLd6o",
+   "headline": "Week 11 NFL odds, picks, predictions: Computer model backs Cowboys and Saints",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-spreads-betting-lines-predictions-week-11-2026/",
+   "timestamp": "2026-11-20T23:05:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "NO"
+   ]
+  },
+  {
+   "id": "WA7T8SdyhmIkL5G8",
+   "headline": "Cowboys changing things up in search of consistency vs. Titans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-changing-things-search-consistency-230000231.html",
+   "timestamp": "2026-11-20T23:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "TEN"
+   ]
+  },
+  {
+   "id": "pOHo24spOkc_xEVD",
+   "headline": "Saints at Bears: 5 Props to Play",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-bears-5-props-play-230000225.html",
+   "timestamp": "2026-11-20T23:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NO"
+   ]
+  },
+  {
+   "id": "3i0C6YGjUrh0KSjV",
+   "headline": "NFL Week 11 injury report: Latest updates on Kenneth Walker III, Mike Evans, Baker Mayfield and more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-11-injury-report-kenneth-walker-iii-mike-evans-baker-mayfield/",
+   "timestamp": "2026-11-20T22:42:12.000Z",
+   "category": "injury",
+   "player_ids": [
+    "baker-mayfield",
+    "kenneth-walker",
+    "mike-evans"
+   ]
+  },
+  {
+   "id": "F0Nt9oGDEkN2BzR1",
+   "headline": "Raiders Week 11: Fernando Mendoza’s arm, legs key against stingy Broncos",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-week-11-fernando-mendoza-224200541.html",
+   "timestamp": "2026-11-20T22:42:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "Xs1xG06Q2tG1oaFE",
+   "headline": "Giants shocked to learn Colts cut ex-teammate Daniel Jones",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-shocked-learn-colts-cut-223922897.html",
+   "timestamp": "2026-11-20T22:39:22.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND",
+    "NYG"
+   ]
+  },
+  {
+   "id": "vwN3xLre0GpIwgck",
+   "headline": "Patriots QB Drake Maye Suffers Fractured Fibula; WR A.J. Brown Out Multiple Weeks",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/patriots-qb-drake-maye-suffers-fractured-fibula-wr-a-j-brown-out-multiple-weeks",
+   "timestamp": "2026-11-20T22:35:17.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "zekkycJL1uogG2uN",
+   "headline": "Steelers-Eagles preview: What to expect from Philadelphia’s offense, defense Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-eagles-preview-expect-philadelphia-223208061.html",
+   "timestamp": "2026-11-20T22:32:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "PIT"
+   ]
+  },
+  {
+   "id": "frI90pIT71dYm8rO",
+   "headline": "Pat Freiermuth says Steelers still believe in DK Metcalf",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pat-freiermuth-says-steelers-still-223000127.html",
+   "timestamp": "2026-11-20T22:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "pat-freiermuth"
+   ],
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "uyzc_RbjCSq-g7L-",
+   "headline": "Where the 49ers need to improve defensively vs. Vikings",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/where-49ers-improve-defensively-vs-221837989.html",
+   "timestamp": "2026-11-20T22:18:37.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN",
+    "SF"
+   ]
+  },
+  {
+   "id": "THekP-7gpDG4cPNm",
+   "headline": "CSC Reacts Results: Will the Saints defeat the Bears on Sunday?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/csc-reacts-results-saints-defeat-221510467.html",
+   "timestamp": "2026-11-20T22:15:10.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NO"
+   ]
+  },
+  {
+   "id": "n0J5KLZF-Lhu4zGf",
+   "headline": "Jimmy Garoppolo’s reunion may not be with the Rams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/jimmy-garoppolo-reunion-may-not-220500582.html",
+   "timestamp": "2026-11-20T22:05:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "F5t1-7hFxQMmueWY",
+   "headline": "S Talanoa Hufanga, WR Jaylen Waddle, CB Riley Moss set to return Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/talanoa-hufanga-wr-jaylen-waddle-220313612.html",
+   "timestamp": "2026-11-20T22:03:13.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaylen-waddle"
+   ]
+  },
+  {
+   "id": "Kwd8POyTVc4GG-Rz",
+   "headline": "Colts officially place Daniel Jones on waivers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-officially-place-daniel-jones-220057172.html",
+   "timestamp": "2026-11-20T22:00:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "pD1WMGRqdmr2Ggir",
+   "headline": "Saints at Bears Q&A: Dennis Allen Revenge Game Part 2",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/saints-bears-q-dennis-allen-220000168.html",
+   "timestamp": "2026-11-20T22:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "NO"
+   ]
+  },
+  {
+   "id": "fFa6g-kZEsEWHSoo",
+   "headline": "Jaylen Waddle: Good to go for Sunday's game",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/jaylen-waddle-15404",
+   "timestamp": "2026-11-20T21:57:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaylen-waddle"
+   ]
+  },
+  {
+   "id": "27w5uA8LWnr-INnm",
+   "headline": "Chargers rule out LB Daiyan Henley, list WR Ladd McConkey as questionable",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/chargers-rule-lb-daiyan-henley-214859444.html",
+   "timestamp": "2026-11-20T21:48:59.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ladd-mcconkey"
+   ],
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "EuqpD9k395ciQWsh",
+   "headline": "Potential landing spots for Daniel Jones after $50 million Colts disaster",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/potential-landing-spots-daniel-jones-214854241.html",
+   "timestamp": "2026-11-20T21:48:54.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "HtScgMGZqIFyIc28",
+   "headline": "Eagles will be without top defensive star vs. Steelers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-without-top-defensive-star-214520615.html",
+   "timestamp": "2026-11-20T21:45:20.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "PIT"
+   ]
+  },
+  {
+   "id": "oGVh0QGibHyUYHHo",
+   "headline": "Tragic death at Cowboys 49ers game prompts video tribute from cousin",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/tragic-death-cowboys-49ers-game-214419383.html",
+   "timestamp": "2026-11-20T21:44:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "SF"
+   ]
+  },
+  {
+   "id": "0Ll6WuDJkMUbt71m",
+   "headline": "AFC North Week 10 Recap: Browns pull off another comeback",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/afc-north-week-10-recap-214346059.html",
+   "timestamp": "2026-11-20T21:43:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "l_rVx4BVK2WaF2sw",
+   "headline": "Colts waive Daniel Jones: Indy not trading QB or Jonathan Taylor at deadline now a major second-guess",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/colts-daniel-jones-not-trading-qb-jonathan-taylor-deadline-major-second-guess/",
+   "timestamp": "2026-11-20T21:43:00.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor",
+    "daniel-jones",
+    "aaron-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "_Ug3wr2jQgcfYsXx",
+   "headline": "Why wild 49ers anomaly ought to put fright into Vikings fans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/why-wild-49ers-anomaly-ought-214148420.html",
+   "timestamp": "2026-11-20T21:41:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN",
+    "SF"
+   ]
+  },
+  {
+   "id": "Kmj7Dc_81qhEsF-T",
+   "headline": "Cardinals – Chiefs Week 11 injury reports",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cardinals-chiefs-week-11-injury-213919134.html",
+   "timestamp": "2026-11-20T21:39:19.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ARI",
+    "KC"
+   ]
+  },
+  {
+   "id": "anpqbdbupvt9IMlr",
+   "headline": "Saquon Barkley: In clear for Week 11 action",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/saquon-barkley-12507",
+   "timestamp": "2026-11-20T21:38:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "saquon-barkley"
+   ]
+  },
+  {
+   "id": "TizPu3cecXInM6by",
+   "headline": "Ladd McConkey: Listed questionable for Week 11",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/ladd-mcconkey-17724",
+   "timestamp": "2026-11-20T21:34:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ladd-mcconkey"
+   ]
+  },
+  {
+   "id": "IJ7D41jaIIdqyUh2",
+   "headline": "No NY Giants on final injury report for Week 11 Jacksonville game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/no-ny-giants-final-injury-211904234.html",
+   "timestamp": "2026-11-20T21:19:04.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "fMm7VNKAYgSQxbXf",
+   "headline": "Bhayshul Tuten returns to practice, has no injury designation for Sunday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/bhayshul-tuten-returns-practice-no-211647705.html",
+   "timestamp": "2026-11-20T21:16:47.000Z",
+   "category": "injury",
+   "player_ids": [
+    "bhayshul-tuten"
+   ]
+  },
+  {
+   "id": "Ye5IBtkKcMLC5H9o",
+   "headline": "NFL Week 11 expert picks, odds, best bets, teasers, predictions, survivor picks and more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-11-expert-picks-odds-best-bets-teasers-predictions-survivor-picks/",
+   "timestamp": "2026-11-20T21:12:55.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "cfetfFJPcm1qL2RK",
+   "headline": "Brock Bowers, Matt Gay questionable for Raiders-Broncos",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-bowers-matt-gay-questionable-210852265.html",
+   "timestamp": "2026-11-20T21:08:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-bowers"
+   ],
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "bKMSetbPiJX50yBp",
+   "headline": "DeVonta Smith set to return; Zack Baun, Dontayvion Wicks ruled out for Eagles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/devonta-smith-set-return-zack-210648174.html",
+   "timestamp": "2026-11-20T21:06:48.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "devonta-smith"
+   ],
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "Qw8UbiUck3nYHdyi",
+   "headline": "Jerry Jones calls Cowboys 'a bad team'; says team has chance to play better after Christian Parker's demotion",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jerry-jones-calls-cowboys-bad-team-chance-play-better-christian-parkers-demotion/",
+   "timestamp": "2026-11-20T21:05:52.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "aaron-jones"
+   ],
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "g_Z5na8nV4xOQuqE",
+   "headline": "Cowboys add LB Jaishawn Barham to injury report, list him as questionable",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-add-lb-jaishawn-barham-210329704.html",
+   "timestamp": "2026-11-20T21:03:29.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "uEmeFiVrTDbxs7W7",
+   "headline": "49ers’ optimism grows for Mike Evans’ return in massive Vikings game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-optimism-grows-mike-evans-210143942.html",
+   "timestamp": "2026-11-20T21:01:43.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "mike-evans"
+   ],
+   "team_abbrs": [
+    "MIN",
+    "SF"
+   ]
+  },
+  {
+   "id": "Ph-wui_PuDFYvGC9",
+   "headline": "D.J. Reed, Sione Vaki listed as questionable for the Lions",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/d-j-reed-sione-vaki-210025184.html",
+   "timestamp": "2026-11-20T21:00:25.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "n-PfjOsZ4JFPOReI",
+   "headline": "Pick Six: New York Jets at Los Angeles Chargers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/pick-six-york-jets-los-210000088.html",
+   "timestamp": "2026-11-20T21:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "-C04F740Y0LWxk0x",
+   "headline": "Giants are Colts' next opponent, and John Harbaugh is taken aback by Daniel Jones news",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giants-colts-next-opponent-john-205325753.html",
+   "timestamp": "2026-11-20T20:53:25.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND",
+    "NYG"
+   ]
+  },
+  {
+   "id": "yro2K4wjdxirxxL1",
+   "headline": "After Daniel Jones' Colts release, four NFL landing spots for veteran QB",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/daniel-jones-colts-release-four-205144649.html",
+   "timestamp": "2026-11-20T20:51:44.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "u-is9VkOD7GX-TDV",
+   "headline": "Cardinals Likely To Start QB Josh Johnson In Week 11",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/cardinals-likely-to-start-qb-josh-johnson-in-week-11",
+   "timestamp": "2026-11-20T20:50:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "6FaHPaBaA584PXO8",
+   "headline": "Dalton Kincaid doubtful for Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/dalton-kincaid-doubtful-week-11-204741313.html",
+   "timestamp": "2026-11-20T20:47:41.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dalton-kincaid"
+   ]
+  },
+  {
+   "id": "mmHLlkIDgIx5jaf6",
+   "headline": "Cowboys injuries: Multiple starters ruled out vs. Titans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/cowboys-injuries-multiple-starters-ruled-204712954.html",
+   "timestamp": "2026-11-20T20:47:12.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DAL",
+    "TEN"
+   ]
+  },
+  {
+   "id": "uK_kC1eSh0EhZCcQ",
+   "headline": "The window is wide open for the Chicago Bears to be good for years",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/parkins-55-wins-over-next-204500688.html",
+   "timestamp": "2026-11-20T20:45:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "rsRS7b8kl1xQpcHC",
+   "headline": "Now what? Colts should have traded Daniel Jones when they had the chance",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/now-what-colts-should-have-traded-daniel-jones-when-they-had-the-chance-204423803.html",
+   "timestamp": "2026-11-20T20:44:23.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "Kb-Z623ZmVOrGWu-",
+   "headline": "Daniel Jones released by Colts: Why QB's contract almost ensures he'll clear waivers, be free agent",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/daniel-jones-release-colts-why-qbs-contract-ensures-clear-waivers-free-agent/",
+   "timestamp": "2026-11-20T20:40:41.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "qE6fqLt_zOc4ezOv",
+   "headline": "Brock Bowers is questionable to play Sunday at Denver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/brock-bowers-questionable-play-sunday-203654241.html",
+   "timestamp": "2026-11-20T20:36:54.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-bowers"
+   ]
+  },
+  {
+   "id": "oMG-q9cKnm5MnNFv",
+   "headline": "Roman Wilson, Michael Pittman Jr. questionable vs. Eagles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roman-wilson-michael-pittman-jr-203452218.html",
+   "timestamp": "2026-11-20T20:34:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "b1mVyLN1uVTfueYH",
+   "headline": "Lions, Bucs injury designations: Cade Mays ruled OUT",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/lions-bucs-injury-designations-cade-203312116.html",
+   "timestamp": "2026-11-20T20:33:12.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "VA88AGjpdf5BiC-z",
+   "headline": "The one matchup that will tip 49ers-Vikings: Dallas Turner versus Trent Williams",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/one-matchup-tip-49ers-vikings-203000924.html",
+   "timestamp": "2026-11-20T20:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN",
+    "SF"
+   ]
+  },
+  {
+   "id": "bHc74a-KZcFtdoW_",
+   "headline": "Why Sunday night’s game vs. the Vikings could be the most important one of the season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/why-sunday-night-game-vs-203000188.html",
+   "timestamp": "2026-11-20T20:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "7QkJsoiaL8X2Zbnl",
+   "headline": "Patriots' A.J. Brown reportedly expected to be out multiple weeks with hamstring injury",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/patriots-aj-brown-reportedly-expected-to-be-out-multiple-weeks-with-hamstring-injury-202125124.html",
+   "timestamp": "2026-11-20T20:21:25.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "FHxsI1vvfjDcdk-I",
+   "headline": "Drake Maye out indefinitely with fibula: Big picture questions now facing Patriots offseason, beyond",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/drake-maye-suffers-fibula-injury-big-picture-questions-now-facing-patriots-offseason-beyond/",
+   "timestamp": "2026-11-20T20:18:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "YQVawzQxD7cnpOiV",
+   "headline": "Broncos, CB Ja’Quan McMillian Held Recent Extension Talks; Discussions Expected To Restart After Season",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/broncos-cb-jaquan-mcmillian-held-recent-extension-talks-discussions-expected-to-restart-after-season",
+   "timestamp": "2026-11-20T20:00:14.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "u-giqgB1Nld3UN5I",
+   "headline": "Colts release Daniel Jones: Landing spots for QB include Patriots, Ravens, Eagles",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/colts-release-qb-daniel-jones-possible-landing-spots/",
+   "timestamp": "2026-11-20T19:48:53.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "BAL",
+    "IND",
+    "NE",
+    "PHI"
+   ]
+  },
+  {
+   "id": "91_VJtM92sbZWMtw",
+   "headline": "Patriots WR A.J. Brown expected to miss multiple weeks due to hamstring injury, per report",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/patriots-wr-aj-brown-hamstring-injury-update/",
+   "timestamp": "2026-11-20T19:38:23.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "HSn66omdmv1o2Oj1",
+   "headline": "Drake Maye has fractured right fibula, will not require surgery, per report",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/drake-maye-has-fractured-right-fibula-will-not-require-surgery-per-report/",
+   "timestamp": "2026-11-20T19:28:43.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ]
+  },
+  {
+   "id": "7Ru47JsgfuPcxw8B",
+   "headline": "Carson Beck back spasms could force Cardinals to start fourth quarterback in five weeks",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/carson-beck-back-spasms-could-force-cardinals-to-start-fourth-quarterback-in-five-weeks/",
+   "timestamp": "2026-11-20T18:44:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "OMkNv__cjCTjmaMr",
+   "headline": "Cardinals QB Carson Beck misses practice with back spasms; Mike LaFleur says team is preparing for Josh Johnson start",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/cardinals-qb-carson-beck-misses-practice-with-back-spasms-mike-lafleur-says-team-is-preparing-for-josh-johnson-start-183403498.html",
+   "timestamp": "2026-11-20T18:34:03.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
    "id": "eJCmlaYaBA6ySu-6",
-   "headline": "Colts Release QB Daniel Jones",
+   "headline": "Colts Waive QB Daniel Jones",
    "source": "Pro Football Rumors",
    "url": "https://www.profootballrumors.com/2026/11/colts-release-qb-daniel-jones",
    "timestamp": "2026-11-20T18:12:28.000Z",
@@ -43,6 +853,17 @@
    ]
   },
   {
+   "id": "ylhgYF7GFZHThipt",
+   "headline": "Revisiting 2026 NFL Draft: Were the Saints wise in taking a chance on injury-prone Jordyn Tyson?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/revisiting-2026-nfl-draft-saints-took-chance-on-jordyn-tyson/",
+   "timestamp": "2026-11-20T18:01:03.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NO"
+   ]
+  },
+  {
    "id": "Ys7JWHBgOIC4mk2f",
    "headline": "Kenneth Walker: Not spotted Friday",
    "source": "RotoWire",
@@ -63,17 +884,6 @@
    "team_abbrs": [
     "DET",
     "TB"
-   ]
-  },
-  {
-   "id": "ydI0xaEsqRBhcmDg",
-   "headline": "Davante Adams: Not yet ready to practice",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/davante-adams-9455",
-   "timestamp": "2026-11-20T17:49:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "davante-adams"
    ]
   },
   {
@@ -920,17 +1730,6 @@
    ]
   },
   {
-   "id": "XqY-mpq39yfIAned",
-   "headline": "Saints, S Justin Reid Agree To Part Ways",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/saints-s-justin-reid-agree-to-part-ways",
-   "timestamp": "2026-11-20T04:20:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NO"
-   ]
-  },
-  {
    "id": "81cyVI3MRbx6Ah-Q",
    "headline": "Eagles’ Nick Sirianni Gives Vote Of Confidence To OC Sean Mannion",
    "source": "Pro Football Rumors",
@@ -977,17 +1776,6 @@
    ]
   },
   {
-   "id": "YQVawzQxD7cnpOiV",
-   "headline": "Broncos, CB Ja’Quan McMillian Held Recent Extension Talks; Discussions Expected To Restart After Season",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/broncos-cb-jaquan-mcmillian-held-recent-extension-talks-discussions-expected-to-restart-after-season",
-   "timestamp": "2026-11-20T03:04:14.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
    "id": "7TNl-V2biH4mc5tY",
    "headline": "Lions' Aidan Hutchinson says his jumping celebration days are over after torn ACL: 'That's the last time I go airborne'",
    "source": "Yahoo Sports",
@@ -996,751 +1784,6 @@
    "category": "injury",
    "team_abbrs": [
     "DET"
-   ]
-  },
-  {
-   "id": "irglXd-a3b8hmsrj",
-   "headline": "Thursday Night Football: C.J. Stroud, Texans lead Colts 17-3 at halftime",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/thursday-night-football-c-j-025453046.html",
-   "timestamp": "2026-11-20T02:54:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "BFJxNDSDLCc2iusT",
-   "headline": "Most important Week 11 games for NFL playoff races: Can anyone gain separation in NFC North or NFC South?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/most-important-week-11-games-nfl-playoff-races/",
-   "timestamp": "2026-11-20T02:53:35.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "7H9HQ3vXs6mdqzWo",
-   "headline": "Eagles Injury Report: DeVonta Smith on track to play against Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/eagles-injury-report-devonta-smith-025145076.html",
-   "timestamp": "2026-11-20T02:51:45.000Z",
-   "category": "injury",
-   "player_ids": [
-    "devonta-smith"
-   ],
-   "team_abbrs": [
-    "PHI",
-    "PIT"
-   ]
-  },
-  {
-   "id": "ILNZ2xdLyotzwkch",
-   "headline": "Brock Purdy’s MVP chances could disappear sooner than you think",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-purdy-mvp-chances-could-024742070.html",
-   "timestamp": "2026-11-20T02:47:42.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-purdy"
-   ]
-  },
-  {
-   "id": "WH_A_8S1kqxKor1a",
-   "headline": "C.J. Stroud's second TD gives Texans 14-3 lead",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/c-j-strouds-second-td-021727683.html",
-   "timestamp": "2026-11-20T02:17:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "WIYpoEsKt8LVElAT",
-   "headline": "Bengals duo could break NFL record that has stood for 31 years: Ja'Marr Chase and Tee Higgins on historic pace",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bengals-duo-could-break-nfl-record-jamarr-chase-tee-higgins-historic-pace/",
-   "timestamp": "2026-11-20T02:07:10.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jamarr-chase",
-    "tee-higgins"
-   ],
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "HAE7v2zLwn7cK5PZ",
-   "headline": "C.J. Stroud connects with Nico Collins to give Texans 7-3 lead",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/c-j-stroud-connects-nico-020230117.html",
-   "timestamp": "2026-11-20T02:02:30.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "nico-collins"
-   ],
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "Zpiiq88spk6f2GF9",
-   "headline": "Another full practice for Jaylen Waddle",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/another-full-practice-jaylen-waddle-014146226.html",
-   "timestamp": "2026-11-20T01:41:46.000Z",
-   "category": "practice",
-   "player_ids": [
-    "jaylen-waddle"
-   ]
-  },
-  {
-   "id": "oKAAiSA44CY_1Gyo",
-   "headline": "Chris Braswell injury update: Texans player carted off after being hurt on opening kickoff",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chris-braswell-injury-texans-player-013641757.html",
-   "timestamp": "2026-11-20T01:36:41.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "mNA2_HGz2oRYPMXx",
-   "headline": "Jets offensive coordinator Frank Reich takes blame for ugly touchdown drought",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jets-offensive-coordinator-frank-reich-013412669.html",
-   "timestamp": "2026-11-20T01:34:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "JiLPNOHGsGA91Roz",
-   "headline": "Texans DE Chris Braswell seriously injures leg on opening kickoff",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/texans-chris-braswell-seriously-injures-012915553.html",
-   "timestamp": "2026-11-20T01:29:15.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "ScNt37wc0tVtVAip",
-   "headline": "NFL Practice Squad Updates: 11/19/26",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/nfl-practice-squad-updates-11-19-26",
-   "timestamp": "2026-11-20T01:25:08.000Z",
-   "category": "practice"
-  },
-  {
-   "id": "_OKQOluUGE14S4f5",
-   "headline": "DeVonta Smith logs full practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/devonta-smith-logs-full-practice-011713004.html",
-   "timestamp": "2026-11-20T01:17:13.000Z",
-   "category": "practice",
-   "player_ids": [
-    "devonta-smith"
-   ]
-  },
-  {
-   "id": "boEThJ56bKUncRLf",
-   "headline": "Indianapolis Colts discussion: Week 11 live chat during the Texans game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/indianapolis-colts-discussion-week-11-011000661.html",
-   "timestamp": "2026-11-20T01:10:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "yQTrUD2SXiwlvcsh",
-   "headline": "BTSC Thursday Night Football thread: Colts at Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/btsc-thursday-night-football-thread-010000818.html",
-   "timestamp": "2026-11-20T01:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "Mj35GE7p6WUFlqcH",
-   "headline": "Kyren Williams hopes GTA VI release distracts other NFL teams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kyren-williams-hopes-gta-vi-005900801.html",
-   "timestamp": "2026-11-20T00:59:00.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "kyren-williams"
-   ]
-  },
-  {
-   "id": "bBMs39F9xuTQbaLN",
-   "headline": "Week 11 Yahoo Fantasy x Arena Club Slab Packs: Chase Patrick Mahomes, Joe Burrow and Jahmyr Gibbs grails",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/week-11-yahoo-fantasy-x-arena-club-slab-packs-chase-patrick-mahomes-joe-burrow-and-jahmyr-gibbs-grails-005558348.html",
-   "timestamp": "2026-11-20T00:55:58.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "joe-burrow",
-    "patrick-mahomes",
-    "jahmyr-gibbs"
-   ]
-  },
-  {
-   "id": "fpJWZR-UDHp6ich1",
-   "headline": "Hard-luck Rams catch break in Puka Nacua suspension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/hard-luck-rams-catch-break-004705076.html",
-   "timestamp": "2026-11-20T00:47:05.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Z-VQVkfOaSHB_Fqp",
-   "headline": "Bills to retire franchise legend Andre Reed's No. 83 during the 2027 season",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bills-to-retire-andre-reeds-no-83-during-the-2027-season/",
-   "timestamp": "2026-11-20T00:46:54.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "ymL5pUTgpslBNJ1v",
-   "headline": "Houston Texans vs. Indianapolis Colts ‘TNF’ Week 11 live game chat",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/houston-texans-vs-indianapolis-colts-004500595.html",
-   "timestamp": "2026-11-20T00:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "KJczZJvqqoR6uuWD",
-   "headline": "Thursday Night Football: Colts vs. Texans discussion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/thursday-night-football-colts-vs-004500434.html",
-   "timestamp": "2026-11-20T00:45:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "DgmuPsXZxfu3qHfH",
-   "headline": "Texans vs. Colts prediction: Houston looks to bounce back on 'TNF' vs. lowly Indy after rough Week 10 loss",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/texans-vs-colts-how-to-watch-odds-preview-prediction/",
-   "timestamp": "2026-11-20T00:38:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "HZeiB9qCFvE9VbjK",
-   "headline": "Week 11 NFL betting promos: Get almost $4,000 in bonuses from betting apps, sportsbooks for Texans vs. Colts",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-11-nfl-betting-promos-get-almost-4000-in-bonuses-betting-apps-sportsbooks-texans-vs-colts/",
-   "timestamp": "2026-11-20T00:35:32.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "VE5DYA-45UT9_Y3c",
-   "headline": "Mike Evans limited in his return to practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/mike-evans-limited-return-practice-003457607.html",
-   "timestamp": "2026-11-20T00:34:57.000Z",
-   "category": "practice",
-   "player_ids": [
-    "mike-evans"
-   ]
-  },
-  {
-   "id": "YKTu6mPQ6ikvSgXy",
-   "headline": "Colts vs. Texans odds, first touchdown scorer picks, odds, predictions for Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/colts-vs-texans-odds-first-touchdown-scorer-picks-odds-predictions-thursday-night-football/",
-   "timestamp": "2026-11-20T00:32:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "E-_ublnIQ1Q0OdrA",
-   "headline": "Could Gennings Dunker’s return revive the Steelers’ jumbo package?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/could-gennings-dunker-return-revive-003000041.html",
-   "timestamp": "2026-11-20T00:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "pISe-_aO9lNqFGFk",
-   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Colts vs. Texans, Thursday Night Football betting",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-texans-colts-thursday-night-football-betting/",
-   "timestamp": "2026-11-20T00:29:37.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "mYc0OACRguCeddFi",
-   "headline": "Minor NFL Transactions: 11/19/26",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/minor-nfl-transactions-11-19-26",
-   "timestamp": "2026-11-20T00:25:27.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "H5cDeDvPoijgc83f",
-   "headline": "Brock Purdy’s embarrassing viral moment resurfaces with Vikings twist",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-purdy-embarrassing-viral-moment-001915862.html",
-   "timestamp": "2026-11-20T00:19:15.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-purdy"
-   ],
-   "team_abbrs": [
-    "MIN"
-   ]
-  },
-  {
-   "id": "uxYaGun6XNqPybr5",
-   "headline": "Cardinals’ Carson Beck pops up on injury report in latest QB setback",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cardinals-carson-beck-pops-injury-001733090.html",
-   "timestamp": "2026-11-20T00:17:33.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "LZIJQbhOdIuABE5M",
-   "headline": "Thursday Night Football: Indianapolis Colts Vs Houston Texans Discussion & Game Information",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/thursday-night-football-indianapolis-colts-001500685.html",
-   "timestamp": "2026-11-20T00:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "KZbbLLGdvc9sBVWg",
-   "headline": "Use FanDuel promo code to get $200 bonus bets by targeting Colts vs. Texans on Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-200-bonus-bets-colts-texans-thursday-night-football/",
-   "timestamp": "2026-11-20T00:04:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "HOhRnEG63g8kUc-w",
-   "headline": "Packers Roster: Green Bay’s emergency signing board",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-roster-green-bay-emergency-000426777.html",
-   "timestamp": "2026-11-20T00:04:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "lQgu9WS6_itlUOux",
-   "headline": "Texans vs. Colts odds, prediction, line, betting preview, start time: Thursday Night Football picks, best bets",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/texans-vs-colts-odds-prediction-line-betting-preview-start-time-thursday-night-football-picks-best-bets/",
-   "timestamp": "2026-11-20T00:04:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "FuMGr4udxRqK639_",
-   "headline": "Thursday Night Football: Sauce Gardner is officially inactive vs. Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/thursday-night-football-sauce-gardner-235927622.html",
-   "timestamp": "2026-11-19T23:59:27.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "CxsFBzntrwrEe-Na",
-   "headline": "Colts vs. Texans live updates, inactives, where to watch: C.J. Stroud, Houston host Daniel Jones, Indianapolis in AFC South showdown",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/live/texans-colts-score-live-updates-stats-inactives-highlights-week-10-thursday-night-football-234711287.html",
-   "timestamp": "2026-11-19T23:47:11.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-jones"
-   ],
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "aoUv2G1w_2ZzjSaw",
-   "headline": "Texans run over ineffective Colts for easy 26-3 victory, winning first home game this season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/live/texans-run-over-ineffective-colts-for-easy-26-3-victory-winning-first-home-game-this-season-041509292.html",
-   "timestamp": "2026-11-19T23:47:11.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "ALIm28o0yktj22ho",
-   "headline": "Colts vs. Texans odds, picks, prediction: NFL Week 11 best bets, player props for Thursday Night Football",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/colts-vs-texans-odds-picks-prediction-nfl-week-11-best-bets-player-props-for-thursday-night-football/",
-   "timestamp": "2026-11-19T23:45:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "OlRfVSn8lnUnHS8M",
-   "headline": "NFL Week 11 preview & bold predictions: Kyle Shanahan vs. Brian Flores 4D chess match! Are the Giants legit?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-week-11-preview--bold-predictions-kyle-shanahan-vs-brian-flores-4d-chess-match-are-the-giants-legit-234349387.html",
-   "timestamp": "2026-11-19T23:43:49.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "F8Qn_4QmLA_sqG4I",
-   "headline": "Best Kalshi promo code CBSSPORTS55: Secure $55 bonus for Colts vs. Texans, Thursday Night Football picks",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-colts-vs-texans-thursday-night-football-picks/",
-   "timestamp": "2026-11-19T23:43:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "waVpHUFqbSOwpeAs",
-   "headline": "Kalshi promo code CBSSPORTS55: Grab $55 bonus for Texans vs. Colts, NFL Thursday Night Football predictions",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/prediction/news/kalshi-promo-code-cbssports55-grab-55-bonus-for-texans-vs-colts-nfl-thursday-night-football-predictions/",
-   "timestamp": "2026-11-19T23:41:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "xGaZqQhFUpy8FCyR",
-   "headline": "Puka Nacua’s suspension won’t impact his availability for Seahawks games",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/puka-nacua-suspension-won-t-233755039.html",
-   "timestamp": "2026-11-19T23:37:55.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "a2Nw27jjTMP6q2mp",
-   "headline": "NFL puts product over principles with Puka Nacua suspension | Opinion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-puts-product-over-principles-233751458.html",
-   "timestamp": "2026-11-19T23:37:51.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "UpcHQttPLmKozSaL",
-   "headline": "How Aidan Hutchinson injury could grant Lions a salary cap credit in 2027",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/how-aidan-hutchinson-injury-could-grant-lions-a-salary-cap-credit-in-2027/",
-   "timestamp": "2026-11-19T23:37:50.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "8Z58b_zXzqKU8vSv",
-   "headline": "Why didn't the Colts trade Jonathan Taylor? RB spared in Indy's fire sale",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/why-didnt-colts-trade-jonathan-233051738.html",
-   "timestamp": "2026-11-19T23:30:51.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jonathan-taylor"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "3kanI2HZbJ3yp5vU",
-   "headline": "Steelers insider believes Drew Allar will be 2027 Week 1 starter",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/steelers-insider-believes-drew-allar-233000338.html",
-   "timestamp": "2026-11-19T23:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "w1nX2Y8SFGFcw7Ol",
-   "headline": "Packers waive RB Pierre Strong",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-waive-rb-pierre-strong-232859605.html",
-   "timestamp": "2026-11-19T23:28:59.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "oz7LVuQGdCgGmFn-",
-   "headline": "What Cowboys' Christian Parker said about demotion: DC considered leaving, pushed back on decision",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/what-cowboys-christian-parker-said-defensive-coordinator-demotion/",
-   "timestamp": "2026-11-19T23:20:39.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "vJOX2WXDzC_8o07V",
-   "headline": "Mike Evans: Officially limited Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/mike-evans-9253",
-   "timestamp": "2026-11-19T23:19:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "mike-evans"
-   ]
-  },
-  {
-   "id": "TizPu3cecXInM6by",
-   "headline": "Ladd McConkey: Remains limited at Thursday's practice",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/ladd-mcconkey-17724",
-   "timestamp": "2026-11-19T23:15:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "ladd-mcconkey"
-   ]
-  },
-  {
-   "id": "LLFl0mYwh43w5_MG",
-   "headline": "Seahawks legendary coach will have to wait at least another year for Hall of Fame nod",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/seahawks-legendary-coach-wait-least-231020669.html",
-   "timestamp": "2026-11-19T23:10:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SEA"
-   ]
-  },
-  {
-   "id": "NmVH5lEVNwzf4fpS",
-   "headline": "Broncos vs. Raiders practice participation report: Thursday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-vs-raiders-practice-participation-230652053.html",
-   "timestamp": "2026-11-19T23:06:52.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "DEN",
-    "LV"
-   ]
-  },
-  {
-   "id": "FoxPqFCC4VTJlYqm",
-   "headline": "Jaguars Injury Report: Tuten Downgraded Ahead of Giants Matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jaguars-injury-report-tuten-downgraded-230127051.html",
-   "timestamp": "2026-11-19T23:01:27.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "JAX",
-    "NYG"
-   ]
-  },
-  {
-   "id": "YODwFJDbT8a1vwBs",
-   "headline": "The Cowboys handled the Christian Parker situation poorly",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-handled-christian-parker-situation-230000234.html",
-   "timestamp": "2026-11-19T23:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "YgtR2O3VSxTa51ch",
-   "headline": "NFL Week 11 picks, predictions: Colts vs. Texans on TNF",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-11-picks-predictions-230000777.html",
-   "timestamp": "2026-11-19T23:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "hsLzVbau9_xT02rc",
-   "headline": "Titans WR Calvin Ridley Facing Misdemeanor Assault Charge",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/titans-wr-calvin-ridley-facing-misdemeanor-assault-charge",
-   "timestamp": "2026-11-19T22:59:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "TEN"
-   ]
-  },
-  {
-   "id": "3mmShNndSuiwkABo",
-   "headline": "NFL Week 11 odds and predictions: Dolphins vs. Bills, full schedule",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-11-odds-predictions-225508889.html",
-   "timestamp": "2026-11-19T22:55:08.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "MIA"
-   ]
-  },
-  {
-   "id": "w8U6GwPL8gf_TNzt",
-   "headline": "Cardinals add Carson Beck to injury report as a limited participant",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cardinals-add-carson-beck-injury-225202453.html",
-   "timestamp": "2026-11-19T22:52:02.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "CnwCeDCPRaMV-Wbr",
-   "headline": "Packers waive RB Pierre Strong Jr.",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-waive-rb-pierre-strong-224657650.html",
-   "timestamp": "2026-11-19T22:46:57.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "OoxHF2s6foyklZYe",
-   "headline": "Brock Bowers returns to limited participation Thursday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-bowers-returns-limited-participation-224241138.html",
-   "timestamp": "2026-11-19T22:42:41.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "brock-bowers"
-   ]
-  },
-  {
-   "id": "ml5iO20rlOUnw8JE",
-   "headline": "Zack Baun remains out of Eagles practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/zack-baun-remains-eagles-practice-224221322.html",
-   "timestamp": "2026-11-19T22:42:21.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "MIeQqul7xx-rsHJB",
-   "headline": "DeVonta Smith: Logs full practice Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/devonta-smith-15406",
-   "timestamp": "2026-11-19T22:40:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "devonta-smith"
-   ]
-  },
-  {
-   "id": "AOk4gkFl04Xgg0WX",
-   "headline": "Broncos are expected to revisit contract talks with CB Ja’Quan McMillian during the offseason",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-expected-revisit-contract-talks-223830556.html",
-   "timestamp": "2026-11-19T22:38:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "6kjnh4HRM5_BfNcJ",
-   "headline": "Thursday’s Saints vs. Bears Injury Report: Pete Werner remains out",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/thursday-saints-vs-bears-injury-223455426.html",
-   "timestamp": "2026-11-19T22:34:55.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "CHI",
-    "NO"
    ]
   }
  ]
