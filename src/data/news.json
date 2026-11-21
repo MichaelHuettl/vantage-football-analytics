@@ -1,8 +1,380 @@
 {
  "schema_version": 1,
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
+  {
+   "id": "FLKQD_P4_FTvJTc9",
+   "headline": "NFL predictions: New York Jets vs Los Angeles Chargers - Battle of the Bottom Dwellers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/nfl-predictions-york-jets-vs-051917654.html",
+   "timestamp": "2026-11-21T05:19:17.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAC",
+    "NYJ"
+   ]
+  },
+  {
+   "id": "eJCmlaYaBA6ySu-6",
+   "headline": "Colts Waive QB Daniel Jones",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/colts-release-qb-daniel-jones",
+   "timestamp": "2026-11-21T05:12:28.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "LNq3cjIfiyDxkPyR",
+   "headline": "Caleb Williams Expected To Top 2024 QB Class Extensions",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/caleb-williams-expected-to-top-2024-qb-class-extensions",
+   "timestamp": "2026-11-21T05:10:31.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "caleb-williams"
+   ]
+  },
+  {
+   "id": "xwBmaBQZUgs34Iqn",
+   "headline": "Rams WR Puka Nacua Undergoes MCL Surgery; 2026 Return In Doubt",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/rams-wr-puka-nacua-undergoes-mcl-surgery-2026-return-in-doubt",
+   "timestamp": "2026-11-21T04:27:05.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "vwN3xLre0GpIwgck",
+   "headline": "Patriots QB Drake Maye Suffers Fractured Fibula; WR A.J. Brown Out Multiple Weeks",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/patriots-qb-drake-maye-suffers-fractured-fibula-wr-a-j-brown-out-multiple-weeks",
+   "timestamp": "2026-11-21T04:00:17.000Z",
+   "category": "injury",
+   "player_ids": [
+    "drake-maye"
+   ],
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "rdq_lg-EiEFtXyLA",
+   "headline": "Chargers OLB Bud Dupree Requests Release",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/chargers-olb-bud-dupree-requests-release",
+   "timestamp": "2026-11-21T03:08:38.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LAC"
+   ]
+  },
+  {
+   "id": "0onmvEuPnNTMHygl",
+   "headline": "Giving Props: Prop Bets for Vikings/Niners en México",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/giving-props-prop-bets-vikings-025019897.html",
+   "timestamp": "2026-11-21T02:50:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN"
+   ]
+  },
+  {
+   "id": "QlHuDBZ9YVdJM2xd",
+   "headline": "Eagles-Steelers Final Injury Report: DeVonta Smith will play, Dontayvion Wicks OUT",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-steelers-final-injury-report-023654573.html",
+   "timestamp": "2026-11-21T02:36:54.000Z",
+   "category": "injury",
+   "player_ids": [
+    "devonta-smith"
+   ],
+   "team_abbrs": [
+    "PHI",
+    "PIT"
+   ]
+  },
+  {
+   "id": "AtKhIV3FAEHEd747",
+   "headline": "Colts Putting Together Preliminary List For GM; Early Insights On HC Shane Steichen",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/colts-putting-together-preliminary-list-for-gm-early-insights-on-hc-shane-steichen",
+   "timestamp": "2026-11-21T02:22:28.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "h1Y96fXzGsWsbOw3",
+   "headline": "Eagles injury report: Zack Baun, Dontayvion Wicks ruled out vs. Steelers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-injury-report-zack-baun-123614956.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PHI",
+    "PIT"
+   ]
+  },
+  {
+   "id": "CVM4YhmIO-FzIwZs",
+   "headline": "Arnold Ebiketie: No hard feelings after trade to Bengals falls through",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/arnold-ebiketie-no-hard-feelings-092135884.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "CIN"
+   ]
+  },
+  {
+   "id": "g7pbuPQGO5HzOhWN",
+   "headline": "Eagles-Steelers matchups to watch in Week 11",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-steelers-matchups-watch-week-070000672.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "PIT"
+   ]
+  },
+  {
+   "id": "EW-HGo_XsYSK_PMD",
+   "headline": "Roob's bye week stats: It's awful but we do have Makai Lemon and Dallas Goedert",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/roobs-bye-week-stats-awful-070000905.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dallas-goedert"
+   ]
+  },
+  {
+   "id": "x0i7fr74LaMTwRy0",
+   "headline": "Colts release starting QB Daniel Jones less than a year after extending him",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/colts-release-starting-qb-daniel-144452618.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "daniel-jones",
+    "aaron-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "FHqtcoZJdyhIiiSm",
+   "headline": "Eagles injury update: Zack Baun misses 2nd straight practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-injury-zack-baun-misses-145132911.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "Mc8eyTBrexhy-Ur5",
+   "headline": "Eagles castoff Fred Johnson joins Andy Reid on Chiefs practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-castoff-fred-johnson-joins-092401704.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "practice",
+   "team_abbrs": [
+    "KC",
+    "PHI"
+   ]
+  },
+  {
+   "id": "QjMA185L1Ppj24qi",
+   "headline": "Christian Parker stripped of play-calling duties with Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/christian-parker-stripped-play-calling-100432854.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "9zc9k0g-c2ZtHMJe",
+   "headline": "Eagles injury update: Offensive reinforcements return after bye week",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/eagles-injury-offensive-reinforcements-return-154934840.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "jAm_-nEcTWuB6H3Z",
+   "headline": "Rams WR Puka Nacua gets knee surgery, likely out for season",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/rams-wr-puka-nacua-gets-144452406.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "M5dXluqTqlkMK2rC",
+   "headline": "Back at 100%, DeVonta Smith defends playing in Panthers game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/back-100-devonta-smith-defends-070000975.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "devonta-smith"
+   ],
+   "team_abbrs": [
+    "CAR"
+   ]
+  },
+  {
+   "id": "N8ahS50T_4iTD4xH",
+   "headline": "Steelers vs Eagles betting guide: Odds, props and picks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/steelers-vs-eagles-betting-guide-070000411.html",
+   "timestamp": "2026-11-21T02:17:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI",
+    "PIT"
+   ]
+  },
+  {
+   "id": "fDQgx4Ss8zjnVTX5",
+   "headline": "Braelon Allen making case for more touches in Jets’ crowded backfield",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/braelon-allen-making-case-more-013935099.html",
+   "timestamp": "2026-11-21T01:39:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "l_rVx4BVK2WaF2sw",
+   "headline": "Colts waive Daniel Jones: Indy not trading QB or Jonathan Taylor at deadline now a major second-guess",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/colts-daniel-jones-not-trading-qb-jonathan-taylor-deadline-major-second-guess/",
+   "timestamp": "2026-11-21T01:37:50.000Z",
+   "category": "transaction",
+   "player_ids": [
+    "jonathan-taylor",
+    "daniel-jones",
+    "aaron-jones"
+   ],
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "ngPQyF8Igt6WeKdD",
+   "headline": "At 7-2, Have the Bears Met or Exceeded Your Preseason Expectations?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/7-2-bears-met-exceeded-010000295.html",
+   "timestamp": "2026-11-21T01:00:00.000Z",
+   "category": "camp",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "tG0smcqEf-oKAEN_",
+   "headline": "John Harbaugh endorses Cam Skattebo’s new anti-backflip stance",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/john-harbaugh-endorses-cam-skattebo-005026446.html",
+   "timestamp": "2026-11-21T00:50:26.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "cam-skattebo"
+   ]
+  },
+  {
+   "id": "Oz-4NMhcA-6excCQ",
+   "headline": "NFL Practice Squad Updates: 11/20/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-practice-squad-updates-11-20-26",
+   "timestamp": "2026-11-21T00:37:17.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "G7IrOkvfFKGwGKNH",
+   "headline": "2026 Week 11 rooting guide for Cowboys fans",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/2026-week-11-rooting-guide-003000457.html",
+   "timestamp": "2026-11-21T00:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "3I-bLna1Jfq3hQKi",
+   "headline": "What is fan confidence after the Puka Nacua injury?",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/fan-confidence-puka-nacua-injury-000700417.html",
+   "timestamp": "2026-11-21T00:07:00.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ]
+  },
+  {
+   "id": "9kfwFNe1G_JqONjR",
+   "headline": "Raiders have 7 weeks to build foundation for Fernando Mendoza",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/raiders-7-weeks-build-foundation-000000834.html",
+   "timestamp": "2026-11-21T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "ePU8ZUbkptOgsfL7",
+   "headline": "49ers had enough to worry about — then Vikings got Kirk Cousins",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/49ers-had-enough-worry-then-000000533.html",
+   "timestamp": "2026-11-21T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "MIN",
+    "SF"
+   ]
+  },
+  {
+   "id": "TAXhxVBSlgcwyavR",
+   "headline": "Fernando Mendoza’s tests not getting any easier. Broncos will show how much rookie learned",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/articles/fernando-mendoza-tests-not-getting-000000917.html",
+   "timestamp": "2026-11-21T00:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
   {
    "id": "vmnVtnEwZIa8aTzC",
    "headline": "49ers lose shot at breaking NFL record for most miles traveled due to Week 11 travel detour en route to Mexico",
@@ -12,17 +384,6 @@
    "category": "breaking",
    "team_abbrs": [
     "SF"
-   ]
-  },
-  {
-   "id": "LNq3cjIfiyDxkPyR",
-   "headline": "Caleb Williams Expected To Top 2024 QB Class Extensions",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/caleb-williams-expected-to-top-2024-qb-class-extensions",
-   "timestamp": "2026-11-20T23:47:31.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "caleb-williams"
    ]
   },
   {
@@ -186,20 +547,6 @@
    "team_abbrs": [
     "IND",
     "NYG"
-   ]
-  },
-  {
-   "id": "vwN3xLre0GpIwgck",
-   "headline": "Patriots QB Drake Maye Suffers Fractured Fibula; WR A.J. Brown Out Multiple Weeks",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/patriots-qb-drake-maye-suffers-fractured-fibula-wr-a-j-brown-out-multiple-weeks",
-   "timestamp": "2026-11-20T22:35:17.000Z",
-   "category": "injury",
-   "player_ids": [
-    "drake-maye"
-   ],
-   "team_abbrs": [
-    "NE"
    ]
   },
   {
@@ -372,22 +719,6 @@
    "category": "breaking",
    "team_abbrs": [
     "CLE"
-   ]
-  },
-  {
-   "id": "l_rVx4BVK2WaF2sw",
-   "headline": "Colts waive Daniel Jones: Indy not trading QB or Jonathan Taylor at deadline now a major second-guess",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/colts-daniel-jones-not-trading-qb-jonathan-taylor-deadline-major-second-guess/",
-   "timestamp": "2026-11-20T21:43:00.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "jonathan-taylor",
-    "daniel-jones",
-    "aaron-jones"
-   ],
-   "team_abbrs": [
-    "IND"
    ]
   },
   {
@@ -814,20 +1145,6 @@
    ]
   },
   {
-   "id": "eJCmlaYaBA6ySu-6",
-   "headline": "Colts Waive QB Daniel Jones",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-release-qb-daniel-jones",
-   "timestamp": "2026-11-20T18:12:28.000Z",
-   "category": "transaction",
-   "player_ids": [
-    "daniel-jones"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
    "id": "AXogBUTjaU-xif_x",
    "headline": "Daniel Jones released by Colts as Anthony Richardson Sr. takes over as starter",
    "source": "Yahoo Sports",
@@ -1000,20 +1317,6 @@
    "team_abbrs": [
     "JAX",
     "NYG"
-   ]
-  },
-  {
-   "id": "xwBmaBQZUgs34Iqn",
-   "headline": "Rams WR Puka Nacua Undergoes MCL Surgery; 2026 Return In Doubt",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/rams-wr-puka-nacua-undergoes-mcl-surgery-2026-return-in-doubt",
-   "timestamp": "2026-11-20T17:27:05.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
    ]
   },
   {
@@ -1478,312 +1781,6 @@
    "team_abbrs": [
     "DAL",
     "NO"
-   ]
-  },
-  {
-   "id": "3eGu8k4rQDsX_acv",
-   "headline": "NFL Week 11 picks, best bets: Why 49ers beat Vikings in primetime, Bengals cover vs. Commanders",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-11-picks-best-bets-49ers-vikings-bengals-commanders/",
-   "timestamp": "2026-11-20T14:12:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "MIN",
-    "SF",
-    "WAS"
-   ]
-  },
-  {
-   "id": "VzA-cY2a5QDpTaAI",
-   "headline": "Week 11 bold predictions: Fernando Mendoza upsets Broncos, Tony Pollard breaks Cowboys",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-11-bold-predictions-fernando-mendoza-raiders-broncos/",
-   "timestamp": "2026-11-20T13:57:35.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "DEN"
-   ]
-  },
-  {
-   "id": "VxiFqc-Lw2rGzC49",
-   "headline": "C.J. Stroud keeps Texans' playoff hopes alive; CFB Week 12 picks; NBA's biggest disappointments",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/c-j-stroud-texans-playoffs-nfl-college-football-picks-nba-disappointments/",
-   "timestamp": "2026-11-20T13:52:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "DovXJA45OYAzp38p",
-   "headline": "NFL odds, picks, predictions: Cowboys, Vikings part of Week 11 parlays involving favorites, underdogs",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-cowboys-vikings-part-of-week-11-parlays-involving-favorites-underdogs/",
-   "timestamp": "2026-11-20T13:01:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "MIN"
-   ]
-  },
-  {
-   "id": "vRdKModdxcGhOBy3",
-   "headline": "Week 11 best bets: Tony Pollard scores against former team, Lions win sixth straight game",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-11-best-bets-tony-pollard-cowboys-lions/",
-   "timestamp": "2026-11-20T12:35:25.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "cRSPGEkC-043JHeY",
-   "headline": "Rams’ Puka Nacua Incurs Three-Game Suspension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/rams-wr-puka-nacua-suspended-for-3-games",
-   "timestamp": "2026-11-20T05:31:25.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "A5DB-3JN_6EULD5w",
-   "headline": "Will Colts bench Daniel Jones? Shane Steichen to 'evaluate everything'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-bench-daniel-jones-shane-051040006.html",
-   "timestamp": "2026-11-20T05:10:40.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-jones"
-   ],
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "n5VOISSuP3XC2xw9",
-   "headline": "Shane Steichen on Daniel Jones remaining the starter: \"We'll evaluate everything\"",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/shane-steichen-daniel-jones-remaining-051026899.html",
-   "timestamp": "2026-11-20T05:10:26.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-jones"
-   ]
-  },
-  {
-   "id": "mN8SvT1vOfSzHSPl",
-   "headline": "Tyler Warren: Good yardage on one catch",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tyler-warren-18534",
-   "timestamp": "2026-11-20T05:06:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tyler-warren"
-   ]
-  },
-  {
-   "id": "gdfUL3j86ZkCkX4u",
-   "headline": "As NFC South threatens another sub-.500 division winner, does NFL playoff structure need makeover? 'It'll take an egregious deal'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/as-nfc-south-threatens-another-sub-500-division-winner-does-nfl-playoff-structure-need-makeover-itll-take-an-egregious-deal-050414027.html",
-   "timestamp": "2026-11-20T05:04:14.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "dMwD5TK2OJ-As3Y5",
-   "headline": "Christian Parker Considered Leaving Cowboys After Demotion",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/christian-parker-considered-leaving-cowboys-after-demotion",
-   "timestamp": "2026-11-20T05:02:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "bh48Xg9ah6nkAPLe",
-   "headline": "Daniel Jones: Another forgettable performance in loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/daniel-jones-13491",
-   "timestamp": "2026-11-20T05:02:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-jones"
-   ]
-  },
-  {
-   "id": "zY5iQW-Oc3E8WACU",
-   "headline": "Broncos, Riley Moss Agree To Extension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/broncos-riley-moss-agree-to-extension",
-   "timestamp": "2026-11-20T04:54:16.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "lMYoksmwHpCYXbQM",
-   "headline": "After Thursday's loss, will Colts give Anthony Richardson another real shot?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/after-thursdays-loss-will-colts-give-anthony-richardson-another-real-shot-045047816.html",
-   "timestamp": "2026-11-20T04:50:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "1ZqnhwyJgFmMwXui",
-   "headline": "Jonathan Taylor: Minimal production with 15 touches",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jonathan-taylor-14455",
-   "timestamp": "2026-11-20T04:47:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jonathan-taylor"
-   ]
-  },
-  {
-   "id": "fu6TwFoiz01D6To4",
-   "headline": "Nico Collins: Gets into end zone Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/nico-collins-15200",
-   "timestamp": "2026-11-20T04:42:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "nico-collins"
-   ]
-  },
-  {
-   "id": "Ycr2FJVQioZAqp6T",
-   "headline": "Ravens Bench CB Marlon Humphrey For Week 11",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/ravens-bench-cb-marlon-humphrey-for-week-11",
-   "timestamp": "2026-11-20T04:33:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL"
-   ]
-  },
-  {
-   "id": "H71ecW_LL7VHouht",
-   "headline": "Prisco's Week 11 NFL picks: Cowboys rout Titans, 49ers over Vikings, Panthers edge Ravens",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/priscos-week-11-nfl-picks-odds-expert-picks-predictions/",
-   "timestamp": "2026-11-20T04:33:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BAL",
-    "CAR",
-    "DAL",
-    "MIN",
-    "SF",
-    "TEN"
-   ]
-  },
-  {
-   "id": "pdYp3rOwRYVSOOtc",
-   "headline": "Kayshon Boutte injures hip against Colts",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/kayshon-boutte-injures-hip-against-043133193.html",
-   "timestamp": "2026-11-20T04:31:33.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "5OayZPtLMwFHb3dN",
-   "headline": "Colts surrender 26 unanswered points as Daniel Jones benched in blowout road loss to Texans",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-surrender-26-unanswered-points-043022661.html",
-   "timestamp": "2026-11-20T04:30:22.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-jones"
-   ],
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "0gcwgH3XHG_Lf1l-",
-   "headline": "C.J. Stroud, Texans take care of business vs. cratering Colts: TNF winners, losers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/c-j-stroud-texans-care-042318694.html",
-   "timestamp": "2026-11-20T04:23:18.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "81cyVI3MRbx6Ah-Q",
-   "headline": "Eagles’ Nick Sirianni Gives Vote Of Confidence To OC Sean Mannion",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/eagles-nick-sirianni-gives-vote-of-confidence-to-oc-sean-mannion",
-   "timestamp": "2026-11-20T04:15:31.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "HgP7EPaFunFbrBNN",
-   "headline": "Thursday Night Football: Texans beat up on Colts, 26-3",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/thursday-night-football-texans-beat-041310062.html",
-   "timestamp": "2026-11-20T04:13:10.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU",
-    "IND"
-   ]
-  },
-  {
-   "id": "qV3nvjLWxSywl8xy",
-   "headline": "NFL playoff picture Week 11: Texans mounting late wild-card charge?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-playoff-picture-week-11-033117567.html",
-   "timestamp": "2026-11-20T03:31:17.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "HOU"
-   ]
-  },
-  {
-   "id": "Ni826ZjTyPb9fOaG",
-   "headline": "Buccaneers at Lions: Thursday injury report for Week 11",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/buccaneers-lions-thursday-injury-report-032001150.html",
-   "timestamp": "2026-11-20T03:20:01.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET",
-    "TB"
-   ]
-  },
-  {
-   "id": "7TNl-V2biH4mc5tY",
-   "headline": "Lions' Aidan Hutchinson says his jumping celebration days are over after torn ACL: 'That's the last time I go airborne'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/lions-aidan-hutchinson-says-his-jumping-celebration-days-are-over-after-torn-acl-thats-the-last-time-i-go-airborne-025843386.html",
-   "timestamp": "2026-11-20T02:58:43.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
    ]
   }
  ]
