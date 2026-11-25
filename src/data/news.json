@@ -4,6 +4,918 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "cZvyfz57F2pl8QXp",
+   "headline": "Arizona Cardinals claim Kedon Slovis off of waivers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/arizona-cardinals-claim-kedon-slovis-213904289.html",
+   "timestamp": "2026-11-25T21:39:04.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "ARI"
+   ]
+  },
+  {
+   "id": "tMKtFaat8dEFv_Qr",
+   "headline": "Steelers Waive QB Aaron Rodgers",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/aaron-rodgers-on-steelers-tenure-that-ship-has-sailed",
+   "timestamp": "2026-11-25T21:35:32.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "6eJS5Xg-3R30bFSZ",
+   "headline": "Lions place Skyler Gill-Howard on IR, elevate DE from practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/lions-place-skyler-gill-howard-213246104.html",
+   "timestamp": "2026-11-25T21:32:46.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "bS_qKYSiXcIScK-g",
+   "headline": "Juwan Johnson: Misses Wednesday's practice",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/juwan-johnson-14630",
+   "timestamp": "2026-11-25T21:32:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "juwan-johnson"
+   ]
+  },
+  {
+   "id": "HY-wxlq6E1klxVTp",
+   "headline": "Chiefs-Bills: 5 Things to Watch in Week 12 matchup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/chiefs-bills-5-things-watch-213000680.html",
+   "timestamp": "2026-11-25T21:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "0f0y4O2HOWqrdgkx",
+   "headline": "Brock Bowers: Remains limited, but expected back Sunday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/brock-bowers-17693",
+   "timestamp": "2026-11-25T21:30:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-bowers"
+   ]
+  },
+  {
+   "id": "vXtGBNezUc8eK2ZV",
+   "headline": "Aaron Rodgers became the NFL's rebel, and his scorched-earth interview was a fitting end in Pittsburgh",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/aaron-rodgers-became-the-nfls-rebel-and-his-scorched-earth-interview-was-a-fitting-end-in-pittsburgh-212941983.html",
+   "timestamp": "2026-11-25T21:29:41.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "Bau58BV7mRVLaNab",
+   "headline": "Aaron Rodgers unleashes on Mike McCarthy: Unpacking everything Steelers QB said after benching",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-unleases-on-steelers-mike-mccarthy-pat-mcafee-interview/",
+   "timestamp": "2026-11-25T21:28:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "yX17LdMc4F1VyODY",
+   "headline": "Giants injury news: Abdul Carter should be ‘fine’ despite missing practice",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/giants-injury-news-abdul-carter-212820995.html",
+   "timestamp": "2026-11-25T21:28:20.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "P4b1du2lRcqEP7Oc",
+   "headline": "49ers activate Nate Hobbs, re-sign Brandin Cooks to practice squad",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/49ers-activate-nate-hobbs-sign-212713491.html",
+   "timestamp": "2026-11-25T21:27:13.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "Q6PkHZHqOT2HoMUt",
+   "headline": "Bhayshul Tuten: Misses practice Wednesday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/bhayshul-tuten-18524",
+   "timestamp": "2026-11-25T21:25:00.000Z",
+   "category": "practice",
+   "player_ids": [
+    "bhayshul-tuten"
+   ]
+  },
+  {
+   "id": "Vqi_kisLOL6O4dU4",
+   "headline": "Steelers could try to not pay Aaron Rodgers the balance of his $22 million salary",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/steelers-could-try-not-pay-212206992.html",
+   "timestamp": "2026-11-25T21:22:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "whR48Z1Oym7IUN1C",
+   "headline": "Aaron Rodgers' greatest moments as Steelers release clouds future",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/aaron-rodgers-greatest-moments-steelers-212031087.html",
+   "timestamp": "2026-11-25T21:20:31.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "tyR6EwT5wCqJ48U9",
+   "headline": "Indianapolis Colts Injury Report: Week 12 Wednesday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/indianapolis-colts-injury-report-week-211759870.html",
+   "timestamp": "2026-11-25T21:17:59.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "lcFktzkcAmXJRire",
+   "headline": "Steelers release Aaron Rodgers following criticism of Mike McCarthy: Possible landing spots for QB",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/steelers-release-aaron-rodgers-following-benching-qbs-criticism-mike-mccarthy/",
+   "timestamp": "2026-11-25T21:17:09.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "27EtEDHRHAC9XHap",
+   "headline": "Isaiah Likely: Limited Wednesday",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/isaiah-likely-16033",
+   "timestamp": "2026-11-25T21:15:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "isaiah-likely"
+   ]
+  },
+  {
+   "id": "2yzVsADzZoqZnGBl",
+   "headline": "Brock Purdy is dealing with an ankle injury, status uncertain for Week 12 vs. Seahawks",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/brock-purdy-is-dealing-with-an-ankle-injury-status-uncertain-for-week-12-vs-seahawks-211257140.html",
+   "timestamp": "2026-11-25T21:12:57.000Z",
+   "category": "injury",
+   "player_ids": [
+    "brock-purdy"
+   ],
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
+   "id": "JTrvlyepT3uObsQc",
+   "headline": "Bears rule out Kyler Gordon, Roschon Johnson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/bears-rule-kyler-gordon-roschon-211202197.html",
+   "timestamp": "2026-11-25T21:12:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "GPayVCljc_tPVzY9",
+   "headline": "Best Kalshi promo code CBSSPORTS55: Claim $55 bonus for Rams vs. Packers, Thanksgiving Eve NFL predictions",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-claim-55-bonus-rams-vs-packers-thanksgiving-eve-nfl-predictions/",
+   "timestamp": "2026-11-25T21:11:51.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "uWpdam6KDIyjQcDJ",
+   "headline": "Use DraftKings promo code to get $200 bonus bets, free NBA League Pass for Rams vs. Packers, Thanksgiving Eve",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-bets-free-nba-league-pass-rams-vs-packers-thanksgiving-eve/",
+   "timestamp": "2026-11-25T21:09:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "SKGrR4tjCdvFcRuI",
+   "headline": "Aaron Rodgers just left Mike McCarthy, Steelers in untenable situation",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/aaron-rodgers-just-left-mike-mccarthy-steelers-in-untenable-situation-210458366.html",
+   "timestamp": "2026-11-25T21:04:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "3YY5XKTbKlXM1qrx",
+   "headline": "Jermod McCoy shows promise during 1st start for Las Vegas Raiders in Week 11 vs. Denver Broncos",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/jermod-mccoy-shows-promise-during-210300936.html",
+   "timestamp": "2026-11-25T21:03:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "LV"
+   ]
+  },
+  {
+   "id": "wrsllGnVOIlbS9Lc",
+   "headline": "Trent McDuffie reveals how Myles Garrett, Aaron Donald could help him haunt Packers",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/trent-mcduffie-reveals-myles-garrett-210100632.html",
+   "timestamp": "2026-11-25T21:01:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB"
+   ]
+  },
+  {
+   "id": "4cRLm0T8yvsfY9mE",
+   "headline": "Rams vs Packers live updates, TV channel, start time, where to watch Wednesday NFL game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/rams-vs-packers-live-updates-210033983.html",
+   "timestamp": "2026-11-25T21:00:33.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "tb3W9XPL8QVWcEpi",
+   "headline": "49ers get a Brock Purdy injury scare with Seahawks looming",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/49ers-brock-purdy-injury-scare-210022854.html",
+   "timestamp": "2026-11-25T21:00:22.000Z",
+   "category": "injury",
+   "player_ids": [
+    "brock-purdy"
+   ],
+   "team_abbrs": [
+    "SEA",
+    "SF"
+   ]
+  },
+  {
+   "id": "2EqTzJdUaG5mM3ti",
+   "headline": "Previewing the biggest Bears- Lions game of the Super Bowl Era",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/previewing-biggest-bears-lions-game-210000117.html",
+   "timestamp": "2026-11-25T21:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "DET"
+   ]
+  },
+  {
+   "id": "pT4966u94ntyGJj_",
+   "headline": "Aaron Rodgers shows Fernando Mendoza love during scorched earth Steelers rant",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/aaron-rodgers-shows-fernando-mendoza-205757127.html",
+   "timestamp": "2026-11-25T20:57:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "DF3av0LN1pze5-Xz",
+   "headline": "'Sad to see:' Steelers players, NFL world weigh in on Aaron Rodgers breakup",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/sad-see-steelers-players-nfl-205722641.html",
+   "timestamp": "2026-11-25T20:57:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "ChUHhonG3X9yztPK",
+   "headline": "Lions list DJ Wonnum, Chuck Clark as questionable for Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/lions-list-dj-wonnum-chuck-205646877.html",
+   "timestamp": "2026-11-25T20:56:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "mvv5gXgshGVLLkoB",
+   "headline": "49ers’ Brock Purdy Uncertain For Week 12",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/49ers-brock-purdy-uncertain-for-week-12",
+   "timestamp": "2026-11-25T20:56:46.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "brock-purdy"
+   ],
+   "team_abbrs": [
+    "SF"
+   ]
+  },
+  {
+   "id": "D2Fuap6mz47wYy4u",
+   "headline": "D.J. Reed off injury report, 2 defensive starters questionable vs. Bears",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/d-j-reed-off-injury-205351258.html",
+   "timestamp": "2026-11-25T20:53:51.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CHI"
+   ]
+  },
+  {
+   "id": "-vRbvkkGmLrU5oOd",
+   "headline": "Week 12 Thanksgiving NFL odds, picks: Brinson's best bets, player props, anytime TD scorers for Sunday",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-12-thanksgiving-nfl-odds-picks-brinsons-best-bets-player-props-anytime-td-scorers-for-sunday/",
+   "timestamp": "2026-11-25T20:47:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "SpsTsVeT30FkKmeq",
+   "headline": "49ers monitoring Brock Purdy ankle injury before Seahawks game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/49ers-monitoring-brock-purdy-ankle-204634036.html",
+   "timestamp": "2026-11-25T20:46:34.000Z",
+   "category": "injury",
+   "player_ids": [
+    "brock-purdy"
+   ],
+   "team_abbrs": [
+    "SEA",
+    "SF"
+   ]
+  },
+  {
+   "id": "pKVIxO4zWNH1HtqS",
+   "headline": "Surreal scenes inside Steelers locker room as Aaron Rodgers drama exploded ‘in real time’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/surreal-scenes-inside-steelers-locker-204254797.html",
+   "timestamp": "2026-11-25T20:42:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "RRY87ziqNHzwq2T7",
+   "headline": "Pat Freiermuth: Aaron Rodgers said what he said, I'm focused on Denver",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/pat-freiermuth-aaron-rodgers-said-204057128.html",
+   "timestamp": "2026-11-25T20:40:57.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "pat-freiermuth"
+   ]
+  },
+  {
+   "id": "H5wM7OCf9RJB8tBB",
+   "headline": "2027 Browns mock draft: Selecting a potential turkey at quarterback",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/2027-browns-mock-draft-selecting-203444376.html",
+   "timestamp": "2026-11-25T20:34:44.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE"
+   ]
+  },
+  {
+   "id": "xlCAWh-kI2dAIIcA",
+   "headline": "Aaron Rodgers next team predictions: Patriots, Ravens favored to land quarterback after Steelers release",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/aaron-rodgers-next-team-predictions-patriots-ravens-favored-to-land-quarterback-after-steelers-release/",
+   "timestamp": "2026-11-25T20:33:39.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "BAL",
+    "NE",
+    "PIT"
+   ]
+  },
+  {
+   "id": "jJ8I_e1rHEKf1ULq",
+   "headline": "Chicago Bears vs. Detroit Lions: How to watch the Thanksgiving Day early game, start time, where to stream and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/chicago-bears-vs-detroit-lions-how-to-watch-the-thanksgiving-day-early-game-start-time-where-to-stream-and-more-202900262.html",
+   "timestamp": "2026-11-25T20:29:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "DET"
+   ]
+  },
+  {
+   "id": "ypd3toqz57hmnhhB",
+   "headline": "Seahawks injury updates: Quenton Nelson, Abe Lucas ruled out of 49ers game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/seahawks-injury-updates-quenton-nelson-202754500.html",
+   "timestamp": "2026-11-25T20:27:54.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "SEA",
+    "SF"
+   ]
+  },
+  {
+   "id": "n55zP8WX1iLiPi75",
+   "headline": "Patriots’ closest playoff rival descends into chaos amid Aaron Rodgers drama",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/patriots-playoff-competitor-benches-starting-100000672.html",
+   "timestamp": "2026-11-25T20:25:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NE"
+   ]
+  },
+  {
+   "id": "SL_6GyMnpAuep2Wa",
+   "headline": "Cowboys activate S Jalen Thompson",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/cowboys-activate-jalen-thompson-202505779.html",
+   "timestamp": "2026-11-25T20:25:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "gCLPzFi7-PS0P-Gg",
+   "headline": "Aaron Rodgers released by Steelers: Revisiting his high school football career",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/high-school-sports/articles/aaron-rodgers-released-steelers-revisiting-202113308.html",
+   "timestamp": "2026-11-25T20:21:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "-pEXKb-rkVyNgKGF",
+   "headline": "Browns vs. Raiders Week 12: 4 big injury concerns for Cleveland coming out of bye",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/browns-vs-raiders-week-12-201941708.html",
+   "timestamp": "2026-11-25T20:19:41.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "CLE",
+    "LV"
+   ]
+  },
+  {
+   "id": "BmPTQ_ZBbpboScyS",
+   "headline": "Avoid your family, catch the game: Rams release more Thanksgiving Eve tickets",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/avoid-family-catch-game-rams-201557748.html",
+   "timestamp": "2026-11-25T20:15:57.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "XcBqrxIaPEIJCOBr",
+   "headline": "Cowboys injury: Jalen Thompson questionable vs. Eagles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/cowboys-injury-jalen-thompson-questionable-201530883.html",
+   "timestamp": "2026-11-25T20:15:30.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "lKaesL-daF-Umhli",
+   "headline": "NFL Injury News: 49ers’ Brock Purdy dealing with ankle injury ahead of Seahawks game",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/nfl-injury-news-49ers-brock-201511938.html",
+   "timestamp": "2026-11-25T20:15:11.000Z",
+   "category": "injury",
+   "player_ids": [
+    "brock-purdy"
+   ],
+   "team_abbrs": [
+    "SEA",
+    "SF"
+   ]
+  },
+  {
+   "id": "WrSOTw1MLxDoa4wq",
+   "headline": "Philadelphia Eagles vs. Dallas Cowboys: How to watch the Thanksgiving Day game for free, channel, wher and more",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/article/philadelphia-eagles-vs-dallas-cowboys-how-to-watch-the-thanksgiving-day-game-for-free-channel-and-more-201500508.html",
+   "timestamp": "2026-11-25T20:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "kEPB1JvbX5JHuKNK",
+   "headline": "Aaron Rodgers released by Steelers after benching, scathing criticism",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/aaron-rodgers-released-steelers-benching-201146064.html",
+   "timestamp": "2026-11-25T20:11:46.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "4BMo3Uc5p_15UA6K",
+   "headline": "Aaron Rodgers cut by Steelers after torching Mike McCarthy",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/aaron-rodgers-released-steelers-torching-201106970.html",
+   "timestamp": "2026-11-25T20:11:06.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "q-RKvJAEirjUN9SS",
+   "headline": "Aaron Rodgers released by Steelers after benching, comments on 'Pat McAfee Show'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/aaron-rodgers-released-by-steelers-after-benching-comments-on-pat-mcafee-show-214738089.html",
+   "timestamp": "2026-11-25T20:10:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "G_jWqNCEGeTLgfwf",
+   "headline": "Brandon Aiyuk to sign with Commanders' practice squad days after leaving 49ers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/former-49ers-wr-brandon-aiyuk-to-sign-with-commanders/",
+   "timestamp": "2026-11-25T20:05:41.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "SF",
+    "WAS"
+   ]
+  },
+  {
+   "id": "uBA8Y-7UrRyAt9Tq",
+   "headline": "Rams Activate DL Kobie Turner From IR",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/rams-designate-dl-kobie-turner-for-return",
+   "timestamp": "2026-11-25T19:59:02.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "Q8DclEAscq30pY2r",
+   "headline": "Biggest questions on Aaron Rodgers benching: Why did Steelers make abrupt quarterback change?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/steelers-bench-aaron-rodgers-why-and-what-it-means-mason-rudolph/",
+   "timestamp": "2026-11-25T19:51:35.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "i_RuNlggTqYaIvQz",
+   "headline": "Today's top games to watch, best bets, odds: Packers vs. Rams, Clippers vs. Grizzlies and more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-packers-vs-rams-clippers-vs-grizzlies-and-more/",
+   "timestamp": "2026-11-25T19:50:13.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "3IrckQosnh7zhVBv",
+   "headline": "Steelers bench Aaron Rodgers, turn to Mason Rudolph to start vs. Broncos",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/steelers-bench-aaron-rodgers-make-qb-inactive-friday-broncos/",
+   "timestamp": "2026-11-25T19:44:42.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "PIT"
+   ]
+  },
+  {
+   "id": "1r3RR7trZwDUnkU3",
+   "headline": "Cowboys vs. Eagles Thanksgiving prediction: Dallas looks for first win streak of 2026 vs. ex-QB",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/cowboys-vs-eagles-thanksgiving-how-to-watch-odds-preview-prediction/",
+   "timestamp": "2026-11-25T19:23:58.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "yAWFXY9_WK6bWT3s",
+   "headline": "Aaron Rodgers rips Mike McCarthy, says Steelers coach fell asleep in meeting and mistakenly called team 'Packers'; other players reportedly corroborate quarterback's account",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/aaron-rodgers-rips-mike-mccarthy-says-steelers-coach-fell-asleep-in-meeting-and-mistakenly-called-team-packers-other-players-reportedly-corroborate-quarterbacks-account-213043322.html",
+   "timestamp": "2026-11-25T19:07:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "PIT"
+   ]
+  },
+  {
+   "id": "mBijH3Prfym2BxZZ",
+   "headline": "Thanksgiving and Black Friday NFL expert picks: Can Lions fend off Bears? Do Steelers save their season?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/thanksgiving-games-black-friday-nfl-expert-picks-lions-bears-steelers/",
+   "timestamp": "2026-11-25T18:32:02.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "DET",
+    "PIT"
+   ]
+  },
+  {
+   "id": "LUd2qc3p4HldKOM7",
+   "headline": "Commanders To Sign WR Brandon Aiyuk",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/commanders-to-sign-wr-brandon-aiyuk",
+   "timestamp": "2026-11-25T18:23:40.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "gL31upcAbNAPAyiB",
+   "headline": "Jets Designate DT T’Vondre Sweat For Return",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/jets-designate-dt-tvondre-sweat-for-return",
+   "timestamp": "2026-11-25T18:08:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYJ"
+   ]
+  },
+  {
+   "id": "7A2m8jNXQjtNCBXV",
+   "headline": "NFL Thanksgiving 2026: Ranking the 10 most memorable Thanksgiving halftime shows",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-2026-ranking-most-memorable-halftime-shows/",
+   "timestamp": "2026-11-25T17:52:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "U8uwHelchKvi1nc-",
+   "headline": "Lions vs. Bears Thanksgiving prediction: Which team will be in control of NFC North?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/lions-vs-bears-thanksgiving-prediction-odds-how-to-watch/",
+   "timestamp": "2026-11-25T17:42:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "DET"
+   ]
+  },
+  {
+   "id": "fQBKWzTXmyBMpPtL",
+   "headline": "Use FanDuel promo code to get $200 bonus bets by targeting Packers vs. Rams, NFL Thanksgiving Eve 2026",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-200-bonus-bets-by-targeting-packers-vs-rams-nfl-thanksgiving-eve-2026/",
+   "timestamp": "2026-11-25T17:35:12.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "QHPBqQaLF8S_jSPr",
+   "headline": "Agent's Take: The Puka Nacua predicament and where his future with Rams stands after injury",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/agents-take-puka-nacua-predicament-where-future-rams-stands/",
+   "timestamp": "2026-11-25T17:31:09.000Z",
+   "category": "injury",
+   "player_ids": [
+    "puka-nacua"
+   ],
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "uYy0PkMp9BKNuu-J",
+   "headline": "NFL on Thanksgiving cheat sheet: Everything you need to know to impress relatives during three holiday games",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-on-thanksgiving-cheat-sheet-everything-you-to-know-three-holiday-games/",
+   "timestamp": "2026-11-25T17:13:32.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "FnoJ9BxTETj-djBB",
+   "headline": "Jaguars Open Patrick Mekari’s IR Return Window",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/jaguars-open-patrick-mekaris-ir-return-window",
+   "timestamp": "2026-11-25T16:59:24.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "JAX"
+   ]
+  },
+  {
+   "id": "N4w6hJwFwNLCGwvr",
+   "headline": "NFL Thanksgiving injury report: Micah Parsons cleared for season debut, Chiefs' Kenneth Walker III out",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-injury-report-micah-parsons-cleared-kenneth-walker-iii-practices/",
+   "timestamp": "2026-11-25T16:57:39.000Z",
+   "category": "injury",
+   "player_ids": [
+    "kenneth-walker"
+   ],
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "KBD7U7OxjfWZypAa",
+   "headline": "Aaron Rodgers' brother has a theory on why QB was shockingly benched by Steelers",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-brother-theory-why-qb-was-shockingly-benched-steelers/",
+   "timestamp": "2026-11-25T16:32:03.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "EDxgyvzcTEMjg_WE",
+   "headline": "Prisco's NFL Week 12 Power Rankings: Thanksgiving feast offers a proving ground for contenders",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/priscos-nfl-week-12-power-rankings-thanksgiving-games/",
+   "timestamp": "2026-11-25T16:16:24.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "LSw_ydJJR0JvG9L7",
+   "headline": "Brandon Aiyuk Clears Waivers; WR To Visit Commanders",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/brandon-aiyuk-clears-waivers",
+   "timestamp": "2026-11-25T15:45:06.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "WAS"
+   ]
+  },
+  {
+   "id": "LxrRuQCBrlSfdysI",
+   "headline": "Predicting full 14-team NFL playoff bracket for NFL Week 12: How Aaron Rodgers' benching impacts AFC race",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/predicting-full-14-team-nfl-playoff-bracket-nfl-week-12/",
+   "timestamp": "2026-11-25T15:14:08.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "NqE9d_QAnNJboLtJ",
+   "headline": "NFL Week 12 QB Power Rankings: Brock Purdy swipes No. 1 spot from Joe Burrow, Dak Prescott into top five",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/week-12-qb-power-rankings-brock-purdy-joe-burrow-dak-prescott/",
+   "timestamp": "2026-11-25T14:54:56.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "joe-burrow",
+    "dak-prescott",
+    "brock-purdy"
+   ]
+  },
+  {
+   "id": "_9vp8jgih2yWz3rR",
+   "headline": "One bold prediction for each NFL Thanksgiving game, including Cowboys' Dak Prescott to feast on Eagles",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/one-bold-prediction-each-nfl-thanksgiving-game-cowboys-dak-prescott-feast-eagles/",
+   "timestamp": "2026-11-25T14:37:55.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dak-prescott"
+   ],
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "dHh9aCdpii83Hjvv",
+   "headline": "NFL Week 12 expert picks, best bets: Lions spoil Bears Thanksgiving, Patrick Mahomes picks up rare win",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/week-12-expert-picks-best-bets-lions-spoil-bears-thanksgiving/",
+   "timestamp": "2026-11-25T14:18:32.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "patrick-mahomes"
+   ],
+   "team_abbrs": [
+    "CHI",
+    "DET"
+   ]
+  },
+  {
+   "id": "QDUt8t66tas2ROiR",
+   "headline": "Rams vs. Packers prediction: Can Green Bay find continue success with deep ball? Will L.A. overcome injuries?",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/rams-vs-packers-prediction-odds-how-to-watch-thanksgiving-eve/",
+   "timestamp": "2026-11-25T14:11:49.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "R8dG8sSfifJeBWxL",
+   "headline": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for NFL Thanksgiving Eve, Rams-Packers on Wednesday",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nfl-thanksgiving-eve-rams-packers-wednesday/",
+   "timestamp": "2026-11-25T14:09:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "GB",
+    "LAR"
+   ]
+  },
+  {
+   "id": "i3XCqDF7LzF6Q3hE",
+   "headline": "Steelers bench Aaron Rodgers; Tennessee jumps Alabama in CFP rankings; Cubs land Teruaki Sato",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/steelers-bench-aaron-rodgers-nfl-tennessee-alabama-cfp-rankings-cubs-teruaki-sato-mlb/",
+   "timestamp": "2026-11-25T13:50:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "CfzBoR_uihjXg_Kf",
+   "headline": "NFL playoff picture: Ranking AFC wild card contenders, from Super Bowl-hopeful Chiefs to rebuilding Raiders",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-playoff-picture-ranking-afc-wild-card-contenders-chiefs-raiders/",
+   "timestamp": "2026-11-25T13:17:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC",
+    "LV"
+   ]
+  },
+  {
+   "id": "XikWQMgyCKk_rWbo",
+   "headline": "NFL Week 12 most important games for playoff picture: Rams-Packers, Panthers-Bucs key duels in NFC",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-12-most-important-games-playoff-picture-rams-packers-panthers-bucs/",
+   "timestamp": "2026-11-25T13:10:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CAR",
+    "GB",
+    "LAR"
+   ]
+  },
+  {
    "id": "8Lv0S9ASXSeLt6Bb",
    "headline": "Is Josh Jacobs playing tonight? Injury update for Packers RB",
    "source": "Yahoo Sports",
@@ -23,18 +935,6 @@
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/articles/micah-parsons-playing-vs-rams-120412846.html",
    "timestamp": "2026-11-25T12:04:12.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "GB",
-    "LAR"
-   ]
-  },
-  {
-   "id": "QDUt8t66tas2ROiR",
-   "headline": "Rams vs. Packers prediction: Can Green Bay find continue success with deep ball? Will L.A. overcome injuries?",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/rams-vs-packers-prediction-odds-how-to-watch-thanksgiving-eve/",
-   "timestamp": "2026-11-25T12:00:43.000Z",
    "category": "injury",
    "team_abbrs": [
     "GB",
@@ -393,17 +1293,6 @@
    ]
   },
   {
-   "id": "n55zP8WX1iLiPi75",
-   "headline": "Patriots’ playoff competitor benches starting QB",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/patriots-playoff-competitor-benches-starting-100000672.html",
-   "timestamp": "2026-11-25T10:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
    "id": "OuSrLrN5GAChRgF2",
    "headline": "Bears-Lions is first Thanksgiving game ever with both teams on 5+ game winning streaks",
    "source": "Yahoo Sports",
@@ -486,18 +1375,6 @@
    ]
   },
   {
-   "id": "3IrckQosnh7zhVBv",
-   "headline": "Is this how it ends? Steelers bench Aaron Rodgers, turn to Mason Rudolph to start vs. Broncos",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/steelers-bench-aaron-rodgers-make-qb-inactive-friday-broncos/",
-   "timestamp": "2026-11-25T05:18:04.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "PIT"
-   ]
-  },
-  {
    "id": "gxz2bj05MO6CFvfs",
    "headline": "NFL Week 12 picks, score predictions: Bears, Chiefs lose on Thanksgiving; Rams edge Packers in thriller",
    "source": "CBS Sports",
@@ -520,17 +1397,6 @@
    "category": "breaking",
    "team_abbrs": [
     "PIT"
-   ]
-  },
-  {
-   "id": "LSw_ydJJR0JvG9L7",
-   "headline": "Brandon Aiyuk Clears Waivers; WR To Visit Commanders",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/brandon-aiyuk-clears-waivers",
-   "timestamp": "2026-11-25T04:17:06.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
    ]
   },
   {
@@ -678,17 +1544,6 @@
    "category": "breaking",
    "player_ids": [
     "devonta-smith"
-   ]
-  },
-  {
-   "id": "N4w6hJwFwNLCGwvr",
-   "headline": "NFL Thanksgiving injury report: Micah Parsons cleared for season debut, Kenneth Walker III practices",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-injury-report-micah-parsons-cleared-kenneth-walker-iii-practices/",
-   "timestamp": "2026-11-25T00:20:02.000Z",
-   "category": "injury",
-   "player_ids": [
-    "kenneth-walker"
    ]
   },
   {
@@ -850,838 +1705,6 @@
    "team_abbrs": [
     "CLE"
    ]
-  },
-  {
-   "id": "78Z9mn19lWmxvrnZ",
-   "headline": "JK Dobbins suspended for ‘conduct detrimental’ in mysterious Broncos decision",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/jk-dobbins-suspended-conduct-detrimental-224505276.html",
-   "timestamp": "2026-11-24T22:45:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "ACW7jS65Hemx24Qq",
-   "headline": "Brandon Aiyuk: Set to visit Commanders",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/brandon-aiyuk-14386",
-   "timestamp": "2026-11-24T22:40:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "W2fljrYHiYfNaAQs",
-   "headline": "Sam LaPorta: Ready for Thanksgiving Day",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/sam-laporta-17033",
-   "timestamp": "2026-11-24T22:39:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-laporta"
-   ]
-  },
-  {
-   "id": "xiwEvgwobGHdmMFt",
-   "headline": "Yahoo Fantasy Football Expert League Recap: Jayden Daniels' MNF heroics lift Winks to thrilling Week 11 win",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/fantasy/article/yahoo-fantasy-football-expert-league-recap-jayden-daniels-mnf-heroics-lift-winks-to-thrilling-week-11-win-223549769.html",
-   "timestamp": "2026-11-24T22:35:49.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jayden-daniels"
-   ]
-  },
-  {
-   "id": "iCa0qeOm41Yp427B",
-   "headline": "Ex-49er Brandon Aiyuk will visit with Commanders after clearing waivers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/ex-49er-brandon-aiyuk-will-visit-with-commanders-after-clearing-waivers-223206955.html",
-   "timestamp": "2026-11-24T22:32:06.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "Iud-DkvxQB0pQ7bp",
-   "headline": "Cowboys point/counterpoint: Eagles are going to be much more of a test",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/cowboys-point-counterpoint-eagles-going-223000224.html",
-   "timestamp": "2026-11-24T22:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "MTlHQTOY1uf43RMc",
-   "headline": "Puka Nacua injury details reveal ‘completely torn’ MCL",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/puka-nacua-injury-details-reveal-222928759.html",
-   "timestamp": "2026-11-24T22:29:28.000Z",
-   "category": "injury",
-   "player_ids": [
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "uOWWzWiiE90TapOk",
-   "headline": "Dalton Kincaid: Limited Tuesday, plans to play Thursday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/dalton-kincaid-16697",
-   "timestamp": "2026-11-24T22:26:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "dalton-kincaid"
-   ]
-  },
-  {
-   "id": "tNMq6-36-7EQVFJy",
-   "headline": "Lions, Bears Week 12 injury report: Sam LaPorta, Chuck Clark upgraded on Tuesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/lions-bears-week-12-injury-222113292.html",
-   "timestamp": "2026-11-24T22:21:13.000Z",
-   "category": "injury",
-   "player_ids": [
-    "sam-laporta"
-   ],
-   "team_abbrs": [
-    "CHI",
-    "DET"
-   ]
-  },
-  {
-   "id": "N52d9XlpwBHKYH_V",
-   "headline": "Bills-Chiefs injury tracker: Good news on both sides ahead of Thanksgiving",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/bills-chiefs-injury-tracker-good-221728142.html",
-   "timestamp": "2026-11-24T22:17:28.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "BUF",
-    "KC"
-   ]
-  },
-  {
-   "id": "YlaCvimiSrtXdJV2",
-   "headline": "Broncos suspend RB J.K. Dobbins for one game. Here's why",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/broncos-suspend-rb-j-k-221623115.html",
-   "timestamp": "2026-11-24T22:16:23.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "j4ni3GzRI5QV29LV",
-   "headline": "Matthew Stafford gets candid about Puka Nacua’s conduct amid NFL suspension",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/matthew-stafford-gets-candid-puka-221507634.html",
-   "timestamp": "2026-11-24T22:15:07.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford",
-    "puka-nacua"
-   ]
-  },
-  {
-   "id": "HB6wyPJzG7-2DO7m",
-   "headline": "Week 12 NFL Power Rankings: Did the Vikings blowout move the 49ers up to No. 1?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/week-12-nfl-power-rankings-221113994.html",
-   "timestamp": "2026-11-24T22:11:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIN",
-    "SF"
-   ]
-  },
-  {
-   "id": "OydSJeDsZ1tSDbKd",
-   "headline": "Broncos suspend RB J.K. Dobbins one game for conduct detrimental to team",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/broncos-suspend-rb-j-k-dobbins-one-game-conduct-detrimental-team/",
-   "timestamp": "2026-11-24T22:07:45.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "W-j3yAPYxURvjGny",
-   "headline": "Bears add CB Isaac Yiadom off waivers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/bears-add-cb-isaac-yiadom-220542316.html",
-   "timestamp": "2026-11-24T22:05:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "hy0YZTHYtyL5xc1u",
-   "headline": "49ers make critical practice field upgrade as Bay Area braces for rain and flooding",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/49ers-critical-practice-field-upgrade-220151485.html",
-   "timestamp": "2026-11-24T22:01:51.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "k_swNXwh0CKwsfV_",
-   "headline": "Giants put Greg Newsome on injured reserve",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/giants-put-greg-newsome-injured-220054972.html",
-   "timestamp": "2026-11-24T22:00:54.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "Hz9R2r17bismm2A_",
-   "headline": "Bears claim DB Isaac Yiadom off waivers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/bears-claim-db-isaac-yiadom-220017068.html",
-   "timestamp": "2026-11-24T22:00:17.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "inzh-srs0ty_lQTJ",
-   "headline": "Broncos HC Sean Payton announces that the team has suspended RB J.K. Dobbins for one game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/broncos-hc-sean-payton-announces-214422445.html",
-   "timestamp": "2026-11-24T21:59:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "9oAL93OP6Uo9xhKR",
-   "headline": "Giants make move to replace injured CB Greg Newsome on 53-man roster",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/giants-move-replace-injured-cb-215756762.html",
-   "timestamp": "2026-11-24T21:57:56.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "ZHIS97GQR_zMxO2S",
-   "headline": "Rams vs. Green Bay Packers: How to watch, start time, odds and prediction",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/rams-vs-green-bay-packers-214826772.html",
-   "timestamp": "2026-11-24T21:48:26.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "LAR"
-   ]
-  },
-  {
-   "id": "D8Y4BeOEWLjW1Juz",
-   "headline": "Bills see two practice-squadders poached by other teams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/bills-see-two-practice-squadders-214741252.html",
-   "timestamp": "2026-11-24T21:47:41.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "BUF"
-   ]
-  },
-  {
-   "id": "Q5Qqzso9J6do_rPN",
-   "headline": "Sean Payton suspends RB J.K. Dobbins for Friday's game vs. Steelers due to 'conduct detrimental to the team'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/breaking-news/article/sean-payton-suspends-rb-jk-dobbins-for-fridays-game-vs-steelers-due-to-conduct-detrimental-to-the-team-214323353.html",
-   "timestamp": "2026-11-24T21:43:23.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "Gnym3ZEFHTV3KvDN",
-   "headline": "Kenneth Walker limited in his return to Chiefs practice",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/kenneth-walker-limited-return-chiefs-214244788.html",
-   "timestamp": "2026-11-24T21:42:44.000Z",
-   "category": "practice",
-   "player_ids": [
-    "kenneth-walker"
-   ],
-   "team_abbrs": [
-    "KC"
-   ]
-  },
-  {
-   "id": "L9m3IK6imi0HgaN1",
-   "headline": "Three former Falcons advance in Pro Football Hall of Fame voting",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/three-former-falcons-advance-pro-213912028.html",
-   "timestamp": "2026-11-24T21:39:12.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "lnTN4iZmZ4bGSQy2",
-   "headline": "Cowboys injuries: LBs Dee Winters, Jaishawn Barham upgraded",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/cowboys-injuries-lbs-dee-winters-213447835.html",
-   "timestamp": "2026-11-24T21:34:47.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "iO66eiRWOD-vaAQc",
-   "headline": "Steelers’ Alex Highsmith misses practice with ankle injury",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/steelers-alex-highsmith-misses-practice-213059424.html",
-   "timestamp": "2026-11-24T21:30:59.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "KCsfYl7WmBylKzHR",
-   "headline": "Week 12 Super Bowl stock report: 49ers separate from pack, Jaguars show imperfections",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/week-12-super-bowl-stock-report-49ers-separate-from-pack-jaguars-show-imperfections/",
-   "timestamp": "2026-11-24T21:30:50.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "JAX",
-    "SF"
-   ]
-  },
-  {
-   "id": "r9I2PqRGIa5Hpps6",
-   "headline": "Week 12 NFL odds, picks, predictions: Computer model backs Vikings and Dolphins",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/nfl-odds-lines-picks-predictions-week-12-2026/",
-   "timestamp": "2026-11-24T21:20:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "MIA",
-    "MIN"
-   ]
-  },
-  {
-   "id": "MYPYc9JPKvVVgBXS",
-   "headline": "Colts Work Out Three Quarterbacks, Sign Shane Buechele",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/colts-work-out-three-quarterbacks",
-   "timestamp": "2026-11-24T20:46:25.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "yf96okLz4CNSKy2z",
-   "headline": "Lions DT Skyler Gill-Howard Suffers Season-Ending Knee Injury",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/lions-dt-skyler-gill-howard-suffers-season-ending-knee-injury",
-   "timestamp": "2026-11-24T20:28:34.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "xdDPoOPjAxxRVW93",
-   "headline": "Micah Parsons injury update: Packers star activated, cleared to make 2026 debut vs. Rams in Week 12",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/micah-parsons-injury-update-packers-return-rams-2026/",
-   "timestamp": "2026-11-24T19:46:55.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "GB",
-    "LAR"
-   ]
-  },
-  {
-   "id": "UrUPF6piumE-SjMX",
-   "headline": "Packers’ Micah Parsons Receives Clearance, To Return In Week 12",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/packers-micah-parsons-receives-clearance-to-return-in-week-12",
-   "timestamp": "2026-11-24T19:27:23.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "TsAKmz-ZCXWAqjKU",
-   "headline": "Giants’ Greg Newsome To Undergo Ankle Surgery; CB Could Miss 4-6 Weeks",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/giants-greg-newsome-to-undergo-ankle-surgery-cb-could-miss-4-6-weeks",
-   "timestamp": "2026-11-24T18:44:56.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "pVZEWxOlboTaPpg4",
-   "headline": "Thoughts on The Daniel Jones Saga",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/thoughts-daniel-jones-saga-183735462.html",
-   "timestamp": "2026-11-24T18:37:35.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-jones"
-   ]
-  },
-  {
-   "id": "8HQxNt6sUfxje1xD",
-   "headline": "Colts sign OT Wanya Morris off Cowboys practice squad",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/colts-sign-ot-wanya-morris-183153519.html",
-   "timestamp": "2026-11-24T18:31:53.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DAL",
-    "IND"
-   ]
-  },
-  {
-   "id": "pHuFsjbu7YrpexJ3",
-   "headline": "2026 NFL Week 12 Power Rankings: Cowboys bump up after Titans win",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/2026-nfl-week-12-power-183000608.html",
-   "timestamp": "2026-11-24T18:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "TEN"
-   ]
-  },
-  {
-   "id": "YZ8JPWacWajnZ9Zi",
-   "headline": "Ranking NFL division races from first to worst: NFC North, NFC South entertaining for very different reasons",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/ranking-nfl-division-races-first-worst-nfc-north-nfc-south-entertaining/",
-   "timestamp": "2026-11-24T18:29:57.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "fLXzUQyj87OoR3Px",
-   "headline": "9 ex-Patriots nominated for Pro Football Hall of Fame class 2027",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/9-ex-patriots-nominated-pro-182934474.html",
-   "timestamp": "2026-11-24T18:29:34.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "wiBlkV9H5bAmlTfk",
-   "headline": "Week 12 Power Rankings Round Up: Packers idle week keeps team steady",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-12-power-rankings-round-182642913.html",
-   "timestamp": "2026-11-24T18:26:42.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "OFzegmqYh9V0CdYS",
-   "headline": "NFL Power Rankings: Week 12 Edition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-12-182236508.html",
-   "timestamp": "2026-11-24T18:22:36.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "lLThn8o5y7EORdWc",
-   "headline": "Josh Jacobs: Officially questionable for Wednesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/josh-jacobs-13582",
-   "timestamp": "2026-11-24T18:20:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ]
-  },
-  {
-   "id": "SYw0F_ez1QGBHjqu",
-   "headline": "Packers list 8 players as questionable for Rams game",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-list-8-players-questionable-181956581.html",
-   "timestamp": "2026-11-24T18:19:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "LAR"
-   ]
-  },
-  {
-   "id": "xdGdUUOBgEQ1BJS5",
-   "headline": "Stampede Blue Reacts Survey (Week 12): Can Anthony Richardson turn things around for the Colts?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/stampede-blue-reacts-survey-week-181000836.html",
-   "timestamp": "2026-11-24T18:10:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND"
-   ]
-  },
-  {
-   "id": "yT98LQ1cEGhbz2F6",
-   "headline": "Packers list Micah Parsons, Josh Jacobs as questionable for Wednesday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/packers-list-micah-parsons-josh-180931873.html",
-   "timestamp": "2026-11-24T18:09:31.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-jacobs"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "cDfn_7NFdJ0rsdx0",
-   "headline": "Giants legend Eli Manning moves one step closer to Hall of Fame",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/giants-legend-eli-manning-moves-180748000.html",
-   "timestamp": "2026-11-24T18:07:48.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "Ys7JWHBgOIC4mk2f",
-   "headline": "Kenneth Walker: Returning to practice Tuesday",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/kenneth-walker-15909",
-   "timestamp": "2026-11-24T18:04:00.000Z",
-   "category": "practice",
-   "player_ids": [
-    "kenneth-walker"
-   ]
-  },
-  {
-   "id": "R4bfUIZU5zCAaHgX",
-   "headline": "The Hot Read: This will finally be the 49ers’ year",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/hot-read-finally-49ers-180046172.html",
-   "timestamp": "2026-11-24T18:00:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "SF"
-   ]
-  },
-  {
-   "id": "hgoFNQwsP6CXQ2RX",
-   "headline": "Daniel Jones Planning Similar Free Agent Approach To 2024?",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/daniel-jones-planning-similar-free-agent-approach-to-2024",
-   "timestamp": "2026-11-24T18:00:23.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "daniel-jones"
-   ]
-  },
-  {
-   "id": "GYeDKiG_BQam2laH",
-   "headline": "NFL Week 12 power rankings: Lions a consensus Top 10 team for first time this season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-week-12-power-rankings-180000445.html",
-   "timestamp": "2026-11-24T18:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "YzWMTBwMUjydBdit",
-   "headline": "The 3 biggest Chiefs questions ahead of crucial Bills matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/3-biggest-chiefs-questions-ahead-180000794.html",
-   "timestamp": "2026-11-24T18:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "KC"
-   ]
-  },
-  {
-   "id": "Ixs5IZqMKIcG_0FL",
-   "headline": "Chargers Power Rankings Roundup: Bolts’ positive momentum over before it began",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/chargers-power-rankings-roundup-bolts-175659740.html",
-   "timestamp": "2026-11-24T17:56:59.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAC"
-   ]
-  },
-  {
-   "id": "ruFse7nUxPAQ-TPZ",
-   "headline": "Brock Purdy or Joe Burrow? The NFL MVP showdown has two strong cases",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/brock-purdy-joe-burrow-nfl-175656349.html",
-   "timestamp": "2026-11-24T17:56:56.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "joe-burrow",
-    "brock-purdy"
-   ]
-  },
-  {
-   "id": "NEf2V0bE59Jp6DdA",
-   "headline": "Cardinals can become first team mathematically eliminated from the playoffs on Sunday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cardinals-become-first-team-mathematically-175429650.html",
-   "timestamp": "2026-11-24T17:54:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI"
-   ]
-  },
-  {
-   "id": "Bk1ayx9cGoUHDftf",
-   "headline": "Broncos’ snaps and stats for the win over the Raiders",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/broncos-snaps-stats-win-over-175014946.html",
-   "timestamp": "2026-11-24T17:50:14.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "LV"
-   ]
-  },
-  {
-   "id": "6JfDSSqUSfiaRmy2",
-   "headline": "10 Thoughts on the NFL, Week 11: Getting ready for a Thanksgiving grudge match",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/10-thoughts-nfl-week-11-174102517.html",
-   "timestamp": "2026-11-24T17:41:02.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "0vayhfqoGKFuolDv",
-   "headline": "Jack Campbell 'doing fine' as Lions teammates give LB space to recover",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/jack-campbell-doing-fine-lions-173421271.html",
-   "timestamp": "2026-11-24T17:34:21.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "zY5iQW-Oc3E8WACU",
-   "headline": "Broncos, Riley Moss Agree To Extension",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/broncos-riley-moss-agree-to-extension",
-   "timestamp": "2026-11-24T17:30:16.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "uG-XUe5C2zOYtk72",
-   "headline": "NFL Playoff Picture entering Week 12: Thanksgiving games could shake up postseason seeding",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/nfl-playoff-picture-entering-week-12-thanksgiving-games-could-shake-up-postseason-seeding-172717898.html",
-   "timestamp": "2026-11-24T17:27:17.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "i6RhoZI83NY1QUqN",
-   "headline": "Josh Allen vs. Patrick Mahomes: Head-to-head record and stats ahead of Chiefs vs. Bills on Thanksgiving",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/josh-allen-vs-patrick-mahomes-170530028.html",
-   "timestamp": "2026-11-24T17:05:30.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "josh-allen",
-    "patrick-mahomes"
-   ],
-   "team_abbrs": [
-    "BUF",
-    "KC"
-   ]
-  },
-  {
-   "id": "jCsuaUWCssKTEZYJ",
-   "headline": "NFL Power Rankings Week 12 Roundup: Chiefs-Bills is Top-5 matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-week-12-170000493.html",
-   "timestamp": "2026-11-24T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "KC"
-   ]
-  },
-  {
-   "id": "ZGGeA1up2JTjq4iB",
-   "headline": "NFL Power Rankings Roundup Week 12: Bengals take a tumble",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/nfl-power-rankings-roundup-week-170000464.html",
-   "timestamp": "2026-11-24T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "2kz8ZZ7TWe-69Et6",
-   "headline": "Return man Xavier Gipson provided spark the Giants were looking for",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/return-man-xavier-gipson-provided-170000397.html",
-   "timestamp": "2026-11-24T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "kAZy0mmYbnKiP66b",
-   "headline": "Film study: Jahmyr Gibbs in motion creates space for teammates",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/film-study-jahmyr-gibbs-motion-170000792.html",
-   "timestamp": "2026-11-24T17:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jahmyr-gibbs"
-   ]
-  },
-  {
-   "id": "GqFjpf3Qe36gBBMO",
-   "headline": "Cowboys offense is too good to waste another season",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/cowboys-offense-too-good-waste-170000521.html",
-   "timestamp": "2026-11-24T17:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "2hLSfbWCiHnqdAaT",
-   "headline": "Week 12 odds: Steelers open as home underdogs vs. Broncos",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/articles/week-12-odds-steelers-open-165922278.html",
-   "timestamp": "2026-11-24T16:59:22.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "PIT"
-   ]
-  },
-  {
-   "id": "9oT0_kL0SsRP9ofr",
-   "headline": "Sean McVay on Puka Nacua: 'Can't say for certain' what his Rams future will be amid pending free agency",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/sean-mcvay-on-puka-nacua-cant-say-for-certain-rams-future-free-agency/",
-   "timestamp": "2026-11-24T16:52:09.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "puka-nacua"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "Nq9f5Kjt9oYD9W8g",
-   "headline": "Giants DC Dennard Wilson Interviews For Maryland HC Position",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/giants-dc-dennard-wilson-interviews-for-maryland-hc-position",
-   "timestamp": "2026-11-24T16:02:52.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYG"
-   ]
-  },
-  {
-   "id": "5PFVaj6nY-Ii8evX",
-   "headline": "Bengals may have been robbed twice by refs in final five seconds of stunning loss to Commanders",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/bengals-commanders-mnf-refs-two-seconds-off-clock/",
-   "timestamp": "2026-11-24T15:53:05.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN",
-    "WAS"
-   ]
-  },
-  {
-   "id": "znK51mAHgydD6wiG",
-   "headline": "2026 NFL playoff picture: Ranking NFC wild card contenders, from stout NFC North to rising Seahawks, Rams",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/2026-nfl-playoff-picture-ranking-nfc-wild-card-contenders-nfc-north-rising-seahawks-rams/",
-   "timestamp": "2026-11-24T15:42:29.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR",
-    "SEA"
-   ]
-  },
-  {
-   "id": "jNLzrLsUpU7myQBv",
-   "headline": "Sam Darnold: Still tracking toward Week 12 start",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/sam-darnold-12490",
-   "timestamp": "2026-11-24T15:32:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "sam-darnold"
-   ]
-  },
-  {
-   "id": "7koi2FTMnytOLyRi",
-   "headline": "NFL Thanksgiving schedule: What to know about Thanksgiving Eve, Turkey Day, and Black Friday games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-games-2026-schedule-black-friday-rams-packers/",
-   "timestamp": "2026-11-24T15:30:57.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "YCLmVnfKDLaBWdJe",
-   "headline": "Falcons Waive LB Christian Harris",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/falcons-waive-lb-christian-harris",
-   "timestamp": "2026-11-24T14:58:42.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "ATL"
-   ]
-  },
-  {
-   "id": "EDxgyvzcTEMjg_WE",
-   "headline": "Prisco's NFL Week 12 Power Rankings: Thanksgiving feast offers a proving ground for contenders",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/priscos-nfl-week-12-power-rankings-thanksgiving-games/",
-   "timestamp": "2026-11-24T14:33:23.000Z",
-   "category": "breaking"
   }
  ]
 }
