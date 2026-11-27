@@ -4,6 +4,721 @@
  "note": "Headlines pulled from publisher RSS by scripts/fetch-news.mjs. Headline, source, timestamp and link only — no article body text (§2). Follow the link to read the piece. The news page also pulls these feeds live; this file is the archive it merges over and falls back to.",
  "data": [
   {
+   "id": "JgwrgpBLBCuPEhu2",
+   "headline": "Bills secure a big conference win in chase for one seed in AFC",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/bills-secure-big-conference-win-043645882.html",
+   "timestamp": "2026-11-27T04:36:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "CZGl-RPq6kj1rdr-",
+   "headline": "Here’s where the Broncos stand right now in the division and the AFC playoff picture",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/where-broncos-stand-now-division-043628242.html",
+   "timestamp": "2026-11-27T04:36:28.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN"
+   ]
+  },
+  {
+   "id": "oS6mLZmuqvB4YRZO",
+   "headline": "Here’s where the Chiefs sit in the AFC playoff standings after their Thanksgiving loss",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/where-chiefs-sit-afc-playoff-043000877.html",
+   "timestamp": "2026-11-27T04:30:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "KC"
+   ]
+  },
+  {
+   "id": "_8j9J14ba6DxRyXr",
+   "headline": "Colts DE Caden Curry Out For Season With Wrist Injury",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/colts-de-caden-curry-out-for-season-with-wrist-injury",
+   "timestamp": "2026-11-27T04:13:27.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "IND"
+   ]
+  },
+  {
+   "id": "vgptTFUIcRScWiKd",
+   "headline": "Jerry Jones calls Mike McCarthy 'outstanding,' refutes Aaron Rodgers' accusations",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/jerry-jones-calls-mike-mccarthy-outstanding-refutes-aaron-rodgers-accusations/",
+   "timestamp": "2026-11-27T04:05:03.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "aaron-jones"
+   ]
+  },
+  {
+   "id": "H8IjfKaMYPNHxo-Q",
+   "headline": "Monster performance for DeVonta Smith in Week 12",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/monster-performance-devonta-smith-week-035330982.html",
+   "timestamp": "2026-11-27T03:53:30.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "devonta-smith"
+   ]
+  },
+  {
+   "id": "R-Ztp9PaKBF_40QK",
+   "headline": "Greg Rousseau ties Mario Williams for seventh in Bills history",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/greg-rousseau-ties-mario-williams-035311340.html",
+   "timestamp": "2026-11-27T03:53:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF"
+   ]
+  },
+  {
+   "id": "-isao2FsIhODu_X2",
+   "headline": "James Cook makes NFL history on Thanksgiving night",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/james-cook-makes-nfl-history-034610876.html",
+   "timestamp": "2026-11-27T03:46:10.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "james-cook"
+   ]
+  },
+  {
+   "id": "sMcdCqdsBtvKl-pN",
+   "headline": "Prisco's Week 12 NFL picks: Browns over Raiders, Steelers overcome issues to upset Broncos",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-12-nfl-picks-odds-expert-picks/",
+   "timestamp": "2026-11-27T03:42:14.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CLE",
+    "DEN",
+    "LV",
+    "PIT"
+   ]
+  },
+  {
+   "id": "AFJxXU2JwJxlnLCj",
+   "headline": "NFL Week 12 picks: Our experts face off on Broncos at Steelers, Seahawks at 49ers and more",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
+   "timestamp": "2026-11-27T03:39:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "PIT",
+    "SEA",
+    "SF"
+   ]
+  },
+  {
+   "id": "Lp8SDsRrTHUBWDCR",
+   "headline": "Former Steelers coach Mike Tomlin on Aaron Rodgers-Mike McCarthy saga: 'It's a dumpster fire'",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-aaron-rodgers-mike-mccarthy-saga-dumpster-fire/",
+   "timestamp": "2026-11-27T03:37:34.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "QwNVKIPIr0ds-gJ1",
+   "headline": "Mike Tomlin calls Steelers a ‘dumpster fire’ after Aaron Rodgers release",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/mike-tomlin-calls-steelers-dumpster-032830206.html",
+   "timestamp": "2026-11-27T03:28:30.000Z",
+   "category": "transaction",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "RPG4VQ7JwZn1WUcM",
+   "headline": "Mike Tomlin says Aaron Rodgers is beloved in Steelers locker room",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/mike-tomlin-says-aaron-rodgers-032605180.html",
+   "timestamp": "2026-11-27T03:26:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "TziAI2uRcaD2OtA8",
+   "headline": "Tom Brady’s call of the Eagles’ Thanksgiving game-winning FG might be the greatest ever",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/tom-brady-call-eagles-thanksgiving-032529556.html",
+   "timestamp": "2026-11-27T03:25:29.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "ejepJ_r8A3fVZ8u4",
+   "headline": "Cowboys vs. Eagles: Brian Schottenheimer tops our losers list",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/cowboys-vs-eagles-brian-schottenheimer-031500869.html",
+   "timestamp": "2026-11-27T03:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "RxQAibm4xgUUrN8-",
+   "headline": "Dez Bryant goes off on Cowboys in NSFW rant after implosion vs. Eagles: ‘Get everybody the f–k out’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/dez-bryant-goes-off-cowboys-031145903.html",
+   "timestamp": "2026-11-27T03:11:45.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "120sYVX3bhufoLFI",
+   "headline": "Eagles vs. Cowboys Thanksgiving: The good, the bad, and the ugly",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/eagles-vs-cowboys-thanksgiving-good-030721026.html",
+   "timestamp": "2026-11-27T03:07:21.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "Gh-3o0CEBhp2zmW4",
+   "headline": "Raiders Work Out Younghoe Koo, 2 Other Kickers",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/raiders-work-out-younghoe-koo-2-other-kickers",
+   "timestamp": "2026-11-27T03:03:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "CiNOAF9yHRdmFp6X",
+   "headline": "Mike Tomlin on current Steelers situation: \"It's a dumpster fire\"",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/mike-tomlin-current-steelers-situation-030130229.html",
+   "timestamp": "2026-11-27T03:01:30.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "TRTWzRXxhN0__fzJ",
+   "headline": "Javonte Williams scores three times in Week 12",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/javonte-williams-scores-three-times-025944711.html",
+   "timestamp": "2026-11-27T02:59:44.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "javonte-williams"
+   ]
+  },
+  {
+   "id": "saHpsTzlHlHZzScX",
+   "headline": "Eagles' Nick Sirianni pulled away from fans after wild Thanksgiving win over Cowboys",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/eagles-nick-sirianni-pulled-away-025755865.html",
+   "timestamp": "2026-11-27T02:57:55.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "eR3gEl8rBChHAf5Y",
+   "headline": "Jeffery Simmons: I didn't simulate snap count on false starts, Lions are \"crying\" about a them problem",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/jeffery-simmons-didnt-simulate-snap-024815815.html",
+   "timestamp": "2026-11-27T02:48:15.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DET"
+   ]
+  },
+  {
+   "id": "bKTGhmyW5t-mjqsx",
+   "headline": "Tom Brady rips into Aaron Rodgers for breaking ‘the sanctity of an NFL locker room’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/tom-brady-rips-aaron-rodgers-024207530.html",
+   "timestamp": "2026-11-27T02:42:07.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "MIeQqul7xx-rsHJB",
+   "headline": "DeVonta Smith: Limping after Thursday's game",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/devonta-smith-15406",
+   "timestamp": "2026-11-27T02:39:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "devonta-smith"
+   ]
+  },
+  {
+   "id": "c0N-Y8mVFCOe8BbN",
+   "headline": "Jaxon Smith-Njigba limited on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/jaxon-smith-njigba-limited-thursday-023446436.html",
+   "timestamp": "2026-11-27T02:34:46.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "jaxon-smith-njigba"
+   ]
+  },
+  {
+   "id": "cjl2fPcnUYJBKExa",
+   "headline": "Dallas Goedert: Seen with right arm in sling",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/dallas-goedert-12860",
+   "timestamp": "2026-11-27T02:31:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dallas-goedert"
+   ]
+  },
+  {
+   "id": "pDUHrwZ4TDt7HNHO",
+   "headline": "Jerry Jones still confident about Cowboys HC Brian Schottenheimer, doesn't expect coaching change after Thanksgiving loss to Eagles",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/jerry-jones-still-confident-about-cowboys-hc-brian-schottenheimer-doesnt-expect-coaching-change-after-thanksgiving-loss-to-eagles-022753402.html",
+   "timestamp": "2026-11-27T02:27:53.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "S4CZUw_y9IRoFJNw",
+   "headline": "Former Steelers coach Mike Tomlin calls Aaron Rodgers drama a 'dumpster fire'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/former-steelers-coach-mike-tomlin-022708068.html",
+   "timestamp": "2026-11-27T02:27:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "rRlga1RCO0Ld80TU",
+   "headline": "Jerry Jones backs Mike McCarthy after Aaron Rodgers' rant: 'One of the finest people around football that I've been around'",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/breaking-news/article/jerry-jones-backs-mike-mccarthy-after-aaron-rodgers-rant-one-of-the-finest-people-around-football-that-ive-been-around-025507734.html",
+   "timestamp": "2026-11-27T02:26:05.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "aaron-jones"
+   ]
+  },
+  {
+   "id": "pRn53x1_AHp-jaMo",
+   "headline": "Brock Purdy misses practice again on Thursday",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/brock-purdy-misses-practice-again-022242718.html",
+   "timestamp": "2026-11-27T02:22:42.000Z",
+   "category": "practice",
+   "player_ids": [
+    "brock-purdy"
+   ]
+  },
+  {
+   "id": "FbmPE8GYR4fWgkoG",
+   "headline": "George Pickens: Five grabs in loss to Philly",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/george-pickens-15853",
+   "timestamp": "2026-11-27T02:20:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "george-pickens"
+   ]
+  },
+  {
+   "id": "9R9nepPy34JNEf2f",
+   "headline": "CeeDee Lamb: Big yardage in Thanksgiving loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/ceedee-lamb-14411",
+   "timestamp": "2026-11-27T02:16:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "ceedee-lamb"
+   ]
+  },
+  {
+   "id": "W7qmsixXx-BuThh8",
+   "headline": "Here is where the Cowboys fit in the NFC East division race after Thanksgiving",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/where-cowboys-fit-nfc-east-021500451.html",
+   "timestamp": "2026-11-27T02:15:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "6Nuj2FNoFXGUzviY",
+   "headline": "Javonte Williams: Finds end zone three times in loss",
+   "source": "RotoWire",
+   "url": "https://www.rotowire.com//football/player/javonte-williams-15306",
+   "timestamp": "2026-11-27T02:13:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "javonte-williams"
+   ]
+  },
+  {
+   "id": "tXB_oer5kTdjoFIo",
+   "headline": "James Cook touchdown gives Bills 7-0 lead over Chiefs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/james-cook-touchdown-gives-bills-021232631.html",
+   "timestamp": "2026-11-27T02:12:32.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "james-cook"
+   ],
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "ICfxDDsLgs-3tbn6",
+   "headline": "NFL Week 12 grades for Thanksgiving: Cowboys choke their way to a 'D,' Bears earn 'B' for big win",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/nfl/news/nfl-week-12-grades-thanksgiving-bears-earn-b-packers-get-d/",
+   "timestamp": "2026-11-27T02:08:04.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "CHI",
+    "DAL"
+   ]
+  },
+  {
+   "id": "ro3QhTncmPRNo4MI",
+   "headline": "Cowboys turn into turkeys during epic Thanksgiving Day meltdown | Opinion",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/cowboys-turn-turkeys-during-epic-015554024.html",
+   "timestamp": "2026-11-27T01:55:54.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL"
+   ]
+  },
+  {
+   "id": "D83eRrI6sdTkC_u-",
+   "headline": "Eagles-Cowboys final score: Joe Milton leads comeback victory over Dallas!",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/eagles-cowboys-live-score-updates-204005784.html",
+   "timestamp": "2026-11-27T01:55:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "qnPKQrsuI9VbxNMB",
+   "headline": "Eagles pull off miracle Thanksgiving rally as Cowboys stunningly collapse after disastrous decision",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/eagles-pull-off-miracle-thanksgiving-014641638.html",
+   "timestamp": "2026-11-27T01:46:41.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "no4QOia_C6QdQT7j",
+   "headline": "Cowboys vs. Eagles recap: Dallas embarrassed by Philadelphia on Thanksgiving Day",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/cowboys-vs-eagles-recap-dallas-013557295.html",
+   "timestamp": "2026-11-27T01:35:57.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "LG0xkcwhkBNN9vQM",
+   "headline": "Eagles mount furious comeback, beat Cowboys 39-38 in Thanksgiving classic",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/eagles-mount-furious-comeback-beat-013411781.html",
+   "timestamp": "2026-11-27T01:34:11.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "I-JJiIZlPHCRWh9H",
+   "headline": "Eagles vs. Cowboys Thanksgiving game live chat",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/eagles-vs-cowboys-thanksgiving-game-204029454.html",
+   "timestamp": "2026-11-27T01:33:48.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DAL",
+    "PHI"
+   ]
+  },
+  {
+   "id": "8Ssnt78AVuF5g9zx",
+   "headline": "NFL Playoff Picture 2026: Updated AFC and NFC standings, bracket, tiebreakers for Week 12",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/nfl-playoff-picture-2026-updated-160134343.html",
+   "timestamp": "2026-11-27T01:30:00.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "rqvvO1qaDX1dmPyb",
+   "headline": "The J.J. McCarthy improvement that could get Giants to the next level",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/j-j-mccarthy-improvement-could-012608249.html",
+   "timestamp": "2026-11-27T01:26:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "NYG"
+   ]
+  },
+  {
+   "id": "G4fkR7mw41k--gyH",
+   "headline": "NFL predictions: Broncos vs. Steelers score predictions for Week 12",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/nfl-predictions-broncos-vs-steelers-010000163.html",
+   "timestamp": "2026-11-27T01:00:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "DEN",
+    "PIT"
+   ]
+  },
+  {
+   "id": "1DI4nfWs5XTG4zDb",
+   "headline": "Raiders legend eviscerates Aaron Rodgers on FOX NFL Sunday: ‘Quacks like a duck’",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/raiders-legend-eviscerates-aaron-rodgers-004849117.html",
+   "timestamp": "2026-11-27T00:48:49.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LV"
+   ]
+  },
+  {
+   "id": "LpKziXnK1xe6VtsN",
+   "headline": "Best Kalshi promo code CBSSPORTS55: Earn $55 bonus for Bills vs. Chiefs, NFL on Thanksgiving Day",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-earn-55-bonus-for-bills-chiefs-nfl-thanksgiving-day/",
+   "timestamp": "2026-11-27T00:36:22.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "FozUnc6zlGvPyYTr",
+   "headline": "Eagles make a game of it with blocked punt for touchdown",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/eagles-game-blocked-punt-touchdown-003609213.html",
+   "timestamp": "2026-11-27T00:36:09.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "g_n3XWGYIXRflswm",
+   "headline": "Best Kalshi promo code CBSSPORTS55: Receive $55 bonus for Bills vs. Chiefs, Thanksgiving Day NFL",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-receive-55-bonus-bills-chiefs-thanksgiving-day-nfl/",
+   "timestamp": "2026-11-27T00:31:19.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "biEixIaSdlQmmhrX",
+   "headline": "Vikings-Falcons Second Injury Report",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/vikings-falcons-second-injury-report-002751198.html",
+   "timestamp": "2026-11-27T00:27:51.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "ATL",
+    "MIN"
+   ]
+  },
+  {
+   "id": "qE3_vjaxPPIrAwzY",
+   "headline": "Eagles injury updates: Cooper DeJean and 2 others ruled out on Thanksgiving",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/eagles-injury-updates-cooper-dejean-225450353.html",
+   "timestamp": "2026-11-27T00:13:34.000Z",
+   "category": "injury",
+   "team_abbrs": [
+    "PHI"
+   ]
+  },
+  {
+   "id": "2IHsf-PuO0TcEC17",
+   "headline": "NFL Practice Squad Updates: 11/26/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-practice-squad-updates-11-26-26",
+   "timestamp": "2026-11-27T00:11:25.000Z",
+   "category": "practice"
+  },
+  {
+   "id": "BUcDH4uePcgE0BYm",
+   "headline": "Aaron Rodgers officially a free agent with NFL future in jeopardy after unprecedented Steelers exit",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/aaron-rodgers-officially-free-agent-000705494.html",
+   "timestamp": "2026-11-27T00:07:05.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "PIT"
+   ]
+  },
+  {
+   "id": "SAUC37_kNLLCxHj1",
+   "headline": "Dalton Kincaid active, Christian Benford inactive for Bills-Chiefs",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/dalton-kincaid-active-christian-benford-000436538.html",
+   "timestamp": "2026-11-27T00:04:36.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "dalton-kincaid"
+   ],
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "GZf2OgRY5EVBLr3h",
+   "headline": "Sean McVay shapeshifts the Rams once again",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/articles/sean-mcvay-shapeshifts-rams-once-000200852.html",
+   "timestamp": "2026-11-27T00:02:00.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "LAR"
+   ]
+  },
+  {
+   "id": "L5PYAuBIxKTjR-t0",
+   "headline": "Bills beat Chiefs on deflected punt, Tyler Bass' 57-yard field goal at the buzzer",
+   "source": "Yahoo Sports",
+   "url": "https://sports.yahoo.com/nfl/live/chiefs-bills-score-live-updates-inactives-highlights-stats-where-to-watch-week-12-thanksgiving-235500403.html",
+   "timestamp": "2026-11-26T23:55:00.000Z",
+   "category": "breaking",
+   "player_ids": [
+    "tyler-bass"
+   ],
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "_5-F_RtxTEu80xc0",
+   "headline": "Week 12 NFL betting promos: Get nearly $4,000 in bonuses from betting apps, sportsbooks for NFL Thanksgiving",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/week-12-nfl-betting-promos-get-nearly-4000-in-bonuses-from-betting-apps-sportsbooks-for-nfl-thanksgiving/",
+   "timestamp": "2026-11-26T23:54:40.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "oTIf1OFWJlGUJPKa",
+   "headline": "Chiefs vs. Bills odds, picks, prediction, start time: 2026 NFL Thanksgiving betting preview, best bets",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/chiefs-bills-odds-picks-prediction-start-time-2026-nfl-thanksgiving-betting-preview-best-bets/",
+   "timestamp": "2026-11-26T23:43:08.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "HRutWNJX1c4eMa3B",
+   "headline": "Chiefs vs. Bills odds, NFL Thanksgiving picks, prediction: Use Polymarket promo code CBSSPORTS for $25 bonus",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/chiefs-vs-bills-odds-nfl-thanksgiving-picks-prediction-use-polymarket-promo-code-cbssports-25-bonus/",
+   "timestamp": "2026-11-26T23:40:52.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "IatZTdyygcNEQJ25",
+   "headline": "Minor NFL Transactions: 11/26/26",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/minor-nfl-transactions-11-26-26",
+   "timestamp": "2026-11-26T23:37:21.000Z",
+   "category": "breaking"
+  },
+  {
+   "id": "cCviY7xyLLcanJyX",
+   "headline": "Use FanDuel promo code to get $250 bonus bets by targeting NFL Thanksgiving, Bills vs. Chiefs betting",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-nfl-thanksgiving-bills-chiefs-betting/",
+   "timestamp": "2026-11-26T23:29:39.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "CGjldJ7gZogUdnvk",
+   "headline": "2026 NFL Thanksgiving odds, Bills-Chiefs predictions, picks: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
+   "source": "CBS Sports",
+   "url": "https://www.cbssports.com/prediction/news/2026-nfl-thanksgiving-odds-bills-chiefs-predictions-picks-use-kalshi-promo-code-cbssports55-55-bonus/",
+   "timestamp": "2026-11-26T23:16:50.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "BUF",
+    "KC"
+   ]
+  },
+  {
+   "id": "SDUN0k6vazSjDsoD",
+   "headline": "NFL Restructures: Seahawks, Oluokun, Little",
+   "source": "Pro Football Rumors",
+   "url": "https://www.profootballrumors.com/2026/11/nfl-restructures-seahawks-oluokun-little",
+   "timestamp": "2026-11-26T22:30:56.000Z",
+   "category": "breaking",
+   "team_abbrs": [
+    "SEA"
+   ]
+  },
+  {
    "id": "vLFjgLfxtpQCiB4E",
    "headline": "Bears-Lions thriller delivers fantasy fireworks as Jahmyr Gibbs posts season-best 45.7 points",
    "source": "Yahoo Sports",
@@ -288,14 +1003,6 @@
    ]
   },
   {
-   "id": "8Ssnt78AVuF5g9zx",
-   "headline": "NFL Playoff Picture 2026: Updated AFC and NFC standings, bracket, tiebreakers for Week 12",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/nfl-playoff-picture-2026-updated-160134343.html",
-   "timestamp": "2026-11-26T21:30:00.000Z",
-   "category": "breaking"
-  },
-  {
    "id": "EaYflAc2ETpZKA-y",
    "headline": "Chargers latest move doesn’t bode well for Justin Herbert against Patriots",
    "source": "Yahoo Sports",
@@ -416,18 +1123,6 @@
    ]
   },
   {
-   "id": "D83eRrI6sdTkC_u-",
-   "headline": "Eagles-Cowboys: Live score updates, highlights, injury news",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/eagles-cowboys-live-score-updates-204005784.html",
-   "timestamp": "2026-11-26T20:40:05.000Z",
-   "category": "injury",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
    "id": "18x22ZOGbJ-cit2b",
    "headline": "Dan Campbell’s huge Lions gamble pays off in Bears safety disaster",
    "source": "Yahoo Sports",
@@ -493,14 +1188,11 @@
   },
   {
    "id": "0x82fZnBjH3Z_OFq",
-   "headline": "Eagles vs. Cowboys live updates, inactives, where to watch: Dak Prescott, Dallas look to end Thanksgiving jinx against Philly",
+   "headline": "Eagles, ex-Cowboys QB Joe Milton III overcome 21-point deficit to stun Dallas: 'I know that defense like the back of my hand'",
    "source": "Yahoo Sports",
    "url": "https://sports.yahoo.com/nfl/live/cowboys-eagles-score-live-updates-inactives-highlights-stats-where-to-watch-week-12-thanksgiving-202245810.html",
    "timestamp": "2026-11-26T20:22:45.000Z",
    "category": "breaking",
-   "player_ids": [
-    "dak-prescott"
-   ],
    "team_abbrs": [
     "DAL",
     "PHI"
@@ -738,20 +1430,6 @@
    ]
   },
   {
-   "id": "sMcdCqdsBtvKl-pN",
-   "headline": "Prisco's Week 12 NFL picks: Cowboys feast on Eagles, Bills win thriller over Chiefs",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-12-nfl-picks-odds-expert-picks/",
-   "timestamp": "2026-11-26T18:01:01.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "DAL",
-    "KC",
-    "PHI"
-   ]
-  },
-  {
    "id": "mBijH3Prfym2BxZZ",
    "headline": "Thanksgiving and Black Friday NFL expert picks: Can Eagles pull upset? Do Steelers save their season?",
    "source": "CBS Sports",
@@ -813,14 +1491,6 @@
     "BUF",
     "KC"
    ]
-  },
-  {
-   "id": "_5-F_RtxTEu80xc0",
-   "headline": "Week 12 NFL betting promos: Get nearly $4,000 in bonuses from betting apps, sportsbooks for NFL Thanksgiving",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/week-12-nfl-betting-promos-get-nearly-4000-in-bonuses-from-betting-apps-sportsbooks-for-nfl-thanksgiving/",
-   "timestamp": "2026-11-26T17:05:13.000Z",
-   "category": "breaking"
   },
   {
    "id": "n9FF3wGzJpeMsA8f",
@@ -977,20 +1647,6 @@
    ]
   },
   {
-   "id": "AFJxXU2JwJxlnLCj",
-   "headline": "NFL Week 12 picks: Our experts face off on Bears at Lions, Chiefs at Bills and more",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
-   "timestamp": "2026-11-26T13:19:20.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "CHI",
-    "DET",
-    "KC"
-   ]
-  },
-  {
    "id": "YDDGuyY-4ZVj1WYh",
    "headline": "Everything went wrong for the Packers on Thanksgiving Eve — and their season could be over",
    "source": "Yahoo Sports",
@@ -1110,659 +1766,6 @@
    "category": "breaking",
    "team_abbrs": [
     "IND"
-   ]
-  },
-  {
-   "id": "-o0r7itAmkFfwKmU",
-   "headline": "Lions updated depth chart: Week 12 vs. Bears on Thanksgiving",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/lions-updated-depth-chart-week-130000518.html",
-   "timestamp": "2026-11-26T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "DET"
-   ]
-  },
-  {
-   "id": "xFbL2FA7ZUrp1KrA",
-   "headline": "Bengals News: Happy Thanksgiving",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/bengals-news-happy-thanksgiving-130000229.html",
-   "timestamp": "2026-11-26T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CIN"
-   ]
-  },
-  {
-   "id": "RdA_vE1eOqzvRiKs",
-   "headline": "Cowboys vs Eagles: How to watch, game time, TV schedule, streaming, radio",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/cowboys-vs-eagles-watch-game-130000651.html",
-   "timestamp": "2026-11-26T13:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "Et0Ib5BaHqdNN0Ts",
-   "headline": "Bears vs. Lions odds, picks, prediction, start time: NFL Thanksgiving Day betting preview, best bets",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/betting/news/bears-vs-lions-odds-picks-prediction-start-time-nfl-thanksgiving-day-betting-preview-best-bets/",
-   "timestamp": "2026-11-26T12:46:19.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "DET"
-   ]
-  },
-  {
-   "id": "SvRnPerVhUC7NkJz",
-   "headline": "What TV channel is Bills vs. Chiefs on Thanksgiving? Time, streaming",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/tv-channel-bills-vs-chiefs-123053191.html",
-   "timestamp": "2026-11-26T12:30:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "KC"
-   ]
-  },
-  {
-   "id": "lxlnbeueOzv7gU44",
-   "headline": "10 Things to be Thankful for with your Chicago Bears",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/10-things-thankful-chicago-bears-123000037.html",
-   "timestamp": "2026-11-26T12:30:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "Y5c5gyaorPKerCFx",
-   "headline": "Six Notre Dame players predicted to be 1st round picks in latest NFL mock draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/six-notre-dame-players-predicted-122737885.html",
-   "timestamp": "2026-11-26T12:27:37.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "c-F5NJafeSAyvjTt",
-   "headline": "What Romeo Doubs returning to practice means for the Patriots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/romeo-doubs-returning-practice-means-121807031.html",
-   "timestamp": "2026-11-26T12:18:07.000Z",
-   "category": "practice",
-   "team_abbrs": [
-    "NE"
-   ]
-  },
-  {
-   "id": "_MYIDngWD9adB0pl",
-   "headline": "Detroit Lions fans’ confidence reaches season high entering Thanksgiving Day",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/detroit-lions-fans-confidence-reaches-121500408.html",
-   "timestamp": "2026-11-26T12:15:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "2HA5hhmbPugL8oCu",
-   "headline": "Aaron Rodgers put Steelers teammates in 'incredible bind' by roasting McCarthy",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/aaron-rodgers-put-steelers-teammates-120346078.html",
-   "timestamp": "2026-11-26T12:03:46.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "Sf-UGi9HFtuAgZ5n",
-   "headline": "Who is Joe Milton? Eagles QB starting Thanksgiving with Jalen Hurts sidelined",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/joe-milton-eagles-qb-starting-120308859.html",
-   "timestamp": "2026-11-26T12:03:08.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "1ODd3L01SPmYbNKL",
-   "headline": "What happened to Jalen Hurts? What to know about Eagles QB's blood clots",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/happened-jalen-hurts-know-eagles-120159149.html",
-   "timestamp": "2026-11-26T12:01:59.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jalen-hurts"
-   ],
-   "team_abbrs": [
-    "PHI"
-   ]
-  },
-  {
-   "id": "koZLnSQ39wlZ5hbb",
-   "headline": "New York Jets News: Happy Thanksgiving, Spend Time With Your Loved Ones",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/york-jets-news-happy-thanksgiving-120000500.html",
-   "timestamp": "2026-11-26T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "NYJ"
-   ]
-  },
-  {
-   "id": "Fpn4GOSzd7KbvYG6",
-   "headline": "2027 CSR NFL “Thankful” Mock Draft",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/2027-csr-nfl-thankful-mock-120000943.html",
-   "timestamp": "2026-11-26T12:00:00.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "0rZWH9mHDDXgj4aR",
-   "headline": "Swanson: Don't doubt the Rams. Sean McVay continues to transform crisis into success",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/swanson-dont-doubt-rams-sean-120000880.html",
-   "timestamp": "2026-11-26T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "ldQA0_liCb1lEYV3",
-   "headline": "Cowboys news: It’s all just business for Mike Pettine",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/cowboys-news-just-business-mike-120000918.html",
-   "timestamp": "2026-11-26T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "_mqouykc2wMjBI0L",
-   "headline": "Davis Webb optimistic Jonah Coleman and Broncos’ rushing attack can have success versus Steelers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/davis-webb-optimistic-jonah-coleman-120000679.html",
-   "timestamp": "2026-11-26T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN",
-    "PIT"
-   ]
-  },
-  {
-   "id": "4zAGvBZtYEackYWP",
-   "headline": "BGN Memories: The Eagles have OWNED the Cowboys on Thanksgiving. Both times!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/bgn-memories-eagles-owned-cowboys-120000675.html",
-   "timestamp": "2026-11-26T12:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "VW2rx0FBv2p6p1Ly",
-   "headline": "Lions honoring Jack Campbell by wearing No. 46 wristbands on Thanksgiving",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/lions-honoring-jack-campbell-wearing-113057836.html",
-   "timestamp": "2026-11-26T11:30:57.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "ZZeHMSpUBS-BPDRK",
-   "headline": "How to watch Lions vs. Bears: TV, streaming, radio, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/watch-lions-vs-bears-tv-112953512.html",
-   "timestamp": "2026-11-26T11:29:53.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "DET"
-   ]
-  },
-  {
-   "id": "HpG8fqcHm2zaA788",
-   "headline": "NFL playoff picture: What does Packers-Rams mean for NFC standings?",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/nfl-playoff-picture-does-packers-230449210.html",
-   "timestamp": "2026-11-26T11:24:13.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "LAR"
-   ]
-  },
-  {
-   "id": "3zj5Pw3y6DrjKtM7",
-   "headline": "Cowboys playoff picture: Odds, remaining schedule, NFC East standings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/cowboys-playoff-picture-odds-remaining-111630163.html",
-   "timestamp": "2026-11-26T11:16:30.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "seG0_28SEFyMHRbs",
-   "headline": "Thanksgiving is for football, family – and NFL to test viewership 'ceiling'",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/thanksgiving-football-family-nfl-test-111554194.html",
-   "timestamp": "2026-11-26T11:15:54.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "gf_TMDX4lQ0-kDlg",
-   "headline": "Lions playoff picture: Odds, remaining schedule, NFC North standings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/betting/articles/lions-playoff-picture-odds-remaining-110543894.html",
-   "timestamp": "2026-11-26T11:05:43.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DET"
-   ]
-  },
-  {
-   "id": "obQXS9mHHRH489Bz",
-   "headline": "Kenneth Walker III misses 3rd straight game with groin injury as Chiefs face Bills",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/kenneth-walker-iii-misses-3rd-110500029.html",
-   "timestamp": "2026-11-26T11:05:00.000Z",
-   "category": "injury",
-   "player_ids": [
-    "kenneth-walker"
-   ],
-   "team_abbrs": [
-    "BUF",
-    "KC"
-   ]
-  },
-  {
-   "id": "j1lKhNNDaMDfCw8o",
-   "headline": "What TV channel is Cowboys vs Eagles on Thanksgiving? Time, streaming",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/tv-channel-cowboys-vs-eagles-110238932.html",
-   "timestamp": "2026-11-26T11:02:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "PHI"
-   ]
-  },
-  {
-   "id": "JL5YYzwUGYT0rgbh",
-   "headline": "NFL Thanksgiving games: TV channels for all three NFL games Thursday",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/nfl-thanksgiving-games-tv-channels-110231585.html",
-   "timestamp": "2026-11-26T11:02:31.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "BjrzORPykkt_PxE5",
-   "headline": "Bears playoff picture: Odds, remaining schedule, NFC North standings",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/bears-playoff-picture-odds-remaining-110228666.html",
-   "timestamp": "2026-11-26T11:02:28.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI"
-   ]
-  },
-  {
-   "id": "mE2-jqMOx_AAN0TH",
-   "headline": "Commanders favored on the road in Week 12 vs Cardinals in Arizona - Inside the Matchup",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/commanders-favored-road-week-12-110000764.html",
-   "timestamp": "2026-11-26T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "ARI",
-    "WAS"
-   ]
-  },
-  {
-   "id": "lSjfgjb4QMg_19az",
-   "headline": "Cleveland Browns news: The AFC North is a wacky and wild place",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/cleveland-browns-news-afc-north-110000699.html",
-   "timestamp": "2026-11-26T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CLE"
-   ]
-  },
-  {
-   "id": "ViPnpXr0dwKO2FV2",
-   "headline": "Horse Tracks: Happy Thanksgiving to all of Broncos Country!",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/horse-tracks-happy-thanksgiving-broncos-110000509.html",
-   "timestamp": "2026-11-26T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DEN"
-   ]
-  },
-  {
-   "id": "_O_ERMEhShdnl25m",
-   "headline": "What channel is Thanksgiving football on? How to stream the Bears vs. Lions, Eagles vs. Cowboys and Chiefs vs. Bills games today",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/article/what-channel-is-thanksgiving-football-on-how-to-stream-the-bears-vs-lions-eagles-vs-cowboys-and-chiefs-vs-bills-games-today-110000466.html",
-   "timestamp": "2026-11-26T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "BUF",
-    "CHI",
-    "DAL",
-    "DET",
-    "KC",
-    "PHI"
-   ]
-  },
-  {
-   "id": "oaarE_RAjZ5sedk2",
-   "headline": "Giants news: Abdul Carter honored, storylines for Colts, more",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/giants-news-abdul-carter-honored-110000316.html",
-   "timestamp": "2026-11-26T11:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "IND",
-    "NYG"
-   ]
-  },
-  {
-   "id": "tD9A-LxaiLgh2him",
-   "headline": "James Jones: I'm on text threads with former Packers, none are on Aaron Rodgers' side",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/james-jones-im-text-threads-105756723.html",
-   "timestamp": "2026-11-26T10:57:56.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "aaron-jones"
-   ],
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "E_uieBQtYqgJHeSC",
-   "headline": "Which NFL team has played the most Thanksgiving games? Records for all 32 clubs",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/nfl-team-played-most-thanksgiving-104540442.html",
-   "timestamp": "2026-11-26T10:45:40.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "S7Fp24GRJctwoatU",
-   "headline": "NFL games today: Thanksgiving schedule, times, TV channels, how to watch",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/nfl-games-today-thanksgiving-schedule-103029457.html",
-   "timestamp": "2026-11-26T10:30:29.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "u8Pw0Oq9Y8dB6BQv",
-   "headline": "Why do Lions and Cowboys always play Thanksgiving? History, tradition",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/why-lions-cowboys-always-play-103022978.html",
-   "timestamp": "2026-11-26T10:30:22.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL",
-    "DET"
-   ]
-  },
-  {
-   "id": "t12MbSkLf9qKqkeF",
-   "headline": "Matthew Stafford: Modest numbers in Week 12 win",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/matthew-stafford-5971",
-   "timestamp": "2026-11-26T05:25:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-stafford"
-   ]
-  },
-  {
-   "id": "7qoEsftQUXf4__G3",
-   "headline": "Jordan Love: Struggles against Rams in loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/jordan-love-14371",
-   "timestamp": "2026-11-26T05:18:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "jordan-love"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "cgkyxMBslGwWLvyE",
-   "headline": "Matthew Golden: Inefficient night in loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/matthew-golden-18500",
-   "timestamp": "2026-11-26T05:11:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "matthew-golden"
-   ]
-  },
-  {
-   "id": "6p78HzKW742phc7p",
-   "headline": "Tucker Kraft: Limited to three catches in loss",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/tucker-kraft-16649",
-   "timestamp": "2026-11-26T05:05:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "tucker-kraft"
-   ]
-  },
-  {
-   "id": "_H5UfiLnRZMbjlY-",
-   "headline": "Kyren Williams: Completely overshadowed by Corum",
-   "source": "RotoWire",
-   "url": "https://www.rotowire.com//football/player/kyren-williams-15807",
-   "timestamp": "2026-11-26T05:00:00.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "kyren-williams"
-   ]
-  },
-  {
-   "id": "Qq7pAIDEL9TrwwZb",
-   "headline": "Mike McCarthy Has ‘Full Support’ From Steelers Amid Aaron Rodgers Drama",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/mike-mccarthy-has-full-support-from-steelers-amid-aaron-rodgers-drama",
-   "timestamp": "2026-11-26T04:58:47.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "LUd2qc3p4HldKOM7",
-   "headline": "Commanders To Sign WR Brandon Aiyuk",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/commanders-to-sign-wr-brandon-aiyuk",
-   "timestamp": "2026-11-26T04:23:40.000Z",
-   "category": "transaction",
-   "team_abbrs": [
-    "WAS"
-   ]
-  },
-  {
-   "id": "uZeMWwHVHM7zIaFV",
-   "headline": "Steelers’ Players, Staff Expressed Frustrations About Aaron Rodgers",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/steelers-players-staff-expressed-frustrations-about-aaron-rodgers",
-   "timestamp": "2026-11-26T04:22:03.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "PIT"
-   ]
-  },
-  {
-   "id": "7koi2FTMnytOLyRi",
-   "headline": "2026 NFL Thanksgiving schedule: What to know about Thanksgiving and Black Friday games",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-games-2026-schedule-black-friday-rams-packers/",
-   "timestamp": "2026-11-26T04:00:42.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "dp1iOB7HOuoOE7hj",
-   "headline": "Davis Allen won't return against Packers",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/davis-allen-wont-return-against-033238855.html",
-   "timestamp": "2026-11-26T03:32:38.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB"
-   ]
-  },
-  {
-   "id": "mi5kKN3UDzkni8ix",
-   "headline": "U2 honors Dolly Parton at NFL Thanksgiving Eve halftime show",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/u2-honors-dolly-parton-nfl-033231068.html",
-   "timestamp": "2026-11-26T03:32:31.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "jSyTKd8V9qjKeGKc",
-   "headline": "Rams move ahead 20-13 on Blake Corum TD",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/rams-move-ahead-20-13-032256570.html",
-   "timestamp": "2026-11-26T03:22:56.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "kmFrSGG7OE1CJ1qP",
-   "headline": "Christian Watson won't return against Rams",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/christian-watson-wont-return-against-032029226.html",
-   "timestamp": "2026-11-26T03:20:29.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "christian-watson"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "stMZSJgxwjUQee1-",
-   "headline": "NFL Practice Squad Updates: 11/25/26",
-   "source": "Pro Football Rumors",
-   "url": "https://www.profootballrumors.com/2026/11/nfl-practice-squad-updates-11-25-26",
-   "timestamp": "2026-11-26T03:17:20.000Z",
-   "category": "practice"
-  },
-  {
-   "id": "ulsgTZUf3SKunZ91",
-   "headline": "Christian Watson ruled out with a concussion",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/christian-watson-ruled-concussion-030945116.html",
-   "timestamp": "2026-11-26T03:09:45.000Z",
-   "category": "injury",
-   "player_ids": [
-    "christian-watson"
-   ]
-  },
-  {
-   "id": "XsqoY4GIazowlrmr",
-   "headline": "Rams' Kamren Kinchens ejected for big hit on Christian Watson",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/rams-kamren-kinchens-ejected-big-030647603.html",
-   "timestamp": "2026-11-26T03:06:47.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "christian-watson"
-   ],
-   "team_abbrs": [
-    "LAR"
-   ]
-  },
-  {
-   "id": "7A2m8jNXQjtNCBXV",
-   "headline": "NFL on Thanksgiving halftime shows: Ranking the 10 most memorable performances",
-   "source": "CBS Sports",
-   "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-2026-ranking-most-memorable-halftime-shows/",
-   "timestamp": "2026-11-26T03:04:30.000Z",
-   "category": "breaking"
-  },
-  {
-   "id": "zJwemxBy_7uh-2Rj",
-   "headline": "Chicago Bears vs. Detroit Lions: Picks and Predictions",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/betting/articles/chicago-bears-vs-detroit-lions-030000871.html",
-   "timestamp": "2026-11-26T03:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "CHI",
-    "DET"
-   ]
-  },
-  {
-   "id": "8XCrKJqal69VHUbg",
-   "headline": "Cowboys fans grade Mike Pettine’s first game calling the defense",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/cowboys-fans-grade-mike-pettine-030000716.html",
-   "timestamp": "2026-11-26T03:00:00.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "DAL"
-   ]
-  },
-  {
-   "id": "RXEOz5O36_7nD38x",
-   "headline": "Rams safety ejected after huge hit on Packers’ Christian Watson",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/rams-safety-ejected-huge-hit-025806112.html",
-   "timestamp": "2026-11-26T02:58:06.000Z",
-   "category": "breaking",
-   "player_ids": [
-    "christian-watson"
-   ],
-   "team_abbrs": [
-    "GB",
-    "LAR"
-   ]
-  },
-  {
-   "id": "4qu7uNU1DxEwJYqD",
-   "headline": "NFL playoff picture Week 12: How Rams-Packers game impacts NFC field",
-   "source": "Yahoo Sports",
-   "url": "https://sports.yahoo.com/nfl/articles/nfl-playoff-picture-week-12-025736645.html",
-   "timestamp": "2026-11-26T02:57:36.000Z",
-   "category": "breaking",
-   "team_abbrs": [
-    "GB",
-    "LAR"
    ]
   }
  ]
